@@ -9,15 +9,27 @@ import { TodayWidget } from './widgets/TodayWidget'
 import { MoneyWidget } from './widgets/MoneyWidget'
 import { ChallengesWidget } from './widgets/ChallengesWidget'
 import { LeaderboardWidget } from './widgets/LeaderboardWidget'
+import { healthConfig, moneyConfig, travelConfig, type SectionConfig } from './mock-data'
 
-export function DashboardHub() {
+const sectionConfigs: Record<string, SectionConfig> = {
+  health: healthConfig,
+  money: moneyConfig,
+  travel: travelConfig,
+}
+
+interface DashboardHubProps {
+  section?: 'health' | 'money' | 'travel'
+}
+
+export function DashboardHub({ section = 'health' }: DashboardHubProps) {
   const [mobileWidgetsOpen, setMobileWidgetsOpen] = useState(false)
+  const config = sectionConfigs[section]
 
   return (
     <div className="flex flex-col lg:flex-row h-full">
       {/* AI Coach Chat */}
       <div className="flex-1 min-w-0 min-h-0 lg:border-r lg:border-white/[0.04]">
-        <CoachChat />
+        <CoachChat config={config} />
       </div>
 
       {/* Widget Sidebar — desktop */}

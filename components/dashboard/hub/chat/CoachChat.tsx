@@ -6,18 +6,7 @@ import { CoachEmptyState } from './CoachEmptyState'
 import { ChatBubble } from './ChatBubble'
 import { SuggestionChips } from './SuggestionChips'
 import { CoachInputBar } from './CoachInputBar'
-import { iconMap, mockSuggestionChips, type ChatMessage } from '../mock-data'
-
-const MOCK_COACH_REPLIES: Record<string, string> = {
-  "What's my progress?":
-    "You're doing great! 3 workouts this week, 12-day streak going strong. Your XP puts you at Intermediate rank — 2,550 XP away from Advanced. Keep pushing!",
-  'Plan my workout':
-    "Based on your history, I'd suggest an upper body session today. You haven't hit chest/shoulders since Monday. Want me to build a quick plan?",
-  "How's my budget?":
-    "You've spent €1,240 of your €2,000 monthly budget. That's 62% with 12 days left. Your biggest category is groceries at €340. Looking solid!",
-  'Analyze my week':
-    "This week: 3 workouts (target 4), 8.2k avg steps, and nutrition is on point at 1,840 cal avg. Money-wise you're tracking under budget. One more workout and you'll hit all your goals!",
-}
+import { iconMap, healthConfig, type ChatMessage, type SectionConfig } from '../mock-data'
 
 let messageCounter = 0
 
@@ -44,7 +33,11 @@ function TypingIndicator() {
   )
 }
 
-export function CoachChat() {
+interface CoachChatProps {
+  config?: SectionConfig
+}
+
+export function CoachChat({ config = healthConfig }: CoachChatProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([])
   const [isTyping, setIsTyping] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -67,8 +60,8 @@ export function CoachChat() {
 
     setTimeout(() => {
       const replyContent =
-        MOCK_COACH_REPLIES[content] ||
-        "That's a great question! In the full version, I'll have real-time insights from your health, nutrition, and financial data. For now, try one of the suggestion chips!"
+        config.coachReplies[content] ||
+        "That's a great question! In the full version, I'll have real-time insights from your data. For now, try one of the suggestion chips!"
       const coachMessage: ChatMessage = {
         id: `msg-${++messageCounter}`,
         role: 'coach',
@@ -78,7 +71,7 @@ export function CoachChat() {
       setIsTyping(false)
       setMessages((prev) => [...prev, coachMessage])
     }, 800)
-  }, [])
+  }, [config.coachReplies])
 
   const hasMessages = messages.length > 0
 
@@ -101,11 +94,16 @@ export function CoachChat() {
           </div>
         </div>
       ) : (
-        <CoachEmptyState onChipClick={handleSend} />
+        <CoachEmptyState
+          onChipClick={handleSend}
+          subtitle={config.subtitle}
+          statusPills={config.statusPills}
+          suggestionChips={config.suggestionChips}
+        />
       )}
 
       {hasMessages && (
-        <SuggestionChips chips={mockSuggestionChips} onChipClick={handleSend} />
+        <SuggestionChips chips={config.suggestionChips} onChipClick={handleSend} />
       )}
 
       <CoachInputBar onSend={handleSend} />

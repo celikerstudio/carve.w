@@ -1,13 +1,21 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { iconMap, mockStatusPills, mockSuggestionChips } from '../mock-data'
+import { iconMap, mockStatusPills, mockSuggestionChips, type SuggestionChip } from '../mock-data'
 
 interface CoachEmptyStateProps {
   onChipClick: (label: string) => void
+  subtitle?: string
+  statusPills?: { icon: string; label: string }[]
+  suggestionChips?: SuggestionChip[]
 }
 
-export function CoachEmptyState({ onChipClick }: CoachEmptyStateProps) {
+export function CoachEmptyState({
+  onChipClick,
+  subtitle = "Hey there, I'm your Carve coach. Ask me anything about your health, finances, or goals.",
+  statusPills = mockStatusPills,
+  suggestionChips = mockSuggestionChips,
+}: CoachEmptyStateProps) {
   return (
     <div className="flex flex-1 items-center justify-center">
       <div className="flex flex-col items-center gap-6 max-w-sm px-4">
@@ -32,7 +40,7 @@ export function CoachEmptyState({ onChipClick }: CoachEmptyStateProps) {
             Carve Coach
           </p>
           <p className="text-[15px] text-[#9da6b9]">
-            Hey there, I&apos;m your Carve coach. Ask me anything about your health, finances, or goals.
+            {subtitle}
           </p>
         </motion.div>
 
@@ -43,7 +51,7 @@ export function CoachEmptyState({ onChipClick }: CoachEmptyStateProps) {
           transition={{ duration: 0.4, delay: 0.3 }}
           className="flex flex-wrap justify-center gap-2"
         >
-          {mockStatusPills.map((pill) => {
+          {statusPills.map((pill) => {
             const Icon = iconMap[pill.icon]
             return (
               <div
@@ -64,7 +72,7 @@ export function CoachEmptyState({ onChipClick }: CoachEmptyStateProps) {
           transition={{ duration: 0.4, delay: 0.45 }}
           className="grid grid-cols-2 gap-2 w-full"
         >
-          {mockSuggestionChips.map((chip) => {
+          {suggestionChips.map((chip) => {
             const Icon = iconMap[chip.icon]
             return (
               <button

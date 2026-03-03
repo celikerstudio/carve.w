@@ -1,111 +1,193 @@
 import { createClient } from "@/lib/supabase/server";
+import {
+  getAdminDashboardStats,
+  getUserGrowthData,
+  getActivityTrends,
+  getGamificationStats,
+  getRoleDistribution,
+  getRecentSignups,
+  getRecentWorkouts,
+} from "@/lib/admin/queries";
+import { StatsCard } from "@/components/admin/stats-card";
+import {
+  UserGrowthChart,
+  ActivityChart,
+  RoleDistributionChart,
+  LevelDistributionChart,
+} from "@/components/admin/dashboard-charts";
+import {
+  Users,
+  Activity,
+  UserPlus,
+  Dumbbell,
+  UtensilsCrossed,
+  BookOpen,
+  Clock,
+} from "lucide-react";
 
 export default async function AdminDashboardPage() {
   const supabase = await createClient();
 
-  // Fetch analytics data
+  // Fetch all dashboard data in parallel
   const [
-    { count: totalUsers },
-    { count: activeUsers },
-    { count: totalWorkouts },
-    { count: totalMeals },
-    { count: wikiArticles },
-    { count: pendingFeedback }
+    stats,
+    userGrowthData,
+    activityData,
+    gamificationStats,
+    roleDistribution,
+    recentSignups,
+    recentWorkoutsList,
   ] = await Promise.all([
-    supabase.from("profiles").select("*", { count: "exact", head: true }),
-    supabase.from("profiles").select("*", { count: "exact", head: true }).gte("last_active_at", new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()),
-    supabase.from("completed_workouts").select("*", { count: "exact", head: true }),
-    supabase.from("meals").select("*", { count: "exact", head: true }),
-    supabase.from("wiki_articles").select("*", { count: "exact", head: true }),
-    supabase.from("feedback").select("*", { count: "exact", head: true }).eq("status", "new")
+    getAdminDashboardStats(supabase),
+    getUserGrowthData(supabase),
+    getActivityTrends(supabase),
+    getGamificationStats(supabase),
+    getRoleDistribution(supabase),
+    getRecentSignups(supabase),
+    getRecentWorkouts(supabase),
   ]);
-
-  // Recent activity
-  const { data: recentWorkouts } = await supabase
-    .from("completed_workouts")
-    .select("id, user_id, completed_date, workout_name, total_duration_minutes")
-    .order("completed_date", { ascending: false })
-    .limit(5);
-
-  const { data: recentUsers } = await supabase
-    .from("profiles")
-    .select("id, display_name, email, created_at")
-    .order("created_at", { ascending: false })
-    .limit(5);
 
   return (
     <div className="h-full overflow-y-auto">
       <div className="p-6 lg:p-10 space-y-6 max-w-7xl mx-auto">
         {/* Header */}
         <div className="border-b border-white/[0.06] pb-4">
-          <h1 className="text-3xl font-bold text-white tracking-tight">Admin Dashboard</h1>
+          <h1 className="text-3xl font-bold text-white tracking-tight">
+            Admin Dashboard
+          </h1>
           <p className="text-[#9da6b9] mt-1">
-            Site analytics and management overview
+            Platform analytics and activity overview
           </p>
         </div>
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <StatCard
+          <StatsCard
             title="Total Users"
-            value={totalUsers || 0}
-            subtitle={`${activeUsers || 0} active (7 days)`}
-            icon="👥"
+            value={stats.totalUsers}
+            icon={Users}
+            description={`${stats.activeUsers7d} active this week`}
+            index={0}
           />
-          <StatCard
+          <StatsCard
+            title="Active Users"
+            value={stats.activeUsers7d}
+            previousValue={stats.activeUsersPrev}
+            icon={Activity}
+            description="Last 7 days"
+            index={1}
+          />
+          <StatsCard
+            title="New Users"
+            value={stats.newUsers7d}
+            previousValue={stats.newUsersPrev}
+            icon={UserPlus}
+            description="Last 7 days"
+            index={2}
+          />
+          <StatsCard
             title="Total Workouts"
-            value={totalWorkouts || 0}
-            subtitle="All-time logged"
-            icon="💪"
+            value={stats.totalWorkouts}
+            previousValue={stats.workoutsPrev}
+            icon={Dumbbell}
+            description="All-time logged"
+            index={3}
           />
-          <StatCard
+          <StatsCard
             title="Total Meals"
-            value={totalMeals || 0}
-            subtitle="All-time logged"
-            icon="🍽️"
+            value={stats.totalMeals}
+            previousValue={stats.mealsPrev}
+            icon={UtensilsCrossed}
+            description="All-time logged"
+            index={4}
           />
-          <StatCard
+          <StatsCard
             title="Wiki Articles"
-            value={wikiArticles || 0}
-            subtitle="Published articles"
-            icon="📚"
+            value={stats.totalArticles}
+            icon={BookOpen}
+            description="Published articles"
+            index={5}
           />
-          <StatCard
-            title="Pending Feedback"
-            value={pendingFeedback || 0}
-            subtitle="Needs review"
-            icon="💬"
-            alert={!!pendingFeedback && pendingFeedback > 0}
-          />
-          <StatCard
-            title="System Status"
-            value="Healthy"
-            subtitle="All systems operational"
-            icon="✅"
+        </div>
+
+        {/* Charts Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <UserGrowthChart data={userGrowthData} />
+          <ActivityChart data={activityData} />
+          <RoleDistributionChart data={roleDistribution} />
+          <LevelDistributionChart
+            data={gamificationStats.levelDistribution}
+            avgLevel={gamificationStats.avgLevel}
           />
         </div>
 
         {/* Recent Activity */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Recent Signups */}
+          <div className="bg-[#1c1f27] border border-white/[0.06] rounded-xl p-5">
+            <div className="flex items-center gap-2 mb-4">
+              <UserPlus className="h-4 w-4 text-slate-500" />
+              <h2 className="text-lg font-semibold text-white">
+                Recent Signups
+              </h2>
+            </div>
+            <div className="space-y-3">
+              {recentSignups.length > 0 ? (
+                recentSignups.map((user: any) => (
+                  <div
+                    key={user.id}
+                    className="flex items-center justify-between border-b border-white/[0.06] pb-3 last:border-0 last:pb-0"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <div className="font-medium text-white truncate">
+                        {user.display_name || user.email || "Anonymous"}
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-[#9da6b9]">
+                        <span className="capitalize">
+                          {user.user_roles?.name || "user"}
+                        </span>
+                        <span className="text-slate-600">--</span>
+                        <span>{new Date(user.created_at).toLocaleDateString()}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p className="text-sm text-slate-500">No signups yet</p>
+              )}
+            </div>
+          </div>
+
           {/* Recent Workouts */}
           <div className="bg-[#1c1f27] border border-white/[0.06] rounded-xl p-5">
-            <h2 className="text-lg font-semibold text-white mb-4">
-              Recent Workouts
-            </h2>
+            <div className="flex items-center gap-2 mb-4">
+              <Dumbbell className="h-4 w-4 text-slate-500" />
+              <h2 className="text-lg font-semibold text-white">
+                Recent Workouts
+              </h2>
+            </div>
             <div className="space-y-3">
-              {recentWorkouts && recentWorkouts.length > 0 ? (
-                recentWorkouts.map((workout) => (
+              {recentWorkoutsList.length > 0 ? (
+                recentWorkoutsList.map((workout: any) => (
                   <div
                     key={workout.id}
                     className="flex items-center justify-between border-b border-white/[0.06] pb-3 last:border-0 last:pb-0"
                   >
-                    <div>
-                      <div className="font-medium text-white">
-                        {workout.workout_name}
+                    <div className="min-w-0 flex-1">
+                      <div className="font-medium text-white truncate">
+                        {workout.name || "Untitled Workout"}
                       </div>
-                      <div className="text-sm text-[#9da6b9]">
-                        {workout.total_duration_minutes} min •{" "}
-                        {new Date(workout.completed_date).toLocaleDateString()}
+                      <div className="flex items-center gap-2 text-sm text-[#9da6b9]">
+                        {workout.total_duration_minutes && (
+                          <>
+                            <Clock className="h-3 w-3" />
+                            <span>{workout.total_duration_minutes} min</span>
+                            <span className="text-slate-600">--</span>
+                          </>
+                        )}
+                        <span>
+                          {new Date(workout.created_at).toLocaleDateString()}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -115,117 +197,8 @@ export default async function AdminDashboardPage() {
               )}
             </div>
           </div>
-
-          {/* Recent Users */}
-          <div className="bg-[#1c1f27] border border-white/[0.06] rounded-xl p-5">
-            <h2 className="text-lg font-semibold text-white mb-4">
-              Recent Signups
-            </h2>
-            <div className="space-y-3">
-              {recentUsers && recentUsers.length > 0 ? (
-                recentUsers.map((user) => (
-                  <div
-                    key={user.id}
-                    className="flex items-center justify-between border-b border-white/[0.06] pb-3 last:border-0 last:pb-0"
-                  >
-                    <div>
-                      <div className="font-medium text-white">
-                        {user.display_name || user.email || "Anonymous"}
-                      </div>
-                      <div className="text-sm text-[#9da6b9]">
-                        {new Date(user.created_at).toLocaleDateString()}
-                      </div>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <p className="text-sm text-slate-500">No users yet</p>
-              )}
-            </div>
-          </div>
-        </div>
-
-        {/* Quick Actions */}
-        <div className="bg-[#1c1f27] border border-white/[0.06] rounded-xl p-5">
-          <h2 className="text-lg font-semibold text-white mb-4">
-            Quick Actions
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <QuickAction
-              href="/admin/users"
-              icon="👥"
-              title="Manage Users"
-              description="View and manage user accounts"
-            />
-            <QuickAction
-              href="/admin/content"
-              icon="📝"
-              title="Moderate Content"
-              description="Review wiki articles and edits"
-            />
-            <QuickAction
-              href="/admin/feedback"
-              icon="💬"
-              title="Review Feedback"
-              description="Check user feedback and reports"
-            />
-          </div>
         </div>
       </div>
     </div>
-  );
-}
-
-function StatCard({
-  title,
-  value,
-  subtitle,
-  icon,
-  alert = false,
-}: {
-  title: string;
-  value: string | number;
-  subtitle: string;
-  icon: string;
-  alert?: boolean;
-}) {
-  return (
-    <div className={`bg-[#1c1f27] border border-white/[0.06] rounded-xl p-5 ${alert ? "ring-1 ring-amber-500/30" : ""}`}>
-      <div className="flex items-center justify-between">
-        <div className="flex-1">
-          <p className="text-xs uppercase tracking-wider text-slate-500">{title}</p>
-          <p className="text-3xl font-bold text-white tracking-tight mt-2">{value}</p>
-          <p className="mt-1 text-sm text-[#9da6b9]">{subtitle}</p>
-        </div>
-        <div className="text-4xl">{icon}</div>
-      </div>
-    </div>
-  );
-}
-
-function QuickAction({
-  href,
-  icon,
-  title,
-  description,
-}: {
-  href: string;
-  icon: string;
-  title: string;
-  description: string;
-}) {
-  return (
-    <a
-      href={href}
-      className="block bg-[#1c1f27] border border-white/[0.06] rounded-xl p-4 hover:bg-white/5 transition-colors"
-    >
-      <div className="flex items-start gap-3">
-        <span className="text-2xl">{icon}</span>
-        <div>
-          <h3 className="font-medium text-white">{title}</h3>
-          <p className="mt-1 text-sm text-[#9da6b9]">{description}</p>
-        </div>
-      </div>
-    </a>
   );
 }

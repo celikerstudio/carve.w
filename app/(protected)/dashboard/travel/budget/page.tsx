@@ -6,7 +6,7 @@ export default async function BudgetPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
-  if (!user) redirect("/dashboard/login")
+  if (!user) redirect("/login")
 
   const { data: trips } = await supabase
     .from("trips")

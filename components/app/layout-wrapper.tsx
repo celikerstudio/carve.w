@@ -5,7 +5,6 @@ import { cn } from '@/lib/utils'
 import { AppShell, AppBody, AppContent } from "@/components/app/app-shell"
 import { AppHeader } from "@/components/app/app-header"
 import { AppSidebarController } from "@/components/app/app-sidebar-controller"
-import { MarketingHeader } from "@/components/carve/MarketingHeader"
 
 interface LayoutWrapperProps {
   children: React.ReactNode
@@ -36,9 +35,8 @@ export function LayoutWrapper({
   const pathname = usePathname()
   const path = stripLocale(pathname || '')
 
-  // Auth routes (login, signup) get no app chrome - exclude /dashboard/login
-  const isAuthRoute = (pathname?.includes('/login') || pathname?.includes('/signup') || pathname?.includes('/forgot-password'))
-    && !pathname?.includes('/dashboard/login')
+  // Auth routes (login, signup) get no app chrome
+  const isAuthRoute = pathname?.includes('/login') || pathname?.includes('/signup') || pathname?.includes('/forgot-password')
 
   // Marketing pages render with their own header (no sidebar)
   const isMarketingRoute =
@@ -61,8 +59,18 @@ export function LayoutWrapper({
   if (isMarketingRoute) {
     return (
       <div className="fixed inset-0 z-50 overflow-y-auto">
-        <MarketingHeader isAuthenticated={isAuthenticated} />
-        {children}
+        <div className="fixed top-0 left-0 right-0 z-50">
+          <AppHeader
+            isAuthenticated={isAuthenticated}
+            userEmail={userEmail}
+            userName={userName}
+            userAvatar={userAvatar}
+            userRole={userRole}
+          />
+        </div>
+        <div className="pt-16">
+          {children}
+        </div>
       </div>
     )
   }

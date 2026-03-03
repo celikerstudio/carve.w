@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import { Search, X } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import { EvidenceRating } from './EvidenceRating';
 
 interface SearchResult {
@@ -16,7 +17,12 @@ interface SearchResult {
   combined_rank: number;
 }
 
-export function SearchBar() {
+interface SearchBarProps {
+  variant?: 'hero' | 'header';
+}
+
+export function SearchBar({ variant = 'hero' }: SearchBarProps) {
+  const isHeader = variant === 'header';
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -129,10 +135,16 @@ export function SearchBar() {
   };
 
   return (
-    <div ref={searchRef} className="relative w-full max-w-2xl mx-auto">
+    <div ref={searchRef} className={cn(
+      "relative",
+      isHeader ? "w-[180px]" : "w-full max-w-2xl mx-auto"
+    )}>
       {/* Search Input */}
       <div className="relative">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/30" />
+        <Search className={cn(
+          "absolute top-1/2 -translate-y-1/2 text-white/30",
+          isHeader ? "left-3 w-3.5 h-3.5" : "left-4 w-5 h-5"
+        )} />
         <input
           ref={inputRef}
           type="text"
@@ -140,23 +152,37 @@ export function SearchBar() {
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
           onFocus={() => query.length >= 2 && setShowResults(true)}
-          placeholder="Zoek artikelen over fitness, voeding, training..."
-          className="w-full pl-12 pr-12 py-4 bg-[rgba(28,31,39,0.7)] backdrop-blur-xl rounded-xl border border-white/[0.08] focus:outline-none focus:border-white/20 text-white text-lg placeholder:text-white/30 transition-all"
+          placeholder={isHeader ? "Zoek in wiki..." : "Zoek artikelen over fitness, voeding, training..."}
+          className={cn(
+            "w-full bg-[rgba(28,31,39,0.7)] backdrop-blur-xl rounded-xl border border-white/[0.08] focus:outline-none focus:border-white/20 text-white placeholder:text-white/30 transition-all",
+            isHeader
+              ? "pl-9 pr-8 py-1.5 text-sm rounded-lg"
+              : "pl-12 pr-12 py-4 text-lg"
+          )}
         />
         {query && (
           <button
             onClick={clearSearch}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-white/[0.08] rounded-full transition-colors"
+            className={cn(
+              "absolute top-1/2 -translate-y-1/2 hover:bg-white/[0.08] rounded-full transition-colors",
+              isHeader ? "right-2 p-0.5" : "right-4 p-1"
+            )}
             aria-label="Clear search"
           >
-            <X className="w-5 h-5 text-white/30" />
+            <X className={cn(
+              "text-white/30",
+              isHeader ? "w-3.5 h-3.5" : "w-5 h-5"
+            )} />
           </button>
         )}
       </div>
 
       {/* Search Results Dropdown */}
       {showResults && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-[rgba(28,31,39,0.95)] backdrop-blur-xl rounded-xl border border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.5)] max-h-[70vh] overflow-y-auto z-50">
+        <div className={cn(
+          "absolute top-full mt-2 bg-[rgba(28,31,39,0.95)] backdrop-blur-xl rounded-xl border border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.5)] overflow-y-auto z-50",
+          isHeader ? "right-0 w-[380px] max-h-[60vh]" : "left-0 right-0 max-h-[70vh]"
+        )}>
           {isSearching ? (
             <div className="p-8 text-center text-white/40">
               <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-white/50"></div>

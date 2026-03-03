@@ -6,7 +6,7 @@ export default async function TravelPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
-  if (!user) redirect("/dashboard/login")
+  if (!user) redirect("/login")
 
   // Fetch upcoming trip (first planned trip with future start_date)
   const { data: upcomingTrip } = await supabase

@@ -6,7 +6,7 @@ export const loginNavigationGroups = [
     items: [
       {
         title: "Login",
-        href: "/dashboard/login",
+        href: "/login",
         icon: { name: 'UserIcon' },
         description: "Sign in to your account"
       }

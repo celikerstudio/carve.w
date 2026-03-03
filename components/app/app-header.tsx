@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase/client';
+import { SearchBar } from '@/components/wiki/SearchBar';
 
 interface AppHeaderProps {
   className?: string;
@@ -92,8 +93,8 @@ export function AppHeader({
         role="banner"
       >
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
+          <div className="relative flex items-center h-16">
+            {/* Logo - left */}
             <Link
               href="/carve"
               className="text-white font-bold text-lg tracking-[0.2em] hover:text-white/80 transition-colors"
@@ -101,8 +102,8 @@ export function AppHeader({
               CARVE
             </Link>
 
-            {/* Desktop nav */}
-            <nav className="hidden md:flex items-center gap-1">
+            {/* Desktop nav - absolutely centered */}
+            <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -127,7 +128,8 @@ export function AppHeader({
             </nav>
 
             {/* Right side - Desktop */}
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-3 ml-auto">
+              <SearchBar variant="header" />
               <Link
                 href="/"
                 className={cn(
@@ -226,7 +228,7 @@ export function AppHeader({
                 </div>
               ) : (
                 <Link
-                  href="/dashboard/login"
+                  href="/login"
                   className="text-sm font-medium text-white/40 hover:text-white/70 transition-colors px-4 py-2"
                 >
                   Log in
@@ -291,7 +293,7 @@ export function AppHeader({
                   </Link>
                 ) : (
                   <Link
-                    href="/dashboard/login"
+                    href="/login"
                     onClick={() => setMobileOpen(false)}
                     className="text-lg text-white/40"
                   >

@@ -10,7 +10,7 @@ export default async function DashboardPage() {
   } = await supabase.auth.getUser()
 
   if (!user) {
-    redirect("/dashboard/login")
+    redirect("/login")
   }
 
   // Fetch user stats

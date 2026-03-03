@@ -3,7 +3,6 @@ export default async function ProtectedLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Note: The login page at /dashboard/login will handle auth check client-side
-  // All other dashboard pages have their own auth checks
+  // Auth is handled by middleware.ts — it redirects unauthenticated users to /login
   return <>{children}</>
 }

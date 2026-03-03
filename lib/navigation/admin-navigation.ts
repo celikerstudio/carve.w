@@ -44,12 +44,6 @@ export const adminNavigationGroups = [
         href: "/admin/settings",
         icon: { name: 'SettingsIcon' },
         description: "Site configuration"
-      },
-      {
-        title: "Database",
-        href: "/admin/database",
-        icon: { name: 'ChartIcon' },
-        description: "Database tools"
       }
     ]
   }

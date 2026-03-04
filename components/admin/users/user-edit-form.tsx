@@ -70,7 +70,7 @@ export function UserEditForm({ user }: UserEditFormProps) {
 
   if (!isEditing) {
     return (
-      <Card className="bg-[#1c1f27] border-white/[0.06] p-6">
+      <Card className="bg-surface-raised border-subtle p-6">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold text-white">Profile Information</h2>
           <Button
@@ -91,29 +91,29 @@ export function UserEditForm({ user }: UserEditFormProps) {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <div className="text-sm text-[#9da6b9] mb-1">Username</div>
+            <div className="text-sm text-ink-secondary mb-1">Username</div>
             <div className="text-white">{user.username || "\u2014"}</div>
           </div>
           <div>
-            <div className="text-sm text-[#9da6b9] mb-1">Display Name</div>
+            <div className="text-sm text-ink-secondary mb-1">Display Name</div>
             <div className="text-white">{user.display_name || "\u2014"}</div>
           </div>
           <div>
-            <div className="text-sm text-[#9da6b9] mb-1">Email</div>
+            <div className="text-sm text-ink-secondary mb-1">Email</div>
             <div className="text-white">{user.email}</div>
           </div>
           <div>
-            <div className="text-sm text-[#9da6b9] mb-1">Role</div>
+            <div className="text-sm text-ink-secondary mb-1">Role</div>
             <div className="text-white capitalize">{user.role}</div>
           </div>
           <div className="col-span-2">
-            <div className="text-sm text-[#9da6b9] mb-1">User ID</div>
+            <div className="text-sm text-ink-secondary mb-1">User ID</div>
             <div className="text-white/80 text-xs font-mono">{user.id}</div>
           </div>
         </div>
         {user.bio && (
           <div className="mt-4">
-            <div className="text-sm text-[#9da6b9] mb-1">Bio</div>
+            <div className="text-sm text-ink-secondary mb-1">Bio</div>
             <div className="text-white">{user.bio}</div>
           </div>
         )}
@@ -122,7 +122,7 @@ export function UserEditForm({ user }: UserEditFormProps) {
   }
 
   return (
-    <Card className="bg-[#1c1f27] border-white/[0.06] p-6">
+    <Card className="bg-surface-raised border-subtle p-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl font-bold text-white">Edit Profile</h2>
         <Button
@@ -138,7 +138,7 @@ export function UserEditForm({ user }: UserEditFormProps) {
           }}
           size="sm"
           variant="outline"
-          className="bg-white/5 border-white/[0.06] text-white hover:bg-white/10"
+          className="bg-white/5 border-subtle text-white hover:bg-white/10"
         >
           <X className="h-4 w-4 mr-2" />
           Cancel
@@ -163,7 +163,7 @@ export function UserEditForm({ user }: UserEditFormProps) {
               onChange={(e) =>
                 setFormData({ ...formData, username: e.target.value })
               }
-              className="bg-white/5 border-white/[0.06] text-white"
+              className="bg-white/5 border-subtle text-white"
               placeholder="Enter username"
             />
           </div>
@@ -178,7 +178,7 @@ export function UserEditForm({ user }: UserEditFormProps) {
               onChange={(e) =>
                 setFormData({ ...formData, display_name: e.target.value })
               }
-              className="bg-white/5 border-white/[0.06] text-white"
+              className="bg-white/5 border-subtle text-white"
               placeholder="Enter display name"
             />
           </div>
@@ -192,7 +192,7 @@ export function UserEditForm({ user }: UserEditFormProps) {
             id="role"
             value={formData.role}
             onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-            className="w-full px-3 py-2 bg-white/5 border border-white/[0.06] rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full px-3 py-2 bg-white/5 border border-subtle rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
           >
             <option value="user">User</option>
             <option value="moderator">Moderator</option>
@@ -208,7 +208,7 @@ export function UserEditForm({ user }: UserEditFormProps) {
             id="bio"
             value={formData.bio}
             onChange={(e) => setFormData({ ...formData, bio: e.target.value })}
-            className="bg-white/5 border-white/[0.06] text-white min-h-[100px]"
+            className="bg-white/5 border-subtle text-white min-h-[100px]"
             placeholder="Enter bio"
           />
         </div>

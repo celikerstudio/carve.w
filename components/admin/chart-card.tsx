@@ -22,7 +22,7 @@ export function ChartCard({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className={`rounded-xl p-5 bg-[#1c1f27] border border-white/[0.06] ${className}`}
+      className={`rounded-xl p-5 bg-surface-raised border border-subtle ${className}`}
     >
       <div className="mb-4">
         <h3 className="text-sm font-medium text-white">{title}</h3>

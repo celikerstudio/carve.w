@@ -34,7 +34,7 @@ interface SettingsNavProps {
 
 export function SettingsNav({ activeSection, onNavigate }: SettingsNavProps) {
   return (
-    <nav className="sticky top-0 h-screen overflow-y-auto p-6 border-r border-white/[0.06]">
+    <nav className="sticky top-0 h-screen overflow-y-auto p-6 border-r border-subtle">
       <h1 className="text-2xl font-bold text-white mb-6">Settings</h1>
 
       <ul className="space-y-1">
@@ -50,7 +50,7 @@ export function SettingsNav({ activeSection, onNavigate }: SettingsNavProps) {
                   'w-full flex items-center gap-3 px-4 py-3 rounded-lg text-left transition-colors',
                   'hover:bg-white/5',
                   isActive && 'bg-white/5 font-semibold border-l-2 border-amber-500',
-                  !isActive && 'text-[#9da6b9]'
+                  !isActive && 'text-ink-secondary'
                 )}
               >
                 <Icon className={cn(

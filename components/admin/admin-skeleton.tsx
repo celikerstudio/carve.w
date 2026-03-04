@@ -10,7 +10,7 @@ export function AdminSkeleton() {
       {/* Stats grid skeleton */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {[...Array(6)].map((_, i) => (
-          <div key={i} className="rounded-xl bg-[#1c1f27] border border-white/[0.06] p-5 space-y-3">
+          <div key={i} className="rounded-xl bg-surface-raised border border-subtle p-5 space-y-3">
             <div className="h-3 w-24 rounded bg-white/[0.06]" />
             <div className="h-8 w-20 rounded bg-white/[0.06]" />
             <div className="h-3 w-32 rounded bg-white/[0.06]" />
@@ -21,7 +21,7 @@ export function AdminSkeleton() {
       {/* Chart grid skeleton */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {[...Array(2)].map((_, i) => (
-          <div key={i} className="rounded-xl bg-[#1c1f27] border border-white/[0.06] p-5 space-y-3">
+          <div key={i} className="rounded-xl bg-surface-raised border border-subtle p-5 space-y-3">
             <div className="h-4 w-32 rounded bg-white/[0.06]" />
             <div className="h-3 w-48 rounded bg-white/[0.06]" />
             <div className="h-48 rounded bg-white/[0.06]" />
@@ -42,8 +42,8 @@ export function AdminTableSkeleton({ rows = 5 }: { rows?: number }) {
       </div>
 
       {/* Table skeleton */}
-      <div className="rounded-xl bg-[#1c1f27] border border-white/[0.06] overflow-hidden">
-        <div className="p-4 border-b border-white/[0.06]">
+      <div className="rounded-xl bg-surface-raised border border-subtle overflow-hidden">
+        <div className="p-4 border-b border-subtle">
           <div className="h-10 w-full rounded bg-white/[0.06]" />
         </div>
         <div className="divide-y divide-white/[0.06]">

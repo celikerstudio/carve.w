@@ -75,7 +75,7 @@ export function UserActions({
             onClick={() => handleRoleChange("user")}
             disabled={isPending}
             size="sm"
-            className="bg-white/10 border border-white/[0.06] text-white/80 hover:bg-white/20"
+            className="bg-white/10 border border-subtle text-white/80 hover:bg-white/20"
           >
             {isPending ? "Processing..." : "Make User"}
           </Button>

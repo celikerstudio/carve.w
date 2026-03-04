@@ -39,7 +39,7 @@ export function ContentActions({
       disabled={isPending}
       className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors disabled:opacity-50 ${
         isPublished
-          ? "bg-white/5 border border-white/[0.06] text-[#9da6b9] hover:bg-white/10"
+          ? "bg-white/5 border border-subtle text-ink-secondary hover:bg-white/10"
           : "bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 hover:bg-emerald-500/20"
       }`}
     >

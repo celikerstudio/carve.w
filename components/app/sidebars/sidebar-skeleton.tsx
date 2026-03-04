@@ -1,7 +1,7 @@
 export function SidebarSkeleton() {
   return (
     <div
-      className="hidden lg:flex lg:flex-col h-full shrink-0 bg-[#ececf1] pb-3"
+      className="hidden lg:flex lg:flex-col h-full shrink-0 bg-surface pb-3"
       style={{ width: "64px" }}
       role="status"
       aria-label="Loading navigation"

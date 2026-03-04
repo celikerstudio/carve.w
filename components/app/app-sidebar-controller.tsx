@@ -134,7 +134,7 @@ export function AppSidebarController({
     <div
       className={cn(
         "hidden lg:flex lg:flex-col h-full max-h-full shrink-0 transition-[width] duration-300 ease-in-out pb-3",
-        'bg-[#0c0e14]'
+        'bg-surface'
       )}
       style={{
         width: isHovered ? '200px' : '64px',
@@ -162,7 +162,7 @@ export function AppSidebarController({
                 <span
                   className={cn(
                     'text-[10px] font-bold uppercase tracking-wider overflow-hidden whitespace-nowrap transition-opacity duration-300',
-                    'text-[#555d70]',
+                    'text-ink-tertiary',
                     isHovered ? 'opacity-100' : 'opacity-0'
                   )}
                   style={{
@@ -192,7 +192,7 @@ export function AppSidebarController({
                         'group h-7 flex items-center rounded-lg px-3 py-1 text-sm font-medium relative',
                         isActive
                           ? 'font-medium'
-                          : 'text-[#7a8299] hover:bg-white/[0.04] hover:text-[#c4cad6]'
+                          : 'text-ink-secondary hover:bg-white/[0.04] hover:text-ink-muted'
                       )}
                       style={isActive ? {
                         color: theme.accent,
@@ -202,7 +202,7 @@ export function AppSidebarController({
                       <Icon
                         className={cn(
                           'h-5 w-5 shrink-0',
-                          !isActive && 'text-[#7a8299] group-hover:text-[#c4cad6]'
+                          !isActive && 'text-ink-secondary group-hover:text-ink-muted'
                         )}
                         style={isActive ? { color: theme.accent } : undefined}
                       />

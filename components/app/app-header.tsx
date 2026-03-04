@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase/client';
 import { SearchBar } from '@/components/wiki/SearchBar';
 
@@ -101,8 +101,8 @@ export function AppHeader({
               ? 'bg-white/70 backdrop-blur-xl border-b border-gray-200/60 shadow-sm'
               : 'bg-transparent')
             : (scrolled
-              ? 'bg-[#0c0e14]/90 backdrop-blur-xl'
-              : 'bg-[#0c0e14]')),
+              ? 'bg-surface/90 backdrop-blur-xl'
+              : 'bg-surface')),
           className
         )}
         role="banner"
@@ -194,7 +194,7 @@ export function AppHeader({
                       />
                       <div className={cn(
                         "absolute right-0 mt-2 w-56 rounded-xl shadow-2xl py-1 z-50",
-                        isWikiRoute ? "bg-white border border-gray-200" : "bg-[#1a1d25] border border-white/[0.08]"
+                        isWikiRoute ? "bg-white border border-gray-200" : "bg-surface-raised border border-white/[0.08]"
                       )}>
                         <div className={cn("px-3 py-2.5 border-b", isWikiRoute ? "border-gray-100" : "border-white/[0.06]")}>
                           <p className={cn("text-sm font-medium leading-none", isWikiRoute ? "text-gray-900" : "text-white")}>

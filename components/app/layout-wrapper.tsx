@@ -78,7 +78,7 @@ export function LayoutWrapper({
 
   if (isWikiRoute) {
     return (
-      <div className="min-h-screen bg-[#f5f5f7]">
+      <div className="min-h-screen bg-surface">
         {/* Fixed header */}
         <div className="fixed top-0 left-0 right-0 z-50">
           <AppHeader
@@ -100,7 +100,7 @@ export function LayoutWrapper({
 
   // Dashboard and other routes use sidebar shell
   return (
-    <div className="min-h-screen bg-[#0c0e14]">
+    <div className="min-h-screen bg-surface">
       {/* Fixed header */}
       <div className="fixed top-0 left-0 right-0 z-50">
         <AppHeader

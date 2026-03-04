@@ -42,7 +42,7 @@ export function AppShell({
     <div
       className={cn(
         "flex flex-col w-full h-full overflow-hidden",
-        "bg-[#0c0e14] text-white",
+        "bg-surface text-white",
         "relative z-10",
         className
       )}
@@ -97,7 +97,7 @@ export function AppContent({
         useFixedHeight
           ? "h-full overflow-y-auto scrollbar-auto-hide"
           : "min-h-full",
-        "bg-[#111318] text-white rounded-tl-xl",
+        "bg-surface text-white rounded-tl-xl",
         "overflow-hidden",
         "m-0",
         className

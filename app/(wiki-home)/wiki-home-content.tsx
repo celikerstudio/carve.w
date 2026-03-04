@@ -107,6 +107,25 @@ export function WikiHomeContent({ counts, latestArticles, popularToday }: WikiHo
         </div>
       </section>
 
+      {/* Knowledge Hub CTA */}
+      <section className="pb-12">
+        <Link
+          href="/wiki/learn"
+          className="group flex items-center justify-between rounded-xl p-4 bg-[#c8b86e]/[0.06] border border-[#c8b86e]/20 hover:border-[#c8b86e]/40 transition-all"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-lg">🧠</span>
+            <div>
+              <h3 className="text-sm font-semibold text-ink">Knowledge Hub</h3>
+              <p className="text-xs text-ink-secondary">Test your knowledge with quizzes across all topics</p>
+            </div>
+          </div>
+          <span className="text-[#c8b86e] text-sm font-medium group-hover:translate-x-0.5 transition-transform">
+            Start →
+          </span>
+        </Link>
+      </section>
+
       {/* Latest Articles */}
       {latestArticles.length > 0 && (
         <section className="pb-12">

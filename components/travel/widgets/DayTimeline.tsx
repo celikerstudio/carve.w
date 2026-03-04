@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "motion/react"
+import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { TravelCard } from "@/components/travel/shared"
 import type { TripDay } from "@/lib/ai/travel-schemas"

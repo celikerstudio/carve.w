@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { motion } from "motion/react"
+import { motion } from "framer-motion"
 import { TravelCard } from "@/components/travel/shared"
 
 interface TripCardProps {

@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 import { Lock, Brain, CheckCircle2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { RANK_TITLES, LEVEL_UNLOCK_MIN_QUESTIONS } from '@/lib/quiz/constants'

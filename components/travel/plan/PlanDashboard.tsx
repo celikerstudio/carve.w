@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "motion/react"
+import { motion } from "framer-motion"
 import { DayTimeline } from "@/components/travel/widgets/DayTimeline"
 import { BudgetOverview } from "@/components/travel/widgets/BudgetOverview"
 import { AccommodationCard } from "@/components/travel/widgets/AccommodationCard"

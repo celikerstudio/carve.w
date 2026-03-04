@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, AnimatePresence } from 'motion/react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle2, XCircle, BookOpen } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'

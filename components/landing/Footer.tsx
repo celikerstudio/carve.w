@@ -83,7 +83,7 @@ export function Footer() {
                 href="https://twitter.com/carve"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                className="w-10 h-10 bg-surface-raised rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -92,7 +92,7 @@ export function Footer() {
                 href="https://instagram.com/carve"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
+                className="w-10 h-10 bg-surface-raised rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -101,14 +101,14 @@ export function Footer() {
                 href="https://github.com/carve"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+                className="w-10 h-10 bg-surface-raised rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
                 href="mailto:hello@carve.wiki"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 bg-surface-raised rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />

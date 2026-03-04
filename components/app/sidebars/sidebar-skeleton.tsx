@@ -12,7 +12,7 @@ export function SidebarSkeleton() {
           {/* Group label skeleton */}
           <div className="mb-1.5 flex items-center px-3">
             <div className="w-5 h-5 flex items-center justify-center shrink-0">
-              <div className="w-2 h-0.5 bg-gray-300 animate-pulse rounded" />
+              <div className="w-2 h-0.5 bg-ink-muted animate-pulse rounded" />
             </div>
           </div>
 
@@ -22,7 +22,7 @@ export function SidebarSkeleton() {
               key={i}
               className="h-9 flex items-center rounded-lg px-3 py-1.5 mb-0.5"
             >
-              <div className="h-5 w-5 bg-gray-300 animate-pulse rounded shrink-0" />
+              <div className="h-5 w-5 bg-ink-muted animate-pulse rounded shrink-0" />
             </div>
           ))}
         </div>
@@ -31,7 +31,7 @@ export function SidebarSkeleton() {
         <div className="mb-3">
           <div className="mb-1.5 flex items-center px-3">
             <div className="w-5 h-5 flex items-center justify-center shrink-0">
-              <div className="w-2 h-0.5 bg-gray-300 animate-pulse rounded" />
+              <div className="w-2 h-0.5 bg-ink-muted animate-pulse rounded" />
             </div>
           </div>
 
@@ -40,7 +40,7 @@ export function SidebarSkeleton() {
               key={i}
               className="h-9 flex items-center rounded-lg px-3 py-1.5 mb-0.5"
             >
-              <div className="h-5 w-5 bg-gray-300 animate-pulse rounded shrink-0" />
+              <div className="h-5 w-5 bg-ink-muted animate-pulse rounded shrink-0" />
             </div>
           ))}
         </div>

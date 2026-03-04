@@ -168,7 +168,7 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
   }
 
   return (
-    <div className="mt-12 pt-8 border-t border-gray-200">
+    <div className="mt-12 pt-8 border-t border-subtle">
       <AnimatePresence mode="wait">
         {/* CTA State */}
         {phase === 'cta' && (
@@ -184,11 +184,11 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
               <Brain className="w-7 h-7 text-[#c8b86e]" />
             </div>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
+            <h3 className="text-xl font-bold text-ink mb-2">
               Test Your Knowledge
             </h3>
 
-            <p className="text-gray-500 text-sm max-w-md mb-6 leading-relaxed">
+            <p className="text-ink-secondary text-sm max-w-md mb-6 leading-relaxed">
               Answer {ARTICLE_QUESTIONS_PER_QUIZ} quick questions to reinforce what you just read.
               {user ? ' Earn XP and track your progress.' : ''}
             </p>
@@ -220,7 +220,7 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
             className="flex flex-col items-center justify-center py-16"
           >
             <Loader2 className="w-8 h-8 text-[#c8b86e] animate-spin" />
-            <p className="text-gray-500 text-sm mt-3">Loading questions...</p>
+            <p className="text-ink-secondary text-sm mt-3">Loading questions...</p>
           </motion.div>
         )}
 
@@ -236,7 +236,7 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
           >
             {/* Progress bar */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
+              <div className="flex-1 h-1.5 rounded-full bg-surface overflow-hidden">
                 <div
                   className="h-full rounded-full bg-[#c8b86e] transition-all duration-500 ease-out"
                   style={{
@@ -244,7 +244,7 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
                   }}
                 />
               </div>
-              <span className="text-xs text-gray-400 tabular-nums whitespace-nowrap">
+              <span className="text-xs text-ink-tertiary tabular-nums whitespace-nowrap">
                 {currentIndex + 1}/{questions.length}
               </span>
             </div>
@@ -282,7 +282,7 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
-              className="text-3xl font-bold text-gray-900 tabular-nums"
+              className="text-3xl font-bold text-ink tabular-nums"
             >
               {submitResponse.score}/{submitResponse.total}
             </motion.p>
@@ -291,7 +291,7 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.3 }}
-              className="text-gray-500 text-sm mt-1 mb-4"
+              className="text-ink-secondary text-sm mt-1 mb-4"
             >
               {Math.round((submitResponse.score / submitResponse.total) * 100)}% correct
             </motion.p>
@@ -319,7 +319,7 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
                 href="/quiz"
                 className={cn(
                   'inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-medium transition-colors',
-                  'border border-gray-200 text-gray-700 hover:bg-gray-50',
+                  'border border-subtle text-ink hover:bg-surface',
                 )}
               >
                 Knowledge Hub
@@ -340,11 +340,11 @@ export function PostArticleQuiz({ articleSlug, category }: PostArticleQuizProps)
           >
             <Trophy className="w-12 h-12 text-[#c8b86e] mb-4" />
 
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
+            <h3 className="text-xl font-bold text-ink mb-2">
               Quiz Complete!
             </h3>
 
-            <p className="text-gray-500 text-sm max-w-sm mb-6 leading-relaxed">
+            <p className="text-ink-secondary text-sm max-w-sm mb-6 leading-relaxed">
               Log in to save your score, earn XP, and track your learning progress.
             </p>
 

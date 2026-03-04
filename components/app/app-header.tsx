@@ -98,7 +98,7 @@ export function AppHeader({
           'fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-300',
           !transparent && (isWikiRoute
             ? (scrolled
-              ? 'bg-white/70 backdrop-blur-xl border-b border-gray-200/60 shadow-sm'
+              ? 'bg-white/70 backdrop-blur-xl border-b border-subtle/60 shadow-sm'
               : 'bg-transparent')
             : isMarketing
               ? (scrolled
@@ -118,7 +118,7 @@ export function AppHeader({
               href="/carve"
               className={cn(
                 "font-bold text-lg tracking-[0.2em] transition-colors",
-                isWikiRoute ? "text-gray-900 hover:text-gray-600" : "text-white hover:text-white/80"
+                isWikiRoute ? "text-ink hover:text-ink-secondary" : "text-white hover:text-white/80"
               )}
             >
               CARVE
@@ -133,15 +133,15 @@ export function AppHeader({
                   className={cn(
                     'relative px-4 py-2 text-sm font-medium transition-colors',
                     isActive(item.href)
-                      ? (isWikiRoute ? 'text-gray-900' : 'text-white')
-                      : (isWikiRoute ? 'text-gray-400 hover:text-gray-600' : 'text-white/40 hover:text-white/70')
+                      ? (isWikiRoute ? 'text-ink' : 'text-white')
+                      : (isWikiRoute ? 'text-ink-tertiary hover:text-ink-secondary' : 'text-white/40 hover:text-white/70')
                   )}
                 >
                   {item.label}
                   {isActive(item.href) && (
                     <motion.div
                       layoutId="header-indicator"
-                      className={cn("absolute bottom-0 left-4 right-4 h-px", isWikiRoute ? "bg-gray-900/50" : "bg-white/50")}
+                      className={cn("absolute bottom-0 left-4 right-4 h-px", isWikiRoute ? "bg-ink/50" : "bg-white/50")}
                       transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                     />
                   )}
@@ -157,7 +157,7 @@ export function AppHeader({
                 className={cn(
                   'p-2 rounded-lg transition-colors',
                   isWikiRoute
-                    ? 'text-gray-900 bg-gray-900/[0.06]'
+                    ? 'text-ink bg-ink/[0.06]'
                     : (path === '/' || path.startsWith('/wiki')
                       ? 'text-white bg-white/[0.08]'
                       : 'text-white/40 hover:text-white/70 hover:bg-white/[0.04]')
@@ -183,7 +183,7 @@ export function AppHeader({
                     ) : (
                       <div className={cn(
                         "h-7 w-7 rounded-full flex items-center justify-center text-[10px] font-semibold",
-                        isWikiRoute ? "bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700" : "bg-gradient-to-br from-slate-600 to-slate-800 text-white"
+                        isWikiRoute ? "bg-gradient-to-br from-gray-200 to-gray-300 text-ink" : "bg-gradient-to-br from-slate-600 to-slate-800 text-white"
                       )}>
                         {getInitials()}
                       </div>
@@ -198,10 +198,10 @@ export function AppHeader({
                       />
                       <div className={cn(
                         "absolute right-0 mt-2 w-56 rounded-xl shadow-2xl py-1 z-50",
-                        isWikiRoute ? "bg-white border border-gray-200" : "bg-surface-raised border border-white/[0.08]"
+                        isWikiRoute ? "bg-white border border-subtle" : "bg-surface-raised border border-white/[0.08]"
                       )}>
-                        <div className={cn("px-3 py-2.5 border-b", isWikiRoute ? "border-gray-100" : "border-white/[0.06]")}>
-                          <p className={cn("text-sm font-medium leading-none", isWikiRoute ? "text-gray-900" : "text-white")}>
+                        <div className={cn("px-3 py-2.5 border-b", isWikiRoute ? "border-subtle" : "border-white/[0.06]")}>
+                          <p className={cn("text-sm font-medium leading-none", isWikiRoute ? "text-ink" : "text-white")}>
                             {userName || 'User'}
                           </p>
                           <p className="text-xs text-slate-500 mt-1 leading-none">
@@ -213,7 +213,7 @@ export function AppHeader({
                           <Link
                             href="/dashboard"
                             onClick={() => setIsDropdownOpen(false)}
-                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-gray-500 hover:bg-gray-50 hover:text-gray-900" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
+                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
                           >
                             <svg className="mr-2.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                               <rect x="3" y="3" width="7" height="7" />
@@ -226,7 +226,7 @@ export function AppHeader({
                           <Link
                             href="/dashboard/profile"
                             onClick={() => setIsDropdownOpen(false)}
-                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-gray-500 hover:bg-gray-50 hover:text-gray-900" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
+                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
                           >
                             <User className="mr-2.5 h-4 w-4" />
                             Profile
@@ -234,7 +234,7 @@ export function AppHeader({
                           <Link
                             href="/dashboard/settings"
                             onClick={() => setIsDropdownOpen(false)}
-                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-gray-500 hover:bg-gray-50 hover:text-gray-900" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
+                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
                           >
                             <Settings className="mr-2.5 h-4 w-4" />
                             Settings
@@ -243,7 +243,7 @@ export function AppHeader({
 
                         {userRole === 'admin' && (
                           <>
-                            <div className={cn("border-t", isWikiRoute ? "border-gray-100" : "border-white/[0.06]")} />
+                            <div className={cn("border-t", isWikiRoute ? "border-subtle" : "border-white/[0.06]")} />
                             <Link
                               href="/admin"
                               onClick={() => setIsDropdownOpen(false)}
@@ -257,10 +257,10 @@ export function AppHeader({
                           </>
                         )}
 
-                        <div className={cn("border-t", isWikiRoute ? "border-gray-100" : "border-white/[0.06]")} />
+                        <div className={cn("border-t", isWikiRoute ? "border-subtle" : "border-white/[0.06]")} />
                         <button
                           onClick={handleLogout}
-                          className={cn("flex items-center w-full px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-gray-500 hover:bg-gray-50 hover:text-gray-900" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
+                          className={cn("flex items-center w-full px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
                         >
                           <LogOut className="mr-2.5 h-4 w-4" />
                           Logout
@@ -282,7 +282,7 @@ export function AppHeader({
                     href="/login"
                     className={cn(
                       "text-sm font-medium transition-colors px-4 py-2",
-                      isWikiRoute ? "text-gray-400 hover:text-gray-600" : "text-white/40 hover:text-white/70"
+                      isWikiRoute ? "text-ink-tertiary hover:text-ink-secondary" : "text-white/40 hover:text-white/70"
                     )}
                   >
                     Log in
@@ -296,7 +296,7 @@ export function AppHeader({
               onClick={() => setMobileOpen(!mobileOpen)}
               className={cn(
                 "md:hidden transition-colors p-2",
-                isWikiRoute ? "text-gray-500 hover:text-gray-900" : "text-white/60 hover:text-white"
+                isWikiRoute ? "text-ink-secondary hover:text-ink" : "text-white/60 hover:text-white"
               )}
               aria-label="Toggle menu"
             >

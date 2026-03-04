@@ -42,8 +42,8 @@ export default function ForgotPasswordPage() {
         <div className="w-full max-w-md space-y-6">
           {/* Logo */}
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Carve</h1>
-            <p className="mt-2 text-sm text-gray-600">
+            <h1 className="text-3xl font-bold text-ink">Carve</h1>
+            <p className="mt-2 text-sm text-ink-secondary">
               Reset your password
             </p>
           </div>
@@ -73,14 +73,14 @@ export default function ForgotPasswordPage() {
               )}
 
               <div>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-ink-secondary mb-4">
                   Enter your email address and we&apos;ll send you a link to reset
                   your password.
                 </p>
 
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium text-ink"
                 >
                   Email address
                 </label>
@@ -92,7 +92,7 @@ export default function ForgotPasswordPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-lg border border-subtle px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                   placeholder="you@example.com"
                 />
               </div>
@@ -105,7 +105,7 @@ export default function ForgotPasswordPage() {
                 {loading ? 'Sending...' : 'Send reset link'}
               </button>
 
-              <p className="text-center text-sm text-gray-600">
+              <p className="text-center text-sm text-ink-secondary">
                 <Link
                   href="/login"
                   className="font-medium text-blue-600 hover:text-blue-500"

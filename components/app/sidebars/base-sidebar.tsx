@@ -46,7 +46,7 @@ export function BaseSidebar({ navigationGroups, ariaLabel }: BaseSidebarProps) {
             {/* Group divider - minimal line */}
             <div className="flex items-center justify-center mb-1 h-4">
               <div className={cn(
-                "h-px bg-gray-300 transition-all duration-300",
+                "h-px bg-ink-muted transition-all duration-300",
                 isHovered ? "w-full mx-2" : "w-3"
               )} />
             </div>
@@ -64,8 +64,8 @@ export function BaseSidebar({ navigationGroups, ariaLabel }: BaseSidebarProps) {
                     "group flex items-center justify-center rounded-md mb-0.5 transition-all duration-200",
                     isHovered ? "h-8 px-2 justify-start" : "h-9 w-9 mx-auto",
                     isActive
-                      ? "bg-white text-gray-900 shadow-sm"
-                      : "text-gray-500 hover:bg-gray-200/60 hover:text-gray-900"
+                      ? "bg-white text-ink shadow-sm"
+                      : "text-ink-secondary hover:bg-subtle/60 hover:text-ink"
                   )}
                 >
                   {IconComponent && (
@@ -74,8 +74,8 @@ export function BaseSidebar({ navigationGroups, ariaLabel }: BaseSidebarProps) {
                         "shrink-0 transition-all duration-200",
                         isHovered ? "h-4 w-4" : "h-5 w-5",
                         isActive
-                          ? "text-gray-700"
-                          : "text-gray-500 group-hover:text-gray-700"
+                          ? "text-ink"
+                          : "text-ink-secondary group-hover:text-ink"
                       )}
                     />
                   )}

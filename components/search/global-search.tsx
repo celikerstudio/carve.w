@@ -87,7 +87,7 @@ export function GlobalSearch({ className, variant = "compact", autoFocus = false
         {!isOpen ? (
           <button
             onClick={() => setIsOpen(true)}
-            className="p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
+            className="p-2 text-ink-secondary hover:text-ink hover:bg-surface rounded-md transition-colors"
             aria-label="Search"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,8 +96,8 @@ export function GlobalSearch({ className, variant = "compact", autoFocus = false
           </button>
         ) : (
           <div className="relative">
-            <div className="flex items-center bg-white rounded-md shadow-sm border border-gray-200">
-              <svg className="w-5 h-5 ml-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center bg-white rounded-md shadow-sm border border-subtle">
+              <svg className="w-5 h-5 ml-3 text-ink-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <input
@@ -115,7 +115,7 @@ export function GlobalSearch({ className, variant = "compact", autoFocus = false
                   setQuery("");
                   setResults([]);
                 }}
-                className="p-2 text-gray-400 hover:text-gray-600"
+                className="p-2 text-ink-tertiary hover:text-ink-secondary"
                 aria-label="Close search"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@ export function GlobalSearch({ className, variant = "compact", autoFocus = false
 
             {/* Results dropdown */}
             {isOpen && (query || results.length > 0) && (
-              <div className="absolute top-full mt-2 left-0 right-0 bg-white rounded-md shadow-lg border border-gray-200 z-50">
+              <div className="absolute top-full mt-2 left-0 right-0 bg-white rounded-md shadow-lg border border-subtle z-50">
                 <SearchResults results={results} isLoading={isLoading} query={query} />
               </div>
             )}
@@ -140,8 +140,8 @@ export function GlobalSearch({ className, variant = "compact", autoFocus = false
   return (
     <div className={className}>
       <div className="relative max-w-2xl mx-auto">
-        <div className="flex items-center bg-white rounded-lg shadow-lg border border-gray-300">
-          <svg className="w-6 h-6 ml-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="flex items-center bg-white rounded-lg shadow-lg border border-subtle">
+          <svg className="w-6 h-6 ml-4 text-ink-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
           <input
@@ -156,7 +156,7 @@ export function GlobalSearch({ className, variant = "compact", autoFocus = false
 
         {/* Results overlay */}
         {(query || results.length > 0) && (
-          <div className="absolute top-full mt-2 left-0 right-0 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+          <div className="absolute top-full mt-2 left-0 right-0 bg-white rounded-lg shadow-xl border border-subtle z-50">
             <SearchResults results={results} isLoading={isLoading} query={query} />
           </div>
         )}

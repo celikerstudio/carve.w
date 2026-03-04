@@ -8,10 +8,10 @@ export default function UpdatesPage() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-5xl font-bold text-ink mb-4">
             Updates & Changelog
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-ink-secondary max-w-2xl mx-auto">
             Stay up to date with the latest features, improvements, and fixes.
           </p>
         </div>
@@ -74,13 +74,13 @@ export default function UpdatesPage() {
 
         {/* Subscribe CTA */}
         <div className="mt-16 text-center p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
+          <h3 className="text-2xl font-bold text-ink mb-3">
             Want update notifications?
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-ink-secondary mb-6">
             Follow our progress and be the first to know about new features.
           </p>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-ink-secondary">
             RSS feed and email notifications coming soon
           </div>
         </div>
@@ -115,16 +115,16 @@ function UpdateItem({
   };
 
   return (
-    <div className="relative pl-8 pb-8 border-l-2 border-gray-200 last:border-l-0 last:pb-0">
+    <div className="relative pl-8 pb-8 border-l-2 border-subtle last:border-l-0 last:pb-0">
       {/* Timeline dot */}
       <div className="absolute left-0 top-0 -translate-x-[9px] w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow" />
 
-      <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+      <div className="bg-white rounded-xl p-6 shadow-sm border border-subtle hover:shadow-md transition-shadow">
         {/* Header */}
         <div className="flex items-start justify-between gap-4 mb-4">
           <div>
-            <div className="text-sm text-gray-500 mb-1">{date}</div>
-            <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
+            <div className="text-sm text-ink-secondary mb-1">{date}</div>
+            <h3 className="text-2xl font-bold text-ink">{title}</h3>
           </div>
           <span className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap ${categoryStyles[category]}`}>
             {categoryLabels[category]}
@@ -132,7 +132,7 @@ function UpdateItem({
         </div>
 
         {/* Description */}
-        <p className="text-gray-600 mb-4">
+        <p className="text-ink-secondary mb-4">
           {description}
         </p>
 
@@ -140,7 +140,7 @@ function UpdateItem({
         {highlights.length > 0 && (
           <ul className="space-y-2">
             {highlights.map((highlight, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
+              <li key={index} className="flex items-start gap-2 text-sm text-ink">
                 <span className="text-blue-600 mt-0.5">•</span>
                 {highlight}
               </li>

@@ -66,11 +66,11 @@ export default function HowItWorksWithPhone() {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 bg-gray-900">
+    <section className="py-16 md:py-24 bg-surface">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         {/* Header */}
         <div className="text-center mb-12 md:mb-20">
-          <p className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-2">
+          <p className="text-sm font-medium text-ink-tertiary uppercase tracking-wider mb-2">
             How it works
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-white">
@@ -83,7 +83,7 @@ export default function HowItWorksWithPhone() {
           {/* Left: Timeline */}
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gray-700" />
+            <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-subtle" />
 
             {/* Animated progress line */}
             <motion.div
@@ -156,7 +156,7 @@ function TimelineStep({ step, index, activeStep }: TimelineStepProps) {
     >
       {/* Step indicator */}
       <div className={`absolute left-0 md:left-2 top-0 w-8 h-8 rounded-full border-2 flex items-center justify-center z-10 transition-colors duration-300 ${
-        isActive ? 'bg-blue-500 border-blue-400' : 'bg-gray-800 border-gray-600'
+        isActive ? 'bg-blue-500 border-blue-400' : 'bg-surface-raised border-gray-600'
       }`}>
         <div className={`w-2 h-2 rounded-full transition-transform duration-300 ${
           isActive ? 'bg-white scale-150' : 'bg-blue-500 scale-100'
@@ -167,23 +167,23 @@ function TimelineStep({ step, index, activeStep }: TimelineStepProps) {
       <div className="space-y-3">
         <div className="flex items-center gap-3">
           <span className={`text-sm font-mono transition-colors duration-300 ${
-            isActive ? 'text-blue-400' : 'text-gray-500'
+            isActive ? 'text-blue-400' : 'text-ink-tertiary'
           }`}>{step.number}</span>
           <div className={`h-8 w-8 rounded-lg flex items-center justify-center transition-colors duration-300 ${
-            isActive ? 'bg-blue-500/20' : 'bg-gray-800/50'
+            isActive ? 'bg-blue-500/20' : 'bg-surface-raised/50'
           }`}>
             <Icon className={`h-4 w-4 transition-colors duration-300 ${
-              isActive ? 'text-blue-400' : 'text-gray-500'
+              isActive ? 'text-blue-400' : 'text-ink-tertiary'
             }`} />
           </div>
         </div>
         <h3 className={`text-xl md:text-2xl font-semibold transition-colors duration-300 ${
-          isActive ? 'text-white' : 'text-gray-400'
+          isActive ? 'text-white' : 'text-ink-tertiary'
         }`}>
           {step.title}
         </h3>
         <p className={`text-base md:text-lg max-w-md transition-colors duration-300 ${
-          isActive ? 'text-gray-300' : 'text-gray-500'
+          isActive ? 'text-ink-secondary' : 'text-ink-tertiary'
         }`}>
           {step.description}
         </p>
@@ -201,7 +201,7 @@ function PhoneMockup({ activeStep, isMobile }: PhoneMockupProps) {
   return (
     <div className={`relative ${isMobile ? 'w-full max-w-xs mx-auto' : 'w-full max-w-xs mx-auto'}`}>
       {/* iPhone Frame */}
-      <div className="relative bg-gray-900 rounded-[3rem] p-[0.35rem] shadow-2xl shadow-black/50 ring-1 ring-gray-700">
+      <div className="relative bg-surface rounded-[3rem] p-[0.35rem] shadow-2xl shadow-black/50 ring-1 ring-gray-700">
         {/* Screen */}
         <div className="bg-black rounded-[2.6rem] overflow-hidden aspect-[9/19.5] relative">
           {/* Screen content layers */}
@@ -251,7 +251,7 @@ function PhoneScreen({ step, activeStep }: PhoneScreenProps) {
 function ScreenWorkoutLog() {
   return (
     <div className="h-full bg-gradient-to-b from-gray-900 to-black p-4 pt-12">
-      <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">Today's Workout</p>
+      <p className="text-[10px] text-ink-tertiary uppercase tracking-wider mb-1">Today's Workout</p>
       <h4 className="text-white font-semibold text-lg mb-4">Push Day 💪</h4>
 
       <div className="space-y-3">
@@ -263,7 +263,7 @@ function ScreenWorkoutLog() {
         ].map((exercise, i) => (
           <div
             key={i}
-            className={`p-3 rounded-xl ${exercise.active ? 'bg-blue-500/20 ring-1 ring-blue-500/50' : exercise.done ? 'bg-gray-800/50' : 'bg-gray-800/30'}`}
+            className={`p-3 rounded-xl ${exercise.active ? 'bg-blue-500/20 ring-1 ring-blue-500/50' : exercise.done ? 'bg-surface-raised/50' : 'bg-surface-raised/30'}`}
           >
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-2">
@@ -274,7 +274,7 @@ function ScreenWorkoutLog() {
                 )}
                 <div>
                   <p className="text-white text-xs font-medium">{exercise.name}</p>
-                  <p className="text-gray-400 text-[10px]">{exercise.sets} • {exercise.weight}</p>
+                  <p className="text-ink-tertiary text-[10px]">{exercise.sets} • {exercise.weight}</p>
                 </div>
               </div>
             </div>
@@ -300,30 +300,30 @@ function ScreenXPProgress() {
           <span className="text-2xl font-bold text-white">24</span>
         </div>
         <p className="text-white font-semibold">Level 24</p>
-        <p className="text-gray-400 text-xs">Iron Warrior</p>
+        <p className="text-ink-tertiary text-xs">Iron Warrior</p>
       </div>
 
       <div className="mb-6">
         <div className="flex justify-between text-xs mb-1">
-          <span className="text-gray-400">Progress to Level 25</span>
+          <span className="text-ink-tertiary">Progress to Level 25</span>
           <span className="text-blue-400">2,450 / 3,000 XP</span>
         </div>
-        <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+        <div className="h-2 bg-surface-raised rounded-full overflow-hidden">
           <div className="h-full w-[82%] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
         </div>
       </div>
 
-      <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-2">Today's XP</p>
+      <p className="text-[10px] text-ink-tertiary uppercase tracking-wider mb-2">Today's XP</p>
       <div className="space-y-2">
         {[
           { label: "Push workout completed", xp: "+250", icon: Dumbbell },
           { label: "Daily login streak", xp: "+50", icon: Flame },
           { label: "New PR: Bench Press", xp: "+100", icon: Trophy },
         ].map((item, i) => (
-          <div key={i} className="flex items-center justify-between p-2 bg-gray-800/50 rounded-lg">
+          <div key={i} className="flex items-center justify-between p-2 bg-surface-raised/50 rounded-lg">
             <div className="flex items-center gap-2">
-              <item.icon className="w-3.5 h-3.5 text-gray-400" />
-              <span className="text-gray-300 text-xs">{item.label}</span>
+              <item.icon className="w-3.5 h-3.5 text-ink-tertiary" />
+              <span className="text-ink-secondary text-xs">{item.label}</span>
             </div>
             <span className="text-green-400 text-xs font-medium">{item.xp}</span>
           </div>
@@ -336,7 +336,7 @@ function ScreenXPProgress() {
 function ScreenAchievements() {
   return (
     <div className="h-full bg-gradient-to-b from-gray-900 to-black p-4 pt-12">
-      <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">Achievements</p>
+      <p className="text-[10px] text-ink-tertiary uppercase tracking-wider mb-1">Achievements</p>
       <h4 className="text-white font-semibold text-lg mb-4">12 / 50 Unlocked 🏆</h4>
 
       <div className="grid grid-cols-3 gap-2 mb-4">
@@ -350,10 +350,10 @@ function ScreenAchievements() {
         ].map((badge, i) => (
           <div
             key={i}
-            className={`p-3 rounded-xl text-center ${badge.unlocked ? 'bg-gradient-to-br from-yellow-500/20 to-orange-500/20' : 'bg-gray-800/30 opacity-50'}`}
+            className={`p-3 rounded-xl text-center ${badge.unlocked ? 'bg-gradient-to-br from-yellow-500/20 to-orange-500/20' : 'bg-surface-raised/30 opacity-50'}`}
           >
             <div className="text-2xl mb-1">{badge.emoji}</div>
-            <p className="text-[9px] text-gray-300">{badge.label}</p>
+            <p className="text-[9px] text-ink-secondary">{badge.label}</p>
           </div>
         ))}
       </div>
@@ -364,7 +364,7 @@ function ScreenAchievements() {
           <span className="text-3xl">🏋️</span>
           <div>
             <p className="text-white font-medium text-sm">1000kg Club</p>
-            <p className="text-gray-400 text-[10px]">Lift 1000kg total in a single workout</p>
+            <p className="text-ink-tertiary text-[10px]">Lift 1000kg total in a single workout</p>
           </div>
         </div>
       </div>
@@ -375,7 +375,7 @@ function ScreenAchievements() {
 function ScreenLeaderboard() {
   return (
     <div className="h-full bg-gradient-to-b from-gray-900 to-black p-4 pt-12">
-      <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">Leaderboard</p>
+      <p className="text-[10px] text-ink-tertiary uppercase tracking-wider mb-1">Leaderboard</p>
       <h4 className="text-white font-semibold text-lg mb-4">This Week 🏆</h4>
 
       <div className="space-y-2">
@@ -388,16 +388,16 @@ function ScreenLeaderboard() {
         ].map((user, i) => (
           <div
             key={i}
-            className={`flex items-center justify-between p-3 rounded-xl ${user.isYou ? 'bg-blue-500/20 ring-1 ring-blue-500/50' : 'bg-gray-800/50'}`}
+            className={`flex items-center justify-between p-3 rounded-xl ${user.isYou ? 'bg-blue-500/20 ring-1 ring-blue-500/50' : 'bg-surface-raised/50'}`}
           >
             <div className="flex items-center gap-3">
               <span className="text-lg">{user.avatar}</span>
               <div>
                 <p className={`text-sm font-medium ${user.isYou ? 'text-blue-400' : 'text-white'}`}>{user.name}</p>
-                <p className="text-gray-400 text-[10px]">#{user.rank} this week</p>
+                <p className="text-ink-tertiary text-[10px]">#{user.rank} this week</p>
               </div>
             </div>
-            <span className="text-gray-300 text-xs font-medium">{user.xp} XP</span>
+            <span className="text-ink-secondary text-xs font-medium">{user.xp} XP</span>
           </div>
         ))}
       </div>

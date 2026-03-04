@@ -210,8 +210,8 @@ export default function SupportPage() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl">
             <HelpCircle className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900">Support Center</h1>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold tracking-tight text-ink">Support Center</h1>
+          <p className="text-xl text-ink-secondary max-w-2xl mx-auto">
             Vind antwoorden op veelgestelde vragen of neem contact op met ons team.
           </p>
         </div>
@@ -220,31 +220,31 @@ export default function SupportPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <a
             href="mailto:support@carve.wiki"
-            className="block p-6 bg-gray-50 border border-gray-200 rounded-xl hover:bg-gray-100 hover:border-gray-300 transition-all"
+            className="block p-6 bg-surface border border-subtle rounded-xl hover:bg-surface hover:border-subtle transition-all"
           >
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
                 <Mail className="w-6 h-6 text-blue-600" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900">Email Support</h3>
-                <p className="text-gray-600 text-sm">support@carve.wiki</p>
-                <span className="inline-block mt-2 px-2 py-1 bg-gray-200 text-gray-700 text-xs rounded-md">
+                <h3 className="font-semibold text-ink">Email Support</h3>
+                <p className="text-ink-secondary text-sm">support@carve.wiki</p>
+                <span className="inline-block mt-2 px-2 py-1 bg-subtle text-ink text-xs rounded-md">
                   Reactie binnen 24-48 uur
                 </span>
               </div>
             </div>
           </a>
 
-          <div className="p-6 bg-gray-50 border border-gray-200 rounded-xl">
+          <div className="p-6 bg-surface border border-subtle rounded-xl">
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
                 <MessageSquare className="w-6 h-6 text-purple-600" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900">In-App Support</h3>
-                <p className="text-gray-600 text-sm">Settings → Help → Contact</p>
-                <span className="inline-block mt-2 px-2 py-1 bg-gray-200 text-gray-700 text-xs rounded-md">
+                <h3 className="font-semibold text-ink">In-App Support</h3>
+                <p className="text-ink-secondary text-sm">Settings → Help → Contact</p>
+                <span className="inline-block mt-2 px-2 py-1 bg-subtle text-ink text-xs rounded-md">
                   Direct vanuit de Carve app
                 </span>
               </div>
@@ -253,9 +253,9 @@ export default function SupportPage() {
         </div>
 
         {/* FAQ Section */}
-        <div className="p-8 bg-gray-50 border border-gray-200 rounded-xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Veelgestelde Vragen</h2>
-          <p className="text-gray-500 mb-6">
+        <div className="p-8 bg-surface border border-subtle rounded-xl">
+          <h2 className="text-2xl font-bold text-ink mb-2">Veelgestelde Vragen</h2>
+          <p className="text-ink-secondary mb-6">
             Selecteer een categorie om de bijbehorende vragen te bekijken.
           </p>
 
@@ -265,7 +265,7 @@ export default function SupportPage() {
                 <TabsTrigger
                   key={category.id}
                   value={category.id}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 bg-white text-gray-700 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:border-blue-600"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-subtle bg-white text-ink data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:border-blue-600"
                 >
                   {category.icon}
                   <span className="hidden sm:inline">{category.title}</span>
@@ -277,11 +277,11 @@ export default function SupportPage() {
               <TabsContent key={category.id} value={category.id}>
                 <Accordion type="single" collapsible className="w-full">
                   {category.faqs.map((faq, index) => (
-                    <AccordionItem key={index} value={`item-${index}`} className="border-gray-200">
-                      <AccordionTrigger className="text-left hover:no-underline text-gray-900">
+                    <AccordionItem key={index} value={`item-${index}`} className="border-subtle">
+                      <AccordionTrigger className="text-left hover:no-underline text-ink">
                         {faq.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-gray-600">
+                      <AccordionContent className="text-ink-secondary">
                         {faq.answer}
                       </AccordionContent>
                     </AccordionItem>
@@ -293,9 +293,9 @@ export default function SupportPage() {
         </div>
 
         {/* Contact Form */}
-        <div id="contact" className="p-8 bg-gray-50 border border-gray-200 rounded-xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Contact Support</h2>
-          <p className="text-gray-500 mb-6">
+        <div id="contact" className="p-8 bg-surface border border-subtle rounded-xl">
+          <h2 className="text-2xl font-bold text-ink mb-2">Contact Support</h2>
+          <p className="text-ink-secondary mb-6">
             Kun je het antwoord niet vinden? Stuur ons een bericht.
           </p>
 
@@ -313,18 +313,18 @@ export default function SupportPage() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-gray-700">Je Naam</Label>
+                  <Label htmlFor="name" className="text-ink">Je Naam</Label>
                   <Input
                     id="name"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Jan Jansen"
-                    className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-400"
+                    className="bg-white border-subtle text-ink placeholder:text-ink-tertiary"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-gray-700">E-mailadres</Label>
+                  <Label htmlFor="email" className="text-ink">E-mailadres</Label>
                   <Input
                     type="email"
                     id="email"
@@ -332,18 +332,18 @@ export default function SupportPage() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="jan@voorbeeld.nl"
-                    className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-400"
+                    className="bg-white border-subtle text-ink placeholder:text-ink-tertiary"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="type" className="text-gray-700">Waar kunnen we mee helpen?</Label>
+                <Label htmlFor="type" className="text-ink">Waar kunnen we mee helpen?</Label>
                 <Select
                   value={formData.type}
                   onValueChange={(value) => setFormData({ ...formData, type: value })}
                 >
-                  <SelectTrigger className="bg-white border-gray-300 text-gray-900">
+                  <SelectTrigger className="bg-white border-subtle text-ink">
                     <SelectValue placeholder="Selecteer een onderwerp" />
                   </SelectTrigger>
                   <SelectContent className="bg-white">
@@ -357,7 +357,7 @@ export default function SupportPage() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-gray-700">Je Bericht</Label>
+                <Label htmlFor="message" className="text-ink">Je Bericht</Label>
                 <Textarea
                   id="message"
                   required
@@ -365,7 +365,7 @@ export default function SupportPage() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Beschrijf je vraag of probleem zo gedetailleerd mogelijk..."
-                  className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 resize-none"
+                  className="bg-white border-subtle text-ink placeholder:text-ink-tertiary resize-none"
                 />
               </div>
 
@@ -400,22 +400,22 @@ export default function SupportPage() {
         </div>
 
         {/* App Info */}
-        <div className="p-8 bg-gray-50 border border-gray-200 rounded-xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Over Carve</h2>
-          <p className="text-gray-500 mb-6">
+        <div className="p-8 bg-surface border border-subtle rounded-xl">
+          <h2 className="text-2xl font-bold text-ink mb-2">Over Carve</h2>
+          <p className="text-ink-secondary mb-6">
             Technische specificaties en app features.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-3">
-              <h3 className="font-semibold text-gray-900">Systeemvereisten</h3>
-              <ul className="text-gray-600 text-sm space-y-2">
+              <h3 className="font-semibold text-ink">Systeemvereisten</h3>
+              <ul className="text-ink-secondary text-sm space-y-2">
                 <li className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 bg-gray-200 text-gray-700 text-xs rounded">iOS</span>
+                  <span className="px-2 py-0.5 bg-subtle text-ink text-xs rounded">iOS</span>
                   iOS 17.0 of hoger
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 bg-gray-200 text-gray-700 text-xs rounded">Devices</span>
+                  <span className="px-2 py-0.5 bg-subtle text-ink text-xs rounded">Devices</span>
                   iPhone en iPad
                 </li>
                 <li className="flex items-center gap-2">
@@ -425,22 +425,22 @@ export default function SupportPage() {
               </ul>
             </div>
             <div className="space-y-3">
-              <h3 className="font-semibold text-gray-900">Features</h3>
-              <ul className="text-gray-600 text-sm space-y-2">
+              <h3 className="font-semibold text-ink">Features</h3>
+              <ul className="text-ink-secondary text-sm space-y-2">
                 <li className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 bg-gray-200 text-gray-700 text-xs rounded">130+</span>
+                  <span className="px-2 py-0.5 bg-subtle text-ink text-xs rounded">130+</span>
                   Oefeningen
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 bg-gray-200 text-gray-700 text-xs rounded">AI</span>
+                  <span className="px-2 py-0.5 bg-subtle text-ink text-xs rounded">AI</span>
                   Voedingsanalyse
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 bg-gray-200 text-gray-700 text-xs rounded">Health</span>
+                  <span className="px-2 py-0.5 bg-subtle text-ink text-xs rounded">Health</span>
                   HealthKit integratie
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 bg-gray-200 text-gray-700 text-xs rounded">Offline</span>
+                  <span className="px-2 py-0.5 bg-subtle text-ink text-xs rounded">Offline</span>
                   30 dagen offline modus
                 </li>
               </ul>
@@ -449,29 +449,29 @@ export default function SupportPage() {
         </div>
 
         {/* Additional Resources */}
-        <div className="p-8 bg-gray-50 border border-gray-200 rounded-xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Meer Informatie</h2>
+        <div className="p-8 bg-surface border border-subtle rounded-xl">
+          <h2 className="text-2xl font-bold text-ink mb-6">Meer Informatie</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <a
               href="/privacy"
-              className="p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
+              className="p-4 bg-white border border-subtle rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
             >
-              <h3 className="font-medium text-gray-900">Privacy Policy</h3>
-              <p className="text-gray-500 text-sm mt-1">Hoe we je data beschermen</p>
+              <h3 className="font-medium text-ink">Privacy Policy</h3>
+              <p className="text-ink-secondary text-sm mt-1">Hoe we je data beschermen</p>
             </a>
             <a
               href="/terms"
-              className="p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
+              className="p-4 bg-white border border-subtle rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
             >
-              <h3 className="font-medium text-gray-900">Gebruiksvoorwaarden</h3>
-              <p className="text-gray-500 text-sm mt-1">Terms of Service</p>
+              <h3 className="font-medium text-ink">Gebruiksvoorwaarden</h3>
+              <p className="text-ink-secondary text-sm mt-1">Terms of Service</p>
             </a>
             <a
               href="/"
-              className="p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
+              className="p-4 bg-white border border-subtle rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
             >
-              <h3 className="font-medium text-gray-900">Fitness Wiki</h3>
-              <p className="text-gray-500 text-sm mt-1">Oefeningen en tips</p>
+              <h3 className="font-medium text-ink">Fitness Wiki</h3>
+              <p className="text-ink-secondary text-sm mt-1">Oefeningen en tips</p>
             </a>
           </div>
         </div>

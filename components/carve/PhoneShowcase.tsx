@@ -13,7 +13,7 @@ function PhoneFrame({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="w-[220px] md:w-[260px] flex-shrink-0 snap-center">
       {/* Outer bezel */}
-      <div className="relative bg-gray-900 rounded-[2.5rem] p-[3px] shadow-2xl shadow-black/50 ring-1 ring-white/[0.08]">
+      <div className="relative bg-surface rounded-[2.5rem] p-[3px] shadow-2xl shadow-black/50 ring-1 ring-white/[0.08]">
         {/* Screen */}
         <div className="bg-black rounded-[2.3rem] overflow-hidden aspect-[9/19.5] relative">
           <Image

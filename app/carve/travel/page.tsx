@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Globe, CalendarDays, Heart } from 'lucide-react';
 import { TravelCard } from '@/components/carve/TravelCard';
 import { CarveFooter } from '@/components/carve/CarveFooter';

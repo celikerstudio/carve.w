@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Dumbbell, TrendingUp, Trophy, Users, CheckCircle2, Play, Flame, Target } from "lucide-react";
 
 const STEPS = [

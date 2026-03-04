@@ -5,13 +5,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-surface text-ink-secondary">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
             <h3 className="text-white font-bold text-2xl mb-4">Carve</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-ink-tertiary text-sm leading-relaxed">
               The fitness app that gamifies your progress. Track workouts, earn XP, compete with friends.
             </p>
           </div>
@@ -114,7 +114,7 @@ export function Footer() {
                 <Mail className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-ink-tertiary">
               Questions? Email us at<br />
               <a href="mailto:hello@carve.wiki" className="text-blue-400 hover:text-blue-300">
                 hello@carve.wiki
@@ -124,8 +124,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-500">
+        <div className="pt-8 border-t border-subtle flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-ink-secondary">
             © {currentYear} Carve. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">

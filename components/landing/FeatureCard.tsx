@@ -12,9 +12,9 @@ export function FeatureCard({ icon: Icon, title, description, screenshot }: Prop
     <div className="bg-white rounded-lg border p-6 hover:shadow-lg transition-shadow">
       <Icon className="w-12 h-12 text-blue-600 mb-4" />
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-ink-secondary">{description}</p>
       {screenshot && (
-        <div className="mt-4 aspect-video bg-gray-100 rounded" />
+        <div className="mt-4 aspect-video bg-surface rounded" />
       )}
     </div>
   );

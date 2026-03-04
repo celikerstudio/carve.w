@@ -30,7 +30,7 @@ export function BaseSidebar({ navigationGroups, ariaLabel }: BaseSidebarProps) {
 
   return (
     <div
-      className="hidden lg:flex lg:flex-col h-full shrink-0 transition-all duration-300 ease-in-out bg-[#ececf1]"
+      className="hidden lg:flex lg:flex-col h-full shrink-0 transition-all duration-300 ease-in-out bg-surface"
       style={{
         width: isHovered ? "180px" : "52px",
         zIndex: 45,

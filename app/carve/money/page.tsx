@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Receipt, PiggyBank, TrendingUp } from 'lucide-react';
 import { MoneyCard } from '@/components/carve/MoneyCard';
 import { CarveFooter } from '@/components/carve/CarveFooter';

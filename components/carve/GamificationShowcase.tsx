@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Flame, Target } from 'lucide-react';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 

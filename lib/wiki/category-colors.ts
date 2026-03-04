@@ -1,5 +1,5 @@
 export const categoryColors = {
-  'nutrition': {
+  'Nutrition': {
     name: 'Emerald',
     tw: 'emerald',
     hex: '#10b981',
@@ -8,9 +8,12 @@ export const categoryColors = {
     border: 'border-emerald-500/20',
     borderHover: 'hover:border-emerald-500/30',
     text: 'text-emerald-400',
+    textLight: 'text-emerald-600',
+    bgLight: 'bg-emerald-50',
+    borderLight: 'border-emerald-200',
     shadow: 'hover:shadow-[0_8px_30px_rgba(16,185,129,0.15)]',
   },
-  'exercise-science': {
+  'Training': {
     name: 'Blue',
     tw: 'blue',
     hex: '#3b82f6',
@@ -19,9 +22,12 @@ export const categoryColors = {
     border: 'border-blue-500/20',
     borderHover: 'hover:border-blue-500/30',
     text: 'text-blue-400',
+    textLight: 'text-blue-600',
+    bgLight: 'bg-blue-50',
+    borderLight: 'border-blue-200',
     shadow: 'hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)]',
   },
-  'physiology': {
+  'Supplements': {
     name: 'Purple',
     tw: 'purple',
     hex: '#a855f7',
@@ -30,20 +36,12 @@ export const categoryColors = {
     border: 'border-purple-500/20',
     borderHover: 'hover:border-purple-500/30',
     text: 'text-purple-400',
+    textLight: 'text-purple-600',
+    bgLight: 'bg-purple-50',
+    borderLight: 'border-purple-200',
     shadow: 'hover:shadow-[0_8px_30px_rgba(168,85,247,0.15)]',
   },
-  'training-methods': {
-    name: 'Amber',
-    tw: 'amber',
-    hex: '#f59e0b',
-    bg: 'bg-amber-500/10',
-    bgHover: 'hover:bg-amber-500/15',
-    border: 'border-amber-500/20',
-    borderHover: 'hover:border-amber-500/30',
-    text: 'text-amber-400',
-    shadow: 'hover:shadow-[0_8px_30px_rgba(245,158,11,0.15)]',
-  },
-  'psychology': {
+  'Recovery': {
     name: 'Cyan',
     tw: 'cyan',
     hex: '#06b6d4',
@@ -52,9 +50,40 @@ export const categoryColors = {
     border: 'border-cyan-500/20',
     borderHover: 'hover:border-cyan-500/30',
     text: 'text-cyan-400',
+    textLight: 'text-cyan-600',
+    bgLight: 'bg-cyan-50',
+    borderLight: 'border-cyan-200',
     shadow: 'hover:shadow-[0_8px_30px_rgba(6,182,212,0.15)]',
   },
-  'injury-health': {
+  'Mindset': {
+    name: 'Amber',
+    tw: 'amber',
+    hex: '#f59e0b',
+    bg: 'bg-amber-500/10',
+    bgHover: 'hover:bg-amber-500/15',
+    border: 'border-amber-500/20',
+    borderHover: 'hover:border-amber-500/30',
+    text: 'text-amber-400',
+    textLight: 'text-amber-600',
+    bgLight: 'bg-amber-50',
+    borderLight: 'border-amber-200',
+    shadow: 'hover:shadow-[0_8px_30px_rgba(245,158,11,0.15)]',
+  },
+  'Money': {
+    name: 'Green',
+    tw: 'green',
+    hex: '#22c55e',
+    bg: 'bg-green-500/10',
+    bgHover: 'hover:bg-green-500/15',
+    border: 'border-green-500/20',
+    borderHover: 'hover:border-green-500/30',
+    text: 'text-green-400',
+    textLight: 'text-green-600',
+    bgLight: 'bg-green-50',
+    borderLight: 'border-green-200',
+    shadow: 'hover:shadow-[0_8px_30px_rgba(34,197,94,0.15)]',
+  },
+  'Travel': {
     name: 'Rose',
     tw: 'rose',
     hex: '#f43f5e',
@@ -63,6 +92,9 @@ export const categoryColors = {
     border: 'border-rose-500/20',
     borderHover: 'hover:border-rose-500/30',
     text: 'text-rose-400',
+    textLight: 'text-rose-600',
+    bgLight: 'bg-rose-50',
+    borderLight: 'border-rose-200',
     shadow: 'hover:shadow-[0_8px_30px_rgba(244,63,94,0.15)]',
   },
 } as const;
@@ -70,5 +102,7 @@ export const categoryColors = {
 export type WikiCategory = keyof typeof categoryColors;
 
 export function getCategoryColor(category: string) {
-  return categoryColors[category as WikiCategory] || categoryColors['exercise-science'];
+  // Support both lowercase slugs (from URLs) and capitalized names (from DB)
+  const capitalized = category.charAt(0).toUpperCase() + category.slice(1).toLowerCase();
+  return categoryColors[category as WikiCategory] || categoryColors[capitalized as WikiCategory] || categoryColors['Training'];
 }

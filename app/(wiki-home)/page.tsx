@@ -11,28 +11,43 @@ async function getCategoryCounts() {
 
   const counts: Record<string, number> = {};
   data?.forEach((article) => {
-    counts[article.category] = (counts[article.category] || 0) + 1;
+    // Map DB category names to lowercase slugs for URL matching
+    const slug = article.category.toLowerCase();
+    counts[slug] = (counts[slug] || 0) + 1;
   });
   return counts;
 }
 
+async function getLatestArticles() {
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from('wiki_articles')
+    .select('slug, title, category, summary, image_url, evidence_rating, view_count, created_at, content_html')
+    .eq('is_published', true)
+    .order('created_at', { ascending: false })
+    .limit(6);
+  return data || [];
+}
+
 export const metadata = {
-  title: 'Carve Wiki - Evidence-Based Fitness Encyclopedia',
-  description: 'Comprehensive, evidence-based fitness knowledge.',
+  title: 'Carve Wiki - Self-Improvement Knowledge Base',
+  description: 'Evidence-based knowledge on health, fitness, finance, and personal growth.',
   openGraph: {
-    title: 'Carve Wiki - Evidence-Based Fitness Encyclopedia',
-    description: 'Comprehensive, evidence-based fitness knowledge across 6 domains.',
+    title: 'Carve Wiki - Self-Improvement Knowledge Base',
+    description: 'Evidence-based knowledge on health, fitness, finance, and personal growth.',
   }
 };
 
 export default async function WikiPage() {
-  const counts = await getCategoryCounts();
-  const totalArticles = Object.values(counts).reduce((a, b) => a + b, 0);
+  const [counts, latestArticles] = await Promise.all([
+    getCategoryCounts(),
+    getLatestArticles(),
+  ]);
 
   return (
     <WikiHomeContent
       counts={counts}
-      totalArticles={totalArticles}
+      latestArticles={latestArticles}
       popularToday={<PopularToday />}
     />
   );

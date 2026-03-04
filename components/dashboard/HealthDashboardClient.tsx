@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { HealthStatCard } from "@/components/dashboard/widgets/HealthStatCard"
 import { WorldRankingCard } from "@/components/dashboard/widgets/WorldRankingCard"
 import { ChallengesCard } from "@/components/dashboard/widgets/ChallengesCard"

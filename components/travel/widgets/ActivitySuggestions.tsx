@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useMemo } from "react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { TravelCard } from "@/components/travel/shared"
 import { getSuggestionsForDestination } from "@/lib/travel/city-suggestions"
 import type { TripActivity } from "@/lib/ai/travel-schemas"

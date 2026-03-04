@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { formatDistanceToNow } from 'date-fns';
 import { getCategoryColor } from '@/lib/wiki/category-colors';
-import { ScrollReveal } from '@/components/ui/scroll-reveal';
+import { estimateReadTime } from '@/lib/wiki/read-time';
 import { EvidenceRating } from './EvidenceRating';
 import { TableOfContents } from './TableOfContents';
 import { SourcesList } from './SourcesList';
@@ -9,6 +10,8 @@ import { RelatedArticles } from './RelatedArticles';
 import { CitationEnhancer } from './CitationEnhancer';
 import { ExpertReviewBadge } from './ExpertReviewBadge';
 import { UpdateAlert } from './UpdateAlert';
+import { ReadingProgress } from './ReadingProgress';
+import { PostArticleQuiz } from '@/components/quiz/PostArticleQuiz';
 
 interface Article {
   slug: string;
@@ -24,6 +27,7 @@ interface Article {
   created_at: string;
   updated_at: string;
   content_html: string;
+  image_url?: string | null;
 }
 
 interface Citation {
@@ -48,129 +52,114 @@ export function ArticleLayout({ article, citations, html, category }: ArticleLay
   const colors = getCategoryColor(category);
 
   return (
-    <div className="min-h-screen bg-[#0A0A0B]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div>
+      <ReadingProgress color={colors.hex} />
+
+      {/* Hero Image */}
+      <div className="relative h-[350px] md:h-[450px] rounded-2xl overflow-hidden mx-4 md:mx-6 mt-4">
+        {article.image_url ? (
+          <Image src={article.image_url} alt="" fill className="object-cover" />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+        <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-10">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="px-3 py-1 rounded-full text-xs font-medium bg-white/20 backdrop-blur-sm text-white border border-white/20 capitalize">
+              {category.replace(/-/g, ' ')}
+            </span>
+            <span className="text-sm text-white/70">{estimateReadTime(html)} min read</span>
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
+            {article.title}
+          </h1>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/60">
+            <EvidenceRating rating={article.evidence_rating} variant="hero" />
+            <span>By {article.author}</span>
+            <span>Updated {timeAgo}</span>
+            <span>{article.view_count.toLocaleString()} views</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 py-8">
         {/* Breadcrumbs */}
-        <ScrollReveal animation="fade">
-          <nav className="mb-6 text-sm text-white/40">
-            <Link href="/wiki" className="hover:text-white/60">
-              Wiki
-            </Link>
-            <span className="mx-2">/</span>
-            <Link href={`/wiki/${category}`} className={`hover:text-white/60 capitalize ${colors.text}`}>
-              {category.replace('-', ' ')}
-            </Link>
-            <span className="mx-2">/</span>
-            <span className="text-white">{article.title}</span>
-          </nav>
-        </ScrollReveal>
+        <nav className="mb-8 text-sm text-gray-400">
+          <Link href="/" className="hover:text-gray-600 transition-colors">Wiki</Link>
+          <span className="mx-2">/</span>
+          <Link href={`/wiki/${category}`} className="hover:text-gray-600 transition-colors capitalize">
+            {category.replace(/-/g, ' ')}
+          </Link>
+          <span className="mx-2">/</span>
+          <span className="text-gray-600">{article.title}</span>
+        </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="flex gap-16">
           {/* Main Content */}
-          <div className="lg:col-span-3">
-            <ScrollReveal animation="fade-up" delay={0.1}>
-              <article className="bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08] rounded-xl p-8 shadow-[0_4px_30px_rgba(0,0,0,0.3)]">
-                {/* Article Header */}
-                <header className="mb-8 border-b border-white/[0.06] pb-6">
-                  <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
-                    {article.title}
-                  </h1>
+          <article className="min-w-0 flex-1 max-w-[680px]">
+            {article.tags && article.tags.length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-6">
+                {article.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-2.5 py-0.5 bg-gray-100 border border-gray-200 text-gray-500 rounded-full text-xs"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
 
-                  <div className="flex flex-wrap items-center gap-4 text-[11px] uppercase tracking-[0.15em] text-white/30">
-                    {/* Evidence Rating */}
-                    <EvidenceRating rating={article.evidence_rating} />
+            {article.needs_update && <UpdateAlert />}
 
-                    {/* Author */}
-                    <div>
-                      By <span className="font-medium text-white/60">{article.author}</span>
-                    </div>
+            {article.reviewers && article.reviewers.length > 0 && (
+              <div className="mb-8">
+                <ExpertReviewBadge reviewers={article.reviewers} />
+              </div>
+            )}
 
-                    {/* Updated Date */}
-                    <div>Updated {timeAgo}</div>
+            {article.summary && (
+              <div className="mb-10 py-4 border-l-2 pl-5" style={{ borderLeftColor: colors.hex }}>
+                <p className="text-gray-500 leading-relaxed">{article.summary}</p>
+              </div>
+            )}
 
-                    {/* View Count */}
-                    <div>{article.view_count.toLocaleString()} views</div>
-                  </div>
+            <div
+              className="prose max-w-none
+                prose-headings:text-gray-900 prose-headings:font-semibold
+                prose-h2:text-xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-gray-200
+                prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3
+                prose-p:text-gray-600 prose-p:leading-[1.8] prose-p:mb-5
+                prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+                prose-strong:text-gray-800 prose-strong:font-medium
+                prose-ul:my-4 prose-ol:my-4
+                prose-li:text-gray-600 prose-li:leading-[1.8]
+                prose-code:text-sm prose-code:bg-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:border prose-code:border-gray-200
+                prose-pre:bg-gray-50 prose-pre:border prose-pre:border-gray-200"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
 
-                  {/* Tags */}
-                  {article.tags && article.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {article.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-3 py-1 bg-white/[0.04] border border-white/[0.08] text-white/60 rounded-full text-sm"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </header>
+            <CitationEnhancer citations={citations} />
 
-                {/* Update Alert (if article needs review) */}
-                {article.needs_update && (
-                  <UpdateAlert />
-                )}
+            {citations.length > 0 && (
+              <div className="mt-16 pt-8 border-t border-gray-200">
+                <h2 className="text-lg font-semibold text-gray-900 mb-6">Sources</h2>
+                <SourcesList citations={citations} />
+              </div>
+            )}
 
-                {/* Expert Review Badge */}
-                {article.reviewers && article.reviewers.length > 0 && (
-                  <div className="mb-6">
-                    <ExpertReviewBadge reviewers={article.reviewers} />
-                  </div>
-                )}
+            <div className="mt-12 pt-8 border-t border-gray-200">
+              <RelatedArticles currentSlug={article.slug} category={category} />
+            </div>
 
-                {/* Article Summary */}
-                {article.summary && (
-                  <div className="mb-8 p-4 bg-white/[0.03] border-l-4 rounded-lg" style={{ borderLeftColor: colors.hex }}>
-                    <p className="text-white/70 leading-relaxed">{article.summary}</p>
-                  </div>
-                )}
+            <PostArticleQuiz articleSlug={article.slug} category={article.category} />
+          </article>
 
-                {/* Article Content */}
-                <div
-                  className="prose prose-invert max-w-none
-                    prose-headings:text-white prose-headings:font-bold
-                    prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4
-                    prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
-                    prose-p:text-white/70 prose-p:leading-relaxed prose-p:mb-4
-                    prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
-                    prose-strong:text-white prose-strong:font-semibold
-                    prose-ul:my-4 prose-ol:my-4
-                    prose-li:text-white/70
-                    prose-code:text-sm prose-code:bg-white/[0.04] prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:border prose-code:border-white/[0.08]
-                    prose-pre:bg-[rgba(28,31,39,0.7)] prose-pre:border prose-pre:border-white/[0.08]"
-                  dangerouslySetInnerHTML={{ __html: html }}
-                />
-
-                {/* Citation Hover Previews (Client-side enhancement) */}
-                <CitationEnhancer citations={citations} />
-
-                {/* Sources */}
-                {citations.length > 0 && (
-                  <div className="mt-12 pt-8 border-t border-white/[0.06]">
-                    <h2 className="text-2xl font-bold text-white mb-6">Sources</h2>
-                    <SourcesList citations={citations} />
-                  </div>
-                )}
-
-                {/* Related Articles */}
-                <div className="mt-12 pt-8 border-t border-white/[0.06]">
-                  <RelatedArticles currentSlug={article.slug} category={category} />
-                </div>
-              </article>
-            </ScrollReveal>
-          </div>
-
-          {/* Sidebar (Table of Contents) */}
-          <div className="lg:col-span-1">
-            <ScrollReveal animation="fade" delay={0.2}>
-              <aside>
-                <div className="sticky top-8">
-                  <TableOfContents html={html} category={category} />
-                </div>
-              </aside>
-            </ScrollReveal>
-          </div>
+          <aside className="hidden lg:block w-56 shrink-0">
+            <div className="sticky top-12">
+              <TableOfContents html={html} category={category} />
+            </div>
+          </aside>
         </div>
       </div>
     </div>

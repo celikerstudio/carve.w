@@ -1,41 +1,58 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { getCategoryColor } from '@/lib/wiki/category-colors';
-import { ScrollReveal } from '@/components/ui/scroll-reveal';
+import { EvidenceRating } from '@/components/wiki/EvidenceRating';
 import { Eye } from 'lucide-react';
 
-const VALID_CATEGORIES: Record<string, { title: string; emoji: string; description: string }> = {
+// URL slug -> DB category name + metadata
+const VALID_CATEGORIES: Record<string, { title: string; dbName: string; description: string }> = {
+  'training': {
+    title: 'Training',
+    dbName: 'Training',
+    description: 'Strength training, hypertrophy, programming, and exercise techniques',
+  },
   'nutrition': {
     title: 'Nutrition',
-    emoji: '🍎',
-    description: 'Evidence-based articles about macronutrients, micronutrients, meal timing, and dietary strategies',
+    dbName: 'Nutrition',
+    description: 'Macronutrients, meal timing, dieting strategies, and food science',
   },
-  'exercise-science': {
-    title: 'Exercise Science',
-    emoji: '💪',
-    description: 'Scientific principles of exercise, biomechanics, and training adaptations',
+  'supplements': {
+    title: 'Supplements',
+    dbName: 'Supplements',
+    description: 'Evidence-based supplement guides, dosages, and effectiveness',
   },
-  'physiology': {
-    title: 'Physiology',
-    emoji: '🧬',
-    description: 'How your body works: energy systems, muscle growth, fat loss, and recovery',
+  'recovery': {
+    title: 'Recovery',
+    dbName: 'Recovery',
+    description: 'Sleep, mobility, injury prevention, and recovery protocols',
   },
-  'training-methods': {
-    title: 'Training Methods',
-    emoji: '🏋️',
-    description: 'Practical training approaches: strength training, cardio, mobility, and programming',
+  'mindset': {
+    title: 'Mindset',
+    dbName: 'Mindset',
+    description: 'Goal setting, discipline, habits, and mental performance',
   },
-  'psychology': {
-    title: 'Psychology',
-    emoji: '🧠',
-    description: 'Mental aspects of fitness: motivation, habit formation, goal setting, and mindset',
+  'money': {
+    title: 'Money',
+    dbName: 'Money',
+    description: 'Personal finance, investing, budgeting, and financial independence',
   },
-  'injury-health': {
-    title: 'Injury & Health',
-    emoji: '❤️',
-    description: 'Injury prevention, rehabilitation, common issues, and health optimization',
+  'travel': {
+    title: 'Travel',
+    dbName: 'Travel',
+    description: 'Travel planning, destinations, tips, and experiences',
   },
+};
+
+const CATEGORY_IMAGES: Record<string, string> = {
+  training: '/images/wiki/category-training.jpg',
+  nutrition: '/images/wiki/category-nutrition.jpg',
+  supplements: '/images/wiki/category-supplements.jpg',
+  recovery: '/images/wiki/category-recovery.jpg',
+  mindset: '/images/wiki/category-mindset.jpg',
+  money: '/images/wiki/category-money.jpg',
+  travel: '/images/wiki/category-travel.jpg',
 };
 
 interface PageProps {
@@ -46,7 +63,6 @@ export async function generateMetadata({ params }: PageProps) {
   const { category } = await params;
   const cat = VALID_CATEGORIES[category];
   if (!cat) return { title: 'Category Not Found' };
-
   return {
     title: `${cat.title} | Carve Wiki`,
     description: cat.description,
@@ -56,88 +72,76 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function CategoryPage({ params }: PageProps) {
   const { category } = await params;
   const cat = VALID_CATEGORIES[category];
+  if (!cat) notFound();
 
-  if (!cat) {
-    notFound();
-  }
-
-  const colors = getCategoryColor(category);
+  const colors = getCategoryColor(cat.dbName);
 
   const supabase = await createClient();
   const { data: articles } = await supabase
     .from('wiki_articles')
-    .select('slug, title, summary, evidence_rating, view_count, updated_at, tags')
-    .eq('category', category)
+    .select('slug, title, summary, evidence_rating, view_count, updated_at, tags, image_url')
+    .eq('category', cat.dbName)
     .eq('is_published', true)
     .order('view_count', { ascending: false });
 
   return (
-    <div className="min-h-screen bg-[#0A0A0B]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Breadcrumbs */}
-        <nav className="mb-8 text-sm text-white/40">
-          <Link href="/" className="hover:text-white/60">Wiki</Link>
-          <span className="mx-2">/</span>
-          <span className={colors.text}>{cat.title}</span>
-        </nav>
-
-        {/* Category Header */}
-        <div className="mb-12">
-          <div className="text-5xl mb-4">{cat.emoji}</div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
-            {cat.title}
-          </h1>
-          <p className="text-white/50 text-lg max-w-2xl">{cat.description}</p>
-          <p className="mt-3 text-[11px] uppercase tracking-[0.15em] text-white/30">
-            {articles?.length || 0} {(articles?.length || 0) === 1 ? 'article' : 'articles'}
-          </p>
+    <div>
+      {/* Category Hero */}
+      <div className="relative h-[200px] md:h-[250px] rounded-2xl overflow-hidden mx-4 md:mx-6 mt-4">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-800" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+        <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-10">
+          <nav className="mb-3 text-sm text-white/50">
+            <Link href="/" className="hover:text-white/70 transition-colors">Wiki</Link>
+            <span className="mx-2">/</span>
+            <span className="text-white/80">{cat.title}</span>
+          </nav>
+          <h1 className="text-2xl md:text-3xl font-bold text-white mb-1">{cat.title}</h1>
+          <p className="text-sm text-white/60">{cat.description}</p>
+          <p className="text-xs text-white/40 mt-1">{articles?.length || 0} articles</p>
         </div>
-
-        {/* Articles List */}
-        {articles && articles.length > 0 ? (
-          <div className="space-y-4">
-            {articles.map((article, i) => (
-              <ScrollReveal key={article.slug} animation="fade-up" delay={i * 0.05}>
-                <Link
-                  href={`/wiki/${category}/${article.slug}`}
-                  className={`group block rounded-xl p-6 bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08] transition-all duration-300 hover:-translate-y-0.5 ${colors.borderHover} ${colors.shadow}`}
-                >
-                  <h2 className="text-lg font-semibold text-white group-hover:text-white/90 mb-2">
-                    {article.title}
-                  </h2>
-                  {article.summary && (
-                    <p className="text-sm text-white/50 line-clamp-2 mb-3">
-                      {article.summary}
-                    </p>
-                  )}
-                  <div className="flex items-center gap-4 text-[11px] uppercase tracking-[0.15em] text-white/30">
-                    <div className="flex items-center gap-1">
-                      <Eye className="w-3 h-3" />
-                      <span>{article.view_count}</span>
-                    </div>
-                    {article.tags && article.tags.length > 0 && (
-                      <div className="flex items-center gap-2">
-                        {article.tags.slice(0, 3).map((tag: string) => (
-                          <span key={tag} className="normal-case tracking-normal text-white/40">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </Link>
-              </ScrollReveal>
-            ))}
-          </div>
-        ) : (
-          <div className="rounded-xl p-12 bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08] text-center">
-            <p className="text-white/40 text-lg">No articles yet in this category.</p>
-            <Link href="/" className="mt-4 inline-block text-sm text-white/50 hover:text-white/70">
-              ← Back to Wiki
-            </Link>
-          </div>
-        )}
       </div>
+
+      {/* Articles Grid */}
+      {articles && articles.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-6 mt-8 pb-12">
+          {articles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/wiki/${category}/${article.slug}`}
+              className="group bg-surface-raised rounded-xl border border-subtle overflow-hidden shadow-card hover:shadow-card-hover transition-all"
+            >
+              <div className="relative h-36 bg-gradient-to-br from-gray-100 to-gray-200">
+                {article.image_url && (
+                  <Image src={article.image_url} alt="" fill className="object-cover" />
+                )}
+              </div>
+              <div className="p-4">
+                <div className="mb-2">
+                  <EvidenceRating rating={article.evidence_rating} />
+                </div>
+                <h2 className="font-semibold text-ink group-hover:text-ink-secondary mb-1 line-clamp-2">
+                  {article.title}
+                </h2>
+                {article.summary && (
+                  <p className="text-sm text-ink-secondary line-clamp-2">{article.summary}</p>
+                )}
+                <div className="flex items-center gap-1 mt-2 text-xs text-ink-tertiary">
+                  <Eye className="w-3 h-3" />
+                  {article.view_count}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      ) : (
+        <div className="py-12 text-center">
+          <p className="text-ink-tertiary">No articles yet in this category.</p>
+          <Link href="/" className="mt-3 inline-block text-sm text-ink-secondary hover:text-ink">
+            Back to Wiki
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

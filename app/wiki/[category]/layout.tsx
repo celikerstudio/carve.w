@@ -24,7 +24,7 @@ export default async function WikiCategoryLayout({
   }
 
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-white">
+    <div className="wiki-light min-h-screen bg-surface text-ink">
       {children}
     </div>
   );

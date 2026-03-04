@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import { createClient, createBuildClient } from '@/lib/supabase/server';
 import { ArticleLayout } from '@/components/wiki/ArticleLayout';
 import { ViewTracker } from '@/components/wiki/ViewTracker';
+import { remark } from 'remark';
+import html from 'remark-html';
 
 interface PageProps {
   params: Promise<{
@@ -82,8 +84,12 @@ export default async function ArticlePage({ params }: PageProps) {
     notFound();
   }
 
-  // Use pre-rendered HTML from database
-  const html = article.content_html || '';
+  // Use pre-rendered HTML from database, or convert markdown on the fly
+  let articleHtml = article.content_html || '';
+  if (!articleHtml && article.content_markdown) {
+    const result = await remark().use(html).process(article.content_markdown);
+    articleHtml = result.toString();
+  }
 
   return (
     <>
@@ -94,7 +100,7 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleLayout
         article={article}
         citations={citations}
-        html={html}
+        html={articleHtml}
         category={category}
       />
     </>
@@ -113,7 +119,7 @@ export async function generateStaticParams() {
   if (!articles) return [];
 
   return articles.map((article) => ({
-    category: article.category,
+    category: article.category.toLowerCase(),
     slug: article.slug,
   }));
 }

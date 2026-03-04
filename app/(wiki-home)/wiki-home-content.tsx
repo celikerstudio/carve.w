@@ -1,147 +1,167 @@
 'use client';
 
+// @ai-why: Wiki homepage content — hero, categories grid, latest articles, trending.
+// Uses semantic tokens (renders inside .wiki-light wrapper).
+
 import { ReactNode } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { motion, useReducedMotion } from 'motion/react';
 import { SearchBar } from '@/components/wiki/SearchBar';
-import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { getCategoryColor } from '@/lib/wiki/category-colors';
+import { estimateReadTime } from '@/lib/wiki/read-time';
+import { SPRING_GENTLE, STAGGER } from '@/lib/motion-config';
+
+interface WikiArticle {
+  slug: string;
+  title: string;
+  category: string;
+  summary: string | null;
+  image_url: string | null;
+  evidence_rating: string;
+  view_count: number;
+  created_at: string;
+  content_html: string | null;
+}
 
 interface WikiHomeContentProps {
   counts: Record<string, number>;
-  totalArticles: number;
+  latestArticles: WikiArticle[];
   popularToday: ReactNode;
 }
 
 const categories = [
-  { title: "Nutrition", slug: "nutrition", description: "Evidence-based articles about macronutrients, micronutrients, meal timing, and dietary strategies", emoji: "🍎" },
-  { title: "Exercise Science", slug: "exercise-science", description: "Scientific principles of exercise, biomechanics, and training adaptations", emoji: "💪" },
-  { title: "Physiology", slug: "physiology", description: "How your body works: energy systems, muscle growth, fat loss, and recovery", emoji: "🧬" },
-  { title: "Training Methods", slug: "training-methods", description: "Practical training approaches: strength training, cardio, mobility, and programming", emoji: "🏋️" },
-  { title: "Psychology", slug: "psychology", description: "Mental aspects of fitness: motivation, habit formation, goal setting, and mindset", emoji: "🧠" },
-  { title: "Injury & Health", slug: "injury-health", description: "Injury prevention, rehabilitation, common issues, and health optimization", emoji: "❤️" },
+  { title: "Training", slug: "training", description: "Strength training, hypertrophy, programming, and exercise techniques" },
+  { title: "Nutrition", slug: "nutrition", description: "Macronutrients, meal timing, dieting strategies, and food science" },
+  { title: "Supplements", slug: "supplements", description: "Evidence-based supplement guides, dosages, and effectiveness" },
+  { title: "Recovery", slug: "recovery", description: "Sleep, mobility, injury prevention, and recovery protocols" },
+  { title: "Mindset", slug: "mindset", description: "Goal setting, discipline, habits, and mental performance" },
+  { title: "Money", slug: "money", description: "Personal finance, investing, budgeting, and financial independence" },
+  { title: "Travel", slug: "travel", description: "Travel planning, destinations, tips, and experiences" },
 ];
 
-export function WikiHomeContent({ counts, totalArticles, popularToday }: WikiHomeContentProps) {
+export function WikiHomeContent({ counts, latestArticles, popularToday }: WikiHomeContentProps) {
+  const prefersReduced = useReducedMotion();
+
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Hero Section */}
-      <section className="pt-32 md:pt-44 pb-20 flex flex-col items-center text-center">
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="text-5xl md:text-7xl font-bold tracking-[0.3em] text-white mb-1"
-        >
-          CARVE
-        </motion.h1>
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="text-3xl md:text-5xl font-bold tracking-[0.3em] text-white/80 mb-3"
-        >
-          WIKI
-        </motion.span>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-lg md:text-xl text-white/50 mb-12 font-light"
-        >
-          Evidence-based fitness knowledge
-        </motion.p>
-
-        {/* Search */}
+    <div className="max-w-5xl mx-auto px-6">
+      {/* Hero */}
+      <section className="pt-8 pb-12">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={prefersReduced ? undefined : { opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="w-full max-w-2xl mb-8"
+          transition={SPRING_GENTLE}
+          className="relative rounded-2xl overflow-hidden h-[300px] md:h-[400px]"
         >
-          <SearchBar />
-        </motion.div>
-
-        {/* Stat pills */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex items-center gap-3 text-[11px] uppercase tracking-[0.15em] text-white/30"
-        >
-          <span>{totalArticles} articles</span>
-          <span>·</span>
-          <span>6 domains</span>
-          <span>·</span>
-          <span>100% evidence-based</span>
+          {/* Gradient fallback — always visible behind image */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
+          <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">Carve Wiki</h1>
+            <p className="text-base text-white/70 mb-10">Evidence-based fitness knowledge</p>
+            <div className="w-full max-w-xl">
+              <SearchBar />
+            </div>
+          </div>
         </motion.div>
       </section>
 
-      {/* Browse by Domain */}
-      <section className="pb-20">
-        <ScrollReveal animation="fade-up">
-          <p className="text-[11px] uppercase tracking-[0.15em] text-white/30 mb-6">Browse by domain</p>
-        </ScrollReveal>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* Categories */}
+      <section className="pb-12">
+        <p className="text-xs font-medium text-ink-tertiary uppercase tracking-wider mb-4">Browse by topic</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {categories.map((category, i) => {
             const colors = getCategoryColor(category.slug);
             return (
-              <ScrollReveal key={category.slug} animation="fade-up" delay={i * 0.08}>
+              <motion.div
+                key={category.slug}
+                initial={prefersReduced ? undefined : { opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ...SPRING_GENTLE, delay: i * STAGGER }}
+              >
                 <Link
                   href={`/wiki/${category.slug}`}
-                  className={`group block rounded-xl p-6 bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08] transition-all duration-300 hover:-translate-y-0.5 ${colors.borderHover} ${colors.shadow}`}
+                  className="group flex items-start gap-3 rounded-xl p-4 bg-surface-raised border border-subtle shadow-card hover:shadow-card-hover transition-all"
                 >
-                  <div className="text-3xl mb-4">{category.emoji}</div>
-                  <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-white/90">
-                    {category.title}
-                  </h3>
-                  <p className="text-sm text-white/40 mb-4 line-clamp-2">
-                    {category.description}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className={`text-xs ${colors.text}`}>
-                      {counts[category.slug] || 0} {(counts[category.slug] || 0) === 1 ? 'article' : 'articles'}
-                    </span>
-                    <span className="text-white/30 text-sm group-hover:text-white/50 group-hover:translate-x-1 transition-all">
-                      →
-                    </span>
+                  <span
+                    className="mt-1.5 w-2 h-2 rounded-full shrink-0"
+                    style={{ backgroundColor: colors.hex }}
+                  />
+                  <div className="min-w-0">
+                    <div className="flex items-baseline gap-2">
+                      <h3 className="text-sm font-medium text-ink group-hover:text-ink-secondary">
+                        {category.title}
+                      </h3>
+                      <span className="text-xs text-ink-tertiary">
+                        {counts[category.slug] || 0}
+                      </span>
+                    </div>
+                    <p className="text-xs text-ink-secondary mt-0.5 line-clamp-1">
+                      {category.description}
+                    </p>
                   </div>
                 </Link>
-              </ScrollReveal>
+              </motion.div>
             );
           })}
         </div>
       </section>
 
-      {/* Trending Section */}
-      <section className="pb-20">
-        <ScrollReveal animation="fade-up">
-          <p className="text-[11px] uppercase tracking-[0.15em] text-white/30 mb-6">Trending now</p>
-          {popularToday}
-        </ScrollReveal>
-      </section>
-
-      {/* Footer Stats */}
-      <section className="pb-20">
-        <ScrollReveal animation="fade-up">
-          <div className="rounded-xl p-8 bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08]">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-white mb-2">{totalArticles}</div>
-                <div className="text-[11px] uppercase tracking-[0.15em] text-white/30">Expert Articles</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-2">6</div>
-                <div className="text-[11px] uppercase tracking-[0.15em] text-white/30">Knowledge Domains</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-2">100%</div>
-                <div className="text-[11px] uppercase tracking-[0.15em] text-white/30">Evidence-Based</div>
-              </div>
-            </div>
+      {/* Latest Articles */}
+      {latestArticles.length > 0 && (
+        <section className="pb-12">
+          <p className="text-xs font-medium text-ink-tertiary uppercase tracking-wider mb-4">Latest articles</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {latestArticles.map((article, i) => {
+              const colors = getCategoryColor(article.category);
+              const readTime = article.content_html ? estimateReadTime(article.content_html) : null;
+              return (
+                <motion.div
+                  key={article.slug}
+                  initial={prefersReduced ? undefined : { opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ ...SPRING_GENTLE, delay: i * STAGGER }}
+                >
+                  <Link
+                    href={`/wiki/${article.category.toLowerCase()}/${article.slug}`}
+                    className="group bg-surface-raised rounded-xl border border-subtle overflow-hidden shadow-card hover:shadow-card-hover transition-all block"
+                  >
+                    <div className="relative h-40 bg-gradient-to-br from-gray-100 to-gray-200">
+                      {article.image_url && (
+                        <Image src={article.image_url} alt="" fill className="object-cover" />
+                      )}
+                    </div>
+                    <div className="p-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className={`text-xs font-medium ${colors.textLight}`}>
+                          {article.category}
+                        </span>
+                        {readTime && (
+                          <>
+                            <span className="text-xs text-ink-tertiary">·</span>
+                            <span className="text-xs text-ink-tertiary">{readTime} min read</span>
+                          </>
+                        )}
+                      </div>
+                      <h3 className="font-semibold text-ink group-hover:text-ink-secondary mb-1 line-clamp-2">
+                        {article.title}
+                      </h3>
+                      {article.summary && (
+                        <p className="text-sm text-ink-secondary line-clamp-2">{article.summary}</p>
+                      )}
+                    </div>
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
-        </ScrollReveal>
+        </section>
+      )}
+
+      {/* Trending */}
+      <section className="pb-20">
+        <p className="text-xs font-medium text-ink-tertiary uppercase tracking-wider mb-4">Trending today</p>
+        {popularToday}
       </section>
     </div>
   );

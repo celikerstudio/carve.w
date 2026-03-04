@@ -21,6 +21,13 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // Redirect authenticated users from /carve to dashboard
+  if (pathname === '/carve') {
+    if (user) {
+      return NextResponse.redirect(new URL('/dashboard', request.url))
+    }
+  }
+
   return response
 }
 

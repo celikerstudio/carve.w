@@ -11,12 +11,14 @@ import { ScoreboardCard } from '@/components/carve/ScoreboardCard';
 import { CarveFooter } from '@/components/carve/CarveFooter';
 import { PhoneShowcase } from '@/components/carve/PhoneShowcase';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
+import { APP_STORE_URL } from '@/lib/utils';
+import { MarketingPageLayout } from '@/components/carve/MarketingPageLayout';
 
 export default function CarvePage() {
   return (
-    <div className="min-h-screen w-full bg-[#0A0A0B] text-white overflow-y-auto">
+    <MarketingPageLayout page="/carve/health">
       {/* Hero Section */}
-      <section className="min-h-[100dvh] flex flex-col items-center justify-center px-6 py-20 relative">
+      <section className="min-h-[60vh] flex flex-col items-center justify-center px-6 py-20 relative">
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -72,18 +74,6 @@ export default function CarvePage() {
 
         <ScoreboardCard />
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 2.2 }}
-          className="mt-10 flex flex-col items-center gap-3"
-        >
-          <div className="px-6 py-3 bg-white text-black rounded-xl font-semibold text-sm flex items-center gap-2 opacity-80 cursor-default">
-            <Apple className="w-5 h-5" />
-            Download on the App Store
-          </div>
-          <p className="text-white/30 text-sm">Coming Spring 2026</p>
-        </motion.div>
       </section>
 
       {/* Value Proposition */}
@@ -134,25 +124,18 @@ export default function CarvePage() {
         </ScrollReveal>
       </section>
 
-      {/* Footer CTA */}
+      {/* Footer */}
       <section className="py-24 md:py-32 px-6">
         <ScrollReveal animation="fade-up">
           <div className="text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 tracking-tight">
               Where do you rank?
             </h2>
-            <div className="flex flex-col items-center gap-3 mb-16">
-              <div className="px-6 py-3 bg-white text-black rounded-xl font-semibold text-sm flex items-center gap-2 opacity-80 cursor-default">
-                <Apple className="w-5 h-5" />
-                Download on the App Store
-              </div>
-              <p className="text-white/30 text-sm">Coming Spring 2026</p>
-            </div>
             <CarveFooter />
           </div>
         </ScrollReveal>
       </section>
-    </div>
+    </MarketingPageLayout>
   );
 }
 
@@ -849,29 +832,9 @@ const PRO_FEATURES = [
   { icon: Headphones, label: 'Priority support', free: false },
 ] as const;
 
-// Rank-up rewards with effective price reduction
-const RANK_REWARDS = [
-  { rank: 'Athlete',      days: 3,  color: '#4D99F2' },
-  { rank: 'Elite',        days: 5,  color: '#EDCA47' },
-  { rank: 'Champion',     days: 7,  color: '#F28C33' },
-  { rank: 'Master',       days: 7,  color: '#F28C33' },
-  { rank: 'Grandmaster',  days: 14, color: '#CC80F2' },
-  { rank: 'Legend',        days: 14, color: '#E54D4D' },
-] as const;
-
-const SAVINGS_LEADERBOARD: ReadonlyArray<{ name: string; days: number; saved: string; isUser?: boolean }> = [
-  { name: 'Jesse',  days: 42, saved: '€11.18' },
-  { name: 'Lotte',  days: 28, saved: '€7.46' },
-  { name: 'You',    days: 19, saved: '€5.06', isUser: true },
-  { name: 'Max',    days: 8,  saved: '€2.13' },
-];
 
 function PricingSection() {
   const [yearly, setYearly] = useState(true);
-
-  // Total possible earned days from all rank-ups + streaks
-  const totalRankDays = RANK_REWARDS.reduce((sum, r) => sum + r.days, 0); // 50
-  const totalStreakDays = 1 + 2 + 5; // 7+14+30 milestones = 8 days/month
 
   return (
     <section className="py-24 md:py-32 px-6">
@@ -882,7 +845,7 @@ function PricingSection() {
             Free forever. Pro when you want more.
           </h2>
           <p className="text-white/40 mt-4 max-w-lg mx-auto text-sm md:text-base leading-relaxed">
-            Everything you need to track, rank, and compete is free. Upgrade to Pro for unlimited AI and advanced features — or earn it by playing.
+            Everything you need to track, rank, and compete is free. Upgrade to Pro for unlimited AI and advanced features.
           </p>
         </div>
       </ScrollReveal>
@@ -910,7 +873,7 @@ function PricingSection() {
         </div>
       </ScrollReveal>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-4">
+      <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-4">
         {/* Free Tier */}
         <ScrollReveal animation="fade-up" delay={0}>
           <div className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 h-full flex flex-col">
@@ -961,98 +924,12 @@ function PricingSection() {
                 <FeatureRow key={f.label} included label={f.label} />
               ))}
             </div>
-            <div className="mt-8 px-5 py-3 bg-white text-black rounded-xl font-semibold text-sm text-center cursor-default opacity-80">
-              Coming Spring 2026
-            </div>
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="mt-8 px-5 py-3 bg-white text-black rounded-xl font-semibold text-sm text-center block hover:bg-white/90 transition-colors">
+              Download on the App Store
+            </a>
           </div>
         </ScrollReveal>
 
-        {/* Earn Pro — redesigned with ladder + leaderboard + streak */}
-        <ScrollReveal animation="fade-up" delay={0.2}>
-          <div className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 h-full flex flex-col">
-            <div className="flex items-center gap-2 mb-1">
-              <h3 className="text-lg font-bold text-white">Earn Pro</h3>
-              <Trophy className="w-4 h-4 text-[#D4A843]" />
-            </div>
-            <p className="text-white/30 text-sm mb-5">Climb higher, pay less</p>
-
-            {/* Rank Reward Ladder */}
-            <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 mb-4">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-white/30 mb-3">Rank up → Free Pro days</p>
-              <div className="space-y-1">
-                {RANK_REWARDS.map((r) => (
-                  <div key={r.rank} className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: r.color }} />
-                      <span className="text-[12px] text-white/60">{r.rank}</span>
-                    </div>
-                    <span className="text-[12px] font-semibold text-[#D4A843]">+{r.days}d</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-3 pt-3 border-t border-white/[0.06] flex items-center justify-between">
-                <span className="text-[11px] text-white/30">All ranks combined</span>
-                <span className="text-[12px] font-bold text-[#D4A843]">+{totalRankDays} days free</span>
-              </div>
-            </div>
-
-            {/* Streak Mini */}
-            <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 mb-4">
-              <div className="flex items-center gap-2 mb-2">
-                <Flame className="w-3.5 h-3.5 text-[#F28C33]" />
-                <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-white/30">Daily streak</p>
-              </div>
-              <div className="flex items-center gap-3">
-                {/* Progress dots */}
-                <div className="flex-1 flex items-center gap-1">
-                  {Array.from({ length: 30 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="h-1.5 flex-1 rounded-full"
-                      style={{
-                        backgroundColor: i < 14
-                          ? `rgba(242,140,51,${0.3 + (i / 14) * 0.7})`
-                          : 'rgba(255,255,255,0.06)',
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-              <div className="flex justify-between mt-2 text-[10px] text-white/25">
-                <span>Day 1</span>
-                <span className="text-[#F28C33]/60">7d +1</span>
-                <span className="text-[#F28C33]/60">14d +2</span>
-                <span className="text-[#F28C33]/60">30d +5</span>
-              </div>
-            </div>
-
-            {/* Savings Leaderboard */}
-            <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 flex-1">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-white/30 mb-2">Pro Savings Board</p>
-              <div className="space-y-1.5">
-                {SAVINGS_LEADERBOARD.map((entry, i) => (
-                  <div
-                    key={entry.name}
-                    className={`flex items-center justify-between py-1 px-2 rounded-md ${
-                      entry.isUser ? 'bg-[#D4A843]/[0.08]' : ''
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-white/25 w-3">{i + 1}</span>
-                      <span className={`text-[12px] ${entry.isUser ? 'text-[#D4A843] font-semibold' : 'text-white/60'}`}>
-                        {entry.name}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <span className="text-[10px] text-white/30">{entry.days}d</span>
-                      <span className="text-[11px] font-medium text-emerald-400/80">{entry.saved}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
       </div>
 
       {/* Feature Comparison */}

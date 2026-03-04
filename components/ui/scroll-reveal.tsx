@@ -1,7 +1,12 @@
 'use client';
 
-import { motion, useInView, Variants } from 'framer-motion';
+// @ai-why: Scroll-triggered reveal animations for marketing/landing pages.
+// Supports fade-up, fade, slide-left, slide-right, scale variants.
+// Uses IntersectionObserver for in/out/exit states.
+
+import { motion, useInView, useReducedMotion, type Variants } from 'motion/react';
 import { useRef, ReactNode, useEffect, useState } from 'react';
+import { EASE } from '@/lib/motion-config';
 
 type AnimationType = 'fade-up' | 'fade' | 'slide-left' | 'slide-right' | 'scale';
 
@@ -52,6 +57,7 @@ export function ScrollReveal({
   once = false,
   threshold = 0.15,
 }: ScrollRevealProps) {
+  const prefersReduced = useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
   const [state, setState] = useState<'hidden' | 'visible' | 'exit'>('hidden');
 
@@ -84,6 +90,10 @@ export function ScrollReveal({
     return () => observer.disconnect();
   }, [threshold, once]);
 
+  if (prefersReduced) {
+    return <div ref={ref} className={className}>{children}</div>;
+  }
+
   return (
     <motion.div
       ref={ref}
@@ -93,7 +103,7 @@ export function ScrollReveal({
       transition={{
         duration: state === 'exit' ? duration * 0.5 : duration,
         delay: state === 'visible' ? delay : 0,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: EASE,
       }}
       className={className}
     >
@@ -113,8 +123,13 @@ export function StaggerContainer({
   staggerDelay?: number;
   once?: boolean;
 }) {
+  const prefersReduced = useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once, amount: 0.1 });
+
+  if (prefersReduced) {
+    return <div ref={ref} className={className}>{children}</div>;
+  }
 
   return (
     <motion.div
@@ -150,7 +165,7 @@ export function StaggerItem({
       variants={animations[animation]}
       transition={{
         duration: 0.5,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: EASE,
       }}
       className={className}
     >

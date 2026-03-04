@@ -12,11 +12,6 @@ type SidebarConfig = {
 
 const SIDEBAR_CONFIG: Record<string, SidebarConfig> = {
   '/carve': {
-    features: ['Track health & fitness', 'Manage your money', 'Plan your travels', 'Evidence-based wiki'],
-    accent: 'text-white/70',
-    accentBg: 'bg-white/10',
-  },
-  '/carve/health': {
     features: ['Track workouts', 'AI coaching', 'Compete on scoreboards', 'Rank progression'],
     accent: 'text-[#D4A843]',
     accentBg: 'bg-[#D4A843]/10',

@@ -38,7 +38,7 @@ const APP_NAV = [
 ] as const;
 
 const MARKETING_NAV = [
-  { label: 'Health', href: '/carve/health' },
+  { label: 'Health', href: '/carve' },
   { label: 'Money', href: '/carve/money' },
   { label: 'Travel', href: '/carve/travel' },
 ] as const;

@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const NAV_ITEMS = [
-  { label: 'Health', href: '/carve/health' },
+  { label: 'Health', href: '/carve' },
   { label: 'Money', href: '/carve/money' },
   { label: 'Wiki', href: '/' },
 ] as const;

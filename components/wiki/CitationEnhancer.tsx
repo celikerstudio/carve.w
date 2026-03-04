@@ -44,18 +44,18 @@ export function CitationEnhancer({ citations }: CitationEnhancerProps) {
       const tooltip = document.createElement('div');
       tooltip.className = 'citation-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2 z-50 w-64 pointer-events-none hidden';
       tooltip.innerHTML = `
-        <div class="bg-[rgba(28,31,39,0.95)] backdrop-blur-xl border border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.5)] text-white text-xs rounded-lg px-3 py-2">
+        <div class="bg-white border border-subtle text-ink text-xs rounded-lg px-3 py-2">
           <div class="font-semibold mb-1">
             ${citation.authors} ${citation.year ? `(${citation.year})` : ''}
           </div>
-          <div class="text-white/70 line-clamp-2">
+          <div class="text-ink-secondary line-clamp-2">
             "${citation.title}"
           </div>
-          <div class="text-white/40 italic mt-1 text-[10px]">
+          <div class="text-ink-tertiary italic mt-1 text-[10px]">
             ${citation.publication}
           </div>
           <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1">
-            <div class="border-4 border-transparent border-t-[rgb(28,31,39)]"></div>
+            <div class="border-4 border-transparent border-t-white"></div>
           </div>
         </div>
       `;
@@ -84,9 +84,9 @@ export function CitationEnhancer({ citations }: CitationEnhancerProps) {
           if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'center' });
             // Highlight briefly
-            element.classList.add('bg-white/[0.08]', 'transition-colors', 'duration-300');
+            element.classList.add('bg-amber-50', 'transition-colors', 'duration-300');
             setTimeout(() => {
-              element.classList.remove('bg-white/[0.08]');
+              element.classList.remove('bg-amber-50');
             }, 2000);
           }
         });

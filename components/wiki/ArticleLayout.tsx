@@ -84,14 +84,14 @@ export function ArticleLayout({ article, citations, html, category }: ArticleLay
 
       <div className="max-w-6xl mx-auto px-6 py-8">
         {/* Breadcrumbs */}
-        <nav className="mb-8 text-sm text-gray-400">
-          <Link href="/" className="hover:text-gray-600 transition-colors">Wiki</Link>
+        <nav className="mb-8 text-sm text-ink-tertiary">
+          <Link href="/" className="hover:text-ink-secondary transition-colors">Wiki</Link>
           <span className="mx-2">/</span>
-          <Link href={`/wiki/${category}`} className="hover:text-gray-600 transition-colors capitalize">
+          <Link href={`/wiki/${category}`} className="hover:text-ink-secondary transition-colors capitalize">
             {category.replace(/-/g, ' ')}
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-gray-600">{article.title}</span>
+          <span className="text-ink-secondary">{article.title}</span>
         </nav>
 
         <div className="flex gap-16">
@@ -102,7 +102,7 @@ export function ArticleLayout({ article, citations, html, category }: ArticleLay
                 {article.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-2.5 py-0.5 bg-gray-100 border border-gray-200 text-gray-500 rounded-full text-xs"
+                    className="px-2.5 py-0.5 bg-surface border border-subtle text-ink-secondary rounded-full text-xs"
                   >
                     {tag}
                   </span>
@@ -120,35 +120,35 @@ export function ArticleLayout({ article, citations, html, category }: ArticleLay
 
             {article.summary && (
               <div className="mb-10 py-4 border-l-2 pl-5" style={{ borderLeftColor: colors.hex }}>
-                <p className="text-gray-500 leading-relaxed">{article.summary}</p>
+                <p className="text-ink-secondary leading-relaxed">{article.summary}</p>
               </div>
             )}
 
             <div
               className="prose max-w-none
-                prose-headings:text-gray-900 prose-headings:font-semibold
-                prose-h2:text-xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-gray-200
+                prose-headings:text-ink prose-headings:font-semibold
+                prose-h2:text-xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-subtle
                 prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3
-                prose-p:text-gray-600 prose-p:leading-[1.8] prose-p:mb-5
-                prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
-                prose-strong:text-gray-800 prose-strong:font-medium
+                prose-p:text-ink-secondary prose-p:leading-[1.8] prose-p:mb-5
+                prose-a:text-action prose-a:no-underline hover:prose-a:underline
+                prose-strong:text-ink prose-strong:font-medium
                 prose-ul:my-4 prose-ol:my-4
-                prose-li:text-gray-600 prose-li:leading-[1.8]
-                prose-code:text-sm prose-code:bg-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:border prose-code:border-gray-200
-                prose-pre:bg-gray-50 prose-pre:border prose-pre:border-gray-200"
+                prose-li:text-ink-secondary prose-li:leading-[1.8]
+                prose-code:text-sm prose-code:bg-surface prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:border prose-code:border-subtle
+                prose-pre:bg-surface prose-pre:border prose-pre:border-subtle"
               dangerouslySetInnerHTML={{ __html: html }}
             />
 
             <CitationEnhancer citations={citations} />
 
             {citations.length > 0 && (
-              <div className="mt-16 pt-8 border-t border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900 mb-6">Sources</h2>
+              <div className="mt-16 pt-8 border-t border-subtle">
+                <h2 className="text-lg font-semibold text-ink mb-6">Sources</h2>
                 <SourcesList citations={citations} />
               </div>
             )}
 
-            <div className="mt-12 pt-8 border-t border-gray-200">
+            <div className="mt-12 pt-8 border-t border-subtle">
               <RelatedArticles currentSlug={article.slug} category={category} />
             </div>
 

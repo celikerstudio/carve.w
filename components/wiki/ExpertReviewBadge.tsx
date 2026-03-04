@@ -10,15 +10,15 @@ export function ExpertReviewBadge({ reviewers }: ExpertReviewBadgeProps) {
   }
 
   return (
-    <div className="flex items-start gap-3 p-4 bg-blue-500/10 border-l-4 border-blue-500/50 rounded-xl">
+    <div className="flex items-start gap-3 p-4 bg-blue-50 border-l-4 border-action rounded-xl">
       <div className="flex-shrink-0 mt-0.5">
-        <UserCheck className="w-5 h-5 text-blue-400" />
+        <UserCheck className="w-5 h-5 text-action" />
       </div>
       <div>
-        <div className="font-semibold text-blue-400 text-sm mb-1">
+        <div className="font-semibold text-action text-sm mb-1">
           Expert Reviewed
         </div>
-        <div className="text-blue-300/80 text-sm">
+        <div className="text-action text-sm">
           {reviewers.length === 1 ? (
             <>
               Reviewed by <span className="font-medium">{reviewers[0]}</span>

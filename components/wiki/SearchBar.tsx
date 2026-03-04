@@ -19,10 +19,12 @@ interface SearchResult {
 
 interface SearchBarProps {
   variant?: 'hero' | 'header';
+  theme?: 'dark' | 'light';
 }
 
-export function SearchBar({ variant = 'hero' }: SearchBarProps) {
+export function SearchBar({ variant = 'hero', theme = 'dark' }: SearchBarProps) {
   const isHeader = variant === 'header';
+  const isLightHeader = isHeader && theme === 'light';
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -125,7 +127,7 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
     const parts = text.split(new RegExp(`(${query})`, 'gi'));
     return parts.map((part, i) =>
       part.toLowerCase() === query.toLowerCase() ? (
-        <mark key={i} className="bg-amber-500/30 text-white">
+        <mark key={i} className="bg-amber-100 text-amber-900">
           {part}
         </mark>
       ) : (
@@ -142,8 +144,10 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
       {/* Search Input */}
       <div className="relative">
         <Search className={cn(
-          "absolute top-1/2 -translate-y-1/2 text-white/30",
-          isHeader ? "left-3 w-3.5 h-3.5" : "left-4 w-5 h-5"
+          "absolute top-1/2 -translate-y-1/2",
+          isHeader
+            ? cn("left-3 w-3.5 h-3.5", isLightHeader ? "text-ink-tertiary" : "text-white/30")
+            : "left-4 w-5 h-5 text-ink-tertiary"
         )} />
         <input
           ref={inputRef}
@@ -154,24 +158,32 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
           onFocus={() => query.length >= 2 && setShowResults(true)}
           placeholder={isHeader ? "Zoek in wiki..." : "Zoek artikelen over fitness, voeding, training..."}
           className={cn(
-            "w-full bg-[rgba(28,31,39,0.7)] backdrop-blur-xl rounded-xl border border-white/[0.08] focus:outline-none focus:border-white/20 text-white placeholder:text-white/30 transition-all",
+            "w-full focus:outline-none transition-all",
             isHeader
-              ? "pl-9 pr-8 py-1.5 text-sm rounded-lg"
-              : "pl-12 pr-12 py-4 text-lg"
+              ? cn(
+                  "pl-9 pr-8 py-1.5 text-sm rounded-lg border",
+                  isLightHeader
+                    ? "bg-subtle border-subtle text-ink placeholder:text-ink-secondary focus:bg-subtle focus:border-subtle"
+                    : "bg-white/[0.03] border-white/[0.06] focus:border-white/20 text-white placeholder:text-white/30"
+                )
+              : "pl-12 pr-12 py-4 text-lg bg-white/90 backdrop-blur-sm border border-white/20 text-ink placeholder:text-ink-tertiary rounded-xl shadow-lg focus:border-subtle"
           )}
         />
         {query && (
           <button
             onClick={clearSearch}
             className={cn(
-              "absolute top-1/2 -translate-y-1/2 hover:bg-white/[0.08] rounded-full transition-colors",
-              isHeader ? "right-2 p-0.5" : "right-4 p-1"
+              "absolute top-1/2 -translate-y-1/2 rounded-full transition-colors",
+              isHeader
+                ? cn("right-2 p-0.5", isLightHeader ? "hover:bg-subtle" : "hover:bg-white/[0.08]")
+                : "right-4 p-1 hover:bg-subtle"
             )}
             aria-label="Clear search"
           >
             <X className={cn(
-              "text-white/30",
-              isHeader ? "w-3.5 h-3.5" : "w-5 h-5"
+              isHeader
+                ? cn("w-3.5 h-3.5", isLightHeader ? "text-ink-tertiary" : "text-white/30")
+                : "w-5 h-5 text-ink-tertiary"
             )} />
           </button>
         )}
@@ -180,17 +192,17 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
       {/* Search Results Dropdown */}
       {showResults && (
         <div className={cn(
-          "absolute top-full mt-2 bg-[rgba(28,31,39,0.95)] backdrop-blur-xl rounded-xl border border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.5)] overflow-y-auto z-50",
+          "absolute top-full mt-2 bg-white rounded-xl border border-subtle shadow-xl overflow-y-auto z-50",
           isHeader ? "right-0 w-[380px] max-h-[60vh]" : "left-0 right-0 max-h-[70vh]"
         )}>
           {isSearching ? (
-            <div className="p-8 text-center text-white/40">
-              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-white/50"></div>
+            <div className="p-8 text-center text-ink-secondary">
+              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-ink-tertiary"></div>
               <p className="mt-2">Zoeken...</p>
             </div>
           ) : results.length > 0 ? (
             <>
-              <div className="p-3 border-b border-white/[0.06] text-xs text-white/30">
+              <div className="p-3 border-b border-subtle text-xs text-ink-tertiary">
                 {results.length} resultaten gevonden
               </div>
               <ul>
@@ -198,8 +210,8 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
                   <li key={result.slug}>
                     <button
                       onClick={() => navigateToArticle(result)}
-                      className={`w-full text-left p-4 hover:bg-white/[0.04] transition-colors border-b border-white/[0.06] last:border-b-0 ${
-                        index === selectedIndex ? 'bg-white/[0.06]' : ''
+                      className={`w-full text-left p-4 hover:bg-surface transition-colors border-b border-subtle last:border-b-0 ${
+                        index === selectedIndex ? 'bg-surface' : ''
                       }`}
                     >
                       {/* Evidence Rating */}
@@ -208,12 +220,12 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
                       </div>
 
                       {/* Title */}
-                      <h3 className="font-semibold text-white mb-1">
+                      <h3 className="font-semibold text-ink mb-1">
                         {highlightMatch(result.title, query)}
                       </h3>
 
                       {/* Category */}
-                      <div className="text-xs text-white/40 mb-2">
+                      <div className="text-xs text-ink-secondary mb-2">
                         {result.category.split('-').map(word =>
                           word.charAt(0).toUpperCase() + word.slice(1)
                         ).join(' ')}
@@ -221,7 +233,7 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
 
                       {/* Summary */}
                       {result.summary && (
-                        <p className="text-sm text-white/50 line-clamp-2 mb-2">
+                        <p className="text-sm text-ink-secondary line-clamp-2 mb-2">
                           {result.summary}
                         </p>
                       )}
@@ -232,7 +244,7 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
                           {result.tags.slice(0, 3).map((tag) => (
                             <span
                               key={tag}
-                              className="px-2 py-0.5 bg-white/[0.04] border border-white/[0.08] text-white/60 rounded text-xs"
+                              className="px-2 py-0.5 bg-surface border border-subtle text-ink-secondary rounded text-xs"
                             >
                               {tag}
                             </span>
@@ -245,8 +257,8 @@ export function SearchBar({ variant = 'hero' }: SearchBarProps) {
               </ul>
             </>
           ) : query.length >= 2 ? (
-            <div className="p-8 text-center text-white/50">
-              <p className="mb-2">Geen resultaten gevonden voor "{query}"</p>
+            <div className="p-8 text-center text-ink-secondary">
+              <p className="mb-2">Geen resultaten gevonden voor &ldquo;{query}&rdquo;</p>
               <p className="text-sm">Probeer andere zoektermen</p>
             </div>
           ) : null}

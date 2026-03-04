@@ -22,9 +22,9 @@ export function SourcesList({ citations }: SourcesListProps) {
         <li
           key={citation.citation_number}
           id={`cite-${citation.citation_number}`}
-          className="text-sm text-white/60 leading-relaxed"
+          className="text-sm text-ink-secondary leading-relaxed"
         >
-          <span className="font-medium text-white/80">
+          <span className="font-medium text-ink">
             [{citation.citation_number}]
           </span>{' '}
           {citation.authors} {citation.year && `(${citation.year})`}. "
@@ -33,7 +33,7 @@ export function SourcesList({ citations }: SourcesListProps) {
               href={citation.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 hover:underline"
+              className="text-action hover:text-action hover:underline"
             >
               {citation.title}
             </a>

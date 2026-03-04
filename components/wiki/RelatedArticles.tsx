@@ -26,21 +26,17 @@ export async function RelatedArticles({ currentSlug, category }: RelatedArticles
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-white mb-6">Related Articles</h2>
-      <div className="grid gap-4">
-        {articles.map((article) => (
+      <h2 className="text-lg font-semibold text-ink mb-4">Related</h2>
+      <div className="space-y-2">
+        {articles.map((article: any) => (
           <Link
             key={article.slug}
-            href={`/wiki/${article.category}/${article.slug}`}
-            className="block p-4 bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08] rounded-xl hover:bg-white/[0.06] hover:-translate-y-0.5 transition-all"
+            href={`/wiki/${category}/${article.slug}`}
+            className="group block py-2 hover:bg-surface -mx-2 px-2 rounded-lg transition-colors"
           >
-            <h3 className="font-semibold text-white mb-2">
-              {article.title}
-            </h3>
+            <span className="text-sm text-ink-secondary group-hover:text-ink">{article.title}</span>
             {article.summary && (
-              <p className="text-sm text-white/50 line-clamp-2">
-                {article.summary}
-              </p>
+              <p className="text-xs text-ink-tertiary line-clamp-1 mt-0.5">{article.summary}</p>
             )}
           </Link>
         ))}

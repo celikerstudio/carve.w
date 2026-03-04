@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
-import { TrendingUp, Eye } from 'lucide-react';
 import { getCategoryColor } from '@/lib/wiki/category-colors';
 
 interface PopularArticle {
@@ -41,56 +40,29 @@ export async function PopularToday() {
   }
 
   return (
-    <div className="bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08] rounded-xl p-6">
-      {/* Header */}
-      <div className="flex items-center gap-2 mb-4">
-        <TrendingUp className="w-5 h-5 text-orange-500" />
-        <h2 className="text-lg font-semibold text-white">Populair Vandaag</h2>
-      </div>
-
-      {/* Articles List */}
-      <ul className="space-y-3">
-        {articles.map((article: any, index: number) => (
-          <li key={article.slug}>
-            <Link
-              href={`/wiki/${article.category}/${article.slug}`}
-              className="group flex items-start gap-3 hover:bg-white/[0.04] p-2 -mx-2 rounded-lg transition-colors"
-            >
-              {/* Rank */}
-              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-white/10 text-white text-xs font-bold flex items-center justify-center">
-                {index + 1}
-              </div>
-
-              {/* Content */}
-              <div className="flex-1 min-w-0">
-                <h3 className="text-sm font-medium text-white/80 group-hover:text-white transition-colors line-clamp-2">
-                  {article.title}
-                </h3>
-
-                {/* Category & Views */}
-                <div className="flex items-center gap-2 mt-1 text-xs text-white/30">
-                  <span className={`capitalize ${getCategoryColor(article.category).text}`}>
-                    {article.category.split('-').join(' ')}
-                  </span>
-                  <span>•</span>
-                  <div className="flex items-center gap-1">
-                    <Eye className="w-3 h-3" />
-                    <span>{article.view_count}</span>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      {/* View All Link */}
-      <Link
-        href="/wiki"
-        className="block mt-4 pt-4 border-t border-white/[0.06] text-sm text-white/40 hover:text-white/60 font-medium text-center"
-      >
-        Browse All Articles →
-      </Link>
+    <div className="divide-y divide-subtle">
+      {articles.map((article: any, index: number) => {
+        const colors = getCategoryColor(article.category);
+        return (
+          <Link
+            key={article.slug}
+            href={`/wiki/${article.category.toLowerCase()}/${article.slug}`}
+            className="group flex items-center gap-4 py-3 hover:bg-surface -mx-2 px-2 rounded-lg transition-colors"
+          >
+            <span className="text-xs font-medium text-ink-tertiary w-5 text-right">
+              {index + 1}
+            </span>
+            <div className="min-w-0 flex-1">
+              <span className="text-sm text-ink group-hover:text-ink">
+                {article.title}
+              </span>
+            </div>
+            <span className={`text-xs ${colors.text}`}>
+              {article.category.replace(/-/g, ' ')}
+            </span>
+          </Link>
+        );
+      })}
     </div>
   );
 }

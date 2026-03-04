@@ -67,9 +67,9 @@ export function TableOfContents({ html, category }: TableOfContentsProps) {
   }
 
   return (
-    <nav className="bg-[rgba(28,31,39,0.5)] backdrop-blur-xl border border-white/[0.08] rounded-xl p-6">
-      <h3 className="text-[11px] font-semibold text-white/30 uppercase tracking-[0.15em] mb-4">
-        Contents
+    <nav>
+      <h3 className="text-xs font-medium text-ink-tertiary uppercase tracking-wider mb-3">
+        In this article
       </h3>
       <ul className="space-y-2 text-sm">
         {toc.map((entry) => (
@@ -81,8 +81,8 @@ export function TableOfContents({ html, category }: TableOfContentsProps) {
               href={`#${entry.id}`}
               className={`block py-1 transition-colors ${
                 activeId === entry.id
-                  ? `${colors?.text || 'text-white'} font-medium border-l-2 pl-2`
-                  : 'text-white/50 hover:text-white/80'
+                  ? 'text-xs text-ink font-medium border-l-2 pl-2'
+                  : 'text-xs text-ink-tertiary hover:text-ink-secondary transition-colors'
               }`}
               style={activeId === entry.id && colors ? { borderLeftColor: colors.hex } : undefined}
             >

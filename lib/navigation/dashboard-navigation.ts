@@ -63,6 +63,12 @@ export const dashboardNavigationGroups = [
     icon: { name: 'UserIcon' },
     items: [
       {
+        title: "Profile",
+        href: "/dashboard/profile",
+        icon: { name: 'UserIcon' },
+        description: "Your profile"
+      },
+      {
         title: "Settings",
         href: "/dashboard/settings",
         icon: { name: 'SettingsIcon' },

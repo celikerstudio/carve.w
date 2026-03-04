@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Bug, Lightbulb, FileEdit, MessageSquare, Check } from 'lucide-react';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CarveFooter } from '@/components/carve/CarveFooter';

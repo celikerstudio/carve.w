@@ -46,6 +46,7 @@ export function LayoutWrapper({
     path === '/carve/roadmap' ||
     path === '/carve/vision' ||
     path === '/carve/faq' ||
+    path === '/carve/travel' ||
     path === '/carve/developer' ||
     path === '/carve/contributing'
 
@@ -77,7 +78,7 @@ export function LayoutWrapper({
 
   if (isWikiRoute) {
     return (
-      <div className="min-h-screen bg-[#0A0A0B]">
+      <div className="min-h-screen bg-[#f5f5f7]">
         {/* Fixed header */}
         <div className="fixed top-0 left-0 right-0 z-50">
           <AppHeader

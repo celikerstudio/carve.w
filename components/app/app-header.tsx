@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { createClient } from '@/lib/supabase/client';
 import { SearchBar } from '@/components/wiki/SearchBar';
 

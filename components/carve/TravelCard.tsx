@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Globe, Compass } from 'lucide-react';
 import { useState, useEffect } from 'react';
 

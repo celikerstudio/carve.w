@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { BarChart3, Dumbbell, Flame, Footprints } from 'lucide-react';
 import { useState, useEffect } from 'react';
 

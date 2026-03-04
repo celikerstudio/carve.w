@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, useInView } from 'motion/react';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import {
   Dumbbell, BarChart3, Users, Flame, Star, Trophy, Crown, Zap, Target,
   Check, X, Sparkles, Download, Headphones, Camera, ScanBarcode,

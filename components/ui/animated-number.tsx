@@ -5,7 +5,7 @@
 // Triggered on viewport entry. Respects prefers-reduced-motion.
 
 import { useEffect, useRef } from 'react'
-import { useInView, useMotionValue, useSpring, useReducedMotion } from 'motion/react'
+import { useInView, useMotionValue, useSpring, useReducedMotion } from 'framer-motion'
 
 interface AnimatedNumberProps {
   value: number

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import type { TripActivity } from "@/lib/ai/travel-schemas"
 
 interface ActivityEditFormProps {

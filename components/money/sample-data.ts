@@ -360,6 +360,95 @@ export const sampleSubscriptions: Subscription[] = [
 ]
 
 // ---------------------------------------------------------------------------
+// Budget configuration per category
+// ---------------------------------------------------------------------------
+
+export interface CategoryBudget {
+  category: SpendingCategory
+  budgetLimit: number
+  spent: number
+  icon: string
+  label: string
+}
+
+export const sampleCategoryBudgets: CategoryBudget[] = [
+  { category: "housing", budgetLimit: 4500, spent: 4200, icon: "\uD83C\uDFE0", label: "Housing" },
+  { category: "dining", budgetLimit: 1500, spent: 1800, icon: "\uD83C\uDF7D\uFE0F", label: "Dining" },
+  { category: "travel", budgetLimit: 2000, spent: 1500, icon: "\u2708\uFE0F", label: "Travel" },
+  { category: "shopping", budgetLimit: 1000, spent: 950, icon: "\uD83D\uDECD\uFE0F", label: "Shopping" },
+  { category: "transport", budgetLimit: 800, spent: 720, icon: "\uD83D\uDE97", label: "Transport" },
+  { category: "entertainment", budgetLimit: 600, spent: 680, icon: "\uD83C\uDFAC", label: "Entertainment" },
+  { category: "utilities", budgetLimit: 500, spent: 450, icon: "\u26A1", label: "Utilities" },
+  { category: "subscriptions", budgetLimit: 500, spent: 200, icon: "\uD83D\uDD01", label: "Subscriptions" },
+]
+
+// ---------------------------------------------------------------------------
+// Spending trends (current vs previous month)
+// ---------------------------------------------------------------------------
+
+export interface SpendingTrend {
+  category: SpendingCategory
+  currentMonth: number
+  previousMonth: number
+  icon: string
+  label: string
+}
+
+export const sampleSpendingTrends: SpendingTrend[] = [
+  { category: "housing", currentMonth: 4200, previousMonth: 4200, icon: "\uD83C\uDFE0", label: "Housing" },
+  { category: "dining", currentMonth: 1800, previousMonth: 1420, icon: "\uD83C\uDF7D\uFE0F", label: "Dining" },
+  { category: "travel", currentMonth: 1500, previousMonth: 2100, icon: "\u2708\uFE0F", label: "Travel" },
+  { category: "shopping", currentMonth: 950, previousMonth: 780, icon: "\uD83D\uDECD\uFE0F", label: "Shopping" },
+  { category: "transport", currentMonth: 720, previousMonth: 650, icon: "\uD83D\uDE97", label: "Transport" },
+  { category: "entertainment", currentMonth: 680, previousMonth: 520, icon: "\uD83C\uDFAC", label: "Entertainment" },
+  { category: "utilities", currentMonth: 450, previousMonth: 430, icon: "\u26A1", label: "Utilities" },
+  { category: "subscriptions", currentMonth: 200, previousMonth: 188, icon: "\uD83D\uDD01", label: "Subscriptions" },
+]
+
+// ---------------------------------------------------------------------------
+// Smart tips for insights page
+// ---------------------------------------------------------------------------
+
+export interface SmartTip {
+  id: string
+  title: string
+  description: string
+  icon: string
+  category: "save" | "optimize" | "alert" | "reward"
+}
+
+export const sampleSmartTips: SmartTip[] = [
+  {
+    id: "tip-001",
+    title: "Switch to Annual Billing",
+    description: "Switching Figma and Spotify to yearly plans could save you $48/year.",
+    icon: "\uD83D\uDCB0",
+    category: "save",
+  },
+  {
+    id: "tip-002",
+    title: "Dining Spend Increasing",
+    description: "Your dining expenses are up 27% compared to last month. Consider setting a weekly limit.",
+    icon: "\uD83D\uDCC9",
+    category: "alert",
+  },
+  {
+    id: "tip-003",
+    title: "Great Job on Travel",
+    description: "You reduced travel spending by 29% this month. Keep it up!",
+    icon: "\u2B50",
+    category: "reward",
+  },
+  {
+    id: "tip-004",
+    title: "Bundle Your Streaming",
+    description: "Consider a bundle deal for Netflix + Spotify to save up to $5/month.",
+    icon: "\uD83D\uDD17",
+    category: "optimize",
+  },
+]
+
+// ---------------------------------------------------------------------------
 // Sample savings insights
 // ---------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CarveFooter } from '@/components/carve/CarveFooter';

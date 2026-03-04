@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import { Trophy, Star, TrendingUp, ArrowRight, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { LEVEL_UNLOCK_MIN_QUESTIONS } from '@/lib/quiz/constants'

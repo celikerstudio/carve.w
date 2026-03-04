@@ -4,7 +4,7 @@
 // Supports fade-up, fade, slide-left, slide-right, scale variants.
 // Uses IntersectionObserver for in/out/exit states.
 
-import { motion, useInView, useReducedMotion, type Variants } from 'motion/react';
+import { motion, useInView, useReducedMotion, type Variants } from 'framer-motion';
 import { useRef, ReactNode, useEffect, useState } from 'react';
 import { EASE } from '@/lib/motion-config';
 

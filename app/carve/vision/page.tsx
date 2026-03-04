@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Gamepad2, BarChart3, Users, Brain } from 'lucide-react';
 import Link from 'next/link';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';

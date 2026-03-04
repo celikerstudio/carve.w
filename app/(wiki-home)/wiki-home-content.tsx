@@ -6,7 +6,7 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion, useReducedMotion } from 'framer-motion';
 import { SearchBar } from '@/components/wiki/SearchBar';
 import { getCategoryColor } from '@/lib/wiki/category-colors';
 import { estimateReadTime } from '@/lib/wiki/read-time';

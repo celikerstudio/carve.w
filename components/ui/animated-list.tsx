@@ -5,7 +5,7 @@
 // Respects prefers-reduced-motion — renders children directly when enabled.
 
 import { Children, type ReactNode, useId } from 'react'
-import { motion, useReducedMotion } from 'motion/react'
+import { motion, useReducedMotion } from 'framer-motion'
 import { SPRING_GENTLE, STAGGER } from '@/lib/motion-config'
 
 interface AnimatedListProps {

@@ -68,9 +68,9 @@ export async function ActivityFeed() {
   if (activities.length === 0) {
     return (
       <div className="bg-white rounded-lg shadow-md p-8 text-center">
-        <Clock className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Activity Feed</h3>
-        <p className="text-gray-500 text-sm">
+        <Clock className="w-12 h-12 text-ink-muted mx-auto mb-4" />
+        <h3 className="text-lg font-semibold text-ink mb-2">Activity Feed</h3>
+        <p className="text-ink-secondary text-sm">
           No recent activity yet. Be the first!
         </p>
       </div>
@@ -89,11 +89,11 @@ export async function ActivityFeed() {
       </div>
 
       {/* Activity List */}
-      <div className="divide-y divide-gray-100 max-h-[500px] overflow-y-auto">
+      <div className="divide-y divide-subtle max-h-[500px] overflow-y-auto">
         {activities.map((activity, index) => (
           <div
             key={`${activity.username}-${activity.created_at}-${index}`}
-            className="p-3 hover:bg-gray-50 transition-colors"
+            className="p-3 hover:bg-surface transition-colors"
           >
             <div className="flex items-start gap-3">
               {/* Avatar */}
@@ -113,18 +113,18 @@ export async function ActivityFeed() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex-1">
-                    <p className="text-sm text-gray-900">
+                    <p className="text-sm text-ink">
                       <span className="font-semibold">{activity.display_name}</span>{' '}
-                      <span className="text-gray-600">{activity.activity_text}</span>
+                      <span className="text-ink-secondary">{activity.activity_text}</span>
                     </p>
                     <div className="flex items-center gap-2 mt-1">
-                      <span className="text-xs text-gray-500 flex items-center gap-1">
+                      <span className="text-xs text-ink-secondary flex items-center gap-1">
                         {getActivityIcon(activity.activity_type)}
                         <span className="capitalize">{activity.activity_type.replace('_', ' ')}</span>
                       </span>
                       {activity.xp_earned > 0 && (
                         <>
-                          <span className="text-xs text-gray-400">•</span>
+                          <span className="text-xs text-ink-tertiary">•</span>
                           <span className="text-xs font-semibold text-green-600">
                             +{activity.xp_earned} XP
                           </span>
@@ -132,7 +132,7 @@ export async function ActivityFeed() {
                       )}
                     </div>
                   </div>
-                  <span className="text-xs text-gray-400 flex-shrink-0">
+                  <span className="text-xs text-ink-tertiary flex-shrink-0">
                     {getTimeAgo(activity.created_at)}
                   </span>
                 </div>
@@ -143,8 +143,8 @@ export async function ActivityFeed() {
       </div>
 
       {/* Footer */}
-      <div className="bg-gray-50 p-3 border-t border-gray-100 text-center">
-        <p className="text-xs text-gray-500">
+      <div className="bg-surface p-3 border-t border-subtle text-center">
+        <p className="text-xs text-ink-secondary">
           Join the waitlist to track your own progress
         </p>
       </div>

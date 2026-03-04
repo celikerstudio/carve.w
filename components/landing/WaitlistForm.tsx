@@ -100,9 +100,9 @@ export function WaitlistForm({ source = 'hero' }: { source?: string }) {
           disabled={state === 'loading'}
           id="consent"
         />
-        <label htmlFor="consent" className="text-sm text-gray-600 leading-tight cursor-pointer">
+        <label htmlFor="consent" className="text-sm text-ink-secondary leading-tight cursor-pointer">
           I agree to receive launch updates and accept the{' '}
-          <a href="/privacy" className="underline hover:text-gray-900">Privacy Policy</a>
+          <a href="/privacy" className="underline hover:text-ink">Privacy Policy</a>
         </label>
       </div>
 

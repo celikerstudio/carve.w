@@ -34,11 +34,11 @@ function getRankBadgeColor(rank: number): string {
     case 1:
       return 'bg-yellow-500 text-white'; // Gold
     case 2:
-      return 'bg-gray-400 text-white'; // Silver
+      return 'bg-ink-tertiary text-white'; // Silver
     case 3:
       return 'bg-amber-700 text-white'; // Bronze
     default:
-      return 'bg-gray-200 text-gray-700';
+      return 'bg-surface text-ink';
   }
 }
 
@@ -57,9 +57,9 @@ export async function HiscoresWidget() {
   if (topUsers.length === 0) {
     return (
       <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-        <Trophy className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-        <h2 className="text-xl font-bold text-gray-900 mb-2">Leaderboard</h2>
-        <p className="text-gray-500 text-sm">
+        <Trophy className="w-12 h-12 text-ink-muted mx-auto mb-4" />
+        <h2 className="text-xl font-bold text-ink mb-2">Leaderboard</h2>
+        <p className="text-ink-secondary text-sm">
           Be the first to join and claim the top spot!
         </p>
       </div>
@@ -83,11 +83,11 @@ export async function HiscoresWidget() {
       </div>
 
       {/* Leaderboard */}
-      <div className="divide-y divide-gray-100">
+      <div className="divide-y divide-subtle">
         {topUsers.map((user) => (
           <div
             key={user.id}
-            className="flex items-center gap-4 p-4 hover:bg-gray-50 transition-colors"
+            className="flex items-center gap-4 p-4 hover:bg-surface transition-colors"
           >
             {/* Rank Badge */}
             <div
@@ -113,10 +113,10 @@ export async function HiscoresWidget() {
 
             {/* User Info */}
             <div className="flex-1 min-w-0">
-              <h3 className="font-bold text-gray-900 truncate">
+              <h3 className="font-bold text-ink truncate">
                 {user.display_name}
               </h3>
-              <div className="flex items-center gap-3 text-xs text-gray-500 mt-0.5">
+              <div className="flex items-center gap-3 text-xs text-ink-secondary mt-0.5">
                 <span className="flex items-center gap-1">
                   <Zap className="w-3 h-3" />
                   Level {user.level}
@@ -131,14 +131,14 @@ export async function HiscoresWidget() {
               <div className="font-bold text-lg text-blue-600">
                 {user.total_xp.toLocaleString()}
               </div>
-              <div className="text-xs text-gray-500">XP</div>
+              <div className="text-xs text-ink-secondary">XP</div>
             </div>
           </div>
         ))}
       </div>
 
       {/* Footer */}
-      <div className="bg-gray-50 p-4 border-t border-gray-100">
+      <div className="bg-surface p-4 border-t border-subtle">
         <Link
           href="/hiscores"
           className="block text-center text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"

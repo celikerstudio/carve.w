@@ -53,10 +53,10 @@ export function DetailedFeatureSection({
         <div className={`w-12 h-12 bg-gradient-to-br ${gradient} rounded-lg flex items-center justify-center shadow-lg`}>
           <Icon className="w-6 h-6 text-white" />
         </div>
-        <h2 className="text-3xl font-bold text-gray-900">{title}</h2>
+        <h2 className="text-3xl font-bold text-ink">{title}</h2>
       </div>
 
-      <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+      <p className="text-xl text-ink-secondary mb-8 leading-relaxed">
         {description}
       </p>
 
@@ -78,7 +78,7 @@ export function DetailedFeatureSection({
                 />
               </svg>
             </div>
-            <span className="text-gray-700 text-lg">{feature}</span>
+            <span className="text-ink text-lg">{feature}</span>
           </li>
         ))}
       </ul>

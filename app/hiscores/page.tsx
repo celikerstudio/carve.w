@@ -25,13 +25,13 @@ const TABS: { value: LeaderboardType; label: string; icon: string }[] = [
 function getRankStyle(rank: number): string {
   switch (rank) {
     case 1:
-      return 'bg-[#c8b86e]/20 text-[#c8b86e] border-[#c8b86e]/30';
+      return 'bg-health/20 text-health border-health/30';
     case 2:
       return 'bg-slate-400/20 text-slate-300 border-slate-400/30';
     case 3:
       return 'bg-amber-700/20 text-amber-500 border-amber-700/30';
     default:
-      return 'bg-white/5 text-slate-400 border-white/[0.06]';
+      return 'bg-white/5 text-slate-400 border-subtle';
   }
 }
 
@@ -73,7 +73,7 @@ export default function HiscoresPage() {
   }, [leaderboardType]);
 
   return (
-    <div className="min-h-screen bg-[#0c0e14] py-12 px-4">
+    <div className="min-h-screen bg-surface py-12 px-4">
       <div className="max-w-5xl mx-auto space-y-8">
         {/* Header */}
         <div className="text-center">
@@ -83,13 +83,13 @@ export default function HiscoresPage() {
               Hiscores
             </h1>
           </div>
-          <p className="text-lg text-[#9da6b9]">
+          <p className="text-lg text-ink-secondary">
             See where you rank among the Carve community
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="rounded-xl bg-[#1c1f27] border border-white/[0.06] p-1.5 flex gap-1.5">
+        <div className="rounded-xl bg-surface-raised border border-subtle p-1.5 flex gap-1.5">
           {TABS.map((tab) => (
             <button
               key={tab.value}
@@ -107,7 +107,7 @@ export default function HiscoresPage() {
         </div>
 
         {/* Leaderboard */}
-        <div className="rounded-xl bg-[#1c1f27] border border-white/[0.06] overflow-hidden">
+        <div className="rounded-xl bg-surface-raised border border-subtle overflow-hidden">
           {loading ? (
             <div className="p-12 text-center">
               <div className="inline-block animate-spin rounded-full h-10 w-10 border-2 border-white/10 border-t-white/50 mb-4" />
@@ -119,7 +119,7 @@ export default function HiscoresPage() {
               <h3 className="text-xl font-bold text-white mb-2">
                 No Players Yet
               </h3>
-              <p className="text-[#9da6b9]">
+              <p className="text-ink-secondary">
                 Be the first to join and claim the top spot!
               </p>
             </div>
@@ -130,7 +130,7 @@ export default function HiscoresPage() {
                   key={user.id}
                   className={`flex items-center gap-4 p-4 transition-colors ${
                     user.rank <= 3
-                      ? 'bg-[#c8b86e]/[0.03]'
+                      ? 'bg-health/[0.03]'
                       : 'hover:bg-white/[0.02]'
                   }`}
                 >
@@ -191,11 +191,11 @@ export default function HiscoresPage() {
         </div>
 
         {/* CTA */}
-        <div className="rounded-xl bg-[#1c1f27] border border-white/[0.06] p-8 text-center">
+        <div className="rounded-xl bg-surface-raised border border-subtle p-8 text-center">
           <h2 className="text-2xl font-bold text-white mb-3">
             Want to compete?
           </h2>
-          <p className="text-[#9da6b9] mb-6">
+          <p className="text-ink-secondary mb-6">
             Join the waitlist to track your workouts, earn XP, and climb the leaderboard.
           </p>
           <a

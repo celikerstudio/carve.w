@@ -12,7 +12,7 @@ export default function DemoPage() {
   const data = getDemoData();
 
   return (
-    <div className="min-h-screen bg-[#ececf1]">
+    <div className="min-h-screen bg-surface">
       <DemoBanner />
 
       <div className="max-w-6xl mx-auto px-4 py-8">
@@ -24,8 +24,8 @@ export default function DemoPage() {
                 {data.profile.username.charAt(0)}
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">{data.profile.username}</h1>
-                <p className="text-gray-600">Level {data.profile.level} • {data.profile.total_xp.toLocaleString()} XP</p>
+                <h1 className="text-2xl font-bold text-ink">{data.profile.username}</h1>
+                <p className="text-ink-secondary">Level {data.profile.level} • {data.profile.total_xp.toLocaleString()} XP</p>
               </div>
             </div>
             <div className="text-right">
@@ -33,7 +33,7 @@ export default function DemoPage() {
                 <Flame className="w-5 h-5" />
                 <span className="text-2xl font-bold">{data.stats.current_streak}</span>
               </div>
-              <p className="text-sm text-gray-600">Day Streak</p>
+              <p className="text-sm text-ink-secondary">Day Streak</p>
             </div>
           </div>
         </div>
@@ -45,8 +45,8 @@ export default function DemoPage() {
               <Dumbbell className="w-5 h-5" />
               <h3 className="font-semibold">Workouts</h3>
             </div>
-            <p className="text-3xl font-bold text-gray-900">{data.stats.workouts_count}</p>
-            <p className="text-sm text-gray-600">Total logged</p>
+            <p className="text-3xl font-bold text-ink">{data.stats.workouts_count}</p>
+            <p className="text-sm text-ink-secondary">Total logged</p>
           </div>
 
           <div className="bg-white rounded-lg p-4 shadow">
@@ -54,8 +54,8 @@ export default function DemoPage() {
               <Apple className="w-5 h-5" />
               <h3 className="font-semibold">Meals</h3>
             </div>
-            <p className="text-3xl font-bold text-gray-900">{data.stats.meals_count}</p>
-            <p className="text-sm text-gray-600">Total logged</p>
+            <p className="text-3xl font-bold text-ink">{data.stats.meals_count}</p>
+            <p className="text-sm text-ink-secondary">Total logged</p>
           </div>
 
           <div className="bg-white rounded-lg p-4 shadow">
@@ -63,8 +63,8 @@ export default function DemoPage() {
               <Trophy className="w-5 h-5" />
               <h3 className="font-semibold">PRs</h3>
             </div>
-            <p className="text-3xl font-bold text-gray-900">{data.stats.prs_this_month}</p>
-            <p className="text-sm text-gray-600">This month</p>
+            <p className="text-3xl font-bold text-ink">{data.stats.prs_this_month}</p>
+            <p className="text-sm text-ink-secondary">This month</p>
           </div>
 
           <div className="bg-white rounded-lg p-4 shadow">
@@ -72,22 +72,22 @@ export default function DemoPage() {
               <TrendingUp className="w-5 h-5" />
               <h3 className="font-semibold">Best Streak</h3>
             </div>
-            <p className="text-3xl font-bold text-gray-900">{data.stats.max_streak}</p>
-            <p className="text-sm text-gray-600">Days</p>
+            <p className="text-3xl font-bold text-ink">{data.stats.max_streak}</p>
+            <p className="text-sm text-ink-secondary">Days</p>
           </div>
         </div>
 
         {/* Recent Workouts */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Recent Workouts</h2>
+          <h2 className="text-xl font-bold text-ink mb-4">Recent Workouts</h2>
           <div className="space-y-4">
             {data.recentWorkouts.map((workout) => (
               <div key={workout.id} className="border-l-4 border-blue-500 pl-4 py-2">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold text-gray-900">{workout.name}</h3>
-                  <span className="text-sm text-gray-600">{workout.date}</span>
+                  <h3 className="font-semibold text-ink">{workout.name}</h3>
+                  <span className="text-sm text-ink-secondary">{workout.date}</span>
                 </div>
-                <div className="flex items-center gap-4 text-sm text-gray-600">
+                <div className="flex items-center gap-4 text-sm text-ink-secondary">
                   <span>{workout.duration_minutes} min</span>
                   <span>•</span>
                   <span>{workout.total_volume.toLocaleString()} lbs total</span>
@@ -96,7 +96,7 @@ export default function DemoPage() {
                 </div>
                 <div className="mt-2 flex flex-wrap gap-2">
                   {workout.exercises.map((exercise, idx) => (
-                    <span key={idx} className="text-xs bg-gray-100 px-2 py-1 rounded">
+                    <span key={idx} className="text-xs bg-surface px-2 py-1 rounded">
                       {exercise.name} {exercise.sets}×{exercise.reps}
                       {exercise.weight > 0 && ` @ ${exercise.weight}${exercise.unit}`}
                     </span>
@@ -109,7 +109,7 @@ export default function DemoPage() {
 
         {/* Achievements */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Achievements</h2>
+          <h2 className="text-xl font-bold text-ink mb-4">Achievements</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {data.achievements.map((achievement) => (
               <div
@@ -117,12 +117,12 @@ export default function DemoPage() {
                 className={`text-center p-4 rounded-lg border ${
                   achievement.unlocked
                     ? 'bg-yellow-50 border-yellow-200'
-                    : 'bg-gray-50 border-gray-200 opacity-50'
+                    : 'bg-surface border-subtle opacity-50'
                 }`}
               >
                 <div className="text-4xl mb-2">{achievement.icon}</div>
-                <p className="text-xs font-semibold text-gray-900">{achievement.name}</p>
-                <p className="text-xs text-gray-600 mt-1">{achievement.description}</p>
+                <p className="text-xs font-semibold text-ink">{achievement.name}</p>
+                <p className="text-xs text-ink-secondary mt-1">{achievement.description}</p>
               </div>
             ))}
           </div>
@@ -130,13 +130,13 @@ export default function DemoPage() {
 
         {/* Personal Records */}
         <div className="bg-white rounded-lg p-6 shadow">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Personal Records</h2>
+          <h2 className="text-xl font-bold text-ink mb-4">Personal Records</h2>
           <div className="space-y-3">
             {data.personalRecords.map((pr, idx) => (
               <div key={idx} className="flex items-center justify-between py-2 border-b last:border-0">
                 <div>
-                  <p className="font-semibold text-gray-900">{pr.exercise}</p>
-                  <p className="text-sm text-gray-600">{pr.date}</p>
+                  <p className="font-semibold text-ink">{pr.exercise}</p>
+                  <p className="text-sm text-ink-secondary">{pr.date}</p>
                 </div>
                 <div className="text-right">
                   <p className="text-lg font-bold text-blue-600">

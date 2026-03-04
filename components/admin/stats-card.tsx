@@ -43,7 +43,7 @@ export function StatsCard({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="rounded-xl p-5 bg-[#1c1f27] border border-white/[0.06] hover:border-white/[0.12] hover:bg-white/[0.02] transition-all duration-200"
+      className="rounded-xl p-5 bg-surface-raised border border-subtle hover:border-subtle hover:bg-surface-raised transition-all duration-200"
     >
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2">
@@ -64,7 +64,7 @@ export function StatsCard({
       </div>
       <p className="text-3xl font-bold text-white tracking-tight">{displayValue}</p>
       {description && (
-        <p className="text-[#9da6b9] text-sm mt-1">{description}</p>
+        <p className="text-ink-secondary text-sm mt-1">{description}</p>
       )}
     </motion.div>
   );

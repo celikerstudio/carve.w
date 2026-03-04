@@ -46,7 +46,7 @@ function ChartTooltipContent({
 }) {
   if (!active || !payload?.length) return null;
   return (
-    <div className="rounded-lg bg-[#1c1f27] border border-white/[0.06] px-3 py-2 text-xs shadow-xl">
+    <div className="rounded-lg bg-surface-raised border border-subtle px-3 py-2 text-xs shadow-xl">
       <p className="text-slate-500 mb-1">{label}</p>
       {payload.map((entry, i) => (
         <div key={i} className="flex items-center gap-2">
@@ -54,7 +54,7 @@ function ChartTooltipContent({
             className="inline-block h-2 w-2 rounded-full"
             style={{ backgroundColor: entry.color }}
           />
-          <span className="text-[#9da6b9] capitalize">{entry.name}:</span>
+          <span className="text-ink-secondary capitalize">{entry.name}:</span>
           <span className="text-white font-medium">{entry.value}</span>
         </div>
       ))}
@@ -220,13 +220,13 @@ export function RoleDistributionChart({ data }: RoleChartProps) {
               if (!active || !payload?.length) return null;
               const entry = payload[0];
               return (
-                <div className="rounded-lg bg-[#1c1f27] border border-white/[0.06] px-3 py-2 text-xs shadow-xl">
+                <div className="rounded-lg bg-surface-raised border border-subtle px-3 py-2 text-xs shadow-xl">
                   <div className="flex items-center gap-2">
                     <span
                       className="inline-block h-2 w-2 rounded-full"
                       style={{ backgroundColor: entry.payload?.fill }}
                     />
-                    <span className="text-[#9da6b9] capitalize">{String(entry.name)}:</span>
+                    <span className="text-ink-secondary capitalize">{String(entry.name)}:</span>
                     <span className="text-white font-medium">{String(entry.value)}</span>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export function RoleDistributionChart({ data }: RoleChartProps) {
               className="inline-block h-2 w-2 rounded-full"
               style={{ backgroundColor: PIE_COLORS[i % PIE_COLORS.length] }}
             />
-            <span className="text-[#9da6b9] capitalize">{entry.role}</span>
+            <span className="text-ink-secondary capitalize">{entry.role}</span>
             <span className="text-slate-500">
               ({total > 0 ? Math.round((entry.count / total) * 100) : 0}%)
             </span>

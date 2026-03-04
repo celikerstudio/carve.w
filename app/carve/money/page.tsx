@@ -5,13 +5,13 @@ import { Receipt, PiggyBank, TrendingUp } from 'lucide-react';
 import { MoneyCard } from '@/components/carve/MoneyCard';
 import { CarveFooter } from '@/components/carve/CarveFooter';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
-import { MarketingPageLayout } from '@/components/carve/MarketingPageLayout';
+import { MarketingHero } from '@/components/carve/MarketingHero';
 
 export default function CarveMoneyPage() {
   return (
-    <MarketingPageLayout page="/carve/money">
+    <div className="min-h-screen w-full bg-[#0A0A0B] text-white">
       {/* Hero Section */}
-      <section className="min-h-[60vh] flex flex-col items-center justify-center px-6 py-20 relative">
+      <section className="min-h-[100dvh] flex flex-col items-center justify-center px-6 py-20 relative">
         {/* CARVE MONEY logo */}
         <motion.h1
           initial={{ opacity: 0 }}
@@ -44,6 +44,8 @@ export default function CarveMoneyPage() {
         <MoneyCard />
 
       </section>
+
+      <MarketingHero page="/carve/money" />
 
       {/* Value Proposition */}
       <section className="py-24 md:py-32 px-6">
@@ -95,6 +97,6 @@ export default function CarveMoneyPage() {
           </div>
         </ScrollReveal>
       </section>
-    </MarketingPageLayout>
+    </div>
   );
 }

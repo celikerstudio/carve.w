@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 html {
   scroll-behavior: smooth;
@@ -40,6 +41,41 @@ html {
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
+
+  /* Semantic design tokens — dark-first */
+  --color-ink: #fafafa;
+  --color-ink-secondary: #a3a3a3;
+  --color-ink-tertiary: #737373;
+  --color-ink-muted: #404040;
+  --color-surface: #141415;
+  --color-surface-raised: #1a1a1b;
+  --color-subtle: #262626;
+  --color-action: #3B82F6;
+  --color-action-hover: #2563EB;
+  --color-health: #D4A843;
+  --color-money: #3B82F6;
+  --color-travel: #F97316;
+  --color-wiki-accent: #10B981;
+  --color-success: #34C759;
+  --color-warning: #FF9500;
+  --color-danger: #FF3B30;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-card-hover: 0 2px 8px rgba(0,0,0,0.16), 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Wiki light-mode overrides — applied via .wiki-light class on layout wrapper */
+.wiki-light {
+  --color-ink: #1d1d1f;
+  --color-ink-secondary: #86868b;
+  --color-ink-tertiary: #aeaeb2;
+  --color-ink-muted: #d1d1d6;
+  --color-surface: #f5f5f7;
+  --color-surface-raised: #ffffff;
+  --color-subtle: #e5e5ea;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+  --shadow-card-hover: 0 2px 8px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.05);
 }
 
 @media (prefers-color-scheme: dark) {

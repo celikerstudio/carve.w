@@ -2,11 +2,12 @@
 
 import { useEffect, useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Loader2, AlertCircle, ArrowLeft } from 'lucide-react'
+import { Loader2, AlertCircle, ArrowLeft, LogIn } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import { XP_PER_CORRECT } from '@/lib/quiz/constants'
 import type { DifficultyLevel } from '@/lib/quiz/constants'
-import type { QuizQuestion as QuizQuestionType, QuizSubmitResponse } from '@/lib/quiz/types'
+import type { QuizSubmitResponse } from '@/lib/quiz/types'
 import { QuizProgress } from '@/components/quiz/QuizProgress'
 import { QuizQuestion } from '@/components/quiz/QuizQuestion'
 import { QuizResults } from '@/components/quiz/QuizResults'
@@ -17,19 +18,37 @@ interface QuizContentProps {
   difficulty: DifficultyLevel
 }
 
+interface QuestionData {
+  id: string
+  question_text: string
+  options: string[]
+  correct_option_index: number
+  explanation: string
+  article_link: string | null
+}
+
 interface StoredAnswer {
   question_id: string
   selected_option_index: number
 }
 
 export function QuizContent({ category, sessionId, difficulty }: QuizContentProps) {
-  const [questions, setQuestions] = useState<QuizQuestionType[]>([])
+  const isGuest = sessionId === 'guest'
+  const [questions, setQuestions] = useState<QuestionData[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<StoredAnswer[]>([])
+  const [currentResult, setCurrentResult] = useState<{
+    selected_option_index: number
+    correct_option_index: number
+    is_correct: boolean
+    explanation: string | null
+    article_link: string | null
+  } | undefined>(undefined)
   const [submitting, setSubmitting] = useState(false)
   const [submitResponse, setSubmitResponse] = useState<QuizSubmitResponse | null>(null)
+  const [showGuestComplete, setShowGuestComplete] = useState(false)
 
   // Fetch questions
   useEffect(() => {
@@ -38,37 +57,34 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
         const res = await fetch(
           `/api/quiz/questions?category=${encodeURIComponent(category)}&difficulty=${difficulty}`
         )
-        if (!res.ok) {
-          throw new Error('Failed to load questions')
-        }
+        if (!res.ok) throw new Error('Failed to load questions')
         const data = await res.json()
-        setQuestions(data)
+        setQuestions(data.questions ?? [])
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Something went wrong')
       } finally {
         setLoading(false)
       }
     }
-
     fetchQuestions()
   }, [category, difficulty])
 
-  // Submit all answers
+  // Submit quiz (authenticated only)
   const submitQuiz = useCallback(
     async (allAnswers: StoredAnswer[]) => {
+      if (isGuest) {
+        setShowGuestComplete(true)
+        return
+      }
+
       setSubmitting(true)
       try {
         const res = await fetch('/api/quiz/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            session_id: sessionId,
-            answers: allAnswers,
-          }),
+          body: JSON.stringify({ session_id: sessionId, answers: allAnswers }),
         })
-        if (!res.ok) {
-          throw new Error('Failed to submit quiz')
-        }
+        if (!res.ok) throw new Error('Failed to submit quiz')
         const data: QuizSubmitResponse = await res.json()
         setSubmitResponse(data)
       } catch (err) {
@@ -77,60 +93,53 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
         setSubmitting(false)
       }
     },
-    [sessionId]
+    [sessionId, isGuest]
   )
 
-  // Handle answering a question
+  // Handle answering
   const handleAnswer = useCallback(
     (selectedIndex: number) => {
-      const currentQuestion = questions[currentIndex]
-      if (!currentQuestion) return
+      const question = questions[currentIndex]
+      if (!question) return
 
       const newAnswer: StoredAnswer = {
-        question_id: currentQuestion.id,
+        question_id: question.id,
         selected_option_index: selectedIndex,
       }
 
       const updatedAnswers = [...answers, newAnswer]
       setAnswers(updatedAnswers)
 
-      // Auto-advance or submit after a delay
+      // Show result immediately (we have correct_option_index)
+      const isCorrect = selectedIndex === question.correct_option_index
+      setCurrentResult({
+        selected_option_index: selectedIndex,
+        correct_option_index: question.correct_option_index,
+        is_correct: isCorrect,
+        explanation: isCorrect ? null : question.explanation,
+        article_link: question.article_link,
+      })
+
+      // Auto-advance after delay (longer if wrong to read explanation)
+      const delay = isCorrect ? 1200 : 2500
       setTimeout(() => {
+        setCurrentResult(undefined)
         if (currentIndex < questions.length - 1) {
           setCurrentIndex((prev) => prev + 1)
         } else {
-          // Last question — submit
           submitQuiz(updatedAnswers)
         }
-      }, 300)
+      }, delay)
     },
     [answers, currentIndex, questions, submitQuiz]
   )
 
-  // Current question result for display (if already answered)
-  const currentQuestionResult = (() => {
-    const currentQuestion = questions[currentIndex]
-    if (!currentQuestion) return undefined
-
-    const answer = answers.find((a) => a.question_id === currentQuestion.id)
-    if (!answer) return undefined
-
-    return {
-      selected_option_index: answer.selected_option_index,
-      correct_option_index: currentQuestion.correct_option_index,
-      is_correct: answer.selected_option_index === currentQuestion.correct_option_index,
-      explanation: currentQuestion.explanation,
-      article_link: currentQuestion.article_link,
-    }
-  })()
-
-  // Score so far
+  // Calculate local score
   const currentScore = answers.filter((a) => {
     const q = questions.find((question) => question.id === a.question_id)
     return q && a.selected_option_index === q.correct_option_index
   }).length
 
-  // Loading state
   if (loading) {
     return (
       <div className="max-w-lg mx-auto px-4 py-24 flex flex-col items-center gap-4">
@@ -140,7 +149,6 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
     )
   }
 
-  // Error state
   if (error) {
     return (
       <div className="max-w-lg mx-auto px-4 py-24 flex flex-col items-center gap-4 text-center">
@@ -156,7 +164,6 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
     )
   }
 
-  // No questions available
   if (questions.length === 0) {
     return (
       <div className="max-w-lg mx-auto px-4 py-24 flex flex-col items-center gap-4 text-center">
@@ -171,7 +178,6 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
     )
   }
 
-  // Submitting state
   if (submitting) {
     return (
       <div className="max-w-lg mx-auto px-4 py-24 flex flex-col items-center gap-4">
@@ -181,7 +187,7 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
     )
   }
 
-  // Results state
+  // Authenticated results
   if (submitResponse) {
     return (
       <div className="max-w-lg mx-auto px-4 py-12">
@@ -192,8 +198,6 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
         >
           <QuizResults response={submitResponse} category={category} />
         </motion.div>
-
-        {/* Back to category link */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -212,12 +216,56 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
     )
   }
 
-  // Active quiz state
+  // Guest completion
+  if (showGuestComplete) {
+    const total = questions.length
+    const percentage = Math.round((currentScore / total) * 100)
+
+    return (
+      <div className="max-w-lg mx-auto px-4 py-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-[rgba(28,31,39,0.7)] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-8 text-center"
+        >
+          <p className="text-3xl font-bold text-white mb-1">
+            {currentScore}/{total}
+          </p>
+          <p className="text-[#9da6b9] text-sm mb-6">
+            {percentage}% correct
+          </p>
+
+          <div className="border-t border-white/[0.06] pt-6">
+            <p className="text-[#9da6b9] text-sm mb-4">
+              Log in to save your score, earn XP, and track your progress.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link
+                href={`/login?redirect=/wiki/learn/${category.toLowerCase()}`}
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#c8b86e] text-[#0A0A0B] text-sm font-semibold hover:bg-[#d4c478] transition-colors"
+              >
+                <LogIn className="w-4 h-4" />
+                Log in
+              </Link>
+              <Link
+                href={`/wiki/learn/${category.toLowerCase()}`}
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-white/[0.06] text-white text-sm font-medium hover:border-white/[0.12] transition-colors"
+              >
+                Try another quiz
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    )
+  }
+
+  // Active quiz
   const currentQuestion = questions[currentIndex]
 
   return (
     <div className="max-w-lg mx-auto px-4 py-12">
-      {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -249,7 +297,6 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
         />
       </motion.div>
 
-      {/* Question with animated transitions */}
       <AnimatePresence mode="wait">
         <QuizQuestion
           key={currentIndex}
@@ -258,7 +305,7 @@ export function QuizContent({ category, sessionId, difficulty }: QuizContentProp
           questionText={currentQuestion.question_text}
           options={currentQuestion.options}
           onAnswer={handleAnswer}
-          result={currentQuestionResult}
+          result={currentResult}
         />
       </AnimatePresence>
     </div>

@@ -68,14 +68,15 @@ export function CategoryQuizContent({ category }: CategoryQuizContentProps) {
   }
 
   const handleStart = async (difficulty: DifficultyLevel) => {
-    // If not authenticated, redirect to login
     if (!user) {
-      const redirectPath = `/wiki/learn/${category.toLowerCase()}`
-      router.push(`/login?redirect=${encodeURIComponent(redirectPath)}`)
+      // Guest mode — no session needed, just go to quiz
+      router.push(
+        `/wiki/learn/${category.toLowerCase()}/quiz?session=guest&difficulty=${difficulty}`
+      )
       return
     }
 
-    // Create quiz session
+    // Authenticated — create quiz session for tracking
     const supabase = createClient()
     const { data: session, error } = await supabase
       .from('quiz_sessions')

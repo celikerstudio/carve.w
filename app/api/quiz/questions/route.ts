@@ -16,13 +16,14 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
+const QUESTION_FIELDS = 'id, article_slug, category, difficulty, question_text, options, correct_option_index, explanation, article_link'
+
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
   const category = searchParams.get('category')
   const difficulty = searchParams.get('difficulty')
   const articleSlug = searchParams.get('article_slug')
 
-  // Validate required params
   if (!category || !difficulty) {
     return NextResponse.json(
       { error: 'Missing required params: category, difficulty' },
@@ -40,15 +41,13 @@ export async function GET(req: NextRequest) {
 
   const supabase = await createClient()
 
-  // Check if user is authenticated (optional for this endpoint)
   const {
     data: { user },
   } = await supabase.auth.getUser()
 
-  // Build the base query — strip correct_option_index and explanation from response
   let query = supabase
     .from('quiz_questions')
-    .select('id, article_slug, category, difficulty, question_text, options, article_link')
+    .select(QUESTION_FIELDS)
     .eq('category', category)
     .eq('difficulty', difficulty)
     .eq('is_published', true)
@@ -63,7 +62,7 @@ export async function GET(req: NextRequest) {
   if (!error && (!allQuestions || allQuestions.length === 0) && articleSlug) {
     const fallback = await supabase
       .from('quiz_questions')
-      .select('id, article_slug, category, difficulty, question_text, options, article_link')
+      .select(QUESTION_FIELDS)
       .eq('category', category)
       .eq('difficulty', difficulty)
       .eq('is_published', true)
@@ -88,7 +87,6 @@ export async function GET(req: NextRequest) {
   let selected: typeof allQuestions
 
   if (user) {
-    // Prioritize questions the user hasn't correctly answered on first attempt
     const questionIds = allQuestions.map((q) => q.id)
 
     const { data: correctAttempts } = await supabase
@@ -101,7 +99,6 @@ export async function GET(req: NextRequest) {
 
     const correctSet = new Set(correctAttempts?.map((a) => a.question_id) ?? [])
 
-    // Shuffle each group independently, then concat unanswered-first
     const unanswered = shuffle(allQuestions.filter((q) => !correctSet.has(q.id)))
     const answered = shuffle(allQuestions.filter((q) => correctSet.has(q.id)))
     selected = [...unanswered, ...answered].slice(0, limit)

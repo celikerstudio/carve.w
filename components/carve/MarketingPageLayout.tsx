@@ -24,7 +24,7 @@ export function MarketingPageLayout({ page, children }: MarketingPageLayoutProps
 
         {/* Right column: sticky sidebar */}
         <div className="hidden lg:block lg:w-[35%] border-l border-white/[0.04]">
-          <div className="sticky top-4 h-[calc(100vh-5rem)]">
+          <div className="sticky top-16 h-[calc(100vh-4rem)]">
             <MarketingSidebar page={page} />
           </div>
         </div>

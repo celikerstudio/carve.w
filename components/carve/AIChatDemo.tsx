@@ -85,10 +85,10 @@ export function AIChatDemo() {
       <ScrollReveal animation="fade-up">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
-            A coach that knows you.
+            A coach that actually knows you.
           </h2>
           <p className="text-white/40 mt-4 max-w-md mx-auto text-sm md:text-base leading-relaxed">
-            Not a generic answer. A coach that knows what you trained this morning, what your budget is, and where your next trip goes.
+            Not a chatbot with canned answers. An AI that sees your workouts, your spending, and your plans&nbsp;&mdash; and connects the dots.
           </p>
         </div>
       </ScrollReveal>

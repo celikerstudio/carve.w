@@ -1,14 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LucideIcon } from "lucide-react";
+import {
+  Users, Activity, UserPlus, Dumbbell, UtensilsCrossed,
+  BookOpen, Clock, Gift, Zap, type LucideIcon,
+} from "lucide-react";
+
+const iconMap: Record<string, LucideIcon> = {
+  Users, Activity, UserPlus, Dumbbell, UtensilsCrossed,
+  BookOpen, Clock, Gift, Zap,
+};
 
 interface StatsCardProps {
   title: string;
   value: number | string;
   previousValue?: number;
   format?: "number" | "percentage";
-  icon: LucideIcon;
+  icon: string | LucideIcon;
   description?: string;
   index?: number;
 }
@@ -24,10 +32,12 @@ export function StatsCard({
   value,
   previousValue,
   format = "number",
-  icon: Icon,
+  icon,
   description,
   index = 0,
 }: StatsCardProps) {
+  const Icon = typeof icon === "string" ? (iconMap[icon] || Users) : icon;
+
   const trend = typeof value === "number" && previousValue !== undefined
     ? calculateTrend(value, previousValue)
     : null;

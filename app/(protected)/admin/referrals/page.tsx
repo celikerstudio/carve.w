@@ -1,7 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { getReferralStats, getReferralsList, getPromoCodesList } from "@/lib/admin/queries";
-import { Users, Gift, Clock, Zap } from "lucide-react";
-import { StatsCard } from "@/components/admin/stats-card";
+import { ReferralStatsCards } from "./stats-cards";
 
 export default async function AdminReferralsPage() {
   const supabase = await createClient();
@@ -26,34 +25,7 @@ export default async function AdminReferralsPage() {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <StatsCard
-            title="Total Referrals"
-            value={stats.totalReferrals}
-            icon={Users}
-            index={0}
-          />
-          <StatsCard
-            title="Completed"
-            value={stats.completedReferrals}
-            icon={Gift}
-            description={`${stats.pendingReferrals} pending`}
-            index={1}
-          />
-          <StatsCard
-            title="Promo Redemptions"
-            value={stats.totalPromoRedemptions}
-            icon={Zap}
-            index={2}
-          />
-          <StatsCard
-            title="Pro Days Granted"
-            value={stats.totalProDaysGranted}
-            icon={Clock}
-            description="Total across all sources"
-            index={3}
-          />
-        </div>
+        <ReferralStatsCards stats={stats} />
 
         {/* Referrals Table */}
         <div>

@@ -15,15 +15,7 @@ import {
   RoleDistributionChart,
   LevelDistributionChart,
 } from "@/components/admin/dashboard-charts";
-import {
-  Users,
-  Activity,
-  UserPlus,
-  Dumbbell,
-  UtensilsCrossed,
-  BookOpen,
-  Clock,
-} from "lucide-react";
+import { UserPlus, Dumbbell, Clock } from "lucide-react";
 
 export default async function AdminDashboardPage() {
   const supabase = await createClient();
@@ -65,7 +57,7 @@ export default async function AdminDashboardPage() {
           <StatsCard
             title="Total Users"
             value={stats.totalUsers}
-            icon={Users}
+            icon="Users"
             description={`${stats.activeUsers7d} active this week`}
             index={0}
           />
@@ -73,7 +65,7 @@ export default async function AdminDashboardPage() {
             title="Active Users"
             value={stats.activeUsers7d}
             previousValue={stats.activeUsersPrev}
-            icon={Activity}
+            icon="Activity"
             description="Last 7 days"
             index={1}
           />
@@ -81,7 +73,7 @@ export default async function AdminDashboardPage() {
             title="New Users"
             value={stats.newUsers7d}
             previousValue={stats.newUsersPrev}
-            icon={UserPlus}
+            icon="UserPlus"
             description="Last 7 days"
             index={2}
           />
@@ -89,7 +81,7 @@ export default async function AdminDashboardPage() {
             title="Total Workouts"
             value={stats.totalWorkouts}
             previousValue={stats.workoutsPrev}
-            icon={Dumbbell}
+            icon="Dumbbell"
             description="All-time logged"
             index={3}
           />
@@ -97,14 +89,14 @@ export default async function AdminDashboardPage() {
             title="Total Meals"
             value={stats.totalMeals}
             previousValue={stats.mealsPrev}
-            icon={UtensilsCrossed}
+            icon="UtensilsCrossed"
             description="All-time logged"
             index={4}
           />
           <StatsCard
             title="Wiki Articles"
             value={stats.totalArticles}
-            icon={BookOpen}
+            icon="BookOpen"
             description="Published articles"
             index={5}
           />

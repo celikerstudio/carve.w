@@ -12,14 +12,6 @@ export interface SectionConfig {
   subtitle: string
   statusPills: { icon: string; label: string }[]
   suggestionChips: SuggestionChip[]
-  coachReplies: Record<string, string>
-}
-
-export interface ChatMessage {
-  id: string
-  role: 'coach' | 'user'
-  content: string
-  timestamp: Date
 }
 
 export interface UserRankData {
@@ -111,8 +103,6 @@ export const mockSuggestionChips: SuggestionChip[] = [
   { id: '4', icon: 'BarChart3', label: 'Analyze my week' },
 ]
 
-export const mockChatMessages: ChatMessage[] = []
-
 export const mockStatusPills = [
   { icon: 'Flame', label: '12-day streak' },
   { icon: 'Dumbbell', label: '47 workouts' },
@@ -125,16 +115,6 @@ export const healthConfig: SectionConfig = {
   subtitle: "Hey there, I'm your Carve coach. Ask me anything about your health, fitness, or goals.",
   statusPills: mockStatusPills,
   suggestionChips: mockSuggestionChips,
-  coachReplies: {
-    "What's my progress?":
-      "You're doing great! 3 workouts this week, 12-day streak going strong. Your XP puts you at Intermediate rank — 2,550 XP away from Advanced. Keep pushing!",
-    'Plan my workout':
-      "Based on your history, I'd suggest an upper body session today. You haven't hit chest/shoulders since Monday. Want me to build a quick plan?",
-    "How's my budget?":
-      "You've spent €1,240 of your €2,000 monthly budget. That's 62% with 12 days left. Your biggest category is groceries at €340. Looking solid!",
-    'Analyze my week':
-      "This week: 3 workouts (target 4), 8.2k avg steps, and nutrition is on point at 1,840 cal avg. Money-wise you're tracking under budget. One more workout and you'll hit all your goals!",
-  },
 }
 
 export const moneyConfig: SectionConfig = {
@@ -150,16 +130,6 @@ export const moneyConfig: SectionConfig = {
     { id: 'm3', icon: 'CreditCard', label: 'Review my subscriptions' },
     { id: 'm4', icon: 'BarChart3', label: 'Monthly spending analysis' },
   ],
-  coachReplies: {
-    'Where does my money go?':
-      "Your top 3 categories this month: Groceries (€340, 27%), Dining Out (€215, 17%), and Subscriptions (€132, 11%). Groceries is up 12% from last month — mostly weekend shopping trips.",
-    'How can I save more?':
-      "Quick wins: You have 3 subscriptions you haven't used in 30+ days (€34/mo). Also, your dining out is €80 above your target. Switching 2 dinners to home cooking could save ~€120/mo.",
-    'Review my subscriptions':
-      "You have 12 active subscriptions totaling €132/mo. Top ones: Spotify (€11), Netflix (€13), iCloud (€3). I spotted 3 unused ones: Adobe CC, Headspace, and a gym membership. Want to review those?",
-    'Monthly spending analysis':
-      "March so far: €1,240 of €2,000 budget (62%). You're on pace to finish at ~€1,850 — under budget! Best improvement: groceries spending is more consistent week-over-week.",
-  },
 }
 
 export const travelConfig: SectionConfig = {
@@ -175,14 +145,4 @@ export const travelConfig: SectionConfig = {
     { id: 't3', icon: 'Compass', label: 'Suggest a destination' },
     { id: 't4', icon: 'MapPin', label: 'Review my itinerary' },
   ],
-  coachReplies: {
-    "What's my next trip?":
-      "Your next trip is Barcelona in 12 days! 5 nights, March 15-20. You have 3 of 5 days planned so far. Budget is set at €1,500. Want me to help fill in the remaining days?",
-    'Trip budget status':
-      "Barcelona budget: €1,500 total. Booked so far: flights (€280), hotel (€450), activities (€120). That leaves €650 for food, transport, and spontaneous plans. You're in great shape!",
-    'Suggest a destination':
-      "Based on your travel history (beach + city combos), I'd suggest Lisbon — great food scene, affordable, and you can combine city walks with nearby beaches. Flights from your area start at ~€90 in April!",
-    'Review my itinerary':
-      "Barcelona itinerary so far: Day 1 — Sagrada Familia + Gothic Quarter. Day 2 — Park Güell + beach. Day 3 — La Boqueria + Montjuïc. Days 4-5 are still empty. Want me to suggest some hidden gems?",
-  },
 }

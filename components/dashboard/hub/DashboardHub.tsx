@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
-import { CoachChat } from './chat/CoachChat'
+import { CarveChat } from './chat/CarveChat'
 import { WidgetSidebar } from './WidgetSidebar'
 import { XpRankWidget } from './widgets/XpRankWidget'
 import { TodayWidget } from './widgets/TodayWidget'
@@ -27,9 +27,9 @@ export function DashboardHub({ section = 'health' }: DashboardHubProps) {
 
   return (
     <div className="flex flex-col lg:flex-row h-full">
-      {/* AI Coach Chat */}
+      {/* Carve AI */}
       <div className="flex-1 min-w-0 min-h-0 lg:border-r lg:border-white/[0.04]">
-        <CoachChat config={config} />
+        <CarveChat config={config} />
       </div>
 
       {/* Widget Sidebar — desktop */}

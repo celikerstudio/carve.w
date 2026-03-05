@@ -1,8 +1,11 @@
 "use client"
 
-import { useState, useCallback } from "react"
+import { useState, useCallback, useMemo } from "react"
 import { motion } from "framer-motion"
-import { TravelChat } from "@/components/travel/chat/TravelChat"
+import { useChat } from "@ai-sdk/react"
+import { DefaultChatTransport } from "ai"
+import { ChatBubble } from "@/components/dashboard/hub/chat/ChatBubble"
+import { CarveInputBar } from "@/components/dashboard/hub/chat/CarveInputBar"
 import { ActivityEditForm } from "@/components/travel/widgets/ActivityEditForm"
 import { ActivitySuggestions } from "@/components/travel/widgets/ActivitySuggestions"
 import { TravelCard } from "@/components/travel/shared"
@@ -169,6 +172,29 @@ export function TripDetailClient(props: TripDetailClientProps) {
   const [editingActivity, setEditingActivity] = useState<{ dayIdx: number; actIdx: number } | null>(null)
   const [addingToDay, setAddingToDay] = useState<number | null>(null)
 
+  const replanTransport = useMemo(
+    () => new DefaultChatTransport({ api: '/api/carve-ai/chat', body: { tripId: props.trip.id } }),
+    [props.trip.id]
+  )
+
+  const { messages: chatMessages, sendMessage, status: chatStatus } = useChat({
+    transport: replanTransport,
+    onToolCall({ toolCall }: any) {
+      if (toolCall.toolName === 'generate_trip_plan') {
+        setPlan(toolCall.args as TripPlan)
+      }
+    },
+  })
+
+  const isChatLoading = chatStatus === 'streaming' || chatStatus === 'submitted'
+
+  const getChatMessageText = (message: typeof chatMessages[0]) => {
+    return message.parts
+      .filter((p): p is { type: 'text'; text: string } => p.type === 'text')
+      .map((p) => p.text)
+      .join('')
+  }
+
   const currency = props.trip.currency
   const currencySymbol = currency === "EUR" ? "\u20AC" : currency === "USD" ? "$" : currency === "GBP" ? "\u00A3" : currency
 
@@ -261,7 +287,33 @@ export function TripDetailClient(props: TripDetailClientProps) {
           className="shrink-0 border-r border-white/[0.06] overflow-hidden bg-[#0c0e14]"
         >
           <div className="w-[400px] h-full">
-            <TravelChat tripId={props.trip.id} onPlanGenerated={setPlan} />
+            <div className="flex flex-col h-full">
+              <div className="px-4 py-3 border-b border-white/[0.06]">
+                <h2 className="text-sm font-semibold text-white">Carve AI</h2>
+                <p className="text-xs text-[#555d70]">Replan your trip</p>
+              </div>
+              <div className="flex-1 overflow-y-auto p-4 space-y-3">
+                {chatMessages.map((msg) => {
+                  const text = getChatMessageText(msg)
+                  if (!text) return null
+                  return (
+                    <ChatBubble key={msg.id} role={msg.role as 'user' | 'assistant'} content={text} />
+                  )
+                })}
+                {isChatLoading && (
+                  <div className="flex justify-start">
+                    <div className="bg-white/[0.04] border border-white/[0.06] rounded-2xl px-4 py-3">
+                      <div className="flex gap-1.5">
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#c8b86e]/40 animate-pulse" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#c8b86e]/40 animate-pulse [animation-delay:0.2s]" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#c8b86e]/40 animate-pulse [animation-delay:0.4s]" />
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              <CarveInputBar onSend={(text) => sendMessage({ text })} disabled={isChatLoading} />
+            </div>
           </div>
         </motion.div>
       )}
@@ -274,7 +326,7 @@ export function TripDetailClient(props: TripDetailClientProps) {
             onClick={() => setChatOpen(!chatOpen)}
             className="px-3 py-1.5 text-xs font-medium text-[#b8d8e8] bg-[#b8d8e8]/10 hover:bg-[#b8d8e8]/20 rounded-lg transition-colors"
           >
-            {chatOpen ? "Close chat" : "Replan with AI"}
+            {chatOpen ? "Close chat" : "Replan with Carve AI"}
           </button>
         </div>
 

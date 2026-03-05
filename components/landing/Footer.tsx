@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <h3 className="text-white font-bold text-2xl mb-4">Carve</h3>
             <p className="text-ink-tertiary text-sm leading-relaxed">
-              The fitness app that gamifies your progress. Track workouts, earn XP, compete with friends.
+              One AI for your health, money, and travel. Built by one developer who lost 50kg using it.
             </p>
           </div>
 

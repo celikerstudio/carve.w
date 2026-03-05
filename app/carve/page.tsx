@@ -34,7 +34,7 @@ export default function CarvePage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.4 }}
           >
-            Fitness with a{' '}
+            One AI. Your{' '}
           </motion.span>
           <motion.span
             className="relative inline-block text-white/50"
@@ -42,33 +42,7 @@ export default function CarvePage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.8, duration: 0.4, ease: 'easeOut' }}
           >
-            scoreboard
-            <svg
-              className="absolute -bottom-1 left-0 w-full h-3 text-red-500/70"
-              viewBox="0 0 100 12"
-              preserveAspectRatio="none"
-            >
-              <motion.path
-                d="M2 8 Q 25 4, 50 7 T 98 5"
-                stroke="currentColor"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-                initial={{ pathLength: 0, opacity: 0 }}
-                animate={{ pathLength: 1, opacity: 1 }}
-                transition={{ delay: 1.1, duration: 0.6, ease: 'easeOut' }}
-              />
-              <motion.path
-                d="M2 11 Q 30 7, 55 10 T 98 8"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-                strokeLinecap="round"
-                initial={{ pathLength: 0, opacity: 0 }}
-                animate={{ pathLength: 1, opacity: 1 }}
-                transition={{ delay: 1.3, duration: 0.5, ease: 'easeOut' }}
-              />
-            </svg>
+            whole life
           </motion.span>
         </p>
 
@@ -82,14 +56,14 @@ export default function CarvePage() {
       <section className="py-24 md:py-32 px-6">
         <ScrollReveal animation="fade-up">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-white mb-16 tracking-tight">
-            Track. Rank. Compete.
+            Health. Money. Travel.
           </h2>
         </ScrollReveal>
         <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-4">
           {[
-            { icon: <Dumbbell className="w-5 h-5" />, title: 'Track', text: 'Log meals and workouts in seconds.' },
-            { icon: <BarChart3 className="w-5 h-5" />, title: 'Rank', text: 'Climb from Rookie to Legend.' },
-            { icon: <Users className="w-5 h-5" />, title: 'Compete', text: 'Play with friends. See who\u2019s on top.' },
+            { icon: <Dumbbell className="w-5 h-5" />, title: 'Health', text: 'Track workouts, meals, and progress. AI coaches you daily.' },
+            { icon: <BarChart3 className="w-5 h-5" />, title: 'Money', text: 'See where it goes. Find what to cut. Save more.' },
+            { icon: <Target className="w-5 h-5" />, title: 'Travel', text: 'Plan trips with AI. Budget included.' },
           ].map((card, i) => (
             <ScrollReveal key={card.title} animation="fade-up" delay={i * 0.1}>
               <div className="rounded-xl border border-white/[0.08] bg-white/[0.04] p-6 h-full">
@@ -131,7 +105,7 @@ export default function CarvePage() {
         <ScrollReveal animation="fade-up">
           <div className="text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 tracking-tight">
-              Where do you rank?
+              Ready to start?
             </h2>
             <CarveFooter />
           </div>

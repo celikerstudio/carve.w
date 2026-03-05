@@ -8,15 +8,13 @@ export function HeroSection() {
         {/* Left: Text + CTA */}
         <div>
           <h1 className="text-5xl md:text-6xl font-bold text-ink leading-tight">
-            Track Everything.
+            One AI.
             <br />
-            Level Up.
-            <br />
-            Win.
+            Your whole life.
           </h1>
 
           <p className="mt-6 text-xl text-ink-secondary leading-relaxed">
-            The fitness app that gamifies your progress. Track PRs, earn XP, compete with friends.
+            Carve AI coaches you on fitness, finances, and travel — because life isn&apos;t just one thing.
           </p>
 
           <div className="mt-8 max-w-md">
@@ -24,7 +22,7 @@ export function HeroSection() {
           </div>
 
           <p className="mt-4 text-sm text-ink-secondary">
-            Join the waitlist for early access
+            Join the waitlist — it&apos;s free
           </p>
         </div>
 

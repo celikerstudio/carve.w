@@ -33,10 +33,15 @@ export async function POST(req: Request) {
     return new Response("Messages required", { status: 400 })
   }
 
+  const modelMessages = messages.map((m) => ({
+    role: m.role as "user" | "assistant",
+    content: m.content,
+  }))
+
   const result = streamText({
     model: anthropic("claude-sonnet-4-20250514"),
     system: CARVE_AI_SYSTEM_PROMPT,
-    messages,
+    messages: modelMessages,
     tools: {
       generate_trip_plan: tool({
         description:

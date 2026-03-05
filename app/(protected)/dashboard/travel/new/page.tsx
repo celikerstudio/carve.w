@@ -2,8 +2,9 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { TravelChat } from "@/components/travel/chat/TravelChat"
+import { CarveChat } from "@/components/dashboard/hub/chat/CarveChat"
 import { PlanDashboard } from "@/components/travel/plan/PlanDashboard"
+import { travelConfig } from "@/components/dashboard/hub/mock-data"
 import type { TripPlan } from "@/lib/ai/travel-schemas"
 
 export default function NewTripPage() {
@@ -19,7 +20,7 @@ export default function NewTripPage() {
         className="shrink-0 border-r border-white/[0.06] overflow-hidden bg-[#0c0e14]"
       >
         <div className="w-[400px] h-full">
-          <TravelChat onPlanGenerated={setPlan} />
+          <CarveChat config={travelConfig} />
         </div>
       </motion.div>
 

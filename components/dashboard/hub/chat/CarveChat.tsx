@@ -1,14 +1,14 @@
 'use client'
 
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useEffect, useRef, useMemo, useCallback } from 'react'
+import { useChat } from '@ai-sdk/react'
+import { DefaultChatTransport } from 'ai'
 import { motion } from 'framer-motion'
 import { CarveEmptyState } from './CarveEmptyState'
 import { ChatBubble } from './ChatBubble'
 import { SuggestionChips } from './SuggestionChips'
-import { CoachInputBar } from './CoachInputBar'
-import { iconMap, healthConfig, type ChatMessage, type SectionConfig } from '../mock-data'
-
-let messageCounter = 0
+import { CarveInputBar } from './CarveInputBar'
+import { iconMap, healthConfig, type SectionConfig } from '../mock-data'
 
 function TypingIndicator() {
   const BrainIcon = iconMap['Brain']
@@ -33,45 +33,41 @@ function TypingIndicator() {
   )
 }
 
-interface CoachChatProps {
+interface CarveChatProps {
   config?: SectionConfig
 }
 
-export function CoachChat({ config = healthConfig }: CoachChatProps) {
-  const [messages, setMessages] = useState<ChatMessage[]>([])
-  const [isTyping, setIsTyping] = useState(false)
+export function CarveChat({ config = healthConfig }: CarveChatProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
+
+  const transport = useMemo(
+    () => new DefaultChatTransport({ api: '/api/carve-ai/chat' }),
+    []
+  )
+
+  const { messages, sendMessage, status } = useChat({ transport })
+
+  const isLoading = status === 'streaming' || status === 'submitted'
 
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight
     }
-  }, [messages, isTyping])
+  }, [messages, isLoading])
 
-  const handleSend = useCallback((content: string) => {
-    const userMessage: ChatMessage = {
-      id: `msg-${++messageCounter}`,
-      role: 'user',
-      content,
-      timestamp: new Date(),
-    }
-    setMessages((prev) => [...prev, userMessage])
-    setIsTyping(true)
+  const getMessageText = useCallback((message: (typeof messages)[0]) => {
+    return message.parts
+      .filter((p): p is { type: 'text'; text: string } => p.type === 'text')
+      .map((p) => p.text)
+      .join('')
+  }, [])
 
-    setTimeout(() => {
-      const replyContent =
-        config.coachReplies[content] ||
-        "That's a great question! In the full version, I'll have real-time insights from your data. For now, try one of the suggestion chips!"
-      const coachMessage: ChatMessage = {
-        id: `msg-${++messageCounter}`,
-        role: 'coach',
-        content: replyContent,
-        timestamp: new Date(),
-      }
-      setIsTyping(false)
-      setMessages((prev) => [...prev, coachMessage])
-    }, 800)
-  }, [config.coachReplies])
+  const handleSend = useCallback(
+    (content: string) => {
+      sendMessage({ text: content })
+    },
+    [sendMessage]
+  )
 
   const hasMessages = messages.length > 0
 
@@ -80,17 +76,24 @@ export function CoachChat({ config = healthConfig }: CoachChatProps) {
       {hasMessages ? (
         <div ref={scrollRef} className="flex-1 overflow-y-auto scrollbar-hide py-4">
           <div className="flex flex-col gap-3">
-            {messages.map((msg) => (
-              <motion.div
-                key={msg.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <ChatBubble message={msg} />
-              </motion.div>
-            ))}
-            {isTyping && <TypingIndicator />}
+            {messages.map((msg) => {
+              const text = getMessageText(msg)
+              if (!text) return null
+              return (
+                <motion.div
+                  key={msg.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ChatBubble
+                    role={msg.role as 'user' | 'assistant'}
+                    content={text}
+                  />
+                </motion.div>
+              )
+            })}
+            {isLoading && <TypingIndicator />}
           </div>
         </div>
       ) : (
@@ -106,7 +109,7 @@ export function CoachChat({ config = healthConfig }: CoachChatProps) {
         <SuggestionChips chips={config.suggestionChips} onChipClick={handleSend} />
       )}
 
-      <CoachInputBar onSend={handleSend} />
+      <CarveInputBar onSend={handleSend} disabled={isLoading} />
     </div>
   )
 }

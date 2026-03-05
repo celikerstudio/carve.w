@@ -3,11 +3,12 @@
 import { useState, useRef } from 'react'
 import { ArrowUp } from 'lucide-react'
 
-interface CoachInputBarProps {
+interface CarveInputBarProps {
   onSend: (message: string) => void
+  disabled?: boolean
 }
 
-export function CoachInputBar({ onSend }: CoachInputBarProps) {
+export function CarveInputBar({ onSend, disabled }: CarveInputBarProps) {
   const [input, setInput] = useState('')
   const [isFocused, setIsFocused] = useState(false)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
@@ -21,7 +22,7 @@ export function CoachInputBar({ onSend }: CoachInputBarProps) {
   }
 
   const handleSend = () => {
-    if (!input.trim()) return
+    if (!input.trim() || disabled) return
     onSend(input.trim())
     setInput('')
     if (textareaRef.current) {
@@ -50,15 +51,16 @@ export function CoachInputBar({ onSend }: CoachInputBarProps) {
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           onKeyDown={handleKeyDown}
-          placeholder="Ask your coach..."
+          placeholder="Ask Carve AI..."
+          disabled={disabled}
           rows={1}
-          className="flex-1 bg-transparent text-[15px] text-white placeholder:text-[#7a8299] resize-none outline-none max-h-[120px] py-1"
+          className="flex-1 bg-transparent text-[15px] text-white placeholder:text-[#7a8299] resize-none outline-none max-h-[120px] py-1 disabled:opacity-50"
         />
         <button
           onClick={handleSend}
-          disabled={!input.trim()}
+          disabled={!input.trim() || disabled}
           className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
-            input.trim()
+            input.trim() && !disabled
               ? 'bg-[#c8b86e] text-[#111318]'
               : 'bg-white/[0.06] text-[#7a8299]'
           }`}

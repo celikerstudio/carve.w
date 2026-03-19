@@ -1,5 +1,12 @@
 @import "tailwindcss";
+@import "@celikerstudio/ui/styles";
 @plugin "@tailwindcss/typography";
+
+/* @ai-why: Tailwind v4 scant alleen app-bestanden voor class-namen.
+   @source wijst naar de monorepo source zodat alle UI package classes
+   (tokens, lab, primitives, shell) meegenomen worden. */
+@source "../celikerstudio/packages/ui/src";
+@source "../celikerstudio/packages/ui/dist";
 
 html {
   scroll-behavior: smooth;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { LayoutWrapper } from '@/components/app/layout-wrapper';
 import { createClient } from "@/lib/supabase/server";
@@ -40,15 +41,6 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <head>
-        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
-          <script
-            defer
-            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
-            src="https://plausible.io/js/script.js"
-          />
-        )}
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0c0e14]`}
       >
@@ -62,6 +54,14 @@ export default async function RootLayout({
           {children}
         </LayoutWrapper>
         <Toaster theme="dark" position="bottom-right" richColors />
+        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
+          <Script
+            defer
+            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.js"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );

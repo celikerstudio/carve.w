@@ -1,10 +1,11 @@
-import { Brain, Flame, Dumbbell, Trophy, TrendingUp, Wallet, BarChart3, Footprints, Plane, MapPin, CreditCard, PiggyBank, Receipt, Globe, Calendar, Compass } from 'lucide-react'
+import { Brain, Flame, Dumbbell, Trophy, TrendingUp, Wallet, BarChart3, Footprints, Plane, MapPin, CreditCard, PiggyBank, Receipt, Globe, Calendar, Compass, Inbox, CheckCircle, Sparkles, Heart } from 'lucide-react'
 import type { ElementType } from 'react'
 
 // Centralized icon map — all components import from here
 export const iconMap: Record<string, ElementType> = {
   Brain, Flame, Dumbbell, Trophy, TrendingUp, Wallet, BarChart3, Footprints,
   Plane, MapPin, CreditCard, PiggyBank, Receipt, Globe, Calendar, Compass,
+  Inbox, CheckCircle, Sparkles, Heart,
 }
 
 // Section config type — defines the chat personality per section
@@ -144,5 +145,49 @@ export const travelConfig: SectionConfig = {
     { id: 't2', icon: 'Wallet', label: 'Trip budget status' },
     { id: 't3', icon: 'Compass', label: 'Suggest a destination' },
     { id: 't4', icon: 'MapPin', label: 'Review my itinerary' },
+  ],
+}
+
+export const homeConfig: SectionConfig = {
+  subtitle: "I know your health, money, trips, and inbox. Ask me anything.",
+  statusPills: [
+    { icon: 'Flame', label: '12-day streak' },
+    { icon: 'Wallet', label: '€760 remaining' },
+    { icon: 'Plane', label: 'Barcelona in 3d' },
+  ],
+  suggestionChips: [
+    { id: 'h1', icon: 'TrendingUp', label: "How's my week going?" },
+    { id: 'h2', icon: 'Dumbbell', label: 'Plan my workout' },
+    { id: 'h3', icon: 'Wallet', label: "How's my budget?" },
+    { id: 'h4', icon: 'Inbox', label: 'Check my inbox' },
+  ],
+}
+
+export const lifeConfig: SectionConfig = {
+  subtitle: "Trips, appointments, and everything in between.",
+  statusPills: [
+    { icon: 'Plane', label: 'Barcelona in 3 days' },
+    { icon: 'MapPin', label: '3 trips planned' },
+    { icon: 'Globe', label: '5 countries visited' },
+  ],
+  suggestionChips: [
+    { id: 'l1', icon: 'Calendar', label: "What's coming up?" },
+    { id: 'l2', icon: 'Wallet', label: 'Trip budget status' },
+    { id: 'l3', icon: 'Compass', label: 'Suggest a destination' },
+    { id: 'l4', icon: 'MapPin', label: 'Plan my week' },
+  ],
+}
+
+export const inboxConfig: SectionConfig = {
+  subtitle: "I categorize, summarize, and handle your emails.",
+  statusPills: [
+    { icon: 'Inbox', label: '2 need attention' },
+    { icon: 'CheckCircle', label: '14 auto-handled' },
+  ],
+  suggestionChips: [
+    { id: 'i1', icon: 'Inbox', label: "What's in my inbox?" },
+    { id: 'i2', icon: 'CheckCircle', label: 'What did you handle today?' },
+    { id: 'i3', icon: 'Receipt', label: 'Any bills or invoices?' },
+    { id: 'i4', icon: 'Calendar', label: 'Any appointments?' },
   ],
 }

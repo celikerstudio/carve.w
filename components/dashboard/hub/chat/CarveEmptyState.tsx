@@ -12,34 +12,24 @@ interface CarveEmptyStateProps {
 
 export function CarveEmptyState({
   onChipClick,
-  subtitle = "Hey, I'm Carve AI — your personal coach for health, money, and travel.",
+  subtitle = "I know your health, money, trips, and inbox. Ask me anything.",
   statusPills = mockStatusPills,
   suggestionChips = mockSuggestionChips,
 }: CarveEmptyStateProps) {
   return (
     <div className="flex flex-1 items-center justify-center">
-      <div className="flex flex-col items-center gap-6 max-w-sm px-4">
-        {/* Coach Avatar */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="w-16 h-16 rounded-full bg-[#1c1f27] border border-white/[0.06] flex items-center justify-center"
-        >
-          {(() => { const Icon = iconMap['Brain']; return Icon ? <Icon className="w-7 h-7 text-[#9da6b9]" /> : null })()}
-        </motion.div>
-
+      <div className="flex flex-col items-center gap-6 max-w-md px-4">
         {/* Welcome Text */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.15 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="text-center"
         >
-          <p className="text-[10px] font-bold uppercase tracking-[1.5px] text-[#7a8299] mb-2">
-            Carve AI
+          <p className="text-[22px] font-bold text-white mb-2">
+            What can I help with?
           </p>
-          <p className="text-[15px] text-[#9da6b9]">
+          <p className="text-[14px] text-white/30">
             {subtitle}
           </p>
         </motion.div>
@@ -48,7 +38,7 @@ export function CarveEmptyState({
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.25 }}
           className="flex flex-wrap justify-center gap-2"
         >
           {statusPills.map((pill) => {
@@ -56,9 +46,9 @@ export function CarveEmptyState({
             return (
               <div
                 key={pill.label}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1c1f27] border border-white/[0.06] text-[12px] text-[#9da6b9]"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.06] text-[12px] text-white/40"
               >
-                {Icon && <Icon className="w-3 h-3 text-[#c8b86e]" />}
+                {Icon && <Icon className="w-3 h-3 text-white/25" />}
                 <span>{pill.label}</span>
               </div>
             )
@@ -69,7 +59,7 @@ export function CarveEmptyState({
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.45 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
           className="grid grid-cols-2 gap-2 w-full"
         >
           {suggestionChips.map((chip) => {
@@ -78,10 +68,10 @@ export function CarveEmptyState({
               <button
                 key={chip.id}
                 onClick={() => onChipClick(chip.label)}
-                className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-[#1c1f27] border border-white/[0.06] text-left hover:border-[#c8b86e]/30 transition-colors"
+                className="flex items-center gap-2.5 px-3.5 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-left hover:bg-white/[0.06] hover:border-white/[0.1] transition-all"
               >
-                {Icon && <Icon className="w-4 h-4 text-[#c8b86e] shrink-0" />}
-                <span className="text-[13px] text-white">{chip.label}</span>
+                {Icon && <Icon className="w-4 h-4 text-white/20 shrink-0" />}
+                <span className="text-[13px] text-white/60">{chip.label}</span>
               </button>
             )
           })}

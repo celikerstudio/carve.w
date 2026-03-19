@@ -38,6 +38,22 @@ export function LayoutWrapper({
   // Auth routes (login, signup) get no app chrome
   const isAuthRoute = pathname?.includes('/login') || pathname?.includes('/signup') || pathname?.includes('/forgot-password')
 
+  // Lab has its own shell — bypass all app chrome
+  const isLabRoute = path.startsWith('/lab')
+
+  // Chat route — full viewport, only header, no sidebar
+  // Note: usePathname() returns URL path, not file-system path.
+  // Route groups like (protected) are invisible in URLs, so /chat is correct.
+  const isChatRoute = path.startsWith('/chat')
+
+  if (isChatRoute) {
+    return (
+      <div className="fixed inset-0 bg-[#0a0a0b]">
+        {children}
+      </div>
+    )
+  }
+
   // Marketing pages render with their own header (no sidebar)
   const isMarketingRoute =
     path === '/carve' ||
@@ -53,7 +69,7 @@ export function LayoutWrapper({
   // Wiki pages render with header but no sidebar — full-width scrollable
   const isWikiRoute = path === '/' || path.startsWith('/wiki')
 
-  if (isAuthRoute) {
+  if (isAuthRoute || isLabRoute) {
     return <>{children}</>
   }
 

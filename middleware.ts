@@ -6,7 +6,7 @@ export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
   // Redirect unauthenticated users away from protected routes
-  if (pathname.startsWith('/dashboard') || pathname.startsWith('/admin')) {
+  if (pathname.startsWith('/dashboard') || pathname.startsWith('/admin') || pathname.startsWith('/chat')) {
     if (!user) {
       const redirectUrl = new URL('/login', request.url)
       redirectUrl.searchParams.set('redirect', pathname)
@@ -17,14 +17,14 @@ export async function middleware(request: NextRequest) {
   // Redirect authenticated users away from auth pages
   if (pathname === '/login' || pathname === '/signup') {
     if (user) {
-      return NextResponse.redirect(new URL('/dashboard', request.url))
+      return NextResponse.redirect(new URL('/chat', request.url))
     }
   }
 
-  // Redirect authenticated users from /carve to dashboard
+  // Redirect authenticated users from /carve to chat
   if (pathname === '/carve') {
     if (user) {
-      return NextResponse.redirect(new URL('/dashboard', request.url))
+      return NextResponse.redirect(new URL('/chat', request.url))
     }
   }
 

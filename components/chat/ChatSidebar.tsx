@@ -2,12 +2,13 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Plus, LogOut, Settings, PanelLeftClose, PanelLeft, Dumbbell, Wallet, Plane, Mail } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { AppSwitcher } from './AppSwitcher'
 import { useSignOut } from '@/lib/auth/hooks'
 import type { AppId } from './types'
+import type { Conversation } from '@/hooks/useChatHistory'
 
 interface ChatSidebarProps {
   activeApp: AppId
@@ -15,24 +16,41 @@ interface ChatSidebarProps {
   userName?: string
   collapsed?: boolean
   onToggle?: () => void
+  conversations?: Conversation[]
+  selectedConversationId?: string | null
+  onSelectConversation?: (id: string, activeApp: string) => void
+  onNewChat?: () => void
 }
-
-// @ai-todo: replace with real chat history from Supabase
-const mockChats = [
-  { id: '1', title: 'Budget analyse maart', time: 'Vandaag' },
-  { id: '2', title: 'Workout plan aanpassen', time: 'Vandaag' },
-  { id: '3', title: 'Barcelona trip planning', time: 'Gisteren' },
-  { id: '4', title: 'Subscriptions opschonen', time: 'Gisteren' },
-]
 
 const collapsedApps: { id: AppId; icon: React.ElementType; color: string }[] = [
   { id: 'health', icon: Dumbbell, color: '#22c55e' },
   { id: 'money', icon: Wallet, color: '#3b82f6' },
   { id: 'life', icon: Plane, color: '#a855f7' },
-  { id: 'inbox', icon: Mail, color: '#f59e0b' },
 ]
 
-export function ChatSidebar({ activeApp, onAppChange, userName = 'User', collapsed = false, onToggle }: ChatSidebarProps) {
+function formatTime(dateStr: string): string {
+  const date = new Date(dateStr)
+  const now = new Date()
+  const diffMs = now.getTime() - date.getTime()
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
+
+  if (diffDays === 0) return 'Vandaag'
+  if (diffDays === 1) return 'Gisteren'
+  if (diffDays < 7) return `${diffDays}d geleden`
+  return date.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' })
+}
+
+export function ChatSidebar({
+  activeApp,
+  onAppChange,
+  userName = 'User',
+  collapsed = false,
+  onToggle,
+  conversations = [],
+  selectedConversationId,
+  onSelectConversation,
+  onNewChat,
+}: ChatSidebarProps) {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
   const signOut = useSignOut()
@@ -48,6 +66,11 @@ export function ChatSidebar({ activeApp, onAppChange, userName = 'User', collaps
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
   }, [menuOpen])
+
+  const handleNewChat = () => {
+    onAppChange('home')
+    onNewChat?.()
+  }
 
   // ─── Collapsed: icon rail ─────────────────────────────────────────
   if (collapsed) {
@@ -76,7 +99,7 @@ export function ChatSidebar({ activeApp, onAppChange, userName = 'User', collaps
 
         {/* New chat */}
         <button
-          onClick={() => onAppChange('home')}
+          onClick={handleNewChat}
           className="w-9 h-9 rounded-lg bg-white/[0.07] hover:bg-white/[0.12] transition-colors flex items-center justify-center mb-2"
         >
           <Plus className="w-4 h-4 text-white/50" />
@@ -136,7 +159,7 @@ export function ChatSidebar({ activeApp, onAppChange, userName = 'User', collaps
         </button>
         <div className="flex items-center gap-1">
           <button
-            onClick={() => onAppChange('home')}
+            onClick={handleNewChat}
             className="w-7 h-7 rounded-lg bg-white/[0.07] hover:bg-white/[0.12] transition-colors flex items-center justify-center"
           >
             <Plus className="w-3.5 h-3.5 text-white/50" />
@@ -160,19 +183,32 @@ export function ChatSidebar({ activeApp, onAppChange, userName = 'User', collaps
 
       {/* Chat history */}
       <div className="flex-1 overflow-y-auto px-2 py-2">
-        <p className="text-[9px] font-semibold uppercase tracking-widest text-white/30 px-3 mb-1.5">Recent</p>
-        <div className="flex flex-col gap-0.5">
-          {mockChats.map((chat, i) => (
-            <button
-              key={chat.id}
-              className={`text-left px-3 py-1.5 rounded-lg transition-colors ${
-                i === 0 ? 'bg-white/[0.07] text-white/70' : 'text-white/40 hover:bg-white/[0.05] hover:text-white/60'
-              }`}
-            >
-              <p className="text-[12px] truncate">{chat.title}</p>
-            </button>
-          ))}
-        </div>
+        {conversations.length > 0 ? (
+          <>
+            <p className="text-[9px] font-semibold uppercase tracking-widest text-white/30 px-3 mb-1.5">Recent</p>
+            <div className="flex flex-col gap-0.5">
+              {conversations.map((conv) => {
+                const isSelected = conv.id === selectedConversationId
+                return (
+                  <button
+                    key={conv.id}
+                    onClick={() => onSelectConversation?.(conv.id, conv.active_app)}
+                    className={`text-left px-3 py-1.5 rounded-lg transition-colors ${
+                      isSelected
+                        ? 'bg-white/[0.07] text-white/70'
+                        : 'text-white/40 hover:bg-white/[0.05] hover:text-white/60'
+                    }`}
+                  >
+                    <p className="text-[12px] truncate">{conv.title || 'New conversation'}</p>
+                    <p className="text-[10px] text-white/25 mt-0.5">{formatTime(conv.updated_at)}</p>
+                  </button>
+                )
+              })}
+            </div>
+          </>
+        ) : (
+          <p className="text-[11px] text-white/25 px-3 py-4">No conversations yet</p>
+        )}
       </div>
 
       {/* User */}

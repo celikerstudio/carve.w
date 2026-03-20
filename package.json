@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.50",
+    "@ai-sdk/openai": "^3.0.41",
     "@ai-sdk/react": "^3.0.107",
     "@celikerstudio/ui": "file:../celikerstudio/packages/ui",
     "@marsidev/react-turnstile": "^1.3.1",

@@ -15,7 +15,8 @@ const apps: AppDef[] = [
   { id: 'health', label: 'Health', icon: Dumbbell, color: '#22c55e' },
   { id: 'money', label: 'Money', icon: Wallet, color: '#3b82f6' },
   { id: 'life', label: 'Life', icon: Plane, color: '#a855f7' },
-  { id: 'inbox', label: 'Inbox', icon: Mail, color: '#f59e0b' },
+  // @ai-todo: re-enable inbox when ready
+  // { id: 'inbox', label: 'Inbox', icon: Mail, color: '#f59e0b' },
 ]
 
 interface AppSwitcherProps {

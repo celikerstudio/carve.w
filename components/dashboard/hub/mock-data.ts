@@ -56,6 +56,8 @@ export interface SuggestionChip {
   id: string
   icon: string
   label: string
+  appId?: 'health' | 'money' | 'life' | 'inbox'
+  cardType?: string
 }
 
 // --- Mock Data ---
@@ -115,7 +117,12 @@ export const mockStatusPills = [
 export const healthConfig: SectionConfig = {
   subtitle: "Hey there, I'm your Carve coach. Ask me anything about your health, fitness, or goals.",
   statusPills: mockStatusPills,
-  suggestionChips: mockSuggestionChips,
+  suggestionChips: [
+    { id: 'h1', icon: 'TrendingUp', label: "What's my progress?", cardType: 'today' },
+    { id: 'h2', icon: 'Dumbbell', label: 'Plan my workout', cardType: 'workout' },
+    { id: 'h3', icon: 'BarChart3', label: 'Analyze my week', cardType: 'week' },
+    { id: 'h4', icon: 'Flame', label: 'Check my streak', cardType: 'streak' },
+  ],
 }
 
 export const moneyConfig: SectionConfig = {
@@ -126,10 +133,10 @@ export const moneyConfig: SectionConfig = {
     { icon: 'TrendingUp', label: '-8% vs last month' },
   ],
   suggestionChips: [
-    { id: 'm1', icon: 'Receipt', label: 'Where does my money go?' },
-    { id: 'm2', icon: 'PiggyBank', label: 'How can I save more?' },
-    { id: 'm3', icon: 'CreditCard', label: 'Review my subscriptions' },
-    { id: 'm4', icon: 'BarChart3', label: 'Monthly spending analysis' },
+    { id: 'm1', icon: 'Receipt', label: 'Where does my money go?', cardType: 'budget' },
+    { id: 'm2', icon: 'PiggyBank', label: 'How can I save more?', cardType: 'subscriptions' },
+    { id: 'm3', icon: 'CreditCard', label: 'Review my subscriptions', cardType: 'subscriptions' },
+    { id: 'm4', icon: 'BarChart3', label: 'Monthly spending analysis', cardType: 'transactions' },
   ],
 }
 
@@ -156,10 +163,9 @@ export const homeConfig: SectionConfig = {
     { icon: 'Plane', label: 'Barcelona in 3d' },
   ],
   suggestionChips: [
-    { id: 'h1', icon: 'TrendingUp', label: "How's my week going?" },
-    { id: 'h2', icon: 'Dumbbell', label: 'Plan my workout' },
-    { id: 'h3', icon: 'Wallet', label: "How's my budget?" },
-    { id: 'h4', icon: 'Inbox', label: 'Check my inbox' },
+    { id: 'h1', icon: 'Dumbbell', label: 'Push Day at 17:00', appId: 'health', cardType: 'workout' },
+    { id: 'h2', icon: 'Wallet', label: 'Coolblue €847 due friday', appId: 'money', cardType: 'bills' },
+    { id: 'h3', icon: 'Plane', label: 'Barcelona in 3 days', appId: 'life', cardType: 'trip' },
   ],
 }
 
@@ -171,10 +177,10 @@ export const lifeConfig: SectionConfig = {
     { icon: 'Globe', label: '5 countries visited' },
   ],
   suggestionChips: [
-    { id: 'l1', icon: 'Calendar', label: "What's coming up?" },
-    { id: 'l2', icon: 'Wallet', label: 'Trip budget status' },
-    { id: 'l3', icon: 'Compass', label: 'Suggest a destination' },
-    { id: 'l4', icon: 'MapPin', label: 'Plan my week' },
+    { id: 'l1', icon: 'Calendar', label: "What's coming up?", cardType: 'upcoming' },
+    { id: 'l2', icon: 'Wallet', label: 'Trip budget status', cardType: 'trip' },
+    { id: 'l3', icon: 'Compass', label: 'Suggest a destination', cardType: 'stats' },
+    { id: 'l4', icon: 'MapPin', label: 'Plan my week', cardType: 'upcoming' },
   ],
 }
 
@@ -185,9 +191,9 @@ export const inboxConfig: SectionConfig = {
     { icon: 'CheckCircle', label: '14 auto-handled' },
   ],
   suggestionChips: [
-    { id: 'i1', icon: 'Inbox', label: "What's in my inbox?" },
-    { id: 'i2', icon: 'CheckCircle', label: 'What did you handle today?' },
-    { id: 'i3', icon: 'Receipt', label: 'Any bills or invoices?' },
-    { id: 'i4', icon: 'Calendar', label: 'Any appointments?' },
+    { id: 'i1', icon: 'Inbox', label: "What's in my inbox?", cardType: 'attention' },
+    { id: 'i2', icon: 'CheckCircle', label: 'What did you handle today?', cardType: 'handled' },
+    { id: 'i3', icon: 'Receipt', label: 'Any bills or invoices?', cardType: 'attention' },
+    { id: 'i4', icon: 'Calendar', label: 'Any appointments?', cardType: 'stats' },
   ],
 }

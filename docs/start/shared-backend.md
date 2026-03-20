@@ -2,6 +2,17 @@
 
 iOS and Web share the same Supabase instance. The web app can read all data the iOS app writes.
 
+## AI Architecture
+
+Both platforms use the same Supabase edge function for AI:
+
+```
+Web: useChat → /api/carve-ai/chat (Next.js proxy) → coach-chat edge function → OpenAI
+iOS: CoachChatService → coach-chat edge function → OpenAI
+```
+
+The edge function handles: model selection (based on subscription tier), coach personality, memory (50 facts), quota management, tool requests, and streaming. The web app's Next.js route is a thin proxy that translates SSE → AI SDK stream protocol.
+
 ## Tables the Web App Should Consume
 
 ### User & Auth
@@ -24,7 +35,6 @@ iOS and Web share the same Supabase instance. The web app can read all data the 
 - `carve_scores` — score (400-2800), tier, components (JSONB), window dates
 - `score_history` — daily snapshots with delta
 - `user_stats` — season_xp, percentile, total_workouts, total_food_logs, longest_streak
-- Note: tables and RPCs exist but Carve Score is not yet in use
 
 ### Social
 - `friendships` — requester_id, addressee_id, status
@@ -47,4 +57,5 @@ iOS and Web share the same Supabase instance. The web app can read all data the 
 - All tables have RLS (Row Level Security) — user can only read their own data
 - The web app authenticates via Supabase client, same as iOS
 - No new backend needed — consume what exists
-- Edge functions at `/supabase/functions/` (coach-chat is the main one)
+- Edge function at `supabase/functions/coach-chat/index.ts` is the single AI entry point
+- Model selection: free tier → GPT-5 mini, pro tier → GPT-5 (configurable via PRO_MODEL env var)

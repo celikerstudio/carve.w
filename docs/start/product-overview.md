@@ -2,7 +2,7 @@
 
 ## What is Carve
 
-One AI that knows your entire life — health, money, travel, inbox — and connects the dots you miss.
+One AI that knows your entire life — health, money, travel — and connects the dots you miss.
 
 Not a chatbot. A personal operating system with an AI coach at its core.
 
@@ -11,8 +11,8 @@ Not a chatbot. A personal operating system with an AI coach at its core.
 | Platform | Role | Status |
 |----------|------|--------|
 | **iOS App** (`carve-ai`) | Primary product. Real data, real users. | Production — health domain fully built |
-| **Web App** (`carve-wiki`) | Companion platform. Chat-first layout + wiki. | Early — chat shell with mock data |
-| **Supabase** | Shared backend. Auth, data, edge functions. | Production — shared between iOS and web |
+| **Web App** (`carve-wiki`) | Command center. Chat-first with contextual cards. | Active development — premium UI, shared backend |
+| **Supabase** | Shared backend. Auth, data, edge functions, AI. | Production — shared between iOS and web |
 
 ## Core Thesis
 
@@ -22,22 +22,22 @@ Existing apps silo your life. MyFitnessPal knows your food but not your budget. 
 
 | Domain | iOS Status | Web Status |
 |--------|-----------|------------|
-| **Health** | Full: workouts, food logging (FatSecret + photo), HealthKit steps, coach with memory | Chat works, context panel is mock data |
-| **Money** | Feature-flagged, architecture ready | Mock context panel only |
-| **Life/Travel** | Feature-flagged, architecture ready | Mock context panel only |
-| **Inbox** | Feature-flagged, architecture ready | Mock context panel only |
+| **Health** | Full: workouts, food logging, HealthKit steps, coach with memory | Cards with real Supabase data, AI via edge function |
+| **Money** | Feature-flagged, architecture ready | Interactive mock cards (subscriptions, budget, transactions) |
+| **Life/Travel** | Feature-flagged, architecture ready | Mock cards (trip, upcoming, stats) |
+| **Inbox** | Feature-flagged, architecture ready | Hidden for now, re-enable later |
 
-## Competitive Position
+## AI Architecture
 
-| | Generic Fitness Apps | ChatGPT | Carve |
-|---|---|---|---|
-| Real data integration | Yes (siloed) | No | Yes (cross-domain) |
-| AI coach with memory | No | Partial (no structured memory) | Yes (50 facts, categorized, persistent) |
-| Gamification tied to behavior | XP/badges (cosmetic) | No | Carve Score (designed, not yet active) |
-| Multi-domain intelligence | No | Yes (but no data) | Yes (with real data) |
+Both platforms share the same Supabase edge function (`coach-chat`):
+- **Model**: GPT-5 (pro) / GPT-4o-mini (free) — selected by subscription tier
+- **Memory**: 50 persistent facts per user, categorized
+- **Personality**: Direct, opinionated, Dutch language, adjustable intensity
+- **Tools**: Week analysis, workout review, nutrition check, progress prediction, month report
+- **Quota**: 10 free messages/day + bonus credits for premium tools
 
 ## Revenue Model
 
-- **Free tier**: 10 AI messages/day, basic features
-- **Pro tier**: Unlimited messages, GPT-4o (vs 4o-mini), premium tools (week analysis, progress prediction, month report)
+- **Free tier**: 10 AI messages/day, GPT-4o-mini, basic features
+- **Pro tier**: Unlimited messages, GPT-5, premium tools
 - **Bonus credits**: Premium tools cost 3-10 credits. Earned through engagement.

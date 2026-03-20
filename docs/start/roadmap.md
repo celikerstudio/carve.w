@@ -13,17 +13,17 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 ## Phase 1: Maak het echt
 > Doel: De web-app toont echte data uit Supabase. Geen mock meer.
 
-### 1.1 — Context panel op echte health data
-- Fetch `completed_workouts`, `diary_entries`, `daily_steps`, `check_ins` uit Supabase
-- Toon in de health context panel: werkelijke trainingen, calorieën, eiwit, stappen, streak
-- Exact wat de iOS ranking tab toont (screenshot), maar dan in de web sidebar
-- **Waarom eerst:** Dit is de snelste manier om de web-app echt te laten voelen
+### 1.1 — Context panel op echte health data ✅ (partially done)
+- Health cards connected to Supabase via useHealthData hook
+- Workout, week, today, streak cards show real data when available
+- Money/Life cards still mock — need real data connections
+- **Status:** Health done, other domains need same treatment
 
-### 1.2 — activeApp doorgeven aan AI
-- Stuur `activeApp` mee in de chat API request body
-- Pas system prompt aan per domein (health/money/life/inbox)
-- Voeg ontbrekende domeinen toe aan prompt (inbox, life)
-- **Waarom:** De AI moet weten waar je over praat
+### 1.2 — activeApp doorgeven aan AI ✅ (done)
+- activeApp sent in chat API request body via Supabase edge function proxy
+- Web app now uses same edge function as iOS (coach-chat)
+- Edge function handles: model selection, personality, memory, quota, tools
+- **Remaining:** Enrich context payload with real user profile data from Supabase
 
 ### 1.3 — Chat history persistence
 - Sla conversaties op in Supabase (of gebruik bestaande iOS-tabel als die er is)
@@ -31,11 +31,12 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 - Conversations overleven page refresh
 - **Waarom:** Zonder persistence voelt chat als een wegwerptool
 
-### 1.4 — Design system cleanup
-- Vervang alle hardcoded kleuren in chat components door semantic tokens
-- ChatContextPanel refactoren (441 regels → aparte panel components)
-- Fix hardcoded username in sidebar
-- **Waarom:** Technische schuld die nu makkelijk is, later pijnlijk
+### 1.4 — Design system cleanup ✅ (mostly done)
+- Warm palette (#191a1c bg), higher text opacities throughout
+- ChatContextPanel refactored to card registry pattern (individual card components)
+- Sidebar restructured: apps as primary nav, collapsible icon rail
+- Input bar with toolbar row
+- **Remaining:** Hardcoded username in greeting, semantic token migration
 
 **Resultaat Phase 1:** Een werkende chat-app die je echte health data toont en onthoudt.
 
@@ -135,10 +136,10 @@ De web-app vervangt iOS niet. Ze vullen elkaar aan.
 ## Prioriteitsvolgorde (kort)
 
 ```
-1.1  Context panel → echte data          ← START HIER
-1.2  activeApp → AI
-1.3  Chat history persistence
-1.4  Design system cleanup
+1.1  Context panel → echte data          ✅ health done, others mock
+1.2  activeApp → AI via edge function    ✅ done
+1.3  Chat history persistence            ← NEXT
+1.4  Design system cleanup               ✅ mostly done
 2.1  Health dashboard view
 2.2  Coach memory management
 2.3  Wiki / kennisbank

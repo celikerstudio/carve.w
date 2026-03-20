@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server"
 import { buildCoachContext } from "@/lib/ai/health-context"
+import { buildMoneyContext } from "@/lib/ai/money-context"
 
 export const maxDuration = 60
 
@@ -16,13 +17,27 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json()
-  const { messages, activeApp } = body as {
+  const { messages, activeApp, timeZone } = body as {
     messages: Array<{ role: string; content: string }>
     activeApp?: string
+    timeZone?: string
   }
 
   if (!messages || !Array.isArray(messages) || messages.length === 0) {
     return new Response("Messages required", { status: 400 })
+  }
+
+  // @ai-why: AI SDK v5 DefaultChatTransport sends messages with `parts` array, not `content` string.
+  // We need to extract text content from either format.
+  function extractContent(m: any): string {
+    if (typeof m.content === 'string') return m.content
+    if (Array.isArray(m.parts)) {
+      return m.parts
+        .filter((p: any) => p.type === 'text')
+        .map((p: any) => p.text)
+        .join('')
+    }
+    return ''
   }
 
   // Extract the latest user message
@@ -32,15 +47,23 @@ export async function POST(req: Request) {
   }
 
   // Build conversation history (all messages except the last one)
-  const conversationHistory = messages.slice(0, -1).map((m) => ({
-    role: m.role as "user" | "assistant",
-    content: m.content,
-  }))
+  const conversationHistory = messages.slice(0, -1)
+    .map((m) => ({
+      role: m.role as "user" | "assistant",
+      content: extractContent(m),
+    }))
+    .filter((m) => m.content)
 
   // Build real context from Supabase user data
   // @ai-sync: ~/Developer/carve-ai/Carve AI/App/Services/Coach/CoachContextBuilder.swift
   const userName = session.user.user_metadata?.full_name || session.user.email?.split("@")[0] || "User"
-  const context = await buildCoachContext(session.user.id, activeApp ?? "home", userName)
+  const [healthContext, moneyContext] = await Promise.all([
+    buildCoachContext(session.user.id, activeApp ?? "home", userName, timeZone),
+    buildMoneyContext(session.user.id),
+  ])
+  // @ai-why: Merge health + money context into single object for the edge function.
+  // Edge function conditionally renders money section only when monthlySpending != null.
+  const context = { ...healthContext, ...moneyContext }
 
   // Call Supabase edge function
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL
@@ -53,20 +76,28 @@ export async function POST(req: Request) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      message: lastUserMessage.content,
+      message: extractContent(lastUserMessage),
       context,
       conversationHistory,
       stream: true,
     }),
   })
 
+  console.log(`[coach-chat] Edge function status: ${edgeResponse.status}`)
+
   if (!edgeResponse.ok) {
     const errorText = await edgeResponse.text()
+    console.error(`[coach-chat] Edge function error: ${errorText}`)
     return new Response(errorText, { status: edgeResponse.status })
   }
 
-  // Transform SSE stream (thinking/token/done) → AI SDK stream protocol
-  // AI SDK protocol: text chunks are sent as `0:"text"\n`
+  // Transform SSE stream (thinking/token/done) → AI SDK v5 UI Message Stream (NDJSON)
+  // @ai-why: AI SDK v5 DefaultChatTransport.processResponseStream uses parseJsonEventStream
+  // with uiMessageChunkSchema. It expects NDJSON lines with types: text-start, text-delta, text-end.
+  // The old data stream v1 format (0:"text"\n) does NOT work with v5.
+  const encoder = new TextEncoder()
+  const messageId = crypto.randomUUID()
+
   const responseStream = new ReadableStream({
     async start(controller) {
       const reader = edgeResponse.body?.getReader()
@@ -77,6 +108,14 @@ export async function POST(req: Request) {
 
       const decoder = new TextDecoder()
       let buffer = ""
+      let started = false
+
+      // @ai-why: Must use SSE format (data: {json}\n\n), not plain NDJSON.
+      // DefaultChatTransport uses parseJsonEventStream which parses SSE, and
+      // createUIMessageStreamResponse wraps JSON with JsonToSseTransformStream.
+      function send(obj: Record<string, unknown>) {
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify(obj)}\n\n`))
+      }
 
       try {
         while (true) {
@@ -96,28 +135,39 @@ export async function POST(req: Request) {
               const event = JSON.parse(data)
 
               if (event.type === "token" && event.content) {
-                // AI SDK text protocol: 0:"content"\n
-                const encoded = JSON.stringify(event.content)
-                controller.enqueue(new TextEncoder().encode(`0:${encoded}\n`))
+                if (!started) {
+                  console.log(`[coach-chat] Stream started, first token received`)
+                  send({ type: "text-start", id: messageId })
+                  started = true
+                }
+                send({ type: "text-delta", id: messageId, delta: event.content })
               }
 
               if (event.type === "done") {
-                // AI SDK finish protocol
-                controller.enqueue(new TextEncoder().encode(`d:{"finishReason":"stop"}\n`))
+                if (!started) {
+                  send({ type: "text-start", id: messageId })
+                }
+                send({ type: "text-end", id: messageId })
+                started = false
               }
 
               if (event.type === "error") {
-                controller.enqueue(new TextEncoder().encode(`0:${JSON.stringify("Error: " + event.message)}\n`))
-                controller.enqueue(new TextEncoder().encode(`d:{"finishReason":"error"}\n`))
+                send({ type: "error", errorText: event.message || "Unknown error" })
               }
             } catch {
-              // Skip unparseable lines
+              // Skip unparseable SSE lines
             }
           }
         }
-      } catch (err) {
-        controller.enqueue(new TextEncoder().encode(`0:${JSON.stringify("Stream error")}\n`))
+
+        // Close text if edge function ended without "done" event
+        if (started) {
+          send({ type: "text-end", id: messageId })
+        }
+      } catch {
+        send({ type: "error", errorText: "Stream connection error" })
       } finally {
+        controller.enqueue(encoder.encode("data: [DONE]\n\n"))
         controller.close()
       }
     },
@@ -126,7 +176,6 @@ export async function POST(req: Request) {
   return new Response(responseStream, {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
-      "X-Vercel-AI-Data-Stream": "v1",
     },
   })
 }

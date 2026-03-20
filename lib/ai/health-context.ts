@@ -1,4 +1,10 @@
 import { createClient } from '@/lib/supabase/server'
+import {
+  differenceInDateStrings,
+  formatDateInTimeZone,
+  normalizeDateString,
+  shiftDateString,
+} from '@/lib/date/local-date'
 
 // @ai-why: Matches the CoachContext shape expected by the coach-chat edge function.
 // The edge function uses these fields to build the system prompt and inject user data.
@@ -27,28 +33,16 @@ export interface CoachContext {
   activeDomains: string[]
 }
 
-function toDateString(d: Date): string {
-  return d.toISOString().split('T')[0]
-}
-
-function getMonday(d: Date): Date {
-  const date = new Date(d)
-  const day = date.getDay()
-  const diff = day === 0 ? -6 : 1 - day
-  date.setDate(date.getDate() + diff)
-  date.setHours(0, 0, 0, 0)
-  return date
-}
-
 export async function buildCoachContext(
   userId: string,
   activeApp: string,
   userName: string,
+  timeZone?: string,
 ): Promise<CoachContext> {
   const supabase = await createClient()
   const now = new Date()
-  const today = toDateString(now)
-  const sixtyDaysAgo = toDateString(new Date(now.getTime() - 60 * 24 * 60 * 60 * 1000))
+  const today = formatDateInTimeZone(now, timeZone)
+  const sixtyDaysAgo = shiftDateString(today, -60)
 
   const [diaryRes, stepsRes, workoutsRes, profileRes] = await Promise.all([
     supabase
@@ -84,24 +78,27 @@ export async function buildCoachContext(
   const workouts = workoutsRes.data ?? []
 
   // Streak calculation
-  const allDates = [...new Set(workouts.map((w) => toDateString(new Date(w.workout_date))))].sort().reverse()
+  const allDates = [...new Set(workouts.map((w) => normalizeDateString(w.workout_date, timeZone)))].sort().reverse()
   let streak = 0
-  let checkDate = new Date(today + 'T00:00:00')
+  let checkDate = today
   if (!allDates.includes(today)) {
-    checkDate.setDate(checkDate.getDate() - 1)
+    checkDate = shiftDateString(checkDate, -1)
   }
   for (let i = 0; i < 60; i++) {
-    if (allDates.includes(toDateString(checkDate))) {
+    if (allDates.includes(checkDate)) {
       streak++
-      checkDate.setDate(checkDate.getDate() - 1)
+      checkDate = shiftDateString(checkDate, -1)
     } else {
       break
     }
   }
 
   const lastWorkout = workouts[0] ?? null
+  const lastWorkoutDate = lastWorkout
+    ? normalizeDateString(lastWorkout.workout_date, timeZone)
+    : ''
   const daysSinceLastWorkout = lastWorkout
-    ? Math.floor((now.getTime() - new Date(lastWorkout.workout_date).getTime()) / (1000 * 60 * 60 * 24))
+    ? differenceInDateStrings(today, lastWorkoutDate)
     : 0
 
   return {
@@ -118,7 +115,7 @@ export async function buildCoachContext(
     waterIntakeMl: diary?.water_intake_ml ?? 0,
     waterGoalMl: profile?.water_ml_target ?? 3000,
     lastWorkoutName: lastWorkout?.name ?? '',
-    lastWorkoutDate: lastWorkout ? toDateString(new Date(lastWorkout.workout_date)) : '',
+    lastWorkoutDate,
     daysSinceLastWorkout,
     currentStreak: streak,
     trainedToday: allDates.includes(today),

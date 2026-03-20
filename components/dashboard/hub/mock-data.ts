@@ -56,6 +56,8 @@ export interface SuggestionChip {
   id: string
   icon: string
   label: string
+  // @ai-why: Only used when the coach needs data from the user — colored pill as a call-to-action, not decoration.
+  isTask?: boolean
   appId?: 'health' | 'money' | 'life' | 'inbox'
   cardType?: string
 }

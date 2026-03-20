@@ -1,14 +1,14 @@
 'use client'
 
-import { useEffect, useRef, useMemo, useCallback, useState } from 'react'
+import { useEffect, useRef, useMemo, useCallback } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { DefaultChatTransport } from 'ai'
 import { motion } from 'framer-motion'
 import { createClient } from '@/lib/supabase/client'
 import { CarveEmptyState } from './CarveEmptyState'
 import { ChatBubble } from './ChatBubble'
-import { SuggestionChips } from './SuggestionChips'
 import { CarveInputBar } from './CarveInputBar'
+import { ResponseActions, type ResponseAction } from './ResponseActions'
 import { iconMap, healthConfig, type SectionConfig, type SuggestionChip } from '../mock-data'
 import type { AppId } from '@/components/chat/types'
 import type { ChatMessage } from '@/hooks/useChatHistory'
@@ -50,10 +50,13 @@ interface CarveChatProps {
   config?: SectionConfig
   activeApp?: AppId
   isHome?: boolean
+  userName?: string
   conversationId?: string | null
   storedMessages?: ChatMessage[]
+  pendingMessage?: string | null
+  onPendingMessageHandled?: () => void
   onConversationCreated?: (id: string) => void
-  onAppChange?: (app: AppId) => void
+  onAppChange?: (app: AppId, message?: string) => void
   onCardAdd?: (cardType: string) => void
 }
 
@@ -61,8 +64,11 @@ export function CarveChat({
   config = healthConfig,
   activeApp = 'home',
   isHome = false,
+  userName,
   conversationId: externalConversationId = null,
   storedMessages = [],
+  pendingMessage = null,
+  onPendingMessageHandled,
   onConversationCreated,
   onAppChange,
   onCardAdd,
@@ -71,6 +77,10 @@ export function CarveChat({
   const conversationIdRef = useRef<string | null>(externalConversationId)
   // Track which messages we've already saved to avoid duplicates
   const savedCountRef = useRef(storedMessages.length * 2) // stored messages are already in DB
+  const browserTimeZone = useMemo(
+    () => Intl.DateTimeFormat().resolvedOptions().timeZone || undefined,
+    []
+  )
 
   // Keep ref in sync with prop
   useEffect(() => {
@@ -80,9 +90,9 @@ export function CarveChat({
   const transport = useMemo(
     () => new DefaultChatTransport({
       api: '/api/carve-ai/chat',
-      body: { activeApp },
+      body: { activeApp, timeZone: browserTimeZone },
     }),
-    [activeApp]
+    [activeApp, browserTimeZone]
   )
 
   const initialMessages = useMemo(() => {
@@ -180,10 +190,23 @@ export function CarveChat({
     [sendMessage, activeApp, onConversationCreated]
   )
 
+  // Auto-send pending message after remount (from home chip click)
+  const pendingHandled = useRef(false)
+  useEffect(() => {
+    if (pendingMessage && !pendingHandled.current) {
+      pendingHandled.current = true
+      onPendingMessageHandled?.()
+      void handleSend(pendingMessage)
+    }
+  }, [pendingMessage, handleSend, onPendingMessageHandled])
+
   const handleChipClick = useCallback(
     (chip: SuggestionChip) => {
       if (chip.appId) {
-        onAppChange?.(chip.appId)
+        // App switch causes remount — pass message through layout so new instance picks it up
+        if (chip.cardType) onCardAdd?.(chip.cardType)
+        onAppChange?.(chip.appId, chip.label)
+        return
       }
       if (chip.cardType) {
         onCardAdd?.(chip.cardType)
@@ -191,6 +214,40 @@ export function CarveChat({
       handleSend(chip.label)
     },
     [handleSend, onAppChange, onCardAdd]
+  )
+
+  // @ai-why: Mock response actions until the AI generates these contextually.
+  // In production, the AI will return actions as part of its response (via annotations or tool calls).
+  const responseActions = useMemo((): ResponseAction[] => {
+    if (messages.length === 0 || isLoading) return []
+    const lastMsg = messages[messages.length - 1]
+    if (lastMsg.role !== 'assistant') return []
+
+    // Mock: show contextual actions based on active app
+    if (activeApp === 'health') {
+      return [
+        { id: 'ra1', icon: 'Dumbbell', label: 'Plan my workout' },
+        { id: 'ra2', icon: 'TrendingUp', label: 'Show my progress', isRecommended: true },
+        { id: 'ra3', icon: 'Flame', label: 'Log weight', isTask: true },
+      ]
+    }
+    if (activeApp === 'money') {
+      return [
+        { id: 'ra1', icon: 'Receipt', label: 'Break it down' },
+        { id: 'ra2', icon: 'PiggyBank', label: 'Savings tips', isRecommended: true },
+      ]
+    }
+    return [
+      { id: 'ra1', icon: 'BarChart3', label: 'Tell me more' },
+      { id: 'ra2', icon: 'Calendar', label: "What's next?", isRecommended: true },
+    ]
+  }, [messages, isLoading, activeApp])
+
+  const handleActionClick = useCallback(
+    (action: ResponseAction) => {
+      handleSend(action.label)
+    },
+    [handleSend]
   )
 
   const hasMessages = messages.length > 0
@@ -201,28 +258,32 @@ export function CarveChat({
         <>
           <div ref={scrollRef} className="flex-1 overflow-y-auto scrollbar-hide py-4">
             <div className="flex flex-col gap-3">
-              {messages.map((msg) => {
+              {messages.map((msg, idx) => {
                 const text = getMessageText(msg)
                 if (!text) return null
+                const isLastAssistant = msg.role === 'assistant' && idx === messages.length - 1 && !isLoading
                 return (
-                  <motion.div
-                    key={msg.id}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <ChatBubble
-                      role={msg.role as 'user' | 'assistant'}
-                      content={text}
-                    />
-                  </motion.div>
+                  <div key={msg.id}>
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChatBubble
+                        role={msg.role as 'user' | 'assistant'}
+                        content={text}
+                      />
+                    </motion.div>
+                    {isLastAssistant && responseActions.length > 0 && (
+                      <ResponseActions actions={responseActions} onActionClick={handleActionClick} />
+                    )}
+                  </div>
                 )
               })}
               {isLoading && <TypingIndicator />}
             </div>
           </div>
 
-          <SuggestionChips chips={config.suggestionChips} onChipClick={handleSend} />
           <CarveInputBar onSend={handleSend} disabled={isLoading} />
         </>
       ) : (
@@ -230,6 +291,7 @@ export function CarveChat({
           <CarveEmptyState
             config={config}
             isHome={isHome}
+            userName={userName}
             onChipClick={handleChipClick}
           />
           <div className="w-full max-w-[560px] mt-4 px-4">

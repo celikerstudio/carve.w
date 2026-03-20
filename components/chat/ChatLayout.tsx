@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ChatSidebar } from './ChatSidebar'
 import { CarveChat } from '@/components/dashboard/hub/chat/CarveChat'
 import { ChatContextPanel } from './ChatContextPanel'
-import { type SectionConfig, type SuggestionChip, healthConfig, moneyConfig, homeConfig, lifeConfig, inboxConfig } from '@/components/dashboard/hub/mock-data'
+import { type SectionConfig, healthConfig, moneyConfig, homeConfig, lifeConfig, inboxConfig } from '@/components/dashboard/hub/mock-data'
 import { useChatHistory } from '@/hooks/useChatHistory'
 import type { ChatMessage } from '@/hooks/useChatHistory'
 import type { AppId } from './types'
@@ -16,6 +16,14 @@ const appConfigs: Record<AppId, SectionConfig> = {
   money: moneyConfig,
   life: lifeConfig,
   inbox: inboxConfig,
+}
+
+const defaultCards: Record<AppId, string[]> = {
+  home: [],
+  health: ['workout', 'week', 'today', 'streak'],
+  money: ['budget'],
+  life: ['trip'],
+  inbox: ['attention'],
 }
 
 interface ChatLayoutProps {
@@ -29,24 +37,18 @@ export function ChatLayout({ userId, userName = 'User' }: ChatLayoutProps) {
   const [visibleCards, setVisibleCards] = useState<string[]>([])
   const [selectedConversationId, setSelectedConversationId] = useState<string | null>(null)
   const [loadedMessages, setLoadedMessages] = useState<ChatMessage[]>([])
+  // @ai-why: Survives the app-switch remount long enough for the next CarveChat instance to auto-send once.
+  const [pendingMessage, setPendingMessage] = useState<string | null>(null)
   const config = appConfigs[activeApp]
 
   const { conversations, loadMessages, refreshConversations } = useChatHistory(userId)
 
-  // @ai-why: Each app starts with default cards so the panel feels alive immediately
-  const defaultCards: Record<AppId, string[]> = {
-    home: [],
-    health: ['workout', 'week', 'today', 'streak'],
-    money: ['budget'],
-    life: ['trip'],
-    inbox: ['attention'],
-  }
-
-  const handleAppChange = useCallback((app: AppId) => {
+  const handleAppChange = useCallback((app: AppId, message?: string) => {
     setActiveApp(app)
     setVisibleCards(defaultCards[app] || [])
     setSelectedConversationId(null)
     setLoadedMessages([])
+    setPendingMessage(message ?? null)
   }, [])
 
   const handleCardAdd = useCallback((cardType: string) => {
@@ -67,11 +69,13 @@ export function ChatLayout({ userId, userName = 'User' }: ChatLayoutProps) {
     const messages = await loadMessages(conversationId)
     setLoadedMessages(messages)
     setSelectedConversationId(conversationId)
+    setPendingMessage(null)
   }, [activeApp, loadMessages])
 
   const handleNewChat = useCallback(() => {
     setSelectedConversationId(null)
     setLoadedMessages([])
+    setPendingMessage(null)
     // Keep current app, just reset conversation
   }, [])
 
@@ -79,6 +83,10 @@ export function ChatLayout({ userId, userName = 'User' }: ChatLayoutProps) {
     setSelectedConversationId(id)
     refreshConversations()
   }, [refreshConversations])
+
+  const handlePendingMessageHandled = useCallback(() => {
+    setPendingMessage(null)
+  }, [])
 
   const showContextPanel = activeApp !== 'home'
 
@@ -107,8 +115,11 @@ export function ChatLayout({ userId, userName = 'User' }: ChatLayoutProps) {
           config={config}
           activeApp={activeApp}
           isHome={activeApp === 'home'}
+          userName={userName}
           conversationId={selectedConversationId}
           storedMessages={loadedMessages}
+          pendingMessage={pendingMessage}
+          onPendingMessageHandled={handlePendingMessageHandled}
           onConversationCreated={handleConversationCreated}
           onAppChange={handleAppChange}
           onCardAdd={handleCardAdd}

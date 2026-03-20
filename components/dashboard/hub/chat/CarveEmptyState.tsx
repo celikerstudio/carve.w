@@ -6,6 +6,7 @@ import { iconMap, type SectionConfig, type SuggestionChip } from '../mock-data'
 interface CarveEmptyStateProps {
   config: SectionConfig
   isHome?: boolean
+  userName?: string
   onChipClick: (chip: SuggestionChip) => void
 }
 
@@ -17,7 +18,7 @@ function getGreeting(): string {
   return 'Good evening'
 }
 
-export function CarveEmptyState({ config, isHome = false, onChipClick }: CarveEmptyStateProps) {
+export function CarveEmptyState({ config, isHome = false, userName, onChipClick }: CarveEmptyStateProps) {
   if (isHome) {
     return (
       <div className="flex flex-col items-center w-full max-w-[560px] px-4">
@@ -29,7 +30,7 @@ export function CarveEmptyState({ config, isHome = false, onChipClick }: CarveEm
           className="text-center mb-8"
         >
           <h1 className="text-[28px] md:text-[32px] font-light text-white/60 tracking-tight">
-            {getGreeting()}, Furkan
+            {getGreeting()}{userName ? `, ${userName}` : ''}
           </h1>
         </motion.div>
 
@@ -46,10 +47,22 @@ export function CarveEmptyState({ config, isHome = false, onChipClick }: CarveEm
               <button
                 key={chip.id}
                 onClick={() => onChipClick(chip)}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-left hover:bg-white/[0.06] hover:border-white/[0.10] transition-all group"
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.03] border text-left hover:bg-white/[0.06] transition-all group ${
+                  chip.isTask
+                    ? 'border-blue-400/20 hover:border-blue-400/35'
+                    : 'border-white/[0.06] hover:border-white/[0.10]'
+                }`}
               >
-                {Icon && <Icon className="w-4 h-4 text-white/25 shrink-0 group-hover:text-white/40 transition-colors" />}
-                <span className="text-[14px] text-white/45 group-hover:text-white/65 transition-colors">{chip.label}</span>
+                {Icon && <Icon className={`w-4 h-4 shrink-0 transition-colors ${
+                  chip.isTask
+                    ? 'text-blue-400/40 group-hover:text-blue-400/60'
+                    : 'text-white/25 group-hover:text-white/40'
+                }`} />}
+                <span className={`text-[14px] transition-colors ${
+                  chip.isTask
+                    ? 'text-blue-300/55 group-hover:text-blue-300/75'
+                    : 'text-white/45 group-hover:text-white/65'
+                }`}>{chip.label}</span>
               </button>
             )
           })}
@@ -89,9 +102,13 @@ export function CarveEmptyState({ config, isHome = false, onChipClick }: CarveEm
             <button
               key={chip.id}
               onClick={() => onChipClick(chip)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.08] text-[13px] text-white/40 hover:text-white/60 hover:border-white/[0.15] transition-colors"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] transition-colors ${
+                chip.isTask
+                  ? 'border-blue-400/20 text-blue-300/55 hover:text-blue-300/75 hover:border-blue-400/35'
+                  : 'border-white/[0.08] text-white/40 hover:text-white/60 hover:border-white/[0.15]'
+              }`}
             >
-              {Icon && <Icon className="w-3.5 h-3.5" />}
+              {Icon && <Icon className={`w-3.5 h-3.5 ${chip.isTask ? 'text-blue-400/40' : ''}`} />}
               <span>{chip.label}</span>
             </button>
           )

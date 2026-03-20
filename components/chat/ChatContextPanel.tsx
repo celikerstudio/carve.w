@@ -4,8 +4,13 @@ import { createContext, useContext, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { sampleSubscriptions, sampleTransactions } from '@/components/money/sample-data'
+import { Plus } from 'lucide-react'
+import { CATEGORY_CONFIG, type SpendingCategory } from '@/components/money/sample-data'
 import { useHealthData, type HealthData } from '@/hooks/useHealthData'
+import { useMoneyData, type MoneyData } from '@/hooks/useMoneyData'
+import { AddTransactionModal } from '@/components/money/AddTransactionModal'
+import { AddSubscriptionModal } from '@/components/money/AddSubscriptionModal'
+import { differenceInDateStrings, formatDateInTimeZone } from '@/lib/date/local-date'
 import type { AppId } from './types'
 
 // ─── Shared card primitives ─────────────────────────────────────────
@@ -84,8 +89,8 @@ function formatNumber(n: number): string {
 }
 
 function timeAgo(dateStr: string): string {
-  const diff = Date.now() - new Date(dateStr).getTime()
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+  const today = formatDateInTimeZone(new Date())
+  const days = differenceInDateStrings(today, dateStr)
   if (days === 0) return 'Today'
   if (days === 1) return 'Yesterday'
   return `${days}d ago`
@@ -204,46 +209,124 @@ function StreakCard() {
   )
 }
 
-// ─── Money cards (still mock) ───────────────────────────────────────
+// ─── Money data context ─────────────────────────────────────────────
 
-const SUB_COLORS: Record<string, string> = {
-  Netflix: '#E50914', Spotify: '#1DB954', 'Adobe CC': '#FF0000',
-  Figma: '#A259FF', AWS: '#FF9900', 'X Premium': '#ffffff', Equinox: '#ffffff',
+const MoneyDataContext = createContext<{ data: MoneyData | null; loading: boolean }>({
+  data: null,
+  loading: true,
+})
+
+function useMoney() {
+  return useContext(MoneyDataContext)
 }
 
+// ─── Money actions context (modal triggers) ─────────────────────────
+
+const MoneyActionsContext = createContext<{
+  openTransactionModal: () => void
+  openSubscriptionModal: () => void
+}>({
+  openTransactionModal: () => {},
+  openSubscriptionModal: () => {},
+})
+
+function useMoneyActions() {
+  return useContext(MoneyActionsContext)
+}
+
+function AddButton({ onClick, label }: { onClick: () => void; label: string }) {
+  return (
+    <button
+      onClick={onClick}
+      className="flex items-center gap-1 mt-2 text-[10px] text-white/30 hover:text-white/50 transition-colors"
+    >
+      <Plus className="w-3 h-3" />
+      <span>{label}</span>
+    </button>
+  )
+}
+
+// ─── Money cards (real data) ────────────────────────────────────────
+
 function BudgetCard() {
+  const { data, loading } = useMoney()
+  if (loading) return <SkeletonCard />
+
+  const { summary } = data ?? { summary: null }
+  const { openTransactionModal } = useMoneyActions()
+
+  if (!summary || (summary.monthlySpending === 0 && summary.budgetStatus.length === 0)) {
+    return (
+      <ContextCard>
+        <CardLabel>Budget</CardLabel>
+        <p className="text-[12px] text-white/35 mt-2">Nog geen transacties</p>
+        <AddButton onClick={openTransactionModal} label="Transactie toevoegen" />
+      </ContextCard>
+    )
+  }
+
+  const totalBudget = summary.budgetStatus.reduce((sum, b) => sum + b.limit, 0)
+  const totalSpent = summary.monthlySpending
+  const percentage = totalBudget > 0 ? Math.round((totalSpent / totalBudget) * 100) : 0
+  const now = new Date()
+  const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate()
+  const daysRemaining = daysInMonth - now.getDate()
+
+  const monthName = now.toLocaleString('nl-NL', { month: 'long' })
+  const barColor = percentage >= 100 ? 'bg-red-400/70' : percentage >= 80 ? 'bg-amber-400/70' : 'bg-white/25'
+
   return (
     <ContextCard>
-      <CardLabel>Budget — March</CardLabel>
+      <CardLabel>Budget — {monthName}</CardLabel>
       <div className="flex items-baseline justify-between mt-2 mb-2">
-        <p className="text-[22px] font-bold text-white/80 tracking-tight">€760</p>
-        <p className="text-[12px] text-white/30">/ €2,000</p>
+        <p className="text-[22px] font-bold text-white/80 tracking-tight">€{Math.round(totalSpent).toLocaleString()}</p>
+        {totalBudget > 0 && <p className="text-[12px] text-white/30">/ €{Math.round(totalBudget).toLocaleString()}</p>}
       </div>
-      <div className="h-[3px] bg-white/[0.06] rounded-full">
-        <div className="h-full bg-white/25 rounded-full" style={{ width: '62%' }} />
-      </div>
-      <p className="text-[10px] text-white/30 mt-1.5">62% spent · 12 days remaining</p>
+      {totalBudget > 0 && (
+        <>
+          <div className="h-[3px] bg-white/[0.06] rounded-full">
+            <div className={cn('h-full rounded-full', barColor)} style={{ width: `${Math.min(percentage, 100)}%` }} />
+          </div>
+          <p className="text-[10px] text-white/30 mt-1.5">{percentage}% besteed · {daysRemaining} dagen over</p>
+        </>
+      )}
     </ContextCard>
   )
 }
 
 function SubscriptionsCard() {
   const [expanded, setExpanded] = useState(false)
-  const activeSubs = sampleSubscriptions.filter(s => s.isActive)
-  const totalMonthly = activeSubs.reduce((sum, s) => sum + s.cost, 0)
+  const { data, loading } = useMoney()
+  if (loading) return <SkeletonCard />
+
+  const { openSubscriptionModal } = useMoneyActions()
+  const activeSubs = data?.subscriptions ?? []
+  if (activeSubs.length === 0) {
+    return (
+      <ContextCard>
+        <CardLabel>Abonnementen</CardLabel>
+        <p className="text-[12px] text-white/35 mt-2">Nog geen abonnementen</p>
+        <AddButton onClick={openSubscriptionModal} label="Abonnement toevoegen" />
+      </ContextCard>
+    )
+  }
+
+  const totalMonthly = activeSubs.reduce((sum, s) => {
+    return sum + (s.frequency === 'yearly' ? Number(s.cost) / 12 : Number(s.cost))
+  }, 0)
 
   return (
     <ContextCard>
       <button onClick={() => setExpanded(!expanded)} className="flex items-center justify-between w-full">
         <div>
-          <CardLabel>Subscriptions</CardLabel>
+          <CardLabel>Abonnementen</CardLabel>
           <div className="flex items-baseline gap-2 mt-1">
-            <span className="text-[16px] font-bold text-white/80">${totalMonthly.toFixed(2)}</span>
-            <span className="text-[10px] text-white/30">/mo</span>
+            <span className="text-[16px] font-bold text-white/80">€{totalMonthly.toFixed(2)}</span>
+            <span className="text-[10px] text-white/30">/maand</span>
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-[11px] text-white/35">{activeSubs.length} active</span>
+          <span className="text-[11px] text-white/35">{activeSubs.length} actief</span>
           <ChevronDown className={cn('w-3.5 h-3.5 text-white/30 transition-transform duration-200', expanded && 'rotate-180')} />
         </div>
       </button>
@@ -251,7 +334,7 @@ function SubscriptionsCard() {
       {!expanded && (
         <div className="flex items-center gap-1.5 mt-3">
           {activeSubs.slice(0, 5).map((sub) => (
-            <div key={sub.id} className="w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-bold text-white shrink-0" style={{ background: SUB_COLORS[sub.name] || '#333' }} title={sub.name}>
+            <div key={sub.id} className="w-7 h-7 rounded-lg bg-white/[0.08] flex items-center justify-center text-[10px] font-bold text-white/60 shrink-0" title={sub.name}>
               {sub.name.charAt(0)}
             </div>
           ))}
@@ -265,19 +348,22 @@ function SubscriptionsCard() {
         {expanded && (
           <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
             <div className="flex flex-col gap-2 mt-3 pt-3 border-t border-white/[0.06]">
-              {activeSubs.map((sub) => (
-                <div key={sub.id} className="flex items-center gap-2.5 py-1">
-                  <div className="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-bold text-white shrink-0" style={{ background: SUB_COLORS[sub.name] || '#333' }}>{sub.name.charAt(0)}</div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-[12px] text-white/70 font-medium truncate">{sub.name}</p>
-                    <p className="text-[10px] text-white/30">{sub.plan}</p>
+              {activeSubs.map((sub) => {
+                const monthlyCost = sub.frequency === 'yearly' ? Number(sub.cost) / 12 : Number(sub.cost)
+                return (
+                  <div key={sub.id} className="flex items-center gap-2.5 py-1">
+                    <div className="w-8 h-8 rounded-lg bg-white/[0.08] flex items-center justify-center text-[11px] font-bold text-white/60 shrink-0">{sub.name.charAt(0)}</div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[12px] text-white/70 font-medium truncate">{sub.name}</p>
+                      <p className="text-[10px] text-white/30">{sub.frequency === 'yearly' ? 'Jaarlijks' : 'Maandelijks'}</p>
+                    </div>
+                    <span className="text-[12px] text-white/50 font-medium">€{monthlyCost.toFixed(2)}</span>
                   </div>
-                  <span className="text-[12px] text-white/50 font-medium">${sub.cost.toFixed(2)}</span>
-                </div>
-              ))}
+                )
+              })}
               <div className="flex items-center justify-between pt-2 border-t border-white/[0.06]">
-                <span className="text-[11px] text-white/35">Yearly forecast</span>
-                <span className="text-[11px] text-white/50 font-medium">${(totalMonthly * 12).toLocaleString()}</span>
+                <span className="text-[11px] text-white/35">Jaarlijks</span>
+                <span className="text-[11px] text-white/50 font-medium">€{Math.round(totalMonthly * 12).toLocaleString()}</span>
               </div>
             </div>
           </motion.div>
@@ -288,34 +374,83 @@ function SubscriptionsCard() {
 }
 
 function TransactionsCard() {
+  const { data, loading } = useMoney()
+  if (loading) return <SkeletonCard />
+
+  const { openTransactionModal } = useMoneyActions()
+  const transactions = data?.transactions ?? []
+  if (transactions.length === 0) {
+    return (
+      <ContextCard>
+        <CardLabel>Recente transacties</CardLabel>
+        <p className="text-[12px] text-white/35 mt-2">Nog geen transacties</p>
+        <AddButton onClick={openTransactionModal} label="Transactie toevoegen" />
+      </ContextCard>
+    )
+  }
+
   return (
     <ContextCard>
-      <CardLabel>Recent transactions</CardLabel>
+      <CardLabel>Recente transacties</CardLabel>
       <div className="flex flex-col gap-2 mt-2">
-        {sampleTransactions.slice(0, 5).map((tx) => (
-          <div key={tx.id} className="flex items-center justify-between">
-            <div className="min-w-0 flex-1">
-              <p className="text-[12px] text-white/60 truncate">{tx.merchant}</p>
-              <p className="text-[10px] text-white/30 capitalize">{tx.subcategory}</p>
+        {transactions.slice(0, 5).map((tx) => {
+          const config = CATEGORY_CONFIG[tx.category as SpendingCategory]
+          const isIncome = tx.type === 'income'
+          return (
+            <div key={tx.id} className="flex items-center justify-between">
+              <div className="min-w-0 flex-1">
+                <p className="text-[12px] text-white/60 truncate">{tx.description || config?.label || tx.category}</p>
+                <p className="text-[10px] text-white/30 capitalize">{config?.label || tx.category}</p>
+              </div>
+              <span className={cn('text-[12px] font-medium shrink-0 ml-3', isIncome ? 'text-emerald-400/70' : 'text-white/45')}>
+                {isIncome ? '+' : '-'}€{Number(tx.amount).toLocaleString()}
+              </span>
             </div>
-            <span className="text-[12px] text-white/45 font-medium shrink-0 ml-3">-${tx.amount.toLocaleString()}</span>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </ContextCard>
   )
 }
 
 function BillsCard() {
+  const { data, loading } = useMoney()
+  if (loading) return <SkeletonCard />
+
+  // Show subscriptions billing soon (within 7 days)
+  const subs = data?.subscriptions ?? []
+  const now = new Date()
+  const upcoming = subs
+    .filter((s) => s.billing_day != null)
+    .map((s) => {
+      const billingDay = s.billing_day!
+      let nextBill = new Date(now.getFullYear(), now.getMonth(), billingDay)
+      if (nextBill <= now) {
+        nextBill = new Date(now.getFullYear(), now.getMonth() + 1, billingDay)
+      }
+      const daysUntil = Math.ceil((nextBill.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
+      return { ...s, daysUntil }
+    })
+    .filter((s) => s.daysUntil <= 7)
+    .sort((a, b) => a.daysUntil - b.daysUntil)
+
+  if (upcoming.length === 0) return null
+
   return (
     <ContextCard>
-      <CardLabel>Open bills</CardLabel>
-      <div className="flex items-center justify-between mt-2">
-        <div>
-          <p className="text-[12px] text-white/60">Coolblue</p>
-          <p className="text-[10px] text-white/30">Due friday</p>
-        </div>
-        <span className="text-[13px] text-white/70 font-semibold">€847</span>
+      <CardLabel>Binnenkort</CardLabel>
+      <div className="flex flex-col gap-2 mt-2">
+        {upcoming.map((sub) => (
+          <div key={sub.id} className="flex items-center justify-between">
+            <div>
+              <p className="text-[12px] text-white/60">{sub.name}</p>
+              <p className="text-[10px] text-white/30">
+                {sub.daysUntil === 0 ? 'Vandaag' : sub.daysUntil === 1 ? 'Morgen' : `Over ${sub.daysUntil} dagen`}
+              </p>
+            </div>
+            <span className="text-[13px] text-white/70 font-semibold">€{Number(sub.cost)}</span>
+          </div>
+        ))}
       </div>
     </ContextCard>
   )
@@ -430,7 +565,7 @@ const CARD_REGISTRY: Record<string, React.ComponentType> = {
   week: WeekCard,
   today: TodayCard,
   streak: StreakCard,
-  // Money (mock)
+  // Money (real data via MoneyDataContext)
   budget: BudgetCard,
   subscriptions: SubscriptionsCard,
   transactions: TransactionsCard,
@@ -455,27 +590,52 @@ interface ChatContextPanelProps {
 
 export function ChatContextPanel({ activeApp, visibleCards = [], userId }: ChatContextPanelProps) {
   const healthState = useHealthData(userId)
+  const moneyState = useMoneyData(userId)
+  const [showTransactionModal, setShowTransactionModal] = useState(false)
+  const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
+
+  const moneyActions = {
+    openTransactionModal: () => setShowTransactionModal(true),
+    openSubscriptionModal: () => setShowSubscriptionModal(true),
+  }
 
   return (
     <HealthDataContext.Provider value={healthState}>
-      <div className="h-full overflow-y-auto scrollbar-hide p-3">
-        <div className="flex flex-col gap-2.5">
-          {visibleCards.map((cardType, i) => {
-            const CardComponent = CARD_REGISTRY[cardType]
-            if (!CardComponent) return null
-            return (
-              <motion.div
-                key={cardType}
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
-              >
-                <CardComponent />
-              </motion.div>
-            )
-          })}
-        </div>
-      </div>
+      <MoneyDataContext.Provider value={moneyState}>
+        <MoneyActionsContext.Provider value={moneyActions}>
+          <div className="h-full overflow-y-auto scrollbar-hide p-3">
+            <div className="flex flex-col gap-2.5">
+              {visibleCards.map((cardType, i) => {
+                const CardComponent = CARD_REGISTRY[cardType]
+                if (!CardComponent) return null
+                return (
+                  <motion.div
+                    key={cardType}
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: i * 0.05 }}
+                  >
+                    <CardComponent />
+                  </motion.div>
+                )
+              })}
+            </div>
+          </div>
+
+          <AddTransactionModal
+            open={showTransactionModal}
+            onClose={() => setShowTransactionModal(false)}
+            onSuccess={() => moneyState.refetch()}
+            userId={userId}
+          />
+          <AddSubscriptionModal
+            open={showSubscriptionModal}
+            onClose={() => setShowSubscriptionModal(false)}
+            onSuccess={() => moneyState.refetch()}
+            userId={userId}
+          />
+        </MoneyActionsContext.Provider>
+      </MoneyDataContext.Provider>
     </HealthDataContext.Provider>
   )
 }

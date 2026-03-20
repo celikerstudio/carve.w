@@ -25,10 +25,10 @@ const SERVICE_ICON_MAP: Record<
 // Category badge colors
 // ---------------------------------------------------------------------------
 
-const CATEGORY_BADGE_STYLES: Record<SubscriptionCategory, string> = {
+const CATEGORY_BADGE_STYLES: Record<string, string> = {
   entertainment:
     "bg-purple-500/10 text-purple-400 border-purple-500/20",
-  software:
+  subscriptions:
     "bg-blue-500/10 text-blue-400 border-blue-500/20",
   utilities:
     "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",

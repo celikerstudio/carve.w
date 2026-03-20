@@ -8,19 +8,23 @@ import type { Subscription, SubscriptionCategory } from "@/components/money/samp
 // Category colors for the donut chart and legend
 // ---------------------------------------------------------------------------
 
+// @ai-why: Only showing the 3 most common subscription categories in the donut.
+// This is a subset of SpendingCategory, not the full list.
+type ChartCategory = "utilities" | "subscriptions" | "entertainment"
+
 const CATEGORY_CHART_CONFIG: Record<
-  SubscriptionCategory,
+  ChartCategory,
   { stroke: string; dotClass: string; label: string }
 > = {
   utilities: {
     stroke: "#EAB308",
     dotClass: "bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,0.4)]",
-    label: "Utilities",
+    label: "Vaste lasten",
   },
-  software: {
+  subscriptions: {
     stroke: "#3B82F6",
     dotClass: "bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]",
-    label: "Software",
+    label: "Abonnementen",
   },
   entertainment: {
     stroke: "#A855F7",
@@ -30,9 +34,9 @@ const CATEGORY_CHART_CONFIG: Record<
 }
 
 // Order in which categories are rendered on the donut
-const CATEGORY_ORDER: SubscriptionCategory[] = [
+const CATEGORY_ORDER: ChartCategory[] = [
   "utilities",
-  "software",
+  "subscriptions",
   "entertainment",
 ]
 
@@ -54,9 +58,9 @@ interface MonthlyOutlookProps {
 export function MonthlyOutlook({ subscriptions }: MonthlyOutlookProps) {
   // Calculate category totals from active monthly subscriptions
   const { categoryTotals, grandTotal } = useMemo(() => {
-    const totals: Record<SubscriptionCategory, number> = {
+    const totals: Record<ChartCategory, number> = {
       utilities: 0,
-      software: 0,
+      subscriptions: 0,
       entertainment: 0,
     }
 
@@ -65,7 +69,10 @@ export function MonthlyOutlook({ subscriptions }: MonthlyOutlookProps) {
       // Normalize yearly to monthly equivalent
       const monthlyCost =
         sub.frequency === "yearly" ? sub.cost / 12 : sub.cost
-      totals[sub.category] += monthlyCost
+      const cat = sub.category as ChartCategory
+      if (cat in totals) {
+        totals[cat] += monthlyCost
+      }
     }
 
     const total = Object.values(totals).reduce((sum, v) => sum + v, 0)
@@ -98,7 +105,7 @@ export function MonthlyOutlook({ subscriptions }: MonthlyOutlookProps) {
 
   // Find the highest-spending category for the insight
   const highestCategory = useMemo(() => {
-    let maxCat: SubscriptionCategory = "software"
+    let maxCat: ChartCategory = "subscriptions"
     let maxAmount = 0
     for (const cat of CATEGORY_ORDER) {
       if (categoryTotals[cat] > maxAmount) {

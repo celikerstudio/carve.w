@@ -11,8 +11,13 @@ export type SpendingCategory =
   | "entertainment"
   | "utilities"
   | "subscriptions"
+  | "health"
+  | "education"
+  | "personal"
+  | "other"
 
-export type SubscriptionCategory = "entertainment" | "utilities" | "software"
+// @ai-why: Merged with SpendingCategory — one canonical list for all money features.
+export type SubscriptionCategory = SpendingCategory
 
 export interface Transaction {
   id: string
@@ -76,14 +81,18 @@ export interface CategoryConfig {
 }
 
 export const CATEGORY_CONFIG: Record<SpendingCategory, CategoryConfig> = {
-  housing: { icon: "\uD83C\uDFE0", label: "Housing", color: "bg-primary/20" },
-  dining: { icon: "\uD83C\uDF7D\uFE0F", label: "Dining", color: "bg-purple-500/10" },
-  shopping: { icon: "\uD83D\uDECD\uFE0F", label: "Shopping", color: "bg-indigo-500/10" },
-  transport: { icon: "\uD83D\uDE97", label: "Transport", color: "bg-pink-500/10" },
-  travel: { icon: "\u2708\uFE0F", label: "Travel", color: "bg-orange-500/10" },
+  housing: { icon: "\uD83C\uDFE0", label: "Wonen", color: "bg-primary/20" },
+  dining: { icon: "\uD83C\uDF7D\uFE0F", label: "Eten & Drinken", color: "bg-purple-500/10" },
+  shopping: { icon: "\uD83D\uDECD\uFE0F", label: "Winkelen", color: "bg-indigo-500/10" },
+  transport: { icon: "\uD83D\uDE97", label: "Vervoer", color: "bg-pink-500/10" },
+  travel: { icon: "\u2708\uFE0F", label: "Reizen", color: "bg-orange-500/10" },
   entertainment: { icon: "\uD83C\uDFAC", label: "Entertainment", color: "bg-cyan-500/10" },
-  utilities: { icon: "\u26A1", label: "Utilities", color: "bg-emerald-500/10" },
-  subscriptions: { icon: "\uD83D\uDD01", label: "Subscriptions", color: "bg-slate-500/10" },
+  utilities: { icon: "\u26A1", label: "Vaste lasten", color: "bg-emerald-500/10" },
+  subscriptions: { icon: "\uD83D\uDD01", label: "Abonnementen", color: "bg-slate-500/10" },
+  health: { icon: "\u2764\uFE0F", label: "Gezondheid", color: "bg-rose-500/10" },
+  education: { icon: "\uD83C\uDF93", label: "Opleiding", color: "bg-amber-500/10" },
+  personal: { icon: "\uD83D\uDC64", label: "Persoonlijk", color: "bg-blue-500/10" },
+  other: { icon: "\u2022\u2022\u2022", label: "Overig", color: "bg-gray-500/10" },
 }
 
 // ---------------------------------------------------------------------------
@@ -298,7 +307,7 @@ export const sampleSubscriptions: Subscription[] = [
     plan: "All Apps",
     cost: 54.99,
     frequency: "monthly",
-    category: "software",
+    category: "subscriptions",
     nextBillDate: "2023-11-10",
     icon: "\uD83C\uDFA8",
     color: "#FF0000",
@@ -311,7 +320,7 @@ export const sampleSubscriptions: Subscription[] = [
     plan: "Professional",
     cost: 12,
     frequency: "monthly",
-    category: "software",
+    category: "subscriptions",
     nextBillDate: "2023-11-12",
     icon: "\uD83D\uDD8C\uFE0F",
     color: "#A259FF",
@@ -324,7 +333,7 @@ export const sampleSubscriptions: Subscription[] = [
     plan: "Pay-as-you-go",
     cost: 85.43,
     frequency: "monthly",
-    category: "software",
+    category: "subscriptions",
     nextBillDate: "2023-11-01",
     icon: "\u2601\uFE0F",
     color: "#FF9900",

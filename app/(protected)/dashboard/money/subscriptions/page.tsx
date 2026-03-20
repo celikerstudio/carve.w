@@ -25,7 +25,7 @@ const FILTER_TABS: { key: FilterTab; label: string }[] = [
   { key: "all", label: "All" },
   { key: "entertainment", label: "Entertainment" },
   { key: "utilities", label: "Utilities" },
-  { key: "software", label: "Software" },
+  { key: "subscriptions", label: "Abonnementen" },
 ]
 
 // ---------------------------------------------------------------------------

@@ -5,7 +5,7 @@ import type { CategorySpending, SpendingCategory } from '@/components/money/samp
 
 // Category-specific style definitions matching the reference design
 const TREEMAP_STYLES: Record<
-  SpendingCategory,
+  string,
   { bg: string; hoverBg: string; border: string; text: string }
 > = {
   housing: {
@@ -56,10 +56,36 @@ const TREEMAP_STYLES: Record<
     border: 'border-slate-500/20',
     text: 'text-slate-400',
   },
+  health: {
+    bg: 'bg-rose-500/10',
+    hoverBg: 'hover:bg-rose-500/20',
+    border: 'border-rose-500/20',
+    text: 'text-rose-400',
+  },
+  education: {
+    bg: 'bg-amber-500/10',
+    hoverBg: 'hover:bg-amber-500/20',
+    border: 'border-amber-500/20',
+    text: 'text-amber-400',
+  },
+  personal: {
+    bg: 'bg-blue-500/10',
+    hoverBg: 'hover:bg-blue-500/20',
+    border: 'border-blue-500/20',
+    text: 'text-blue-400',
+  },
+  other: {
+    bg: 'bg-gray-500/10',
+    hoverBg: 'hover:bg-gray-500/20',
+    border: 'border-gray-500/20',
+    text: 'text-gray-400',
+  },
 }
 
+const DEFAULT_STYLE = TREEMAP_STYLES.other
+
 // Hardcoded grid placements matching the reference layout
-const GRID_PLACEMENTS: Record<SpendingCategory, string> = {
+const GRID_PLACEMENTS: Record<string, string> = {
   housing: 'col-span-2 row-span-2',
   dining: 'col-span-2 row-span-1',
   travel: 'col-span-1 row-span-2',

@@ -30,17 +30,11 @@ function stripLocale(pathname: string): string {
   return pathname;
 }
 
-// Nav items: marketing pages link to /carve/*, app pages link to /dashboard/*
-const APP_NAV = [
-  { label: 'Health', href: '/dashboard' },
-  { label: 'Money', href: '/dashboard/money' },
-  { label: 'Travel', href: '/dashboard/travel' },
-] as const;
-
+// Nav items: marketing pages link to /carve/*
 const MARKETING_NAV = [
   { label: 'Health', href: '/carve' },
   { label: 'Money', href: '/carve/money' },
-  { label: 'Travel', href: '/carve/travel' },
+  { label: 'Life', href: '/carve/life' },
 ] as const;
 
 export function AppHeader({
@@ -68,7 +62,9 @@ export function AppHeader({
   const path = stripLocale(pathname);
   const isWikiRoute = path === '/' || path.startsWith('/wiki');
   const isMarketing = path === '/carve' || path.startsWith('/carve/');
-  const navItems = isMarketing ? MARKETING_NAV : APP_NAV;
+  const isDashboard = path.startsWith('/dashboard');
+  // Only show nav tabs on marketing pages — dashboard uses the sidebar
+  const navItems = isMarketing ? MARKETING_NAV : null;
 
   const handleLogout = async () => {
     const supabase = createClient();
@@ -124,30 +120,32 @@ export function AppHeader({
               CARVE
             </Link>
 
-            {/* Desktop nav - absolutely centered */}
-            <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={cn(
-                    'relative px-4 py-2 text-sm font-medium transition-colors',
-                    isActive(item.href)
-                      ? (isWikiRoute ? 'text-ink' : 'text-white')
-                      : (isWikiRoute ? 'text-ink-tertiary hover:text-ink-secondary' : 'text-white/40 hover:text-white/70')
-                  )}
-                >
-                  {item.label}
-                  {isActive(item.href) && (
-                    <motion.div
-                      layoutId="header-indicator"
-                      className={cn("absolute bottom-0 left-4 right-4 h-px", isWikiRoute ? "bg-ink/50" : "bg-white/50")}
-                      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-                    />
-                  )}
-                </Link>
-              ))}
-            </nav>
+            {/* Desktop nav - absolutely centered (marketing pages only) */}
+            {navItems && (
+              <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={cn(
+                      'relative px-4 py-2 text-sm font-medium transition-colors',
+                      isActive(item.href)
+                        ? (isWikiRoute ? 'text-ink' : 'text-white')
+                        : (isWikiRoute ? 'text-ink-tertiary hover:text-ink-secondary' : 'text-white/40 hover:text-white/70')
+                    )}
+                  >
+                    {item.label}
+                    {isActive(item.href) && (
+                      <motion.div
+                        layoutId="header-indicator"
+                        className={cn("absolute bottom-0 left-4 right-4 h-px", isWikiRoute ? "bg-ink/50" : "bg-white/50")}
+                        transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+                      />
+                    )}
+                  </Link>
+                ))}
+              </nav>
+            )}
 
             {/* Right side - Desktop */}
             <div className="hidden md:flex items-center gap-3 ml-auto">
@@ -317,7 +315,7 @@ export function AppHeader({
             className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl pt-20 px-6"
           >
             <nav className="flex flex-col gap-2">
-              {navItems.map((item) => (
+              {navItems?.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { ArrowUp } from 'lucide-react'
+import { ArrowUp, Plus, Mic, Paperclip } from 'lucide-react'
 
 interface CarveInputBarProps {
   onSend: (message: string) => void
@@ -40,10 +40,11 @@ export function CarveInputBar({ onSend, disabled }: CarveInputBarProps) {
   return (
     <div className="px-4 pb-4">
       <div
-        className={`flex items-end gap-2 px-3 py-2 rounded-2xl bg-[#1c1f27] border transition-colors ${
-          isFocused ? 'border-[#c8b86e]/50' : 'border-white/[0.06]'
+        className={`flex flex-col rounded-2xl bg-white/[0.06] border transition-colors ${
+          isFocused ? 'border-white/[0.15]' : 'border-white/[0.08]'
         }`}
       >
+        {/* Input row */}
         <textarea
           ref={textareaRef}
           value={input}
@@ -51,22 +52,40 @@ export function CarveInputBar({ onSend, disabled }: CarveInputBarProps) {
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           onKeyDown={handleKeyDown}
-          placeholder="Ask Carve AI..."
+          placeholder="Ask Carve anything..."
           disabled={disabled}
           rows={1}
-          className="flex-1 bg-transparent text-[15px] text-white placeholder:text-[#7a8299] resize-none outline-none max-h-[120px] py-1 disabled:opacity-50"
+          className="flex-1 bg-transparent text-[15px] text-white/90 placeholder:text-white/25 resize-none outline-none max-h-[120px] px-4 pt-3 pb-1 disabled:opacity-50"
         />
-        <button
-          onClick={handleSend}
-          disabled={!input.trim() || disabled}
-          className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
-            input.trim() && !disabled
-              ? 'bg-[#c8b86e] text-[#111318]'
-              : 'bg-white/[0.06] text-[#7a8299]'
-          }`}
-        >
-          <ArrowUp className="w-4 h-4" strokeWidth={2.5} />
-        </button>
+
+        {/* Toolbar row */}
+        <div className="flex items-center justify-between px-3 pb-2.5 pt-1">
+          <div className="flex items-center gap-1">
+            <button className="w-8 h-8 rounded-full flex items-center justify-center text-white/30 hover:text-white/50 hover:bg-white/[0.06] transition-colors">
+              <Plus className="w-4 h-4" />
+            </button>
+            <button className="w-8 h-8 rounded-full flex items-center justify-center text-white/30 hover:text-white/50 hover:bg-white/[0.06] transition-colors">
+              <Paperclip className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="flex items-center gap-1">
+            <button className="w-8 h-8 rounded-full flex items-center justify-center text-white/30 hover:text-white/50 hover:bg-white/[0.06] transition-colors">
+              <Mic className="w-4 h-4" />
+            </button>
+            <button
+              onClick={handleSend}
+              disabled={!input.trim() || disabled}
+              className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
+                input.trim() && !disabled
+                  ? 'bg-white text-[#191a1c]'
+                  : 'bg-white/[0.08] text-white/30'
+              }`}
+            >
+              <ArrowUp className="w-4 h-4" strokeWidth={2.5} />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   )

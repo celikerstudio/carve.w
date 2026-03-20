@@ -7,13 +7,12 @@ import { cn } from '@/lib/utils';
 
 // Import navigation configs
 import { wikiNavigationGroups } from '@/lib/navigation/wiki-navigation';
-import { dashboardNavigationGroups, loginNavigationGroups } from '@/lib/navigation/dashboard-navigation';
+import { loginNavigationGroups } from '@/lib/navigation/dashboard-navigation';
 import { adminNavigationGroups } from '@/lib/navigation/admin-navigation';
 import { hiscoresNavigationGroups } from '@/lib/navigation/hiscores-navigation';
 import { carveNavigationGroups } from '@/lib/navigation/carve-navigation';
 import { supportNavigationGroups } from '@/lib/navigation/support-navigation';
-import { moneyNavigationGroups } from '@/lib/navigation/money-navigation';
-import { travelNavigationGroups } from '@/lib/navigation/travel-navigation';
+import { unifiedNavigationGroups } from '@/lib/navigation/unified-navigation';
 
 // Import icons
 import { iconMap } from '@/components/icons/sidebar-icons';
@@ -37,17 +36,19 @@ type SectionTheme = {
 };
 
 const sectionThemes: Record<string, SectionTheme> = {
-  money:   { accent: '#e8e0d4', accentBg: 'rgba(255,255,255,0.06)' },
-  travel:  { accent: '#b8d8e8', accentBg: 'rgba(184,216,232,0.08)' },
-  health:  { accent: '#e2e8f0', accentBg: 'rgba(226,232,240,0.06)' },
+  inbox:   { accent: '#f59e0b', accentBg: 'rgba(245,158,11,0.08)' },
+  health:  { accent: '#22c55e', accentBg: 'rgba(34,197,94,0.08)' },
+  money:   { accent: '#3b82f6', accentBg: 'rgba(59,130,246,0.08)' },
+  life:    { accent: '#a855f7', accentBg: 'rgba(168,85,247,0.08)' },
   admin:   { accent: '#f59e0b', accentBg: 'rgba(245,158,11,0.10)' },
   default: { accent: '#e2e8f0', accentBg: 'rgba(226,232,240,0.08)' },
 };
 
 function getSectionKey(pathname: string): string {
+  if (pathname.startsWith('/dashboard/inbox')) return 'inbox';
   if (pathname.startsWith('/dashboard/money')) return 'money';
-  if (pathname.startsWith('/dashboard/travel')) return 'travel';
-  if (pathname.startsWith('/dashboard')) return 'health';
+  if (pathname.startsWith('/dashboard/life')) return 'life';
+  if (pathname.startsWith('/dashboard/workouts') || pathname.startsWith('/dashboard/food')) return 'health';
   if (pathname.startsWith('/admin')) return 'admin';
   return 'default';
 }
@@ -62,15 +63,9 @@ function getSidebarGroups(pathname: string, isAuthenticated: boolean, userRole?:
     if (userRole !== 'admin') return null;
     return adminNavigationGroups as NavigationGroup[];
   }
-  if (path.startsWith('/dashboard/money')) {
-    return moneyNavigationGroups as NavigationGroup[];
-  }
-  if (path.startsWith('/dashboard/travel')) {
-    return travelNavigationGroups as NavigationGroup[];
-  }
   if (path.startsWith('/dashboard')) {
     return isAuthenticated
-      ? (dashboardNavigationGroups as NavigationGroup[])
+      ? (unifiedNavigationGroups as NavigationGroup[])
       : (loginNavigationGroups as NavigationGroup[]);
   }
   if (path.startsWith('/hiscores')) {

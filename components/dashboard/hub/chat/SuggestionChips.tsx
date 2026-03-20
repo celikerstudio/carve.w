@@ -16,9 +16,9 @@ export function SuggestionChips({ chips, onChipClick }: SuggestionChipsProps) {
           <button
             key={chip.id}
             onClick={() => onChipClick(chip.label)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1c1f27] border border-white/[0.06] text-[13px] text-[#9da6b9] hover:border-[#c8b86e]/30 hover:text-white transition-colors whitespace-nowrap shrink-0"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.06] border border-white/[0.08] text-[13px] text-white/45 hover:border-white/[0.15] hover:text-white/65 transition-colors whitespace-nowrap shrink-0"
           >
-            {Icon && <Icon className="w-3 h-3 text-[#c8b86e]" />}
+            {Icon && <Icon className="w-3 h-3 text-white/35" />}
             <span>{chip.label}</span>
           </button>
         )

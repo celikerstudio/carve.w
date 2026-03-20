@@ -49,3 +49,4 @@ stitch*/
 
 # supabase temp
 supabase/.temp/
+.superpowers/

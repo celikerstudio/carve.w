@@ -23,9 +23,6 @@ export default async function WikiCategoryLayout({
     return <>{children}</>;
   }
 
-  return (
-    <div className="wiki-light min-h-screen bg-surface text-ink">
-      {children}
-    </div>
-  );
+  // @ai-why: wiki-light wrapper is now applied by parent app/wiki/layout.tsx
+  return <>{children}</>;
 }

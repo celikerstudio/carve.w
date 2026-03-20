@@ -28,6 +28,13 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // Redirect authenticated users from landing page to chat
+  if (pathname === '/') {
+    if (user) {
+      return NextResponse.redirect(new URL('/chat', request.url))
+    }
+  }
+
   return response
 }
 

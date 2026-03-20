@@ -30,11 +30,35 @@ html {
     background-size: 200% 100%;
     animation: shimmer 1.8s ease-in-out infinite;
   }
+  .landing-demo-ai .tag-health {
+    display: inline-flex; padding: 1px 6px; border-radius: 4px; font-size: 11px; font-weight: 500;
+    background: rgba(34,197,94,0.08); color: #22c55e;
+  }
+  .landing-demo-ai .tag-money {
+    display: inline-flex; padding: 1px 6px; border-radius: 4px; font-size: 11px; font-weight: 500;
+    background: rgba(59,130,246,0.08); color: #3b82f6;
+  }
+  .landing-demo-ai .tag-inbox {
+    display: inline-flex; padding: 1px 6px; border-radius: 4px; font-size: 11px; font-weight: 500;
+    background: rgba(245,158,11,0.08); color: #f59e0b;
+  }
+  .landing-demo-ai .tag-life {
+    display: inline-flex; padding: 1px 6px; border-radius: 4px; font-size: 11px; font-weight: 500;
+    background: rgba(168,85,247,0.08); color: #a855f7;
+  }
+  .landing-demo-ai strong {
+    color: rgba(255,255,255,0.65); font-weight: 600;
+  }
 }
 
 @keyframes shimmer {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
+}
+
+@keyframes typingPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1); }
 }
 
 @theme {
@@ -77,6 +101,8 @@ html {
   --color-health: #D4A843;
   --color-money: #3B82F6;
   --color-travel: #F97316;
+  --color-life: #a855f7;
+  --color-inbox: #f59e0b;
   --color-wiki-accent: #10B981;
   --color-success: #34C759;
   --color-warning: #FF9500;

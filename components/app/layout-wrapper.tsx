@@ -45,10 +45,19 @@ export function LayoutWrapper({
   // Note: usePathname() returns URL path, not file-system path.
   // Route groups like (protected) are invisible in URLs, so /chat is correct.
   const isChatRoute = path.startsWith('/chat')
+  const isLandingRoute = path === '/'
 
   if (isChatRoute) {
     return (
-      <div className="fixed inset-0 bg-[#0a0a0b]">
+      <div className="fixed inset-0 bg-[#191a1c]">
+        {children}
+      </div>
+    )
+  }
+
+  if (isLandingRoute) {
+    return (
+      <div className="min-h-screen bg-[#0A0A0B]">
         {children}
       </div>
     )
@@ -67,7 +76,7 @@ export function LayoutWrapper({
     path === '/carve/contributing'
 
   // Wiki pages render with header but no sidebar — full-width scrollable
-  const isWikiRoute = path === '/' || path.startsWith('/wiki')
+  const isWikiRoute = path.startsWith('/wiki')
 
   if (isAuthRoute || isLabRoute) {
     return <>{children}</>

@@ -26,7 +26,8 @@ One feature per session, fully complete. Real data, not mock.
 - Use semantic design tokens, not hardcoded colors
 - iOS is the reference for data/behavior, not for UI (web has different strengths)
 - One domain at a time. Health first (it's already built on iOS).
-- Ship real features, not more mock data.
+- Ship real features, not new mock-first work. Existing money/life placeholders stay temporary until those phases start.
+- If docs drift from implementation, fix the docs in the same session.
 
 ## Web vs iOS: Different Strengths
 

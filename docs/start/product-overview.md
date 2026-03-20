@@ -30,14 +30,15 @@ Existing apps silo your life. MyFitnessPal knows your food but not your budget. 
 ## AI Architecture
 
 Both platforms share the same Supabase edge function (`coach-chat`):
-- **Model**: GPT-5 (pro) / GPT-4o-mini (free) — selected by subscription tier
-- **Memory**: 50 persistent facts per user, categorized
+- **Model selection**: Tier-based and env-configurable in the shared edge function (`PRO_MODEL` / `FREE_MODEL`)
+- **Current local defaults**: `gpt-5` for pro, `gpt-5-mini` for free (from `../carve-ai`)
+- **Context**: iOS currently sends the richest coach context; web sends a slimmer health-focused payload and is still catching up
 - **Personality**: Direct, opinionated, Dutch language, adjustable intensity
 - **Tools**: Week analysis, workout review, nutrition check, progress prediction, month report
-- **Quota**: 10 free messages/day + bonus credits for premium tools
+- **Quota**: Current shared backend behavior is 10 free messages/hour, pro unlimited
 
 ## Revenue Model
 
-- **Free tier**: 10 AI messages/day, GPT-4o-mini, basic features
-- **Pro tier**: Unlimited messages, GPT-5, premium tools
-- **Bonus credits**: Premium tools cost 3-10 credits. Earned through engagement.
+- **Free tier**: 10 AI messages/hour, default free model, core chat
+- **Pro tier**: Unlimited messages, pro model, advanced tools
+- **Tool pricing details**: Follow the latest shared backend / iOS implementation, not older daily-limit or bonus-credit copy

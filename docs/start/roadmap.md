@@ -10,26 +10,28 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 
 ---
 
-## Phase 1: Maak het echt
-> Doel: De web-app toont echte data uit Supabase. Geen mock meer.
+## Phase 1: Maak het echt ✅
+> Doel: De web-app toont echte health data uit Supabase. Geen nieuwe health mock-first work meer.
 
-### 1.1 — Context panel op echte health data ✅ (partially done)
-- Health cards connected to Supabase via useHealthData hook
-- Workout, week, today, streak cards show real data when available
-- Money/Life cards still mock — need real data connections
-- **Status:** Health done, other domains need same treatment
+### 1.1 — Context panel op echte health data ✅
+- `useHealthData` hook fetcht workouts, diary_entries, daily_steps, profiles parallel uit Supabase
+- WorkoutCard, WeekCard, TodayCard, StreakCard tonen echte data met loading skeletons
+- HealthDataContext deelt data tussen cards (één fetch)
+- Money/Life cards nog mock — worden echt in Phase 3
 
-### 1.2 — activeApp doorgeven aan AI ✅ (done)
-- activeApp sent in chat API request body via Supabase edge function proxy
-- Web app now uses same edge function as iOS (coach-chat)
-- Edge function handles: model selection, personality, memory, quota, tools
-- **Remaining:** Enrich context payload with real user profile data from Supabase
+### 1.2 — activeApp + echte context naar AI ✅
+- API route proxyt naar dezelfde `coach-chat` edge function als iOS
+- `buildCoachContext()` bouwt een echte health-focused context payload uit Supabase-data
+- Zelfde AI entrypoint als iOS voor personality, quota, tool routing en streaming
+- **Remaining gap:** web injecteert nog niet de nieuwste iOS-contextvelden (key facts, profile/logbook, rijkere workout/meal velden)
+- SSE stream vertaald naar AI SDK protocol
 
-### 1.3 — Chat history persistence
-- Sla conversaties op in Supabase (of gebruik bestaande iOS-tabel als die er is)
-- Sidebar toont echte chat history, niet hardcoded items
+### 1.3 — Chat history persistence ✅
+- `ai_conversations` + `ai_messages` tabellen in Supabase (RLS, indexes, auto-update trigger)
+- `useChatHistory` hook voor conversation CRUD (list, create, load, delete)
+- CarveChat maakt conversation aan bij eerste bericht, slaat messages op per exchange
+- Sidebar toont echte conversation lijst met timestamps, klikbaar om te hervatten
 - Conversations overleven page refresh
-- **Waarom:** Zonder persistence voelt chat als een wegwerptool
 
 ### 1.4 — Design system cleanup ✅ (mostly done)
 - Warm palette (#191a1c bg), higher text opacities throughout
@@ -38,7 +40,7 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 - Input bar with toolbar row
 - **Remaining:** Hardcoded username in greeting, semantic token migration
 
-**Resultaat Phase 1:** Een werkende chat-app die je echte health data toont en onthoudt.
+**Resultaat Phase 1:** Een werkende chat-app die echte health data toont, onthoudt, en dezelfde AI backend-entrypoint gebruikt als iOS.
 
 ---
 
@@ -53,9 +55,10 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 - **Waarom:** Dit is wat web beter doet — overzicht en analyse
 
 ### 2.2 — Coach memory management
-- Toon de 50 coach memory facts
+- Toon de 50 coach memory facts + coach profile sections
 - Bewerk, archiveer, categoriseer facts via web UI
-- Op iOS is dit compact; op web kun je het uitgebreid tonen
+- Coach logbook: browse observations, milestones, concerns
+- Trek web `buildCoachContext()` dichter naar de nieuwste iOS `CoachContext` shape
 - **Waarom:** Power user feature die beter werkt met keyboard en groot scherm
 
 ### 2.3 — Wiki / kennisbank
@@ -77,12 +80,15 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 ## Phase 3: Multi-domein
 > Doel: Tweede domein live. Cross-domein intelligence begint.
 
-### 3.1 — Money domein (als eerste)
-- Wat: budget overview, uitgaven, spaardoelen
-- Integratie: afhankelijk van wat beschikbaar is (bank API, handmatig, CSV import)
-- Context panel: echte financiële data
-- Coach: money-specifieke tools en prompts
-- **Waarom money eerst:** Meetbaar, concrete feedback loop (net als health)
+### 3.1 — Money domein (als eerste) ✅
+- Supabase: `money_transactions`, `money_budgets`, `money_subscriptions` + profiles uitgebreid
+- `useMoneyData` hook met error handling en refetch
+- Context panel cards op echte data (budget, transactions, subscriptions, bills)
+- `buildMoneyContext()` stuurt financiële data naar coach edge function
+- Edge function toont conditioneel money context + financieel GEDRAG
+- Add Transaction / Add Subscription modals vanuit context panel
+- 12 canonical categorieën door hele codebase
+- **Open:** bank API, CSV import, money coach tools, cross-domein koppeling
 
 ### 3.2 — Cross-domein intelligence
 - Coach ziet health + money data tegelijk
@@ -136,16 +142,16 @@ De web-app vervangt iOS niet. Ze vullen elkaar aan.
 ## Prioriteitsvolgorde (kort)
 
 ```
-1.1  Context panel → echte data          ✅ health done, others mock
-1.2  activeApp → AI via edge function    ✅ done
-1.3  Chat history persistence            ← NEXT
+1.1  Context panel → echte data          ✅ done
+1.2  activeApp + context → AI            ✅ done
+1.3  Chat history persistence            ✅ done
 1.4  Design system cleanup               ✅ mostly done
-2.1  Health dashboard view
+2.1  Health dashboard view               ← NEXT
 2.2  Coach memory management
 2.3  Wiki / kennisbank
 2.4  Mobile responsive
-3.1  Money domein
-3.2  Cross-domein intelligence
+3.1  Money domein                       ✅ done
+3.2  Cross-domein intelligence          ← NEXT
 3.3  Life/travel domein
 4.x  Social, Carve Score, onboarding, performance
 ```
@@ -154,6 +160,6 @@ De web-app vervangt iOS niet. Ze vullen elkaar aan.
 
 ## Hoe te werken
 
-Eén item per sessie. Begin met "ik wil 1.1 bouwen" en we gaan.
+Eén item per sessie. Begin met "ik wil 2.1 bouwen" en we gaan.
 Elk item is af als het echte data toont en productie-klaar aanvoelt.
-Geen mock data meer na Phase 1.
+Geen nieuwe health mock-first features meer na Phase 1. Bestaande money/life placeholders blijven tot Phase 3.

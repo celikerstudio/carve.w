@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carve Chat — Mobile Design</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #0a0a0b;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── Layout ─────────────────────────────────────────── */
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .page-header p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.25);
+    margin-top: 8px;
+  }
+
+  .screens {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .screen-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .screen-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.25);
+  }
+
+  /* ─── Phone frame ────────────────────────────────────── */
+
+  .phone {
+    width: 375px;
+    height: 812px;
+    background: #111113;
+    border-radius: 44px;
+    border: 3px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+    position: relative;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.04),
+      0 24px 80px rgba(0,0,0,0.6);
+  }
+
+  /* Status bar */
+  .status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 28px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+  }
+  .status-bar .time { font-size: 15px; font-weight: 600; }
+  .status-icons { display: flex; gap: 5px; align-items: center; }
+  .status-icons .dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.5); }
+  .status-icons .battery {
+    width: 22px; height: 10px; border-radius: 2px; border: 1px solid rgba(255,255,255,0.4);
+    position: relative;
+  }
+  .status-icons .battery::after {
+    content: '';
+    position: absolute;
+    top: 2px; left: 2px; right: 4px; bottom: 2px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 1px;
+  }
+
+  /* App content area */
+  .app-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 44px);
+  }
+
+  /* ─── Mobile nav bar (top) ───────────────────────────── */
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .nav-brand {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .nav-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .nav-btn {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-btn svg { width: 16px; height: 16px; color: rgba(255,255,255,0.4); }
+
+  .user-avatar {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #64748b, #475569);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+    color: white;
+  }
+
+  /* ─── App tabs (horizontal scroll) ───────────────────── */
+
+  .app-tabs {
+    display: flex;
+    gap: 4px;
+    padding: 10px 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .app-tabs::-webkit-scrollbar { display: none; }
+
+  .app-tab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.4);
+    transition: all 0.2s;
+  }
+
+  .app-tab.active {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.85);
+  }
+
+  .app-tab .tab-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+  }
+
+  /* ─── Scrollable content ─────────────────────────────── */
+
+  .scroll-area {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ─── Home empty state ───────────────────────────────── */
+
+  .home-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0 20px 16px;
+  }
+
+  .greeting {
+    font-size: 26px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: -0.01em;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .prompt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .prompt-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .prompt-icon {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .prompt-icon svg { width: 16px; height: 16px; }
+
+  .prompt-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.3;
+  }
+
+  .divider-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .divider-row .line { flex: 1; height: 1px; background: rgba(255,255,255,0.04); }
+  .divider-row span { font-size: 10px; color: rgba(255,255,255,0.12); text-transform: uppercase; letter-spacing: 0.1em; }
+
+  /* ─── Context cards (bottom sheet style) ─────────────── */
+
+  .context-sheet {
+    background: rgba(255,255,255,0.02);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 12px 16px 8px;
+  }
+
+  .context-sheet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .context-sheet-label {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.2);
+  }
+
+  .cards-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cards-scroll::-webkit-scrollbar { display: none; }
+
+  .context-card {
+    min-width: 200px;
+    max-width: 200px;
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    flex-shrink: 0;
+  }
+
+  .card-label {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.25);
+    margin-bottom: 8px;
+  }
+
+  .card-big-number {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: -0.02em;
+  }
+
+  .card-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+  }
+
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  .card-row-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+  }
+
+  .card-row-value {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .card-progress-bar {
+    height: 3px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 2px;
+    margin-top: 8px;
+  }
+  .card-progress-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.2);
+  }
+
+  .week-dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .week-dot-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .week-dot-label {
+    font-size: 9px;
+    color: rgba(255,255,255,0.25);
+  }
+
+  .week-dot {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+  }
+
+  .week-dot.done { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.55); }
+  .week-dot.today { border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.35); }
+  .week-dot.empty { background: rgba(255,255,255,0.025); }
+
+  .muscle-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+  }
+
+  .muscle-tag {
+    font-size: 10px;
+    color: rgba(255,255,255,0.25);
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+  }
+
+  /* ─── Chat messages ──────────────────────────────────── */
+
+  .chat-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .msg {
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .msg.user {
+    align-self: flex-end;
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.85);
+    border-bottom-right-radius: 6px;
+  }
+
+  .msg.assistant {
+    align-self: flex-start;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.65);
+    border-bottom-left-radius: 6px;
+  }
+
+  .msg-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+  }
+
+  .msg-ai-dot {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .msg-ai-dot svg { width: 10px; height: 10px; }
+
+  /* ─── Input bar ──────────────────────────────────────── */
+
+  .input-bar {
+    padding: 12px 16px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom, 12px));
+    border-top: 1px solid rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.02);
+  }
+
+  .input-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .input-placeholder {
+    flex: 1;
+    font-size: 14px;
+    color: rgba(255,255,255,0.2);
+  }
+
+  .input-send {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-send svg { width: 14px; height: 14px; color: rgba(255,255,255,0.3); }
+
+  /* ─── Home indicator ─────────────────────────────────── */
+
+  .home-indicator {
+    display: flex;
+    justify-content: center;
+    padding: 6px 0 4px;
+  }
+
+  .home-indicator-bar {
+    width: 134px;
+    height: 5px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.15);
+  }
+
+  /* ─── Suggestion chips inline ────────────────────────── */
+
+  .inline-chips {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding: 8px 16px 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .inline-chips::-webkit-scrollbar { display: none; }
+
+  .inline-chip {
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.07);
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ─── Annotations ────────────────────────────────────── */
+
+  .annotations {
+    max-width: 1400px;
+    margin: 48px auto 0;
+    padding: 32px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .annotations h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  .annotation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .annotation-item {
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .annotation-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 6px;
+  }
+
+  .annotation-desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    line-height: 1.5;
+  }
+
+  .accent-green { color: #22c55e; }
+  .accent-blue { color: #3b82f6; }
+  .accent-purple { color: #a855f7; }
+  .accent-amber { color: #f59e0b; }
+
+  /* ─── Tab nav interactivity ──────────────────────────── */
+  .screen-nav { display: flex; gap: 8px; margin-bottom: 8px; }
+  .screen-nav button {
+    padding: 4px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: transparent;
+    color: rgba(255,255,255,0.3);
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .screen-nav button.active {
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.7);
+    border-color: rgba(255,255,255,0.15);
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Carve — Mobile Chat</h1>
+  <p>Design exploration &middot; 3 key states</p>
+</div>
+
+<div class="screens">
+
+  <!-- ════════════════════════════════════════════════════════
+       SCREEN 1: Home / Empty State
+       ════════════════════════════════════════════════════════ -->
+  <div class="screen-wrapper">
+    <span class="screen-label">1 &middot; Home</span>
+    <div class="phone">
+      <div class="status-bar">
+        <span class="time">9:41</span>
+        <div class="status-icons">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><rect x="0" y="4" width="3" height="8" rx="1" fill="rgba(255,255,255,0.5)"/><rect x="4.5" y="2.5" width="3" height="9.5" rx="1" fill="rgba(255,255,255,0.5)"/><rect x="9" y="0" width="3" height="12" rx="1" fill="rgba(255,255,255,0.5)"/></svg>
+          <div class="battery"></div>
+        </div>
+      </div>
+
+      <div class="app-content">
+        <!-- Nav -->
+        <div class="mobile-nav">
+          <span class="nav-brand">CARVE</span>
+          <div class="nav-actions">
+            <div class="nav-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="user-avatar">FC</div>
+          </div>
+        </div>
+
+        <!-- App tabs -->
+        <div class="app-tabs">
+          <div class="app-tab active">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            Home
+          </div>
+          <div class="app-tab">
+            <div class="tab-dot" style="background: #22c55e;"></div>
+            Health
+          </div>
+          <div class="app-tab">
+            <div class="tab-dot" style="background: #3b82f6;"></div>
+            Money
+          </div>
+          <div class="app-tab">
+            <div class="tab-dot" style="background: #a855f7;"></div>
+            Life
+          </div>
+        </div>
+
+        <!-- Home empty state -->
+        <div class="home-empty">
+          <div class="greeting">Good morning, Furkan</div>
+
+          <div class="prompt-list">
+            <div class="prompt-item">
+              <div class="prompt-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="m2 20 4-4 4 4"/><path d="m14 20 4-4 4 4"/></svg>
+              </div>
+              <span class="prompt-text">How was my workout this week?</span>
+            </div>
+            <div class="prompt-item">
+              <div class="prompt-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+              </div>
+              <span class="prompt-text">Am I on budget this month?</span>
+            </div>
+            <div class="prompt-item">
+              <div class="prompt-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+              </div>
+              <span class="prompt-text">Pack list for Barcelona trip</span>
+            </div>
+            <div class="prompt-item">
+              <div class="prompt-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span class="prompt-text">Anything important in my inbox?</span>
+            </div>
+          </div>
+
+          <div class="divider-row">
+            <div class="line"></div>
+            <span>or just ask</span>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <!-- Input -->
+        <div class="input-bar">
+          <div class="input-field">
+            <span class="input-placeholder">Ask Carve anything...</span>
+            <div class="input-send">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-indicator"><div class="home-indicator-bar"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       SCREEN 2: Health Domain — context cards visible
+       ════════════════════════════════════════════════════════ -->
+  <div class="screen-wrapper">
+    <span class="screen-label">2 &middot; Health Domain</span>
+    <div class="phone">
+      <div class="status-bar">
+        <span class="time">9:41</span>
+        <div class="status-icons">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><rect x="0" y="4" width="3" height="8" rx="1" fill="rgba(255,255,255,0.5)"/><rect x="4.5" y="2.5" width="3" height="9.5" rx="1" fill="rgba(255,255,255,0.5)"/><rect x="9" y="0" width="3" height="12" rx="1" fill="rgba(255,255,255,0.5)"/></svg>
+          <div class="battery"></div>
+        </div>
+      </div>
+
+      <div class="app-content">
+        <!-- Nav -->
+        <div class="mobile-nav">
+          <span class="nav-brand">CARVE</span>
+          <div class="nav-actions">
+            <div class="nav-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="user-avatar">FC</div>
+          </div>
+        </div>
+
+        <!-- App tabs — Health active -->
+        <div class="app-tabs">
+          <div class="app-tab">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            Home
+          </div>
+          <div class="app-tab active" style="color: #22c55e;">
+            <div class="tab-dot" style="background: #22c55e;"></div>
+            Health
+          </div>
+          <div class="app-tab">
+            <div class="tab-dot" style="background: #3b82f6;"></div>
+            Money
+          </div>
+          <div class="app-tab">
+            <div class="tab-dot" style="background: #a855f7;"></div>
+            Life
+          </div>
+        </div>
+
+        <!-- Chat area with domain empty state -->
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 20px;">
+          <div style="font-size: 36px; font-weight: 300; color: rgba(255,255,255,0.45); letter-spacing: -0.02em; margin-bottom: 24px;">carve</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
+            <span class="inline-chip">How was my week?</span>
+            <span class="inline-chip">Suggest a workout</span>
+            <span class="inline-chip">My protein intake</span>
+            <span class="inline-chip">Rest day advice</span>
+          </div>
+        </div>
+
+        <!-- Context cards — horizontal scroll sheet -->
+        <div class="context-sheet">
+          <div class="context-sheet-header">
+            <span class="context-sheet-label">Your health data</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="cards-scroll">
+            <!-- Workout card -->
+            <div class="context-card">
+              <div class="card-label">Last workout</div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
+                <span style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.65);">Upper Body</span>
+                <span style="font-size: 10px; color: rgba(255,255,255,0.3);">Today</span>
+              </div>
+              <div class="muscle-tags">
+                <span class="muscle-tag">Chest</span>
+                <span class="muscle-tag">Shoulders</span>
+                <span class="muscle-tag">Triceps</span>
+              </div>
+            </div>
+
+            <!-- Week card -->
+            <div class="context-card">
+              <div class="card-label">This week</div>
+              <div class="week-dots">
+                <div class="week-dot-col"><span class="week-dot-label">M</span><div class="week-dot done">✓</div></div>
+                <div class="week-dot-col"><span class="week-dot-label">T</span><div class="week-dot done">✓</div></div>
+                <div class="week-dot-col"><span class="week-dot-label">W</span><div class="week-dot empty"></div></div>
+                <div class="week-dot-col"><span class="week-dot-label">T</span><div class="week-dot done">✓</div></div>
+                <div class="week-dot-col"><span class="week-dot-label">F</span><div class="week-dot today">·</div></div>
+                <div class="week-dot-col"><span class="week-dot-label">S</span><div class="week-dot empty"></div></div>
+                <div class="week-dot-col"><span class="week-dot-label">S</span><div class="week-dot empty"></div></div>
+              </div>
+              <div style="font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 8px;">3 of 5 workouts</div>
+            </div>
+
+            <!-- Today card -->
+            <div class="context-card">
+              <div class="card-label">Today</div>
+              <div class="card-row"><span class="card-row-label">Steps</span><span class="card-row-value">6.2k / 10k</span></div>
+              <div class="card-row"><span class="card-row-label">Calories</span><span class="card-row-value">1.8k / 2.2k</span></div>
+              <div class="card-row"><span class="card-row-label">Protein</span><span class="card-row-value">95g / 140g</span></div>
+              <div class="card-row"><span class="card-row-label">Water</span><span class="card-row-value">1.5L / 3.0L</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input -->
+        <div class="input-bar">
+          <div class="input-field">
+            <span class="input-placeholder">Ask about your health...</span>
+            <div class="input-send">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-indicator"><div class="home-indicator-bar"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       SCREEN 3: Active Chat — messages flowing
+       ════════════════════════════════════════════════════════ -->
+  <div class="screen-wrapper">
+    <span class="screen-label">3 &middot; Active Chat</span>
+    <div class="phone">
+      <div class="status-bar">
+        <span class="time">9:42</span>
+        <div class="status-icons">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><rect x="0" y="4" width="3" height="8" rx="1" fill="rgba(255,255,255,0.5)"/><rect x="4.5" y="2.5" width="3" height="9.5" rx="1" fill="rgba(255,255,255,0.5)"/><rect x="9" y="0" width="3" height="12" rx="1" fill="rgba(255,255,255,0.5)"/></svg>
+          <div class="battery"></div>
+        </div>
+      </div>
+
+      <div class="app-content">
+        <!-- Nav — compact in chat mode -->
+        <div class="mobile-nav">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            <span class="nav-brand" style="font-size: 13px;">CARVE</span>
+            <div class="app-tab active" style="padding: 4px 10px; font-size: 11px; margin-left: 4px; color: #22c55e;">
+              <div class="tab-dot" style="background: #22c55e; width: 5px; height: 5px;"></div>
+              Health
+            </div>
+          </div>
+          <div class="nav-actions">
+            <div class="nav-btn" style="width: 28px; height: 28px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" style="width: 14px; height: 14px;"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat messages -->
+        <div class="chat-area">
+          <div class="msg user">How was my workout week so far?</div>
+          <div class="msg assistant">
+            <div class="msg-meta">
+              <div class="msg-ai-dot">
+                <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/></svg>
+              </div>
+            </div>
+            You've done <strong style="color: rgba(255,255,255,0.85);">3 out of 5</strong> planned workouts this week. Strong consistency! 💪<br><br>
+            <span style="color: rgba(255,255,255,0.45);">Monday:</span> Upper body<br>
+            <span style="color: rgba(255,255,255,0.45);">Tuesday:</span> Legs & core<br>
+            <span style="color: rgba(255,255,255,0.45);">Thursday:</span> Upper body<br><br>
+            You still have 2 sessions planned for the weekend. Want me to suggest what to focus on?
+          </div>
+
+          <div class="msg user">Yes, what should I do tomorrow?</div>
+          <div class="msg assistant">
+            Based on your history, I'd suggest a <strong style="color: rgba(255,255,255,0.85);">Pull day</strong> tomorrow — you've hit chest and shoulders twice but haven't trained back this week.<br><br>
+            <span style="font-size: 12px; color: rgba(255,255,255,0.3);">Suggested: Deadlifts, rows, pull-ups, bicep curls</span>
+          </div>
+        </div>
+
+        <!-- Suggestion chips -->
+        <div class="inline-chips">
+          <span class="inline-chip">Log this workout</span>
+          <span class="inline-chip">Show my protein</span>
+          <span class="inline-chip">Rest day instead</span>
+        </div>
+
+        <!-- Input -->
+        <div class="input-bar">
+          <div class="input-field">
+            <span class="input-placeholder">Follow up...</span>
+            <div class="input-send">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-indicator"><div class="home-indicator-bar"></div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     Design decisions
+     ════════════════════════════════════════════════════════ -->
+<div class="annotations">
+  <h2>Design Decisions</h2>
+  <div class="annotation-grid">
+
+    <div class="annotation-item">
+      <div class="annotation-title">Sidebar → Horizontal tabs</div>
+      <div class="annotation-desc">
+        De desktop sidebar past niet op mobiel. App-switching wordt een horizontale pill-bar die scrollbaar is.
+        De sidebar chat history wordt bereikbaar via een drawer (swipe right of hamburger menu).
+      </div>
+    </div>
+
+    <div class="annotation-item">
+      <div class="annotation-title">Context panel → Bottom sheet</div>
+      <div class="annotation-desc">
+        Het rechter context panel wordt een horizontaal scrollbare card-strip onderaan.
+        Swipe-up gesture om het full-screen te maken (future).
+        Cards behouden dezelfde data, maar zijn compacter.
+      </div>
+    </div>
+
+    <div class="annotation-item">
+      <div class="annotation-title">Chat nav — compact mode</div>
+      <div class="annotation-desc">
+        Tijdens actieve chat wordt de nav compacter: back-arrow, brand, en active domain badge.
+        De grid-knop rechts opent de context cards als overlay.
+      </div>
+    </div>
+
+    <div class="annotation-item">
+      <div class="annotation-title">Progressive disclosure</div>
+      <div class="annotation-desc">
+        Home toont contextual prompts (net als desktop). Domain modes tonen chips + context cards.
+        Active chat verbergt alles behalve de conversatie. Apple-level focus op de huidige taak.
+      </div>
+    </div>
+
+    <div class="annotation-item">
+      <div class="annotation-title">Touch targets</div>
+      <div class="annotation-desc">
+        Alle interactieve elementen ≥ 44pt. Prompt items hebben extra padding voor duim-bereikbaarheid.
+        Input bar respecteert safe-area-inset-bottom.
+      </div>
+    </div>
+
+    <div class="annotation-item">
+      <div class="annotation-title">Visuele consistentie</div>
+      <div class="annotation-desc">
+        Zelfde kleurpalet, border-radius, opacity levels als desktop. Geen aparte "mobile look" —
+        het voelt als dezelfde app, alleen geoptimaliseerd voor touch en smaller viewport.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

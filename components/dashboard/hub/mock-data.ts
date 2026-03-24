@@ -58,7 +58,7 @@ export interface SuggestionChip {
   label: string
   // @ai-why: Only used when the coach needs data from the user — colored pill as a call-to-action, not decoration.
   isTask?: boolean
-  appId?: 'health' | 'money' | 'life' | 'inbox'
+  appId?: 'health' | 'money' | 'life' | 'inbox' | 'brein'
   cardType?: string
 }
 
@@ -197,5 +197,18 @@ export const inboxConfig: SectionConfig = {
     { id: 'i2', icon: 'CheckCircle', label: 'What did you handle today?', cardType: 'handled' },
     { id: 'i3', icon: 'Receipt', label: 'Any bills or invoices?', cardType: 'attention' },
     { id: 'i4', icon: 'Calendar', label: 'Any appointments?', cardType: 'stats' },
+  ],
+}
+
+// @ai-why: Brein mode — coach memory management. Shows what the AI remembers about the user.
+export const breinConfig: SectionConfig = {
+  subtitle: "This is your coach's memory. Everything I know about you, organized.",
+  statusPills: [
+    { icon: 'Brain', label: 'Memory active' },
+  ],
+  suggestionChips: [
+    { id: 'b1', icon: 'Brain', label: 'Geheugen', cardType: 'memory' },
+    { id: 'b2', icon: 'Heart', label: 'Profiel', cardType: 'profile' },
+    { id: 'b3', icon: 'Sparkles', label: 'Logbook', cardType: 'logbook' },
   ],
 }

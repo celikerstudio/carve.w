@@ -39,26 +39,6 @@ export function useChatHistory(userId: string) {
     if (userId) fetchConversations()
   }, [userId, fetchConversations])
 
-  // Create new conversation
-  const createConversation = useCallback(async (activeApp: string, firstMessage: string): Promise<string | null> => {
-    const supabase = createClient()
-    const title = firstMessage.length > 60
-      ? firstMessage.slice(0, 57) + '...'
-      : firstMessage
-
-    const { data, error } = await supabase
-      .from('ai_conversations')
-      .insert({ user_id: userId, title, active_app: activeApp })
-      .select('id')
-      .single()
-
-    if (error || !data) return null
-
-    // Refresh list
-    fetchConversations()
-    return data.id
-  }, [userId, fetchConversations])
-
   // Load messages for a conversation
   const loadMessages = useCallback(async (conversationId: string): Promise<ChatMessage[]> => {
     const supabase = createClient()
@@ -71,9 +51,12 @@ export function useChatHistory(userId: string) {
     return (data ?? []) as ChatMessage[]
   }, [])
 
-  // Delete conversation
+  // Delete conversation and its messages
+  // @ai-why: Delete messages first in case there's no ON DELETE CASCADE on the FK.
+  // This prevents orphaned ai_messages rows after conversation deletion.
   const deleteConversation = useCallback(async (conversationId: string) => {
     const supabase = createClient()
+    await supabase.from('ai_messages').delete().eq('conversation_id', conversationId)
     await supabase.from('ai_conversations').delete().eq('id', conversationId)
     setConversations(prev => prev.filter(c => c.id !== conversationId))
   }, [])
@@ -81,7 +64,6 @@ export function useChatHistory(userId: string) {
   return {
     conversations,
     loading,
-    createConversation,
     loadMessages,
     deleteConversation,
     refreshConversations: fetchConversations,

@@ -3,11 +3,14 @@
 import { createContext, useContext, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
-import { Plus } from 'lucide-react'
+import { ChevronDown, Plus, X } from 'lucide-react'
 import { CATEGORY_CONFIG, type SpendingCategory } from '@/components/money/sample-data'
 import { useHealthData, type HealthData } from '@/hooks/useHealthData'
 import { useMoneyData, type MoneyData } from '@/hooks/useMoneyData'
+import { useCoachMemory, type CoachMemoryData } from '@/hooks/useCoachMemory'
+import { MemoryFactsCard } from '@/components/coach/MemoryFactsCard'
+import { CoachProfileCard } from '@/components/coach/CoachProfileCard'
+import { LogbookCard } from '@/components/coach/LogbookCard'
 import { AddTransactionModal } from '@/components/money/AddTransactionModal'
 import { AddSubscriptionModal } from '@/components/money/AddSubscriptionModal'
 import { differenceInDateStrings, formatDateInTimeZone } from '@/lib/date/local-date'
@@ -507,6 +510,52 @@ function LifeStatsCard() {
   )
 }
 
+// ─── Coach memory context ─────────────────────────────────────────
+
+const CoachMemoryContext = createContext<CoachMemoryData | null>(null)
+
+function useCoachMemoryCtx() {
+  return useContext(CoachMemoryContext)
+}
+
+// ─── Brein cards (real data via CoachMemoryContext) ────────────────
+
+function MemoryCard() {
+  const ctx = useCoachMemoryCtx()
+  if (!ctx) return null
+  return (
+    <MemoryFactsCard
+      memoryFacts={ctx.memoryFacts}
+      totalFactCount={ctx.totalFactCount}
+      loading={ctx.loading}
+      actions={ctx.actions}
+    />
+  )
+}
+
+function ProfileCard() {
+  const ctx = useCoachMemoryCtx()
+  if (!ctx) return null
+  return (
+    <CoachProfileCard
+      coachProfile={ctx.coachProfile}
+      loading={ctx.loading}
+      actions={ctx.actions}
+    />
+  )
+}
+
+function CoachLogbookCard() {
+  const ctx = useCoachMemoryCtx()
+  if (!ctx) return null
+  return (
+    <LogbookCard
+      logbookEntries={ctx.logbookEntries}
+      loading={ctx.loading}
+    />
+  )
+}
+
 // ─── Inbox cards (still mock) ───────────────────────────────────────
 
 function AttentionCard() {
@@ -578,6 +627,10 @@ const CARD_REGISTRY: Record<string, React.ComponentType> = {
   attention: AttentionCard,
   handled: HandledCard,
   'inbox-stats': InboxStatsCard,
+  // Brein (real data via CoachMemoryContext)
+  memory: MemoryCard,
+  profile: ProfileCard,
+  logbook: CoachLogbookCard,
 }
 
 // ─── Main export ────────────────────────────────────────────────────
@@ -585,12 +638,14 @@ const CARD_REGISTRY: Record<string, React.ComponentType> = {
 interface ChatContextPanelProps {
   activeApp: AppId
   visibleCards?: string[]
+  onCardRemove?: (cardType: string) => void
   userId: string
 }
 
-export function ChatContextPanel({ activeApp, visibleCards = [], userId }: ChatContextPanelProps) {
+export function ChatContextPanel({ activeApp, visibleCards = [], onCardRemove, userId }: ChatContextPanelProps) {
   const healthState = useHealthData(userId)
   const moneyState = useMoneyData(userId)
+  const coachMemoryState = useCoachMemory(userId)
   const [showTransactionModal, setShowTransactionModal] = useState(false)
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
 
@@ -603,37 +658,52 @@ export function ChatContextPanel({ activeApp, visibleCards = [], userId }: ChatC
     <HealthDataContext.Provider value={healthState}>
       <MoneyDataContext.Provider value={moneyState}>
         <MoneyActionsContext.Provider value={moneyActions}>
-          <div className="h-full overflow-y-auto scrollbar-hide p-3">
-            <div className="flex flex-col gap-2.5">
-              {visibleCards.map((cardType, i) => {
-                const CardComponent = CARD_REGISTRY[cardType]
-                if (!CardComponent) return null
-                return (
-                  <motion.div
-                    key={cardType}
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: i * 0.05 }}
-                  >
-                    <CardComponent />
-                  </motion.div>
-                )
-              })}
+          <CoachMemoryContext.Provider value={coachMemoryState}>
+            <div className="h-full overflow-y-auto scrollbar-hide p-3">
+              <div className="flex flex-col gap-2.5">
+                <AnimatePresence mode="popLayout">
+                  {visibleCards.map((cardType) => {
+                    const CardComponent = CARD_REGISTRY[cardType]
+                    if (!CardComponent) return null
+                    return (
+                      <motion.div
+                        key={cardType}
+                        layout
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.15 } }}
+                        transition={{ duration: 0.25 }}
+                        className="relative group"
+                      >
+                        {onCardRemove && (
+                          <button
+                            onClick={() => onCardRemove(cardType)}
+                            className="absolute top-2 right-2 z-10 w-5 h-5 rounded-full bg-white/[0.06] border border-white/[0.08] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/[0.12]"
+                          >
+                            <X className="w-3 h-3 text-white/40" />
+                          </button>
+                        )}
+                        <CardComponent />
+                      </motion.div>
+                    )
+                  })}
+                </AnimatePresence>
+              </div>
             </div>
-          </div>
 
-          <AddTransactionModal
-            open={showTransactionModal}
-            onClose={() => setShowTransactionModal(false)}
-            onSuccess={() => moneyState.refetch()}
-            userId={userId}
-          />
-          <AddSubscriptionModal
-            open={showSubscriptionModal}
-            onClose={() => setShowSubscriptionModal(false)}
-            onSuccess={() => moneyState.refetch()}
-            userId={userId}
-          />
+            <AddTransactionModal
+              open={showTransactionModal}
+              onClose={() => setShowTransactionModal(false)}
+              onSuccess={() => moneyState.refetch()}
+              userId={userId}
+            />
+            <AddSubscriptionModal
+              open={showSubscriptionModal}
+              onClose={() => setShowSubscriptionModal(false)}
+              onSuccess={() => moneyState.refetch()}
+              userId={userId}
+            />
+          </CoachMemoryContext.Provider>
         </MoneyActionsContext.Provider>
       </MoneyDataContext.Provider>
     </HealthDataContext.Provider>

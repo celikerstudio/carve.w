@@ -1,14 +1,17 @@
 'use client'
 
-import { useEffect, useRef, useMemo, useCallback } from 'react'
+import { useEffect, useRef, useMemo, useCallback, useState } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { DefaultChatTransport } from 'ai'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
+import { ArrowDown } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { CarveEmptyState } from './CarveEmptyState'
-import { ChatBubble } from './ChatBubble'
+import { ChatErrorBubble } from './ChatBubble'
+import { ChatMessage as ChatMessageBubble } from '@/components/wiki/chat/ChatMessage'
 import { CarveInputBar } from './CarveInputBar'
-import { ResponseActions, type ResponseAction } from './ResponseActions'
+// @ai-todo: Re-enable ResponseActions when AI generates follow-up actions contextually
+// import { ResponseActions, type ResponseAction } from './ResponseActions'
 import { iconMap, healthConfig, type SectionConfig, type SuggestionChip } from '../mock-data'
 import type { AppId } from '@/components/chat/types'
 import type { ChatMessage } from '@/hooks/useChatHistory'
@@ -46,6 +49,35 @@ function toUIMessages(stored: ChatMessage[]) {
   }))
 }
 
+function generateTitle(message: string): string {
+  let title = message.trim()
+
+  // Strip greeting prefixes (NL + EN)
+  title = title.replace(
+    /^(hey|hi|hoi|hallo|yo|goedemorgen|goedemiddag|goedenavond|good\s*morning|good\s*evening)[,!.\s]*/i,
+    ''
+  ).trim()
+
+  // If nothing left after stripping greeting, use original message
+  if (!title) title = message.trim()
+  // If still empty (e.g. just "Hey"), fallback
+  if (!title) return 'New conversation'
+
+  // Take first sentence if it ends within 60 chars
+  const sentenceEnd = title.search(/[.!?]\s/)
+  if (sentenceEnd > 0 && sentenceEnd < 60) {
+    title = title.slice(0, sentenceEnd + 1)
+  }
+
+  // Truncate at word boundary if still too long
+  if (title.length > 50) {
+    title = title.slice(0, 50).replace(/\s+\S*$/, '')
+  }
+
+  // Capitalize first letter
+  return title[0].toUpperCase() + title.slice(1)
+}
+
 interface CarveChatProps {
   config?: SectionConfig
   activeApp?: AppId
@@ -58,6 +90,7 @@ interface CarveChatProps {
   onConversationCreated?: (id: string) => void
   onAppChange?: (app: AppId, message?: string) => void
   onCardAdd?: (cardType: string) => void
+  onArticleClick?: (slug: string) => void
 }
 
 export function CarveChat({
@@ -72,11 +105,12 @@ export function CarveChat({
   onConversationCreated,
   onAppChange,
   onCardAdd,
+  onArticleClick,
 }: CarveChatProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const conversationIdRef = useRef<string | null>(externalConversationId)
-  // Track which messages we've already saved to avoid duplicates
-  const savedCountRef = useRef(storedMessages.length * 2) // stored messages are already in DB
+  // Tracks the last saved assistant message ID to prevent duplicate saves
+  const lastSavedMsgIdRef = useRef<string | null>(null)
   const browserTimeZone = useMemo(
     () => Intl.DateTimeFormat().resolvedOptions().timeZone || undefined,
     []
@@ -100,18 +134,40 @@ export function CarveChat({
     return toUIMessages(storedMessages)
   }, [storedMessages])
 
-  const { messages, sendMessage, status } = useChat({
+  const { messages, sendMessage, status, error } = useChat({
     transport,
     messages: initialMessages,
   })
 
   const isLoading = status === 'streaming' || status === 'submitted'
   const prevStatusRef = useRef(status)
+  const [showScrollButton, setShowScrollButton] = useState(false)
+  const isNearBottomRef = useRef(true)
 
+  // Check if user is near bottom of scroll container
+  const checkScrollPosition = useCallback(() => {
+    const el = scrollRef.current
+    if (!el) return
+    const threshold = 100
+    const nearBottom = el.scrollHeight - el.scrollTop - el.clientHeight < threshold
+    isNearBottomRef.current = nearBottom
+    setShowScrollButton(!nearBottom)
+  }, [])
+
+  const scrollToBottom = useCallback(() => {
+    scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' })
+  }, [])
+
+  // Auto-scroll only when near bottom — uses rAF to batch with browser paint instead of
+  // firing on every token during streaming
+  const scrollRafRef = useRef<number | null>(null)
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight
-    }
+    if (!isNearBottomRef.current || !scrollRef.current) return
+    if (scrollRafRef.current) cancelAnimationFrame(scrollRafRef.current)
+    scrollRafRef.current = requestAnimationFrame(() => {
+      scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight })
+      scrollRafRef.current = null
+    })
   }, [messages, isLoading])
 
   // Save assistant message when streaming completes
@@ -127,6 +183,8 @@ export function CarveChat({
 
     const lastMsg = messages[messages.length - 1]
     if (lastMsg.role !== 'assistant') return
+    // Prevent duplicate saves (e.g. StrictMode double-invoke or re-renders)
+    if (lastMsg.id === lastSavedMsgIdRef.current) return
 
     const text = lastMsg.parts
       .filter((p): p is { type: 'text'; text: string } => p.type === 'text')
@@ -134,13 +192,12 @@ export function CarveChat({
       .join('')
     if (!text) return
 
+    lastSavedMsgIdRef.current = lastMsg.id
     const supabase = createClient()
     supabase.from('ai_messages').insert({
       conversation_id: conversationId,
       role: 'assistant',
       content: text,
-    }).then(() => {
-      savedCountRef.current = messages.length
     })
   }, [status, messages])
 
@@ -155,33 +212,42 @@ export function CarveChat({
     async (content: string) => {
       // Create conversation on first message if none exists
       if (!conversationIdRef.current) {
-        const supabase = createClient()
-        const { data: { user } } = await supabase.auth.getUser()
-        if (!user) return
+        try {
+          const supabase = createClient()
+          const { data: { user } } = await supabase.auth.getUser()
+          if (!user) return
 
-        const { data } = await supabase
-          .from('ai_conversations')
-          .insert({
-            user_id: user.id,
-            title: content.length > 60 ? content.slice(0, 57) + '...' : content,
-            active_app: activeApp,
-          })
-          .select('id')
-          .single()
+          const { data, error } = await supabase
+            .from('ai_conversations')
+            .insert({
+              user_id: user.id,
+              title: generateTitle(content),
+              active_app: activeApp,
+            })
+            .select('id')
+            .single()
 
-        if (data) {
-          conversationIdRef.current = data.id
-          onConversationCreated?.(data.id)
+          if (error || !data) {
+            console.error('[CarveChat] Failed to create conversation:', error?.message)
+            // Still send the message — the AI response won't be persisted but the user gets an answer
+          } else {
+            conversationIdRef.current = data.id
+            onConversationCreated?.(data.id)
+          }
+        } catch (err) {
+          console.error('[CarveChat] Conversation creation error:', err)
         }
       }
 
-      // Save user message to DB
+      // Save user message to DB (fire-and-forget, non-blocking)
       if (conversationIdRef.current) {
         const supabase = createClient()
         supabase.from('ai_messages').insert({
           conversation_id: conversationIdRef.current,
           role: 'user',
           content,
+        }).then(({ error }) => {
+          if (error) console.error('[CarveChat] Failed to save user message:', error.message)
         })
       }
 
@@ -216,73 +282,55 @@ export function CarveChat({
     [handleSend, onAppChange, onCardAdd]
   )
 
-  // @ai-why: Mock response actions until the AI generates these contextually.
-  // In production, the AI will return actions as part of its response (via annotations or tool calls).
-  const responseActions = useMemo((): ResponseAction[] => {
-    if (messages.length === 0 || isLoading) return []
-    const lastMsg = messages[messages.length - 1]
-    if (lastMsg.role !== 'assistant') return []
-
-    // Mock: show contextual actions based on active app
-    if (activeApp === 'health') {
-      return [
-        { id: 'ra1', icon: 'Dumbbell', label: 'Plan my workout' },
-        { id: 'ra2', icon: 'TrendingUp', label: 'Show my progress', isRecommended: true },
-        { id: 'ra3', icon: 'Flame', label: 'Log weight', isTask: true },
-      ]
-    }
-    if (activeApp === 'money') {
-      return [
-        { id: 'ra1', icon: 'Receipt', label: 'Break it down' },
-        { id: 'ra2', icon: 'PiggyBank', label: 'Savings tips', isRecommended: true },
-      ]
-    }
-    return [
-      { id: 'ra1', icon: 'BarChart3', label: 'Tell me more' },
-      { id: 'ra2', icon: 'Calendar', label: "What's next?", isRecommended: true },
-    ]
-  }, [messages, isLoading, activeApp])
-
-  const handleActionClick = useCallback(
-    (action: ResponseAction) => {
-      handleSend(action.label)
-    },
-    [handleSend]
-  )
-
   const hasMessages = messages.length > 0
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full relative">
       {hasMessages ? (
         <>
-          <div ref={scrollRef} className="flex-1 overflow-y-auto scrollbar-hide py-4">
+          <div ref={scrollRef} onScroll={checkScrollPosition} className="relative flex-1 overflow-y-auto scrollbar-hide py-4">
             <div className="flex flex-col gap-3">
               {messages.map((msg, idx) => {
                 const text = getMessageText(msg)
                 if (!text) return null
-                const isLastAssistant = msg.role === 'assistant' && idx === messages.length - 1 && !isLoading
+                const isCurrentlyStreaming = isLoading && idx === messages.length - 1
                 return (
-                  <div key={msg.id}>
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <ChatBubble
-                        role={msg.role as 'user' | 'assistant'}
-                        content={text}
-                      />
-                    </motion.div>
-                    {isLastAssistant && responseActions.length > 0 && (
-                      <ResponseActions actions={responseActions} onActionClick={handleActionClick} />
-                    )}
-                  </div>
+                  <motion.div
+                    key={msg.id}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <ChatMessageBubble
+                      role={msg.role as 'user' | 'assistant'}
+                      content={text}
+                      isStreaming={isCurrentlyStreaming}
+                      onArticleClick={onArticleClick}
+                    />
+                  </motion.div>
                 )
               })}
               {isLoading && <TypingIndicator />}
+              {error && !isLoading && (
+                <ChatErrorBubble message={error.message || 'Er ging iets mis. Probeer het opnieuw.'} />
+              )}
             </div>
           </div>
+
+          <AnimatePresence>
+            {showScrollButton && (
+              <motion.button
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.15 }}
+                onClick={scrollToBottom}
+                className="absolute bottom-20 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white/[0.10] border border-white/[0.12] flex items-center justify-center hover:bg-white/[0.15] transition-colors shadow-lg z-10"
+              >
+                <ArrowDown className="w-4 h-4 text-white/50" />
+              </motion.button>
+            )}
+          </AnimatePresence>
 
           <CarveInputBar onSend={handleSend} disabled={isLoading} />
         </>

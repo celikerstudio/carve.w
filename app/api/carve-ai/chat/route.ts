@@ -27,6 +27,9 @@ export async function POST(req: Request) {
     return new Response("Messages required", { status: 400 })
   }
 
+  // @ai-why: Rate limiting is handled server-side by the edge function via check_chat_quota RPC.
+  // In-memory rate limiters don't work in serverless (state resets on cold start).
+
   // @ai-why: AI SDK v5 DefaultChatTransport sends messages with `parts` array, not `content` string.
   // We need to extract text content from either format.
   function extractContent(m: any): string {
@@ -57,13 +60,36 @@ export async function POST(req: Request) {
   // Build real context from Supabase user data
   // @ai-sync: ~/Developer/carve-ai/Carve AI/App/Services/Coach/CoachContextBuilder.swift
   const userName = session.user.user_metadata?.full_name || session.user.email?.split("@")[0] || "User"
-  const [healthContext, moneyContext] = await Promise.all([
+  const [healthContext, moneyContext, wikiArticlesRes] = await Promise.all([
     buildCoachContext(session.user.id, activeApp ?? "home", userName, timeZone),
     buildMoneyContext(session.user.id),
+    supabase
+      .from('wiki_articles')
+      .select('slug, title, category, summary')
+      .eq('is_published', true)
+      .order('view_count', { ascending: false }),
   ])
-  // @ai-why: Merge health + money context into single object for the edge function.
-  // Edge function conditionally renders money section only when monthlySpending != null.
-  const context = { ...healthContext, ...moneyContext }
+  // @ai-why: Auto-detect active domains based on actual data presence.
+  // Apple approach: the coach just knows what it knows — no toggles, no config.
+  // activeDomains tells the edge function which domain sections to activate in the prompt.
+  const activeDomains: string[] = []
+  if (healthContext.lastWorkoutName || healthContext.todayCalories > 0 || healthContext.stepsToday > 0) {
+    activeDomains.push("health")
+  }
+  if (moneyContext.monthlySpending !== null) {
+    activeDomains.push("money")
+  }
+  // Always include the active app even if no data yet (user explicitly navigated there)
+  if (activeApp && activeApp !== "home" && !activeDomains.includes(activeApp)) {
+    activeDomains.push(activeApp)
+  }
+
+  // Format wiki articles as compact metadata for the coach prompt
+  const wikiArticles = wikiArticlesRes.data?.length
+    ? wikiArticlesRes.data.map((a) => `- [[${a.slug}]] ${a.title} (${a.category}) — ${a.summary}`).join('\n')
+    : null
+
+  const context = { ...healthContext, ...moneyContext, activeDomains, wikiArticles }
 
   // Call Supabase edge function
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL
@@ -82,8 +108,6 @@ export async function POST(req: Request) {
       stream: true,
     }),
   })
-
-  console.log(`[coach-chat] Edge function status: ${edgeResponse.status}`)
 
   if (!edgeResponse.ok) {
     const errorText = await edgeResponse.text()
@@ -136,7 +160,6 @@ export async function POST(req: Request) {
 
               if (event.type === "token" && event.content) {
                 if (!started) {
-                  console.log(`[coach-chat] Stream started, first token received`)
                   send({ type: "text-start", id: messageId })
                   started = true
                 }

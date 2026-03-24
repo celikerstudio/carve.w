@@ -3,6 +3,8 @@
 import { useState, useRef } from 'react'
 import { ArrowUp, Plus, Mic, Paperclip } from 'lucide-react'
 
+const MAX_LENGTH = 4000
+
 interface CarveInputBarProps {
   onSend: (message: string) => void
   disabled?: boolean
@@ -14,12 +16,16 @@ export function CarveInputBar({ onSend, disabled }: CarveInputBarProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setInput(e.target.value)
+    const value = e.target.value
+    if (value.length > MAX_LENGTH) return
+    setInput(value)
     if (textareaRef.current) {
       textareaRef.current.style.height = 'auto'
       textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`
     }
   }
+
+  const showCounter = input.length > MAX_LENGTH * 0.8
 
   const handleSend = () => {
     if (!input.trim() || disabled) return
@@ -70,6 +76,11 @@ export function CarveInputBar({ onSend, disabled }: CarveInputBarProps) {
           </div>
 
           <div className="flex items-center gap-1">
+            {showCounter && (
+              <span className={`text-[11px] mr-1 tabular-nums ${input.length > MAX_LENGTH * 0.95 ? 'text-red-400/60' : 'text-white/20'}`}>
+                {input.length}/{MAX_LENGTH}
+              </span>
+            )}
             <button className="w-8 h-8 rounded-full flex items-center justify-center text-white/30 hover:text-white/50 hover:bg-white/[0.06] transition-colors">
               <Mic className="w-4 h-4" />
             </button>

@@ -110,7 +110,7 @@ async function ActivityFeed({ userId }: { userId: string }) {
           Add friends to see their fitness journey!
         </p>
         <Link
-          href="/dashboard/social/friends"
+          href="/social/friends"
           className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
         >
           Add Friends
@@ -201,7 +201,7 @@ export default async function SocialFeedPage() {
           </p>
         </div>
         <Link
-          href="/dashboard/social/friends"
+          href="/social/friends"
           className="inline-flex items-center gap-2 rounded-lg border border-white/[0.06] px-4 py-2 text-sm text-slate-400 hover:text-white hover:border-white/[0.15] transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

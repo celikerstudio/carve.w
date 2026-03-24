@@ -62,7 +62,7 @@ export function AppHeader({
   const path = stripLocale(pathname);
   const isWikiRoute = path === '/' || path.startsWith('/wiki');
   const isMarketing = path === '/carve' || path.startsWith('/carve/');
-  const isDashboard = path.startsWith('/dashboard');
+  const isDashboard = path.startsWith('/chat') || path.startsWith('/money') || path.startsWith('/travel') || path.startsWith('/workouts') || path.startsWith('/food') || path.startsWith('/social') || path.startsWith('/profile') || path.startsWith('/settings') || path.startsWith('/health') || path.startsWith('/inbox');
   // Only show nav tabs on marketing pages — dashboard uses the sidebar
   const navItems = isMarketing ? MARKETING_NAV : null;
 
@@ -83,7 +83,7 @@ export function AppHeader({
   const isActive = (href: string) => {
     const itemPath = stripLocale(href);
     if (itemPath === '/') return path === '/' || path.startsWith('/wiki');
-    if (itemPath === '/dashboard') return path === '/dashboard' || (path.startsWith('/dashboard') && !path.startsWith('/dashboard/money') && !path.startsWith('/dashboard/travel'));
+    if (itemPath === '/chat') return path === '/chat';
     return path === itemPath || path.startsWith(itemPath);
   };
 
@@ -209,7 +209,7 @@ export function AppHeader({
 
                         <div className="py-1">
                           <Link
-                            href="/dashboard"
+                            href="/chat"
                             onClick={() => setIsDropdownOpen(false)}
                             className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
                           >
@@ -222,7 +222,7 @@ export function AppHeader({
                             Dashboard
                           </Link>
                           <Link
-                            href="/dashboard/profile"
+                            href="/profile"
                             onClick={() => setIsDropdownOpen(false)}
                             className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
                           >
@@ -230,7 +230,7 @@ export function AppHeader({
                             Profile
                           </Link>
                           <Link
-                            href="/dashboard/settings"
+                            href="/settings"
                             onClick={() => setIsDropdownOpen(false)}
                             className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
                           >
@@ -341,7 +341,7 @@ export function AppHeader({
                 </Link>
                 {isAuthenticated ? (
                   <Link
-                    href="/dashboard"
+                    href="/chat"
                     onClick={() => setMobileOpen(false)}
                     className="text-lg text-white/40"
                   >

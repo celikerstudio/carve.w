@@ -37,7 +37,7 @@ export function TripCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
     >
-      <Link href={`/dashboard/travel/${id}`}>
+      <Link href={`/travel/${id}`}>
         <TravelCard className="hover:border-[#b8d8e8]/20 transition-colors cursor-pointer group">
           <div className="flex items-start justify-between">
             <div className="flex-1 min-w-0">

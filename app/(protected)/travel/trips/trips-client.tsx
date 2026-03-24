@@ -57,7 +57,7 @@ export function TripsPageClient({ trips: initialTrips }: { trips: Trip[] }) {
     const data = await res.json()
     if (data.id) {
       setModalOpen(false)
-      router.push(`/dashboard/travel/${data.id}`)
+      router.push(`/travel/${data.id}`)
     }
   }
 
@@ -83,7 +83,7 @@ export function TripsPageClient({ trips: initialTrips }: { trips: Trip[] }) {
         </div>
         <div className="flex items-center gap-2">
           <Link
-            href="/dashboard/travel/new"
+            href="/travel/new"
             className="px-4 py-2 text-sm font-medium text-[#7a8299] hover:text-white transition-colors"
           >
             Plan with AI

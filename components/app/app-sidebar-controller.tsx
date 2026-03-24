@@ -45,10 +45,10 @@ const sectionThemes: Record<string, SectionTheme> = {
 };
 
 function getSectionKey(pathname: string): string {
-  if (pathname.startsWith('/dashboard/inbox')) return 'inbox';
-  if (pathname.startsWith('/dashboard/money')) return 'money';
-  if (pathname.startsWith('/dashboard/life')) return 'life';
-  if (pathname.startsWith('/dashboard/workouts') || pathname.startsWith('/dashboard/food')) return 'health';
+  if (pathname.startsWith('/inbox')) return 'inbox';
+  if (pathname.startsWith('/money')) return 'money';
+  if (pathname.startsWith('/travel')) return 'life';
+  if (pathname.startsWith('/workouts') || pathname.startsWith('/food')) return 'health';
   if (pathname.startsWith('/admin')) return 'admin';
   return 'default';
 }
@@ -63,7 +63,7 @@ function getSidebarGroups(pathname: string, isAuthenticated: boolean, userRole?:
     if (userRole !== 'admin') return null;
     return adminNavigationGroups as NavigationGroup[];
   }
-  if (path.startsWith('/dashboard')) {
+  if (path.startsWith('/chat') || path.startsWith('/money') || path.startsWith('/travel') || path.startsWith('/workouts') || path.startsWith('/food') || path.startsWith('/social') || path.startsWith('/profile') || path.startsWith('/settings') || path.startsWith('/health') || path.startsWith('/inbox')) {
     return isAuthenticated
       ? (unifiedNavigationGroups as NavigationGroup[])
       : (loginNavigationGroups as NavigationGroup[]);

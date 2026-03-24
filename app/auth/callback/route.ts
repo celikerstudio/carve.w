@@ -11,7 +11,7 @@ export async function GET(request: Request) {
     await supabase.auth.exchangeCodeForSession(code)
   }
 
-  const redirect = requestUrl.searchParams.get('redirect') || '/dashboard'
+  const redirect = requestUrl.searchParams.get('redirect') || '/chat'
 
   return NextResponse.redirect(`${origin}${redirect}`)
 }

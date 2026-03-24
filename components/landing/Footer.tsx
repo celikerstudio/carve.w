@@ -41,7 +41,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard" className="hover:text-white transition-colors">
+                <Link href="/chat" className="hover:text-white transition-colors">
                   Dashboard
                 </Link>
               </li>

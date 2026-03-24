@@ -19,7 +19,7 @@ export default async function TripDetailPage({ params }: PageProps) {
     .eq("id", id)
     .single()
 
-  if (!trip) redirect("/dashboard/travel")
+  if (!trip) redirect("/travel")
 
   const { data: days } = await supabase
     .from("trip_days")

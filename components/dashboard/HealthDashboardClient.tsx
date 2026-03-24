@@ -104,19 +104,19 @@ export function HealthDashboardClient({
         className="grid grid-cols-1 md:grid-cols-3 gap-4"
       >
         <QuickLinkCard
-          href="/dashboard/food"
+          href="/food"
           icon="🍽"
           title="Food"
           description="Track your meals and nutrition"
         />
         <QuickLinkCard
-          href="/dashboard/workouts"
+          href="/workouts"
           icon="💪"
           title="Workouts"
           description="Start or log a workout"
         />
         <QuickLinkCard
-          href="/dashboard/social"
+          href="/social"
           icon="👥"
           title="Social"
           description="Friends and rankings"

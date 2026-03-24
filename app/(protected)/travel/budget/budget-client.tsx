@@ -132,7 +132,7 @@ export function BudgetPageClient({ trips }: { trips: TripBudget[] }) {
               const tripSymbol = trip.currency === "EUR" ? "\u20AC" : trip.currency === "USD" ? "$" : trip.currency === "GBP" ? "\u00A3" : trip.currency
 
               return (
-                <Link key={trip.id} href={`/dashboard/travel/${trip.id}`}>
+                <Link key={trip.id} href={`/travel/${trip.id}`}>
                   <TravelCard className="hover:border-[#b8d8e8]/20 transition-colors cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex-1 min-w-0">

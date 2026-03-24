@@ -67,7 +67,7 @@ export function MarketingHeader({ isAuthenticated = false }: MarketingHeaderProp
             <div className="hidden md:flex items-center">
               {isAuthenticated ? (
                 <Link
-                  href="/dashboard"
+                  href="/chat"
                   className="text-sm font-medium text-white/40 hover:text-white/70 transition-colors px-4 py-2"
                 >
                   Dashboard
@@ -120,7 +120,7 @@ export function MarketingHeader({ isAuthenticated = false }: MarketingHeaderProp
               <div className="border-t border-white/[0.08] mt-4 pt-4">
                 {isAuthenticated ? (
                   <Link
-                    href="/dashboard"
+                    href="/chat"
                     onClick={() => setMobileOpen(false)}
                     className="text-lg text-white/40"
                   >

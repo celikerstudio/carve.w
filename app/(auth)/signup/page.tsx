@@ -59,7 +59,7 @@ export default function SignupPage() {
       }
 
       // Auto-login after signup
-      router.push('/dashboard')
+      router.push('/chat')
       router.refresh()
     } catch (err) {
       setError('An unexpected error occurred')

@@ -49,7 +49,7 @@ export async function requireAdminOrRedirect() {
     .single();
 
   if (profile?.user_role_id !== ADMIN_ROLE_ID) {
-    redirect("/dashboard");
+    redirect("/chat");
   }
 
   return { supabase, user };

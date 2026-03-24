@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-export default function SocialError({
+export default function WorkoutsError({
   error,
   reset,
 }: {
@@ -13,7 +13,7 @@ export default function SocialError({
   const router = useRouter();
 
   useEffect(() => {
-    console.error("Social page error:", error);
+    console.error("Workouts page error:", error);
   }, [error]);
 
   return (
@@ -26,11 +26,11 @@ export default function SocialError({
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">
-              Error Loading Social Feed
+              Error Loading Workouts
             </h2>
             <p className="text-[#9da6b9] mb-6">
-              We couldn&apos;t load your social feed. Your data is safe and this is
-              likely a temporary issue.
+              We couldn&apos;t load your workout history. Your data is safe and this
+              is likely a temporary issue.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function SocialError({
               Try Again
             </button>
             <button
-              onClick={() => router.push("/dashboard")}
+              onClick={() => router.push("/chat")}
               className="inline-flex items-center gap-2 rounded-lg border border-white/[0.06] px-4 py-2.5 text-sm text-slate-400 hover:text-white hover:border-white/[0.15] transition-colors"
             >
               Back to Dashboard

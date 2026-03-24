@@ -1,11 +1,7 @@
-import { createClient } from "@/lib/supabase/server"
 import { redirect } from "next/navigation"
-import { DashboardHub } from "@/components/dashboard/hub/DashboardHub"
 
-export default async function DashboardPage() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect("/login")
-
-  return <DashboardHub />
+// @ai-why: /dashboard now redirects to /chat. All user-facing pages moved to top-level routes.
+// /dashboard is reserved for admin use only.
+export default function DashboardPage() {
+  redirect("/chat")
 }

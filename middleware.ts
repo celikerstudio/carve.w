@@ -6,7 +6,7 @@ export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
   // Redirect unauthenticated users away from protected routes
-  if (pathname.startsWith('/dashboard') || pathname.startsWith('/admin') || pathname.startsWith('/chat')) {
+  if (pathname.startsWith('/dashboard') || pathname.startsWith('/admin') || pathname.startsWith('/chat') || pathname.startsWith('/money') || pathname.startsWith('/travel') || pathname.startsWith('/workouts') || pathname.startsWith('/food') || pathname.startsWith('/social') || pathname.startsWith('/profile') || pathname.startsWith('/settings') || pathname.startsWith('/health') || pathname.startsWith('/inbox')) {
     if (!user) {
       const redirectUrl = new URL('/login', request.url)
       redirectUrl.searchParams.set('redirect', pathname)

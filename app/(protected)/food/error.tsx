@@ -42,7 +42,7 @@ export default function FoodError({
               Try Again
             </button>
             <button
-              onClick={() => router.push("/dashboard")}
+              onClick={() => router.push("/chat")}
               className="inline-flex items-center gap-2 rounded-lg border border-white/[0.06] px-4 py-2.5 text-sm text-slate-400 hover:text-white hover:border-white/[0.15] transition-colors"
             >
               Back to Dashboard

@@ -115,7 +115,7 @@ export function TravelDashboardClient({ trip, days, todos, allTrips, bucketlist 
           <p className="text-[#7a8299] text-sm mt-0.5">Ready for your next adventure?</p>
         </div>
         <Link
-          href="/dashboard/travel/new"
+          href="/travel/new"
           className="px-4 py-2 text-sm font-medium text-[#b8d8e8] bg-[#b8d8e8]/10 hover:bg-[#b8d8e8]/20 rounded-lg transition-colors"
         >
           Plan a trip
@@ -181,7 +181,7 @@ export function TravelDashboardClient({ trip, days, todos, allTrips, bucketlist 
                       />
                     ))}
                     <Link
-                      href={`/dashboard/travel/${trip.id}`}
+                      href={`/travel/${trip.id}`}
                       className="w-[180px] shrink-0 h-[120px] rounded-xl border border-dashed border-white/[0.08] flex items-center justify-center hover:border-white/[0.16] transition-colors"
                     >
                       <span className="text-sm text-[#555d70]">View All</span>
@@ -204,7 +204,7 @@ export function TravelDashboardClient({ trip, days, todos, allTrips, bucketlist 
           transition={{ duration: 0.5, delay: 0.1 }}
           className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6"
         >
-          <Link href="/dashboard/travel/new">
+          <Link href="/travel/new">
             <TravelCard className="hover:border-[#b8d8e8]/30 transition-colors cursor-pointer group text-center py-16">
               <div className="text-4xl mb-4 opacity-20">✈</div>
               <h3 className="text-lg font-semibold text-white group-hover:text-[#b8d8e8] transition-colors">

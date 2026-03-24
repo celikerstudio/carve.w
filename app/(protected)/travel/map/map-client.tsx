@@ -187,7 +187,7 @@ export function TravelMapClient({ trips, homebase = "Amsterdam", bucketlist }: T
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: item.id, trip_id: tripId }),
       })
-      window.location.href = `/dashboard/travel/${tripId}`
+      window.location.href = `/travel/${tripId}`
     }
   }
 
@@ -273,7 +273,7 @@ export function TravelMapClient({ trips, homebase = "Amsterdam", bucketlist }: T
           <div style="font-size:12px;color:#9da6b9;margin-top:2px;">${trip.title}</div>
           ${dates ? `<div style="font-size:11px;color:#7a8299;margin-top:4px;">${dates}</div>` : ""}
           ${budgetText ? `<div style="font-size:12px;font-weight:500;color:${color};margin-top:4px;">${budgetText}</div>` : ""}
-          <a href="/dashboard/travel/${trip.id}" style="display:inline-block;margin-top:8px;font-size:11px;color:#b8d8e8;text-decoration:none;">View trip \u2192</a>
+          <a href="/travel/${trip.id}" style="display:inline-block;margin-top:8px;font-size:11px;color:#b8d8e8;text-decoration:none;">View trip \u2192</a>
         </div>
       `
 

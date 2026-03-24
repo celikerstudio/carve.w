@@ -156,7 +156,7 @@ async function WorkoutList({ userId }: { userId: string }) {
           Start logging your workouts to track your progress!
         </p>
         <Link
-          href="/dashboard/workouts/new"
+          href="/workouts/new"
           className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -324,7 +324,7 @@ export default async function WorkoutsPage() {
           </p>
         </div>
         <Link
-          href="/dashboard/workouts/new"
+          href="/workouts/new"
           className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

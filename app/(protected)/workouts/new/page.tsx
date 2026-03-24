@@ -118,7 +118,7 @@ export default function NewWorkoutPage() {
       setXpAwarded(50);
 
       setTimeout(() => {
-        router.push("/dashboard/workouts");
+        router.push("/workouts");
       }, 2000);
     } catch (err: any) {
       setError(err.message || "Failed to save workout");

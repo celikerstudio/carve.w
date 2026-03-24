@@ -22,7 +22,7 @@ export const dashboardNavigationGroups = [
     items: [
       {
         title: "Dashboard",
-        href: "/dashboard",
+        href: "/chat",
         icon: { name: 'DashboardIcon' },
         description: "Your dashboard home"
       }
@@ -34,19 +34,19 @@ export const dashboardNavigationGroups = [
     items: [
       {
         title: "Workouts",
-        href: "/dashboard/workouts",
+        href: "/workouts",
         icon: { name: 'DumbbellIcon' },
         description: "Workout history & analytics"
       },
       {
         title: "Food",
-        href: "/dashboard/food",
+        href: "/food",
         icon: { name: 'AppleIcon' },
         description: "Nutrition tracking"
       },
       {
         title: "Social",
-        href: "/dashboard/social",
+        href: "/social",
         icon: { name: 'UsersIcon' },
         description: "Friends & activity feed"
       },
@@ -64,13 +64,13 @@ export const dashboardNavigationGroups = [
     items: [
       {
         title: "Profile",
-        href: "/dashboard/profile",
+        href: "/profile",
         icon: { name: 'UserIcon' },
         description: "Your profile"
       },
       {
         title: "Settings",
-        href: "/dashboard/settings",
+        href: "/settings",
         icon: { name: 'SettingsIcon' },
         description: "App settings"
       }

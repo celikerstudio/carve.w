@@ -154,7 +154,7 @@ async function MealList({ userId }: { userId: string }) {
           Start tracking your nutrition to monitor your progress!
         </p>
         <Link
-          href="/dashboard/food/new"
+          href="/food/new"
           className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -357,7 +357,7 @@ export default async function FoodPage() {
           </p>
         </div>
         <Link
-          href="/dashboard/food/new"
+          href="/food/new"
           className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

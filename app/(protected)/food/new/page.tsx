@@ -57,7 +57,7 @@ export default function NewMealPage() {
       setXpAwarded(10);
 
       setTimeout(() => {
-        router.push("/dashboard/food");
+        router.push("/food");
       }, 2000);
     } catch (err: any) {
       setError(err.message || "Failed to save meal");

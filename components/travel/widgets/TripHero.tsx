@@ -94,7 +94,7 @@ export function TripHero({ id, title, destination, startDate, daysCount, totalBu
           )}
 
           <Link
-            href={`/dashboard/travel/${id}`}
+            href={`/travel/${id}`}
             className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-[#b8d8e8]/15 hover:bg-[#b8d8e8]/25 rounded-lg transition-colors w-fit"
           >
             View Itinerary

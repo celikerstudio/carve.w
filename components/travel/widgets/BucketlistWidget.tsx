@@ -63,7 +63,7 @@ export function BucketlistWidget({ items: initialItems }: BucketlistWidgetProps)
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: item.id, trip_id: tripId }),
       })
-      window.location.href = `/dashboard/travel/${tripId}`
+      window.location.href = `/travel/${tripId}`
     }
   }
 
@@ -165,7 +165,7 @@ export function BucketlistWidget({ items: initialItems }: BucketlistWidgetProps)
 
       {items.length > 0 && (
         <Link
-          href="/dashboard/travel/map"
+          href="/travel/map"
           className="block text-xs text-[#7a8299] hover:text-[#b8d8e8] transition-colors"
         >
           View all on map →

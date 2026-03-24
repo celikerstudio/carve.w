@@ -66,6 +66,12 @@ This is not full parity with the latest iOS `CoachContextBuilder` output. The we
 - `friendships` — requester_id, addressee_id, status
 - `activity_feed` — activity_type, metadata (JSONB)
 
+### Money Domain (web-first, manual entry)
+- `money_transactions` — amount, type (expense/income), category, description, transaction_date, currency, is_recurring
+- `money_budgets` — category, monthly_limit, month (DATE, first-of-month)
+- `money_subscriptions` — name, cost, frequency (monthly/yearly), category, start_date, billing_day, is_active
+- `profiles` extended with: monthly_income, savings_goal, currency
+
 ### Monetization
 - `subscriptions` — tier (free/pro), provider, expires_at
 - `chat_quota` — legacy daily columns plus hourly tracking in the shared backend (`used_this_hour`, `last_reset_hour` after the 2026-03-17 migration)

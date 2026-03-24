@@ -88,13 +88,15 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 - Edge function toont conditioneel money context + financieel GEDRAG
 - Add Transaction / Add Subscription modals vanuit context panel
 - 12 canonical categorieën door hele codebase
-- **Open:** bank API, CSV import, money coach tools, cross-domein koppeling
+- **Open:** bank API, CSV import, money coach tools
 
-### 3.2 — Cross-domein intelligence
-- Coach ziet health + money data tegelijk
-- Eerste connecties: "€180 aan bezorgeten deze maand → impact op voedingsdoelen"
-- Context panel kan cross-domein inzichten tonen
-- **Waarom:** Dit is de USP. Zonder dit ben je gewoon twee losse apps.
+### 3.2 — Cross-domein intelligence ✅
+- `activeDomains` auto-detectie in API route: detecteert welke domeinen data hebben (health, money), stuurt alle actieve domeinen mee
+- System prompt met cross-domein coaching logica: coach legt verbanden tussen domeinen wanneer relevant, zonder te forceren
+- Apple-aanpak: geen "cross-domain feature" in de UI, de coach is gewoon slimmer — verbindt dots als een mens dat ook zou doen
+- Thinking steps tonen "Domeinen actief: health, money" wanneer cross-domein actief is
+- Edge function v11 live met cross-domein gedragsregels + goede/slechte voorbeelden
+- **Open:** cross-domein insight cards in context panel, travel/social context builders, cross-domein coach tools
 
 ### 3.3 — Life/travel domein
 - Trip planning, bucketlist, afspraken
@@ -105,26 +107,46 @@ De iOS-app is waar je traint, logt en coached wordt. Wat doet de web-app dat iOS
 
 ---
 
-## Phase 4: Groei & polish
-> Doel: Klaar voor meer gebruikers.
+## Phase 4: Personal OS
+> Doel: Carve wordt een echt besturingssysteem voor je leven.
 
-### 4.1 — Social op web
+### 4.1 — Navigatie herstructurering
+- 3 top-level modi (Perplexity-stijl): Coach (chat) / Dashboard (data) / Brein (memory)
+- Domain-switching (health/money/life) verschuift naar binnen Coach en Dashboard
+- Sidebar: modi bovenaan, utility items (nieuwe chat, geschiedenis, instellingen), recente chats onderaan
+
+### 4.2 — Coach Brein (upgraded 2.2)
+- Memory facts: bekijken, bewerken, archiveren, reactiveren per categorie
+- Coach profile secties: inline editbaar (doelen, schema, beperkingen, voeding, coaching)
+- Logbook timeline: observaties, milestones, zorgen — read-only vanuit coach
+- Geïntegreerd in de Brein-modus, niet als losse pagina
+
+### 4.3 — Taken systeem
+- Coach geeft taken: "Deze week 4x 130g+ eiwit"
+- Scheduled/recurring tasks: "Elke zondag: weeg jezelf"
+- Automatische tracking via bestaande data (diary_entries, workouts, transacties)
+- Cross-domein taken: "Meal prep 4x deze week" tracked via food logs + money
+- Supabase: `coach_tasks`, `task_completions` tabellen nodig
+- Overzicht in sidebar utility items
+
+### 4.4 — Smart Inbox / Email integratie
+- Email binnenkomst → AI parsed → automatisch taak, transactie, of trip-update
+- Factuur → money transactie, vluchtbevestiging → trip update, afspraak → taak
+- De AI als triage-laag op je hele leven
+- **Waarom:** Dit maakt Carve het centrale punt — je hoeft niet meer zelf te loggen
+
+### 4.5 — Social op web
 - Leaderboard, friend profiles, activity feed
-- Web-voordeel: meer ruimte voor vergelijking en detail
 
-### 4.2 — Carve Score activeren
+### 4.6 — Carve Score activeren
 - Score berekening live zetten (RPC bestaat al)
-- Ranking pagina op web
-- Score history met trends
+- Ranking pagina, score history met trends
 
-### 4.3 — Onboarding flow
+### 4.7 — Onboarding flow
 - Nieuwe gebruiker → profiel setup → eerste chat → eerste data sync
-- Werkt voor web-only users (zonder iOS app)
 
-### 4.4 — Performance & SEO
-- SSR optimalisatie
-- Public wiki pagina's (SEO traffic)
-- Load time optimalisatie
+### 4.8 — Performance & SEO
+- SSR optimalisatie, public wiki pagina's, load time
 
 ---
 
@@ -146,13 +168,13 @@ De web-app vervangt iOS niet. Ze vullen elkaar aan.
 1.2  activeApp + context → AI            ✅ done
 1.3  Chat history persistence            ✅ done
 1.4  Design system cleanup               ✅ mostly done
-2.1  Health dashboard view               ← NEXT
+2.1  Health dashboard view               ✅ done (/health route, 4 charts, time range)
 2.2  Coach memory management
 2.3  Wiki / kennisbank
 2.4  Mobile responsive
 3.1  Money domein                       ✅ done
-3.2  Cross-domein intelligence          ← NEXT
-3.3  Life/travel domein
+3.2  Cross-domein intelligence          ✅ done (prompt-side, auto-detect)
+3.3  Life/travel domein                 ← NEXT
 4.x  Social, Carve Score, onboarding, performance
 ```
 

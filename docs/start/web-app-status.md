@@ -3,6 +3,23 @@
 Last updated: 2026-03-20
 Branch: `main`
 
+## Route Structure
+
+All user-facing pages live as top-level routes within `(protected)`:
+
+```
+/chat          — Main app (chat-first hub with AI coach)
+/health        — Health dashboard (weight, nutrition, training, steps charts)
+/money/*       — Money pages (analytics, subscriptions, transactions, budgeting, insights)
+/travel/*      — Travel pages (trips, map, budget, trip detail)
+/social/*      — Social pages (activity feed, friends)
+/food/*        — Food logging
+/workouts/*    — Workout logging
+/profile       — User profile
+/settings      — User settings
+/dashboard     — Redirects to /chat (reserved for admin)
+```
+
 ## What exists
 
 ### Layout (working)
@@ -16,8 +33,9 @@ Branch: `main`
 - AI via Supabase edge function proxy (`/api/carve-ai/chat` → `coach-chat` edge fn)
 - useChat hook from @ai-sdk/react with activeApp in request body
 - SSE stream from edge function translated to AI SDK protocol
-- Real user data sent to edge function via `buildCoachContext` (calories, protein, mealsLogged, last workout, steps, streak, goals)
-- Current payload is still a health-focused subset; latest iOS profile/logbook and memory fields are not yet injected by web
+- Real user data sent to edge function via `buildCoachContext` + `buildMoneyContext` (health metrics, financial data)
+- **Cross-domain intelligence**: `activeDomains` auto-detected from actual data presence, coach prompt includes cross-domain coaching logic when multiple domains active
+- Coach memory, profile sections, and logbook entries injected into context
 - Home empty state: contextual greeting + life prompts
 - Domain empty state: "carve" brand + domain-specific pill chips
 - Input bar with toolbar row (attach, mic, send)

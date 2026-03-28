@@ -2,10 +2,8 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-// @ai-why: Turbopack can't resolve subpath exports from symlinked local packages.
-// Direct dist import bypasses the broken exports map resolution.
-import { LabDashboard, LabSidebar } from '@celikerstudio/ui/dist/lab/index.js'
-import type { LabNavGroup } from '@celikerstudio/ui/dist/lab/index.js'
+import { LabDashboard, LabSidebar } from '@celikerstudio/ui/lab'
+import type { LabNavGroup } from '@celikerstudio/ui/lab'
 import {
   FlaskConical, Palette, Layout, Component,
   Paintbrush,

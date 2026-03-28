@@ -253,10 +253,10 @@ function AddButton({ onClick, label }: { onClick: () => void; label: string }) {
 
 function BudgetCard() {
   const { data, loading } = useMoney()
+  const { openTransactionModal } = useMoneyActions()
   if (loading) return <SkeletonCard />
 
   const { summary } = data ?? { summary: null }
-  const { openTransactionModal } = useMoneyActions()
 
   if (!summary || (summary.monthlySpending === 0 && summary.budgetStatus.length === 0)) {
     return (
@@ -300,9 +300,8 @@ function BudgetCard() {
 function SubscriptionsCard() {
   const [expanded, setExpanded] = useState(false)
   const { data, loading } = useMoney()
-  if (loading) return <SkeletonCard />
-
   const { openSubscriptionModal } = useMoneyActions()
+  if (loading) return <SkeletonCard />
   const activeSubs = data?.subscriptions ?? []
   if (activeSubs.length === 0) {
     return (
@@ -378,9 +377,8 @@ function SubscriptionsCard() {
 
 function TransactionsCard() {
   const { data, loading } = useMoney()
-  if (loading) return <SkeletonCard />
-
   const { openTransactionModal } = useMoneyActions()
+  if (loading) return <SkeletonCard />
   const transactions = data?.transactions ?? []
   if (transactions.length === 0) {
     return (

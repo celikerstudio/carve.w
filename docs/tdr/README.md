@@ -6,7 +6,8 @@
 
 | # | Titel | Wat het vastlegt | Status |
 |---|---|---|---|
-| [0001](./0001-homepage-is-een-keuzescherm.md) | De homepage is een keuzescherm | `/` is geen marketingpagina maar drie kaarten die de app-domeinen spiegelen. De klik gaat naar een interactieve demo op demo-data, zonder account. Uitleg verhuist naar `/how-it-works`. | Voorgesteld 2026-08-23 |
+| [0001](./0001-homepage-is-een-keuzescherm.md) | De homepage is een keuzescherm | `/` is geen marketingpagina maar drie kaarten die de app-domeinen spiegelen, gevoed uit `lib/domains.ts`. Uitleg verhuist naar `/how-it-works`. | Voorgesteld 2026-08-23, review verwerkt |
+| [0002](./0002-de-demo-achter-de-klik.md) | De demo achter de klik | Wat er gebeurt na een kaartklik, en wat er achter het invoerveld zit (scripted, LLM, of hybride). | Concept 2026-08-23, kernkeuze open |
 
 ## Wanneer schrijf je een TDR?
 

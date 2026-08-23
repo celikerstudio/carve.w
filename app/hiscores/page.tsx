@@ -196,13 +196,13 @@ export default function HiscoresPage() {
             Want to compete?
           </h2>
           <p className="text-ink-secondary mb-6">
-            Join the waitlist to track your workouts, earn XP, and climb the leaderboard.
+            Create an account to track your workouts, earn XP, and climb the leaderboard.
           </p>
           <a
-            href="/#waitlist"
+            href="/signup"
             className="inline-block rounded-lg bg-white/10 px-8 py-3 font-medium text-white hover:bg-white/15 transition-colors"
           >
-            Join Waitlist
+            Get Started
           </a>
         </div>
       </div>

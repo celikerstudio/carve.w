@@ -34,7 +34,9 @@ function stripLocale(pathname: string): string {
 const MARKETING_NAV = [
   { label: 'Health', href: '/carve' },
   { label: 'Money', href: '/carve/money' },
-  { label: 'Life', href: '/carve/life' },
+  // @ai-why: wijst naar /carve/travel en niet /carve/life — die route bestaat
+  // niet en dit was een staande 404 in de hoofdnavigatie (gevonden bij TDR-0001).
+  { label: 'Life', href: '/carve/travel' },
 ] as const;
 
 export function AppHeader({

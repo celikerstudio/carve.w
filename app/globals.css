@@ -61,6 +61,26 @@ html {
   50% { opacity: 1; transform: scale(1); }
 }
 
+/* @ai-why: De homepage (DomainPicker) gebruikt deze CSS-animatie en geen
+   framer-motion. Framer zet zijn `initial` als inline style in de SSR-HTML, dus
+   dan staat er letterlijk `style="opacity:0"` in de broncode van de enige
+   pagina die / nog heeft: zonder JS, of bij een hydratiefout, is de homepage
+   dan leeg. Een CSS-animatie draait zonder JS en laat schone markup achter.
+   @ai-gotcha: `both` als fill-mode is niet optioneel. Zonder dat springt het
+   element na afloop terug naar opacity 0. */
+@keyframes carveFadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.carve-fade-up {
+  animation: carveFadeUp 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carve-fade-up { animation: none; }
+}
+
 @theme {
   /* Light mode colors */
   --color-background: #ffffff;

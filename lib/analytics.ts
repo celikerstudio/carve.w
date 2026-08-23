@@ -24,7 +24,15 @@ type EventName =
   // Dashboard events (for future use)
   | 'dashboard_view'
   | 'workout_logged'
-  | 'achievement_unlocked';
+  | 'achievement_unlocked'
+
+  // @ai-why: Homepage-trechter. Deze drie horen bij de bouw van het keuzescherm
+  // en niet erna: TDR-0001 laat zich alleen overrulen met de klikratio op de
+  // kaarten en de doorloop naar signup, en zonder deze events bestaat die
+  // meting niet. Zie docs/tdr/0001-homepage-is-een-keuzescherm.md beslissing 8.
+  | 'home_card_click'
+  | 'demo_message_sent'
+  | 'demo_to_signup';
 
 type EventProps = {
   // Waitlist
@@ -39,6 +47,9 @@ type EventProps = {
   // Dashboard
   workout_type?: string;
   achievement_type?: string;
+
+  // Homepage-trechter
+  domain?: string;
 };
 
 /**

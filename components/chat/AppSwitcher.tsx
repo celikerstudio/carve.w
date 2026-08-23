@@ -1,23 +1,20 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { Dumbbell, Wallet, Plane, Mail } from 'lucide-react'
+import { Dumbbell, Wallet, Plane } from 'lucide-react'
+import { DOMAINS, type DomainIconName } from '@/lib/domains'
 import type { AppId } from './types'
 
-interface AppDef {
-  id: AppId
-  label: string
-  icon: React.ElementType
-  color: string
+// @ai-why: De lijst zelf stond hier tot TDR-0001 hardcoded en was daardoor
+// onleesbaar voor de publieke homepage (niet geëxporteerd, 'use client',
+// componentreferenties als data). Hij leeft nu in lib/domains.ts als pure data;
+// deze map is het enige dat client-side moet blijven.
+// @ai-sync: lib/domains.ts
+const ICONS: Record<DomainIconName, React.ElementType> = {
+  Dumbbell,
+  Wallet,
+  Plane,
 }
-
-const apps: AppDef[] = [
-  { id: 'health', label: 'Health', icon: Dumbbell, color: '#22c55e' },
-  { id: 'money', label: 'Money', icon: Wallet, color: '#3b82f6' },
-  { id: 'life', label: 'Life', icon: Plane, color: '#a855f7' },
-  // @ai-todo: re-enable inbox when ready
-  // { id: 'inbox', label: 'Inbox', icon: Mail, color: '#f59e0b' },
-]
 
 interface AppSwitcherProps {
   activeApp: AppId
@@ -27,13 +24,13 @@ interface AppSwitcherProps {
 export function AppSwitcher({ activeApp, onAppChange }: AppSwitcherProps) {
   return (
     <div className="flex flex-col gap-0.5">
-      {apps.map((app) => {
-        const isActive = activeApp === app.id
-        const Icon = app.icon
+      {DOMAINS.map((app) => {
+        const isActive = activeApp === (app.id as AppId)
+        const Icon = ICONS[app.icon]
         return (
           <button
             key={app.id}
-            onClick={() => onAppChange(isActive ? 'home' : app.id)}
+            onClick={() => onAppChange(isActive ? 'home' : (app.id as AppId))}
             className={cn(
               'flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-all',
               isActive

@@ -77,8 +77,28 @@ html {
   animation: carveFadeUp 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
+@keyframes carveMsgIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.carve-msg-in {
+  animation: carveMsgIn 0.35s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+@keyframes carvePanelIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.carve-panel-in {
+  animation: carvePanelIn 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .carve-fade-up { animation: none; }
+  .carve-fade-up,
+  .carve-panel-in,
+  .carve-msg-in { animation: none; }
 }
 
 @theme {

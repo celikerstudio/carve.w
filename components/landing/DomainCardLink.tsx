@@ -27,13 +27,12 @@ interface DomainCardLinkProps {
 // naar een URL, en dan is een anchor correcter: rechtermuisknop, nieuw tabblad en
 // de statusbalk werken dan gewoon.
 //
-// @ai-todo: `href` is het terugvalpad uit TDR-0001 beslissing 5. Zodra TDR-0002
-// landt wordt dit /demo?d=<id>, en verandert de proof-regel in DomainPicker mee.
+// @ai-sync: app/demo/page.tsx leest de `d`-parameter die hier gezet wordt.
 export function DomainCardLink({ id, label, blurb, color, icon, delay }: DomainCardLinkProps) {
   const Icon = ICONS[icon]
   return (
     <Link
-      href={`/signup?start=${id}`}
+      href={`/demo?d=${id}`}
       onClick={() => track('home_card_click', { domain: id })}
       style={{ animationDelay: `${delay}s` }}
       className="carve-fade-up group relative flex items-center gap-4 w-full p-[17px] rounded-2xl

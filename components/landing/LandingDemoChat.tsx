@@ -1,6 +1,5 @@
 'use client'
 
-import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 
 interface ChatMessage {
@@ -36,15 +35,17 @@ export function LandingDemoChat({ messages }: LandingDemoChatProps) {
       </div>
 
       {/* Messages */}
+      {/* @ai-why: De berichten komen binnen met een CSS-animatie en niet met
+          framer-motion. Een bericht begint op opacity 0, en in een achtergrondtab
+          knijpt de browser requestAnimationFrame terwijl de setTimeout-keten van de
+          demo gewoon doorloopt: framer bevriest dan halverwege en de berichten
+          blijven permanent onzichtbaar, ook nadat je terugklikt. De kaarten op de
+          homepage zijn links, dus /demo in een nieuw tabblad openen is normaal
+          gedrag. Een CSS-animatie met fill-mode `both` landt hoe dan ook op de
+          eindstand. Zelfde afweging als in LandingDemoContext en DomainPicker. */}
       <div ref={scrollRef} className="flex-1 overflow-y-auto scrollbar-hide px-5 py-5 flex flex-col gap-3.5">
-        <AnimatePresence>
-          {messages.map((msg) => (
-            <motion.div
-              key={msg.id}
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
-            >
+        {messages.map((msg) => (
+          <div key={msg.id} className="carve-msg-in">
               {msg.type === 'user' && (
                 <div className="flex justify-end">
                   <span className="inline-block bg-white/[0.06] px-3.5 py-2.5 rounded-[14px] rounded-br-[4px] text-[13px] text-white/75 max-w-[85%]">
@@ -89,9 +90,8 @@ export function LandingDemoChat({ messages }: LandingDemoChatProps) {
                   dangerouslySetInnerHTML={{ __html: msg.html }}
                 />
               )}
-            </motion.div>
-          ))}
-        </AnimatePresence>
+          </div>
+        ))}
       </div>
 
       {/* Input bar */}

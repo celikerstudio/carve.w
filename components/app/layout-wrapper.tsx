@@ -45,7 +45,11 @@ export function LayoutWrapper({
   // Note: usePathname() returns URL path, not file-system path.
   // Route groups like (protected) are invisible in URLs, so /chat is correct.
   const isChatRoute = path.startsWith('/chat')
-  const isLandingRoute = path === '/'
+  // @ai-why: / en /demo zijn sinds TDR-0001 één flow (keuzescherm → simulatie) en
+  // dragen allebei hun eigen nav. Zonder /demo hier viel de demo terug op de
+  // standaardtak en kreeg hij de wiki-chrome met zoekbalk en zijbalk eroverheen.
+  // @ai-sync: app/demo/page.tsx
+  const isLandingRoute = path === '/' || path === '/demo'
 
   if (isChatRoute) {
     return (

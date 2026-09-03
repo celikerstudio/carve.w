@@ -1,8 +1,10 @@
 'use client'
 
-import { motion, AnimatePresence } from 'framer-motion'
+import type { PanelId } from './demo-steps'
 
-type PanelId = 'empty' | 'health' | 'money' | 'inbox' | 'life'
+// @ai-why: PanelId komt uit demo-steps en wordt hier niet meer apart gedefinieerd.
+// Twee kopieën van dezelfde union liepen uiteen zodra het inbox-domein eruit ging.
+// @ai-sync: components/landing/demo-steps.ts
 
 interface LandingDemoContextProps {
   activePanel: PanelId
@@ -11,22 +13,26 @@ interface LandingDemoContextProps {
 export function LandingDemoContext({ activePanel }: LandingDemoContextProps) {
   return (
     <div className="h-full bg-[#0c0c0d] overflow-hidden relative">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activePanel}
-          initial={{ opacity: 0, x: 12 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -8 }}
-          transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
-          className="absolute inset-0 p-4 overflow-y-auto scrollbar-hide"
-        >
-          {activePanel === 'empty' && <EmptyView />}
-          {activePanel === 'health' && <HealthView />}
-          {activePanel === 'money' && <MoneyView />}
-          {activePanel === 'inbox' && <InboxView />}
-          {activePanel === 'life' && <LifeView />}
-        </motion.div>
-      </AnimatePresence>
+      {/* @ai-why: CSS-animatie op een gekeyde div, geen AnimatePresence meer.
+          Met `mode="wait"` wacht de nieuwe panel op de exit van de vorige, en bij
+          de snelle wisselingen in het script (money → life → money binnen een
+          seconde) bleef die exit hangen: het paneel stond permanent op
+          `opacity: 0; translateX(-8px)` en toonde eeuwig de lege staat. Zichtbaar
+          als een leeg vlak naast een gesprek dat wél doorliep.
+          @ai-tried: alleen `mode="wait"` weghalen lost de stall op, maar dan
+          bepaalt nog steeds een JS-animatie of het bewijs in beeld komt. Dit
+          paneel is sinds TDR-0001 het bewijs van de hele pagina, dus het hoort
+          zichtbaar te zijn ook als er geen JS-animatie draait. Zelfde afweging
+          als bij DomainPicker. */}
+      <div
+        key={activePanel}
+        className="carve-panel-in absolute inset-0 p-4 overflow-y-auto scrollbar-hide"
+      >
+        {activePanel === 'empty' && <EmptyView />}
+        {activePanel === 'health' && <HealthView />}
+        {activePanel === 'money' && <MoneyView />}
+        {activePanel === 'life' && <LifeView />}
+      </div>
     </div>
   )
 }
@@ -121,41 +127,6 @@ function MoneyView() {
         <Row label="Albert Heijn" value="-€23.40" />
         <Row label="Shell" value="-€62.10" />
         <Row label="Spotify" value="-€10.99" />
-      </div>
-    </div>
-  )
-}
-
-function InboxView() {
-  return (
-    <div className="flex flex-col gap-4">
-      <Label color="#f59e0b">Inbox</Label>
-      <div className="grid grid-cols-2 gap-2">
-        <div className="p-3 rounded-lg bg-[#f59e0b]/5 text-center">
-          <p className="text-[20px] font-bold text-[#f59e0b]">2</p>
-          <p className="text-[9px] text-[#f59e0b]/40">Need you</p>
-        </div>
-        <div className="p-3 rounded-lg bg-[#22c55e]/5 text-center">
-          <p className="text-[20px] font-bold text-[#22c55e]">14</p>
-          <p className="text-[9px] text-[#22c55e]/40">Handled</p>
-        </div>
-      </div>
-      <div>
-        <Label>Needs Attention</Label>
-        <div className="rounded-lg bg-white/[0.02] border border-white/[0.04] p-3 mb-2">
-          <p className="text-[12px] font-semibold text-white/50">Coolblue — Invoice</p>
-          <p className="text-[10px] text-[#3b82f6] mt-1">→ Route to Money</p>
-        </div>
-        <div className="rounded-lg bg-white/[0.02] border border-white/[0.04] p-3">
-          <p className="text-[12px] font-semibold text-white/50">KLM — Booking AMS→BCN</p>
-          <p className="text-[10px] text-[#a855f7] mt-1">→ Route to Life</p>
-        </div>
-      </div>
-      <div>
-        <Label>Auto-Handled</Label>
-        <Row label="Newsletters archived" value="8" />
-        <Row label="Promotions dismissed" value="4" />
-        <Row label="Receipts → Money" value="2" />
       </div>
     </div>
   )

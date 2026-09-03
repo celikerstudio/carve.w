@@ -50,7 +50,7 @@ export function DomainPicker() {
           className="carve-fade-up text-[12.5px] text-white/30 text-center mt-6"
           style={{ animationDelay: '0.35s' }}
         >
-          Free to start. Nothing connects until you say so.{' '}
+          See it work on demo data. No account, no bank connection.{' '}
           {/* @ai-todo: wijst naar /carve tot /how-it-works bestaat (TDR-0001 beslissing 6) */}
           <Link href="/carve" className="underline underline-offset-2 hover:text-white/60 transition-colors">
             How it works

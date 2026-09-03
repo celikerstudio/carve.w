@@ -1,6 +1,6 @@
 # TDR-0002 — De demo achter de klik
 
-- **Status:** Concept. De kernkeuze (§ "De open beslissing") ligt bij Furkan; de rest van dit document is de context die daarvoor nodig is.
+- **Status:** Geaccepteerd. Optie A gekozen en gebouwd 2026-09-03.
 - **Datum:** 2026-08-23
 - **Beslisser:** Furkan
 - **Volgt op:** [TDR-0001](./0001-homepage-is-een-keuzescherm.md), beslissing 5
@@ -27,11 +27,13 @@ Vier dingen, alle vier geverifieerd in de repo:
 
 `lib/demo/sample-data.ts` bestaat, en `components/landing/LandingDemoContext.tsx` (182 regels) rendert al de vier domeinpanelen met verzonnen data. `demo-steps.ts` bevat twee volledig uitgeschreven gesprekken. De inhoud van een demo is dus grotendeels geschreven; wat ontbreekt is dat de bezoeker zelf iets mag typen.
 
-## De open beslissing
+## Beslissing
 
-Wat zit er achter het invoerveld? Drie reële opties.
+**Optie A: scripted, geen LLM.** De simulatie die tot TDR-0001 op de homepage stond wordt de bestemming van de kaartklik, met één script per domein.
 
-### A. Scripted, geen LLM
+Wat zit er achter het invoerveld? Drie opties lagen voor.
+
+### A. Scripted, geen LLM  ← gekozen
 
 Vaste vervolgvragen als chips onder het antwoord ("En mijn budget deze maand?"), elk met een voorgeschreven antwoord. De bezoeker klikt zich door een gesprek dat al geschreven is. Het invoerveld staat er wel maar accepteert alleen die chips, of is uitgeschakeld met een uitleg.
 
@@ -51,20 +53,27 @@ Nadeel: het is het duurste en het enige met een misbruikprofiel. Een publiek AI-
 
 De eerste uitwisseling is geschreven (en dus altijd goed), daarna mag de bezoeker één of twee vrije vragen stellen tegen de echte modelaanroep, met dezelfde rem als B maar een veel kleinere begroting.
 
-Dit is mijn aanbeveling. De eerste indruk is gegarandeerd sterk omdat hij geschreven is, en de vrije vraag is precies het moment waarop het kwartje valt dat hij jouw data leest. Twee vragen per bezoeker is te begroten; onbeperkt typen niet.
+Dit was de aanbeveling. Afgevallen ten gunste van A omdat A nul kosten en nul misbruikrisico heeft en het script er al lag, en omdat C zonder rate-limiter alsnog eerst B's infrastructuur vraagt. C blijft de logische volgende stap: het invoerveld staat er al, alleen doet het nog niets.
 
-## Wat er hoe dan ook in zit
+## Wat er gebouwd is
 
-Onafhankelijk van A, B of C:
+1. **`/demo?d=<id>`** vervangt het oude fitness-dashboard. Een onbekend domein geeft 404 en geen stille terugval op health.
+2. **Eén script per domein** in `demo-steps.ts`, elk kruisend naar een tweede domein binnen twee beurten. Zonder dat is de keuze op de homepage betekenisloos en draagt de demo het cross-domain-bewijs niet dat TDR-0001 van de homepage afhaalde.
+3. **De inbox is uit het script.** De oude simulatie liet de coach "Scanning inbox..." doen en meldde "14 auto-handled"; dat was het meest zichtbare stuk van de drift die TDR-0001 opruimt, dus het kon niet terugkomen op de pagina waar die TDR naartoe wijst. `InboxView` is uit `LandingDemoContext` verwijderd.
+4. **Het contextpaneel op mobiel.** Stond op `hidden lg:block` en bestond onder 1024px niet; het staat daar nu onder de chat.
+5. **De overgang naar signup** met de bankkoppeling expliciet benoemd, en `demo_to_signup` erop.
+6. **`ChatLayout` is niet aangeraakt.** De user-loze variant daarvan was nodig voor B en C; A gebruikt de bestaande demo-componenten, die nooit een `userId` kenden. Dat werk verschuift naar de TDR die het invoerveld levend maakt.
 
-1. **Een user-loze variant van de chat-shell.** `ChatLayout` krijgt een demo-modus zonder `userId` en zonder `useChatHistory`.
-2. **Het rechterpaneel op mobiel.** Onder `lg` komt het contextpaneel als blok ónder de chat, niet weg. Zonder dat mist de helft van het verkeer het bewijs.
-3. **`app/demo/page.tsx` wordt vervangen.** Nu is het een fitness-dashboard in lichte kleuren met `robots: noindex`.
-4. **De overgang naar signup.** Na de demo, niet ervoor, en met de bankkoppeling eerlijk benoemd.
-5. **`demo_message_sent` en `demo_to_signup`** uit TDR-0001 beslissing 8.
+`demo_message_sent` bestaat als event maar wordt niet gevuurd: er is niets om te versturen zolang het invoerveld dood is.
+
+## Wat de bouw aan het licht bracht
+
+**Framer-motion bevriest in een achtergrondtab.** De browser knijpt daar `requestAnimationFrame` terwijl de `setTimeout`-keten van de demo gewoon doorloopt. Elementen die op `opacity: 0` beginnen blijven dan permanent onzichtbaar, ook nadat je terugklikt: het contextpaneel bleef hangen op `opacity: 0; translateX(-8px)` en toonde eeuwig de lege staat, en de chatberichten vanaf de vierde bleven staan op `translateY(5.5783px)`. De kaarten op de homepage zijn links, dus `/demo` in een nieuw tabblad openen is normaal gedrag. Alle drie de animaties (kaarten, paneel, berichten) draaien nu op CSS met fill-mode `both`, wat hoe dan ook op de eindstand landt. Dat is dezelfde afweging als bij het keuzescherm zelf: een JS-animatie mag niet bepalen of de inhoud zichtbaar wordt.
+
+**`/demo` viel in de standaardtak van `layout-wrapper.tsx`** en kreeg daardoor de wiki-chrome met zoekbalk en zijbalk over de simulatie heen. `/` en `/demo` zijn nu samen één tak. De hardgecodeerde routelijst daarboven blijft een driftbron, maar dat is een eigen opruiming.
 
 ## Hoe overrulen
 
 Bij optie B of C: als de kosten per bezoeker de waarde van een signup naderen, of als het endpoint als gratis proxy gevonden wordt. Beide zijn meetbaar vanaf dag één, dus leg de tokenkosten per demo-sessie vast in de logs.
 
-Bij optie A: als `demo_to_signup` structureel onder de doorloop van de oude zelf-afspelende animatie blijft. Dan is de demo geen verbetering en hoort de klik naar `/signup?start=<id>` zoals het terugvalpad in TDR-0001 beslissing 5.
+Voor A, dat nu draait: als `demo_to_signup` structureel onder de doorloop van de oude zelf-afspelende animatie blijft. Dan is de demo geen verbetering en hoort de klik naar `/signup?start=<id>`, het terugvalpad uit TDR-0001 beslissing 5. Het tweede signaal is zachter en komt niet uit de cijfers: een script dat herkenbaar op rails loopt overtuigt niet maar voelt bespeeld. Dat is het moment voor C.

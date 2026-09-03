@@ -17,6 +17,7 @@ const SHORT: Partial<Record<MuscleId, string>> = {
 }
 
 type Bubble =
+  | { key: string; kind: 'ask'; text: string }
   | { key: string; kind: 'session'; session: DemoSession }
   | { key: string; kind: 'note'; text: string }
   | { key: string; kind: 'rest'; label: string }
@@ -25,7 +26,10 @@ type Bubble =
 // @ai-why: De coach zegt één regel per sessie en één aan het eind, en verder niets.
 // De vorige versie schreef vier alinea's onder één workout; dat las als een essay
 // naast een grafiek. Wat er te zien valt staat in het paneel, niet in de tekst.
-const CLOSING = 'Week done. <b>Calves</b> and <b>core</b> are what is left.'
+// @ai-gotcha: Deze regel noemt letters, dus hij liegt zodra iemand aan LAST_WEEK of
+// aan een sessie zit. Nagerekend op het model: maandagochtend C (28%), na de push B
+// (46%), vanaf dinsdag A. Verander je de week, reken hem dan opnieuw na.
+const CLOSING = 'Week done. <b>C to A</b>, and core is the only thing you skipped.'
 
 export function WorkoutsDemo() {
   const [state, setState] = useState<WeekState>(weekStart)
@@ -46,6 +50,11 @@ export function WorkoutsDemo() {
       timeouts.current.push(setTimeout(fn, t))
     }
 
+    // @ai-why: De bezoeker opent, niet de coach. Zonder die vraag rollen er kaarten
+    // een leeg scherm in en is niet te zien dat je Carve iets vráágt; met de vraag
+    // erboven is alles eronder het antwoord.
+    at(400, () => setBubbles([{ key: 'ask', kind: 'ask', text: 'Give me a week review' }]))
+
     WEEK.forEach((session, i) => {
       // @ai-why: De rustdag krijgt een eigen regel in de stroom. Zonder dat springt
       // de week van dinsdag naar donderdag en lijkt het silhouet zomaar af te koelen.
@@ -57,7 +66,7 @@ export function WorkoutsDemo() {
           setBubbles((b) => [...b, { key: `rest-${d}`, kind: 'rest', label }])
         })
       }
-      at(i === 0 ? 600 : 900, () => {
+      at(i === 0 ? 900 : 900, () => {
         live = withSession(live, session)
         setState(live)
         setBubbles((b) => [...b, { key: `s-${session.day}`, kind: 'session', session }])
@@ -108,6 +117,15 @@ export function WorkoutsDemo() {
                 regel ziet. Er kwam geen fout, de kaart was gewoon te kort. */}
             <div ref={streamRef} className="flex h-[460px] flex-col gap-3 overflow-y-auto px-[18px] py-5 lg:h-[560px]">
               {bubbles.map((b) => {
+                if (b.kind === 'ask') {
+                  return (
+                    <div key={b.key} className="carve-msg-in flex shrink-0 justify-end">
+                      <span className="max-w-[82%] rounded-[14px] rounded-br-[4px] bg-white/[0.06] px-3.5 py-2.5 text-[13px] text-white/[0.78]">
+                        {b.text}
+                      </span>
+                    </div>
+                  )
+                }
                 if (b.kind === 'rest') {
                   return (
                     <div key={b.key} className="carve-msg-in flex shrink-0 items-center gap-3 py-0.5">
@@ -186,7 +204,7 @@ export function WorkoutsDemo() {
               <div className="flex items-start justify-center gap-3">
                 {(['front', 'back'] as const).map((side) => (
                   <div key={side} className="flex min-w-0 flex-1 flex-col items-center gap-1.5">
-                    <MuscleMap state={state} side={side} className="max-w-[132px]" />
+                    <MuscleMap state={state} side={side} className="max-w-[148px]" />
                     <span className="font-mono text-[9px] uppercase tracking-[0.16em] text-white/20">
                       {side === 'front' ? 'Front' : 'Back'}
                     </span>

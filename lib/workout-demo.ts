@@ -272,17 +272,22 @@ export function sessionTotals(session: DemoSession) {
 }
 
 // @ai-why: Vorige week staat in het log met negatieve dagnummers en niet als
-// beginstand. Daardoor dooft hij in de demo zichtbaar uit: op zondag telt werk van
-// negen dagen terug nog voor 71% mee, en dat is precies wat het uitfaden doet.
+// beginstand. Daardoor dooft hij in de demo zichtbaar uit, en dat is precies wat
+// het uitfaden doet.
+//
+// @ai-gotcha: De ouderdom hier bepaalt of de week een boog heeft. Op dag -6 telt
+// vorige week op maandag nog vol mee, en dan staat de letter al op A voordat je
+// iets gedaan hebt. Op dag -10/-11 is hij half uitgedoofd en begint de week op C.
+// Verschuif deze dagen niet zonder de letter op maandag én zondag na te lopen.
 const LAST_WEEK: readonly LogEntry[] = [
-  { muscle: 'chest', sets: 8, day: -9 },
-  { muscle: 'back', sets: 10, day: -8 },
-  { muscle: 'shoulders', sets: 5, day: -9 },
-  { muscle: 'triceps', sets: 4, day: -9 },
-  { muscle: 'biceps', sets: 4, day: -8 },
-  { muscle: 'legs', sets: 10, day: -6 },
-  { muscle: 'glutes', sets: 5, day: -6 },
-  { muscle: 'core', sets: 3, day: -6 },
+  { muscle: 'chest', sets: 8, day: -11 },
+  { muscle: 'back', sets: 10, day: -10 },
+  { muscle: 'shoulders', sets: 5, day: -11 },
+  { muscle: 'triceps', sets: 4, day: -11 },
+  { muscle: 'biceps', sets: 4, day: -10 },
+  { muscle: 'legs', sets: 10, day: -10 },
+  { muscle: 'glutes', sets: 5, day: -10 },
+  { muscle: 'core', sets: 3, day: -10 },
 ]
 
 /** Maandagochtend: alleen vorige week, aan het uitdoven. */

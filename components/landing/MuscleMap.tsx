@@ -48,7 +48,11 @@ export function MuscleMap({ state, side = 'front', spotlight = null, className =
       <img
         src={src}
         alt={`${side === 'front' ? 'Voorkant' : 'Achterkant'} van het spiersilhouet, met de getrainde spieren warm gekleurd`}
-        className="absolute inset-0 h-full w-full object-contain saturate-[.15] brightness-[.92]"
+        // @ai-why: Wel ontzadigd, niet gedimd. `saturate` haalt de rode broek weg zodat
+        // de warmte de enige kleur op de figuur is; `brightness` stond op .92 en dat
+        // kostte precies het donkere haar, dat op de bijna-zwarte achtergrond dan
+        // helemaal wegviel. De figuur leek kaal terwijl het haar er gewoon op zat.
+        className="absolute inset-0 h-full w-full object-contain saturate-[.15]"
       />
 
       {LAYERS.map((layer) => (

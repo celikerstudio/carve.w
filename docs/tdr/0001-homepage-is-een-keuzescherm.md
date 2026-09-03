@@ -119,3 +119,30 @@ De onafhankelijke review (2026-08-23, vóór de bouw) vond dertien feitelijke fo
 3. **De demo had geen endpoint.** `/api/carve-ai/chat` geeft 401 zonder sessie en er is nul rate-limiting in de repo. Afgesplitst naar TDR-0002.
 4. **De overrule-meting bestond niet.** Werd beslissing 8.
 5. **De waitlist, het `/#waitlist`-anker en de `/carve/life`-404** ontbraken volledig. Staan nu in consequenties.
+
+## Aanvulling 2026-09-03 — de kaarten volgen de tabbalk niet meer
+
+Beslissing 2 zei: de kaarten spiegelen de domeinen van de app, want dan kan de
+homepage alleen verouderen als de app verandert. Furkan heeft die grond op
+2026-09-03 losgelaten: *"het gaat meer om de demo dan de tab, dat systeem gaan we
+vanaf. De demo moet gewoon kunnen tonen wat we kunnen doen met Carve."*
+
+Wat er verandert:
+
+- **`health` heet op de site `workouts`.** De iOS-tab blijft "Health"
+  (`domainTitle.health`). De kaart moet zeggen wát je ermee doet, en dat is
+  trainen. `Domain.appId` houdt de brug naar de chat-`AppId` intact, zodat de
+  hernoeming niet de AppSwitcher meesleept.
+- **Voeding wordt een vierde kaart**, terwijl de app het onder Health heeft
+  staan. Barcode, foto en macro's zijn een eigen zwaartepunt en verdienen een
+  eigen ingang; de tabbalk is niet langer de maat.
+- **De `@ai-sync` naar `L10n.DomainTitle.*` in `lib/domains.ts` vervalt** en is
+  vervangen door een `@ai-context` die uitlegt dat het verschil bewust is. Zonder
+  die vervanging leest de volgende lezer de afwijking als drift.
+
+Wat blijft staan: de vorm (keuzescherm), de gedeelde dataconstante uit beslissing
+3, de demo achter de klik (TDR-0002) en de instrumentatie uit beslissing 8. Het
+argument uit de alternatieventabel dat pijn-first "een tweede vocabulaire"
+introduceert is hiermee wél zwakker geworden: als de site zijn eigen woorden mag
+kiezen, is dat geen bezwaar meer maar een keuze. De review noemde dat argument
+destijds al rationalisatie; die kritiek is nu terecht gebleken.

@@ -15,7 +15,11 @@ export type DemoStepType =
  * de drift die TDR-0001 opruimt, dus het kan niet terugkomen in de demo waar
  * dezelfde TDR naartoe wijst.
  */
-export type PanelId = 'empty' | DomainId
+// @ai-why: Niet elke DomainId hoort hier thuis. `workouts` heeft geen paneel in
+// dit systeem maar een eigen component (WorkoutsDemo) met het silhouet en de
+// hypertrofiebalken; die twee door elkaar halen zou betekenen dat de spierkaart
+// in een lijst met 'health'-widgets belandt waar hij niet bij past.
+export type PanelId = 'empty' | 'health' | 'money' | 'life'
 
 export interface DemoStep {
   type: DemoStepType
@@ -33,26 +37,6 @@ export interface DemoStep {
 // waar het bewijs zit: TDR-0001 haalt de cross-domain-uitleg van de homepage af
 // en legt hem hier neer.
 // @ai-sync: lib/domains.ts — elke DomainId hoort een script te hebben.
-
-const HEALTH: DemoStep[] = [
-  { type: 'user-msg', delay: 900, text: 'Am I actually making progress?' },
-
-  { type: 'tool-start', delay: 700, toolId: 'workouts', toolIcon: '♥', text: 'Reading workouts & recovery...', panel: 'health' },
-  { type: 'tool-done', delay: 1000, toolId: 'workouts' },
-  { type: 'tool-start', delay: 350, toolId: 'volume', toolIcon: '♥', text: 'Checking this week’s volume...' },
-  { type: 'tool-done', delay: 900, toolId: 'volume' },
-  { type: 'tool-start', delay: 350, toolId: 'food', toolIcon: '$', text: 'Cross-checking food & groceries...', panel: 'money' },
-  { type: 'tool-done', delay: 900, toolId: 'food' },
-
-  { type: 'typing', delay: 500 },
-  { type: 'ai-msg', delay: 2000, html: `<span class="tag-health">♥ Health</span> Six sessions in fourteen days, <strong>12-day streak</strong>. Chest and shoulders are on schedule; hamstrings are two sets behind.<br/><br/>Your week sits at <strong>62%</strong>. Two sets of leg curls closes it.<br/><br/><span class="tag-money">$ Money</span> Protein averaged <strong>141g</strong> against your 150 target, and groceries are 18% up. Same cause: you ate out four times this week.` },
-
-  { type: 'user-msg', delay: 3600, text: 'Fix the hamstrings then' },
-  { type: 'tool-start', delay: 700, toolId: 'plan', toolIcon: '♥', text: 'Rebuilding leg day...', panel: 'health' },
-  { type: 'tool-done', delay: 1200, toolId: 'plan' },
-  { type: 'typing', delay: 500 },
-  { type: 'ai-msg', delay: 2000, html: `Thursday is now:<br/><br/><strong>Romanian deadlift</strong> — 3 × 8 <span class="text-white/30">(new)</span><br/><strong>Seated leg curl</strong> — 3 × 12 <span class="text-white/30">(new)</span><br/><strong>Leg press</strong> — 3 × 10<br/><strong>Calf raise</strong> — 4 × 15<br/><br/>That puts hamstrings back on schedule this week. <span class="tag-health">Saved to your split</span>` },
-]
 
 const MONEY: DemoStep[] = [
   { type: 'user-msg', delay: 900, text: 'Where did my money go this month?' },
@@ -90,8 +74,15 @@ const LIFE: DemoStep[] = [
   { type: 'ai-msg', delay: 2000, html: `<strong>€95 a day</strong>, based on Lisbon, Milan and Vienna. Four days is about <strong>€380</strong>.<br/><br/>Food is where it goes: €52 a day, roughly double what you spend at home. Everything else you keep flat.<br/><br/>Your August budget carries it, <em>after</em> the €847 Coolblue bill on Friday. <span class="tag-money">Set aside €400</span> <span class="tag-life">Added to the trip</span>` },
 ]
 
-export const DEMO_SCRIPTS: Record<DomainId, DemoStep[]> = {
-  health: HEALTH,
+/**
+ * @ai-why: Alleen money en life. Workouts draait op components/landing/WorkoutsDemo.tsx,
+ * omdat die demo niet uit chatstappen bestaat maar uit een afgeronde workout plus
+ * een coach die het silhouet en de balken verandert.
+ * @ai-sync: app/demo/page.tsx kiest tussen de twee.
+ */
+export type ScriptedDomain = Extract<DomainId, 'money' | 'life'>
+
+export const DEMO_SCRIPTS: Record<ScriptedDomain, DemoStep[]> = {
   money: MONEY,
   life: LIFE,
 }

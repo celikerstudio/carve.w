@@ -25,12 +25,12 @@ export function AppSwitcher({ activeApp, onAppChange }: AppSwitcherProps) {
   return (
     <div className="flex flex-col gap-0.5">
       {DOMAINS.map((app) => {
-        const isActive = activeApp === (app.id as AppId)
+        const isActive = activeApp === (app.appId as AppId)
         const Icon = ICONS[app.icon]
         return (
           <button
             key={app.id}
-            onClick={() => onAppChange(isActive ? 'home' : (app.id as AppId))}
+            onClick={() => onAppChange(isActive ? 'home' : (app.appId as AppId))}
             className={cn(
               'flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-all',
               isActive

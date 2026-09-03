@@ -3,8 +3,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { LandingDemoChat } from './LandingDemoChat'
 import { LandingDemoContext } from './LandingDemoContext'
-import { DEMO_SCRIPTS, type PanelId } from './demo-steps'
-import type { DomainId } from '@/lib/domains'
+import { DEMO_SCRIPTS, type PanelId, type ScriptedDomain } from './demo-steps'
 
 interface ChatMessage {
   id: string
@@ -17,7 +16,7 @@ interface ChatMessage {
 }
 
 interface LandingDemoProps {
-  domain: DomainId
+  domain: ScriptedDomain
 }
 
 // @ai-why: Speelt af op mount en niet meer op scroll (useInView is eruit). Op de

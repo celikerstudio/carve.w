@@ -2,8 +2,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { LandingNav } from '@/components/landing/LandingNav'
 import { LandingDemo } from '@/components/landing/LandingDemo'
+import { WorkoutsDemo } from '@/components/landing/WorkoutsDemo'
 import { DemoSignupCta } from '@/components/landing/DemoSignupCta'
-import { DOMAINS, type DomainId } from '@/lib/domains'
+import { DOMAINS } from '@/lib/domains'
+import type { ScriptedDomain } from '@/components/landing/demo-steps'
 
 // @ai-context: Dit was tot TDR-0002 een fitness-dashboard met nepdata in lichte
 // kleuren, overgebleven uit de wiki-periode. Het is nu de bestemming van de
@@ -53,11 +55,18 @@ export default async function DemoPage({
           </div>
 
           <h1 className="text-[1.9rem] md:text-[2.4rem] font-extrabold tracking-[-0.03em] leading-[1.1] mt-2 text-balance">
-            This is what it looks like when it knows you.
+            {domain.id === 'workouts'
+              ? "Your workout is in. Here's what it did."
+              : 'This is what it looks like when it knows you.'}
           </h1>
         </header>
 
-        <LandingDemo domain={domain.id as DomainId} />
+        {/* @ai-why: Workouts heeft een eigen component in plaats van een chatscript.
+            De demo draait daar om het silhouet en de hypertrofiebalken, en die
+            passen niet in het paneel-per-stap-model van LandingDemo. */}
+        {domain.id === 'workouts'
+          ? <WorkoutsDemo />
+          : <LandingDemo domain={domain.id as ScriptedDomain} />}
 
         <DemoSignupCta domain={domain.id} />
       </main>

@@ -8,13 +8,21 @@
 // constante lezen zonder component in het pad.
 // Zie docs/tdr/0001-homepage-is-een-keuzescherm.md beslissing 3.
 
-export type DomainId = 'health' | 'money' | 'life'
+export type DomainId = 'workouts' | 'money' | 'life'
 
 /** Naam van een lucide-react icoon. Consumers mappen zelf naar het component. */
 export type DomainIconName = 'Dumbbell' | 'Wallet' | 'Plane'
 
 export interface Domain {
   id: DomainId
+  /**
+   * @ai-why: De id in de chat is niet altijd de id op de site. De AppSwitcher
+   * kent 'health'; de site noemt dat domein 'workouts' omdat de kaart moet zeggen
+   * wat je ermee doet en niet hoe het intern heet. Zonder dit veld zou de
+   * hernoeming de chat-AppId meeslepen.
+   * @ai-sync: components/chat/types.ts (AppId)
+   */
+  appId: 'health' | 'money' | 'life'
   label: string
   /**
    * @ai-why: De homepage-ondertitel woont hier bewust naast het label. Zet je
@@ -30,16 +38,17 @@ export interface Domain {
 // @ai-sync: components/chat/AppSwitcher.tsx en components/landing/DomainPicker.tsx
 // lezen deze lijst. Een domein toevoegen of hernoemen raakt beide oppervlakken.
 //
-// @ai-context: De labels horen gelijk te blijven aan L10n.DomainTitle.* in de
-// iOS-app (Carve AI/Generated/Strings+Generated.swift). Lopen ze uiteen, dan
-// heten dezelfde dingen op twee plekken anders.
+// @ai-context: De labels spiegelen bewust NIET meer de iOS-tabbalk. Die heet
+// 'Health' (L10n.DomainTitle.health); de site zegt 'Workouts' omdat de kaart
+// moet zeggen wat de demo laat zien. Vastgelegd 2026-09-03, zie de aanvulling
+// onderaan docs/tdr/0001-homepage-is-een-keuzescherm.md. `appId` houdt de brug
+// naar de chat intact.
 //
-// @ai-todo: Inbox stond hier als vierde domein en is uitgezet omdat het scherm
-// niet bestaat; de mail-edge-functions draaien wel maar vullen de andere
-// domeinen. Vrienden komt erbij zodra het op web een oppervlak heeft — de drie
-// voorwaarden staan in TDR-0001 beslissing 4.
+// @ai-todo: Voeding wordt de vierde kaart (barcode, foto, macro's) zodra
+// /demo?d=food bestaat. Een kaart zonder demo erachter geeft een 404, dus die
+// twee landen samen. Inbox stond hier ooit en is weg: het scherm bestaat niet.
 export const DOMAINS: readonly Domain[] = [
-  { id: 'health', label: 'Health', blurb: 'Workouts, food, recovery',        color: '#22c55e', icon: 'Dumbbell' },
-  { id: 'money',  label: 'Money',  blurb: 'Your bank, sorted',               color: '#3b82f6', icon: 'Wallet'   },
-  { id: 'life',   label: 'Life',   blurb: "What's coming, what happened",    color: '#a855f7', icon: 'Plane'    },
+  { id: 'workouts', appId: 'health', label: 'Workouts', blurb: 'Every set, on your body',       color: '#E4783E', icon: 'Dumbbell' },
+  { id: 'money',    appId: 'money',  label: 'Money',    blurb: 'Your bank, sorted',             color: '#3b82f6', icon: 'Wallet'   },
+  { id: 'life',     appId: 'life',   label: 'Life',     blurb: "What's coming, what happened",  color: '#a855f7', icon: 'Plane'    },
 ] as const

@@ -7,6 +7,7 @@ import {
 } from '@/lib/workout-demo'
 import { MuscleMap } from './MuscleMap'
 import { HypertrophyBars } from './HypertrophyBars'
+import { InlineSignup } from './InlineSignup'
 
 // @ai-why: Engelse labels. De site is Engelstalig; de iOS-app levert en + nl, maar
 // hier praat de coach in de taal van de pagina.
@@ -34,6 +35,7 @@ const CLOSING = 'Week done. <b>C to A</b>, and core is the only thing you skippe
 export function WorkoutsDemo() {
   const [state, setState] = useState<WeekState>(weekStart)
   const [bubbles, setBubbles] = useState<Bubble[]>([])
+  const [signingUp, setSigningUp] = useState(false)
   const timeouts = useRef<NodeJS.Timeout[]>([])
   const streamRef = useRef<HTMLDivElement>(null)
 
@@ -41,14 +43,21 @@ export function WorkoutsDemo() {
     timeouts.current.forEach(clearTimeout)
     timeouts.current = []
     let live = weekStart()
-    setState(live)
-    setBubbles([])
 
     let t = 0
     const at = (ms: number, fn: () => void) => {
       t += ms
       timeouts.current.push(setTimeout(fn, t))
     }
+
+    // @ai-why: De reset loopt door dezelfde timeout-keten en niet synchroon. Wordt
+    // `run` uit een effect aangeroepen, dan is een synchrone setState daar een
+    // cascading render (react-hooks/set-state-in-effect); via de keten gebeurt het
+    // in dezelfde tick als de rest van de demo en is het gedrag identiek.
+    at(0, () => {
+      setState(weekStart())
+      setBubbles([])
+    })
 
     // @ai-why: De bezoeker opent, niet de coach. Zonder die vraag rollen er kaarten
     // een leeg scherm in en is niet te zien dat je Carve iets vráágt; met de vraag
@@ -103,6 +112,18 @@ export function WorkoutsDemo() {
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">
       <div className="overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111112] shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px]">
+          {/* @ai-why: De aanmelding klapt de linkerkolom om en laat het paneel staan.
+              De demo eindigt met een lijf vol data die niet van jou is; navigeer je
+              daarvoor weg naar /signup, dan is dat verband weg. Zo staat je toekomstige
+              scherm er nog terwijl je je aanmeldt. */}
+          {signingUp ? (
+            <InlineSignup
+              domain="workouts"
+              accent="#E4783E"
+              promise="Log your first session and this silhouette is yours: warm where you trained, and ten bars that move with your week."
+              onCancel={() => setSigningUp(false)}
+            />
+          ) : (
           <div className="flex min-w-0 flex-col">
             <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-[18px] py-3.5">
               <span className="h-1.5 w-1.5 rounded-full bg-[#E4783E]" />
@@ -159,6 +180,7 @@ export function WorkoutsDemo() {
               </div>
             </div>
           </div>
+          )}
 
           <div className="flex min-w-0 flex-col border-t border-white/[0.06] bg-[#0c0c0d] lg:border-l lg:border-t-0">
             <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-[18px] py-3.5">
@@ -216,9 +238,17 @@ export function WorkoutsDemo() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 border-t border-white/[0.05] bg-[#0e0e0f] px-[18px] py-3.5">
+        <div className="flex flex-wrap items-center gap-3 border-t border-white/[0.05] bg-[#0e0e0f] px-[18px] py-3.5">
+          {!signingUp && (
+            <button
+              onClick={() => setSigningUp(true)}
+              className="rounded-full bg-[#E4783E] px-5 py-2 text-[12.5px] font-semibold text-[#0A0A0B] transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+            >
+              Make it yours
+            </button>
+          )}
           <button
-            onClick={run}
+            onClick={() => { setSigningUp(false); run() }}
             className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[12px] font-semibold text-white/75 transition-colors hover:bg-white/[0.08] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
           >
             ↻ Replay the week

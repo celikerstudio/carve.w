@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { ScanBarcode, Camera, MessageSquareText } from 'lucide-react'
 import { DAY, LEFT_FOR_DINNER, mealTotals, type LogMethod, type Meal } from '@/lib/food-demo'
 import { NutritionPanel } from './NutritionPanel'
+import { InlineSignup } from './InlineSignup'
 
 // @ai-why: Het icoon zegt hoe de maaltijd binnenkwam. Dat is het hele punt van deze
 // demo: drie ingangen, één dagboek. ADR-008 legt vast dat de camera zelf beslist of
@@ -28,20 +29,28 @@ const CLOSING =
 export function FoodDemo() {
   const [logged, setLogged] = useState(0)
   const [bubbles, setBubbles] = useState<Bubble[]>([])
+  const [signingUp, setSigningUp] = useState(false)
   const timeouts = useRef<NodeJS.Timeout[]>([])
   const streamRef = useRef<HTMLDivElement>(null)
 
   const run = useCallback(() => {
     timeouts.current.forEach(clearTimeout)
     timeouts.current = []
-    setLogged(0)
-    setBubbles([])
 
     let t = 0
     const at = (ms: number, fn: () => void) => {
       t += ms
       timeouts.current.push(setTimeout(fn, t))
     }
+
+    // @ai-why: De reset loopt door dezelfde timeout-keten en niet synchroon. Wordt
+    // `run` uit een effect aangeroepen, dan is een synchrone setState daar een
+    // cascading render (react-hooks/set-state-in-effect); via de keten gebeurt het
+    // in dezelfde tick als de rest van de demo en is het gedrag identiek.
+    at(0, () => {
+      setLogged(0)
+      setBubbles([])
+    })
 
     at(400, () => setBubbles([{ key: 'ask', kind: 'ask', text: 'What should I eat tonight?' }]))
     DAY.forEach((meal, i) => {
@@ -68,6 +77,16 @@ export function FoodDemo() {
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">
       <div className="overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111112] shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px]">
+          {/* @ai-why: Zie WorkoutsDemo — de aanmelding klapt de linkerkolom om en het
+              paneel blijft staan, want dat paneel is wat je koopt. */}
+          {signingUp ? (
+            <InlineSignup
+              domain="food"
+              accent="#22c55e"
+              promise="Scan one product and this day is yours: your targets, your macros, and a coach that knows what is left for dinner."
+              onCancel={() => setSigningUp(false)}
+            />
+          ) : (
           <div className="flex min-w-0 flex-col">
             <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-[18px] py-3.5">
               <span className="h-1.5 w-1.5 rounded-full bg-[#22c55e]" />
@@ -113,6 +132,7 @@ export function FoodDemo() {
               </div>
             </div>
           </div>
+          )}
 
           <div className="flex min-w-0 flex-col border-t border-white/[0.06] bg-[#0c0c0d] lg:border-l lg:border-t-0">
             <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-[18px] py-3.5">
@@ -122,9 +142,17 @@ export function FoodDemo() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 border-t border-white/[0.05] bg-[#0e0e0f] px-[18px] py-3.5">
+        <div className="flex flex-wrap items-center gap-3 border-t border-white/[0.05] bg-[#0e0e0f] px-[18px] py-3.5">
+          {!signingUp && (
+            <button
+              onClick={() => setSigningUp(true)}
+              className="rounded-full bg-[#22c55e] px-5 py-2 text-[12.5px] font-semibold text-[#0A0A0B] transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+            >
+              Make it yours
+            </button>
+          )}
           <button
-            onClick={run}
+            onClick={() => { setSigningUp(false); run() }}
             className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[12px] font-semibold text-white/75 transition-colors hover:bg-white/[0.08] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
           >
             ↻ Replay the day

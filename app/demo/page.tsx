@@ -73,7 +73,11 @@ export default async function DemoPage({
             ? <FoodDemo />
             : <LandingDemo domain={domain.id as ScriptedDomain} />}
 
-        <DemoSignupCta domain={domain.id} />
+        {/* @ai-why: Alleen nog voor money en life. Workouts en food dragen de
+            aanmelding in de voetbalk van het kader zelf; een tweede CTA eronder zou
+            de bezoeker de keuze geven tussen twee knoppen die hetzelfde doen, en
+            eentje daarvan navigeert weg van het paneel dat het argument is. */}
+        {domain.id !== 'workouts' && domain.id !== 'food' && <DemoSignupCta domain={domain.id} />}
       </main>
     </div>
   )

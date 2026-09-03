@@ -1,8 +1,6 @@
 'use client'
 
-import { MUSCLES, MUSCLE_BLOBS, heatOf, heatColor, type WeekState } from '@/lib/workout-demo'
-
-const FIG = '/muscle-front.png'
+import { MUSCLES, SIDES, heatOf, heatColor, type BodySide, type WeekState } from '@/lib/workout-demo'
 
 // @ai-why: Vier lagen, zoals de app de kaart opbouwt (ADR-010). De halo is
 // ongemaskerd en breed; de andere drie zijn met de figuur zelf gemaskerd zodat de
@@ -21,15 +19,17 @@ const LAYERS = [
 
 interface MuscleMapProps {
   state: WeekState
+  side?: BodySide
   /** Alleen deze spier op volle sterkte, de rest gedimd. */
   spotlight?: string | null
   className?: string
 }
 
-export function MuscleMap({ state, spotlight = null, className = '' }: MuscleMapProps) {
+export function MuscleMap({ state, side = 'front', spotlight = null, className = '' }: MuscleMapProps) {
+  const { src, blobs, aspect } = SIDES[side]
   const maskStyle = {
-    WebkitMaskImage: `url(${FIG})`,
-    maskImage: `url(${FIG})`,
+    WebkitMaskImage: `url(${src})`,
+    maskImage: `url(${src})`,
     WebkitMaskSize: '100% 100%',
     maskSize: '100% 100%',
     WebkitMaskRepeat: 'no-repeat',
@@ -40,12 +40,14 @@ export function MuscleMap({ state, spotlight = null, className = '' }: MuscleMap
     // @ai-why: `isolate` is niet optioneel. Zonder eigen stacking context mengen
     // de blend-lagen met de pagina achter de figuur in plaats van met de figuur.
     <div className={`relative isolate mx-auto w-full ${className}`}>
-      <div className="pt-[281.25%]" />
+      {/* @ai-why: De padding houdt de verhouding van het plaatje (voor 360×1100,
+          achter 400×1100). Klopt hij niet, dan schuift de gloed van de spier af. */}
+      <div style={{ paddingTop: aspect }} />
       {/* eslint-disable-next-line @next/next/no-img-element -- het masker hieronder
           moet exact hetzelfde bestand adresseren; next/image herschrijft de URL. */}
       <img
-        src={FIG}
-        alt="Voorkant van het spiersilhouet, met de getrainde spieren warm gekleurd"
+        src={src}
+        alt={`${side === 'front' ? 'Voorkant' : 'Achterkant'} van het spiersilhouet, met de getrainde spieren warm gekleurd`}
         className="absolute inset-0 h-full w-full object-contain saturate-[.15] brightness-[.92]"
       />
 
@@ -62,7 +64,7 @@ export function MuscleMap({ state, spotlight = null, className = '' }: MuscleMap
             if (spotlight && muscle.id !== spotlight) heat *= 0.28
             const [r, g, b] = heatColor(heat)
             const alpha = layer.lighten ? heat * 0.5 : 0.35 + 0.65 * heat
-            return MUSCLE_BLOBS[muscle.id].map((p, i) => (
+            return blobs[muscle.id].map((p, i) => (
               <div
                 key={`${muscle.id}-${i}`}
                 className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full transition-[background,opacity] duration-700 ease-out"

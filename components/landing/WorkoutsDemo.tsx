@@ -2,52 +2,33 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {
-  PUSH_DAY, PUSH_DAY_TOTALS, weekBefore, applyGain, weekScore,
-  type MuscleId, type WeekState,
+  WEEK, DAY_LABELS, weekStart, withSession, atDay, weekScore, sessionTotals,
+  type DemoSession, type MuscleId, type WeekState,
 } from '@/lib/workout-demo'
 import { MuscleMap } from './MuscleMap'
 import { HypertrophyBars } from './HypertrophyBars'
 
-// @ai-why: Engelse labels. De site is Engelstalig (zie de homepage en de brief);
-// de iOS-app levert en + nl, maar hier praat de coach in de taal van de pagina.
-const SHORT: Partial<Record<MuscleId, string>> = { chest: 'chest', shoulders: 'shoulders', triceps: 'triceps' }
-
-// @ai-why: Elke coachregel benoemt iets én verandert het paneel op hetzelfde
-// moment. Dat verband is de hele demo: zonder `applies` is dit een chatlog naast
-// een plaatje, en dan mist de bezoeker precies waarvoor hij hier is.
-interface CoachStep {
-  delay: number
-  applies: MuscleId[]
-  html: string
+// @ai-why: Engelse labels. De site is Engelstalig; de iOS-app levert en + nl, maar
+// hier praat de coach in de taal van de pagina.
+const SHORT: Partial<Record<MuscleId, string>> = {
+  chest: 'chest', shoulders: 'shoulders', triceps: 'triceps',
+  back: 'back', biceps: 'biceps', forearms: 'forearms',
+  legs: 'legs', glutes: 'glutes', calves: 'calves', core: 'core',
 }
 
-const COACH: CoachStep[] = [
-  {
-    delay: 1200,
-    applies: ['chest'],
-    html: '<b>Chest is full.</b> Bench, incline and dips put <span class="demo-up">+12 sets</span> on your chest. That is 14 out of 14 this week, so that bar is maxed.',
-  },
-  {
-    delay: 1400,
-    applies: ['triceps', 'shoulders'],
-    html: 'Triceps went <span class="demo-up">1 → 5</span> without you planning a day for it. It counts half on bench, overhead and dips, and the pushdown finished it. Shoulders <span class="demo-up">1 → 4</span>.',
-  },
-  {
-    delay: 1400,
-    applies: [],
-    html: 'Your week went from <b>C to B</b>. That is the sum of the ten bars beside it, nothing else.',
-  },
-  {
-    delay: 1300,
-    applies: [],
-    html: 'Furthest behind right now: <b>calves</b> and <b>forearms</b>, both at zero this week. Chest stays warm for three days, so Thursday works better as pull or legs than another push.',
-  },
-]
+type Bubble =
+  | { key: string; kind: 'session'; session: DemoSession }
+  | { key: string; kind: 'note'; text: string }
+  | { key: string; kind: 'rest'; label: string }
+  | { key: string; kind: 'close'; text: string }
 
-type Bubble = { id: number; kind: 'user' | 'card' | 'coach' | 'typing'; html?: string }
+// @ai-why: De coach zegt één regel per sessie en één aan het eind, en verder niets.
+// De vorige versie schreef vier alinea's onder één workout; dat las als een essay
+// naast een grafiek. Wat er te zien valt staat in het paneel, niet in de tekst.
+const CLOSING = 'Week done. <b>Calves</b> and <b>core</b> are what is left.'
 
 export function WorkoutsDemo() {
-  const [state, setState] = useState<WeekState>(weekBefore)
+  const [state, setState] = useState<WeekState>(weekStart)
   const [bubbles, setBubbles] = useState<Bubble[]>([])
   const timeouts = useRef<NodeJS.Timeout[]>([])
   const streamRef = useRef<HTMLDivElement>(null)
@@ -55,26 +36,43 @@ export function WorkoutsDemo() {
   const run = useCallback(() => {
     timeouts.current.forEach(clearTimeout)
     timeouts.current = []
-    setState(weekBefore())
+    let live = weekStart()
+    setState(live)
     setBubbles([])
 
     let t = 0
-    let n = 0
     const at = (ms: number, fn: () => void) => {
       t += ms
       timeouts.current.push(setTimeout(fn, t))
     }
 
-    at(500, () => setBubbles([{ id: ++n, kind: 'user' }]))
-    at(700, () => setBubbles((b) => [...b, { id: ++n, kind: 'card' }]))
+    WEEK.forEach((session, i) => {
+      // @ai-why: De rustdag krijgt een eigen regel in de stroom. Zonder dat springt
+      // de week van dinsdag naar donderdag en lijkt het silhouet zomaar af te koelen.
+      const prev = i === 0 ? -1 : WEEK[i - 1].day
+      for (let d = prev + 1; d < session.day; d++) {
+        const label = DAY_LABELS[d]
+        at(700, () => {
+          setState((s) => atDay(s, d))
+          setBubbles((b) => [...b, { key: `rest-${d}`, kind: 'rest', label }])
+        })
+      }
+      at(i === 0 ? 600 : 900, () => {
+        live = withSession(live, session)
+        setState(live)
+        setBubbles((b) => [...b, { key: `s-${session.day}`, kind: 'session', session }])
+      })
+      at(900, () => setBubbles((b) => [...b, { key: `n-${session.day}`, kind: 'note', text: session.note }]))
+    })
 
-    for (const step of COACH) {
-      at(500, () => setBubbles((b) => [...b, { id: ++n, kind: 'typing' }]))
-      at(step.delay, () => {
-        setBubbles((b) => [...b.filter((x) => x.kind !== 'typing'), { id: ++n, kind: 'coach', html: step.html }])
-        if (step.applies.length) setState((s) => applyGain(s, step.applies))
+    const last = WEEK[WEEK.length - 1].day
+    for (let d = last + 1; d <= 6; d++) {
+      at(650, () => {
+        setState((s) => atDay(s, d))
+        setBubbles((b) => [...b, { key: `rest-${d}`, kind: 'rest', label: DAY_LABELS[d] }])
       })
     }
+    at(800, () => setBubbles((b) => [...b, { key: 'close', kind: 'close', text: CLOSING }]))
   }, [])
 
   useEffect(() => {
@@ -90,49 +88,48 @@ export function WorkoutsDemo() {
   }, [bubbles])
 
   const { tier } = weekScore(state)
+  const sessionDays = new Set(WEEK.map((s) => s.day))
 
   return (
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">
       <div className="overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111112] shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px]">
-          {/* --- gesprek --- */}
           <div className="flex min-w-0 flex-col">
             <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-[18px] py-3.5">
               <span className="h-1.5 w-1.5 rounded-full bg-[#E4783E]" />
               <span className="text-[12.5px] font-semibold text-white/55">Carve</span>
-              <span className="ml-auto font-mono text-[10.5px] text-white/20">today 10:04</span>
+              <span className="ml-auto font-mono text-[10.5px] text-white/20">one week</span>
             </div>
 
-            <div ref={streamRef} className="flex h-[420px] flex-col gap-3 overflow-y-auto px-[18px] py-5 lg:h-[520px]">
+            {/* @ai-gotcha: Elk kind hieronder draagt `shrink-0`. De stroom heeft een
+                vaste hoogte, dus zonder dat krimpen de flex-items zodra de inhoud
+                niet meer past — en met `overflow-hidden` op de sessiekaart betekent
+                krimpen dat je van een workout van vier oefeningen alleen de eerste
+                regel ziet. Er kwam geen fout, de kaart was gewoon te kort. */}
+            <div ref={streamRef} className="flex h-[460px] flex-col gap-3 overflow-y-auto px-[18px] py-5 lg:h-[560px]">
               {bubbles.map((b) => {
-                if (b.kind === 'user') {
+                if (b.kind === 'rest') {
                   return (
-                    <div key={b.id} className="carve-msg-in flex justify-end">
-                      <span className="max-w-[82%] rounded-[14px] rounded-br-[4px] bg-white/[0.06] px-3.5 py-2.5 text-[13px] text-white/[0.78]">
-                        Push Day done
-                      </span>
+                    <div key={b.key} className="carve-msg-in flex shrink-0 items-center gap-3 py-0.5">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/20">{b.label}</span>
+                      <span className="h-px flex-1 bg-white/[0.05]" />
+                      <span className="font-mono text-[10px] text-white/[0.14]">rest</span>
                     </div>
                   )
                 }
-                if (b.kind === 'card') return <WorkoutCard key={b.id} />
-                if (b.kind === 'typing') {
+                if (b.kind === 'session') return <SessionCard key={b.key} session={b.session} />
+                if (b.kind === 'note') {
                   return (
-                    <div key={b.id} className="carve-msg-in flex gap-1 py-1">
-                      {[0, 1, 2].map((i) => (
-                        <span
-                          key={i}
-                          className="h-[5px] w-[5px] rounded-full bg-[#E4783E]/40"
-                          style={{ animation: `typingPulse 1.2s ease-in-out ${i * 0.2}s infinite` }}
-                        />
-                      ))}
-                    </div>
+                    <p key={b.key} className="carve-msg-in max-w-[54ch] shrink-0 text-[13.5px] leading-[1.6] text-white/55">
+                      {b.text}
+                    </p>
                   )
                 }
                 return (
                   <p
-                    key={b.id}
-                    className="carve-msg-in demo-coach max-w-[62ch] text-[13.5px] leading-[1.62] text-white/55"
-                    dangerouslySetInnerHTML={{ __html: b.html ?? '' }}
+                    key={b.key}
+                    className="carve-msg-in demo-coach max-w-[54ch] shrink-0 border-l-2 border-[#E4783E]/50 pl-3 text-[13.5px] leading-[1.6] text-white/55"
+                    dangerouslySetInnerHTML={{ __html: b.text }}
                   />
                 )
               })}
@@ -145,7 +142,6 @@ export function WorkoutsDemo() {
             </div>
           </div>
 
-          {/* --- lijf en balken --- */}
           <div className="flex min-w-0 flex-col border-t border-white/[0.06] bg-[#0c0c0d] lg:border-l lg:border-t-0">
             <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-[18px] py-3.5">
               <span className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-white/20">This week</span>
@@ -154,8 +150,49 @@ export function WorkoutsDemo() {
                 <b className="min-w-[15px] text-center text-[16px] font-extrabold text-white">{tier ?? '–'}</b>
               </span>
             </div>
-            <div className="grid flex-1 grid-cols-[minmax(0,1fr)_150px] items-center gap-2 px-4 pb-[18px] pt-3.5">
-              <MuscleMap state={state} className="max-w-[150px]" />
+
+            {/* @ai-why: De weekstrip is er zodat je kunt volgen waar in de week je
+                bent zonder de stroom te lezen. Zonder hem koelt het silhouet af en
+                weet je niet of dat komt door een rustdag of door een fout. */}
+            <div className="flex gap-1 border-b border-white/[0.05] px-4 py-2.5">
+              {DAY_LABELS.map((label, d) => {
+                const trained = sessionDays.has(d)
+                const now = state.today === d
+                return (
+                  <div key={label} className="flex flex-1 flex-col items-center gap-1.5">
+                    <span className={`font-mono text-[9px] uppercase tracking-[0.1em] ${now ? 'text-white/70' : 'text-white/20'}`}>
+                      {label}
+                    </span>
+                    <span
+                      className={`h-1 w-full rounded-full transition-colors duration-500 ${
+                        d > state.today
+                          ? 'bg-white/[0.05]'
+                          : trained
+                            ? 'bg-[#E4783E]'
+                            : 'bg-white/20'
+                      }`}
+                    />
+                  </div>
+                )
+              })}
+            </div>
+
+            {/* @ai-why: Voor en achter naast elkaar. Met alleen de voorkant blijven
+                rug, billen en kuiten kleurloos terwijl de balken ernaast wél bewegen,
+                en dan lijkt de kaart kapot op precies de dag dat je benen of rug deed.
+                De balken staan eronder in plaats van ernaast, want naast twee figuren
+                is er geen kolom meer over die breed genoeg is om te lezen. */}
+            <div className="flex flex-1 flex-col gap-3 px-4 pb-[18px] pt-3.5">
+              <div className="flex items-start justify-center gap-3">
+                {(['front', 'back'] as const).map((side) => (
+                  <div key={side} className="flex min-w-0 flex-1 flex-col items-center gap-1.5">
+                    <MuscleMap state={state} side={side} className="max-w-[132px]" />
+                    <span className="font-mono text-[9px] uppercase tracking-[0.16em] text-white/20">
+                      {side === 'front' ? 'Front' : 'Back'}
+                    </span>
+                  </div>
+                ))}
+              </div>
               <HypertrophyBars state={state} />
             </div>
           </div>
@@ -166,7 +203,7 @@ export function WorkoutsDemo() {
             onClick={run}
             className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[12px] font-semibold text-white/75 transition-colors hover:bg-white/[0.08] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
           >
-            ↻ Replay
+            ↻ Replay the week
           </button>
           <span className="ml-auto font-mono text-[10.5px] text-white/20">demo data · none of this is yours</span>
         </div>
@@ -175,30 +212,32 @@ export function WorkoutsDemo() {
   )
 }
 
-function WorkoutCard() {
+function SessionCard({ session }: { session: DemoSession }) {
+  const { sets } = sessionTotals(session)
   return (
-    <div className="carve-msg-in overflow-hidden rounded-[13px] border border-white/[0.08] bg-[#161617]">
+    <div className="carve-msg-in shrink-0 overflow-hidden rounded-[13px] border border-white/[0.08] bg-[#161617]">
       <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-3.5 py-3 text-[13.5px] font-semibold">
         <span className="flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full bg-[#E4783E] text-[10.5px] font-extrabold text-[#0A0A0B]">
           ✓
         </span>
-        Push Day
+        <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/30">{session.dayLabel}</span>
+        {session.name}
         <span className="ml-auto font-mono text-[11px] font-normal text-white/20">
-          {PUSH_DAY_TOTALS.sets} sets · {PUSH_DAY_TOTALS.duration}
+          {sets} sets · {session.duration}
         </span>
       </div>
       <div className="flex flex-col gap-1.5 px-3.5 py-3">
-        {PUSH_DAY.map((ex) => (
+        {session.exercises.map((ex) => (
           <div key={ex.name} className="flex items-baseline gap-2.5 text-[12.5px] text-white/55">
             <b className="font-semibold text-white">{ex.name}</b>
             {ex.sets} × {ex.reps}
-            {/* @ai-why: De spieren staan hier en niet alleen in de coachtekst.
-                "½ triceps" is de secundaire regel uit WorkoutMuscleResolver, en het
-                is de uitleg waarom triceps straks vol staat zonder eigen oefening. */}
+            {/* @ai-why: De spieren staan hier en niet in de coachtekst. "½ triceps" is
+                de secundaire regel uit WorkoutMuscleResolver, en het is de uitleg
+                waarom triceps volloopt zonder eigen oefening. */}
             <span className="ml-auto shrink-0 font-mono text-[10.5px] text-white/20">
               {ex.secondary ? `${SHORT[ex.primary]} · ½ ${SHORT[ex.secondary]}` : SHORT[ex.primary]}
             </span>
-            <span className="w-[92px] shrink-0 text-right font-mono text-[11px] text-white/25">{ex.load}</span>
+            <span className="w-[80px] shrink-0 text-right font-mono text-[11px] text-white/25">{ex.load}</span>
           </div>
         ))}
       </div>

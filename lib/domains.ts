@@ -8,10 +8,10 @@
 // constante lezen zonder component in het pad.
 // Zie docs/tdr/0001-homepage-is-een-keuzescherm.md beslissing 3.
 
-export type DomainId = 'workouts' | 'money' | 'life'
+export type DomainId = 'workouts' | 'food' | 'money' | 'life'
 
 /** Naam van een lucide-react icoon. Consumers mappen zelf naar het component. */
-export type DomainIconName = 'Dumbbell' | 'Wallet' | 'Plane'
+export type DomainIconName = 'Dumbbell' | 'Apple' | 'Wallet' | 'Plane'
 
 export interface Domain {
   id: DomainId
@@ -44,11 +44,16 @@ export interface Domain {
 // onderaan docs/tdr/0001-homepage-is-een-keuzescherm.md. `appId` houdt de brug
 // naar de chat intact.
 //
-// @ai-todo: Voeding wordt de vierde kaart (barcode, foto, macro's) zodra
-// /demo?d=food bestaat. Een kaart zonder demo erachter geeft een 404, dus die
-// twee landen samen. Inbox stond hier ooit en is weg: het scherm bestaat niet.
+// @ai-why: Workouts en Food delen `appId: 'health'`. In de app is voeding een
+// onderdeel van Health; op de site is het een eigen kaart omdat scannen, fotograferen
+// en macro's een eigen zwaartepunt zijn en de kaart moet zeggen wat de demo laat
+// zien. Zie de aanvulling onderaan docs/tdr/0001-homepage-is-een-keuzescherm.md.
+//
+// @ai-todo: Inbox stond hier ooit en is weg: dat scherm bestaat niet. Vrienden komt
+// erbij zodra het op web een oppervlak heeft.
 export const DOMAINS: readonly Domain[] = [
   { id: 'workouts', appId: 'health', label: 'Workouts', blurb: 'Every set, on your body',       color: '#E4783E', icon: 'Dumbbell' },
+  { id: 'food',     appId: 'health', label: 'Food',     blurb: 'Scan it, shoot it, say it',     color: '#22c55e', icon: 'Apple'    },
   { id: 'money',    appId: 'money',  label: 'Money',    blurb: 'Your bank, sorted',             color: '#3b82f6', icon: 'Wallet'   },
   { id: 'life',     appId: 'life',   label: 'Life',     blurb: "What's coming, what happened",  color: '#a855f7', icon: 'Plane'    },
 ] as const

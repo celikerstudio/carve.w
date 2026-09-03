@@ -133,9 +133,11 @@ Wat er verandert:
   (`domainTitle.health`). De kaart moet zeggen wát je ermee doet, en dat is
   trainen. `Domain.appId` houdt de brug naar de chat-`AppId` intact, zodat de
   hernoeming niet de AppSwitcher meesleept.
-- **Voeding wordt een vierde kaart**, terwijl de app het onder Health heeft
-  staan. Barcode, foto en macro's zijn een eigen zwaartepunt en verdienen een
-  eigen ingang; de tabbalk is niet langer de maat.
+- **Voeding is een vierde kaart geworden** (gebouwd 2026-09-04), terwijl de app
+  het onder Health heeft staan. Barcode, foto en macro's zijn een eigen
+  zwaartepunt en verdienen een eigen ingang; de tabbalk is niet langer de maat.
+  Workouts en Food delen daarom `appId: 'health'`, en de AppSwitcher ontdubbelt
+  daarop zodat er in de chat geen twee identieke rijen staan.
 - **De `@ai-sync` naar `L10n.DomainTitle.*` in `lib/domains.ts` vervalt** en is
   vervangen door een `@ai-context` die uitlegt dat het verschil bewust is. Zonder
   die vervanging leest de volgende lezer de afwijking als drift.

@@ -1,7 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { Dumbbell, Wallet, Plane } from 'lucide-react'
+import { Dumbbell, Apple, Wallet, Plane } from 'lucide-react'
 import { DOMAINS, type DomainIconName } from '@/lib/domains'
 import type { AppId } from './types'
 
@@ -12,6 +12,7 @@ import type { AppId } from './types'
 // @ai-sync: lib/domains.ts
 const ICONS: Record<DomainIconName, React.ElementType> = {
   Dumbbell,
+  Apple,
   Wallet,
   Plane,
 }
@@ -24,7 +25,10 @@ interface AppSwitcherProps {
 export function AppSwitcher({ activeApp, onAppChange }: AppSwitcherProps) {
   return (
     <div className="flex flex-col gap-0.5">
-      {DOMAINS.map((app) => {
+      {/* @ai-why: Ontdubbeld op appId. Workouts en Food zijn twee kaarten op de
+          site maar één app in de chat (beide 'health'), en twee identieke rijen in
+          de sidebar zou een bug lijken. */}
+      {DOMAINS.filter((d, i, all) => all.findIndex((x) => x.appId === d.appId) === i).map((app) => {
         const isActive = activeApp === (app.appId as AppId)
         const Icon = ICONS[app.icon]
         return (

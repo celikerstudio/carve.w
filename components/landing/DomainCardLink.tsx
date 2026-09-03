@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, Dumbbell, Wallet, Plane } from 'lucide-react'
+import { ArrowRight, Dumbbell, Apple, Wallet, Plane } from 'lucide-react'
 import { track } from '@/lib/analytics'
 import type { DomainIconName } from '@/lib/domains'
 
@@ -10,7 +10,7 @@ import type { DomainIconName } from '@/lib/domains'
 // server/client-grens; dat geeft een 500 zodra je hem als prop meegeeft. Daarom
 // draagt lib/domains.ts een icoon-náám en niet het component zelf.
 // @ai-sync: lib/domains.ts
-const ICONS: Record<DomainIconName, React.ElementType> = { Dumbbell, Wallet, Plane }
+const ICONS: Record<DomainIconName, React.ElementType> = { Dumbbell, Apple, Wallet, Plane }
 
 interface DomainCardLinkProps {
   id: string

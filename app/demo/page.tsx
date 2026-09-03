@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { LandingNav } from '@/components/landing/LandingNav'
 import { LandingDemo } from '@/components/landing/LandingDemo'
 import { WorkoutsDemo } from '@/components/landing/WorkoutsDemo'
+import { FoodDemo } from '@/components/landing/FoodDemo'
 import { DemoSignupCta } from '@/components/landing/DemoSignupCta'
 import { DOMAINS } from '@/lib/domains'
 import type { ScriptedDomain } from '@/components/landing/demo-steps'
@@ -57,7 +58,9 @@ export default async function DemoPage({
           <h1 className="text-[1.9rem] md:text-[2.4rem] font-extrabold tracking-[-0.03em] leading-[1.1] mt-2 text-balance">
             {domain.id === 'workouts'
               ? "Your workout is in. Here's what it did."
-              : 'This is what it looks like when it knows you.'}
+              : domain.id === 'food'
+                ? 'Scan it, shoot it, or just say it.'
+                : 'This is what it looks like when it knows you.'}
           </h1>
         </header>
 
@@ -66,7 +69,9 @@ export default async function DemoPage({
             passen niet in het paneel-per-stap-model van LandingDemo. */}
         {domain.id === 'workouts'
           ? <WorkoutsDemo />
-          : <LandingDemo domain={domain.id as ScriptedDomain} />}
+          : domain.id === 'food'
+            ? <FoodDemo />
+            : <LandingDemo domain={domain.id as ScriptedDomain} />}
 
         <DemoSignupCta domain={domain.id} />
       </main>

@@ -7,7 +7,7 @@ import {
 } from '@/lib/workout-demo'
 import { MuscleMap } from './MuscleMap'
 import { HypertrophyBars } from './HypertrophyBars'
-import { InlineSignup } from './InlineSignup'
+import { InlineAuth } from './InlineAuth'
 
 // @ai-why: Engelse labels. De site is Engelstalig; de iOS-app levert en + nl, maar
 // hier praat de coach in de taal van de pagina.
@@ -117,7 +117,7 @@ export function WorkoutsDemo() {
               daarvoor weg naar /signup, dan is dat verband weg. Zo staat je toekomstige
               scherm er nog terwijl je je aanmeldt. */}
           {signingUp ? (
-            <InlineSignup
+            <InlineAuth
               domain="workouts"
               accent="#E4783E"
               promise="Log your first session and this silhouette is yours: warm where you trained, and ten bars that move with your week."

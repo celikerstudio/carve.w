@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { ScanBarcode, Camera, MessageSquareText } from 'lucide-react'
 import { DAY, LEFT_FOR_DINNER, mealTotals, type LogMethod, type Meal } from '@/lib/food-demo'
 import { NutritionPanel } from './NutritionPanel'
-import { InlineSignup } from './InlineSignup'
+import { InlineAuth } from './InlineAuth'
 
 // @ai-why: Het icoon zegt hoe de maaltijd binnenkwam. Dat is het hele punt van deze
 // demo: drie ingangen, één dagboek. ADR-008 legt vast dat de camera zelf beslist of
@@ -80,7 +80,7 @@ export function FoodDemo() {
           {/* @ai-why: Zie WorkoutsDemo — de aanmelding klapt de linkerkolom om en het
               paneel blijft staan, want dat paneel is wat je koopt. */}
           {signingUp ? (
-            <InlineSignup
+            <InlineAuth
               domain="food"
               accent="#22c55e"
               promise="Scan one product and this day is yours: your targets, your macros, and a coach that knows what is left for dinner."

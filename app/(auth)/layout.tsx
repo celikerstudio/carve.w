@@ -5,9 +5,10 @@ export const metadata: Metadata = {
   description: 'Access your Carve account',
 }
 
-// @ai-gotcha: De wrapper is `bg-white` omdat /signup nog het oude tweekoloms
-// scherm is. /login rendert sinds 2026-09-04 het donkere kader uit de demo en zet
-// zijn eigen achtergrond; zodra /signup meeverhuist mag dit wit weg.
+// @ai-gotcha: De wrapper is nog `bg-white` omdat /forgot-password en
+// /reset-password nog de oude witte schermen zijn. /login en /signup dragen sinds
+// 2026-09-04 het donkere kader uit de demo en zetten hun eigen achtergrond eroverheen;
+// zodra die laatste twee meeverhuizen mag dit wit weg.
 export default function AuthLayout({
   children,
 }: {

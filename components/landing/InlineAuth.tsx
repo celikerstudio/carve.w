@@ -37,6 +37,7 @@ export function InlineAuth({
   const router = useRouter()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [confirm, setConfirm] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -46,7 +47,20 @@ export function InlineAuth({
     onModeChange(next)
     setError('')
     setPassword('')
+    setConfirm('')
   }
+
+  // @ai-why: Meeverhuisd van de oude /signup. Niet als oordeel maar als terugkoppeling:
+  // zonder iets naast het veld typt iemand zes tekens en weet hij niet dat dat de
+  // ondergrens is en niet een advies.
+  function strengthOf(pass: string): { level: number; label: string } {
+    if (pass.length === 0) return { level: 0, label: '' }
+    if (pass.length < 6) return { level: 1, label: 'Too short' }
+    if (pass.length >= 10 && /[A-Z]/.test(pass) && /[0-9]/.test(pass)) return { level: 3, label: 'Strong' }
+    if (pass.length < 10) return { level: 2, label: 'Fair' }
+    return { level: 2, label: 'Fair' }
+  }
+  const strength = strengthOf(password)
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -57,6 +71,14 @@ export function InlineAuth({
     // anders vertel je een aanvaller dat dit account een langer wachtwoord heeft.
     if (isSignup && password.length < 6) {
       setError('Password must be at least 6 characters')
+      return
+    }
+
+    // @ai-why: Meeverhuisd van de oude /signup. Zonder bevestigingsveld levert één
+    // typefout een account op waar je daarna niet meer in komt, en de gebruiker
+    // weet niet waarom — hij weet immers zeker wat hij getypt heeft.
+    if (isSignup && password !== confirm) {
+      setError('Passwords do not match')
       return
     }
 
@@ -161,7 +183,36 @@ export function InlineAuth({
               placeholder={isSignup ? 'At least 6 characters' : 'Your password'}
               className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-[14px] text-white placeholder:text-white/20 focus:border-white/25 focus:outline-none"
             />
+            {isSignup && strength.label && (
+              <span className="flex items-center gap-2 pt-0.5">
+                <span className="flex flex-1 gap-1">
+                  {[1, 2, 3].map((i) => (
+                    <span
+                      key={i}
+                      className="h-[2px] flex-1 rounded-full transition-colors duration-300"
+                      style={{ background: i <= strength.level ? accent : 'rgba(255,255,255,0.08)' }}
+                    />
+                  ))}
+                </span>
+                <span className="font-mono text-[10px] text-white/30">{strength.label}</span>
+              </span>
+            )}
           </label>
+
+          {isSignup && (
+            <label className="flex flex-col gap-1.5">
+              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/25">Confirm password</span>
+              <input
+                type="password"
+                required
+                autoComplete="new-password"
+                value={confirm}
+                onChange={(e) => setConfirm(e.target.value)}
+                placeholder="Type it again"
+                className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-[14px] text-white placeholder:text-white/20 focus:border-white/25 focus:outline-none"
+              />
+            </label>
+          )}
 
           {error && (
             <p role="alert" className="rounded-lg border border-[#E4783E]/25 bg-[#E4783E]/[0.08] px-3 py-2 text-[12.5px] text-[#F0A276]">

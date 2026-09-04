@@ -1,6 +1,13 @@
 import { Suspense } from 'react'
 import { AuthCard } from '@/components/landing/AuthCard'
 
+// @ai-why: Eigen metadata per pagina. De layout zette voor allebei "Sign In" in de
+// tab, dus wie zich aanmeldde zag "Sign In" boven zijn venster staan.
+export const metadata = {
+  title: 'Sign In — Carve',
+  description: 'Sign in to your Carve account.',
+}
+
 // @ai-context: Deze pagina was een eigen tweekoloms inlogscherm van ruim 300 regels
 // met een tweede kopie van dezelfde Supabase-aanroepen. Sinds de demo zijn eigen
 // kader heeft, rendert /login datzelfde kader: één inlogscherm in de app in plaats

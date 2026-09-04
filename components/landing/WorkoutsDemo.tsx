@@ -7,7 +7,7 @@ import {
 } from '@/lib/workout-demo'
 import { MuscleMap } from './MuscleMap'
 import { HypertrophyBars } from './HypertrophyBars'
-import { InlineAuth } from './InlineAuth'
+import { InlineAuth, type AuthMode } from './InlineAuth'
 
 // @ai-why: Engelse labels. De site is Engelstalig; de iOS-app levert en + nl, maar
 // hier praat de coach in de taal van de pagina.
@@ -35,7 +35,10 @@ const CLOSING = 'Week done. <b>C to A</b>, and core is the only thing you skippe
 export function WorkoutsDemo() {
   const [state, setState] = useState<WeekState>(weekStart)
   const [bubbles, setBubbles] = useState<Bubble[]>([])
-  const [signingUp, setSigningUp] = useState(false)
+  // @ai-why: null = de demo draait. 'signup' klapt de linkerkolom om en laat het
+  // paneel staan; 'login' verbergt het paneel ook, want daar is geen belofte meer
+  // te tonen — je hebt je scherm al.
+  const [auth, setAuth] = useState<AuthMode | null>(null)
   const timeouts = useRef<NodeJS.Timeout[]>([])
   const streamRef = useRef<HTMLDivElement>(null)
 
@@ -111,17 +114,22 @@ export function WorkoutsDemo() {
   return (
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">
       <div className="overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111112] shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px]">
+        {/* @ai-why: Zonder paneel is er geen tweede kolom, dus het raster moet mee.
+            Bleef het op twee kolommen staan, dan stond het formulier in de linkerhelft
+            met een lege kolom ernaast. */}
+        <div className={auth === 'login' ? 'grid grid-cols-1' : 'grid grid-cols-1 lg:grid-cols-[1fr_340px]'}>
           {/* @ai-why: De aanmelding klapt de linkerkolom om en laat het paneel staan.
               De demo eindigt met een lijf vol data die niet van jou is; navigeer je
               daarvoor weg naar /signup, dan is dat verband weg. Zo staat je toekomstige
               scherm er nog terwijl je je aanmeldt. */}
-          {signingUp ? (
+          {auth ? (
             <InlineAuth
+              mode={auth}
+              onModeChange={setAuth}
               domain="workouts"
               accent="#E4783E"
               promise="Log your first session and this silhouette is yours: warm where you trained, and ten bars that move with your week."
-              onCancel={() => setSigningUp(false)}
+              onCancel={() => setAuth(null)}
             />
           ) : (
           <div className="flex min-w-0 flex-col">
@@ -182,6 +190,11 @@ export function WorkoutsDemo() {
           </div>
           )}
 
+          {/* @ai-why: Bij inloggen valt het paneel weg. Aanmelden gaat over wat je
+              krijgt, dus daar hoort je toekomstige scherm naast te staan; inloggen
+              gaat over binnenkomen, en dan is datzelfde paneel met andermans data
+              alleen nog ruis. */}
+          {auth !== 'login' && (
           <div className="flex min-w-0 flex-col border-t border-white/[0.06] bg-[#0c0c0d] lg:border-l lg:border-t-0">
             <div className="flex items-center gap-2.5 border-b border-white/[0.05] px-[18px] py-3.5">
               <span className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-white/20">This week</span>
@@ -236,24 +249,29 @@ export function WorkoutsDemo() {
               <HypertrophyBars state={state} />
             </div>
           </div>
+          )}
         </div>
 
         <div className="flex flex-wrap items-center gap-3 border-t border-white/[0.05] bg-[#0e0e0f] px-[18px] py-3.5">
-          {!signingUp && (
+          {!auth && (
             <button
-              onClick={() => setSigningUp(true)}
+              onClick={() => setAuth('signup')}
               className="rounded-full bg-[#E4783E] px-5 py-2 text-[12.5px] font-semibold text-[#0A0A0B] transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
             >
               Make it yours
             </button>
           )}
           <button
-            onClick={() => { setSigningUp(false); run() }}
+            onClick={() => { setAuth(null); run() }}
             className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[12px] font-semibold text-white/75 transition-colors hover:bg-white/[0.08] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
           >
             ↻ Replay the week
           </button>
-          <span className="ml-auto font-mono text-[10.5px] text-white/20">demo data · none of this is yours</span>
+          {/* @ai-why: Alleen zichtbaar zolang de demo draait. Onder een inlogformulier
+              is "demo data" een bijschrift bij iets dat er niet meer staat. */}
+          {!auth && (
+            <span className="ml-auto font-mono text-[10.5px] text-white/20">demo data · none of this is yours</span>
+          )}
         </div>
       </div>
     </div>

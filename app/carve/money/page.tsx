@@ -6,8 +6,15 @@ import { MoneyCard } from '@/components/carve/MoneyCard';
 import { CarveFooter } from '@/components/carve/CarveFooter';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { MarketingHero } from '@/components/carve/MarketingHero';
+import { notFound } from 'next/navigation';
+import { SHOW_MONEY } from '@/lib/flags';
 
+// @ai-why: Marketingpagina voor een domein dat in de app achter een vlag staat. In
+// productie 404, in development gewoon zichtbaar zodat je hem kunt blijven bewerken.
+// @ai-sync: lib/flags.ts (SHOW_MONEY)
 export default function CarveMoneyPage() {
+  if (!SHOW_MONEY) notFound()
+
   return (
     <div className="min-h-screen w-full bg-[#0A0A0B] text-white">
       {/* Hero Section */}

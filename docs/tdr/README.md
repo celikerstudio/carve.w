@@ -6,8 +6,11 @@
 
 | # | Titel | Wat het vastlegt | Status |
 |---|---|---|---|
-| [0001](./0001-homepage-is-een-keuzescherm.md) | De homepage is een keuzescherm | `/` is geen marketingpagina maar drie kaarten die de app-domeinen spiegelen, gevoed uit `lib/domains.ts`. Uitleg verhuist naar `/how-it-works`. | Voorgesteld 2026-08-23, review verwerkt |
+| [0001](./0001-homepage-is-een-keuzescherm.md) | De homepage is een keuzescherm | `/` is geen marketingpagina maar drie kaarten die de app-domeinen spiegelen, gevoed uit `lib/domains.ts`. Uitleg verhuist naar `/how-it-works`. | Vervangen door TDR-0005 (2026-09-05) |
 | [0002](./0002-de-demo-achter-de-klik.md) | De demo achter de klik | De kaartklik opent `/demo?d=<id>`: de bestaande simulatie, één script per domein, zonder LLM en zonder account. | Geaccepteerd, gebouwd 2026-09-03 |
+| [0003](./0003-carve-is-de-app-pagina.md) | `/carve` is de pagina van de iOS-app | De bestaande `/carve` is de app-pagina; `/how-it-works` blijft van het web-platform. Wat achter een uitgezette vlag staat, staat niet op de pagina. | Voorgesteld 2026-09-05 |
+| [0004](./0004-de-site-verkoopt-nog-een-product.md) | De site verkoopt nog één product | `DOMAINS` houdt Workouts en Food over, allebei `appId: 'health'`. Money en Life zijn uit de aanbieding; hun routes en componenten blijven staan. Overruled de premisse van TDR-0001. | Voorgesteld 2026-09-05 |
+| [0005](./0005-carve-wiki-is-een-marketingpagina.md) | carve.wiki is een marketingpagina | `/` toont de app-pagina; het web-platform staat achter `SHOW_WEB_APP` en is in productie uit. Inloggen blijft, signup dicht. Vervangt TDR-0001. | Voorgesteld 2026-09-05 |
 
 ## Wanneer schrijf je een TDR?
 

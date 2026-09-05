@@ -6,8 +6,14 @@ import { TravelCard } from '@/components/carve/TravelCard';
 import { CarveFooter } from '@/components/carve/CarveFooter';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { MarketingHero } from '@/components/carve/MarketingHero';
+import { notFound } from 'next/navigation';
+import { SHOW_LIFE } from '@/lib/flags';
 
 export default function CarveTravelPage() {
+  // @ai-why: Marketingpagina voor een domein dat in de app achter een vlag staat.
+  // @ai-sync: lib/flags.ts (SHOW_LIFE)
+  if (!SHOW_LIFE) notFound()
+
   return (
     <div className="min-h-screen w-full bg-[#0A0A0B] text-white">
       {/* Hero Section */}

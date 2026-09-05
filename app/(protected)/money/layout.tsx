@@ -1,4 +1,14 @@
+import { notFound } from 'next/navigation'
+import { SHOW_MONEY } from '@/lib/flags'
+
 export default function MoneyLayout({ children }: { children: React.ReactNode }) {
+  // @ai-why: De poort staat in de layout en niet in elke page. Money heeft zes
+  // subroutes (analytics, budgeting, insights, settings, subscriptions, transactions);
+  // een gate per page is zes plekken om te vergeten. In development is de vlag aan, in
+  // productie uit, dus dit is wat een bezoeker ziet en niet wat jij ziet.
+  // @ai-sync: lib/flags.ts (SHOW_MONEY)
+  if (!SHOW_MONEY) notFound()
+
   return (
     <div className="h-full w-full overflow-y-auto relative">
       {/* Subtle green gradient glow for Money section */}

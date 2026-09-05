@@ -10,7 +10,7 @@ export type DemoStepType =
 /**
  * @ai-why: 'inbox' staat hier niet meer bij. De oude simulatie liet de coach
  * live "Scanning inbox..." doen en meldde "14 auto-handled", terwijl de inbox
- * in de app uitstaat (AppSwitcher.tsx, uitgecommentarieerd) en mail alleen op
+ * in de app uitstaat en mail alleen op
  * de achtergrond de andere domeinen vult. Dat was het meest zichtbare stuk van
  * de drift die TDR-0001 opruimt, dus het kan niet terugkomen in de demo waar
  * dezelfde TDR naartoe wijst.
@@ -80,7 +80,13 @@ const LIFE: DemoStep[] = [
  * een coach die het silhouet en de balken verandert.
  * @ai-sync: app/demo/page.tsx kiest tussen de twee.
  */
-export type ScriptedDomain = Extract<DomainId, 'money' | 'life'>
+// @ai-todo: Geparkeerd sinds 2026-09-05. `money` en `life` zijn uit `DOMAINS` gehaald
+// (TDR-0004), en dat waren de enige twee scripts. `DEMO_SCRIPTS` heeft sindsdien geen
+// lezer meer; `LandingDemo` is daarmee ook onbereikbaar. Bewust niet verwijderd: het is
+// het onderwerp van TDR-0002 en twee dagen oud. Losgekoppeld van `DomainId` zodat het
+// blijft compileren in plaats van stil te verouderen. Terugzetten = het domein terug in
+// DOMAINS zetten en dit type weer afleiden.
+export type ScriptedDomain = 'money' | 'life'
 
 export const DEMO_SCRIPTS: Record<ScriptedDomain, DemoStep[]> = {
   money: MONEY,

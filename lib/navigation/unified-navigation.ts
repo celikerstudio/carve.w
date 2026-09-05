@@ -1,5 +1,7 @@
+import { SHOW_MONEY } from '@/lib/flags'
+
 // Unified dashboard navigation — one sidebar for all domains
-export const unifiedNavigationGroups = [
+const allNavigationGroups = [
   {
     label: 'CARVE AI',
     icon: { name: 'SparklesIcon' },
@@ -109,3 +111,15 @@ export const unifiedNavigationGroups = [
     ]
   },
 ];
+
+// @ai-why: De MONEY-groep verdwijnt uit de navigatie zodra `SHOW_MONEY` uit staat, en dat
+// is in productie. Filteren bij de export en niet bij de consument: `unifiedNavigationGroups`
+// wordt door de sidebar-controller gelezen en een gate per lezer is een gate die de
+// volgende lezer vergeet.
+// @ai-gotcha: Die drie links wezen naar `/dashboard/money/*` en dat pad bestaat niet —
+// `app/(protected)/dashboard/` heeft geen money-submap. Ze waren dus al kapot vóór deze
+// vlag; het filter verbergt geen werkende route maar drie 404's.
+// @ai-sync: lib/flags.ts (SHOW_MONEY)
+export const unifiedNavigationGroups = SHOW_MONEY
+  ? allNavigationGroups
+  : allNavigationGroups.filter((group) => group.label !== 'MONEY')

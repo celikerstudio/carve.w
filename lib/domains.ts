@@ -1,28 +1,31 @@
 // @ai-why: Eén bron voor de domeinen van Carve, gelezen door zowel de publieke
-// homepage (server-gerenderd) als de AppSwitcher in de chat (client). Vóór
+// homepage (server-gerenderd). Vóór
 // TDR-0001 stond de lijst als niet-geëxporteerde `const apps` in
 // components/chat/AppSwitcher.tsx: een 'use client'-bestand met LucideIcon-
 // componenten als veldwaarde, en dus onleesbaar vanaf een server component.
 // Daarom is `icon` hier een naam en geen component: pure data, geen React.
+// Die AppSwitcher is op 2026-09-05 verwijderd (TDR-0004): met alleen nog
+// `appId: 'health'` hield hij één optie over, en dat is geen switcher. De tag
+// `archive/appswitcher` bewaart hem.
 // Model: ilvlup/lib/wizard/constants.ts, waar homepage en wizard uit dezelfde
 // constante lezen zonder component in het pad.
 // Zie docs/tdr/0001-homepage-is-een-keuzescherm.md beslissing 3.
 
-export type DomainId = 'workouts' | 'food' | 'money' | 'life'
+export type DomainId = 'workouts' | 'food'
 
 /** Naam van een lucide-react icoon. Consumers mappen zelf naar het component. */
-export type DomainIconName = 'Dumbbell' | 'Apple' | 'Wallet' | 'Plane'
+export type DomainIconName = 'Dumbbell' | 'Apple'
 
 export interface Domain {
   id: DomainId
   /**
-   * @ai-why: De id in de chat is niet altijd de id op de site. De AppSwitcher
-   * kent 'health'; de site noemt dat domein 'workouts' omdat de kaart moet zeggen
+   * @ai-why: De id in de chat is niet altijd de id op de site. De chat kent
+   * 'health'; de site noemt dat domein 'workouts' omdat de kaart moet zeggen
    * wat je ermee doet en niet hoe het intern heet. Zonder dit veld zou de
    * hernoeming de chat-AppId meeslepen.
    * @ai-sync: components/chat/types.ts (AppId)
    */
-  appId: 'health' | 'money' | 'life'
+  appId: 'health'
   label: string
   /**
    * @ai-why: De homepage-ondertitel woont hier bewust naast het label. Zet je
@@ -35,8 +38,7 @@ export interface Domain {
   icon: DomainIconName
 }
 
-// @ai-sync: components/chat/AppSwitcher.tsx en components/landing/DomainPicker.tsx
-// lezen deze lijst. Een domein toevoegen of hernoemen raakt beide oppervlakken.
+// @ai-sync: components/landing/DomainPicker.tsx leest deze lijst.
 //
 // @ai-context: De labels spiegelen bewust NIET meer de iOS-tabbalk. Die heet
 // 'Health' (L10n.DomainTitle.health); de site zegt 'Workouts' omdat de kaart
@@ -51,9 +53,19 @@ export interface Domain {
 //
 // @ai-todo: Inbox stond hier ooit en is weg: dat scherm bestaat niet. Vrienden komt
 // erbij zodra het op web een oppervlak heeft.
+//
+// @ai-why: Money en Life zijn hier op 2026-09-05 uit gehaald. Niet omdat ze stuk zijn,
+// maar omdat ze in de iOS-app achter een vlag staan (FeatureFlags.showMoneyTab,
+// showLegacyLifeTab) en de site daarmee twee domeinen aanbood die je na het downloaden
+// niet vindt. Health ís de app. De routes onder app/(protected)/money en /travel en hun
+// componenten staan er nog: dit is een keuze over wat de site aanbiedt, niet een
+// verwijdering van werkende schermen.
+// @ai-gotcha: Beide overgebleven kaarten delen `appId: 'health'`. De homepage is
+// daarmee geen keuze tussen producten meer maar twee ingangen naar hetzelfde; zie
+// TDR-0004. `DEMO_SCRIPTS` in components/landing/demo-steps.ts had alleen scripts voor
+// money en life en heeft sindsdien geen lezer.
+// @ai-sync: ~/Developer/Carve-AI/Carve AI/App/Config/FeatureFlags.swift
 export const DOMAINS: readonly Domain[] = [
-  { id: 'workouts', appId: 'health', label: 'Workouts', blurb: 'Every set, on your body',       color: '#E4783E', icon: 'Dumbbell' },
-  { id: 'food',     appId: 'health', label: 'Food',     blurb: 'Scan it, shoot it, say it',     color: '#22c55e', icon: 'Apple'    },
-  { id: 'money',    appId: 'money',  label: 'Money',    blurb: 'Your bank, sorted',             color: '#3b82f6', icon: 'Wallet'   },
-  { id: 'life',     appId: 'life',   label: 'Life',     blurb: "What's coming, what happened",  color: '#a855f7', icon: 'Plane'    },
+  { id: 'workouts', appId: 'health', label: 'Workouts', blurb: 'Every set, on your body',   color: '#E4783E', icon: 'Dumbbell' },
+  { id: 'food',     appId: 'health', label: 'Food',     blurb: 'Scan it, shoot it, say it', color: '#22c55e', icon: 'Apple'    },
 ] as const

@@ -1,5 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server'
 import { updateSession } from '@/lib/supabase/middleware'
+import { SHOW_WEB_APP } from '@/lib/flags'
 
 export async function middleware(request: NextRequest) {
   const { response, user } = await updateSession(request)
@@ -14,22 +15,34 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // @ai-why: Geen nieuwe web-accounts zolang het platform uit staat. Inloggen blijft
+  // wél werken: een bestaand account moet erin kunnen en /admin hangt eraan.
+  // @ai-sync: lib/flags.ts (SHOW_WEB_APP)
+  if (pathname === '/signup' && !SHOW_WEB_APP) {
+    return NextResponse.redirect(new URL('/carve', request.url))
+  }
+
   // Redirect authenticated users away from auth pages
   if (pathname === '/login' || pathname === '/signup') {
     if (user) {
-      return NextResponse.redirect(new URL('/chat', request.url))
+      // @ai-why: Met het platform uit is /chat een 404, dus stuur ingelogde bezoekers
+      // naar de marketingpagina in plaats van tegen een muur.
+      return NextResponse.redirect(new URL(SHOW_WEB_APP ? '/chat' : '/carve', request.url))
     }
   }
 
-  // Redirect authenticated users from /carve to chat
-  if (pathname === '/carve') {
+  // @ai-why: Deze redirect stuurde ingelogde bezoekers van de marketingpagina naar de
+  // chat. Sinds carve.wiki een marketingsite is, is dat precies verkeerd om: jij bent
+  // ingelogd en zou je eigen pagina nooit meer zien. Alleen nog van kracht als het
+  // platform aanstaat.
+  if (pathname === '/carve' && SHOW_WEB_APP) {
     if (user) {
       return NextResponse.redirect(new URL('/chat', request.url))
     }
   }
 
-  // Redirect authenticated users from landing page to chat
-  if (pathname === '/') {
+  // Zelfde reden als hierboven: met het platform uit blijft de homepage de homepage.
+  if (pathname === '/' && SHOW_WEB_APP) {
     if (user) {
       return NextResponse.redirect(new URL('/chat', request.url))
     }

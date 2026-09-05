@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { APP_STORE_URL } from '@/lib/utils';
+import { track } from '@/lib/analytics';
 
 const FREE_FEATURES = [
   'Workout & meal logging',
@@ -158,7 +159,8 @@ export function PricingHub() {
               ))}
             </div>
 
-            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="mt-6 px-5 py-3 bg-white text-black rounded-xl font-semibold text-sm text-center block hover:bg-white/90 transition-colors">
+            <a href={APP_STORE_URL}
+              onClick={() => track('app_store_click', { source: 'pricing' })} target="_blank" rel="noopener noreferrer" className="mt-6 px-5 py-3 bg-white text-black rounded-xl font-semibold text-sm text-center block hover:bg-white/90 transition-colors">
               Download on the App Store
             </a>
           </div>

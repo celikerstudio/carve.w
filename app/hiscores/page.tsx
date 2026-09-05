@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
+import { notFound } from 'next/navigation'
+import { SHOW_WEB_APP } from '@/lib/flags'
 
 interface LeaderboardUser {
   id: string;
@@ -45,6 +47,10 @@ function getAvatarPlaceholder(displayName: string): string {
 }
 
 export default function HiscoresPage() {
+  // @ai-why: Onderdeel van het web-platform, uit in productie sinds 2026-09-05.
+  // @ai-sync: lib/flags.ts (SHOW_WEB_APP)
+  if (!SHOW_WEB_APP) notFound()
+
   const [leaderboardType, setLeaderboardType] = useState<LeaderboardType>('xp');
   const [users, setUsers] = useState<LeaderboardUser[]>([]);
   const [loading, setLoading] = useState(true);

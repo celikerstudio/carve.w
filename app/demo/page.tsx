@@ -1,12 +1,10 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { LandingNav } from '@/components/landing/LandingNav'
-import { LandingDemo } from '@/components/landing/LandingDemo'
 import { WorkoutsDemo } from '@/components/landing/WorkoutsDemo'
 import { FoodDemo } from '@/components/landing/FoodDemo'
-import { DemoSignupCta } from '@/components/landing/DemoSignupCta'
 import { DOMAINS } from '@/lib/domains'
-import type { ScriptedDomain } from '@/components/landing/demo-steps'
+import { SHOW_WEB_APP } from '@/lib/flags'
 
 // @ai-context: Dit was tot TDR-0002 een fitness-dashboard met nepdata in lichte
 // kleuren, overgebleven uit de wiki-periode. Het is nu de bestemming van de
@@ -27,6 +25,10 @@ export default async function DemoPage({
 }: {
   searchParams: Promise<{ d?: string }>
 }) {
+  // @ai-why: Onderdeel van het web-platform, uit in productie sinds 2026-09-05.
+  // @ai-sync: lib/flags.ts (SHOW_WEB_APP)
+  if (!SHOW_WEB_APP) notFound()
+
   const { d } = await searchParams
   const domain = DOMAINS.find((entry) => entry.id === d)
   if (!domain) notFound()
@@ -67,17 +69,19 @@ export default async function DemoPage({
         {/* @ai-why: Workouts heeft een eigen component in plaats van een chatscript.
             De demo draait daar om het silhouet en de hypertrofiebalken, en die
             passen niet in het paneel-per-stap-model van LandingDemo. */}
-        {domain.id === 'workouts'
-          ? <WorkoutsDemo />
-          : domain.id === 'food'
-            ? <FoodDemo />
-            : <LandingDemo domain={domain.id as ScriptedDomain} />}
+        {/* @ai-why: Sinds TDR-0004 kent DOMAINS alleen nog workouts en food, en die
+            hebben allebei een eigen component. De LandingDemo-tak (money, life) is
+            daarmee onbereikbaar en is hier weg; het scriptsysteem zelf staat geparkeerd
+            in components/landing/demo-steps.ts. */}
+        {domain.id === 'workouts' ? <WorkoutsDemo /> : <FoodDemo />}
 
         {/* @ai-why: Alleen nog voor money en life. Workouts en food dragen de
             aanmelding in de voetbalk van het kader zelf; een tweede CTA eronder zou
             de bezoeker de keuze geven tussen twee knoppen die hetzelfde doen, en
             eentje daarvan navigeert weg van het paneel dat het argument is. */}
-        {domain.id !== 'workouts' && domain.id !== 'food' && <DemoSignupCta domain={domain.id} />}
+        {/* @ai-why: Workouts en food dragen de aanmelding in de voetbalk van het kader
+            zelf. Sinds TDR-0004 zijn dat de enige twee domeinen, dus deze tweede CTA
+            komt nooit meer voor; hij stond hier voor money en life. */}
       </main>
     </div>
   )

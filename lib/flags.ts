@@ -72,16 +72,6 @@ export const SHOW_WIKI =
   process.env.NEXT_PUBLIC_SHOW_WIKI === 'true' || process.env.NODE_ENV !== 'production'
 
 /**
- * De rewards-sectie op `/carve`: XP, rangen, streaks en "unlock Pro days".
- *
- * @ai-why: Spiegelt `FeatureFlags.showProDaysRewards` in de iOS-app, die uit staat.
- * Verdiende dagen komen in de server-side tier-resolver wél als getal terug maar zitten
- * niet in de ladder, dus ze geven geen Pro. Een beloning adverteren die niet wordt
- * uitgekeerd is erger dan hem verzwijgen.
- */
-export const SHOW_REWARDS = false
-
-/**
  * Het web-platform: de ingelogde app (`/chat`, `/dashboard`, `/workouts`, `/food`,
  * `/social`, `/profile`, `/settings`, `/health`, `/travel`), plus `/hiscores`, `/demo`
  * en `/lab`.

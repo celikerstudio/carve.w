@@ -38,7 +38,7 @@ Daarbovenop was er een meetgat: op geen van de drie App Store-knoppen zat een an
 ## Consequenties
 
 - Er zijn twee marketing-oppervlakken met een eigen belofte. Wijzigt de app van vorm, dan moeten `/carve` én de App Store-listing mee. Daarom de synchronisatie-sectie hieronder.
-- `SHOW_REWARDS` in `app/carve/page.tsx` is een tweede plek waar een iOS-vlag gespiegeld wordt. Gaat `showProDaysRewards` ooit aan, dan moet deze mee.
+- `SHOW_REWARDS` in `app/carve/page.tsx` is een tweede plek waar een iOS-vlag gespiegeld wordt. Gaat `showProDaysRewards` ooit aan, dan moet deze mee. *(Achterhaald sinds 2026-09-05: de pagina is herbouwd tot zes schermen zonder rewards-, hiscores- en pricing-sectie, en de vlag is met de sectie weggehaald. De oude sectie staat in de git-historie van `components/carve/CarveMarketingPage.tsx`.)*
 - De screenshots in `public/screenshots/` heten nog `dashboard`, `diary` en `profile` en dateren van vóór de huidige tabs. Ze moeten vervangen worden door de zes uit de App Store-set.
 
 ## Hoe overrulen
@@ -48,6 +48,5 @@ Een opvolger zou moeten laten zien dat het platform en de app hetzelfde product 
 ## Synchronisatie
 
 - `app/carve/page.tsx` ↔ `~/Developer/Carve-AI/docs/marketing/app-store-listing.md` — dezelfde belofte, dezelfde features, dezelfde screenshots
-- `app/carve/page.tsx` (`SHOW_REWARDS`) ↔ `~/Developer/Carve-AI/Carve AI/App/Config/FeatureFlags.swift` (`showProDaysRewards`, `showMoneyTab`, `showLegacyLifeTab`)
 - pricing-sectie ↔ `~/Developer/Carve-AI/supabase/migrations/20260903170000_restore_signup_trial_trigger.sql` — de trial-lengte staat daar, niet in de copy
 - `lib/analytics.ts` ↔ de drie App Store-knoppen — komt er een vierde ingang bij, dan vuurt die hetzelfde event

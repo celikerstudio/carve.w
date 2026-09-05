@@ -38,14 +38,16 @@ type EventName =
   // pricing) en zonder dit event is niet te zien of er iemand doorklikt — precies het
   // cijfer waar advertenties op beoordeeld worden. Eén event met een `source`-prop in
   // plaats van een event per knop, zodat het totaal klopt zonder optellen.
-  // @ai-sync: components/carve/CarveMarketingPage.tsx
+  // @ai-sync: components/carve/AppStoreButton.tsx
   // @ai-sync: components/carve/MarketingHero.tsx
   // @ai-sync: components/carve/PricingHub.tsx
   | 'app_store_click';
 
 type EventProps = {
   // Waitlist + app-pagina
-  source?: 'hero' | 'footer' | 'demo' | 'pricing' | 'marketing_hero' | 'showcase';
+  // 'close' en 'dock' zijn de slot-knop en de vaste knop op mobiel van de
+  // marketingpagina; 'hero' is de knop bovenaan.
+  source?: 'hero' | 'close' | 'dock' | 'footer' | 'demo' | 'pricing' | 'marketing_hero' | 'showcase';
   error_type?: string;
 
   // Wiki

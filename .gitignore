@@ -49,4 +49,7 @@ stitch*/
 
 # supabase temp
 supabase/.temp/
+
+# lokale agent-tooling, geen projectbestanden
 .superpowers/
+.nodeterm/

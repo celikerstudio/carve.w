@@ -1,248 +1,91 @@
-# Plausible Analytics Setup Guide
+# Analytics instellen (Google Analytics 4)
 
-## Overview
-Carve uses **Plausible Analytics** - a privacy-first, cookie-free analytics platform that is fully GDPR compliant.
+Sinds 2026-09-08 meet carve.wiki met Google Analytics 4. Daarvoor liep het op Plausible.
+De reden voor de overstap staat als `@ai-context` bovenaan `lib/analytics.ts`: GA4 kan
+aan Google Ads gekoppeld worden, zodat `app_store_click` daar als conversie binnenkomt
+en de biedstrategie er iets aan heeft. De prijs is een cookiebanner.
 
-**Why Plausible?**
-- ✅ No cookies (no annoying cookie banners needed)
-- ✅ GDPR compliant by default
-- ✅ Lightweight script (< 1KB)
-- ✅ No cross-site tracking
-- ✅ All data owned by you
-- ✅ Beautiful, simple dashboard
+## Wat er in de code zit
 
----
+| Onderdeel | Waar |
+|---|---|
+| De tag en Consent Mode | `app/layout.tsx` |
+| `track()` naar gtag | `lib/analytics.ts` |
+| Toestemming lezen, schrijven en melden | `lib/consent.ts` |
+| De banner | `components/analytics/cookie-consent.tsx` |
+| Keuze terugdraaien | `components/analytics/cookie-settings.tsx`, staat op `/privacy` |
 
-## Step 1: Create Plausible Account
+## Stap 1: property aanmaken
 
-1. Go to [https://plausible.io](https://plausible.io)
-2. Click "Start your free trial" (30 days free, no credit card required)
-3. Create account with your email
+1. Ga naar [analytics.google.com](https://analytics.google.com) en maak een property aan
+   voor carve.wiki.
+2. Kies als platform **Web** en vul `https://carve.wiki` in.
+3. Noteer het measurement ID. Dat begint met `G-`.
 
-**Pricing (after trial):**
-- Up to 10k pageviews/month: €9/month
-- Up to 100k pageviews/month: €19/month
-- See full pricing: https://plausible.io/pricing
+## Stap 2: het ID in de omgeving zetten
 
----
+Lokaal in `.env.local`:
 
-## Step 2: Add Your Domain
-
-1. After signup, click **"+ Add a website"**
-2. Enter your domain:
-   - Production: `carve.wiki`
-   - Staging: `staging.carve.wiki` (if you have one)
-3. Select your timezone (Europe/Amsterdam recommended)
-4. Click **"Add site"**
-
----
-
-## Step 3: Configure Environment Variable
-
-Add the following to your `.env.local` file:
-
-```bash
-# Plausible Analytics
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN=carve.wiki
+```
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 ```
 
-**Important:** Replace `carve.wiki` with your actual domain.
+En in Vercel onder Settings, Environment Variables, voor Production en Preview.
+Vergeet de herdeploy niet: `NEXT_PUBLIC_`-variabelen worden in de build ingebakken, dus
+een variabele toevoegen zonder opnieuw te deployen verandert niets aan de live site.
 
-For local development, you can use:
-```bash
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN=localhost
-```
+Zonder dit ID laadt de tag helemaal niet. `lib/analytics.ts` schrijft dan één
+waarschuwing per sessie naar de console in plaats van stil te vallen.
 
-But note that Plausible won't track localhost events by default (which is good for dev).
+## Stap 3: controleren dat het werkt
 
----
+1. Open carve.wiki in een privévenster.
+2. Accepteer de cookiebanner. Weiger je, dan hoort GA4 niets en dat is de bedoeling.
+3. Ga in GA4 naar Reports, Realtime. Je bezoek hoort er binnen een halve minuut te staan.
+4. Klik op een App Store-knop en kijk of `app_store_click` in Realtime verschijnt.
 
-## Step 4: Verify Installation
+Zie je niets, loop dan deze drie na, in deze volgorde:
 
-### Option A: Use Plausible's Built-in Check
-1. Go to your Plausible dashboard
-2. Click on your site
-3. Look for the green "We're receiving data" message
+- Staat er een `<script src="…googletagmanager.com/gtag/js?id=G-…">` in de HTML van de
+  pagina? Zo niet, dan is het measurement ID niet in de build meegekomen.
+- Blokkeert je adblocker de tag? Test in een venster zonder extensies.
+- Staat Consent Mode nog op `denied`? Kijk in de console naar `dataLayer` en zoek de
+  laatste `consent`-regel.
 
-### Option B: Manual Check
-1. Open your site in a browser
-2. Open DevTools → Network tab
-3. Look for a request to `plausible.io/api/event`
-4. If you see it, analytics is working!
+## Stap 4: koppelen aan Google Ads
 
-### Option C: Check in Dashboard
-1. Visit your site
-2. Wait 1-2 minutes
-3. Refresh your Plausible dashboard
-4. You should see your visit appear in real-time
+Dit is waar de overstap voor gedaan is.
 
----
+1. Markeer `app_store_click` in GA4 onder Admin, Events als **key event**.
+2. Koppel onder Admin, Product links je Google Ads-account.
+3. Importeer in Google Ads het key event als conversie.
+4. Zet in Google Ads het veld "Final URL-achtervoegsel" op iets als
+   `utm_source=google&utm_medium=cpc&utm_campaign={campaignid}`. Auto-tagging levert
+   alleen een `gclid`, en GA4 begrijpt die wel, maar met expliciete utm-parameters kun je
+   in de rapportage per campagne uitsplitsen zonder op de Ads-koppeling te leunen.
 
-## Step 5: Set Up Custom Events (Optional)
+## Wat er gemeten wordt
 
-Our app already tracks these custom events:
-- `waitlist_signup_initiated` - When user starts signup
-- `waitlist_signup_success` - When signup succeeds
-- `waitlist_signup_failed` - When signup fails
-- `waitlist_email_verified` - When user clicks verification link
+De volledige lijst staat als union type in `lib/analytics.ts`. Het event dat er voor
+advertenties toe doet is `app_store_click`, met een `source`-prop die vertelt welke knop
+het was: `hero`, `close`, `dock`, `header`, `pricing`, `marketing_hero` of `showcase`.
 
-To view these in Plausible:
-1. Go to your site settings
-2. Click **"Goals"** in the sidebar
-3. Click **"+ Add goal"**
-4. Select **"Custom event"**
-5. Add each event name above
+## Privacy
 
-Now you'll see these events in your dashboard!
+De cookiebanner is geen keuze maar een voorwaarde: GA4 zet `_ga`-cookies en die mogen in
+de EU pas na toestemming. Consent Mode staat standaard op `denied`, in
+`app/layout.tsx`, vóór de tag laadt. Wat er in de privacyverklaring over staat, staat in
+`app/privacy/page.tsx` onder kop 8 en moet meeveranderen als hier iets wijzigt.
 
----
+## Kosten
 
-## Tracked Events
+GA4 is gratis tot 10 miljoen events per maand. Daar loop je met een marketingpagina niet
+tegenaan.
 
-### Current (Release 1)
-```typescript
-track('waitlist_signup_initiated', { source: 'hero' | 'footer' | 'demo' })
-track('waitlist_signup_success', { source: 'hero' | 'footer' | 'demo' })
-track('waitlist_signup_failed', { source: 'hero' | 'footer' | 'demo', error_type: string })
-```
+## Bewaartermijn
 
-### Future (Release 2+)
-```typescript
-track('wiki_article_view', { article_slug: string, category: string })
-track('wiki_search', { search_query: string })
-track('dashboard_view')
-track('workout_logged', { workout_type: string })
-track('achievement_unlocked', { achievement_type: string })
-```
-
----
-
-## Development vs Production
-
-### Development (localhost)
-- Analytics is **stubbed** - events are logged to console instead
-- No data sent to Plausible (to avoid polluting production data)
-- Check browser console for: `📊 Analytics Event: [event_name]`
-
-### Production (carve.wiki)
-- Analytics is **live** - events sent to Plausible
-- Real-time dashboard updates
-- All events tracked with properties
-
----
-
-## Privacy Compliance
-
-✅ **GDPR Compliant:** No personal data collected, no cookies
-✅ **No Consent Banner Needed:** Plausible is exempt from cookie consent requirements
-✅ **User-Owned Data:** All analytics data is owned by you, not Plausible
-✅ **EU Hosting:** Data stored in EU (Frankfurt, Germany)
-✅ **No Cross-Site Tracking:** Each site is isolated
-
----
-
-## Troubleshooting
-
-### Events Not Showing Up?
-
-1. **Check environment variable:**
-   ```bash
-   echo $NEXT_PUBLIC_PLAUSIBLE_DOMAIN
-   ```
-   Should output your domain (e.g., `carve.wiki`)
-
-2. **Check browser console:**
-   - Any errors mentioning "plausible"?
-   - Ad blockers might block Plausible (expected behavior)
-
-3. **Check Network tab:**
-   - Do you see requests to `plausible.io/api/event`?
-   - If not, the script might not be loading
-
-4. **Verify script in HTML:**
-   - View page source
-   - Search for `plausible.io/js/script.js`
-   - Should be in `<head>` section
-
-### Ad Blockers Blocking Analytics?
-
-**This is normal and expected!** Privacy-conscious users use ad blockers that block analytics.
-
-- uBlock Origin blocks Plausible by default
-- Privacy Badger blocks it
-- Brave browser blocks it
-
-**Don't worry:** This is better than being blocked as invasive (like Google Analytics). Most users don't use ad blockers, so you'll still get good data.
-
-**Optional:** You can proxy Plausible through your domain to bypass blockers:
-https://plausible.io/docs/proxy/introduction
-
----
-
-## Dashboard Overview
-
-Your Plausible dashboard shows:
-- **Real-time visitors** - Currently active users
-- **Top pages** - Most visited pages
-- **Top sources** - Where traffic comes from
-- **Countries** - Geographic distribution
-- **Devices** - Desktop vs mobile vs tablet
-- **Browsers** - Chrome, Safari, Firefox, etc.
-- **Goals** - Custom events (waitlist signups, etc.)
-
----
-
-## Cost Estimation
-
-Based on expected traffic:
-
-| Phase | Monthly Pageviews | Plausible Cost |
-|-------|------------------|----------------|
-| Launch (waitlist only) | ~1,000 | €9/month |
-| Early access | ~10,000 | €9/month |
-| Public beta | ~50,000 | €19/month |
-| Full launch | ~100,000 | €19/month |
-
-**Note:** These are estimates. Plausible is very affordable compared to alternatives.
-
----
-
-## Alternative: Self-Hosted Plausible (Advanced)
-
-If you want to save costs long-term, you can self-host Plausible:
-
-- GitHub: https://github.com/plausible/analytics
-- Docs: https://plausible.io/docs/self-hosting
-
-**Pros:**
-- Free (except server costs)
-- Full control
-
-**Cons:**
-- Requires Docker setup
-- You manage backups/updates
-- Need a server (€5-10/month)
-
-For most projects, the hosted version is recommended for simplicity.
-
----
-
-## Next Steps
-
-1. ✅ Create Plausible account
-2. ✅ Add your domain
-3. ✅ Set `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` env var
-4. ✅ Deploy to production
-5. ✅ Verify analytics working
-6. ✅ Set up custom goals (optional)
-7. ✅ Check dashboard daily for insights!
-
----
-
-## Support
-
-- Plausible Docs: https://plausible.io/docs
-- Plausible Support: support@plausible.io
-- Our Analytics Code: `lib/analytics.ts`
-
-Happy tracking! 📊
+GA4 zet de bewaartermijn van gebruikers- en eventdata standaard op 2 maanden. Zet 'm
+onder Admin, Data settings, Data retention op 14 maanden, anders kun je dit jaar niet
+met vorig jaar vergelijken. Veertien maanden is het maximum voor een gratis property, en
+`app/privacy/page.tsx` noemt die termijn, dus verhoog je 'm niet dan klopt de
+verklaring nog steeds.

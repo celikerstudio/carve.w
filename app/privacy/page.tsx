@@ -1,4 +1,5 @@
 import { LegalPage } from '@/components/carve/LegalPage';
+import { CookieSettings } from '@/components/analytics/cookie-settings';
 
 export const metadata = {
   title: 'Privacy Policy - Carve',
@@ -51,7 +52,7 @@ export default function PrivacyPage() {
         <ul>
           <li><strong>Usage data:</strong> which screens and features you use, and errors that occur.</li>
           <li><strong>Device data:</strong> device model, iOS version, app version and language.</li>
-          <li><strong>Website analytics:</strong> aggregated, anonymous page statistics via Plausible Analytics. No cookies, no cross-site tracking.</li>
+          <li><strong>Website analytics and advertising:</strong> which pages you visit on carve.wiki and which ad or link brought you here, via Google Analytics. This runs only after you accept cookies. Decline and we measure nothing.</li>
         </ul>
       </section>
 
@@ -77,7 +78,7 @@ export default function PrivacyPage() {
           <li><strong>RevenueCat</strong> (subscriptions): an anonymous app user id and your purchase status. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
           <li><strong>Apple</strong> (App Store, Sign in with Apple, payments, push notifications, Apple Health). <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
           <li><strong>Vercel</strong> (website hosting) and <strong>Cloudflare</strong> (bot protection on the website). <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel</a> · <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare</a></li>
-          <li><strong>Plausible</strong> (website analytics): anonymous page views. <a href="https://plausible.io/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
+          <li><strong>Google</strong> (Analytics and Ads, website only): which pages you visit and which ad brought you here, once you have accepted cookies. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
         </ul>
         <p>
           We may also disclose data if the law requires it, or as part of a merger or sale of the business, in which case we will tell you first.
@@ -106,7 +107,7 @@ export default function PrivacyPage() {
           <li><strong>Account and log data:</strong> until you delete your account, plus up to 30 days in backups.</li>
           <li><strong>Food photos:</strong> as part of your log, until you delete the meal or your account.</li>
           <li><strong>AI requests:</strong> we do not keep a separate copy of what was sent; the provider&apos;s own retention applies (typically 30 days for abuse monitoring).</li>
-          <li><strong>Website analytics:</strong> aggregated, anonymous data for up to 2 years.</li>
+          <li><strong>Website analytics:</strong> kept by Google Analytics for up to 14 months, and only if you accepted cookies.</li>
         </ul>
       </section>
 
@@ -124,8 +125,17 @@ export default function PrivacyPage() {
       <section>
         <h2>8. Cookies</h2>
         <p>
-          The website uses only what is needed to sign in and stay secure. Analytics runs on Plausible, which sets no cookies. We do not use advertising cookies and do not share data with ad networks.
+          Signing in and keeping the site secure needs a few cookies. Those are always on, because the site does not work without them.
         </p>
+        <p>
+          Google Analytics and Google Ads set cookies to measure which pages you visit and which ad brought you here. Those stay off until you accept them, and you can change your mind here at any time.
+        </p>
+        {/* @ai-why: De knop hoort in de verklaring zelf en niet alleen in de banner.
+            De banner verdwijnt na één keuze en komt nooit meer terug, dus dit is de
+            enige plek waar toestemming nog in te trekken is. De AVG eist dat dat net
+            zo makkelijk gaat als het geven ervan.
+            @ai-sync: components/analytics/cookie-settings.tsx */}
+        <CookieSettings />
       </section>
 
       <section>

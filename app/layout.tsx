@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { LayoutWrapper } from '@/components/app/layout-wrapper';
-import { AdAttribution } from '@/components/analytics/ad-attribution';
+import { CookieConsent } from '@/components/analytics/cookie-consent';
 import { createClient } from "@/lib/supabase/server";
 import { Toaster } from "sonner";
 
@@ -87,14 +87,39 @@ export default async function RootLayout({
           {children}
         </LayoutWrapper>
         <Toaster theme="dark" position="bottom-right" richColors />
-        <AdAttribution />
-        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
-          <Script
-            defer
-            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
-            src="https://plausible.io/js/script.js"
-            strategy="afterInteractive"
-          />
+        <CookieConsent />
+        {/* @ai-why: Consent Mode moet vóór gtag.js draaien, niet erna. Laadt de tag
+            eerst en zetten we daarna pas `denied`, dan zijn de cookies er al en is de
+            toestemming juridisch zinloos. Vandaar `beforeInteractive`, wat alleen in
+            deze root layout werkt.
+            @ai-gotcha: `wait_for_update` geeft de banner 500ms om een opgeslagen keuze
+            terug te melden. Haal je dat weg, dan vertrekt de eerste pageview van een
+            terugkerende bezoeker nog onder `denied` en mist die in je rapportage.
+            @ai-sync: lib/consent.ts
+            @ai-sync: components/analytics/cookie-consent.tsx */}
+        <Script id="ga-consent-default" strategy="beforeInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+gtag('js', new Date());`}
+        </Script>
+        {/* @ai-why: De tag laadt alleen met een measurement ID. Anders dan bij de
+            Plausible-terugval die hier tot 2026-09-08 stond is er bewust géén
+            hardgecodeerde waarde: een verkeerd ID vult stilletjes de verkeerde property,
+            en dat is erger dan niet meten. Ontbreekt het ID, dan waarschuwt
+            lib/analytics.ts bij het eerste event.
+            @ai-sync: lib/analytics.ts */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-config" strategy="afterInteractive">
+              {`gtag('config','${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');`}
+            </Script>
+          </>
         )}
       </body>
     </html>

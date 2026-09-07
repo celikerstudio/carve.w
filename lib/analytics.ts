@@ -1,12 +1,21 @@
 /**
- * Analytics tracking using Plausible
- * Privacy-first analytics with no cookies or personal data collection
+ * Analytics via Google Analytics 4.
  *
- * Setup instructions:
- * 1. Create account at https://plausible.io
- * 2. Add domain (carve.wiki or your production domain)
- * 3. Add NEXT_PUBLIC_PLAUSIBLE_DOMAIN to .env.local
- * 4. Script is auto-loaded via layout.tsx
+ * Setup:
+ * 1. Maak een GA4-property aan voor carve.wiki in https://analytics.google.com
+ * 2. Zet het measurement ID (`G-…`) als NEXT_PUBLIC_GA_MEASUREMENT_ID in de omgeving
+ * 3. De tag wordt geladen in app/layout.tsx, achter Consent Mode v2
+ *
+ * @ai-context: Tot 2026-09-08 liep dit op Plausible. De overstap is gemaakt omdat GA4
+ * aan Google Ads gekoppeld kan worden: `app_store_click` wordt daar als conversie
+ * geïmporteerd en Google kan er zijn biedingen op sturen. Plausible kon dat niet. De
+ * prijs is een cookiebanner, want GA4 zet `_ga`-cookies. Afgewogen alternatieven waren
+ * Plausible houden met handmatige offline conversie-import via de gclid, en GA4 naast
+ * Vercel Analytics als cookieloze basislijn. Het eerste is te veel handwerk per
+ * campagne, het tweede is een tweede systeem onderhouden voordat er verkeer is.
+ *
+ * @ai-sync: app/layout.tsx
+ * @ai-sync: lib/consent.ts
  */
 
 type EventName =
@@ -38,6 +47,9 @@ type EventName =
   // pricing) en zonder dit event is niet te zien of er iemand doorklikt — precies het
   // cijfer waar advertenties op beoordeeld worden. Eén event met een `source`-prop in
   // plaats van een event per knop, zodat het totaal klopt zonder optellen.
+  //
+  // @ai-context: Dit is het event dat je in Google Ads als conversie importeert. Markeer
+  // het daar als key event, anders heeft de biedstrategie niets om op te sturen.
   // @ai-sync: components/carve/AppStoreButton.tsx
   // @ai-sync: components/carve/MarketingHero.tsx
   // @ai-sync: components/carve/PricingHub.tsx
@@ -61,100 +73,26 @@ type EventProps = {
 
   // Homepage-trechter
   domain?: string;
-
-  // @ai-why: Advertentie-toewijzing. Plausible hangt utm-parameters al aan de sessie,
-  // maar een doel dat zijn bron zélf draagt blijft kloppen als je later per campagne
-  // wilt uitsplitsen zonder op het sessiefilter in het dashboard te leunen.
-  // @ai-sync: components/analytics/ad-attribution.tsx
-  utm_source?: string;
-  utm_campaign?: string;
-  paid_click?: 'yes';
 };
 
-// @ai-why: Google Ads' auto-tagging plakt alleen `gclid` achter je URL en géén
-// utm-parameters. Plausible leest zo'n bezoek dan als verwijzing van google.com,
-// precies zoals een organische treffer, en dan is betaald verkeer niet van gratis
-// verkeer te onderscheiden. Daarom zetten we de utm-parameters met de hand op de
-// advertentie (het veld "Final URL-achtervoegsel" in Google Ads Editor) en leggen we
-// ze hier vast zodra iemand binnenkomt.
-//
-// @ai-why: `gclid` gaat wél de sessieopslag in maar níet naar Plausible. Elke klik
-// heeft zijn eigen gclid, dus als property blaast hij de cardinaliteit op, en het is
-// een identificator van één bezoeker. Naar Plausible gaat alleen `paid_click: 'yes'`
-// plus de campagnenaam. De gclid blijft lokaal staan voor het geval we later
-// conversies handmatig in Google Ads willen importeren.
-//
-// @ai-gotcha: sessionStorage en niet localStorage. De toewijzing hoort bij dít bezoek.
-// Blijft hij een maand staan, dan krijgt iemand die over drie weken organisch
-// terugkomt alsnog het label "uit de advertentie" en telt dezelfde klik twee keer.
-const AD_ATTRIBUTION_KEY = 'carve_ad_attribution';
-
-type AdAttribution = {
-  utm_source?: string;
-  utm_medium?: string;
-  utm_campaign?: string;
-  gclid?: string;
-};
+let warnedAboutMissingGtag = false;
 
 /**
- * Legt de advertentieherkomst van dit bezoek vast. Veilig om vaker aan te roepen:
- * een pagina zónder parameters laat staan wat de landingspagina al opsloeg.
- */
-export function recordAdAttribution(): void {
-  if (typeof window === 'undefined') return;
-
-  try {
-    const params = new URLSearchParams(window.location.search);
-    const next: AdAttribution = {};
-
-    for (const key of ['utm_source', 'utm_medium', 'utm_campaign'] as const) {
-      const value = params.get(key);
-      if (value) next[key] = value.slice(0, 80);
-    }
-
-    const gclid = params.get('gclid');
-    if (gclid) next.gclid = gclid.slice(0, 200);
-
-    // Geen parameters in de URL betekent "geen nieuws", niet "geen advertentie".
-    if (Object.keys(next).length === 0) return;
-
-    window.sessionStorage.setItem(AD_ATTRIBUTION_KEY, JSON.stringify(next));
-  } catch {
-    // Privémodus of geblokkeerde opslag. Dan meten we zonder toewijzing verder.
-  }
-}
-
-function adAttributionProps(): EventProps {
-  if (typeof window === 'undefined') return {};
-
-  try {
-    const raw = window.sessionStorage.getItem(AD_ATTRIBUTION_KEY);
-    if (!raw) return {};
-
-    const stored = JSON.parse(raw) as AdAttribution;
-    const props: EventProps = {};
-    if (stored.utm_source) props.utm_source = stored.utm_source;
-    if (stored.utm_campaign) props.utm_campaign = stored.utm_campaign;
-    if (stored.gclid) props.paid_click = 'yes';
-    return props;
-  } catch {
-    return {};
-  }
-}
-
-let warnedAboutMissingPlausible = false;
-
-/**
- * Track a custom event in Plausible
- * Falls back to console.log in development or when Plausible is not configured
+ * Meet een gebeurtenis in GA4.
+ *
+ * @ai-why: Er zit geen advertentie-toewijzing meer in deze functie. Tot 2026-09-08
+ * las `recordAdAttribution()` de gclid en utm-parameters uit de URL en plakte die als
+ * props aan elk event. Dat bestond puur omdat Plausible een bezoek met alleen een
+ * `gclid` niet van organisch google.com-verkeer kon onderscheiden. GA4 leest gclid en
+ * utm zelf en koppelt de sessie aan de campagne, dus dat handwerk is weg. Zet je ooit
+ * een meetsysteem terug dat gclid niet begrijpt, dan komt dit probleem terug.
  */
 export function track(eventName: EventName, props?: EventProps): void {
-  // Een expliciete prop van de aanroeper wint van de opgeslagen toewijzing.
-  const enriched: EventProps = { ...adAttributionProps(), ...props };
+  if (typeof window === 'undefined') return;
 
-  if (typeof window !== 'undefined' && window.plausible) {
+  if (window.gtag) {
     try {
-      window.plausible(eventName, { props: enriched });
+      window.gtag('event', eventName, { ...props });
     } catch (error) {
       console.error('Analytics error:', error);
     }
@@ -162,40 +100,33 @@ export function track(eventName: EventName, props?: EventProps): void {
   }
 
   if (process.env.NODE_ENV === 'development') {
-    console.log('📊 Analytics Event:', eventName, enriched);
+    console.log('📊 Analytics Event:', eventName, { ...props });
     return;
   }
 
-  // @ai-why: Dit blok bestaat omdat de stille variant ons maanden heeft gekost.
-  // `app/layout.tsx` laadt de Plausible-tag alleen als NEXT_PUBLIC_PLAUSIBLE_DOMAIN
-  // gezet is, en die stond op 05-09-2026 nergens: niet in .env.local en niet in de
-  // productie-HTML van carve.wiki. Élke track()-aanroep viel daardoor in productie
-  // stil op de grond terwijl de code eruitzag alsof er gemeten werd, en "niemand
-  // klikt" is dan niet te onderscheiden van "niemand meet". Eén waarschuwing per
-  // sessie maakt dat verschil zichtbaar zonder de console vol te schrijven.
+  // @ai-why: Dit blok bestaat omdat de stille variant ons maanden heeft gekost. De
+  // meettag laadde in productie niet en élke track()-aanroep viel op de grond terwijl
+  // de code eruitzag alsof er gemeten werd. "Niemand klikt" was toen niet te
+  // onderscheiden van "niemand meet". Eén waarschuwing per sessie maakt dat verschil
+  // zichtbaar zonder de console vol te schrijven.
   // @ai-sync: app/layout.tsx
-  if (!warnedAboutMissingPlausible) {
-    warnedAboutMissingPlausible = true;
+  if (!warnedAboutMissingGtag) {
+    warnedAboutMissingGtag = true;
     console.warn(
-      '[analytics] Plausible is niet geladen; dit event wordt weggegooid. ' +
-        'Zet NEXT_PUBLIC_PLAUSIBLE_DOMAIN in de omgeving van deze deploy.',
+      '[analytics] gtag is niet geladen; dit event wordt weggegooid. ' +
+        'Zet NEXT_PUBLIC_GA_MEASUREMENT_ID in de omgeving van deze deploy.',
     );
   }
 }
 
-/**
- * Track page views automatically (Plausible does this by default)
- * This is a no-op unless you need custom page view tracking
- */
-export function trackPageView(url?: string): void {
-  if (typeof window !== 'undefined' && window.plausible) {
-    window.plausible('pageview', { props: { url: url || window.location.pathname } });
-  }
-}
-
-// TypeScript declaration for Plausible global
 declare global {
   interface Window {
-    plausible?: (eventName: string, options?: { props?: Record<string, any> }) => void;
+    // @ai-why: Losse signatuur in plaats van een union per commando. gtag krijgt
+    // 'js', 'config', 'event' en 'consent' met elk een andere vorm, en een precieze
+    // overload-lijst levert hier alleen ruis op: de aanroepen staan op drie plekken
+    // en zijn allemaal door een test gedekt.
+    // @ai-sync: lib/consent.ts
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
   }
 }

@@ -45,9 +45,9 @@ type EventName =
 
 type EventProps = {
   // Waitlist + app-pagina
-  // 'close' en 'dock' zijn de slot-knop en de vaste knop op mobiel van de
-  // marketingpagina; 'hero' is de knop bovenaan.
-  source?: 'hero' | 'close' | 'dock' | 'footer' | 'demo' | 'pricing' | 'marketing_hero' | 'showcase';
+  // Marketingpagina: 'hero' is de knop bovenaan, 'close' de slot-knop, 'dock' de
+  // vaste knop op mobiel en 'header' de balk die op desktop inschuift.
+  source?: 'hero' | 'close' | 'dock' | 'header' | 'footer' | 'demo' | 'pricing' | 'marketing_hero' | 'showcase';
   error_type?: string;
 
   // Wiki

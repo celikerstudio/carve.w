@@ -6,7 +6,7 @@ import { AppleGlyph } from '@/components/carve/AppleGlyph';
 
 interface AppStoreButtonProps {
   /** Waar op de pagina de knop staat; wordt als `source` meegestuurd. */
-  source: 'hero' | 'close' | 'dock';
+  source: 'hero' | 'close' | 'dock' | 'header';
   id?: string;
   className?: string;
 }
@@ -14,9 +14,10 @@ interface AppStoreButtonProps {
 /**
  * De App Store-knop van de marketingpagina.
  *
- * @ai-why: Eén component voor alle drie de ingangen (hero, slot, sticky knop op
- * mobiel) zodat ze hetzelfde event vuren en dezelfde vorm houden. De pagina zelf
- * is daardoor een server component; alleen dit knopje heeft `onClick` nodig.
+ * @ai-why: Eén component voor alle ingangen (hero, slot, sticky knop op mobiel,
+ * balk bovenin op desktop) zodat ze hetzelfde event vuren en dezelfde vorm
+ * houden. De pagina zelf is daardoor een server component; alleen dit knopje
+ * heeft `onClick` nodig.
  * @ai-sync: lib/analytics.ts (het `source`-type van `app_store_click`)
  */
 export function AppStoreButton({ source, id, className }: AppStoreButtonProps) {

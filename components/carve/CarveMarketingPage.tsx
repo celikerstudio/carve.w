@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import { Camera, ScanBarcode, Dumbbell, PersonStanding, CalendarDays, MessageSquareText } from 'lucide-react';
 import { CarveFooter } from '@/components/carve/CarveFooter';
 import { AppStoreButton } from '@/components/carve/AppStoreButton';
 import { AppStoreDock } from '@/components/carve/AppStoreDock';
-import { MuscleFigure } from '@/components/carve/MuscleFigure';
+import { PhoneStory } from '@/components/carve/PhoneStory';
+import { MarketingHeader } from '@/components/carve/MarketingHeader';
 
 const HERO_CTA_ID = 'hero-cta';
 const CLOSE_CTA_ID = 'close-cta';
@@ -10,13 +12,18 @@ const CLOSE_CTA_ID = 'close-cta';
 /**
  * De marketingpagina voor de iOS-app, op `/` en `/carve`.
  *
- * @ai-why: Zes schermen, één punt per scherm, in deze volgorde: wat het doet
- * (figuur), hoe je logt (foto), waarom je het kunt geloven (130 → 80), wat er
- * anders is (spierkaart), de coach, de knop. De bezoeker komt via een bio-link
- * op zijn telefoon en vergelijkt in zijn hoofd met MyFitnessPal; hij wil in drie
- * seconden zien wat het doet, of het werkt en hoe het eruitziet. Alles wat dat
- * niet dient staat er niet: geen rangen, geen season, geen pricing, geen
- * nagebouwde kaarten. Het bewijs is de 50 kilo, niet een sterrengemiddelde.
+ * @ai-why: Vijf blokken, één punt per blok, in deze volgorde: wat het doet
+ * (figuur met weekschema), de app zelf (het figuur blijkt in een iPhone te
+ * staan, die vast blijft en vier schermen laat zien met een kop en alinea
+ * ernaast), waarom je het kunt geloven (130 → 80, met foto), het overzicht van
+ * wat erin zit, de knop. Tot 2026-09-06 stonden de foto-sectie en drie losse
+ * store-schermen hier als aparte secties; die zitten nu in de telefoon, zodat de
+ * bezoeker één keer scrolt en de app ziet in plaats van plaatjes van de app.
+ * De bezoeker komt via een bio-link op zijn telefoon en vergelijkt in zijn hoofd
+ * met MyFitnessPal; hij wil in drie seconden zien wat het doet, of het werkt en
+ * hoe het eruitziet. Alles wat dat niet dient staat er niet: geen rangen, geen
+ * season, geen pricing, geen nagebouwde kaarten. Het bewijs is de 50 kilo, niet
+ * een sterrengemiddelde.
  *
  * @ai-why: Tot 2026-09-05 stond hier een pagina van duizend regels met een
  * scoreboard-hero, AI-scan-demo, training, hiscores, rewards en pricing. Die
@@ -24,16 +31,17 @@ const CLOSE_CTA_ID = 'close-cta';
  * De componenten die daarbij hoorden (`ScoreboardCard`, `MarketingHero`,
  * `PhoneShowcase`) staan er nog maar hebben hier geen lezer meer.
  *
- * @ai-why: Server component. Alleen de knop (tracking), de sticky knop en het
- * figuur hebben browser-API's nodig; die zijn losse client components.
+ * @ai-why: Server component. Alleen de knop (tracking), de sticky knop, de balk
+ * bovenin en het telefoonverhaal hebben browser-API's nodig; die zijn losse client components.
  *
  * @ai-sync: ~/Developer/Carve-AI/docs/marketing/app-store-listing.md (dezelfde belofte, dezelfde screenshots)
  * @ai-sync: app/opengraph-image.tsx (dezelfde belofte, als beeld)
- * @ai-sync: components/carve/MuscleFigure.tsx (het weekschema, zelfde week als de goal-screenshot)
+ * @ai-sync: components/carve/PhoneStory.tsx (het figuur, de telefoon en de vier schermen met hun captions)
  */
 export function CarveMarketingPage() {
   return (
-    <div className="min-h-screen w-full bg-[#0A0A0B] text-white">
+    <div id="top" className="min-h-screen w-full bg-[#0A0A0B] text-white">
+      <MarketingHeader heroId={HERO_CTA_ID} />
       {/* 1 · figuur */}
       <section className="flex flex-col items-center px-6 pt-14 text-center md:pt-20">
         <Image src="/carve-logo.png" alt="" width={160} height={160} priority className="mb-5 h-14 w-14" />
@@ -52,75 +60,82 @@ export function CarveMarketingPage() {
           <AppStoreButton source="hero" id={HERO_CTA_ID} />
           <small className="text-[13px] text-white/30">Free · iPhone</small>
         </div>
-        <MuscleFigure />
       </section>
 
-      {/* 2 · foto */}
-      <section className="mt-10 border-t border-white/[0.06] px-6 py-[72px] md:mt-14 md:py-24">
-        <div className="mx-auto grid max-w-[960px] items-center gap-8 md:grid-cols-2 md:gap-12">
-          <div>
-            <Eyebrow>Snap it</Eyebrow>
-            <H2>Logged.</H2>
-            <Body>
-              Take a picture of your plate. The AI works out the calories and macros.{' '}
-              <b>No database digging, no guessing portions.</b> Scan a barcode when the packet is in your hand.
-            </Body>
-          </div>
-          <div className="relative">
-            <Image
-              src="/screenshots/food-photo.png"
-              alt="Carve on an iPhone showing a logged meal: aubergine lasagne with mozzarella, 434 kcal, with protein, carbs and fat."
-              width={1240}
-              height={1900}
-              sizes="(min-width: 768px) 460px, 100vw"
-              className="h-auto w-full rounded-3xl"
-            />
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-3xl shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]" />
-          </div>
-        </div>
-      </section>
+      {/* 2 · de app: figuur → telefoon → vier schermen */}
+      <PhoneStory />
 
       {/* 3 · bewijs */}
-      <section className="border-y border-white/[0.06] px-6 py-20 text-center md:py-28">
-        <Eyebrow gold>Why it exists</Eyebrow>
-        <div className="flex items-baseline justify-center gap-4 font-bold leading-none tracking-[-0.04em]" aria-label="From 130 to 80 kilograms">
-          <span className="text-[clamp(48px,8vw,96px)] text-white/30 line-through decoration-[#D4A843] decoration-[0.06em]">130</span>
-          <span className="text-[clamp(22px,3vw,34px)] font-normal text-white/30">→</span>
-          <span className="text-[clamp(80px,14vw,168px)]">
-            80<small className="ml-[0.1em] text-[0.28em] font-medium tracking-normal text-white/40">kg</small>
-          </span>
+      {/* @ai-why: Twee echte foto's naast de cijfers. Tot 2026-09-06 stond hier
+          alleen "130 → 80" met twee zinnen eronder; een getal zonder gezicht is
+          een claim, geen bewijs. De before staat in zwart-wit en gedimd half
+          achter de now, dus het oog gaat naar nu en een matige vakantiefoto
+          volstaat als before. Op beide foto's een telefoon in de hand: toeval,
+          maar het zegt "I still use it every day" zonder dat de tekst het hoeft.
+          De 130 staat niet meer in de zin, hij staat al doorgestreept ernaast. */}
+      <section className="border-y border-white/[0.06] px-6 py-20 md:py-28">
+        <div className="mx-auto grid max-w-[960px] items-center gap-12 md:grid-cols-2 md:gap-14">
+          <div className="relative aspect-[1000/913] w-full">
+            <ProofPhoto
+              src="/photos/before.jpg"
+              alt="Furkan at 130 kg, standing on a street in Istanbul, phone in hand."
+              label="Before"
+              width={720}
+              height={960}
+              className="top-0 left-0"
+              imageClassName="opacity-70 grayscale"
+              ring="shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]"
+            />
+            <ProofPhoto
+              src="/photos/now.jpg"
+              alt="Furkan at 80 kg, hiking with a backpack and poles, phone in hand."
+              label="Now"
+              gold
+              width={528}
+              height={704}
+              className="top-[14%] right-0 shadow-[0_24px_60px_rgba(0,0,0,0.6)]"
+              ring="shadow-[inset_0_0_0_1px_rgba(212,168,67,0.5)]"
+            />
+          </div>
+          <div>
+            <Eyebrow gold>Why it exists</Eyebrow>
+            <div className="flex items-baseline gap-3.5 font-bold leading-none tracking-[-0.04em]" aria-label="From 130 to 80 kilograms">
+              <span className="text-[clamp(40px,5vw,56px)] text-white/30 line-through decoration-[#D4A843] decoration-[0.06em]">130</span>
+              <span className="text-[clamp(96px,12vw,132px)]">
+                80<small className="ml-[0.1em] text-[0.28em] font-medium tracking-normal text-white/40">kg</small>
+              </span>
+            </div>
+            <p className="mt-5 max-w-[26ch] text-[clamp(19px,2vw,22px)] leading-[1.35] text-balance">I built this app while losing 50 kg. I still use it every day.</p>
+            <p className="mt-3 max-w-[34ch] text-sm leading-relaxed text-white/40">It started as a food tracker for myself. It turned into a coach.</p>
+          </div>
         </div>
-        <p className="mx-auto mt-7 max-w-[32ch] text-[clamp(18px,2.2vw,24px)] leading-[1.4] text-balance">
-          I was 130 kg. I built this app while losing 50 of it.
-          <small className="mt-3 block text-sm text-white/40">It started as a food tracker for myself. It turned into a coach. I use it every day.</small>
-        </p>
       </section>
 
-      {/* 4 · spierkaart */}
-      <FeatureRow
-        eyebrow="Skipping legs?"
-        title="You'll see it."
-        chip="Most trackers stop at the number."
-        image="/screenshots/legs.png"
-        alt="Muscle map from the back with untrained legs and arms highlighted."
-      >
-        Log your workout, sets and weights. The muscle map fills in where you trained and{' '}
-        <b>stays empty where you didn&apos;t</b>. Front and back.
-      </FeatureRow>
+      {/* 4 · overzicht */}
+      <section className="border-t border-white/[0.06] px-6 py-[72px] md:py-24">
+        <div className="mx-auto max-w-[1024px]">
+          <div className="text-center">
+            <Eyebrow>Everything in it</Eyebrow>
+            <H2>One place for your food and your training.</H2>
+            <p className="mx-auto mt-4 max-w-[46ch] text-white/50 text-balance">Most trackers stop at the number. Carve keeps both in the same place, so it can show you the muscle you haven&apos;t touched in nine days, right next to the week you thought went fine.</p>
+          </div>
+          {/* @ai-why: Zes regels, allemaal in de app van vandaag. Staat een functie
+              achter een uitgezette vlag in FeatureFlags.swift, dan staat hij hier niet.
+              Apple Health is bewust "steps": dat is het enige type dat de app uitleest.
+              @ai-sync: ~/Developer/Carve-AI/docs/marketing/app-store-listing.md (beschrijving, "wat er uit is") */}
+          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <Fact icon={<Camera className="h-5 w-5" />} title="Photo logging">A picture of your plate becomes calories and macros. No database digging.</Fact>
+            <Fact icon={<ScanBarcode className="h-5 w-5" />} title="Barcode scanner">Point at the packet. The product and its macros are filled in.</Fact>
+            <Fact icon={<Dumbbell className="h-5 w-5" />} title="Workout log">Sets, weights, done. Every session fills the muscle map.</Fact>
+            <Fact icon={<PersonStanding className="h-5 w-5" />} title="Muscle map, front and back">See what you trained this week and what you keep skipping.</Fact>
+            <Fact icon={<CalendarDays className="h-5 w-5" />} title="Week plan">Set a goal, a split and your training days once. The week is on your home screen.</Fact>
+            <Fact icon={<MessageSquareText className="h-5 w-5" />} title="A coach that reads your log">Ask about your protein, your week or what to train. It answers from what you logged.</Fact>
+          </div>
+          <p className="mt-6 text-center text-[13px] text-white/30">Reads your daily steps from Apple Health. Nothing else.</p>
+        </div>
+      </section>
 
-      {/* 5 · coach */}
-      <FeatureRow
-        flip
-        eyebrow="Ask anything"
-        title="Carve adds it."
-        image="/screenshots/ask.png"
-        alt="Chat with Carve: the message 'Add chest and shoulders today' saved as a workout."
-      >
-        &ldquo;Add chest and shoulders today&rdquo; is a logged workout. Your food and your training live in the same place, so{' '}
-        <b>the coach can see what you logged</b> and answer about your week.
-      </FeatureRow>
-
-      {/* 6 · slot */}
+      {/* 5 · slot */}
       <section className="border-t border-white/[0.06] px-6 pt-20 pb-16 text-center md:pt-28 md:pb-24">
         <Image src="/carve-logo.png" alt="" width={160} height={160} className="mx-auto mb-5 h-12 w-12" />
         <H2 className="text-[clamp(36px,6vw,64px)]">Ready to start?</H2>
@@ -151,56 +166,37 @@ function H2({ children, className = '' }: { children: React.ReactNode; className
   );
 }
 
-function Body({ children }: { children: React.ReactNode }) {
-  return <p className="mt-4 max-w-[40ch] text-[clamp(16px,1.6vw,18px)] text-white/50 [&_b]:font-medium [&_b]:text-white/80">{children}</p>;
-}
-
-interface FeatureRowProps {
-  eyebrow: string;
-  title: string;
-  chip?: string;
-  image: string;
+interface ProofPhotoProps {
+  src: string;
   alt: string;
-  flip?: boolean;
-  children: React.ReactNode;
+  label: string;
+  gold?: boolean;
+  width: number;
+  height: number;
+  /** Positie en buitenschaduw. */
+  className: string;
+  imageClassName?: string;
+  /** Inset-rand. Staat op een los laagje, want een inset-shadow op de wrapper
+      verdwijnt achter de afbeelding. */
+  ring: string;
 }
 
-/**
- * Tekst naast een telefoonscherm; op mobiel onder elkaar, tekst eerst.
- *
- * @ai-gotcha: De screenshots in `public/screenshots/` zijn uitsneden van de App
- * Store-set en houden een randje van de grijze store-achtergrond om de telefoon.
- * Het beeld staat daarom 3% te groot in een kader met de hoekradius van de
- * telefoon, zodat dat randje buiten de clip valt. Exporteer je ooit strakke
- * schermen, dan kan die overmaat weg.
- */
-function FeatureRow({ eyebrow, title, chip, image, alt, flip, children }: FeatureRowProps) {
+function ProofPhoto({ src, alt, label, gold, width, height, className, imageClassName = '', ring }: ProofPhotoProps) {
   return (
-    <section className="border-t border-white/[0.06] px-6 py-[72px] md:py-24">
-      <div className="mx-auto grid max-w-[960px] items-center gap-8 md:grid-cols-2 md:gap-12">
-        <div className={flip ? 'md:order-2' : ''}>
-          <Eyebrow>{eyebrow}</Eyebrow>
-          <H2>{title}</H2>
-          <Body>{children}</Body>
-          {chip ? (
-            <span className="mt-5 inline-block rounded-full border border-white/[0.08] px-3.5 py-1.5 text-[13px] text-white/40">{chip}</span>
-          ) : null}
-        </div>
-        <div className="relative grid max-h-[380px] justify-items-center overflow-hidden md:max-h-[520px]">
-          <div className="relative aspect-[1052/1853] w-[min(100%,280px)] overflow-hidden rounded-t-[14%_8%] bg-[#0e0e0f] shadow-[0_30px_80px_rgba(0,0,0,0.6)] md:w-[min(100%,320px)]">
-            <Image
-              src={image}
-              alt={alt}
-              width={1052}
-              height={1853}
-              sizes="320px"
-              className="absolute top-[-1.5%] left-[-1.5%] h-auto w-[103%] max-w-none"
-            />
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-[inherit] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)]" />
-          </div>
-          <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-[120px] bg-gradient-to-b from-transparent to-[#0A0A0B]" />
-        </div>
-      </div>
-    </section>
+    <figure className={`absolute aspect-[3/4] w-[58%] overflow-hidden rounded-[20px] ${className}`}>
+      <Image src={src} alt={alt} width={width} height={height} sizes="(min-width: 768px) 280px, 60vw" className={`h-full w-full object-cover ${imageClassName}`} />
+      <div aria-hidden="true" className={`pointer-events-none absolute inset-0 rounded-[20px] ${ring}`} />
+      <figcaption className={`absolute bottom-3.5 left-3.5 rounded-full bg-[#0A0A0B]/60 px-2.5 py-1.5 text-[11px] font-medium tracking-[0.2em] uppercase backdrop-blur-sm ${gold ? 'text-[#D4A843]' : 'text-white/55'}`}>{label}</figcaption>
+    </figure>
+  );
+}
+
+function Fact({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
+  return (
+    <div className="rounded-xl border border-white/[0.08] bg-white/[0.04] p-5">
+      <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.06] text-white/50">{icon}</div>
+      <h3 className="text-[15px] font-semibold">{title}</h3>
+      <p className="mt-1 text-sm leading-relaxed text-white/50">{children}</p>
+    </div>
   );
 }

@@ -1,11 +1,15 @@
 import Link from 'next/link';
 
+// @ai-why: Alleen de drie pagina's die Apple eist en die kloppen met de app van
+// vandaag. Roadmap, Vision en FAQ stonden hier tot 2026-09-05, maar die beloven
+// nog de brede app (geld-tracking, XP) die sinds 2026-09-04 achter een vlag
+// staat. Zolang ze niet herschreven zijn wijst de footer er niet naartoe; de
+// URL's zelf bestaan nog.
+// @ai-sync: docs/tdr/0005-carve-wiki-is-een-marketingpagina.md (beslissing 5: wat publiek blijft)
 const LINKS = [
-  { href: '/carve/roadmap', label: 'Roadmap' },
-  { href: '/carve/vision', label: 'Vision' },
-  { href: '/carve/faq', label: 'FAQ' },
   { href: '/privacy', label: 'Privacy' },
   { href: '/terms', label: 'Terms' },
+  { href: '/support', label: 'Support' },
 ] as const;
 
 export function CarveFooter() {
@@ -22,8 +26,10 @@ export function CarveFooter() {
           </Link>
         ))}
       </div>
+      {/* @ai-why: Carve AI is de juridische naam en de naam in de App Store; hier
+          stond "celiker studio", een tweede naam onder dezelfde pagina. */}
       <p className="text-white/20 text-xs">
-        celiker studio 2026 &middot; amsterdam
+        &copy; 2026 Carve AI &middot; Amsterdam
       </p>
     </div>
   );

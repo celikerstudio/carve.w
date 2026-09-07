@@ -50,6 +50,6 @@ Een opvolger zou moeten laten zien dat het web-platform een eigen publiek heeft:
 ## Synchronisatie
 
 - `lib/flags.ts` ↔ `middleware.ts` — elke redirect naar een gate-route moet dezelfde vlag lezen
-- `app/(landing)/page.tsx` ↔ `app/carve/page.tsx` — dezelfde component, en de metadata hoort hetzelfde te beloven
+- `app/(landing)/page.tsx` ↔ `next.config.ts` — `/carve` stuurt sinds 2026-09-05 permanent door naar `/`; `app/carve/page.tsx` is weg
 - `app/sitemap.ts` ↔ `lib/flags.ts` — geen route in de sitemap die achter een uitgezette vlag staat
 - `components/carve/CarveMarketingPage.tsx` ↔ `~/Developer/Carve-AI/docs/marketing/app-store-listing.md`

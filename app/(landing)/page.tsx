@@ -16,7 +16,7 @@ import { CarveMarketingPage } from '@/components/carve/CarveMarketingPage'
 // want een ontbrekende voorvertoning geeft geen fout. Zet hier dus geen `openGraph`-object
 // neer zonder `images` mee te nemen; de belofte staat al in de root-layout.
 // @ai-sync: app/layout.tsx (title, description, openGraph)
-// @ai-sync: app/carve/page.tsx
+// @ai-sync: next.config.ts (/carve stuurt hierheen door)
 export const metadata = {
   title: 'Carve AI — Fitness Coach',
   description: 'Logs your food from a photo. Tracks the muscles you are skipping. Built by someone who lost 50kg using it.',

@@ -17,7 +17,6 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://carve.wiki'
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: '',                  priority: 1.0,  changeFrequency: 'weekly'  as const },
-    { path: '/carve',            priority: 0.9,  changeFrequency: 'weekly'  as const },
     { path: '/carve/health',     priority: 0.8,  changeFrequency: 'monthly' as const },
     { path: '/carve/vision',     priority: 0.6,  changeFrequency: 'monthly' as const },
     { path: '/carve/roadmap',    priority: 0.6,  changeFrequency: 'monthly' as const },

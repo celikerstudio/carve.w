@@ -1,178 +1,161 @@
+import { LegalPage } from '@/components/carve/LegalPage';
+
 export const metadata = {
   title: 'Privacy Policy - Carve',
   description: 'How Carve collects, uses, and protects your personal information.',
 };
 
+// @ai-why: Herschreven op 2026-09-05 op de feiten van de app van vandaag. De vorige
+// versie (januari 2025) beschreef een wachtlijst en een app "die nog moest
+// lanceren", en noemde niet dat foto's en chatberichten naar AI-leveranciers
+// gaan. Dat laatste is precies wat Apple en de AVG willen zien. Wat hier staat
+// is nagelopen tegen de code, niet tegen een wens:
+// - AI: OpenAI en Anthropic via Supabase edge functions (openai-proxy, coach-chat)
+// - voeding: FatSecret via fatsecret-proxy en food-search
+// - HealthKit: alleen HKQuantityType(.stepCount), nergens slaap of hartslag
+// - abonnementen: RevenueCat, betaling via Apple
+// Wijzigt een van die vier, dan wijzigt deze pagina mee.
+// @ai-sync: ~/Developer/Carve-AI/supabase/functions (welke leveranciers data zien)
+// @ai-sync: ~/Developer/Carve-AI/Carve AI/App/Services/Health/StepsService.swift (het enige HealthKit-type)
+// @ai-sync: app/terms/page.tsx (zelfde datum, zelfde contactadressen)
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-surface py-20 px-4">
-      <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-sm p-8 md:p-12">
-        <h1 className="text-4xl font-bold text-ink mb-4">Privacy Policy</h1>
-        <p className="text-sm text-ink-secondary mb-8">Last updated: January 11, 2025</p>
+    <LegalPage
+      title="Privacy Policy"
+      updated="September 5, 2026"
+      intro="Carve logs your food and your training. To do that it stores what you log, and for some features it sends part of it to a service provider. This page says exactly what, to whom, and why."
+    >
+      <section>
+        <h2>1. Who we are</h2>
+        <p>
+          Carve AI (&ldquo;Carve&rdquo;, &ldquo;we&rdquo;) is based in Amsterdam, the Netherlands, and makes the Carve iOS app and the website carve.wiki (together, the &ldquo;Service&rdquo;). This policy explains what personal data we collect, how we use it, and the rights you have. By using the Service you agree to this policy.
+        </p>
+      </section>
 
-        <div className="prose prose-gray max-w-none">
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">1. Introduction</h2>
-            <p className="text-ink leading-relaxed mb-4">
-              Carve ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our fitness tracking application and website (collectively, the "Service").
-            </p>
-            <p className="text-ink leading-relaxed">
-              By using the Service, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, do not use the Service.
-            </p>
-          </section>
+      <section>
+        <h2>2. What we collect</h2>
+        <h3>2.1 What you give us</h3>
+        <ul>
+          <li><strong>Account:</strong> your name, email address and profile photo. If you sign in with Apple or Google, we receive the identifier and email they share with us.</li>
+          <li><strong>Food:</strong> the meals you log, including photos of food you take in the app, barcodes you scan, and portions and macros you enter or correct.</li>
+          <li><strong>Training:</strong> workouts, exercises, sets, weights and the muscle groups they cover.</li>
+          <li><strong>Body and goals:</strong> weight, height, target weight, calorie and protein targets, your training split and training days.</li>
+          <li><strong>Coach messages:</strong> what you type to the coach in the app.</li>
+        </ul>
+        <h3>2.2 What we read with your permission</h3>
+        <ul>
+          <li><strong>Apple Health:</strong> your daily step count, and only that. We do not read sleep, heart rate, workouts or any other Health data. You can revoke this in the Health app at any time.</li>
+          <li><strong>Camera:</strong> used to photograph food and scan barcodes. Photos are only stored when you log the meal.</li>
+        </ul>
+        <h3>2.3 What we collect automatically</h3>
+        <ul>
+          <li><strong>Usage data:</strong> which screens and features you use, and errors that occur.</li>
+          <li><strong>Device data:</strong> device model, iOS version, app version and language.</li>
+          <li><strong>Website analytics:</strong> aggregated, anonymous page statistics via Plausible Analytics. No cookies, no cross-site tracking.</li>
+        </ul>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">2. Information We Collect</h2>
+      <section>
+        <h2>3. How we use it</h2>
+        <ul>
+          <li><strong>To run the Service:</strong> store your log, show your muscle map and your week, and sync between your devices.</li>
+          <li><strong>AI features:</strong> to recognise the food in a photo and to answer your coach questions, we send the photo or your message, together with the relevant parts of your log, to an AI provider (see section 4). The answer comes back to you; the provider does not use it to train its models under the API terms we use.</li>
+          <li><strong>To improve the Service:</strong> understand which features are used and where the app fails.</li>
+          <li><strong>To keep it safe:</strong> detect and prevent abuse and security incidents.</li>
+          <li><strong>To reach you:</strong> account, security and support messages. No marketing email unless you ask for it.</li>
+          <li><strong>To comply with the law</strong> and enforce our Terms of Service.</li>
+        </ul>
+      </section>
 
-            <h3 className="text-xl font-semibold text-ink mb-3 mt-6">2.1 Information You Provide</h3>
-            <ul className="list-disc pl-6 text-ink space-y-2 mb-4">
-              <li><strong>Waitlist Registration:</strong> Email address, consent timestamp, and IP address for verification purposes</li>
-              <li><strong>Account Information:</strong> Name, email, profile photo (when app launches)</li>
-              <li><strong>Fitness Data:</strong> Workouts, exercises, personal records, body measurements, photos (optional)</li>
-            </ul>
+      <section>
+        <h2>4. Who sees your data</h2>
+        <p>We do not sell your personal data. We share it only with the providers we need to run the Service, and only what they need:</p>
+        <ul>
+          <li><strong>Supabase</strong> (database, authentication, file storage): everything you log. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
+          <li><strong>OpenAI</strong> and <strong>Anthropic</strong> (AI): food photos, coach messages and the parts of your log needed to answer. <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI</a> · <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer">Anthropic</a></li>
+          <li><strong>FatSecret</strong> (food database): the barcode or search term you look up. Not your identity. <a href="https://www.fatsecret.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
+          <li><strong>RevenueCat</strong> (subscriptions): an anonymous app user id and your purchase status. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
+          <li><strong>Apple</strong> (App Store, Sign in with Apple, payments, push notifications, Apple Health). <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
+          <li><strong>Vercel</strong> (website hosting) and <strong>Cloudflare</strong> (bot protection on the website). <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel</a> · <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare</a></li>
+          <li><strong>Plausible</strong> (website analytics): anonymous page views. <a href="https://plausible.io/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
+        </ul>
+        <p>
+          We may also disclose data if the law requires it, or as part of a merger or sale of the business, in which case we will tell you first.
+        </p>
+      </section>
 
-            <h3 className="text-xl font-semibold text-ink mb-3 mt-6">2.2 Automatically Collected Information</h3>
-            <ul className="list-disc pl-6 text-ink space-y-2 mb-4">
-              <li><strong>Usage Data:</strong> Pages visited, features used, time spent, interactions</li>
-              <li><strong>Device Information:</strong> Device type, operating system, browser type, IP address</li>
-              <li><strong>Analytics:</strong> Aggregated, anonymized usage statistics via Plausible Analytics (privacy-first, no cookies)</li>
-            </ul>
-          </section>
+      <section>
+        <h2>5. Your rights</h2>
+        <p>Under the GDPR you can:</p>
+        <ul>
+          <li><strong>Access</strong> a copy of your data</li>
+          <li><strong>Correct</strong> data that is wrong or incomplete</li>
+          <li><strong>Delete</strong> your account and all data in it, from Settings in the app or by emailing us</li>
+          <li><strong>Export</strong> your data in a machine-readable format</li>
+          <li><strong>Object</strong> to certain processing, and <strong>withdraw consent</strong> (for example Apple Health access) at any time</li>
+          <li><strong>Complain</strong> to the Dutch data protection authority, the Autoriteit Persoonsgegevens</li>
+        </ul>
+        <p>
+          To exercise a right, email <a href="mailto:privacy@carve.wiki">privacy@carve.wiki</a>. We respond within 30 days.
+        </p>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">3. How We Use Your Information</h2>
-            <p className="text-ink mb-4">We use your information for the following purposes:</p>
-            <ul className="list-disc pl-6 text-ink space-y-2">
-              <li><strong>Provide the Service:</strong> Enable core features like workout tracking, progress visualization, and social features</li>
-              <li><strong>Waitlist Management:</strong> Send launch notifications and early access invitations</li>
-              <li><strong>Improve the Service:</strong> Analyze usage patterns to enhance features and user experience</li>
-              <li><strong>Security:</strong> Detect and prevent fraud, abuse, and security incidents</li>
-              <li><strong>Communication:</strong> Send important updates, security alerts, and support messages</li>
-              <li><strong>Legal Compliance:</strong> Comply with legal obligations and enforce our Terms of Service</li>
-            </ul>
-          </section>
+      <section>
+        <h2>6. How long we keep it</h2>
+        <ul>
+          <li><strong>Account and log data:</strong> until you delete your account, plus up to 30 days in backups.</li>
+          <li><strong>Food photos:</strong> as part of your log, until you delete the meal or your account.</li>
+          <li><strong>AI requests:</strong> we do not keep a separate copy of what was sent; the provider&apos;s own retention applies (typically 30 days for abuse monitoring).</li>
+          <li><strong>Website analytics:</strong> aggregated, anonymous data for up to 2 years.</li>
+        </ul>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">4. Data Sharing and Disclosure</h2>
-            <p className="text-ink mb-4">We do not sell your personal information. We may share your information only in the following circumstances:</p>
-            <ul className="list-disc pl-6 text-ink space-y-2">
-              <li><strong>With Your Consent:</strong> When you explicitly opt-in to public profiles or social features</li>
-              <li><strong>Service Providers:</strong> Third-party vendors who assist in operating the Service (Supabase for database, Vercel for hosting, Plausible for analytics)</li>
-              <li><strong>Legal Requirements:</strong> If required by law, court order, or government request</li>
-              <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets (you will be notified)</li>
-              <li><strong>Public Features:</strong> Data you choose to make public (leaderboards, public profiles) is visible to other users</li>
-            </ul>
-          </section>
+      <section>
+        <h2>7. Security</h2>
+        <ul>
+          <li>Encrypted in transit (HTTPS/TLS) and at rest in our database</li>
+          <li>Row-level security so that one account can never read another&apos;s data</li>
+          <li>Sign in with Apple and Google, or email with verification</li>
+          <li>Bot protection via Cloudflare Turnstile on the website</li>
+        </ul>
+        <p>No system is perfectly secure. If we learn of a breach that affects you, we will tell you.</p>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">5. Your Privacy Rights (GDPR & CCPA)</h2>
-            <p className="text-ink mb-4">You have the following rights regarding your personal data:</p>
-            <ul className="list-disc pl-6 text-ink space-y-2">
-              <li><strong>Access:</strong> Request a copy of your personal data</li>
-              <li><strong>Rectification:</strong> Correct inaccurate or incomplete data</li>
-              <li><strong>Erasure ("Right to be Forgotten"):</strong> Request deletion of your data</li>
-              <li><strong>Data Portability:</strong> Receive your data in a machine-readable format</li>
-              <li><strong>Withdraw Consent:</strong> Opt-out of waitlist or delete your account anytime</li>
-              <li><strong>Object to Processing:</strong> Object to certain types of data processing</li>
-            </ul>
-            <p className="text-ink mt-4">
-              To exercise these rights, contact us at <a href="mailto:privacy@carve.wiki" className="text-blue-600 underline">privacy@carve.wiki</a>. We will respond within 30 days.
-            </p>
-          </section>
+      <section>
+        <h2>8. Cookies</h2>
+        <p>
+          The website uses only what is needed to sign in and stay secure. Analytics runs on Plausible, which sets no cookies. We do not use advertising cookies and do not share data with ad networks.
+        </p>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">6. Data Retention</h2>
-            <p className="text-ink mb-4">We retain your data for the following periods:</p>
-            <ul className="list-disc pl-6 text-ink space-y-2">
-              <li><strong>Waitlist Data:</strong> Until you verify your email or request deletion (whichever comes first)</li>
-              <li><strong>Account Data:</strong> Until you delete your account + 30 days for backup retention</li>
-              <li><strong>Workout Data:</strong> Until account deletion (you can export your data before deleting)</li>
-              <li><strong>Analytics:</strong> Aggregated, anonymized data retained for up to 2 years</li>
-            </ul>
-          </section>
+      <section>
+        <h2>9. Children</h2>
+        <p>
+          The Service is not for people under 16. We do not knowingly collect data from children under 16. If you believe a child has given us data, email <a href="mailto:privacy@carve.wiki">privacy@carve.wiki</a> and we will delete it.
+        </p>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">7. Security</h2>
-            <p className="text-ink mb-4">
-              We implement industry-standard security measures to protect your data:
-            </p>
-            <ul className="list-disc pl-6 text-ink space-y-2">
-              <li>End-to-end encryption for data in transit (HTTPS/TLS)</li>
-              <li>Encrypted database storage via Supabase</li>
-              <li>Row-level security (RLS) policies to prevent unauthorized access</li>
-              <li>Regular security audits and updates</li>
-              <li>Bot protection via Cloudflare Turnstile</li>
-            </ul>
-            <p className="text-ink mt-4">
-              However, no method of transmission over the Internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.
-            </p>
-          </section>
+      <section>
+        <h2>10. International transfers</h2>
+        <p>
+          Some providers above process data outside the EU, notably in the United States. Where that happens we rely on the EU-US Data Privacy Framework or Standard Contractual Clauses.
+        </p>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">8. Cookies and Tracking</h2>
-            <p className="text-ink mb-4">
-              We use minimal tracking technologies:
-            </p>
-            <ul className="list-disc pl-6 text-ink space-y-2">
-              <li><strong>Essential Cookies:</strong> Required for authentication and security (cannot be disabled)</li>
-              <li><strong>Analytics:</strong> Plausible Analytics (privacy-first, no cookies, no cross-site tracking)</li>
-              <li><strong>No Third-Party Advertising:</strong> We do not use advertising cookies or share data with ad networks</li>
-            </ul>
-          </section>
+      <section>
+        <h2>11. Changes</h2>
+        <p>
+          When this policy changes, the date at the top changes with it. For material changes we notify you in the app or by email. Continuing to use the Service after that means you accept the new version.
+        </p>
+      </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">9. Children's Privacy</h2>
-            <p className="text-ink">
-              The Service is not intended for users under 16 years of age. We do not knowingly collect personal information from children under 16. If you are a parent or guardian and believe your child has provided us with personal data, please contact us at <a href="mailto:privacy@carve.wiki" className="text-blue-600 underline">privacy@carve.wiki</a>.
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">10. International Data Transfers</h2>
-            <p className="text-ink">
-              Your data may be transferred to and processed in countries other than your country of residence. We ensure adequate safeguards are in place (such as Standard Contractual Clauses) to protect your data in accordance with this Privacy Policy.
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">11. Changes to This Privacy Policy</h2>
-            <p className="text-ink">
-              We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date. Material changes will be communicated via email or in-app notification. Your continued use of the Service after changes indicates acceptance of the updated policy.
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">12. Contact Us</h2>
-            <p className="text-ink mb-4">
-              If you have questions or concerns about this Privacy Policy, please contact us:
-            </p>
-            <ul className="list-none text-ink space-y-2">
-              <li><strong>Email:</strong> <a href="mailto:privacy@carve.wiki" className="text-blue-600 underline">privacy@carve.wiki</a></li>
-              <li><strong>Data Protection Officer:</strong> <a href="mailto:dpo@carve.wiki" className="text-blue-600 underline">dpo@carve.wiki</a></li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-ink mb-4">13. Third-Party Services</h2>
-            <p className="text-ink mb-4">Our Service uses the following third-party providers:</p>
-            <ul className="list-disc pl-6 text-ink space-y-2">
-              <li><strong>Supabase:</strong> Database and authentication (<a href="https://supabase.com/privacy" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
-              <li><strong>Vercel:</strong> Hosting and deployment (<a href="https://vercel.com/legal/privacy-policy" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
-              <li><strong>Plausible Analytics:</strong> Privacy-first analytics (<a href="https://plausible.io/privacy" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
-              <li><strong>Cloudflare:</strong> Bot protection and CDN (<a href="https://www.cloudflare.com/privacypolicy/" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
-            </ul>
-          </section>
-        </div>
-
-        <div className="mt-12 pt-8 border-t border-subtle">
-          <a
-            href="/"
-            className="text-blue-600 hover:text-blue-700 font-medium"
-          >
-            ← Back to Home
-          </a>
-        </div>
-      </div>
-    </main>
+      <section>
+        <h2>12. Contact</h2>
+        <ul>
+          <li><strong>Privacy questions:</strong> <a href="mailto:privacy@carve.wiki">privacy@carve.wiki</a></li>
+          <li><strong>Support:</strong> <a href="mailto:support@carve.wiki">support@carve.wiki</a></li>
+        </ul>
+      </section>
+    </LegalPage>
   );
 }

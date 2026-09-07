@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Support - Carve',
-  description: 'Get help with Carve. FAQ, contact support, and resources.',
+  description: 'Answers to common questions about Carve, and a way to reach a real person.',
 };
 
 export default function SupportLayout({

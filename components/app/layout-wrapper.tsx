@@ -45,9 +45,12 @@ export function LayoutWrapper({
   // Note: usePathname() returns URL path, not file-system path.
   // Route groups like (protected) are invisible in URLs, so /chat is correct.
   const isChatRoute = path.startsWith('/chat')
-  // @ai-why: / en /demo zijn sinds TDR-0001 één flow (keuzescherm → simulatie) en
-  // dragen allebei hun eigen nav. Zonder /demo hier viel de demo terug op de
-  // standaardtak en kreeg hij de wiki-chrome met zoekbalk en zijbalk eroverheen.
+  // @ai-why: / is sinds TDR-0005 de marketingpagina en draagt zijn eigen dunne balk
+  // (MarketingHeader), dus geen AppHeader erboven. /carve stuurt in next.config.ts
+  // door naar / en komt hier niet meer langs. /demo hoort hier om dezelfde reden
+  // als vroeger: eigen nav, geen wiki-chrome.
+  // @ai-sync: components/carve/MarketingHeader.tsx
+  // @ai-sync: next.config.ts (redirects)
   // @ai-sync: app/demo/page.tsx
   const isLandingRoute = path === '/' || path === '/demo'
 
@@ -69,7 +72,6 @@ export function LayoutWrapper({
 
   // Marketing pages render with their own header (no sidebar)
   const isMarketingRoute =
-    path === '/carve' ||
     path === '/carve/health' ||
     path === '/carve/money' ||
     path === '/carve/roadmap' ||
@@ -82,7 +84,14 @@ export function LayoutWrapper({
   // Wiki pages render with header but no sidebar — full-width scrollable
   const isWikiRoute = path.startsWith('/wiki')
 
-  if (isAuthRoute || isLabRoute) {
+  // @ai-why: Privacy, terms en support zijn de drie pagina's die Apple eist en de
+  // enige die naast de marketingpagina publiek zijn (TDR-0005). Ze dragen hun eigen
+  // kop en voet (LegalPage) en horen niet in de app-chrome met zijbalk en de
+  // navigatie die achter een vlag staat.
+  // @ai-sync: components/carve/LegalPage.tsx
+  const isPlainRoute = path === '/privacy' || path === '/terms' || path === '/support'
+
+  if (isAuthRoute || isLabRoute || isPlainRoute) {
     return <>{children}</>
   }
 

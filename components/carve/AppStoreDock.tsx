@@ -46,7 +46,12 @@ export function AppStoreDock({ heroId, closeId }: AppStoreDockProps) {
       className={`fixed inset-x-0 bottom-0 z-50 px-4 pt-3 pb-[calc(12px+env(safe-area-inset-bottom))] transition-transform duration-300 ease-out md:hidden ${on ? 'translate-y-0' : 'pointer-events-none translate-y-[110%]'}`}
       style={{ background: 'linear-gradient(180deg, rgba(10,10,11,0), rgba(10,10,11,.94) 45%)' }}
     >
-      <AppStoreButton source="dock" className="w-full justify-center" />
+      {/* @ai-why: Gecentreerd en niet breedgetrokken. De officiële badge van Apple heeft
+          een vaste verhouding (zie AppStoreButton), dus `w-full` zou hem uitrekken en dat
+          is precies wat Apple's guidelines verbieden. */}
+      <div className="flex justify-center">
+        <AppStoreButton source="dock" />
+      </div>
     </div>
   );
 }

@@ -43,7 +43,7 @@ export function MarketingHeader({ heroId }: MarketingHeaderProps) {
           <Image src="/carve-logo.png" alt="" width={160} height={160} className="h-7 w-7" />
           <span className="pl-[0.3em] text-[13px] font-bold tracking-[0.3em] text-white/70">CARVE</span>
         </a>
-        <AppStoreButton source="header" className="px-4 py-2 text-[13px]" />
+        <AppStoreButton source="header" />
       </div>
     </header>
   );

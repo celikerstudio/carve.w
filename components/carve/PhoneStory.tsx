@@ -10,17 +10,25 @@ interface Screen {
   body: React.ReactNode;
   image: string;
   alt: string;
-  /**
-   * De screenshot heeft de telefoonrand uit de App Store-set nog om zich heen
-   * en wordt daarom 12% uitvergroot, zodat die rand buiten het scherm valt.
-   */
-  framed?: boolean;
 }
 
-// @ai-todo: barcode.png en ask.png zijn uitsneden uit de store-set mét
-// telefoonrand; `framed` zoomt erop in en snijdt aan de zijkanten wat scherm
-// weg. Zodra er kale exports van die twee schermen zijn (zoals dark-diary.png
-// en dark-dashboard.png) kunnen ze hier zonder `framed` in.
+// @ai-why: Kale exports van 1260 × 2736 (verhouding 9:19,5, dezelfde als de telefoon
+// hieronder), rechtstreeks van het toestel. De vorige set was een ander verhaal: twee
+// bestanden droegen hun eigen iPhone-rand, waar de pagina met een `framed`-vlag 12% op
+// inzoomde en daarmee juist de onderste balk wegsneed, en de rest was Nederlands terwijl
+// deze pagina Engels is. Die vlag is met de set verdwenen; komt er ooit weer een export
+// mét rand, snijd hem dan bij in plaats van hem hier weg te zoomen.
+//
+// @ai-gotcha: Het bijschrift en het scherm moeten hetzelfde zeggen. Scherm 2 belooft
+// daarom niet meer "the macros are filled in" (dat moment staat niet op de foto) maar wat
+// de app zelf op dat scherm zet, en de zin in scherm 3 is letterlijk wat er in de chat
+// staat. Vervang je een screenshot, lees dan het bijschrift ernaast opnieuw.
+//
+// @ai-todo: Op scherm 1 en 4 staat de voedingsteller op 0 (eiwit en kcal). De app leidt
+// die waarden zelf af uit wat er in de app gelogd is en pikt rechtstreeks weggeschreven
+// rijen niet op; op 2026-09-07 uitgezocht. Log een dag in de app en schiet die twee
+// opnieuw, dan staat er een gevulde dag.
+// @ai-sync: docs/marketing/screenshots.md
 const SCREENS: Screen[] = [
   {
     eyebrow: 'Snap it',
@@ -30,38 +38,42 @@ const SCREENS: Screen[] = [
         Take a picture of your plate. The AI works out the calories and macros. <b>No database digging, no guessing portions.</b>
       </>
     ),
-    image: '/screenshots/dark-diary.png',
-    alt: "Carve's diary showing the day's meals and a run, with calories and macros.",
+    image: '/screenshots/log.png',
+    alt: "Carve's home screen with the day's meals, each with its time and calories.",
   },
   {
     eyebrow: 'Packet in your hand?',
     title: 'Scan it.',
     body: (
       <>
-        Point at the barcode. The product and its macros are filled in <b>before you&apos;ve put the packet down.</b>
+        Point the camera at a barcode, a plate, even a receipt. <b>It reads what is in front of it</b> and fills in the macros.
       </>
     ),
-    image: '/screenshots/barcode.png',
-    alt: 'Barcode scanner in Carve recognising a can.',
-    framed: true,
+    image: '/screenshots/scan.jpg',
+    alt: 'The Carve camera pointed at a drink, with the hint "Point at your meal, a receipt or a barcode".',
   },
   {
     eyebrow: 'Ask anything.',
     title: 'Carve adds it.',
     body: (
       <>
-        Type &ldquo;add chest and shoulders today&rdquo; and it lands in the log. <b>The coach answers from what you logged,</b> not from a generic plan.
+        Type &ldquo;today I trained chest and triceps&rdquo; and it lands in the log. <b>The coach answers from what you logged,</b> not from a generic plan.
       </>
     ),
-    image: '/screenshots/ask.png',
-    alt: "Chat with Carve: 'Add chest and shoulders today' saved as a workout.",
-    framed: true,
+    image: '/screenshots/coach.png',
+    alt: "Chat with Carve: 'Today i trained chest and triceps', saved as a Push workout with chest and triceps filled in.",
   },
-  // @ai-todo: Een vierde scherm "Your week, on the home screen" hoort hier
-  // eigenlijk als slot, maar dark-dashboard.png laat Season 1, Rookie en de
-  // world ranking zien en die staan bewust niet op deze pagina (zie de @ai-why
-  // in CarveMarketingPage.tsx). Zodra er een export van het huidige home-scherm
-  // is zonder rangen, kan hij erbij.
+  {
+    eyebrow: 'Your week at a glance',
+    title: 'Nothing gets skipped.',
+    body: (
+      <>
+        Every session you log fills the bars. <b>One look tells you which muscle has been waiting</b> since last week.
+      </>
+    ),
+    image: '/screenshots/week.png',
+    alt: 'The Carve health screen: the muscle figure with a progress bar per muscle group beside it.',
+  },
 ];
 
 /** Scrollafstand in schermhoogtes: de landing, daarna per scherm, en de wissel zelf. */
@@ -375,7 +387,7 @@ export function PhoneStory() {
                   alt={s.alt}
                   fill
                   sizes="(min-width: 768px) 330px, 60vw"
-                  className={`object-cover ${s.framed ? 'scale-[1.12] object-[50%_6%]' : 'object-top'}`}
+                  className="object-cover object-top"
                 />
               </div>
             ))}

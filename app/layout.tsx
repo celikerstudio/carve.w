@@ -5,6 +5,7 @@ import "./globals.css";
 import { LayoutWrapper } from '@/components/app/layout-wrapper';
 import { CookieConsent } from '@/components/analytics/cookie-consent';
 import { createClient } from "@/lib/supabase/server";
+import { APP_STORE_ID } from "@/lib/utils";
 import { Toaster } from "sonner";
 
 const geistSans = Geist({
@@ -51,6 +52,16 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Carve AI — Fitness Coach',
     description: 'Logs your food from a photo. Tracks the muscles you are skipping.',
+  },
+  // @ai-why: De smart banner van Safari op iOS. Vrijwel al het verkeer komt via een
+  // bio-link op een iPhone binnen, en dit is de enige ingang naar de App Store die
+  // bovenaan het scherm staat vóór er gescrold is. Hij stond er niet; gecontroleerd op
+  // 2026-09-07 met een grep op `apple-itunes-app` in de productie-HTML van carve.wiki.
+  // @ai-gotcha: Alleen Safari op iOS toont hem, en niet in een in-app browser (Instagram,
+  // TikTok). Hij vervangt de knoppen in de pagina dus niet, hij komt erbij.
+  // @ai-sync: lib/utils.ts (APP_STORE_ID)
+  other: {
+    'apple-itunes-app': `app-id=${APP_STORE_ID}`,
   },
 };
 

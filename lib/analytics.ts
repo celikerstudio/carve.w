@@ -16,9 +16,12 @@
  *
  * @ai-sync: app/layout.tsx
  * @ai-sync: lib/consent.ts
+ * @ai-sync: lib/meta-pixel.ts
  */
 
-type EventName =
+import { metaEventFor, trackMeta } from './meta-pixel';
+
+export type EventName =
   // Waitlist events
   | 'waitlist_signup_initiated'
   | 'waitlist_signup_success'
@@ -89,6 +92,16 @@ let warnedAboutMissingGtag = false;
  */
 export function track(eventName: EventName, props?: EventProps): void {
   if (typeof window === 'undefined') return;
+
+  // @ai-why: Doorgifte naar Meta staat hier en niet op de knop, zodat er één aanroepplek
+  // per gebeurtenis blijft. Twee aanroepen naast elkaar betekent dat iemand er ooit één
+  // vergeet, en een campagne die op een event optimaliseert dat nooit vuurt geeft geen
+  // foutmelding maar wel een rekening. Welke events meegaan staat in lib/meta-pixel.ts;
+  // dit blok staat bewust vóór de gtag-tak, want een geblokkeerde GA-tag mag de pixel
+  // niet meeslepen.
+  // @ai-sync: lib/meta-pixel.ts
+  const metaEvent = metaEventFor(eventName);
+  if (metaEvent) trackMeta(metaEvent, { ...props });
 
   if (window.gtag) {
     try {

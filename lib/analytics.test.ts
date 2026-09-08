@@ -17,6 +17,10 @@ function setGtag(fn: GtagMock | undefined) {
   (globalThis as { window?: unknown }).window = fn ? { gtag: fn } : {};
 }
 
+function setGtagAndFbq(gtag: GtagMock, fbq: GtagMock) {
+  (globalThis as { window?: unknown }).window = { gtag, fbq };
+}
+
 beforeEach(() => {
   vi.stubEnv('NODE_ENV', 'production');
 });
@@ -95,5 +99,47 @@ describe('track', () => {
 
     expect(() => track('wiki_article_view', { article_slug: 'squat' })).not.toThrow();
     expect(consoleWarn).not.toHaveBeenCalled();
+  });
+});
+
+/**
+ * @ai-why: Deze tests bestaan omdat één aanroep twee platforms moet bedienen. Zou de
+ * Meta-pixel een eigen aanroep op de knop krijgen, dan vergeet de volgende die bij het
+ * volgende event, en dat merk je pas als een campagne al een week op niets optimaliseert.
+ * @ai-sync: lib/meta-pixel.ts
+ */
+describe('track, doorgifte naar de Meta-pixel', () => {
+  it('vuurt een gemapt event ook op de pixel', async () => {
+    const gtag = vi.fn();
+    const fbq = vi.fn();
+    setGtagAndFbq(gtag, fbq);
+
+    const { track } = await loadAnalytics();
+    track('app_store_click', { source: 'hero' });
+
+    expect(gtag).toHaveBeenCalledWith('event', 'app_store_click', { source: 'hero' });
+    expect(fbq).toHaveBeenCalledWith('trackCustom', 'AppStoreClick', { source: 'hero' });
+  });
+
+  it('laat een event dat Meta niet nodig heeft ongemoeid', async () => {
+    const gtag = vi.fn();
+    const fbq = vi.fn();
+    setGtagAndFbq(gtag, fbq);
+
+    const { track } = await loadAnalytics();
+    track('wiki_article_view', { article_slug: 'squat' });
+
+    expect(gtag).toHaveBeenCalled();
+    expect(fbq).not.toHaveBeenCalled();
+  });
+
+  it('meet gewoon door in GA4 als de pixel niet geladen is', async () => {
+    const gtag = vi.fn();
+    setGtag(gtag);
+
+    const { track } = await loadAnalytics();
+
+    expect(() => track('app_store_click', { source: 'dock' })).not.toThrow();
+    expect(gtag).toHaveBeenCalled();
   });
 });

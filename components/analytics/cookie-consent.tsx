@@ -18,7 +18,7 @@ import {
 const SERVER_SNAPSHOT = 'unknown';
 
 /**
- * Vraagt toestemming voor de meetcookies van GA4 en Google Ads.
+ * Vraagt toestemming voor de meetcookies van GA4, Google Ads en de Meta-pixel.
  *
  * @ai-context: Verplicht sinds de overstap van Plausible naar GA4 op 2026-09-08.
  * Plausible zette geen cookies en had dus geen banner nodig; GA4 zet `_ga` en mag dat
@@ -55,9 +55,15 @@ export function CookieConsent() {
       className="fixed inset-x-0 bottom-0 z-50 p-3 sm:p-4"
     >
       <div className="mx-auto flex max-w-3xl flex-col gap-3 rounded-xl border border-white/10 bg-neutral-900/95 p-4 shadow-lg backdrop-blur sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+        {/* @ai-why: Meta staat hier met naam en toenaam en niet onder "analytics". De
+            pixel stuurt gedrag naar een advertentieplatform dat het een jaar bewaart, en
+            toestemming daarvoor is alleen geldig als de bezoeker wist waar hij ja tegen
+            zei. Voeg je een derde partij toe, noem hem dan hier, niet alleen in de
+            privacyverklaring.
+            @ai-sync: components/analytics/meta-pixel.tsx */}
         <p className="text-sm leading-relaxed text-neutral-300">
-          We use Google Analytics to see which pages get used and which ads work. That
-          needs cookies. Decline and we measure nothing.{' '}
+          We use Google Analytics and the Meta pixel to see which pages get used and which
+          ads work. Both need cookies. Decline and we measure nothing.{' '}
           <Link href="/privacy" className="underline underline-offset-4 hover:text-white">
             Privacy policy
           </Link>

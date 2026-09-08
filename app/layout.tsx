@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { LayoutWrapper } from '@/components/app/layout-wrapper';
 import { CookieConsent } from '@/components/analytics/cookie-consent';
+import { MetaPixel } from '@/components/analytics/meta-pixel';
 import { createClient } from "@/lib/supabase/server";
 import { APP_STORE_ID } from "@/lib/utils";
 import { Toaster } from "sonner";
@@ -132,6 +133,13 @@ gtag('js', new Date());`}
             </Script>
           </>
         )}
+        {/* @ai-why: De Meta-pixel staat hier als component en niet als `<Script>` naast
+            de GA-tag hierboven. Google's tag mag altijd laden omdat Consent Mode hem
+            vertelt wat hij niet mag opslaan; Meta kent die stand niet en zet zijn cookie
+            zodra hij laadt. Hij mag dus pas geïnjecteerd worden nadat er ja is gezegd,
+            en dat kan alleen vanuit de client.
+            @ai-sync: components/analytics/meta-pixel.tsx */}
+        <MetaPixel />
       </body>
     </html>
   );

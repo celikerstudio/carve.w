@@ -5,12 +5,12 @@ import type { MetadataRoute } from 'next'
 // hand in Search Console indient, en dat was niet gebeurd. Gemeten met
 // `curl -s -o /dev/null -w '%{http_code}' https://carve.wiki/robots.txt`.
 //
-// @ai-why: Alleen `/api/` en de ingelogde routes staan dicht. De rest van de site is
-// één marketingpagina plus drie juridische pagina's, dus een fijnmazige lijst zou hier
-// alleen maar verouderen. Wat níét geïndexeerd mag worden maar wel publiek is
-// (/carve/vision, /carve/roadmap, /carve/faq) draagt zijn eigen `noindex` in
-// app/carve/layout.tsx; dat werkt ook als iemand de URL rechtstreeks deelt, en een
-// Disallow hier zou juist voorkómen dat Google die noindex ooit leest.
+// @ai-why: Alleen `/api/` en het beheer staan dicht. De rest van de site is één
+// marketingpagina plus drie juridische pagina's, dus een fijnmazige lijst zou hier alleen
+// maar verouderen. Wat níét geïndexeerd mag worden maar wel publiek is (/carve/vision,
+// /carve/roadmap, /carve/faq) draagt zijn eigen `noindex` in app/carve/layout.tsx; dat
+// werkt ook als iemand de URL rechtstreeks deelt, en een Disallow hier zou juist
+// voorkómen dat Google die noindex ooit leest.
 //
 // @ai-sync: app/sitemap.ts (dezelfde BASE)
 // @ai-sync: app/carve/layout.tsx (noindex op de pagina's die hier bewust niet in Disallow staan)
@@ -21,7 +21,11 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/admin', '/settings', '/profile', '/auth/'],
+      // @ai-why: De cockpit staat op de wortel en stuurt bezoekers zonder sessie naar
+      // /app, dus een crawler komt er nooit binnen. `/beheer` staat er wel expliciet in:
+      // die route bestaat en geeft een redirect, en dat kost een crawl voor niets.
+      // @ai-sync: app/(cockpit)/beheer/layout.tsx
+      disallow: ['/api/', '/beheer', '/auth/'],
     },
     sitemap: `${BASE}/sitemap.xml`,
     host: BASE,

@@ -10,6 +10,7 @@ import { useSignOut } from '@/lib/auth/hooks'
 import { useWikiMeta } from '@/components/wiki/chat/WikiMetadataProvider'
 import { getCategoryColor } from '@/lib/wiki/category-colors'
 import type { AppId, AppMode } from './types'
+import { ADMIN_SECTIONS, pathForMode } from './cockpit-routes'
 import type { Conversation } from '@/hooks/useChatHistory'
 
 interface ChatSidebarProps {
@@ -24,12 +25,11 @@ interface ChatSidebarProps {
   selectedConversationId?: string | null
   onSelectConversation?: (id: string, activeApp: string) => void
   onNewChat?: () => void
+  /** Alleen om de actieve categorie te markeren; navigeren gaat via links. */
   wikiCategory?: string | null
-  onWikiCategoryChange?: (category: string | null) => void
   /** Toont de Admin-modus. De echte controle zit in de server action, niet hier. */
   isAdmin?: boolean
   adminSection?: string
-  onAdminSectionChange?: (section: string) => void
 }
 
 // @ai-why: Top-level modes — each changes what appears below in the sidebar.
@@ -62,14 +62,19 @@ const adminMode: { id: AppMode; label: string; icon: React.ElementType } = {
 // een ander product. Eén stijl was de reden om dit hierheen te halen.
 //
 // @ai-sync: components/chat/ChatLayout.tsx — elke id hier heeft daar een paneel
-const adminItems: { id: string; label: string; icon: React.ElementType }[] = [
-  { id: 'overview', label: 'Overzicht', icon: LayoutDashboard },
-  { id: 'users', label: 'Gebruikers', icon: User },
-  { id: 'content', label: 'Inhoud', icon: BookOpen },
-  { id: 'feedback', label: 'Feedback', icon: MessageSquare },
-  { id: 'money', label: 'Geld', icon: Wallet },
-  { id: 'ads', label: 'Ads', icon: Megaphone },
-]
+// @ai-why: Label en pad komen uit `cockpit-routes.ts`, het icoon staat hier. Zo staat de
+// route-tabel op één plek en hoeft dit bestand niet te weten hoe de URL's heten.
+// @ai-sync: components/chat/cockpit-routes.ts
+const adminIcons: Record<string, React.ElementType> = {
+  overview: LayoutDashboard,
+  users: User,
+  content: BookOpen,
+  feedback: MessageSquare,
+  money: Wallet,
+  ads: Megaphone,
+}
+
+const adminItems = ADMIN_SECTIONS.map((s) => ({ ...s, icon: adminIcons[s.id] }))
 
 // Domain apps shown when in Carve mode
 const carveApps: { id: AppId; label: string; icon: React.ElementType; color: string }[] = [
@@ -98,13 +103,13 @@ function formatTime(dateStr: string): string {
   return date.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' })
 }
 
-function WikiSidebarContent({
-  activeCategory,
-  onCategoryChange,
-}: {
-  activeCategory: string | null
-  onCategoryChange?: (category: string | null) => void
-}) {
+/**
+ * @ai-why: Links en geen knoppen. De wiki houdt zijn categorie sinds 2026-09-10 in de
+ * query (`/wiki?categorie=`), dus een categorie is een adres. Met een knop die state zet
+ * zou je hem niet kunnen bewaren of openen in een nieuw tabblad.
+ * @ai-sync: app/(cockpit)/wiki/page.tsx
+ */
+function WikiSidebarContent({ activeCategory }: { activeCategory: string | null }) {
   const { categories, articles, loading } = useWikiMeta()
 
   if (loading) {
@@ -121,8 +126,8 @@ function WikiSidebarContent({
 
   return (
     <div className="flex flex-col gap-0.5">
-      <button
-        onClick={() => onCategoryChange?.(null)}
+      <Link
+        href="/wiki"
         className={cn(
           'flex items-center justify-between px-3 py-2 rounded-lg text-left transition-all w-full',
           !activeCategory ? 'bg-white/[0.08]' : 'hover:bg-white/[0.05]'
@@ -135,15 +140,15 @@ function WikiSidebarContent({
           Alle artikelen
         </span>
         <span className="text-[11px] text-white/25">{articles.length}</span>
-      </button>
+      </Link>
 
       {categories.map((cat) => {
         const isActive = activeCategory === cat.name
         const color = getCategoryColor(cat.name)
         return (
-          <button
+          <Link
             key={cat.name}
-            onClick={() => onCategoryChange?.(isActive ? null : cat.name)}
+            href={isActive ? '/wiki' : `/wiki?categorie=${encodeURIComponent(cat.name)}`}
             className={cn(
               'flex items-center justify-between px-3 py-2 rounded-lg text-left transition-all w-full',
               isActive ? 'bg-white/[0.08]' : 'hover:bg-white/[0.05]'
@@ -156,7 +161,7 @@ function WikiSidebarContent({
               {cat.name}
             </span>
             <span className="text-[11px] text-white/25">{cat.count}</span>
-          </button>
+          </Link>
         )
       })}
     </div>
@@ -176,10 +181,8 @@ export function ChatSidebar({
   onSelectConversation,
   onNewChat,
   wikiCategory,
-  onWikiCategoryChange,
   isAdmin = false,
   adminSection = 'overview',
-  onAdminSectionChange,
 }: ChatSidebarProps) {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
@@ -225,9 +228,10 @@ export function ChatSidebar({
           const isActive = activeMode === mode.id
           const Icon = mode.icon
           return (
-            <button
+            <Link
               key={mode.id}
-              onClick={() => onModeChange(mode.id)}
+              href={pathForMode(mode.id)}
+              title={mode.label}
               className={cn(
                 'w-9 h-9 rounded-lg flex items-center justify-center transition-all',
                 isActive ? 'bg-white/[0.08]' : 'hover:bg-white/[0.05]'
@@ -237,7 +241,7 @@ export function ChatSidebar({
                 className="w-[18px] h-[18px]"
                 style={{ color: isActive ? '#fff' : 'rgba(255,255,255,0.35)' }}
               />
-            </button>
+            </Link>
           )
         })}
 
@@ -320,9 +324,9 @@ export function ChatSidebar({
           const isActive = activeMode === mode.id
           const Icon = mode.icon
           return (
-            <button
+            <Link
               key={mode.id}
-              onClick={() => onModeChange(mode.id)}
+              href={pathForMode(mode.id)}
               className={cn(
                 'flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-all',
                 isActive ? 'bg-white/[0.08]' : 'hover:bg-white/[0.05]'
@@ -338,7 +342,7 @@ export function ChatSidebar({
               )}>
                 {mode.label}
               </span>
-            </button>
+            </Link>
           )
         })}
       </div>
@@ -355,9 +359,9 @@ export function ChatSidebar({
               const isActive = adminSection === item.id
 
               return (
-                <button
+                <Link
                   key={item.id}
-                  onClick={() => onAdminSectionChange?.(item.id)}
+                  href={item.path}
                   className={cn(
                     'flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-all w-full',
                     isActive ? 'bg-white/[0.08]' : 'hover:bg-white/[0.05]'
@@ -373,7 +377,7 @@ export function ChatSidebar({
                   )}>
                     {item.label}
                   </span>
-                </button>
+                </Link>
               )
             })}
           </>
@@ -464,10 +468,7 @@ export function ChatSidebar({
         )}
 
         {activeMode === 'wiki' && (
-          <WikiSidebarContent
-            activeCategory={wikiCategory ?? null}
-            onCategoryChange={onWikiCategoryChange}
-          />
+          <WikiSidebarContent activeCategory={wikiCategory ?? null} />
         )}
       </div>
 

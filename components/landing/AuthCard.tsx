@@ -34,8 +34,11 @@ export function AuthCard({ initialMode }: { initialMode: AuthMode }) {
         <Link href="/app" className="text-[12px] font-bold uppercase tracking-[0.35em] text-white/85">
           CARVE
         </Link>
+        {/* @ai-why: Stond hier als "See the demo" naar /demo. Die demo is verwijderd
+            (TDR-0010) en de link wees daarna naar /app met een label dat iets anders
+            beloofde. Een knop die niet doet wat hij zegt is erger dan geen knop. */}
         <Link href="/app" className="text-[12.5px] text-white/30 transition-colors hover:text-white/60">
-          See the demo
+          See the app
         </Link>
       </nav>
 

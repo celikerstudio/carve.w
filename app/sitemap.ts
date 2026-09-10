@@ -5,8 +5,9 @@ import type { MetadataRoute } from 'next'
 // zonder sitemap een aanname zonder mechanisme: / draagt straks vrijwel geen
 // tekst meer. Zie docs/tdr/0001-homepage-is-een-keuzescherm.md, consequenties.
 //
-// @ai-todo: de wiki-artikelen dynamisch meenemen zodra `SHOW_WIKI` weer aanstaat (ze
-// staan in Supabase, dus dat vraagt een query hier). /how-it-works is vervallen: TDR-0005 maakt / zelf de marketingpagina.
+// @ai-context: De publieke wiki-site is op 2026-09-10 verwijderd; de artikelen leven nog
+// in Supabase en worden gelezen door de iOS-app en door de Wiki-modus in de cockpit. Er
+// valt hier dus niets meer aan artikelen op te nemen zolang er geen publieke leespagina is.
 //
 // @ai-gotcha: Een route die achter een uitgezette vlag staat hoort hier niet in. Google
 // indexeert dan een 404 en dat kost je de crawl van de pagina's die er wél zijn. Money,
@@ -21,7 +22,7 @@ import type { MetadataRoute } from 'next'
 // sitemap-URL die nergens heen gaat.
 // @ai-sync: app/carve/layout.tsx (dezelfde pagina's dragen daar hun noindex)
 // @ai-sync: components/carve/CarveFooter.tsx (dezelfde drie links, dezelfde reden)
-// @ai-sync: lib/flags.ts (SHOW_MONEY, SHOW_LIFE, SHOW_WIKI)
+// @ai-sync: lib/flags.ts (SHOW_MONEY, SHOW_LIFE)
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://carve.wiki'
 
 export default function sitemap(): MetadataRoute.Sitemap {

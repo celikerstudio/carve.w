@@ -1,6 +1,5 @@
 import { type NextRequest, NextResponse } from 'next/server'
 import { updateSession } from '@/lib/supabase/middleware'
-import { SHOW_WEB_APP } from '@/lib/flags'
 
 /**
  * Een omleiding die de sessiecookies van `updateSession` meeneemt.
@@ -46,28 +45,23 @@ export async function middleware(request: NextRequest) {
     return redirectMetSessie(new URL('/app', request.url), response)
   }
 
-  // Redirect unauthenticated users away from protected routes
-  if (pathname.startsWith('/dashboard') || pathname.startsWith('/money') || pathname.startsWith('/travel') || pathname.startsWith('/workouts') || pathname.startsWith('/food') || pathname.startsWith('/social') || pathname.startsWith('/profile') || pathname.startsWith('/settings') || pathname.startsWith('/health') || pathname.startsWith('/inbox')) {
-    if (!user) {
-      const redirectUrl = new URL('/login', request.url)
-      redirectUrl.searchParams.set('redirect', pathname)
-      return redirectMetSessie(redirectUrl, response)
-    }
-  }
+  // @ai-why: Hier stond een lijst van tien beschermde paden. Sinds TDR-0010 bestaan die
+  // routes niet meer; wat overblijft is de wortel, en die heeft zijn eigen tak hierboven.
+  // @ai-sync: docs/tdr/0010-het-web-platform-gaat-weg.md
 
-  // @ai-why: Geen nieuwe web-accounts zolang het platform uit staat. Inloggen blijft
-  // wél werken: een bestaand account moet erin kunnen en de cockpit in /chat hangt eraan.
-  // @ai-sync: lib/flags.ts (SHOW_WEB_APP)
-  if (pathname === '/signup' && !SHOW_WEB_APP) {
+  // @ai-why: Signup blijft dicht. De vlag die dit stuurde is met het platform verdwenen
+  // (TDR-0010), maar de reden niet: er komen geen nieuwe web-accounts bij. Inloggen blijft
+  // wel werken, anders komt een bestaand account er niet meer in.
+  // @ai-sync: docs/tdr/0010-het-web-platform-gaat-weg.md
+  if (pathname === '/signup') {
     return redirectMetSessie(new URL('/app', request.url), response)
   }
 
   // Redirect authenticated users away from auth pages
   if (pathname === '/login' || pathname === '/signup') {
     if (user) {
-      // @ai-why: Naar de wortel, want daar zit sinds TDR-0008 de cockpit. Niet meer
-      // afhankelijk van SHOW_WEB_APP: die vlag dekt het web-platform en niet de cockpit,
-      // en de grens is hier de sessie die we net hebben vastgesteld.
+      // @ai-why: Naar de wortel, want daar zit sinds TDR-0008 de cockpit. De grens is
+      // hier de sessie die we net hebben vastgesteld.
       // @ai-sync: docs/tdr/0008-de-cockpit-is-de-homepage.md
       return redirectMetSessie(new URL('/', request.url), response)
     }

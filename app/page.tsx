@@ -7,9 +7,9 @@ import { isAdmin } from "@/lib/admin/auth"
  * De homepage: de cockpit voor wie is ingelogd.
  *
  * @ai-why: Deze pagina stond tot 2026-09-09 op `/chat`, binnen de `(protected)`-groep en
- * dus achter `SHOW_WEB_APP`. Die vlag staat in productie uit, dus daar zou de homepage
- * een 404 geven. De grens is nu de sessie plus de rolcontrole in lib/admin/auth.ts, en
- * dat was sowieso de echte grens; de vlag verborg alleen de ingang.
+ * dus achter `SHOW_WEB_APP`. Die vlag zou de homepage in productie een 404 geven; hij is
+ * met het web-platform verdwenen (TDR-0010). De grens is de sessie plus de rolcontrole in
+ * lib/admin/auth.ts, en dat was sowieso de echte grens.
  *
  * @ai-sync: next.config.ts (/chat stuurt hierheen door)
  * @ai-sync: docs/tdr/0008-de-cockpit-is-de-homepage.md

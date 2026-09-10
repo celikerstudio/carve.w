@@ -1,1 +1,0 @@
-export { HealthCard } from "./HealthCard"

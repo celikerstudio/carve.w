@@ -70,30 +70,3 @@ export const SHOW_LIFE =
  */
 export const SHOW_WIKI =
   process.env.NEXT_PUBLIC_SHOW_WIKI === 'true' || process.env.NODE_ENV !== 'production'
-
-/**
- * Het web-platform: de ingelogde app (`/dashboard`, `/workouts`, `/food`, `/social`,
- * `/profile`, `/settings`, `/health`, `/travel`), plus `/hiscores`, `/demo` en `/lab`.
- *
- * @ai-why: `/chat` valt hier sinds TDR-0008 níét meer onder. De cockpit is de homepage
- * geworden en staat op `/`, buiten de `(protected)`-groep; achter deze vlag zou hij in
- * productie een 404 geven. De grens daar is de sessie plus de rolcontrole in
- * lib/admin/auth.ts.
- * @ai-sync: app/page.tsx
- *
- * @ai-why: Uit sinds 2026-09-05. carve.wiki is vanaf nu een marketingpagina voor de
- * iOS-app, en niets anders. Het platform is niet stuk — het is 68 bestanden die niemand
- * gebruikt: van de dertien accounts in de gedeelde database zijn er zeven testaccounts,
- * en het verkeer komt via de App Store binnen, niet via het web. Twee producten
- * onderhouden terwijl er één gebruikt wordt is precies de breedte die in de iOS-app op
- * 2026-09-04 is teruggesnoeid.
- *
- * @ai-gotcha: `(auth)` valt hier bewust NIET onder. Inloggen blijft werken, anders komt
- * een bestaand account er niet meer in en jij niet meer bij `/admin`. Signup staat wel
- * dicht: geen nieuwe web-accounts zolang het platform uit is. `/admin` blijft open, dat
- * is jouw gereedschap en het hangt aan de rol, niet aan deze vlag.
- *
- * @ai-sync: docs/tdr/0005-carve-wiki-is-een-marketingpagina.md
- */
-export const SHOW_WEB_APP =
-  process.env.NEXT_PUBLIC_SHOW_WEB_APP === 'true' || process.env.NODE_ENV !== 'production'

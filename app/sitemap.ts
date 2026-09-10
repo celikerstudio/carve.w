@@ -10,7 +10,8 @@ import type { MetadataRoute } from 'next'
 //
 // @ai-gotcha: Een route die achter een uitgezette vlag staat hoort hier niet in. Google
 // indexeert dan een 404 en dat kost je de crawl van de pagina's die er wél zijn. Money,
-// travel, hiscores en signup zijn er daarom uit sinds 2026-09-05.
+// travel, hiscores en signup zijn er daarom uit sinds 2026-09-05; sinds TDR-0010 bestaan
+// die routes helemaal niet meer.
 //
 // @ai-why: /carve/vision, /carve/roadmap en /carve/faq stonden hier tot 2026-09-07. Die
 // pagina's leven nog en geven een 200, maar ze verkopen de brede app van vóór 2026-09-04:
@@ -20,7 +21,7 @@ import type { MetadataRoute } from 'next'
 // sitemap-URL die nergens heen gaat.
 // @ai-sync: app/carve/layout.tsx (dezelfde pagina's dragen daar hun noindex)
 // @ai-sync: components/carve/CarveFooter.tsx (dezelfde drie links, dezelfde reden)
-// @ai-sync: lib/flags.ts (SHOW_MONEY, SHOW_LIFE, SHOW_WEB_APP, SHOW_WIKI)
+// @ai-sync: lib/flags.ts (SHOW_MONEY, SHOW_LIFE, SHOW_WIKI)
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://carve.wiki'
 
 export default function sitemap(): MetadataRoute.Sitemap {

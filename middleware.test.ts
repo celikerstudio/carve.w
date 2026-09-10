@@ -42,12 +42,17 @@ describe('middleware geeft de ververste sessiecookie door', () => {
     expect(res.cookies.get(VERVERST)?.value).toBe('nieuw-token')
   })
 
-  it('bij de omleiding van een beschermde route naar /login', async () => {
+  it('bij de omleiding van /signup naar /app', async () => {
+    // @ai-why: Dit geval testte tot TDR-0010 de omleiding van /dashboard naar /login. Die
+    // route bestaat niet meer en er is geen beschermde route over die naar /login stuurt:
+    // de wortel gaat naar /app. Wat het geval bewaakte blijft hetzelfde, namelijk dat de
+    // cookie ook deze derde tak overleeft, dus het is verhuisd naar de signup-omleiding.
+    // @ai-sync: docs/tdr/0010-het-web-platform-gaat-weg.md
     updateSession.mockImplementation(sessie(null))
 
-    const res = await middleware(new NextRequest('http://localhost:3000/dashboard'))
+    const res = await middleware(new NextRequest('http://localhost:3000/signup'))
 
-    expect(res.headers.get('location')).toBe('http://localhost:3000/login?redirect=%2Fdashboard')
+    expect(res.headers.get('location')).toBe('http://localhost:3000/app')
     expect(res.cookies.get(VERVERST)?.value).toBe('nieuw-token')
   })
 })

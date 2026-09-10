@@ -1,1 +1,0 @@
-export { TravelCard } from "./TravelCard"

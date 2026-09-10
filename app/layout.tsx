@@ -36,7 +36,7 @@ const geistMono = Geist_Mono({
 // moet je hem apart bijhouden.
 //
 // @ai-sync: app/opengraph-image.tsx
-// @ai-sync: app/(landing)/page.tsx — dezelfde belofte, per route herhaald
+// @ai-sync: app/app/page.tsx — dezelfde belofte, per route herhaald
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://carve.wiki'),
   title: 'Carve AI — Fitness Coach',
@@ -77,8 +77,13 @@ export default async function RootLayout({
   let profile = null;
   if (user) {
     const { data } = await supabase
+      // @ai-why: Geen `user_roles(name)`-join meer. De enige lezer was de Admin-link in
+      // het gebruikersmenu, en die route bestaat sinds TDR-0010 niet meer; de rolcontrole
+      // die er wél toe doet zit in lib/admin/auth.ts, server-side, bij de cockpit zelf.
+      // @ai-sync: components/app/app-header.tsx
+      // @ai-sync: lib/admin/auth.ts
       .from('profiles')
-      .select('*, user_roles(name)')
+      .select('display_name, username, avatar_image_url')
       .eq('id', user.id)
       .single();
     profile = data;
@@ -94,7 +99,6 @@ export default async function RootLayout({
           userEmail={user?.email}
           userName={profile?.display_name || profile?.username || undefined}
           userAvatar={profile?.avatar_image_url || undefined}
-          userRole={profile?.user_roles?.name || undefined}
         >
           {children}
         </LayoutWrapper>

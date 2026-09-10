@@ -48,5 +48,5 @@ Er valt niets te overrulen: dit is een verwijdering, geen richting. Wil je een w
 ## Synchronisatie
 
 - `lib/flags.ts` ↔ `middleware.ts` — `SHOW_WEB_APP` verdwijnt aan beide kanten tegelijk
-- `components/app/layout-wrapper.tsx` ↔ de routes die overblijven — de zijbalk-tak is er voor `/carve/updates` en verder niets meer
+- `components/app/layout-wrapper.tsx` ↔ de routes die overblijven — de zijbalk-tak is op 2026-09-10 verwijderd, samen met `/carve/updates` (de laatste pagina die hem gebruikte), `AppSidebarController`, `AppShell`, `lib/navigation/` en `components/icons/`. Wat geen eigen tak heeft draagt nu geen chrome, en dat is alleen nog de 404
 - `components/dashboard/hub/` ↔ `components/chat/ChatLayout.tsx` — wat hier blijft staan, blijft omdat de cockpit het importeert

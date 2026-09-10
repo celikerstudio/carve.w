@@ -1,6 +1,6 @@
 "use client";
 
-import { Settings, User, LogOut, Menu, X, BookOpen } from 'lucide-react';
+import { LogOut, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase/client';
-import { SearchBar } from '@/components/wiki/SearchBar';
+import { SHOW_MONEY, SHOW_LIFE } from '@/lib/flags';
 
 interface AppHeaderProps {
   className?: string;
@@ -17,7 +17,6 @@ interface AppHeaderProps {
   userEmail?: string;
   userName?: string;
   userAvatar?: string;
-  userRole?: string;
   transparent?: boolean;
 }
 
@@ -30,14 +29,23 @@ function stripLocale(pathname: string): string {
   return pathname;
 }
 
-// Nav items: marketing pages link to /carve/*
+// @ai-why: Health wijst naar /app en niet naar /carve. Die tweede stuurt in
+// next.config.ts (308) door naar precies dezelfde pagina, dus dat was een extra sprong
+// in de hoofdnavigatie zonder dat iemand er iets aan had.
+// @ai-why: Money en Life staan achter hun vlag en zijn daarmee in productie weg uit deze
+// balk. Ze wezen naar /carve/money en /carve/travel, en die geven allebei een 404 zodra
+// de vlag uit staat — dit waren twee staande 404's in de hoofdnavigatie van elke
+// marketingpagina. Filteren bij de definitie en niet bij de lezer, net als
+// `unifiedNavigationGroups` deed, zodat de volgende lezer de gate niet vergeet.
+// @ai-why: wijst naar /carve/travel en niet /carve/life — die route bestaat niet en dit
+// was een staande 404 in de hoofdnavigatie (gevonden bij TDR-0001).
+// @ai-sync: lib/flags.ts (SHOW_MONEY, SHOW_LIFE)
+// @ai-sync: next.config.ts (/carve -> /app)
 const MARKETING_NAV = [
-  { label: 'Health', href: '/carve' },
-  { label: 'Money', href: '/carve/money' },
-  // @ai-why: wijst naar /carve/travel en niet /carve/life — die route bestaat
-  // niet en dit was een staande 404 in de hoofdnavigatie (gevonden bij TDR-0001).
-  { label: 'Life', href: '/carve/travel' },
-] as const;
+  { label: 'Health', href: '/app' },
+  ...(SHOW_MONEY ? [{ label: 'Money', href: '/carve/money' }] : []),
+  ...(SHOW_LIFE ? [{ label: 'Life', href: '/carve/travel' }] : []),
+];
 
 export function AppHeader({
   className,
@@ -45,7 +53,6 @@ export function AppHeader({
   userEmail,
   userName,
   userAvatar,
-  userRole,
   transparent = false,
 }: AppHeaderProps) {
   const pathname = usePathname();
@@ -64,9 +71,10 @@ export function AppHeader({
   const path = stripLocale(pathname);
   const isWikiRoute = path === '/' || path.startsWith('/wiki');
   const isMarketing = path === '/carve' || path.startsWith('/carve/');
-  const isDashboard = path.startsWith('/chat') || path.startsWith('/money') || path.startsWith('/travel') || path.startsWith('/workouts') || path.startsWith('/food') || path.startsWith('/social') || path.startsWith('/profile') || path.startsWith('/settings') || path.startsWith('/health') || path.startsWith('/inbox');
-  // Only show nav tabs on marketing pages — dashboard uses the sidebar
-  const navItems = isMarketing ? MARKETING_NAV : null;
+  // @ai-why: Geen balk bij één item. Zonder Money en Life houdt de navigatie alleen
+  // Health over, en dat is dezelfde bestemming als het CARVE-logo ernaast: twee keer
+  // hetzelfde aanbieden leest als een halve navigatie in plaats van geen.
+  const navItems = isMarketing && MARKETING_NAV.length > 1 ? MARKETING_NAV : null;
 
   const handleLogout = async () => {
     const supabase = createClient();
@@ -112,8 +120,12 @@ export function AppHeader({
         <div className="mx-auto max-w-7xl px-6">
           <div className="relative flex items-center h-16">
             {/* Logo - left */}
+            {/* @ai-why: /app en niet /carve. Die tweede is sinds TDR-0007 een permanente
+                redirect naar deze pagina; het logo van elke pagina liet je dus een extra
+                sprong maken.
+                @ai-sync: next.config.ts (/carve -> /app) */}
             <Link
-              href="/carve"
+              href="/app"
               className={cn(
                 "font-bold text-lg tracking-[0.2em] transition-colors",
                 isWikiRoute ? "text-ink hover:text-ink-secondary" : "text-white hover:text-white/80"
@@ -150,22 +162,14 @@ export function AppHeader({
             )}
 
             {/* Right side - Desktop */}
+            {/* @ai-why: Hier stonden tot 2026-09-10 een wiki-zoekbalk en een boek-knop.
+                De wiki woont sinds die dag in de cockpit onder `app/(cockpit)/wiki/` en
+                dus achter de login, terwijl deze header alleen op de publieke
+                /carve-pagina's staat. Elke bezoeker die erop klikte werd naar /app
+                gestuurd; daarvoor gaf hij een 404 zolang `SHOW_WIKI` uit stond.
+                @ai-sync: app/(cockpit)/wiki/page.tsx
+                @ai-sync: components/app/layout-wrapper.tsx (welke routes deze header dragen) */}
             <div className="hidden md:flex items-center gap-3 ml-auto">
-              <SearchBar variant="header" theme={isWikiRoute ? 'light' : 'dark'} />
-              <Link
-                href="/app"
-                className={cn(
-                  'p-2 rounded-lg transition-colors',
-                  isWikiRoute
-                    ? 'text-ink bg-ink/[0.06]'
-                    : (path === '/' || path.startsWith('/wiki')
-                      ? 'text-white bg-white/[0.08]'
-                      : 'text-white/40 hover:text-white/70 hover:bg-white/[0.04]')
-                )}
-                title="Wiki"
-              >
-                <BookOpen className="w-4 h-4" />
-              </Link>
               {isAuthenticated ? (
                 <div className="relative">
                   <button
@@ -209,6 +213,14 @@ export function AppHeader({
                           </p>
                         </div>
 
+                        {/* @ai-why: Hier stonden tot 2026-09-10 ook Profile, Settings en
+                            (voor admins) Admin. Die drie routes zijn met TDR-0010
+                            verwijderd en gaven een 404 vanuit het gebruikersmenu van elke
+                            publieke pagina. Wat ze deden zit nu in de cockpit hieronder,
+                            als modus: profiel en instellingen bij Brein, beheer in de
+                            Admin-modus uit TDR-0006.
+                            @ai-sync: components/chat/ChatSidebar.tsx (de modi in de cockpit)
+                            @ai-sync: docs/tdr/0010-het-web-platform-gaat-weg.md */}
                         <div className="py-1">
                           <Link
                             href="/"
@@ -223,39 +235,7 @@ export function AppHeader({
                             </svg>
                             Dashboard
                           </Link>
-                          <Link
-                            href="/profile"
-                            onClick={() => setIsDropdownOpen(false)}
-                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
-                          >
-                            <User className="mr-2.5 h-4 w-4" />
-                            Profile
-                          </Link>
-                          <Link
-                            href="/settings"
-                            onClick={() => setIsDropdownOpen(false)}
-                            className={cn("flex items-center px-3 py-2 text-sm transition-colors", isWikiRoute ? "text-ink-secondary hover:bg-surface hover:text-ink" : "text-slate-400 hover:bg-white/[0.04] hover:text-white")}
-                          >
-                            <Settings className="mr-2.5 h-4 w-4" />
-                            Settings
-                          </Link>
                         </div>
-
-                        {userRole === 'admin' && (
-                          <>
-                            <div className={cn("border-t", isWikiRoute ? "border-subtle" : "border-white/[0.06]")} />
-                            <Link
-                              href="/admin"
-                              onClick={() => setIsDropdownOpen(false)}
-                              className="flex items-center px-3 py-2 text-sm text-purple-400 hover:bg-purple-500/10 transition-colors"
-                            >
-                              <svg className="mr-2.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                              </svg>
-                              Admin
-                            </Link>
-                          </>
-                        )}
 
                         <div className={cn("border-t", isWikiRoute ? "border-subtle" : "border-white/[0.06]")} />
                         <button
@@ -331,16 +311,6 @@ export function AppHeader({
                 </Link>
               ))}
               <div className="border-t border-white/[0.08] mt-4 pt-4 flex flex-col gap-2">
-                <Link
-                  href="/app"
-                  onClick={() => setMobileOpen(false)}
-                  className={cn(
-                    'text-lg transition-colors',
-                    path === '/' || path.startsWith('/wiki') ? 'text-white' : 'text-white/30'
-                  )}
-                >
-                  Wiki
-                </Link>
                 {isAuthenticated ? (
                   <Link
                     href="/"

@@ -24,6 +24,27 @@ export interface Ga4Data {
   appStoreClicks: number
 }
 
+/**
+ * Het datumbereik voor een rapport, eventueel een heel venster teruggeschoven.
+ *
+ * @ai-why: GA4 kent alleen relatieve dagen (`7daysAgo`), geen absolute periode zoals Meta.
+ * Om een periode met de vorige te vergelijken moet je dus zelf terugtellen. Los en puur
+ * gehouden omdat een fout hier stil is: een venster dat een dag overlapt of een gat laat
+ * geeft geen foutmelding, alleen een vergelijking die er plausibel uitziet en niet klopt.
+ *
+ * @ai-gotcha: De vensters sluiten op elkaar aan zonder overlap: `dateRange(7)` loopt van
+ * 7daysAgo tot today, `dateRange(7, 7)` van 14daysAgo tot 7daysAgo. GA4's bereiken zijn
+ * aan beide kanten inclusief, dus de dag op de grens telt strikt genomen in allebei mee.
+ * Dat is één dag op zeven of dertig en het alternatief (een dag ertussenuit) vervalst de
+ * vergelijking meer dan deze overlap doet.
+ */
+export function dateRange(days: number, offsetDays = 0): { startDate: string; endDate: string } {
+  return {
+    startDate: `${days + offsetDays}daysAgo`,
+    endDate: offsetDays === 0 ? 'today' : `${offsetDays}daysAgo`,
+  }
+}
+
 export function ga4Missing(): string[] {
   return missingEnv(process.env, [...GA4_ENV])
 }
@@ -83,9 +104,9 @@ async function runReport(token: string, body: unknown): Promise<number> {
   return waarde ? Number(waarde) : 0
 }
 
-export async function loadGa4(days: number): Promise<Ga4Data> {
+export async function loadGa4(days: number, offsetDays = 0): Promise<Ga4Data> {
   const token = await accessToken()
-  const dateRanges = [{ startDate: `${days}daysAgo`, endDate: 'today' }]
+  const dateRanges = [dateRange(days, offsetDays)]
 
   const [visitors, appStoreClicks] = await Promise.all([
     runReport(token, { dateRanges, metrics: [{ name: 'activeUsers' }] }),
@@ -164,9 +185,9 @@ export function parseCampaignRows(bezoekers: Rapport, klikken: Rapport): Ga4Camp
  * campagnenaam. Advertenties zonder die parameter komen hier binnen onder `(not set)` en
  * vinden nooit een campagne om bij te horen. Zie TDR-0009 beslissing 4.
  */
-export async function loadGa4Campaigns(days: number): Promise<Ga4Campaign[]> {
+export async function loadGa4Campaigns(days: number, offsetDays = 0): Promise<Ga4Campaign[]> {
   const token = await accessToken()
-  const dateRanges = [{ startDate: `${days}daysAgo`, endDate: 'today' }]
+  const dateRanges = [dateRange(days, offsetDays)]
   const dimensions = [{ name: 'sessionCampaignId' }]
 
   const [bezoekers, klikken] = await Promise.all([

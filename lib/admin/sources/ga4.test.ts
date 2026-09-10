@@ -35,3 +35,24 @@ describe('parseCampaignRows', () => {
     expect(parseCampaignRows({}, {})).toEqual([])
   })
 })
+
+describe('dateRange', () => {
+  it('vraagt standaard de laatste N dagen tot vandaag', async () => {
+    const { dateRange } = await import('./ga4')
+
+    expect(dateRange(7)).toEqual({ startDate: '7daysAgo', endDate: 'today' })
+  })
+
+  it('schuift bij een offset een heel venster terug', async () => {
+    const { dateRange } = await import('./ga4')
+
+    expect(dateRange(7, 7)).toEqual({ startDate: '14daysAgo', endDate: '7daysAgo' })
+  })
+
+  it('laat de twee vensters niet overlappen', async () => {
+    const { dateRange } = await import('./ga4')
+
+    expect(dateRange(30, 30).endDate).toBe('30daysAgo')
+    expect(dateRange(30).startDate).toBe('30daysAgo')
+  })
+})

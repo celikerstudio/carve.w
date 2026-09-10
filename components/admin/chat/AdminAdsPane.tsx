@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { fetchAds, type AdsResult } from '@/app/actions/admin/ads'
 import type { AdCampaignRow } from '@/lib/admin/ads'
+import { AdsWatchPanel } from '@/components/admin/chat/AdsWatchPanel'
 import { SourceNote } from '@/components/admin/source-note'
 import { StatsCard } from '@/components/admin/stats-card'
 
@@ -180,6 +181,12 @@ export function AdminAdsPane() {
             {result.ga4Failure && (
               <SourceNote failure={result.ga4Failure} title="Resultaat per campagne" />
             )}
+
+            {/* @ai-why: Boven de tabel en onder de kaarten. De kaarten zeggen wat het kostte,
+                dit zegt of er iets aan de hand is, en pas daarna komt het detail per
+                campagne. Staat het eronder, dan lees je de tabel zonder te weten dat de
+                meting stuk is. */}
+            <AdsWatchPanel days={days} />
 
             {totalen && totalen.untaggedSpend > 0 && (
               <div className="rounded-xl border border-[#FF9500]/25 bg-[#FF9500]/[0.06] p-4">

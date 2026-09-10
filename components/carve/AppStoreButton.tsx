@@ -1,7 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { APP_STORE_URL, cn } from '@/lib/utils';
+import { cn } from '@/lib/utils';
+import { useAppStoreUrl } from '@/hooks/useAppStoreUrl';
 import { track } from '@/lib/analytics';
 
 type Source = 'hero' | 'close' | 'dock' | 'header';
@@ -45,11 +46,12 @@ const HEIGHT: Record<Source, number> = { hero: 68, close: 68, dock: 58, header: 
  * @ai-sync: lib/analytics.ts (het `source`-type van `app_store_click`)
  */
 export function AppStoreButton({ source, id, className }: AppStoreButtonProps) {
+  const appStoreUrl = useAppStoreUrl();
   const h = HEIGHT[source];
   return (
     <a
       id={id}
-      href={APP_STORE_URL}
+      href={appStoreUrl}
       onClick={() => track('app_store_click', { source })}
       target="_blank"
       rel="noopener noreferrer"

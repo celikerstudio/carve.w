@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
-import { APP_STORE_URL } from '@/lib/utils';
+import { useAppStoreUrl } from '@/hooks/useAppStoreUrl';
 import { AppleGlyph } from '@/components/carve/AppleGlyph';
 import { track } from '@/lib/analytics';
 
@@ -53,6 +53,7 @@ const HERO_CONFIG: Record<string, HeroConfig> = {
 };
 
 export function MarketingHero({ page }: { page: string }) {
+  const appStoreUrl = useAppStoreUrl();
   const config = HERO_CONFIG[page] ?? HERO_CONFIG['/carve'];
   const [chatIndex, setChatIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
@@ -160,7 +161,7 @@ export function MarketingHero({ page }: { page: string }) {
               </Link>
 
               <a
-                href={APP_STORE_URL}
+                href={appStoreUrl}
               onClick={() => track('app_store_click', { source: 'marketing_hero' })}
                 target="_blank"
                 rel="noopener noreferrer"

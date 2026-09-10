@@ -6,7 +6,7 @@ import {
   Check, X, Dumbbell, Wallet, MapPin,
 } from 'lucide-react';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
-import { APP_STORE_URL } from '@/lib/utils';
+import { useAppStoreUrl } from '@/hooks/useAppStoreUrl';
 import { track } from '@/lib/analytics';
 
 const FREE_FEATURES = [
@@ -50,6 +50,7 @@ const PRO_PER_PRODUCT = [
 
 
 export function PricingHub() {
+  const appStoreUrl = useAppStoreUrl();
   const [yearly, setYearly] = useState(true);
 
   return (
@@ -159,7 +160,7 @@ export function PricingHub() {
               ))}
             </div>
 
-            <a href={APP_STORE_URL}
+            <a href={appStoreUrl}
               onClick={() => track('app_store_click', { source: 'pricing' })} target="_blank" rel="noopener noreferrer" className="mt-6 px-5 py-3 bg-white text-black rounded-xl font-semibold text-sm text-center block hover:bg-white/90 transition-colors">
               Download on the App Store
             </a>

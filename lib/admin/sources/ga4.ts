@@ -7,10 +7,12 @@
  *
  * @ai-sync: lib/analytics.ts — de eventnaam `app_store_click` staat aan beide kanten
  * @ai-sync: docs/tdr/0006-admin-is-de-cockpit.md
+ * @ai-sync: docs/tdr/0009-campagnerendement-komt-uit-ga4.md
  */
 
 import { signRS256 } from './jwt'
 import { missingEnv } from './source'
+import type { Ga4Campaign } from '../ads'
 
 export const GA4_ENV = ['GA4_PROPERTY_ID', 'GA4_CLIENT_EMAIL', 'GA4_PRIVATE_KEY'] as const
 
@@ -100,4 +102,87 @@ export async function loadGa4(days: number): Promise<Ga4Data> {
   ])
 
   return { visitors, appStoreClicks }
+}
+
+/** De vorm van een `runReport`-antwoord, voor zover wij hem lezen. */
+interface Rapport {
+  rows?: { dimensionValues?: { value?: string }[]; metricValues?: { value?: string }[] }[]
+}
+
+async function runReportRows(token: string, body: unknown): Promise<Rapport> {
+  const res = await fetch(
+    `https://analyticsdata.googleapis.com/v1beta/properties/${process.env.GA4_PROPERTY_ID}:runReport`,
+    {
+      method: 'POST',
+      headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+      body: JSON.stringify(body),
+      cache: 'no-store',
+    },
+  )
+
+  if (!res.ok) throw new Error(`GA4 gaf ${res.status}: ${await res.text()}`)
+  return (await res.json()) as Rapport
+}
+
+function perCampagne(rapport: Rapport): Map<string, number> {
+  const uit = new Map<string, number>()
+  for (const rij of rapport.rows ?? []) {
+    const id = rij.dimensionValues?.[0]?.value
+    if (!id) continue
+    uit.set(id, Number(rij.metricValues?.[0]?.value ?? 0))
+  }
+  return uit
+}
+
+/**
+ * Twee rapporten samengevoegd tot één rij per campagne.
+ *
+ * @ai-why: Twee aanroepen en niet één rapport met beide metrics. `activeUsers` naast een
+ * gefilterde `eventCount` zetten verandert bij GA4 zowel het aantal rijen als de andere
+ * metric, want het filter geldt dan voor allebei. Je krijgt dan "gebruikers die het event
+ * vuurden" terwijl er "bezoekers" boven de kolom staat.
+ *
+ * @ai-gotcha: Bezoekers is een telling van gebruikers tegen een dimensie die per sessie
+ * geldt. Wie via twee campagnes binnenkomt telt in beide rijen, dus deze kolom telt niet
+ * op tot het bezoekerstotaal op het Overzicht. Het scherm zegt dat erbij.
+ */
+export function parseCampaignRows(bezoekers: Rapport, klikken: Rapport): Ga4Campaign[] {
+  const perBezoeker = perCampagne(bezoekers)
+  const perKlik = perCampagne(klikken)
+
+  return [...new Set([...perBezoeker.keys(), ...perKlik.keys()])].map((campaignId) => ({
+    campaignId,
+    visitors: perBezoeker.get(campaignId) ?? 0,
+    appStoreClicks: perKlik.get(campaignId) ?? 0,
+  }))
+}
+
+/**
+ * Bezoek en doorklik per campagne, gesleuteld op `utm_id`.
+ *
+ * @ai-gotcha: De sleutel is `sessionCampaignId` en dus de waarde van `utm_id`, niet de
+ * campagnenaam. Advertenties zonder die parameter komen hier binnen onder `(not set)` en
+ * vinden nooit een campagne om bij te horen. Zie TDR-0009 beslissing 4.
+ */
+export async function loadGa4Campaigns(days: number): Promise<Ga4Campaign[]> {
+  const token = await accessToken()
+  const dateRanges = [{ startDate: `${days}daysAgo`, endDate: 'today' }]
+  const dimensions = [{ name: 'sessionCampaignId' }]
+
+  const [bezoekers, klikken] = await Promise.all([
+    runReportRows(token, { dateRanges, dimensions, metrics: [{ name: 'activeUsers' }] }),
+    runReportRows(token, {
+      dateRanges,
+      dimensions,
+      metrics: [{ name: 'eventCount' }],
+      dimensionFilter: {
+        filter: {
+          fieldName: 'eventName',
+          stringFilter: { matchType: 'EXACT', value: APP_STORE_EVENT },
+        },
+      },
+    }),
+  ])
+
+  return parseCampaignRows(bezoekers, klikken)
 }

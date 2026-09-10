@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Plus, LogOut, Settings, PanelLeftClose, PanelLeft, Dumbbell, Wallet, Plane, Brain, BookOpen, Flame, MessageSquare, User, BookMarked, Archive, Shield, LayoutDashboard, Trophy, Smartphone, ArrowUpRight } from 'lucide-react'
+import { Plus, LogOut, Settings, PanelLeftClose, PanelLeft, Dumbbell, Wallet, Plane, Brain, BookOpen, Flame, MessageSquare, User, BookMarked, Archive, Shield, LayoutDashboard, Trophy, Smartphone, ArrowUpRight, Megaphone } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -55,7 +55,7 @@ const adminMode: { id: AppMode; label: string; icon: React.ElementType } = {
   icon: Shield,
 }
 
-// Sub-nav in de Admin-modus. Alle vier renderen in het chatvenster.
+// Sub-nav in de Admin-modus. Elk item rendert in het chatvenster.
 //
 // @ai-why: Geen links naar /admin/* meer. Die routes hebben een eigen shell met een
 // andere breedte, andere kleuren en een eigen kop, en doorklikken voelde daardoor als
@@ -68,6 +68,7 @@ const adminItems: { id: string; label: string; icon: React.ElementType }[] = [
   { id: 'content', label: 'Inhoud', icon: BookOpen },
   { id: 'feedback', label: 'Feedback', icon: MessageSquare },
   { id: 'money', label: 'Geld', icon: Wallet },
+  { id: 'ads', label: 'Ads', icon: Megaphone },
 ]
 
 // Domain apps shown when in Carve mode

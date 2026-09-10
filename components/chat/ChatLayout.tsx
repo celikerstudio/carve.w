@@ -11,6 +11,7 @@ import { AdminUsersPane } from '@/components/admin/chat/AdminUsersPane'
 import { AdminContentPane } from '@/components/admin/chat/AdminContentPane'
 import { AdminFeedbackPane } from '@/components/admin/chat/AdminFeedbackPane'
 import { AdminMoneyPane } from '@/components/admin/chat/AdminMoneyPane'
+import { AdminAdsPane } from '@/components/admin/chat/AdminAdsPane'
 import { WikiArticleView } from '@/components/wiki/chat/WikiArticleView'
 import { WikiCategoryView } from '@/components/wiki/chat/WikiCategoryView'
 import { type SectionConfig, healthConfig, moneyConfig, homeConfig, lifeConfig, inboxConfig, breinConfig } from '@/components/dashboard/hub/mock-data'
@@ -309,6 +310,7 @@ export function ChatLayout({ userId, userName = 'User', isAdmin = false }: ChatL
             {adminSection === 'content' && <AdminContentPane />}
             {adminSection === 'feedback' && <AdminFeedbackPane />}
             {adminSection === 'money' && <AdminMoneyPane />}
+            {adminSection === 'ads' && <AdminAdsPane />}
           </div>
         )}
 

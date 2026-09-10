@@ -36,10 +36,12 @@ export interface Overview {
   subscriptions: SourceResult<SubscriptionSummary>
   /** Alle bronnen die niets gaven, voor de melding onder de trechter. */
   failures: SourceFailure[]
-  /** Uitgaven gedeeld door downloads, als beide er zijn. */
-  costPerDownload: number | null
-  costPerAccount: number | null
 }
+
+// @ai-why: Kosten per download en per account stonden hier tot TDR-0009. Ze staan nu in
+// app/actions/admin/ads.ts, bij de campagnes die ze verklaren. Op twee plekken hetzelfde
+// getal uitrekenen is hoe de twee schermen uit elkaar gaan lopen.
+// @ai-sync: app/actions/admin/ads.ts
 
 function waarde<T>(result: SourceResult<T>, pick: (data: T) => number): number | null {
   return result.ok ? pick(result.data) : null
@@ -77,10 +79,6 @@ export async function getOverview(
     firstLogs: waarde(app, (d) => d.firstLogs),
   })
 
-  const spend = waarde(meta, (d) => d.spend)
-  const downloads = waarde(appstore, (d) => d.downloads)
-  const accounts = waarde(app, (d) => d.accounts)
-
   return {
     days,
     funnel,
@@ -93,8 +91,5 @@ export async function getOverview(
     aiPrevious,
     subscriptions,
     failures: [ga4, meta, appstore, app].flatMap((r) => (r.ok ? [] : [r.failure])),
-    // @ai-why: Delen door nul geeft `null`, niet Infinity. Zie de reden in lib/admin/funnel.ts.
-    costPerDownload: spend !== null && downloads ? Math.round((spend / downloads) * 100) / 100 : null,
-    costPerAccount: spend !== null && accounts ? Math.round((spend / accounts) * 100) / 100 : null,
   }
 }

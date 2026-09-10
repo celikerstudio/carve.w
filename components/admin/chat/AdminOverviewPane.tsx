@@ -22,17 +22,13 @@ function euro(value: number | null): string {
 /**
  * Het overzicht binnen het chatvenster.
  *
- * @ai-why: Client component met een server action, en niet de server component uit
- * `app/(protected)/admin/page.tsx`. De chat houdt zijn modus in React-state en navigeert
- * niet, dus er is geen server render om op mee te liften. De view-componenten (`Funnel`,
- * `StatsCard`, `SourceNote`) zijn wél dezelfde als op de route; alleen het ophalen
- * verschilt.
+ * @ai-why: Client component met een server action. De chat houdt zijn modus in
+ * React-state en navigeert niet, dus er is geen server render om op mee te liften.
  *
  * @ai-gotcha: Bij elke wisseling van periode wordt opnieuw opgehaald, en dat gaat langs
  * vier externe bronnen. Vandaar de expliciete laadstaat: zonder die staat lijkt het
  * scherm bevroren terwijl Apple dertig dagrapporten uitlevert.
  *
- * @ai-sync: app/(protected)/admin/page.tsx
  * @ai-sync: app/actions/admin/overview.ts
  */
 export function AdminOverviewPane() {
@@ -114,26 +110,22 @@ export function AdminOverviewPane() {
             <div className="space-y-5">
               <Funnel steps={overview.funnel} failures={overview.failures} />
 
-              <section className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              {/* @ai-why: Alleen het bedrag, geen kosten per download meer. Dat cijfer staat
+                  nu op de Ads-tab, naast de campagnes die het verklaren; hier was het een
+                  getal zonder context. Zie docs/tdr/0009-campagnerendement-komt-uit-ga4.md.
+                  @ai-sync: components/admin/chat/AdminAdsPane.tsx */}
+              <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {overview.meta.ok ? (
                   <StatsCard
                     title={`Advertentie-uitgaven, ${days} dagen`}
                     value={euro(overview.meta.data.spend)}
                     icon="Zap"
-                    description={`${getal(overview.meta.data.clicks)} klikken`}
+                    description={`${getal(overview.meta.data.clicks)} klikken · per campagne op Ads`}
                     index={0}
                   />
                 ) : (
                   <SourceNote failure={overview.meta.failure} title="Advertentie-uitgaven" />
                 )}
-
-                <StatsCard
-                  title="Kosten per download"
-                  value={euro(overview.costPerDownload)}
-                  icon="Activity"
-                  description={`Per account ${euro(overview.costPerAccount)}`}
-                  index={1}
-                />
 
                 {overview.appstore.ok ? (
                   <StatsCard
@@ -141,7 +133,7 @@ export function AdminOverviewPane() {
                     value={store?.averageRating === null ? '—' : `${store?.averageRating} ★`}
                     icon="BookOpen"
                     description={`${getal(store?.ratingCount)} beoordelingen · ${getal(store?.unanswered)} zonder antwoord`}
-                    index={2}
+                    index={1}
                   />
                 ) : (
                   <SourceNote failure={overview.appstore.failure} title="App Store" />

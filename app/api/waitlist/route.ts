@@ -108,7 +108,15 @@ export async function POST(req: Request) {
 async function sendVerificationEmail(email: string, token: string) {
   // TODO: Implement with Resend or SendGrid when configured
   // For now, just log the verification link for development
-  const verificationUrl = `${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/waitlist/verify?token=${token}`;
+  // @ai-why: `NEXT_PUBLIC_SITE_URL`, dezelfde als robots.ts, sitemap.ts en de metadata
+  // in app/layout.tsx. Dit stond tot 2026-09-10 op een eigen `NEXT_PUBLIC_URL` met
+  // `http://localhost:3000` als terugval. Zolang deze functie alleen logt is dat
+  // onschuldig, maar zodra hier een mailservice achter komt is die terugval de link die
+  // klanten krijgen als de variabele op de server ontbreekt.
+  // @ai-gotcha: Wil je lokaal een werkende verificatielink, zet `NEXT_PUBLIC_SITE_URL`
+  // in `.env.local` dan op `http://localhost:3000`.
+  const site = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://carve.wiki';
+  const verificationUrl = `${site}/api/waitlist/verify?token=${token}`;
 
   console.log('\n========================================');
   console.log('📧 VERIFICATION EMAIL (Development Mode)');

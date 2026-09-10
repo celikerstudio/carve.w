@@ -22,15 +22,19 @@
  */
 
 import { gunzipSync } from 'node:zlib'
+import { APP_STORE_ID } from '@/lib/utils'
 import { signES256 } from './jwt'
 import { missingEnv } from './source'
 
+// @ai-why: Het app-id staat hier niet bij. Het verschilt niet per omgeving en is niet
+// geheim, dus als env-variabele was het een tweede plek waar hetzelfde nummer kon gaan
+// afwijken van lib/utils.ts. Dat nummer is daar al een keer fout geweest.
+// @ai-sync: lib/utils.ts (APP_STORE_ID)
 export const APPSTORE_ENV = [
   'APPSTORE_ISSUER_ID',
   'APPSTORE_KEY_ID',
   'APPSTORE_PRIVATE_KEY',
   'APPSTORE_VENDOR_NUMBER',
-  'APPSTORE_APP_ID',
 ] as const
 
 const API = 'https://api.appstoreconnect.apple.com/v1'
@@ -174,7 +178,7 @@ export interface AppStoreData {
 }
 
 async function loadReviews(jwt: string, signal: AbortSignal): Promise<Review[]> {
-  const url = new URL(`${API}/apps/${process.env.APPSTORE_APP_ID}/customerReviews`)
+  const url = new URL(`${API}/apps/${APP_STORE_ID}/customerReviews`)
   url.searchParams.set('limit', '50')
   url.searchParams.set('sort', '-createdDate')
   url.searchParams.set('include', 'response')
@@ -224,7 +228,7 @@ async function loadStoreRating(
 ): Promise<{ averageRating: number | null; ratingCount: number | null }> {
   try {
     const url = new URL('https://itunes.apple.com/lookup')
-    url.searchParams.set('id', process.env.APPSTORE_APP_ID!)
+    url.searchParams.set('id', APP_STORE_ID)
     url.searchParams.set('country', 'nl')
 
     const res = await fetch(url, { signal, next: { revalidate: 3600 } })

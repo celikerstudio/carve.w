@@ -174,3 +174,28 @@ describe('parseJournalBody, gaten die de review vond', () => {
     expect(uitkomst.ok).toBe(false)
   })
 })
+
+describe('wijziging draagt de waargenomen uitkomst', () => {
+  const basis = {
+    wat: 'dagbudget van 10 naar 20 euro',
+    waarom: 'te weinig bereik',
+    verwacht: 'ruwweg tweemaal zoveel klikken',
+  }
+
+  it('bewaart wat Meta na afloop terugzei', () => {
+    const uitkomst = parseJournalBody('wijziging', {
+      ...basis,
+      waargenomen: { dailyBudgetMinor: 2000, effectiveStatus: 'ACTIVE' },
+    })
+
+    expect(uitkomst.ok).toBe(true)
+    expect(uitkomst.ok && (uitkomst.body as { waargenomen?: unknown }).waargenomen).toEqual({
+      dailyBudgetMinor: 2000,
+      effectiveStatus: 'ACTIVE',
+    })
+  })
+
+  it('blijft geldig zonder waargenomen, voor een wijziging die je elders deed', () => {
+    expect(parseJournalBody('wijziging', basis).ok).toBe(true)
+  })
+})

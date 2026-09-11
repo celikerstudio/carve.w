@@ -83,3 +83,46 @@ describe('taggedCampaignIds', () => {
     expect(ids.has('1')).toBe(true)
   })
 })
+
+describe('parseCampaignBudgets', () => {
+  it('leest het dagbudget van een campagne met campagnebudget', async () => {
+    const { parseCampaignBudgets } = await import('./meta')
+
+    const budgetten = parseCampaignBudgets({
+      data: [{ id: '1', status: 'ACTIVE', effective_status: 'ACTIVE', daily_budget: '2000' }],
+    })
+
+    expect(budgetten.get('1')?.dailyBudgetMinor).toBe(2000)
+  })
+
+  it('geeft null voor een campagne waarvan het budget op de ad set staat', async () => {
+    const { parseCampaignBudgets } = await import('./meta')
+
+    const budgetten = parseCampaignBudgets({
+      data: [{ id: '1', status: 'ACTIVE', effective_status: 'ACTIVE' }],
+    })
+
+    expect(budgetten.get('1')?.dailyBudgetMinor).toBeNull()
+  })
+
+  it('geeft ook null bij een looptijdbudget, want dat accepteert geen dagbudget', async () => {
+    const { parseCampaignBudgets } = await import('./meta')
+
+    const budgetten = parseCampaignBudgets({
+      data: [{ id: '1', status: 'ACTIVE', effective_status: 'ACTIVE', lifetime_budget: '50000' }],
+    })
+
+    expect(budgetten.get('1')?.dailyBudgetMinor).toBeNull()
+  })
+
+  it('houdt status en effective_status apart', async () => {
+    const { parseCampaignBudgets } = await import('./meta')
+
+    const budgetten = parseCampaignBudgets({
+      data: [{ id: '1', status: 'ACTIVE', effective_status: 'CAMPAIGN_PAUSED' }],
+    })
+
+    expect(budgetten.get('1')?.status).toBe('ACTIVE')
+    expect(budgetten.get('1')?.effectiveStatus).toBe('CAMPAIGN_PAUSED')
+  })
+})

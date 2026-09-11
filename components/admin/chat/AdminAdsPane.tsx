@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { fetchAds, type AdsResult } from '@/app/actions/admin/ads'
 import type { AdCampaignRow } from '@/lib/admin/ads'
+import { AdsControls } from '@/components/admin/chat/AdsControls'
 import { AdsWatchPanel } from '@/components/admin/chat/AdsWatchPanel'
 import { SourceNote } from '@/components/admin/source-note'
 import { StatsCard } from '@/components/admin/stats-card'
@@ -78,6 +79,11 @@ export function AdminAdsPane() {
   const [result, setResult] = useState<AdsResult | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
+  /**
+   * @ai-gotcha: Een teller en geen `setDays(days)`. React slaat een setState met dezelfde
+   * waarde over, dus dat laatste ververst niets en je ziet je eigen wijziging niet terug.
+   */
+  const [versie, setVersie] = useState(0)
 
   useEffect(() => {
     let afgebroken = false
@@ -94,7 +100,7 @@ export function AdminAdsPane() {
     return () => {
       afgebroken = true
     }
-  }, [days])
+  }, [days, versie])
 
   const ads = result?.ads.ok ? result.ads.data : null
   const totalen = ads?.totals
@@ -197,6 +203,8 @@ export function AdminAdsPane() {
                 </p>
               </div>
             )}
+
+            {ads && <AdsControls rows={ads.rows} onDone={() => setVersie((v) => v + 1)} />}
 
             {ads && ads.rows.length > 0 && (
               <section className="rounded-xl border border-white/[0.06] bg-white/[0.02]">

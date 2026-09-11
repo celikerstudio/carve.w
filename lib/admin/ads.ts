@@ -25,6 +25,22 @@ export interface MetaCampaign {
   impressions: number
   /** Staat `utm_id` in de `url_tags` van minstens één advertentie in deze campagne. */
   tagged: boolean
+  /**
+   * Budget en status van het campagne-object zelf, als die opgehaald konden worden.
+   *
+   * @ai-why: Optioneel, want het komt uit een derde Meta-aanroep die apart kan falen. Valt
+   * die weg, dan staan de kosten er nog steeds en verdwijnt alleen de budgetknop. Dat is
+   * dezelfde failure-isolatie als lib/admin/sources/source.ts elders afdwingt: een bron
+   * die niets geeft mag de rest van het scherm niet meenemen.
+   */
+  budget?: CampagneBudget
+}
+
+/** @ai-sync: lib/admin/sources/meta.ts */
+export interface CampagneBudget {
+  status: string
+  effectiveStatus: string
+  dailyBudgetMinor: number | null
 }
 
 /** Eén rij uit GA4, gegroepeerd op `sessionCampaignId`. */
@@ -60,6 +76,16 @@ export interface AdCampaignRow {
   appStoreClicks: number | null
   costPerAppStoreClick: number | null
   attribution: Attribution
+  /**
+   * Het dagbudget in minor units, of null als deze campagne er geen heeft.
+   *
+   * @ai-gotcha: Null betekent hier twee dingen die voor de knop hetzelfde uitpakken: het
+   * budget staat op de ad set (geen Advantage Campaign Budget), of het is een
+   * looptijdbudget. In beide gevallen geen budgetknop. Zie TDR-0011 beslissing 1.
+   */
+  dailyBudgetMinor: number | null
+  /** Wat de campagne volgens Meta doet, niet wat er is ingesteld. Null als onbekend. */
+  effectiveStatus: string | null
 }
 
 export interface AdsTotals {
@@ -116,6 +142,8 @@ export function buildAds(campaigns: MetaCampaign[], ga4Rows: Ga4Campaign[]): Ads
         appStoreClicks: ga4?.appStoreClicks ?? null,
         costPerAppStoreClick: ga4 ? deel(campagne.spend, ga4.appStoreClicks, 2) : null,
         attribution,
+        dailyBudgetMinor: campagne.budget?.dailyBudgetMinor ?? null,
+        effectiveStatus: campagne.budget?.effectiveStatus ?? null,
       }
     })
     .sort((a, b) => b.spend - a.spend)

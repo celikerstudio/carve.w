@@ -33,6 +33,8 @@ function rij(over: Partial<AdCampaignRow> = {}): AdCampaignRow {
     appStoreClicks: 20,
     costPerAppStoreClick: 5,
     attribution: 'gemeten',
+    dailyBudgetMinor: 2000,
+    effectiveStatus: 'ACTIVE',
     ...over,
   }
 }

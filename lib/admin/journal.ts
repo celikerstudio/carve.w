@@ -80,6 +80,20 @@ const wijziging = z.object({
   waarom: nietLeeg,
   /** Wat je verwachtte dat er zou gebeuren. */
   verwacht: nietLeeg,
+  /**
+   * Wat de bron ná afloop terugzei. Optioneel.
+   *
+   * @ai-why: De wáárgenomen uitkomst en niet de bedoelde. TDR-0011 beslissing 10: een
+   * timeout is niet te onderscheiden van "niet gebeurd", dus wat hier staat is wat Meta
+   * bij het teruglezen rapporteerde. Zonder dat veld legt het journaal vast wat we wilden,
+   * en dat is precies het soort regel dat er betrouwbaar uitziet en het niet is.
+   *
+   * @ai-gotcha: Optioneel omdat een wijziging die je in Ads Manager deed en hier alleen
+   * noteert (beslissing 11) niets heeft om waar te nemen. Verplicht maken zou dat
+   * formulier onbruikbaar maken, en juist dat formulier dekt de wijzigingen waar nooit
+   * een knop voor komt.
+   */
+  waargenomen: z.record(z.string(), z.unknown()).optional(),
 })
 
 /**

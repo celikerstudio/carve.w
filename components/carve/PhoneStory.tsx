@@ -3,14 +3,9 @@
 import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { FIGURE_HEIGHT, FIGURE_SRC, FIGURE_WIDTH, LANDING_DAY, REGIONS, WEEK, weekDemoAction } from '@/components/carve/muscle-week';
+import { splitsNadruk, type MarketingCopy } from '@/lib/marketing-copy';
 
-interface Screen {
-  eyebrow: string;
-  title: React.ReactNode;
-  body: React.ReactNode;
-  image: string;
-  alt: string;
-}
+type TelefoonCopy = MarketingCopy['telefoon'];
 
 // @ai-why: Kale exports van 1260 × 2736 (verhouding 9:19,5, dezelfde als de telefoon
 // hieronder), rechtstreeks van het toestel. De vorige set was een ander verhaal: twee
@@ -29,58 +24,21 @@ interface Screen {
 // rijen niet op; op 2026-09-07 uitgezocht. Log een dag in de app en schiet die twee
 // opnieuw, dan staat er een gevulde dag.
 // @ai-sync: docs/marketing/screenshots.md
-const SCREENS: Screen[] = [
-  {
-    eyebrow: 'Snap it',
-    title: 'Logged.',
-    body: (
-      <>
-        Take a picture of your plate. The AI works out the calories and macros. <b>No database digging, no guessing portions.</b>
-      </>
-    ),
-    image: '/screenshots/log.png',
-    alt: "Carve's home screen with the day's meals, each with its time and calories.",
-  },
-  {
-    eyebrow: 'Packet in your hand?',
-    title: 'Scan it.',
-    body: (
-      <>
-        Point the camera at a barcode, a plate, even a receipt. <b>It reads what is in front of it</b> and fills in the macros.
-      </>
-    ),
-    image: '/screenshots/scan.jpg',
-    alt: 'The Carve camera pointed at a drink, with the hint "Point at your meal, a receipt or a barcode".',
-  },
-  {
-    eyebrow: 'Ask anything.',
-    title: 'Carve adds it.',
-    body: (
-      <>
-        Type &ldquo;today I trained chest and triceps&rdquo; and it lands in the log. <b>The coach answers from what you logged,</b> not from a generic plan.
-      </>
-    ),
-    image: '/screenshots/coach.png',
-    alt: "Chat with Carve: 'Today i trained chest and triceps', saved as a Push workout with chest and triceps filled in.",
-  },
-  {
-    eyebrow: 'Your week at a glance',
-    title: 'Nothing gets skipped.',
-    body: (
-      <>
-        Every session you log fills the bars. <b>One look tells you which muscle has been waiting</b> since last week.
-      </>
-    ),
-    image: '/screenshots/week.png',
-    alt: 'The Carve health screen: the muscle figure with a progress bar per muscle group beside it.',
-  },
-];
+//
+// @ai-why: De bijschriften stonden hier tot TDR-0012 als JSX; ze komen nu uit
+// `lib/marketing-copy.ts` omdat de pagina in twee talen bestaat. De afbeeldingen blijven
+// hier: die zijn taalonafhankelijk en horen bij de volgorde van het verhaal, niet bij de
+// tekst. De schermen zelf blijven Engels, want de app is Engels.
+// @ai-gotcha: De volgorde van deze array hoort bij `copy.schermen`. Een scherm ertussen
+// zetten betekent een scherm ertussen in de copy van élke taal; het type dwingt er vier af.
+// @ai-sync: lib/marketing-copy.ts (`telefoon.schermen`, vier stuks)
+const SCHERMEN = ['/screenshots/log.png', '/screenshots/scan.jpg', '/screenshots/coach.png', '/screenshots/week.png'] as const;
 
 /** Scrollafstand in schermhoogtes: de landing, daarna per scherm, en de wissel zelf. */
 const LANDING = 2.2;
 const PER_SCREEN = 1;
 const SWAP = 0.4;
-const TOTAL = LANDING + SCREENS.length * PER_SCREEN + 0.3;
+const TOTAL = LANDING + SCHERMEN.length * PER_SCREEN + 0.3;
 
 /** Waar het figuur op het Muscle Groups-scherm staat: hoogte en middelpunt als deel van de schermhoogte. */
 const IN_PHONE_H = 0.62;
@@ -126,7 +84,7 @@ const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
  * @ai-sync: components/carve/muscle-week.ts (weekschema, spierregio's en de regel die de weekdemo stilzet of weer aanzet)
  * @ai-sync: components/carve/CarveMarketingPage.tsx (de hero erboven, de bewijssectie eronder)
  */
-export function PhoneStory() {
+export function PhoneStory({ copy }: { copy: TelefoonCopy }) {
   const pinRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const phoneRef = useRef<HTMLDivElement>(null);
@@ -304,7 +262,7 @@ export function PhoneStory() {
   return (
     <div ref={pinRef} className="relative" style={{ height: `${(TOTAL + 1) * 100}svh` }}>
       {/* Snap-punten: het Muscle Groups-scherm na de landing en elk scherm zodra zijn wissel klaar is. */}
-      {[LANDING, ...SCREENS.map((_, i) => LANDING + i * PER_SCREEN + SWAP)].map((u) => (
+      {[LANDING, ...SCHERMEN.map((_, i) => LANDING + i * PER_SCREEN + SWAP)].map((u) => (
         <div key={u} aria-hidden="true" className="absolute left-0 h-0 w-0 [scroll-snap-align:start]" style={{ top: `${u * 100}svh` }} />
       ))}
       <div
@@ -313,8 +271,10 @@ export function PhoneStory() {
       >
         {/* Weekstrip: de demo uit de hero, vervaagt zodra de landing begint. */}
         <div data-week className="absolute top-[3svh] left-1/2 w-[min(400px,88vw)] -translate-x-1/2 md:top-[72px]">
-          <p className="mb-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white/30">This week</p>
-          <div className="grid grid-cols-7 gap-1.5" role="tablist" aria-label="Training week">
+          <p className="mb-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white/30">{copy.weekKop}</p>
+          <div className="grid grid-cols-7 gap-1.5" role="tablist" aria-label={copy.weekLabel}>
+            {/* @ai-why: De dagafkorting komt uit de copy, het trainingslabel (Push, Pull,
+                Legs, Rest) uit `muscle-week.ts` en blijft Engels: zo staat het in de app. */}
             {WEEK.map((d, i) => {
               const active = i === day;
               const rest = d.muscles.length === 0;
@@ -332,7 +292,7 @@ export function PhoneStory() {
                     active ? 'border-white/[0.14] bg-white/[0.10]' : 'border-white/[0.06] bg-white/[0.03] hover:bg-white/[0.06]'
                   }`}
                 >
-                  <span className={`text-[9px] font-semibold uppercase tracking-[0.12em] ${active ? 'text-white/50' : 'text-white/25'}`}>{d.short}</span>
+                  <span className={`text-[9px] font-semibold uppercase tracking-[0.12em] ${active ? 'text-white/50' : 'text-white/25'}`}>{copy.weekdagen[i]}</span>
                   <span className={`text-[12px] font-semibold ${active ? 'text-white' : rest ? 'text-white/25' : 'text-white/55'}`}>{d.label}</span>
                 </button>
               );
@@ -353,16 +313,12 @@ export function PhoneStory() {
           data-col
           className="absolute top-0 right-6 left-6 grid h-[24svh] content-center justify-items-center text-center opacity-0 md:right-auto md:left-[max(6vw,calc(50vw-520px))] md:h-[100svh] md:w-[min(34vw,420px)] md:justify-items-start md:text-left"
         >
-          <Caption gold eyebrow="That's the app" title="The map you just played with.">
-            Front and back. Every workout you log fills it in, so you see what you trained this week <b>and what you keep skipping.</b>
-          </Caption>
-          {SCREENS.map((s) => (
-            <Caption key={s.eyebrow} eyebrow={s.eyebrow} title={s.title}>
-              {s.body}
-            </Caption>
+          <Caption gold eyebrow={copy.landing.eyebrow} title={copy.landing.titel} body={copy.landing.body} />
+          {copy.schermen.map((s) => (
+            <Caption key={s.eyebrow} eyebrow={s.eyebrow} title={s.titel} body={s.body} />
           ))}
           <div className="col-start-1 row-start-2 mt-9 hidden gap-2 md:flex" aria-hidden="true">
-            {[0, ...SCREENS.map((_, i) => i + 1)].map((i) => (
+            {[0, ...SCHERMEN.map((_, i) => i + 1)].map((i) => (
               <i key={i} data-dot className="h-1.5 w-1.5 rounded-full bg-white/[0.18] transition-[width,background-color] duration-300" />
             ))}
           </div>
@@ -382,6 +338,10 @@ export function PhoneStory() {
                 <span className="h-[calc(var(--pw)*0.038)] w-[calc(var(--pw)*0.078)] rounded-[4px] bg-white" />
               </div>
               <div data-chrome className="absolute top-[21%] right-[8%] bottom-[3%] left-[8%] rounded-[calc(var(--pw)*0.07)] bg-[#1a1a1c] opacity-0 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)]" />
+              {/* @ai-why: Deze twee blijven Engels, ook op `/nl/app`. Dit is geen tekst van
+                  de pagina maar een nabouw van het scherm van de app, en de app is Engels.
+                  Een vertaald label naast Engelse screenshots zou een app tonen die niet
+                  bestaat. @ai-sync: docs/tdr/0012-de-marketingpagina-krijgt-een-nederlandse-variant.md */}
               <div data-chrome className="absolute top-[12.5%] left-[8%] text-[calc(var(--pw)*0.085)] font-bold tracking-[-0.02em] opacity-0">
                 Muscle Groups
               </div>
@@ -389,14 +349,14 @@ export function PhoneStory() {
                 &#8635; Back
               </div>
               <div data-inphone aria-hidden="true" className="absolute top-[57%] left-1/2 aspect-[360/1100] h-[62%] -translate-x-1/2 -translate-y-1/2 opacity-0">
-                <Figure lit={new Set(WEEK[LANDING_DAY].muscles)} priority={false} />
+                <Figure lit={new Set(WEEK[LANDING_DAY].muscles)} alt={copy.figuurAlt} priority={false} />
               </div>
             </div>
-            {SCREENS.map((s) => (
-              <div key={s.image} data-shot className="absolute inset-0 bg-[#101012] opacity-0 will-change-[transform,opacity,filter]">
+            {SCHERMEN.map((bron, i) => (
+              <div key={bron} data-shot className="absolute inset-0 bg-[#101012] opacity-0 will-change-[transform,opacity,filter]">
                 <Image
-                  src={s.image}
-                  alt={s.alt}
+                  src={bron}
+                  alt={copy.schermen[i].alt}
                   fill
                   sizes="(min-width: 768px) 330px, 60vw"
                   className="object-cover object-top"
@@ -413,7 +373,7 @@ export function PhoneStory() {
           className="absolute top-[calc(54svh-var(--fh0)/2)] left-1/2 z-[5] aspect-[360/1100] h-[var(--fh0)] will-change-transform"
           style={{ marginLeft: 'calc(var(--fh0) * 360 / 1100 / -2)' }}
         >
-          <Figure lit={lit} priority />
+          <Figure lit={lit} alt={copy.figuurAlt} priority />
         </div>
       </div>
     </div>
@@ -424,23 +384,27 @@ export function PhoneStory() {
 
 interface CaptionProps {
   eyebrow: string;
-  title: React.ReactNode;
-  children: React.ReactNode;
+  title: string;
+  /** Platte tekst, met `**nadruk**` waar het vet moet. */
+  body: string;
   gold?: boolean;
 }
 
-function Caption({ eyebrow, title, children, gold }: CaptionProps) {
+function Caption({ eyebrow, title, body, gold }: CaptionProps) {
   return (
     <div data-cap className="col-start-1 row-start-1 opacity-0 will-change-[transform,opacity]">
       <p className={`mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] md:mb-3 ${gold ? 'text-[#D4A843]' : 'text-white/40'}`}>{eyebrow}</p>
       <h3 className="text-[clamp(24px,6vw,34px)] font-bold leading-[1.02] tracking-[-0.03em] text-balance md:text-[clamp(28px,3.6vw,50px)]">{title}</h3>
-      <p className="mt-4 hidden max-w-[40ch] text-[clamp(15px,1.25vw,18px)] leading-normal text-white/55 text-pretty [&_b]:font-semibold [&_b]:text-white md:block">{children}</p>
+      <p className="mt-4 hidden max-w-[40ch] text-[clamp(15px,1.25vw,18px)] leading-normal text-white/55 text-pretty [&_b]:font-semibold [&_b]:text-white md:block">
+        {splitsNadruk(body).map((segment, i) => (segment.nadruk ? <b key={i}>{segment.tekst}</b> : <span key={i}>{segment.tekst}</span>))}
+      </p>
     </div>
   );
 }
 
 interface FigureProps {
   lit: Set<string>;
+  alt: string;
   priority: boolean;
 }
 
@@ -451,12 +415,12 @@ interface FigureProps {
  * iOS-app doet; dat zijn zeven extra assets voor één pagina en de tekening
  * verandert zelden.
  */
-function Figure({ lit, priority }: FigureProps) {
+function Figure({ lit, alt, priority }: FigureProps) {
   return (
     <>
       <Image
         src={FIGURE_SRC}
-        alt="Illustrated muscle map of a body, front view, as shown in Carve. The muscles of the selected training day are highlighted."
+        alt={alt}
         width={FIGURE_WIDTH}
         height={FIGURE_HEIGHT}
         priority={priority}

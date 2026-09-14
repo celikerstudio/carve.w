@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { AppStoreButton } from '@/components/carve/AppStoreButton';
+import type { MarketingCopy } from '@/lib/marketing-copy';
 
 interface MarketingHeaderProps {
   /** Id van de hero-knop: zodra die uit beeld is, schuift de balk in. */
   heroId: string;
+  copy: MarketingCopy;
 }
 
 /**
@@ -22,7 +24,7 @@ interface MarketingHeaderProps {
  * vlag (TDR-0005) en Privacy, Terms en Support staan in de footer. Een menu
  * met één item is een knop, dus dat is het geworden.
  */
-export function MarketingHeader({ heroId }: MarketingHeaderProps) {
+export function MarketingHeader({ heroId, copy }: MarketingHeaderProps) {
   const [on, setOn] = useState(false);
 
   useEffect(() => {
@@ -39,9 +41,9 @@ export function MarketingHeader({ heroId }: MarketingHeaderProps) {
       className={`fixed inset-x-0 top-0 z-40 hidden border-b border-white/[0.06] bg-[#0A0A0B]/85 backdrop-blur-md transition-transform duration-300 ease-out md:block ${on ? 'translate-y-0' : 'pointer-events-none -translate-y-full'}`}
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
-        <a href="#top" className="flex items-center gap-3" aria-label="Back to top">
+        <a href="#top" className="flex items-center gap-3" aria-label={copy.header.terugNaarBoven}>
           <Image src="/carve-logo.png" alt="" width={160} height={160} className="h-7 w-7" />
-          <span className="pl-[0.3em] text-[13px] font-bold tracking-[0.3em] text-white/70">CARVE</span>
+          <span className="pl-[0.3em] text-[13px] font-bold tracking-[0.3em] text-white/70">{copy.hero.merk}</span>
         </a>
         <AppStoreButton source="header" />
       </div>

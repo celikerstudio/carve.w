@@ -6,9 +6,20 @@ import { AppStoreButton } from '@/components/carve/AppStoreButton';
 import { AppStoreDock } from '@/components/carve/AppStoreDock';
 import { PhoneStory } from '@/components/carve/PhoneStory';
 import { MarketingHeader } from '@/components/carve/MarketingHeader';
+import type { MarketingCopy, Taal } from '@/lib/marketing-copy';
 
 const HERO_CTA_ID = 'hero-cta';
 const CLOSE_CTA_ID = 'close-cta';
+
+/** Op volgorde van `copy.overzicht.kaarten`. */
+const KAART_ICONEN = [
+  <Camera key="camera" className="h-5 w-5" />,
+  <ScanBarcode key="barcode" className="h-5 w-5" />,
+  <Dumbbell key="dumbbell" className="h-5 w-5" />,
+  <PersonStanding key="person" className="h-5 w-5" />,
+  <CalendarDays key="calendar" className="h-5 w-5" />,
+  <MessageSquareText key="message" className="h-5 w-5" />,
+];
 
 /**
  * De marketingpagina voor de iOS-app, op `/` en `/carve`.
@@ -38,33 +49,45 @@ const CLOSE_CTA_ID = 'close-cta';
  * @ai-sync: ~/Developer/Carve-AI/docs/marketing/app-store-listing.md (dezelfde belofte, dezelfde screenshots)
  * @ai-sync: app/opengraph-image.tsx (dezelfde belofte, als beeld)
  * @ai-sync: components/carve/PhoneStory.tsx (het figuur, de telefoon en de vier schermen met hun captions)
+ *
+ * @ai-why: De tekst komt sinds TDR-0012 uit `lib/marketing-copy.ts` en staat niet meer
+ * in deze JSX. De pagina bestaat in twee talen op twee adressen; welke taal je krijgt
+ * bepaalt de route, niet de browser.
+ * @ai-gotcha: `lang` staat hier en niet op `<html>`. De root-layout zet `en` voor de hele
+ * site en dat is per route niet te veranderen zonder alles onder een `[lang]`-segment te
+ * hangen. Het dichtstbijzijnde `lang` wint bij screenreaders en bij Google, dus dit werkt,
+ * maar de `<html>` van `/nl/app` zegt iets anders dan de pagina. Staat als consequentie
+ * in de TDR.
+ * @ai-sync: lib/marketing-copy.ts (de vorm van `copy`)
+ * @ai-sync: app/layout.tsx (de `<html lang="en">` die hier gecorrigeerd wordt)
+ * @ai-sync: docs/tdr/0012-de-marketingpagina-krijgt-een-nederlandse-variant.md
  */
-export function CarveMarketingPage() {
+export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: Taal }) {
   return (
-    <div id="top" className="min-h-screen w-full bg-[#0A0A0B] text-white">
-      <MarketingHeader heroId={HERO_CTA_ID} />
+    <div id="top" lang={taal} className="min-h-screen w-full bg-[#0A0A0B] text-white">
+      <MarketingHeader heroId={HERO_CTA_ID} copy={copy} />
       {/* 1 · figuur */}
       <section className="flex flex-col items-center px-6 pt-14 text-center md:pt-20">
         <Image src="/carve-logo.png" alt="" width={160} height={160} priority className="mb-5 h-14 w-14" />
-        <p className="mb-7 pl-[0.32em] text-[15px] font-bold tracking-[0.32em] text-white/50">CARVE</p>
+        <p className="mb-7 pl-[0.32em] text-[15px] font-bold tracking-[0.32em] text-white/50">{copy.hero.merk}</p>
         <h1 className="max-w-[14ch] text-[clamp(38px,7vw,76px)] font-bold leading-[1.02] tracking-[-0.03em] text-balance">
-          <span className="text-white/50">Log your food.</span>
+          <span className="text-white/50">{copy.hero.kopZacht}</span>
           <br />
-          Track your workouts.
+          {copy.hero.kopHard}
         </h1>
         {/* @ai-why: De kop zegt al wat het doet, dus hier staat de tagline en niet
             nog een keer de features. Hij stond eerst in het slot; daar staat nu
             "Ready to start?", anders staat de tagline twee keer op één pagina.
             @ai-sync: ~/Developer/Carve-AI/docs/brand/identity.md (§1, tagline-regel) */}
-        <p className="mt-4 text-[clamp(17px,2vw,21px)] text-white/50">Carve a better you.</p>
+        <p className="mt-4 text-[clamp(17px,2vw,21px)] text-white/50">{copy.hero.tagline}</p>
         <div className="mt-8 flex flex-col items-center gap-3">
           <AppStoreButton source="hero" id={HERO_CTA_ID} />
-          <small className="text-[13px] text-white/30">Free · iPhone</small>
+          <small className="text-[13px] text-white/30">{copy.hero.onderKnop}</small>
         </div>
       </section>
 
       {/* 2 · de app: figuur → telefoon → vier schermen */}
-      <PhoneStory />
+      <PhoneStory copy={copy.telefoon} />
 
       {/* 3 · bewijs */}
       {/* @ai-why: Twee echte foto's naast de cijfers. Tot 2026-09-06 stond hier
@@ -79,8 +102,8 @@ export function CarveMarketingPage() {
           <div className="relative aspect-[1000/913] w-full">
             <ProofPhoto
               src="/photos/before.jpg"
-              alt="Furkan at 130 kg, standing on a street in Istanbul, phone in hand."
-              label="Before"
+              alt={copy.bewijs.voorAlt}
+              label={copy.bewijs.voorLabel}
               width={720}
               height={960}
               className="top-0 left-0"
@@ -89,8 +112,8 @@ export function CarveMarketingPage() {
             />
             <ProofPhoto
               src="/photos/now.jpg"
-              alt="Furkan at 80 kg, hiking with a backpack and poles, phone in hand."
-              label="Now"
+              alt={copy.bewijs.nuAlt}
+              label={copy.bewijs.nuLabel}
               gold
               width={528}
               height={704}
@@ -99,15 +122,15 @@ export function CarveMarketingPage() {
             />
           </div>
           <div>
-            <Eyebrow gold>Why it exists</Eyebrow>
-            <div className="flex items-baseline gap-3.5 font-bold leading-none tracking-[-0.04em]" aria-label="From 130 to 80 kilograms">
+            <Eyebrow gold>{copy.bewijs.eyebrow}</Eyebrow>
+            <div className="flex items-baseline gap-3.5 font-bold leading-none tracking-[-0.04em]" aria-label={copy.bewijs.getalLabel}>
               <span className="text-[clamp(40px,5vw,56px)] text-white/30 line-through decoration-[#D4A843] decoration-[0.06em]">130</span>
               <span className="text-[clamp(96px,12vw,132px)]">
-                80<small className="ml-[0.1em] text-[0.28em] font-medium tracking-normal text-white/40">kg</small>
+                80<small className="ml-[0.1em] text-[0.28em] font-medium tracking-normal text-white/40">{copy.bewijs.eenheid}</small>
               </span>
             </div>
-            <p className="mt-5 max-w-[26ch] text-[clamp(19px,2vw,22px)] leading-[1.35] text-balance">I built this app while losing 50 kg. I still use it every day.</p>
-            <p className="mt-3 max-w-[34ch] text-sm leading-relaxed text-white/40">It started as a food tracker for myself. It turned into a coach.</p>
+            <p className="mt-5 max-w-[26ch] text-[clamp(19px,2vw,22px)] leading-[1.35] text-balance">{copy.bewijs.regel}</p>
+            <p className="mt-3 max-w-[34ch] text-sm leading-relaxed text-white/40">{copy.bewijs.onderregel}</p>
           </div>
         </div>
       </section>
@@ -116,21 +139,23 @@ export function CarveMarketingPage() {
       <section className="border-t border-white/[0.06] px-6 py-[72px] md:py-24">
         <div className="mx-auto max-w-[1024px]">
           <div className="text-center">
-            <Eyebrow>Everything in it</Eyebrow>
-            <H2>One place for your food and your training.</H2>
-            <p className="mx-auto mt-4 max-w-[46ch] text-white/50 text-balance">Most trackers stop at the number. Carve keeps both in the same place, so it can show you the muscle you haven&apos;t touched in nine days, right next to the week you thought went fine.</p>
+            <Eyebrow>{copy.overzicht.eyebrow}</Eyebrow>
+            <H2>{copy.overzicht.kop}</H2>
+            <p className="mx-auto mt-4 max-w-[46ch] text-white/50 text-balance">{copy.overzicht.intro}</p>
           </div>
           {/* @ai-why: Zes regels, allemaal in de app van vandaag. Staat een functie
               achter een uitgezette vlag in FeatureFlags.swift, dan staat hij hier niet.
               Apple Health is bewust "steps": dat is het enige type dat de app uitleest.
               @ai-sync: ~/Developer/Carve-AI/docs/marketing/app-store-listing.md (beschrijving, "wat er uit is") */}
+          {/* @ai-gotcha: De iconen horen op volgorde bij `copy.overzicht.kaarten`. Zet je
+              er een regel tussen, zet dan hier het icoon op dezelfde plek. De test op de
+              copy bewaakt het aantal (zes), niet welke afbeelding erbij hoort. */}
           <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            <Fact icon={<Camera className="h-5 w-5" />} title="Photo logging">A picture of your plate becomes calories and macros. No database digging.</Fact>
-            <Fact icon={<ScanBarcode className="h-5 w-5" />} title="Barcode scanner">Point at the packet. The product and its macros are filled in.</Fact>
-            <Fact icon={<Dumbbell className="h-5 w-5" />} title="Workout log">Sets, weights, done. Every session fills the muscle map.</Fact>
-            <Fact icon={<PersonStanding className="h-5 w-5" />} title="Muscle map, front and back">See what you trained this week and what you keep skipping.</Fact>
-            <Fact icon={<CalendarDays className="h-5 w-5" />} title="Week plan">Set a goal, a split and your training days once. The week is on your home screen.</Fact>
-            <Fact icon={<MessageSquareText className="h-5 w-5" />} title="A coach that reads your log">Ask about your protein, your week or what to train. It answers from what you logged.</Fact>
+            {copy.overzicht.kaarten.map((kaart, i) => (
+              <Fact key={kaart.titel} icon={KAART_ICONEN[i]} title={kaart.titel}>
+                {kaart.tekst}
+              </Fact>
+            ))}
           </div>
           {/* @ai-why: De foto-vraag hoort hier beantwoord te worden en niet pas in het
               privacybeleid. Je vraagt iemand een foto van zijn bord naar een AI te sturen;
@@ -139,11 +164,11 @@ export function CarveMarketingPage() {
               @ai-sync: app/privacy/page.tsx (dezelfde belofte, uitgebreid)
               @ai-sync: ~/Developer/Carve-AI/Carve AI/App/Config/FeatureFlags.swift (HealthKit-claim: alleen stappen) */}
           <div className="mt-7 flex flex-col items-center gap-1.5 text-center text-[13px] text-white/30">
-            <p>Reads your daily steps from Apple Health. Nothing else.</p>
+            <p>{copy.overzicht.health}</p>
             <p>
-              Your photo goes to the AI that reads it and is not used to train anything.{' '}
+              {copy.overzicht.privacy}{' '}
               <Link href="/privacy" className="underline decoration-white/20 underline-offset-4 transition-colors hover:text-white/60">
-                How we handle your data
+                {copy.overzicht.privacyLink}
               </Link>
             </p>
           </div>
@@ -164,9 +189,9 @@ export function CarveMarketingPage() {
       <section className="border-t border-white/[0.06] px-6 py-[72px] md:py-24">
         <div className="mx-auto max-w-[880px]">
           <div className="text-center">
-            <Eyebrow>What it costs</Eyebrow>
-            <H2>The free plan has no end date.</H2>
-            <p className="mx-auto mt-4 max-w-[46ch] text-white/50 text-balance">Logging your food and your training is the app, and that part stays free. Pro raises the ceiling for people who lean on the coach all day.</p>
+            <Eyebrow>{copy.prijs.eyebrow}</Eyebrow>
+            <H2>{copy.prijs.kop}</H2>
+            <p className="mx-auto mt-4 max-w-[46ch] text-white/50 text-balance">{copy.prijs.intro}</p>
           </div>
           {/* @ai-why: Eén kolom, geen twee kaarten. Twee kaarten naast elkaar lezen als
               een keuze tussen gelijkwaardige plannen, terwijl de boodschap is dat Free de
@@ -175,34 +200,34 @@ export function CarveMarketingPage() {
               komt. Alternatieven (vergelijktabel, tijdlijn van de proefperiode, één
               Pro-kaart, typografisch statement) zijn op 2026-09-08 bekeken en afgewezen. */}
           <div className="mx-auto mt-11 max-w-[520px]">
-            <PlanHead name="Free" tag="The app, without a subscription" />
+            <PlanHead name={copy.prijs.gratisNaam} tag={copy.prijs.gratisTag} />
             <ul>
-              <PlanLine>Log food by photo and by barcode</PlanLine>
-              <PlanLine>Workout log, muscle map, week plan</PlanLine>
-              <PlanLine>Your steps from Apple Health</PlanLine>
-              <PlanLine>Up to 25 AI actions a day</PlanLine>
+              {copy.prijs.gratisRegels.map((regel) => (
+                <PlanLine key={regel}>{regel}</PlanLine>
+              ))}
             </ul>
-            <PlanHead name="Pro adds" gold tag="Price in the App Store, in your own currency" />
+            <PlanHead name={copy.prijs.proNaam} gold tag={copy.prijs.proTag} />
             <ul>
-              <PlanLine gold>Unlimited scanning</PlanLine>
-              <PlanLine gold>Unlimited chat with the coach</PlanLine>
-              <PlanLine gold>A smarter AI model</PlanLine>
-              <PlanLine gold>All analysis tools</PlanLine>
+              {copy.prijs.proRegels.map((regel) => (
+                <PlanLine key={regel} gold>
+                  {regel}
+                </PlanLine>
+              ))}
             </ul>
           </div>
-          <p className="mt-6 text-center text-[13px] text-white/30">Every new account starts with 30 days of Pro. It begins when you sign up; there is no card to enter first.</p>
+          <p className="mt-6 text-center text-[13px] text-white/30">{copy.prijs.proef}</p>
         </div>
       </section>
 
       {/* 6 · slot */}
       <section className="border-t border-white/[0.06] px-6 pt-20 pb-16 text-center md:pt-28 md:pb-24">
         <Image src="/carve-logo.png" alt="" width={160} height={160} className="mx-auto mb-5 h-12 w-12" />
-        <H2 className="text-[clamp(36px,6vw,64px)]">Ready to start?</H2>
-        <p className="mx-auto mt-4 max-w-[36ch] text-white/50 text-balance">Free on the App Store.</p>
+        <H2 className="text-[clamp(36px,6vw,64px)]">{copy.slot.kop}</H2>
+        <p className="mx-auto mt-4 max-w-[36ch] text-white/50 text-balance">{copy.slot.tekst}</p>
         <AppStoreButton source="close" id={CLOSE_CTA_ID} className="mt-8" />
-        <p className="mt-4 text-[13px] text-white/30">Free · iPhone · Built in Amsterdam</p>
+        <p className="mt-4 text-[13px] text-white/30">{copy.slot.onderKnop}</p>
         <div className="mx-auto mt-20 max-w-5xl">
-          <CarveFooter />
+          <CarveFooter copy={copy.footer} />
         </div>
       </section>
 

@@ -31,6 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // die doorstuurt hoort niet in een sitemap: Google volgt hem wel, maar rapporteert
     // hem als fout en het kost een crawl die je elders nodig hebt.
     { path: '/app',              priority: 1.0,  changeFrequency: 'weekly'  as const },
+    // @ai-why: De Nederlandse variant staat er als eigen URL in en niet alleen als
+    // `hreflang`-alternatief van /app. Google leest die verwijzingen uit de pagina's zelf,
+    // maar een taalvariant die nergens in een sitemap staat wordt trager gevonden.
+    // @ai-sync: lib/marketing-seo.ts (MARKETING_PADEN, dezelfde paden)
+    // @ai-sync: docs/tdr/0012-de-marketingpagina-krijgt-een-nederlandse-variant.md
+    { path: '/nl/app',           priority: 0.9,  changeFrequency: 'weekly'  as const },
     { path: '/support',          priority: 0.4,  changeFrequency: 'monthly' as const },
     { path: '/login',            priority: 0.3,  changeFrequency: 'yearly'  as const },
     { path: '/privacy',          priority: 0.2,  changeFrequency: 'yearly'  as const },

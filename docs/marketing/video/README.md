@@ -82,6 +82,32 @@ Leerpunten schrijven we pas op als er iets te leren valt. Met minder dan een stu
 vijf gepubliceerde ads met echte vertoningen is elk patroon toeval. Tot die tijd is
 het invullen van conclusies erger dan geen conclusies, want je gaat erop sturen.
 
+## De outro
+
+Elke video sluit af met hetzelfde slotstuk: de kop wisselt mee met wat je ziet, de
+spieren lichten op per trainingsdag, en het figuur landt in een echte schermopname.
+
+```bash
+scripts/ads/build-outro.sh beide     # nl en en, 1080x1920, 8,1s
+scripts/ads/build-outro.sh nl        # alleen Nederlands
+```
+
+De teksten staan in [`scripts/ads/outro.json`](../../../scripts/ads/outro.json), de
+beweging in [`frames/outro-anim.html`](../../../scripts/ads/frames/outro-anim.html).
+Die pagina heeft geen eigen animaties: je roept `setTime(t)` aan en krijgt het kader
+op seconde `t`. Daardoor levert elk frame altijd hetzelfde plaatje op, en dat is wat
+de renderer nodig heeft.
+
+**Waarom niet in Concat gemonteerd.** Een Concat-project bewaart per clip één waarde
+voor schaal, positie en opacity; er zijn geen keyframes. De landing is juist een
+schaal die over anderhalve seconde verandert, en de spiertint is een mask met
+`mix-blend-mode`. Allebei bestaan ze niet in dat formaat. Concat is voor het monteren
+van beeld dat er al is; dit slotstuk wordt gemaakt, niet gemonteerd.
+
+**Waarom niet in ffmpeg.** Zelfde antwoord van de andere kant: de fades zou ffmpeg
+prima doen, maar de landing met eigen easing en de gemaskeerde tint niet zonder een
+filtergraph die niemand meer leest.
+
 ## Met de hand monteren in Concat
 
 Naast de pijplijn kun je een ad met de hand bouwen in Concat. Projecten horen in

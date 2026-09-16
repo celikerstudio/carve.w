@@ -23,6 +23,7 @@ Why this exists and what was rejected: `docs/tdr/0013-ads-bouwen-we-zelf.md`.
 | Results of published ads | `scripts/ads/report.sh` |
 | Reusable Concat montages | `scripts/ads/concat-project.py`, see the video README |
 | Competitor ads worth watching | `docs/marketing/video/voorbeelden.md` |
+| The standard outro (nl/en) | `scripts/ads/build-outro.sh`, texts in `outro.json` |
 
 Material lives outside git in `~/Developer/celiker-studio/carve/` (numbered folders,
 `LEESMIJ.txt` explains each). The recipe is committed; the MP4 never is.

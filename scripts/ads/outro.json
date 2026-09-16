@@ -1,5 +1,5 @@
 {
-  "_comment": "Teksten van de bewegende outro, per taal. `heads` is de volgorde waarin de kop wisselt; `m` zijn de spieren die bij die kop oplichten (namen uit frames/outro-anim.html). Een kop zonder `b` staat op één regel. De app zelf is Engels, dus in de Nederlandse versie staat Nederlandse tekst boven Engelse schermen; dat is een bewuste keuze, geen vergissing. De sleutels en/nl horen bij de lange versie; en-kort/nl-kort bij de korte, waar het laatste kopblok het wordmerk is (mark: true).",
+  "_comment": "Teksten van de bewegende outro, per taal. `heads` is de volgorde waarin de kop wisselt; `m` zijn de spieren die bij die kop oplichten (namen uit frames/outro-anim.html). Een kop zonder `b` staat op één regel. De app zelf is Engels, dus in de Nederlandse versie staat Nederlandse tekst boven Engelse schermen; dat is een bewuste keuze, geen vergissing. De sleutels en/nl horen bij de lange versie; en-kort/nl-kort bij de korte.",
   "en": {
     "heads": [
       {
@@ -104,11 +104,6 @@
       {
         "a": "Scan your food.",
         "m": []
-      },
-      {
-        "a": "CARVE",
-        "mark": true,
-        "m": []
       }
     ],
     "button": "Download Carve",
@@ -135,11 +130,6 @@
       },
       {
         "a": "Scan je eten.",
-        "m": []
-      },
-      {
-        "a": "CARVE",
-        "mark": true,
         "m": []
       }
     ],

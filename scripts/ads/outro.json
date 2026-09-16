@@ -1,23 +1,147 @@
 {
-  "_comment": "Teksten van de bewegende outro, per taal. `heads` is de volgorde waarin de kop wisselt; `m` zijn de spieren die bij die kop oplichten (namen uit frames/outro-anim.html). Een kop zonder `b` staat op één regel. De app zelf is Engels, dus in de Nederlandse versie staat Nederlandse tekst boven Engelse schermen; dat is een bewuste keuze, geen vergissing.",
+  "_comment": "Teksten van de bewegende outro, per taal. `heads` is de volgorde waarin de kop wisselt; `m` zijn de spieren die bij die kop oplichten (namen uit frames/outro-anim.html). Een kop zonder `b` staat op één regel. De app zelf is Engels, dus in de Nederlandse versie staat Nederlandse tekst boven Engelse schermen; dat is een bewuste keuze, geen vergissing. De sleutels en/nl horen bij de lange versie; en-kort/nl-kort bij de korte, waar het laatste kopblok het wordmerk is (mark: true).",
   "en": {
     "heads": [
-      { "a": "Log your food.", "b": "Track your workouts.", "m": [] },
-      { "a": "Monday. Push day.", "m": ["chest", "shoulders"] },
-      { "a": "Tuesday. Pull day.", "m": ["biceps", "forearms"] },
-      { "a": "See muscle growth.", "m": ["chest", "shoulders", "biceps", "abs", "legs", "calves", "forearms"] },
-      { "a": "Scan your food.", "m": [] }
+      {
+        "a": "Log your food.",
+        "b": "Track your workouts.",
+        "m": []
+      },
+      {
+        "a": "Monday. Push day.",
+        "m": [
+          "chest",
+          "shoulders"
+        ]
+      },
+      {
+        "a": "Tuesday. Pull day.",
+        "m": [
+          "biceps",
+          "forearms"
+        ]
+      },
+      {
+        "a": "See muscle growth.",
+        "m": [
+          "chest",
+          "shoulders",
+          "biceps",
+          "abs",
+          "legs",
+          "calves",
+          "forearms"
+        ]
+      },
+      {
+        "a": "Scan your food.",
+        "m": []
+      }
     ],
     "button": "Download Carve",
     "store": "Free on the App Store"
   },
   "nl": {
     "heads": [
-      { "a": "Log je eten.", "b": "Volg je trainingen.", "m": [] },
-      { "a": "Maandag. Push-dag.", "m": ["chest", "shoulders"] },
-      { "a": "Dinsdag. Pull-dag.", "m": ["biceps", "forearms"] },
-      { "a": "Zie je spiergroei.", "m": ["chest", "shoulders", "biceps", "abs", "legs", "calves", "forearms"] },
-      { "a": "Scan je eten.", "m": [] }
+      {
+        "a": "Log je eten.",
+        "b": "Volg je trainingen.",
+        "m": []
+      },
+      {
+        "a": "Maandag. Push-dag.",
+        "m": [
+          "chest",
+          "shoulders"
+        ]
+      },
+      {
+        "a": "Dinsdag. Pull-dag.",
+        "m": [
+          "biceps",
+          "forearms"
+        ]
+      },
+      {
+        "a": "Zie je spiergroei.",
+        "m": [
+          "chest",
+          "shoulders",
+          "biceps",
+          "abs",
+          "legs",
+          "calves",
+          "forearms"
+        ]
+      },
+      {
+        "a": "Scan je eten.",
+        "m": []
+      }
+    ],
+    "button": "Download Carve",
+    "store": "Gratis in de App Store"
+  },
+  "en-kort": {
+    "heads": [
+      {
+        "a": "Log your food.",
+        "b": "Track your workouts.",
+        "m": []
+      },
+      {
+        "a": "See muscle growth.",
+        "m": [
+          "chest",
+          "shoulders",
+          "biceps",
+          "abs",
+          "legs",
+          "calves",
+          "forearms"
+        ]
+      },
+      {
+        "a": "Scan your food.",
+        "m": []
+      },
+      {
+        "a": "CARVE",
+        "mark": true,
+        "m": []
+      }
+    ],
+    "button": "Download Carve",
+    "store": "Free on the App Store"
+  },
+  "nl-kort": {
+    "heads": [
+      {
+        "a": "Log je eten.",
+        "b": "Volg je trainingen.",
+        "m": []
+      },
+      {
+        "a": "Zie je spiergroei.",
+        "m": [
+          "chest",
+          "shoulders",
+          "biceps",
+          "abs",
+          "legs",
+          "calves",
+          "forearms"
+        ]
+      },
+      {
+        "a": "Scan je eten.",
+        "m": []
+      },
+      {
+        "a": "CARVE",
+        "mark": true,
+        "m": []
+      }
     ],
     "button": "Download Carve",
     "store": "Gratis in de App Store"

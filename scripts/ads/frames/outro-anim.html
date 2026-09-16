@@ -24,6 +24,11 @@
   .hb b{display:block;font-size:calc(7.8*var(--u));font-weight:700;letter-spacing:-.04em;
         line-height:1.08;white-space:nowrap}
   .hb.one b{font-size:calc(7*var(--u));letter-spacing:-.038em}
+  /* @ai-context Het wordmerk zoals docs/brand/identity.md §7 het beschrijft:
+     zwaar wit, wijde letterafstand. Alleen in het laatste kader, en dan gaat
+     het icoon rechtsboven weg: twee keer hetzelfde merk is ruis. */
+  .hb.mark b{font-size:calc(11*var(--u));font-weight:800;letter-spacing:.2em;
+             text-indent:.2em}
 
   .glow{position:absolute;left:50%;top:22%;width:calc(86*var(--u));height:calc(86*var(--u));
         transform:translateX(-50%);
@@ -83,7 +88,10 @@
   /* ---- de tijdlijn, één bron van waarheid ---------------------------------
      @ai-why Deze getallen staan hier en niet in het bouwscript, zodat de
      mockup en de export dezelfde beweging hebben. */
-  var T = {
+  var VARIANT = "__VARIANT__";
+
+  /* De lange versie: twee trainingsdagen, daarna de landing en twee schermen. */
+  var LANG_T = {
     duration: 8.1,
     sym:   {at:0.10, dur:1.00},
     head:  {at:0.20, dur:1.00},
@@ -98,6 +106,26 @@
     headFade: 0.55,
     tintFade: 0.85
   };
+
+  /* De korte versie: twee boodschappen, en het laatste kader staat stil.
+     @ai-why Alles is klaar op 4,15s, zodat er bijna een hele seconde overblijft
+     waarin niets meer beweegt. Dat is de seconde waarin iemand de knop leest. */
+  var KORT_T = {
+    duration: 5.0,
+    sym:   {at:0.10, dur:0.90, out:3.60, outDur:0.35},
+    head:  {at:0.20, dur:0.90},
+    glow:  {in:0.30, inDur:1.20, out:1.50, outDur:0.70},
+    fig:   {in:0.30, inDur:1.20, land:1.50, landDur:1.20, out:2.60, outDur:0.40},
+    phone: {at:1.50, dur:0.90},
+    s1:    {at:1.60, dur:0.60},
+    s2:    {at:2.75, dur:0.50},
+    btn:   {at:0.90, dur:1.00},
+    heads: [0, 1.45, 2.75, 3.60],
+    headFade: 0.45,
+    tintFade: 0.70
+  };
+
+  var T = VARIANT === "kort" ? KORT_T : LANG_T;
   /* Gemeten op public/screenshots/health.png: het figuur staat daar op 24,5%
      van links, 48,6% van boven en 19,4% van de schermhoogte. */
   var LAND = { x:-13.8, y:-6.2, s:0.217 };
@@ -137,7 +165,7 @@
   var head = document.getElementById("head");
   TEXTS.heads.forEach(function(h,i){
     var d = document.createElement("div");
-    d.className = "hb" + (h.b ? "" : " one");
+    d.className = "hb" + (h.mark ? " mark" : (h.b ? "" : " one"));
     d.innerHTML = "<b>" + h.a + "</b>" + (h.b ? "<b>" + h.b + "</b>" : "");
     head.appendChild(d);
   });
@@ -180,7 +208,8 @@
 
   window.setTime = function(t){
     /* logo en kop */
-    riseStyle(el.sym, p(t, T.sym.at, T.sym.dur, EXPO));
+    var symOut = T.sym.out ? p(t, T.sym.out, T.sym.outDur) : 0;
+    riseStyle(el.sym, p(t, T.sym.at, T.sym.dur, EXPO) * (1 - symOut));
     riseStyle(head,   p(t, T.head.at, T.head.dur, EXPO));
     riseStyle(el.btn, p(t, T.btn.at, T.btn.dur, EXPO));
 

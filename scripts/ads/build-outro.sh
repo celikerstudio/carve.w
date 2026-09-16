@@ -3,7 +3,10 @@
 # of de ad-pijplijn). Kop die meewisselt, spieren die oplichten, en het figuur
 # dat in een echte schermopname landt.
 #
-# gebruik: build-outro.sh [nl|en|beide] [--ratio 9:16] [--fps 30]
+# gebruik: build-outro.sh [nl|en|beide] [--kort] [--ratio 9:16] [--fps 30]
+#
+# --kort geeft de versie van 5 seconden: twee boodschappen in plaats van vier,
+# en een laatste kader met het wordmerk dat bijna een seconde stilstaat.
 #
 # @ai-why Chrome rendert elk frame, ffmpeg plakt ze aan elkaar. De beweging zit
 # dus in de pagina (frames/outro-anim.html) en niet in ffmpeg-expressies: de
@@ -17,10 +20,11 @@ export PATH="/opt/homebrew/bin:$PATH"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MEDIA_ROOT="${CARVE_ADS_ROOT:-$HOME/Developer/celiker-studio/carve}"
 
-LANGS="beide"; RATIO="9:16"; FPS=30
+LANGS="beide"; RATIO="9:16"; FPS=30; VARIANT="lang"; SUFFIX=""
 [ $# -gt 0 ] && case "$1" in nl|en|beide) LANGS="$1"; shift;; esac
 while [ $# -gt 0 ]; do
   case "$1" in
+    --kort)  VARIANT="kort"; SUFFIX="-kort"; shift;;
     --ratio) RATIO="${2:-}"; shift 2;;
     --fps)   FPS="${2:-}"; shift 2;;
     *) echo "onbekende optie: $1" >&2; exit 1;;
@@ -35,13 +39,14 @@ esac
 [ "$LANGS" = "beide" ] && LANGS="nl en"
 
 for LANG in $LANGS; do
-  WORK="$MEDIA_ROOT/_werk/outro-$LANG"
+  KEY="$LANG"; [ "$VARIANT" = "kort" ] && KEY="$LANG-kort"
+  WORK="$MEDIA_ROOT/_werk/outro-$KEY"
   rm -rf "$WORK"; mkdir -p "$WORK/frames"
   OUTDIR="$MEDIA_ROOT/export/outro"; mkdir -p "$OUTDIR"
-  OUT="$OUTDIR/carve-outro-$LANG-${RATIO//:/x}.mp4"
+  OUT="$OUTDIR/carve-outro-$LANG$SUFFIX-${RATIO//:/x}.mp4"
 
-  echo "▸ outro $LANG  ${W}x${H} @ ${FPS}fps"
-  python3 "$HERE/render-outro-html.py" "$LANG" "$W" "$H" > "$WORK/outro.html"
+  echo "▸ outro $KEY  ${W}x${H} @ ${FPS}fps"
+  python3 "$HERE/render-outro-html.py" "$KEY" "$W" "$H" "$VARIANT" > "$WORK/outro.html"
   node "$HERE/render-frames.js" "$WORK/outro.html" "$WORK/frames" "$W" "$H" "$FPS"
 
   # @ai-gotcha Een stil audiospoor is geen opsmuk: zonder audio verspringt het

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Vult frames/outro-anim.html met de teksten van één taal en de beelden.
 
-gebruik: render-outro-html.py <taal> <breedte> <hoogte> > pagina.html
+gebruik: render-outro-html.py <taal> <breedte> <hoogte> [lang|kort] > pagina.html
 
 @ai-why De beelden gaan als data-URI mee in plaats van als pad. Chrome weigert
 een CSS-mask die van file:// komt (CORS, origin "null"), en juist de spiertint
@@ -27,6 +27,7 @@ def data_uri(path):
 
 def main():
     lang, W, H = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
+    variant = sys.argv[4] if len(sys.argv) > 4 else "lang"
     texts = json.loads((HERE / "outro.json").read_text())
     if lang not in texts:
         sys.exit("taal %s staat niet in outro.json" % lang)
@@ -41,6 +42,7 @@ def main():
         "__SCREEN1__": data_uri(ROOT / "public" / "screenshots" / "health.png"),
         "__SCREEN2__": data_uri(ROOT / "public" / "screenshots" / "scan.jpg"),
         "__TEXTS__": json.dumps(texts[lang], ensure_ascii=False),
+        "__VARIANT__": variant,
     }
     for key, value in vals.items():
         html = html.replace(key, str(value))

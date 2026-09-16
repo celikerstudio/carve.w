@@ -1,0 +1,17 @@
+{
+  "name": "anime-sportschool-v1",
+  "channel": "social",
+  "style": "bold",
+  "fps": 30,
+  "language": "nl",
+  "captions": false,
+  "clips": [
+    {
+      "src": "3-ai-gegenereerd/02-goedgekeurd/AI-20260916-01-anime-sportschool.mp4",
+      "start": 1.5,
+      "end": 10.0,
+      "fit": "cover"
+    }
+  ],
+  "outro": "nl-kort"
+}

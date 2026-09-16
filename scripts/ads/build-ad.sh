@@ -38,7 +38,11 @@ esac
 
 j() { jq -r "$1" "$RECIPE"; }
 NAME="$(j '.name')"; FPS="$(j '.fps // 30')"; LANG="$(j '.language // "nl"')"
-CAPTIONS="$(j '.captions // true')"; [ -n "$NO_CAPS" ] && CAPTIONS=false
+# @ai-gotcha `.captions // true` geeft true bij "captions": false, want jq's //
+# springt niet alleen bij null maar ook bij false naar de rechterkant. Daarmee
+# werd ondertiteling uitzetten in een recept stil genegeerd.
+CAPTIONS="$(jq -r 'if has("captions") then .captions else true end' "$RECIPE")"
+[ -n "$NO_CAPS" ] && CAPTIONS=false
 STYLE="${STYLE_ARG:-$(j '.style // "bold"')}"
 STYLE_CSS="$HERE/styles/$STYLE.css"
 [ -f "$STYLE_CSS" ] || { echo "onbekende stijl: $STYLE" >&2; usage; }
@@ -111,12 +115,29 @@ for i in $(seq 0 $((N-1))); do
   printf '  clip %d/%d  %s\n' "$((i+1))" "$N" "$(basename "$SRC")"
 done
 
+# ---- 1b. outro ------------------------------------------------------------
+# @ai-why Een recept kan met `"outro": "nl"` het vaste slotstuk achter de montage
+# plakken in plaats van een eigen eindkaart te tekenen. Het bestand is al 9:16 en
+# 30fps, maar het gaat toch door dezelfde normalisatie: de concat-demuxer eist
+# identieke stromen en plakt ze anders stil verkeerd aan elkaar.
+# @ai-sync scripts/ads/build-outro.sh maakt die bestanden.
+OUTRO="$(j '.outro // ""')"
+if [ -n "$OUTRO" ]; then
+  OUTRO_FILE="$MEDIA_ROOT/export/outro/carve-outro-$OUTRO-${SLUG}.mp4"
+  [ -f "$OUTRO_FILE" ] || { echo "outro niet gevonden: $OUTRO_FILE (bouw hem met build-outro.sh)" >&2; exit 1; }
+  ffmpeg -nostdin -v error -y -i "$OUTRO_FILE" \
+    -filter_complex "[0:v]scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS},setsar=1,format=yuv420p[v];[0:a]aresample=48000,aformat=channel_layouts=stereo[a]" \
+    -map '[v]' -map '[a]' -c:v libx264 -preset medium -crf 18 -c:a aac -b:a 192k "clip_outro.mp4"
+  printf '%s\n' "file 'clip_outro.mp4'" >> concat.txt
+  echo "  outro $OUTRO"
+fi
+
 # ---- 2. eindkaart uit HTML -------------------------------------------------
 # @ai-why Deze ffmpeg-build heeft geen drawtext (zonder libfreetype gebouwd), en
 # HTML geeft sowieso betere typografie: dezelfde tokens als de app, echte
 # font-weights, afgeronde hoeken. Chrome rendert naar PNG, ffmpeg maakt er een clip van.
 # @ai-sync scripts/ads/render-screen.py
-if [ "$(jq 'has("endcard")' "$RECIPE")" = "true" ]; then
+if [ "$(jq 'has("endcard")' "$RECIPE")" = "true" ] && [ -z "$OUTRO" ]; then
   DUR="$(j '.endcard.duration // 2.5')"
   LOGO="$(j '.endcard.logo // ""')"
   case "$LOGO" in ""|/*) ;; *) LOGO="$HERE/$LOGO";; esac

@@ -29,6 +29,10 @@ Het recept is de bron van waarheid, de mp4 is wegwerpbaar. Wil je de ad
 aanpassen, pas dan het recept aan en draai opnieuw. Video's van tientallen MB
 horen niet in een repo, vandaar de scheiding.
 
+Een recept sluit af met `"outro": "nl"` (of `en`, `nl-kort`, `en-kort`) in plaats
+van een eigen `endcard`. Het bestand komt uit `export/outro/` en wordt gebouwd met
+`build-outro.sh`. Staan ze allebei in een recept, dan wint de outro.
+
 Een andere mediamap gebruiken kan met `CARVE_ADS_ROOT=/pad/naar/map`.
 
 Hoe we hiermee werken van idee tot gepubliceerde ad staat in

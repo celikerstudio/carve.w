@@ -1,0 +1,33 @@
+{
+  "name": "pov",
+  "channel": "ads",
+  "style": "clean",
+  "language": "nl",
+  "captions": true,
+  "hook": {
+    "kicker": "POV",
+    "text": "Je wil je macro's weten.\nJe wil er geen 5 minuten aan kwijt.",
+    "duration": 2.2
+  },
+  "clips": [
+    {
+      "src": "01-pov-bord.mp4",
+      "note": "Vanuit de ogen van de kijker: bord op tafel, telefoon in beeld. Handheld, geen statief."
+    },
+    {
+      "src": "02-pov-scan.mp4",
+      "note": "Dezelfde blik, de foto wordt gemaakt. Laat de kleine aarzeling erin, dat maakt het echt."
+    },
+    {
+      "src": "03-resultaat.mp4",
+      "note": "Echte schermopname van het resultaat."
+    }
+  ],
+  "endcard": {
+    "text": "Carve",
+    "sub": "Eten loggen zonder te tellen",
+    "cta": "Gratis in de App Store",
+    "duration": 2.5,
+    "logo": "brand/carve-logo.png"
+  }
+}

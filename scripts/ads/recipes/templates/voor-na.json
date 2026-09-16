@@ -1,0 +1,33 @@
+{
+  "name": "voor-na",
+  "channel": "ads",
+  "style": "bold",
+  "language": "nl",
+  "captions": true,
+  "hook": {
+    "kicker": "Zelfde maaltijd",
+    "text": "Vroeger 4 minuten.\nNu 1 foto.",
+    "duration": 1.8
+  },
+  "clips": [
+    {
+      "src": "01-oud.mp4",
+      "note": "De oude route in één doorlopende take: zoeken, wegen, portie kiezen, typen. Laat 'm lang genoeg duren om te irriteren."
+    },
+    {
+      "src": "02-nieuw.mp4",
+      "note": "De nieuwe route, dezelfde maaltijd: foto, controleren, klaar."
+    },
+    {
+      "src": "03-resultaat.mp4",
+      "note": "Beide uitkomsten naast elkaar of vlak na elkaar. Echte schermopname."
+    }
+  ],
+  "endcard": {
+    "text": "Carve",
+    "sub": "Zelfde cijfers, zonder het werk",
+    "cta": "Gratis in de App Store",
+    "duration": 2.5,
+    "logo": "brand/carve-logo.png"
+  }
+}

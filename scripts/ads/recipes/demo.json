@@ -1,0 +1,50 @@
+{
+  "name": "demo",
+  "channel": "ads",
+  "style": "bold",
+  "fps": 30,
+  "language": "nl",
+  "captions": true,
+  "hook": {
+    "kicker": "Zonder handmatig tellen",
+    "text": "Foto van je bord.\nMacro's in 2 seconden.",
+    "duration": 1.8
+  },
+  "subtitles": [
+    {
+      "text": "Maak een foto van je bord",
+      "end": 2.5
+    },
+    {
+      "text": "Carve herkent het gerecht",
+      "end": 4.4
+    },
+    {
+      "text": "en vult je macro's in",
+      "end": 5.7
+    },
+    {
+      "text": "Je trainingsplan past zich aan",
+      "end": 8.2
+    }
+  ],
+  "clips": [
+    {
+      "src": "0-test/demo-1.mp4"
+    },
+    {
+      "src": "0-test/demo-2.mp4"
+    },
+    {
+      "src": "0-test/demo-3.mp4"
+    }
+  ],
+  "endcard": {
+    "text": "Carve",
+    "sub": "Scan je eten, zie je macro's\nen train met een plan",
+    "cta": "Gratis in de App Store",
+    "duration": 2.5,
+    "logo": "brand/carve-logo.png"
+  },
+  "note": "Technische rooktest van de pijplijn, geen echte ad. Het beeld is geanimeerde app-screenshots, dus niet bruikbaar als bewijs in publicatie."
+}

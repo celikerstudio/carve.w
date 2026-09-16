@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8">
+<style>
+  :root{ --ink:#fff; --accent:#3B82F6; --cap-base:__SIZE__px; --cap-scale:1;
+    --font:-apple-system,"SF Pro Display","Helvetica Neue",sans-serif; }
+  *{margin:0;box-sizing:border-box}
+  html,body{width:__W__px;height:__H__px;background:transparent;font-family:var(--font)}
+  .wrap{height:100%;display:flex;align-items:flex-end;justify-content:center;
+    padding:0 __PADX__px __PADY__px}
+  .cap{font-size:calc(var(--cap-base) * var(--cap-scale));font-weight:800;letter-spacing:-.02em;line-height:1.15;
+    color:var(--ink);text-align:center;text-wrap:balance;text-transform:uppercase;
+    text-shadow:0 0 18px rgba(0,0,0,.55), 0 4px 10px rgba(0,0,0,.75);
+    -webkit-text-stroke:__STROKE__px rgba(0,0,0,.85);paint-order:stroke fill}
+</style>
+<style>__STYLE__</style>
+<div class="wrap"><div class="cap">__TEXT__</div></div>

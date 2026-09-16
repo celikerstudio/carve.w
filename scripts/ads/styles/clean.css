@@ -1,0 +1,15 @@
+/* clean — Apple-achtig: rustig, gewone zinnen, geen contour. Voor rustig
+   beeld en een publiek dat schreeuwerige ads wegklikt. */
+/* @ai-gotcha Schaal tekst met --*-scale, nooit met em: .cap erft geen
+   fontgrootte van een ouder, dus em valt terug op 16px en de ondertitel wordt
+   onleesbaar klein. De basismaten komen uit de hoogte van het doelformaat. */
+:root{ --accent:#fafafa; --cap-scale:.82; }
+.cap{
+  font-weight:600; text-transform:none; letter-spacing:-.03em;
+  -webkit-text-stroke:0; text-shadow:0 2px 20px rgba(0,0,0,.55);
+}
+.wrap{ align-items:flex-end; }
+.kicker{ letter-spacing:.08em; font-weight:600; color:#a3a3a3; }
+h1{ font-weight:600; letter-spacing:-.045em; }
+.scrim{ background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,0) 55%); }
+.cta{ background:#fafafa; color:#141415; }

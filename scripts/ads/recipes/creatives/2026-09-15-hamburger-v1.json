@@ -1,0 +1,51 @@
+{
+  "name": "hamburger-v1",
+  "channel": "ads",
+  "style": "bold",
+  "fps": 30,
+  "language": "nl",
+  "captions": true,
+  "hook": {
+    "kicker": "Zonder handmatig tellen",
+    "text": "Foto van je bord.\nKlaar."
+  },
+  "subtitles": [
+    {
+      "text": "Foto maken",
+      "start": 2.0,
+      "end": 4.4
+    },
+    {
+      "text": "Kies de maaltijd",
+      "end": 8.0
+    },
+    {
+      "text": "Carve analyseert",
+      "start": 9.4,
+      "end": 11.4
+    },
+    {
+      "text": "Hamburger, 480 kcal",
+      "end": 13.4
+    },
+    {
+      "text": "Eiwit, koolhydraten en vet",
+      "end": 16.6
+    }
+  ],
+  "clips": [
+    {
+      "src": "1-schermopnames/2026-09-11-hamburger-loggen.mp4",
+      "start": 0.5,
+      "end": 17.2,
+      "fit": "contain"
+    }
+  ],
+  "endcard": {
+    "text": "Carve",
+    "sub": "Scan je eten, zie je macro's\nen train met een plan",
+    "cta": "Gratis in de App Store",
+    "duration": 2.5,
+    "logo": "brand/carve-logo.png"
+  }
+}

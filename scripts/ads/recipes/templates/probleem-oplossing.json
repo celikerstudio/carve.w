@@ -1,0 +1,33 @@
+{
+  "name": "probleem-oplossing",
+  "channel": "ads",
+  "style": "bold",
+  "language": "nl",
+  "captions": true,
+  "hook": {
+    "kicker": "Zonder handmatig tellen",
+    "text": "Foto van je bord.\nMacro's in 2 seconden.",
+    "duration": 1.8
+  },
+  "clips": [
+    {
+      "src": "01-typen.mp4",
+      "note": "Het oude werk: zoeken, wegen, typen. Close-up op de handen, laat de traagheid voelen."
+    },
+    {
+      "src": "02-foto.mp4",
+      "note": "De telefoon gaat omhoog, één foto van het bord. Kort, dit is het kantelpunt."
+    },
+    {
+      "src": "03-resultaat.mp4",
+      "note": "Echte schermopname: het gerecht herkend, de macro's ingevuld. Geen nagemaakte UI."
+    }
+  ],
+  "endcard": {
+    "text": "Carve",
+    "sub": "Scan je eten, zie je macro's\nen train met een plan",
+    "cta": "Gratis in de App Store",
+    "duration": 2.5,
+    "logo": "brand/carve-logo.png"
+  }
+}

@@ -54,3 +54,6 @@ supabase/.temp/
 # lokale agent-tooling, geen projectbestanden
 .superpowers/
 .nodeterm/
+
+# Gerenderde ad-frames voor de visual companion; build-ad.sh maakt ze opnieuw.
+visual-companion/ads/

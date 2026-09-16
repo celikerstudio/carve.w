@@ -1,0 +1,6 @@
+/* bold — het CapCut/TikTok-ritme: dikke hoofdletters, harde contouren.
+   Werkt op druk beeld en op kleine schermen. Dit is de standaard. */
+:root{ --accent:#3B82F6; }
+.cap{ font-weight:800; text-transform:uppercase; }
+.kicker{ letter-spacing:.18em; }
+h1{ font-weight:800; }

@@ -1,0 +1,4 @@
+# Gerenderde frames zijn wegwerpbaar: build-ad.sh maakt ze opnieuw uit de
+# HTML-templates. Alleen de templates en het merkmateriaal horen in git.
+frames/*.png
+caps/

@@ -1,0 +1,13 @@
+/* punch — ondertitel in een gekleurd blok, zoals de gesproken-woord-edits op
+   Reels. Maximale leesbaarheid, ook als het beeld druk of licht is. */
+:root{ --accent:#3B82F6; }
+.cap{
+  display:inline-block; background:var(--accent); color:#fff;
+  padding:.28em .5em; border-radius:.22em;
+  -webkit-text-stroke:0; text-shadow:none;
+  font-weight:800; text-transform:uppercase; letter-spacing:-.01em;
+  box-decoration-break:clone; -webkit-box-decoration-break:clone;
+}
+.kicker{ background:var(--accent); color:#fff; padding:.35em .8em; border-radius:999px; }
+h1{ font-weight:800; }
+.cta{ border-radius:.18em; }

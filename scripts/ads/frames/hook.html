@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8">
+<style>
+  :root{ --ink:#fafafa; --accent:#3B82F6;
+    --title-base:__TITLE_SIZE__px; --title-scale:1;
+    --kicker-base:__KICKER_SIZE__px; --kicker-scale:1;
+    --font:-apple-system,"SF Pro Display","Helvetica Neue",sans-serif; }
+  *{margin:0;box-sizing:border-box}
+  html,body{width:__W__px;height:__H__px;background:transparent;font-family:var(--font);color:var(--ink)}
+  .scrim{position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.25) 42%,rgba(0,0,0,0) 62%)}
+  .wrap{position:relative;height:100%;display:flex;flex-direction:column;
+    align-items:center;justify-content:flex-start;padding:__PADTOP__px __PADX__px 0;text-align:center}
+  .kicker{font-size:calc(var(--kicker-base) * var(--kicker-scale));font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:__GAP__px}
+  h1{font-size:calc(var(--title-base) * var(--title-scale));font-weight:800;letter-spacing:-.035em;line-height:1.04;
+    text-wrap:balance;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+  .kicker:empty{display:none}
+</style>
+<style>__STYLE__</style>
+<div class="scrim"></div>
+<div class="wrap">
+  <div class="kicker">__KICKER__</div>
+  <h1>__TEXT__</h1>
+</div>

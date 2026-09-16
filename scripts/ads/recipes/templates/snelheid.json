@@ -1,0 +1,33 @@
+{
+  "name": "snelheid",
+  "channel": "ads",
+  "style": "punch",
+  "language": "nl",
+  "captions": true,
+  "hook": {
+    "kicker": "Uitdaging",
+    "text": "Kan ik dit loggen\nvoordat de ober terug is?",
+    "duration": 1.8
+  },
+  "clips": [
+    {
+      "src": "01-restaurant.mp4",
+      "note": "Bord komt op tafel, ober loopt weg. Zet de klok in gang."
+    },
+    {
+      "src": "02-scan.mp4",
+      "note": "Foto maken, app doet zijn werk. Niet versnellen: de echte snelheid is het argument."
+    },
+    {
+      "src": "03-klaar.mp4",
+      "note": "Resultaat in beeld, ober komt terug. Echte schermopname."
+    }
+  ],
+  "endcard": {
+    "text": "Carve",
+    "sub": "Sneller dan je bestelling",
+    "cta": "Gratis in de App Store",
+    "duration": 2.5,
+    "logo": "brand/carve-logo.png"
+  }
+}

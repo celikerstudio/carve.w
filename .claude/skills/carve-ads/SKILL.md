@@ -21,6 +21,8 @@ Why this exists and what was rejected: `docs/tdr/0013-ads-bouwen-we-zelf.md`.
 | Prompting and limits for AI footage | `docs/marketing/video/ai-generatie.md` |
 | A working example | `scripts/ads/recipes/creatives/2026-09-15-hamburger-v1.json` |
 | Results of published ads | `scripts/ads/report.sh` |
+| Reusable Concat montages | `scripts/ads/concat-project.py`, see the video README |
+| Competitor ads worth watching | `docs/marketing/video/voorbeelden.md` |
 
 Material lives outside git in `~/Developer/celiker-studio/carve/` (numbered folders,
 `LEESMIJ.txt` explains each). The recipe is committed; the MP4 never is.
@@ -73,7 +75,8 @@ Write the recipe, show the frames, ask. Do not invent copy and ship it.
 | Ad has no voice-over | whisper transcribes nothing and you get no captions | Put a `subtitles` block in the recipe; it wins over whisper |
 | Captions drift from what is on screen | Text says "470 kcal" while the app still says "Analyzing" | Sample frames with ffmpeg, time the cues to the real beats |
 | Subtitle times look like source times | They are not: cues run on the finished timeline, after trimming. A clip `start: 0.5` shifts every beat by half a second | Time the cues against the built MP4, not the raw clip |
-| Moving media after importing into Concat | Concat stores absolute paths; the project silently breaks | Put material in place first; repair via `path` in `concat.json` |
+| Moving media after importing into Concat | Concat stores absolute paths; the project silently breaks | Put material in place first; repair with `concat-project.py repareer <project>` |
+| Copying a Concat project folder to reuse a montage | The copy keeps the old duration, framerate and size per file, so Concat times against footage that is not there | `concat-project.py nieuw <sjabloon> <naam> slot=pad`, which re-probes every file |
 | Homebrew ffmpeg has no libfreetype or libass | `drawtext` and `subtitles` filters do not exist | All text renders from `frames/*.html` through headless Chrome |
 | Still PNGs in a filtergraph | Overlay shows in the first frame only | `-loop 1` per PNG input, `-shortest` on the output |
 

@@ -89,8 +89,50 @@ Naast de pijplijn kun je een ad met de hand bouwen in Concat. Projecten horen in
 
 **Concat slaat absolute paden op naar je bestanden.** Verplaats je een map nadat je
 materiaal hebt geïmporteerd, dan is het project stuk: hij zoekt op het oude pad en
-vindt niets. Repareren kan door in `concat.json` de `path`-waarden onder `media` aan
-te passen, maar voorkomen is makkelijker. Zet materiaal op zijn plek vóór je importeert.
+vindt niets. Zet materiaal op zijn plek vóór je importeert. Is het toch misgegaan:
+
+```bash
+scripts/ads/concat-project.py repareer <projectnaam>
+```
+
+Die zoekt elk zoekgeraakt bestand op naam terug binnen de mediamap, zet het pad recht
+en leest de technische gegevens opnieuw uit. Vindt hij een naam twee keer, dan laat hij
+hem staan en zegt dat erbij.
+
+### Een montage hergebruiken
+
+Een montage die werkt wil je opnieuw kunnen doen met ander beeld. Dat gaat niet door de
+projectmap te kopiëren: het project bewaart naast het pad ook de duur, framerate en
+afmeting van elk bestand, en die blijven na een kopie op de oude waarden staan. Concat
+rekent dan met een duur die het nieuwe bestand niet heeft, zonder te klagen.
+
+Daarom een sjabloon. Dat is hetzelfde project met de paden eruit en benoemde *slots*
+ervoor in de plaats:
+
+```bash
+scripts/ads/concat-project.py sjabloon scanfantasie-v1 scanfantasie   # maak er een
+scripts/ads/concat-project.py lijst                                   # welke zijn er
+scripts/ads/concat-project.py nieuw scanfantasie herfst-v1 \
+  context=.../AI-20260915-01-burger-friet.mp4 \
+  scherm=.../2026-09-11-hamburger-loggen.mp4 \
+  scanlaag=... endcard=...
+```
+
+De slotnamen komen uit de clipnamen in de tijdlijn, dus noem je clips naar hun rol
+("Scherm: foto kiezen") en niet naar het bestand. Zit er een naam naast, dan zet
+`hernoem <sjabloon> <oud> <nieuw>` hem in één keer op beide plekken goed.
+
+Bij `nieuw` wordt elk bestand opnieuw uitgelezen, en je krijgt een waarschuwing als de
+tijdlijn verder loopt dan het nieuwe materiaal duurt. Dat is geen fout: je trekt de clip
+daarna in Concat goed. Stil doorgaan zou het probleem zijn, want dan zie je het pas in
+de export, als een bevroren laatste frame.
+
+Een sjabloon open je niet in Concat, want de paden erin zijn geen bestanden. Wil je het
+sjabloon zelf veranderen, maak er dan een project van, pas dat in Concat aan en draai
+`sjabloon` opnieuw onder een nieuwe naam.
+
+Sjablonen staan in `scripts/ads/concat-templates/` en gaan dus mee in git; het beeld
+waar ze naar wijzen niet.
 
 Niet op het bureaublad opslaan, en niet in iCloud Drive: iCloud kan bestanden van je
 Mac verwijderen om ruimte te besparen, en dan breekt een project midden in het werk.

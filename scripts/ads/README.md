@@ -15,6 +15,7 @@ Alles draait lokaal. Geen abonnement, geen upload van je materiaal.
 | `scripts/ads/frames/` | HTML-templates voor hook, ondertitel en eindkaart | ja, de `.html` |
 | `scripts/ads/styles/` | de stijlen: CSS die de templates overschrijft | ja |
 | `scripts/ads/brand/` | logo en merkmateriaal voor overlays | ja |
+| `scripts/ads/concat-templates/` | herbruikbare Concat-montages, zonder beeld | ja |
 | `~/Developer/celiker-studio/carve/materiaal/1-schermopnames/` | echte opnames van de app, het bewijs | nee |
 | `~/Developer/celiker-studio/carve/materiaal/2-echt-beeld/` | gefilmd materiaal, per opnamedag een submap | nee |
 | `~/Developer/celiker-studio/carve/materiaal/3-ai-gegenereerd/` | AI-beeld, apart omdat het gelabeld moet worden | nee |

@@ -5,6 +5,7 @@ Zie README.md in deze map. Kort:
 
     concat-project.py lijst
     concat-project.py nieuw <sjabloon> <projectnaam> <slot>=<pad> [...]
+    concat-project.py maak <projectnaam> <bestand> [bestand...]
     concat-project.py sjabloon <projectnaam> <sjabloonnaam>
     concat-project.py hernoem <sjabloon> <oudslot> <nieuwslot>
     concat-project.py repareer <projectnaam>
@@ -158,6 +159,69 @@ def cmd_sjabloon(project_name, template_name):
     print("slots: %s" % ", ".join(sorted(slots)))
 
 
+def cmd_maak(project_name, paths):
+    """Zet losse bestanden achter elkaar in een nieuw Concat-project.
+
+    @ai-why Voor het geval waarin nog geen sjabloon bestaat: je hebt twee of drie
+    bestanden en wil ze in Concat naast elkaar zien om te knippen. De tijdlijn is
+    één spoor, elk bestand op zijn volle duur, in de volgorde die je meegeeft.
+    """
+    dest_dir = os.path.join(PROJECTS, project_name)
+    if os.path.exists(dest_dir):
+        fail("project %s bestaat al" % project_name)
+
+    media, clips, start = [], [], 0.0
+    for i, raw in enumerate(paths, start=1):
+        path = os.path.abspath(os.path.expanduser(raw))
+        if not os.path.isfile(path):
+            fail("bestand niet gevonden: %s" % path)
+        entry = probe(path)
+        entry["id"] = "m%d" % i
+        media.append(entry)
+        clips.append({
+            "duration": entry["duration"], "fadeIn": 0.0, "fadeOut": 0.0, "filters": [],
+            "id": "c%d" % i, "kind": "video", "mediaId": entry["id"],
+            "name": os.path.splitext(entry["name"])[0],
+            "offsetX": 0.0, "offsetY": 0.0, "opacity": 1.0, "preservePitch": True,
+            "rotation": 0.0, "scale": 1.0, "sourceStart": 0.0, "speed": 1.0,
+            "start": round(start, 3), "trackId": "T1", "videoEffects": [], "volume": 1.0,
+        })
+        start += entry["duration"]
+
+    # @ai-gotcha Concat bewaart de clips twee keer: bovenin én in de tijdlijn.
+    # Zet je ze maar op één plek, dan opent het project met een lege tijdlijn.
+    tracks = [
+        {"id": "T1", "muted": False, "name": "Beeld", "visible": True},
+        {"id": "T2", "muted": False, "name": "Tekst", "visible": True},
+        {"id": "T3", "muted": False, "name": "Track 3", "visible": True},
+        {"id": "T4", "muted": False, "name": "Track 4", "visible": True},
+    ]
+    first = media[0]
+    # @ai-why De hoogste framerate wint, niet die van de eerste clip. Zet je het
+    # project op 24 terwijl de outro 30 is, dan gooit Concat bij het exporteren
+    # frames weg uit het enige deel dat je zelf gemaakt hebt.
+    rate = int(round(max(m["frameRate"] for m in media))) or 30
+    project = {
+        "activeTimelineId": "TL1",
+        "clips": clips,
+        "concat": "0.1.0",
+        "fonts": [],
+        "media": media,
+        "name": project_name,
+        "timelines": [{"clips": clips, "id": "TL1", "name": "Timeline 1", "tracks": tracks}],
+        "tracks": tracks,
+        "version": 1,
+        "video": {"height": first["height"], "rateDen": 1,
+                  "rateNum": rate, "width": first["width"]},
+    }
+    os.makedirs(dest_dir)
+    save(os.path.join(dest_dir, "concat.json"), project)
+    print("project %s gemaakt, %.1fs op één spoor" % (project_name, start))
+    for c in clips:
+        print("  %6.1fs  %s" % (c["start"], c["name"]))
+    print("  open: %s" % os.path.join(dest_dir, "concat.json"))
+
+
 def cmd_hernoem(template_name, old, new):
     """Een slotnaam staat op twee plekken in het sjabloon. Hier allebei tegelijk."""
     path = os.path.join(TEMPLATES, template_name + ".json")
@@ -267,6 +331,8 @@ def main():
         cmd_lijst()
     elif cmd == "sjabloon" and len(rest) == 2:
         cmd_sjabloon(*rest)
+    elif cmd == "maak" and len(rest) >= 2:
+        cmd_maak(rest[0], rest[1:])
     elif cmd == "hernoem" and len(rest) == 3:
         cmd_hernoem(*rest)
     elif cmd == "nieuw" and len(rest) >= 2:

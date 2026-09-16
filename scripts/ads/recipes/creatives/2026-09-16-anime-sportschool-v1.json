@@ -3,7 +3,7 @@
   "channel": "social",
   "style": "bold",
   "fps": 30,
-  "language": "nl",
+  "language": "en",
   "captions": false,
   "clips": [
     {
@@ -13,5 +13,5 @@
       "fit": "cover"
     }
   ],
-  "outro": "nl-kort"
+  "outro": "en"
 }

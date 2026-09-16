@@ -5,7 +5,7 @@ Zie README.md in deze map. Kort:
 
     concat-project.py lijst
     concat-project.py nieuw <sjabloon> <projectnaam> <slot>=<pad> [...]
-    concat-project.py maak <projectnaam> <bestand> [bestand...]
+    concat-project.py maak <projectnaam> <bestand> [bestand...] [--recent]
     concat-project.py sjabloon <projectnaam> <sjabloonnaam>
     concat-project.py hernoem <sjabloon> <oudslot> <nieuwslot>
     concat-project.py repareer <projectnaam>
@@ -159,7 +159,41 @@ def cmd_sjabloon(project_name, template_name):
     print("slots: %s" % ", ".join(sorted(slots)))
 
 
-def cmd_maak(project_name, paths):
+RECENTS = os.path.expanduser(
+    "~/Library/Application Support/app.concat.editor/recents.json")
+
+
+def add_to_recents(project_dir, name, width, height, rate):
+    """Zet het project in de Recent-lijst van Concat.
+
+    @ai-why Concat opent geen map die je van buitenaf aanbiedt: `open -a Concat`
+    geeft "cannot open files in the folder format". De enige weg naar binnen is
+    de Recent-lijst op het startscherm, en die staat in dit bestand. We schrijven
+    er hetzelfde in als de app zelf doet, met een kopie ernaast.
+    @ai-gotcha Concat schrijft dit bestand bij het afsluiten. Draait hij nog, dan
+    overschrijft hij je regel; sluit hem dus eerst af.
+    """
+    import time
+    entries = []
+    if os.path.isfile(RECENTS):
+        shutil.copy2(RECENTS, RECENTS + ".bak")
+        try:
+            with open(RECENTS, encoding="utf-8") as fh:
+                entries = json.load(fh)
+        except ValueError:
+            entries = []
+    entries = [e for e in entries if e.get("path") != project_dir]
+    entries.insert(0, {
+        "path": project_dir, "name": name, "width": width, "height": height,
+        "rateNum": rate, "rateDen": 1, "openedAt": int(time.time() * 1000),
+    })
+    os.makedirs(os.path.dirname(RECENTS), exist_ok=True)
+    with open(RECENTS, "w", encoding="utf-8") as fh:
+        json.dump(entries[:20], fh, indent=2)
+    print("  staat nu bovenaan in Recent in Concat")
+
+
+def cmd_maak(project_name, paths, recent=False):
     """Zet losse bestanden achter elkaar in een nieuw Concat-project.
 
     @ai-why Voor het geval waarin nog geen sjabloon bestaat: je hebt twee of drie
@@ -219,7 +253,10 @@ def cmd_maak(project_name, paths):
     print("project %s gemaakt, %.1fs op één spoor" % (project_name, start))
     for c in clips:
         print("  %6.1fs  %s" % (c["start"], c["name"]))
-    print("  open: %s" % os.path.join(dest_dir, "concat.json"))
+    if recent:
+        add_to_recents(dest_dir, project_name, first["width"], first["height"], rate)
+    else:
+        print("  open: %s" % os.path.join(dest_dir, "concat.json"))
 
 
 def cmd_hernoem(template_name, old, new):
@@ -332,7 +369,9 @@ def main():
     elif cmd == "sjabloon" and len(rest) == 2:
         cmd_sjabloon(*rest)
     elif cmd == "maak" and len(rest) >= 2:
-        cmd_maak(rest[0], rest[1:])
+        recent = "--recent" in rest
+        rest = [r for r in rest if r != "--recent"]
+        cmd_maak(rest[0], rest[1:], recent)
     elif cmd == "hernoem" and len(rest) == 3:
         cmd_hernoem(*rest)
     elif cmd == "nieuw" and len(rest) >= 2:

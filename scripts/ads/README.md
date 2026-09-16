@@ -29,6 +29,9 @@ Het recept is de bron van waarheid, de mp4 is wegwerpbaar. Wil je de ad
 aanpassen, pas dan het recept aan en draai opnieuw. Video's van tientallen MB
 horen niet in een repo, vandaar de scheiding.
 
+Met `"transition": 0.6` vloeit de montage in de outro over, beeld en geluid
+tegelijk. Zonder dat veld sluit hij hard aan.
+
 Een recept sluit af met `"outro": "nl"` (of `en`, `nl-kort`, `en-kort`) in plaats
 van een eigen `endcard`. Het bestand komt uit `export/outro/` en wordt gebouwd met
 `build-outro.sh`. Staan ze allebei in een recept, dan wint de outro.

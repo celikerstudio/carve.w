@@ -128,8 +128,16 @@ if [ -n "$OUTRO" ]; then
   ffmpeg -nostdin -v error -y -i "$OUTRO_FILE" \
     -filter_complex "[0:v]scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS},setsar=1,format=yuv420p[v];[0:a]aresample=48000,aformat=channel_layouts=stereo[a]" \
     -map '[v]' -map '[a]' -c:v libx264 -preset medium -crf 18 -c:a aac -b:a 192k "clip_outro.mp4"
-  printf '%s\n' "file 'clip_outro.mp4'" >> concat.txt
-  echo "  outro $OUTRO"
+  # @ai-why Met een overgang plakt de outro niet in de concat-lijst: xfade vraagt
+  # twee losse stromen. Zonder overgang blijft het een gewone aansluiting, en dat
+  # is goedkoper dan het hele ding opnieuw coderen.
+  TRANS="$(j '.transition // 0')"
+  if [ "$TRANS" = "0" ]; then
+    printf '%s\n' "file 'clip_outro.mp4'" >> concat.txt
+    echo "  outro $OUTRO"
+  else
+    echo "  outro $OUTRO met overgang van ${TRANS}s"
+  fi
 fi
 
 # ---- 2. eindkaart uit HTML -------------------------------------------------
@@ -153,6 +161,21 @@ fi
 
 # ---- 3. aan elkaar plakken -------------------------------------------------
 ffmpeg -nostdin -v error -y -f concat -safe 0 -i concat.txt -c copy joined.mp4
+
+# @ai-why De overgang gaat over beeld én geluid tegelijk. Alleen het beeld laten
+# overvloeien geeft een harde knip in de muziek, en dat hoor je harder dan je de
+# beeldovergang ziet.
+# @ai-gotcha xfade begint te tellen vanaf `offset`, dus die moet op de lengte van
+# de montage min de overgang staan. Zet je hem op de lengte zelf, dan zie je de
+# laatste seconden niet meer.
+if [ -n "$OUTRO" ] && [ "${TRANS:-0}" != "0" ]; then
+  JDUR="$(ffprobe -v error -show_entries format=duration -of csv=p=0 joined.mp4)"
+  OFF="$(python3 -c "print(max(0, $JDUR - $TRANS))")"
+  ffmpeg -nostdin -v error -y -i joined.mp4 -i clip_outro.mp4 -filter_complex \
+    "[0:v][1:v]xfade=transition=fade:duration=${TRANS}:offset=${OFF}[v];[0:a][1:a]acrossfade=d=${TRANS}[a]" \
+    -map '[v]' -map '[a]' -c:v libx264 -preset medium -crf 18 -c:a aac -b:a 192k joined_x.mp4
+  mv joined_x.mp4 joined.mp4
+fi
 echo "  geplakt: $(ffprobe -v error -show_entries format=duration -of csv=p=0 joined.mp4)s"
 
 # ---- 4. ondertiteling ------------------------------------------------------

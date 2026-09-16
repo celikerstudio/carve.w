@@ -126,9 +126,13 @@
   };
 
   var T = VARIANT === "kort" ? KORT_T : LANG_T;
-  /* Gemeten op public/screenshots/health.png: het figuur staat daar op 24,5%
-     van links, 48,6% van boven en 19,4% van de schermhoogte. */
-  var LAND = { x:-13.8, y:-6.2, s:0.217 };
+  /* @ai-why Deze drie getallen zijn gemeten, niet geschat: de rode broek van de
+     tekening is het enige verzadigde rood in beeld, dus die is in beide lagen
+     exact te vinden. De eerste schatting (op de omtrek van het hele figuur) zat
+     29% naast de schaal, en dan landt de tekening zichtbaar te klein op de
+     tekening in het scherm. Verander je de telefoon of het screenshot, meet dan
+     opnieuw in plaats van bij te schuiven. */
+  var LAND = { x:-13.44, y:-8.01, s:0.2796 };
   var RISE = 2.4;                /* hoeveel een element omhoog schuift, in cqw */
 
   /* ---- easing --------------------------------------------------------------

@@ -87,12 +87,13 @@ export function marketingJsonLd(taal: Taal) {
     installUrl: APP_STORE_URL,
     sameAs: [APP_STORE_URL],
     image: `${SITE_URL}/opengraph-image`,
-    // @ai-why: De vaste omschrijving en niet `copy.meta.beschrijving`. Die laatste is
-    //   een pitch ("logt je eten vanaf een foto"), en een model dat moet uitzoeken wélke
-    //   Carve dit is heeft meer aan een zin die zegt wat het is. Zie TDR-0014.
+    // @ai-why: De vaste omschrijving staat vooraan in `description` én alleen in
+    //   `disambiguatingDescription`, het schema.org-veld voor precies dit: de zin die dit
+    //   ding van zijn naamgenoten onderscheidt. Gemini kende "Carve AI" alleen als
+    //   enterprise-tool en ski-coach (TDR-0014). De pitch komt erachter.
     // @ai-sync: lib/marketing-copy.ts (APP_OMSCHRIJVING)
-    description: APP_OMSCHRIJVING[taal],
-    disambiguatingDescription: copy.meta.beschrijving,
+    description: `${APP_OMSCHRIJVING[taal]} ${copy.meta.beschrijving}`,
+    disambiguatingDescription: APP_OMSCHRIJVING[taal],
     offers: {
       '@type': 'Offer',
       price: '0',

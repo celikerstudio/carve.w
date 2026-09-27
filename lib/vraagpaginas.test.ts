@@ -100,8 +100,11 @@ describe('sitemap', () => {
 
 describe('structured data', () => {
   it('gebruikt op de marketingpagina dezelfde omschrijving als de vraagpagina\'s', () => {
-    expect(marketingJsonLd('nl').description).toBe(APP_OMSCHRIJVING.nl);
-    expect(marketingJsonLd('en').description).toBe(APP_OMSCHRIJVING.en);
+    for (const taal of ['nl', 'en'] as const) {
+      const data = marketingJsonLd(taal);
+      expect(data.disambiguatingDescription).toBe(APP_OMSCHRIJVING[taal]);
+      expect(data.description.startsWith(APP_OMSCHRIJVING[taal])).toBe(true);
+    }
   });
 
   it('zet de vijf vragen van een pagina als FAQPage neer', () => {

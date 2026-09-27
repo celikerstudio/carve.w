@@ -14,15 +14,21 @@ import { APP_OMSCHRIJVING } from '@/lib/marketing-copy';
  *
  * @ai-gotcha: Elke claim over een andere app is nagekeken op 2026-09-27: Hevy toont
  * gratis een spierkaart per week (hevyapp.com/features/training-chart), MacroFactor heeft
- * geen gratis versie en verkoopt workouts als aparte app (macrofactor.com/workouts/price).
+ * geen gratis versie en verkoopt workouts als aparte app, los of in een bundel
+ * (macrofactor.com/workouts/price), en ChatGPT Health leest sinds 2026-01-07 Apple Health en
+ * MyFitnessPal (openai.com/index/introducing-chatgpt-health).
  * Zulke dingen veranderen. Kijk ze opnieuw na bij elke herziening, en zet er geen claim
  * bij die je niet op hun eigen site of in de App Store kunt terugvinden.
  *
- * @ai-gotcha: Claims over Carve zelf komen uit `lib/marketing-copy.ts` (gratis plan, 25
- * AI-acties per dag, 30 dagen Pro, alleen stappen uit Apple Health) en uit de iOS-repo:
+ * @ai-gotcha: Geen getal voor de gratis AI-limiet. Er zijn er twee (chat 10 per dag in
+ * `check_chat_quota`, 25 voor de AI-quota) en in de beginfase is iedereen Pro (ADR-025), dus
+ * elk getal is voor een deel van de lezers onwaar.
+ *
+ * @ai-gotcha: Claims over Carve zelf komen uit `lib/marketing-copy.ts` (30 dagen Pro, alleen stappen uit Apple Health) en uit de iOS-repo:
  * zeven talen (de `.lproj`-mappen), secundaire spieren tellen half
- * (`WorkoutMuscleResolver`), en een spier loopt in 5 tot 7 dagen leeg
- * (`MuscleGroupID.hypertrophyFadeOutDays`). Verandert daar iets, dan hier ook.
+ * (`WorkoutMuscleResolver`), en de kleur van een spier loopt in 4 tot 6 dagen leeg
+ * (`MuscleHeat.tintWindowDays`). De balken lopen trager leeg (dag H+1 van
+ * `MuscleGroupID.hypertrophyFadeOutDays`); de FAQ gaat over de kleur. Verandert daar iets, dan hier ook.
  *
  * @ai-sync: lib/marketing-copy.ts (APP_OMSCHRIJVING en de prijsregels)
  * @ai-sync: lib/vraagpaginas.test.ts
@@ -78,7 +84,7 @@ const SCHERM_WEEK = {
 const FAQ_GRATIS = {
   vraag: 'Is Carve AI gratis?',
   antwoord:
-    'Ja. Eten loggen met een foto of barcode, je trainingen, de spierkaart en je weekplan zijn gratis, zonder einddatum. Het gratis plan heeft tot 25 AI-acties per dag. Pro haalt die grens weg en gebruikt een slimmer AI-model. Elk nieuw account krijgt 30 dagen Pro, zonder dat je vooraf een betaalkaart invult.',
+    'Ja. Eten loggen en je trainingen bijhouden is gratis, zonder einddatum. Op het gratis plan zit een daglimiet op de AI. Pro haalt die grens weg en gebruikt een slimmer AI-model. Elk nieuw account krijgt 30 dagen Pro, zonder dat je vooraf een betaalkaart invult.',
 };
 const FAQ_ANDROID = {
   vraag: 'Werkt Carve AI op Android?',
@@ -129,7 +135,7 @@ const etenEnTraining: VraagPagina = {
       },
       {
         naam: 'MacroFactor',
-        tekst: 'Sterk in voeding, met een algoritme dat je caloriedoel bijstelt op je gewichtsverloop. Trainen gaat via een aparte app met een eigen abonnement, en er is geen gratis versie.',
+        tekst: 'Sterk in voeding, met een algoritme dat je caloriedoel bijstelt op je gewichtsverloop. Trainen gaat via een tweede app, MacroFactor Workouts, los of in een bundel. Er is geen gratis versie.',
       },
       {
         naam: 'Hevy of Strong plus een voedingsapp',
@@ -137,7 +143,7 @@ const etenEnTraining: VraagPagina = {
       },
     ],
     carve:
-      'Carve kiest voor één app en één log. De productdatabase is kleiner dan die van MyFitnessPal, en het caloriedoel past zich niet automatisch aan zoals bij MacroFactor.',
+      'In Carve staat alles in één log. De productdatabase is kleiner dan die van MyFitnessPal, en het caloriedoel past zich niet automatisch aan zoals bij MacroFactor.',
   },
   faq: [
     FAQ_GRATIS,
@@ -165,7 +171,7 @@ const spieren: VraagPagina = {
       'Carve AI toont op een spierkaart welke spiergroepen je deze week trainde en welke al dagen wachten. Gratis iPhone-app, met je eten erbij.',
   },
   vraag: 'Welke app laat zien welke spieren je traint en welke je overslaat?',
-  antwoord: `${APP_OMSCHRIJVING.nl} Elke training die je logt kleurt de spieren die je gebruikte op een kaart van je lichaam, voor en achter. Per spiergroep staat een balk die laat zien hoeveel je deze week deed, zodat je in één blik ziet welke spier al sinds vorige week wacht.`,
+  antwoord: `${APP_OMSCHRIJVING.nl} Elke training die je logt kleurt de spieren die je gebruikte op een kaart van je lichaam, voor en achter. Per spiergroep staat een balk die laat zien hoeveel je deze week deed, zodat je ziet welke spier al sinds vorige week wacht.`,
   stappenKop: 'Zo werkt het in Carve',
   stappen: [
     {
@@ -230,7 +236,7 @@ const coach: VraagPagina = {
       'De coach in Carve AI antwoordt op basis van wat je echt at en trainde. Vraag naar je eiwitten, je week of wat je vandaag moet trainen.',
   },
   vraag: 'Is er een fitness-app met een AI-coach die je eetdagboek leest?',
-  antwoord: `${APP_OMSCHRIJVING.nl} De coach zit in dezelfde app als je eetdagboek en je trainingslog, en leest allebei. Vraag hoeveel eiwit je vandaag nog nodig hebt of hoe je week ging, en je krijgt een antwoord op basis van wat je logde, niet op basis van een standaardschema.`,
+  antwoord: `${APP_OMSCHRIJVING.nl} De coach zit in dezelfde app als je eetdagboek en je trainingslog, en leest allebei. Vraag hoeveel eiwit je vandaag nog nodig hebt of hoe je week ging, en het antwoord gaat over jouw dag, want de coach rekent met wat je logde.`,
   stappenKop: 'Zo werkt het in Carve',
   stappen: [
     {
@@ -258,7 +264,7 @@ const coach: VraagPagina = {
       },
       {
         naam: 'ChatGPT of Gemini',
-        tekst: 'Geven goed algemeen advies over voeding en training, maar kennen je dagboek niet. Je moet elke keer zelf plakken wat je at.',
+        tekst: 'Geven goed algemeen advies over voeding en training. ChatGPT Health kan sinds januari 2026 gegevens uit Apple Health en MyFitnessPal lezen. Een eigen trainingslog of spierkaart heeft geen van beide.',
       },
     ],
     carve:
@@ -274,7 +280,7 @@ const coach: VraagPagina = {
     {
       vraag: 'Onthoudt de coach wat ik eerder vertelde?',
       antwoord:
-        'Hij leest je log: je maaltijden, je trainingen en je gewicht. Wat daarin staat, weet hij bij elke vraag.',
+        'Hij leest je log, dus wat je at, trainde en woog weet hij bij elke vraag.',
     },
     FAQ_FOTO,
     FAQ_ANDROID,

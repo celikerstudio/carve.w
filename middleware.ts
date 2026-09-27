@@ -1,5 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server'
 import { updateSession } from '@/lib/supabase/middleware'
+import { marketingPadVoor } from '@/lib/taalvoorkeur'
 
 /**
  * Een omleiding die de sessiecookies van `updateSession` meeneemt.
@@ -41,8 +42,19 @@ export async function middleware(request: NextRequest) {
   // @ai-sync: app/page.tsx
   // @ai-sync: next.config.ts (geen config-redirect op /, die zou hier vóór komen)
   // @ai-sync: docs/tdr/0008-de-cockpit-is-de-homepage.md
+  //
+  // @ai-why: Welke marketingpagina, kiest de browsertaal (TDR-0015): Nederlands naar
+  // /nl/app, de rest naar /app. Alleen hier op de wortel. /app en /nl/app zelf sturen nooit
+  // door, anders levert een gedeelde link iets anders op dan wat er gedeeld werd.
+  // @ai-sync: lib/taalvoorkeur.ts
+  // @ai-sync: docs/tdr/0015-de-wortel-kiest-de-taal.md
   if (pathname === '/' && !user) {
-    return redirectMetSessie(new URL('/app', request.url), response)
+    const pad = marketingPadVoor(request.headers.get('accept-language'))
+    const redirect = redirectMetSessie(new URL(pad, request.url), response)
+    // @ai-gotcha: Zonder `Vary` mag een cache tussen browser en server de omleiding van de
+    //   eerste bezoeker aan de volgende geven, en dan krijgt een Engelse browser Nederlands.
+    redirect.headers.set('Vary', 'Accept-Language')
+    return redirect
   }
 
   // @ai-why: Hier stond een lijst van tien beschermde paden. Sinds TDR-0010 bestaan die

@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { VRAAGPAGINAS } from '@/lib/vraagpaginas'
 
 // @ai-why: Er was geen sitemap en geen robots.txt. TDR-0001 verplaatst de uitleg
 // van / naar een aparte pagina, en de aanname "de vindbaarheid verhuist mee" is
@@ -37,6 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // @ai-sync: lib/marketing-seo.ts (MARKETING_PADEN, dezelfde paden)
     // @ai-sync: docs/tdr/0012-de-marketingpagina-krijgt-een-nederlandse-variant.md
     { path: '/nl/app',           priority: 0.9,  changeFrequency: 'weekly'  as const },
+    // @ai-why: De drie vraagpagina's van TDR-0014, gelezen uit dezelfde lijst die de
+    // route serveert. Een eigen kopie van de paden hier zou precies de drift zijn die de
+    // comment bovenaan beschrijft.
+    // @ai-sync: lib/vraagpaginas.ts
+    ...VRAAGPAGINAS.map((p) => ({ path: p.pad, priority: 0.8, changeFrequency: 'monthly' as const })),
     { path: '/support',          priority: 0.4,  changeFrequency: 'monthly' as const },
     { path: '/login',            priority: 0.3,  changeFrequency: 'yearly'  as const },
     { path: '/privacy',          priority: 0.2,  changeFrequency: 'yearly'  as const },

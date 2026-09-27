@@ -1,4 +1,5 @@
-import { marketingCopy, TALEN, type Taal } from '@/lib/marketing-copy';
+import { APP_OMSCHRIJVING, marketingCopy, TALEN, type Taal } from '@/lib/marketing-copy';
+import type { VraagPagina } from '@/lib/vraagpaginas';
 import { APP_STORE_URL } from '@/lib/utils';
 
 /**
@@ -86,7 +87,12 @@ export function marketingJsonLd(taal: Taal) {
     installUrl: APP_STORE_URL,
     sameAs: [APP_STORE_URL],
     image: `${SITE_URL}/opengraph-image`,
-    description: copy.meta.beschrijving,
+    // @ai-why: De vaste omschrijving en niet `copy.meta.beschrijving`. Die laatste is
+    //   een pitch ("logt je eten vanaf een foto"), en een model dat moet uitzoeken wélke
+    //   Carve dit is heeft meer aan een zin die zegt wat het is. Zie TDR-0014.
+    // @ai-sync: lib/marketing-copy.ts (APP_OMSCHRIJVING)
+    description: APP_OMSCHRIJVING[taal],
+    disambiguatingDescription: copy.meta.beschrijving,
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -98,5 +104,41 @@ export function marketingJsonLd(taal: Taal) {
       url: `${SITE_URL}${MARKETING_PADEN.en}`,
       address: { '@type': 'PostalAddress', addressLocality: 'Amsterdam', addressCountry: 'NL' },
     },
+  };
+}
+
+/**
+ * Metadata van een vraagpagina (TDR-0014).
+ *
+ * @ai-gotcha: Geen `openGraph` hier, om dezelfde reden als bij `marketingMetadata`: een
+ * blok op paginaniveau vervangt dat van de root-layout en neemt de `images` mee.
+ */
+export function vraagMetadata(pagina: VraagPagina) {
+  return {
+    title: pagina.meta.titel,
+    description: pagina.meta.beschrijving,
+    alternates: { canonical: `${SITE_URL}${pagina.pad}` },
+  };
+}
+
+/**
+ * De vijf vragen van een vraagpagina als `FAQPage`.
+ *
+ * @ai-why: De vragen staan ook zichtbaar op de pagina, met exact dezelfde tekst. Google
+ * eist dat, en een model dat de HTML leest en een model dat de structured data leest
+ * horen hetzelfde antwoord te krijgen.
+ * @ai-sync: components/carve/VraagPagina.tsx (rendert dezelfde `faq`)
+ */
+export function vraagFaqJsonLd(pagina: VraagPagina) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    inLanguage: 'nl',
+    url: `${SITE_URL}${pagina.pad}`,
+    mainEntity: pagina.faq.map(({ vraag, antwoord }) => ({
+      '@type': 'Question',
+      name: vraag,
+      acceptedAnswer: { '@type': 'Answer', text: antwoord },
+    })),
   };
 }

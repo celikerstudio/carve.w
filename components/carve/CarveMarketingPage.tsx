@@ -7,6 +7,7 @@ import { AppStoreDock } from '@/components/carve/AppStoreDock';
 import { PhoneStory } from '@/components/carve/PhoneStory';
 import { MarketingHeader } from '@/components/carve/MarketingHeader';
 import type { MarketingCopy, Taal } from '@/lib/marketing-copy';
+import { VRAAGPAGINA_LABELS, VRAAGPAGINAS } from '@/lib/vraagpaginas';
 
 const HERO_CTA_ID = 'hero-cta';
 const CLOSE_CTA_ID = 'close-cta';
@@ -226,6 +227,20 @@ export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: 
         <p className="mx-auto mt-4 max-w-[36ch] text-white/50 text-balance">{copy.slot.tekst}</p>
         <AppStoreButton source="close" id={CLOSE_CTA_ID} className="mt-8" />
         <p className="mt-4 text-[13px] text-white/30">{copy.slot.onderKnop}</p>
+        {/* @ai-why: De vraagpagina's van TDR-0014 hebben een interne link nodig, anders
+            vindt een crawler ze alleen via de sitemap. Alleen op de Nederlandse pagina:
+            ze zijn Nederlands, en op `/app` zou een Engelse bezoeker in een andere taal
+            belanden zonder dat de link dat zegt.
+            @ai-sync: lib/vraagpaginas.ts */}
+        {taal === 'nl' ? (
+          <nav aria-label={VRAAGPAGINA_LABELS.verwantAria} className="mx-auto mt-14 flex max-w-[640px] flex-wrap justify-center gap-x-6 gap-y-2 text-[14px]">
+            {VRAAGPAGINAS.map((p) => (
+              <Link key={p.slug} href={p.pad} className="text-white/45 underline decoration-white/15 underline-offset-4 transition-colors hover:text-white/75">
+                {p.linkLabel}
+              </Link>
+            ))}
+          </nav>
+        ) : null}
         <div className="mx-auto mt-20 max-w-5xl">
           <CarveFooter copy={copy.footer} />
         </div>

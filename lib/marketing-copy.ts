@@ -25,6 +25,23 @@ export const TALEN = ['en', 'nl'] as const;
 
 export type Taal = (typeof TALEN)[number];
 
+/**
+ * Wat Carve AI is, in één zin, overal hetzelfde.
+ *
+ * @ai-why: In de nulmeting van 2026-09-27 kende Gemini "Carve AI" alleen als
+ * enterprise-AI-platform, datatool, notulen-app en ski-coach. Een model kan een app pas
+ * aanraden als het hem als app herkent, en dat lukt beter als elke pagina en elk stuk
+ * structured data exact dezelfde zin draagt dan als elke pagina het net anders zegt.
+ * Pas je hem aan, dan verandert hij overal tegelijk; dat is de bedoeling.
+ * @ai-sync: lib/marketing-seo.ts (description in de structured data)
+ * @ai-sync: lib/vraagpaginas.ts (elk antwoord opent met deze zin, bewaakt door de test)
+ * @ai-sync: docs/tdr/0014-drie-vraagpaginas-voor-ai-antwoorden.md
+ */
+export const APP_OMSCHRIJVING: Record<Taal, string> = {
+  en: 'Carve AI is an iPhone app that tracks your food and your training.',
+  nl: 'Carve AI is een iPhone-app die je eten en je training bijhoudt.',
+};
+
 /** Vier keer hetzelfde, zodat een ontbrekend scherm een typefout is en geen lege plek. */
 type Vier<T> = readonly [T, T, T, T];
 type Zes<T> = readonly [T, T, T, T, T, T];

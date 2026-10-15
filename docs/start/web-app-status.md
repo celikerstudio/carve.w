@@ -101,7 +101,7 @@ All user-facing pages live as top-level routes within `(protected)`:
 ## Tech Stack
 
 - Next.js 16.1 (App Router), React 19, TypeScript
-- Tailwind CSS 4.1, @celikerstudio/ui (custom design system package)
+- Tailwind CSS 4.1 (design-tokens staan in `app/globals.css`)
 - @ai-sdk/react (chat UI) + Supabase edge function (AI backend, shared with iOS)
 - Supabase (auth + data + edge functions — SAME instance as iOS)
 - Motion / Framer Motion (animations)

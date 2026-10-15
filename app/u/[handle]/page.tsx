@@ -16,8 +16,11 @@ import { APP_STORE_URL } from '@/lib/utils'
  * Store.
  * @ai-why: Geen database. De handle komt uit de URL en wordt alleen getoond. Zo verraadt de
  * pagina niet of een handle bestaat, en is er geen RLS-vraag om een profiel te lezen dat de
- * bezoeker niet mag zien. Het lijf is daarom een personage van Carve en niet dat van wie
- * uitnodigde.
+ * bezoeker niet mag zien.
+ * @ai-why: Het lijf is dat van wie uitnodigde als die het ooit deelde: de app zet het bij elke
+ * deling in de publieke bucket `invite-looks` (Carve-AI, `InviteLook.swift`). Anders een
+ * personage van Carve. Een plaatje dat er staat is door de eigenaar zelf gedeeld, dus het tonen
+ * zegt niets dat hij niet zelf verstuurde.
  * @ai-why: Na een installatie via de App Store weet de app niet wie uitnodigde (ADR-098 §2,
  * bewust). De handle staat daarom in de tekst onder de knoppen: zoek @furkan.
  * @ai-sync: lib/uitnodiging.ts
@@ -43,6 +46,21 @@ const TEKST = {
   },
 } as const
 
+/** Het personage van wie uitnodigde, of null als die het nooit deelde. */
+async function lijfVan(handle: string): Promise<string | null> {
+  const basis = process.env.NEXT_PUBLIC_SUPABASE_URL
+  if (!basis) return null
+  const url = `${basis}/storage/v1/object/public/invite-looks/${handle}.png`
+  try {
+    // @ai-why: Vijf minuten vasthouden, net als de cache-control die de app meegeeft. Een nieuw
+    //   lijf staat er dan binnen een paar minuten, zonder dat elke bezoeker Supabase raakt.
+    const antwoord = await fetch(url, { method: 'HEAD', next: { revalidate: 300 } })
+    return antwoord.ok ? url : null
+  } catch {
+    return null
+  }
+}
+
 async function taal(): Promise<'nl' | 'en'> {
   // Dezelfde keuze als de wortel van de site (TDR-0015).
   return marketingPadVoor((await headers()).get('accept-language')) === '/nl/app' ? 'nl' : 'en'
@@ -52,12 +70,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const handle = handleUitUrl((await params).handle)
   if (!handle) return {}
   const t = TEKST[await taal()]
+  const lijf = await lijfVan(handle)
   return {
     title: t.meta(handle),
     description: t.body,
     // @ai-why: Geen index. Een pagina per gebruiker in Google zet handles op straat.
     robots: { index: false, follow: false },
-    openGraph: { title: t.meta(handle), description: t.body },
+    // @ai-why: Met het eigen lijf als voorvertoning. In WhatsApp is dat het eerste wat de ander
+    //   ziet, nog voor hij tikt.
+    openGraph: { title: t.meta(handle), description: t.body, ...(lijf ? { images: [{ url: lijf }] } : {}) },
   }
 }
 
@@ -65,10 +86,14 @@ export default async function UitnodigingPagina({ params }: Props) {
   const handle = handleUitUrl((await params).handle)
   if (!handle) notFound()
   const t = TEKST[await taal()]
+  const lijf = await lijfVan(handle)
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-[#0A0A0B] px-6 py-16 text-white">
-      <Image src="/uitnodiging-lijf.png" alt="" width={266} height={640} priority className="h-[260px] w-auto" />
+      {/* `unoptimized`: het plaatje wordt bij elke deling overschreven, en de optimizer van Next
+          zou de oude versie langer vasthouden dan de vijf minuten hierboven. */}
+      <Image src={lijf ?? '/uitnodiging-lijf.png'} alt="" width={266} height={640} priority unoptimized={!!lijf}
+             className="h-[260px] w-auto" />
       <h1 className="mt-8 text-center text-[32px] font-bold leading-tight tracking-[-0.02em]">{t.title(handle)}</h1>
       <p className="mt-3 max-w-[360px] text-center text-[16px] leading-relaxed text-white/60">{t.body}</p>
 

@@ -71,7 +71,9 @@ export function LayoutWrapper({
   // enige die naast de marketingpagina publiek zijn (TDR-0005). Ze dragen hun eigen
   // kop en voet (LegalPage) en horen niet onder de AppHeader.
   // @ai-sync: components/carve/LegalPage.tsx
-  const isPlainRoute = path === '/privacy' || path === '/terms' || path === '/support'
+  // @ai-why: `/u/<handle>` is de uitnodigingspagina van de app (ADR-098 in Carve-AI): een
+  //   eigen, kale pagina zonder de kop van de site, zoals de juridische pagina's.
+  const isPlainRoute = path === '/privacy' || path === '/terms' || path === '/support' || path.startsWith('/u/')
 
   if (isAuthRoute || isPlainRoute) {
     return <>{children}</>

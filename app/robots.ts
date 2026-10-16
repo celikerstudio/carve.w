@@ -7,13 +7,10 @@ import type { MetadataRoute } from 'next'
 //
 // @ai-why: Alleen `/api/` en het beheer staan dicht. De rest van de site is één
 // marketingpagina plus drie juridische pagina's, dus een fijnmazige lijst zou hier alleen
-// maar verouderen. Wat níét geïndexeerd mag worden maar wel publiek is (/carve/vision,
-// /carve/roadmap, /carve/faq) draagt zijn eigen `noindex` in app/carve/layout.tsx; dat
-// werkt ook als iemand de URL rechtstreeks deelt, en een Disallow hier zou juist
-// voorkómen dat Google die noindex ooit leest.
+// maar verouderen. De oude /carve-pagina's die hier met een eigen `noindex` stonden zijn
+// op 2026-10-16 verwijderd; ze sturen nu permanent door naar /app (next.config.ts).
 //
 // @ai-sync: app/sitemap.ts (dezelfde BASE)
-// @ai-sync: app/carve/layout.tsx (noindex op de pagina's die hier bewust niet in Disallow staan)
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://carve.wiki'
 
 export default function robots(): MetadataRoute.Robots {

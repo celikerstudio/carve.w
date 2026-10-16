@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { AppStoreButton } from '@/components/carve/AppStoreButton';
+import { SiteHeader } from '@/components/site/SiteHeader';
 import { CarveFooter } from '@/components/carve/CarveFooter';
 import { marketingCopy } from '@/lib/marketing-copy';
 import { VRAAGPAGINA_LABELS as L, VRAAGPAGINAS, type VraagPagina as VraagPaginaData } from '@/lib/vraagpaginas';
@@ -31,15 +32,7 @@ export function VraagPagina({ pagina }: { pagina: VraagPaginaData }) {
 
   return (
     <div lang="nl" className="min-h-screen bg-[#0A0A0B] text-white">
-      <header className="mx-auto flex max-w-[760px] items-center justify-between px-6 py-5">
-        <Link href="/nl/app" className="flex items-center gap-3" aria-label="Carve AI">
-          <Image src="/carve-logo.png" alt="" width={160} height={160} className="h-7 w-7" />
-          <span className="pl-[0.3em] text-[13px] font-bold tracking-[0.3em] text-white/70">CARVE</span>
-        </Link>
-        <Link href="/nl/app" className="text-sm text-white/40 transition-colors hover:text-white/70">
-          {L.terugNaarApp}
-        </Link>
-      </header>
+      <SiteHeader taal="nl" />
 
       <main className="mx-auto max-w-[760px] px-6 pt-10 pb-20 md:pt-16">
         <article>

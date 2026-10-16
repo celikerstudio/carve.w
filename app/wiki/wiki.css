@@ -1,0 +1,225 @@
+/*
+ * De publieke wiki (TDR-0016), in de huisstijl van de iOS-app.
+ *
+ * @ai-why: Eigen bestand en alles onder `.wiki`. Dit zijn de tokens van de app
+ *   (Carve-AI `App/Design/Tokens/ColorSemantics.swift`, donker), niet die van de marketingpagina:
+ *   achtergrond screenDark, tekst wit op 85/60/40/20%, kaarten wit 6% met een rand van 8%.
+ *   Eiwit is groen zoals `nutritionProtein`; verder geen kleur.
+ * @ai-why: Het systeemfont en niet Geist. In de app is het SF, en op een Apple-toestel krijg je
+ *   hier dan hetzelfde.
+ * @ai-sync: ~/Developer/Carve-AI/Carve AI/App/Design/Tokens/ColorSemantics.swift
+ */
+.wiki {
+  --bg: #0e0e0f;
+  --s1: #1c1c1f;
+  --s2: #252527;
+  --t1: rgba(255, 255, 255, 0.85);
+  --t2: rgba(255, 255, 255, 0.6);
+  --t3: rgba(255, 255, 255, 0.4);
+  --t4: rgba(255, 255, 255, 0.2);
+  --line: rgba(255, 255, 255, 0.08);
+  --card: rgba(255, 255, 255, 0.06);
+  --protein: #30d158;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--t1);
+  font-family: -apple-system, 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wiki a { color: inherit; text-decoration: none; }
+
+/* De kop staat in components/site/site-header.css (`SiteHeader`, één kop voor de hele site). */
+
+/* --- raster van een artikelpagina --- */
+.wiki-wrap { display: grid; grid-template-columns: 200px minmax(0, 640px) 270px; justify-content: center; gap: 56px; max-width: 1240px; margin: 0 auto; padding: 48px 28px 140px; }
+.wiki-side { position: sticky; top: 76px; align-self: start; font-size: 13.5px; }
+.wiki-side .h { font-size: 12px; color: var(--t3); margin-bottom: 10px; }
+.wiki-side a { display: block; padding: 5px 0; color: var(--t2); }
+.wiki-side a:hover { color: var(--t1); }
+.wiki-side a[aria-current='page'] { color: var(--t1); font-weight: 600; }
+.wiki-side .more { color: var(--t3); margin-top: 6px; }
+
+.wiki-crumb { font-size: 13px; color: var(--t3); }
+.wiki-crumb a:hover { color: var(--t1); }
+.wiki h1 { font-size: 56px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; margin: 14px 0; color: var(--t1); }
+.wiki-sum { font-size: 21px; line-height: 1.45; color: var(--t2); letter-spacing: -0.01em; }
+.wiki-meta { display: flex; gap: 16px; font-size: 13px; color: var(--t3); margin-top: 16px; }
+.wiki-meta .ev { color: var(--t2); font-weight: 500; }
+
+/* --- het antwoord bovenaan --- */
+.wiki-answer { margin-top: 36px; padding: 22px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
+.wiki-answer .lead { font-size: 26px; line-height: 1.3; letter-spacing: -0.02em; font-weight: 500; color: var(--t1); }
+.wiki-answer .lead b, .wiki-answer strong { color: #fff; font-weight: 700; }
+.wiki-answer .note { font-size: 14px; color: var(--t3); margin-top: 8px; }
+.wiki-answer p { margin: 0; font-size: 20px; line-height: 1.45; color: var(--t1); }
+.wiki-calc { display: inline-flex; align-items: center; margin-top: 16px; border-radius: 12px; background: var(--s2); }
+.wiki-calc button { width: 36px; height: 36px; font-size: 17px; color: var(--t2); background: none; border: 0; cursor: pointer; }
+.wiki-calc output { min-width: 58px; text-align: center; font-size: 14px; font-weight: 600; }
+
+/* --- de wazige blik voor bezoekers --- */
+.wiki-tease { position: relative; margin-top: 12px; border-radius: 20px; overflow: hidden; }
+.wiki-tease .blur { filter: blur(6px); opacity: 0.5; pointer-events: none; padding: 22px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
+.wiki-tease .blur .label { font-size: 15px; color: var(--t2); }
+.wiki-tease .blur .track { height: 8px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); margin-top: 12px; }
+.wiki-tease .blur .track i { display: block; height: 100%; width: 72%; border-radius: 8px; background: var(--protein); }
+.wiki-tease .blur .line { margin-top: 14px; font-size: 16px; }
+.wiki-tease .over { position: absolute; inset: 0; display: flex; align-items: center; gap: 18px; padding: 0 24px; background: linear-gradient(90deg, rgba(14, 14, 15, 0.95) 0%, rgba(14, 14, 15, 0.7) 60%, rgba(14, 14, 15, 0.4)); }
+.wiki-tease .over b { display: block; font-size: 18px; letter-spacing: -0.01em; color: var(--t1); }
+.wiki-tease .over span { font-size: 14px; color: var(--t3); }
+
+.wiki-button { display: inline-block; background: #fff; color: #000 !important; font-weight: 600; font-size: 14px; padding: 10px 16px; border-radius: 12px; white-space: nowrap; }
+.wiki-tease .wiki-button { margin-left: auto; }
+
+/* --- de tekst --- */
+.wiki-prose h2 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin: 52px 0 12px; scroll-margin-top: 80px; color: var(--t1); }
+.wiki-prose h3 { font-size: 19px; font-weight: 600; margin: 32px 0 8px; color: var(--t1); }
+.wiki-prose p, .wiki-prose li { font-size: 18px; line-height: 1.65; color: var(--t2); }
+.wiki-prose p { margin: 0 0 14px; }
+.wiki-prose ul, .wiki-prose ol { padding-left: 22px; margin: 8px 0 16px; }
+/* De reset van Tailwind haalt opsommingstekens weg; in een naslagwerk horen ze er. */
+.wiki-prose ul { list-style: disc; }
+.wiki-prose ol, .wiki-refs ol { list-style: decimal; }
+.wiki-prose li::marker { color: var(--t3); }
+.wiki-prose li { margin: 4px 0; }
+.wiki-prose strong { color: var(--t1); font-weight: 600; }
+.wiki-prose a { color: var(--t1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.wiki-prose a:hover { border-color: #fff; }
+.wiki-prose .wiki-takeaway, .wiki-prose .wiki-note { margin: 22px 0; padding: 18px 20px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); }
+.wiki-prose .wiki-takeaway p:last-child, .wiki-prose .wiki-note p:last-child { margin: 0; }
+.wiki-prose .wiki-checklist { list-style: none; padding: 0; margin: 14px 0 18px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); overflow: hidden; }
+.wiki-prose .wiki-checklist li { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 13px 18px; margin: 0; border-top: 1px solid var(--line); font-size: 16px; }
+.wiki-prose .wiki-checklist li:first-child { border-top: 0; }
+.wiki-prose .wiki-checklist strong { font-weight: 600; }
+
+.wiki-refs { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line); }
+.wiki-refs .h, .wiki-see .h { font-size: 13px; color: var(--t3); margin-bottom: 10px; }
+.wiki-refs li { font-size: 14px; line-height: 1.5; color: var(--t3); margin: 0 0 6px 18px; }
+.wiki-refs a { border-bottom: 1px solid var(--t4); }
+
+.wiki-see { margin-top: 40px; }
+.wiki-list { border-radius: 20px; background: var(--card); border: 1px solid var(--line); overflow: hidden; }
+.wiki-list a { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 18px; font-size: 16px; border-top: 1px solid var(--line); }
+.wiki-list a:first-child { border-top: 0; }
+.wiki-list a span { font-size: 14px; color: var(--t3); }
+.wiki-list a span::after { content: '  ›'; color: var(--t4); font-size: 18px; }
+.wiki-list a:hover { background: rgba(255, 255, 255, 0.03); }
+
+/* --- rechterkolom --- */
+.wiki-right { position: sticky; top: 76px; align-self: start; display: grid; gap: 22px; }
+.wiki-toc { font-size: 13px; }
+.wiki-toc .h { font-size: 12px; color: var(--t3); margin-bottom: 10px; }
+.wiki-toc a { display: block; padding: 4px 0; color: var(--t3); transition: color 0.2s; }
+.wiki-toc a[data-active='true'] { color: var(--t1); }
+
+.wiki-hero { position: relative; border-radius: 24px; background: radial-gradient(ellipse at 50% 38%, rgba(255, 255, 255, 0.07), transparent 62%), var(--card); border: 1px solid var(--line); padding: 20px 18px 18px; text-align: center; overflow: hidden; }
+.wiki-hero .tag { display: inline-block; font-size: 11.5px; font-weight: 600; color: var(--t2); background: var(--s2); padding: 4px 10px; border-radius: 20px; }
+.wiki-hero .fig { position: relative; height: 250px; width: 96px; margin: 4px auto 0; }
+.wiki-hero .fig img, .wiki-hero .fig .lit { position: absolute; inset: 0; width: 100%; height: 100%; }
+.wiki-hero .fig .lit {
+  background: url(/wiki/character_woman_s3_front_vivid.png) center / 100% 100%;
+  -webkit-mask-image: url(/wiki/character_woman_s3_front_chest.png), url(/wiki/character_woman_s3_front_shoulders.png), url(/wiki/character_woman_s3_front_quads.png);
+  mask-image: url(/wiki/character_woman_s3_front_chest.png), url(/wiki/character_woman_s3_front_shoulders.png), url(/wiki/character_woman_s3_front_quads.png);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+  animation: wiki-glow 3.2s ease-in-out infinite;
+}
+@keyframes wiki-glow { 0%, 100% { opacity: 0.15; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .wiki-hero .fig .lit { animation: none; opacity: 0.8; } }
+.wiki-hero .floor { width: 120px; height: 14px; margin: -6px auto 0; border-radius: 50%; background: radial-gradient(ellipse, rgba(0, 0, 0, 0.8), transparent 70%); }
+.wiki-hero b { display: block; font-size: 17px; letter-spacing: -0.01em; margin-top: 14px; color: var(--t1); }
+.wiki-hero p { font-size: 13.5px; line-height: 1.45; color: var(--t3); margin: 6px 0 0; }
+.wiki-hero .wiki-button { display: block; margin-top: 14px; font-size: 14.5px; padding: 11px; }
+
+/* --- home: het lichaam als navigatie --- */
+.wiki-stage { position: relative; display: grid; grid-template-columns: 1fr 440px 1fr; align-items: center; max-width: 1240px; margin: 0 auto; padding: 16px 28px 24px; min-height: 700px; }
+.wiki-stage::before { content: ''; position: absolute; left: 50%; top: 48%; width: 560px; height: 560px; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 62%); pointer-events: none; }
+.wiki-stage-intro .eyebrow { font-size: 13px; color: var(--t3); }
+.wiki-stage-intro h1 { font-size: 72px; font-weight: 800; letter-spacing: -0.045em; line-height: 0.95; margin: 14px 0 0; }
+.wiki-stage-intro p { margin-top: 18px; font-size: 18px; line-height: 1.45; color: var(--t2); max-width: 26ch; }
+.wiki-figwrap { position: relative; display: flex; flex-direction: column; align-items: center; }
+.wiki-fig { position: relative; height: 620px; }
+.wiki-fig img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.wiki-floor { width: 240px; height: 26px; margin-top: -12px; border-radius: 50%; background: radial-gradient(ellipse, rgba(0, 0, 0, 0.85), transparent 70%); }
+/* De stip staat op het punt, het label hangt ernaast. Het hele knopje centreren schoof de stip een half label opzij. */
+.wiki-pt { position: absolute; transform: translate(-6px, -50%); display: flex; align-items: center; gap: 8px; background: none; border: 0; padding: 0; cursor: pointer; color: var(--t1); font: inherit; }
+.wiki-pt.left { flex-direction: row-reverse; transform: translate(calc(-100% + 6px), -50%); }
+.wiki-pt i { width: 12px; height: 12px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.18); transition: box-shadow 0.25s; flex: none; }
+.wiki-pt span { font-size: 12.5px; font-weight: 600; padding: 5px 10px; border-radius: 30px; background: rgba(14, 14, 15, 0.85); border: 1px solid rgba(255, 255, 255, 0.12); white-space: nowrap; transition: background 0.25s, color 0.25s; }
+.wiki-pt:hover span { border-color: rgba(255, 255, 255, 0.3); }
+.wiki-pt[aria-pressed='true'] i { box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.22), 0 0 26px rgba(255, 255, 255, 0.6); }
+.wiki-pt[aria-pressed='true'] span { background: #fff; color: #000; border-color: #fff; }
+.wiki-who { display: flex; gap: 2px; margin-top: 6px; padding: 3px; border-radius: 30px; background: var(--s1); }
+.wiki-who button { font: inherit; font-size: 12.5px; padding: 6px 14px; border-radius: 30px; border: 0; background: none; color: var(--t2); cursor: pointer; }
+.wiki-who button[aria-pressed='true'] { background: #48484a; color: #fff; }
+.wiki-panel .k { font-size: 13px; color: var(--t3); }
+.wiki-panel h2 { font-size: 40px; font-weight: 800; letter-spacing: -0.035em; margin: 4px 0 2px; }
+.wiki-panel .n { font-size: 13px; color: var(--t3); margin-bottom: 16px; }
+.wiki-panel .wiki-list a { opacity: 0; transform: translateY(6px); animation: wiki-in 0.4s forwards; }
+.wiki-panel .all { display: inline-block; margin-top: 14px; font-size: 14px; color: var(--t2); border-bottom: 1px solid var(--t4); }
+.wiki-panel .all:hover { color: var(--t1); }
+@keyframes wiki-in { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .wiki-panel .wiki-list a { animation: none; opacity: 1; transform: none; } }
+
+.wiki-start { max-width: 1240px; margin: 0 auto; padding: 24px 28px 0; }
+.wiki-start .h { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+.wiki-start .h b { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+.wiki-start .h span { font-size: 13px; color: var(--t3); }
+.wiki-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.wiki-card { display: flex; flex-direction: column; min-height: 150px; padding: 20px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); transition: border-color 0.2s, transform 0.2s; }
+.wiki-card:hover { border-color: rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
+.wiki-card .c { font-size: 12.5px; color: var(--t3); }
+.wiki-card b { font-size: 20px; letter-spacing: -0.02em; margin-top: 6px; color: var(--t1); }
+.wiki-card p { font-size: 14px; line-height: 1.45; color: var(--t2); margin: 8px 0 0; }
+
+/* --- home: per categorie een tegel met een uitsnede van het lijf --- */
+.wiki-browse { max-width: 1240px; margin: 0 auto; padding: 48px 28px 140px; }
+.wiki-browse h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 14px; }
+.wiki-tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.wiki-tile { display: flex; flex-direction: column; border-radius: 22px; background: var(--card); border: 1px solid var(--line); overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
+.wiki-tile:hover { border-color: rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
+.wiki-tile .crop { height: 150px; background-color: rgba(255, 255, 255, 0.025); background-repeat: no-repeat; background-image: url(/wiki/character_man_front_hair_crew.png), url(/wiki/character_man_s3_front.png); }
+.wiki-tile .b { padding: 16px; display: flex; flex-direction: column; flex: 1; }
+.wiki-tile .k { font-size: 12.5px; color: var(--t3); }
+.wiki-tile h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin: 2px 0 10px; }
+.wiki-tile .l a { display: block; font-size: 14px; color: var(--t2); padding: 6px 0; border-top: 1px solid var(--line); }
+.wiki-tile .l a:hover { color: var(--t1); }
+.wiki-tile .all { margin-top: auto; padding-top: 10px; font-size: 13px; color: var(--t3); }
+.wiki-tile .all:hover { color: var(--t1); }
+
+/* --- overzicht en categorie --- */
+.wiki-index { max-width: 980px; margin: 0 auto; padding: 64px 28px 140px; }
+.wiki-index .intro { font-size: 21px; color: var(--t2); max-width: 40ch; line-height: 1.45; }
+.wiki-index h2 { display: flex; justify-content: space-between; align-items: baseline; font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin: 52px 0 12px; }
+.wiki-index h2 a { font-size: 14px; font-weight: 400; color: var(--t3); }
+.wiki-index h2 a:hover { color: var(--t1); }
+
+@media (max-width: 1000px) {
+  .wiki-stage { display: block; min-height: 0; padding: 20px 18px 10px; }
+  .wiki-stage::before { top: 430px; width: 400px; height: 400px; }
+  .wiki-stage-intro h1 { font-size: 48px; }
+  .wiki-figwrap { margin-top: 18px; }
+  .wiki-fig { height: 440px; }
+  .wiki-pt span { font-size: 11.5px; padding: 4px 8px; }
+  .wiki-panel { margin-top: 24px; }
+  .wiki-panel h2 { font-size: 32px; }
+  .wiki-tiles { grid-template-columns: repeat(2, 1fr); }
+  .wiki-browse { padding: 32px 18px 100px; }
+  .wiki-cards { display: flex; overflow-x: auto; gap: 10px; scroll-snap-type: x mandatory; margin: 0 -28px; padding: 0 28px; }
+  .wiki-card { min-width: 240px; scroll-snap-align: start; }
+  .wiki-wrap { grid-template-columns: minmax(0, 680px); }
+  .wiki-side, .wiki-toc { display: none; }
+  .wiki-right { position: static; }
+}
+@media (max-width: 600px) {
+  .wiki h1 { font-size: 44px; }
+  .wiki-sum { font-size: 18px; }
+  .wiki-answer .lead { font-size: 22px; }
+  .wiki-prose p, .wiki-prose li { font-size: 17px; }
+  .wiki-prose .wiki-checklist li { grid-template-columns: 1fr; gap: 2px; }
+  .wiki-wrap, .wiki-index { padding-top: 28px; }
+  .wiki-tease .over { flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px; }
+  .wiki-tease .wiki-button { margin-left: 0; }
+  .wiki-tiles { grid-template-columns: 1fr; }
+  .wiki-tile .crop { height: 130px; }
+}

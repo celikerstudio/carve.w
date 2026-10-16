@@ -14,9 +14,9 @@ import {
  *
  * @ai-context: De artikelen zijn productie-inhoud, geen archief: de Encyclopedie-tab in
  * de iOS-app leest `wiki_articles` rechtstreeks. Een artikel hier op concept zetten haalt
- * het dus uit de app, ook al staat de web-wiki achter een uitgezette vlag.
+ * het uit de app én van de publieke wiki op /wiki (TDR-0016).
  *
- * @ai-sync: lib/flags.ts (SHOW_WIKI)
+ * @ai-sync: lib/wiki/articles.ts (de publieke wiki leest dezelfde `is_published`)
  * @ai-sync: components/admin/chat/AdminContentPane.tsx
  */
 

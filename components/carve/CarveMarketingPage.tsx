@@ -5,7 +5,7 @@ import { CarveFooter } from '@/components/carve/CarveFooter';
 import { AppStoreButton } from '@/components/carve/AppStoreButton';
 import { AppStoreDock } from '@/components/carve/AppStoreDock';
 import { PhoneStory } from '@/components/carve/PhoneStory';
-import { MarketingHeader } from '@/components/carve/MarketingHeader';
+import { SiteHeader } from '@/components/site/SiteHeader';
 import type { MarketingCopy, Taal } from '@/lib/marketing-copy';
 import { VRAAGPAGINA_LABELS, VRAAGPAGINAS } from '@/lib/vraagpaginas';
 
@@ -66,11 +66,9 @@ const KAART_ICONEN = [
 export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: Taal }) {
   return (
     <div id="top" lang={taal} className="min-h-screen w-full bg-[#0A0A0B] text-white">
-      <MarketingHeader heroId={HERO_CTA_ID} copy={copy} />
+      <SiteHeader taal={taal} current="About" />
       {/* 1 · figuur */}
       <section className="flex flex-col items-center px-6 pt-14 text-center md:pt-20">
-        <Image src="/carve-logo.png" alt="" width={160} height={160} priority className="mb-5 h-14 w-14" />
-        <p className="mb-7 pl-[0.32em] text-[15px] font-bold tracking-[0.32em] text-white/50">{copy.hero.merk}</p>
         <h1 className="max-w-[14ch] text-[clamp(38px,7vw,76px)] font-bold leading-[1.02] tracking-[-0.03em] text-balance">
           <span className="text-white/50">{copy.hero.kopZacht}</span>
           <br />

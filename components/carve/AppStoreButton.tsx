@@ -23,7 +23,8 @@ const RATIO = 119.66407 / 40;
 // een plaatje dat erbij geplakt is. De dock is lager omdat een balk van 68px plus
 // veilige zone een flink deel van een telefoonscherm wegneemt, en de balk bovenin volgt
 // gewoon de hoogte van die balk.
-const HEIGHT: Record<Source, number> = { hero: 68, close: 68, dock: 58, header: 40 };
+// `header` is sinds 2026-10-16 de ene kop van de site (`SiteHeader`): even hoog als het zoekveld ernaast.
+const HEIGHT: Record<Source, number> = { hero: 68, close: 68, dock: 58, header: 34 };
 
 /**
  * De App Store-knop van de marketingpagina.

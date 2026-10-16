@@ -8,9 +8,8 @@ import Link from "next/link";
  * @ai-why: `#0A0A0B` en niet `bg-surface`, omdat de enige knop hier naar /app gaat en dat
  * de kleur is waar je dan aankomt.
  *
- * @ai-gotcha: Een 404 op een pad onder /wiki of op een marketingpagina komt hier ook
- * terecht, maar mét de AppHeader eromheen: die takken in de layout-wrapper matchen op het
- * pad en niet op het bestaan van de pagina. Dezelfde tekst, twee omlijstingen.
+ * @ai-context: Tot 2026-10-16 kreeg een 404 onder de oude /carve-pagina's de AppHeader
+ * eromheen. Die kop en die pagina's bestaan niet meer; elke 404 krijgt nu dezelfde kale vorm.
  *
  * @ai-sync: components/app/layout-wrapper.tsx (de tak die hier geen chrome omheen zet)
  */

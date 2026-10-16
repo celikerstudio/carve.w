@@ -187,15 +187,14 @@ export function CockpitShell({
   const handlePendingMessageHandled = useCallback(() => setPendingMessage(null), [])
 
   /**
-   * @ai-why: Een artikelklik in de chat navigeert naar `/wiki?artikel=<slug>` in plaats
-   * van een modus te zetten en zelf `history.pushState` te doen. Die handmatige variant
-   * stond naast Next's eigen routering, dus de terugknop werkte in de wiki wél en overal
-   * anders niet. Nu is er één manier waarop het adres de staat volgt.
-   * @ai-sync: app/(cockpit)/wiki/page.tsx
+   * @ai-why: Een artikelklik in de chat opent het artikel op de publieke wiki (TDR-0016). De
+   * chat kent alleen de slug; `/wiki/<slug>` stuurt door naar het volledige adres met de
+   * categorie erin. Tot 2026-10-16 was dit `/wiki?artikel=<slug>` in de Wiki-modus van de cockpit.
+   * @ai-sync: app/wiki/[category]/page.tsx (de doorverwijzing van slug naar artikel)
    */
   const handleArticleClick = useCallback(
     (slug: string) => {
-      router.push(`/wiki?artikel=${encodeURIComponent(slug)}`)
+      router.push(`/wiki/${encodeURIComponent(slug)}`)
     },
     [router],
   )

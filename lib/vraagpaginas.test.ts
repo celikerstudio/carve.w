@@ -1,10 +1,14 @@
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { APP_OMSCHRIJVING } from '@/lib/marketing-copy';
 import { vraagFaqJsonLd, marketingJsonLd } from '@/lib/marketing-seo';
 import { VRAAGPAGINAS, vraagpagina } from '@/lib/vraagpaginas';
 import sitemap from '@/app/sitemap';
+
+// @ai-why: De sitemap haalt sinds TDR-0016 ook de wiki-artikelen op uit Supabase. Een test
+//   hoort niet op het netwerk te leunen; hier telt alleen dat de vraagpagina's erin staan.
+vi.mock('@/lib/wiki/articles', () => ({ listArticles: async () => [] }));
 
 function teksten(waarde: unknown, pad = ''): [string, unknown][] {
   if (Array.isArray(waarde)) {
@@ -90,8 +94,8 @@ describe('VRAAGPAGINAS', () => {
 });
 
 describe('sitemap', () => {
-  it('noemt elke vraagpagina', () => {
-    const urls = sitemap().map((r) => new URL(r.url).pathname);
+  it('noemt elke vraagpagina', async () => {
+    const urls = (await sitemap()).map((r) => new URL(r.url).pathname);
     for (const pagina of VRAAGPAGINAS) {
       expect(urls, pagina.pad).toContain(pagina.pad);
     }

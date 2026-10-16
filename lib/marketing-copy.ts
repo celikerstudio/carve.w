@@ -65,11 +65,7 @@ export interface MarketingCopy {
     titel: string;
     beschrijving: string;
   };
-  header: {
-    terugNaarBoven: string;
-  };
   hero: {
-    merk: string;
     kopZacht: string;
     kopHard: string;
     tagline: string;
@@ -135,11 +131,7 @@ const en: MarketingCopy = {
     titel: 'Carve AI — Fitness Coach',
     beschrijving: 'Logs your food from a photo. Tracks the muscles you are skipping. Built by someone who lost 50kg using it.',
   },
-  header: {
-    terugNaarBoven: 'Back to top',
-  },
   hero: {
-    merk: 'CARVE',
     kopZacht: 'Log your food.',
     kopHard: 'Track your workouts.',
     tagline: 'Carve a better you.',
@@ -256,11 +248,7 @@ const nl: MarketingCopy = {
     titel: 'Carve AI — calorieën tellen met een foto',
     beschrijving: 'Logt je eten vanaf een foto. Laat zien welke spieren je overslaat. Gebouwd door iemand die er 50 kilo mee verloor.',
   },
-  header: {
-    terugNaarBoven: 'Terug naar boven',
-  },
   hero: {
-    merk: 'CARVE',
     kopZacht: 'Log je eten.',
     kopHard: 'Volg je training.',
     tagline: 'Carve a better you.',

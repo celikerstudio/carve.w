@@ -21,6 +21,7 @@
 | [0013](./0013-ads-bouwen-we-zelf.md) | Ads bouwen we zelf, op ffmpeg | Een ad is een recept-JSON in `scripts/ads/`, gebouwd met ffmpeg en lokale whisper. Alle tekst in beeld komt uit HTML-templates die Chrome rendert, opmaak zit in losse CSS-stijlen. Het resultaat woont in het recept zelf; beeld staat buiten de repo. Concat forken viel af om AGPL-3.0 en de leeftijd van dat project. | Voorgesteld 2026-09-15 |
 | [0014](./0014-drie-vraagpaginas-voor-ai-antwoorden.md) | Drie vraagpagina's voor AI-antwoorden | Drie Nederlandse pagina's onder `/nl/`, elk het antwoord op één specifieke vraag (eten en training in één app, welke spieren je overslaat, een coach die je eetdagboek leest). Teksten in `lib/vraagpaginas.ts`, één route, `FAQPage`-data, één vaste omschrijving van Carve AI in alle structured data. Geen algemene pagina's, niet meer dan drie zonder meting. | Voorgesteld 2026-09-27 |
 | [0015](./0015-de-wortel-kiest-de-taal.md) | De wortel kiest de taal | Alleen `/` kijkt naar `Accept-Language`: Nederlands naar `/nl/app`, de rest en geen voorkeur naar `/app`. `/app` en `/nl/app` sturen nooit door. 307 met `Vary: Accept-Language`. Overrulet beslissing 1 van TDR-0012. | Voorgesteld 2026-09-27 |
+| [0016](./0016-de-wiki-is-weer-publiek.md) | De wiki is weer publiek | `/wiki`, `/wiki/<categorie>`, `/wiki/<categorie>/<artikel>`, statisch uit `wiki_articles`, markdown hier gerenderd, rekenhulp per slug, twee verkoopmomenten. Wiki-modus uit de cockpit. Overrulet beslissing 6 van TDR-0005. | Voorgesteld 2026-10-16 |
 
 ## Wanneer schrijf je een TDR?
 

@@ -54,7 +54,6 @@ export type EventName =
   // @ai-context: Dit is het event dat je in Google Ads als conversie importeert. Markeer
   // het daar als key event, anders heeft de biedstrategie niets om op te sturen.
   // @ai-sync: components/carve/AppStoreButton.tsx
-  // @ai-sync: components/carve/MarketingHero.tsx
   // @ai-sync: components/carve/PricingHub.tsx
   | 'app_store_click';
 
@@ -62,7 +61,9 @@ type EventProps = {
   // Waitlist + app-pagina
   // Marketingpagina: 'hero' is de knop bovenaan, 'close' de slot-knop, 'dock' de
   // vaste knop op mobiel en 'header' de balk die op desktop inschuift.
-  source?: 'hero' | 'close' | 'dock' | 'header' | 'footer' | 'demo' | 'pricing' | 'marketing_hero' | 'showcase';
+  // 'wiki_tease' is de wazige blik onder het antwoord, 'wiki_character' het personage rechts
+  // (TDR-0016 §5). De badge in de kop is 'header', op elke pagina dezelfde (`SiteHeader`).
+  source?: 'hero' | 'close' | 'dock' | 'header' | 'footer' | 'demo' | 'pricing' | 'marketing_hero' | 'showcase' | 'wiki_tease' | 'wiki_character';
   error_type?: string;
 
   // Wiki

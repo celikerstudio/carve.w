@@ -5,7 +5,6 @@ import "./globals.css";
 import { LayoutWrapper } from '@/components/app/layout-wrapper';
 import { CookieConsent } from '@/components/analytics/cookie-consent';
 import { MetaPixel } from '@/components/analytics/meta-pixel';
-import { createClient } from "@/lib/supabase/server";
 import { APP_STORE_ID } from "@/lib/utils";
 import { Toaster } from "sonner";
 
@@ -66,40 +65,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-
-  let profile = null;
-  if (user) {
-    const { data } = await supabase
-      // @ai-why: Geen `user_roles(name)`-join meer. De enige lezer was de Admin-link in
-      // het gebruikersmenu, en die route bestaat sinds TDR-0010 niet meer; de rolcontrole
-      // die er wél toe doet zit in lib/admin/auth.ts, server-side, bij de cockpit zelf.
-      // @ai-sync: components/app/app-header.tsx
-      // @ai-sync: lib/admin/auth.ts
-      .from('profiles')
-      .select('display_name, username, avatar_image_url')
-      .eq('id', user.id)
-      .single();
-    profile = data;
-  }
-
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0c0e14]`}
       >
-        <LayoutWrapper
-          isAuthenticated={!!user}
-          userEmail={user?.email}
-          userName={profile?.display_name || profile?.username || undefined}
-          userAvatar={profile?.avatar_image_url || undefined}
-        >
+        <LayoutWrapper>
           {children}
         </LayoutWrapper>
         <Toaster theme="dark" position="bottom-right" richColors />

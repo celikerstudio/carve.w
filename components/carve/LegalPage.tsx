@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { CarveFooter } from '@/components/carve/CarveFooter';
+import { SiteHeader } from '@/components/site/SiteHeader';
 
 interface LegalPageProps {
   title: string;
@@ -23,13 +22,7 @@ interface LegalPageProps {
 export function LegalPage({ title, updated, intro, children }: LegalPageProps) {
   return (
     <div className="min-h-screen bg-[#0A0A0B] text-white">
-      <header className="mx-auto flex max-w-[720px] items-center justify-between px-6 py-5">
-        <Link href="/app" className="flex items-center gap-3" aria-label="Carve home">
-          <Image src="/carve-logo.png" alt="" width={160} height={160} className="h-7 w-7" />
-          <span className="pl-[0.3em] text-[13px] font-bold tracking-[0.3em] text-white/70">CARVE</span>
-        </Link>
-        <Link href="/app" className="text-sm text-white/40 transition-colors hover:text-white/70">Back to Carve</Link>
-      </header>
+      <SiteHeader />
 
       <main className="mx-auto max-w-[720px] px-6 pt-10 pb-20 md:pt-16">
         <h1 className="text-[clamp(32px,5vw,48px)] font-bold leading-[1.06] tracking-[-0.025em] text-balance">{title}</h1>

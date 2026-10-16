@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // @ai-why: De marketingpagina woont sinds TDR-0007 op /app; /carve stuurt daar
   // permanent (308) heen, want die URL komt terug in oude links en in de App Store-
-  // omgeving. /carve/* (roadmap, faq, ...) blijft ongemoeid.
+  // omgeving. Sinds 2026-10-16 gaat alles onder /carve mee, zie hieronder.
   //
   // @ai-gotcha: Hier stond ook `/ -> /app`. Die is per TDR-0008 weg: `/` is nu de
   // cockpit, en config-redirects komen vóór de middleware. Zou hij blijven staan, dan
@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: '/carve', destination: '/app', permanent: true },
+      // @ai-why: De subpagina's van /carve (vision, roadmap, faq, money, travel, developer,
+      // contributing, health) zijn op 2026-10-16 verwijderd: ze verkochten de app van vóór
+      // september (XP, geld, reizen). Oude links en gedeelde screenshots komen nu op de
+      // marketingpagina uit in plaats van op een 404.
+      { source: '/carve/:path*', destination: '/app', permanent: true },
       { source: '/chat', destination: '/', permanent: true },
     ];
   },

@@ -14,8 +14,8 @@ import { marketingCopy, type MarketingCopy } from '@/lib/marketing-copy';
 const HREFS = ['/privacy', '/terms', '/support'] as const;
 
 // @ai-why: De copy heeft een standaardwaarde in plaats van verplicht te zijn. Deze footer
-// staat onder acht pagina's die met TDR-0012 niets te maken hebben (`/carve/*`, de
-// juridische pagina's) en die zijn allemaal Engels. Die acht een parameter laten doorgeven
+// staat ook onder pagina's die met TDR-0012 niets te maken hebben (de juridische pagina's)
+// en die zijn allemaal Engels. Die een parameter laten doorgeven
 // die daar niets toevoegt is ruis; alleen de marketingpagina heeft echt een keuze.
 export function CarveFooter({ copy = marketingCopy.en.footer }: { copy?: MarketingCopy['footer'] }) {
   const links = [

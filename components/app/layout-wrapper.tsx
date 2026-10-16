@@ -1,14 +1,9 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { AppHeader } from "@/components/app/app-header"
 
 interface LayoutWrapperProps {
   children: React.ReactNode
-  isAuthenticated: boolean
-  userEmail?: string
-  userName?: string
-  userAvatar?: string
 }
 
 const LOCALES = ['en', 'nl', 'de', 'fr', 'es'];
@@ -20,13 +15,7 @@ function stripLocale(pathname: string): string {
   return pathname;
 }
 
-export function LayoutWrapper({
-  children,
-  isAuthenticated,
-  userEmail,
-  userName,
-  userAvatar,
-}: LayoutWrapperProps) {
+export function LayoutWrapper({ children }: LayoutWrapperProps) {
   const pathname = usePathname()
   const path = stripLocale(pathname || '')
 
@@ -41,10 +30,10 @@ export function LayoutWrapper({
     path.startsWith('/forgot-password') ||
     path.startsWith('/reset-password')
 
-  // @ai-why: /app is sinds TDR-0007 de marketingpagina en draagt zijn eigen dunne balk
-  // (MarketingHeader), dus geen AppHeader erboven. / en /carve sturen in next.config.ts
-  // door naar /app en komen hier niet meer langs.
-  // @ai-sync: components/carve/MarketingHeader.tsx
+  // @ai-why: /app is sinds TDR-0007 de marketingpagina en draagt de kop van de hele site
+  // (`SiteHeader`). / en /carve (met alles eronder) sturen in next.config.ts door naar /app en
+  // komen hier niet meer langs.
+  // @ai-sync: components/site/SiteHeader.tsx
   // @ai-sync: next.config.ts (redirects)
   const isLandingRoute = path === '/app'
 
@@ -56,20 +45,9 @@ export function LayoutWrapper({
     )
   }
 
-  // Marketing pages render with their own header (no sidebar)
-  const isMarketingRoute =
-    path === '/carve/health' ||
-    path === '/carve/money' ||
-    path === '/carve/roadmap' ||
-    path === '/carve/vision' ||
-    path === '/carve/faq' ||
-    path === '/carve/travel' ||
-    path === '/carve/developer' ||
-    path === '/carve/contributing'
-
   // @ai-why: Privacy, terms en support zijn de drie pagina's die Apple eist en de
   // enige die naast de marketingpagina publiek zijn (TDR-0005). Ze dragen hun eigen
-  // kop en voet (LegalPage) en horen niet onder de AppHeader.
+  // kop en voet (LegalPage).
   // @ai-sync: components/carve/LegalPage.tsx
   // @ai-why: `/u/<handle>` is de uitnodigingspagina van de app (ADR-098 in Carve-AI): een
   //   eigen, kale pagina zonder de kop van de site, zoals de juridische pagina's.
@@ -77,24 +55,6 @@ export function LayoutWrapper({
 
   if (isAuthRoute || isPlainRoute) {
     return <>{children}</>
-  }
-
-  if (isMarketingRoute) {
-    return (
-      <div className="min-h-screen bg-[#0A0A0B]">
-        <div className="fixed top-0 left-0 right-0 z-50">
-          <AppHeader
-            isAuthenticated={isAuthenticated}
-            userEmail={userEmail}
-            userName={userName}
-            userAvatar={userAvatar}
-          />
-        </div>
-        <div className="pt-16">
-          {children}
-        </div>
-      </div>
-    )
   }
 
   // @ai-why: Alles zonder eigen tak draagt hier géén chrome. Dat zijn twee soorten
@@ -110,7 +70,7 @@ export function LayoutWrapper({
   //
   // @ai-gotcha: Een nieuwe route krijgt hierdoor standaard geen chrome. Dat is de goede
   // kant op fout (kaal in plaats van half goed), maar het betekent wel dat een pagina
-  // die de AppHeader hoort te dragen hierboven expliciet in de lijst moet.
+  // die een eigen kop hoort te dragen hierboven een eigen tak moet krijgen.
   //
   // @ai-sync: app/not-found.tsx (draagt daarom zijn eigen achtergrond en knop)
   // @ai-sync: app/(cockpit)/layout.tsx (draagt het venster voor de hele groep)

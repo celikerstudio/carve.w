@@ -189,7 +189,7 @@
 
 - id: eiwit-tekort-meer
   laag: vet-verliezen
-  doel: "Weet dat je in een tekort meer eiwit nodig kunt hebben (2,3 tot 3,1 gram per kg) om je spiermassa vast te houden."
+  doel: "Weet dat wie krachttraining doet, in een tekort meer eiwit nodig kan hebben (2,3 tot 3,1 gram per kg) om spiermassa vast te houden."
   bron: issn-protein-2017
   passage: "Higher protein intakes (2.3–3.1 g/kg/d) may be needed to maximize the retention of lean body mass in resistance-trained subjects during hypocaloric periods."
   artikel: calorie-deficit
@@ -210,7 +210,7 @@
 
 - id: frequentie-honger
   laag: vet-verliezen
-  doel: "Weet dat vaker eten kan helpen om honger te verminderen en je eetlust beter te sturen, wat een tekort makkelijker kan maken."
+  doel: "Weet dat vaker eten lijkt te helpen om honger te verminderen en je eetlust beter te sturen."
   bron: issn-meal-frequency-2011
   passage: "Increasing meal frequency appears to help decrease hunger and improve appetite control."
   artikel: hunger-and-satiety
@@ -298,7 +298,7 @@
 
 - id: eiwit-per-maaltijd
   laag: naslag
-  doel: "Weet dat een portie van ongeveer 0,25 gram eiwit per kg, of 20 tot 40 gram, de spieropbouw per maaltijd het best stimuleert."
+  doel: "Weet dat de algemene aanbeveling per portie ongeveer 0,25 gram goed eiwit per kg is, of 20 tot 40 gram, en dat dit per leeftijd verschilt."
   bron: issn-protein-2017
   passage: "General recommendations are 0.25 g of a high-quality protein per kg of body weight, or an absolute dose of 20–40 g."
   artikel: protein
@@ -354,7 +354,7 @@
 
 - id: pre-post-eiwit-ondersteunt
   laag: naslag
-  doel: "Weet dat eiwit voor of na je training kracht en lichaamssamenstelling kan ondersteunen, en dat de grootte van je maaltijd vooraf bepaalt hoe nodig het erna is."
+  doel: "Weet dat de grootte en het tijdstip van je maaltijd voor de training bepalen hoe belangrijk eiwit direct erna is."
   bron: issn-nutrient-timing-2017
   passage: "the size and timing of a pre-exercise meal may impact the extent to which post-exercise protein feeding is required."
   artikel: pre-workout-nutrition
@@ -396,9 +396,9 @@
 
 - id: creatine-nieren-uitrogen
   laag: naslag
-  doel: "Weet dat creatine in goed uitgevoerde studies geen uitdroging, spierkrampen, blessures of nierproblemen veroorzaakt bij gezonde mensen."
+  doel: "Weet dat er geen bewijs is dat creatine blessures, uitdroging, spierkrampen, maagklachten of nierproblemen veroorzaakt."
   bron: issn-creatine-2017
-  passage: "creatine supplementation does not increase the incidence of musculoskeletal injuries [22, 111, 112, 241], dehydration [111, 112, 117, 122, 127–129, 242], muscle cramping [76, 106, 111, 112, 117]"
+  passage: "creatine supplementation does not increase the incidence of musculoskeletal injuries [22, 111, 112, 241], dehydration [111, 112, 117, 122, 127–129, 242], muscle cramping [76, 106, 111, 112, 117], or gastrointestinal upset [22, 111, 112, 241]. Nor has the literature provided any support that creatine promotes renal dysfunction"
   artikel: creatine
 
 - id: creatine-laden
@@ -529,7 +529,7 @@
 
 - id: cafeine-concentratie
   laag: naslag
-  doel: "Weet dat cafeine aandacht en alertheid verbetert bij de meeste mensen, ook na slaaptekort."
+  doel: "Weet dat cafeine bij de meeste mensen aandacht en alertheid verbetert."
   bron: issn-caffeine-2021
   passage: "Caffeine has been shown to be ergogenic for cognitive function, including attention and vigilance, in most individuals."
   artikel: caffeine

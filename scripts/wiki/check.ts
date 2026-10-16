@@ -74,7 +74,7 @@ async function main() {
     }
   }
   // De redactielijst: wat in :::check staat, staat niet online en wacht op een bron of op Furkan.
-  const open = picked.flatMap(({ file }) => listChecks(file.body).map((c) => `  ${file.slug}: ${c.replace(/\s+/g, ' ').slice(0, 140)}`));
+  const open = picked.flatMap(({ file }) => listChecks(file.body).map((c) => `  ${file.slug}: ${c.replace(/\s+/g, ' ')}`));
   if (open.length) console.log(`\nRedactielijst (${open.length} open, niet online):\n${open.join('\n')}`);
 
   const reviewed = picked.filter((a) => a.file.status === 'reviewed').length;

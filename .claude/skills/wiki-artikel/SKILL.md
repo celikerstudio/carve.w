@@ -84,5 +84,7 @@ Een artikel komt alleen in Google met `status: reviewed` én minstens één bron
 - **De database niet direct bewerken.** De volgende sync overschrijft het.
 - **Een slug niet hernoemen.** Dat is het adres en wat de coach gebruikt.
 - **`updated_at` is de datum onder het artikel.** Elke wijziging aan tekst, titel, tags of status verzet hem; de sync schrijft daarom alleen wat echt veranderde.
-- **De repo is publiek.** Volledige teksten alleen van open-access-bronnen (CC BY); anders de samenvatting, of een kort letterlijk citaat met de URL erbij (zoals in `aasm-srs-sleep-2015.md`).
+- **De repo is publiek.** Volledige teksten alleen bij CC BY of CC0 (`allowsFullText`); CC BY-NC is ook "open access" maar mag er niet in. Anders de samenvatting, of een kort letterlijk citaat onder `## Passages (handmatig geciteerd)` met de URL (zoals in `aasm-srs-sleep-2015.md`). Die sectie blijft staan bij `wiki:bron --force`.
+- **Dezelfde aanbeveling kan in twee tijdschriften staan.** De AASM-slaaprichtlijn verscheen in SLEEP én in JCSM. Het citaat kwam uit SLEEP terwijl het bestand de DOI van JCSM had. Controleer bij een handmatig citaat dat de DOI in de kop dezelfde publicatie is.
+- **Een leerdoel mag niet meer zeggen dan zijn passage.** `wiki:dekking` controleert alleen dat de passage er staat, niet dat het `doel` er klopt mee. De review van 2026-10-16 vond zes leerdoelen die de doelgroep weglieten ("bij getrainde mensen") of iets toevoegden ("ook na slaaptekort").
 - **De tags waren Nederlands** in de Engelse artikelen (voeding, spiermassa). Ze voeden de Engelse zoekvector; vervang ze bij het herschrijven door Engelse.

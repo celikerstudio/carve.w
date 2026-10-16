@@ -139,9 +139,25 @@ export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
   // @ai-gotcha: De app verbergt alles vanaf een regel met "Key Takeaways" tot de volgende kop.
   if (/key takeaways/i.test(body)) errors.push('"Key Takeaways" in de tekst: de app verbergt alles daarna tot de volgende kop');
 
-  for (const [, kind] of body.matchAll(/^:::(\w+)/gm)) {
+  // @ai-why: Regel voor regel, getrimd, zoals de app-lezer het doet. Een losse `:::`, een blok in
+  //   een blok of een niet gesloten blok staat anders als tekst in de app. Dit is ook het vangnet
+  //   als stripChecks een rare check niet helemaal weghaalde: wat overblijft, faalt hier.
+  let open: string | null = null;
+  for (const raw of body.split('\n')) {
+    const t = raw.trim();
+    if (!t.startsWith(':::')) continue;
+    if (t === ':::') {
+      if (open) open = null;
+      else errors.push('een losse ::: zonder blok ervoor');
+      continue;
+    }
+    const kind = t.slice(3).trim();
+    if (raw !== t) errors.push(`blok :::${kind} is ingesprongen; zet ::: aan het begin van de regel`);
+    if (open) errors.push(`blok :::${kind} staat in :::${open}`);
     if (!ALLOWED_BLOCKS.has(kind)) errors.push(`blok :::${kind} kent de app niet`);
+    open = kind;
   }
+  if (open) errors.push(`blok :::${open} wordt niet gesloten`);
   if (!/^:::takeaway\s*$/m.test(body)) errors.push('geen :::takeaway: het antwoord hoort bovenaan');
   for (const [, inner] of body.matchAll(/^:::takeaway\s*\n([\s\S]*?)\n:::\s*$/gm)) {
     if (/^\s*([-*]|\d+\.)\s/m.test(inner)) errors.push('een lijst in :::takeaway: de app plakt die tot één regel');
@@ -177,7 +193,10 @@ export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
   return errors;
 }
 
-const CHECK = /^:::check\s*\n([\s\S]*?)\n:::\s*$/gm;
+// @ai-gotcha: Ook ingesprongen (onder een lijstregel). De app trimt elke regel, en zou een
+//   ingesprongen check anders als gewone tekst tonen terwijl hij hier niet gestript werd.
+//   Een geneste check strip je hier maar half; de regelscan in lintArticle vangt de rest.
+const CHECK = /^[ \t]*:::check[ \t]*\n([\s\S]*?)\n[ \t]*:::[ \t]*$/gim;
 
 /**
  * De tekst zonder `:::check`-blokken: dat is wat naar database, web en app gaat (TDR-0018 §6).

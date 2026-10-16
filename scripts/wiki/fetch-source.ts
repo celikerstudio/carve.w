@@ -15,7 +15,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { jatsToText, sourceFileName } from '../../lib/wiki/source-text';
+import { allowsFullText, jatsToText, sourceFileName } from '../../lib/wiki/source-text';
 import { CONTENT_DIR } from './files';
 
 const EPMC = 'https://www.ebi.ac.uk/europepmc/webservices/rest';
@@ -41,7 +41,8 @@ export async function fetchSource(doi: string): Promise<{ meta: Record<string, u
 
   let text = '';
   let kind: 'full' | 'abstract' = 'abstract';
-  if (rec.isOpenAccess === 'Y' && rec.pmcid) {
+  // @ai-gotcha: Op de licentie en niet op `isOpenAccess`: open access omvat ook CC BY-NC(-ND).
+  if (rec.isOpenAccess === 'Y' && rec.pmcid && allowsFullText(rec.license)) {
     const xml = await fetch(`${EPMC}/${rec.pmcid}/fullTextXML`);
     if (xml.ok) {
       text = jatsToText(await xml.text());
@@ -90,6 +91,15 @@ async function main() {
     process.exit(1);
   }
   const file = sourcePath(doi, richtlijn);
+  // Een studie die al als richtlijn in de repo staat, niet nog eens: twee kopieën lopen uit elkaar.
+  if (!richtlijn) {
+    const dir = path.join(CONTENT_DIR, 'bronnen/richtlijnen');
+    const twin = fs.readdirSync(dir).find((f) => matter(fs.readFileSync(path.join(dir, f), 'utf8'), {}).data.doi === doi);
+    if (twin) {
+      console.log(`${doi} staat al als richtlijn: bronnen/richtlijnen/${twin}`);
+      return;
+    }
+  }
   if (fs.existsSync(file) && !args.includes('--force')) {
     console.log(`${path.relative(process.cwd(), file)} bestaat al (gebruik --force om opnieuw op te halen)`);
     return;
@@ -99,7 +109,11 @@ async function main() {
     console.error(`${doi}: niet gevonden in Europe PMC`);
     process.exit(1);
   }
-  writeSource(file, got.meta, got.text);
+  // @ai-why: Een handmatig citaat (`## Passages (handmatig geciteerd)`) is geen opgehaalde tekst en
+  //   komt bij opnieuw ophalen niet terug. Het blijft staan; anders wist --force stil de passage
+  //   waar een leerdoel op steunt.
+  const manual = fs.existsSync(file) ? /\n## Passages \(handmatig geciteerd\)[\s\S]*$/.exec(fs.readFileSync(file, 'utf8'))?.[0] : undefined;
+  writeSource(file, got.meta, manual ? `${got.text}\n${manual.trimEnd()}` : got.text);
   console.log(`${path.relative(process.cwd(), file)}: ${got.meta.text === 'full' ? 'volledige tekst' : 'samenvatting'}, ${got.text.length} tekens, licentie ${got.meta.license}`);
 }
 

@@ -16,11 +16,11 @@ Furkan wil een uitgebreide wiki, met de fundamenten als basis. Er is gekozen voo
 
 **De wiki krijgt een vaste lijst leerdoelen. Elk leerdoel komt uit een officiële richtlijn die als tekst in de repo staat, en elk artikel dient minstens één leerdoel.**
 
-1. **Drie lagen.** *Fundamenten* (energiebalans, eiwit en macro's, trainingsprincipes, slaap en herstel, volhouden): wat iedereen moet weten. *Doelen*: vet verliezen en spier opbouwen, elk een route langs de fundamenten plus wat alleen daar geldt. *Naslag*: de breedte (supplementen, schema's, technieken), om op te zoeken.
-2. **De richtlijnen zijn het CBR.** Position stands van de ISSN, ACSM, de WHO en vergelijkbare instanties staan als platte tekst in `content/wiki/bronnen/richtlijnen/`, met DOI, URL, licentie en ophaaldatum. Volledige tekst waar de licentie dat toelaat (open access), anders de samenvatting.
+1. **Drie lagen.** *Fundamenten* (energiebalans, eiwit en macro's, trainingsprincipes, slaap en herstel, volhouden): wat iedereen moet weten. *Doelen*: vet verliezen en spier opbouwen, elk een route langs de fundamenten plus wat alleen daar geldt. *Naslag*: de breedte (supplementen, schema's, technieken), om op te zoeken. In `leerdoelen.yaml` zijn dat vier waarden: `fundament`, `vet-verliezen`, `spier-opbouwen`, `naslag`.
+2. **De richtlijnen zijn het CBR.** Volledige tekst alleen bij CC BY of CC0 (`allowsFullText` in `lib/wiki/source-text.ts`), want de repo is publiek; een kort letterlijk citaat van een andere bron staat apart onder `## Passages (handmatig geciteerd)`, met de URL. Position stands van de ISSN, ACSM, de WHO en vergelijkbare instanties staan als platte tekst in `content/wiki/bronnen/richtlijnen/`, met DOI, URL, licentie en ophaaldatum. Volledige tekst waar de licentie dat toelaat (open access), anders de samenvatting.
 3. **Leerdoelen in `content/wiki/leerdoelen.yaml`.** Per leerdoel: laag, tekst, de richtlijn en de passage waar het uit komt, en het artikel dat het uitlegt. De AI stelt ze op uit de richtlijnen; Furkan keurt de lijst goed.
 4. **Dekking wordt gemeten.** `pnpm wiki:dekking` meldt leerdoelen zonder artikel en artikelen zonder leerdoel. Een artikel zonder leerdoel is een kandidaat om samen te voegen of uit de index te houden.
-5. **Ook studies staan in de repo.** Bij `wiki:check --fill` wordt van elke bron de samenvatting opgeslagen in `content/wiki/bronnen/studies/`, zodat een review tegen dezelfde tekst kijkt als de schrijver.
+5. **Ook studies staan in de repo.** Met `pnpm wiki:bron <doi>` komt van elke bron de tekst in `content/wiki/bronnen/studies/` (volledig bij CC BY of CC0, anders de samenvatting), zodat een review tegen dezelfde tekst kijkt als de schrijver.
 6. **`:::check` om wat niet te verifiëren is.** Die zin gaat niet mee naar database, web of app, maar staat op de redactielijst van `wiki:check`. De rest van het artikel kan live.
 7. **De werkwijze staat in een skill** (`.claude/skills/wiki-artikel/SKILL.md`), met de fouten die we echt gemaakt hebben. Vóór `status: reviewed` gaat een artikel door de reviewprompt (`docs/wiki-review-prompt.md`) op een model met internettoegang.
 
@@ -37,7 +37,7 @@ Furkan wil een uitgebreide wiki, met de fundamenten als basis. Er is gekozen voo
 ## Consequenties
 
 - De categorieën op de site blijven zoals ze zijn. Lagen en leerdoelen zijn redactioneel, niet zichtbaar voor de lezer.
-- Artikelen die geen leerdoel dienen, verdwijnen niet automatisch. Ze blijven `noindex` tot er een besluit over is.
+- Artikelen die geen leerdoel dienen, verdwijnen niet automatisch. De indexregel (`isIndexable`) kijkt niet naar leerdoelen; zo'n artikel wordt in de praktijk niet herschreven en blijft daardoor `noindex`.
 - Een richtlijn die vernieuwd wordt (een nieuwe ISSN-position stand) betekent: nieuwe tekst ophalen, leerdoelen nalopen. De ophaaldatum laat zien hoe oud elke bron is.
 - `:::check` is een vierde blok naast `takeaway` en `checklist`. De app ziet hem nooit, want de sync haalt hem eruit.
 

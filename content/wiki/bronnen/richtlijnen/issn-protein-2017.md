@@ -14,9 +14,11 @@ fetched: '2026-10-16'
 
 ## Abstract
 
-### Position statement
+## Position statement
 
-The International Society of Sports Nutrition (ISSN) provides an objective and critical review related to the intake of protein for healthy, exercising individuals. Based on the current available literature, the position of the Society is as follows:An acute exercise stimulus, particularly resistance exercise, and protein ingestion both stimulate muscle protein synthesis (MPS) and are synergistic when protein consumption occurs before or after resistance exercise.
+The International Society of Sports Nutrition (ISSN) provides an objective and critical review related to the intake of protein for healthy, exercising individuals. Based on the current available literature, the position of the Society is as follows:
+
+- An acute exercise stimulus, particularly resistance exercise, and protein ingestion both stimulate muscle protein synthesis (MPS) and are synergistic when protein consumption occurs before or after resistance exercise.
 
 - For building muscle mass and for maintaining muscle mass through a positive muscle protein balance, an overall daily protein intake in the range of 1.4–2.0 g protein/kg body weight/day (g/kg/d) is sufficient for most exercising individuals, a value that falls in line within the Acceptable Macronutrient Distribution Range published by the Institute of Medicine for protein.
 
@@ -50,7 +52,9 @@ In 2007, the International Society of Sports Nutrition (ISSN) published its firs
 
 ## Benefits on exercise performance
 
-Most of the scientific research investigating the effects of protein intake on exercise performance has focused on supplemental protein intake. From a broad perspective, the dependent measures of these studies can be categorized into two domains:Endurance exercise performance
+Most of the scientific research investigating the effects of protein intake on exercise performance has focused on supplemental protein intake. From a broad perspective, the dependent measures of these studies can be categorized into two domains:
+
+- Endurance exercise performance
 
 - Resistance exercise performance (increases in maximal strength)
 
@@ -66,7 +70,7 @@ In conclusion, added protein does not appear to improve endurance performance wh
 
 #### Key points
 
-When adequate carbohydrate is delivered, adding protein to carbohydrate does not appear to improve endurance performance over the course of a few days or weeks.
+- When adequate carbohydrate is delivered, adding protein to carbohydrate does not appear to improve endurance performance over the course of a few days or weeks.
 
 - Adding protein during or after an intensive bout of endurance exercise may suppress the rise in plasma proteins linked to myofibrillar damage and reduce feelings of muscle soreness.
 
@@ -74,7 +78,9 @@ When adequate carbohydrate is delivered, adding protein to carbohydrate does not
 
 ### Resistance exercise performance
 
-The extent to which protein supplementation, in conjunction with resistance training, enhances maximal strength is contingent upon many factors, including:Resistance-training program variables (such as intensity, volume, and progression)
+The extent to which protein supplementation, in conjunction with resistance training, enhances maximal strength is contingent upon many factors, including:
+
+- Resistance-training program variables (such as intensity, volume, and progression)
 
 - Length of the resistance-training program/intervention
 
@@ -92,7 +98,7 @@ In summary, while research investigating the addition of supplemental protein to
 
 #### Key points:
 
-Results from many single investigations indicate that in both men and women protein supplementation exerts a small to modest impact on strength development.
+- Results from many single investigations indicate that in both men and women protein supplementation exerts a small to modest impact on strength development.
 
 - Pooled results of multiple studies using meta-analytic and other systematic approaches consistently indicate that protein supplementation (15 to 25 g over 4 to 21 weeks) exerts a positive impact on performance.
 
@@ -106,7 +112,7 @@ Collectively, these results indicate that increasing dietary protein can promote
 
 ### Key points:
 
-When combined with a hyperenergetic diet and a heavy resistance-training program, protein supplementation may promote increases in skeletal muscle cross-sectional area and lean body mass.
+- When combined with a hyperenergetic diet and a heavy resistance-training program, protein supplementation may promote increases in skeletal muscle cross-sectional area and lean body mass.
 
 - When combined with a resistance-training program and a hypoenergetic diet, an elevated daily intake of protein (2 – 3× the RDA) can promote greater losses of fat mass and greater overall improvements in body composition.
 
@@ -126,7 +132,9 @@ A review by Bosse and Dixon [84] critically summarized the available literature 
 
 In younger subjects, the ingestion of 20–30 g of any high biological value protein before or after resistance exercise appears to be sufficient to maximally stimulate MPS [21, 64]. More recently, Macnaughton and colleagues [85] reported that 40 g of whey protein ingestion significantly increased the MPS responses compared to a 20 g feeding after an acute bout of whole-body resistance exercise, and that the absolute protein dose may operate as a more important consideration than providing a protein dose that is normalized to lean mass. Free form EAAs, soy, milk, whey, caseinate, and other protein hydrolysates are all capable of activating MPS [86]. However, maximal stimulation of MPS, which results in higher net muscle protein accretion, is the product of the total amount of EAA in circulation as well as the pattern and appearance rate of aminoacidemia that modulates the MPS response [86]. Recent work has clarified that whey protein provides a distinct advantage over other protein sources including soy (considered another fast absorbing protein) and casein (a slower acting protein source) on acute stimulation of MPS [86, 87]. Importantly, an elegant study by West and investigators [87] sought to match the delivery of EAAs in feeding patterns that replicated how whey and casein are digested. The authors reported that a 25 g dose of whey protein that promoted rapid aminoacidemia further enhanced MPS and anabolic signaling when compared to an identical total dose of whey protein when delivered as ten separate 2.5 g doses intended to replicate a slower digesting protein. The advantages of whey protein are important to consider, particularly as all three sources rank similarly in assessments of protein quality [88]. In addition to soy, other plant sources (e.g., pea, rice, hemp, etc.) have garnered interest as potential protein sources to consider. Unfortunately, research that examines the ability of these protein sources to modulate exercise performance and training adaptations is limited at this time. One study conducted by Joy and investigators [89] compared the effect of supplementing a high-dose (48 g/day) of whey or rice protein in experienced resistance-trained subjects during an 8-week resistance training program. The investigators concluded that gains in strength, muscle thickness and body composition were similar between the two protein groups, suggesting that rice protein may be a suitable alternative to whey protein at promoting resistance training adaptations. Furthermore, differences in absorption kinetics, and the subsequent impact on muscle protein metabolism appear to extend beyond the degree of hydrolysis and amino acid profiles [69, 86, 90–92]. For instance, unlike soy more of the EAAs from whey proteins (hydrolysates and isolates) survive splanchnic uptake and travel to the periphery to activate a higher net gain in muscle [86]. Whey proteins (hydrolysates and isolates) appear to be the most extensively researched for pre/post resistance exercise supplementation, possibly because of their higher EAA and leucine content [93, 94], solubility, and optimal digestion kinetics [69]. These characteristics yield a high concentration of amino acids in the blood (aminoacidemia) [69, 87] that facilitates greater activation of MPS and net muscle protein accretion, in direct comparison to other protein choices [50, 69, 91]. The addition of creatine to whey protein supplementation appears to further augment these adaptations [27, 72, 95]; however, an optimal timing strategy for this combination remains unclear.
 
-The timing of protein-rich meals consumed throughout a day has the potential to influence adaptations to exercise. Using similar methods, other studies over recent decades [53, 62, 87, 91, 96–100] have established the following:MPS increases approximately 30–100% in response to a protein-containing meal to promote a positive net protein balance, and the major contributing factor to this response is the EAA content.
+The timing of protein-rich meals consumed throughout a day has the potential to influence adaptations to exercise. Using similar methods, other studies over recent decades [53, 62, 87, 91, 96–100] have established the following:
+
+- MPS increases approximately 30–100% in response to a protein-containing meal to promote a positive net protein balance, and the major contributing factor to this response is the EAA content.
 
 - The anabolic response to feeding is pronounced but transient. During the post-prandial phase (1–4 h after a meal) MPS is elevated, resulting in a positive muscle protein balance. In contrast, MPS rates are lower in a fasted state and muscle protein balance is negative. Protein accretion only occurs in the fed state. The concentration of EAA in the blood (plasma) regulates protein synthesis rates within muscle at rest and post exercise. More recent work has established that protein-carbohydrate supplementation after strenuous endurance exercise stimulates contractile MPS via similar signaling pathways as resistance exercise [56, 57]. Most importantly, and as mentioned initially in this section, muscle appears to be “sensitized” to protein feeding for at least 24 h after exercise [50]. That is, the consumption of a protein-containing meal up to 24 h after a single bout of resistance exercise results in a higher net stimulation of MPS and protein accretion than the same meal consumed after 24 h of inactivity [50].
 
@@ -148,7 +156,7 @@ The logical next step for researchers is to extend these findings into longitudi
 
 #### Key points
 
-In the absence of feeding and in response to resistance exercise, muscle protein balance remains negative.
+- In the absence of feeding and in response to resistance exercise, muscle protein balance remains negative.
 
 - Skeletal muscle is sensitized to the effects of protein and amino acids for up to 24 h after completion of a bout of resistance exercise.
 
@@ -176,7 +184,7 @@ For those attempting to increase their calories, we suggest consuming small snac
 
 ### Key points
 
-The current RDA for protein is 0.8 g/kg/day with multiple lines of evidence indicating this value is not an appropriate amount for a training athlete to meet their daily needs.
+- The current RDA for protein is 0.8 g/kg/day with multiple lines of evidence indicating this value is not an appropriate amount for a training athlete to meet their daily needs.
 
 - While previous recommendations have suggested a daily intake of 1.2–1.3 g/kg/day is an appropriate amount, most of this work was completed using the nitrogen balance technique, which is known to systematically underestimate protein needs.
 
@@ -204,7 +212,7 @@ It is well known that exercise improves net muscle protein balance and in the ab
 
 ### Key points
 
-Protein sources containing higher levels of the EAAs are considered to be higher quality sources of protein.
+- Protein sources containing higher levels of the EAAs are considered to be higher quality sources of protein.
 
 - The body uses 20 amino acids to make proteins, seven of which are essential (nine conditionally), requiring their ingestion to meet daily needs.
 
@@ -268,7 +276,7 @@ Tang et al. [86] compared high leucine/fast-digesting (hydrolyzed whey isolate),
 
 #### Key points
 
-Multiple protein sources are available for an athlete to consider, and each has their own advantages and disadvantages.
+- Multiple protein sources are available for an athlete to consider, and each has their own advantages and disadvantages.
 
 - Protein sources are commonly evaluated based upon the content of amino acids, particularly the EAAs, they provide. Beyond amino acid content, the fat, calorie, and micronutrient content, and presence of various bioactive peptides all contribute to a protein’s quality.
 
@@ -304,7 +312,7 @@ Recently, Antonio and colleagues published a series of original investigations t
 
 ### Key points
 
-Multiple review articles indicate that no controlled scientific evidence exists indicating that increased intakes of protein pose any health risks in healthy, exercising individuals.
+- Multiple review articles indicate that no controlled scientific evidence exists indicating that increased intakes of protein pose any health risks in healthy, exercising individuals.
 
 - Statements by large regulatory bodies have also indicated that concerns about one’s health secondary to ingesting high amounts of protein are unfounded.
 

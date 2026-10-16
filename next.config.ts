@@ -31,7 +31,16 @@ const nextConfig: NextConfig = {
   //   hier staan.
   // @ai-sync: lib/wiki/tease.ts
   outputFileTracingIncludes: {
-    '/wiki/[category]/[slug]': ['./content/wiki/**/*.md'],
+    // Alleen de artikelen, niet de bronteksten in content/wiki/bronnen/ (ruim 800 KB).
+    // @ai-gotcha: '/wiki/**' en niet '/wiki/[category]/[slug]'. De sleutel is een glob, en daarin
+    //   is [category] een tekenklasse; zo'n sleutel matcht de route nooit (getest 2026-10-16: de
+    //   exclude hieronder deed met die sleutel niets).
+    '/wiki/**': ['./content/wiki/{nutrition,training,recovery,supplements,mindset}/*.md'],
+  },
+  // @ai-why: Next volgt het pad in lib/wiki/tease.ts zelf en nam zo de hele map mee, ook de
+  //   bronteksten. Die heeft de pagina niet nodig.
+  outputFileTracingExcludes: {
+    '/wiki/**': ['./content/wiki/bronnen/**', './content/wiki/leerdoelen.yaml'],
   },
   images: {
     remotePatterns: [

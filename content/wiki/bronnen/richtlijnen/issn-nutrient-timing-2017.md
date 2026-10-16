@@ -14,17 +14,15 @@ fetched: '2026-10-16'
 
 ## Abstract
 
-### Position statement
+## Position statement
 
-The International Society of Sports Nutrition (ISSN) provides an objective and critical review regarding the timing of macronutrients in reference to healthy, exercising adults and in particular highly trained individuals on exercise performance and body composition. The following points summarize the position of the ISSN:Nutrient timing incorporates the use of methodical planning and eating of whole foods, fortified foods and dietary supplements. The timing of energy intake and the ratio of certain ingested macronutrients may enhance recovery and tissue repair, augment muscle protein synthesis (MPS), and improve mood states following high-volume or intense exercise.
+The International Society of Sports Nutrition (ISSN) provides an objective and critical review regarding the timing of macronutrients in reference to healthy, exercising adults and in particular highly trained individuals on exercise performance and body composition. The following points summarize the position of the ISSN:
+
+- Nutrient timing incorporates the use of methodical planning and eating of whole foods, fortified foods and dietary supplements. The timing of energy intake and the ratio of certain ingested macronutrients may enhance recovery and tissue repair, augment muscle protein synthesis (MPS), and improve mood states following high-volume or intense exercise.
 
 - Endogenous glycogen stores are maximized by following a high-carbohydrate diet (8–12 g of carbohydrate/kg/day [g/kg/day]); moreover, these stores are depleted most by high volume exercise.
 
-- If rapid restoration of glycogen is required (< 4 h of recovery time) then the following strategies should be considered:aggressive carbohydrate refeeding (1.2 g/kg/h) with a preference towards carbohydrate sources that have a high (> 70) glycemic index
-
-- the addition of caffeine (3–8 mg/kg)
-
-- combining carbohydrates (0.8 g/kg/h) with protein (0.2–0.4 g/kg/h)
+- If rapid restoration of glycogen is required (< 4 h of recovery time) then the following strategies should be considered:aggressive carbohydrate refeeding (1.2 g/kg/h) with a preference towards carbohydrate sources that have a high (> 70) glycemic indexthe addition of caffeine (3–8 mg/kg)combining carbohydrates (0.8 g/kg/h) with protein (0.2–0.4 g/kg/h)
 
 - Extended (> 60 min) bouts of high intensity (> 70% VO2max) exercise challenge fuel supply and fluid regulation, thus carbohydrate should be consumed at a rate of ~30–60 g of carbohydrate/h in a 6–8% carbohydrate-electrolyte solution (6–12 fluid ounces) every 10–15 min throughout the entire exercise bout, particularly in those exercise bouts that span beyond 70 min. When carbohydrate delivery is inadequate, adding protein may help increase performance, ameliorate muscle damage, promote euglycemia and facilitate glycogen re-synthesis.
 
@@ -166,7 +164,7 @@ Finally, it is advisable to remind the reader that due to the complexity, cost a
 
 ### Practical applications
 
-In many situations, the efficacy of nutrient timing is inherently tied to the concept of optimal fueling. Thus, the importance of adequate energy, carbohydrate, and protein intake must be emphasized to ensure athletes are properly fueled for optimal performance as well as to maximize potential adaptations to exercise training.
+- In many situations, the efficacy of nutrient timing is inherently tied to the concept of optimal fueling. Thus, the importance of adequate energy, carbohydrate, and protein intake must be emphasized to ensure athletes are properly fueled for optimal performance as well as to maximize potential adaptations to exercise training.
 
 - Prolonged exercise (> 60 – 90 min) of moderate to high intensity (65–80% VO2max) relies heavily upon endogenous carbohydrate stores, and timing strategies to maximize these stores (carbohydrate loading or glycogen supercompensation strategies) have been shown to facilitate recovery and offset these changes.
 

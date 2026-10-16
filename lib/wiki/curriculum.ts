@@ -44,10 +44,27 @@ function normalize(s: string): string {
     .replace(/[‐-―−]/g, '-')
     .replace(/[‘’]/g, "'")
     .replace(/[“”]/g, '"')
-    .replace(/^[>\-\s]+/gm, ' ')
+    // Alleen een lijst- of citaatteken weg, niet een minteken: "-0.5 kg" is iets anders dan "0.5 kg".
+    .replace(/^[ \t]*(?:>[ \t]*)*(?:[-*][ \t]+)?/gm, ' ')
     .replace(/\s+/g, ' ')
     .trim()
     .toLowerCase();
+}
+
+const MIN_PASSAGE = 40;
+
+/** Staat `needle` in `hay` als geheel, dus niet halverwege een woord of getal ("1.6" in "11.6")? */
+function containsWhole(hay: string, needle: string): boolean {
+  for (let i = hay.indexOf(needle); i !== -1; i = hay.indexOf(needle, i + 1)) {
+    const before = hay[i - 1] ?? ' ';
+    const after = hay[i + needle.length] ?? ' ';
+    // Alleen een grens eisen aan een kant die zelf op een letter of cijfer eindigt. Een passage die
+    // op een punt eindigt mag gevolgd worden door een voetnootnummer ("bout length.16" bij de WHO).
+    const okBefore = !/[a-z0-9]/.test(needle[0]) || !/[a-z0-9]/.test(before);
+    const okAfter = !/[a-z0-9]/.test(needle[needle.length - 1]) || !/[a-z0-9]/.test(after);
+    if (okBefore && okAfter) return true;
+  }
+  return false;
 }
 
 export function checkCurriculum(
@@ -67,7 +84,8 @@ export function checkCurriculum(
     if (!d.doel.trim()) errors.push(`${label}: zegt niet wat de lezer weet`);
     const text = normalized.get(d.bron);
     if (text === undefined) errors.push(`${label}: bron "${d.bron}" staat niet in bronnen/richtlijnen/`);
-    else if (!d.passage.trim() || !text.includes(normalize(d.passage))) errors.push(`${label}: passage staat niet in ${d.bron}: "${d.passage.slice(0, 80)}"`);
+    else if (normalize(d.passage).length < MIN_PASSAGE) errors.push(`${label}: passage is te kort om iets te bewijzen (minder dan ${MIN_PASSAGE} tekens)`);
+    else if (!containsWhole(text, normalize(d.passage))) errors.push(`${label}: passage staat niet in ${d.bron}: "${d.passage.slice(0, 80)}"`);
     if (d.artikel && !artikelen.has(d.artikel)) errors.push(`${label}: artikel "${d.artikel}" bestaat niet`);
   }
 

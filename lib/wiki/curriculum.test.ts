@@ -39,8 +39,24 @@ describe('dekking (TDR-0018 §4)', () => {
   });
 
   it('weigert een passage die niet in de bron staat: dat is precies de verzonnen claim', () => {
-    const r = checkCurriculum([doel({ passage: 'Fat loss requires a ketogenic diet.' })], bronnen, artikelen);
+    const r = checkCurriculum([doel({ passage: 'Fat loss requires a ketogenic diet in every single person.' })], bronnen, artikelen);
     expect(r.errors).toContainEqual(expect.stringMatching(/staat niet in issn-diets-2017/));
+  });
+
+  it('laat een passage niet halverwege een getal of woord matchen', () => {
+    const r = checkCurriculum([doel({ passage: 'Diets primarily focused on fat loss are driven by a sustained caloric defic' })], bronnen, artikelen);
+    expect(r.errors).toContainEqual(expect.stringMatching(/staat niet in/));
+    const getal = new Map([['issn-diets-2017', 'An intake of 11.6 g/kg/d was used in this one study of trained men.']]);
+    expect(checkCurriculum([doel({ passage: '1.6 g/kg/d was used in this one study of trained men.' })], getal, artikelen).errors).toContainEqual(expect.stringMatching(/staat niet in/));
+  });
+
+  it('laat een minteken aan het begin van een regel staan', () => {
+    const min = new Map([['issn-diets-2017', 'Lean mass changed by\n-0.5 kg in the fast group over the whole study period.']]);
+    expect(checkCurriculum([doel({ passage: 'Lean mass changed by 0.5 kg in the fast group over the whole study period.' })], min, artikelen).errors).toContainEqual(expect.stringMatching(/staat niet in/));
+  });
+
+  it('weigert een passage die te kort is om iets te bewijzen', () => {
+    expect(checkCurriculum([doel({ passage: 'caloric deficit' })], bronnen, artikelen).errors).toContainEqual(expect.stringMatching(/te kort/));
   });
 
   it('weigert een onbekende bron, een onbekend artikel, een onbekende laag en een dubbel id', () => {

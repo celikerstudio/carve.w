@@ -147,6 +147,18 @@ describe(':::check (TDR-0018 §6)', () => {
     expect(lintArticle({ ...ok, body: withCheck }, slugs)).toEqual([]);
   });
 
+  it('haalt ook een ingesprongen check weg, want de app trimt de regel en toont hem anders', () => {
+    const body = `${ok.body}\n\n- item\n  :::check\n  secret\n  :::`;
+    expect(stripChecks(body)).not.toContain('secret');
+  });
+
+  it('weigert wat na het strippen nog naar ::: ruikt: geneste checks en losse sluiters', () => {
+    const nested = `${ok.body}\n\n:::check\na\n:::check\nb\n:::\nsecret tail\n:::`;
+    expect(lintArticle({ ...ok, body: nested }, slugs).length).toBeGreaterThan(0);
+    const stray = `${ok.body}\n\n:::`;
+    expect(lintArticle({ ...ok, body: stray }, slugs)).toContainEqual(expect.stringMatching(/:::/));
+  });
+
   it('controleert de opmaak in een check niet, want die tekst gaat niet naar de app', () => {
     const body = `${ok.body}\n\n:::check\n| a | b |\n:::`;
     expect(lintArticle({ ...ok, body }, slugs)).toEqual([]);

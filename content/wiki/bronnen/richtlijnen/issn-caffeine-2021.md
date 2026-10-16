@@ -14,7 +14,7 @@ fetched: '2026-10-16'
 
 ## Abstract
 
-### Abstract
+## Abstract
 
 Following critical evaluation of the available literature to date, The International Society of Sports Nutrition (ISSN) position regarding caffeine intake is as follows:
 

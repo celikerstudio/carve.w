@@ -46,15 +46,15 @@ export type EventName =
   | 'demo_message_sent'
   | 'demo_to_signup'
 
-  // @ai-why: De app-pagina heeft meerdere App Store-knoppen (hero, marketing-hero,
-  // pricing) en zonder dit event is niet te zien of er iemand doorklikt — precies het
-  // cijfer waar advertenties op beoordeeld worden. Eén event met een `source`-prop in
-  // plaats van een event per knop, zodat het totaal klopt zonder optellen.
+  // @ai-why: De site heeft meerdere App Store-knoppen (marketingpagina, kop, wiki) en
+  // zonder dit event is niet te zien of er iemand doorklikt — precies het cijfer waar
+  // advertenties op beoordeeld worden. Eén event met een `source`-prop in plaats van een
+  // event per knop, zodat het totaal klopt zonder optellen.
   //
   // @ai-context: Dit is het event dat je in Google Ads als conversie importeert. Markeer
   // het daar als key event, anders heeft de biedstrategie niets om op te sturen.
   // @ai-sync: components/carve/AppStoreButton.tsx
-  // @ai-sync: components/carve/PricingHub.tsx
+  // @ai-sync: components/wiki/public/GetCarveLink.tsx
   | 'app_store_click';
 
 type EventProps = {
@@ -63,7 +63,7 @@ type EventProps = {
   // vaste knop op mobiel en 'header' de balk die op desktop inschuift.
   // 'wiki_tease' is de wazige blik onder het antwoord, 'wiki_character' het personage rechts
   // (TDR-0016 §5). De badge in de kop is 'header', op elke pagina dezelfde (`SiteHeader`).
-  source?: 'hero' | 'close' | 'dock' | 'header' | 'footer' | 'demo' | 'pricing' | 'marketing_hero' | 'showcase' | 'wiki_tease' | 'wiki_character';
+  source?: 'hero' | 'close' | 'dock' | 'header' | 'footer' | 'demo' | 'wiki_tease' | 'wiki_character';
   error_type?: string;
 
   // Wiki

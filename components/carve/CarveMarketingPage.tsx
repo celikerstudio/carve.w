@@ -35,8 +35,8 @@ const WIKI_START = [
  * @ai-why: Tot 2026-09-05 stond hier een pagina van duizend regels met een
  * scoreboard-hero, AI-scan-demo, training, hiscores, rewards en pricing. Die
  * verkocht meer dan de app na 2026-09-04 nog doet (zie TDR-0003 en TDR-0005).
- * De componenten die daarbij hoorden (`ScoreboardCard`, `MarketingHero`,
- * `PhoneShowcase`) staan er nog maar hebben hier geen lezer meer.
+ * De componenten die daarbij hoorden (`ScoreboardCard`, `PhoneShowcase`, `PricingHub`
+ * en de rest) zijn op 2026-10-16 verwijderd; ze staan nog in de git-historie.
  *
  * @ai-why: Server component. Alleen de knop (tracking) en de sticky knop hebben browser-API's
  * nodig; die zijn losse client components. De kop is `SiteHeader`, dezelfde als op de rest van de site.

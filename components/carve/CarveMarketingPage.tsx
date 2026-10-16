@@ -1,42 +1,36 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Camera, ScanBarcode, Dumbbell, PersonStanding, CalendarDays, MessageSquareText, Check } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { CarveFooter } from '@/components/carve/CarveFooter';
 import { AppStoreButton } from '@/components/carve/AppStoreButton';
 import { AppStoreDock } from '@/components/carve/AppStoreDock';
-import { PhoneStory } from '@/components/carve/PhoneStory';
 import { SiteHeader } from '@/components/site/SiteHeader';
 import type { MarketingCopy, Taal } from '@/lib/marketing-copy';
+import { articleHref } from '@/lib/wiki/catalog';
+import './marketing.css';
 import { VRAAGPAGINA_LABELS, VRAAGPAGINAS } from '@/lib/vraagpaginas';
 
 const HERO_CTA_ID = 'hero-cta';
 const CLOSE_CTA_ID = 'close-cta';
 
-/** Op volgorde van `copy.overzicht.kaarten`. */
-const KAART_ICONEN = [
-  <Camera key="camera" className="h-5 w-5" />,
-  <ScanBarcode key="barcode" className="h-5 w-5" />,
-  <Dumbbell key="dumbbell" className="h-5 w-5" />,
-  <PersonStanding key="person" className="h-5 w-5" />,
-  <CalendarDays key="calendar" className="h-5 w-5" />,
-  <MessageSquareText key="message" className="h-5 w-5" />,
-];
+/** De vier artikelen van "Start here" op /wiki, als interne links. */
+const WIKI_START = [
+  { titel: 'Protein', categorie: 'Nutrition', slug: 'protein' },
+  { titel: 'Progressive Overload', categorie: 'Training', slug: 'progressive-overload' },
+  { titel: 'Creatine', categorie: 'Supplements', slug: 'creatine' },
+  { titel: 'Sleep', categorie: 'Recovery', slug: 'sleep' },
+].map((a) => ({ ...a, href: articleHref(a.categorie, a.slug)! }));
 
 /**
  * De marketingpagina voor de iOS-app, op `/` en `/carve`.
  *
- * @ai-why: Zes blokken, één punt per blok, in deze volgorde: wat het doet
- * (figuur met weekschema), de app zelf (het figuur blijkt in een iPhone te
- * staan, die vast blijft en vier schermen laat zien met een kop en alinea
- * ernaast), waarom je het kunt geloven (130 → 80, met foto), het overzicht van
- * wat erin zit, wat het kost, de knop. Tot 2026-09-06 stonden de foto-sectie en drie losse
- * store-schermen hier als aparte secties; die zitten nu in de telefoon, zodat de
- * bezoeker één keer scrolt en de app ziet in plaats van plaatjes van de app.
- * De bezoeker komt via een bio-link op zijn telefoon en vergelijkt in zijn hoofd
- * met MyFitnessPal; hij wil in drie seconden zien wat het doet, of het werkt en
- * hoe het eruitziet. Alles wat dat niet dient staat er niet: geen rangen, geen
- * season, geen pricing, geen nagebouwde kaarten. Het bewijs is de 50 kilo, niet
- * een sterrengemiddelde.
+ * @ai-why: Zeven blokken sinds variant A (companion, 2026-10-16), één punt per blok: wat de app
+ * met je doet (het personage in vijf lijfstadia), waarom je het kunt geloven (130 → 80, met
+ * foto), drie dingen die hij doet, de wiki, wat het kost, de knop. Het personage is sinds die
+ * dag het beeld van de pagina, net als in de app en de wiki; het anatomische figuur en de
+ * telefoon met vier schermen (PhoneStory) zijn weg. De bezoeker wil in drie seconden zien wat
+ * het doet, of het werkt en hoe het eruitziet; het bewijs is de 50 kilo, niet een
+ * sterrengemiddelde. Monochroom zoals de app: eiwit is groen, verder geen kleur.
  *
  * @ai-why: Tot 2026-09-05 stond hier een pagina van duizend regels met een
  * scoreboard-hero, AI-scan-demo, training, hiscores, rewards en pricing. Die
@@ -44,12 +38,11 @@ const KAART_ICONEN = [
  * De componenten die daarbij hoorden (`ScoreboardCard`, `MarketingHero`,
  * `PhoneShowcase`) staan er nog maar hebben hier geen lezer meer.
  *
- * @ai-why: Server component. Alleen de knop (tracking), de sticky knop, de balk
- * bovenin en het telefoonverhaal hebben browser-API's nodig; die zijn losse client components.
+ * @ai-why: Server component. Alleen de knop (tracking) en de sticky knop hebben browser-API's
+ * nodig; die zijn losse client components. De kop is `SiteHeader`, dezelfde als op de rest van de site.
  *
  * @ai-sync: ~/Developer/Carve-AI/docs/marketing/app-store-listing.md (dezelfde belofte, dezelfde screenshots)
  * @ai-sync: app/opengraph-image.tsx (dezelfde belofte, als beeld)
- * @ai-sync: components/carve/PhoneStory.tsx (het figuur, de telefoon en de vier schermen met hun captions)
  *
  * @ai-why: De tekst komt sinds TDR-0012 uit `lib/marketing-copy.ts` en staat niet meer
  * in deze JSX. De pagina bestaat in twee talen op twee adressen; welke taal je krijgt
@@ -67,26 +60,33 @@ export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: 
   return (
     <div id="top" lang={taal} className="min-h-screen w-full bg-[#0A0A0B] text-white">
       <SiteHeader taal={taal} current="About" />
-      {/* 1 · figuur */}
-      <section className="flex flex-col items-center px-6 pt-14 text-center md:pt-20">
-        <h1 className="max-w-[14ch] text-[clamp(38px,7vw,76px)] font-bold leading-[1.02] tracking-[-0.03em] text-balance">
-          <span className="text-white/50">{copy.hero.kopZacht}</span>
+      {/* 1 · groei */}
+      {/* @ai-why: Variant A uit de companion (2026-10-16): het personage in zijn vijf lijfstadia,
+          van Start tot Beest. Het laat in één beeld zien wat de app met je doet, zonder dat de
+          bezoeker iets hoeft te lezen. Tot die dag stond hier het anatomische figuur met een
+          weekschema en een telefoon die vier schermen liet zien (PhoneStory): ruim 10.000 pixels
+          scrollen voor wie het hele verhaal wilde, en een figuur dat de app niet meer gebruikt.
+          @ai-sync: public/character/ (kopieën uit de asset-catalogus van de app) */}
+      <section className="mk-spot flex flex-col items-center px-6 pt-16 text-center md:pt-24">
+        <h1 className="text-[clamp(44px,8vw,88px)] font-extrabold leading-[0.95] tracking-[-0.05em] text-balance">
+          {copy.hero.kop}
           <br />
-          {copy.hero.kopHard}
+          <span className="text-white/30">{copy.hero.kopZacht}</span>
         </h1>
-        {/* @ai-why: De kop zegt al wat het doet, dus hier staat de tagline en niet
-            nog een keer de features. Hij stond eerst in het slot; daar staat nu
-            "Ready to start?", anders staat de tagline twee keer op één pagina.
-            @ai-sync: ~/Developer/Carve-AI/docs/brand/identity.md (§1, tagline-regel) */}
-        <p className="mt-4 text-[clamp(17px,2vw,21px)] text-white/50">{copy.hero.tagline}</p>
+        <p className="mx-auto mt-5 max-w-[34ch] text-[clamp(17px,2vw,19px)] leading-normal text-white/60 text-balance">{copy.hero.tekst}</p>
         <div className="mt-8 flex flex-col items-center gap-3">
           <AppStoreButton source="hero" id={HERO_CTA_ID} />
-          <small className="text-[13px] text-white/30">{copy.hero.onderKnop}</small>
+          <small className="text-[13px] text-white/40">{copy.hero.onderKnop}</small>
+        </div>
+        <div role="img" aria-label={copy.stadia.alt} className="mt-14 flex w-full max-w-[900px] items-end justify-center gap-1 md:mt-16 md:gap-2">
+          {copy.stadia.namen.map((naam, i) => (
+            <div key={naam} className="flex flex-col items-center gap-2" style={{ opacity: 0.45 + i * 0.1375 }}>
+              <Figuur stadium={i + 1} className="h-[clamp(150px,30vw,340px)]" />
+              <span className={`text-[12px] ${i === 4 ? 'font-semibold text-white/85' : 'text-white/40'}`}>{naam}</span>
+            </div>
+          ))}
         </div>
       </section>
-
-      {/* 2 · de app: figuur → telefoon → vier schermen */}
-      <PhoneStory copy={copy.telefoon} />
 
       {/* 3 · bewijs */}
       {/* @ai-why: Twee echte foto's naast de cijfers. Tot 2026-09-06 stond hier
@@ -113,17 +113,16 @@ export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: 
               src="/photos/now.jpg"
               alt={copy.bewijs.nuAlt}
               label={copy.bewijs.nuLabel}
-              gold
               width={528}
               height={704}
               className="top-[14%] right-0 shadow-[0_24px_60px_rgba(0,0,0,0.6)]"
-              ring="shadow-[inset_0_0_0_1px_rgba(212,168,67,0.5)]"
+              ring="shadow-[inset_0_0_0_1px_rgba(255,255,255,0.18)]"
             />
           </div>
           <div>
-            <Eyebrow gold>{copy.bewijs.eyebrow}</Eyebrow>
+            <Eyebrow>{copy.bewijs.eyebrow}</Eyebrow>
             <div className="flex items-baseline gap-3.5 font-bold leading-none tracking-[-0.04em]" aria-label={copy.bewijs.getalLabel}>
-              <span className="text-[clamp(40px,5vw,56px)] text-white/30 line-through decoration-[#D4A843] decoration-[0.06em]">130</span>
+              <span className="text-[clamp(40px,5vw,56px)] text-white/30 line-through decoration-white/40 decoration-[0.06em]">130</span>
               <span className="text-[clamp(96px,12vw,132px)]">
                 80<small className="ml-[0.1em] text-[0.28em] font-medium tracking-normal text-white/40">{copy.bewijs.eenheid}</small>
               </span>
@@ -134,47 +133,78 @@ export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: 
         </div>
       </section>
 
-      {/* 4 · overzicht */}
+      {/* 4 · drie dingen */}
+      {/* @ai-why: Drie kaarten met elk een beeld, in plaats van zes met twee regels tekst. De zes
+          zeiden allemaal iets, maar niets sprong eruit; deze drie zijn wat een nieuwe gebruiker op
+          dag één doet: een bord fotograferen, een training loggen, kijken waar hij staat.
+          @ai-sync: ~/Developer/Carve-AI/docs/marketing/app-store-listing.md (dezelfde belofte) */}
       <section className="border-t border-white/[0.06] px-6 py-[72px] md:py-24">
         <div className="mx-auto max-w-[1024px]">
-          <div className="text-center">
-            <Eyebrow>{copy.overzicht.eyebrow}</Eyebrow>
-            <H2>{copy.overzicht.kop}</H2>
-            <p className="mx-auto mt-4 max-w-[46ch] text-white/50 text-balance">{copy.overzicht.intro}</p>
-          </div>
-          {/* @ai-why: Zes regels, allemaal in de app van vandaag. Staat een functie
-              achter een uitgezette vlag in FeatureFlags.swift, dan staat hij hier niet.
-              Apple Health is bewust "steps": dat is het enige type dat de app uitleest.
-              @ai-sync: ~/Developer/Carve-AI/docs/marketing/app-store-listing.md (beschrijving, "wat er uit is") */}
-          {/* @ai-gotcha: De iconen horen op volgorde bij `copy.overzicht.kaarten`. Zet je
-              er een regel tussen, zet dan hier het icoon op dezelfde plek. De test op de
-              copy bewaakt het aantal (zes), niet welke afbeelding erbij hoort. */}
-          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {copy.overzicht.kaarten.map((kaart, i) => (
-              <Fact key={kaart.titel} icon={KAART_ICONEN[i]} title={kaart.titel}>
-                {kaart.tekst}
-              </Fact>
-            ))}
+          <Eyebrow>{copy.drie.eyebrow}</Eyebrow>
+          <H2>{copy.drie.kop}</H2>
+          <div className="mt-10 grid gap-3 md:grid-cols-3">
+            <Kaart titel={copy.drie.kaarten[0].titel} tekst={copy.drie.kaarten[0].tekst}>
+              <div className="rounded-2xl bg-white/[0.06] px-4 py-3 text-left">
+                <p className="text-[15px] font-semibold">{copy.drie.bord}</p>
+                <p className="mt-0.5 text-[13px] text-white/50">{copy.drie.bordMacro}</p>
+              </div>
+            </Kaart>
+            <Kaart titel={copy.drie.kaarten[1].titel} tekst={copy.drie.kaarten[1].tekst}>
+              <Figuur stadium={3} gloed alt={copy.drie.figuurAlt} className="h-[180px]" />
+            </Kaart>
+            <Kaart titel={copy.drie.kaarten[2].titel} tekst={copy.drie.kaarten[2].tekst}>
+              {/* @ai-why: Groen, net als eiwit in de app (`nutritionProtein`). De enige kleur op de pagina. */}
+              <div className="grid h-[110px] w-[110px] place-items-center rounded-full" style={{ background: 'conic-gradient(#30d158 0 84%, rgba(255,255,255,0.08) 0)' }}>
+                <div className="grid h-[90px] w-[90px] place-items-center rounded-full bg-[#151517] text-center leading-tight">
+                  <span className="text-[22px] font-bold">121</span>
+                  <span className="-mt-1 block text-[11px] text-white/40">{copy.drie.ringVan}</span>
+                </div>
+              </div>
+            </Kaart>
           </div>
           {/* @ai-why: De foto-vraag hoort hier beantwoord te worden en niet pas in het
               privacybeleid. Je vraagt iemand een foto van zijn bord naar een AI te sturen;
-              dat is de eerste bezwaar dat opkomt en de pagina zei er niets over. Kort, met
-              een link voor wie doorleest.
+              dat is het eerste bezwaar dat opkomt. Kort, met een link voor wie doorleest.
               @ai-sync: app/privacy/page.tsx (dezelfde belofte, uitgebreid)
               @ai-sync: ~/Developer/Carve-AI/Carve AI/App/Config/FeatureFlags.swift (HealthKit-claim: alleen stappen) */}
-          <div className="mt-7 flex flex-col items-center gap-1.5 text-center text-[13px] text-white/30">
-            <p>{copy.overzicht.health}</p>
+          <div className="mt-7 flex flex-col items-center gap-1.5 text-center text-[13px] text-white/35">
+            <p>{copy.drie.health}</p>
             <p>
-              {copy.overzicht.privacy}{' '}
+              {copy.drie.privacy}{' '}
               <Link href="/privacy" className="underline decoration-white/20 underline-offset-4 transition-colors hover:text-white/60">
-                {copy.overzicht.privacyLink}
+                {copy.drie.privacyLink}
               </Link>
             </p>
           </div>
         </div>
       </section>
 
-      {/* 5 · prijs */}
+      {/* 5 · wiki */}
+      {/* @ai-why: De wiki als bewijs dat Carve weet waar het over praat, en als interne link naar
+          de artikelen (TDR-0016). Vier vaste artikelen: de vier van "Start here" op /wiki.
+          @ai-sync: app/wiki/page.tsx (START_HERE) */}
+      <section className="border-t border-white/[0.06] px-6 py-[72px] md:py-24">
+        <div className="mx-auto grid max-w-[1024px] items-center gap-10 md:grid-cols-2 md:gap-14">
+          <div>
+            <Eyebrow>{copy.wiki.eyebrow}</Eyebrow>
+            <H2>{copy.wiki.kop}</H2>
+            <p className="mt-4 max-w-[36ch] text-white/55">{copy.wiki.tekst}</p>
+            <Link href="/wiki" className="mt-6 inline-block text-[15px] text-white/80 underline decoration-white/25 underline-offset-4 hover:text-white">
+              {copy.wiki.alles}
+            </Link>
+          </div>
+          <div className="overflow-hidden rounded-[20px] border border-white/[0.08] bg-white/[0.04]">
+            {WIKI_START.map((a, i) => (
+              <Link key={a.href} href={a.href} className={`flex items-center justify-between px-5 py-4 text-[16px] transition-colors hover:bg-white/[0.03] ${i ? 'border-t border-white/[0.06]' : ''}`}>
+                {a.titel}
+                <span className="text-[14px] text-white/40">{a.categorie} ›</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6 · prijs */}
       {/* @ai-why: De pagina zei twee keer "Free" en verder niets, terwijl er een paywall
           achter zit. Wie die pas in de app tegenkomt voelt zich beetgenomen, en dat is
           precies de recensie die je niet wilt. Deze sectie zegt wat gratis is, wat de
@@ -205,12 +235,10 @@ export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: 
                 <PlanLine key={regel}>{regel}</PlanLine>
               ))}
             </ul>
-            <PlanHead name={copy.prijs.proNaam} gold tag={copy.prijs.proTag} />
+            <PlanHead name={copy.prijs.proNaam} pro tag={copy.prijs.proTag} />
             <ul>
               {copy.prijs.proRegels.map((regel) => (
-                <PlanLine key={regel} gold>
-                  {regel}
-                </PlanLine>
+                <PlanLine key={regel}>{regel}</PlanLine>
               ))}
             </ul>
           </div>
@@ -218,7 +246,7 @@ export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: 
         </div>
       </section>
 
-      {/* 6 · slot */}
+      {/* 7 · slot */}
       <section className="border-t border-white/[0.06] px-6 pt-20 pb-16 text-center md:pt-28 md:pb-24">
         <Image src="/carve-logo.png" alt="" width={160} height={160} className="mx-auto mb-5 h-12 w-12" />
         <H2 className="text-[clamp(36px,6vw,64px)]">{copy.slot.kop}</H2>
@@ -251,10 +279,8 @@ export function CarveMarketingPage({ copy, taal }: { copy: MarketingCopy; taal: 
 
 /* ---------------------------------------------------------------------- */
 
-function Eyebrow({ children, gold }: { children: React.ReactNode; gold?: boolean }) {
-  return (
-    <p className={`mb-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] ${gold ? 'text-[#D4A843]' : 'text-white/40'}`}>{children}</p>
-  );
+function Eyebrow({ children }: { children: React.ReactNode }) {
+  return <p className="mb-3.5 text-[13px] text-white/40">{children}</p>;
 }
 
 function H2({ children, className = '' }: { children: React.ReactNode; className?: string }) {
@@ -267,7 +293,6 @@ interface ProofPhotoProps {
   src: string;
   alt: string;
   label: string;
-  gold?: boolean;
   width: number;
   height: number;
   /** Positie en buitenschaduw. */
@@ -278,40 +303,63 @@ interface ProofPhotoProps {
   ring: string;
 }
 
-function ProofPhoto({ src, alt, label, gold, width, height, className, imageClassName = '', ring }: ProofPhotoProps) {
+function ProofPhoto({ src, alt, label, width, height, className, imageClassName = '', ring }: ProofPhotoProps) {
   return (
     <figure className={`absolute aspect-[3/4] w-[58%] overflow-hidden rounded-[20px] ${className}`}>
       <Image src={src} alt={alt} width={width} height={height} sizes="(min-width: 768px) 280px, 60vw" className={`h-full w-full object-cover ${imageClassName}`} />
       <div aria-hidden="true" className={`pointer-events-none absolute inset-0 rounded-[20px] ${ring}`} />
-      <figcaption className={`absolute bottom-3.5 left-3.5 rounded-full bg-[#0A0A0B]/60 px-2.5 py-1.5 text-[11px] font-medium tracking-[0.2em] uppercase backdrop-blur-sm ${gold ? 'text-[#D4A843]' : 'text-white/55'}`}>{label}</figcaption>
+      <figcaption className={`absolute bottom-3.5 left-3.5 rounded-full bg-[#0A0A0B]/60 px-2.5 py-1.5 text-[11px] font-medium tracking-[0.2em] uppercase backdrop-blur-sm text-white/70`}>{label}</figcaption>
     </figure>
   );
 }
 
-function PlanHead({ name, tag, gold }: { name: string; tag: string; gold?: boolean }) {
+function PlanHead({ name, tag, pro }: { name: string; tag: string; pro?: boolean }) {
   return (
-    <div className={`flex items-baseline justify-between gap-4 pb-1.5 ${gold ? 'mt-7' : ''}`}>
-      <h3 className={`text-[19px] font-bold tracking-[-0.01em] ${gold ? 'text-[#D4A843]' : ''}`}>{name}</h3>
+    <div className={`flex items-baseline justify-between gap-4 pb-1.5 ${pro ? 'mt-7' : ''}`}>
+      <h3 className="text-[19px] font-bold tracking-[-0.01em]">{name}</h3>
       <p className="text-right text-[13px] text-white/35">{tag}</p>
     </div>
   );
 }
 
-function PlanLine({ children, gold }: { children: React.ReactNode; gold?: boolean }) {
+function PlanLine({ children }: { children: React.ReactNode }) {
   return (
     <li className="flex items-start gap-3 border-b border-white/[0.06] py-3 text-[15px] leading-snug text-white/70">
-      <Check className={`mt-[3px] h-4 w-4 shrink-0 ${gold ? 'text-[#D4A843]' : 'text-white/30'}`} aria-hidden="true" />
+      <Check className="mt-[3px] h-4 w-4 shrink-0 text-white/40" aria-hidden="true" />
       <span>{children}</span>
     </li>
   );
 }
 
-function Fact({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
+function Kaart({ titel, tekst, children }: { titel: string; tekst: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-xl border border-white/[0.08] bg-white/[0.04] p-5">
-      <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.06] text-white/50">{icon}</div>
-      <h3 className="text-[15px] font-semibold">{title}</h3>
-      <p className="mt-1 text-sm leading-relaxed text-white/50">{children}</p>
+    <div className="overflow-hidden rounded-[24px] border border-white/[0.08] bg-white/[0.04]">
+      <div className="flex h-[220px] items-center justify-center bg-white/[0.02] px-8">{children}</div>
+      <div className="px-6 pt-5 pb-6">
+        <h3 className="text-[20px] font-bold tracking-[-0.02em]">{titel}</h3>
+        <p className="mt-1.5 text-[15px] leading-relaxed text-white/55">{tekst}</p>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Het Carve-personage: de man, op een lijfstadium, met het kapsel erop.
+ *
+ * @ai-why: Drie lagen van dezelfde tekening als in de app. Met `gloed` legt hij de felle tekening
+ *   door de maskers van borst, schouders en triceps (een push-dag) en laat die op- en uitgloeien.
+ * @ai-fragile: De plaatjes in `public/character/` zijn kopieën uit de asset-catalogus van de app
+ *   (Carve-AI `Assets.xcassets/character`), verkleind tot 1000 px hoog. Wordt het personage daar
+ *   opnieuw gegenereerd, kopieer ze dan opnieuw.
+ */
+function Figuur({ stadium, gloed, alt, className = '' }: { stadium: number; gloed?: boolean; alt?: string; className?: string }) {
+  return (
+    <div className={`relative aspect-[581/1400] ${className}`} role={alt ? 'img' : undefined} aria-label={alt} aria-hidden={alt ? undefined : true}>
+      {/* eslint-disable-next-line @next/next/no-img-element -- lagen die exact op elkaar moeten vallen */}
+      <img src={gloed ? '/character/character_man_s3_front_faded.png' : `/character/character_man_s${stadium}_front.png`} alt="" className="absolute inset-0 h-full w-full" />
+      {gloed && <div className="mk-lit absolute inset-0" />}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/character/character_man_front_hair_crew.png" alt="" className="absolute inset-0 h-full w-full" />
     </div>
   );
 }

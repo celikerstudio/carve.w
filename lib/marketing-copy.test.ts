@@ -3,7 +3,7 @@ import { marketingCopy, splitsNadruk, TALEN } from '@/lib/marketing-copy';
 
 /**
  * Alle sleutelpaden van een object, arrays op index.
- * Dus `hero.kopHard` en `overzicht.kaarten.0.titel`.
+ * Dus `hero.kop` en `drie.kaarten.0.titel`.
  */
 function sleutelpaden(waarde: unknown, pad = ''): string[] {
   if (Array.isArray(waarde)) {
@@ -64,15 +64,18 @@ describe('marketingCopy', () => {
     }
   });
 
-  it('heeft zeven weekdagen per taal', () => {
+  it('heeft vijf lijfstadia en drie kaarten per taal', () => {
     for (const taal of TALEN) {
-      expect(marketingCopy[taal].telefoon.weekdagen, `taal ${taal}`).toHaveLength(7);
+      expect(marketingCopy[taal].stadia.namen, `taal ${taal}`).toHaveLength(5);
+      expect(marketingCopy[taal].drie.kaarten, `taal ${taal}`).toHaveLength(3);
     }
   });
 
-  it('heeft vier telefoonschermen per taal', () => {
+  // @ai-why: De merkregel is in elke taal Engels (docs/brand/identity.md in Carve-AI). Een
+  //   vertaalde merkregel is een tweede merk.
+  it('houdt de merkregel in elke taal Engels', () => {
     for (const taal of TALEN) {
-      expect(marketingCopy[taal].telefoon.schermen, `taal ${taal}`).toHaveLength(4);
+      expect(marketingCopy[taal].slot.kop, `taal ${taal}`).toBe('Carve a better you.');
     }
   });
 });

@@ -42,18 +42,10 @@ export const APP_OMSCHRIJVING: Record<Taal, string> = {
   nl: 'Carve AI is een iPhone-app die je eten en je training bijhoudt.',
 };
 
-/** Vier keer hetzelfde, zodat een ontbrekend scherm een typefout is en geen lege plek. */
+/** Een vast aantal, zodat een ontbrekende kaart of regel een typefout is en geen lege plek. */
+type Drie<T> = readonly [T, T, T];
 type Vier<T> = readonly [T, T, T, T];
-type Zes<T> = readonly [T, T, T, T, T, T];
-type Zeven<T> = readonly [T, T, T, T, T, T, T];
-
-interface Scherm {
-  eyebrow: string;
-  titel: string;
-  /** Mag `**nadruk**` bevatten; zie `splitsNadruk`. */
-  body: string;
-  alt: string;
-}
+type Vijf<T> = readonly [T, T, T, T, T];
 
 interface Kaart {
   titel: string;
@@ -66,20 +58,18 @@ export interface MarketingCopy {
     beschrijving: string;
   };
   hero: {
+    /** De eerste, harde regel van de kop. */
+    kop: string;
+    /** De tweede regel, gedimd. */
     kopZacht: string;
-    kopHard: string;
-    tagline: string;
+    tekst: string;
     onderKnop: string;
   };
-  telefoon: {
-    landing: { eyebrow: string; titel: string; body: string };
-    schermen: Vier<Scherm>;
-    figuurAlt: string;
-    /** Kop boven de weekstrip in de hero. */
-    weekKop: string;
-    /** Toegankelijkheidslabel van de weekstrip; die is een tablist. */
-    weekLabel: string;
-    weekdagen: Zeven<string>;
+  /** De vijf lijfstadia van het personage onder de hero (variant A, 2026-10-16). */
+  stadia: {
+    alt: string;
+    /** Zoals in de app: Carve-AI `health.body.stage.*` voor de man. */
+    namen: Vijf<string>;
   };
   bewijs: {
     eyebrow: string;
@@ -92,14 +82,24 @@ export interface MarketingCopy {
     voorAlt: string;
     nuAlt: string;
   };
-  overzicht: {
+  drie: {
     eyebrow: string;
     kop: string;
-    intro: string;
-    kaarten: Zes<Kaart>;
+    /** Foto van je bord, wat je trainde, waar je staat. */
+    kaarten: Drie<Kaart>;
+    bord: string;
+    bordMacro: string;
+    ringVan: string;
+    figuurAlt: string;
     health: string;
     privacy: string;
     privacyLink: string;
+  };
+  wiki: {
+    eyebrow: string;
+    kop: string;
+    tekst: string;
+    alles: string;
   };
   prijs: {
     eyebrow: string;
@@ -132,47 +132,14 @@ const en: MarketingCopy = {
     beschrijving: 'Logs your food from a photo. Tracks the muscles you are skipping. Built by someone who lost 50kg using it.',
   },
   hero: {
-    kopZacht: 'Log your food.',
-    kopHard: 'Track your workouts.',
-    tagline: 'Carve a better you.',
+    kop: 'Train. Eat.',
+    kopZacht: 'Watch yourself grow.',
+    tekst: 'Log your food and your workouts. Your Carve character grows as you train.',
     onderKnop: 'Free · iPhone',
   },
-  telefoon: {
-    landing: {
-      eyebrow: "That's the app",
-      titel: 'The map you just played with.',
-      body: 'Front and back. Every workout you log fills it in, so you see what you trained this week **and what you keep skipping.**',
-    },
-    schermen: [
-      {
-        eyebrow: 'Snap it',
-        titel: 'Logged.',
-        body: 'Take a picture of your plate. The AI works out the calories and macros. **No database digging, no guessing portions.**',
-        alt: "Carve's home screen with the day's meals, each with its time and calories.",
-      },
-      {
-        eyebrow: 'Packet in your hand?',
-        titel: 'Scan it.',
-        body: 'Point the camera at a barcode, a plate, even a receipt. **It reads what is in front of it** and fills in the macros.',
-        alt: 'The Carve camera pointed at a drink, with the hint "Point at your meal, a receipt or a barcode".',
-      },
-      {
-        eyebrow: 'Ask anything.',
-        titel: 'Carve adds it.',
-        body: 'Type “today I trained chest and triceps” and it lands in the log. **The coach answers from what you logged,** not from a generic plan.',
-        alt: "Chat with Carve: 'Today i trained chest and triceps', saved as a Push workout with chest and triceps filled in.",
-      },
-      {
-        eyebrow: 'Your week at a glance',
-        titel: 'Nothing gets skipped.',
-        body: 'Every session you log fills the bars. **One look tells you which muscle has been waiting** since last week.',
-        alt: 'The Carve health screen: the muscle figure with a progress bar per muscle group beside it.',
-      },
-    ],
-    figuurAlt: 'Illustrated muscle map of a body, front view, as shown in Carve. The muscles of the selected training day are highlighted.',
-    weekKop: 'This week',
-    weekLabel: 'Training week',
-    weekdagen: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  stadia: {
+    alt: 'The Carve character in five stages, from Start to Beast.',
+    namen: ['Start', 'Fit', 'Athletic', 'Muscular', 'Beast'],
   },
   bewijs: {
     eyebrow: 'Why it exists',
@@ -185,21 +152,27 @@ const en: MarketingCopy = {
     voorAlt: 'Furkan at 130 kg, standing on a street in Istanbul, phone in hand.',
     nuAlt: 'Furkan at 80 kg, hiking with a backpack and poles, phone in hand.',
   },
-  overzicht: {
-    eyebrow: 'Everything in it',
-    kop: 'One place for your food and your training.',
-    intro: "Most trackers stop at the number. Carve keeps both in the same place, so it can show you the muscle you haven't touched in nine days, right next to the week you thought went fine.",
+  drie: {
+    eyebrow: 'What it does',
+    kop: 'Three things, done well.',
     kaarten: [
-      { titel: 'Photo logging', tekst: 'A picture of your plate becomes calories and macros. No database digging.' },
-      { titel: 'Barcode scanner', tekst: 'Point at the packet. The product and its macros are filled in.' },
-      { titel: 'Workout log', tekst: 'Sets, weights, done. Every session fills the muscle map.' },
-      { titel: 'Muscle map, front and back', tekst: 'See what you trained this week and what you keep skipping.' },
-      { titel: 'Week plan', tekst: 'Set a goal, a split and your training days once. The week is on your home screen.' },
-      { titel: 'A coach that reads your log', tekst: 'Ask about your protein, your week or what to train. It answers from what you logged.' },
+      { titel: 'Snap your plate', tekst: 'A photo becomes calories and protein.' },
+      { titel: 'See what you trained', tekst: 'Every workout lights up on your character.' },
+      { titel: 'Know where you stand', tekst: 'Your protein, your week and your steps in one place.' },
     ],
+    bord: 'Chicken, rice, broccoli',
+    bordMacro: '640 kcal · 48 g protein',
+    ringVan: 'of 144 g',
+    figuurAlt: 'The Carve character with chest, shoulders and triceps lit up after a push workout.',
     health: 'Reads your daily steps from Apple Health. Nothing else.',
     privacy: 'Your photo goes to the AI that reads it and is not used to train anything.',
     privacyLink: 'How we handle your data',
+  },
+  wiki: {
+    eyebrow: 'Carve Wiki',
+    kop: 'Know what works.',
+    tekst: 'Articles on training, food and recovery. The short answer first, with how strong the evidence is.',
+    alles: 'Read the wiki',
   },
   prijs: {
     eyebrow: 'What it costs',
@@ -219,7 +192,7 @@ const en: MarketingCopy = {
     proef: 'Every new account starts with 30 days of Pro. It begins when you sign up; there is no card to enter first.',
   },
   slot: {
-    kop: 'Ready to start?',
+    kop: 'Carve a better you.',
     tekst: 'Free on the App Store.',
     onderKnop: 'Free · iPhone · Built in Amsterdam',
   },
@@ -234,62 +207,24 @@ const en: MarketingCopy = {
 // @ai-why: De tagline blijft Engels. "Carve a better you" is de merkregel uit
 //   ~/Developer/Carve-AI/docs/brand/identity.md en die hoort in elke taal hetzelfde te
 //   zijn, net als de naam zelf. Een vertaalde merkregel is een tweede merk.
+// Hij staat sinds 2026-10-16 als kop van het slot, in beide talen.
 //
-// @ai-gotcha: Scherm 3 citeert in het Engels geen zin meer. De screenshot toont
-//   letterlijk "Today i trained chest and triceps", dus een Nederlands citaat zou naast
-//   een Engels scherm staan; de regel uit PhoneStory is dat bijschrift en scherm
-//   hetzelfde zeggen. De Nederlandse body beschrijft daarom wat er gebeurt zonder te
-//   citeren. Komt er ooit een Nederlandse export, dan mag het citaat terug.
-//
-// @ai-context: De trainingslabels in de weekdemo (Push, Pull, Legs, Rest) worden niet
-//   vertaald: zo staan ze in de app. Alleen de dagafkortingen gaan mee.
+// @ai-context: De namen van de lijfstadia volgen de app (Carve-AI `health.body.stage.*`):
+//   Start, Fit, Atletisch, Gespierd, Beest.
 const nl: MarketingCopy = {
   meta: {
     titel: 'Carve AI — calorieën tellen met een foto',
     beschrijving: 'Logt je eten vanaf een foto. Laat zien welke spieren je overslaat. Gebouwd door iemand die er 50 kilo mee verloor.',
   },
   hero: {
-    kopZacht: 'Log je eten.',
-    kopHard: 'Volg je training.',
-    tagline: 'Carve a better you.',
+    kop: 'Train. Eet.',
+    kopZacht: 'Zie jezelf groeien.',
+    tekst: 'Log je eten en je training. Je Carve-personage groeit mee terwijl je traint.',
     onderKnop: 'Gratis · iPhone',
   },
-  telefoon: {
-    landing: {
-      eyebrow: 'Dat ís de app',
-      titel: 'De kaart waar je net mee speelde.',
-      body: 'Voorkant en achterkant. Elke training die je logt vult hem, dus je ziet wat je deze week deed **en wat je blijft overslaan.**',
-    },
-    schermen: [
-      {
-        eyebrow: 'Maak een foto',
-        titel: 'Gelogd.',
-        body: "Fotografeer je bord. De AI rekent de calorieën en macro's uit. **Geen database doorzoeken, geen porties gokken.**",
-        alt: 'Het beginscherm van Carve met de maaltijden van de dag, elk met tijd en calorieën.',
-      },
-      {
-        eyebrow: 'Verpakking in je hand?',
-        titel: 'Scan hem.',
-        body: "Richt de camera op een barcode, een bord, zelfs een kassabon. **Hij leest wat ervoor ligt** en vult de macro's in.",
-        alt: 'De camera van Carve gericht op een drankje, met de hint "Point at your meal, a receipt or a barcode".',
-      },
-      {
-        eyebrow: 'Vraag maar raak.',
-        titel: 'Carve zet het erbij.',
-        body: 'Typ in gewone taal wat je getraind hebt en het staat in je log. **De coach antwoordt op wat jij logde,** niet op een standaardschema.',
-        alt: "Chat met Carve: 'Today i trained chest and triceps', opgeslagen als een Push-workout met borst en triceps ingevuld.",
-      },
-      {
-        eyebrow: 'Je week in één blik',
-        titel: 'Niets blijft liggen.',
-        body: 'Elke sessie die je logt vult de balken. **Eén blik zegt welke spier staat te wachten** sinds vorige week.',
-        alt: 'Het health-scherm van Carve: het spierfiguur met een voortgangsbalk per spiergroep ernaast.',
-      },
-    ],
-    figuurAlt: 'Getekende spierkaart van een lichaam, vooraanzicht, zoals in Carve. De spieren van de gekozen trainingsdag lichten op.',
-    weekKop: 'Deze week',
-    weekLabel: 'Trainingsweek',
-    weekdagen: ['ma', 'di', 'wo', 'do', 'vr', 'za', 'zo'],
+  stadia: {
+    alt: 'Het Carve-personage in vijf stadia, van Start tot Beest.',
+    namen: ['Start', 'Fit', 'Atletisch', 'Gespierd', 'Beest'],
   },
   bewijs: {
     eyebrow: 'Waarom het bestaat',
@@ -302,21 +237,27 @@ const nl: MarketingCopy = {
     voorAlt: 'Furkan van 130 kilo, op straat in Istanbul, telefoon in de hand.',
     nuAlt: 'Furkan van 80 kilo, wandelend met rugzak en stokken, telefoon in de hand.',
   },
-  overzicht: {
-    eyebrow: 'Wat erin zit',
-    kop: 'Je eten en je training op één plek.',
-    intro: 'De meeste trackers stoppen bij het getal. Carve houdt allebei bij, en laat je daardoor de spier zien die je negen dagen niet hebt aangeraakt, naast de week waarvan je dacht dat hij goed ging.',
+  drie: {
+    eyebrow: 'Wat het doet',
+    kop: 'Drie dingen, en die goed.',
     kaarten: [
-      { titel: 'Loggen met een foto', tekst: "Een foto van je bord wordt calorieën en macro's. Geen database doorzoeken." },
-      { titel: 'Barcodescanner', tekst: "Richt op de verpakking. Het product en de macro's staan erin." },
-      { titel: 'Trainingslog', tekst: 'Sets, gewichten, klaar. Elke sessie vult de spierkaart.' },
-      { titel: 'Spierkaart, voor en achter', tekst: 'Zie wat je deze week trainde en wat je blijft overslaan.' },
-      { titel: 'Weekplan', tekst: 'Stel één keer een doel, een split en je trainingsdagen in. De week staat op je beginscherm.' },
-      { titel: 'Een coach die je log leest', tekst: 'Vraag naar je eiwitten, je week of wat je moet trainen. Hij antwoordt op wat je logde.' },
+      { titel: 'Fotografeer je bord', tekst: 'Een foto wordt calorieën en eiwit.' },
+      { titel: 'Zie wat je trainde', tekst: 'Elke training licht op op je personage.' },
+      { titel: 'Weet waar je staat', tekst: 'Je eiwit, je week en je stappen op één plek.' },
     ],
+    bord: 'Kip, rijst, broccoli',
+    bordMacro: '640 kcal · 48 g eiwit',
+    ringVan: 'van 144 g',
+    figuurAlt: 'Het Carve-personage met borst, schouders en triceps opgelicht na een push-training.',
     health: 'Leest je dagelijkse stappen uit Apple Health. Verder niets.',
     privacy: 'Je foto gaat naar de AI die hem leest en wordt niet gebruikt om iets te trainen.',
     privacyLink: 'Hoe we met je gegevens omgaan',
+  },
+  wiki: {
+    eyebrow: 'Carve Wiki',
+    kop: 'Weet wat werkt.',
+    tekst: 'Engelstalige artikelen over training, eten en herstel. Eerst het korte antwoord, met hoe sterk het bewijs is.',
+    alles: 'Naar de wiki',
   },
   prijs: {
     eyebrow: 'Wat het kost',
@@ -336,7 +277,7 @@ const nl: MarketingCopy = {
     proef: 'Elk nieuw account begint met 30 dagen Pro. Die gaat in bij je aanmelding, en je hoeft vooraf geen kaart in te vullen.',
   },
   slot: {
-    kop: 'Zullen we beginnen?',
+    kop: 'Carve a better you.',
     tekst: 'Gratis in de App Store.',
     onderKnop: 'Gratis · iPhone · Gemaakt in Amsterdam',
   },

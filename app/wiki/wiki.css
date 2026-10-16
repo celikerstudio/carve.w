@@ -116,9 +116,9 @@
 .wiki-hero .fig { position: relative; height: 250px; width: 96px; margin: 4px auto 0; }
 .wiki-hero .fig img, .wiki-hero .fig .lit { position: absolute; inset: 0; width: 100%; height: 100%; }
 .wiki-hero .fig .lit {
-  background: url(/wiki/character_woman_s3_front_vivid.png) center / 100% 100%;
-  -webkit-mask-image: url(/wiki/character_woman_s3_front_chest.png), url(/wiki/character_woman_s3_front_shoulders.png), url(/wiki/character_woman_s3_front_quads.png);
-  mask-image: url(/wiki/character_woman_s3_front_chest.png), url(/wiki/character_woman_s3_front_shoulders.png), url(/wiki/character_woman_s3_front_quads.png);
+  background: url(/character/character_woman_s3_front_vivid.png) center / 100% 100%;
+  -webkit-mask-image: url(/character/character_woman_s3_front_chest.png), url(/character/character_woman_s3_front_shoulders.png), url(/character/character_woman_s3_front_quads.png);
+  mask-image: url(/character/character_woman_s3_front_chest.png), url(/character/character_woman_s3_front_shoulders.png), url(/character/character_woman_s3_front_quads.png);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
@@ -178,7 +178,7 @@
 .wiki-tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
 .wiki-tile { display: flex; flex-direction: column; border-radius: 22px; background: var(--card); border: 1px solid var(--line); overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
 .wiki-tile:hover { border-color: rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
-.wiki-tile .crop { height: 150px; background-color: rgba(255, 255, 255, 0.025); background-repeat: no-repeat; background-image: url(/wiki/character_man_front_hair_crew.png), url(/wiki/character_man_s3_front.png); }
+.wiki-tile .crop { height: 150px; background-color: rgba(255, 255, 255, 0.025); background-repeat: no-repeat; background-image: url(/character/character_man_front_hair_crew.png), url(/character/character_man_s3_front.png); }
 .wiki-tile .b { padding: 16px; display: flex; flex-direction: column; flex: 1; }
 .wiki-tile .k { font-size: 12.5px; color: var(--t3); }
 .wiki-tile h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin: 2px 0 10px; }

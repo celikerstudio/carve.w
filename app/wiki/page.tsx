@@ -21,7 +21,7 @@ const EVIDENCE_RANK: Record<string, number> = { 'well-established': 3, 'expert-c
  *
  * @ai-why: Het lichaam loopt door in de lijst eronder (variant A uit de companion, 2026-10-16).
  *   Een kale lijst met chevrons onder het personage las als een andere site.
- * @ai-fragile: Gemeten op `public/wiki/character_man_s3_front.png` (581 × 1400). Wordt het
+ * @ai-fragile: Gemeten op `public/character/character_man_s3_front.png` (581 × 1400). Wordt het
  *   personage opnieuw gegenereerd, kijk dan of de uitsnedes nog op buik, schouder, benen, hand en
  *   hoofd vallen.
  */

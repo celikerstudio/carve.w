@@ -1,0 +1,18 @@
+/*
+ * Wat de marketingpagina nodig heeft en Tailwind niet zonder omweg kan: de lichtbundel achter
+ * de hero en de gloed op het personage.
+ *
+ * @ai-sync: app/wiki/wiki.css (dezelfde gloed op het personage naast een artikel)
+ */
+.mk-spot { background: radial-gradient(ellipse at 50% 70%, rgba(255, 255, 255, 0.06), transparent 60%); }
+.mk-lit {
+  background: url(/character/character_man_s3_front_vivid.png) center / 100% 100%;
+  -webkit-mask-image: url(/character/character_man_s3_front_chest.png), url(/character/character_man_s3_front_shoulders.png), url(/character/character_man_s3_front_triceps.png);
+  mask-image: url(/character/character_man_s3_front_chest.png), url(/character/character_man_s3_front_shoulders.png), url(/character/character_man_s3_front_triceps.png);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.3));
+  animation: mk-glow 3.2s ease-in-out infinite;
+}
+@keyframes mk-glow { 0%, 100% { opacity: 0.15; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .mk-lit { animation: none; opacity: 0.8; } }

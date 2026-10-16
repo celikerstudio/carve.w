@@ -4,7 +4,7 @@
 - **Datum:** 2026-10-16
 - **Beslisser:** Furkan
 - **Gerelateerd:** overrulet beslissing 6 van [TDR-0005](./0005-carve-wiki-is-een-marketingpagina.md) (de wiki dicht) · haalt de Wiki-modus uit de cockpit van [TDR-0008](./0008-de-cockpit-is-de-homepage.md)
-- **Raakt:** `app/wiki/` (nieuw), `components/wiki/public/` (nieuw), `lib/wiki/` (artikelen, renderer, rekenhulp), `app/(cockpit)/wiki/` (weg), `components/chat/CockpitShell.tsx`, `app/sitemap.ts`, `lib/flags.ts` (`SHOW_WIKI` weg), `public/wiki/`
+- **Raakt:** `app/wiki/` (nieuw), `components/wiki/public/` (nieuw), `lib/wiki/` (artikelen, renderer, rekenhulp), `app/(cockpit)/wiki/` (weg), `components/chat/CockpitShell.tsx`, `app/sitemap.ts`, `lib/flags.ts` (`SHOW_WIKI` weg), `public/character/` (gedeeld met de marketingpagina)
 
 ## Context
 

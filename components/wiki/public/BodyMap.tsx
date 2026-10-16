@@ -46,8 +46,8 @@ const POINTS: Record<Figure, { category: string; x: number; y: number; left?: bo
 //   `CharacterAvatar.headArt`). Met één verhouding voor allebei werd de man ingedrukt en vielen
 //   de punten naast het lijf (Supplements op de broekband in plaats van bij de hand).
 const ART: Record<Figure, { body: string; hair: string; ratio: string }> = {
-  man: { body: '/wiki/character_man_s3_front.png', hair: '/wiki/character_man_front_hair_crew.png', ratio: '581 / 1400' },
-  woman: { body: '/wiki/character_woman_s3_front.png', hair: '/wiki/character_woman_front_hair_ponytail.png', ratio: '538 / 1400' },
+  man: { body: '/character/character_man_s3_front.png', hair: '/character/character_man_front_hair_crew.png', ratio: '581 / 1400' },
+  woman: { body: '/character/character_woman_s3_front.png', hair: '/character/character_woman_front_hair_ponytail.png', ratio: '538 / 1400' },
 };
 
 export function BodyMap({ categories }: { categories: BodyMapCategory[] }) {

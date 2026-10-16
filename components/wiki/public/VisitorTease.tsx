@@ -1,3 +1,4 @@
+import type { ArticleTease } from '@/lib/wiki/source-file';
 import { GetCarveLink } from './GetCarveLink';
 
 /**
@@ -9,6 +10,9 @@ import { GetCarveLink } from './GetCarveLink';
  *   zou Google en de lezer allebei buitensluiten.
  * @ai-gotcha: Elke zin hier is een belofte over de app. Alleen wat de app vandaag kan:
  *   eten loggen met een foto, sets loggen, herstel per spier, weken op rij.
+ * @ai-why: Een artikel kan een eigen `tease` hebben in zijn bronbestand (TDR-0017 §8): bij Protein
+ *   past "Protein today: 96 of 144 g" beter dan de zin voor heel Nutrition. Zonder `tease` blijft
+ *   de zin per categorie hieronder.
  */
 const COPY: Record<string, { title: string; line: string; preview: string }> = {
   Nutrition: { title: 'And how much do you eat?', line: 'Snap your plate. Carve counts it and shows your gap.', preview: 'Breakfast is the gap. You average 12 g there.' },
@@ -18,8 +22,8 @@ const COPY: Record<string, { title: string; line: string; preview: string }> = {
   Mindset: { title: 'How consistent are you?', line: 'Carve keeps your weeks in a row, so you see it.', preview: '4 weeks in a row.' },
 };
 
-export function VisitorTease({ category }: { category: string }) {
-  const copy = COPY[category] ?? COPY.Nutrition;
+export function VisitorTease({ category, article, tease }: { category: string; article?: string; tease?: ArticleTease }) {
+  const copy = tease ?? COPY[category] ?? COPY.Nutrition;
   return (
     <div className="wiki-tease">
       <div className="blur" aria-hidden>
@@ -32,7 +36,7 @@ export function VisitorTease({ category }: { category: string }) {
           <b>{copy.title}</b>
           <span>{copy.line}</span>
         </div>
-        <GetCarveLink source="wiki_tease" />
+        <GetCarveLink source="wiki_tease" article={article} />
       </div>
     </div>
   );

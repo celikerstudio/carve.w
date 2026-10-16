@@ -40,3 +40,22 @@ export function appStoreCampaignUrl(
   url.searchParams.set('ct', ct)
   return url.toString()
 }
+
+/**
+ * Welke campagne er achter de link komt: die uit de advertentie waarmee de bezoeker binnenkwam,
+ * anders die van de plek op de site (TDR-0017 §8).
+ *
+ * @ai-why: De advertentie gaat voor. Wie via een advertentie op een wiki-artikel landt, is door
+ *   de advertentie gekomen; die download hoort bij de campagne die ervoor betaalde.
+ */
+export function pickCampaign(params: URLSearchParams, fallback?: string): string | null {
+  return params.get('utm_campaign') ?? params.get('utm_id') ?? fallback ?? null
+}
+
+/**
+ * `wiki` plus de slug, zodat App Store Connect de downloads per artikel laat zien. De streepjes
+ * verdwijnen in `schoon`; `calorie-deficit` wordt `wikicaloriedeficit`.
+ */
+export function wikiCampaign(slug: string): string {
+  return `wiki${slug}`
+}

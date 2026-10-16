@@ -26,6 +26,13 @@ const nextConfig: NextConfig = {
       { source: '/chat', destination: '/', permanent: true },
     ];
   },
+  // @ai-why: De artikelpagina leest de `tease` uit het bronbestand (lib/wiki/tease.ts). Bij een
+  //   verversing op Vercel draait die pagina als functie, en die krijgt alleen bestanden mee die
+  //   hier staan.
+  // @ai-sync: lib/wiki/tease.ts
+  outputFileTracingIncludes: {
+    '/wiki/[category]/[slug]': ['./content/wiki/**/*.md'],
+  },
   images: {
     remotePatterns: [
       {

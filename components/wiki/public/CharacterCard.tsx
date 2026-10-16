@@ -12,7 +12,7 @@ import { GetCarveLink } from './GetCarveLink';
  *   (Carve-AI `Assets.xcassets/character`), verkleind tot 700 px hoog. Wordt het personage daar
  *   opnieuw gegenereerd, kopieer ze dan opnieuw; anders loopt de wiki een stadium achter.
  */
-export function CharacterCard() {
+export function CharacterCard({ article }: { article?: string }) {
   return (
     <div className="wiki-hero">
       <span className="tag">This could be you</span>
@@ -26,7 +26,7 @@ export function CharacterCard() {
       <div className="floor" />
       <b>Eat it. Train it. See it.</b>
       <p>Your Carve character lights up what you trained and grows as you get stronger.</p>
-      <GetCarveLink source="wiki_character" />
+      <GetCarveLink source="wiki_character" article={article} />
     </div>
   );
 }

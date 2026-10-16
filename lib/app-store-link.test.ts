@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { appStoreCampaignUrl } from './app-store-link'
+import { appStoreCampaignUrl, pickCampaign, wikiCampaign } from './app-store-link'
 
 const BASIS = 'https://apps.apple.com/app/carve-ai/id6742664476'
 
@@ -48,5 +48,22 @@ describe('appStoreCampaignUrl', () => {
 
   it('geeft de kale link terug als er na het opschonen niets overblijft', () => {
     expect(appStoreCampaignUrl(BASIS, '???', 'PROV123')).toBe(BASIS)
+  })
+})
+
+describe('campagne kiezen (TDR-0017 §8)', () => {
+  it('geeft een advertentiecampagne voorrang op die van de wiki', () => {
+    expect(pickCampaign(new URLSearchParams('utm_campaign=zomer2026'), wikiCampaign('protein'))).toBe('zomer2026')
+    expect(pickCampaign(new URLSearchParams('utm_id=120210000000001'), wikiCampaign('protein'))).toBe('120210000000001')
+  })
+
+  it('valt terug op de wiki-campagne van het artikel', () => {
+    expect(pickCampaign(new URLSearchParams(''), wikiCampaign('protein'))).toBe('wikiprotein')
+    expect(pickCampaign(new URLSearchParams(''))).toBeNull()
+  })
+
+  it('maakt van een slug met streepjes een ct die Apple accepteert', () => {
+    const url = new URL(appStoreCampaignUrl(BASIS, wikiCampaign('calorie-deficit'), 'PROV123'))
+    expect(url.searchParams.get('ct')).toBe('wikicaloriedeficit')
   })
 })

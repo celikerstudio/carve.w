@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { appStoreCampaignUrl } from '@/lib/app-store-link'
+import { appStoreCampaignUrl, pickCampaign } from '@/lib/app-store-link'
 import { APP_STORE_URL } from '@/lib/utils'
 
 /**
@@ -21,14 +21,15 @@ import { APP_STORE_URL } from '@/lib/utils'
  * @ai-sync: lib/app-store-link.ts
  * @ai-sync: docs/tdr/0009-campagnerendement-komt-uit-ga4.md
  */
-export function useAppStoreUrl(): string {
+/** @param fallback De campagne van de plek op de site, als de bezoeker niet via een advertentie kwam. */
+export function useAppStoreUrl(fallback?: string): string {
   const [url, setUrl] = useState(APP_STORE_URL)
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     // @ai-why: Liever de naam dan het id. Dit cijfer lees je met het oog in App Store
     // Connect, en daar is `zomer2026` bruikbaar en `120210000000001` niet.
-    const campagne = params.get('utm_campaign') ?? params.get('utm_id')
+    const campagne = pickCampaign(params, fallback)
 
     setUrl(
       appStoreCampaignUrl(
@@ -37,7 +38,7 @@ export function useAppStoreUrl(): string {
         process.env.NEXT_PUBLIC_APPSTORE_PROVIDER_TOKEN,
       ),
     )
-  }, [])
+  }, [fallback])
 
   return url
 }

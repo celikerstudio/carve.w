@@ -10,6 +10,7 @@ import { SeeAlso, Sources, WikiSidebar } from '@/components/wiki/public/ArticleP
 import { getArticle, getCitations, linkMap, listArticles, seeAlso } from '@/lib/wiki/articles';
 import { CALCULATORS, EVIDENCE_LABEL, categoryBySlug, categoryByName, readMinutes } from '@/lib/wiki/catalog';
 import { renderArticle, renderFragment, splitTakeaway } from '@/lib/wiki/render';
+import { articleTease } from '@/lib/wiki/tease';
 import { AUTHOR, articleJsonLd, isIndexable, wikiMetadata } from '@/lib/wiki/seo';
 
 // @ai-why: Statisch, een keer per uur ververst (TDR-0016 §2). Een nieuw artikel in de database
@@ -89,7 +90,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
               {calc ? <AnswerCalculator calc={calc} /> : <div dangerouslySetInnerHTML={{ __html: answer! }} />}
             </div>
           )}
-          <VisitorTease category={article.category} />
+          <VisitorTease category={article.category} article={slug} tease={articleTease(slug, article.category)} />
 
           <div className="wiki-prose" dangerouslySetInnerHTML={{ __html: html }} />
 
@@ -99,7 +100,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
 
         <aside className="wiki-right">
           <OnThisPage toc={toc} />
-          <CharacterCard />
+          <CharacterCard article={slug} />
         </aside>
       </div>
     </>

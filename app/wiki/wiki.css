@@ -223,3 +223,15 @@
   .wiki-tiles { grid-template-columns: 1fr; }
   .wiki-tile .crop { height: 130px; }
 }
+
+/* /about (TDR-0017 §1): één leeskolom zoals een artikel, met de twee foto's van de marketingpagina. */
+.wiki-about { max-width: 640px; margin: 0 auto; padding: 48px 16px 140px; }
+.wiki-about .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 32px 0 8px; }
+.wiki-about figure { margin: 0; }
+.wiki-about img { width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--line); }
+.wiki-about img.before { opacity: 0.7; filter: grayscale(1); }
+.wiki-about figcaption { font-size: 13px; color: var(--t3); margin-top: 8px; }
+.wiki-about .wiki-prose a { color: var(--t1); text-decoration: underline; text-underline-offset: 3px; }
+.wiki-meta a { color: var(--t2); }
+.wiki-meta a:hover { color: var(--t1); }
+@media (max-width: 600px) { .wiki-about h1 { font-size: 40px; } }

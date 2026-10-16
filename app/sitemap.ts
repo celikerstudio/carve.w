@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { VRAAGPAGINAS } from '@/lib/vraagpaginas'
 import { listArticles } from '@/lib/wiki/articles'
 import { WIKI_CATEGORIES } from '@/lib/wiki/catalog'
+import { isIndexable } from '@/lib/wiki/seo'
 
 // @ai-why: Er was geen sitemap en geen robots.txt. TDR-0001 verplaatst de uitleg
 // van / naar een aparte pagina, en de aanname "de vindbaarheid verhuist mee" is
@@ -50,10 +51,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/privacy',          priority: 0.2,  changeFrequency: 'yearly'  as const },
     { path: '/terms',            priority: 0.2,  changeFrequency: 'yearly'  as const },
     { path: '/wiki',             priority: 0.8,  changeFrequency: 'weekly'  as const },
+    // @ai-sync: lib/wiki/seo.ts (AUTHOR.path)
+    { path: '/about',            priority: 0.5,  changeFrequency: 'monthly' as const },
     ...WIKI_CATEGORIES.map((c) => ({ path: `/wiki/${c.slug}`, priority: 0.6, changeFrequency: 'weekly' as const })),
   ]
 
-  const articles = await listArticles()
+  // @ai-why: Alleen artikelen die in de index mogen (TDR-0017 §2). Een URL met `noindex` in de
+  //   sitemap is een tegenstrijdig signaal, en Search Console meldt hem als fout.
+  // @ai-sync: lib/wiki/seo.ts (isIndexable)
+  const articles = (await listArticles()).filter(isIndexable)
 
   return [
     ...routes.map(({ path, priority, changeFrequency }) => ({

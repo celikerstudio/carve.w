@@ -24,6 +24,10 @@ export interface WikiArticleSummary {
   evidence: string;
   href: string;
   updatedAt: string;
+  /** `type = 'reviewed'`: Furkan heeft het gelezen en aangevuld (TDR-0017 §2). */
+  reviewed: boolean;
+  /** Aantal rijen in `wiki_citations`. */
+  sources: number;
 }
 
 export interface WikiArticle extends WikiArticleSummary {
@@ -47,10 +51,15 @@ function client() {
   });
 }
 
+/** PostgREST geeft een ingebedde telling terug als `[{ count: n }]`. */
+function sourceCount(embedded: { count: number }[] | null | undefined): number {
+  return embedded?.[0]?.count ?? 0;
+}
+
 export const listArticles = cache(async (): Promise<WikiArticleSummary[]> => {
   const { data, error } = await client()
     .from('wiki_articles')
-    .select('slug, title, category, summary, evidence_rating, updated_at')
+    .select('slug, title, category, summary, evidence_rating, updated_at, type, wiki_citations(count)')
     .eq('is_published', true)
     .eq('language', 'en')
     .order('title');
@@ -68,6 +77,8 @@ export const listArticles = cache(async (): Promise<WikiArticleSummary[]> => {
       evidence: row.evidence_rating ?? 'expert-consensus',
       href,
       updatedAt: row.updated_at,
+      reviewed: row.type === 'reviewed',
+      sources: sourceCount(row.wiki_citations),
     }];
   });
 });
@@ -75,7 +86,7 @@ export const listArticles = cache(async (): Promise<WikiArticleSummary[]> => {
 export const getArticle = cache(async (slug: string): Promise<WikiArticle | null> => {
   const { data, error } = await client()
     .from('wiki_articles')
-    .select('id, slug, title, category, summary, evidence_rating, content_markdown, tags, updated_at')
+    .select('id, slug, title, category, summary, evidence_rating, content_markdown, tags, updated_at, type, wiki_citations(count)')
     .eq('slug', slug)
     .eq('is_published', true)
     .eq('language', 'en')
@@ -95,6 +106,8 @@ export const getArticle = cache(async (slug: string): Promise<WikiArticle | null
     markdown: data.content_markdown ?? '',
     tags: data.tags ?? [],
     updatedAt: data.updated_at,
+    reviewed: data.type === 'reviewed',
+    sources: sourceCount(data.wiki_citations),
   };
 });
 

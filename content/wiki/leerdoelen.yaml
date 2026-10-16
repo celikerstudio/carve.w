@@ -99,21 +99,21 @@
   doel: "Weet dat een beetje bewegen altijd beter is dan niets doen, ook als je de richtlijn nog niet haalt."
   bron: who-physical-activity-2020
   passage: "For all populations, doing some physical activity is better than doing none."
-  artikel: consistency
+  artikel: physical-activity
 
 - id: wekelijkse-aerobe-minuten
   laag: fundament
   doel: "Weet dat volwassenen per week 150 tot 300 minuten matig intensief of 75 tot 150 minuten zwaar intensief aerobe activiteit nodig hebben."
   bron: who-physical-activity-2020
   passage: "Adults should do at least 150–300 min of moderate-intensity aerobic physical activity, or at least 75–150 min of vigorous-intensity aerobic physical activity"
-  artikel: null
+  artikel: physical-activity
 
 - id: krachttraining-twee-dagen
   laag: fundament
   doel: "Weet dat je op minstens 2 dagen per week alle grote spiergroepen traint op matige of hogere intensiteit."
   bron: who-physical-activity-2020
   passage: "Adults should also do muscle-strengthening activities at moderate or greater intensity that involve all major muscle groups on 2 or more days a week, as these provide additional health benefits."
-  artikel: frequency
+  artikel: physical-activity
 
 - id: rustig-opbouwen
   laag: fundament
@@ -127,14 +127,14 @@
   doel: "Weet dat je zittijd beperkt en dat zittijd vervangen door elke vorm van beweging, ook lichte, gezondheidswinst geeft."
   bron: who-physical-activity-2020
   passage: "Adults should limit the amount of time spent being sedentary. Replacing sedentary time with physical activity of any intensity (including light intensity) provides health benefits"
-  artikel: null
+  artikel: physical-activity
 
 - id: korte-blokken-tellen
   laag: fundament
   doel: "Weet dat beweegblokken van elke duur meetellen voor je wekelijkse minuten, niet alleen blokken van 10 minuten of langer."
   bron: who-physical-activity-2020
   passage: "MVPA bouts of any duration now count towards these recommendations, reflecting new evidence to support the value of total physical activity volume, regardless of bout length."
-  artikel: null
+  artikel: physical-activity
 
 - id: slaap-zeven-uur
   laag: fundament
@@ -567,7 +567,7 @@
   doel: "Weet dat gezonde mensen zonder contra-indicaties zonder medische keuring mogen beginnen en rustig mogen opbouwen."
   bron: who-physical-activity-2020
   passage: "Pre-exercise medical clearance is generally unnecessary. Individuals who are not currently regularly active and have no contraindications can be recommended to commence and gradually increase levels and intensity of physical activity without a medical clearance."
-  artikel: null
+  artikel: physical-activity
 
 - id: gewoonte-ochtend
   laag: naslag

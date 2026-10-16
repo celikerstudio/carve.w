@@ -37,7 +37,7 @@ export async function fetchSource(doi: string): Promise<{ meta: Record<string, u
   const res = await fetch(`${EPMC}/search?query=${encodeURIComponent(`DOI:"${doi}"`)}&format=json&resultType=core`);
   if (!res.ok) throw new Error(`Europe PMC: HTTP ${res.status}`);
   const rec = ((await res.json()) as { resultList?: { result?: EpmcRecord[] } }).resultList?.result?.[0];
-  if (!rec) return null;
+  if (!rec) return fromCrossrefOnly(doi);
 
   let text = '';
   let kind: 'full' | 'abstract' = 'abstract';
@@ -66,6 +66,35 @@ export async function fetchSource(doi: string): Promise<{ meta: Record<string, u
       fetched: new Date().toISOString().slice(0, 10),
     },
     text,
+  };
+}
+
+/**
+ * Terugval als Europe PMC de DOI niet kent (psychologie, sommige uitgevers). Crossref heeft dan vaak
+ * nog de gegevens en soms de samenvatting; nooit de volledige tekst.
+ *
+ * @ai-why: Lally 2009 (de 66-dagenstudie, 10.1002/ejsp.674) staat niet in Europe PMC en kon
+ *   daardoor niet worden opgeslagen, terwijl `consistency` erop steunt.
+ */
+async function fromCrossrefOnly(doi: string): Promise<{ meta: Record<string, unknown>; text: string } | null> {
+  const res = await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}`, { headers: { 'User-Agent': 'CarveWiki/1.0 (https://carve.wiki)' } });
+  if (!res.ok) return null;
+  const w = ((await res.json()) as { message?: Record<string, any> }).message; // eslint-disable-line @typescript-eslint/no-explicit-any
+  if (!w) return null;
+  const abstract = String(w.abstract ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  return {
+    meta: {
+      doi,
+      title: String(w.title?.[0] ?? '').replace(/<[^>]+>/g, ''),
+      authors: (w.author ?? []).map((p: { family?: string; given?: string }) => `${p.family ?? ''} ${(p.given ?? '').split(/[\s.-]+/).filter(Boolean).map((n) => n[0]).join('')}`.trim()).join(', '),
+      journal: w['container-title']?.[0],
+      year: w.issued?.['date-parts']?.[0]?.[0],
+      license: 'onbekend (Crossref)',
+      text: 'abstract',
+      url: `https://doi.org/${doi}`,
+      fetched: new Date().toISOString().slice(0, 10),
+    },
+    text: `## Abstract\n\n${abstract || '(Crossref heeft geen samenvatting. Lees de bron via de link en citeer zo nodig onder ## Passages (handmatig geciteerd).)'}`,
   };
 }
 

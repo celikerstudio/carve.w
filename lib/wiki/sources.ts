@@ -74,11 +74,25 @@ export function fromPubmed(s: PubmedSummary): SourceMeta {
 
 const UA = 'CarveWiki/1.0 (https://carve.wiki; source check)';
 
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/**
+ * @ai-why: Met een pauze en opnieuw proberen bij 429. `pnpm wiki:check` over alle artikelen doet
+ *   tientallen verzoeken achter elkaar, en Crossref en NCBI (ongeveer drie per seconde) weigeren
+ *   dan. Zonder retry faalde de hele check op een bron die gewoon bestaat.
+ */
 async function getJson(url: string): Promise<unknown> {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
-  return res.json();
+  for (let attempt = 0; ; attempt++) {
+    await sleep(350);
+    const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
+    if (res.status === 404) return null;
+    if (res.status === 429 && attempt < 4) {
+      await sleep(1000 * 2 ** attempt);
+      continue;
+    }
+    if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
+    return res.json();
+  }
 }
 
 /** De gegevens zoals de uitgever ze kent, of `null` als de DOI of PMID niet bestaat. */

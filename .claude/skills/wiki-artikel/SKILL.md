@@ -44,6 +44,8 @@ Een artikel dat geen leerdoel dient, is een kandidaat om samen te voegen of uit 
 
 **Kun je iets niet verifiëren, zet het dan in `:::check`.** Die tekst gaat niet naar database, web of app, maar staat op de redactielijst van `wiki:check`. Een onzeker getal in de lopende tekst zetten is de enige echt onvergeeflijke fout: het ziet er even betrouwbaar uit als de rest. Dat geldt ook voor je eigen inschattingen ("de meeste mensen...").
 
+**`:::check` omhult de bewering zelf, niet een notitie erover.** De schrijver van `progressive-overload` (2026-10-16) zette in een check "dit is algemene coachkennis" en liet de bewering in de tekst staan; dan gaat de onzekere zin gewoon live. Zonder bron: maak er advies van ("try a smaller step") in plaats van een feit ("stalls come sooner the longer you train"), of zet de zin zelf in de check.
+
 PubMed geeft soms een lege samenvatting als je te snel achter elkaar vraagt (limiet van ongeveer drie per seconde). Een lege samenvatting betekent dus niet dat er geen is: probeer het opnieuw voor je concludeert.
 
 ## De opmaak

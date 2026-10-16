@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { hasOpenNotes, lintArticle, parseArticleFile, serializeArticleFile, toSearchText, type ArticleFile } from './source-file';
+import { hasOpenNotes, lintArticle, listChecks, parseArticleFile, stripChecks, serializeArticleFile, toSearchText, type ArticleFile } from './source-file';
 
 const ok: ArticleFile = {
   slug: 'protein',
@@ -125,5 +125,30 @@ describe('opmaakregels (TDR-0017 §5)', () => {
 describe('zoektekst', () => {
   it('maakt platte tekst voor de zoekvector, zonder opmaak en met de linktekst', () => {
     expect(toSearchText('## Kop\n\n**Vet** en [[hypertrophy|groei]] [1].\n\n:::takeaway\nEet.\n:::')).toBe('Kop Vet en groei. Eet.');
+  });
+});
+
+describe(':::check (TDR-0018 §6)', () => {
+  const withCheck = `${ok.body}\n\n:::check\nMost people lose 1 kg a week at first.\n:::\n\nLast line.`;
+
+  it('haalt een check-blok weg uit wat naar buiten gaat, en laat de rest staan', () => {
+    const out = stripChecks(withCheck);
+    expect(out).not.toContain('Most people lose');
+    expect(out).not.toMatch(/^:::check\s*$/m);
+    expect(out).toContain('Last line.');
+    expect(out).not.toMatch(/\n{3,}/);
+  });
+
+  it('geeft de open checks terug voor de redactielijst', () => {
+    expect(listChecks(withCheck)).toEqual(['Most people lose 1 kg a week at first.']);
+  });
+
+  it('keurt een artikel met een check goed: de check gaat toch niet mee', () => {
+    expect(lintArticle({ ...ok, body: withCheck }, slugs)).toEqual([]);
+  });
+
+  it('controleert de opmaak in een check niet, want die tekst gaat niet naar de app', () => {
+    const body = `${ok.body}\n\n:::check\n| a | b |\n:::`;
+    expect(lintArticle({ ...ok, body }, slugs)).toEqual([]);
   });
 });

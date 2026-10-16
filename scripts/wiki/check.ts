@@ -14,7 +14,7 @@
  * @ai-gotcha: `--fill` neemt de gegevens van de uitgever over. Het vult nooit een bron aan die
  *   niet gevonden wordt; die blijft een fout tot de DOI of PMID klopt of de bron weg is.
  */
-import { lintArticle, type ArticleFile } from '../../lib/wiki/source-file';
+import { lintArticle, listChecks, type ArticleFile } from '../../lib/wiki/source-file';
 import { fetchAbstract, lookupSource, titlesMatch } from '../../lib/wiki/sources';
 import { readArticleFiles, writeArticleFile } from './files';
 
@@ -73,6 +73,10 @@ async function main() {
       console.log(`✓ ${file.slug} (${file.status}, ${file.sources.length} ${file.sources.length === 1 ? 'bron' : 'bronnen'})`);
     }
   }
+  // De redactielijst: wat in :::check staat, staat niet online en wacht op een bron of op Furkan.
+  const open = picked.flatMap(({ file }) => listChecks(file.body).map((c) => `  ${file.slug}: ${c.replace(/\s+/g, ' ').slice(0, 140)}`));
+  if (open.length) console.log(`\nRedactielijst (${open.length} open, niet online):\n${open.join('\n')}`);
+
   const reviewed = picked.filter((a) => a.file.status === 'reviewed').length;
   console.log(`\n${picked.length} gecontroleerd, ${failed} met fouten, ${reviewed} beoordeeld.`);
   process.exit(failed ? 1 : 0);

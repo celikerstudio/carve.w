@@ -115,7 +115,8 @@ const ALLOWED_BLOCKS = new Set(['takeaway', 'checklist']);
  */
 export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
   const errors: string[] = [];
-  const body = a.body;
+  // Wat naar buiten gaat: zonder :::check, want die tekst ziet de app nooit.
+  const body = stripChecks(a.body);
 
   if (!a.title) errors.push('titel ontbreekt');
   if (!categoryByName(a.category)) errors.push(`onbekende categorie "${a.category}"`);
@@ -174,6 +175,25 @@ export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
   }
 
   return errors;
+}
+
+const CHECK = /^:::check\s*\n([\s\S]*?)\n:::\s*$/gm;
+
+/**
+ * De tekst zonder `:::check`-blokken: dat is wat naar database, web en app gaat (TDR-0018 §6).
+ *
+ * @ai-why: Een bewering die niet te verifiëren is, ziet er in de lopende tekst even betrouwbaar uit
+ *   als de rest. In de naslagwerken (~/Developer/naslagwerken) heet dat "de enige echt
+ *   onvergeeflijke fout". Zo kan de rest van het artikel live terwijl die ene zin wacht.
+ * @ai-sync: scripts/wiki/sync.ts (schrijft alleen de gestripte tekst)
+ */
+export function stripChecks(markdown: string): string {
+  return markdown.replace(CHECK, '').replace(/\n{3,}/g, '\n\n').trim();
+}
+
+/** De inhoud van elk `:::check`-blok, voor de redactielijst van `wiki:check`. */
+export function listChecks(markdown: string): string[] {
+  return [...markdown.matchAll(CHECK)].map((m) => m[1].trim());
 }
 
 /**

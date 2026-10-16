@@ -18,7 +18,7 @@
 import { config } from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
 import { AUTHOR } from '../../lib/wiki/seo';
-import { hasOpenNotes, lintArticle, toSearchText, type ArticleFile } from '../../lib/wiki/source-file';
+import { hasOpenNotes, lintArticle, stripChecks, toSearchText, type ArticleFile } from '../../lib/wiki/source-file';
 import { sourceUrl } from '../../lib/wiki/sources';
 import { readArticleFiles } from './files';
 
@@ -63,7 +63,8 @@ function desiredRow(file: ArticleFile, existing: Row | undefined) {
     //   en zijn naam onder een ongelezen tekst is precies wat TDR-0017 §1 uitsluit.
     author: file.status === 'reviewed' ? AUTHOR.name : !existing?.author || existing.author === AUTHOR.name ? 'Carve Team' : existing.author,
     citation_ids: file.citationIds,
-    content_markdown: file.body,
+    // Zonder :::check: wat niet geverifieerd is, gaat niet naar buiten (TDR-0018 §6).
+    content_markdown: stripChecks(file.body),
   };
 }
 
@@ -129,7 +130,7 @@ async function main() {
     const patch: Record<string, unknown> = Object.fromEntries(
       Object.entries(want).filter(([k, v]) => !existing || !same(existing[k as keyof Row], v)),
     );
-    if ('content_markdown' in patch) patch.search_text = toSearchText(file.body);
+    if ('content_markdown' in patch) patch.search_text = toSearchText(stripChecks(file.body));
 
     const cites = desiredCitations(file);
     const citesChanged = !same(

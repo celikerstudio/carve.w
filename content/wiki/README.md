@@ -42,12 +42,19 @@ Alleen wat het web en de app allebei kunnen tonen:
 - `[[slug]]` of `[[slug|tekst]]` naar een ander artikel
 - `[1]` voor bron 1 uit `sources`
 
-Niet: tabellen, afbeeldingen, HTML, een `#`-kop, externe links in de tekst, andere `:::`-blokken. Je eigen ervaring komt onder een gewone kop, bijvoorbeeld `## What worked for me`.
+Niet: tabellen, afbeeldingen, HTML, een `#`-kop of `####`, citaten, codeblokken, scheidingslijnen, links in de tekst, een lijst in de takeaway, andere `:::`-blokken. Je eigen ervaring komt onder een gewone kop, bijvoorbeeld `## What worked for me`.
+
+Wat je niet kunt verifiëren zet je in een `:::check`-blok. Dat gaat niet mee naar web en app, maar staat op de redactielijst van `pnpm wiki:check`.
+
+## Wat er geschreven wordt
+
+`leerdoelen.yaml` bepaalt het, niet de inval van de dag ([TDR-0018](../../docs/tdr/0018-de-wiki-krijgt-eindtermen.md)). Elk leerdoel komt letterlijk uit een richtlijn in `bronnen/richtlijnen/`. `pnpm wiki:dekking` laat zien wat nog geen artikel heeft. De volledige werkwijze staat in de skill `.claude/skills/wiki-artikel/SKILL.md`.
 
 ## Van concept naar live
 
 1. Concept schrijven. Bij elke bron alleen `doi` (of `pmid`) en `claim`.
 2. `pnpm wiki:check <slug> --fill` zoekt elke bron op bij Crossref of PubMed en vult titel, auteurs, tijdschrift en jaar in. Een bron die niet bestaat blijft een fout.
-3. `pnpm wiki:check <slug> --abstracts` zet per bron de bewering naast de samenvatting. Lees ze: draagt de studie wat de tekst zegt? Zo niet, dan gaat de bron eruit en wordt de zin zachter.
-4. Furkan leest, past aan en schrijft zijn eigen stuk. Bij akkoord: `status: reviewed`.
-5. `pnpm sync-wiki` laat zien wat er verandert, `pnpm sync-wiki --write` schrijft het. Binnen het uur staat het live, en met `status: reviewed` en een bron ook in Google.
+3. `pnpm wiki:check <slug> --abstracts` zet per bron de bewering naast de samenvatting. Lees ze: draagt de studie wat de tekst zegt? Zo niet, dan gaat de bron eruit en wordt de zin zachter. Bewaar de tekst met `pnpm wiki:bron <doi>`.
+4. Review met `docs/wiki-review-prompt.md` op een model met internettoegang.
+5. Furkan leest, past aan en schrijft zijn eigen stuk. Bij akkoord: `status: reviewed`.
+6. `pnpm sync-wiki` laat zien wat er verandert, `pnpm sync-wiki --write` schrijft het. Binnen het uur staat het live, en met `status: reviewed` en een bron ook in Google.

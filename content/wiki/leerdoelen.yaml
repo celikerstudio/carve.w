@@ -1,0 +1,598 @@
+# De leerdoelen van de Carve Wiki (TDR-0018): wat de wiki moet uitleggen.
+#
+# Elk leerdoel komt uit een richtlijn in bronnen/richtlijnen/, en `passage` staat daar letterlijk
+# in. `pnpm wiki:dekking` controleert dat, en laat zien welke leerdoelen nog geen artikel hebben.
+# Eerste versie 2026-10-16: voorgesteld door vijf agents uit elf richtlijnen, daarna ontdubbeld en
+# ingekort tot wat een gewone sporter of iemand die wil afvallen moet weten.
+#
+# laag: fundament | vet-verliezen | spier-opbouwen | naslag
+# artikel: de slug die het uitlegt, of null
+
+# ── fundament (25) ──
+
+- id: eiwit-per-kilo
+  laag: fundament
+  doel: "Weet dat 1,4 tot 2,0 gram eiwit per kg lichaamsgewicht per dag genoeg is voor de meeste mensen die trainen om spier op te bouwen of te behouden."
+  bron: issn-protein-2017
+  passage: "an overall daily protein intake in the range of 1.4–2.0 g protein/kg body weight/day (g/kg/d) is sufficient for most exercising individuals"
+  artikel: protein
+
+- id: rda-te-laag
+  laag: fundament
+  doel: "Weet dat de algemene norm van 0,8 gram eiwit per kg per dag te laag is voor iemand die serieus traint."
+  bron: issn-protein-2017
+  passage: "The current RDA for protein is 0.8 g/kg/day with multiple lines of evidence indicating this value is not an appropriate amount for a training athlete to meet their daily needs."
+  artikel: protein
+
+- id: totaal-eiwit-gaat-voor-timing
+  laag: fundament
+  doel: "Weet dat je totale eiwit- en calorie-inname belangrijker is voor trainingsresultaat dan het exacte moment waarop je eet."
+  bron: issn-protein-2017
+  passage: "Total protein and calorie intake appears to be the most important consideration when it comes to promoting positive adaptations to resistance training"
+  artikel: meal-timing
+
+- id: eiwit-veilig
+  laag: fundament
+  doel: "Weet dat er geen gecontroleerd bewijs is dat een hogere eiwitinname schade geeft bij gezonde mensen die trainen."
+  bron: issn-protein-2017
+  passage: "no controlled scientific evidence exists indicating that increased intakes of protein pose any health risks in healthy, exercising individuals."
+  artikel: protein
+
+- id: frequentie-stofwisseling
+  laag: fundament
+  doel: "Weet dat vaker eten je verbranding, energieverbruik of rustmetabolisme niet noemenswaardig verhoogt."
+  bron: issn-meal-frequency-2011
+  passage: "Increased meal frequency does not appear to significantly enhance diet induced thermogenesis, total energy expenditure or resting metabolic rate."
+  artikel: metabolism
+
+- id: tekort-drijft-vetverlies
+  laag: fundament
+  doel: "Weet dat vetverlies altijd draait om een aanhoudend caloriedeficit, ongeacht welk dieet je kiest."
+  bron: issn-diets-2017
+  passage: "Diets focused primarily on FM loss (and weight loss beyond initial reductions in body water) operate under the fundamental mechanism of a sustained caloric deficit."
+  artikel: calorie-deficit
+
+- id: dieettype-vrij
+  laag: fundament
+  doel: "Weet dat van vetarm tot koolhydraatarm of keto allerlei eetstijlen even goed werken voor je lichaamssamenstelling, dus dat je er een mag kiezen die je volhoudt."
+  bron: issn-diets-2017
+  passage: "A wide range of dietary approaches (low-fat to low-carbohydrate/ketogenic, and all points between) can be similarly effective for improving body composition"
+  artikel: flexible-dieting
+
+- id: volhouden-bepaalt-succes
+  laag: fundament
+  doel: "Weet dat de langetermijnuitkomst van een dieet vooral afhangt van of je het volhoudt en van tegenwerkende effecten zoals een zakkend verbruik."
+  bron: issn-diets-2017
+  passage: "The long-term success of a diet depends upon compliance and suppression or circumvention of mitigating factors such as adaptive thermogenesis."
+  artikel: consistency
+
+- id: progressieve-training
+  laag: fundament
+  doel: "Weet dat krachttraining progressief moet zijn om te blijven aanpassen aan je doel."
+  bron: acsm-resistance-training-2009
+  passage: "In order to stimulate further adaptation toward specific training goals, progressive resistance training (RT) protocols are necessary."
+  artikel: progressive-overload
+
+- id: beginner-herhalingen
+  laag: fundament
+  doel: "Weet dat beginners volgens ACSM trainen met gewichten waarmee ze 8 tot 12 herhalingen halen."
+  bron: acsm-resistance-training-2009
+  passage: "For novice (untrained individuals with no RT experience or who have not trained for several years) training, it is recommended that loads correspond to a repetition range of an 8-12 repetition maximum (RM)."
+  artikel: rep-ranges
+
+- id: trainingsfrequentie-niveau
+  laag: fundament
+  doel: "Weet dat je als beginner 2 tot 3 dagen per week traint, gemiddeld 3 tot 4 en gevorderd 4 tot 5."
+  bron: acsm-resistance-training-2009
+  passage: "The recommendation for training frequency is 2-3 d x wk(-1) for novice training, 3-4 d x wk(-1) for intermediate training, and 4-5 d x wk(-1) for advanced training."
+  artikel: frequency
+
+- id: gewicht-verhogen
+  laag: fundament
+  doel: "Kan bepalen wanneer je het gewicht verhoogt: met 2 tot 10% zodra je één tot twee herhalingen meer haalt dan gepland."
+  bron: acsm-resistance-training-2009
+  passage: "When training at a specific RM load, it is recommended that 2-10% increase in load be applied when the individual can perform the current workload for one to two repetitions over the desired number."
+  artikel: progressive-overload
+
+- id: beweging-beter-dan-niets
+  laag: fundament
+  doel: "Weet dat een beetje bewegen altijd beter is dan niets doen, ook als je de richtlijn nog niet haalt."
+  bron: who-physical-activity-2020
+  passage: "For all populations, doing some physical activity is better than doing none."
+  artikel: consistency
+
+- id: wekelijkse-aerobe-minuten
+  laag: fundament
+  doel: "Weet dat volwassenen per week 150 tot 300 minuten matig intensief of 75 tot 150 minuten zwaar intensief aerobe activiteit nodig hebben."
+  bron: who-physical-activity-2020
+  passage: "Adults should do at least 150–300 min of moderate-intensity aerobic physical activity, or at least 75–150 min of vigorous-intensity aerobic physical activity"
+  artikel: null
+
+- id: krachttraining-twee-dagen
+  laag: fundament
+  doel: "Weet dat je op minstens 2 dagen per week alle grote spiergroepen traint op matige of hogere intensiteit."
+  bron: who-physical-activity-2020
+  passage: "Adults should also do muscle-strengthening activities at moderate or greater intensity that involve all major muscle groups on 2 or more days a week, as these provide additional health benefits."
+  artikel: frequency
+
+- id: rustig-opbouwen
+  laag: fundament
+  doel: "Weet dat je met kleine hoeveelheden begint en frequentie, intensiteit en duur geleidelijk opbouwt."
+  bron: who-physical-activity-2020
+  passage: "Individuals should start with small amounts of physical activity and gradually increase frequency, intensity and duration over time."
+  artikel: beginner-mistakes
+
+- id: minder-zitten
+  laag: fundament
+  doel: "Weet dat je zittijd beperkt en dat zittijd vervangen door elke vorm van beweging, ook lichte, gezondheidswinst geeft."
+  bron: who-physical-activity-2020
+  passage: "Adults should limit the amount of time spent being sedentary. Replacing sedentary time with physical activity of any intensity (including light intensity) provides health benefits"
+  artikel: null
+
+- id: korte-blokken-tellen
+  laag: fundament
+  doel: "Weet dat beweegblokken van elke duur meetellen voor je wekelijkse minuten, niet alleen blokken van 10 minuten of langer."
+  bron: who-physical-activity-2020
+  passage: "MVPA bouts of any duration now count towards these recommendations, reflecting new evidence to support the value of total physical activity volume, regardless of bout length."
+  artikel: null
+
+- id: slaap-zeven-uur
+  laag: fundament
+  doel: "Weet dat volwassenen regelmatig minstens 7 uur per nacht moeten slapen voor een optimale gezondheid."
+  bron: aasm-srs-sleep-2015
+  passage: "Adults should sleep 7 or more hours per night on a regular basis to promote optimal health."
+  artikel: sleep
+
+- id: gewoonte-21-dagen-mythe
+  laag: fundament
+  doel: "Weet dat het idee van een gewoonte in 21 dagen door onderzoek is weerlegd."
+  bron: habits-singh-2024
+  passage: "clearly refute the popular notion that habits can be formed in approximately 21 days"
+  artikel: fitness-myths
+
+- id: gewoonte-twee-tot-vijf-maanden
+  laag: fundament
+  doel: "Weet dat je minstens twee tot vijf maanden moet rekenen voordat een nieuwe gezonde gewoonte automatisch wordt."
+  bron: habits-singh-2024
+  passage: "Individuals should anticipate a timeframe of at least two to five months to develop automaticity in new health habits, rather than the commonly cited 21-day period."
+  artikel: realistic-expectations
+
+- id: gewoonte-spreiding
+  laag: fundament
+  doel: "Weet dat het vormen van een gewoonte tussen 4 en 335 dagen kan duren, dus dat jouw tempo niet hoeft te kloppen met dat van een ander."
+  bron: habits-singh-2024
+  passage: "with substantial individual variability ranging from 4 to 335 days"
+  artikel: realistic-expectations
+
+- id: gewoonte-koppelen
+  laag: fundament
+  doel: "Kan een nieuwe gewoonte koppelen aan een bestaande routine, zodat ze makkelijker in je dag past."
+  bron: habits-singh-2024
+  passage: "One effective approach is to integrate novel habits with pre-existing ones, thereby creating a routine"
+  artikel: consistency
+
+- id: gewoonte-klein-beginnen
+  laag: fundament
+  doel: "Weet dat beginnen met kleine, haalbare doelen met een eindtijd de kans vergroot dat een gewoonte blijft."
+  bron: habits-singh-2024
+  passage: "Initiating with modest, attainable and time-bound goals also enhances the probability of habit formation."
+  artikel: goal-setting
+
+- id: gewoonte-vaste-context
+  laag: fundament
+  doel: "Weet dat een gewoonte sterker wordt als je het gedrag steeds in dezelfde omstandigheden uitvoert."
+  bron: habits-singh-2024
+  passage: "Individuals who exhibited a stable pattern of performing the target behaviour within a consistent context demonstrated stronger habit strengths"
+  artikel: consistency
+
+# ── vet-verliezen (9) ──
+
+- id: eiwit-tekort-meer
+  laag: vet-verliezen
+  doel: "Weet dat je in een tekort meer eiwit nodig kunt hebben (2,3 tot 3,1 gram per kg) om je spiermassa vast te houden."
+  bron: issn-protein-2017
+  passage: "Higher protein intakes (2.3–3.1 g/kg/d) may be needed to maximize the retention of lean body mass in resistance-trained subjects during hypocaloric periods."
+  artikel: calorie-deficit
+
+- id: eiwit-tekort-vetverlies
+  laag: vet-verliezen
+  doel: "Weet dat extra eiwit in combinatie met krachttraining en een calorietekort kan zorgen voor meer vetverlies en een betere lichaamssamenstelling."
+  bron: issn-protein-2017
+  passage: "an elevated daily intake of protein (2 – 3× the RDA) can promote greater losses of fat mass and greater overall improvements in body composition."
+  artikel: cutting
+
+- id: maaltijdfrequentie-gewichtsverlies
+  laag: vet-verliezen
+  doel: "Weet dat vaker of minder vaak eten weinig invloed heeft op gewichtsverlies, maar wel op eetlust en verzadiging."
+  bron: issn-nutrient-timing-2017
+  passage: "changing the frequency of meals has shown limited impact on weight loss and body composition, with stronger evidence to indicate meal frequency can favorably improve appetite and satiety."
+  artikel: meal-timing
+
+- id: frequentie-honger
+  laag: vet-verliezen
+  doel: "Weet dat vaker eten kan helpen om honger te verminderen en je eetlust beter te sturen, wat een tekort makkelijker kan maken."
+  bron: issn-meal-frequency-2011
+  passage: "Increasing meal frequency appears to help decrease hunger and improve appetite control."
+  artikel: hunger-and-satiety
+
+- id: frequentie-spiermassa-tekort
+  laag: vet-verliezen
+  doel: "Weet dat vaker eten tijdens een calorietekort mogelijk helpt om spiermassa te behouden, mits je genoeg eiwit eet."
+  bron: issn-meal-frequency-2011
+  passage: "If protein levels are adequate, increasing meal frequency during periods of hypoenergetic dieting may preserve lean body mass in athletic populations."
+  artikel: calorie-deficit
+
+- id: tempo-bij-meer-vet
+  laag: vet-verliezen
+  doel: "Weet dat je met meer lichaamsvet een groter deficit kunt aanhouden dan wanneer je al lean bent."
+  bron: issn-diets-2017
+  passage: "The higher the baseline FM level, the more aggressively the caloric deficit may be imposed [27]."
+  artikel: calorie-deficit
+
+- id: tempo-lean-langzamer
+  laag: vet-verliezen
+  doel: "Weet dat je als je leaner wordt langzamer moet afvallen (rond 0,7% van je lichaamsgewicht per week deed het beter dan 1,4%) om spiermassa te behouden."
+  bron: issn-diets-2017
+  passage: "As subjects get leaner, slower rates of weight loss can better preserve LM, as in Garthe et al.’s example of a weekly reduction of 0.7% of body weight outperforming 1.4%"
+  artikel: cutting
+
+- id: focus-spierbehoud-cut
+  laag: vet-verliezen
+  doel: "Weet dat voldoende eiwit, krachttraining en een gematigd afvaltempo de drie dingen zijn die spieren beschermen tijdens vetverlies."
+  bron: issn-diets-2017
+  passage: "Adequate protein, resistance training, and an appropriate rate of weight loss should be the primary focus for achieving the objective of LM retention (or gain) during FM loss."
+  artikel: cutting
+
+- id: metabolisme-trager-voorkomen
+  laag: vet-verliezen
+  doel: "Weet dat een trager metabolisme door lang diëten te voorkomen is met krachttraining en genoeg eiwit, ook bij een laag calorieniveau."
+  bron: issn-diets-2017
+  passage: "Research that has mindfully included resistance training and adequate protein has circumvented the problem of AT [25] and LM loss [26], despite very low-calorie intakes."
+  artikel: metabolism
+
+# ── spier-opbouwen (6) ──
+
+- id: eiwit-overschot-spier
+  laag: spier-opbouwen
+  doel: "Weet dat eiwit in combinatie met zware krachttraining en een calorie-overschot de spiermassa kan laten toenemen."
+  bron: issn-protein-2017
+  passage: "When combined with a hyperenergetic diet and a heavy resistance-training program, protein supplementation may promote increases in skeletal muscle cross-sectional area and lean body mass."
+  artikel: bulking
+
+- id: trainen-plus-eiwit
+  laag: spier-opbouwen
+  doel: "Weet dat krachttraining en eiwit samen de spiereiwitopbouw sterker aanjagen dan elk apart."
+  bron: issn-protein-2017
+  passage: "An acute exercise stimulus, particularly resistance exercise, and protein ingestion both stimulate muscle protein synthesis (MPS) and are synergistic"
+  artikel: protein
+
+- id: surplus-drijft-spiergroei
+  laag: spier-opbouwen
+  doel: "Weet dat spieropbouw het best werkt met een aanhoudend calorieoverschot dat je groeiende trainingsbelasting ondersteunt."
+  bron: issn-diets-2017
+  passage: "diets primarily focused on LM gain are likely optimized via sustained caloric surplus to facilitate anabolic processes and support increasing training demands."
+  artikel: calorie-surplus
+
+- id: surplus-grootte
+  laag: spier-opbouwen
+  doel: "Weet dat beginners een groter overschot aankunnen en gevorderden een kleiner overschot nodig hebben om geen onnodig vet bij te komen."
+  bron: issn-diets-2017
+  passage: "Larger caloric surpluses are more appropriate for untrained subjects who are primed for more dramatic progress in LM gain [136] and for those with a high level of NEAT [133]. On the other hand, smaller caloric surpluses are appropriate for more advanced trainees"
+  artikel: bulking
+
+- id: spiergroei-belasting
+  laag: spier-opbouwen
+  doel: "Weet dat je voor spiergroei vooral in de zone van 6 tot 12 RM traint, met 1 tot 2 minuten rust tussen sets."
+  bron: acsm-resistance-training-2009
+  passage: "For loading, it is recommended that loads corresponding to 1-12 RM be used in periodized fashion with emphasis on the 6-12 RM zone using 1- to 2-min rest periods between sets at a moderate velocity."
+  artikel: hypertrophy
+
+- id: spiergroei-volume
+  laag: spier-opbouwen
+  doel: "Weet dat meer sets per oefening (hoger volume) aanbevolen worden om spiergroei te maximaliseren."
+  bron: acsm-resistance-training-2009
+  passage: "Higher volume, multiple-set programs are recommended for maximizing hypertrophy."
+  artikel: volume
+
+# ── naslag (43) ──
+
+- id: eiwit-per-maaltijd
+  laag: naslag
+  doel: "Weet dat een portie van ongeveer 0,25 gram eiwit per kg, of 20 tot 40 gram, de spieropbouw per maaltijd het best stimuleert."
+  bron: issn-protein-2017
+  passage: "General recommendations are 0.25 g of a high-quality protein per kg of body weight, or an absolute dose of 20–40 g."
+  artikel: protein
+
+- id: eiwit-verdelen
+  laag: naslag
+  doel: "Weet dat je je eiwit het best gelijkmatig over de dag verdeelt, ongeveer elke 3 tot 4 uur."
+  bron: issn-protein-2017
+  passage: "These protein doses should ideally be evenly distributed, every 3–4 h, across the day."
+  artikel: protein
+
+- id: anabool-venster-24-uur
+  laag: naslag
+  doel: "Weet dat je spieren na krachttraining tot 24 uur extra gevoelig zijn voor eiwit, dus dat je geen paniekvenster van een uur hoeft te halen."
+  bron: issn-protein-2017
+  passage: "Skeletal muscle is sensitized to the effects of protein and amino acids for up to 24 h after completion of a bout of resistance exercise."
+  artikel: post-workout-nutrition
+
+- id: leucine-per-portie
+  laag: naslag
+  doel: "Weet dat een eiwitportie ongeveer 1 tot 3 gram leucine moet bevatten om de spieropbouw aan te zetten."
+  bron: issn-protein-2017
+  passage: "doses of approximately one to three g of leucine per meal appear to be needed to stimulate protein translation machinery."
+  artikel: protein-sources
+
+- id: eiwitbronnen-kwaliteit
+  laag: naslag
+  doel: "Weet dat eiwitbronnen rijk aan essentiële aminozuren en leucine van hogere kwaliteit zijn."
+  bron: issn-protein-2017
+  passage: "Protein sources containing higher levels of the EAAs are considered to be higher quality sources of protein."
+  artikel: protein-sources
+
+- id: voeding-eerst-supplement
+  laag: naslag
+  doel: "Weet dat je je eiwit uit gewone voeding kunt halen en dat een supplement vooral een praktische aanvulling is."
+  bron: issn-protein-2017
+  passage: "While it is possible for physically active individuals to obtain their daily protein requirements through the consumption of whole foods, supplementation is a practical way"
+  artikel: whey-protein
+
+- id: casein-voor-slapen
+  laag: naslag
+  doel: "Weet dat 30 tot 40 gram caseïne voor het slapen de spieropbouw en het verbruik 's nachts verhoogt zonder de vetverbranding te remmen."
+  bron: issn-protein-2017
+  passage: "Pre-sleep casein protein intake (30–40 g) provides increases in overnight MPS and metabolic rate without influencing lipolysis."
+  artikel: casein
+
+- id: eiwit-na-training
+  laag: naslag
+  doel: "Weet dat eiwit tot twee uur na je training de spiereiwitopbouw sterk stimuleert."
+  bron: issn-nutrient-timing-2017
+  passage: "Post-exercise ingestion (immediately to 2-h post) of high-quality protein sources stimulates robust increases in MPS."
+  artikel: post-workout-nutrition
+
+- id: pre-post-eiwit-ondersteunt
+  laag: naslag
+  doel: "Weet dat eiwit voor of na je training kracht en lichaamssamenstelling kan ondersteunen, en dat de grootte van je maaltijd vooraf bepaalt hoe nodig het erna is."
+  bron: issn-nutrient-timing-2017
+  passage: "the size and timing of a pre-exercise meal may impact the extent to which post-exercise protein feeding is required."
+  artikel: pre-workout-nutrition
+
+- id: keto-geen-vetvoordeel
+  laag: naslag
+  doel: "Weet dat een ketogeen of koolhydraatarm dieet bij gelijke calorieen en eiwit geen aantoonbaar groter vetverlies geeft."
+  bron: issn-diets-2017
+  passage: "no controlled, inpatient isocaloric diet comparison where protein is matched between groups has reported a clinically meaningful fat loss or thermic advantage to the lower-carbohydrate or ketogenic diet"
+  artikel: carbohydrates
+
+- id: vasten-geen-voordeel
+  laag: naslag
+  doel: "Weet dat intermitterend vasten geen duidelijk voordeel geeft boven dagelijks calorieen beperken voor je lichaamssamenstelling."
+  bron: issn-diets-2017
+  passage: "the body of intermittent caloric restriction research, on the whole, has indicated no significant advantage over daily caloric restriction for improving body composition"
+  artikel: intermittent-fasting
+
+- id: creatine-effectiefste
+  laag: naslag
+  doel: "Weet dat creatine monohydraat het meest effectieve supplement is voor hoge-intensiteitstraining en het opbouwen van vetvrije massa."
+  bron: issn-creatine-2017
+  passage: "Creatine monohydrate is the most effective ergogenic nutritional supplement currently available to athletes with the intent of increasing high-intensity exercise capacity and lean body mass during training."
+  artikel: creatine
+
+- id: creatine-veilig
+  laag: naslag
+  doel: "Weet dat creatine monohydraat bij gezonde mensen veilig is, ook bij langdurig gebruik tot 30 gram per dag gedurende 5 jaar."
+  bron: issn-creatine-2017
+  passage: "There is no compelling scientific evidence that the short- or long-term use of creatine monohydrate (up to 30 g/day for 5 years) has any detrimental effects on otherwise healthy individuals"
+  artikel: creatine
+
+- id: creatine-bijwerking-gewicht
+  laag: naslag
+  doel: "Weet dat gewichtstoename de enige consequent gemelde bijwerking van creatine is."
+  bron: issn-creatine-2017
+  passage: "The only consistently reported side effect from creatine supplementation that has been described in the literature has been weight gain"
+  artikel: creatine
+
+- id: creatine-nieren-uitrogen
+  laag: naslag
+  doel: "Weet dat creatine in goed uitgevoerde studies geen uitdroging, spierkrampen, blessures of nierproblemen veroorzaakt bij gezonde mensen."
+  bron: issn-creatine-2017
+  passage: "creatine supplementation does not increase the incidence of musculoskeletal injuries [22, 111, 112, 241], dehydration [111, 112, 117, 122, 127–129, 242], muscle cramping [76, 106, 111, 112, 117]"
+  artikel: creatine
+
+- id: creatine-laden
+  laag: naslag
+  doel: "Weet dat je je spieren het snelst vult met ongeveer 0,3 gram creatine per kilo lichaamsgewicht per dag gedurende 5 tot 7 dagen."
+  bron: issn-creatine-2017
+  passage: "The quickest method of increasing muscle creatine stores may be to consume ~0.3 g/kg/day of creatine monohydrate for 5–7-days followed by 3–5 g/day thereafter to maintain elevated stores."
+  artikel: creatine
+
+- id: creatine-onderhoud
+  laag: naslag
+  doel: "Kan een onderhoudsdosis van 3 tot 5 gram creatine per dag aanhouden zodra je spieren vol zitten."
+  bron: issn-creatine-2017
+  passage: "Once muscle creatine stores are fully saturated, creatine stores can generally be maintained by ingesting 3–5 g/day"
+  artikel: creatine
+
+- id: creatine-zonder-laden
+  laag: naslag
+  doel: "Weet dat 3 tot 5 gram per dag zonder laadfase ook werkt, maar dat het 3 tot 4 weken duurt voordat je voorraad vol is."
+  bron: issn-creatine-2017
+  passage: "Initially, ingesting smaller amounts of creatine monohydrate (e.g., 3–5 g/day) will increase muscle creatine stores over a 3–4 week period"
+  artikel: creatine
+
+- id: creatine-stoppen
+  laag: naslag
+  doel: "Weet dat je creatinevoorraad na stoppen in 4 tot 6 weken terugkeert naar normaal en dat je eigen aanmaak niet blijvend wordt onderdrukt."
+  bron: issn-creatine-2017
+  passage: "it generally takes 4–6 weeks for creatine stores to return to baseline"
+  artikel: creatine
+
+- id: creatine-met-koolhydraten
+  laag: naslag
+  doel: "Weet dat creatine samen met koolhydraten of koolhydraten en eiwit de opname in de spier verhoogt, maar dat dit de prestaties niet per se beter maakt."
+  bron: issn-creatine-2017
+  passage: "The addition of carbohydrate or carbohydrate and protein to a creatine supplement appears to increase muscular uptake of creatine, although the effect on performance measures may not be greater than using creatine monohydrate alone."
+  artikel: creatine
+
+- id: creatine-vorm
+  laag: naslag
+  doel: "Weet dat creatine monohydraat de best onderzochte en klinisch effectiefste vorm is."
+  bron: issn-creatine-2017
+  passage: "creatine monohydrate is the most extensively studied and clinically effective form of creatine for use in nutritional supplements"
+  artikel: creatine
+
+- id: creatine-voeding
+  laag: naslag
+  doel: "Weet dat je lichaam ongeveer 1 tot 3 gram creatine per dag nodig heeft, waarvan de helft uit voeding (vooral vlees en vis) komt."
+  bron: issn-creatine-2017
+  passage: "Therefore, the body needs to replenish about 1–3 g of creatine per day to maintain normal (unsupplemented) creatine stores depending on muscle mass. About half of the daily need for creatine is obtained from the diet"
+  artikel: creatine
+
+- id: cafeine-prestatie
+  laag: naslag
+  doel: "Weet dat cafeine kleine tot matige voordelen geeft voor spieruithouding, kracht, sprinten en springen."
+  bron: issn-caffeine-2021
+  passage: "Small to moderate benefits of caffeine use include, but are not limited to: muscular endurance, movement velocity and muscular strength, sprinting, jumping, and throwing performance"
+  artikel: caffeine
+
+- id: cafeine-duurprestatie
+  laag: naslag
+  doel: "Weet dat cafeine het meest consistent helpt bij aerobe duurinspanning, al verschilt het effect per persoon."
+  bron: issn-caffeine-2021
+  passage: "Aerobic endurance appears to be the form of exercise with the most consistent moderate-to-large benefits from caffeine use"
+  artikel: caffeine
+
+- id: cafeine-dosis
+  laag: naslag
+  doel: "Weet dat cafeine werkt bij 3 tot 6 mg per kilo lichaamsgewicht, met mogelijk al effect vanaf 2 mg per kilo."
+  bron: issn-caffeine-2021
+  passage: "Caffeine has consistently been shown to improve exercise performance when consumed in doses of 3–6 mg/kg body mass. Minimal effective doses of caffeine currently remain unclear but they may be as low as 2 mg/kg body mass."
+  artikel: caffeine
+
+- id: cafeine-te-hoog
+  laag: naslag
+  doel: "Weet dat zeer hoge doses van 9 mg per kilo veel bijwerkingen geven en niet nodig zijn voor het effect."
+  bron: issn-caffeine-2021
+  passage: "Very high doses of caffeine (e.g. 9 mg/kg) are associated with a high incidence of side-effects and do not seem to be required to elicit an ergogenic effect."
+  artikel: caffeine
+
+- id: cafeine-timing
+  laag: naslag
+  doel: "Weet dat cafeine meestal 60 minuten voor de training wordt genomen en dat de beste timing afhangt van de bron, bijvoorbeeld kauwgom werkt sneller dan capsules."
+  bron: issn-caffeine-2021
+  passage: "The most commonly used timing of caffeine supplementation is 60 min pre-exercise. Optimal timing of caffeine ingestion likely depends on the source of caffeine."
+  artikel: caffeine
+
+- id: cafeine-getraind-ongetraind
+  laag: naslag
+  doel: "Weet dat cafeine de prestaties verbetert bij zowel getrainde als beginnende sporters."
+  bron: issn-caffeine-2021
+  passage: "Caffeine appears to improve physical performance in both trained and untrained individuals."
+  artikel: caffeine
+
+- id: cafeine-slaap
+  laag: naslag
+  doel: "Weet dat cafeine laat op de dag je slaap verslechtert en dat je het beter vroeg op de dag neemt."
+  bron: issn-caffeine-2021
+  passage: "to help avoid negative effects on sleep, athletes may consider using caffeine earlier in the day whenever possible."
+  artikel: sleep-hygiene
+
+- id: cafeine-halfwaardetijd
+  laag: naslag
+  doel: "Weet dat de halfwaardetijd van cafeine gemiddeld 4 tot 6 uur is, maar per persoon sterk verschilt."
+  bron: issn-caffeine-2021
+  passage: "While the average half-life (t1/2) of caffeine is generally reported to be between 4 and 6 h, it varies between individuals and even may range from 1.5 to 10 h in adults"
+  artikel: caffeine
+
+- id: cafeine-bijwerkingen
+  laag: naslag
+  doel: "Weet dat slaapproblemen en angstgevoelens bij cafeine vaak groter worden naarmate de dosis hoger is."
+  bron: issn-caffeine-2021
+  passage: "such as sleep disturbance and anxiety, which are often linearly dose-dependent."
+  artikel: caffeine
+
+- id: cafeine-individueel
+  laag: naslag
+  doel: "Weet dat genen en dagelijks cafeinegebruik meebepalen hoe je op cafeine reageert, qua prestatie, slaap en onrust."
+  bron: issn-caffeine-2021
+  passage: "may be attributed to genetic variation associated with caffeine metabolism, and physical and psychological response. Other factors such as habitual caffeine intake also may play a role in between-individual response variation."
+  artikel: caffeine
+
+- id: cafeine-hydratatie
+  laag: naslag
+  doel: "Weet dat cafeine in de aanbevolen doses je hydratatie niet noemenswaardig beïnvloedt."
+  bron: issn-caffeine-2021
+  passage: "Caffeine at the recommended doses does not appear significantly influence hydration"
+  artikel: hydration
+
+- id: cafeine-concentratie
+  laag: naslag
+  doel: "Weet dat cafeine aandacht en alertheid verbetert bij de meeste mensen, ook na slaaptekort."
+  bron: issn-caffeine-2021
+  passage: "Caffeine has been shown to be ergogenic for cognitive function, including attention and vigilance, in most individuals."
+  artikel: caffeine
+
+- id: cafeine-preworkout
+  laag: naslag
+  doel: "Weet dat energydrankjes en preworkouts met cafeine zowel anaerobe als aerobe prestaties verbeteren."
+  bron: issn-caffeine-2021
+  passage: "Energy drinks and pre-workout supplements containing caffeine have been demonstrated to enhance both anaerobic and aerobic performance."
+  artikel: pre-workout
+
+- id: oefeningvolgorde
+  laag: naslag
+  doel: "Weet dat je grote spiergroepen en meergewrichtsoefeningen voor kleine spiergroepen en isolatie-oefeningen plaatst."
+  bron: acsm-resistance-training-2009
+  passage: "it is recommended that strength programs sequence exercises to optimize the preservation of exercise intensity (large before small muscle group exercises, multiple-joint exercises before single-joint exercises, and higher-intensity before lower-intensity exercises)"
+  artikel: compound-exercises
+
+- id: gevorderd-periodiseren
+  laag: naslag
+  doel: "Weet dat gevorderden een breder bereik van 1 tot 12 RM gebruiken, gevarieerd in de tijd."
+  bron: acsm-resistance-training-2009
+  passage: "For intermediate (individuals with approximately 6 months of consistent RT experience) to advanced (individuals with years of RT experience) training, it is recommended that individuals use a wider loading range from 1 to 12 RM in a periodized fashion"
+  artikel: periodization
+
+- id: spieruithouding
+  laag: naslag
+  doel: "Weet dat je voor spieruithouding lichte tot matige gewichten (40 tot 60% van 1RM) gebruikt voor meer dan 15 herhalingen met korte rust."
+  bron: acsm-resistance-training-2009
+  passage: "For local muscular endurance training, it is recommended that light to moderate loads (40-60% of 1 RM) be performed for high repetitions (>15) using short rest periods (<90 s)."
+  artikel: rep-ranges
+
+- id: geen-keuring-nodig
+  laag: naslag
+  doel: "Weet dat gezonde mensen zonder contra-indicaties zonder medische keuring mogen beginnen en rustig mogen opbouwen."
+  bron: who-physical-activity-2020
+  passage: "Pre-exercise medical clearance is generally unnecessary. Individuals who are not currently regularly active and have no contraindications can be recommended to commence and gradually increase levels and intensity of physical activity without a medical clearance."
+  artikel: null
+
+- id: gewoonte-ochtend
+  laag: naslag
+  doel: "Weet dat een gewoonte oefenen in de ochtend waarschijnlijk beter beklijft dan in de avond."
+  bron: habits-singh-2024
+  passage: "practising habits in the morning appears to lead to enhanced habit formation compared to practising in the evening"
+  artikel: consistency
+
+- id: gewoonte-zelf-kiezen
+  laag: naslag
+  doel: "Weet dat gewoonten die je zelf kiest sterker beklijven dan gewoonten die je opgelegd krijgt."
+  bron: habits-singh-2024
+  passage: "Habits chosen by individuals themselves led to stronger habit formation"
+  artikel: consistency
+
+- id: gewoonte-vroege-herhalingen
+  laag: naslag
+  doel: "Weet dat de eerste herhalingen een gewoonte het snelst automatischer maken en dat later de winst per herhaling afneemt."
+  bron: habits-singh-2024
+  passage: "early repetitions lead to larger increases in automaticity compared to later stages in the habit formation process"
+  artikel: consistency
+
+- id: gewoonte-simpel-eerst
+  laag: naslag
+  doel: "Weet dat simpele, herhaalbare gedragen met een duidelijke trigger en directe beloning het makkelijkst automatisch worden."
+  bron: habits-singh-2024
+  passage: "simpler, repetitive behaviours with clear cues and immediate rewards are easier to automate"
+  artikel: consistency

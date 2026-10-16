@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "sync-wiki": "tsx scripts/wiki/sync.ts",
-    "wiki:check": "tsx scripts/wiki/check.ts"
+    "wiki:check": "tsx scripts/wiki/check.ts",
+    "wiki:bron": "tsx scripts/wiki/fetch-source.ts"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.50",

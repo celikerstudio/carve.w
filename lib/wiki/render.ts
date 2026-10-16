@@ -95,7 +95,7 @@ export function splitTakeaway(markdown: string): { takeaway: string | null; rest
 
 /** Een los stuk markdown naar HTML, zoals het antwoord bovenaan. */
 export async function renderFragment(markdown: string, links: Map<string, WikiLink>): Promise<string> {
-  return markdownToHtml(resolveLinks(markdown, links));
+  return linkReferences(await markdownToHtml(resolveLinks(markdown, links)));
 }
 
 /**
@@ -106,7 +106,8 @@ export async function renderFragment(markdown: string, links: Map<string, WikiLi
  * @ai-sync: components/wiki/public/ArticleParts.tsx (Sources zet de ankers `source-<n>`)
  */
 function linkReferences(html: string): string {
-  return html.replace(/(?<![[\w])\[(\d{1,2})\](?![(\]])/g, (_, n: string) => `<sup class="ref"><a href="#source-${n}">${n}</a></sup>`);
+  // Dezelfde vorm als de lint in lib/wiki/source-file.ts: ook direct na een woord ("list[1]").
+  return html.replace(/(?<!\[)\[(\d{1,2})\](?![(\]])/g, (_, n: string) => `<sup class="ref"><a href="#source-${n}">${n}</a></sup>`);
 }
 
 export async function renderArticle(

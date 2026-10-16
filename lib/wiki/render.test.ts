@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { renderArticle, splitTakeaway } from './render';
+import { renderArticle, renderFragment, splitTakeaway } from './render';
 
 const links = new Map([
   ['hypertrophy', { title: 'Hypertrophy', href: '/wiki/training/hypertrophy' }],
@@ -40,6 +40,15 @@ describe('renderArticle', () => {
   it('maakt van een verwijzing [n] een link naar bron n onderaan (TDR-0017 §5)', async () => {
     const { html } = await renderArticle('Most lifters need 1.6 g per kg [1][2].', links);
     expect(html).toContain('<sup class="ref"><a href="#source-1">1</a></sup><sup class="ref"><a href="#source-2">2</a></sup>');
+  });
+
+  it('linkt [n] ook in het antwoord bovenaan, dat via renderFragment gaat', async () => {
+    expect(await renderFragment('Lose 0.5 to 1% a week [1].', links)).toContain('<a href="#source-1">1</a>');
+  });
+
+  it('laat de lettertekens van een artikel zoals ze zijn: geen link na een woord, zoals de lint', async () => {
+    const { html } = await renderArticle('A list[1] here.', links);
+    expect(html).toContain('<a href="#source-1">1</a>');
   });
 
   it('laat een [[slug]] zonder artikel staan als gewone tekst, zonder haken', async () => {

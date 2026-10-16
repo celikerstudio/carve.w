@@ -36,7 +36,7 @@ type Row = {
   author: string | null;
   citation_ids: string[] | null;
   content_markdown: string | null;
-  wiki_citations: { title: string; doi: string | null; url: string | null; order_index: number | null }[];
+  wiki_citations: CitationFields[];
 };
 
 type Citation = {
@@ -59,7 +59,9 @@ function desiredRow(file: ArticleFile, existing: Row | undefined) {
     tags: file.tags,
     // Een concept dat ooit beoordeeld was en terug op draft staat, wordt weer 'ai'.
     type: file.status === 'reviewed' ? 'reviewed' : existing?.type === 'reviewed' || !existing?.type ? 'ai' : existing.type,
-    author: file.status === 'reviewed' ? AUTHOR.name : (existing?.author ?? 'Carve Team'),
+    // @ai-why: Terug naar draft haalt ook Furkans naam weg. De app toont `author` onder het artikel,
+    //   en zijn naam onder een ongelezen tekst is precies wat TDR-0017 §1 uitsluit.
+    author: file.status === 'reviewed' ? AUTHOR.name : !existing?.author || existing.author === AUTHOR.name ? 'Carve Team' : existing.author,
     citation_ids: file.citationIds,
     content_markdown: file.body,
   };
@@ -82,8 +84,10 @@ function desiredCitations(file: ArticleFile): Citation[] {
 //   dit zag de eerste proefrun 65 artikelen "veranderen" op `citation_ids: null` tegen `[]`.
 const norm = (v: unknown) => (v === null || v === undefined || v === '' || (Array.isArray(v) && v.length === 0) ? null : v);
 const same = (a: unknown, b: unknown) => JSON.stringify(norm(a)) === JSON.stringify(norm(b));
-const citationKey = (c: { title: string; doi: string | null; url: string | null; order_index: number | null }) =>
-  `${c.order_index}|${c.doi ?? ''}|${c.url ?? ''}|${c.title}`;
+// Alle velden die het web toont, zodat een verbeterd jaartal of tijdschrift ook echt mee gaat.
+type CitationFields = Pick<Citation, 'title' | 'doi' | 'url' | 'authors' | 'journal' | 'publication_date' | 'citation_type'> & { order_index: number | null };
+const citationKey = (c: CitationFields) =>
+  JSON.stringify([c.order_index, c.doi, c.url, c.title, c.authors ?? [], c.journal, c.publication_date, c.citation_type]);
 
 async function main() {
   const write = process.argv.includes('--write');
@@ -105,13 +109,15 @@ async function main() {
 
   // @ai-why: Een proefrun leest alleen, en de anon-sleutel mag alle gepubliceerde artikelen en hun
   //   bronnen lezen. Zo kan iedereen zien wat er zou veranderen zonder de service-sleutel.
+  // @ai-gotcha: Ongepubliceerde rijen ziet de anon-sleutel niet. Een "+" in de proefrun kan met
+  //   --write dus een bestaande verborgen rij bijwerken. Alle Engelse rijen zijn nu gepubliceerd.
   const key = write ? process.env.SUPABASE_SERVICE_ROLE_KEY : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   const sb = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, key!, {
     auth: { persistSession: false },
   });
   const { data, error } = await sb
     .from('wiki_articles')
-    .select('id, slug, title, category, summary, evidence_rating, tags, type, author, citation_ids, content_markdown, wiki_citations(title, doi, url, order_index)')
+    .select('id, slug, title, category, summary, evidence_rating, tags, type, author, citation_ids, content_markdown, wiki_citations(title, doi, url, authors, journal, publication_date, citation_type, order_index)')
     .eq('language', 'en');
   if (error) throw error;
   const rows = new Map((data as Row[]).map((r) => [r.slug, r]));
@@ -150,6 +156,8 @@ async function main() {
       if (e) throw new Error(`${file.slug}: ${e.message}`);
       id = ins.id;
     }
+    // @ai-gotcha: Verwijderen en dan invoegen, niet atomair. Faalt het invoegen, dan staat het artikel
+    //   zonder bronnen en valt het bij de volgende verversing uit de index. Draai de sync dan opnieuw.
     if (citesChanged && id) {
       const { error: d } = await sb.from('wiki_citations').delete().eq('article_id', id);
       if (d) throw new Error(`${file.slug} bronnen: ${d.message}`);

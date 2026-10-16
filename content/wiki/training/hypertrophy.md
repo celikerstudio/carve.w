@@ -43,5 +43,5 @@ You can combine both in your program.
 ## Common mistakes
 
 - **Not enough volume** - Most beginners do too little, not too much
-- **Neglecting nutrition** - You can't build muscle in a caloric deficit
+- **Neglecting nutrition** - Building muscle is much harder in a caloric deficit
 - **Impatience** - Visible results take 3-6 months minimum

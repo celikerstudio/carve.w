@@ -155,7 +155,7 @@ That's why fat adds up fast. One tablespoon of cooking oil is about 120 kcal, an
 
 Three things decide it: what your body burns at rest, what it costs to digest your food, and how much you move. Together that's your total daily energy expenditure, or [[tdee]].
 
-The resting part is the biggest one for most people. You can estimate it from your weight, height, age and sex with the Mifflin-St Jeor equation. When it was tested against measured resting energy use, the older Harris-Benedict equation came out about 5% too high [2]. Multiply the result by your activity level and you have a starting number.
+The resting part is the biggest one for most people. You can estimate it from your weight, height, age and sex with the Mifflin-St Jeor equation. In the study that introduced it, the older Harris-Benedict equation came out about 5% too high against measured resting energy use [2]. Multiply the result by your activity level and you have a starting number.
 
 Treat that number as a guess. Eat it for two or three weeks and watch your weekly average weight. If the average doesn't move, that's your maintenance.
 
@@ -198,10 +198,10 @@ Building muscle works best with a steady calorie surplus and training that keeps
 
 ## Common mistakes
 
-- **Cutting too hard** - Losing fast costs muscle, especially once you're lean [3][4].
+- **Cutting too hard** - Losing fast can mean keeping less muscle, especially once you're lean [3][4].
 - **Trusting the formula over the scale** - Equations are estimates. Your weekly average is the real test.
 - **Forgetting the small stuff** - Oil, sauces and drinks add up and are easy to leave out.
-- **Ignoring protein** - In a deficit, protein is what protects your muscle [3].
+- **Ignoring protein** - In a deficit, more protein helps you keep your muscle [3].
 
 ## What worked for me
 

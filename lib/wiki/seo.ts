@@ -74,9 +74,12 @@ export function articleJsonLd(a: {
       headline: a.title,
       description: a.summary,
       url: `${SITE}${a.href}`,
-      // @ai-why: `updated_at` en geen aparte reviewdatum. De sync schrijft alleen een artikel
-      //   waarvan de tekst veranderd is, dus voor een beoordeeld artikel is dit de dag dat
-      //   Furkan het goedkeurde. Een eigen kolom zou een migratie in Carve-AI vragen.
+      // @ai-why: `updated_at` en geen aparte reviewdatum. De sync schrijft alleen velden die
+      //   veranderd zijn, dus voor een beoordeeld artikel is dit de laatste keer dat er iets aan
+      //   tekst, titel, tags of status veranderde. Een eigen kolom zou een migratie in Carve-AI vragen.
+      // @ai-gotcha: Elke UPDATE op de rij zet `updated_at` (trigger in de database). Een bronnen-
+      //   wijziging alleen raakt de rij niet; `app/api/wiki/track-view` zou bij elk bezoek de datum
+      //   verzetten als iemand hem ooit aanzet.
       // @ai-sync: scripts/wiki/sync.ts (schrijft alleen wat veranderd is)
       dateModified: a.updatedAt,
       // @ai-why: Een persoon alleen onder wat hij gelezen heeft. Zijn naam onder een AI-concept

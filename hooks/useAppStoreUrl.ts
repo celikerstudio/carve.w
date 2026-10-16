@@ -20,8 +20,9 @@ import { APP_STORE_URL } from '@/lib/utils'
  *
  * @ai-sync: lib/app-store-link.ts
  * @ai-sync: docs/tdr/0009-campagnerendement-komt-uit-ga4.md
+ *
+ * @param fallback De campagne van de plek op de site, als de bezoeker niet via een advertentie kwam.
  */
-/** @param fallback De campagne van de plek op de site, als de bezoeker niet via een advertentie kwam. */
 export function useAppStoreUrl(fallback?: string): string {
   const [url, setUrl] = useState(APP_STORE_URL)
 

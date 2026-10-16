@@ -106,6 +106,17 @@ describe('opmaakregels (TDR-0017 §5)', () => {
     expect(hasOpenNotes(ok.body)).toBe(false);
   });
 
+  it('weigert opmaak die de app als kale tekst toont', () => {
+    for (const extra of ['#### Klein', '> Citaat', '```\ncode\n```', '---', 'Zie [protein](/wiki/nutrition/protein).', '## Key Takeaways']) {
+      expect(lintArticle({ ...ok, body: `${ok.body}\n\n${extra}` }, slugs).length, extra).toBeGreaterThan(0);
+    }
+  });
+
+  it('weigert een lijst in de takeaway, want de app plakt die tot één regel', () => {
+    const body = ok.body.replace('Eat **1.6 to 2.2 g per kg** a day.', '- One\n- Two');
+    expect(lintArticle({ ...ok, body }, slugs)).toContainEqual(expect.stringMatching(/takeaway/));
+  });
+
   it('weigert een onbekende categorie', () => {
     expect(lintArticle({ ...ok, category: 'jiujitsu' }, slugs)).toContainEqual(expect.stringMatching(/categorie/));
   });

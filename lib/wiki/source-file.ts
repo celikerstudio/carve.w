@@ -128,11 +128,23 @@ export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
   if (/!\[/.test(body)) errors.push('een afbeelding: de app toont geen afbeeldingen in de tekst');
   if (/<[a-zA-Z][^>]*>/.test(body)) errors.push('HTML in de tekst');
   if (/\]\(https?:\/\//.test(body)) errors.push('een externe link in de tekst: bronnen horen in `sources`, met [n] in de tekst');
+  else if (/\]\([^)]+\)/.test(body)) errors.push('een markdown-link: de app toont die als tekst; gebruik [[slug]]');
+  // @ai-why: Deze vier toont de app-lezer letterlijk, met tekens en al. Gecontroleerd in
+  //   WikiArticleDetailView.swift, die alleen #, ##, ###, -, * en de twee blokken kent.
+  if (/^#{4,}\s/m.test(body)) errors.push('een #### of kleiner: alleen ## en ### bestaan in de app');
+  if (/^>/m.test(body)) errors.push('een citaat (>): de app toont het teken');
+  if (/^```/m.test(body)) errors.push('een codeblok: de app toont de backticks');
+  if (/^\s*(-{3,}|\*{3,}|_{3,})\s*$/m.test(body)) errors.push('een scheidingslijn (---): de app toont de streepjes');
+  // @ai-gotcha: De app verbergt alles vanaf een regel met "Key Takeaways" tot de volgende kop.
+  if (/key takeaways/i.test(body)) errors.push('"Key Takeaways" in de tekst: de app verbergt alles daarna tot de volgende kop');
 
   for (const [, kind] of body.matchAll(/^:::(\w+)/gm)) {
     if (!ALLOWED_BLOCKS.has(kind)) errors.push(`blok :::${kind} kent de app niet`);
   }
   if (!/^:::takeaway\s*$/m.test(body)) errors.push('geen :::takeaway: het antwoord hoort bovenaan');
+  for (const [, inner] of body.matchAll(/^:::takeaway\s*\n([\s\S]*?)\n:::\s*$/gm)) {
+    if (/^\s*([-*]|\d+\.)\s/m.test(inner)) errors.push('een lijst in :::takeaway: de app plakt die tot één regel');
+  }
 
   for (const [, items] of body.matchAll(/^:::checklist\s*\n([\s\S]*?)\n:::\s*$/gm)) {
     for (const line of items.split('\n').filter((l) => l.trim().startsWith('- '))) {

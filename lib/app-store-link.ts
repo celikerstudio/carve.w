@@ -49,7 +49,8 @@ export function appStoreCampaignUrl(
  *   de advertentie gekomen; die download hoort bij de campagne die ervoor betaalde.
  */
 export function pickCampaign(params: URLSearchParams, fallback?: string): string | null {
-  return params.get('utm_campaign') ?? params.get('utm_id') ?? fallback ?? null
+  // `||` en niet `??`: een lege `?utm_campaign=` hoort de wiki-campagne niet weg te drukken.
+  return params.get('utm_campaign') || params.get('utm_id') || fallback || null
 }
 
 /**

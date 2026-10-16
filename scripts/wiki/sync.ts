@@ -18,7 +18,7 @@
 import { config } from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
 import { AUTHOR } from '../../lib/wiki/seo';
-import { lintArticle, toSearchText, type ArticleFile } from '../../lib/wiki/source-file';
+import { hasOpenNotes, lintArticle, toSearchText, type ArticleFile } from '../../lib/wiki/source-file';
 import { sourceUrl } from '../../lib/wiki/sources';
 import { readArticleFiles } from './files';
 
@@ -87,8 +87,14 @@ const citationKey = (c: { title: string; doi: string | null; url: string | null;
 
 async function main() {
   const write = process.argv.includes('--write');
-  const files = readArticleFiles().map((f) => f.file);
-  const slugs = new Set(files.map((f) => f.slug));
+  const all = readArticleFiles().map((f) => f.file);
+  const slugs = new Set(all.map((f) => f.slug));
+  // @ai-why: Een concept in bewerking (met een open notitie) slaat de sync over in plaats van hem te
+  //   blokkeren. Zo kan een ander artikel live terwijl dit nog bij Furkan ligt. In de database blijft
+  //   dan de vorige versie staan.
+  const inProgress = all.filter((f) => hasOpenNotes(f.body));
+  inProgress.forEach((f) => console.log(`… ${f.slug}: open notitie, overgeslagen`));
+  const files = all.filter((f) => !hasOpenNotes(f.body));
 
   const broken = files.map((f) => ({ slug: f.slug, errors: lintArticle(f, slugs) })).filter((f) => f.errors.length);
   if (broken.length) {

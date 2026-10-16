@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { lintArticle, parseArticleFile, serializeArticleFile, toSearchText, type ArticleFile } from './source-file';
+import { hasOpenNotes, lintArticle, parseArticleFile, serializeArticleFile, toSearchText, type ArticleFile } from './source-file';
 
 const ok: ArticleFile = {
   slug: 'protein',
@@ -97,6 +97,13 @@ describe('opmaakregels (TDR-0017 §5)', () => {
     const errors = lintArticle({ ...ok, sources: [{ ...source, doi: undefined, claim: '' }] }, slugs);
     expect(errors).toContainEqual(expect.stringMatching(/DOI of PubMed/));
     expect(errors).toContainEqual(expect.stringMatching(/bewering/));
+  });
+
+  it('meldt een open notitie voor Furkan: die hoort niet in de app of op het web', () => {
+    const body = `${ok.body}\n\n<!-- FURKAN: jouw stuk hier -->`;
+    expect(lintArticle({ ...ok, body }, slugs)).toContainEqual(expect.stringMatching(/open notitie/));
+    expect(hasOpenNotes(body)).toBe(true);
+    expect(hasOpenNotes(ok.body)).toBe(false);
   });
 
   it('weigert een onbekende categorie', () => {

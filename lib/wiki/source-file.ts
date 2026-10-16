@@ -155,11 +155,23 @@ export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
     if (!s.title) errors.push(`${label} is nog niet opgezocht (pnpm wiki:check --fill)`);
   });
 
+  if (hasOpenNotes(body)) errors.push('open notitie (<!-- ... -->): eerst invullen of weghalen');
+
   if (a.status === 'reviewed' && a.sources.length === 0) {
     errors.push('beoordeeld zonder bron: zonder bron komt het niet in Google (TDR-0017 §2)');
   }
 
   return errors;
+}
+
+/**
+ * Een `<!-- ... -->` in de tekst: een notitie in een concept, meestal de plek voor Furkans eigen stuk.
+ *
+ * @ai-why: De web-renderer haalt een HTML-commentaar weg, maar de app-lezer toont hem als tekst. Een
+ *   concept met een open notitie gaat daarom niet mee met `pnpm sync-wiki`.
+ */
+export function hasOpenNotes(markdown: string): boolean {
+  return /<!--[\s\S]*?-->/.test(markdown);
 }
 
 /**

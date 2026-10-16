@@ -62,15 +62,20 @@ Engels, voor iemand die wil afvallen of sterker worden, niet voor een sportweten
 
 ## Furkans stuk
 
-Elk artikel krijgt `## What worked for me`, met daaronder een `<!-- FURKAN: ... -->`-notitie met de vragen die hij kan beantwoorden. Verzin nooit zelf zijn ervaring. Zolang de notitie er staat, slaat `pnpm sync-wiki` het artikel over: de app zou de notitie als tekst tonen.
+Furkan **leest** elk artikel voordat zijn naam eronder komt; dat is niet optioneel. Zijn **eigen stuk** (`## What worked for me`) wel (besloten 2026-10-16): alleen waar hij echt iets te vertellen heeft. Bij calorieën, tekort, eiwit, volhouden en plateaus ligt het voor de hand; bij de halfwaardetijd van cafeïne niet.
+
+Waar het past: zet `## What worked for me` met een `<!-- FURKAN: ... -->`-notitie met de vragen die hij kan beantwoorden. Waar het niet past: laat de kop weg. Verzin nooit zelf zijn ervaring. Zolang er een notitie staat, slaat `pnpm sync-wiki` het artikel over: de app zou de notitie als tekst tonen. Wil hij bij een artikel toch niets schrijven, haal dan kop en notitie samen weg.
 
 ## Van concept naar live
 
-1. Concept schrijven, bronnen `--fill`, samenvattingen lezen.
+Werk per cluster van ongeveer vijf artikelen uit dezelfde laag, zodat Furkan ze in één keer leest.
+
+1. Concept schrijven, bronnen `--fill`, samenvattingen lezen, teksten bewaren met `pnpm wiki:bron`.
 2. `pnpm wiki:check <slug>`: schoon op de notitie na.
-3. Review: `docs/wiki-review-prompt.md` op een model met internettoegang. Verwerk de bevindingen, en pak bij elke bevinding eerst zelf de bron erbij voordat je iets wijzigt.
-4. Furkan schrijft zijn stuk en zegt "akkoord". Dan: `status: reviewed`.
-5. `pnpm sync-wiki` (proefrun, anon-sleutel) en daarna `pnpm sync-wiki --write`. Schrijven naar de productiedatabase start Furkan zelf (`! pnpm sync-wiki --write`).
+3. Review met `docs/wiki-review-prompt.md`, door een agent met internettoegang. Pak bij elke bevinding eerst zelf de bron erbij voordat je iets wijzigt.
+4. **Hooguit twee reviewrondes.** Na de tweede moeten *fout*, *onveilig* en *te sterk* weg zijn; *onduidelijk* en *stijl* zijn optioneel. Vindt ronde twee nog een feitelijke fout, zet die zin dan in `:::check` in plaats van een derde ronde te draaien. Waarom: een reviewer vindt altijd iets, en na twee rondes poets je stijl in plaats van feiten, tot alle artikelen hetzelfde klinken.
+5. Furkan leest, schrijft eventueel zijn stuk en zegt "akkoord". Dan: `status: reviewed`.
+6. `pnpm sync-wiki` (proefrun, anon-sleutel) en daarna `pnpm sync-wiki --write`. Schrijven naar de productiedatabase start Furkan zelf (`! pnpm sync-wiki --write`).
 
 Een artikel komt alleen in Google met `status: reviewed` én minstens één bron (`lib/wiki/seo.ts`, `isIndexable`). De rest is leesbaar maar `noindex`.
 

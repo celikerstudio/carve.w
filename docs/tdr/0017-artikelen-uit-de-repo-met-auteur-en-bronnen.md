@@ -48,6 +48,7 @@ Twee beperkingen uit de app: de iOS-app toont dezelfde rijen met een eigen markd
 
 ## Consequenties
 
+- **Eigen stuk optioneel** (Furkan, 2026-10-16, later dezelfde dag). Lezen blijft de voorwaarde voor zijn naam; `## What worked for me` schrijft hij alleen waar hij iets te vertellen heeft. Anders blijft het bij twee à drie artikelen per week. De reviewronde is begrensd op twee (zie `.claude/skills/wiki-artikel/SKILL.md`).
 - **De app heeft een update nodig** (Carve-AI, losse release): bronnen uit `wiki_citations` lezen in plaats van alleen `HealthCitation.swift`, en een slug via `aliases` opzoeken. Tot dan toont de app bij een artikel de bronnen van nu en het web de nieuwe. Er gaat niets stuk zolang er niet wordt samengevoegd.
 - **De database krijgt een kolom `aliases text[]`** op `wiki_articles`, via een migratie in Carve-AI, pas als het eerste samenvoegen eraan komt.
 - **Een wijziging direct in de database wordt bij de volgende sync overschreven.** Wie iets wil veranderen, verandert het markdown-bestand.

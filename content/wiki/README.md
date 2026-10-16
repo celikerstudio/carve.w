@@ -55,6 +55,6 @@ Wat je niet kunt verifiëren zet je in een `:::check`-blok. Dat gaat niet mee na
 1. Concept schrijven. Bij elke bron alleen `doi` (of `pmid`) en `claim`.
 2. `pnpm wiki:check <slug> --fill` zoekt elke bron op bij Crossref of PubMed en vult titel, auteurs, tijdschrift en jaar in. Een bron die niet bestaat blijft een fout.
 3. `pnpm wiki:check <slug> --abstracts` zet per bron de bewering naast de samenvatting. Lees ze: draagt de studie wat de tekst zegt? Zo niet, dan gaat de bron eruit en wordt de zin zachter. Bewaar de tekst met `pnpm wiki:bron <doi>`.
-4. Review met `docs/wiki-review-prompt.md` op een model met internettoegang.
-5. Furkan leest, past aan en schrijft zijn eigen stuk. Bij akkoord: `status: reviewed`.
+4. Review met `docs/wiki-review-prompt.md` op een model met internettoegang. Hooguit twee rondes; daarna gaat een twijfelachtige zin in `:::check`.
+5. Furkan leest en past aan. Zijn eigen stuk is optioneel: alleen waar hij iets te vertellen heeft. Bij akkoord: `status: reviewed`.
 6. `pnpm sync-wiki` laat zien wat er verandert, `pnpm sync-wiki --write` schrijft het. Binnen het uur staat het live, en met `status: reviewed` en een bron ook in Google.

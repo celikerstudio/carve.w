@@ -22,7 +22,7 @@ export const AUTHOR = {
 };
 
 /**
- * Of een artikel in Google mag (TDR-0017 §2): Furkan heeft het gelezen en aangevuld, en het heeft
+ * Of een artikel in Google mag (TDR-0017 §2): Furkan heeft het gelezen, en het heeft
  * minstens één bron die `pnpm wiki:check` heeft gecontroleerd.
  *
  * @ai-why: Op het artikel en niet op de site. Een dun artikel blijft leesbaar voor wie het via een

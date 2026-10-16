@@ -15,7 +15,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { allowsFullText, jatsToText, sourceFileName } from '../../lib/wiki/source-text';
+import { allowsFullText, jatsToText, sourceFileName, stripTags } from '../../lib/wiki/source-text';
 import { CONTENT_DIR } from './files';
 
 const EPMC = 'https://www.ebi.ac.uk/europepmc/webservices/rest';
@@ -49,7 +49,7 @@ export async function fetchSource(doi: string): Promise<{ meta: Record<string, u
       kind = 'full';
     }
   }
-  if (!text) text = `## Abstract\n\n${(rec.abstractText ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()}`;
+  if (!text) text = `## Abstract\n\n${stripTags(rec.abstractText ?? '', ' ').replace(/\s+/g, ' ').trim()}`;
 
   return {
     meta: {
@@ -81,11 +81,11 @@ async function fromCrossrefOnly(doi: string): Promise<{ meta: Record<string, unk
   if (!res.ok) return null;
   const w = ((await res.json()) as { message?: Record<string, any> }).message; // eslint-disable-line @typescript-eslint/no-explicit-any
   if (!w) return null;
-  const abstract = String(w.abstract ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const abstract = stripTags(String(w.abstract ?? ''), ' ').replace(/\s+/g, ' ').trim();
   return {
     meta: {
       doi,
-      title: String(w.title?.[0] ?? '').replace(/<[^>]+>/g, ''),
+      title: stripTags(String(w.title?.[0] ?? '')),
       authors: (w.author ?? []).map((p: { family?: string; given?: string }) => `${p.family ?? ''} ${(p.given ?? '').split(/[\s.-]+/).filter(Boolean).map((n) => n[0]).join('')}`.trim()).join(', '),
       journal: w['container-title']?.[0],
       year: w.issued?.['date-parts']?.[0]?.[0],

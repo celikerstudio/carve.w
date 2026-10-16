@@ -60,7 +60,7 @@ sources:
       - Krieger JW
       - Phillips SM
     journal: British Journal of Sports Medicine
-    year: 2017
+    year: 2018
     claim: 'In 49 trials of protein supplementation with resistance training, gains in fat-free mass stopped rising above about 1.6 g per kg a day, with a confidence interval up to 2.2.'
   - doi: 10.1186/1550-2783-10-53
     title: 'The effect of protein timing on muscle strength and hypertrophy: a meta-analysis'
@@ -80,7 +80,7 @@ sources:
     year: 2018
     claim: A review suggests about 0.4 g per kg per meal across at least four meals to reach 1.6 g per kg a day.
   - doi: 10.1093/jn/nxy197
-    title: '''Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis'
+    title: 'Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis'
     authors:
       - Devries MC
       - Sithamparapillai A
@@ -107,12 +107,12 @@ sources:
 Protein is made of amino acids, and your muscles are built and repaired from them. When you lift, your body builds more muscle protein than it breaks down, but only if enough protein is on hand.
 
 :::takeaway
-To build muscle, eat about **1.6 to 2.2 g of protein per kg of bodyweight a day** [1][2]. For an 80 kg person that is 128 to 176 g. The ISSN, a sports nutrition society, gives a slightly lower general range of 1.4 to 2.0 g per kg (112 to 160 g) [1].
+To build muscle, eat about **1.6 to 2.2 g of protein per kg of bodyweight a day** [2]. For an 80 kg person that is 128 to 176 g. The ISSN, a sports nutrition society, gives a slightly lower general range of 1.4 to 2.0 g per kg (112 to 160 g) [1].
 :::
 
 The two ranges overlap. The ISSN says 1.4 to 2.0 g per kg is enough for most people who train, whether they want to build muscle or keep what they have [1]. A large meta-analysis of 49 trials found that muscle gains from lifting stopped rising above about 1.6 g per kg a day [2]. The authors give a confidence interval of 1.03 to 2.20 g per kg for that cut-off, and say it may be prudent to aim for about 2.2 g per kg if you want to get the most out of your training [2].
 
-A practical way to use this: start around 1.6 g per kg and go towards 2.2 g per kg if you want to be sure you are covered. In the trials pooled in that meta-analysis, eating more than that added no extra muscle [2].
+A practical way to use this: start around 1.6 g per kg and go towards 2.2 g per kg if you want to be sure you are covered. On average, the gains in lean mass in that meta-analysis levelled off around 1.6 g per kg, and the upper end of the uncertainty was 2.2 [2].
 
 ## Why is the standard 0.8 g per kg too low if you train?
 
@@ -130,15 +130,15 @@ Be careful with that number. A review of contest preparation for natural bodybui
 
 The ISSN gives a general guide of 0.25 g of high-quality protein per kg per meal, or 20 to 40 g in absolute terms. It adds that the best dose depends on age and on how recently you trained [1]. For 80 kg, 0.25 g per kg is 20 g.
 
-Another review lands a bit higher: about 0.4 g per kg per meal, across at least four meals, to reach 1.6 g per kg a day [4]. For 80 kg that is 32 g per meal. This is a suggestion from a review, not a hard limit. Eating more than that in one meal is not wasted, it is just used less efficiently for building muscle.
+Another review lands a bit higher: about 0.4 g per kg per meal, across at least four meals, to reach 1.6 g per kg a day [4]. For 80 kg that is 32 g per meal. The authors give it as a target to aim for. If you eat more in one meal, more of it is burned for energy, but some of the extra still goes to building tissue [4].
 
 ## Does it matter when you eat protein?
 
-How you spread it matters a little. The ISSN suggests spreading protein evenly over the day, roughly every 3 to 4 hours [1]. So three or four meals with 30 to 40 g each work better than one huge dinner.
+How you spread it matters a little. The ISSN suggests spreading protein evenly over the day, roughly every 3 to 4 hours [1]. Three or four protein-rich meals are a sensible pattern, though long-term studies on spreading are mixed [1][4]. For 80 kg, that means four meals of 30 to 40 g rather than one huge dinner.
 
-When you eat it relative to training matters far less than most people think. A meta-analysis that pooled randomised trials found that after accounting for the total amount, eating protein right before or after training did not give extra strength or muscle growth. The total daily amount was the strongest predictor [3]. The ISSN agrees that total protein and calories matter most [1]. It also notes that a meal after training costs nothing and may help, so it is an easy habit if you like it [1].
+When you eat it relative to training matters far less than most people think. A meta-analysis that pooled randomised trials found that after accounting for the total amount, eating protein right before or after training did not give extra strength or muscle growth. The total daily amount was the strongest predictor of muscle growth [3]. The ISSN agrees that total protein and calories matter most [1]. It also notes that a meal after training costs nothing and may help, so it is an easy habit if you like it [1].
 
-The takeaway: hit your daily number first. Spread it out second. Timing around the workout is a detail. See [[meal-timing]] and [[post-workout-nutrition]].
+So get your daily total first, and spread it over the day if you can. Timing around the workout is a detail. See [[meal-timing]] and [[post-workout-nutrition]].
 
 ## Is a high-protein diet safe?
 
@@ -148,7 +148,7 @@ A meta-analysis of trials in healthy adults without kidney disease reached the s
 
 ## Should you eat protein or take a supplement?
 
-Food first. The ISSN recommends focusing on whole food sources that contain all the essential amino acids, the ones your body cannot make itself [1]. Chicken, fish, eggs, dairy, tofu and legumes all do the job. See [[protein-sources]] for a longer list.
+Food first. The ISSN recommends focusing on whole food sources that contain all the essential amino acids, the ones your body cannot make itself [1]. Chicken, fish, eggs, dairy and soy (tofu, tempeh) are complete sources. Beans and lentils work too, combined with grains over the day. See [[protein-sources]] for a longer list.
 
 A supplement is a practical tool when food does not get you there. The ISSN says it is a convenient way to get enough high-quality protein without many extra calories, particularly if you train a lot [1]. A shake after the gym, or one when a meal is hard to fit in, closes a gap of 20 to 30 g. [[whey-protein]] is the usual choice.
 

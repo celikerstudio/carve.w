@@ -39,7 +39,8 @@ export function titlesMatch(a: string, b: string): boolean {
 }
 
 function cleanTitle(t: string): string {
-  return t.replace(/<[^>]+>/g, '').replace(/\.\s*$/, '').trim();
+  // Crossref zet soms een losse ' voor de titel (Devries 2018).
+  return t.replace(/<[^>]+>/g, '').replace(/\.\s*$/, '').replace(/^['"\u2018\u201c]+|['"\u2019\u201d]+$/g, '').trim();
 }
 
 type CrossrefWork = {
@@ -56,7 +57,8 @@ export function fromCrossref(w: CrossrefWork): SourceMeta {
     authors: (w.author ?? []).map((p) =>
       p.family ? `${p.family} ${(p.given ?? '').split(/[\s.-]+/).filter(Boolean).map((n) => n[0]).join('')}`.trim() : (p.name ?? ''),
     ),
-    journal: w['container-title']?.[0] ?? '',
+    // Crossref levert soms entiteiten ("Medicine &amp; Science ...").
+    journal: (w['container-title']?.[0] ?? '').replace(/&amp;/g, '&'),
     year: w.issued?.['date-parts']?.[0]?.[0] ?? 0,
   };
 }

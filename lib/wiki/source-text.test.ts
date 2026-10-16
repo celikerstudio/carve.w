@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { allowsFullText, jatsToText, sourceFileName } from './source-text';
+import { allowsFullText, jatsToText, sourceFileName, stripTags } from './source-text';
 
 const xml = `<article><front><article-meta><abstract><sec><title>Background</title><p>Protein matters <xref ref-type="bibr" rid="B1">[1]</xref>.</p></sec></abstract></article-meta></front>
 <body><sec><title>Position statement</title><p>1. An intake of 1.4&#x2013;2.0 g/kg/d is sufficient.</p>
@@ -70,5 +70,11 @@ describe('JATS: randgevallen', () => {
     const t = jatsToText('<article><body><sec><sec-meta>x</sec-meta><title>A</title><p>One.</p></sec><sec><title>B</title><p>Two.</p></sec></body></article>');
     expect(t).toContain('## B');
     expect(t).toContain('Two.');
+  });
+});
+
+describe('tags weghalen', () => {
+  it('laat een kleiner-dan-teken in de tekst staan: "<10 min" is geen tag', () => {
+    expect(stripTags('bouts of <10 min and <i>longer</i> bouts > 10 min')).toBe('bouts of <10 min and longer bouts > 10 min');
   });
 });

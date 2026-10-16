@@ -17,9 +17,19 @@ function decode(s: string): string {
     .replace(/&amp;/g, '&');
 }
 
+/**
+ * Alleen echte tags weg (`<i>`, `</p>`, `<xref rid="x">`), niet een kleiner-dan-teken in de tekst.
+ *
+ * @ai-why: `/<[^>]+>/` slikte in de samenvatting van Jakicic 2019 alles van "<10 min" tot het
+ *   volgende ">", en daarmee een halve zin. Een tag begint met een letter of een slash.
+ */
+export function stripTags(s: string, sep = ''): string {
+  return s.replace(/<\/?[a-zA-Z][\w:.-]*(?:\s[^<>]*)?\/?>/g, sep);
+}
+
 /** Alles tussen tags weg, witruimte samengevoegd. */
 function inline(s: string): string {
-  return decode(s.replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
+  return decode(stripTags(s)).replace(/\s+/g, ' ').trim();
 }
 
 /** Een alinea; een `<list>` erin komt op eigen regels, los van de inleiding ervoor. */

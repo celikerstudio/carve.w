@@ -46,6 +46,16 @@ Een artikel dat geen leerdoel dient, is een kandidaat om samen te voegen of uit 
 
 **`:::check` omhult de bewering zelf, niet een notitie erover.** De schrijver van `progressive-overload` (2026-10-16) zette in een check "dit is algemene coachkennis" en liet de bewering in de tekst staan; dan gaat de onzekere zin gewoon live. Zonder bron: maak er advies van ("try a smaller step") in plaats van een feit ("stalls come sooner the longer you train"), of zet de zin zelf in de check.
 
+**Wat de reviews van cluster 1 (2026-10-16) vingen, en waar je dus zelf op let:**
+
+- **Een getal uit één studie gepresenteerd als uitkomst van de hele review.** "4 tot 335 dagen voor een gewoonte" kwam uit één studie naar gezond eten, en alles na dag 84 was een projectie van een curve. Noem bij een bereik of mediaan altijd uit welke studie het komt.
+- **De doelgroep weglaten.** 0,5-1% per week komt uit onderzoek naar bodybuilders die een wedstrijd voorbereiden; krachtverlies na slaaptekort gold alleen voor atleten. Staat de groep in de bron, dan staat hij in de zin.
+- **Een advies uit de inleiding van een review als bevinding.** "Koppel een gewoonte aan een routine" stond alleen in de inleiding, en een studie in dezelfde review vond geen verschil met een vast tijdstip.
+- **Een voorwaarde die alleen in de volledige tekst staat.** De ACSM-vuistregel (2-10% erbij) geldt "on two consecutive training sessions"; dat staat niet in de samenvatting. Steunt een zin op de volledige tekst van een bron die niet open access is, zet die zin dan onder `## Passages (handmatig geciteerd)` in het bronbestand.
+- **Een achterhaalde bron.** Een meta-analyse over trainingsfrequentie uit 2016 was in 2019 door dezelfde auteurs bijgewerkt, met een andere uitkomst. Zoek bij elke meta-analyse of er een nieuwere van dezelfde groep is.
+- **Tijd in bed is geen slaap.** 8,5 uur in bed gaf 7 uur 25 minuten slaap.
+- **Nooit persoonsgegevens naar een externe dienst.** Een reviewer stuurde Furkans e-mailadres mee naar Unpaywall. Geen e-mail, naam of account in een API-verzoek.
+
 PubMed geeft soms een lege samenvatting als je te snel achter elkaar vraagt (limiet van ongeveer drie per seconde). Een lege samenvatting betekent dus niet dat er geen is: probeer het opnieuw voor je concludeert.
 
 ## De opmaak

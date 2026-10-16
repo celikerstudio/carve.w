@@ -25,7 +25,7 @@ sources:
       - Fitschen PJ
     journal: Journal of the International Society of Sports Nutrition
     year: 2014
-    claim: Lose about 0.5 to 1% of bodyweight per week to keep as much muscle as possible.
+    claim: For bodybuilders preparing for a contest (lean, trained), lose about 0.5 to 1% of bodyweight per week to keep as much muscle as possible.
   - doi: 10.1093/ajcn/51.2.241
     title: A new predictive equation for resting energy expenditure in healthy individuals
     authors:
@@ -139,7 +139,7 @@ sources:
 A calorie is a unit of energy. Food labels say "calories" but mean kilocalories (kcal): the energy your body gets from eating that food. You spend it on staying alive, on digesting what you eat, and on moving.
 
 :::takeaway
-To lose fat, eat a little less than you burn and aim to lose **0.5 to 1% of your bodyweight a week** [1]. To build muscle, eat a little more than you burn. How much you burn depends on your size and how much you move; [[tdee]] shows how to work it out.
+To lose fat, eat a little less than you burn. Losing around **0.5 to 1% of your bodyweight a week** is a common target for keeping muscle [1], and with a lot of fat to lose you can go faster at first [3]. To build muscle, eat a little more than you burn. How much you burn depends on your size and how much you move; [[tdee]] shows how to work it out.
 :::
 
 ## Where do calories come from?
@@ -149,7 +149,7 @@ To lose fat, eat a little less than you burn and aim to lose **0.5 to 1% of your
 - **Fat** - 9 kcal per gram
 - **Alcohol** - 7 kcal per gram
 
-That's why fat adds up fast. One tablespoon of cooking oil is about 120 kcal, and it rarely makes it into anyone's food diary.
+That's why fat adds up fast. One tablespoon of cooking oil is about 120 kcal.
 
 ## How many calories do you need?
 
@@ -163,7 +163,7 @@ Treat that number as a guess. Eat it for two or three weeks and watch your weekl
 
 Fat loss comes from a calorie deficit you keep up over time. Which diet you use to get there (low-carb, low-fat or anything in between) matters much less [3].
 
-Speed matters more than most people think. The usual advice for keeping muscle is to lose 0.5 to 1% of your bodyweight a week [1]. For someone of 80 kg that's 0.4 to 0.8 kg. In a study with elite athletes who all trained with weights, the group that lost about 0.7% a week gained lean mass, while the group that lost faster did not [4].
+Speed matters more than most people think. A common recommendation for keeping muscle comes from research on lean bodybuilders: lose 0.5 to 1% of your bodyweight a week [1]. For someone of 80 kg that's 0.4 to 0.8 kg. In a study with elite athletes who all trained with weights, the group that lost about 0.7% a week gained lean mass, while the group that lost faster did not [4].
 
 If you have a lot of fat to lose, you can go faster at the start. The leaner you get, the slower it should be [3].
 
@@ -187,7 +187,7 @@ Protein is the other lever. In a deficit, eating more of it helps you keep your 
 
 ## How do you eat to build muscle?
 
-Building muscle works best with a steady calorie surplus and training that keeps asking more of you [3]. See [[bulking]] and [[progressive-overload]].
+Building muscle usually works best with a steady calorie surplus and training that keeps asking more of you [3]. See [[bulking]] and [[progressive-overload]].
 
 :::checklist
 - Start | Estimate your [[tdee]] and set a deficit that loses 0.5 to 1% of your weight a week.

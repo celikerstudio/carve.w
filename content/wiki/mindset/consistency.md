@@ -65,53 +65,65 @@ sources:
     journal: JAMA
     year: 2005
     claim: 'In a one-year trial of four popular diets, weight loss was linked to how well people stuck with their diet (r = 0.60) and not to which diet they picked (r = 0.07); adherence was low overall.'
+  - doi: 10.1111/bjhp.12504
+    title: 'Habit formation following routine‐based versus time‐based cue planning: A randomized controlled trial'
+    authors:
+      - Keller J
+      - Kwasnicka D
+      - Klaiber P
+      - Sichert L
+      - Lally P
+      - Fleig L
+    journal: British Journal of Health Psychology
+    year: 2021
+    claim: 'In a trial with 192 adults over 84 days, a median of 59 days to peak automaticity for those who formed a nutrition habit; linking it to a daily routine or to a set time worked about equally well.'
 ---
 
 ## Why does sticking with it matter more than the plan?
 
-A plan only works on the days you follow it. The sports nutrition position stand of the ISSN states that the long-term success of a diet depends on compliance [3]. Many different diets, from low-fat to low-carb, can work about equally well, so the one you can keep up is a good one.
-
-One year-long trial put 160 overweight or obese adults, all with a heart-risk factor such as high blood pressure, on one of four popular diets. Weight loss was linked to how closely people stuck to their diet (r = 0.60), and not to which diet they had been given (r = 0.07) [4]. Adherence was low overall, and it was self-reported, so this shows an association and does not prove that sticking with it caused the loss. Still, it points the same way as the position stand.
+A plan only works on the days you follow it. The sports nutrition position stand of the ISSN states that the long-term success of a diet depends on compliance, and on dealing with counteracting effects such as adaptive thermogenesis (your energy use dropping as you lose weight) [3]. Many different diets, from low-fat to low-carb, can work about equally well [3]. The one you can keep up is a good one.
 
 :::takeaway
-A habit takes **at least two to five months** to become automatic, not 21 days [1]. It varies a lot between people, so judge yourself against your own progress. Do the same thing at the same time and place, tie it to something you already do, start small, and pick it yourself. One missed day does not undo anything [2].
+Plan on **at least two to five months** before a new habit feels automatic, not 21 days [1]. Pick a fixed cue (a routine you already have, or a set time) and repeat the behaviour in the same place. Start small, and choose the habit yourself. In one 12-week study, missing a single day did not noticeably slow habit formation [2].
 :::
+
+One year-long trial put 160 overweight or obese adults, all with a heart-risk factor such as high blood pressure, on one of four popular diets. Weight loss was linked to how closely people stuck to their diet (r = 0.60) and was hardly linked to which diet they had been given (r = 0.07) [4]. Adherence was low overall and self-reported, so this shows an association and does not prove that sticking with it caused the loss. It points the same way as the position stand.
 
 ## How long does a habit really take?
 
-The "21 days" idea is popular and is said to come from the book Psycho-Cybernetics by Maxwell Maltz. A 2024 systematic review and meta-analysis of 20 studies with 2,601 people looked at how long health habits actually take. Its authors write that the results refute the idea that habits form in about 21 days [1].
+The "21 days" idea is said to come from the book Psycho-Cybernetics by Maxwell Maltz. A 2024 systematic review and meta-analysis of 20 studies with 2,601 people looked at how long health habits actually take. Its authors write that the findings refute the idea that habits form in about 21 days [1].
 
 What the review found:
 
-- Four of the studies reported the time to form a habit. The medians were 59 to 66 days and the means were 106 to 154 days [1].
-- Within those studies, individual times ran from 4 to 335 days [1].
-- The 59-day median comes from a study on healthy eating, where only 23% of the people reached the set threshold at all. The 66-day median comes from a study where people picked an eating, drinking or exercise habit and the time was measured as reaching 95% of their personal plateau of automaticity [1][2].
+- Four studies reported a time to form a habit. Medians were 59 to 66 days [1].
+- Both medians are the time to reach 95% of a person's own estimated plateau of automaticity, fitted from daily questionnaires [1][2][5]. The 59 days comes from a healthy-eating trial of 84 days, where only 23% of the people reached the set threshold [1][5]. The 66 days comes from 12 weeks of data, counting only people whose data fit the curve well [2].
+- The review's range of means, 106 to 154 days, comes from one study of daily stretching (106 morning, 154 evening). A fourth study, which asked people how long it took them, got a mean of 91 days [1].
 
-So there is no single number. The review advises planning for at least two to five months before a new health habit feels automatic [1]. That is advice drawn from a small body of studies (most were rated at high risk of bias), so read it as a realistic range and not as a deadline. See [[realistic-expectations]] for the same idea applied to results.
+So there is no single number. The review advises planning for at least two to five months before a new health habit feels automatic [1]. That advice rests on a small body of studies, and most were rated at high risk of bias, so treat it as a realistic range and not a deadline. [[realistic-expectations]] applies the same idea to results.
 
 ## Why can your pace differ from someone else's?
 
-In the original study behind the 66-day median, the time to reach 95% of the plateau ranged from 18 to 254 days between people [2]. Across the review the full range was 4 to 335 days [1].
+People differ a lot. In the healthy-eating trial, individual estimates ran from 4 to 335 days. The study only lasted 84 days, so anything past that is a projection from the fitted curve [1][5]. In the 12-week study the range was 18 to 254 days, again partly projected past day 84 [2].
 
-The review suggests part of the reason is the behaviour. Simple, repetitive actions with a clear trigger and a quick reward, such as flossing or drinking water, formed habits more easily. Regular healthy eating and exercise showed somewhat smaller effects [1]. Training and eating well are bigger asks than flossing, so they take longer. That is no sign that you are doing it wrong.
+The review also notes that simple, repetitive actions with a clear trigger and a quick reward, such as flossing or drinking water, showed larger gains in habit scores than regular healthy eating and exercise. The authors say this may reflect how well the interventions worked, so it does not tell you how long any of them takes [1].
 
-Early repetitions also count for more. In the study the review cites, automaticity rose fastest in the first repetitions, and later repetitions added less [1]. The first weeks are the hardest part, and they get easier.
+Early repetitions count for more. In the study the review cites, automaticity rose fastest in the first repetitions, and later repetitions added less [1].
 
 ## What makes a habit stick?
 
-The review points to a few things, though the evidence is still thin and the number of studies is small [1].
+The evidence is thin and comes from few studies [1]. These points come up most.
 
-- **Same context.** People who did the behaviour in a stable, consistent context showed stronger habits. Train at the same time, in the same place, with the bag packed the night before [1].
-- **Link it to a routine you already have.** The authors describe attaching a new habit to an existing one as an effective way to make it fit into the day. "After my coffee, I put on my gym shoes" is an example [1].
-- **Start small.** Modest, attainable goals with an end date make it more likely that a habit forms [1]. A twenty-minute session you really do beats a perfect hour you skip. See [[goal-setting]].
-- **Choose it yourself.** Habits people picked themselves formed stronger than habits that were handed to them [1].
-- **Morning, if it suits you.** Practising in the morning appeared to give stronger habits than practising in the evening [1]. This is a pattern in the data, so use it only if mornings fit your life.
+- **Same context.** People who did the behaviour in a stable, consistent context showed stronger habits. Train at the same time and place, with the bag packed the night before [1].
+- **A fixed cue.** In a trial with 192 adults, linking a nutrition habit to an existing routine ("after breakfast") and linking it to a set time ("at 9:00") worked about equally well [5]. Pick whichever fits your day, and repeat it.
+- **Start small.** The review's authors say modest, attainable goals with an end date make a habit more likely to form. That is their advice from earlier work, and the review did not test it [1]. A twenty-minute session you do beats a perfect hour you skip. See [[goal-setting]].
+- **Choose it yourself.** In one study, habits people picked themselves ended up stronger than habits handed to them [1].
+- **Morning, if it suits you.** In one study of stretching, morning practice gave stronger habits than evening practice [1]. Use that only if mornings fit your life.
 
 ## What should you do after a missed day?
 
-Carry on the next day with the normal plan. In the study of 96 volunteers who repeated a chosen behaviour daily for 12 weeks, missing one opportunity did not materially affect the habit formation process [2]. Making up for it by doing double, or by eating much less the day after, is not needed.
+Carry on the next day with the normal plan. In a study of 96 volunteers who repeated a chosen behaviour daily for 12 weeks, missing one opportunity did not materially affect the habit formation process [2]. You do not need to make up for it by doing double, or by eating much less the day after.
 
-The review adds that the exact amount of consistency needed is unclear [1]. What it does show is that repetition in the same context is what builds the habit. If the week fell apart, restart with the small version of the habit and build back up. Tracking helps you see the whole week and not just the bad day; see [[progress-tracking]].
+The review adds that the amount of consistency needed is unclear. It does show that repeating the behaviour in the same context builds the habit [1]. If the week fell apart, restart with the small version of the habit and build back up. Tracking shows you the whole week and not just the bad day; see [[progress-tracking]].
 
 :::check
 Not backed by the sources above and needs a source or a rewrite before publishing: what a longer break (a week or more) does to a habit that was already formed, and whether restarting at a smaller version helps. The study only covers a single missed opportunity [2].
@@ -119,7 +131,7 @@ Not backed by the sources above and needs a source or a rewrite before publishin
 
 ## What if motivation runs out?
 
-Motivation comes and goes. A habit that has become automatic needs less of it, and that is the point of the months above [1]. Until then, make the next step small and easy to start. [[discipline]] covers what to do on the days you do not feel like it. If your weight stops moving even though you stick with the plan, that is a separate question, covered in [[plateaus]].
+Motivation comes and goes. The idea behind habits is that a behaviour that has become automatic needs less of it, which is why the months above matter. Until then, make the next step small and easy to start. [[discipline]] covers the days you do not feel like it. If your weight stops moving even though you stick with the plan, that is a separate question, covered in [[plateaus]].
 
 ## What worked for me
 

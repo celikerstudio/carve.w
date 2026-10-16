@@ -166,14 +166,14 @@
 
 - id: gewoonte-koppelen
   laag: fundament
-  doel: "Kan een nieuwe gewoonte koppelen aan een bestaande routine, zodat ze makkelijker in je dag past."
+  doel: "Kan een nieuwe gewoonte aan een vaste aanleiding hangen, een bestaande routine of een vast tijdstip; in één studie werkten die even goed."
   bron: habits-singh-2024
-  passage: "One effective approach is to integrate novel habits with pre-existing ones, thereby creating a routine"
+  passage: "Keller et al. [22] found no significant difference in the effectiveness of habit formation between habits triggered by time-based cues (e.g., drinking a glass of water at 9:00 a.m. each morning) and those by routine-based cues"
   artikel: consistency
 
 - id: gewoonte-klein-beginnen
-  laag: fundament
-  doel: "Weet dat beginnen met kleine, haalbare doelen met een eindtijd de kans vergroot dat een gewoonte blijft."
+  laag: naslag
+  doel: "Weet dat beginnen met kleine, haalbare doelen met een eindtijd een veelgegeven advies is, al heeft de review het niet zelf getoetst."
   bron: habits-singh-2024
   passage: "Initiating with modest, attainable and time-bound goals also enhances the probability of habit formation."
   artikel: goal-setting

@@ -1,114 +1,53 @@
-# Carve Wiki Content
+# Wiki-artikelen
 
-This directory contains the markdown source files for all Carve Wiki articles.
+De bron van de artikelen op carve.wiki/wiki en in de app ([TDR-0017](../../docs/tdr/0017-artikelen-uit-de-repo-met-auteur-en-bronnen.md)). De database is een kopie: wat je daar rechtstreeks aanpast, overschrijft de volgende sync.
 
-## Directory Structure
+Eén bestand per artikel: `<categorie>/<slug>.md`. De slug is het adres (`/wiki/nutrition/protein`) en wat de coach gebruikt in `[[protein]]`. Een slug hernoem je dus niet.
 
-Articles are organized into 6 knowledge domain categories:
-
-- **nutrition/** - Articles about macronutrients, micronutrients, meal timing, supplements, diets
-- **exercise-science/** - Articles about biomechanics, exercise types, programming, periodization
-- **physiology/** - Articles about muscle growth, fat loss, energy systems, recovery, adaptation
-- **training-methods/** - Articles about strength training, cardio, mobility, sport-specific training
-- **psychology/** - Articles about motivation, habits, goal setting, mindset
-- **injury-health/** - Articles about injury prevention, rehab, common issues, medical topics
-
-## Article Format
-
-All articles follow a consistent format with YAML frontmatter. See `_template.md` for the complete template.
-
-### Required Frontmatter Fields
-
-```yaml
----
-title: "Article Title"
-category: "nutrition" | "exercise-science" | "physiology" | "training-methods" | "psychology" | "injury-health"
-tags: ["tag1", "tag2", "tag3"]
-evidence_rating: "well-established" | "emerging-research" | "expert-consensus"
-author: "Author Name"
-created_at: "YYYY-MM-DD"
-updated_at: "YYYY-MM-DD"
----
-```
-
-### Optional Frontmatter Fields
-
-```yaml
-reviewers: ["Expert 1", "Expert 2"]  # Expert reviewers
-related: ["slug-1", "slug-2"]        # Related article slugs
-summary: "Brief summary"              # Override auto-extracted summary
-```
-
-## Article Structure
-
-Every article should follow this structure:
+## Een artikel
 
 ```markdown
-# Article Title
+---
+title: Protein
+category: Nutrition            # Nutrition | Training | Recovery | Supplements | Mindset
+summary: How much protein you need to build muscle, and when it matters.   # max 160 tekens
+evidence: well-established     # well-established | expert-consensus | emerging-research
+status: draft                  # draft | reviewed
+tags: [protein, muscle]
+citation_ids: [issn-protein-2017]   # de vaste bronnen in de app; laten staan
+tease:                         # optioneel: de wazige blik onder het antwoord
+  title: Do you get enough?
+  line: Log your meals. Carve shows your protein for the day.
+  preview: "Protein today: 96 of 144 g"
+sources:
+  - doi: 10.1186/s12970-017-0177-8
+    claim: 1.4 to 2.0 g per kg a day is enough for most people who train.
+---
 
-## Summary
-[2-3 sentence overview]
+## What is protein?
 
-## Table of Contents
-- [Section 1](#section-1)
-- [Section 2](#section-2)
-- [Sources](#sources)
-- [Related Articles](#related-articles)
+Protein is ... [1]
 
-## Main Content
-
-### Section 1
-[Content with inline citations^1]
-
-### Section 2
-[More content^2]
-
-## Sources
-1. Author et al. (Year). "Title." Journal Name. [URL]
-2. Another Author (Year). "Title." Publication. [URL]
-
-## Related Articles
-- [Related Article 1](/wiki/category/article-slug)
-- [Related Article 2](/wiki/category/article-slug)
+:::takeaway
+Eat **1.6 to 2.2 g per kg** a day to build muscle.
+:::
 ```
 
-## Evidence Ratings
+## Opmaak
 
-Choose the appropriate evidence rating for each article:
+Alleen wat het web en de app allebei kunnen tonen:
 
-- **well-established**: Strong peer-reviewed consensus, multiple meta-analyses, widely accepted
-- **emerging-research**: Promising research findings, needs more replication studies
-- **expert-consensus**: Based on practitioner experience, limited research but widely practiced
+- `##` en `###`, alinea's, `-`-lijsten, **vet**
+- `:::takeaway` (verplicht, het antwoord bovenaan) en `:::checklist` met regels als `- Label | tekst`
+- `[[slug]]` of `[[slug|tekst]]` naar een ander artikel
+- `[1]` voor bron 1 uit `sources`
 
-## Citation Guidelines
+Niet: tabellen, afbeeldingen, HTML, een `#`-kop, externe links in de tekst, andere `:::`-blokken. Je eigen ervaring komt onder een gewone kop, bijvoorbeeld `## What worked for me`.
 
-1. Every factual claim must have an inline citation (^1, ^2, etc.)
-2. Prefer peer-reviewed journal articles
-3. Include meta-analyses and systematic reviews when available
-4. Use APA format for citations in the Sources section
-5. Include DOI or URL when available
+## Van concept naar live
 
-## Syncing Content
-
-After adding or updating articles, run the sync script to update the database:
-
-```bash
-pnpm sync-wiki
-```
-
-This script:
-1. Scans all .md files in this directory
-2. Parses frontmatter and content
-3. Converts markdown to HTML
-4. Updates the Supabase database
-
-## File Naming
-
-Use kebab-case for filenames, matching the article slug:
-
-- ✅ `protein-requirements.md`
-- ✅ `progressive-overload.md`
-- ❌ `Protein Requirements.md`
-- ❌ `protein_requirements.md`
-
-The filename (without .md) becomes the article slug in URLs.
+1. Concept schrijven. Bij elke bron alleen `doi` (of `pmid`) en `claim`.
+2. `pnpm wiki:check <slug> --fill` zoekt elke bron op bij Crossref of PubMed en vult titel, auteurs, tijdschrift en jaar in. Een bron die niet bestaat blijft een fout.
+3. `pnpm wiki:check <slug> --abstracts` zet per bron de bewering naast de samenvatting. Lees ze: draagt de studie wat de tekst zegt? Zo niet, dan gaat de bron eruit en wordt de zin zachter.
+4. Furkan leest, past aan en schrijft zijn eigen stuk. Bij akkoord: `status: reviewed`.
+5. `pnpm sync-wiki` laat zien wat er verandert, `pnpm sync-wiki --write` schrijft het. Binnen het uur staat het live, en met `status: reviewed` en een bron ook in Google.

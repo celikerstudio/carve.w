@@ -98,6 +98,17 @@ export async function renderFragment(markdown: string, links: Map<string, WikiLi
   return markdownToHtml(resolveLinks(markdown, links));
 }
 
+/**
+ * `[1]` in de tekst wordt een link naar bron 1 onderaan (TDR-0017 §5).
+ *
+ * @ai-why: Na het renderen en niet ervoor. Remark laat `[1]` zonder linkdefinitie als tekst staan,
+ *   en zo blijft de markdown precies wat de app ook leest: daar is `[1]` gewoon leesbare tekst.
+ * @ai-sync: components/wiki/public/ArticleParts.tsx (Sources zet de ankers `source-<n>`)
+ */
+function linkReferences(html: string): string {
+  return html.replace(/(?<![[\w])\[(\d{1,2})\](?![(\]])/g, (_, n: string) => `<sup class="ref"><a href="#source-${n}">${n}</a></sup>`);
+}
+
 export async function renderArticle(
   markdown: string,
   links: Map<string, WikiLink>,
@@ -120,5 +131,5 @@ export async function renderArticle(
     toc.push({ id, text: decodeEntities(inner.replace(/<[^>]+>/g, '')) });
     return `<h2 id="${id}">${inner}</h2>`;
   });
-  return { html: out, toc };
+  return { html: linkReferences(out), toc };
 }

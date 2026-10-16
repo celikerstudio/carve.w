@@ -4,7 +4,7 @@
 - **Datum:** 2026-10-16
 - **Beslisser:** Furkan
 - **Gerelateerd:** bouwt voort op [TDR-0016](./0016-de-wiki-is-weer-publiek.md) (vult de consequentie "dunne artikelen staan publiek" in) · [TDR-0014](./0014-drie-vraagpaginas-voor-ai-antwoorden.md) (dezelfde AI-meting) · [TDR-0009](./0009-campagnerendement-komt-uit-ga4.md) (Apple's `ct`)
-- **Raakt:** `content/wiki/` (bron van alle artikelen), `scripts/sync-wiki-articles.ts`, `scripts/wiki-check.ts` (nieuw), `lib/wiki/seo.ts`, `app/sitemap.ts`, `app/wiki/[category]/[slug]/page.tsx`, `app/about/` (nieuw), `components/wiki/public/VisitorTease.tsx`, `components/wiki/public/GetCarveLink.tsx`, en in Carve-AI de wiki-lezer van de app
+- **Raakt:** `content/wiki/` (bron van alle artikelen), `scripts/wiki/` (export, check en sync; vervangt `scripts/sync-wiki-articles.ts`), `lib/wiki/source-file.ts` en `lib/wiki/sources.ts` (nieuw), `lib/wiki/seo.ts`, `app/sitemap.ts`, `app/wiki/[category]/[slug]/page.tsx`, `app/about/` (nieuw), `components/wiki/public/VisitorTease.tsx`, `components/wiki/public/GetCarveLink.tsx`, en in Carve-AI de wiki-lezer van de app
 
 ## Context
 
@@ -61,5 +61,5 @@ Na tien weken liggen per beoordeeld artikel drie cijfers naast elkaar: Google-kl
 ## Synchronisatie
 
 - `lib/wiki/seo.ts` en `app/sitemap.ts`: dezelfde indexregel.
-- `scripts/wiki-check.ts` en `Carve AI/App/Views/Components/Wiki/WikiArticleDetailView.swift`: de toegestane opmaak.
+- `lib/wiki/source-file.ts` (lintArticle) en `Carve AI/App/Views/Components/Wiki/WikiArticleDetailView.swift`: de toegestane opmaak.
 - `components/wiki/public/GetCarveLink.tsx` en `lib/app-store-link.ts`: de `ct` uit de wiki.

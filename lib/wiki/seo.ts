@@ -77,7 +77,7 @@ export function articleJsonLd(a: {
       // @ai-why: `updated_at` en geen aparte reviewdatum. De sync schrijft alleen een artikel
       //   waarvan de tekst veranderd is, dus voor een beoordeeld artikel is dit de dag dat
       //   Furkan het goedkeurde. Een eigen kolom zou een migratie in Carve-AI vragen.
-      // @ai-sync: scripts/sync-wiki-articles.ts (schrijft alleen wat veranderd is)
+      // @ai-sync: scripts/wiki/sync.ts (schrijft alleen wat veranderd is)
       dateModified: a.updatedAt,
       // @ai-why: Een persoon alleen onder wat hij gelezen heeft. Zijn naam onder een AI-concept
       //   is precies de claim die Google en de lezer niet moeten kunnen betrappen.

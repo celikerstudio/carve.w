@@ -36,7 +36,7 @@ export function Sources({ citations }: { citations: WikiCitation[] }) {
       <div className="h">Sources</div>
       <ol>
         {citations.map((c) => (
-          <li key={c.number}>
+          <li key={c.number} id={`source-${c.number}`}>
             {c.authors}
             {c.year ? ` (${c.year})` : ''}. {c.title}. {c.publication}.
             {c.url && (

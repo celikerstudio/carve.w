@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "sync-wiki": "tsx scripts/sync-wiki-articles.ts"
+    "sync-wiki": "tsx scripts/wiki/sync.ts",
+    "wiki:check": "tsx scripts/wiki/check.ts"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.50",

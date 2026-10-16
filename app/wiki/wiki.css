@@ -235,3 +235,8 @@
 .wiki-meta a { color: var(--t2); }
 .wiki-meta a:hover { color: var(--t1); }
 @media (max-width: 600px) { .wiki-about h1 { font-size: 40px; } }
+.wiki-prose sup.ref { font-size: 11px; line-height: 0; margin-left: 1px; }
+.wiki-prose sup.ref a { color: var(--t3); }
+.wiki-prose sup.ref a:hover { color: var(--t1); }
+.wiki-refs li { scroll-margin-top: 80px; }
+.wiki-refs li:target { color: var(--t1); }

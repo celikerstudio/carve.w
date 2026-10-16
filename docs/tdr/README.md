@@ -23,6 +23,7 @@
 | [0015](./0015-de-wortel-kiest-de-taal.md) | De wortel kiest de taal | Alleen `/` kijkt naar `Accept-Language`: Nederlands naar `/nl/app`, de rest en geen voorkeur naar `/app`. `/app` en `/nl/app` sturen nooit door. 307 met `Vary: Accept-Language`. Overrulet beslissing 1 van TDR-0012. | Voorgesteld 2026-09-27 |
 | [0016](./0016-de-wiki-is-weer-publiek.md) | De wiki is weer publiek | `/wiki`, `/wiki/<categorie>`, `/wiki/<categorie>/<artikel>`, statisch uit `wiki_articles`, markdown hier gerenderd, rekenhulp per slug, twee verkoopmomenten. Wiki-modus uit de cockpit. Overrulet beslissing 6 van TDR-0005. | Voorgesteld 2026-10-16 |
 | [0017](./0017-artikelen-uit-de-repo-met-auteur-en-bronnen.md) | De artikelen komen uit de repo, met een auteur en gecontroleerde bronnen | Markdown in `content/wiki/` is de bron, de database een kopie. Alleen `type = 'reviewed'` met een gecontroleerde bron wordt geïndexeerd. Furkan is de auteur (`/about`). Bronnen via `pnpm wiki:check` tegen Crossref/PubMed. `ct=wiki<slug>` en `article_slug` per artikel. Samenvoegen wacht op aliassen in de app. | Voorgesteld 2026-10-16 |
+| [0018](./0018-de-wiki-krijgt-eindtermen.md) | De wiki krijgt eindtermen | Leerdoelen in `content/wiki/leerdoelen.yaml`, in drie lagen (fundamenten, twee doelen, naslag), elk afgeleid van een richtlijn die als tekst in `content/wiki/bronnen/` staat. `wiki:dekking` meet de dekking. `:::check` houdt onverifieerbare zinnen binnen. Werkwijze als skill, review vóór publicatie. | Voorgesteld 2026-10-16 |
 
 ## Wanneer schrijf je een TDR?
 

@@ -20,3 +20,9 @@ In order to stimulate further adaptation toward specific training goals, progres
 Letterlijk overgenomen uit de volledige tekst van dit position stand (Med Sci Sports Exerc 2009;41(3):687-708, doi 10.1249/MSS.0b013e3181915670), gelezen op 2026-10-16 in een kopie op https://www.sfu.ca/~ryand/kin343/ACSMresistance.pdf. De tekst is niet open access; alleen deze zin staat hier, omdat de vuistregel in `progressive-overload` erop steunt.
 
 > […] 2–10% (lower percent for small muscle mass exercises, higher percent increase for large muscle mass exercises) increase in load be applied when the individual can perform the current workload for one to two repetitions over the desired number on two consecutive training sessions (68).
+
+> […] novice and intermediate individuals, it is recommended that moderate loading be used (70–85% of 1 RM) for 8–12 repetitions per set for one to three sets per exercise (3,49,157,175,228,249).
+
+> […] it is recommended that a loading range of 70–100% of 1 RM be used for 1–12 repetitions per set for three to six sets per exercise in periodized manner such that the majority of training is devoted to 6–12 RM and less training devoted to 1–6 RM loading (149,155,169).
+
+> It is recommended that 1- to 2-min rest periods be used in novice and intermediate training; for advanced training, length of rest period should correspond to the goals of each exercise such that 2- to 3-min rest periods may be used with heavy loading for core exercises and 1–2 min may be used for other exercises of moderate to moderately high intensity.

@@ -199,14 +199,14 @@
   doel: "Weet dat extra eiwit in combinatie met krachttraining en een calorietekort kan zorgen voor meer vetverlies en een betere lichaamssamenstelling."
   bron: issn-protein-2017
   passage: "an elevated daily intake of protein (2 – 3× the RDA) can promote greater losses of fat mass and greater overall improvements in body composition."
-  artikel: cutting
+  artikel: calorie-deficit
 
 - id: maaltijdfrequentie-gewichtsverlies
   laag: vet-verliezen
-  doel: "Weet dat vaker of minder vaak eten weinig invloed heeft op gewichtsverlies, maar wel op eetlust en verzadiging."
+  doel: "Weet dat vaker of minder vaak eten zonder trainingsprogramma weinig invloed heeft op gewichtsverlies, en meer op eetlust en verzadiging."
   bron: issn-nutrient-timing-2017
   passage: "changing the frequency of meals has shown limited impact on weight loss and body composition, with stronger evidence to indicate meal frequency can favorably improve appetite and satiety."
-  artikel: meal-timing
+  artikel: hunger-and-satiety
 
 - id: frequentie-honger
   laag: vet-verliezen
@@ -234,18 +234,18 @@
   doel: "Weet dat je als je leaner wordt langzamer moet afvallen (rond 0,7% van je lichaamsgewicht per week deed het beter dan 1,4%) om spiermassa te behouden."
   bron: issn-diets-2017
   passage: "As subjects get leaner, slower rates of weight loss can better preserve LM, as in Garthe et al.’s example of a weekly reduction of 0.7% of body weight outperforming 1.4%"
-  artikel: cutting
+  artikel: calorie-deficit
 
 - id: focus-spierbehoud-cut
   laag: vet-verliezen
   doel: "Weet dat voldoende eiwit, krachttraining en een gematigd afvaltempo de drie dingen zijn die spieren beschermen tijdens vetverlies."
   bron: issn-diets-2017
   passage: "Adequate protein, resistance training, and an appropriate rate of weight loss should be the primary focus for achieving the objective of LM retention (or gain) during FM loss."
-  artikel: cutting
+  artikel: calorie-deficit
 
 - id: metabolisme-trager-voorkomen
   laag: vet-verliezen
-  doel: "Weet dat een trager metabolisme door lang diëten te voorkomen is met krachttraining en genoeg eiwit, ook bij een laag calorieniveau."
+  doel: "Weet dat krachttraining de extra vertraging van je verbruik bij lang diëten kan helpen beperken, en dat het onderzoek met genoeg eiwit erbij dun is."
   bron: issn-diets-2017
   passage: "Research that has mindfully included resistance training and adequate protein has circumvented the problem of AT [25] and LM loss [26], despite very low-calorie intakes."
   artikel: metabolism
@@ -271,7 +271,7 @@
   doel: "Weet dat spieropbouw het best werkt met een aanhoudend calorieoverschot dat je groeiende trainingsbelasting ondersteunt."
   bron: issn-diets-2017
   passage: "diets primarily focused on LM gain are likely optimized via sustained caloric surplus to facilitate anabolic processes and support increasing training demands."
-  artikel: calorie-surplus
+  artikel: bulking
 
 - id: surplus-grootte
   laag: spier-opbouwen
@@ -282,9 +282,9 @@
 
 - id: spiergroei-belasting
   laag: spier-opbouwen
-  doel: "Weet dat je voor spiergroei vooral in de zone van 6 tot 12 RM traint, met 1 tot 2 minuten rust tussen sets."
+  doel: "Weet dat de ACSM gevorderden voor spiergroei vooral laat trainen met gewichten voor 6 tot 12 herhalingen, en minder met 1 tot 6."
   bron: acsm-resistance-training-2009
-  passage: "For loading, it is recommended that loads corresponding to 1-12 RM be used in periodized fashion with emphasis on the 6-12 RM zone using 1- to 2-min rest periods between sets at a moderate velocity."
+  passage: "such that the majority of training is devoted to 6–12 RM and less training devoted to 1–6 RM loading"
   artikel: hypertrophy
 
 - id: spiergroei-volume
@@ -292,7 +292,7 @@
   doel: "Weet dat meer sets per oefening (hoger volume) aanbevolen worden om spiergroei te maximaliseren."
   bron: acsm-resistance-training-2009
   passage: "Higher volume, multiple-set programs are recommended for maximizing hypertrophy."
-  artikel: volume
+  artikel: hypertrophy
 
 # ── naslag (43) ──
 

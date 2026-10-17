@@ -25,9 +25,11 @@ import subprocess
 import sys
 
 ROOT = os.environ.get("CARVE_ADS_ROOT") or os.path.expanduser(
-    "~/Developer/celiker-studio/carve"
+    "~/Developer/content/carve/ads"
 )
 PROJECTS = os.path.join(ROOT, "projecten")
+# @ai-why Sinds 2026-10-17 staat materiaal/ naast ads/ (Instagram deelt het), niet erin.
+FOOTAGE = os.path.join(os.path.dirname(ROOT), "materiaal")
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEMPLATES = os.path.join(HERE, "concat-templates")
 
@@ -334,9 +336,10 @@ def cmd_repareer(project_name):
         if os.path.isfile(entry["path"]):
             continue
         hits = []
-        for base, _dirs, files in os.walk(ROOT):
-            if entry["name"] in files:
-                hits.append(os.path.join(base, entry["name"]))
+        for top in (ROOT, FOOTAGE):
+            for base, _dirs, files in os.walk(top):
+                if entry["name"] in files:
+                    hits.append(os.path.join(base, entry["name"]))
         if len(hits) == 1:
             needed = timeline_use(project, entry["id"])
             entry.update(probe(hits[0]))

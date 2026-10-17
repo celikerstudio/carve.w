@@ -7,7 +7,7 @@ set -euo pipefail
 export PATH="/opt/homebrew/bin:$PATH"
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MEDIA_ROOT="${CARVE_ADS_ROOT:-$HOME/Developer/celiker-studio/carve}"
+MEDIA_ROOT="${CARVE_ADS_ROOT:-$HOME/Developer/content/carve/ads}"
 MODEL="${WHISPER_MODEL:-$HOME/.cache/whisper-cpp/ggml-small.bin}"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
@@ -50,10 +50,10 @@ STYLE_CSS="$HERE/styles/$STYLE.css"
 # uit meerdere submappen tegelijk (schermopname als bewijs, gefilmd of gegenereerd
 # beeld als context), dus clips dragen hun submap: "1-schermopnames/scan.mov".
 FOOTAGE="$(j '.footage_dir // ""')"; FOOTAGE="${FOOTAGE/#\~/$HOME}"
-[ -n "$FOOTAGE" ] || FOOTAGE="$MEDIA_ROOT/materiaal"
+[ -n "$FOOTAGE" ] || FOOTAGE="$(dirname "$MEDIA_ROOT")/materiaal"  # materiaal/ staat naast ads/, want Instagram deelt het
 
 SLUG="${RATIO//:/x}"
-# @ai-sync ~/Developer/celiker-studio/carve/LEESMIJ.txt beschrijft dezelfde mapindeling.
+# @ai-sync ~/Developer/content/carve/materiaal/LEESMIJ.txt beschrijft dezelfde mapindeling.
 CHANNEL="$(j '.channel // "ads"')"
 case "$CHANNEL" in
   ads) OUTDIR="$MEDIA_ROOT/export/ads";;

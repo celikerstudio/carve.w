@@ -64,7 +64,7 @@ for i, (_, _, text) in enumerate(cues):
 # maar één frame en is de overlay meteen daarna weg: je ziet de tekst dan alleen
 # in het allereerste frame van de video. Het afkappen doet -shortest in build-ad.sh.
 # @ai-gotcha De paden gaan relatief terug: build-ad.sh leest regel 2 in een bash-array
-# via woordsplitsing, en de werkmap zit onder "~/Developer/celiker-studio/carve", met spaties.
+# via woordsplitsing, en de werkmap zit onder "~/Developer/content/carve/ads", en projectnamen kunnen spaties hebben.
 inputs, graph, prev, n = [], [], "0:v", 0
 if hook_png and hook_dur > 0:
     inputs += ["-loop", "1", "-i", hook_png]

@@ -91,7 +91,7 @@ Twijfel je, dan is het antwoord nee. `03-afgekeurd` is er precies voor.
 
 ## Waar het landt
 
-Ruw naar `~/Developer/celiker-studio/carve/materiaal/3-ai-gegenereerd/01-ruw/`, goedgekeurde takes naar
+Ruw naar `~/Developer/content/carve/materiaal/3-ai-gegenereerd/01-ruw/`, goedgekeurde takes naar
 `02-goedgekeurd/`, mislukkingen die iets leren naar `03-afgekeurd/`. Alleen uit
 `02-goedgekeurd` haal je clips voor een recept.
 

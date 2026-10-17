@@ -43,7 +43,7 @@ We bouwen de advertenties met een eigen pijplijn op ffmpeg en whisper, in
    losse clip, zodat timestamps niet verschuiven bij het trimmen.
 5. **Het resultaat van een ad woont in het recept**, onder `results`. Er komt geen
    apart logboek en geen CSV naast.
-6. **Beeld staat buiten de repo**, in `~/Developer/celiker-studio/carve/`. Tekst en recepten in
+6. **Beeld staat buiten de repo**, in `~/Developer/content/carve/` (`materiaal/` en `ads/`; tot 2026-10-17 `~/Developer/celiker-studio/carve/`). Tekst en recepten in
    git, media erbuiten.
 
 ## Alternatieven afgewogen

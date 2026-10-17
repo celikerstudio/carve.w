@@ -12,12 +12,12 @@ Van idee tot gepubliceerde ad, en wat we ervan bewaren. De pijplijn zelf staat i
 | `scripts/ads/recipes/templates/` | herbruikbare formats als recept | ja |
 | `scripts/ads/recipes/creatives/` | één bestand per gemaakte ad, mét resultaat | ja |
 | `scripts/ads/styles/` | de stijlen | ja |
-| `~/Developer/celiker-studio/carve/projecten/` | Concat-projecten, als je met de hand monteert | nee |
-| `~/Developer/celiker-studio/carve/materiaal/1-schermopnames/` | echte opnames van de app | nee |
-| `~/Developer/celiker-studio/carve/materiaal/2-echt-beeld/` | gefilmd materiaal, per opnamedag een submap | nee |
-| `~/Developer/celiker-studio/carve/materiaal/3-ai-gegenereerd/` | AI-beeld, apart omdat het gelabeld moet worden | nee |
-| `~/Developer/celiker-studio/carve/materiaal/4-audio/` | voice-overs en muziek | nee |
-| `~/Developer/celiker-studio/carve/export/ads/` en `6-klaar-socials/` | de exports | nee |
+| `~/Developer/content/carve/ads/projecten/` | Concat-projecten, als je met de hand monteert | nee |
+| `~/Developer/content/carve/materiaal/1-schermopnames/` | echte opnames van de app | nee |
+| `~/Developer/content/carve/materiaal/2-echt-beeld/` | gefilmd materiaal, per opnamedag een submap | nee |
+| `~/Developer/content/carve/materiaal/3-ai-gegenereerd/` | AI-beeld, apart omdat het gelabeld moet worden | nee |
+| `~/Developer/content/carve/materiaal/4-audio/` | voice-overs en muziek | nee |
+| `~/Developer/content/carve/ads/export/ads/` en `6-klaar-socials/` | de exports | nee |
 
 Tekst en recepten in git, beeld erbuiten. Een recept van twee kilobyte beschrijft
 een ad volledig; de mp4 van veertig megabyte is er een afdruk van en kan altijd
@@ -111,7 +111,7 @@ filtergraph die niemand meer leest.
 ## Met de hand monteren in Concat
 
 Naast de pijplijn kun je een ad met de hand bouwen in Concat. Projecten horen in
-`~/Developer/celiker-studio/carve/projecten/`, dus in dezelfde hoofdmap als het beeld.
+`~/Developer/content/carve/ads/projecten/`, dus in dezelfde hoofdmap als het beeld.
 
 **Concat slaat absolute paden op naar je bestanden.** Verplaats je een map nadat je
 materiaal hebt geïmporteerd, dan is het project stuk: hij zoekt op het oude pad en

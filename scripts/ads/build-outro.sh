@@ -18,7 +18,7 @@ set -euo pipefail
 export PATH="/opt/homebrew/bin:$PATH"
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MEDIA_ROOT="${CARVE_ADS_ROOT:-$HOME/Developer/celiker-studio/carve}"
+MEDIA_ROOT="${CARVE_ADS_ROOT:-$HOME/Developer/content/carve/ads}"
 
 LANGS="beide"; RATIO="9:16"; FPS=30; VARIANT="lang"; SUFFIX=""
 [ $# -gt 0 ] && case "$1" in nl|en|beide) LANGS="$1"; shift;; esac

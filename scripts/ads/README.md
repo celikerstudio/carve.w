@@ -17,13 +17,13 @@ Alles draait lokaal. Geen abonnement, geen upload van je materiaal.
 | `scripts/ads/brand/` | logo en merkmateriaal voor overlays | ja |
 | `scripts/ads/concat-templates/` | herbruikbare Concat-montages, zonder beeld | ja |
 | `scripts/ads/frames/outro-anim.html` | de bewegende outro; één functie van de tijd | ja |
-| `~/Developer/celiker-studio/carve/materiaal/1-schermopnames/` | echte opnames van de app, het bewijs | nee |
-| `~/Developer/celiker-studio/carve/materiaal/2-echt-beeld/` | gefilmd materiaal, per opnamedag een submap | nee |
-| `~/Developer/celiker-studio/carve/materiaal/3-ai-gegenereerd/` | AI-beeld, apart omdat het gelabeld moet worden | nee |
-| `~/Developer/celiker-studio/carve/materiaal/4-audio/` | voice-overs en muziek | nee |
-| `~/Developer/celiker-studio/carve/export/ads/` | export van betaalde advertenties | nee |
-| `~/Developer/celiker-studio/carve/export/socials/` | export van organische posts | nee |
-| `~/Developer/celiker-studio/carve/_werk/` | tussenbestanden, mag je altijd weggooien | nee |
+| `~/Developer/content/carve/materiaal/1-schermopnames/` | echte opnames van de app, het bewijs | nee |
+| `~/Developer/content/carve/materiaal/2-echt-beeld/` | gefilmd materiaal, per opnamedag een submap | nee |
+| `~/Developer/content/carve/materiaal/3-ai-gegenereerd/` | AI-beeld, apart omdat het gelabeld moet worden | nee |
+| `~/Developer/content/carve/materiaal/4-audio/` | voice-overs en muziek | nee |
+| `~/Developer/content/carve/ads/export/ads/` | export van betaalde advertenties | nee |
+| `~/Developer/content/carve/ads/export/socials/` | export van organische posts | nee |
+| `~/Developer/content/carve/ads/_werk/` | tussenbestanden, mag je altijd weggooien | nee |
 
 Het recept is de bron van waarheid, de mp4 is wegwerpbaar. Wil je de ad
 aanpassen, pas dan het recept aan en draai opnieuw. Video's van tientallen MB

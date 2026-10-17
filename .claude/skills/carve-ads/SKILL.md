@@ -25,14 +25,14 @@ Why this exists and what was rejected: `docs/tdr/0013-ads-bouwen-we-zelf.md`.
 | Competitor ads worth watching | `docs/marketing/video/voorbeelden.md` |
 | The standard outro (nl/en) | `scripts/ads/build-outro.sh`, texts in `outro.json` |
 
-Material lives outside git in `~/Developer/celiker-studio/carve/` (numbered folders,
+Material lives outside git in `~/Developer/content/carve/materiaal/`, ad projects and exports in `~/Developer/content/carve/ads/` (numbered folders,
 `LEESMIJ.txt` explains each). The recipe is committed; the MP4 never is.
 
 **Look before you plan.** What is actually lying there decides the whole plan, and
 the folders are often emptier than the docs imply:
 
 ```bash
-ls -R ~/Developer/celiker-studio/carve/materiaal/
+ls -R ~/Developer/content/carve/materiaal/
 grep -l "<clipnaam>" scripts/ads/recipes/creatives/*.json   # al gebruikt?
 ```
 

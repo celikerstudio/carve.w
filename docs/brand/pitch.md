@@ -159,7 +159,7 @@ Short:
 
 **Nederlands (voor referentie):**
 
-> Vier jaar geleden woog ik 130 kilo. Vandaag 80. Ik heb geen geheim — het was calorieën tellen, consequent zijn, en accepteren dat het langzaam gaat.
+> Vier jaar geleden woog ik 130 kilo. Vandaag 80.
 >
 > Maar onderweg merkte ik dat elke app die ik probeerde iets miste. De een was goed in voeding maar had geen workouts. De ander voelde als een spreadsheet. Geen enkele maakte het makkelijk om vol te houden.
 >
@@ -169,7 +169,7 @@ Short:
 
 **English (post this):**
 
-> Four years ago I weighed 130kg (287 lbs). Today I'm 80kg (176 lbs). No secret — it was calorie counting, consistency, and accepting that it's slow.
+> Four years ago I weighed 130kg (287 lbs). Today I'm 80kg (176 lbs).
 >
 > Along the way I noticed that every app I tried was missing something. One was good at nutrition but had no workouts. Another felt like a spreadsheet. None of them made it easy to stay consistent.
 >

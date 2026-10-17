@@ -84,7 +84,7 @@ export default async function OpengraphImage() {
             color: 'rgba(255,255,255,0.45)',
           }}
         >
-          <div style={{ display: 'flex' }}>Built by someone who lost 50kg using it.</div>
+          <div style={{ display: 'flex' }}>Built by someone who was 130 kg.</div>
           <div style={{ display: 'flex' }}>iPhone · carve.wiki</div>
         </div>
       </div>

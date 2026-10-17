@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://carve.wiki'),
   title: 'Carve AI — Fitness Coach',
   description:
-    'Logs your food from a photo. Tracks the muscles you are skipping. Built by someone who lost 50kg using it.',
+    'Logs your food from a photo. Tracks the muscles you are skipping. Built by someone who was 130 kg.',
   openGraph: {
     type: 'website',
     siteName: 'Carve',

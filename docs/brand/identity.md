@@ -127,13 +127,13 @@ Vuistregel: match de taal van je publiek.
 
 ### De 30-seconden versie
 
-> Vier jaar geleden woog ik 130 kilo. Ik hield van eten — nog steeds eigenlijk. Maar ik had geen grip op mijn leven. Ik ben gaan sporten, 50 kilo afgevallen, en toen merkte ik dat geen enkele app deed wat ik nodig had. Dus heb ik 'm zelf gebouwd. Zonder enige programmeerervaring. Tien maanden lang, elke dag. Soms tot drie uur 's nachts. Het resultaat: Carve AI, een gamified fitness app met AI food scanning, nu live in de App Store. Ik ga solo backpacken door Azie en bouw door vanuit hostels en cafes.
+> Vier jaar geleden woog ik 130 kilo. Ik hield van eten — nog steeds eigenlijk. Maar ik had geen grip op mijn leven. In vier jaar ging ik van 130 naar 80 kilo, en onderweg merkte ik dat geen enkele app deed wat ik nodig had. Dus heb ik 'm zelf gebouwd. Zonder enige programmeerervaring. Tien maanden lang, elke dag. Soms tot drie uur 's nachts. Het resultaat: Carve AI, een gamified fitness app met AI food scanning, nu live in de App Store. Ik ga solo backpacken door Azie en bouw door vanuit hostels en cafes.
 
 ### De lange versie
 
 > Ik hou van eten. Echt veel. Vier jaar geleden was ik 130 kilo en vol excuses. Ik was geen developer, geen atleet, geen ondernemer. Gewoon iemand uit Amsterdam die te veel at en te weinig bewoog.
 >
-> Op een gegeven moment klikte het. Niet door een motivational speech of een Instagram post. Het klikte omdat ik ziek was van mijn eigen excuses. Ik ben gaan sporten. Niet een weekje, niet een maandje — vier jaar. Elke week. 130 kilo werd 80 kilo.
+> Op een gegeven moment klikte het. Niet door een motivational speech of een Instagram post. Het klikte omdat ik ziek was van mijn eigen excuses. Het werd een traject van vier jaar, en sporten werd er een vast deel van. 130 kilo werd 80 kilo.
 >
 > Onderweg probeerde ik elke fitness app die er is. MyFitnessPal, Strong, MacroFactor, noem maar op. Ze deden allemaal een ding oke, maar geen enkele voelde als iets waar ik elke dag wilde terugkomen. Geen enkele maakte het een game. Geen enkele was eerlijk.
 >
@@ -296,7 +296,6 @@ Gebouwd door een solo developer. 900+ commits. Elke dag een stukje beter.
 [X] jaar geleden woog ik 130kg.
 Geen fitness achtergrond. Geen programmeerervaring. Geen plan.
 Vier jaar later: -50kg en een eigen app in de App Store.
-Het geheim? Er is geen geheim. Gewoon elke dag opdagen.
 #carveai #transformatie #solodev
 ```
 

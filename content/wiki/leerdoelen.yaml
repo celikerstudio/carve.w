@@ -159,7 +159,7 @@
 
 - id: gewoonte-spreiding
   laag: fundament
-  doel: "Weet dat het vormen van een gewoonte tussen 4 en 335 dagen kan duren, dus dat jouw tempo niet hoeft te kloppen met dat van een ander."
+  doel: "Weet dat de tijd om een gewoonte te vormen sterk per persoon verschilt (in één studie van 4 tot 335 dagen), dus dat jouw tempo niet hoeft te kloppen met dat van een ander."
   bron: habits-singh-2024
   passage: "with substantial individual variability ranging from 4 to 335 days"
   artikel: realistic-expectations
@@ -312,7 +312,7 @@
 
 - id: anabool-venster-24-uur
   laag: naslag
-  doel: "Weet dat je spieren na krachttraining tot 24 uur extra gevoelig zijn voor eiwit, dus dat je geen paniekvenster van een uur hoeft te halen."
+  doel: "Weet dat je spieren na krachttraining tot 24 uur extra gevoelig zijn voor eiwit."
   bron: issn-protein-2017
   passage: "Skeletal muscle is sensitized to the effects of protein and amino acids for up to 24 h after completion of a bout of resistance exercise."
   artikel: post-workout-nutrition
@@ -326,7 +326,7 @@
 
 - id: eiwitbronnen-kwaliteit
   laag: naslag
-  doel: "Weet dat eiwitbronnen rijk aan essentiële aminozuren en leucine van hogere kwaliteit zijn."
+  doel: "Weet dat eiwitbronnen rijk aan essentiële aminozuren van hogere kwaliteit zijn."
   bron: issn-protein-2017
   passage: "Protein sources containing higher levels of the EAAs are considered to be higher quality sources of protein."
   artikel: protein-sources
@@ -340,7 +340,7 @@
 
 - id: casein-voor-slapen
   laag: naslag
-  doel: "Weet dat 30 tot 40 gram caseïne voor het slapen de spieropbouw en het verbruik 's nachts verhoogt zonder de vetverbranding te remmen."
+  doel: "Weet dat 30 tot 40 gram caseïne voor het slapen de spiereiwitaanmaak en het verbruik 's nachts verhoogt zonder de vetverbranding te remmen."
   bron: issn-protein-2017
   passage: "Pre-sleep casein protein intake (30–40 g) provides increases in overnight MPS and metabolic rate without influencing lipolysis."
   artikel: casein
@@ -382,7 +382,7 @@
 
 - id: creatine-veilig
   laag: naslag
-  doel: "Weet dat creatine monohydraat bij gezonde mensen veilig is, ook bij langdurig gebruik tot 30 gram per dag gedurende 5 jaar."
+  doel: "Weet dat er geen overtuigend bewijs is dat creatine monohydraat, kort of lang gebruikt en tot 30 gram per dag gedurende 5 jaar, schade doet bij verder gezonde mensen."
   bron: issn-creatine-2017
   passage: "There is no compelling scientific evidence that the short- or long-term use of creatine monohydrate (up to 30 g/day for 5 years) has any detrimental effects on otherwise healthy individuals"
   artikel: creatine
@@ -424,7 +424,7 @@
 
 - id: creatine-stoppen
   laag: naslag
-  doel: "Weet dat je creatinevoorraad na stoppen in 4 tot 6 weken terugkeert naar normaal en dat je eigen aanmaak niet blijvend wordt onderdrukt."
+  doel: "Weet dat je creatinevoorraad na stoppen meestal in 4 tot 6 weken terugkeert naar het beginniveau."
   bron: issn-creatine-2017
   passage: "it generally takes 4–6 weeks for creatine stores to return to baseline"
   artikel: creatine
@@ -494,7 +494,7 @@
 
 - id: cafeine-slaap
   laag: naslag
-  doel: "Weet dat cafeine laat op de dag je slaap verslechtert en dat je het beter vroeg op de dag neemt."
+  doel: "Weet dat de ISSN sporters aanraadt cafeïne waar mogelijk vroeg op de dag te nemen, om slechter slapen te voorkomen."
   bron: issn-caffeine-2021
   passage: "to help avoid negative effects on sleep, athletes may consider using caffeine earlier in the day whenever possible."
   artikel: sleep-hygiene
@@ -550,7 +550,7 @@
 
 - id: gevorderd-periodiseren
   laag: naslag
-  doel: "Weet dat gevorderden een breder bereik van 1 tot 12 RM gebruiken, gevarieerd in de tijd."
+  doel: "Weet dat de ACSM vanaf ongeveer 6 maanden consequent trainen een breder bereik van 1 tot 12 RM aanraadt, gevarieerd in de tijd."
   bron: acsm-resistance-training-2009
   passage: "For intermediate (individuals with approximately 6 months of consistent RT experience) to advanced (individuals with years of RT experience) training, it is recommended that individuals use a wider loading range from 1 to 12 RM in a periodized fashion"
   artikel: periodization

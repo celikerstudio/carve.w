@@ -17,12 +17,44 @@ In order to stimulate further adaptation toward specific training goals, progres
 
 ## Passages (handmatig geciteerd)
 
-Letterlijk overgenomen uit de volledige tekst van dit position stand (Med Sci Sports Exerc 2009;41(3):687-708, doi 10.1249/MSS.0b013e3181915670), gelezen op 2026-10-16 in een kopie op https://www.sfu.ca/~ryand/kin343/ACSMresistance.pdf. De tekst is niet open access; alleen deze zin staat hier, omdat de vuistregel in `progressive-overload` erop steunt.
+Letterlijk overgenomen uit de volledige tekst van dit position stand (Med Sci Sports Exerc 2009;41(3):687-708, doi 10.1249/MSS.0b013e3181915670), gelezen op 2026-10-16 en aangevuld op 2026-10-21 in een kopie op https://www.sfu.ca/~ryand/kin343/ACSMresistance.pdf. De tekst is niet open access; alleen deze passages staan hier, omdat artikelen erop steunen. De evidence statements in de volledige tekst wijken op punten af van de samenvatting hierboven (bijvoorbeeld 4-6 dagen per week voor gevorderden in plaats van 4-5). Tussen haakjes staat bij elke passage uit welk deel van de tekst hij komt.
 
-> […] 2–10% (lower percent for small muscle mass exercises, higher percent increase for large muscle mass exercises) increase in load be applied when the individual can perform the current workload for one to two repetitions over the desired number on two consecutive training sessions (68).
+(Muscular strength, progression)
 
-> […] novice and intermediate individuals, it is recommended that moderate loading be used (70–85% of 1 RM) for 8–12 repetitions per set for one to three sets per exercise (3,49,157,175,228,249).
+> Evidence category B. For progression in those individuals training at a specific RM load, it is recommended that a 2–10% (lower percent for small muscle mass exercises, higher percent increase for large muscle mass exercises) increase in load be applied when the individual can perform the current workload for one to two repetitions over the desired number on two consecutive training sessions (68).
 
-> […] it is recommended that a loading range of 70–100% of 1 RM be used for 1–12 repetitions per set for three to six sets per exercise in periodized manner such that the majority of training is devoted to 6–12 RM and less training devoted to 1–6 RM loading (149,155,169).
+(Muscular strength, loading)
+
+> Evidence category A. It is recommended that novice to intermediate individuals train with loads corresponding to 60–70% of 1 RM for 8–12 repetitions and advanced individuals cycle training loads of 80–100% of 1 RM to maximize muscular strength (9,33,96,206,225,227,255,268).
+
+(Muscular strength, frequency)
+
+> Evidence category C. It is recommended that advanced lifters train 4–6 d·wk−1.
+
+(Muscular strength, volume)
+
+> Evidence category B. For progression into intermediate to advanced status, data from long-term studies indicate that multiple sets be used with systematic variation of volume and intensity over time (142,149,155,160,228,238).
+
+(Muscular strength, rest periods)
+
+> Evidence category B. For novice, intermediate, and advanced training, it is recommended that rest periods of at least 2–3 min be used for core exercises using heavier loads (those exercises included specifically to improve maximal strength such as the squat and bench press) (3,149,213,214,221,229,230,269–271).
+
+(Muscle hypertrophy, loading and volume)
+
+> Evidence category A. For novice and intermediate individuals, it is recommended that moderate loading be used (70–85% of 1 RM) for 8–12 repetitions per set for one to three sets per exercise (3,49,157,175,228,249). Evidence category C. For advanced training, it is recommended that a loading range of 70–100% of 1 RM be used for 1–12 repetitions per set for three to six sets per exercise in periodized manner such that the majority of training is devoted to 6–12 RM and less training devoted to 1–6 RM loading (149,155,169).
+
+(Muscle hypertrophy, frequency)
+
+> Evidence category A. It is recommended that a frequency of 2–3 d·wk−1 be used for novice training (when training the total body each workout) (34,49,116). Evidence category B. For intermediate training, the recommendation is similar for total-body workouts or 4 d·wk−1 when using an upper/lower body split routine (each major muscle group trained twice per week). Evidence category C. For advanced training, a frequency of 4–6 d·wk−1 is recommended.
+
+(Muscle hypertrophy, rest periods)
 
 > It is recommended that 1- to 2-min rest periods be used in novice and intermediate training; for advanced training, length of rest period should correspond to the goals of each exercise such that 2- to 3-min rest periods may be used with heavy loading for core exercises and 1–2 min may be used for other exercises of moderate to moderately high intensity.
+
+(Local muscular endurance, loading)
+
+> Evidence category A. For novice and intermediate training, it is recommended that relatively light loads be used (10–15 repetitions) (9,33,227,255). Evidence category C. For advanced training, it is recommended that various loading strategies be used for multiple sets per exercise (10–25 repetitions or more) in periodized manner leading to higher overall volume using lighter intensities (227).
+
+(Local muscular endurance, rest periods; in de PDF-tekstlaag staat het teken "<" als "G")
+
+> Evidence category C. It is recommended that short rest periods be used for LME training, for example, 1–2 min for high-repetition sets (15–20 repetitions or more), <1 min for moderate (10–15 repetitions) sets.

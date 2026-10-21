@@ -16,14 +16,14 @@
  */
 import { lintArticle, listChecks, type ArticleFile } from '../../lib/wiki/source-file';
 import { fetchAbstract, lookupSource, titlesMatch } from '../../lib/wiki/sources';
-import { readArticleFiles, writeArticleFile } from './files';
+import { readArticleFiles, readManualSourceUrls, writeArticleFile } from './files';
 
 async function checkSources(file: ArticleFile, fill: boolean, abstracts: boolean): Promise<{ errors: string[]; changed: boolean }> {
   const errors: string[] = [];
   let changed = false;
   for (const [i, s] of file.sources.entries()) {
-    const label = `bron ${i + 1} (${s.doi ? `doi ${s.doi}` : `pmid ${s.pmid}`})`;
-    if (!s.doi && !s.pmid) continue; // lintArticle meldt dit al
+    const label = `bron ${i + 1} (${s.doi ? `doi ${s.doi}` : s.pmid ? `pmid ${s.pmid}` : s.url})`;
+    if (!s.doi && !s.pmid) continue; // geen DOI of PMID: lintArticle controleert de url tegen bronnen/
     const meta = await lookupSource(s);
     if (!meta) {
       errors.push(`${label} bestaat niet bij ${s.doi ? 'Crossref' : 'PubMed'}`);
@@ -53,6 +53,7 @@ async function main() {
 
   const all = readArticleFiles();
   const slugs = new Set(all.map((a) => a.file.slug));
+  const manualUrls = readManualSourceUrls();
   const unknown = only.filter((s) => !slugs.has(s));
   if (unknown.length) {
     console.error(`Onbekend artikel: ${unknown.join(', ')}`);
@@ -64,7 +65,7 @@ async function main() {
   for (const { file } of picked) {
     const { errors: sourceErrors, changed } = await checkSources(file, fill, abstracts);
     if (changed) writeArticleFile(file);
-    const errors = [...lintArticle(file, slugs), ...sourceErrors];
+    const errors = [...lintArticle(file, slugs, manualUrls), ...sourceErrors];
     if (errors.length) {
       failed++;
       console.log(`✗ ${file.slug}`);

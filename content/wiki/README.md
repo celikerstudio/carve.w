@@ -52,7 +52,7 @@ Wat je niet kunt verifiëren zet je in een `:::check`-blok. Dat gaat niet mee na
 
 ## Van concept naar live
 
-1. Concept schrijven. Bij elke bron alleen `doi` (of `pmid`) en `claim`.
+1. Concept schrijven. Bij elke bron alleen `doi` (of `pmid`) en `claim`. Een officieel stuk zonder DOI (een risicobeoordeling, een overheidspagina) krijgt `url` met titel, auteurs, `journal` en jaar met de hand; `wiki:check` neemt hem alleen aan als er in `bronnen/` een bestand met dezelfde `url` en een sectie `## Passages (handmatig geciteerd)` staat.
 2. `pnpm wiki:check <slug> --fill` zoekt elke bron op bij Crossref of PubMed en vult titel, auteurs, tijdschrift en jaar in. Een bron die niet bestaat blijft een fout.
 3. `pnpm wiki:check <slug> --abstracts` zet per bron de bewering naast de samenvatting. Lees ze: draagt de studie wat de tekst zegt? Zo niet, dan gaat de bron eruit en wordt de zin zachter. Bewaar de tekst met `pnpm wiki:bron <doi>`.
 4. Review met `docs/wiki-review-prompt.md` op een model met internettoegang. Hooguit twee rondes; daarna gaat een twijfelachtige zin in `:::check`.

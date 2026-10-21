@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { fromCrossref, fromPubmed, titlesMatch } from './sources';
+import { fromCrossref, fromPubmed, sourceUrl, titlesMatch } from './sources';
 
 describe('titels vergelijken', () => {
   it('ziet dezelfde titel ondanks hoofdletters, leestekens en HTML-opmaak', () => {
@@ -44,5 +44,14 @@ describe('antwoorden vertalen', () => {
       pubdate: '2017 Jun 20',
     });
     expect(meta).toEqual({ title: 'Protein and exercise', authors: ['Jäger R', 'Kerksick CM'], journal: 'Journal of the International Society of Sports Nutrition', year: 2017 });
+  });
+});
+
+describe('de link onder een bron', () => {
+  it('kiest de DOI, dan PubMed, dan de url van een stuk zonder DOI', () => {
+    expect(sourceUrl({ doi: '10.1/x', url: 'https://a.nl' })).toBe('https://doi.org/10.1/x');
+    expect(sourceUrl({ pmid: '123' })).toBe('https://pubmed.ncbi.nlm.nih.gov/123/');
+    expect(sourceUrl({ url: 'https://www.igj.nl/melatonine' })).toBe('https://www.igj.nl/melatonine');
+    expect(sourceUrl({})).toBeNull();
   });
 });

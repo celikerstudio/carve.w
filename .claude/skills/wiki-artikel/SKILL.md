@@ -32,7 +32,7 @@ Een artikel dat geen leerdoel dient, is een kandidaat om samen te voegen of uit 
 
 **Elke bewering met een getal, elke studie, elke DOI haal je eerst op.** Niet uit je geheugen, hoe zeker het ook voelt. Taalmodellen verzinnen studies die er echt uitzien: bestaande auteurs, een plausibel tijdschrift, een titel die niet bestaat. Op 2026-10-16 gaf één van de acht DOI's die ik voor `calories` uit mijn hoofd had niets terug.
 
-1. Zet bij de bron alleen `doi` (of `pmid`) en `claim`: welke zin in de tekst hij draagt.
+1. Zet bij de bron alleen `doi` (of `pmid`) en `claim`: welke zin in de tekst hij draagt. Heeft een officieel stuk geen DOI (de BfR over ashwagandha, de IGJ over melatonine), dan `url` plus titel, auteurs, `journal` en jaar met de hand, en de passages in een bestand in `bronnen/` met dezelfde `url`. Alleen voor instanties; een studie zonder DOI of PMID is geen bron.
 2. `pnpm wiki:check <slug> --fill` zoekt hem op bij Crossref/PubMed en vult titel, auteurs, tijdschrift en jaar in. Bestaat hij niet, dan blijft het een fout.
 3. `pnpm wiki:check <slug> --abstracts` zet de samenvatting naast de `claim`. **Lees ze.** Bestaan is niet hetzelfde als dragen.
 4. Haal van elke bron de tekst op in `bronnen/studies/` met `pnpm wiki:bron <doi>`, zodat een review tegen dezelfde tekst kijkt.

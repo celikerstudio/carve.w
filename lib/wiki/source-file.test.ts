@@ -95,8 +95,22 @@ describe('opmaakregels (TDR-0017 §5)', () => {
 
   it('eist dat elke bron een DOI of PubMed-ID en een bewering heeft', () => {
     const errors = lintArticle({ ...ok, sources: [{ ...source, doi: undefined, claim: '' }] }, slugs);
-    expect(errors).toContainEqual(expect.stringMatching(/DOI of PubMed/));
+    expect(errors).toContainEqual(expect.stringMatching(/DOI, PubMed-ID of url/));
     expect(errors).toContainEqual(expect.stringMatching(/bewering/));
+  });
+
+  it('neemt een bron zonder DOI alleen aan als zijn tekst handmatig in bronnen/ staat', () => {
+    const url = 'https://www.bfr.bund.de/ashwagandha.pdf';
+    const bfr = { url, title: 'Ashwagandha', authors: ['BfR'], journal: 'BfR Communication', year: 2024, claim: 'Not for children.' };
+    expect(lintArticle({ ...ok, sources: [bfr] }, slugs, new Set([url]))).toEqual([]);
+    expect(lintArticle({ ...ok, sources: [bfr] }, slugs)).toContainEqual(expect.stringMatching(/bronnen\//));
+    expect(lintArticle({ ...ok, sources: [{ ...bfr, title: undefined }] }, slugs, new Set([url]))).toContainEqual(expect.stringMatching(/titel/));
+  });
+
+  it('bewaart de url van een bron zonder DOI', () => {
+    const sources = [{ url: 'https://www.igj.nl/melatonine', title: 'Melatonine', claim: 'Onder 0,3 mg geen geneesmiddel.' }];
+    const back = parseArticleFile('protein', serializeArticleFile({ ...ok, sources }));
+    expect(back.sources).toEqual(sources);
   });
 
   it('meldt een open notitie voor Furkan: die hoort niet in de app of op het web', () => {

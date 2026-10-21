@@ -130,8 +130,8 @@ export async function fetchAbstract(s: Pick<ArticleSource, 'doi' | 'pmid'>): Pro
 }
 
 /** Waar de bron op het web staat: de DOI als die er is, anders PubMed. */
-export function sourceUrl(s: Pick<ArticleSource, 'doi' | 'pmid'>): string | null {
+export function sourceUrl(s: Pick<ArticleSource, 'doi' | 'pmid' | 'url'>): string | null {
   if (s.doi) return `https://doi.org/${s.doi}`;
   if (s.pmid) return `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/`;
-  return null;
+  return s.url ?? null;
 }

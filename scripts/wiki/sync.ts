@@ -20,7 +20,7 @@ import { createClient } from '@supabase/supabase-js';
 import { AUTHOR } from '../../lib/wiki/seo';
 import { hasOpenNotes, lintArticle, stripChecks, toSearchText, type ArticleFile } from '../../lib/wiki/source-file';
 import { sourceUrl } from '../../lib/wiki/sources';
-import { readArticleFiles } from './files';
+import { readArticleFiles, readManualSourceUrls } from './files';
 
 config({ path: '.env.local' });
 
@@ -94,6 +94,7 @@ async function main() {
   const write = process.argv.includes('--write');
   const all = readArticleFiles().map((f) => f.file);
   const slugs = new Set(all.map((f) => f.slug));
+  const manualUrls = readManualSourceUrls();
   // @ai-why: Een concept in bewerking (met een open notitie) slaat de sync over in plaats van hem te
   //   blokkeren. Zo kan een ander artikel live terwijl dit nog bij Furkan ligt. In de database blijft
   //   dan de vorige versie staan.
@@ -101,7 +102,7 @@ async function main() {
   inProgress.forEach((f) => console.log(`… ${f.slug}: open notitie, overgeslagen`));
   const files = all.filter((f) => !hasOpenNotes(f.body));
 
-  const broken = files.map((f) => ({ slug: f.slug, errors: lintArticle(f, slugs) })).filter((f) => f.errors.length);
+  const broken = files.map((f) => ({ slug: f.slug, errors: lintArticle(f, slugs, manualUrls) })).filter((f) => f.errors.length);
   if (broken.length) {
     broken.forEach((b) => console.error(`✗ ${b.slug}\n    ${b.errors.join('\n    ')}`));
     console.error('\nNiets geschreven. Los de fouten op (pnpm wiki:check) en probeer opnieuw.');

@@ -16,7 +16,16 @@ export interface ArticleSource {
   /** Zonder `https://doi.org/` ervoor. */
   doi?: string;
   pmid?: string;
-  /** Opgehaald door `pnpm wiki:check --fill`, niet met de hand. */
+  /**
+   * Alleen voor een officieel stuk zonder DOI of PMID (de BfR, de IGJ). Titel, auteurs en jaar
+   * staan er dan met de hand bij, want er is niets om ze bij op te zoeken.
+   *
+   * @ai-why: Voor ashwagandha en alcohol bestaat geen richtlijn met DOI; de beste bronnen zijn een
+   *   risicobeoordeling en een overheidsrapport. Zonder `url` konden die alleen in `:::check`. De
+   *   DOI-controle bewees dat een bron bestaat; hier doet de tekst in `bronnen/` dat (zie lintArticle).
+   */
+  url?: string;
+  /** Opgehaald door `pnpm wiki:check --fill`, niet met de hand (behalve bij een `url`-bron). */
   title?: string;
   authors?: string[];
   journal?: string;
@@ -71,6 +80,7 @@ function parseSource(raw: Record<string, unknown>): ArticleSource {
   const s: ArticleSource = { claim: String(raw.claim ?? '') };
   if (raw.doi) s.doi = String(raw.doi);
   if (raw.pmid) s.pmid = String(raw.pmid);
+  if (raw.url) s.url = String(raw.url);
   if (raw.title) s.title = String(raw.title);
   if (Array.isArray(raw.authors)) s.authors = raw.authors.map(String);
   if (raw.journal) s.journal = String(raw.journal);
@@ -93,7 +103,7 @@ export function serializeArticleFile(a: ArticleFile): string {
     // Vaste volgorde per bron, zodat de diff van een review alleen laat zien wat er veranderde.
     data.sources = a.sources.map((s) =>
       Object.fromEntries(
-        (['doi', 'pmid', 'title', 'authors', 'journal', 'year', 'claim'] as const)
+        (['doi', 'pmid', 'url', 'title', 'authors', 'journal', 'year', 'claim'] as const)
           .filter((k) => s[k] !== undefined)
           .map((k) => [k, s[k]]),
       ),
@@ -113,7 +123,12 @@ const ALLOWED_BLOCKS = new Set(['takeaway', 'checklist']);
  * @ai-sync: ~/Developer/Carve-AI/Carve AI/App/Views/Components/Wiki/WikiArticleDetailView.swift
  * @ai-sync: lib/wiki/render.ts
  */
-export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
+/**
+ * @param manualUrls De `url` van elk bestand in `content/wiki/bronnen/` met handmatige passages
+ *   (`readManualSourceUrls`). Een bron zonder DOI of PMID moet daarin staan. Leeg (de default)
+ *   betekent dat zo'n bron altijd een fout is.
+ */
+export function lintArticle(a: ArticleFile, slugs: Set<string>, manualUrls: Set<string> = new Set()): string[] {
   const errors: string[] = [];
   // Wat naar buiten gaat: zonder :::check, want die tekst ziet de app nooit.
   const body = stripChecks(a.body);
@@ -179,9 +194,14 @@ export function lintArticle(a: ArticleFile, slugs: Set<string>): string[] {
 
   a.sources.forEach((s, i) => {
     const label = `bron ${i + 1}`;
-    if (!s.doi && !s.pmid) errors.push(`${label} heeft geen DOI of PubMed-ID`);
+    if (!s.doi && !s.pmid) {
+      // @ai-why: Een url kan niemand opzoeken zoals een DOI. Dus moet de tekst er zijn, met de
+      //   passages die gelezen zijn, zodat een review tegen hetzelfde kijkt (TDR-0018 §5).
+      if (!s.url) errors.push(`${label} heeft geen DOI, PubMed-ID of url`);
+      else if (!manualUrls.has(s.url)) errors.push(`${label} heeft geen DOI en zijn url staat niet in bronnen/ met handmatige passages`);
+      if (!s.title) errors.push(`${label} heeft geen titel: bij een bron zonder DOI vul je die met de hand in`);
+    } else if (!s.title) errors.push(`${label} is nog niet opgezocht (pnpm wiki:check --fill)`);
     if (!s.claim.trim()) errors.push(`${label} zegt niet welke bewering hij draagt`);
-    if (!s.title) errors.push(`${label} is nog niet opgezocht (pnpm wiki:check --fill)`);
   });
 
   if (hasOpenNotes(body)) errors.push('open notitie (<!-- ... -->): eerst invullen of weghalen');

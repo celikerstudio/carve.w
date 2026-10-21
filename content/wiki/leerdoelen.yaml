@@ -956,3 +956,120 @@
   bron: efsa-collagen-skin-2013
   passage: "The Panel concludes that a cause and effect relationship has not been established between the consumption of VeriSol®P and a change in skin elasticity leading to an improvement in skin function."
   artikel: collagen
+
+# ── naslag: cluster G (voeding), voorgesteld 2026-10-21, wacht op Furkans akkoord (TDR-0018 §3) ──
+# Vet en vezels volgen de nieuwe normen van de Gezondheidsraad (juli 2026) en het Voedingscentrum,
+# plus WHO 2023. Sporters: de ACSM/AND/DC-position stand 2016 (MSSE-versie, passages uit een kopie
+# van een derde). calorie-surplus is samenvoegkandidaat voor bulking en krijgt geen leerdoel.
+
+- id: vet-kwaliteit-boven-hoeveelheid
+  laag: naslag
+  doel: "Weet dat volgens de Gezondheidsraad de kwaliteit van je voedingspatroon belangrijker is voor je gezondheid dan hoeveel vet je eet."
+  bron: gezondheidsraad-voedingsnormen-vetten-2026
+  passage: "De kwaliteit van het voedingspatroon is belangrijker voor de gezondheid dan de totale vetinname."
+  artikel: fats
+
+- id: vet-minimaal-20-procent
+  laag: naslag
+  doel: "Weet dat je minstens ongeveer 20% van je energie uit vet nodig hebt om genoeg essentiële vetzuren binnen te krijgen."
+  bron: voedingscentrum-vetten
+  passage: "De minimale behoefte aan vet voor mensen vanaf 4 jaar wordt dus geschat op 20 energieprocent. Deze hoeveelheid is nodig om voldoende essentiële vetzuren binnen te krijgen, zoals linolzuur en alfalinoleenzuur."
+  artikel: fats
+
+- id: vet-sporters-niet-te-laag
+  laag: naslag
+  doel: "Weet dat sporters wordt afgeraden langdurig minder dan 20% van hun energie uit vet te halen, omdat de minder gevarieerde voeding die daarbij hoort de inname van vetoplosbare vitaminen en essentiële vetzuren waarschijnlijk verlaagt."
+  bron: acsm-and-dc-nutrition-2016-msse
+  passage: "Athletes should be discouraged from chronic implementation of fat intakes below 20% of energy intake since the reduction in dietary variety often associated with such restrictions is likely to reduce the intake of a variety of nutrients such as fat-soluble vitamins and essential fatty acids"
+  artikel: fats
+
+- id: vet-niet-automatisch-dik
+  laag: naslag
+  doel: "Weet dat vet eten niet automatisch tot overgewicht leidt, en dat het gaat om de totale energie die je eet tegenover wat je verbruikt."
+  bron: voedingscentrum-vetten
+  passage: "Vet eten leidt niet automatisch tot overgewicht. Het gaat er bij overgewicht om hoeveel energie de dagelijkse voeding levert en of die energie-inname en het energiegebruik in evenwicht zijn."
+  artikel: fats
+
+- id: verzadigd-vet-hooguit-10-procent
+  laag: naslag
+  doel: "Weet dat de WHO adviseert vooral onverzadigd vet te eten en hooguit 10% van je energie uit verzadigd vet te halen."
+  bron: who-news-fats-carbohydrates-2023
+  passage: "Fat consumed by everyone 2 years of age and older should be primarily unsaturated fatty acids, with no more than 10% of total energy intake coming from saturated fatty acids"
+  artikel: fats
+
+- id: transvet-hooguit-1-procent
+  laag: naslag
+  doel: "Weet dat de WHO adviseert transvet terug te brengen tot 1% van je energie."
+  bron: who-sfa-tfa-2023
+  passage: "reduce trans-fatty acid intake to 1% of total energy intake (strong recommendation)."
+  artikel: fats
+
+- id: vezels-hoeveel
+  laag: naslag
+  doel: "Weet dat het Voedingscentrum volwassenen van 18 tot en met 49 jaar minstens 24 gram (vrouwen) of 30 gram (mannen) vezels per dag aanraadt."
+  bron: voedingscentrum-vezels
+  passage: "Voor vrouwen van 18 t/m 49 jaar is het advies om in iedere geval 24 gram vezels per dag binnen te krijgen en voor mannen van 18 t/m 49 jaar in ieder geval 30 gram per dag."
+  artikel: fiber
+
+- id: vezels-per-energie
+  laag: naslag
+  doel: "Weet dat de Gezondheidsraad 3,0 tot 3,5 gram vezels per megajoule aanraadt (ongeveer 13 tot 15 gram per 1000 kcal), uit volkoren, groente, fruit, peulvruchten en noten."
+  bron: gezondheidsraad-voedingsnormen-vetten-2026
+  passage: "Aanbeveling om een vezelinname te realiseren van 3,0 tot 3,5 gram voedingsvezel per megajoule (12,6-14,6 gram per 1000 kilocalorieën) via de consumptie van volkorenproducten, groenten, fruit, peulvruchten en noten."
+  artikel: fiber
+
+- id: vezels-who
+  laag: naslag
+  doel: "Weet dat de WHO volwassenen minstens 400 gram groente en fruit en 25 gram vezels uit gewone voeding per dag aanraadt."
+  bron: who-news-fats-carbohydrates-2023
+  passage: "WHO recommends that adults consume at least 400 grams of vegetables and fruits and 25 grams of naturally occurring dietary fibre per day."
+  artikel: fiber
+
+- id: vezels-rustig-opbouwen
+  laag: naslag
+  doel: "Weet dat je beter niet in één keer veel meer vezels kunt gaan eten."
+  bron: voedingscentrum-vezels
+  passage: "Het is wel slim om niet in een keer heel veel meer vezels te gaan eten."
+  artikel: fiber
+
+- id: supplementen-meestal-niet-nodig
+  laag: naslag
+  doel: "Weet dat de meeste mensen geen voedingssupplementen nodig hebben als ze gevarieerd eten."
+  bron: voedingscentrum-voedingssupplementen
+  passage: "De meeste mensen hebben geen voedingssupplementen nodig, want ze krijgen al voldoende voedingsstoffen binnen door gevarieerd te eten."
+  artikel: micronutrients
+
+- id: sporters-multivitamine-meestal-onnodig
+  laag: naslag
+  doel: "Weet dat vitamine- en mineralensupplementen meestal onnodig zijn voor sporters die genoeg en gevarieerd eten."
+  bron: acsm-and-dc-nutrition-2016-msse
+  passage: "In general, vitamin and mineral supplements are unnecessary for the athlete who consumes a diet providing highenergy availability from a variety of nutrient-dense foods."
+  artikel: micronutrients
+
+- id: supplementen-alleen-bij-tekort
+  laag: naslag
+  doel: "Weet dat vitamine- en mineralensupplementen je prestatie niet verbeteren, tenzij ze een bestaand tekort opheffen."
+  bron: acsm-and-dc-nutrition-2016-msse
+  passage: "athletes should be educated that the intake of vitamin and mineral supplements does not improve performance unless reversing a pre-existing deficiency"
+  artikel: micronutrients
+
+- id: streng-dieet-micronutrienten
+  laag: naslag
+  doel: "Weet dat sporters die vaak streng op calorieën letten, extreem afvallen of voedselgroepen schrappen te weinig vitaminen en mineralen kunnen binnenkrijgen."
+  bron: acsm-and-dc-nutrition-2016-msse
+  passage: "Athletes who frequently restrict energy intake, rely on extreme weight-loss practices, eliminate one or more food groups from their diet, or consume poorly chosen diets, may consume sub-optimal amounts of micronutrients and benefit from micronutrient supplementation."
+  artikel: micronutrients
+
+- id: recomp-gemeld
+  laag: naslag
+  doel: "Weet dat winst in vetvrije massa tijdens een calorietekort in onderzoek is gemeld."
+  bron: issn-diets-2017
+  passage: "Although LM gains have been reported in the literature during hypocaloric conditions"
+  artikel: body-recomposition
+
+- id: recomp-eiwit-voorbeeld
+  laag: naslag
+  doel: "Weet dat in één studie met een calorietekort, intervalsprints en krachttraining 2,4 gram eiwit per kg leidde tot 1,2 kg meer vetvrije massa en 4,8 kg vetverlies, tegenover behoud van vetvrije massa en 3,5 kg vetverlies bij 1,2 gram per kg."
+  bron: issn-diets-2017
+  passage: "protein intake at 2.4 g/kg caused LM gains (1.2 kg) and fat loss (4.8 kg), while 1.2 g/kg resulted in preservation of lean mass (0.1 kg), and less fat loss (3.5 kg)."
+  artikel: body-recomposition

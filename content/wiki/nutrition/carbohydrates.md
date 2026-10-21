@@ -165,7 +165,7 @@ So for most lifters: get your protein first, then fill the rest of your calories
 
 ## Which carbs are best?
 
-Fibre-rich ones. A large series of reviews and meta-analyses found that people who ate the most fibre had a 15 to 30% lower risk of dying from any cause or from heart disease, and less stroke, type 2 diabetes and colorectal cancer, than those who ate the least. The biggest benefit was seen from 25 to 29 g of fibre a day, and more may be better still. That part comes from observational studies, but trials also showed lower bodyweight, blood pressure and cholesterol when people ate more fibre. Whole grains showed the same pattern. The glycaemic index of foods mattered little [8].
+Fibre-rich ones. A large series of reviews and meta-analyses found that people who ate the most fibre had a 15 to 30% lower risk of dying from any cause or from cardiovascular disease, and of coronary heart disease, stroke, type 2 diabetes and colorectal cancer, than those who ate the least. The biggest benefit was seen from 25 to 29 g of fibre a day, and more may be better still. That part comes from observational studies, but trials also showed lower bodyweight, blood pressure and cholesterol when people ate more fibre. Whole grains showed the same pattern. The glycaemic index of foods mattered little [8].
 
 In practice: whole grains, oats, potatoes, legumes, fruit and vegetables as the base, and sweets and white bread as the extra.
 

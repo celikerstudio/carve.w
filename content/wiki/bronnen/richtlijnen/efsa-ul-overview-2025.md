@@ -34,3 +34,23 @@ Aanvulling, op 2026-10-21 uit dezelfde PDF (tabel 1, mineralen). Kolommen: 4-6 m
 Derde aanvulling op 2026-10-21, letterlijk uit dezelfde PDF (p. 1):
 
 > the Scientific Committee on Food (SCF), which was the predecessor of EFSA
+
+Vierde aanvulling op 2026-10-21, letterlijk uit dezelfde PDF (pdftotext). Tabel 1 (vitamines): kolommen 0-6 mo, 7-11 mo, 1-3 y, 4-6 y, 7-10 y, 11-14 y, 15-17 y, Adults, Pregnancy, Lactation; de achtste waarde is Adults. Tabel 2 (safe levels, mineralen) heeft dezelfde tien kolommen vanaf 4-6 mo, dus ook daar is de achtste waarde Adults.
+
+> Vitamin A(e) µg 600 600 800 1100 1500 2000 2600 3000 3000 3000 (EFSA NDA Panel, 2024c)
+
+> Vitamin B6 mg/d 2.2 2.5 3.2 4.5 6.1 8.6 10.7 12 12 12 (EFSA NDA Panel, 2023d)
+
+> Iron(e) No adequate data to derive a UL
+
+> (e): As there were insufficient data on which to base the UL for iron, safe levels of intakes were established (see Table 2).
+
+> Iron mg/d 5(c) 5(c) 10 15 20 30 35 40 40 40
+
+> intakes above the safe levels of intake do not necessarily mean that there is a risk of adverse effects
+
+> β-Carotene(c) No adequate data to derive a UL
+
+> (c): Smokers should avoid consuming food supplements containing β-carotene. The Panel also considers that the use of supplemental β-carotene (i.e., in fortified foods and/or food supplements) by the general population should be limited to the purpose of meeting vitamin A requirements.
+
+> (e): ULs apply to preformed vitamin A, i.e. retinol and retinyl esters.

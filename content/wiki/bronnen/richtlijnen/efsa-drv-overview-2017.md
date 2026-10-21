@@ -32,3 +32,17 @@ Aanvulling op 2026-10-21 uit dezelfde PDF (pdftotext -layout). Zink, volwassenen
 Vrouwen (Table 7):
 
 > 300 7.5, 600 9.3, 900 11.0, 1,200 12.7
+
+Aanvulling op 2026-10-21 uit dezelfde PDF (pdftotext -layout, witruimte samengevoegd), Table 3: Reference Intake ranges voor vet en koolhydraten, en Adequate Intakes voor vetzuren en vezels. De kolommen zijn, in de rij voor volwassenen (≥ 18 jaar): Total fat (E%) 20-35, SFA ALAP, LA (E%) 4, ALA (E%) 0.5, EPA+DHA (mg/d) 250, TFA ALAP, daarna Total carbohydrates (E%) 45-60 en Dietary fibre (g/d) 25. Het kopje "Total fat" en "Dietary fibre" staat hieronder in de kolomkoppen. Vet en koolhydraten zijn een RI (reference intake range), de rest een AI, volgens de voetnoten (a) en (b) in de tabel.
+
+Totaal vet, verzadigd vet, transvet en vezels (volwassenen)
+
+> Summary of Reference Intake Ranges (RI) for total fat and carbohydrates and Adequate Intakes (AIs) for fatty acids, dietary fibre and water
+
+> Age Total fat SFA LA ALA EPA+DHA DHA TFA Age Total carbohydrates Dietary fibre Age Water group (E%)(a) (E%)(b) (E%)(b) (mg/d)(b) (mg/d)(b) group (E%)(a) (g/d)(b) group (L/d)(b), (c)
+
+> ≥ 18 20-35 ALAP 4 0.5 250 ALAP ≥ 18 45-60 25
+
+> ALAP, as low as possible
+
+> mo, months, SFA, saturated fatty acids; TFA, trans-fatty acids

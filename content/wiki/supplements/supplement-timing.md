@@ -26,7 +26,7 @@ Create a simple schedule: morning/midday for stimulants; post-lift or with meals
 :::checklist
 - Stims | **30-60 min** pre-lift; avoid late to protect sleep.
 - Daily staples | Take creatine and fish oil with meals; timing flexible.
-- Calm supports | Magnesium/ashwagandha/melatonin later if they help relaxation.
+- Calm supports | Magnesium/melatonin later if they help relaxation.
 :::
 
 ## Common mistakes

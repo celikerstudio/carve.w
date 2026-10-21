@@ -596,3 +596,183 @@
   bron: habits-singh-2024
   passage: "simpler, repetitive behaviours with clear cues and immediate rewards are easier to automate"
   artikel: consistency
+
+# ── naslag: cluster E (risico), voorgesteld 2026-10-21, wacht op Furkans akkoord (TDR-0018 §3) ──
+# Drie bronnen hebben geen DOI (BfR, IGJ, CCSA): officiële stukken van een risicobeoordelaar,
+# toezichthouder en richtlijnorganisatie. Voor ashwagandha en alcohol bestaat niets met DOI op
+# richtlijnniveau; de passages staan handmatig geciteerd met URL.
+
+- id: energieverbruik-rust-grootste-deel
+  laag: fundament
+  doel: "Weet dat je verbruik in rust meestal het grootste deel (60 tot 70%) van je totale dagelijkse verbruik is."
+  bron: issn-diets-2017
+  passage: "Basal metabolic rate typically amounts to 60–70% of TDEE."
+  artikel: calories
+
+- id: verbruik-past-zich-aan
+  laag: fundament
+  doel: "Weet dat je verbruik de neiging heeft te dalen als je minder eet dan je verbruikt, en te stijgen als je meer eet."
+  bron: issn-diets-2017
+  passage: "When hypocaloric conditions are imposed, energy expenditure has a tendency to decrease. Conversely, when a caloric surplus is imposed, EE has a tendency to increase."
+  artikel: calories
+
+- id: cafeine-efsa-per-keer
+  laag: naslag
+  doel: "Weet dat volgens EFSA een losse dosis cafeïne tot 200 mg geen veiligheidsrisico geeft voor volwassenen."
+  bron: efsa-caffeine-safety-2015
+  passage: "Single doses of caffeine up to 200 mg (about 3 mg/kg bw for a 70-kg adult) do not give rise to safety concerns."
+  artikel: caffeine
+
+- id: cafeine-efsa-per-dag
+  laag: naslag
+  doel: "Weet dat volgens EFSA tot 400 mg cafeïne per dag geen veiligheidsrisico geeft voor volwassenen die niet zwanger zijn."
+  bron: efsa-caffeine-safety-2015
+  passage: "Habitual caffeine consumption up to 400 mg per day does not give rise to safety concerns for non-pregnant adults."
+  artikel: caffeine
+
+- id: vetverbranders-carnitine
+  laag: naslag
+  doel: "Weet dat volgens de ISSN de meeste studies geen merkbaar effect van carnitine vinden op vetverbranding of gewichtsverlies."
+  bron: issn-sports-nutrition-2018
+  passage: "the majority of the data continues to suggest that carnitine supplementation does not markedly affect muscle carnitine content [647–649], fat metabolism [648, 650, 651], exercise performance [648, 649, 652, 653], or weight loss in overweight [650, 654], obese [651, 655, 656] or trained subjects [657]."
+  artikel: fat-burners
+
+- id: vetverbranders-cla
+  laag: naslag
+  doel: "Weet dat studies bij mensen volgens de ISSN hooguit een klein effect van CLA op vetverlies laten zien."
+  bron: issn-sports-nutrition-2018
+  passage: "human studies, at best, suggest a modest ability, independent of exercise or diet changes, of CLA to stimulate fat loss"
+  artikel: fat-burners
+
+- id: groene-thee-lever
+  laag: naslag
+  doel: "Weet dat volgens EFSA 800 mg EGCG (uit groene-thee-extract) of meer per dag als supplement de leverwaarden in het bloed kan laten stijgen."
+  bron: efsa-green-tea-catechins-2018
+  passage: "intake of doses equal or above 800 mg EGCG/day taken as a food supplement has been shown to induce a statistically significant increase of serum transaminases in treated subjects compared to control."
+  artikel: fat-burners
+
+- id: supplementen-veiligheid-onbekend
+  laag: naslag
+  doel: "Weet dat van veel supplementen goede gegevens over veiligheid op de lange termijn ontbreken."
+  bron: issn-sports-nutrition-2018
+  passage: "In addition, many supplements lack appropriate long-term safety data."
+  artikel: fat-burners
+
+- id: tribulus-geen-effect
+  laag: naslag
+  doel: "Weet dat tribulus volgens de ISSN bij krachttraining geen effect lijkt te hebben op lichaamssamenstelling of kracht."
+  bron: issn-sports-nutrition-2018
+  passage: "appears to have no effects on body composition or strength during resistance training."
+  artikel: testosterone-boosters
+
+- id: d-asparaginezuur-afgeraden
+  laag: naslag
+  doel: "Weet dat de ISSN D-asparaginezuur op basis van het huidige onderzoek niet aanraadt voor spieropbouw."
+  bron: issn-sports-nutrition-2018
+  passage: "Based on the currently available literature, D-aspartic acid is not recommended to improve muscle health."
+  artikel: testosterone-boosters
+
+- id: prohormonen-dopingtest
+  laag: naslag
+  doel: "Weet dat supplementen met prohormonen volgens de ISSN tot een positieve dopingtest op anabole steroïden leiden."
+  bron: issn-sports-nutrition-2018
+  passage: "Use of nutritional supplements containing prohormones will result in a positive drug test for anabolic steroids."
+  artikel: testosterone-boosters
+
+- id: ashwagandha-rivm-afgeraden
+  laag: naslag
+  doel: "Weet dat het RIVM uit voorzorg alle consumenten, en vooral zwangere vrouwen, afraadt om producten met ashwagandha te gebruiken."
+  bron: rivm-ashwagandha-2024
+  passage: "As a precaution, RIVM advises consumers, and in particular pregnant women, to not use herbal preparations containing W. somnifera."
+  artikel: ashwagandha
+
+- id: ashwagandha-wie-niet
+  laag: naslag
+  doel: "Weet dat de Duitse risicobeoordelaar (BfR) vooral kinderen, zwangere vrouwen, vrouwen die borstvoeding geven en mensen met een leverziekte afraadt ashwagandha te nemen."
+  bron: bfr-ashwagandha-2024
+  passage: "recommends that especially children, pregnant and breastfeeding women and people with acute or pre-existing liver disease should not take supplements containing ashwagandha."
+  artikel: ashwagandha
+
+- id: ashwagandha-lever
+  laag: naslag
+  doel: "Weet dat er meldingen zijn van leverschade na ashwagandha, waaronder acuut leverfalen, en dat de BfR daarom tot voorzichtigheid maant."
+  bron: bfr-ashwagandha-2024
+  passage: "In particular, the reports regarding liver damage, including cases of acute liver failure, give reason for caution."
+  artikel: ashwagandha
+
+- id: ashwagandha-geen-veilige-dosis
+  laag: naslag
+  doel: "Weet dat er volgens de BfR met de huidige gegevens nog geen veilige dosis voor ashwagandha is vast te stellen."
+  bron: bfr-ashwagandha-2024
+  passage: "It has also not yet been possible to derive a health-based guidance value for a safe intake level on the basis of the available data."
+  artikel: ashwagandha
+
+- id: melatonine-inslapen
+  laag: naslag
+  doel: "Weet dat volgens EFSA 1 mg melatonine vlak voor het slapengaan helpt om sneller in slaap te vallen."
+  bron: efsa-melatonin-sleep-onset-2011
+  passage: "The Panel considers that in order to obtain the claimed effect, 1 mg of melatonin should be consumed close to bedtime."
+  artikel: melatonin
+
+- id: melatonine-jetlag
+  laag: naslag
+  doel: "Weet dat volgens EFSA 0,5 tot 5 mg melatonine vlak voor het slapengaan, op de reisdag en de dagen na aankomst, het gevoel van jetlag vermindert."
+  bron: efsa-melatonin-jetlag-2010
+  passage: "the melatonin dose should be between 0.5 and 5 mg and should be taken close to bedtime on the first day (and any subsequent day) of travel and on the following few days after arrival at the destination."
+  artikel: melatonin
+
+- id: melatonine-nederland
+  laag: naslag
+  doel: "Weet dat de Nederlandse inspectie (IGJ) melatonine onder 0,3 mg per dag in principe niet als geneesmiddel ziet."
+  bron: igj-melatonine-faq
+  passage: "IGJ beschouwt producten met een dagdosering lager dan 0,3 mg melatonine in principe niet als geneesmiddel."
+  artikel: melatonin
+
+- id: alcohol-minder-is-beter
+  laag: naslag
+  doel: "Weet dat bij alcohol geldt: hoe minder je drinkt, hoe kleiner het risico op schade."
+  bron: ccsa-alcohol-guidance-2023
+  passage: "Taken together, overwhelming evidence confirms that when it comes to drinking alcohol, less consumption means less risk of harm from alcohol."
+  artikel: alcohol-and-fitness
+
+- id: alcohol-laag-risico
+  laag: naslag
+  doel: "Weet dat de Canadese richtlijn 2 standaardglazen of minder per week als laag risico indeelt."
+  bron: ccsa-alcohol-guidance-2023
+  passage: "Low for individuals who consume 2 standard drinks or less per week;"
+  artikel: alcohol-and-fitness
+
+- id: alcohol-per-keer
+  laag: naslag
+  doel: "Weet dat meer dan 2 standaardglazen per keer samengaat met een groter risico op schade, zoals letsel."
+  bron: ccsa-alcohol-guidance-2023
+  passage: "Consuming more than 2 standard drinks per drinking occasion is associated with an increased risk of harms to self and others, including injuries and violence."
+  artikel: alcohol-and-fitness
+
+- id: overbelasting-en-herstel
+  laag: naslag
+  doel: "Weet dat goed trainen overbelasting vraagt, maar niet de combinatie van te veel overbelasting en te weinig herstel."
+  bron: acsm-ecss-overtraining-2013
+  passage: "Successful training not only must involve overload but also must avoid the combination of excessive overload plus inadequate recovery."
+  artikel: overtraining
+
+- id: functioneel-overreachen
+  laag: naslag
+  doel: "Weet dat een korte periode van overbelasting (functional overreaching) na herstel tot betere prestaties kan leiden."
+  bron: acsm-ecss-overtraining-2013
+  passage: "This functional overreaching will eventually lead to an improvement in performance after recovery."
+  artikel: overtraining
+
+- id: overtraining-moeilijk-vast-te-stellen
+  laag: naslag
+  doel: "Weet dat het verschil tussen langdurige overbelasting en een overtrainingssyndroom moeilijk te maken is, en afhangt van hoe het afloopt en van het uitsluiten van andere oorzaken."
+  bron: acsm-ecss-overtraining-2013
+  passage: "The distinction between NFOR and overtraining syndrome (OTS) is very difficult and will depend on the clinical outcome and exclusion diagnosis."
+  artikel: overtraining
+
+- id: overtraining-andere-oorzaken
+  laag: naslag
+  doel: "Weet dat bij vermoeden van overtraining eerst andere oorzaken uitgesloten worden, zoals te weinig eten, te weinig koolhydraten of eiwit, en een ijzer- of magnesiumtekort."
+  bron: acsm-ecss-overtraining-2013
+  passage: "such as dietary caloric restriction (negative energy balance) and insufficient carbohydrate and/or protein intake, iron deficiency, magnesium deficiency, allergies, and others"
+  artikel: overtraining

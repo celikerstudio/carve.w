@@ -1,0 +1,16 @@
+---
+doi: 10.1249/mss.0b013e318279a10a
+pmid: '23247672'
+title: 'Prevention, diagnosis, and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine'
+authors: 'Meeusen R, Duclos M, Foster C, Fry A, Gleeson M, Nieman D, Raglin J, Rietjens G, Steinacker J, Urhausen A, European College of Sport Science, American College of Sports Medicine'
+journal: Medicine and science in sports and exercise
+year: 2013
+license: niet open access
+text: abstract
+url: 'https://doi.org/10.1249/mss.0b013e318279a10a'
+fetched: '2026-10-21'
+---
+
+## Abstract
+
+Successful training not only must involve overload but also must avoid the combination of excessive overload plus inadequate recovery. Athletes can experience short-term performance decrement without severe psychological or lasting other negative symptoms. This functional overreaching will eventually lead to an improvement in performance after recovery. When athletes do not sufficiently respect the balance between training and recovery, nonfunctional overreaching (NFOR) can occur. The distinction between NFOR and overtraining syndrome (OTS) is very difficult and will depend on the clinical outcome and exclusion diagnosis. The athlete will often show the same clinical, hormonal, and other signs and symptoms. A keyword in the recognition of OTS might be "prolonged maladaptation" not only of the athlete but also of several biological, neurochemical, and hormonal regulation mechanisms. It is generally thought that symptoms of OTS, such as fatigue, performance decline, and mood disturbances, are more severe than those of NFOR. However, there is no scientific evidence to either confirm or refute this suggestion. One approach to understanding the etiology of OTS involves the exclusion of organic diseases or infections and factors such as dietary caloric restriction (negative energy balance) and insufficient carbohydrate and/or protein intake, iron deficiency, magnesium deficiency, allergies, and others together with identification of initiating events or triggers. In this article, we provide the recent status of possible markers for the detection of OTS. Currently, several markers (hormones, performance tests, psychological tests, and biochemical and immune markers) are used, but none of them meet all the criteria to make their use generally accepted.

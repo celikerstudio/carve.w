@@ -42,7 +42,7 @@ sources:
       - Urkmez A
       - Sarikaya S
     journal: International Journal of Impotence Research
-    year: 2023
+    year: 2024
     claim: 'Systematic review of 52 studies of 27 proposed testosterone boosters, compared with placebo (10 studies of vitamin D3, 5 of zinc/magnesium, 4 of tribulus, 3 each of Eurycoma longifolia and ashwagandha): most fail to increase total testosterone; the exceptions rated effective or possibly effective were few and in specific groups.'
   - doi: 10.5534/wjmh.190043
     title: ‘Testosterone Boosting’ Supplements Composition and Claims Are not Supported by the Academic Literature

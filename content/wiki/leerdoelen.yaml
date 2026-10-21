@@ -776,3 +776,183 @@
   bron: acsm-ecss-overtraining-2013
   passage: "such as dietary caloric restriction (negative energy balance) and insufficient carbohydrate and/or protein intake, iron deficiency, magnesium deficiency, allergies, and others"
   artikel: overtraining
+
+# ── naslag: cluster F (supplementen), voorgesteld 2026-10-21, wacht op Furkans akkoord (TDR-0018 §3) ──
+# Vitamine D en omega-3 steunen op het Voedingscentrum (volgt de Gezondheidsraad, geen DOI) en
+# EFSA-overzichtstabellen; de volledige EFSA-opinions gaven een 403. Collageen heeft alleen een
+# EFSA-claimbeoordeling van één product.
+
+- id: beta-alanine-dosis
+  laag: naslag
+  doel: "Weet dat 4 tot 6 gram beta-alanine per dag, minstens 2 tot 4 weken lang, de prestatie verbetert, het duidelijkst bij inspanningen van 1 tot 4 minuten."
+  bron: issn-beta-alanine-2015
+  passage: "Daily supplementation with 4 to 6 g of beta-alanine for at least 2 to 4 weeks has been shown to improve exercise performance, with more pronounced effects in open end-point tasks/time trials lasting 1 to 4 min in duration"
+  artikel: beta-alanine
+
+- id: beta-alanine-tintelen
+  laag: naslag
+  doel: "Weet dat tintelen de enige gemelde bijwerking van beta-alanine is, en dat kleinere losse doses (1,6 gram) of een vorm met vertraagde afgifte het kunnen verminderen."
+  bron: issn-beta-alanine-2015
+  passage: "The only reported side effect is paraesthesia (tingling), but studies indicate this can be attenuated by using divided lower doses (1.6 g) or using a sustained-release formula"
+  artikel: beta-alanine
+
+- id: beta-alanine-veilig
+  laag: naslag
+  doel: "Weet dat beta-alanine volgens de ISSN veilig lijkt bij gezonde mensen in de aanbevolen doses."
+  bron: issn-beta-alanine-2015
+  passage: "Beta-alanine supplementation currently appears to be safe in healthy populations at recommended doses"
+  artikel: beta-alanine
+
+- id: beta-alanine-kracht-onbekend
+  laag: naslag
+  doel: "Weet dat het effect van beta-alanine op kracht nog verder onderzocht moet worden."
+  bron: issn-beta-alanine-2015
+  passage: "More research is needed to determine the effects of beta-alanine on strength, endurance performance beyond 25 min in duration, and other health-related benefits associated with carnosine."
+  artikel: beta-alanine
+
+- id: bcaa-minder-dan-wei
+  laag: naslag
+  doel: "Weet dat BCAA's de spiereiwitaanmaak verhogen, maar ongeveer de helft minder dan wei met evenveel BCAA's."
+  bron: issn-sports-nutrition-2018
+  passage: "While acute ingestion of BCAAs did promote a 22% greater increase in muscle protein synthesis when compared to a placebo, the determined rates were 50% lower than what is commonly seen when a dose of whey protein containing similar amounts of BCAAs is ingested."
+  artikel: bcaa
+
+- id: bcaa-beperkt-bewijs
+  laag: naslag
+  doel: "Weet dat er maar beperkt bewijs is dat BCAA's tijdens zware training helpen om vetvrije massa op te bouwen of te behouden."
+  bron: issn-sports-nutrition-2018
+  passage: "Theoretically, BCAA supplementation during intense training may help minimize protein degradation and thereby lead to greater gains in (or limit losses of) fat-free mass, but only limited evidence exists to support this hypothesis."
+  artikel: bcaa
+
+- id: losse-eaa-beperkt-bewijs
+  laag: naslag
+  doel: "Weet dat er weinig bewijs is dat losse essentiële aminozuren bij krachttraining meer vetvrije massa opleveren."
+  bron: issn-sports-nutrition-2018
+  passage: "limited evidence exists to demonstrate that supplementation with non-intact sources of EAAs (e.g., free form amino acids) while resistance training positively impacts fat-free mass accretion."
+  artikel: bcaa
+
+- id: volledig-eiwit-voorrang
+  laag: naslag
+  doel: "Weet dat veel onderzoekers aanraden volledige eiwitbronnen voorrang te geven boven losse aminozuren."
+  bron: issn-sports-nutrition-2018
+  passage: "many authors and review articles have encouraged the prioritization of intact protein sources over ingestion of free form amino acids"
+  artikel: bcaa
+
+- id: citrulline-krachtsets
+  laag: naslag
+  doel: "Weet dat citrullinemalaat in drie studies de prestatie bij herhaalde sets krachttraining verbeterde."
+  bron: issn-sports-nutrition-2018
+  passage: "In all three studies, citrulline malate was shown to significantly increase performance during upper- and lower-body multiple-bout resistance exercise performance."
+  artikel: citrulline
+
+- id: citrulline-onduidelijk
+  laag: naslag
+  doel: "Weet dat nog onduidelijk is of die winst echt aan citrulline te danken is."
+  bron: issn-sports-nutrition-2018
+  passage: "Therefore, it is presently unclear whether these benefits can be solely attributed to citrulline, as well as what role citrulline may play in aerobic and anaerobic performance."
+  artikel: citrulline
+
+- id: vitamine-d-adh
+  laag: naslag
+  doel: "Weet dat in Nederland 10 microgram vitamine D per dag wordt aanbevolen, en 20 microgram boven de 70."
+  bron: voedingscentrum-vitamine-d
+  passage: "Voor iedereen geldt een aanbevolen dagelijkse hoeveelheid (ADH) van 10 microgram vitamine D. Alleen mensen van boven de 70 moeten 20 microgram vitamine D per dag binnenkrijgen."
+  artikel: vitamin-d
+
+- id: vitamine-d-winter
+  laag: naslag
+  doel: "Weet dat de zon in Nederland in de wintermaanden te laag staat om vitamine D aan te maken."
+  bron: voedingscentrum-vitamine-d
+  passage: "In de wintermaanden staat in de Nederland de zon te laag om vitamine D aan te maken."
+  artikel: vitamin-d
+
+- id: vitamine-d-niet-meer
+  laag: naslag
+  doel: "Weet dat meer vitamine D nemen dan de aanbevolen hoeveelheid geen extra gezondheidswinst oplevert."
+  bron: voedingscentrum-vitamine-d
+  passage: "Je hoeft niet meer te nemen dan de aanbevolen hoeveelheden in bovenstaande tabel. Dat levert geen extra gezondheidswinst."
+  artikel: vitamin-d
+
+- id: vitamine-d-bovengrens
+  laag: naslag
+  doel: "Weet dat de aanvaardbare bovengrens voor vitamine D voor volwassenen 100 microgram per dag is."
+  bron: voedingscentrum-vitamine-d
+  passage: "Leeftijd Aanvaardbare bovengrens vitamine D (microgram per dag) tot 1 jaar 25 1 t/m 10 jaar 50 11 t/m 17 jaar 100 18 jaar en ouder 100"
+  artikel: vitamin-d
+
+- id: omega-3-vis-per-week
+  laag: naslag
+  doel: "Weet dat de Gezondheidsraad volwassenen 200 milligram visvetzuren per dag aanraadt, en dat één keer per week vis, liefst vette vis, daarvoor genoeg is."
+  bron: voedingscentrum-omega-3-omega-6
+  passage: "De Gezondheidsraad adviseert volwassenen om per dag 200 milligram omega 3-vetzuren uit vis (visvetzuren) binnen te krijgen. Als je 1 keer per week vis eet, krijg je voldoende visvetzuren binnen. Kies bij voorkeur vette vis, zoals haring of zalm."
+  artikel: omega-3
+
+- id: omega-3-capsule-onzeker
+  laag: naslag
+  doel: "Weet dat onvoldoende onderzocht is of visolie- of algenoliecapsules dezelfde gezondheidseffecten geven als vis eten."
+  bron: voedingscentrum-vis
+  passage: "Er is onvoldoende onderzoek of hiermee dezelfde gezondheidseffecten worden behaald als met het eten van vis."
+  artikel: omega-3
+
+- id: omega-3-hoge-dosis-ritme
+  laag: naslag
+  doel: "Weet dat supplementen met hoge doses EPA en DHA het risico op hartritmestoornissen kunnen vergroten, het meest bij 4 gram per dag."
+  bron: voedingscentrum-omega-3-omega-6
+  passage: "Aan de andere kant kunnen supplementen met hoge doseringen EPA en DHA het risico op hartritmestoornissen vergroten. Dit risico is het grootste bij een dosering van 4 gram per dag."
+  artikel: omega-3
+
+- id: magnesium-ai
+  laag: naslag
+  doel: "Weet dat EFSA als adequate inname voor volwassenen 350 mg magnesium per dag voor mannen en 300 mg voor vrouwen aanhoudt."
+  bron: efsa-magnesium-drv-2015
+  passage: "For adults, an AI for magnesium is set at 350 mg/day for men and 300 mg/day for women."
+  artikel: magnesium
+
+- id: magnesium-bovengrens-supplement
+  laag: naslag
+  doel: "Weet dat de bovengrens van 250 mg magnesium per dag alleen geldt voor supplementen, water en toevoegingen, niet voor magnesium dat van nature in voeding zit."
+  bron: efsa-scf-ul-report-2006
+  passage: "This UL does not include Mg normally present in foods and beverages."
+  artikel: magnesium
+
+- id: magnesium-diarree
+  laag: naslag
+  doel: "Weet dat lichte diarree de eerste bijwerking is van te veel magnesium uit makkelijk oplosbare zouten."
+  bron: efsa-scf-ul-report-2006
+  passage: "As discussed, mild diarrhoea is the most sensitive non-desirable effect of orally administered easily dissociable magnesium salts."
+  artikel: magnesium
+
+- id: zink-behoefte
+  laag: naslag
+  doel: "Weet dat EFSA de aanbevolen zinkinname voor vrouwen op 7,5 tot 12,7 mg per dag zet en voor mannen op 9,4 tot 16,3 mg, afhankelijk van hoeveel fytaat je eet."
+  bron: efsa-zinc-drv-2014
+  passage: "PRIs were derived from the zinc requirement of individuals with a body weight at the 97.5th percentile for reference weights for men and women and range from 7.5 to 12.7 mg/day for women and from 9.4 to 16.3 mg/day for men."
+  artikel: zinc
+
+- id: zink-bovengrens
+  laag: naslag
+  doel: "Weet dat de Europese bovengrens voor zink 25 mg per dag is, ook voor zwangere vrouwen en vrouwen die borstvoeding geven."
+  bron: efsa-scf-ul-report-2006
+  passage: "Therefore the UL of 25 mg zinc per day applies also to pregnant and lactating women."
+  artikel: zinc
+
+- id: zink-kopertekort
+  laag: naslag
+  doel: "Weet dat langdurig te veel zink samengaat met verschijnselen van kopertekort."
+  bron: efsa-scf-ul-report-2006
+  passage: "Chronic zinc toxicity, undoubtedly, is associated with symptoms of copper deficiency."
+  artikel: zinc
+
+- id: collageen-gewrichten-geen-bewijs
+  laag: naslag
+  doel: "Weet dat EFSA geen oorzakelijk verband kon vaststellen tussen collageenhydrolysaat en het behoud van gezonde gewrichten."
+  bron: efsa-collagen-joints-2011
+  passage: "The Panel concludes that a cause and effect relationship has not been established between the consumption of collagen hydrolysate and maintenance of joints."
+  artikel: collagen
+
+- id: collageen-huid-geen-bewijs
+  laag: naslag
+  doel: "Weet dat EFSA voor een collageenproduct geen oorzakelijk verband kon vaststellen met een verandering in de elasticiteit van de huid die de huidfunctie verbetert."
+  bron: efsa-collagen-skin-2013
+  passage: "The Panel concludes that a cause and effect relationship has not been established between the consumption of VeriSol®P and a change in skin elasticity leading to an improvement in skin function."
+  artikel: collagen

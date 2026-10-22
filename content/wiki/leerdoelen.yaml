@@ -1073,3 +1073,271 @@
   bron: issn-diets-2017
   passage: "protein intake at 2.4 g/kg caused LM gains (1.2 kg) and fat loss (4.8 kg), while 1.2 g/kg resulted in preservation of lean mass (0.1 kg), and less fat loss (3.5 kg)."
   artikel: body-recomposition
+
+# ── cluster H (training), voorgesteld 2026-10-21, wacht op Furkans akkoord (TDR-0018 §3) ──
+# Basis is de ACSM-position stand van 2026 (vervangt die van 2009; de 2009-leerdoelen hierboven
+# moeten nog worden nagelopen). Voor hypertrofie bij atleten de IUSCA-consensus 2021; voor deloaden
+# en warming-up bestaat geen officiële richtlijn, alleen een Delphi-consensus (coaches van
+# kracht- en physiquesporters, en experts uit de topsport).
+
+- id: volume-minstens-twee-sets
+  laag: spier-opbouwen
+  doel: "Weet dat de ACSM gezonde volwassenen minstens twee sets per oefening aanraadt, en dat de extra winst afneemt boven ongeveer 2 tot 3 sets per oefening voor kracht en 18 tot 20 sets per week voor spiergroei."
+  bron: acsm-resistance-training-2026
+  passage: "a dose-response that plateaued and showed diminishing returns beyond ~2–3 sets/exercise for strength and ~18–20 weekly sets for hypertrophy with varying loads; thus, healthy adults are advised to complete at least two sets per exercise."
+  artikel: volume
+
+- id: volume-tien-sets-hypertrofie
+  laag: naslag
+  doel: "Weet dat spiergroei in de reviews groter was bij 10 of meer sets per spiergroep per week."
+  bron: acsm-resistance-training-2026
+  passage: "Between RTx, hypertrophy was enhanced by RT performed with eccentric-only contractions (versus concentric-only) and higher volume (≥10 sets/muscle group/wk)."
+  artikel: volume
+
+- id: volume-geleidelijk-opvoeren
+  laag: naslag
+  doel: "Weet dat een expertconsensus over spiergroei bij atleten aanraadt het aantal sets per spiergroep per cyclus van ongeveer 4 weken met hooguit zo'n 20% te verhogen."
+  bron: iusca-hypertrophy-2021
+  passage: "It may be prudent to limit incremental increases in the number of sets for a given muscle group to 20% of an athlete’s previous volume during a given training cycle (~4 weeks) and then readjust accordingly."
+  artikel: volume
+
+- id: falen-niet-nodig
+  laag: spier-opbouwen
+  doel: "Weet dat sets tot spierfalen trainen volgens de ACSM niet meer kracht, spiergroei of explosiviteit oplevert en dus niet nodig is."
+  bron: acsm-resistance-training-2026
+  passage: "Completing sets to fatigue (momentary muscular failure) does not enhance gains in strength, hypertrophy, and power, and so is not necessary for benefits to occur."
+  artikel: intensity
+
+- id: rir-geen-exact-doel
+  laag: naslag
+  doel: "Weet dat er onvoldoende bewijs is voor een exact aantal herhalingen in reserve (RIR) of een exacte inspanningsscore (RPE) als doel."
+  bron: acsm-resistance-training-2026
+  passage: "While training to failure is not obligatory for optimizing results, there is insufficient evidence to quantify exact RIR and perceived exertion targets"
+  artikel: intensity
+
+- id: spiergroei-breed-gewichtsbereik
+  laag: naslag
+  doel: "Weet dat je met een breed bereik aan gewichten vergelijkbare spiergroei kunt halen."
+  bron: iusca-hypertrophy-2021
+  passage: "Individuals can achieve comparable muscle hypertrophy across a wide spectrum of loading zones."
+  artikel: intensity
+
+- id: beginners-niet-tot-falen
+  laag: naslag
+  doel: "Weet dat beginners flink spiermassa kunnen winnen zonder dicht tegen falen aan te trainen."
+  bron: iusca-hypertrophy-2021
+  passage: "Novice lifters can achieve robust gains in muscle mass without training at a close proximity to failure."
+  artikel: intensity
+
+- id: warmup-geen-acute-bescherming
+  laag: naslag
+  doel: "Weet dat een expertconsensus over warming-up in de sport geen steun vond voor directe bescherming tegen blessures, al kunnen sommige oefeningen het blessurerisico op lange termijn verlagen."
+  bron: delphi-warmup-athletes-2026
+  passage: "While inclusion of some type of exercises in the warm-up may reduce long-term injury risk, as in other periods of the training session, there is no support for acute injury protection."
+  artikel: warm-up
+
+- id: warmup-volledigheid
+  laag: naslag
+  doel: "Weet dat volgens die consensus hoe volledig een warming-up is een belangrijke factor is voor hoe goed hij werkt."
+  bron: delphi-warmup-athletes-2026
+  passage: "The comprehensiveness of a warm-up protocol is a key factor associated with its effectiveness."
+  artikel: warm-up
+
+- id: deload-definitie
+  laag: naslag
+  doel: "Weet dat een deload een periode met minder trainingsbelasting is, bedoeld om vermoeidheid te verminderen, herstel te bevorderen en je klaar te maken voor de volgende training."
+  bron: delphi-deloading-2023
+  passage: "Deloading is a period of reduced training stress designed to mitigate physiological and psychological fatigue, promote recovery, and enhance preparedness for subsequent training."
+  artikel: deload
+
+- id: deload-intensiteit
+  laag: naslag
+  doel: "Weet dat het gewicht tijdens een deload gelijk kan blijven, maar alleen als het volume omlaag gaat."
+  bron: delphi-deloading-2023
+  passage: "Training intensity could also remain the same during the deload, but only when training volume is reduced."
+  artikel: deload
+
+- id: deload-nut-onzeker
+  laag: naslag
+  doel: "Weet dat onduidelijk is of deloaden nodig is om langdurige overbelasting te voorkomen."
+  bron: delphi-deloading-2023
+  passage: "It is currently unclear whether deloading is a necessary part of the training programme to avoid the deleterious effects of NFOR/OTS."
+  artikel: deload
+
+- id: isolatie-en-meergewricht
+  laag: naslag
+  doel: "Weet dat de ACSM voor spiergroei aanraadde zowel enkel- als meergewrichtsoefeningen te doen, met vrije gewichten en machines, op elk niveau."
+  bron: acsm-resistance-training-2009
+  passage: "It is recommended that single- and multiple-joint free-weight and machine exercises be included in an RT program in novice, intermediate, and advanced individuals"
+  artikel: isolation-exercises
+
+- id: isolatie-gericht-weinig-techniek
+  laag: naslag
+  doel: "Weet dat enkelgewrichtsoefeningen een spiergroep gericht trainen en minder vaardigheid en techniek vragen."
+  bron: acsm-resistance-training-2009
+  passage: "Single-joint exercises, such as knee extensions and knee curls, have been used to target-specific muscle groups and pose a reduced level of skill and technical involvement."
+  artikel: isolation-exercises
+
+- id: isolatie-geen-bewezen-voorkeur
+  laag: naslag
+  doel: "Weet dat de ACSM in 2026 te weinig gegevens vond om te zeggen of enkel- of meergewrichtsoefeningen meer spiergroei geven."
+  bron: acsm-resistance-training-2026
+  passage: "There were insufficient data to determine if muscle hypertrophy was influenced by eccentric flywheel versus standard RT (85), machine versus free-weight RT (100), single-joint versus multijoint RT (128,142)"
+  artikel: isolation-exercises
+
+# ── cluster I (herstel), voorgesteld 2026-10-22, wacht op Furkans akkoord (TDR-0018 §3) ──
+# Over spierpijn (DOMS) bestaat geen eigen richtlijn; de stretching-Delphi (2025) noemt hem wel.
+# Blessurepreventie: alleen IOC-consensus over belasting bij topsporters (samenvatting) en de ACSM
+# 2011; niets specifiek voor krachttraining.
+
+- id: rekken-niet-voor-herstel
+  laag: naslag
+  doel: "Weet dat een expertconsensus rekken niet aanraadt als herstelroutine na het sporten, al is het vertrouwen in het bewijs laag."
+  bron: stretching-delphi-2025
+  passage: "Based on the current evidence, the panel does not recommend stretching as a post-exercise recovery routine although overall confidence in the available evidence is low."
+  artikel: doms
+
+- id: rekken-geen-bewijs-spierpijn
+  laag: naslag
+  doel: "Weet dat rekken tegen spierpijn (DOMS) bewijs en een theoretische basis mist, al kan het voor sommigen psychologisch prettig zijn."
+  bron: stretching-delphi-2025
+  passage: "While stretching may be of psychological value for some individuals, its application for alleviation of DOMS not only lacks evidence but also theoretical foundation."
+  artikel: doms
+
+- id: lang-statisch-rekken-voor-maximale-kracht
+  laag: naslag
+  doel: "Weet dat lang statisch rekken (meer dan 60 seconden per spier) vlak voor maximale of explosieve inspanning wordt afgeraden, maar dat kort statisch rekken binnen een dynamische warming-up en dynamisch rekken dat nadeel niet hebben."
+  bron: stretching-delphi-2025
+  passage: "The panel does not recommend prolonged (>60 s per muscle) static stretching prior to maximal or explosive contractions in isolated muscle groups (meaning static calf stretching should be avoided prior to maximal strength efforts). However, short-duration static stretching incorporated into a dynamic warm-up and dynamic stretching do not cause such impairments."
+  artikel: stretching
+
+- id: rekken-voor-bewegingsbereik
+  laag: naslag
+  doel: "Weet dat wie rekt om direct meer bewegingsbereik te krijgen minstens 2 keer 5 tot 30 seconden rekt."
+  bron: stretching-delphi-2025
+  passage: "If stretching is used to improve ROM acutely, the panel recommends a minimum of 2 bouts of 5 s to 30 s of soft tissue stretching."
+  artikel: stretching
+
+- id: rekken-acsm-twee-keer-per-week
+  laag: naslag
+  doel: "Weet dat de ACSM aanraadt minstens twee dagen per week lenigheidsoefeningen te doen voor alle grote spier-peesgroepen, in totaal 60 seconden per oefening."
+  bron: acsm-quantity-quality-2011
+  passage: "Crucial to maintaining joint range of movement, completing a series of flexibility exercises for each the major muscle-tendon groups (a total of 60 s per exercise) on ≥2 d·wk is recommended."
+  artikel: stretching
+
+- id: rekken-geen-algemene-blessurepreventie
+  laag: naslag
+  doel: "Weet dat rekken niet wordt aangeraden als algemene blessurepreventie, al wijzen eerste aanwijzingen erop dat statisch rekken spierblessures kan verminderen."
+  bron: stretching-delphi-2025
+  passage: "The panel does not recommend stretching for injury prevention in general. The panel acknowledges that initial evidence suggests static stretching may reduce the incidence of muscle injuries."
+  artikel: injury-prevention
+
+- id: belasting-slecht-gemanaged-blessure
+  laag: naslag
+  doel: "Weet dat slecht beheer van trainingsbelasting volgens het IOC een belangrijke risicofactor voor blessures is bij topsporters."
+  bron: ioc-load-injury-2016
+  passage: "Emerging evidence indicates that poor load management is a major risk factor for injury."
+  artikel: injury-prevention
+
+- id: geleidelijk-opbouwen-risico
+  laag: naslag
+  doel: "Weet dat de ACSM zegt dat geleidelijk opbouwen van intensiteit en volume de risico's van sporten kan verkleinen."
+  bron: acsm-quantity-quality-2011
+  passage: "Educating adults about and screening for signs and symptoms of CHD and gradual progression of exercise intensity and volume may reduce the risks of exercise."
+  artikel: injury-prevention
+
+# ── cluster J (mindset), voorgesteld 2026-10-22, wacht op Furkans akkoord (TDR-0018 §3) ──
+# Geen richtlijn noemt 40 als grens (WHO heeft een apart advies vanaf 65, de Gezondheidsraad één voor volwassenen en ouderen), geen richtlijn adviseert
+# trainen per cyclusfase, en over stilstand in training zegt ACSM 2026 alleen iets over progressie.
+# Zelfmonitoring: de AHA/ACC/TOS-richtlijn (2013) voor volwassenen met overgewicht.
+
+- id: ouderen-kracht-en-balans
+  laag: naslag
+  doel: "Weet dat de WHO ouderen (65+) aanraadt minstens 3 dagen per week gevarieerd te bewegen met nadruk op balans en kracht, om functioneren te verbeteren en vallen te voorkomen."
+  bron: who-physical-activity-2020
+  passage: "older adults should do varied multicomponent physical activity that emphasises functional balance and strength training at moderate or greater intensity on 3 or more days a week, to enhance functional capacity and to prevent falls."
+  artikel: fitness-40-plus
+
+- id: kracht-advies-alle-leeftijden
+  laag: naslag
+  doel: "Weet dat de ACSM-aanbevelingen voor krachttraining voor gezonde volwassenen van alle leeftijden gelden."
+  bron: acsm-resistance-training-2026
+  passage: "Thus, our recommendations are evidence-based across all ages."
+  artikel: fitness-40-plus
+
+- id: krachttraining-veilig-ouderen
+  laag: naslag
+  doel: "Weet dat sporten in een analyse van meer dan 38.000 deelnemers, onder wie meer dan 11.000 ouderen, het risico op ernstige bijwerkingen niet verhoogde."
+  bron: acsm-resistance-training-2026
+  passage: "In an analysis of >38,000 participants (>6700 RT participants), of which >11,000 were older adults, exercise did not increase the risk of serious adverse events."
+  artikel: fitness-40-plus
+
+- id: gezondheidsraad-spier-bot-balans
+  laag: naslag
+  doel: "Weet dat de Gezondheidsraad iedereen aanraadt minstens twee keer per week spier- en botversterkende oefeningen te doen, en ouderen daarnaast balansoefeningen."
+  bron: gezondheidsraad-beweegrichtlijnen-2017
+  passage: "Doe op zijn minst tweemaal per week spier- en botversterkende oefeningen, zoals traplopen, herhaald opstaan uit zit en krachttraining, voor ouderen gecombineerd met balansoefeningen"
+  artikel: fitness-40-plus
+
+- id: zwanger-krachttraining
+  laag: naslag
+  doel: "Weet dat de WHO regelmatige krachttraining aanraadt voor zwangere vrouwen en vrouwen na de bevalling."
+  bron: who-physical-activity-2020
+  passage: "Available evidence from intervention trials combining both aerobic and muscle-strengthening physical activity support the recommendation for regular strength training to be included for pregnant and postpartum women."
+  artikel: fitness-for-women
+
+- id: zwanger-doorgaan-als-je-al-sportte
+  laag: naslag
+  doel: "Weet dat vrouwen die voor de zwangerschap al stevig sportten daarmee, als er geen medische reden is om het niet te doen, door kunnen gaan tijdens de zwangerschap en na de bevalling."
+  bron: who-physical-activity-2020
+  passage: "Women who, before pregnancy, habitually engaged in vigorous-intensity aerobic activity or who were physically active can continue these activities during pregnancy and the postpartum period."
+  artikel: fitness-for-women
+
+- id: zwanger-niet-op-rug
+  laag: naslag
+  doel: "Weet dat de WHO zwangere vrouwen aanraadt na het eerste trimester geen oefeningen op de rug te doen."
+  bron: who-physical-activity-2020
+  passage: "Avoid activities in supine position after the first trimester of pregnancy"
+  artikel: fitness-for-women
+
+- id: cyclusfase-onduidelijk
+  laag: naslag
+  doel: "Weet dat het bewijs dat de fase van je menstruatiecyclus je prestatie of blessurerisico beïnvloedt nog niet overtuigend is."
+  bron: uefa-menstrual-cycle-tracking-2025
+  passage: "current evidence linking menstrual cycle phases to performance or injury risk remains inconclusive"
+  artikel: fitness-for-women
+
+- id: overload-voor-langere-termijn
+  laag: naslag
+  doel: "Weet dat je om te blijven vooruitgaan de prikkel moet verhogen, bijvoorbeeld met gewicht, volume, frequentie, oefeningkeuze of duur, al is het maar een beetje."
+  bron: acsm-resistance-training-2026
+  passage: "Such adaptation would require increasing the stimulus, such as load, volume, training frequency, exercise selection, or duration (even if only slightly), as the muscle continues to adapt to produce further adaptations"
+  artikel: plateaus
+
+- id: variatie-voor-vooruitgang
+  laag: naslag
+  doel: "Weet dat variatie het stelselmatig aanpassen van je trainingsvariabelen is om te blijven aanpassen."
+  bron: acsm-resistance-training-2026
+  passage: "Variation is the systematic modification of RTx variables over time to facilitate continued adaptation."
+  artikel: plateaus
+
+- id: afvallen-plateau-na-zes-maanden
+  laag: naslag
+  doel: "Weet dat bij leefstijlinterventies het meeste gewichtsverlies meestal rond 6 maanden is bereikt, gevolgd door een plateau en geleidelijk weer aankomen."
+  bron: aha-acc-tos-obesity-2013
+  passage: "The usual pattern of weight loss in patients undergoing a lifestyle intervention is that maximum weight loss is achieved at 6 months, followed by plateau and gradual regain over time."
+  artikel: plateaus
+
+- id: zelfmonitoring-afvallen
+  laag: naslag
+  doel: "Weet dat leefstijlprogramma's om af te vallen meestal regelmatig bijhouden van eten, beweging en gewicht omvatten, en dat voor gewichtsbehoud ook minstens wekelijks wegen wordt aangeraden."
+  bron: aha-acc-tos-obesity-2013
+  passage: "Comprehensive lifestyle interventions usually provide a structured behavior change program that includes regular self-monitoring of food intake, physical activity, and weight. These same behaviors are recommended to maintain lost weight, with the addition of frequent (ie, weekly or more often) monitoring of body weight."
+  artikel: progress-tracking
+
+- id: vaak-wegen-gewichtsbehoud
+  laag: naslag
+  doel: "Weet dat vaak wegen (minstens wekelijks), minder calorieën eten en veel bewegen samengaan met beter gewichtsbehoud."
+  bron: aha-acc-tos-obesity-2013
+  passage: "Strategies such as frequent self-weighing (at least weekly), consumption of a reduced-calorie diet, and high levels of physical activity (>200 min/wk) are associated with better weight maintenance over time."
+  artikel: progress-tracking

@@ -1,0 +1,15 @@
+---
+doi: 10.1097/AOG.0000000000003772
+pmid: '32217980'
+title: 'Physical Activity and Exercise During Pregnancy and the Postpartum Period: ACOG Committee Opinion, Number 804'
+journal: Obstetrics and gynecology
+year: 2020
+license: niet open access
+text: abstract
+url: 'https://doi.org/10.1097/AOG.0000000000003772'
+fetched: '2026-10-22'
+---
+
+## Abstract
+
+Exercise, defined as physical activity consisting of planned, structured, and repetitive bodily movements done to improve one or more components of physical fitness, is an essential element of a healthy lifestyle, and obstetrician-gynecologists and other obstetric care providers should encourage their patients to continue or to commence exercise as an important component of optimal health. Women who habitually engaged in vigorous-intensity aerobic activity or who were physically active before pregnancy can continue these activities during pregnancy and the postpartum period. Observational studies of women who exercise during pregnancy have shown benefits such as decreased gestational diabetes mellitus, cesarean birth and operative vaginal delivery, and postpartum recovery time. Physical activity also can be an essential factor in the prevention of depressive disorders of women in the postpartum period. Physical activity and exercise in pregnancy are associated with minimal risks and have been shown to benefit most women, although some modification to exercise routines may be necessary because of normal anatomic and physiologic changes and fetal requirements. In the absence of obstetric or medical complications or contraindications, physical activity in pregnancy is safe and desirable, and pregnant women should be encouraged to continue or to initiate safe physical activities. This document has been revised to incorporate recent evidence regarding the benefits and risks of physical activity and exercise during pregnancy and the postpartum period.

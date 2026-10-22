@@ -58,3 +58,73 @@ Letterlijk overgenomen uit de volledige tekst van dit position stand (Med Sci Sp
 (Local muscular endurance, rest periods; in de PDF-tekstlaag staat het teken "<" als "G")
 
 > Evidence category C. It is recommended that short rest periods be used for LME training, for example, 1–2 min for high-repetition sets (15–20 repetitions or more), <1 min for moderate (10–15 repetitions) sets.
+
+Aanvulling 2026-10-21, uit dezelfde kopie (https://www.sfu.ca/~ryand/kin343/ACSMresistance.pdf), voor de artikelen volume, intensity, isolation-exercises en deload. De PDF-tekstlaag laat afbrekingsstreepjes soms weg ('targetspecific'); hier staat het woord zoals de uitgever het bedoelt. Een passage hieronder zonder 'Evidence category' is lopende tekst uit de bespreking, geen aanbeveling. De tekst noemt warming-up nergens (gezocht op 'warm').
+
+(Muscular strength, exercise selection)
+
+> Evidence category A. Unilateral and bilateral single- and multiple-joint exercises should be included in RT with emphasis on multiple-joint exercises for maximizing overall muscle strength in novice, intermediate, and advanced individuals
+
+(Muscular strength, exercise selection)
+
+> Single-joint exercises, such as knee extensions and knee curls, have been used to target-specific muscle groups and pose a reduced level of skill and technical involvement.
+
+(Muscle hypertrophy, exercise selection and order)
+
+> Both single- and multiple-joint exercises increase hypertrophy, and the complexity of the exercises chosen has been shown to affect the time course of hypertrophy such that multiple-joint exercises require a longer neural adaptive phase than single-joint exercises
+
+(Muscle hypertrophy, exercise selection and order)
+
+> Evidence category A. It is recommended that single- and multiple-joint free-weight and machine exercises be included in an RT program in novice, intermediate, and advanced individuals
+
+(Muscular strength, rest periods)
+
+> Evidence category C. For assistance exercises (those exercises complimentary to core exercises), a shorter rest period length of 1–2 min may suffice
+
+(Muscular strength, volume)
+
+> Evidence category A. It is recommended that one to three sets per exercise be used by novice individuals initially
+
+(Muscular strength, volume)
+
+> To reduce the risk of overtraining, a dramatic increase in volume is not recommended. It is important to point out that not all exercises need to be performed with the same number of sets, and that emphasis of higher or lower volume is related to the program priorities of the individual as well as the muscle(s) trained in an exercise movement.
+
+(Muscular strength, volume; geen aanbeveling maar bevinding bij atleten)
+
+> No comparative study has shown single-set training superior to multiple-set training in trained or untrained individuals.
+
+(Muscular strength, volume; geen aanbeveling maar bevinding bij atleten)
+
+> Although little is known concerning the optimal number of sets performed per muscle group per session, a meta-analysis of 37 studies has shown that approximately eight sets per muscle group produced the largest effect size in athletes
+
+(Muscular strength, loading)
+
+> Meta-analytical data have shown that 60% of 1 RM produced the largest effect sizes for strength increases in novice individuals whereas 80% of 1 RM produced the largest effect sizes for strength increases in trained individuals
+
+(Muscular strength, loading)
+
+> For novice individuals, it has been suggested that moderate loading (50–60% of 1 RM or less) be used initially as learning proper form, and technique is paramount.
+
+(Muscular strength, loading)
+
+> Thus, intensity needs to be prescribed above one’s threshold (based on targeted repetition number) for progression in experienced populations.
+
+(Muscular strength, loading)
+
+> Contrary to early suggestions of 6 RM loading, it appears that using a variety of training loads is most conducive to maximizing muscular strength
+
+(Progression models, variation)
+
+> It has been shown that systematic variation of volume and intensity is most effective for long-term progression
+
+(Progression models, variation)
+
+> periodized and nonperiodized training are effective during short-term training. Important to periodization is the use of rest days to allow recovery and to reduce the probability or magnitude of overtraining
+
+Aanvulling 2026-10-22, uit dezelfde kopie (https://www.sfu.ca/~ryand/kin343/ACSMresistance.pdf), voor het artikel isolation-exercises.
+
+(Muscle hypertrophy, exercise selection and order)
+
+> Less is understood concerning the effect of exercise order on muscle hypertrophy. Although exceptions exist (e.g., using an opposite sequencing strategy to induce higher levels of fatigue), it appears that the recommended exercise sequencing guidelines for strength training apply for increasing muscle hypertrophy.
+
+> Evidence category C. For exercise sequencing, an order similar to strength training is recommended

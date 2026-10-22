@@ -131,7 +131,7 @@ Not backed by the sources above and needs a source or a rewrite before publishin
 
 ## What if motivation runs out?
 
-Motivation comes and goes. The idea behind habits is that a behaviour that has become automatic needs less of it, which is why the months above matter. Until then, make the next step small and easy to start. [[discipline]] covers the days you do not feel like it. If your weight stops moving even though you stick with the plan, that is a separate question, covered in [[plateaus]].
+Motivation comes and goes. The idea behind habits is that a behaviour that has become automatic needs less of it, which is why the months above matter. Until then, make the next step small and easy to start. [[discipline]] covers the days you do not feel like it. If your weight stops moving even though you think you are sticking to the plan, that is a separate question, covered in [[plateaus]].
 
 ## What worked for me
 

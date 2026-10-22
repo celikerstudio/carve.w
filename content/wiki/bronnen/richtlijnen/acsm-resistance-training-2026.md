@@ -137,3 +137,70 @@ Aanvullend letterlijk overgenomen op 2026-10-22 uit dezelfde volledige tekst (PM
 (Discussion, tot falen trainen)
 
 > It may also be that lifting to fatigue is inadvisable for certain populations (e.g., older individuals) due to risks to vascular health and an increased risk of injury resulting from poor form
+
+
+Aanvullend letterlijk overgenomen op 2026-10-22 uit dezelfde volledige tekst (PMC12965823), voor de update van de leerdoelen die nog op de ACSM-richtlijn van 2009 steunden. Gezocht op '2–10', '2-10', 'increase in load', '8–12', '6–12', '15 rep' en 'repetition range': geen treffers. De tekst geeft dus geen vuistregel voor hoeveel gewicht je erbij doet en geen herhalingsbereik per niveau. Bij spieruithouding staat in tabel 6 alleen dat krachttraining het verbetert; 'ND' betekent daar 'insufficient data to form conclusion', dus de ACSM had te weinig gegevens om te zeggen welke variabele hem extra verbetert (niet: geen enkele variabele helpt).
+
+(Results, kracht)
+
+> Comparing RTx, strength was enhanced by RT performed with higher frequency (≥2 d/wk, though the upper limit cannot, from our analysis, be undetermined), higher loads (dose-response), eccentric flywheel devices compared with standard RT, full range of motion, higher volume (multiple sets), and at the beginning of training sessions (compared with the end of training sessions).
+
+(Discussion, specificiteit)
+
+> The principle of specificity states that training adaptations are specific to the training stimulus applied.
+
+(Discussion, gewicht en herhalingen)
+
+> The number of repetitions performed within a given set is inherently and inversely related to load, provided a given load and near-fatiguing effort are applied
+
+(Discussion, oudere richtlijnen)
+
+> The specific program details outlined in previous Position Stands may be an appropriate starting point for some individuals; however, several other RT programs, as evidenced here, can also be effective.
+
+(Discussion, oudere richtlijnen)
+
+> Deviating from previous guidelines, we propose that individualizing programs to increase RT participation is, from our perspective, more important than conforming to specific RTx criteria outlined in previous Position Stands.
+
+(Discussion, periodisering; dezelfde alinea als de periodiseringspassage hierboven)
+
+> The impact of periodization on strength could not be determined, although one review found that periodized programs were slightly favored over nonperiodized programs to maximize strength gains under volume-equated conditions
+
+> thus, periodization is less important than previously hypothesized ( 11 , 12 ) for healthy adults to improve muscle function and hypertrophy.
+
+(Results, spiergroei per variabele)
+
+> muscle hypertrophy was not affected by frequency ( 24 , 73 , 74 , 128 , 131 , 134 , 135 ), load ( 24 , 78 – 81 , 83 , 84 , 128 , 131 , 136 ), absolute fatigue/failure ( 24 , 98 , 99 , 128 , 137 ), blood flow restriction ( 110 – 112 ), variable loading ( 138 ), time under tension ( 24 , 131 , 139 , 140 ), power training ( 105 ), periodization ( 24 , 117 , 131 , 141 ), or exercise order ( 24 , 94 , 96 , 128 , 131 ).
+
+(Results, spieruithouding)
+
+> There were insufficient data to determine if muscular endurance was affected by load ( 82 ), unstable surfaces ( 70 ), power training ( 82 ), volume ( 82 ), or set structure ( 107 , 108 ).
+
+(Discussion, specificiteit)
+
+> Practitioners should consider the principle of specificity when designing RT programs to achieve specific outcomes.
+
+(Discussion, volume; het begin van de zin die hierboven al half staat. Ref 187 is de meta-regressie van Pelland e.a.)
+
+> A meta-regression ( 187 ) of the effect of volume (weekly) sets showed progression, but as expected, a dose-response that plateaued and showed diminishing returns beyond ~2–3 sets/exercise for strength and ~18–20 weekly sets for hypertrophy with varying loads
+
+(Results, spiergroei; de hele zin)
+
+> There were insufficient data to determine if muscle hypertrophy was influenced by eccentric flywheel versus standard RT ( 85 ), machine versus free-weight RT ( 100 ), single-joint versus multijoint RT ( 128 , 142 ), time of day ( 24 , 102 , 131 ), inter-set rest ( 24 , 131 , 143 , 144 ), range of motion ( 86 , 87 , 128 , 145 ), set structure ( 24 , 107 , 108 , 146 ), intrasession autoregulation ( 113 ), varied exercise selection ( 115 , 128 ), or concurrent training ( 119 , 120 , 122 , 124 , 147 ).
+
+(Results, kracht)
+
+> Strength was not affected by RT performed with contractions to muscle failure/fatigue, free weights versus machines, unstable versus stable surfaces; fast (<2 s) versus moderate-slow (>2 s) contractions, morning versus evening training sessions, short (<1 min) versus long (>1 min) between-set rest intervals, eccentric versus concentric contractions, power training techniques, or different set structures (cluster and complex).
+
+(Methods, bewijsbasis)
+
+> In most cases, reviews examined people with minimal or no RT experience (i.e., novice); however, some reviews included more advanced trainees.
+
+(Discussion, frequentie en kracht; refs 73, 76 en 90, waarvan 76 Grgic e.a. 2018 is)
+
+> For example, RT frequency was found to impact strength; however, there was insufficient evidence to conclude a dose-response relationship, and the impact is diminished when volume is equated ( 73 , 76 , 90 ).
+
+Welke referenties in de ACSM-tekst zelf ook als losse bron in artikelen staan (gecontroleerd in de literatuurlijst): ref 24 is McLeod e.a. (2024), ref 76 Grgic e.a. (2018, frequentie en kracht), ref 96 Nunes e.a. (2021, oefenvolgorde), ref 117 Moesgaard e.a. (periodiseren bij gelijk volume), ref 142 Rosa e.a. (enkel- tegenover meergewricht) en ref 187 Pelland e.a. (online 2025, meta-regressie volume en frequentie; buiten de zoekperiode tot oktober 2024, alleen genoemd in de discussie). Zet zo'n studie dus niet als los bevestigend bewijs naast de ACSM.
+
+(Tabel 1, definities)
+
+> Eccentric overload: Increased load or time under tension during eccentric movement.

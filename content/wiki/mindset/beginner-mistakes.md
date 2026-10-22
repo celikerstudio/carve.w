@@ -47,13 +47,25 @@ sources:
     journal: British Journal of Sports Medicine
     year: 2020
     claim: 'The WHO advises people to start with small amounts of physical activity and gradually increase frequency, intensity and duration over time.'
-  - doi: 10.1249/MSS.0b013e3181915670
-    title: Progression Models in Resistance Training for Healthy Adults
+  - doi: 10.1249/mss.0000000000003897
+    title: 'American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews'
     authors:
-      - American College of Sports Medicine
+      - CURRIER BS
+      - D’SOUZA AC
+      - SINGH MAF
+      - LOWISZ CV
+      - RAWSON ES
+      - SCHOENFELD BJ
+      - SMITH-RYAN AE
+      - STEEN JP
+      - THOMAS GA
+      - TRIPLETT NT
+      - WASHINGTON TA
+      - WERNER TJ
+      - PHILLIPS SM
     journal: Medicine & Science in Sports & Exercise
-    year: 2009
-    claim: 'The ACSM states that progressive resistance training is needed for further adaptation, and advises novices to train 2 to 3 days a week with loads of an 8 to 12 RM, adding 2 to 10% load once they can do one or two reps over the target on two consecutive sessions (full text).'
+    year: 2026
+    claim: 'Overview of 137 reviews in healthy adults (18 and older, from complete novices to experienced; in most cases the reviews examined people with minimal or no RT experience): RT at least twice weekly with all major muscle groups and high effort; hypertrophy did not differ between 1 and more than 5 days a week at equal volume, or between loads of 30% to 100% of 1RM; strength was enhanced by loads of 80% of 1RM or more; sets to failure are not necessary, and near-failure or 2 to 3 reps in reserve gives sufficient effort; progression is not necessary to achieve beneficial outcomes and is likely required only for continued longer-term progress; the programs of previous position stands may be an appropriate starting point for some individuals.'
   - doi: 10.1080/02640414.2018.1555906
     title: How many times per week should a muscle be trained to maximize muscle hypertrophy? A systematic review and meta-analysis of studies examining the effects of resistance training frequency
     authors:
@@ -75,7 +87,7 @@ sources:
       - Zourdos MC
     journal: Sports Medicine
     year: 2024
-    claim: 'In an exploratory meta-regression, muscle growth was higher when sets ended closer to failure.'
+    claim: 'In a 2024 exploratory meta-regression with estimated reps in reserve, muscle growth was higher when sets ended closer to failure, while strength gains were similar across a wide range; the exact relationship remains unclear.'
   - doi: 10.1007/s40279-021-01559-x
     title: 'Accuracy in Predicting Repetitions to Task Failure in Resistance Exercise: A Scoping Review and Exploratory Meta-analysis'
     authors:
@@ -129,6 +141,13 @@ sources:
     journal: Journal of the International Society of Sports Nutrition
     year: 2017
     claim: 1.4 to 2.0 g protein per kg body weight a day is sufficient for most exercising individuals to build and maintain muscle.
+  - doi: 10.1249/MSS.0b013e3181915670
+    title: Progression Models in Resistance Training for Healthy Adults
+    authors:
+      - American College of Sports Medicine
+    journal: Medicine & Science in Sports & Exercise
+    year: 2009
+    claim: 'The 2009 ACSM position stand advised novices to train 2 to 3 days a week with loads of an 8 to 12 RM, adding 2 to 10% load once they can do one or two reps over the target on two consecutive sessions (full text).'
 ---
 
 ## What are the most common beginner mistakes?
@@ -136,14 +155,14 @@ sources:
 Most of the mistakes below come down to doing too much at once, or doing the same thing for too long without making it harder. Both are easy to fix once you know what to look for.
 
 :::takeaway
-Start with **a small amount** and build up gradually, as the WHO advises [1]. For strength training, the ACSM advises beginners **2 to 3 days a week** with weights they can lift **8 to 12 times** [2], and to add weight once they can do one or two reps more than planned on two sessions in a row [2]. Make your sets hard enough: growth was larger when sets ended **closer to failure** [4].
+Start with **a small amount** and build up gradually, as the WHO advises [1]. For strength training, the ACSM advises training **at least twice a week**, with all major muscle groups and a **high effort** [2]. For muscle growth the weight matters little, while heavier weights build more strength [2]. Lifting helps even before you add weight. To keep improving over the longer term, you likely need to raise the demand over time [2]. Sets do not have to end at **failure** to work [2].
 :::
 
 ## Doing too much too soon
 
 The WHO advises people who are not yet active enough to start with small amounts and to build up how often, how hard and how long they exercise over time [1]. That applies to the gym too.
 
-For strength training, the ACSM advises beginners to train 2 to 3 days a week [2]. More days does not mean more muscle: with the same weekly number of sets, training a muscle more often did not give significantly more growth [3]. Three sessions you keep doing for a year are worth more than six you quit after a month. See [[frequency]] and [[consistency]].
+For strength training, the ACSM's 2026 position stand advises at least two sessions a week, with all major muscle groups and high effort. Its advice covers healthy adults from complete beginners to experienced lifters, although in most cases the reviews looked at people with little or no training experience [2]. More days does not mean more muscle: with the same total volume, muscle growth was not different between training 1 day and more than 5 days a week [2], and with the same weekly number of sets, training a muscle more often did not give significantly more growth [3]. Three sessions you keep doing for a year are worth more than six you quit after a month. See [[frequency]] and [[consistency]].
 
 :::check
 A first week with five long sessions often ends in sore legs, missed workouts and the feeling that training is not for you.
@@ -151,13 +170,15 @@ A first week with five long sessions often ends in sore legs, missed workouts an
 
 ## Never making it harder
 
-The opposite mistake is doing the same weights for the same reps every week. The ACSM states that training has to get progressively harder to keep producing results [2]. Its rule for beginners: use a weight you can lift 8 to 12 times, and add weight once you can do one or two reps more than you aimed for, on two sessions in a row [2].
+The opposite mistake is doing the same weights for the same reps every week. The ACSM's 2026 position stand advises healthy adults to train progressively. Lifting already helps before you add anything, but raising the demand, for example with more weight, sets or reps, is likely needed if you want to keep improving over the longer term. For some people who have to start with low loads, progression is needed for a meaningful benefit [2].
 
-You can only do that if you know what you lifted last time. Write down the weight, sets and reps of every exercise, on paper or in an app. See [[progressive-overload]] and [[progress-tracking]].
+As for how much weight to use: for muscle growth, the reviews found little difference between light (30% of 1RM) and heavy (100% of 1RM) loads, while strength went up more with heavier loads (80% of 1RM or more) [2]. The 2009 ACSM position stand gave a rule of thumb for beginners: use a weight you can lift 8 to 12 times, and add 2 to 10% once you can do one or two reps more than you aimed for, on two sessions in a row [8]. The 2026 position stand calls the programs of earlier position stands a possible starting point for some people, and says that other programs can work too [2].
+
+You can only raise the demand if you know what you lifted last time. Write down the weight, sets and reps of every exercise, on paper or in an app. See [[progressive-overload]] and [[progress-tracking]].
 
 ## Sets that are too easy
 
-How hard your sets are matters. In one analysis, muscle growth was larger when sets ended closer to failure, meaning with fewer reps left in the tank [4]. Judging that is not easy: in studies where people predicted how many more reps they could do, they guessed about one rep too few on average, whether they were new to training or not. The studies differed a lot from each other, so treat that number as rough [5].
+How hard your sets are matters. The ACSM's 2026 position stand advises training with high effort, for example sets that end near failure or with 2 to 3 reps in reserve. It also says that going all the way to failure does not add strength, muscle growth or power, and is not necessary. There is too little evidence for an exact target [2]. A 2024 exploratory analysis, in which the reps in reserve were estimated from the study descriptions, found that muscle growth was larger when sets ended closer to failure, while strength gains were similar across a wide range. The authors note that the exact relationship is unclear [4]. For beginners, hard does not have to mean close to failure; see [[intensity]]. Judging how many reps you have left is not easy: in studies where people predicted how many more reps they could do, they guessed about one rep too few on average, whether they were new to training or not. The studies differed a lot from each other, so treat that number as rough [5].
 
 In practice: on your last set of an exercise, the final reps should be slow and hard. If you could easily do five more, the weight is too light for that rep range. See [[rep-ranges]] and [[rpe]].
 
@@ -176,9 +197,9 @@ What you eat and how you sleep matter too. For most people who train, 1.4 to 2.0
 <!-- FURKAN: Je ging zelf van 130 naar 80 kg en traint. Welke beginnersfouten heb je zelf gemaakt? Bijvoorbeeld: te veel tegelijk willen, te licht of te zwaar trainen, steeds van schema wisselen, niets bijhouden. Wat had je in je eerste maanden anders willen doen, en wat hielp je om door te zetten? Haal kop en notitie weg als je hier niets wilt schrijven. -->
 
 :::checklist
-- Start | Begin with 2 to 3 sessions a week and build up from there [1][2].
-- Weight | Pick a weight you can lift 8 to 12 times with good form [2].
+- Start | Train all major muscle groups at least twice a week, starting small and building up [1][2].
+- Weight | The 2009 ACSM advice for beginners: a weight you can lift 8 to 12 times with good form [8]. The 2026 position stand calls such programs a possible starting point [2].
 - Log | Write down weight, sets and reps for every exercise.
-- Effort | End your sets with only a few reps left in the tank [4].
+- Effort | End your sets with only a few reps left in the tank, but failure is not needed [2].
 - Plan | Stick with one plan long enough to see if it works [6].
 :::

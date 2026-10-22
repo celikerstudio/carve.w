@@ -92,53 +92,70 @@ sources:
     journal: Frontiers in Sports and Active Living
     year: 2024
     claim: 'In mostly untrained young adults, resting longer than 60 s between sets gave a small benefit for growth, and no difference was detected beyond 90 s.'
+  - doi: 10.1249/mss.0000000000003897
+    title: 'American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews'
+    authors:
+      - CURRIER BS
+      - D’SOUZA AC
+      - SINGH MAF
+      - LOWISZ CV
+      - RAWSON ES
+      - SCHOENFELD BJ
+      - SMITH-RYAN AE
+      - STEEN JP
+      - THOMAS GA
+      - TRIPLETT NT
+      - WASHINGTON TA
+      - WERNER TJ
+      - PHILLIPS SM
+    journal: Medicine & Science in Sports & Exercise
+    year: 2026
+    claim: 'Overview of 137 reviews in healthy adults of 18 and older, from complete novices to experienced trainees (much of the evidence is from inexperienced trainees): hypertrophy was enhanced by higher volume (10 or more sets per muscle group per week) and eccentric overload; it did not differ between 1 and more than 5 training days a week at equal volume, between loads of 30% and 100% of 1RM, with contractions to failure, or with exercise order; at least two sets per exercise, with citing one meta-regression, it notes diminishing returns beyond about 18 to 20 weekly sets for hypertrophy; short (under 1 minute) and long (over 1 minute) rests did not change strength gains, and there were insufficient data to determine whether inter-set rest affects hypertrophy; eccentric overload is extra load or time under tension during the lowering phase; completing sets to momentary failure does not enhance strength, hypertrophy or power; sufficient effort can be reached by near-failure or 2 to 3 reps in reserve, with too little evidence for exact RIR or perceived exertion targets; progression is not necessary for beneficial outcomes, and increasing the stimulus is likely only required for continued long-term progress.'
   - doi: 10.1249/MSS.0b013e3181915670
     title: Progression Models in Resistance Training for Healthy Adults
     authors: []
     journal: Medicine & Science in Sports & Exercise
     year: 2009
-    claim: 'The ACSM recommends higher volume, multiple-set programs for hypertrophy, with emphasis on 6 to 12 RM and 1 to 2 minutes of rest.'
+    claim: 'The 2009 position stand advised 1 to 2 minutes of rest between sets for novice and intermediate lifters, and for advanced lifters 2 to 3 minutes with heavy core lifts and 1 to 2 minutes for other exercises.'
 ---
 
 ## What is hypertrophy?
 
-Hypertrophy is muscle growth: your muscles get bigger. It is what most people mean when they say they want to "build muscle". Muscles change in response to the work you give them, and the ACSM states that progressive training is needed to keep stimulating adaptation [8]. How to make training progressively harder is covered in [[progressive-overload]]. This article is about the other half: how much, how hard and how to recover.
+Hypertrophy is muscle growth: your muscles get bigger. It is what most people mean when they say they want to "build muscle". Muscles change in response to the work you give them. The ACSM says progression is not needed for the first benefits, and that increasing the stimulus in some way is likely needed only if you want to keep progressing over the longer term [8]. How to make training progressively harder is covered in [[progressive-overload]]. This article is about the other half: how much, how hard and how to recover.
 
 :::takeaway
-Train each muscle with **hard sets** and enough of them. One review proposed **about 12 to 20 sets per muscle per week** for young trained men [3], and more sets went with more growth, with diminishing returns [1]. End sets **close to failure** [4][5]. A wide range of loads builds muscle when sets are taken to failure [6]. The ACSM advises **8 to 12 reps** for beginners and intermediates, with **1 to 2 minutes of rest** [8]. Eat enough [[protein]] and get enough [[sleep]].
+Train each muscle with **hard sets** and enough of them. The ACSM found more growth with **10 or more sets per muscle per week**, and advises at least two sets per exercise [8]. One review proposed **about 12 to 20 sets per muscle per week** for young trained men [3], and more sets went with more growth, with diminishing returns [1]. Sets **to failure are not needed** [4][8]. A wide range of loads builds muscle when sets are hard [6], from **30% to 100% of your one-rep max** in the ACSM overview [8]. Eat enough [[protein]] and get enough [[sleep]].
 :::
 
 ## What drives muscle growth?
 
-The studies below point to the same few levers, and each has a section: how many hard sets you do per muscle each week, how close to failure those sets end, and how long you rest. The load on the bar is flexible [6].
+The studies below point to the same few levers, and each has a section: how many hard sets you do per muscle each week, how hard those sets are, and how long you rest. The ACSM also found more growth with eccentric overload: extra load or extra time in the lowering phase of a rep [8]. The load on the bar is flexible [6][8].
 
 Food and sleep are covered at the end.
 
 ## How many sets per muscle per week?
 
-More sets went with more growth, up to a point. A 2026 meta-regression of 67 studies found that muscle size increases as weekly sets increase, with diminishing returns. Most participants were young men (79% male, mean age 25) [1]. A 2017 meta-analysis of 15 studies estimated that each extra weekly set per muscle was associated with about 0.37% more gain. When sets were grouped into under 5, 5 to 9 and 10 or more per week, it found only a trend [2].
+More sets went with more growth, up to a point. A meta-regression of 67 studies by Pelland and colleagues (online 2025, in print 2026) found that muscle size increases as weekly sets increase, with diminishing returns. Most participants were young men (79% male, mean age 25) [1]. A 2017 meta-analysis of 15 studies estimated that each extra weekly set per muscle was associated with about 0.37% more gain. When sets were grouped into under 5, 5 to 9 and 10 or more per week, it found only a trend [2].
 
 For a range, one systematic review looked at studies of young men (18 to 35) who had at least a year of training experience. Its authors concluded that 12 to 20 weekly sets per muscle may be a sound recommendation. Moderate and high volume did not differ for the quadriceps and biceps, while high volume did better for the triceps [3]. That review covers seven studies, so treat the range as a guide.
 
-The ACSM also recommends higher volume, multiple-set programs for maximizing hypertrophy [8]. If you are new, one to three sets per exercise is a starting point [8]; add sets when your progress slows. See [[volume]] for how to count sets.
+The 2026 ACSM overview of reviews found more growth with higher volume, 10 or more sets per muscle group per week [8]. It advises at least two sets per exercise. Citing the meta-regression above, it notes diminishing returns beyond about 18 to 20 weekly sets [1][8]. Its recommendations are for healthy adults of 18 and older, from complete beginners to experienced lifters, although much of the evidence comes from inexperienced trainees [8]. See [[volume]] for how to count sets.
 
-Training frequency, meaning how many days you train a muscle, matters less than the weekly total. The 2026 meta-regression found little to no effect of frequency on growth [1]. See [[frequency]]. Split your sets over the days that suit you.
+Training frequency, meaning how many days you train a muscle, matters less than the weekly total. The same meta-regression found little to no effect of frequency on growth [1], and the ACSM found no difference in growth between 1 and more than 5 days a week when total volume was equal [8]. See [[frequency]]. Split your sets over the days that suit you.
 
-## How close to failure should you train?
+## How hard should your sets be?
 
-Failure means you cannot do another rep with good form. A 2023 meta-analysis of 15 studies in healthy adults found no evidence that training to momentary failure beats stopping short of it. Counting any definition of set failure, the advantage was trivial. The authors point to a possible non-linear relationship [4]. A 2024 exploratory analysis, which estimated how many reps people had left in reserve, found more growth when sets ended closer to failure [5].
+Failure means you cannot do another rep with good form. The ACSM found that completing sets to momentary failure does not enhance gains in strength, muscle size or power, so it is not necessary [8]. A 2023 meta-analysis of 15 studies in healthy adults, one of the reviews behind that ACSM finding, found no evidence that training to momentary failure beats stopping short of it. Counting any definition of set failure, the advantage was trivial. The authors point to a possible non-linear relationship [4]. A 2024 exploratory analysis, which estimated how many reps people had left in reserve, found more growth when sets ended closer to failure [5].
 
-Together, these point the same way: ending close to failure seems to matter, and reaching actual failure is not required. Make your sets hard, so that the last reps are slow and you have only a few reps left. You do not have to go to failure on every set. Easy sets, where you could do many more reps, are the ones to avoid.
+That does not make failure a goal. The ACSM still asks for high effort, and says it can be reached by ending sets near failure or with 2 to 3 reps in reserve. It adds that there is not enough evidence for an exact reps-in-reserve or effort target [8]. Make your sets hard, so that the last reps are slow. Easy sets, where you could do many more reps, are the ones to avoid.
 
 ## Which load and rep range builds muscle?
 
-A meta-analysis of 21 studies compared lighter loads (60% of your one-rep max or less) with heavier loads (above 60%), with every set taken to momentary failure. Muscle growth was similar. Heavy loads gave bigger gains in maximal strength [6]. So a wide range of loads builds muscle when sets are taken to failure.
-
-The ACSM gives a practical default by experience level. Novice and intermediate lifters: moderate loads (70 to 85% of 1RM) for 8 to 12 reps, one to three sets per exercise. Advanced lifters: a range of 1 to 12 reps over three to six sets, with most training in the 6 to 12 RM zone [8]. See [[rep-ranges]].
+In the 2026 ACSM overview, muscle growth did not differ between low loads (30% of your one-rep max) and high loads (100%) [8]. A meta-analysis of 21 studies compared lighter loads (60% of your one-rep max or less) with heavier loads (above 60%), with every set taken to momentary failure. Muscle growth was similar. Heavy loads gave bigger gains in maximal strength [6]. So a wide range of loads builds muscle when the sets are hard, and you can pick a weight that suits your joints and your gym. See [[rep-ranges]].
 
 ## How long should you rest between sets?
 
-The ACSM recommends 1 to 2 minutes between sets for novice and intermediate lifters. For advanced lifters it suggests 2 to 3 minutes with heavy core lifts and 1 to 2 minutes for other exercises [8]. A Bayesian meta-analysis of nine studies compared rest lengths while keeping other training the same. Six of the nine used untrained participants, and there was too little data to analyze trained lifters separately. It found a small benefit for resting longer than 60 seconds, and did not detect a difference beyond 90 seconds. The authors suggest the benefit may come from being able to do more work in later sets [7].
+The 2009 ACSM position stand recommended 1 to 2 minutes between sets for novice and intermediate lifters. For advanced lifters it suggested 2 to 3 minutes with heavy core lifts and 1 to 2 minutes for other exercises [9]. The 2026 position stand gives no rest time. In its reviews, short rests (under a minute) and long rests (over a minute) gave similar strength gains, and there was too little data to say whether rest affects muscle growth [8]. A Bayesian meta-analysis of nine studies compared rest lengths while keeping other training the same. Six of the nine used untrained participants, and there was too little data to analyze trained lifters separately. It found a small benefit for resting longer than 60 seconds, and did not detect a difference beyond 90 seconds. The authors suggest the benefit may come from being able to do more work in later sets [7].
 
 In practice, rest until you are ready to do the next set well. If you are short on time, shorter rests are an option, but expect fewer reps in later sets.
 
@@ -152,7 +169,7 @@ Training is the signal for growth. See [[protein]] for how much to eat, [[bulkin
 
 ## Common mistakes
 
-- **Sets that are too easy.** Growth was larger when sets ended closer to failure in one analysis [5].
+- **Sets that are too easy.** The ACSM asks for high effort [8], and growth was larger when sets ended closer to failure in one analysis [5].
 - **Too few sets for months.** If you have done the same few sets for a long time, adding a set per muscle is a simple next step [1][2].
-- **Chasing the perfect rep range.** Growth happened across a wide range of loads when sets were taken to failure [6].
+- **Chasing the perfect rep range.** Growth happened across a wide range of loads when sets were hard [6][8].
 - **Resting too little to save time.** You lose reps in later sets, which may be part of why longer rests did slightly better [7].

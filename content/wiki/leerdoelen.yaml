@@ -66,32 +66,36 @@
   passage: "The long-term success of a diet depends upon compliance and suppression or circumvention of mitigating factors such as adaptive thermogenesis."
   artikel: consistency
 
-- id: progressieve-training
+# ACSM 2026-update (2026-10-22): vervangt progressieve-training uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: progressie-voor-langere-termijn
   laag: fundament
-  doel: "Weet dat krachttraining progressief moet zijn om te blijven aanpassen aan je doel."
-  bron: acsm-resistance-training-2009
-  passage: "In order to stimulate further adaptation toward specific training goals, progressive resistance training (RT) protocols are necessary."
+  doel: "Weet dat je voor de eerste winst niet hoeft op te bouwen, maar dat je de prikkel op een of andere manier moet verhogen als je op langere termijn wilt blijven vooruitgaan."
+  bron: acsm-resistance-training-2026
+  passage: "Notably, as the results in Table 4 highlight, progression is not necessary to achieve beneficial outcomes, and overload, or more accurately, increasing the stimulus in some manner, is likely a requirement only for those seeking continued longer term progress."
   artikel: progressive-overload
 
-- id: beginner-herhalingen
+# ACSM 2026-update (2026-10-22): vervangt beginner-herhalingen uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: kracht-zwaardere-gewichten
   laag: fundament
-  doel: "Weet dat beginners volgens ACSM trainen met gewichten waarmee ze 8 tot 12 herhalingen halen."
-  bron: acsm-resistance-training-2009
-  passage: "For novice (untrained individuals with no RT experience or who have not trained for several years) training, it is recommended that loads correspond to a repetition range of an 8-12 repetition maximum (RM)."
+  doel: "Weet dat kracht in de reviews meer toenam bij zwaardere gewichten (80% van je 1RM of meer), een volledige bewegingsuitslag, 2 tot 3 sets en minstens twee trainingen per week."
+  bron: acsm-resistance-training-2026
+  passage: "However, voluntary strength was enhanced by lifting heavier loads (≥80% one-repetition maximum), through a complete range of motion, for 2-3 sets, at the beginning of training sessions, and ≥2 sessions/wk."
   artikel: rep-ranges
 
-- id: trainingsfrequentie-niveau
+# ACSM 2026-update (2026-10-22): vervangt trainingsfrequentie-niveau uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: minstens-twee-keer-per-week
   laag: fundament
-  doel: "Weet dat je als beginner 2 tot 3 dagen per week traint, gemiddeld 3 tot 4 en gevorderd 4 tot 5."
-  bron: acsm-resistance-training-2009
-  passage: "The recommendation for training frequency is 2-3 d x wk(-1) for novice training, 3-4 d x wk(-1) for intermediate training, and 4-5 d x wk(-1) for advanced training."
+  doel: "Weet dat de ACSM gezonde volwassenen aanraadt minstens twee keer per week met flinke inspanning te trainen, met alle grote spiergroepen."
+  bron: acsm-resistance-training-2026
+  passage: "Our primary recommendation is that healthy adults perform RT with high effort (effort can be measured through various scales, but can be achieved with various loads and sets per the FITT-VP principle) at least twice weekly, with all major muscle groups being engaged."
   artikel: frequency
 
-- id: gewicht-verhogen
+# ACSM 2026-update (2026-10-22): vervangt gewicht-verhogen uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: oude-programma-startpunt
   laag: fundament
-  doel: "Kan bepalen wanneer je het gewicht verhoogt: met 2 tot 10% zodra je één tot twee herhalingen meer haalt dan gepland."
-  bron: acsm-resistance-training-2009
-  passage: "When training at a specific RM load, it is recommended that 2-10% increase in load be applied when the individual can perform the current workload for one to two repetitions over the desired number."
+  doel: "Weet dat de ACSM de concrete programma's uit haar eerdere richtlijnen een mogelijk startpunt noemt, maar dat veel andere programma's ook werken."
+  bron: acsm-resistance-training-2026
+  passage: "The specific program details outlined in previous Position Stands may be an appropriate starting point for some individuals; however, several other RT programs, as evidenced here, can also be effective."
   artikel: progressive-overload
 
 - id: beweging-beter-dan-niets
@@ -280,21 +284,23 @@
   passage: "Larger caloric surpluses are more appropriate for untrained subjects who are primed for more dramatic progress in LM gain [136] and for those with a high level of NEAT [133]. On the other hand, smaller caloric surpluses are appropriate for more advanced trainees"
   artikel: bulking
 
-- id: spiergroei-belasting
+# ACSM 2026-update (2026-10-22): vervangt spiergroei-belasting uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: spiergroei-elke-belasting
   laag: spier-opbouwen
-  doel: "Weet dat de ACSM gevorderden voor spiergroei vooral laat trainen met gewichten voor 6 tot 12 herhalingen, en minder met 1 tot 6."
-  bron: acsm-resistance-training-2009
-  passage: "such that the majority of training is devoted to 6–12 RM and less training devoted to 1–6 RM loading"
+  doel: "Weet dat spiergroei in de reviews niet verschilde tussen lichte (30% van 1RM) en zware gewichten (100% van 1RM)."
+  bron: acsm-resistance-training-2026
+  passage: "RT did not influence hypertrophy performed with low (1 d/wk) versus high (>5 d/wk) frequency when total volume was equated; low (30% 1RM) to high (100% 1RM) loads"
   artikel: hypertrophy
 
-- id: spiergroei-volume
+# ACSM 2026-update (2026-10-22): vervangt spiergroei-volume uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: spiergroei-volume-en-excentrisch
   laag: spier-opbouwen
-  doel: "Weet dat meer sets per oefening (hoger volume) aanbevolen worden om spiergroei te maximaliseren."
-  bron: acsm-resistance-training-2009
-  passage: "Higher volume, multiple-set programs are recommended for maximizing hypertrophy."
+  doel: "Weet dat spiergroei in de reviews vooral meer toenam door meer volume (10 of meer sets per week) en door extra belasting of extra tijd onder spanning in de zakkende (excentrische) fase."
+  bron: acsm-resistance-training-2026
+  passage: "Muscle hypertrophy was enhanced by higher volumes (≥10 sets/wk) and eccentric overload."
   artikel: hypertrophy
 
-# ── naslag (43) ──
+# ── naslag (44) ──
 
 - id: eiwit-per-maaltijd
   laag: naslag
@@ -541,26 +547,36 @@
   passage: "Energy drinks and pre-workout supplements containing caffeine have been demonstrated to enhance both anaerobic and aerobic performance."
   artikel: pre-workout
 
-- id: oefeningvolgorde
+# ACSM 2026-update (2026-10-22): vervangt oefeningvolgorde uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: kracht-begin-van-sessie
   laag: naslag
-  doel: "Weet dat je grote spiergroepen en meergewrichtsoefeningen voor kleine spiergroepen en isolatie-oefeningen plaatst."
-  bron: acsm-resistance-training-2009
-  passage: "it is recommended that strength programs sequence exercises to optimize the preservation of exercise intensity (large before small muscle group exercises, multiple-joint exercises before single-joint exercises, and higher-intensity before lower-intensity exercises)"
+  doel: "Weet dat kracht in de reviews meer toenam bij oefeningen die aan het begin van de training stonden dan aan het eind."
+  bron: acsm-resistance-training-2026
+  passage: "and at the beginning of training sessions (compared with the end of training sessions)."
   artikel: compound-exercises
 
-- id: gevorderd-periodiseren
+# ACSM 2026-update (2026-10-22): vervangt gevorderd-periodiseren uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: periodiseren-niet-beter
   laag: naslag
-  doel: "Weet dat de ACSM vanaf ongeveer 6 maanden consequent trainen een breder bereik van 1 tot 12 RM aanraadt, gevarieerd in de tijd."
-  bron: acsm-resistance-training-2009
-  passage: "For intermediate (individuals with approximately 6 months of consistent RT experience) to advanced (individuals with years of RT experience) training, it is recommended that individuals use a wider loading range from 1 to 12 RM in a periodized fashion"
+  doel: "Weet dat periodiseren volgens de ACSM niet duidelijk beter werkt dan niet periodiseren, zolang je de belasting wel geleidelijk opvoert."
+  bron: acsm-resistance-training-2026
+  passage: "With appropriate progressive overload, periodization is not significantly superior to nonperiodized programs"
   artikel: periodization
 
-- id: spieruithouding
+# ACSM 2026-update (2026-10-22): vervangt spieruithouding uit ACSM 2009; wacht op Furkans akkoord (TDR-0018 §3).
+- id: specificiteit
   laag: naslag
-  doel: "Weet dat je voor spieruithouding lichte tot matige gewichten (40 tot 60% van 1RM) gebruikt voor meer dan 15 herhalingen met korte rust."
-  bron: acsm-resistance-training-2009
-  passage: "For local muscular endurance training, it is recommended that light to moderate loads (40-60% of 1 RM) be performed for high repetitions (>15) using short rest periods (<90 s)."
+  doel: "Weet dat aanpassingen specifiek zijn voor de prikkel die je geeft, dus dat je gewicht en herhalingen kiest naar je doel."
+  bron: acsm-resistance-training-2026
+  passage: "The principle of specificity states that training adaptations are specific to the training stimulus applied."
   artikel: rep-ranges
+
+- id: frequentie-bij-gelijk-volume
+  laag: naslag
+  doel: "Weet dat spiergroei niet verschilde tussen één en meer dan vijf trainingsdagen per week, zolang het totale aantal sets gelijk was."
+  bron: acsm-resistance-training-2026
+  passage: "RT did not influence hypertrophy performed with low (1 d/wk) versus high (>5 d/wk) frequency when total volume was equated"
+  artikel: frequency
 
 - id: geen-keuring-nodig
   laag: naslag
@@ -1076,7 +1092,7 @@
 
 # ── cluster H (training), voorgesteld 2026-10-21, wacht op Furkans akkoord (TDR-0018 §3) ──
 # Basis is de ACSM-position stand van 2026 (vervangt die van 2009; de 2009-leerdoelen hierboven
-# moeten nog worden nagelopen). Voor hypertrofie bij atleten de IUSCA-consensus 2021; voor deloaden
+# zijn op 2026-10-22 vervangen). Voor hypertrofie bij atleten de IUSCA-consensus 2021; voor deloaden
 # en warming-up bestaat geen officiële richtlijn, alleen een Delphi-consensus (coaches van
 # kracht- en physiquesporters, en experts uit de topsport).
 
@@ -1163,20 +1179,6 @@
   bron: delphi-deloading-2023
   passage: "It is currently unclear whether deloading is a necessary part of the training programme to avoid the deleterious effects of NFOR/OTS."
   artikel: deload
-
-- id: isolatie-en-meergewricht
-  laag: naslag
-  doel: "Weet dat de ACSM voor spiergroei aanraadde zowel enkel- als meergewrichtsoefeningen te doen, met vrije gewichten en machines, op elk niveau."
-  bron: acsm-resistance-training-2009
-  passage: "It is recommended that single- and multiple-joint free-weight and machine exercises be included in an RT program in novice, intermediate, and advanced individuals"
-  artikel: isolation-exercises
-
-- id: isolatie-gericht-weinig-techniek
-  laag: naslag
-  doel: "Weet dat enkelgewrichtsoefeningen een spiergroep gericht trainen en minder vaardigheid en techniek vragen."
-  bron: acsm-resistance-training-2009
-  passage: "Single-joint exercises, such as knee extensions and knee curls, have been used to target-specific muscle groups and pose a reduced level of skill and technical involvement."
-  artikel: isolation-exercises
 
 - id: isolatie-geen-bewezen-voorkeur
   laag: naslag

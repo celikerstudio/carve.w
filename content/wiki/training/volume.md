@@ -30,7 +30,7 @@ sources:
       - PHILLIPS SM
     journal: Medicine & Science in Sports & Exercise
     year: 2026
-    claim: 'Overview of 137 reviews in healthy adults: two sets beat one and one beat none; the exact number of sets cannot be ascertained; the dose-response flattened beyond about 2 to 3 sets per exercise for strength and about 18 to 20 weekly sets for hypertrophy; healthy adults are advised to do at least two sets per exercise; hypertrophy was higher with 10 or more sets per muscle group per week.'
+    claim: 'Overview of 137 reviews in healthy adults: two sets beat one and one beat none; the exact number of sets cannot be ascertained; citing one meta-regression (Pelland and colleagues), the dose-response flattened beyond about 2 to 3 sets per exercise for strength and about 18 to 20 weekly sets for hypertrophy; healthy adults are advised to do at least two sets per exercise; hypertrophy was higher with 10 or more sets per muscle group per week.'
   - doi: 10.1249/MSS.0b013e3181915670
     title: Progression Models in Resistance Training for Healthy Adults
     authors: []
@@ -71,7 +71,7 @@ Volume is how much work you do. In this article it means the number of hard sets
 Volume is one of the main things you can change in a program, next to how heavy you lift and how often you train. See [[frequency]] for how to spread it over the week.
 
 :::takeaway
-Do **at least 2 sets per exercise** [1]. In the reviews the ACSM analysed, muscle growth was higher with **10 or more sets per muscle group per week** [1]. From about **18 to 20 weekly sets** each extra set added less, and the exact best number cannot be pinned down [1].
+Do **at least 2 sets per exercise** [1]. In the reviews the ACSM analysed, muscle growth was higher with **10 or more sets per muscle group per week** [1]. From about **18 to 20 weekly sets** each extra set added less in one meta-regression the ACSM cites, and the exact best number cannot be pinned down [1][4].
 :::
 
 ## How many sets per exercise?

@@ -12,13 +12,25 @@ tags:
   - strength
   - muscle growth
 sources:
-  - doi: 10.1249/MSS.0b013e3181915670
-    title: Progression Models in Resistance Training for Healthy Adults
+  - doi: 10.1249/mss.0000000000003897
+    title: 'American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews'
     authors:
-      - American College of Sports Medicine
+      - CURRIER BS
+      - D’SOUZA AC
+      - SINGH MAF
+      - LOWISZ CV
+      - RAWSON ES
+      - SCHOENFELD BJ
+      - SMITH-RYAN AE
+      - STEEN JP
+      - THOMAS GA
+      - TRIPLETT NT
+      - WASHINGTON TA
+      - WERNER TJ
+      - PHILLIPS SM
     journal: Medicine & Science in Sports & Exercise
-    year: 2009
-    claim: 'Summary: novices train with an 8 to 12 RM; intermediate to advanced lifters use 1 to 12 RM in a periodized fashion, with eventual emphasis on heavy loads (1 to 6 RM) for strength. Full text: for hypertrophy and strength, novice and intermediate lifters stay at 8 to 12 reps; the 1 to 12 range (hypertrophy) and 80 to 100% cycling (strength) are for advanced lifters; add 2 to 10% after one or two reps over target on two consecutive sessions.'
+    year: 2026
+    claim: 'Overview of 137 reviews in healthy adults, in most cases people with minimal or no training experience: with appropriate progressive overload, periodization is not significantly superior to nonperiodized programs; hypertrophy was not affected by periodization; the impact on strength could not be determined, although one review found a small advantage for periodized programs when volume was equated; periodization is less important than previously hypothesized; strength was enhanced by loads of 80% of 1RM or more.'
   - doi: 10.1007/s40279-021-01636-1
     title: 'Effects of Periodization on Strength and Muscle Hypertrophy in Volume-Equated Resistance Training Programs: A Systematic Review and Meta-analysis'
     authors:
@@ -72,18 +84,18 @@ There are two common ways to do it:
 - **Undulating** - the weights and reps change from session to session or week to week. For example a heavier day with 5 reps and a lighter day with 12 reps in the same week.
 
 :::takeaway
-For beginners the ACSM advises one rep range, **8 to 12 reps** [1]. With more experience, it advises a wider range of **1 to 12 reps**, varied over time [1]. With the same total work, periodized plans gave **somewhat more strength** but **no extra muscle** [2].
+With appropriate progressive overload, periodized training is **not significantly better** than a non-periodized plan, where the sets and reps stay the same and you gradually add weight [1]. For muscle growth it made no difference [1][2]. For strength the picture is open: the ACSM could not determine the effect, and one review, a 2022 meta-analysis, found a small edge for periodized plans when the total work was equal [1][2].
 :::
 
 ## Does periodization make you stronger?
 
 In studies, a little. A 2022 meta-analysis compared periodized and non-periodized programs with the total amount of work kept equal. Periodized training gave larger gains in one-rep max strength, a small effect [2]. An earlier meta-analysis of 18 studies, which did not require equal work, also found larger strength gains with periodized training [3].
 
-The ACSM ties this to experience. In the summary of its position stand, it advises intermediate lifters (about six months of steady training) and advanced lifters to use a wider range of 1 to 12 reps in a periodized way, with the emphasis eventually on heavy loads of 1 to 6 reps if strength is the goal. The detailed recommendations in the full text are stricter: intermediate lifters stay at 8 to 12 reps, and the wider range and the heaviest loads are for advanced lifters. They do advise intermediate lifters to vary volume and intensity systematically over time [1].
+The 2026 ACSM position stand, which looked at 137 reviews, could not determine the effect of periodization on strength. It notes that one review, the 2022 meta-analysis above [2], found periodized programs slightly favored when the total work was equal [1]. Its overall conclusion is that periodization is less important than was thought before, for healthy adults who want to improve muscle function and muscle size [1]. The ACSM also says that when a plan has appropriate progressive overload, periodization is not significantly better than a non-periodized plan [1].
 
 ## Does periodization build more muscle?
 
-The studies do not show it. In the 2022 meta-analysis, muscle growth did not differ between periodized and non-periodized programs with equal work [2]. A meta-analysis of 13 studies, all but one of them in untrained people, found that linear and daily undulating plans gave similar growth [4]. An umbrella review of reviews on training variables found insufficient evidence that periodization influenced muscle adaptations [5].
+The studies do not show it. The ACSM found that muscle growth was not affected by periodization (linear, undulating or none) [1]. Its overview includes two of the reviews below, the 2022 meta-analysis and the umbrella review [2][5], so they are not separate evidence on top of it. In the 2022 meta-analysis, muscle growth did not differ between periodized and non-periodized programs with equal work [2]. A meta-analysis of 13 studies, all but one of them in untrained people, found that linear and daily undulating plans gave similar growth [4]. An umbrella review of reviews on training variables found insufficient evidence that periodization influenced muscle adaptations [5].
 
 If your goal is size, look first at how much hard work you do and how close to failure you go. See [[hypertrophy]] and [[volume]].
 
@@ -95,7 +107,7 @@ So pick the one you are more likely to stick with. Some people like the variety 
 
 ## Do beginners need periodization?
 
-The ACSM advises novices to train with weights they can lift 8 to 12 times, and to add weight when they can do one or two reps more than planned on two sessions in a row [1]. That alone makes training harder over time. See [[progressive-overload]]. The ACSM keeps the wider, periodized range for intermediate and advanced lifters [1].
+No. The ACSM found that with appropriate progressive overload, periodization is not significantly better than a non-periodized plan [1]. In most cases, the reviews in the position stand as a whole looked at people with little or no training experience [1]. A routine with the same set-up, where you slowly add weight, reps or sets, is a good way to start. See [[progressive-overload]].
 
 That does not make periodization useless for beginners. In the earlier meta-analysis of 18 studies, the strength advantage of periodized over non-periodized training was larger in untrained participants [3]. Whether the plan is linear or undulating did not seem to matter for them [2]. If you like following a planned program, a beginner program with some variation is fine. Either way, follow a plan and log what you lift.
 
@@ -106,17 +118,17 @@ An undulating week for someone who trains each muscle twice could look like this
 - **Day 1** - heavier: 4 sets of 5 to 6 reps on your main lifts.
 - **Day 2** - lighter: 3 sets of 10 to 12 reps on the same or similar lifts.
 
-Both days stay within the 1 to 12 rep range the ACSM advises for experienced lifters [1]. Add weight on each day separately as you get stronger. For lighter weeks between blocks of hard training, see [[deload]].
+This is one example. The ACSM describes variation as changing the training variables in a planned way over time to keep the body adapting [1]. Add weight on each day separately as you get stronger. For lighter weeks between blocks of hard training, see [[deload]].
 
 :::checklist
-- Beginner | Stick to 8 to 12 reps and add weight over time [1].
-- Experienced | Vary between heavier and lighter sets across 1 to 12 reps [1].
-- Goal | Want more strength once you have trained for a while? Include heavier sets of 1 to 6 reps over time [1].
+- Beginner | A plan with the same set-up that slowly gets harder works. Periodizing is optional [1].
+- Variety | Like a heavy day and a light day? Use them if that suits you [1].
+- Strength | Heavier loads of 80% of your 1RM or more went with more strength [1]. See [[intensity]].
 - Muscle | Want more size? Focus on hard sets and enough of them. See [[hypertrophy]].
 :::
 
 ## Common mistakes
 
-- **Copying an advanced plan as a beginner.** The ACSM advises novices to keep to 8 to 12 reps [1].
-- **Expecting periodization to add muscle.** With equal work, it made no difference to growth [2].
+- **Thinking you need periodization to progress.** With appropriate progressive overload, it was not significantly better than a plan without it [1].
+- **Expecting periodization to add muscle.** The ACSM found no effect on growth [1], based partly on the 2022 meta-analysis, which found none with equal work [2].
 - **Changing everything every week.** Periodization is a plan. Random changes make it hard to see whether you are getting stronger. See [[progress-tracking]].

@@ -92,7 +92,7 @@ Aanvullend letterlijk overgenomen op 2026-10-22 uit dezelfde volledige tekst (PM
 > Resistance training is safe for healthy adults of all ages
 
 
-Aanvullend letterlijk overgenomen op 2026-10-22 uit dezelfde volledige tekst (PMC12965823), voor de artikelen plateaus en fitness-40-plus. Gezocht op 'plateau', 'stagna', 'older', 'women', 'female', 'menstru' en 'sex': de tekst zegt niets over een stilstaande progressie of wat je dan doet, niets over verschil tussen mannen en vrouwen (zoekwoorden 'women' en 'sex' staan alleen in de literatuurlijst) en niets over de menstruatiecyclus. De reviews zijn niet naar leeftijd uitgesplitst (afkapgrens 55 jaar) en de tekst schrijft zelf dat oudere volwassenen als aparte groep nog geen eigen richtlijn hebben. Het woord 'plateau' komt alleen voor bij de dosis-respons van het aantal sets (zie boven).
+Aanvullend letterlijk overgenomen op 2026-10-22 uit dezelfde volledige tekst (PMC12965823), voor de artikelen plateaus en fitness-40-plus. Gezocht op 'plateau', 'stagna', 'older', 'women', 'female', 'menstru' en 'sex': de tekst zegt niets over een stilstaande progressie of wat je dan doet, niets over verschil tussen mannen en vrouwen (zoekwoorden 'women' en 'sex' staan alleen in de literatuurlijst) en niets over de menstruatiecyclus. De reviews zijn niet naar leeftijd uitgesplitst (afkapgrens 55 jaar) en de tekst schrijft dat de eigen review beperkt was tot gezonde volwassenen en dat aparte richtlijnen voor subgroepen (zoals ouderen) kunnen volgen; dat zegt niets over richtlijnen van andere organisaties (WHO, NSCA). Het woord 'plateau' komt alleen voor bij de dosis-respons van het aantal sets (zie boven).
 
 (Discussion, progressie)
 

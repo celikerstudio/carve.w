@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { headers } from 'next/headers'
 import { notFound } from 'next/navigation'
 import { handleUitUrl } from '@/lib/uitnodiging'
+import { lijfVan } from '@/lib/uitnodiging-lijf'
 import { marketingPadVoor } from '@/lib/taalvoorkeur'
 import { APP_STORE_URL } from '@/lib/utils'
 
@@ -17,10 +18,8 @@ import { APP_STORE_URL } from '@/lib/utils'
  * @ai-why: Geen database. De handle komt uit de URL en wordt alleen getoond. Zo verraadt de
  * pagina niet of een handle bestaat, en is er geen RLS-vraag om een profiel te lezen dat de
  * bezoeker niet mag zien.
- * @ai-why: Het lijf is dat van wie uitnodigde als die het ooit deelde: de app zet het bij elke
- * deling in de publieke bucket `invite-looks` (Carve-AI, `InviteLook.swift`). Anders een
- * personage van Carve. Een plaatje dat er staat is door de eigenaar zelf gedeeld, dus het tonen
- * zegt niets dat hij niet zelf verstuurde.
+ * @ai-why: Het lijf is dat van wie uitnodigde als die het ooit deelde, anders een personage van
+ * Carve (`lib/uitnodiging-lijf.ts`).
  * @ai-why: Na een installatie via de App Store weet de app niet wie uitnodigde (ADR-098 §2,
  * bewust). De handle staat daarom in de tekst onder de knoppen: zoek @furkan.
  * @ai-sync: lib/uitnodiging.ts
@@ -46,21 +45,6 @@ const TEKST = {
   },
 } as const
 
-/** Het personage van wie uitnodigde, of null als die het nooit deelde. */
-async function lijfVan(handle: string): Promise<string | null> {
-  const basis = process.env.NEXT_PUBLIC_SUPABASE_URL
-  if (!basis) return null
-  const url = `${basis}/storage/v1/object/public/invite-looks/${handle}.png`
-  try {
-    // @ai-why: Vijf minuten vasthouden, net als de cache-control die de app meegeeft. Een nieuw
-    //   lijf staat er dan binnen een paar minuten, zonder dat elke bezoeker Supabase raakt.
-    const antwoord = await fetch(url, { method: 'HEAD', next: { revalidate: 300 } })
-    return antwoord.ok ? url : null
-  } catch {
-    return null
-  }
-}
-
 async function taal(): Promise<'nl' | 'en'> {
   // Dezelfde keuze als de wortel van de site (TDR-0015).
   return marketingPadVoor((await headers()).get('accept-language')) === '/nl/app' ? 'nl' : 'en'
@@ -70,15 +54,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const handle = handleUitUrl((await params).handle)
   if (!handle) return {}
   const t = TEKST[await taal()]
-  const lijf = await lijfVan(handle)
   return {
     title: t.meta(handle),
     description: t.body,
     // @ai-why: Geen index. Een pagina per gebruiker in Google zet handles op straat.
     robots: { index: false, follow: false },
-    // @ai-why: Met het eigen lijf als voorvertoning. In WhatsApp is dat het eerste wat de ander
-    //   ziet, nog voor hij tikt.
-    openGraph: { title: t.meta(handle), description: t.body, ...(lijf ? { images: [{ url: lijf }] } : {}) },
+    // @ai-why: Het beeld komt uit `opengraph-image.tsx` hiernaast, altijd, ook voor wie nooit
+    //   deelde. Tot 2026-10-23 stond hier alleen het eigen lijf als dat bestond: zonder lijf
+    //   had de link in WhatsApp geen enkel plaatje, en mét was het een staande strook van
+    //   265 bij 640 die WhatsApp als klein vierkantje toont.
+    // @ai-why: Twitter-velden expliciet, anders erft de link "Carve AI — Fitness Coach" van de
+    //   wortel van de site naast een titel die over de uitnodiging gaat.
+    openGraph: { title: t.meta(handle), description: t.body },
+    twitter: { card: 'summary_large_image', title: t.meta(handle), description: t.body },
   }
 }
 

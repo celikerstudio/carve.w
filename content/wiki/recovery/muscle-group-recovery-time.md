@@ -24,7 +24,7 @@ Most muscles recover in **24-72 hours**; train them **2-3x/week** with total **1
 Higher volume, eccentric loading, and novel exercises extend recovery needs. Conditioning, sleep, and nutrition shorten it. Tracking soreness, performance, and RPE guides scheduling. Under-recovery reduces output; too much spacing can limit practice and growth.
 
 ## Practical application
-Program muscles 2-3x/week. If soreness or performance lingers, reduce per-session sets or add more rest. If fully fresh too soon, increase per-session stimulus. Keep sleep 7-9 hours and [[protein]] adequate. Deload every 4-10 weeks to reset accumulated fatigue.
+Program muscles 2-3x/week. If soreness or performance lingers, reduce per-session sets or add more rest. If fully fresh too soon, increase per-session stimulus. Keep sleep 7-9 hours and [[protein]] adequate. When fatigue builds up, take a lighter week. A fixed deload schedule is a habit, not a finding; see [[deload]].
 
 :::checklist
 - Frequency | **2-3x/week** with **10-20 sets** total.

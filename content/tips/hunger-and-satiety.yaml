@@ -1,0 +1,241 @@
+article: hunger-and-satiety
+tips:
+  - key: geen-discipline
+    kind: myth
+    en:
+      title: "Myth: hunger on a diet means weak discipline"
+      body: "Not true. Losing weight shifts the signals that tell your brain you're hungry. Hunger is part of how your body responds."
+    nl:
+      title: "Mythe: honger op dieet is gebrek aan discipline"
+      body: "Klopt niet. Afvallen verschuift de signalen die je hersenen vertellen dat je honger hebt. Het hoort bij hoe je lijf reageert."
+    de:
+      title: "Mythos: Hunger beim Diäten ist Willensschwäche"
+      body: "Stimmt nicht. Abnehmen verschiebt die Signale, die deinem Gehirn Hunger melden. Das gehört zur Reaktion deines Körpers."
+    es:
+      title: "Mito: el hambre a dieta es falta de disciplina"
+      body: "No es cierto. Perder peso cambia las señales que le dicen a tu cerebro que tienes hambre. Es parte de cómo responde tu cuerpo."
+    fr:
+      title: "Mythe : avoir faim au régime, c'est être faible"
+      body: "Faux. Perdre du poids modifie les signaux qui disent à ton cerveau que tu as faim. Ça fait partie de la réponse du corps."
+    pt:
+      title: "Mito: fome na dieta é falta de disciplina"
+      body: "Não é verdade. Perder peso muda os sinais que dizem ao teu cérebro que tens fome. Faz parte de como o corpo reage."
+    tr:
+      title: "Efsane: diyette açlık disiplin eksikliğidir"
+      body: "Doğru değil. Kilo vermek beynine açlık bildiren sinyalleri değiştirir. Bu, vücudunun verdiği tepkinin bir parçası."
+
+  - key: jaar-later
+    kind: fact
+    en:
+      title: "Hunger after a strict diet"
+      body: "A year after a very strict 10-week diet, hunger still had not returned to where it was before. That was one group on a harsh diet."
+    nl:
+      title: "Honger na een streng dieet"
+      body: "Een jaar na een heel streng dieet van 10 weken was de honger nog niet terug op het oude niveau. Dat was één groep op een hard dieet."
+    de:
+      title: "Hunger nach strenger Diät"
+      body: "Ein Jahr nach einer sehr strengen 10-Wochen-Diät war der Hunger noch nicht wieder wie vorher. Das war eine Gruppe mit harter Diät."
+    es:
+      title: "Hambre tras una dieta estricta"
+      body: "Un año después de una dieta muy estricta de 10 semanas, el hambre aún no había vuelto a ser como antes. Fue un solo grupo con una dieta dura."
+    fr:
+      title: "La faim après un régime strict"
+      body: "Un an après un régime très strict de 10 semaines, la faim n'était toujours pas revenue à son niveau d'avant. Un seul groupe, au régime dur."
+    pt:
+      title: "Fome depois de uma dieta rígida"
+      body: "Um ano depois de uma dieta muito rígida de 10 semanas, a fome ainda não tinha voltado ao que era. Foi um só grupo, numa dieta dura."
+    tr:
+      title: "Sıkı diyetten sonra açlık"
+      body: "Çok sıkı 10 haftalık bir diyetten bir yıl sonra açlık hâlâ eski haline dönmemişti. Bu, sert diyet yapan tek bir gruptu."
+
+  - key: eiwit-vult
+    kind: fact
+    en:
+      title: "Protein keeps you full"
+      body: "In a small study, people ate about 441 kcal a day less when protein went from 15% to 30% of calories. Fat went down too, so not all of it is protein."
+    nl:
+      title: "Eiwit houdt je vol"
+      body: "In een kleine studie aten mensen zo'n 441 kcal per dag minder toen eiwit van 15% naar 30% ging. Vet ging ook omlaag, dus niet alles komt door eiwit."
+    de:
+      title: "Eiweiß macht satt"
+      body: "In einer kleinen Studie aßen Leute etwa 441 kcal am Tag weniger, als Eiweiß von 15 auf 30 % stieg. Auch Fett sank, also nicht nur Eiweiß."
+    es:
+      title: "La proteína sacia"
+      body: "En un estudio pequeño, la gente comió unas 441 kcal menos al día al subir la proteína del 15% al 30%. La grasa también bajó, no fue solo la proteína."
+    fr:
+      title: "Les protéines calent"
+      body: "Dans une petite étude, passer les protéines de 15 % à 30 % a fait manger 441 kcal de moins par jour. Le gras a aussi baissé, pas que les protéines."
+    pt:
+      title: "A proteína sacia"
+      body: "Num estudo pequeno, comeu-se cerca de 441 kcal a menos por dia com a proteína de 15% para 30%. A gordura também baixou, não foi só a proteína."
+    tr:
+      title: "Protein tok tutar"
+      body: "Küçük bir çalışmada protein kalorinin %15'inden %30'una çıkınca günde yaklaşık 441 kcal daha az yendi. Yağ da azaldı, yani tek etken protein değil."
+
+  - key: stroperige-vezels
+    kind: fact
+    en:
+      title: "Which fiber fills you"
+      body: "Viscous fiber, like in oats, beans and lentils, cut appetite in 59% of trial comparisons. Less viscous fiber did so in 14%."
+    nl:
+      title: "Welke vezels vullen"
+      body: "Stroperige vezels, zoals in havermout, bonen en linzen, remden de eetlust in 59% van de vergelijkingen. Minder stroperige in 14%."
+    de:
+      title: "Welche Ballaststoffe sättigen"
+      body: "Zähflüssige Ballaststoffe wie in Hafer, Bohnen und Linsen senkten den Appetit in 59 % der Vergleiche. Weniger zähe nur in 14 %."
+    es:
+      title: "Qué fibra llena"
+      body: "La fibra viscosa, como la de la avena, las alubias y las lentejas, redujo el apetito en el 59% de las comparaciones. La menos viscosa, en el 14%."
+    fr:
+      title: "Quelles fibres rassasient"
+      body: "Les fibres visqueuses, comme dans l'avoine, les haricots et les lentilles, ont réduit l'appétit dans 59 % des comparaisons, contre 14 % pour les autres."
+    pt:
+      title: "Que fibra sacia"
+      body: "A fibra viscosa, como na aveia, no feijão e nas lentilhas, reduziu o apetite em 59% das comparações. A menos viscosa, em 14%."
+    tr:
+      title: "Hangi lif doyurur"
+      body: "Yulaf, fasulye ve mercimekteki gibi viskoz lif, karşılaştırmaların %59'unda iştahı azalttı. Daha az viskoz lif ise %14'ünde."
+
+  - key: groot-en-licht
+    kind: fact
+    en:
+      title: "Big, light meals"
+      body: "Fruit, vegetables and soup give you a big plate for few calories. Women told to eat more of them ate more food and felt less hungry."
+    nl:
+      title: "Grote, lichte maaltijden"
+      body: "Fruit, groente en soep geven je een vol bord voor weinig calorieën. Vrouwen die er meer van aten, aten meer eten en hadden minder honger."
+    de:
+      title: "Große, leichte Mahlzeiten"
+      body: "Obst, Gemüse und Suppe geben dir einen vollen Teller für wenig Kalorien. Frauen, die mehr davon aßen, aßen mehr und hatten weniger Hunger."
+    es:
+      title: "Platos grandes y ligeros"
+      body: "Fruta, verdura y sopa te dan un plato lleno con pocas calorías. Las mujeres que comieron más de ellas comieron más cantidad y tuvieron menos hambre."
+    fr:
+      title: "Gros plats légers"
+      body: "Fruits, légumes et soupe remplissent l'assiette pour peu de calories. Les femmes qui en mangeaient plus mangeaient plus et avaient moins faim."
+    pt:
+      title: "Pratos grandes e leves"
+      body: "Fruta, legumes e sopa dão-te um prato cheio com poucas calorias. As mulheres que comeram mais disso comeram mais e tiveram menos fome."
+    tr:
+      title: "Büyük ama hafif öğünler"
+      body: "Meyve, sebze ve çorba az kaloriyle dolu bir tabak verir. Bunlardan daha çok yiyen kadınlar daha fazla yiyip daha az acıktı."
+
+  - key: bewerkt-eten
+    kind: myth
+    en:
+      title: "Myth: processed food makes you hungrier"
+      body: "Not quite. In one trial people ate about 500 kcal a day more of ultra-processed food, yet felt no hungrier and no less full."
+    nl:
+      title: "Mythe: bewerkt eten geeft meer honger"
+      body: "Niet helemaal. In een proef aten mensen zo'n 500 kcal per dag meer van ultrabewerkt eten, maar ze hadden er geen extra honger van."
+    de:
+      title: "Mythos: Verarbeitetes Essen macht hungriger"
+      body: "Nicht ganz. In einer Studie aßen Leute etwa 500 kcal am Tag mehr hochverarbeitetes Essen, fühlten sich aber nicht hungriger."
+    es:
+      title: "Mito: lo procesado da más hambre"
+      body: "No exactamente. En un ensayo la gente comió unas 500 kcal más al día de ultraprocesados, pero no sintió más hambre."
+    fr:
+      title: "Mythe : l'ultra-transformé donne plus faim"
+      body: "Pas vraiment. Dans un essai, les gens ont mangé environ 500 kcal de plus par jour d'ultra-transformé, sans avoir plus faim."
+    pt:
+      title: "Mito: comida processada dá mais fome"
+      body: "Não exatamente. Num ensaio, as pessoas comeram cerca de 500 kcal a mais por dia de ultraprocessados, mas não sentiram mais fome."
+    tr:
+      title: "Efsane: işlenmiş gıda daha çok acıktırır"
+      body: "Tam değil. Bir denemede insanlar ultra işlenmiş gıdadan günde yaklaşık 500 kcal fazla yedi, ama daha aç hissetmedi."
+
+  - key: korte-nacht
+    kind: fact
+    en:
+      title: "Short sleep, bigger appetite"
+      body: "After one night of about 4 hours, young men ate about 559 kcal more the next day than after 8 hours. A small study, one night."
+    nl:
+      title: "Kort slapen, meer trek"
+      body: "Na één nacht van zo'n 4 uur aten jonge mannen de dag erna ongeveer 559 kcal meer dan na 8 uur slaap. Een kleine studie, één nacht."
+    de:
+      title: "Wenig Schlaf, mehr Appetit"
+      body: "Nach einer Nacht mit etwa 4 Stunden aßen junge Männer am nächsten Tag rund 559 kcal mehr als nach 8 Stunden. Kleine Studie, eine Nacht."
+    es:
+      title: "Dormir poco, más apetito"
+      body: "Tras una noche de unas 4 horas, hombres jóvenes comieron unas 559 kcal más al día siguiente que tras 8 horas. Un estudio pequeño, una noche."
+    fr:
+      title: "Peu dormir, plus d'appétit"
+      body: "Après une nuit d'environ 4 heures, des jeunes hommes ont mangé environ 559 kcal de plus le lendemain qu'après 8 heures. Petite étude, une nuit."
+    pt:
+      title: "Dormir pouco, mais apetite"
+      body: "Após uma noite de cerca de 4 horas, homens jovens comeram uns 559 kcal a mais no dia seguinte do que após 8 horas. Estudo pequeno, uma noite."
+    tr:
+      title: "Az uyku, daha çok iştah"
+      body: "Yaklaşık 4 saatlik tek bir geceden sonra genç erkekler ertesi gün 8 saatlik uykuya göre 559 kcal fazla yedi. Küçük bir çalışma, tek gece."
+
+  - key: vaker-eten
+    kind: myth
+    en:
+      title: "Myth: eating more often speeds up fat loss"
+      body: "Not true. Meal frequency has little effect on weight loss. More meals may ease hunger, so use them only if that helps you."
+    nl:
+      title: "Mythe: vaker eten laat je sneller afvallen"
+      body: "Klopt niet. Hoe vaak je eet doet weinig voor afvallen. Meer maaltijden kunnen je honger wel temperen, dus gebruik het als dat je helpt."
+    de:
+      title: "Mythos: Öfter essen, schneller abnehmen"
+      body: "Stimmt nicht. Die Zahl der Mahlzeiten ändert beim Abnehmen wenig. Mehr Mahlzeiten können Hunger dämpfen, nutz das, wenn es dir hilft."
+    es:
+      title: "Mito: comer más a menudo adelgaza más"
+      body: "No es cierto. La frecuencia de comidas influye poco en perder peso. Más comidas pueden calmar el hambre, úsalo si te ayuda."
+    fr:
+      title: "Mythe : manger plus souvent fait maigrir"
+      body: "Faux. Le nombre de repas change peu la perte de poids. Plus de repas peuvent calmer la faim, alors fais-le si ça t'aide."
+    pt:
+      title: "Mito: comer mais vezes emagrece mais"
+      body: "Não é verdade. O número de refeições pouco muda a perda de peso. Mais refeições podem acalmar a fome, usa isso se te ajudar."
+    tr:
+      title: "Efsane: sık yemek daha hızlı zayıflatır"
+      body: "Doğru değil. Öğün sayısı kilo kaybını pek etkilemez. Daha çok öğün açlığı hafifletebilir, işine yarıyorsa kullan."
+
+  - key: soep-vooraf
+    kind: fact
+    en:
+      title: "Start with soup"
+      body: "Hungry between meals on a cut? Fill half your plate with vegetables or fruit, and start a meal with a soup or salad."
+    nl:
+      title: "Begin met soep"
+      body: "Honger tussen de maaltijden door tijdens een cut? Vul je bord voor de helft met groente of fruit, en begin met soep of salade."
+    de:
+      title: "Fang mit Suppe an"
+      body: "Hunger zwischen den Mahlzeiten in der Diät? Füll deinen Teller zur Hälfte mit Gemüse oder Obst und starte mit Suppe oder Salat."
+    es:
+      title: "Empieza con sopa"
+      body: "¿Hambre entre comidas en definición? Llena medio plato de verdura o fruta y empieza la comida con una sopa o una ensalada."
+    fr:
+      title: "Commence par une soupe"
+      body: "Faim entre les repas en sèche ? Remplis la moitié de ton assiette de légumes ou de fruits, et commence par une soupe ou une salade."
+    pt:
+      title: "Começa com sopa"
+      body: "Fome entre refeições num cut? Enche metade do prato com legumes ou fruta e começa a refeição com uma sopa ou uma salada."
+    tr:
+      title: "Çorbayla başla"
+      body: "Diyette öğün aralarında aç mısın? Tabağının yarısını sebze ya da meyveyle doldur, öğüne çorba ya da salatayla başla."
+
+  - key: kleiner-tekort
+    kind: fact
+    en:
+      title: "Still hungry?"
+      body: "Enough protein, fiber, volume and sleep and still starving? Try a smaller deficit for a while."
+    nl:
+      title: "Toch nog honger?"
+      body: "Genoeg eiwit, vezels, volume en slaap en nog steeds uitgehongerd? Probeer een tijdje een kleiner tekort."
+    de:
+      title: "Trotzdem hungrig?"
+      body: "Genug Eiweiß, Ballaststoffe, Volumen und Schlaf und trotzdem ausgehungert? Probier eine Weile ein kleineres Defizit."
+    es:
+      title: "¿Sigues con hambre?"
+      body: "¿Proteína, fibra, volumen y sueño suficientes y aún con hambre? Prueba un déficit más pequeño durante un tiempo."
+    fr:
+      title: "Toujours faim ?"
+      body: "Assez de protéines, de fibres, de volume et de sommeil, et toujours affamé ? Essaie un déficit plus petit pendant un temps."
+    pt:
+      title: "Ainda com fome?"
+      body: "Proteína, fibra, volume e sono suficientes e continuas cheio de fome? Experimenta um défice mais pequeno durante algum tempo."
+    tr:
+      title: "Hâlâ aç mısın?"
+      body: "Yeterli protein, lif, hacim ve uykuya rağmen hâlâ çok mu açsın? Bir süre daha küçük bir kalori açığı dene."

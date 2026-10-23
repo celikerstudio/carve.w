@@ -1,0 +1,241 @@
+article: overtraining
+tips:
+  - key: de-combinatie
+    kind: fact
+    en:
+      title: "Hard training isn't the problem"
+      body: "Training needs overload. What it has to avoid is the combination of too much overload and too little recovery."
+    nl:
+      title: "Hard trainen is het probleem niet"
+      body: "Trainen vraagt om overbelasting. Wat je moet vermijden is de combinatie van te veel belasting en te weinig herstel."
+    de:
+      title: "Hartes Training ist nicht das Problem"
+      body: "Training braucht Überlastung. Vermeiden musst du die Kombination aus zu viel Belastung und zu wenig Erholung."
+    es:
+      title: "Entrenar duro no es el problema"
+      body: "Entrenar exige sobrecarga. Lo que hay que evitar es la combinación de demasiada carga y poca recuperación."
+    fr:
+      title: "S'entraîner dur n'est pas le problème"
+      body: "S'entraîner demande de la surcharge. Ce qu'il faut éviter, c'est trop de charge combinée à trop peu de récupération."
+    pt:
+      title: "Treinar duro não é o problema"
+      body: "Treinar exige sobrecarga. O que tens de evitar é a combinação de carga a mais com recuperação a menos."
+    tr:
+      title: "Sert antrenman sorun değil"
+      body: "Antrenman aşırı yüklenme ister. Kaçınman gereken, fazla yük ile yetersiz toparlanmanın birleşimi."
+
+  - key: functionele-overreaching
+    kind: fact
+    en:
+      title: "Functional overreaching"
+      body: "A short dip after hard training that can turn into better performance once you've recovered. Evidence for that rebound is not abundant."
+    nl:
+      title: "Functionele overreaching"
+      body: "Een korte dip na hard trainen die na herstel tot betere prestaties kan leiden. Het bewijs voor dat terugveren is niet overvloedig."
+    de:
+      title: "Funktionelles Overreaching"
+      body: "Ein kurzer Leistungseinbruch nach hartem Training, der nach der Erholung zu mehr Leistung führen kann. Belege dafür sind nicht reichlich."
+    es:
+      title: "Sobrecarga funcional"
+      body: "Un bajón corto tras entrenar duro que, una vez recuperado, puede dar mejor rendimiento. Las pruebas de ese rebote no abundan."
+    fr:
+      title: "Surmenage fonctionnel"
+      body: "Une petite baisse après un entraînement dur, qui peut mener à de meilleures perfs une fois récupéré. Les preuves de ce rebond sont rares."
+    pt:
+      title: "Sobrecarga funcional"
+      body: "Uma quebra curta depois de treinar duro que pode levar a melhor rendimento após recuperares. As provas desse ressalto não abundam."
+    tr:
+      title: "Fonksiyonel aşırı yüklenme"
+      body: "Sert antrenmandan sonra toparlanınca daha iyi performansa dönüşebilen kısa bir düşüş. Bu geri sıçramanın kanıtı pek fazla değil."
+
+  - key: weken-of-maanden
+    kind: fact
+    en:
+      title: "When an easy week isn't enough"
+      body: "Short overreaching can clear in about two weeks. Once it's nonfunctional, athletes need weeks or months to recover."
+    nl:
+      title: "Als een rustige week niet genoeg is"
+      body: "Korte overreaching kan in ongeveer twee weken over zijn. Is het niet-functioneel, dan hebben sporters weken tot maanden nodig."
+    de:
+      title: "Wenn eine leichte Woche nicht reicht"
+      body: "Kurzes Overreaching kann in etwa zwei Wochen vorbei sein. Ist es nicht funktionell, brauchen Sportler Wochen oder Monate."
+    es:
+      title: "Cuando una semana suave no basta"
+      body: "La sobrecarga corta puede pasar en unas dos semanas. Si ya es no funcional, los deportistas necesitan semanas o meses."
+    fr:
+      title: "Quand une semaine légère ne suffit pas"
+      body: "Un surmenage court peut passer en deux semaines environ. S'il est non fonctionnel, les sportifs mettent des semaines ou des mois."
+    pt:
+      title: "Quando uma semana leve não chega"
+      body: "A sobrecarga curta pode passar em cerca de duas semanas. Se for não funcional, os atletas precisam de semanas ou meses."
+    tr:
+      title: "Hafif bir hafta yetmediğinde"
+      body: "Kısa süreli aşırı yüklenme yaklaşık iki haftada geçebilir. Fonksiyonel değilse sporcuların haftalara ya da aylara ihtiyacı olur."
+
+  - key: zelden-bij-krachtsport
+    kind: myth
+    en:
+      title: "Myth: lifters often get overtrained"
+      body: "Not proven. A review of 47 articles found minimal evidence that true overtraining syndrome has occurred in strength training."
+    nl:
+      title: "Mythe: krachtsporters raken vaak overtraind"
+      body: "Niet bewezen. Een review van 47 artikelen vond minimaal bewijs dat echt overtrainingssyndroom bij krachttraining is voorgekomen."
+    de:
+      title: "Mythos: Kraftsportler sind oft übertrainiert"
+      body: "Nicht belegt. Ein Review von 47 Artikeln fand kaum Belege, dass echtes Übertrainingssyndrom im Krafttraining aufgetreten ist."
+    es:
+      title: "Mito: quien levanta pesas se sobreentrena"
+      body: "No está probado. Una revisión de 47 artículos halló pruebas mínimas de que el síndrome de sobreentrenamiento real se haya dado en fuerza."
+    fr:
+      title: "Mythe : en muscu, on est souvent surentraîné"
+      body: "Pas prouvé. Une revue de 47 articles a trouvé très peu de preuves d'un vrai syndrome de surentraînement en musculation."
+    pt:
+      title: "Mito: quem treina força sobretreina muito"
+      body: "Não está provado. Uma revisão de 47 artigos encontrou provas mínimas de síndrome de sobretreino real no treino de força."
+    tr:
+      title: "Efsane: ağırlıkçılar sık aşırı antrenman yapar"
+      body: "Kanıtlanmadı. 47 makalelik bir derleme, kuvvet antrenmanında gerçek aşırı antrenman sendromu görüldüğüne dair çok az kanıt buldu."
+
+  - key: kracht-als-laatste
+    kind: fact
+    en:
+      title: "Your max is the last to go"
+      body: "With too much heavy volume, max strength is one of the last things to suffer. Speed and power are among the first."
+    nl:
+      title: "Je max zakt als laatste"
+      body: "Bij te veel zwaar volume is je maximale kracht een van de laatste dingen die lijden. Snelheid en explosiviteit gaan als eerste."
+    de:
+      title: "Dein Max leidet zuletzt"
+      body: "Bei zu viel schwerem Volumen leidet die Maximalkraft mit als Letztes. Schnelligkeit und Schnellkraft gehören zu den Ersten."
+    es:
+      title: "Tu máximo es lo último en caer"
+      body: "Con demasiado volumen pesado, la fuerza máxima es de lo último en resentirse. La velocidad y la potencia están entre lo primero."
+    fr:
+      title: "Ton max chute en dernier"
+      body: "Avec trop de volume lourd, la force max est parmi les dernières à souffrir. La vitesse et la puissance sont parmi les premières."
+    pt:
+      title: "O teu máximo é o último a cair"
+      body: "Com volume pesado a mais, a força máxima é das últimas coisas a sofrer. A velocidade e a potência estão entre as primeiras."
+    tr:
+      title: "Maksimumun en son düşer"
+      body: "Fazla ağır hacimde maksimal güç en son etkilenenlerden biridir. Hız ve patlayıcı güç ilk etkilenenler arasında."
+
+  - key: niet-elke-slechte-week
+    kind: myth
+    en:
+      title: "Myth: a bad week means you're overtrained"
+      body: "Not true. Most bad weeks are just bad weeks. A dip after a hard block that then recovers is functional overreaching."
+    nl:
+      title: "Mythe: een slechte week is overtraining"
+      body: "Niet waar. De meeste slechte weken zijn gewoon slechte weken. Een dip na een zwaar blok die weer herstelt is functionele overreaching."
+    de:
+      title: "Mythos: Schlechte Woche heißt Übertraining"
+      body: "Stimmt nicht. Die meisten schlechten Wochen sind einfach schlechte Wochen. Ein Tief nach hartem Block, das sich erholt, ist funktionelles Overreaching."
+    es:
+      title: "Mito: una mala semana es sobreentrenamiento"
+      body: "No es cierto. Casi todas las malas semanas son solo eso. Un bajón tras un bloque duro que luego se recupera es sobrecarga funcional."
+    fr:
+      title: "Mythe : mauvaise semaine, donc surentraîné"
+      body: "Faux. La plupart des mauvaises semaines sont juste de mauvaises semaines. Une baisse après un bloc dur qui se rétablit est un surmenage fonctionnel."
+    pt:
+      title: "Mito: uma semana má é sobretreino"
+      body: "Não é verdade. A maioria das semanas más são só semanas más. Uma quebra após um bloco duro que depois recupera é sobrecarga funcional."
+    tr:
+      title: "Efsane: kötü bir hafta aşırı antrenmandır"
+      body: "Doğru değil. Çoğu kötü hafta sadece kötü bir haftadır. Zor bir bloktan sonra gelip geçen düşüş fonksiyonel aşırı yüklenmedir."
+
+  - key: niet-alleen-training
+    kind: myth
+    en:
+      title: "Myth: overtraining is just too much training"
+      body: "Not true. Training isn't necessarily the only cause. Stress from work or family and sleep disorders can be part of it."
+    nl:
+      title: "Mythe: overtraining is gewoon te veel trainen"
+      body: "Niet waar. Training is niet per se de enige oorzaak. Stress van werk of thuis en slaapstoornissen kunnen meespelen."
+    de:
+      title: "Mythos: Übertraining ist nur zu viel Training"
+      body: "Stimmt nicht. Training ist nicht unbedingt die einzige Ursache. Stress in Job oder Familie und Schlafstörungen können mitspielen."
+    es:
+      title: "Mito: sobreentrenar es solo entrenar demasiado"
+      body: "No es cierto. El entrenamiento no es necesariamente la única causa. El estrés laboral o familiar y los trastornos del sueño pueden influir."
+    fr:
+      title: "Mythe : tout vient de trop d'entraînement"
+      body: "Faux. L'entraînement n'est pas forcément la seule cause. Le stress au travail ou en famille et les troubles du sommeil peuvent jouer."
+    pt:
+      title: "Mito: sobretreino é só treinar demais"
+      body: "Não é verdade. O treino não é necessariamente a única causa. O stress do trabalho ou da família e as perturbações do sono podem contar."
+    tr:
+      title: "Efsane: aşırı antrenman sadece fazla çalışmaktır"
+      body: "Doğru değil. Antrenman tek sebep olmak zorunda değil. İş ya da aile stresi ve uyku bozuklukları da rol oynayabilir."
+
+  - key: eerst-uitsluiten
+    kind: fact
+    en:
+      title: "Dieting and running down"
+      body: "Before calling it overtraining, rule out a calorie deficit, too little carbs or protein, and iron or magnesium deficiency."
+    nl:
+      title: "Op dieet en leeggetrokken"
+      body: "Voor je het overtraining noemt: sluit eerst een calorietekort, te weinig koolhydraten of eiwit, en ijzer- of magnesiumtekort uit."
+    de:
+      title: "Diät und ausgelaugt"
+      body: "Bevor du es Übertraining nennst, schließ ein Kaloriendefizit, zu wenig Kohlenhydrate oder Protein und Eisen- oder Magnesiummangel aus."
+    es:
+      title: "A dieta y sin fuerzas"
+      body: "Antes de llamarlo sobreentrenamiento, descarta un déficit calórico, pocos hidratos o proteína, y falta de hierro o magnesio."
+    fr:
+      title: "Au régime et à plat"
+      body: "Avant de parler de surentraînement, écarte un déficit calorique, trop peu de glucides ou de protéines, et un manque de fer ou de magnésium."
+    pt:
+      title: "Em dieta e sem energia"
+      body: "Antes de lhe chamares sobretreino, exclui um défice calórico, poucos hidratos ou proteína, e falta de ferro ou magnésio."
+    tr:
+      title: "Diyette ve bitkin"
+      body: "Buna aşırı antrenman demeden önce kalori açığını, az karbonhidrat ya da proteini ve demir veya magnezyum eksikliğini ele."
+
+  - key: ziek-terugschakelen
+    kind: fact
+    en:
+      title: "Training while ill"
+      body: "Stop or cut back training during an infection, and take the time to recover afterwards."
+    nl:
+      title: "Trainen als je ziek bent"
+      body: "Stop of train minder tijdens een infectie, en neem daarna de tijd om te herstellen."
+    de:
+      title: "Training bei Krankheit"
+      body: "Setz das Training bei einer Infektion aus oder fahr es runter, und nimm dir danach Zeit zur Erholung."
+    es:
+      title: "Entrenar enfermo"
+      body: "Para o reduce el entrenamiento durante una infección, y date tiempo para recuperarte después."
+    fr:
+      title: "S'entraîner malade"
+      body: "Arrête ou réduis l'entraînement pendant une infection, et prends le temps de récupérer ensuite."
+    pt:
+      title: "Treinar doente"
+      body: "Para ou reduz o treino durante uma infeção, e dá-te tempo para recuperar depois."
+    tr:
+      title: "Hastayken antrenman"
+      body: "Enfeksiyon sırasında antrenmanı bırak ya da azalt, sonrasında toparlanmak için kendine zaman tanı."
+
+  - key: naar-de-dokter
+    kind: fact
+    en:
+      title: "Flat for weeks?"
+      body: "If you're worn out and your performance stays down for weeks despite rest, see a doctor. They can look for other causes."
+    nl:
+      title: "Al weken leeg?"
+      body: "Ben je op en blijven je prestaties weken laag ondanks rust, ga dan naar een dokter. Die kan naar andere oorzaken kijken."
+    de:
+      title: "Seit Wochen platt?"
+      body: "Bist du erschöpft und bleibt deine Leistung trotz Ruhe wochenlang unten, geh zum Arzt. Er kann nach anderen Ursachen suchen."
+    es:
+      title: "¿Semanas sin fuerzas?"
+      body: "Si estás agotado y tu rendimiento sigue bajo durante semanas pese al descanso, ve al médico. Puede buscar otras causas."
+    fr:
+      title: "À plat depuis des semaines ?"
+      body: "Si tu es épuisé et que tes perfs restent basses des semaines malgré le repos, consulte un médecin. Il peut chercher d'autres causes."
+    pt:
+      title: "Há semanas sem energia?"
+      body: "Se estás esgotado e o rendimento continua baixo durante semanas apesar do descanso, vai ao médico. Pode procurar outras causas."
+    tr:
+      title: "Haftalardır bitkin misin?"
+      body: "Yorgunsan ve dinlenmeye rağmen performansın haftalarca düşük kalıyorsa doktora git. Başka nedenlere bakabilir."

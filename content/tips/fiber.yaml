@@ -1,0 +1,217 @@
+article: fiber
+tips:
+  - key: hoeveel-vezels
+    kind: fact
+    en:
+      title: "How much fiber"
+      body: "WHO and EFSA both put it at 25 g a day for adults. In the Netherlands it is at least 30 g for men and 24 g for women."
+    nl:
+      title: "Hoeveel vezels"
+      body: "De WHO en EFSA houden 25 gram per dag aan voor volwassenen. In Nederland is het minstens 30 gram voor mannen en 24 gram voor vrouwen."
+    de:
+      title: "Wie viele Ballaststoffe"
+      body: "WHO und EFSA nennen 25 g am Tag für Erwachsene. In den Niederlanden sind es mindestens 30 g für Männer und 24 g für Frauen."
+    es:
+      title: "Cuánta fibra"
+      body: "La OMS y la EFSA hablan de 25 g al día para adultos. En los Países Bajos son al menos 30 g para hombres y 24 g para mujeres."
+    fr:
+      title: "Combien de fibres"
+      body: "L'OMS et l'EFSA parlent de 25 g par jour pour un adulte. Aux Pays-Bas, c'est au moins 30 g pour les hommes et 24 g pour les femmes."
+    pt:
+      title: "Quanta fibra"
+      body: "A OMS e a EFSA apontam 25 g por dia para adultos. Nos Países Baixos são pelo menos 30 g para homens e 24 g para mulheres."
+    tr:
+      title: "Ne kadar lif"
+      body: "DSÖ ve EFSA yetişkinler için günde 25 g diyor. Hollanda'da erkekler için en az 30 g, kadınlar için en az 24 g."
+
+  - key: per-duizend-kcal
+    kind: fact
+    en:
+      title: "Fiber per 1,000 kcal"
+      body: "Fiber scales with how much you eat: 12.6 to 14.6 g per 1,000 kcal. At 2,000 kcal that is about 25 to 29 g a day."
+    nl:
+      title: "Vezels per 1.000 kcal"
+      body: "Hoeveel vezels je nodig hebt, groeit mee met wat je eet: 12,6 tot 14,6 gram per 1.000 kcal. Bij 2.000 kcal is dat zo'n 25 tot 29 gram."
+    de:
+      title: "Ballaststoffe pro 1.000 kcal"
+      body: "Der Bedarf wächst mit dem, was du isst: 12,6 bis 14,6 g pro 1.000 kcal. Bei 2.000 kcal sind das etwa 25 bis 29 g am Tag."
+    es:
+      title: "Fibra por cada 1.000 kcal"
+      body: "La fibra crece con lo que comes: 12,6 a 14,6 g por cada 1.000 kcal. Con 2.000 kcal son unos 25 a 29 g al día."
+    fr:
+      title: "Fibres pour 1 000 kcal"
+      body: "Le besoin suit ce que tu manges : 12,6 à 14,6 g pour 1 000 kcal. À 2 000 kcal, ça fait environ 25 à 29 g par jour."
+    pt:
+      title: "Fibra por cada 1.000 kcal"
+      body: "A fibra acompanha o que comes: 12,6 a 14,6 g por cada 1.000 kcal. Com 2.000 kcal são cerca de 25 a 29 g por dia."
+    tr:
+      title: "1.000 kcal başına lif"
+      body: "Lif ihtiyacın yediğinle birlikte artar: 1.000 kcal başına 12,6 ila 14,6 g. 2.000 kcal'de bu günde yaklaşık 25 ila 29 g."
+
+  - key: actief-meer-vezels
+    kind: fact
+    en:
+      title: "Training a lot?"
+      body: "Then you need more fiber. In the Netherlands an active man aged 18 to 29 is advised 40 to 47 g a day, against 31 to 37 g when lightly active."
+    nl:
+      title: "Train je veel?"
+      body: "Dan heb je meer vezels nodig. Een actieve man van 18 tot 29 krijgt in Nederland 40 tot 47 gram per dag als advies, licht actief 31 tot 37 gram."
+    de:
+      title: "Viel Training?"
+      body: "Dann brauchst du mehr Ballaststoffe. In den Niederlanden gelten für aktive Männer von 18 bis 29 40 bis 47 g am Tag, für leicht aktive 31 bis 37 g."
+    es:
+      title: "¿Entrenas mucho?"
+      body: "Entonces necesitas más fibra. En los Países Bajos, a un hombre activo de 18 a 29 años se le aconsejan 40 a 47 g al día, y 31 a 37 g si es poco activo."
+    fr:
+      title: "Tu t'entraînes beaucoup ?"
+      body: "Alors il te faut plus de fibres. Aux Pays-Bas, un homme actif de 18 à 29 ans vise 40 à 47 g par jour, contre 31 à 37 g s'il bouge peu."
+    pt:
+      title: "Treinas muito?"
+      body: "Então precisas de mais fibra. Nos Países Baixos, um homem ativo de 18 a 29 anos deve comer 40 a 47 g por dia, e 31 a 37 g se for pouco ativo."
+    tr:
+      title: "Çok mu antrenman yapıyorsun?"
+      body: "O zaman daha çok life ihtiyacın var. Hollanda'da 18-29 yaş aktif bir erkeğe günde 40 ila 47 g, az aktif olana 31 ila 37 g öneriliyor."
+
+  - key: wat-vezels-doen
+    kind: fact
+    en:
+      title: "What fiber does"
+      body: "In trials with healthy adults, eating more fiber went with lower bodyweight, lower blood pressure and lower total cholesterol."
+    nl:
+      title: "Wat vezels doen"
+      body: "In proeven met gezonde volwassenen ging meer vezels eten samen met een lager gewicht, een lagere bloeddruk en een lager totaal cholesterol."
+    de:
+      title: "Was Ballaststoffe tun"
+      body: "In Studien mit gesunden Erwachsenen ging mehr Ballaststoff mit weniger Gewicht, niedrigerem Blutdruck und niedrigerem Gesamtcholesterin einher."
+    es:
+      title: "Lo que hace la fibra"
+      body: "En ensayos con adultos sanos, comer más fibra fue de la mano de menos peso, menor presión arterial y menos colesterol total."
+    fr:
+      title: "Ce que font les fibres"
+      body: "Dans des essais chez des adultes en bonne santé, plus de fibres allait avec un poids, une tension et un cholestérol total plus bas."
+    pt:
+      title: "O que a fibra faz"
+      body: "Em ensaios com adultos saudáveis, comer mais fibra andou a par de menos peso, tensão arterial mais baixa e menos colesterol total."
+    tr:
+      title: "Lif ne yapar"
+      body: "Sağlıklı yetişkinlerle yapılan denemelerde daha çok lif, daha düşük kilo, tansiyon ve toplam kolesterolle birlikte görüldü."
+
+  - key: vezels-laten-afvallen
+    kind: myth
+    en:
+      title: "Myth: fiber makes you lose weight"
+      body: "Half true. People who eat enough fiber weigh a bit less, but in trials the effect on bodyweight was small. It helps, it is no fix."
+    nl:
+      title: "Mythe: vezels laten je afvallen"
+      body: "Half waar. Wie genoeg vezels eet weegt wat minder, maar in proeven was het effect op gewicht klein. Het helpt, het is geen oplossing."
+    de:
+      title: "Mythos: Ballaststoffe lassen dich abnehmen"
+      body: "Halb wahr. Wer genug Ballaststoffe isst, wiegt etwas weniger, aber in Studien war der Effekt aufs Gewicht klein. Hilft, löst es aber nicht."
+    es:
+      title: "Mito: la fibra te hace adelgazar"
+      body: "A medias. Quien come bastante fibra pesa algo menos, pero en ensayos el efecto sobre el peso fue pequeño. Ayuda, pero no lo resuelve."
+    fr:
+      title: "Mythe : les fibres font maigrir"
+      body: "À moitié vrai. Ceux qui mangent assez de fibres pèsent un peu moins, mais dans les essais l'effet sur le poids était faible. Ça aide, sans plus."
+    pt:
+      title: "Mito: a fibra faz emagrecer"
+      body: "Meio verdade. Quem come fibra suficiente pesa um pouco menos, mas nos ensaios o efeito no peso foi pequeno. Ajuda, mas não resolve."
+    tr:
+      title: "Efsane: lif zayıflatır"
+      body: "Yarı doğru. Yeterince lif yiyenler biraz daha hafif, ama denemelerde kiloya etkisi küçüktü. Yardım eder, tek başına çözüm değil."
+
+  - key: stroperige-vezels
+    kind: fact
+    en:
+      title: "Thick fibers and appetite"
+      body: "Viscous fibers like pectin, beta-glucans and guar gum curbed appetite in 59% of tests. Less viscous fibers did so in 14%."
+    nl:
+      title: "Stroperige vezels en trek"
+      body: "Stroperige vezels zoals pectine, bètaglucanen en guarpitmeel remden de trek in 59% van de tests. Minder stroperige vezels in 14%."
+    de:
+      title: "Zähe Ballaststoffe und Appetit"
+      body: "Zähflüssige Ballaststoffe wie Pektin, Beta-Glucane und Guarkernmehl dämpften den Appetit in 59% der Tests. Weniger zähe in 14%."
+    es:
+      title: "Fibra viscosa y apetito"
+      body: "Las fibras viscosas como la pectina, los betaglucanos y la goma guar bajaron el apetito en el 59% de las pruebas. Las menos viscosas, en el 14%."
+    fr:
+      title: "Fibres visqueuses et appétit"
+      body: "Les fibres visqueuses comme la pectine, les bêta-glucanes et la gomme de guar ont réduit l'appétit dans 59% des tests. Les moins visqueuses, dans 14%."
+    pt:
+      title: "Fibra viscosa e apetite"
+      body: "Fibras viscosas como a pectina, os betaglucanos e a goma guar baixaram o apetite em 59% dos testes. As menos viscosas, em 14%."
+    tr:
+      title: "Yapışkan lif ve iştah"
+      body: "Pektin, beta-glukan ve guar zamkı gibi yapışkan lifler testlerin yüzde 59'unda iştahı azalttı. Daha az yapışkan olanlar yüzde 14'ünde."
+
+  - key: vezelsupplement
+    kind: myth
+    en:
+      title: "Myth: a fiber supplement works just as well"
+      body: "Not shown. Most research is on fiber-rich foods like whole grains, pulses and vegetables, not on fiber by itself."
+    nl:
+      title: "Mythe: een vezelsupplement werkt net zo goed"
+      body: "Niet aangetoond. Bijna al het onderzoek gaat over vezelrijk eten zoals volkoren, peulvruchten en groente, niet over losse vezels."
+    de:
+      title: "Mythos: Ballaststoffpulver wirkt genauso"
+      body: "Nicht belegt. Fast alle Forschung betrifft ballaststoffreiche Lebensmittel wie Vollkorn, Hülsenfrüchte und Gemüse, nicht isolierte Ballaststoffe."
+    es:
+      title: "Mito: un suplemento de fibra funciona igual"
+      body: "No está demostrado. Casi toda la investigación es sobre alimentos ricos en fibra como integrales, legumbres y verduras, no sobre fibra aislada."
+    fr:
+      title: "Mythe : un complément de fibres fait pareil"
+      body: "Pas démontré. Presque toute la recherche porte sur des aliments riches en fibres, comme le complet, les légumineuses et les légumes."
+    pt:
+      title: "Mito: um suplemento de fibra faz o mesmo"
+      body: "Não está provado. Quase toda a investigação é sobre alimentos ricos em fibra, como integrais, leguminosas e legumes, não sobre fibra isolada."
+    tr:
+      title: "Efsane: lif takviyesi de aynı işi görür"
+      body: "Kanıtlanmadı. Araştırmaların çoğu tam tahıl, baklagil ve sebze gibi lifli besinlerle ilgili, tek başına lifle değil."
+
+  - key: rustig-opbouwen
+    kind: fact
+    en:
+      title: "Build up slowly"
+      body: "Adding a lot of fiber at once can give you wind, cramps or constipation. Swap one thing at a time so your gut can adapt."
+    nl:
+      title: "Rustig opbouwen"
+      body: "Ineens veel meer vezels kan winderigheid, krampen of verstopping geven. Vervang één ding tegelijk, dan kunnen je darmen wennen."
+    de:
+      title: "Langsam steigern"
+      body: "Plötzlich viel mehr Ballaststoffe kann Blähungen, Krämpfe oder Verstopfung bringen. Ändere eins nach dem anderen, damit dein Darm sich gewöhnt."
+    es:
+      title: "Sube poco a poco"
+      body: "Meter mucha fibra de golpe puede dar gases, calambres o estreñimiento. Cambia una cosa cada vez para que tu intestino se adapte."
+    fr:
+      title: "Augmente petit à petit"
+      body: "Beaucoup de fibres d'un coup peut donner des gaz, des crampes ou de la constipation. Change une chose à la fois pour que ton intestin s'adapte."
+    pt:
+      title: "Aumenta aos poucos"
+      body: "Muita fibra de repente pode dar gases, cólicas ou prisão de ventre. Muda uma coisa de cada vez para o intestino se adaptar."
+    tr:
+      title: "Yavaş yavaş artır"
+      body: "Birden çok lif almak gaz, kramp ya da kabızlık yapabilir. Bağırsağın alışsın diye her seferinde tek bir şeyi değiştir."
+
+  - key: vezels-en-drinken
+    kind: fact
+    en:
+      title: "Fiber and water"
+      body: "Fiber binds fluid. So when you eat more of it, drink enough too."
+    nl:
+      title: "Vezels en drinken"
+      body: "Vezels binden vocht. Eet je er meer van, drink dan ook genoeg."
+    de:
+      title: "Ballaststoffe und Trinken"
+      body: "Ballaststoffe binden Flüssigkeit. Isst du mehr davon, trink auch genug."
+    es:
+      title: "Fibra y agua"
+      body: "La fibra retiene líquido. Si comes más, bebe también lo suficiente."
+    fr:
+      title: "Fibres et eau"
+      body: "Les fibres retiennent l'eau. Si tu en manges plus, bois assez aussi."
+    pt:
+      title: "Fibra e água"
+      body: "A fibra retém líquido. Se comeres mais, bebe também o suficiente."
+    tr:
+      title: "Lif ve su"
+      body: "Lif sıvı tutar. Daha çok lif yiyorsan yeterince su da iç."

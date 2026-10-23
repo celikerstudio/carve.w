@@ -1,0 +1,241 @@
+article: intermittent-fasting
+tips:
+  - key: meer-vet-verbranden
+    kind: myth
+    en:
+      title: "Myth: fasting burns more fat"
+      body: "Not more than a normal deficit. On the whole, fasting gives no clear advantage over eating a bit less every day."
+    nl:
+      title: "Mythe: vasten verbrandt meer vet"
+      body: "Niet meer dan een gewoon tekort. Over de hele linie is vasten niet duidelijk beter dan elke dag wat minder eten."
+    de:
+      title: "Mythos: Fasten verbrennt mehr Fett"
+      body: "Nicht mehr als ein normales Defizit. Insgesamt bringt Fasten keinen klaren Vorteil gegenüber täglich etwas weniger essen."
+    es:
+      title: "Mito: el ayuno quema más grasa"
+      body: "No más que un déficit normal. En conjunto, ayunar no tiene una ventaja clara frente a comer algo menos cada día."
+    fr:
+      title: "Mythe : le jeûne brûle plus de gras"
+      body: "Pas plus qu'un déficit normal. Dans l'ensemble, jeûner n'a pas d'avantage net sur le fait de manger un peu moins chaque jour."
+    pt:
+      title: "Mito: o jejum queima mais gordura"
+      body: "Não mais do que um défice normal. No geral, jejuar não tem vantagem clara sobre comer um pouco menos todos os dias."
+    tr:
+      title: "Efsane: oruç daha çok yağ yakar"
+      body: "Normal bir kalori açığından fazla değil. Genel olarak aralıklı oruç, her gün biraz az yemekten açıkça daha iyi değil."
+
+  - key: lange-termijn
+    kind: fact
+    en:
+      title: "Fasting in the long run"
+      body: "Across 99 trials, alternate-day fasting beat a normal diet by 1.29 kg, only in short trials. From 24 weeks on, no form of fasting did better."
+    nl:
+      title: "Vasten op de lange duur"
+      body: "In 99 studies won om-de-dag-vasten met 1,29 kg van een gewoon dieet, maar alleen in korte studies. Vanaf 24 weken deed geen enkele vorm het beter."
+    de:
+      title: "Fasten auf lange Sicht"
+      body: "In 99 Studien schlug Fasten jeden zweiten Tag eine normale Diät um 1,29 kg, nur in kurzen Studien. Ab 24 Wochen war keine Form besser."
+    es:
+      title: "El ayuno a largo plazo"
+      body: "En 99 ensayos, el ayuno en días alternos ganó a una dieta normal por 1,29 kg, solo en ensayos cortos. Desde 24 semanas, ninguna forma fue mejor."
+    fr:
+      title: "Le jeûne sur la durée"
+      body: "Sur 99 essais, le jeûne un jour sur deux a battu un régime normal de 1,29 kg, seulement à court terme. Dès 24 semaines, aucune forme ne fait mieux."
+    pt:
+      title: "O jejum a longo prazo"
+      body: "Em 99 ensaios, o jejum em dias alternados bateu uma dieta normal por 1,29 kg, só em ensaios curtos. A partir das 24 semanas, nenhuma forma foi melhor."
+    tr:
+      title: "Uzun vadede oruç"
+      body: "99 denemede gün aşırı oruç normal diyeti 1,29 kg geçti, ama sadece kısa denemelerde. 24 haftadan sonra hiçbir oruç türü daha iyi değildi."
+
+  - key: acht-tot-vier
+    kind: fact
+    en:
+      title: "A year of eating 8 to 4"
+      body: "On the same calorie target for a year, eating only from 8 am to 4 pm gave 8.0 kg weight loss against 6.3 kg. Not a significant difference."
+    nl:
+      title: "Een jaar eten van 8 tot 4"
+      body: "Met hetzelfde caloriedoel een jaar lang alleen eten tussen 8 en 16 uur gaf 8,0 kg gewichtsverlies tegen 6,3 kg. Geen significant verschil."
+    de:
+      title: "Ein Jahr essen von 8 bis 16"
+      body: "Beim gleichen Kalorienziel brachte ein Jahr Essen nur von 8 bis 16 Uhr 8,0 kg Gewichtsverlust gegen 6,3 kg. Kein signifikanter Unterschied."
+    es:
+      title: "Un año comiendo de 8 a 4"
+      body: "Con el mismo objetivo calórico durante un año, comer solo de 8 a 16 h dio 8,0 kg de pérdida frente a 6,3 kg. Diferencia no significativa."
+    fr:
+      title: "Un an à manger de 8 h à 16 h"
+      body: "Avec le même objectif calorique pendant un an, manger de 8 h à 16 h a fait perdre 8,0 kg contre 6,3 kg. Écart non significatif."
+    pt:
+      title: "Um ano a comer das 8 às 16"
+      body: "Com o mesmo alvo de calorias durante um ano, comer só das 8 às 16 h deu 8,0 kg de perda contra 6,3 kg. Diferença não significativa."
+    tr:
+      title: "Bir yıl 8'den 4'e yemek"
+      body: "Bir yıl aynı kalori hedefinde sadece 08.00-16.00 arası yemek, 6,3 kg'a karşı 8,0 kg kayıp verdi. Fark anlamlı değildi."
+
+  - key: afhakers
+    kind: fact
+    en:
+      title: "Alternate-day fasting"
+      body: "Over a year it gave the same weight loss as eating 25% less every day. More people quit it, though: 38% against 29%."
+    nl:
+      title: "Om de dag vasten"
+      body: "Over een jaar gaf het hetzelfde gewichtsverlies als elke dag 25% minder eten. Wel haakten meer mensen af: 38% tegen 29%."
+    de:
+      title: "Fasten jeden zweiten Tag"
+      body: "Über ein Jahr brachte es gleich viel Gewichtsverlust wie täglich 25 % weniger essen. Aber mehr Leute brachen ab: 38 % gegen 29 %."
+    es:
+      title: "Ayuno en días alternos"
+      body: "En un año dio la misma pérdida de peso que comer un 25% menos cada día. Pero más gente lo dejó: 38% frente a 29%."
+    fr:
+      title: "Le jeûne un jour sur deux"
+      body: "Sur un an, il a fait perdre autant que manger 25 % de moins chaque jour. Mais plus de gens ont abandonné : 38 % contre 29 %."
+    pt:
+      title: "Jejum em dias alternados"
+      body: "Num ano deu a mesma perda de peso que comer 25% menos todos os dias. Mas mais pessoas desistiram: 38% contra 29%."
+    tr:
+      title: "Gün aşırı oruç"
+      body: "Bir yılda her gün %25 az yemekle aynı kilo kaybını verdi. Ama daha çok kişi bıraktı: %29'a karşı %38."
+
+  - key: venster-alleen
+    kind: myth
+    en:
+      title: "Myth: the eating window does the work"
+      body: "Not true. Eating only from noon to 8 pm, with nothing else changed, gave no more weight loss than three meals a day."
+    nl:
+      title: "Mythe: het eetvenster doet het werk"
+      body: "Klopt niet. Alleen eten tussen 12 en 20 uur, zonder verder iets te veranderen, gaf niet meer gewichtsverlies dan drie maaltijden per dag."
+    de:
+      title: "Mythos: Das Essfenster macht die Arbeit"
+      body: "Stimmt nicht. Nur von 12 bis 20 Uhr essen, sonst ohne Änderung, brachte nicht mehr Gewichtsverlust als drei Mahlzeiten am Tag."
+    es:
+      title: "Mito: la ventana de comida hace el trabajo"
+      body: "No es cierto. Comer solo de 12 a 20 h, sin cambiar nada más, no hizo perder más peso que tres comidas al día."
+    fr:
+      title: "Mythe : la fenêtre de repas fait le travail"
+      body: "Faux. Manger seulement de 12 h à 20 h, sans rien changer d'autre, n'a pas fait perdre plus que trois repas par jour."
+    pt:
+      title: "Mito: a janela alimentar faz o trabalho"
+      body: "Não é verdade. Comer só das 12 às 20 h, sem mudar mais nada, não deu mais perda de peso do que três refeições por dia."
+    tr:
+      title: "Efsane: işi yeme penceresi yapar"
+      body: "Doğru değil. Başka hiçbir şey değiştirmeden sadece 12.00-20.00 arası yemek, günde üç öğünden fazla kilo kaybettirmedi."
+
+  - key: minder-eten
+    kind: fact
+    en:
+      title: "Why fasting works for some"
+      body: "A shorter window can make eating less easier. Lifters on a time-restricted schedule ate about 175 kcal a day less."
+    nl:
+      title: "Waarom vasten soms werkt"
+      body: "Een korter eetvenster kan minder eten makkelijker maken. Krachtsporters met een eetvenster aten zo'n 175 kcal per dag minder."
+    de:
+      title: "Warum Fasten manchen hilft"
+      body: "Ein kürzeres Fenster kann weniger essen leichter machen. Kraftsportler mit Essfenster aßen etwa 175 kcal am Tag weniger."
+    es:
+      title: "Por qué a algunos les funciona"
+      body: "Una ventana más corta puede facilitar comer menos. Quienes levantaban pesas con horario restringido comieron unas 175 kcal menos al día."
+    fr:
+      title: "Pourquoi le jeûne marche pour certains"
+      body: "Une fenêtre plus courte peut aider à manger moins. Des pratiquants de muscu avec fenêtre de repas mangeaient environ 175 kcal de moins par jour."
+    pt:
+      title: "Porque resulta para alguns"
+      body: "Uma janela mais curta pode facilitar comer menos. Quem treinava força com horário restrito comeu cerca de 175 kcal a menos por dia."
+    tr:
+      title: "Neden bazılarına işe yarar"
+      body: "Daha kısa bir pencere az yemeyi kolaylaştırabilir. Zaman kısıtlı beslenen ağırlık çalışanlar günde yaklaşık 175 kcal daha az yedi."
+
+  - key: spierverlies
+    kind: myth
+    en:
+      title: "Myth: fasting eats your muscle"
+      body: "Half true. Fasting diets lost about 0.20 kg more fat-free mass. In seven small trials of time-restricted eating in lifters, muscle and strength held."
+    nl:
+      title: "Mythe: vasten vreet je spieren op"
+      body: "Half waar. Vasten kostte zo'n 0,20 kg extra vetvrije massa. In 7 kleine studies met een eetvenster bleven spier en kracht bij krachtsporters gelijk."
+    de:
+      title: "Mythos: Fasten frisst deine Muskeln"
+      body: "Halb wahr. Fasten kostete etwa 0,20 kg mehr fettfreie Masse. In 7 kleinen Studien mit Essfenster blieben bei Kraftsportlern Muskeln und Kraft gleich."
+    es:
+      title: "Mito: el ayuno se come tu músculo"
+      body: "Medio cierto. El ayuno costó 0,20 kg más de masa magra. En 7 ensayos pequeños con ventana horaria y pesas, músculo y fuerza no cambiaron."
+    fr:
+      title: "Mythe : le jeûne mange tes muscles"
+      body: "À moitié vrai. Le jeûne a coûté 0,20 kg de masse maigre en plus. Dans 7 petits essais avec fenêtre alimentaire et muscu, muscle et force n'ont pas bougé."
+    pt:
+      title: "Mito: o jejum come os teus músculos"
+      body: "Meio verdade. O jejum custou 0,20 kg a mais de massa magra. Em 7 ensaios pequenos com janela alimentar e treino de força, músculo e força mantiveram-se."
+    tr:
+      title: "Efsane: oruç kaslarını eritir"
+      body: "Yarı doğru. Oruç 0,20 kg daha fazla yağsız kütle kaybettirdi. Ağırlık çalışanlarla 7 küçük yeme penceresi çalışmasında kas ve kuvvet değişmedi."
+
+  - key: getrainde-vrouwen
+    kind: fact
+    en:
+      title: "Fasting and muscle gain"
+      body: "Trained women eating 1.6 g of protein per kg in a window of about 7.5 hours gained as much muscle and strength as normal eaters."
+    nl:
+      title: "Vasten en spieropbouw"
+      body: "Getrainde vrouwen die 1,6 g eiwit per kilo aten in een venster van zo'n 7,5 uur, wonnen evenveel spier en kracht als bij gewoon eten."
+    de:
+      title: "Fasten und Muskelaufbau"
+      body: "Trainierte Frauen mit 1,6 g Eiweiß pro kg in einem Fenster von etwa 7,5 Stunden bauten so viel Muskeln und Kraft auf wie bei normalem Essen."
+    es:
+      title: "Ayuno y ganar músculo"
+      body: "Mujeres entrenadas con 1,6 g de proteína por kg en una ventana de unas 7,5 horas ganaron tanto músculo y fuerza como comiendo normal."
+    fr:
+      title: "Jeûne et prise de muscle"
+      body: "Des femmes entraînées à 1,6 g de protéines par kg sur une fenêtre d'environ 7,5 h ont gagné autant de muscle et de force qu'en mangeant normalement."
+    pt:
+      title: "Jejum e ganhar músculo"
+      body: "Mulheres treinadas com 1,6 g de proteína por kg numa janela de cerca de 7,5 horas ganharam tanto músculo e força como a comer normal."
+    tr:
+      title: "Oruç ve kas kazanımı"
+      body: "Kilo başına 1,6 g protein alan antrenmanlı kadınlar, yaklaşık 7,5 saatlik bir pencerede normal yiyenler kadar kas ve kuvvet kazandı."
+
+  - key: eiwit-in-venster
+    kind: fact
+    en:
+      title: "Protein in an 8-hour window"
+      body: "Spread your protein every 3 to 4 hours. In an 8-hour eating window, that means two or three protein-rich meals."
+    nl:
+      title: "Eiwit in een venster van 8 uur"
+      body: "Verdeel je eiwit over elke 3 tot 4 uur. In een eetvenster van 8 uur zijn dat twee of drie eiwitrijke maaltijden."
+    de:
+      title: "Eiweiß im 8-Stunden-Fenster"
+      body: "Verteil dein Eiweiß auf alle 3 bis 4 Stunden. In einem 8-Stunden-Fenster sind das zwei oder drei eiweißreiche Mahlzeiten."
+    es:
+      title: "Proteína en una ventana de 8 h"
+      body: "Reparte tu proteína cada 3 a 4 horas. En una ventana de 8 horas, eso son dos o tres comidas ricas en proteína."
+    fr:
+      title: "Protéines sur une fenêtre de 8 h"
+      body: "Répartis tes protéines toutes les 3 à 4 heures. Sur une fenêtre de 8 heures, ça fait deux ou trois repas riches en protéines."
+    pt:
+      title: "Proteína numa janela de 8 horas"
+      body: "Distribui a proteína a cada 3 a 4 horas. Numa janela de 8 horas, isso são duas ou três refeições ricas em proteína."
+    tr:
+      title: "8 saatlik pencerede protein"
+      body: "Proteinini 3 ila 4 saatte bir dağıt. 8 saatlik bir yeme penceresinde bu, iki ya da üç proteinli öğün demek."
+
+  - key: niet-vasten
+    kind: fact
+    en:
+      title: "Who should skip fasting"
+      body: "Don't fast if you're pregnant or breastfeeding, have had an eating disorder, or are underweight (a BMI below 18.5)."
+    nl:
+      title: "Wie beter niet vast"
+      body: "Niet vasten als je zwanger bent of borstvoeding geeft, een eetstoornis hebt gehad, of ondergewicht hebt (een BMI onder 18,5)."
+    de:
+      title: "Wer nicht fasten sollte"
+      body: "Faste nicht, wenn du schwanger bist oder stillst, eine Essstörung hattest oder untergewichtig bist (BMI unter 18,5)."
+    es:
+      title: "Quién no debe ayunar"
+      body: "No ayunes si estás embarazada o das el pecho, has tenido un trastorno alimentario o tienes bajo peso (un IMC por debajo de 18,5)."
+    fr:
+      title: "Qui ne devrait pas jeûner"
+      body: "Ne jeûne pas si tu es enceinte ou allaites, si tu as eu un trouble alimentaire, ou si tu es en sous-poids (IMC sous 18,5)."
+    pt:
+      title: "Quem não deve jejuar"
+      body: "Não faças jejum se estás grávida ou a amamentar, se já tiveste um distúrbio alimentar ou se tens baixo peso (IMC abaixo de 18,5)."
+    tr:
+      title: "Kimler oruç tutmamalı"
+      body: "Hamileysen ya da emziriyorsan, yeme bozukluğu geçirdiysen ya da zayıfsan (BMI 18,5'in altı) oruç tutma."

@@ -1,0 +1,217 @@
+article: plateaus
+tips:
+  - key: twee-soorten
+    kind: fact
+    en:
+      title: "Two kinds of plateau"
+      body: "Your lifts stop going up, or the scale stops going down. They share a name, but the causes differ, so the fixes do too."
+    nl:
+      title: "Twee soorten plateau"
+      body: "Je lifts gaan niet meer omhoog, of de weegschaal niet meer omlaag. Zelfde naam, maar andere oorzaken, dus ook een andere aanpak."
+    de:
+      title: "Zwei Arten von Plateau"
+      body: "Deine Lifts steigen nicht mehr, oder die Waage sinkt nicht mehr. Gleicher Name, aber andere Ursachen, also auch andere Lösungen."
+    es:
+      title: "Dos tipos de estancamiento"
+      body: "Tus levantamientos dejan de subir, o la báscula deja de bajar. Mismo nombre, pero causas distintas, así que soluciones distintas."
+    fr:
+      title: "Deux sortes de plateau"
+      body: "Tes charges ne montent plus, ou la balance ne descend plus. Même nom, mais causes différentes, donc solutions différentes."
+    pt:
+      title: "Dois tipos de estagnação"
+      body: "As cargas deixam de subir, ou a balança deixa de descer. O nome é o mesmo, mas as causas diferem, e as soluções também."
+    tr:
+      title: "İki tür plato"
+      body: "Ya kaldırdıkların artmıyor ya da tartı düşmüyor. Adı aynı ama nedenleri farklı, çözümleri de öyle."
+
+  - key: een-klein-beetje
+    kind: fact
+    en:
+      title: "Even if only slightly"
+      body: "To keep progressing, the ACSM says the stimulus likely has to rise over time, even if only slightly: a bit more weight, a rep or a set."
+    nl:
+      title: "Al is het maar een beetje"
+      body: "Om vooruit te blijven gaan moet de prikkel volgens het ACSM waarschijnlijk stijgen, al is het maar een beetje: iets meer gewicht, een rep of een set."
+    de:
+      title: "Und sei es nur ein bisschen"
+      body: "Für weiteren Fortschritt muss der Reiz laut ACSM wohl steigen, und sei es nur leicht: etwas mehr Gewicht, eine Wdh. oder ein Satz."
+    es:
+      title: "Aunque sea un poco"
+      body: "Para seguir progresando, según el ACSM el estímulo probablemente tiene que subir, aunque sea un poco: algo más de peso, una rep o una serie."
+    fr:
+      title: "Même un tout petit peu"
+      body: "Pour continuer à progresser, selon l'ACSM, le stimulus doit sans doute monter, même un peu : un peu plus de poids, une rep ou une série."
+    pt:
+      title: "Nem que seja um pouco"
+      body: "Para continuares a progredir, segundo o ACSM o estímulo tem provavelmente de subir, nem que seja pouco: mais peso, uma repetição ou uma série."
+    tr:
+      title: "Azıcık bile olsa"
+      body: "ACSM'e göre ilerlemeye devam etmek için uyaranın muhtemelen artması gerek, azıcık bile olsa: biraz ağırlık, bir tekrar ya da bir set."
+
+  - key: maand-vergelijken
+    kind: fact
+    en:
+      title: "Lift stuck?"
+      body: "Compare the last month with the one before: weight, reps and sets. If none of them went up, that's where to start."
+    nl:
+      title: "Lift zit vast?"
+      body: "Vergelijk de afgelopen maand met de maand ervoor: gewicht, reps en sets. Ging geen van drieën omhoog, dan begin je daar."
+    de:
+      title: "Lift steckt fest?"
+      body: "Vergleich den letzten Monat mit dem davor: Gewicht, Wdh. und Sätze. Ging nichts davon hoch, fängst du dort an."
+    es:
+      title: "¿Levantamiento estancado?"
+      body: "Compara el último mes con el anterior: peso, reps y series. Si nada de eso subió, por ahí empiezas."
+    fr:
+      title: "Une charge qui bloque ?"
+      body: "Compare le dernier mois au précédent : poids, reps et séries. Si rien n'a augmenté, c'est par là que tu commences."
+    pt:
+      title: "Carga parada?"
+      body: "Compara o último mês com o anterior: peso, repetições e séries. Se nada disso subiu, é por aí que começas."
+    tr:
+      title: "Bir hareket mi takıldı?"
+      body: "Son ayı bir öncekiyle kıyasla: ağırlık, tekrar ve set. Hiçbiri artmadıysa başlayacağın yer orası."
+
+  - key: een-ding-tegelijk
+    kind: fact
+    en:
+      title: "One change at a time"
+      body: "Change your programme, food and sleep in the same week and you won't know what worked."
+    nl:
+      title: "Eén ding tegelijk"
+      body: "Verander je in dezelfde week je schema, je eten en je slaap, dan weet je niet wat er werkte."
+    de:
+      title: "Eins nach dem anderen"
+      body: "Änderst du Plan, Essen und Schlaf in derselben Woche, weißt du nicht, was gewirkt hat."
+    es:
+      title: "Un cambio cada vez"
+      body: "Si cambias el plan, la comida y el sueño la misma semana, no sabrás qué funcionó."
+    fr:
+      title: "Un changement à la fois"
+      body: "Si tu changes ton programme, ton alimentation et ton sommeil la même semaine, tu ne sauras pas ce qui a marché."
+    pt:
+      title: "Uma mudança de cada vez"
+      body: "Se mudas o plano, a comida e o sono na mesma semana, não vais saber o que resultou."
+    tr:
+      title: "Bir seferde bir değişiklik"
+      body: "Aynı hafta programını, beslenmeni ve uykunu değiştirirsen neyin işe yaradığını bilemezsin."
+
+  - key: variatie-is-gepland
+    kind: myth
+    en:
+      title: "Myth: hopping programmes is variation"
+      body: "Not true. The ACSM defines variation as a planned change of training variables over time. Swapping routines often is something else."
+    nl:
+      title: "Mythe: steeds van schema wisselen is variatie"
+      body: "Klopt niet. Het ACSM noemt variatie een geplande verandering van je trainingsvariabelen over tijd. Vaak van schema wisselen is iets anders."
+    de:
+      title: "Mythos: Planwechsel ist Variation"
+      body: "Stimmt nicht. Das ACSM versteht unter Variation eine geplante Änderung der Trainingsvariablen über die Zeit. Ständiges Wechseln ist etwas anderes."
+    es:
+      title: "Mito: cambiar de rutina es variar"
+      body: "No es cierto. El ACSM define la variación como un cambio planificado de las variables de entreno con el tiempo. Saltar de rutina es otra cosa."
+    fr:
+      title: "Mythe : changer de programme, c'est varier"
+      body: "Faux. L'ACSM définit la variation comme un changement planifié des variables d'entraînement dans le temps. Zapper souvent, c'est autre chose."
+    pt:
+      title: "Mito: saltar de plano é variar"
+      body: "Não é verdade. O ACSM define variação como uma mudança planeada das variáveis de treino ao longo do tempo. Trocar de rotina a toda a hora é outra coisa."
+    tr:
+      title: "Efsane: program değiştirmek çeşitliliktir"
+      body: "Doğru değil. ACSM çeşitliliği antrenman değişkenlerinin zamanla planlı değiştirilmesi olarak tanımlıyor. Sık sık rutin değiştirmek başka bir şey."
+
+  - key: zes-maanden
+    kind: fact
+    en:
+      title: "The 6-month pattern"
+      body: "In lifestyle programmes for adults with overweight, most weight is lost by about 6 months. Then a plateau and slow regain are common."
+    nl:
+      title: "Het patroon van 6 maanden"
+      body: "In leefstijlprogramma's voor volwassenen met overgewicht gaan de meeste kilo's er in zo'n 6 maanden af. Daarna volgen vaak een plateau en langzaam terugkomen."
+    de:
+      title: "Das 6-Monats-Muster"
+      body: "In Lebensstilprogrammen für Erwachsene mit Übergewicht geht das meiste Gewicht in etwa 6 Monaten runter. Danach folgen oft Plateau und langsame Zunahme."
+    es:
+      title: "El patrón de los 6 meses"
+      body: "En programas de estilo de vida para adultos con sobrepeso, casi todo el peso se pierde en unos 6 meses. Luego suele llegar un parón y una lenta recuperación."
+    fr:
+      title: "Le schéma des 6 mois"
+      body: "Dans les programmes pour adultes en surpoids, l'essentiel du poids part en 6 mois environ. Ensuite, plateau et lente reprise sont fréquents."
+    pt:
+      title: "O padrão dos 6 meses"
+      body: "Em programas de estilo de vida para adultos com excesso de peso, quase todo o peso sai em cerca de 6 meses. Depois é comum estagnar e recuperar devagar."
+    tr:
+      title: "6 aylık örüntü"
+      body: "Fazla kilolu yetişkinlere yönelik yaşam tarzı programlarında kiloların çoğu yaklaşık 6 ayda gider. Sonra plato ve yavaşça geri alma yaygındır."
+
+  - key: inname-sluipt-omhoog
+    kind: fact
+    en:
+      title: "Why the early plateau?"
+      body: "In a model by Hall and colleagues, weight levels off only after years. They think the 6 to 8 month plateau more likely means intake crept up."
+    nl:
+      title: "Waarom het vroege plateau?"
+      body: "In een model van Hall en collega's vlakt gewicht pas na jaren af. Het plateau na 6 tot 8 maanden komt volgens hen eerder doordat mensen meer gingen eten."
+    de:
+      title: "Warum das frühe Plateau?"
+      body: "In einem Modell von Hall und Kollegen flacht das Gewicht erst nach Jahren ab. Das Plateau nach 6 bis 8 Monaten deutet laut ihnen eher auf mehr Essen hin."
+    es:
+      title: "¿Por qué el estancamiento temprano?"
+      body: "En un modelo de Hall y colegas, el peso se estabiliza solo tras años. Creen que el parón a los 6 a 8 meses se debe más bien a comer algo más."
+    fr:
+      title: "Pourquoi ce plateau précoce ?"
+      body: "Dans un modèle de Hall et ses collègues, le poids ne se stabilise qu'après des années. Le plateau à 6 à 8 mois viendrait plutôt d'apports qui remontent."
+    pt:
+      title: "Porquê a estagnação cedo?"
+      body: "Num modelo de Hall e colegas, o peso só estabiliza ao fim de anos. Acham que a estagnação aos 6 a 8 meses vem mais de a ingestão ter subido."
+    tr:
+      title: "Erken plato neden?"
+      body: "Hall ve ekibinin modelinde kilo ancak yıllar sonra sabitleniyor. Onlara göre 6 ila 8. aydaki plato daha çok yediklerin artmasından geliyor."
+
+  - key: kapot-metabolisme
+    kind: myth
+    en:
+      title: "Myth: a plateau means a broken metabolism"
+      body: "Not proven. The sources describe a typical course of weight loss. They can't tell you what's behind the plateau in your case."
+    nl:
+      title: "Mythe: plateau betekent kapot metabolisme"
+      body: "Niet bewezen. De bronnen beschrijven hoe afvallen meestal verloopt. Wat er bij jou achter een plateau zit, kunnen ze niet zeggen."
+    de:
+      title: "Mythos: Plateau heißt kaputter Stoffwechsel"
+      body: "Nicht belegt. Die Quellen beschreiben den typischen Verlauf beim Abnehmen. Was bei dir hinter dem Plateau steckt, sagen sie nicht."
+    es:
+      title: "Mito: estancarte es tener el metabolismo roto"
+      body: "No está probado. Las fuentes describen cómo suele ir la pérdida de peso. No pueden decirte qué hay detrás de tu estancamiento."
+    fr:
+      title: "Mythe : un plateau, c'est un métabolisme cassé"
+      body: "Pas prouvé. Les sources décrivent le déroulé habituel d'une perte de poids. Elles ne peuvent pas dire ce qui cause ton plateau à toi."
+    pt:
+      title: "Mito: estagnar é ter o metabolismo estragado"
+      body: "Não está provado. As fontes descrevem o curso típico da perda de peso. Não te dizem o que está por trás da tua estagnação."
+    tr:
+      title: "Efsane: plato, metabolizma bozuldu demektir"
+      body: "Kanıtlanmadı. Kaynaklar kilo kaybının tipik seyrini anlatıyor. Senin platonun ardında ne olduğunu söyleyemezler."
+
+  - key: plateau-als-rustpunt
+    kind: fact
+    en:
+      title: "A plateau can be a stop"
+      body: "A plateau at a lower weight can be a good place to stay for a while. Pushing on means a bigger gap again. Only you can say if that's worth it now."
+    nl:
+      title: "Een plateau mag een rustpunt zijn"
+      body: "Een plateau op een lager gewicht kan een prima plek zijn om even te blijven. Verder gaan vraagt weer een groter tekort. Of dat nu waard is, weet alleen jij."
+    de:
+      title: "Ein Plateau darf Pause sein"
+      body: "Ein Plateau bei niedrigerem Gewicht kann ein guter Ort für eine Weile sein. Weiter heißt wieder mehr Defizit. Ob sich das jetzt lohnt, weißt nur du."
+    es:
+      title: "Estancarse puede ser una pausa"
+      body: "Quedarte un tiempo en un peso más bajo puede estar bien. Seguir bajando pide otra vez más déficit. Solo tú sabes si ahora compensa."
+    fr:
+      title: "Un plateau peut être une pause"
+      body: "Un plateau à un poids plus bas peut être un bon endroit où rester un moment. Aller plus loin demande un écart plus grand. Toi seul sais si ça vaut le coup."
+    pt:
+      title: "Estagnar pode ser uma pausa"
+      body: "Ficar um tempo num peso mais baixo pode ser bom. Ir mais longe pede outra vez um défice maior. Só tu sabes se agora vale a pena."
+    tr:
+      title: "Plato bir mola olabilir"
+      body: "Daha düşük bir kiloda platoya girmek bir süre kalmak için iyi bir yer olabilir. Devam etmek yine daha büyük açık ister. Buna değer mi, sen bilirsin."

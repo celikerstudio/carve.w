@@ -1,0 +1,241 @@
+article: sleep-hygiene
+tips:
+  - key: weinig-getoetst
+    kind: fact
+    en:
+      title: "Sleep hygiene"
+      body: "The usual sleep tips are linked to how people sleep. What each tip does on its own has mostly not been tested in ordinary sleepers."
+    nl:
+      title: "Slaaphygiëne"
+      body: "De bekende slaaptips hangen samen met hoe mensen slapen. Wat elke tip los doet, is bij gewone slapers grotendeels niet getest."
+    de:
+      title: "Schlafhygiene"
+      body: "Die üblichen Schlaftipps hängen damit zusammen, wie Menschen schlafen. Was jeder Tipp allein bewirkt, ist bei normalen Schläfern kaum getestet."
+    es:
+      title: "Higiene del sueño"
+      body: "Los consejos de sueño de siempre se asocian a cómo dormimos. Lo que hace cada uno por separado apenas se ha probado en gente que duerme normal."
+    fr:
+      title: "Hygiène du sommeil"
+      body: "Les conseils de sommeil habituels sont liés à la façon dont on dort. L'effet de chacun, seul, n'a presque pas été testé chez les dormeurs ordinaires."
+    pt:
+      title: "Higiene do sono"
+      body: "As dicas de sono habituais estão ligadas a como as pessoas dormem. O efeito de cada uma sozinha quase não foi testado em quem dorme normalmente."
+    tr:
+      title: "Uyku hijyeni"
+      body: "Bilinen uyku tavsiyeleri insanların nasıl uyuduğuyla bağlantılı. Her birinin tek başına etkisi sıradan uyuyanlarda çoğunlukla test edilmedi."
+
+  - key: laatste-koffie
+    kind: fact
+    en:
+      title: "Your last coffee"
+      body: "A review estimates a cup of coffee should come at least 8.8 hours before bed. For 23:00, that's before about 14:00. It's a model estimate."
+    nl:
+      title: "Je laatste koffie"
+      body: "Een review schat dat een kop koffie minstens 8,8 uur voor bedtijd moet vallen. Bij 23:00 is dat voor ongeveer 14:00. Het is een schatting."
+    de:
+      title: "Dein letzter Kaffee"
+      body: "Ein Review schätzt, dass eine Tasse Kaffee mindestens 8,8 Stunden vor dem Schlafen kommen sollte. Bei 23 Uhr also vor etwa 14 Uhr. Eine Schätzung."
+    es:
+      title: "Tu último café"
+      body: "Una revisión estima que un café debe ir al menos 8,8 horas antes de dormir. Si te acuestas a las 23:00, antes de las 14:00. Es una estimación."
+    fr:
+      title: "Ton dernier café"
+      body: "Une revue estime qu'un café doit être pris au moins 8,8 heures avant le coucher. Pour 23 h, avant 14 h environ. C'est une estimation."
+    pt:
+      title: "O teu último café"
+      body: "Uma revisão estima que um café deve ser pelo menos 8,8 horas antes de deitar. Para as 23:00, antes das 14:00. É uma estimativa."
+    tr:
+      title: "Son kahven"
+      body: "Bir derleme, bir fincan kahvenin yatmadan en az 8,8 saat önce içilmesi gerektiğini tahmin ediyor. 23:00 için 14:00'ten önce. Bu bir tahmin."
+
+  - key: slaapmutsje
+    kind: myth
+    en:
+      title: "Myth: a nightcap helps you sleep"
+      body: "Hardly. Only at about five drinks did people fall asleep faster. From about two drinks, alcohol already delays and shortens REM sleep, more with each drink."
+    nl:
+      title: "Mythe: een slaapmutsje helpt je slapen"
+      body: "Nauwelijks. Pas bij zo'n vijf drankjes vielen mensen sneller in slaap. Vanaf twee drankjes vertraagt en verkort alcohol je REM-slaap al, meer met elk glas."
+    de:
+      title: "Mythos: Ein Schlummertrunk hilft"
+      body: "Kaum. Erst bei etwa fünf Drinks schliefen Leute schneller ein. Schon ab etwa zwei verzögert und verkürzt Alkohol den REM-Schlaf, mit jedem Glas mehr."
+    es:
+      title: "Mito: una copa antes de dormir ayuda"
+      body: "Apenas. Solo con unas cinco copas la gente se dormía antes. Desde unas dos, el alcohol ya retrasa y acorta el sueño REM, más con cada copa."
+    fr:
+      title: "Mythe : un dernier verre aide à dormir"
+      body: "Pas vraiment. C'est seulement vers cinq verres qu'on s'endormait plus vite. Dès deux, l'alcool retarde et réduit déjà le sommeil paradoxal, plus à chaque verre."
+    pt:
+      title: "Mito: um copo antes de deitar ajuda"
+      body: "Mal. Só com cerca de cinco bebidas as pessoas adormeceram mais depressa. A partir de duas, o álcool já atrasa e encurta o sono REM, mais a cada copo."
+    tr:
+      title: "Efsane: yatmadan bir kadeh uyutur"
+      body: "Pek değil. İnsanlar ancak beş içki civarında daha hızlı uykuya daldı. İki içkiden itibaren alkol REM uykusunu zaten geciktirip kısaltır, her içkiyle daha çok."
+
+  - key: avondtraining
+    kind: myth
+    en:
+      title: "Myth: evening training ruins your sleep"
+      body: "Not true. In a review of 23 studies, one evening session didn't worsen sleep. Hard sessions ending an hour or less before bed might."
+    nl:
+      title: "Mythe: 's avonds trainen verpest je slaap"
+      body: "Niet waar. In een review van 23 studies maakte een avondtraining de slaap niet slechter. Zware trainingen tot een uur voor bedtijd misschien wel."
+    de:
+      title: "Mythos: Abendtraining ruiniert den Schlaf"
+      body: "Stimmt nicht. In einem Review von 23 Studien verschlechterte eine Abendeinheit den Schlaf nicht. Harte Einheiten bis eine Stunde vorm Schlafen vielleicht."
+    es:
+      title: "Mito: entrenar de noche arruina el sueño"
+      body: "No es cierto. En una revisión de 23 estudios, una sesión nocturna no empeoró el sueño. Las duras que acaban una hora o menos antes de dormir, quizá sí."
+    fr:
+      title: "Mythe : s'entraîner le soir gâche le sommeil"
+      body: "Faux. Dans une revue de 23 études, une séance du soir n'a pas dégradé le sommeil. Une séance dure finie moins d'une heure avant le coucher, peut-être."
+    pt:
+      title: "Mito: treinar à noite estraga o sono"
+      body: "Não é verdade. Numa revisão de 23 estudos, um treino à noite não piorou o sono. Treinos duros que acabam uma hora ou menos antes de deitar, talvez."
+    tr:
+      title: "Efsane: akşam antrenmanı uykuyu bozar"
+      body: "Doğru değil. 23 çalışmalık bir derlemede tek bir akşam antrenmanı uykuyu kötüleştirmedi. Yatmadan bir saat veya daha az önce biten sert antrenman bozabilir."
+
+  - key: zwaar-trainen-laat
+    kind: fact
+    en:
+      title: "A hard session at night"
+      body: "In healthy young and middle-aged adults, hard training ending 2 to 4 hours before bed did not disrupt sleep. Leave at least an hour."
+    nl:
+      title: "Een zware training 's avonds"
+      body: "Bij gezonde jonge en middelbare volwassenen verstoorde zware training die 2 tot 4 uur voor bedtijd eindigde de slaap niet. Laat minstens een uur."
+    de:
+      title: "Eine harte Einheit am Abend"
+      body: "Bei gesunden jungen und mittelalten Erwachsenen störte hartes Training, das 2 bis 4 Stunden vorm Schlafen endete, den Schlaf nicht. Lass mindestens eine Stunde."
+    es:
+      title: "Una sesión dura por la noche"
+      body: "En adultos sanos jóvenes y de mediana edad, entrenar duro hasta 2 a 4 horas antes de dormir no alteró el sueño. Deja al menos una hora."
+    fr:
+      title: "Une séance dure le soir"
+      body: "Chez des adultes sains jeunes et d'âge moyen, une séance dure finie 2 à 4 heures avant le coucher n'a pas perturbé le sommeil. Garde au moins une heure."
+    pt:
+      title: "Um treino duro à noite"
+      body: "Em adultos saudáveis jovens e de meia-idade, treino duro a acabar 2 a 4 horas antes de deitar não perturbou o sono. Deixa pelo menos uma hora."
+    tr:
+      title: "Akşam sert bir antrenman"
+      body: "Sağlıklı genç ve orta yaşlı yetişkinlerde yatmadan 2 ila 4 saat önce biten sert antrenman uykuyu bozmadı. En az bir saat bırak."
+
+  - key: schermen
+    kind: fact
+    en:
+      title: "Screens before bed"
+      body: "Reading 4 hours on an e-reader instead of a book meant about 10 minutes longer to fall asleep and less melatonin. One small study."
+    nl:
+      title: "Schermen voor het slapen"
+      body: "Wie 4 uur las op een e-reader in plaats van een boek, deed er zo'n 10 minuten langer over om in slaap te vallen en maakte minder melatonine. Eén kleine studie."
+    de:
+      title: "Bildschirme vor dem Schlafen"
+      body: "Wer 4 Stunden am E-Reader statt im Buch las, brauchte etwa 10 Minuten länger zum Einschlafen und bildete weniger Melatonin. Eine kleine Studie."
+    es:
+      title: "Pantallas antes de dormir"
+      body: "Leer 4 horas en un e-reader en vez de un libro supuso unos 10 minutos más para dormirse y menos melatonina. Un solo estudio pequeño."
+    fr:
+      title: "Écrans avant de dormir"
+      body: "Lire 4 heures sur liseuse au lieu d'un livre, c'était 10 minutes de plus pour s'endormir et moins de mélatonine. Une seule petite étude."
+    pt:
+      title: "Ecrãs antes de dormir"
+      body: "Ler 4 horas num e-reader em vez de um livro deu cerca de 10 minutos a mais para adormecer e menos melatonina. Um só estudo pequeno."
+    tr:
+      title: "Yatmadan önce ekran"
+      body: "Kitap yerine 4 saat e-okuyucuda okumak uykuya dalmayı 10 dakika kadar uzattı ve melatonini azalttı. Tek bir küçük çalışma."
+
+  - key: niet-te-warm
+    kind: fact
+    en:
+      title: "Bedroom temperature"
+      body: "With normal bedding, heat makes you wake more and cuts deep and REM sleep. Cold didn't change sleep stages, as long as you had enough bedding."
+    nl:
+      title: "Temperatuur in de slaapkamer"
+      body: "Met normaal beddengoed laat warmte je vaker wakker worden en vermindert het diepe slaap en REM-slaap. Kou veranderde de slaapfasen niet, mits genoeg dekens."
+    de:
+      title: "Temperatur im Schlafzimmer"
+      body: "Mit normalem Bettzeug lässt Hitze dich öfter aufwachen und kürzt Tief- und REM-Schlaf. Kälte änderte die Schlafphasen nicht, bei genug Bettzeug."
+    es:
+      title: "Temperatura del dormitorio"
+      body: "Con ropa de cama normal, el calor te despierta más y reduce el sueño profundo y REM. El frío no cambió las fases, con suficiente abrigo."
+    fr:
+      title: "Température de la chambre"
+      body: "Avec une literie normale, la chaleur te réveille plus et réduit le sommeil profond et paradoxal. Le froid n'a pas changé les phases, bien couvert."
+    pt:
+      title: "Temperatura do quarto"
+      body: "Com roupa de cama normal, o calor faz-te acordar mais e reduz o sono profundo e REM. O frio não mudou as fases, com roupa de cama suficiente."
+    tr:
+      title: "Yatak odası sıcaklığı"
+      body: "Normal yatak takımıyla sıcak daha sık uyandırır, derin ve REM uykusunu azaltır. Yeterince örtünürsen soğuk uyku evrelerini değiştirmedi."
+
+  - key: geen-ideale-graad
+    kind: myth
+    en:
+      title: "Myth: 18 to 20 °C is the ideal bedroom"
+      body: "Not proven. The review on temperature and sleep gives no ideal number. Just keep your room from getting too warm."
+    nl:
+      title: "Mythe: 18 tot 20 °C is ideaal in de slaapkamer"
+      body: "Niet bewezen. De review over temperatuur en slaap noemt geen ideaal getal. Zorg vooral dat je kamer niet te warm wordt."
+    de:
+      title: "Mythos: 18 bis 20 °C sind ideal"
+      body: "Nicht belegt. Das Review zu Temperatur und Schlaf nennt keine ideale Zahl. Sorg einfach dafür, dass dein Zimmer nicht zu warm wird."
+    es:
+      title: "Mito: 18 a 20 °C es lo ideal"
+      body: "No está probado. La revisión sobre temperatura y sueño no da una cifra ideal. Basta con que tu cuarto no se caliente demasiado."
+    fr:
+      title: "Mythe : 18 à 20 °C, la chambre idéale"
+      body: "Pas prouvé. La revue sur la température et le sommeil ne donne aucun chiffre idéal. Évite juste que ta chambre devienne trop chaude."
+    pt:
+      title: "Mito: 18 a 20 °C é o quarto ideal"
+      body: "Não está provado. A revisão sobre temperatura e sono não dá um número ideal. Só evita que o quarto fique quente demais."
+    tr:
+      title: "Efsane: ideal oda sıcaklığı 18-20 °C"
+      body: "Kanıtlanmadı. Sıcaklık ve uyku üzerine derleme ideal bir sayı vermiyor. Sadece odanın fazla ısınmamasına dikkat et."
+
+  - key: vaste-bedtijd
+    kind: fact
+    en:
+      title: "A regular bedtime"
+      body: "In 60,977 people aged about 63, more regular sleepers had a 20 to 48% lower risk of dying. That's a link from observation, not proof."
+    nl:
+      title: "Een vaste bedtijd"
+      body: "Bij 60.977 mensen van rond de 63 hadden regelmatige slapers 20 tot 48% minder kans om te overlijden. Dat is een verband uit observatie, geen bewijs."
+    de:
+      title: "Feste Schlafenszeit"
+      body: "Bei 60.977 Menschen um die 63 hatten regelmäßige Schläfer ein 20 bis 48% geringeres Sterberisiko. Ein beobachteter Zusammenhang, kein Beweis."
+    es:
+      title: "Una hora fija para dormir"
+      body: "En 60.977 personas de unos 63 años, quienes dormían con más regularidad tenían un 20 a 48% menos riesgo de morir. Es una asociación, no una prueba."
+    fr:
+      title: "Un coucher régulier"
+      body: "Chez 60 977 personnes d'environ 63 ans, les dormeurs réguliers avaient un risque de décès 20 à 48% plus bas. Un lien observé, pas une preuve."
+    pt:
+      title: "Uma hora fixa para dormir"
+      body: "Em 60.977 pessoas com cerca de 63 anos, quem dormia com mais regularidade tinha 20 a 48% menos risco de morrer. É uma associação, não uma prova."
+    tr:
+      title: "Düzenli yatma saati"
+      body: "Yaşı 63 civarı 60.977 kişide daha düzenli uyuyanların ölüm riski %20 ila 48 daha düşüktü. Bu gözleme dayalı bir bağlantı, kanıt değil."
+
+  - key: geen-oplossing-insomnia
+    kind: myth
+    en:
+      title: "Myth: sleep tips fix insomnia"
+      body: "Half true. In 42 trials, most at high risk of bias, tips helped less than CBT-I, a therapy for insomnia. Awake for weeks? See a doctor."
+    nl:
+      title: "Mythe: slaaptips lossen slapeloosheid op"
+      body: "Half waar. In 42 studies, de meeste met hoog risico op bias, hielpen tips minder dan CBT-I, een therapie tegen slapeloosheid. Weken wakker? Ga naar een arts."
+    de:
+      title: "Mythos: Schlaftipps heilen Schlaflosigkeit"
+      body: "Halb wahr. In 42 Studien, meist mit hohem Verzerrungsrisiko, halfen Tipps weniger als KVT-I, eine Therapie. Wochenlang wach? Geh zum Arzt."
+    es:
+      title: "Mito: los consejos curan el insomnio"
+      body: "Verdad a medias. En 42 ensayos, la mayoría con alto riesgo de sesgo, ayudaron menos que la TCC-I, una terapia. ¿Semanas sin dormir? Ve al médico."
+    fr:
+      title: "Mythe : les conseils guérissent l'insomnie"
+      body: "À moitié vrai. Dans 42 essais, souvent à fort risque de biais, ils ont aidé moins que la TCC-I, une thérapie. Insomnie depuis des semaines ? Vois un médecin."
+    pt:
+      title: "Mito: dicas de sono curam a insónia"
+      body: "Meia verdade. Em 42 ensaios, a maioria com alto risco de viés, ajudaram menos do que a TCC-I, uma terapia. Semanas sem dormir? Vai ao médico."
+    tr:
+      title: "Efsane: uyku tavsiyeleri uykusuzluğu çözer"
+      body: "Yarı doğru. Çoğu yüksek yanlılık riskli 42 çalışmada tavsiyeler, bir terapi olan BDT-I'dan az işe yaradı. Haftalardır uyuyamıyorsan doktora git."

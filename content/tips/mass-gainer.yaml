@@ -1,0 +1,145 @@
+article: mass-gainer
+tips:
+  - key: alleen-als-eten-tekortschiet
+    kind: fact
+    en:
+      title: "Do you need a gainer?"
+      body: "Only if food alone can't get you to a surplus of 150 to 300 kcal a day. If it can, you don't need the powder."
+    nl:
+      title: "Heb je een gainer nodig?"
+      body: "Alleen als je met eten alleen geen overschot van 150 tot 300 kcal per dag haalt. Lukt dat wel, dan heb je het poeder niet nodig."
+    de:
+      title: "Brauchst du einen Gainer?"
+      body: "Nur wenn du mit Essen allein keinen Überschuss von 150 bis 300 kcal am Tag schaffst. Klappt das, brauchst du das Pulver nicht."
+    es:
+      title: "¿Necesitas un gainer?"
+      body: "Solo si con comida no llegas a un superávit de 150 a 300 kcal al día. Si llegas, no necesitas el polvo."
+    fr:
+      title: "As-tu besoin d'un gainer ?"
+      body: "Seulement si tu n'atteins pas un surplus de 150 à 300 kcal par jour avec ton assiette. Sinon, la poudre est inutile."
+    pt:
+      title: "Precisas de um gainer?"
+      body: "Só se com comida não chegas a um excedente de 150 a 300 kcal por dia. Se chegas, não precisas do pó."
+    tr:
+      title: "Gainer'a ihtiyacın var mı?"
+      body: "Sadece yemekle günde 150 ila 300 kcal fazlaya ulaşamıyorsan. Ulaşabiliyorsan toza ihtiyacın yok."
+
+  - key: geen-spierbouwer
+    kind: myth
+    en:
+      title: "Myth: a mass gainer builds muscle"
+      body: "Not by itself. A gainer is dense calories in a tub. It makes eating more easier, and that is all it does."
+    nl:
+      title: "Mythe: een gainer bouwt spier"
+      body: "Niet uit zichzelf. Een gainer is gewoon veel calorieën in een pot. Het maakt meer eten makkelijker, en daar houdt het op."
+    de:
+      title: "Mythos: ein Gainer baut Muskeln"
+      body: "Nicht von selbst. Ein Gainer sind viele Kalorien in einer Dose. Er macht das Mehressen leichter, mehr nicht."
+    es:
+      title: "Mito: un gainer construye músculo"
+      body: "No por sí solo. Un gainer son muchas calorías en un bote. Te pone más fácil comer más, y nada más."
+    fr:
+      title: "Mythe : un gainer fait du muscle"
+      body: "Pas tout seul. Un gainer, ce sont des calories denses dans un pot. Il aide à manger plus, rien de plus."
+    pt:
+      title: "Mito: um gainer constrói músculo"
+      body: "Não sozinho. Um gainer são muitas calorias num pote. Torna mais fácil comer mais, e é só isso."
+    tr:
+      title: "Efsane: gainer kas yapar"
+      body: "Tek başına değil. Gainer bir kutu yoğun kaloridir. Daha çok yemeyi kolaylaştırır, o kadar."
+
+  - key: etiket
+    kind: fact
+    en:
+      title: "Reading the label"
+      body: "Pick a gainer with about 20 to 40 g of protein per serving and clear macros. Skip the ones loaded with sugar."
+    nl:
+      title: "Lees het etiket"
+      body: "Kies een gainer met zo'n 20 tot 40 gram eiwit per portie en duidelijke macro's. Laat de suikerbommen staan."
+    de:
+      title: "Aufs Etikett schauen"
+      body: "Nimm einen Gainer mit etwa 20 bis 40 g Protein pro Portion und klaren Makros. Lass die Zuckerbomben stehen."
+    es:
+      title: "Mira la etiqueta"
+      body: "Elige un gainer con unos 20 a 40 g de proteína por ración y macros claros. Deja los que van cargados de azúcar."
+    fr:
+      title: "Lis l'étiquette"
+      body: "Choisis un gainer avec environ 20 à 40 g de protéines par portion et des macros claires. Évite les bombes à sucre."
+    pt:
+      title: "Lê o rótulo"
+      body: "Escolhe um gainer com cerca de 20 a 40 g de proteína por dose e macros claros. Deixa os que vêm carregados de açúcar."
+    tr:
+      title: "Etiketi oku"
+      body: "Porsiyon başına 20 ila 40 g protein ve net makroları olan bir gainer seç. Şeker yüklü olanları bırak."
+
+  - key: kleinere-shakes
+    kind: fact
+    en:
+      title: "Split the shake"
+      body: "Huge shakes can upset your stomach. Smaller servings spread over the day are easier to digest."
+    nl:
+      title: "Verdeel je shake"
+      body: "Een enorme shake kan flink op je maag slaan. Kleinere porties verspreid over de dag verteren makkelijker."
+    de:
+      title: "Teil den Shake auf"
+      body: "Riesige Shakes können dir auf den Magen schlagen. Kleinere Portionen über den Tag verteilt verträgst du besser."
+    es:
+      title: "Reparte el batido"
+      body: "Un batido enorme puede sentarte mal. Raciones más pequeñas repartidas durante el día se digieren mejor."
+    fr:
+      title: "Fractionne ton shake"
+      body: "Un shake énorme peut te peser sur l'estomac. Des portions plus petites réparties sur la journée passent mieux."
+    pt:
+      title: "Divide o batido"
+      body: "Um batido enorme pode cair mal no estômago. Doses mais pequenas ao longo do dia digerem-se melhor."
+    tr:
+      title: "Shake'i böl"
+      body: "Dev bir shake midene dokunabilir. Güne yayılmış küçük porsiyonlar daha kolay sindirilir."
+
+  - key: echte-maaltijden
+    kind: fact
+    en:
+      title: "Gainer next to real food"
+      body: "Swap meals for a gainer and you miss vitamins, minerals and fiber. Use it next to your meals, not instead of them."
+    nl:
+      title: "Gainer naast echt eten"
+      body: "Vervang je maaltijden door een gainer, dan mis je vitamines, mineralen en vezels. Neem hem naast je eten, niet in plaats ervan."
+    de:
+      title: "Gainer neben echtem Essen"
+      body: "Ersetzt du Mahlzeiten durch einen Gainer, fehlen dir Vitamine, Mineralstoffe und Ballaststoffe. Nimm ihn zusätzlich, nicht stattdessen."
+    es:
+      title: "Gainer junto a comida real"
+      body: "Si cambias comidas por un gainer, te faltan vitaminas, minerales y fibra. Tómalo junto a tus comidas, no en su lugar."
+    fr:
+      title: "Le gainer avec de vrais repas"
+      body: "Remplace tes repas par un gainer et tu manques de vitamines, minéraux et fibres. Prends-le en plus, pas à la place."
+    pt:
+      title: "Gainer ao lado de comida real"
+      body: "Se trocas refeições por um gainer, faltam-te vitaminas, minerais e fibra. Toma-o junto às refeições, não em vez delas."
+    tr:
+      title: "Gerçek yemeğin yanında gainer"
+      body: "Öğünleri gainer'la değiştirirsen vitamin, mineral ve lifi kaçırırsın. Öğünlerinin yanında kullan, yerine değil."
+
+  - key: calorieen-tellen
+    kind: fact
+    en:
+      title: "Gainers and fat gain"
+      body: "A gainer makes it easy to overshoot your surplus, and the extra goes on as fat. Keep tracking your total calories."
+    nl:
+      title: "Gainers en vet"
+      body: "Met een gainer schiet je makkelijk over je overschot heen, en dat teveel wordt vet. Blijf je totale calorieën bijhouden."
+    de:
+      title: "Gainer und Fett"
+      body: "Mit einem Gainer schießt du leicht über deinen Überschuss hinaus, und das Zuviel wird Fett. Behalte deine Gesamtkalorien im Blick."
+    es:
+      title: "Los gainers y la grasa"
+      body: "Con un gainer es fácil pasarte del superávit, y lo que sobra se queda como grasa. Sigue controlando tus calorías totales."
+    fr:
+      title: "Gainer et prise de gras"
+      body: "Avec un gainer, tu dépasses vite ton surplus, et l'excès part en gras. Continue de suivre tes calories totales."
+    pt:
+      title: "Gainers e gordura"
+      body: "Com um gainer é fácil passares do excedente, e o que sobra vira gordura. Continua a registar as tuas calorias totais."
+    tr:
+      title: "Gainer ve yağ"
+      body: "Gainer'la kalori fazlanı kolayca aşarsın, fazlası da yağ olur. Toplam kalorini takip etmeye devam et."

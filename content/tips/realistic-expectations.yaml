@@ -1,0 +1,217 @@
+article: realistic-expectations
+tips:
+  - key: eerste-half-jaar
+    kind: fact
+    en:
+      title: "The first six months"
+      body: "In weight loss trials, people who finished lost 5 to 9% of their weight in the first six months on average. Then it levelled off."
+    nl:
+      title: "Het eerste halfjaar"
+      body: "In afvalstudies verloren mensen die het afmaakten gemiddeld 5 tot 9% van hun gewicht in het eerste halfjaar. Daarna vlakte het af."
+    de:
+      title: "Die ersten sechs Monate"
+      body: "In Abnehmstudien verloren alle, die bis zum Ende dabei waren, im Schnitt 5 bis 9% ihres Gewichts im ersten halben Jahr. Danach flachte es ab."
+    es:
+      title: "Los primeros seis meses"
+      body: "En ensayos de pérdida de peso, quienes terminaron perdieron de media un 5 a 9% de su peso en los primeros seis meses. Luego se estabilizó."
+    fr:
+      title: "Les six premiers mois"
+      body: "Dans les essais de perte de poids, ceux qui sont allés au bout ont perdu en moyenne 5 à 9% de leur poids en six mois. Puis ça s'est stabilisé."
+    pt:
+      title: "Os primeiros seis meses"
+      body: "Em ensaios de perda de peso, quem terminou perdeu em média 5 a 9% do peso nos primeiros seis meses. Depois estabilizou."
+    tr:
+      title: "İlk altı ay"
+      body: "Kilo verme çalışmalarını tamamlayanlar ilk altı ayda ortalama kilolarının %5 ila 9'unu verdi. Sonra kilo kaybı yavaşladı."
+
+  - key: jaren-later
+    kind: fact
+    en:
+      title: "Years later"
+      body: "Finishers in those trials still had about 3 to 4 kg off after two to four years. But 29% had dropped out after a year, mostly not counted."
+    nl:
+      title: "Jaren later"
+      body: "Wie die studies afmaakte, had na twee tot vier jaar nog zo'n 3 tot 4 kg minder. Maar na een jaar was 29% afgehaakt, en die telden meestal niet mee."
+    de:
+      title: "Jahre später"
+      body: "Wer durchhielt, hatte nach zwei bis vier Jahren noch etwa 3 bis 4 kg weniger. Aber nach einem Jahr waren 29% ausgestiegen, meist nicht mitgezählt."
+    es:
+      title: "Años después"
+      body: "Quienes terminaron seguían con unos 3 a 4 kg menos tras dos a cuatro años. Pero al año el 29% lo había dejado, y casi nunca se les contó."
+    fr:
+      title: "Des années après"
+      body: "Ceux qui sont allés au bout avaient encore 3 à 4 kg en moins après deux à quatre ans. Mais 29% avaient abandonné à un an, souvent non comptés."
+    pt:
+      title: "Anos depois"
+      body: "Quem terminou ainda tinha uns 3 a 4 kg a menos ao fim de dois a quatro anos. Mas ao fim de um ano 29% tinham desistido, quase sempre sem contar."
+    tr:
+      title: "Yıllar sonra"
+      body: "Çalışmayı bitirenlerde iki ila dört yıl sonra hâlâ 3 ila 4 kg eksik vardı. Ama bir yılda %29'u bırakmıştı ve çoğu hesaba katılmadı."
+
+  - key: alleen-sporten
+    kind: myth
+    en:
+      title: "Myth: exercise alone melts the weight off"
+      body: "Not true. In a review of 80 weight loss trials, exercise alone gave little weight loss. Programs that included a diet did better."
+    nl:
+      title: "Mythe: alleen sporten laat de kilo's smelten"
+      body: "Klopt niet. In een review van 80 afvalstudies gaf alleen sporten weinig gewichtsverlies. Programma's met een dieet erbij deden het beter."
+    de:
+      title: "Mythos: Sport allein lässt Kilos schmelzen"
+      body: "Stimmt nicht. In einem Review von 80 Abnehmstudien brachte Sport allein wenig Gewichtsverlust. Programme mit Diät schnitten besser ab."
+    es:
+      title: "Mito: solo con ejercicio adelgazas"
+      body: "No es cierto. En una revisión de 80 ensayos, el ejercicio solo dio poca pérdida de peso. Los programas con dieta funcionaron mejor."
+    fr:
+      title: "Mythe : le sport seul fait fondre les kilos"
+      body: "Faux. Dans une revue de 80 essais de perte de poids, le sport seul a fait perdre peu de poids. Les programmes avec un régime ont fait mieux."
+    pt:
+      title: "Mito: só com exercício perdes peso"
+      body: "Não é verdade. Numa revisão de 80 ensaios, o exercício sozinho deu pouca perda de peso. Os programas com dieta resultaram melhor."
+    tr:
+      title: "Efsane: sadece spor kiloları eritir"
+      body: "Doğru değil. 80 kilo verme çalışmasını inceleyen bir derlemede sadece egzersiz az kilo kaybı sağladı. Diyet içeren programlar daha iyiydi."
+
+  - key: spieropbouw-tempo
+    kind: fact
+    en:
+      title: "How fast muscle comes"
+      body: "In men aged 18 to 40, about ten weeks of lifting added 1.54 kg of fat-free mass in beginners and 0.98 kg in trained men. No women were studied."
+    nl:
+      title: "Hoe snel spier komt"
+      body: "Bij mannen van 18 tot 40 gaf zo'n tien weken krachttraining 1,54 kg vetvrije massa bij beginners en 0,98 kg bij getrainden. Vrouwen zaten er niet in."
+    de:
+      title: "Wie schnell Muskeln kommen"
+      body: "Bei Männern von 18 bis 40 brachten etwa zehn Wochen Training 1,54 kg fettfreie Masse bei Anfängern und 0,98 kg bei Trainierten. Frauen fehlten."
+    es:
+      title: "A qué ritmo llega el músculo"
+      body: "En hombres de 18 a 40, unas diez semanas de pesas sumaron 1,54 kg de masa libre de grasa en novatos y 0,98 kg en entrenados. No se estudió a mujeres."
+    fr:
+      title: "À quel rythme vient le muscle"
+      body: "Chez des hommes de 18 à 40 ans, dix semaines de muscu ont ajouté 1,54 kg de masse maigre aux débutants, 0,98 kg aux entraînés. Pas de femmes étudiées."
+    pt:
+      title: "A que ritmo vem o músculo"
+      body: "Em homens dos 18 aos 40, cerca de dez semanas de treino deram 1,54 kg de massa magra a principiantes e 0,98 kg a treinados. Sem mulheres no estudo."
+    tr:
+      title: "Kas ne hızla gelir"
+      body: "18-40 yaş erkeklerde yaklaşık on haftalık antrenman yeni başlayanlara 1,54 kg, antrenmanlılara 0,98 kg yağsız kütle ekledi. Kadınlar incelenmedi."
+
+  - key: niemand-houdt-het-vol
+    kind: myth
+    en:
+      title: "Myth: nobody keeps the weight off"
+      body: "Not true. In a US survey, 17.3% of adults who had ever been overweight said they'd kept off at least 10% of their weight for a year or more."
+    nl:
+      title: "Mythe: niemand houdt het gewicht eraf"
+      body: "Klopt niet. In een Amerikaanse enquête zei 17,3% van de volwassenen die ooit overgewicht hadden minstens 10% eraf te houden, een jaar of langer."
+    de:
+      title: "Mythos: niemand hält das Gewicht"
+      body: "Stimmt nicht. In einer US-Umfrage sagten 17,3% der Erwachsenen mit früherem Übergewicht, sie hätten mindestens 10% ein Jahr oder länger gehalten."
+    es:
+      title: "Mito: nadie mantiene el peso perdido"
+      body: "No es cierto. En una encuesta de EE. UU., el 17,3% de adultos que alguna vez tuvieron sobrepeso dijo mantener al menos un 10% menos un año o más."
+    fr:
+      title: "Mythe : personne ne garde le poids perdu"
+      body: "Faux. Dans une enquête américaine, 17,3% des adultes ayant déjà été en surpoids disaient garder au moins 10% en moins depuis un an ou plus."
+    pt:
+      title: "Mito: ninguém mantém o peso perdido"
+      body: "Não é verdade. Num inquérito nos EUA, 17,3% dos adultos que já tiveram excesso de peso disseram manter pelo menos 10% a menos há um ano ou mais."
+    tr:
+      title: "Efsane: kimse verdiği kiloyu koruyamaz"
+      body: "Doğru değil. ABD'de bir ankette, bir zamanlar fazla kilolu olan yetişkinlerin %17,3'ü kilosunun en az %10'unu bir yıl ya da daha uzun koruduğunu söyledi."
+
+  - key: register-lange-termijn
+    kind: fact
+    en:
+      title: "Keeping it off for years"
+      body: "In a US registry of people who lost 13.6 kg or more and kept it off a year, over 87% were estimated to keep 10% off at 5 and 10 years."
+    nl:
+      title: "Jarenlang eraf houden"
+      body: "In een Amerikaans register van mensen die 13,6 kg of meer kwijt waren en dat een jaar volhielden, hield naar schatting ruim 87% na 5 en 10 jaar nog 10% eraf."
+    de:
+      title: "Über Jahre halten"
+      body: "In einem US-Register mit Leuten, die 13,6 kg oder mehr abnahmen und ein Jahr hielten, hielten geschätzt über 87% nach 5 und 10 Jahren noch 10%."
+    es:
+      title: "Mantenerlo años"
+      body: "En un registro de EE. UU. de gente que perdió 13,6 kg o más y lo mantuvo un año, se estima que más del 87% seguía con un 10% menos a 5 y 10 años."
+    fr:
+      title: "Tenir des années"
+      body: "Dans un registre américain de gens ayant perdu 13,6 kg ou plus tenus un an, plus de 87% gardaient selon les estimations 10% en moins à 5 et 10 ans."
+    pt:
+      title: "Manter durante anos"
+      body: "Num registo dos EUA de pessoas que perderam 13,6 kg ou mais e mantiveram um ano, estima-se que mais de 87% tinham 10% a menos aos 5 e 10 anos."
+    tr:
+      title: "Yıllarca korumak"
+      body: "13,6 kg ya da daha fazla verip bir yıl koruyanların ABD kaydında, 5 ve 10 yıl sonra %87'den fazlasının hâlâ %10'u koruduğu tahmin edildi."
+
+  - key: register-kanttekening
+    kind: fact
+    en:
+      title: "A registry of successes"
+      body: "Those people signed up because they had succeeded, and reported their own weight. So that 87% is not your chance at the start."
+    nl:
+      title: "Een register vol successen"
+      body: "Die mensen meldden zich aan omdat het ze gelukt was, en gaven zelf hun gewicht op. Die 87% is dus niet jouw kans bij de start."
+    de:
+      title: "Ein Register voller Erfolge"
+      body: "Diese Leute meldeten sich an, weil es geklappt hatte, und gaben ihr Gewicht selbst an. Die 87% sind also nicht deine Chance am Start."
+    es:
+      title: "Un registro de éxitos"
+      body: "Esas personas se apuntaron porque lo habían logrado, y dieron su propio peso. Así que ese 87% no es tu probabilidad al empezar."
+    fr:
+      title: "Un registre de réussites"
+      body: "Ces gens se sont inscrits parce qu'ils avaient réussi, et ont donné leur poids eux-mêmes. Ces 87% ne sont donc pas ta chance au départ."
+    pt:
+      title: "Um registo de sucessos"
+      body: "Essas pessoas inscreveram-se porque tinham conseguido, e deram o próprio peso. Por isso esses 87% não são a tua hipótese no início."
+    tr:
+      title: "Başarılardan oluşan bir kayıt"
+      body: "Bu kişiler başardıkları için kaydoldu ve kilolarını kendileri bildirdi. Yani o %87 başlangıçtaki şansın değil."
+
+  - key: wat-terugkomen-voorspelt
+    kind: fact
+    en:
+      title: "What regain went with"
+      body: "In that registry, more regain went with less exercise, less restraint around food and weighing less often."
+    nl:
+      title: "Waar terugkomen mee samenging"
+      body: "In dat register ging meer aankomen samen met minder bewegen, minder letten op wat je eet en minder vaak wegen."
+    de:
+      title: "Womit Zunahme einherging"
+      body: "In diesem Register ging mehr Zunahme mit weniger Bewegung, weniger Zurückhaltung beim Essen und seltenerem Wiegen einher."
+    es:
+      title: "Con qué iba la recuperación"
+      body: "En ese registro, recuperar más peso iba unido a menos ejercicio, menos control con la comida y pesarse menos a menudo."
+    fr:
+      title: "Ce qui allait avec la reprise"
+      body: "Dans ce registre, plus de reprise allait avec moins d'exercice, moins de retenue à table et des pesées moins fréquentes."
+    pt:
+      title: "O que acompanhou a recuperação"
+      body: "Nesse registo, recuperar mais peso andou junto com menos exercício, menos contenção na comida e pesar-se menos vezes."
+    tr:
+      title: "Geri alma neyle birlikteydi"
+      body: "O kayıtta daha çok geri alma; daha az egzersiz, yemekte daha az dikkat ve daha seyrek tartılmayla birlikte görüldü."
+
+  - key: doelen-die-je-stuurt
+    kind: fact
+    en:
+      title: "Goals you control"
+      body: "You decide whether you train three times this week. You don't decide what the scale says on Monday. Pick goals of the first kind."
+    nl:
+      title: "Doelen die je zelf stuurt"
+      body: "Of je deze week drie keer traint, bepaal jij. Wat de weegschaal maandag zegt niet. Kies doelen van de eerste soort."
+    de:
+      title: "Ziele, die du steuerst"
+      body: "Ob du diese Woche dreimal trainierst, entscheidest du. Was die Waage am Montag zeigt, nicht. Wähl Ziele der ersten Art."
+    es:
+      title: "Metas que controlas"
+      body: "Tú decides si entrenas tres veces esta semana. No decides lo que marca la báscula el lunes. Elige metas del primer tipo."
+    fr:
+      title: "Des objectifs à ta main"
+      body: "Tu décides si tu t'entraînes trois fois cette semaine. Pas ce que dira la balance lundi. Choisis des objectifs du premier type."
+    pt:
+      title: "Objetivos que controlas"
+      body: "Tu decides se treinas três vezes esta semana. Não decides o que a balança diz na segunda. Escolhe objetivos do primeiro tipo."
+    tr:
+      title: "Kontrol edebildiğin hedefler"
+      body: "Bu hafta üç kez antrenman yapıp yapmayacağına sen karar verirsin. Tartının pazartesi ne diyeceğine değil. İlk türden hedefler seç."

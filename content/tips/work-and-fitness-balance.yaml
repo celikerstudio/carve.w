@@ -1,0 +1,169 @@
+article: work-and-fitness-balance
+tips:
+  - key: vaste-tijden
+    kind: fact
+    en:
+      title: "Book it like a meeting"
+      body: "Pick fixed training days and times, like lunch or straight after work, and put them in your calendar with a reminder."
+    nl:
+      title: "Plan het als een afspraak"
+      body: "Kies vaste trainingsdagen en -tijden, zoals in de lunch of direct na werk, en zet ze in je agenda met een herinnering."
+    de:
+      title: "Trag es ein wie ein Meeting"
+      body: "Leg feste Trainingstage und -zeiten fest, etwa mittags oder direkt nach der Arbeit, und trag sie mit Erinnerung in den Kalender ein."
+    es:
+      title: "Agéndalo como una reunión"
+      body: "Elige días y horas fijas para entrenar, como a mediodía o al salir del trabajo, y ponlos en tu agenda con un aviso."
+    fr:
+      title: "Note-le comme une réunion"
+      body: "Choisis des jours et heures fixes, comme le midi ou juste après le boulot, et mets-les dans ton agenda avec un rappel."
+    pt:
+      title: "Marca como uma reunião"
+      body: "Escolhe dias e horas fixos para treinar, como ao almoço ou logo depois do trabalho, e põe-nos na agenda com um lembrete."
+    tr:
+      title: "Toplantı gibi ayır"
+      body: "Öğle arası ya da işten hemen sonra gibi sabit antrenman günleri ve saatleri seç, takvimine hatırlatıcıyla ekle."
+
+  - key: kort-is-genoeg
+    kind: myth
+    en:
+      title: "Myth: progress needs long sessions"
+      body: "Not true. When time is tight, short and focused sessions keep your progressive overload going."
+    nl:
+      title: "Mythe: vooruitgang vraagt lange trainingen"
+      body: "Klopt niet. Als je weinig tijd hebt, houden korte, gerichte trainingen je progressie gewoon gaande."
+    de:
+      title: "Mythos: Fortschritt braucht lange Einheiten"
+      body: "Stimmt nicht. Wenn die Zeit knapp ist, halten kurze, fokussierte Einheiten deine Steigerung am Laufen."
+    es:
+      title: "Mito: progresar exige sesiones largas"
+      body: "No es cierto. Con poco tiempo, sesiones cortas y centradas mantienen tu sobrecarga progresiva en marcha."
+    fr:
+      title: "Mythe : progresser demande de longues séances"
+      body: "Faux. Quand le temps manque, des séances courtes et ciblées font continuer ta surcharge progressive."
+    pt:
+      title: "Mito: progredir exige treinos longos"
+      body: "Não é verdade. Com pouco tempo, treinos curtos e focados mantêm a tua sobrecarga progressiva a andar."
+    tr:
+      title: "Efsane: ilerlemek uzun antrenman ister"
+      body: "Doğru değil. Zaman azken kısa ve odaklı antrenmanlar progresif yüklemeni sürdürür."
+
+  - key: drukke-week
+    kind: fact
+    en:
+      title: "A slammed week"
+      body: "Skipping training entirely in a busy week is a common mistake. Scale down to two compound lifts plus a few accessories instead."
+    nl:
+      title: "Een overvolle week"
+      body: "In een drukke week helemaal niet trainen is een veelgemaakte fout. Schaal liever terug naar twee basisoefeningen plus wat aanvullend werk."
+    de:
+      title: "Eine volle Woche"
+      body: "In einer stressigen Woche ganz auszusetzen ist ein häufiger Fehler. Geh lieber runter auf zwei Grundübungen plus etwas Zusatzarbeit."
+    es:
+      title: "Una semana a tope"
+      body: "Saltarte del todo el entreno en una semana de locos es un error común. Mejor baja a dos ejercicios básicos y algún accesorio."
+    fr:
+      title: "Une semaine surchargée"
+      body: "Sauter complètement l'entraînement une semaine chargée est une erreur courante. Réduis plutôt à deux exercices de base et un peu d'accessoires."
+    pt:
+      title: "Uma semana a abarrotar"
+      body: "Saltar o treino por completo numa semana cheia é um erro comum. Em vez disso, baixa para dois exercícios compostos e uns acessórios."
+    tr:
+      title: "Yoğun bir hafta"
+      body: "Yoğun bir haftada antrenmanı tamamen atlamak yaygın bir hata. Bunun yerine iki temel hareket ve birkaç yardımcı harekete in."
+
+  - key: vaste-maaltijden
+    kind: fact
+    en:
+      title: "Two or three go-to meals"
+      body: "Prep two or three go-to meals that cover your protein and calories. Overcomplicated meals push you towards takeout."
+    nl:
+      title: "Twee of drie vaste maaltijden"
+      body: "Bereid twee of drie vaste maaltijden voor die je eiwit en calorieën dekken. Te ingewikkeld koken drijft je naar afhaaleten."
+    de:
+      title: "Zwei, drei Standardgerichte"
+      body: "Bereite zwei oder drei Standardgerichte vor, die Eiweiß und Kalorien abdecken. Zu komplizierte Mahlzeiten treiben dich zum Lieferdienst."
+    es:
+      title: "Dos o tres comidas fijas"
+      body: "Prepara dos o tres comidas fijas que cubran tu proteína y tus calorías. Complicarte con la comida te empuja a pedir a domicilio."
+    fr:
+      title: "Deux ou trois repas types"
+      body: "Prépare deux ou trois repas types qui couvrent tes protéines et tes calories. Des repas trop compliqués te poussent vers la livraison."
+    pt:
+      title: "Duas ou três refeições fixas"
+      body: "Prepara duas ou três refeições fixas que cubram a proteína e as calorias. Complicar a comida empurra-te para o take-away."
+    tr:
+      title: "İki üç hazır öğün"
+      body: "Proteinini ve kalorini karşılayan iki üç sabit öğün hazırla. Fazla karmaşık yemekler seni paket servise iter."
+
+  - key: tas-ingepakt
+    kind: fact
+    en:
+      title: "Bag by the door"
+      body: "Keep your gym bag packed. Less to sort out means less friction on a busy day."
+    nl:
+      title: "Tas bij de deur"
+      body: "Houd je sporttas ingepakt. Minder te regelen betekent minder gedoe op een drukke dag."
+    de:
+      title: "Tasche an der Tür"
+      body: "Halt deine Sporttasche gepackt. Weniger zu organisieren heißt weniger Hürden an einem vollen Tag."
+    es:
+      title: "La bolsa en la puerta"
+      body: "Ten la bolsa del gimnasio hecha. Menos que organizar es menos fricción en un día lleno."
+    fr:
+      title: "Le sac près de la porte"
+      body: "Garde ton sac de sport prêt. Moins de choses à gérer, c'est moins de friction un jour chargé."
+    pt:
+      title: "O saco à porta"
+      body: "Tem o saco do ginásio sempre feito. Menos coisas para tratar é menos atrito num dia cheio."
+    tr:
+      title: "Çanta kapının yanında"
+      body: "Spor çantanı hazır tut. Halledecek daha az şey, yoğun bir günde daha az engel demek."
+
+  - key: slaap-beschermen
+    kind: fact
+    en:
+      title: "Protect your sleep"
+      body: "Aim for 7 to 9 hours with a steady wake time. Letting sleep slide drags down the quality of your training."
+    nl:
+      title: "Bescherm je slaap"
+      body: "Mik op 7 tot 9 uur met een vaste opstaantijd. Laat je slaap versloffen, dan lijdt je training eronder."
+    de:
+      title: "Schütz deinen Schlaf"
+      body: "Peil 7 bis 9 Stunden mit fester Aufstehzeit an. Lässt du den Schlaf schleifen, leidet die Qualität deines Trainings."
+    es:
+      title: "Protege tu sueño"
+      body: "Apunta a 7 a 9 horas con una hora fija de levantarte. Si descuidas el sueño, la calidad de tu entreno se resiente."
+    fr:
+      title: "Protège ton sommeil"
+      body: "Vise 7 à 9 heures avec une heure de lever fixe. Si tu laisses filer ton sommeil, la qualité de tes séances en pâtit."
+    pt:
+      title: "Protege o sono"
+      body: "Aponta para 7 a 9 horas com uma hora fixa de acordar. Se deixas o sono escorregar, a qualidade do treino sofre."
+    tr:
+      title: "Uykunu koru"
+      body: "Sabit bir kalkış saatiyle 7 ila 9 saat hedefle. Uykunu ihmal edersen antrenmanının kalitesi düşer."
+
+  - key: cafeine-stop
+    kind: fact
+    en:
+      title: "Caffeine cut-off"
+      body: "Time your last coffee by when you go to bed. It's part of protecting your 7 to 9 hours of sleep."
+    nl:
+      title: "Cafeïnestop"
+      body: "Stem je laatste koffie af op je bedtijd. Dat hoort bij het beschermen van je 7 tot 9 uur slaap."
+    de:
+      title: "Koffein-Stopp"
+      body: "Richte deinen letzten Kaffee nach deiner Schlafenszeit. Das gehört dazu, deine 7 bis 9 Stunden Schlaf zu schützen."
+    es:
+      title: "Hora límite de cafeína"
+      body: "Fija tu último café según tu hora de dormir. Es parte de proteger tus 7 a 9 horas de sueño."
+    fr:
+      title: "Stop caféine"
+      body: "Cale ton dernier café sur ton heure de coucher. Ça fait partie de protéger tes 7 à 9 heures de sommeil."
+    pt:
+      title: "Limite da cafeína"
+      body: "Define o último café pela hora de deitar. Faz parte de proteger as tuas 7 a 9 horas de sono."
+    tr:
+      title: "Kafein sınırı"
+      body: "Son kahveni yatma saatine göre ayarla. Bu, 7 ila 9 saatlik uykunu korumanın bir parçası."

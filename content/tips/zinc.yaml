@@ -1,0 +1,241 @@
+article: zinc
+tips:
+  - key: hoeveel-per-dag
+    kind: fact
+    en:
+      title: "Zinc"
+      body: "EFSA recommends 9.4 to 16.3 mg a day for men and 7.5 to 12.7 mg for women. Where you land depends on phytate in your diet."
+    nl:
+      title: "Zink"
+      body: "EFSA adviseert 9,4 tot 16,3 mg per dag voor mannen en 7,5 tot 12,7 mg voor vrouwen. Waar je zit, hangt af van fytaat in je eten."
+    de:
+      title: "Zink"
+      body: "Die EFSA empfiehlt Männern 9,4 bis 16,3 mg am Tag, Frauen 7,5 bis 12,7 mg. Wo du landest, hängt vom Phytat im Essen ab."
+    es:
+      title: "Zinc"
+      body: "La EFSA recomienda 9,4 a 16,3 mg al día a hombres y 7,5 a 12,7 mg a mujeres. Depende del fitato de tu dieta."
+    fr:
+      title: "Zinc"
+      body: "L'EFSA conseille 9,4 à 16,3 mg par jour aux hommes et 7,5 à 12,7 mg aux femmes. Ça dépend du phytate de ton alimentation."
+    pt:
+      title: "Zinco"
+      body: "A EFSA recomenda 9,4 a 16,3 mg por dia a homens e 7,5 a 12,7 mg a mulheres. Depende do fitato da tua alimentação."
+    tr:
+      title: "Çinko"
+      body: "EFSA erkeklere günde 9,4 ila 16,3 mg, kadınlara 7,5 ila 12,7 mg öneriyor. Nerede olduğun yediklerindeki fitata bağlı."
+
+  - key: fytaat
+    kind: fact
+    en:
+      title: "Zinc and phytate"
+      body: "Phytate in plant foods binds zinc and stops it being absorbed. For vegetarians the need may be up to 50% greater."
+    nl:
+      title: "Zink en fytaat"
+      body: "Fytaat in plantaardig eten bindt zink, zodat je het niet opneemt. Voor vegetariërs kan de behoefte tot 50% hoger zijn."
+    de:
+      title: "Zink und Phytat"
+      body: "Phytat in Pflanzenkost bindet Zink, sodass du es nicht aufnimmst. Bei Vegetariern kann der Bedarf bis zu 50% höher sein."
+    es:
+      title: "Zinc y fitato"
+      body: "El fitato de los vegetales atrapa el zinc y evita que lo absorbas. En vegetarianos la necesidad puede ser hasta un 50% mayor."
+    fr:
+      title: "Zinc et phytate"
+      body: "Le phytate des aliments végétaux fixe le zinc et bloque son absorption. Chez les végétariens, le besoin peut être 50% plus élevé."
+    pt:
+      title: "Zinco e fitato"
+      body: "O fitato dos alimentos vegetais prende o zinco e impede que o absorvas. Em vegetarianos a necessidade pode ser até 50% maior."
+    tr:
+      title: "Çinko ve fitat"
+      body: "Bitkisel gıdalardaki fitat çinkoyu bağlar ve emilimini engeller. Vejetaryenlerde ihtiyaç %50'ye kadar daha fazla olabilir."
+
+  - key: grens-telt-eten-mee
+    kind: myth
+    en:
+      title: "Myth: the 25 mg limit is for supplements"
+      body: "Not true. The 25 mg a day is for all your zinc, food and supplements together."
+    nl:
+      title: "Mythe: de grens van 25 mg is voor supplementen"
+      body: "Klopt niet. Die 25 mg per dag geldt voor al je zink, eten en supplementen bij elkaar."
+    de:
+      title: "Mythos: Die 25 mg gelten für Supplemente"
+      body: "Stimmt nicht. Die 25 mg am Tag gelten für dein gesamtes Zink, Essen und Präparate zusammen."
+    es:
+      title: "Mito: el límite de 25 mg es para suplementos"
+      body: "No es así. Los 25 mg al día cuentan todo tu zinc, comida y suplementos juntos."
+    fr:
+      title: "Mythe : les 25 mg, c'est pour les compléments"
+      body: "Faux. Les 25 mg par jour valent pour tout ton zinc, alimentation et compléments ensemble."
+    pt:
+      title: "Mito: o limite de 25 mg é para suplementos"
+      body: "Não é verdade. Os 25 mg por dia contam todo o teu zinco, comida e suplementos juntos."
+    tr:
+      title: "Efsane: 25 mg sınırı takviyeler içindir"
+      body: "Doğru değil. Günlük 25 mg, yiyecek ve takviye dahil tüm çinkon için geçerli."
+
+  - key: capsule-van-30-mg
+    kind: fact
+    en:
+      title: "One capsule, over the limit"
+      body: "A common single zinc capsule holds 30 mg. That is above the 25 mg daily limit on its own, before you count your food."
+    nl:
+      title: "Eén capsule, al over de grens"
+      body: "Een gangbare zinkcapsule bevat 30 mg. Dat zit in z'n eentje al boven de grens van 25 mg per dag, nog zonder je eten."
+    de:
+      title: "Eine Kapsel, schon drüber"
+      body: "Eine übliche Zinkkapsel hat 30 mg. Das liegt allein schon über der Grenze von 25 mg am Tag, ohne dein Essen."
+    es:
+      title: "Una cápsula, ya pasada"
+      body: "Una cápsula de zinc común lleva 30 mg. Ya supera sola el límite de 25 mg al día, sin contar la comida."
+    fr:
+      title: "Une gélule, déjà trop"
+      body: "Une gélule de zinc courante contient 30 mg. Elle dépasse à elle seule la limite de 25 mg par jour, sans compter ton assiette."
+    pt:
+      title: "Uma cápsula, já acima"
+      body: "Uma cápsula de zinco comum tem 30 mg. Sozinha já passa o limite de 25 mg por dia, sem contar a comida."
+    tr:
+      title: "Tek kapsül, sınırın üstünde"
+      body: "Yaygın bir çinko kapsülü 30 mg içerir. Yemeğini saymadan bile tek başına günlük 25 mg sınırını aşar."
+
+  - key: zink-uit-eten
+    kind: fact
+    en:
+      title: "Zinc from your food"
+      body: "In Europe food already gives men about 13 mg of zinc a day and women about 9 mg."
+    nl:
+      title: "Zink uit je eten"
+      body: "In Europa krijgen mannen uit hun eten al zo'n 13 mg zink per dag binnen, vrouwen zo'n 9 mg."
+    de:
+      title: "Zink aus dem Essen"
+      body: "In Europa nehmen Männer über das Essen schon etwa 13 mg Zink am Tag auf, Frauen etwa 9 mg."
+    es:
+      title: "Zinc de la comida"
+      body: "En Europa, la comida ya da a los hombres unos 13 mg de zinc al día y a las mujeres unos 9 mg."
+    fr:
+      title: "Le zinc de ton assiette"
+      body: "En Europe, l'alimentation apporte déjà environ 13 mg de zinc par jour aux hommes et 9 mg aux femmes."
+    pt:
+      title: "Zinco da comida"
+      body: "Na Europa, a comida já dá aos homens cerca de 13 mg de zinco por dia e às mulheres cerca de 9 mg."
+    tr:
+      title: "Yemekten gelen çinko"
+      body: "Avrupa'da yemekler erkeklere günde zaten yaklaşık 13 mg, kadınlara yaklaşık 9 mg çinko veriyor."
+
+  - key: koper
+    kind: fact
+    en:
+      title: "Zinc and copper"
+      body: "Too much zinc for a long time goes with symptoms of copper deficiency."
+    nl:
+      title: "Zink en koper"
+      body: "Te veel zink gedurende lange tijd gaat samen met klachten van kopertekort."
+    de:
+      title: "Zink und Kupfer"
+      body: "Zu viel Zink über lange Zeit geht mit Anzeichen von Kupfermangel einher."
+    es:
+      title: "Zinc y cobre"
+      body: "Demasiado zinc durante mucho tiempo va unido a síntomas de falta de cobre."
+    fr:
+      title: "Zinc et cuivre"
+      body: "Trop de zinc pendant longtemps va de pair avec des signes de carence en cuivre."
+    pt:
+      title: "Zinco e cobre"
+      body: "Zinco a mais durante muito tempo anda ligado a sintomas de falta de cobre."
+    tr:
+      title: "Çinko ve bakır"
+      body: "Uzun süre fazla çinko almak bakır eksikliği belirtileriyle birlikte görülür."
+
+  - key: grote-dosis-in-een-keer
+    kind: fact
+    en:
+      title: "A large dose at once"
+      body: "A large single dose of zinc gives nausea, vomiting, stomach pain, cramps and diarrhoea."
+    nl:
+      title: "Een grote dosis in één keer"
+      body: "Een grote dosis zink in één keer geeft misselijkheid, overgeven, buikpijn, krampen en diarree."
+    de:
+      title: "Eine große Dosis auf einmal"
+      body: "Eine große Einzeldosis Zink macht Übelkeit, Erbrechen, Bauchschmerzen, Krämpfe und Durchfall."
+    es:
+      title: "Una dosis grande de golpe"
+      body: "Una dosis grande de zinc de una vez da náuseas, vómitos, dolor de barriga, calambres y diarrea."
+    fr:
+      title: "Une grosse dose d'un coup"
+      body: "Une grosse dose de zinc en une fois donne nausées, vomissements, maux de ventre, crampes et diarrhée."
+    pt:
+      title: "Uma dose grande de uma vez"
+      body: "Uma dose grande de zinco de uma vez dá náuseas, vómitos, dores de barriga, cãibras e diarreia."
+    tr:
+      title: "Tek seferde büyük doz"
+      body: "Tek seferde büyük bir doz çinko bulantı, kusma, karın ağrısı, kramp ve ishal yapar."
+
+  - key: testosteron
+    kind: myth
+    en:
+      title: "Myth: zinc raises your testosterone"
+      body: "Not shown. A review of 52 studies did not rate zinc as raising it, and 2 of 3 ZMA studies found no change."
+    nl:
+      title: "Mythe: zink verhoogt je testosteron"
+      body: "Niet aangetoond. Een review van 52 studies rekende zink er niet toe, en 2 van 3 studies naar ZMA zagen geen verandering."
+    de:
+      title: "Mythos: Zink hebt dein Testosteron"
+      body: "Nicht belegt. Eine Übersicht von 52 Studien stufte Zink nicht so ein, und 2 von 3 ZMA-Studien fanden keine Änderung."
+    es:
+      title: "Mito: el zinc sube tu testosterona"
+      body: "No está demostrado. Una revisión de 52 estudios no lo consideró eficaz, y 2 de 3 estudios de ZMA no vieron cambios."
+    fr:
+      title: "Mythe : le zinc monte ta testo"
+      body: "Pas démontré. Une revue de 52 études ne l'a pas classé efficace, et 2 études sur 3 sur le ZMA n'ont vu aucun changement."
+    pt:
+      title: "Mito: o zinco sobe a tua testosterona"
+      body: "Não está provado. Uma revisão de 52 estudos não o avaliou como eficaz, e 2 de 3 estudos de ZMA não viram mudança."
+    tr:
+      title: "Efsane: çinko testosteronunu artırır"
+      body: "Kanıtlanmadı. 52 çalışmalık bir derleme çinkoyu etkili saymadı, ZMA çalışmalarının 3'ünden 2'si değişiklik bulmadı."
+
+  - key: zma-en-tekort
+    kind: fact
+    en:
+      title: "Where the ZMA result came from"
+      body: "The one ZMA study with a testosterone rise also found zinc and magnesium depletion. The rise may come from a deficiency."
+    nl:
+      title: "Waar het ZMA-resultaat vandaan kwam"
+      body: "De enige ZMA-studie met meer testosteron zag ook een tekort aan zink en magnesium. Die stijging kan uit dat tekort komen."
+    de:
+      title: "Woher das ZMA-Ergebnis kam"
+      body: "Die einzige ZMA-Studie mit mehr Testosteron fand auch Zink- und Magnesiummangel. Der Anstieg kann am Mangel liegen."
+    es:
+      title: "De dónde salió el resultado del ZMA"
+      body: "El único estudio de ZMA con más testosterona también vio falta de zinc y magnesio. La subida puede venir de esa carencia."
+    fr:
+      title: "D'où vient le résultat du ZMA"
+      body: "La seule étude ZMA où la testo montait voyait aussi un manque de zinc et de magnésium. La hausse peut venir de ce manque."
+    pt:
+      title: "De onde veio o resultado do ZMA"
+      body: "O único estudo de ZMA com mais testosterona também viu falta de zinco e magnésio. A subida pode vir dessa carência."
+    tr:
+      title: "ZMA sonucu nereden geldi"
+      body: "Testosteron artışı bulan tek ZMA çalışması çinko ve magnezyum eksikliği de gördü. Artış bu eksiklikten gelebilir."
+
+  - key: calcium-en-ijzer
+    kind: fact
+    en:
+      title: "What blocks zinc"
+      body: "Larger doses of calcium and a lot of iron in your diet can lower how much zinc you absorb."
+    nl:
+      title: "Wat zink tegenhoudt"
+      body: "Grotere doses calcium en veel ijzer in je eten kunnen verlagen hoeveel zink je opneemt."
+    de:
+      title: "Was Zink bremst"
+      body: "Größere Mengen Kalzium und viel Eisen in deiner Ernährung können senken, wie viel Zink du aufnimmst."
+    es:
+      title: "Lo que frena el zinc"
+      body: "Dosis altas de calcio y mucho hierro en tu dieta pueden reducir cuánto zinc absorbes."
+    fr:
+      title: "Ce qui freine le zinc"
+      body: "De grosses doses de calcium et beaucoup de fer dans ton alimentation peuvent réduire le zinc que tu absorbes."
+    pt:
+      title: "O que trava o zinco"
+      body: "Doses altas de cálcio e muito ferro na tua alimentação podem reduzir o zinco que absorves."
+    tr:
+      title: "Çinkoyu ne engeller"
+      body: "Yüksek doz kalsiyum ve beslenmende çok fazla demir, emdiğin çinko miktarını düşürebilir."

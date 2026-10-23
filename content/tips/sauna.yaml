@@ -1,0 +1,193 @@
+article: sauna
+tips:
+  - key: hoeveel
+    kind: fact
+    en:
+      title: "How much sauna"
+      body: "5 to 20 minutes per session, 1 to 4 times a week, depending on how well you handle the heat."
+    nl:
+      title: "Hoeveel sauna"
+      body: "5 tot 20 minuten per keer, 1 tot 4 keer per week, afhankelijk van hoe goed je tegen de warmte kunt."
+    de:
+      title: "Wie viel Sauna"
+      body: "5 bis 20 Minuten pro Gang, 1 bis 4 Mal pro Woche, je nachdem, wie gut du die Hitze verträgst."
+    es:
+      title: "Cuánta sauna"
+      body: "De 5 a 20 minutos por sesión, de 1 a 4 veces por semana, según lo bien que toleres el calor."
+    fr:
+      title: "Combien de sauna"
+      body: "5 à 20 minutes par séance, 1 à 4 fois par semaine, selon ta tolérance à la chaleur."
+    pt:
+      title: "Quanta sauna"
+      body: "5 a 20 minutos por sessão, 1 a 4 vezes por semana, conforme aguentes o calor."
+    tr:
+      title: "Ne kadar sauna"
+      body: "Sıcağa ne kadar dayanabildiğine göre seans başına 5 ila 20 dakika, haftada 1 ila 4 kez."
+
+  - key: rustig-opbouwen
+    kind: fact
+    en:
+      title: "New to the sauna?"
+      body: "Start with 5 to 10 minutes and build up to 15 to 20 as you get used to it."
+    nl:
+      title: "Nieuw in de sauna?"
+      body: "Begin met 5 tot 10 minuten en bouw op naar 15 tot 20 als je eraan gewend raakt."
+    de:
+      title: "Neu in der Sauna?"
+      body: "Fang mit 5 bis 10 Minuten an und steigere dich auf 15 bis 20, wenn du dich daran gewöhnst."
+    es:
+      title: "¿Nuevo en la sauna?"
+      body: "Empieza con 5 a 10 minutos y sube a 15 o 20 a medida que te acostumbras."
+    fr:
+      title: "Débutant au sauna ?"
+      body: "Commence par 5 à 10 minutes et monte à 15 ou 20 à mesure que tu t'habitues."
+    pt:
+      title: "Novo na sauna?"
+      body: "Começa com 5 a 10 minutos e vai subindo para 15 a 20 à medida que te habituas."
+    tr:
+      title: "Saunada yeni misin?"
+      body: "5 ila 10 dakikayla başla, alıştıkça 15 ila 20 dakikaya çık."
+
+  - key: niet-voor-het-tillen
+    kind: myth
+    en:
+      title: "Myth: a sauna before lifting gets you ready"
+      body: "Not true. Using the sauna right before heavy training hurts your performance. Go after training or on a rest day."
+    nl:
+      title: "Mythe: sauna voor het tillen maakt je klaar"
+      body: "Niet waar. Vlak voor een zware training de sauna in kost je prestatie. Ga na je training of op een rustdag."
+    de:
+      title: "Mythos: Sauna vor dem Training macht bereit"
+      body: "Stimmt nicht. Sauna direkt vor hartem Training kostet Leistung. Geh nach dem Training oder an einem Ruhetag."
+    es:
+      title: "Mito: la sauna antes de entrenar te prepara"
+      body: "No es cierto. La sauna justo antes de un entrenamiento duro empeora tu rendimiento. Ve después de entrenar o en un día de descanso."
+    fr:
+      title: "Mythe : le sauna avant la séance te prépare"
+      body: "Faux. Le sauna juste avant une grosse séance nuit à tes performances. Vas-y après l'entraînement ou un jour de repos."
+    pt:
+      title: "Mito: sauna antes de treinar prepara-te"
+      body: "Não é verdade. A sauna logo antes de um treino pesado prejudica o rendimento. Vai depois do treino ou num dia de descanso."
+    tr:
+      title: "Efsane: antrenman öncesi sauna hazırlar"
+      body: "Doğru değil. Ağır antrenmandan hemen önce sauna performansını düşürür. Antrenmandan sonra ya da dinlenme gününde git."
+
+  - key: drinken
+    kind: fact
+    en:
+      title: "Drink up"
+      body: "Replace the fluid you sweat out, with electrolytes if you sweat a lot. Skip the alcohol."
+    nl:
+      title: "Blijf drinken"
+      body: "Vul het vocht aan dat je uitzweet, met elektrolyten als je veel zweet. Laat alcohol staan."
+    de:
+      title: "Trink genug"
+      body: "Ersetze die Flüssigkeit, die du ausschwitzt, bei starkem Schwitzen mit Elektrolyten. Lass den Alkohol weg."
+    es:
+      title: "Bebe"
+      body: "Repón el líquido que sudas, con electrolitos si sudas mucho. Evita el alcohol."
+    fr:
+      title: "Bois"
+      body: "Remplace l'eau que tu perds en transpirant, avec des électrolytes si tu transpires beaucoup. Évite l'alcool."
+    pt:
+      title: "Bebe"
+      body: "Repõe o líquido que suas, com eletrólitos se suares muito. Evita o álcool."
+    tr:
+      title: "Su iç"
+      body: "Terle kaybettiğin sıvıyı yerine koy, çok terliyorsan elektrolitle. Alkolden uzak dur."
+
+  - key: wat-warmte-doet
+    kind: fact
+    en:
+      title: "What the heat does"
+      body: "Heat raises your heart rate and circulation. That's a light load for your heart and lungs, plus a relaxation response."
+    nl:
+      title: "Wat de warmte doet"
+      body: "Warmte verhoogt je hartslag en doorbloeding. Dat is een lichte belasting voor hart en vaten, plus een ontspanningsreactie."
+    de:
+      title: "Was die Hitze macht"
+      body: "Hitze erhöht Puls und Durchblutung. Das ist eine leichte Belastung für Herz und Kreislauf und dazu eine Entspannungsreaktion."
+    es:
+      title: "Qué hace el calor"
+      body: "El calor sube tu pulso y tu circulación. Es una carga cardiovascular ligera, más una respuesta de relajación."
+    fr:
+      title: "Ce que fait la chaleur"
+      body: "La chaleur augmente ton pouls et ta circulation. C'est une légère charge cardiovasculaire, plus une réaction de détente."
+    pt:
+      title: "O que faz o calor"
+      body: "O calor sobe a frequência cardíaca e a circulação. É uma carga cardiovascular leve, mais uma resposta de relaxamento."
+    tr:
+      title: "Sıcak ne yapar"
+      body: "Sıcak nabzını ve kan dolaşımını artırır. Bu hafif bir kalp-damar yükü ve bir rahatlama tepkisidir."
+
+  - key: te-laat-op-de-avond
+    kind: fact
+    en:
+      title: "Sauna and sleep"
+      body: "Too much heat without enough fluid can hurt your performance, and your sleep if you go too close to bedtime."
+    nl:
+      title: "Sauna en slaap"
+      body: "Te veel warmte zonder genoeg drinken kan je prestatie schaden, en je slaap als je te dicht op bedtijd gaat."
+    de:
+      title: "Sauna und Schlaf"
+      body: "Zu viel Hitze ohne genug Flüssigkeit kann deiner Leistung schaden, und deinem Schlaf, wenn du zu kurz vor dem Schlafen gehst."
+    es:
+      title: "Sauna y sueño"
+      body: "Demasiado calor sin beber lo suficiente puede afectar tu rendimiento, y tu sueño si vas muy cerca de la hora de dormir."
+    fr:
+      title: "Sauna et sommeil"
+      body: "Trop de chaleur sans assez boire peut nuire à tes perfs, et à ton sommeil si tu y vas trop près du coucher."
+    pt:
+      title: "Sauna e sono"
+      body: "Calor a mais sem beber o suficiente pode prejudicar o rendimento, e o sono se fores muito perto da hora de deitar."
+    tr:
+      title: "Sauna ve uyku"
+      body: "Yeterli sıvı olmadan fazla sıcak performansına zarar verebilir, yatma saatine çok yakın gidersen uykuna da."
+
+  - key: langer-is-niet-beter
+    kind: myth
+    en:
+      title: "Myth: the longer you sit, the better"
+      body: "Not true. Overheating or staying in too long can leave you dehydrated. Cool down gradually afterwards."
+    nl:
+      title: "Mythe: hoe langer je zit, hoe beter"
+      body: "Niet waar. Oververhitten of te lang blijven zitten kan je uitdrogen. Koel daarna rustig af."
+    de:
+      title: "Mythos: Je länger, desto besser"
+      body: "Stimmt nicht. Überhitzen oder zu langes Sitzen kann dich austrocknen. Kühl danach langsam ab."
+    es:
+      title: "Mito: cuanto más rato, mejor"
+      body: "No es cierto. Sobrecalentarte o quedarte demasiado puede deshidratarte. Después, enfríate poco a poco."
+    fr:
+      title: "Mythe : plus tu restes, mieux c'est"
+      body: "Faux. Surchauffer ou rester trop longtemps peut te déshydrater. Refroidis-toi progressivement après."
+    pt:
+      title: "Mito: quanto mais tempo, melhor"
+      body: "Não é verdade. Aquecer demais ou ficar demasiado tempo pode desidratar-te. Depois, arrefece aos poucos."
+    tr:
+      title: "Efsane: ne kadar uzun, o kadar iyi"
+      body: "Doğru değil. Aşırı ısınmak ya da çok uzun kalmak susuz bırakabilir. Sonrasında yavaş yavaş serinle."
+
+  - key: voorzichtig
+    kind: fact
+    en:
+      title: "When to stop"
+      body: "Dizzy or unwell? Get out. With a heart or blood vessel condition, or medication that affects heat tolerance, ask a doctor first."
+    nl:
+      title: "Wanneer je stopt"
+      body: "Duizelig of niet lekker? Ga eruit. Heb je iets aan hart of vaten, of medicijnen die je hittetolerantie raken, vraag eerst een arts."
+    de:
+      title: "Wann du aufhörst"
+      body: "Schwindelig oder unwohl? Raus. Bei Herz-Kreislauf-Erkrankungen oder Medikamenten, die die Hitzeverträglichkeit beeinflussen, frag erst einen Arzt."
+    es:
+      title: "Cuándo parar"
+      body: "¿Mareado o mal? Sal. Si tienes una afección cardiovascular o tomas medicación que afecta tu tolerancia al calor, consulta antes al médico."
+    fr:
+      title: "Quand arrêter"
+      body: "Vertiges ou malaise ? Sors. Avec un problème cardiovasculaire ou un médicament qui touche ta tolérance à la chaleur, demande d'abord à un médecin."
+    pt:
+      title: "Quando parar"
+      body: "Tonto ou mal disposto? Sai. Com um problema cardiovascular ou medicação que afete a tolerância ao calor, fala primeiro com um médico."
+    tr:
+      title: "Ne zaman çıkmalı"
+      body: "Başın dönüyor ya da kötü mü hissediyorsun? Çık. Kalp-damar rahatsızlığın ya da sıcağa toleransı etkileyen ilacın varsa önce doktora sor."

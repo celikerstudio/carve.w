@@ -1,0 +1,241 @@
+article: rep-ranges
+tips:
+  - key: niet-alleen-8-12
+    kind: myth
+    en:
+      title: "Myth: only 8 to 12 reps builds muscle"
+      body: "Not true. In the 2026 ACSM overview, muscle growth was similar from 30% to 100% of your one-rep max."
+    nl:
+      title: "Mythe: alleen 8 tot 12 reps bouwt spier"
+      body: "Klopt niet. In het ACSM-overzicht van 2026 was de spiergroei gelijk van 30% tot 100% van je one-rep max."
+    de:
+      title: "Mythos: nur 8 bis 12 Wdh. bauen Muskeln"
+      body: "Stimmt nicht. In der ACSM-Übersicht von 2026 war das Muskelwachstum von 30% bis 100% deines One-Rep-Max ähnlich."
+    es:
+      title: "Mito: solo de 8 a 12 reps da músculo"
+      body: "No es cierto. En la revisión del ACSM de 2026, el músculo creció igual del 30% al 100% de tu repetición máxima."
+    fr:
+      title: "Mythe : seules 8 à 12 reps font du muscle"
+      body: "Faux. Dans la synthèse ACSM de 2026, la prise de muscle était semblable de 30% à 100% de ton max sur une répétition."
+    pt:
+      title: "Mito: só 8 a 12 reps dão músculo"
+      body: "Não é verdade. Na revisão do ACSM de 2026, o músculo cresceu de forma parecida entre 30% e 100% da tua repetição máxima."
+    tr:
+      title: "Efsane: sadece 8-12 tekrar kas yapar"
+      body: "Doğru değil. ACSM'in 2026 derlemesinde kas büyümesi tek tekrar maksimumunun %30'u ile %100'ü arasında benzerdi."
+
+  - key: kracht-zwaar
+    kind: fact
+    en:
+      title: "Heavy for strength"
+      body: "Want a bigger one-rep max? Heavier loads gave more strength. The ACSM names 80% of your max or more."
+    nl:
+      title: "Zwaar voor kracht"
+      body: "Wil je een hogere one-rep max? Zwaardere gewichten gaven meer kracht. Het ACSM noemt 80% van je max of meer."
+    de:
+      title: "Schwer für Kraft"
+      body: "Willst du ein höheres One-Rep-Max? Schwerere Lasten brachten mehr Kraft. Das ACSM nennt 80% deines Max oder mehr."
+    es:
+      title: "Pesado para la fuerza"
+      body: "¿Quieres una repetición máxima más alta? Las cargas pesadas dieron más fuerza. El ACSM habla del 80% de tu máximo o más."
+    fr:
+      title: "Lourd pour la force"
+      body: "Tu veux un meilleur max ? Les charges lourdes ont donné plus de force. L'ACSM parle de 80% de ton max ou plus."
+    pt:
+      title: "Pesado para a força"
+      body: "Queres uma repetição máxima maior? Cargas mais pesadas deram mais força. O ACSM fala em 80% do teu máximo ou mais."
+    tr:
+      title: "Güç için ağır"
+      body: "Daha yüksek bir tek tekrar maksimumu mu istiyorsun? Ağır yükler daha çok güç verdi. ACSM maksimumunun %80'i ve üstünü öneriyor."
+
+  - key: licht-werkt-ook
+    kind: myth
+    en:
+      title: "Myth: light weights don't build muscle"
+      body: "Not true. With every set taken to failure, loads of 60% of your max or less gave similar growth to heavier ones."
+    nl:
+      title: "Mythe: met licht gewicht bouw je geen spier"
+      body: "Klopt niet. Met elke set tot falen gaven gewichten van 60% van je max of minder vergelijkbare groei als zwaardere."
+    de:
+      title: "Mythos: leichte Gewichte bauen keine Muskeln"
+      body: "Stimmt nicht. Mit jedem Satz bis zum Versagen brachten Lasten bis 60% deines Max ähnlich viel Wachstum wie schwerere."
+    es:
+      title: "Mito: el peso ligero no da músculo"
+      body: "No es cierto. Con cada serie al fallo, cargas del 60% de tu máximo o menos dieron un crecimiento similar a las pesadas."
+    fr:
+      title: "Mythe : le léger ne fait pas de muscle"
+      body: "Faux. Avec chaque série à l'échec, des charges de 60% du max ou moins ont donné une croissance proche des lourdes."
+    pt:
+      title: "Mito: pesos leves não dão músculo"
+      body: "Não é verdade. Com cada série até à falha, cargas de 60% do teu máximo ou menos deram crescimento parecido ao das pesadas."
+    tr:
+      title: "Efsane: hafif ağırlık kas yapmaz"
+      body: "Doğru değil. Her set tükenişe kadar gidildiğinde, maksimumunun %60'ı ve altı yükler ağır yüklerle benzer büyüme sağladı."
+
+  - key: licht-maar-zwaar
+    kind: fact
+    en:
+      title: "Light, but hard"
+      body: "Twelve reps with a weight you could lift 30 times leaves 18 in the tank. With a light weight, the last reps should be hard."
+    nl:
+      title: "Licht, maar zwaar"
+      body: "Twaalf reps met een gewicht dat je 30 keer kunt tillen laat er 18 in de tank. Met een licht gewicht moeten de laatste reps zwaar zijn."
+    de:
+      title: "Leicht, aber hart"
+      body: "Zwölf Wiederholungen mit einem Gewicht, das du 30-mal schaffst, lassen 18 im Tank. Bei leichtem Gewicht müssen die letzten hart sein."
+    es:
+      title: "Ligero, pero duro"
+      body: "Doce reps con un peso que podrías mover 30 veces dejan 18 en el tanque. Con peso ligero, las últimas reps tienen que costar."
+    fr:
+      title: "Léger, mais dur"
+      body: "Douze reps avec une charge que tu peux soulever 30 fois en laissent 18 en réserve. En léger, les dernières reps doivent être dures."
+    pt:
+      title: "Leve, mas duro"
+      body: "Doze repetições com um peso que levantavas 30 vezes deixam 18 no depósito. Com peso leve, as últimas repetições têm de custar."
+    tr:
+      title: "Hafif ama zor"
+      body: "30 kez kaldırabileceğin bir ağırlıkla 12 tekrar, depoda 18 tekrar bırakır. Hafif ağırlıkta son tekrarlar zor olmalı."
+
+  - key: reps-over-12-schatten
+    kind: fact
+    en:
+      title: "Long sets fool you"
+      body: "Past 12 reps, people were worse at guessing how many reps they had left. On long sets, count honestly."
+    nl:
+      title: "Lange sets misleiden je"
+      body: "Boven de 12 reps schatten mensen slechter in hoeveel reps ze nog over hadden. Wees bij lange sets dus eerlijk tegen jezelf."
+    de:
+      title: "Lange Sätze täuschen"
+      body: "Über 12 Wiederholungen schätzten Leute schlechter, wie viele sie noch übrig hatten. Bei langen Sätzen also ehrlich zählen."
+    es:
+      title: "Las series largas engañan"
+      body: "Pasadas 12 reps, la gente acertaba peor cuántas le quedaban. En series largas, cuenta con honestidad."
+    fr:
+      title: "Les longues séries trompent"
+      body: "Au-delà de 12 reps, on estime moins bien combien il en reste. Sur les longues séries, compte honnêtement."
+    pt:
+      title: "As séries longas enganam"
+      body: "Acima de 12 repetições, as pessoas erravam mais a prever quantas ainda tinham. Em séries longas, conta com honestidade."
+    tr:
+      title: "Uzun setler yanıltır"
+      body: "12 tekrarı geçince insanlar kaç tekrar kaldığını daha kötü tahmin etti. Uzun setlerde dürüst say."
+
+  - key: hoge-reps-gewrichten
+    kind: fact
+    en:
+      title: "High reps and your joints"
+      body: "Heavy weights feel awkward or hurt your joints on some lifts? High reps are a fine option there. Just make the set hard."
+    nl:
+      title: "Hoge reps en je gewrichten"
+      body: "Voelen zware gewichten bij een oefening onhandig of doen je gewrichten pijn? Dan zijn hoge reps prima. Maak de set wel zwaar."
+    de:
+      title: "Viele Wdh. und deine Gelenke"
+      body: "Fühlen sich schwere Gewichte bei einer Übung falsch an oder tun die Gelenke weh? Dann passen viele Wiederholungen. Mach den Satz hart."
+    es:
+      title: "Muchas reps y tus articulaciones"
+      body: "¿El peso alto te resulta incómodo o te duelen las articulaciones en algún ejercicio? Ahí van bien muchas reps. Haz la serie dura."
+    fr:
+      title: "Beaucoup de reps et tes articulations"
+      body: "Les charges lourdes gênent ou font mal aux articulations sur un exercice ? Les séries longues sont une bonne option. Rends-les dures."
+    pt:
+      title: "Muitas reps e as articulações"
+      body: "Pesos altos parecem estranhos ou doem nas articulações num exercício? Aí muitas repetições são boa opção. Torna a série dura."
+    tr:
+      title: "Yüksek tekrar ve eklemlerin"
+      body: "Bir harekette ağır yük garip mi geliyor ya da eklemlerini mi acıtıyor? Orada yüksek tekrar iyi bir seçenek. Seti zor yap yeter."
+
+  - key: beginnen-8-12
+    kind: fact
+    en:
+      title: "Where to start"
+      body: "A weight you can lift 8 to 12 times is one place to start. That was the 2009 ACSM advice, and other programs work too."
+    nl:
+      title: "Waar je begint"
+      body: "Een gewicht dat je 8 tot 12 keer kunt tillen is één manier om te beginnen. Dat was het ACSM-advies van 2009, en andere programma's werken ook."
+    de:
+      title: "Womit du anfängst"
+      body: "Ein Gewicht, das du 8- bis 12-mal schaffst, ist ein möglicher Start. So riet es das ACSM 2009, und andere Programme wirken auch."
+    es:
+      title: "Por dónde empezar"
+      body: "Un peso que puedas mover de 8 a 12 veces es una forma de empezar. Era el consejo del ACSM en 2009, y otros programas también sirven."
+    fr:
+      title: "Par où commencer"
+      body: "Une charge que tu soulèves 8 à 12 fois est un point de départ possible. C'était le conseil ACSM de 2009, et d'autres programmes marchent."
+    pt:
+      title: "Por onde começar"
+      body: "Um peso que levantas 8 a 12 vezes é uma forma de começar. Era o conselho do ACSM em 2009, e outros programas também funcionam."
+    tr:
+      title: "Nereden başlamalı"
+      body: "8 ila 12 kez kaldırabildiğin bir ağırlık başlamanın bir yolu. Bu ACSM'in 2009 önerisiydi, başka programlar da işe yarıyor."
+
+  - key: regel-2009
+    kind: fact
+    en:
+      title: "When to add weight"
+      body: "The 2009 ACSM rule: one or two reps over target, two sessions in a row, then add 2 to 10%. The 2026 stand doesn't repeat it."
+    nl:
+      title: "Wanneer gewicht erbij"
+      body: "De ACSM-regel uit 2009: twee sessies op rij een of twee reps boven je doel, dan 2 tot 10% erbij. Die van 2026 herhaalt hem niet."
+    de:
+      title: "Wann mehr Gewicht"
+      body: "ACSM-Regel von 2009: zwei Einheiten in Folge ein, zwei Wdh. über dem Ziel, dann 2 bis 10% mehr. 2026 wird sie nicht wiederholt."
+    es:
+      title: "Cuándo subir peso"
+      body: "La regla del ACSM de 2009: una o dos reps más de lo previsto dos sesiones seguidas, y subes un 2 a 10%. La de 2026 no la repite."
+    fr:
+      title: "Quand ajouter du poids"
+      body: "La règle ACSM de 2009 : une ou deux reps de plus que prévu deux séances de suite, puis +2 à 10%. Celle de 2026 ne la reprend pas."
+    pt:
+      title: "Quando subir o peso"
+      body: "A regra do ACSM de 2009: uma ou duas reps acima do alvo em duas sessões seguidas, e sobes 2 a 10%. A de 2026 não a repete."
+    tr:
+      title: "Ne zaman ağırlık eklemeli"
+      body: "ACSM'in 2009 kuralı: iki seans üst üste hedefin bir iki tekrar üstüne çık, sonra %2 ila 10 ekle. 2026 bildirisi bunu tekrarlamıyor."
+
+  - key: uithouding-onduidelijk
+    kind: myth
+    en:
+      title: "Myth: light, high reps build endurance best"
+      body: "Not quite. Training does improve endurance, but the reviews had too little data to show light, high-rep sets do it better."
+    nl:
+      title: "Mythe: licht met veel reps voor uithouding"
+      body: "Niet helemaal. Training verbetert je uithouding wel, maar er was te weinig data om te laten zien dat licht met veel reps dat beter doet."
+    de:
+      title: "Mythos: leicht und viele Wdh. für Ausdauer"
+      body: "Nicht ganz. Training verbessert die Ausdauer, aber es gab zu wenige Daten, um zu zeigen, dass leicht mit vielen Wdh. besser ist."
+    es:
+      title: "Mito: ligero y muchas reps, mejor resistencia"
+      body: "No del todo. Entrenar mejora la resistencia, pero faltaban datos para mostrar que poco peso y muchas reps lo hagan mejor."
+    fr:
+      title: "Mythe : léger et long, mieux pour l'endurance"
+      body: "Pas tout à fait. L'entraînement améliore l'endurance, mais trop peu de données montrent que léger avec beaucoup de reps fasse mieux."
+    pt:
+      title: "Mito: leve e muitas reps, melhor resistência"
+      body: "Não bem. O treino melhora a resistência, mas faltavam dados para mostrar que pouco peso e muitas reps o façam melhor."
+    tr:
+      title: "Efsane: dayanıklılık için hafif ve çok tekrar"
+      body: "Tam değil. Antrenman dayanıklılığı artırır, ama hafif ve çok tekrarlı setlerin bunu daha iyi yaptığını gösterecek veri azdı."
+
+  - key: specificiteit
+    kind: fact
+    en:
+      title: "Train for your goal"
+      body: "Your body adapts to what you train. So pick weight and reps that fit what you want to get better at."
+    nl:
+      title: "Train voor je doel"
+      body: "Je lichaam past zich aan aan wat je traint. Kies gewicht en reps dus bij waar je beter in wilt worden."
+    de:
+      title: "Trainiere für dein Ziel"
+      body: "Dein Körper passt sich an das an, was du trainierst. Wähl Gewicht und Wiederholungen nach dem, worin du besser werden willst."
+    es:
+      title: "Entrena para tu objetivo"
+      body: "Tu cuerpo se adapta a lo que entrenas. Así que elige peso y reps según lo que quieras mejorar."
+    fr:
+      title: "Entraîne-toi pour ton but"
+      body: "Ton corps s'adapte à ce que tu entraînes. Choisis donc charge et reps selon ce que tu veux améliorer."
+    pt:
+      title: "Treina para o teu objetivo"
+      body: "O teu corpo adapta-se ao que treinas. Por isso escolhe peso e repetições de acordo com o que queres melhorar."
+    tr:
+      title: "Hedefin için antrenman yap"
+      body: "Vücudun neyi çalıştırırsan ona uyum sağlar. Ağırlığı ve tekrarı neyde gelişmek istiyorsan ona göre seç."

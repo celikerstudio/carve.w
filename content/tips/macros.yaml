@@ -1,0 +1,169 @@
+article: macros
+tips:
+  - key: eiwit-eerst
+    kind: fact
+    en:
+      title: "Setting your macros"
+      body: "Set protein first at 1.6 to 2.2 g per kg. Then pick your fats, and fill the calories that are left with carbs."
+    nl:
+      title: "Je macro's instellen"
+      body: "Zet eerst je eiwit op 1,6 tot 2,2 gram per kilo. Kies dan je vet, en vul de calorieën die over zijn met koolhydraten."
+    de:
+      title: "Makros festlegen"
+      body: "Leg zuerst Eiweiß fest, 1,6 bis 2,2 g pro kg. Dann wählst du das Fett, und die restlichen Kalorien füllst du mit Kohlenhydraten."
+    es:
+      title: "Cómo fijar tus macros"
+      body: "Fija primero la proteína en 1,6 a 2,2 g por kg. Luego elige la grasa, y llena las calorías que quedan con carbohidratos."
+    fr:
+      title: "Fixer tes macros"
+      body: "Fixe d'abord les protéines à 1,6 à 2,2 g par kg. Choisis ensuite les lipides, et complète les calories restantes avec des glucides."
+    pt:
+      title: "Definir os teus macros"
+      body: "Define primeiro a proteína em 1,6 a 2,2 g por kg. Depois escolhe a gordura e preenche as calorias que sobram com hidratos."
+    tr:
+      title: "Makrolarını belirlemek"
+      body: "Önce proteini kilo başına 1,6 ila 2,2 g'a koy. Sonra yağı seç, kalan kaloriyi karbonhidratla doldur."
+
+  - key: vet-bandbreedte
+    kind: fact
+    en:
+      title: "How much fat"
+      body: "0.6 to 1.0 g fat per kg is a common start. Where you land depends on what keeps you full and how much you like carbs."
+    nl:
+      title: "Hoeveel vet"
+      body: "0,6 tot 1,0 gram vet per kilo is een gangbaar begin. Waar je uitkomt hangt af van wat je verzadigt en hoe graag je koolhydraten eet."
+    de:
+      title: "Wie viel Fett"
+      body: "0,6 bis 1,0 g Fett pro kg ist ein üblicher Start. Wo du landest, hängt davon ab, was dich satt macht und wie gern du Kohlenhydrate isst."
+    es:
+      title: "Cuánta grasa"
+      body: "0,6 a 1,0 g de grasa por kg es un inicio habitual. Dónde acabas depende de lo que te sacia y de cuánto te gustan los carbohidratos."
+    fr:
+      title: "Combien de lipides"
+      body: "0,6 à 1,0 g de lipides par kg, c'est un départ courant. Le bon chiffre dépend de ce qui te rassasie et de ton goût pour les glucides."
+    pt:
+      title: "Quanta gordura"
+      body: "0,6 a 1,0 g de gordura por kg é um início comum. Onde ficas depende do que te sacia e de quanto gostas de hidratos."
+    tr:
+      title: "Ne kadar yağ"
+      body: "Kilo başına 0,6 ila 1,0 g yağ yaygın bir başlangıç. Nerede duracağın seni neyin doyurduğuna ve karbonhidratı ne kadar sevdiğine bağlı."
+
+  - key: koolhydraten-start
+    kind: fact
+    en:
+      title: "Carbs to start with"
+      body: "3 to 5 g carbs per kg is a common starting point, depending on your goal. Carbs refill the glycogen that powers your training."
+    nl:
+      title: "Koolhydraten om mee te beginnen"
+      body: "3 tot 5 gram koolhydraten per kilo is een gangbaar begin, afhankelijk van je doel. Ze vullen het glycogeen aan waar je op traint."
+    de:
+      title: "Kohlenhydrate zum Start"
+      body: "3 bis 5 g Kohlenhydrate pro kg sind ein üblicher Start, je nach Ziel. Sie füllen das Glykogen auf, mit dem du trainierst."
+    es:
+      title: "Carbohidratos para empezar"
+      body: "3 a 5 g de carbohidratos por kg es un inicio habitual, según tu objetivo. Rellenan el glucógeno que mueve tu entrenamiento."
+    fr:
+      title: "Les glucides pour commencer"
+      body: "3 à 5 g de glucides par kg, c'est un départ courant selon ton objectif. Ils rechargent le glycogène qui alimente ton entraînement."
+    pt:
+      title: "Hidratos para começar"
+      body: "3 a 5 g de hidratos por kg é um início comum, conforme o objetivo. Repõem o glicogénio que alimenta o teu treino."
+    tr:
+      title: "Başlangıç için karbonhidrat"
+      body: "Hedefine göre kilo başına 3 ila 5 g karbonhidrat yaygın bir başlangıç. Antrenmanını besleyen glikojeni doldururlar."
+
+  - key: eiwit-verdelen
+    kind: fact
+    en:
+      title: "Protein per meal"
+      body: "Split your protein over 3 to 5 meals with about 20 to 40 g each."
+    nl:
+      title: "Eiwit per maaltijd"
+      body: "Verdeel je eiwit over 3 tot 5 maaltijden met elk zo'n 20 tot 40 gram."
+    de:
+      title: "Eiweiß pro Mahlzeit"
+      body: "Verteil dein Eiweiß auf 3 bis 5 Mahlzeiten mit je etwa 20 bis 40 g."
+    es:
+      title: "Proteína por comida"
+      body: "Reparte tu proteína en 3 a 5 comidas de unos 20 a 40 g cada una."
+    fr:
+      title: "Protéines par repas"
+      body: "Répartis tes protéines sur 3 à 5 repas d'environ 20 à 40 g chacun."
+    pt:
+      title: "Proteína por refeição"
+      body: "Divide a tua proteína por 3 a 5 refeições com cerca de 20 a 40 g cada."
+    tr:
+      title: "Öğün başına protein"
+      body: "Proteinini her birinde 20 ila 40 g olacak şekilde 3 ila 5 öğüne böl."
+
+  - key: rond-de-training
+    kind: fact
+    en:
+      title: "Carbs around training"
+      body: "Put 20 to 60 g of carbs before and after training. Keep some of the fat out of your pre-lift meal so it digests easier."
+    nl:
+      title: "Koolhydraten rond je training"
+      body: "Neem 20 tot 60 gram koolhydraten voor en na het trainen. Houd wat vet uit je maaltijd vooraf, dan verteert die makkelijker."
+    de:
+      title: "Kohlenhydrate ums Training"
+      body: "Iss 20 bis 60 g Kohlenhydrate vor und nach dem Training. Lass etwas Fett aus der Mahlzeit davor weg, dann verdaust du leichter."
+    es:
+      title: "Carbohidratos alrededor del entreno"
+      body: "Toma 20 a 60 g de carbohidratos antes y después de entrenar. Deja algo de grasa fuera de la comida previa para digerirla mejor."
+    fr:
+      title: "Les glucides autour de la séance"
+      body: "Prends 20 à 60 g de glucides avant et après la séance. Limite un peu le gras du repas d'avant, il se digère mieux."
+    pt:
+      title: "Hidratos à volta do treino"
+      body: "Come 20 a 60 g de hidratos antes e depois do treino. Tira alguma gordura da refeição de antes para a digerires melhor."
+    tr:
+      title: "Antrenman çevresinde karbonhidrat"
+      body: "Antrenmandan önce ve sonra 20 ila 60 g karbonhidrat al. Öncesindeki öğünde yağı biraz azalt, daha kolay sindirirsin."
+
+  - key: alleen-calorieen
+    kind: myth
+    en:
+      title: "Myth: only calories matter"
+      body: "Half true. Calories decide whether you gain or lose weight. Your macros decide how much of that is muscle and how much is fat."
+    nl:
+      title: "Mythe: alleen calorieën tellen"
+      body: "Half waar. Calorieën bepalen of je aankomt of afvalt. Je macro's bepalen hoeveel daarvan spier is en hoeveel vet."
+    de:
+      title: "Mythos: nur Kalorien zählen"
+      body: "Halb wahr. Kalorien entscheiden, ob du zu- oder abnimmst. Deine Makros entscheiden, wie viel davon Muskel ist und wie viel Fett."
+    es:
+      title: "Mito: solo importan las calorías"
+      body: "Medio cierto. Las calorías deciden si subes o bajas de peso. Tus macros deciden cuánto de eso es músculo y cuánto grasa."
+    fr:
+      title: "Mythe : seules les calories comptent"
+      body: "À moitié vrai. Les calories décident si tu prends ou perds du poids. Tes macros décident quelle part est du muscle ou du gras."
+    pt:
+      title: "Mito: só as calorias contam"
+      body: "Meio verdade. As calorias decidem se ganhas ou perdes peso. Os teus macros decidem quanto disso é músculo e quanto é gordura."
+    tr:
+      title: "Efsane: sadece kalori önemli"
+      body: "Yarı doğru. Kilo alıp vermeni kalori belirler. Bunun ne kadarının kas, ne kadarının yağ olacağını makroların belirler."
+
+  - key: rustdagen
+    kind: fact
+    en:
+      title: "Rest day macros"
+      body: "Eat more carbs on long or hard training days and slightly fewer on rest days. Keep your protein the same every day."
+    nl:
+      title: "Macro's op rustdagen"
+      body: "Eet meer koolhydraten op lange of zware dagen en iets minder op rustdagen. Je eiwit houd je elke dag gelijk."
+    de:
+      title: "Makros am Ruhetag"
+      body: "Iss an langen oder harten Tagen mehr Kohlenhydrate und an Ruhetagen etwas weniger. Dein Eiweiß bleibt jeden Tag gleich."
+    es:
+      title: "Macros en días de descanso"
+      body: "Come más carbohidratos en días largos o duros y algo menos en los de descanso. La proteína, igual todos los días."
+    fr:
+      title: "Macros les jours de repos"
+      body: "Mange plus de glucides les jours longs ou durs, un peu moins les jours de repos. Tes protéines restent les mêmes chaque jour."
+    pt:
+      title: "Macros nos dias de descanso"
+      body: "Come mais hidratos nos dias longos ou duros e um pouco menos nos de descanso. A proteína fica igual todos os dias."
+    tr:
+      title: "Dinlenme günü makroları"
+      body: "Uzun ya da zor günlerde daha çok, dinlenme günlerinde biraz daha az karbonhidrat ye. Proteinin her gün aynı kalsın."

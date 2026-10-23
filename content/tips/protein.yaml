@@ -1,0 +1,241 @@
+article: protein
+tips:
+  - key: hoeveel
+    kind: fact
+    en:
+      title: "Protein"
+      body: "To build muscle, eat about 1.6 to 2.2 g of protein per kg of bodyweight a day. At 80 kg that is 128 to 176 g."
+    nl:
+      title: "Eiwit"
+      body: "Om spier op te bouwen eet je zo'n 1,6 tot 2,2 gram eiwit per kilo lichaamsgewicht per dag. Bij 80 kilo is dat 128 tot 176 gram."
+    de:
+      title: "Eiweiß"
+      body: "Für Muskelaufbau iss etwa 1,6 bis 2,2 g Eiweiß pro kg Körpergewicht am Tag. Bei 80 kg sind das 128 bis 176 g."
+    es:
+      title: "Proteína"
+      body: "Para ganar músculo, come unos 1,6 a 2,2 g de proteína por kg de peso al día. Con 80 kg son 128 a 176 g."
+    fr:
+      title: "Protéines"
+      body: "Pour prendre du muscle, mange environ 1,6 à 2,2 g de protéines par kg de poids par jour. À 80 kg, ça fait 128 à 176 g."
+    pt:
+      title: "Proteína"
+      body: "Para ganhar músculo, come cerca de 1,6 a 2,2 g de proteína por kg de peso por dia. Com 80 kg são 128 a 176 g."
+    tr:
+      title: "Protein"
+      body: "Kas yapmak için günde vücut ağırlığının kilosu başına yaklaşık 1,6 ila 2,2 g protein ye. 80 kiloda bu 128 ila 176 g."
+
+  - key: aanbevolen-te-laag
+    kind: myth
+    en:
+      title: "Myth: 0.8 g per kg is enough"
+      body: "Not if you train. That number was set to prevent deficiency in the general population. At 80 kg it is 64 g, about half of what you need."
+    nl:
+      title: "Mythe: 0,8 gram per kilo is genoeg"
+      body: "Niet als je traint. Die norm is gemaakt om tekorten te voorkomen bij gewone mensen. Bij 80 kilo is dat 64 gram, ongeveer de helft van wat je nodig hebt."
+    de:
+      title: "Mythos: 0,8 g pro kg reichen"
+      body: "Nicht, wenn du trainierst. Der Wert soll bei der Allgemeinheit nur Mangel verhindern. Bei 80 kg sind das 64 g, etwa die Hälfte."
+    es:
+      title: "Mito: 0,8 g por kg es suficiente"
+      body: "No si entrenas. Esa cifra se fijó para evitar carencias en la población general. Con 80 kg son 64 g, más o menos la mitad de lo que necesitas."
+    fr:
+      title: "Mythe : 0,8 g par kg suffit"
+      body: "Pas si tu t'entraînes. Ce chiffre sert à éviter les carences dans la population générale. À 80 kg, c'est 64 g, environ la moitié du besoin."
+    pt:
+      title: "Mito: 0,8 g por kg chega"
+      body: "Não se treinas. Esse valor foi feito para evitar carências na população em geral. Com 80 kg são 64 g, cerca de metade do que precisas."
+    tr:
+      title: "Efsane: kilo başına 0,8 g yeterli"
+      body: "Antrenman yapıyorsan değil. Bu değer genel nüfusta eksikliği önlemek için konuldu. 80 kiloda 64 g eder, ihtiyacının yaklaşık yarısı."
+
+  - key: afvlakking
+    kind: fact
+    en:
+      title: "Where gains level off"
+      body: "In 49 trials, muscle gains from lifting stopped rising above about 1.6 g per kg. Going towards 2.2 makes sure you are covered."
+    nl:
+      title: "Waar de winst afvlakt"
+      body: "In 49 studies stopte de spiergroei van krachttraining boven zo'n 1,6 gram per kilo. Ga je richting 2,2, dan zit je zeker goed."
+    de:
+      title: "Wo der Zuwachs abflacht"
+      body: "In 49 Studien stieg der Muskelzuwachs über etwa 1,6 g pro kg nicht weiter. Gehst du Richtung 2,2, bist du sicher abgedeckt."
+    es:
+      title: "Dónde se estanca la ganancia"
+      body: "En 49 ensayos, la ganancia muscular dejó de subir por encima de unos 1,6 g por kg. Si vas hacia 2,2, vas sobrado."
+    fr:
+      title: "Où les gains plafonnent"
+      body: "Dans 49 essais, les gains musculaires ne montaient plus au-delà d'environ 1,6 g par kg. Viser 2,2 te met à l'abri."
+    pt:
+      title: "Onde os ganhos estabilizam"
+      body: "Em 49 ensaios, os ganhos musculares deixaram de subir acima de cerca de 1,6 g por kg. Ir até 2,2 garante que estás coberto."
+    tr:
+      title: "Kazanımın düzleştiği yer"
+      body: "49 çalışmada kas kazanımı kilo başına yaklaşık 1,6 g'ın üstünde artmayı bıraktı. 2,2'ye doğru gidersen garantiye alırsın."
+
+  - key: tijdens-een-cut
+    kind: fact
+    en:
+      title: "Protein on a hard cut"
+      body: "In trained people on a diet, the ISSN says 2.3 to 3.1 g per kg a day may be needed to keep lean mass. At 80 kg that is 184 to 248 g."
+    nl:
+      title: "Eiwit tijdens een harde cut"
+      body: "Getraind en op dieet? Volgens de ISSN kan 2,3 tot 3,1 gram per kilo per dag nodig zijn om je spiermassa te houden. Bij 80 kilo is dat 184 tot 248 gram."
+    de:
+      title: "Eiweiß in der harten Diät"
+      body: "Trainiert und in der Diät? Laut ISSN braucht es eventuell 2,3 bis 3,1 g pro kg am Tag, um Magermasse zu halten. Bei 80 kg: 184 bis 248 g."
+    es:
+      title: "Proteína en una definición dura"
+      body: "¿Entrenas y estás a dieta? Según la ISSN, puede hacer falta 2,3 a 3,1 g por kg al día para conservar masa magra. Con 80 kg: 184 a 248 g."
+    fr:
+      title: "Protéines en sèche dure"
+      body: "Entraîné et au régime ? Selon l'ISSN, 2,3 à 3,1 g par kg par jour peuvent être nécessaires pour garder ta masse maigre. À 80 kg : 184 à 248 g."
+    pt:
+      title: "Proteína num cut duro"
+      body: "Treinas e estás em dieta? Segundo a ISSN, podes precisar de 2,3 a 3,1 g por kg por dia para manter a massa magra. Com 80 kg: 184 a 248 g."
+    tr:
+      title: "Sert bir cut'ta protein"
+      body: "Antrenmanlı ve diyette misin? ISSN'e göre yağsız kütleni korumak için günde kilo başına 2,3 ila 3,1 g gerekebilir. 80 kiloda 184 ila 248 g."
+
+  - key: per-maaltijd
+    kind: fact
+    en:
+      title: "Protein per meal"
+      body: "One review suggests about 0.4 g per kg per meal, over at least four meals. At 80 kg that is 32 g each time."
+    nl:
+      title: "Eiwit per maaltijd"
+      body: "Een review raadt zo'n 0,4 gram per kilo per maaltijd aan, verdeeld over minstens vier maaltijden. Bij 80 kilo is dat 32 gram per keer."
+    de:
+      title: "Eiweiß pro Mahlzeit"
+      body: "Ein Review empfiehlt etwa 0,4 g pro kg pro Mahlzeit, über mindestens vier Mahlzeiten. Bei 80 kg sind das je 32 g."
+    es:
+      title: "Proteína por comida"
+      body: "Una revisión propone unos 0,4 g por kg en cada comida, en al menos cuatro comidas. Con 80 kg son 32 g cada vez."
+    fr:
+      title: "Protéines par repas"
+      body: "Une revue propose environ 0,4 g par kg par repas, sur au moins quatre repas. À 80 kg, ça fait 32 g à chaque fois."
+    pt:
+      title: "Proteína por refeição"
+      body: "Uma revisão sugere cerca de 0,4 g por kg por refeição, em pelo menos quatro refeições. Com 80 kg são 32 g de cada vez."
+    tr:
+      title: "Öğün başına protein"
+      body: "Bir derleme en az dört öğünde, öğün başına kilo başı yaklaşık 0,4 g öneriyor. 80 kiloda bu her seferinde 32 g."
+
+  - key: grote-maaltijd
+    kind: myth
+    en:
+      title: "Myth: a big protein meal is wasted"
+      body: "Not quite. Eat more in one meal and more of it is burned for energy, but some of the extra still goes to building tissue."
+    nl:
+      title: "Mythe: een grote eiwitmaaltijd is zonde"
+      body: "Niet helemaal. Eet je meer in één keer, dan wordt er meer verbrand voor energie, maar een deel gaat nog steeds naar opbouw."
+    de:
+      title: "Mythos: eine große Eiweißmahlzeit verpufft"
+      body: "Nicht ganz. Isst du mehr auf einmal, wird mehr davon als Energie verbrannt, aber ein Teil geht trotzdem in den Aufbau."
+    es:
+      title: "Mito: una comida con mucha proteína se pierde"
+      body: "No del todo. Si comes más de golpe, se quema más como energía, pero parte del extra sigue yendo a construir tejido."
+    fr:
+      title: "Mythe : un gros repas protéiné est gâché"
+      body: "Pas tout à fait. Si tu en manges plus d'un coup, plus est brûlé pour l'énergie, mais une partie sert quand même à construire."
+    pt:
+      title: "Mito: uma refeição grande em proteína é perdida"
+      body: "Não bem. Se comes mais de uma só vez, mais é queimado como energia, mas parte do extra continua a ir para construir tecido."
+    tr:
+      title: "Efsane: proteinli büyük öğün boşa gider"
+      body: "Tam değil. Tek öğünde daha çok yersen daha fazlası enerji için yakılır, ama fazlanın bir kısmı yine doku yapımına gider."
+
+  - key: niet-direct-na-training
+    kind: myth
+    en:
+      title: "Myth: protein must come right after training"
+      body: "Not true. Once the daily total was the same, protein right before or after training gave no extra strength or muscle."
+    nl:
+      title: "Mythe: eiwit moet direct na de training"
+      body: "Klopt niet. Bij een gelijk dagtotaal gaf eiwit vlak voor of na de training geen extra kracht of spier."
+    de:
+      title: "Mythos: Eiweiß direkt nach dem Training"
+      body: "Stimmt nicht. Bei gleicher Tagesmenge brachte Eiweiß direkt vor oder nach dem Training keine zusätzliche Kraft oder Muskeln."
+    es:
+      title: "Mito: la proteína, justo al acabar"
+      body: "No es cierto. Con el mismo total diario, tomarla justo antes o después de entrenar no dio más fuerza ni músculo."
+    fr:
+      title: "Mythe : les protéines juste après la séance"
+      body: "Faux. À total quotidien égal, prendre des protéines juste avant ou après la séance n'a pas donné plus de force ni de muscle."
+    pt:
+      title: "Mito: proteína logo a seguir ao treino"
+      body: "Não é verdade. Com o mesmo total diário, tomá-la logo antes ou depois do treino não deu mais força nem músculo."
+    tr:
+      title: "Efsane: protein antrenmandan hemen sonra"
+      body: "Doğru değil. Günlük toplam aynıyken, antrenmandan hemen önce ya da sonra protein ek güç ya da kas sağlamadı."
+
+  - key: spreiden
+    kind: fact
+    en:
+      title: "Spread it out"
+      body: "Spread your protein over the day, roughly every 3 to 4 hours. At 80 kg that is four meals of 30 to 40 g, not one huge dinner."
+    nl:
+      title: "Verdeel het"
+      body: "Verdeel je eiwit over de dag, ongeveer elke 3 tot 4 uur. Bij 80 kilo zijn dat vier maaltijden van 30 tot 40 gram in plaats van één enorm avondeten."
+    de:
+      title: "Verteil es"
+      body: "Verteil dein Eiweiß über den Tag, etwa alle 3 bis 4 Stunden. Bei 80 kg sind das vier Mahlzeiten mit 30 bis 40 g statt eines Riesenabendessens."
+    es:
+      title: "Repártela"
+      body: "Reparte la proteína a lo largo del día, más o menos cada 3 a 4 horas. Con 80 kg son cuatro comidas de 30 a 40 g, no una cena enorme."
+    fr:
+      title: "Répartis-les"
+      body: "Répartis tes protéines sur la journée, environ toutes les 3 à 4 heures. À 80 kg, c'est quatre repas de 30 à 40 g, pas un énorme dîner."
+    pt:
+      title: "Distribui-a"
+      body: "Distribui a proteína pelo dia, mais ou menos de 3 em 3 ou de 4 em 4 horas. Com 80 kg são quatro refeições de 30 a 40 g, não um jantar enorme."
+    tr:
+      title: "Güne yay"
+      body: "Proteinini güne yay, yaklaşık 3 ila 4 saatte bir. 80 kiloda bu, tek bir dev akşam yemeği yerine 30 ila 40 g'lık dört öğün demek."
+
+  - key: nieren
+    kind: myth
+    en:
+      title: "Myth: a lot of protein harms your kidneys"
+      body: "Not in healthy people. In trials of up to a year with 2.5 to 3.3 g per kg, markers of kidney and liver function showed no harm."
+    nl:
+      title: "Mythe: veel eiwit is slecht voor je nieren"
+      body: "Niet bij gezonde mensen. In studies tot een jaar met 2,5 tot 3,3 gram per kilo lieten nier- en leverwaarden geen schade zien."
+    de:
+      title: "Mythos: viel Eiweiß schadet den Nieren"
+      body: "Nicht bei Gesunden. In Studien bis zu einem Jahr mit 2,5 bis 3,3 g pro kg zeigten Nieren- und Leberwerte keinen Schaden."
+    es:
+      title: "Mito: mucha proteína daña los riñones"
+      body: "No en personas sanas. En ensayos de hasta un año con 2,5 a 3,3 g por kg, los marcadores de riñón e hígado no mostraron daño."
+    fr:
+      title: "Mythe : trop de protéines abîme les reins"
+      body: "Pas chez les gens en bonne santé. Dans des essais jusqu'à un an à 2,5 à 3,3 g par kg, les marqueurs rénaux et hépatiques sont restés bons."
+    pt:
+      title: "Mito: muita proteína faz mal aos rins"
+      body: "Não em pessoas saudáveis. Em ensaios até um ano com 2,5 a 3,3 g por kg, os marcadores dos rins e do fígado não mostraram dano."
+    tr:
+      title: "Efsane: çok protein böbreklere zarar verir"
+      body: "Sağlıklı insanlarda hayır. Bir yıla kadar süren, kilo başına 2,5 ila 3,3 g'lık çalışmalarda böbrek ve karaciğer değerleri zarar göstermedi."
+
+  - key: nierziekte
+    kind: fact
+    en:
+      title: "Protein and kidney disease"
+      body: "The advice to eat less protein is for people who already have kidney disease. Have kidney problems? Talk to your doctor first."
+    nl:
+      title: "Eiwit en nierziekte"
+      body: "Het advies om minder eiwit te eten geldt voor mensen die al een nierziekte hebben. Heb je nierproblemen? Overleg eerst met je arts."
+    de:
+      title: "Eiweiß und Nierenerkrankung"
+      body: "Der Rat, weniger Eiweiß zu essen, gilt für Menschen mit Nierenerkrankung. Hast du Nierenprobleme? Sprich zuerst mit deinem Arzt."
+    es:
+      title: "Proteína y enfermedad renal"
+      body: "El consejo de comer menos proteína es para quien ya tiene una enfermedad renal. ¿Tienes problemas de riñón? Habla antes con tu médico."
+    fr:
+      title: "Protéines et maladie rénale"
+      body: "Le conseil de manger moins de protéines vise ceux qui ont déjà une maladie rénale. Des soucis aux reins ? Parles-en d'abord à ton médecin."
+    pt:
+      title: "Proteína e doença renal"
+      body: "O conselho de comer menos proteína é para quem já tem doença renal. Tens problemas de rins? Fala primeiro com o teu médico."
+    tr:
+      title: "Protein ve böbrek hastalığı"
+      body: "Daha az protein tavsiyesi zaten böbrek hastalığı olanlar için. Böbrek sorunun mu var? Önce doktorunla konuş."

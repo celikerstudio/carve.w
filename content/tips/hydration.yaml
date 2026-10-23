@@ -1,0 +1,241 @@
+article: hydration
+tips:
+  - key: liters-per-dag
+    kind: fact
+    en:
+      title: "Water per day"
+      body: "Most women need about 2 litres a day and most men 2.5, and that includes water from food. More when it's hot or you train hard."
+    nl:
+      title: "Water per dag"
+      body: "Vrouwen hebben zo'n 2 liter per dag nodig, mannen 2,5, en water uit eten telt mee. Meer als het warm is of je hard traint."
+    de:
+      title: "Wasser am Tag"
+      body: "Frauen brauchen etwa 2 Liter am Tag, Männer 2,5, Wasser aus dem Essen mitgerechnet. Mehr bei Hitze oder hartem Training."
+    es:
+      title: "Agua al día"
+      body: "Las mujeres necesitan unos 2 litros al día y los hombres 2,5, contando el agua de la comida. Más si hace calor o entrenas duro."
+    fr:
+      title: "L'eau par jour"
+      body: "Les femmes ont besoin d'environ 2 litres par jour, les hommes 2,5, eau des aliments comprise. Plus s'il fait chaud ou si tu t'entraînes dur."
+    pt:
+      title: "Água por dia"
+      body: "As mulheres precisam de cerca de 2 litros por dia e os homens 2,5, contando a água da comida. Mais com calor ou treino duro."
+    tr:
+      title: "Günlük su"
+      body: "Kadınlar günde yaklaşık 2 litreye, erkekler 2,5 litreye ihtiyaç duyar, yiyeceklerdeki su dahil. Sıcakta ya da sert antrenmanda daha fazla."
+
+  - key: plaskleur
+    kind: fact
+    en:
+      title: "Check your pee"
+      body: "Pale yellow most of the day is fine. Dark? Drink more. It's a rough field check, not a precise measurement."
+    nl:
+      title: "Kijk naar je plas"
+      body: "Lichtgeel het grootste deel van de dag is prima. Donker? Drink meer. Het is een grove check, geen precieze meting."
+    de:
+      title: "Schau auf deinen Urin"
+      body: "Hellgelb über den Tag ist gut. Dunkel? Trink mehr. Das ist ein grober Check, keine genaue Messung."
+    es:
+      title: "Mira tu orina"
+      body: "Amarillo claro casi todo el día está bien. ¿Oscura? Bebe más. Es una comprobación aproximada, no una medida precisa."
+    fr:
+      title: "Regarde ton urine"
+      body: "Jaune pâle la plupart de la journée, c'est bon. Foncée ? Bois plus. C'est un repère grossier, pas une mesure précise."
+    pt:
+      title: "Olha para a tua urina"
+      body: "Amarelo-claro durante quase todo o dia está bem. Escura? Bebe mais. É um teste aproximado, não uma medição precisa."
+    tr:
+      title: "İdrarına bak"
+      body: "Günün çoğunda açık sarıysa sorun yok. Koyu mu? Daha çok iç. Bu kaba bir kontrol, kesin bir ölçüm değil."
+
+  - key: twee-procent
+    kind: fact
+    en:
+      title: "The 2% line"
+      body: "Try not to lose more than 2% of your bodyweight in sweat while training. For an 80 kg person that's 1.6 kg."
+    nl:
+      title: "De grens van 2%"
+      body: "Probeer tijdens het trainen niet meer dan 2% van je gewicht te verliezen aan zweet. Bij 80 kg is dat 1,6 kilo."
+    de:
+      title: "Die 2-%-Grenze"
+      body: "Verlier beim Training möglichst nicht mehr als 2 % deines Körpergewichts durch Schweiß. Bei 80 kg sind das 1,6 kg."
+    es:
+      title: "La línea del 2%"
+      body: "Intenta no perder más del 2% de tu peso en sudor al entrenar. Para alguien de 80 kg, eso son 1,6 kg."
+    fr:
+      title: "La limite des 2 %"
+      body: "Essaie de ne pas perdre plus de 2 % de ton poids en sueur à l'entraînement. Pour 80 kg, ça fait 1,6 kg."
+    pt:
+      title: "A linha dos 2%"
+      body: "Tenta não perder mais de 2% do teu peso em suor durante o treino. Para alguém com 80 kg, são 1,6 kg."
+    tr:
+      title: "%2 sınırı"
+      body: "Antrenmanda terle vücut ağırlığının %2'sinden fazlasını kaybetmemeye çalış. 80 kiloluk biri için bu 1,6 kg."
+
+  - key: kracht-omlaag
+    kind: fact
+    en:
+      title: "Dehydration and strength"
+      body: "Across 28 studies, dehydration cut muscle strength by about 5.5% and muscle endurance by 8.3%."
+    nl:
+      title: "Uitdroging en kracht"
+      body: "In 28 studies verlaagde uitdroging je spierkracht met zo'n 5,5% en je spieruithoudingsvermogen met 8,3%."
+    de:
+      title: "Flüssigkeitsmangel und Kraft"
+      body: "Über 28 Studien senkte Flüssigkeitsmangel die Muskelkraft um etwa 5,5 % und die Kraftausdauer um 8,3 %."
+    es:
+      title: "Deshidratación y fuerza"
+      body: "En 28 estudios, la deshidratación bajó la fuerza muscular un 5,5% y la resistencia muscular un 8,3%."
+    fr:
+      title: "Déshydratation et force"
+      body: "Sur 28 études, la déshydratation a réduit la force musculaire d'environ 5,5 % et l'endurance musculaire de 8,3 %."
+    pt:
+      title: "Desidratação e força"
+      body: "Em 28 estudos, a desidratação baixou a força muscular cerca de 5,5% e a resistência muscular 8,3%."
+    tr:
+      title: "Susuzluk ve kuvvet"
+      body: "28 çalışmada susuzluk kas kuvvetini yaklaşık %5,5, kas dayanıklılığını %8,3 düşürdü."
+
+  - key: zweet-wegen
+    kind: fact
+    en:
+      title: "Find your sweat rate"
+      body: "Weigh yourself before and after training. Each kilo you lose is about a litre of sweat. Add what you drank during the session."
+    nl:
+      title: "Meet hoeveel je zweet"
+      body: "Weeg jezelf voor en na de training. Elke kilo die je kwijt bent is ongeveer een liter zweet. Tel erbij op wat je onderweg dronk."
+    de:
+      title: "Miss deine Schweißrate"
+      body: "Wieg dich vor und nach dem Training. Jedes verlorene Kilo ist etwa ein Liter Schweiß. Zähl dazu, was du dabei getrunken hast."
+    es:
+      title: "Mide cuánto sudas"
+      body: "Pésate antes y después de entrenar. Cada kilo que pierdes es más o menos un litro de sudor. Suma lo que bebiste durante la sesión."
+    fr:
+      title: "Mesure ta sudation"
+      body: "Pèse-toi avant et après l'entraînement. Chaque kilo perdu, c'est environ un litre de sueur. Ajoute ce que tu as bu pendant la séance."
+    pt:
+      title: "Mede quanto suas"
+      body: "Pesa-te antes e depois do treino. Cada quilo que perdes é cerca de um litro de suor. Soma o que bebeste durante a sessão."
+    tr:
+      title: "Ne kadar terlediğini ölç"
+      body: "Antrenmandan önce ve sonra tartıl. Kaybettiğin her kilo yaklaşık bir litre ter. Seans sırasında içtiğini de ekle."
+
+  - key: gelijk-terugdrinken
+    kind: myth
+    en:
+      title: "Myth: drink back exactly what you sweated"
+      body: "Not quite. In a study, men had to drink more than they lost to recover. With little salt, much of the extra just came out as urine."
+    nl:
+      title: "Mythe: drink precies terug wat je zweette"
+      body: "Niet helemaal. In een studie moesten mannen meer drinken dan ze kwijt waren om te herstellen. Zonder zout plasten ze veel weer uit."
+    de:
+      title: "Mythos: Trink genau zurück, was du schwitzt"
+      body: "Nicht ganz. In einer Studie mussten Männer mehr trinken als sie verloren hatten. Mit wenig Salz kam viel davon als Urin wieder raus."
+    es:
+      title: "Mito: bebe justo lo que sudaste"
+      body: "No exactamente. En un estudio, los hombres tuvieron que beber más de lo perdido para recuperarse. Con poca sal, gran parte salió en la orina."
+    fr:
+      title: "Mythe : rebois juste ce que tu as sué"
+      body: "Pas tout à fait. Dans une étude, des hommes ont dû boire plus qu'ils n'avaient perdu. Avec peu de sel, une bonne part repartait en urine."
+    pt:
+      title: "Mito: bebe só o que suaste"
+      body: "Não exatamente. Num estudo, os homens tiveram de beber mais do que perderam para recuperar. Com pouco sal, muito saiu na urina."
+    tr:
+      title: "Efsane: terlediğin kadarını geri iç"
+      body: "Tam değil. Bir çalışmada erkekler toparlanmak için kaybettiğinden fazlasını içmek zorunda kaldı. Az tuzla fazlası idrarla çıktı."
+
+  - key: zout-erbij
+    kind: fact
+    en:
+      title: "After a sweaty session"
+      body: "Drink a bit more than you lost and get some salt with it. A salted meal with your drink does the job."
+    nl:
+      title: "Na een zweterige training"
+      body: "Drink iets meer dan je kwijt bent en neem er wat zout bij. Een gezouten maaltijd bij je drinken werkt prima."
+    de:
+      title: "Nach einer schweißtreibenden Einheit"
+      body: "Trink etwas mehr, als du verloren hast, und nimm etwas Salz dazu. Eine gesalzene Mahlzeit zum Getränk reicht dafür."
+    es:
+      title: "Tras una sesión sudada"
+      body: "Bebe un poco más de lo que perdiste y toma algo de sal. Una comida salada con tu bebida sirve."
+    fr:
+      title: "Après une séance qui fait suer"
+      body: "Bois un peu plus que ce que tu as perdu, avec un peu de sel. Un repas salé avec ta boisson fait l'affaire."
+    pt:
+      title: "Depois de um treino suado"
+      body: "Bebe um pouco mais do que perdeste e junta algum sal. Uma refeição salgada com a bebida resolve."
+    tr:
+      title: "Bol terli bir antrenmandan sonra"
+      body: "Kaybettiğinden biraz fazla iç ve yanında biraz tuz al. İçeceğinin yanında tuzlu bir öğün bu işi görür."
+
+  - key: melk-blijft
+    kind: fact
+    en:
+      title: "Milk stays in longer"
+      body: "At rest, milk was retained better than water over four hours. Coffee, tea, beer and a sports drink were no different from water."
+    nl:
+      title: "Melk blijft langer hangen"
+      body: "In rust hield je lijf melk beter vast dan water, over vier uur gemeten. Koffie, thee, bier en sportdrank deden niets anders dan water."
+    de:
+      title: "Milch bleibt länger drin"
+      body: "In Ruhe hielt der Körper Milch über vier Stunden besser als Wasser. Kaffee, Tee, Bier und Sportgetränk waren wie Wasser."
+    es:
+      title: "La leche se queda más"
+      body: "En reposo, la leche se retuvo mejor que el agua durante cuatro horas. Café, té, cerveza y bebida deportiva fueron igual que el agua."
+    fr:
+      title: "Le lait reste plus longtemps"
+      body: "Au repos, le lait a été mieux retenu que l'eau sur quatre heures. Café, thé, bière et boisson sportive ont fait comme l'eau."
+    pt:
+      title: "O leite fica mais tempo"
+      body: "Em repouso, o leite foi retido melhor do que a água ao longo de quatro horas. Café, chá, cerveja e bebida desportiva foram iguais à água."
+    tr:
+      title: "Süt daha uzun kalır"
+      body: "Dinlenirken süt, dört saat boyunca sudan daha iyi tutuldu. Kahve, çay, bira ve spor içeceği sudan farklı değildi."
+
+  - key: koffie-droogt-uit
+    kind: myth
+    en:
+      title: "Myth: coffee dehydrates you"
+      body: "Not at normal amounts. Four cups a day kept regular coffee drinkers as hydrated as the same amount of water. It counts."
+    nl:
+      title: "Mythe: koffie droogt je uit"
+      body: "Niet bij normale hoeveelheden. Vier koppen per dag hielden vaste koffiedrinkers net zo goed gehydrateerd als water. Het telt gewoon mee."
+    de:
+      title: "Mythos: Kaffee trocknet dich aus"
+      body: "Nicht in normalen Mengen. Vier Tassen am Tag hielten Kaffeetrinker genauso gut hydriert wie Wasser. Kaffee zählt mit."
+    es:
+      title: "Mito: el café deshidrata"
+      body: "No en cantidades normales. Cuatro tazas al día hidrataron a bebedores habituales igual que el agua. El café cuenta."
+    fr:
+      title: "Mythe : le café déshydrate"
+      body: "Pas en quantité normale. Quatre tasses par jour ont hydraté des buveurs habituels aussi bien que l'eau. Le café compte."
+    pt:
+      title: "Mito: o café desidrata"
+      body: "Não em quantidades normais. Quatro chávenas por dia hidrataram quem bebe café habitualmente tão bem como água. O café conta."
+    tr:
+      title: "Efsane: kahve susuz bırakır"
+      body: "Normal miktarlarda hayır. Günde dört fincan, düzenli kahve içenleri su kadar iyi sıvı dengesinde tuttu. Kahve de sayılır."
+
+  - key: te-veel-water
+    kind: myth
+    en:
+      title: "Myth: you can't drink too much water"
+      body: "Not true. Drinking more than you sweat out during exercise can dilute the sodium in your blood. The risk is mostly in events over 4 hours."
+    nl:
+      title: "Mythe: te veel water bestaat niet"
+      body: "Klopt niet. Meer drinken dan je uitzweet tijdens het sporten kan het natrium in je bloed verdunnen. Vooral bij inspanning van meer dan 4 uur."
+    de:
+      title: "Mythos: Zu viel Wasser gibt es nicht"
+      body: "Stimmt nicht. Mehr trinken als du ausschwitzt kann das Natrium im Blut verdünnen. Das Risiko liegt vor allem bei Events über 4 Stunden."
+    es:
+      title: "Mito: no se puede beber demasiada agua"
+      body: "No es cierto. Beber más de lo que sudas al hacer ejercicio puede diluir el sodio en tu sangre. El riesgo está sobre todo en pruebas de más de 4 horas."
+    fr:
+      title: "Mythe : trop d'eau, ça n'existe pas"
+      body: "Faux. Boire plus que ce que tu transpires à l'effort peut diluer le sodium dans ton sang. Le risque concerne surtout les épreuves de plus de 4 h."
+    pt:
+      title: "Mito: não dá para beber água a mais"
+      body: "Não é verdade. Beber mais do que suas no exercício pode diluir o sódio no sangue. O risco está sobretudo em provas de mais de 4 horas."
+    tr:
+      title: "Efsane: fazla su içmek diye bir şey yok"
+      body: "Doğru değil. Sporda terlediğinden fazla içmek kandaki sodyumu seyreltebilir. Risk çoğunlukla 4 saati aşan etkinliklerde."

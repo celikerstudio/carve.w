@@ -1,0 +1,217 @@
+article: progressive-overload
+tips:
+  - key: langere-termijn
+    kind: fact
+    en:
+      title: "Progressive overload"
+      body: "Lifting already helps before you add anything. To keep improving in the longer term, you likely need to make it a bit harder over time."
+    nl:
+      title: "Progressive overload"
+      body: "Krachttraining helpt al voordat je iets toevoegt. Wil je op langere termijn blijven vooruitgaan, dan moet het waarschijnlijk geleidelijk zwaarder."
+    de:
+      title: "Progressive Überlastung"
+      body: "Krafttraining hilft schon, bevor du etwas steigerst. Willst du langfristig besser werden, muss es wohl nach und nach etwas härter werden."
+    es:
+      title: "Sobrecarga progresiva"
+      body: "Entrenar fuerza ya ayuda antes de añadir nada. Para seguir mejorando a largo plazo, seguramente tendrás que hacerlo algo más duro con el tiempo."
+    fr:
+      title: "Surcharge progressive"
+      body: "La muscu aide déjà avant que tu ajoutes quoi que ce soit. Pour progresser sur le long terme, il faut sans doute la durcir peu à peu."
+    pt:
+      title: "Sobrecarga progressiva"
+      body: "Treinar força já ajuda antes de acrescentares algo. Para continuares a melhorar a longo prazo, provavelmente tens de o tornar um pouco mais duro."
+    tr:
+      title: "Progresif yüklenme"
+      body: "Ağırlık çalışmak bir şey eklemeden de işe yarar. Uzun vadede gelişmeye devam etmek için antrenmanı zamanla biraz zorlaştırman gerekebilir."
+
+  - key: niet-elke-sessie
+    kind: myth
+    en:
+      title: "Myth: add weight every session"
+      body: "Not true. An extra rep, a cleaner rep or one more set at the same weight is progress too."
+    nl:
+      title: "Mythe: elke training moet er gewicht bij"
+      body: "Klopt niet. Een extra herhaling, een nettere herhaling of een set meer met hetzelfde gewicht is ook vooruitgang."
+    de:
+      title: "Mythos: jedes Training mehr Gewicht"
+      body: "Stimmt nicht. Eine Wiederholung mehr, eine sauberere Wiederholung oder ein Satz mehr mit gleichem Gewicht ist auch Fortschritt."
+    es:
+      title: "Mito: hay que subir peso cada sesión"
+      body: "No es cierto. Una repetición más, una repetición más limpia o una serie más con el mismo peso también es progreso."
+    fr:
+      title: "Mythe : ajouter du poids à chaque séance"
+      body: "Faux. Une répétition de plus, une répétition plus propre ou une série de plus au même poids, c'est aussi du progrès."
+    pt:
+      title: "Mito: tens de subir o peso em cada treino"
+      body: "Não é verdade. Uma repetição a mais, uma repetição mais limpa ou mais uma série com o mesmo peso também é progresso."
+    tr:
+      title: "Efsane: her antrenmanda ağırlık ekle"
+      body: "Doğru değil. Aynı ağırlıkla bir tekrar fazlası, daha temiz bir tekrar ya da bir set fazlası da ilerlemedir."
+
+  - key: reps-erbij
+    kind: fact
+    en:
+      title: "More reps count"
+      body: "In an 8-week trial of 43 people with lower body training experience, adding reps or adding weight gave similar results."
+    nl:
+      title: "Meer herhalingen telt ook"
+      body: "In een proef van 8 weken met 43 mensen met ervaring in beentraining werkte herhalingen erbij net zo goed als gewicht erbij."
+    de:
+      title: "Mehr Wiederholungen zählen"
+      body: "In einer 8-wöchigen Studie mit 43 Leuten mit Beintrainingserfahrung wirkten mehr Wiederholungen ähnlich wie mehr Gewicht."
+    es:
+      title: "Más repeticiones también cuentan"
+      body: "En un ensayo de 8 semanas con 43 personas con experiencia en tren inferior, sumar repeticiones o sumar peso dio resultados parecidos."
+    fr:
+      title: "Plus de répétitions, ça compte"
+      body: "Dans un essai de 8 semaines sur 43 personnes entraînées du bas du corps, ajouter des reps ou du poids a donné des résultats proches."
+    pt:
+      title: "Mais repetições também contam"
+      body: "Num ensaio de 8 semanas com 43 pessoas com treino de pernas, juntar repetições ou juntar peso deu resultados parecidos."
+    tr:
+      title: "Fazla tekrar da sayılır"
+      body: "Alt vücut antrenman deneyimi olan 43 kişilik 8 haftalık bir denemede tekrar eklemek ve ağırlık eklemek benzer sonuç verdi."
+
+  - key: wanneer-zwaarder
+    kind: fact
+    en:
+      title: "When to add weight"
+      body: "An ACSM rule of thumb from 2009: beat your rep target by 1 or 2 reps two sessions in a row, then add 2 to 10%."
+    nl:
+      title: "Wanneer zwaarder"
+      body: "Vuistregel van het ACSM uit 2009: haal je twee trainingen op rij 1 of 2 herhalingen meer dan gepland, doe er dan 2 tot 10% bij."
+    de:
+      title: "Wann mehr Gewicht"
+      body: "Faustregel des ACSM von 2009: Schaffst du zwei Einheiten in Folge 1 bis 2 Wiederholungen mehr als geplant, leg 2 bis 10% drauf."
+    es:
+      title: "Cuándo subir peso"
+      body: "Regla del ACSM de 2009: si dos sesiones seguidas haces 1 o 2 repeticiones más de lo previsto, sube de un 2 a un 10%."
+    fr:
+      title: "Quand ajouter du poids"
+      body: "Règle de l'ACSM de 2009 : si tu fais 1 ou 2 reps de plus que prévu deux séances de suite, ajoute 2 à 10 %."
+    pt:
+      title: "Quando subir o peso"
+      body: "Regra do ACSM de 2009: se fizeres 1 ou 2 repetições a mais do que o previsto em dois treinos seguidos, sobe 2 a 10%."
+    tr:
+      title: "Ne zaman ağırlık eklenir"
+      body: "ACSM'nin 2009 kuralı: üst üste iki antrenmanda hedefinden 1 ya da 2 tekrar fazla yaparsan yükü %2 ila %10 artır."
+
+  - key: kleine-stap
+    kind: fact
+    en:
+      title: "Small steps"
+      body: "A big jump in weight makes it hard to keep your form and hit your reps. A small step every few weeks adds up over a year."
+    nl:
+      title: "Kleine stappen"
+      body: "Met een grote sprong in gewicht hou je je techniek en je herhalingen moeilijk vast. Een kleine stap om de paar weken telt op over een jaar."
+    de:
+      title: "Kleine Schritte"
+      body: "Ein großer Gewichtssprung macht saubere Technik und deine Wiederholungen schwer. Ein kleiner Schritt alle paar Wochen summiert sich übers Jahr."
+    es:
+      title: "Pasos pequeños"
+      body: "Un gran salto de peso te hace perder técnica y repeticiones. Un paso pequeño cada pocas semanas suma mucho en un año."
+    fr:
+      title: "Petits pas"
+      body: "Un gros saut de charge te fait perdre la technique et les reps. Un petit pas toutes les quelques semaines, ça compte sur un an."
+    pt:
+      title: "Passos pequenos"
+      body: "Um salto grande no peso dificulta manter a técnica e as repetições. Um passo pequeno a cada poucas semanas soma muito num ano."
+    tr:
+      title: "Küçük adımlar"
+      body: "Ağırlıkta büyük bir sıçrama formunu ve tekrarlarını korumanı zorlaştırır. Birkaç haftada bir küçük bir adım bir yılda birikir."
+
+  - key: slechte-dag
+    kind: myth
+    en:
+      title: "Myth: a bad session means lost strength"
+      body: "Not true. Single sessions vary with sleep, food and stress. Look at the trend over three or four weeks."
+    nl:
+      title: "Mythe: een slechte training is kracht kwijt"
+      body: "Klopt niet. Losse trainingen schommelen door slaap, eten en stress. Kijk naar de lijn over drie of vier weken."
+    de:
+      title: "Mythos: schlechtes Training heißt Kraftverlust"
+      body: "Stimmt nicht. Einzelne Einheiten schwanken mit Schlaf, Essen und Stress. Schau auf den Verlauf über drei oder vier Wochen."
+    es:
+      title: "Mito: una mala sesión es fuerza perdida"
+      body: "No es cierto. Cada sesión varía con el sueño, la comida y el estrés. Mira la tendencia de tres o cuatro semanas."
+    fr:
+      title: "Mythe : mauvaise séance, force perdue"
+      body: "Faux. Chaque séance varie avec le sommeil, l'alimentation et le stress. Regarde la tendance sur trois ou quatre semaines."
+    pt:
+      title: "Mito: um mau treino é força perdida"
+      body: "Não é verdade. Cada treino varia com o sono, a comida e o stress. Olha para a tendência de três ou quatro semanas."
+    tr:
+      title: "Efsane: kötü bir antrenman güç kaybıdır"
+      body: "Doğru değil. Tek tek antrenmanlar uyku, yemek ve stresle değişir. Üç dört haftalık gidişata bak."
+
+  - key: vastlopen
+    kind: myth
+    en:
+      title: "Myth: a stall means your plan is wrong"
+      body: "Not quite. Stalls are normal. First check your log, sleep and food, then try a set more or a smaller step."
+    nl:
+      title: "Mythe: vastlopen betekent een fout schema"
+      body: "Niet helemaal. Vastlopen is normaal. Check eerst je logboek, slaap en eten, en probeer dan een set extra of een kleinere stap."
+    de:
+      title: "Mythos: Stagnation heißt falscher Plan"
+      body: "Nicht ganz. Stagnation ist normal. Prüf erst dein Log, deinen Schlaf und dein Essen, dann versuch einen Satz mehr oder kleinere Schritte."
+    es:
+      title: "Mito: estancarte es culpa del plan"
+      body: "No del todo. Estancarse es normal. Revisa primero tu registro, tu sueño y tu comida, y luego prueba una serie más o un paso menor."
+    fr:
+      title: "Mythe : stagner veut dire mauvais programme"
+      body: "Pas tout à fait. Stagner est normal. Vérifie d'abord ton carnet, ton sommeil et ton alimentation, puis tente une série de plus."
+    pt:
+      title: "Mito: estagnar é culpa do plano"
+      body: "Não bem. Estagnar é normal. Vê primeiro o teu registo, o sono e a comida, e depois tenta mais uma série ou um passo menor."
+    tr:
+      title: "Efsane: takılmak programın yanlış demek"
+      body: "Tam değil. Takılmak normaldir. Önce kayıtlarına, uykuna ve beslenmene bak, sonra bir set fazlasını ya da daha küçük bir adımı dene."
+
+  - key: techniek
+    kind: fact
+    en:
+      title: "Technique is progress"
+      body: "A deeper, controlled rep is harder than a bouncy one, even at the same weight."
+    nl:
+      title: "Techniek is ook vooruitgang"
+      body: "Een diepere, gecontroleerde herhaling is zwaarder dan een verende, ook met hetzelfde gewicht."
+    de:
+      title: "Technik ist auch Fortschritt"
+      body: "Eine tiefere, kontrollierte Wiederholung ist härter als eine federnde, auch mit dem gleichen Gewicht."
+    es:
+      title: "La técnica también es progreso"
+      body: "Una repetición más profunda y controlada cuesta más que una con rebote, incluso con el mismo peso."
+    fr:
+      title: "La technique, c'est du progrès"
+      body: "Une répétition plus profonde et contrôlée est plus dure qu'une répétition avec rebond, même au même poids."
+    pt:
+      title: "A técnica também é progresso"
+      body: "Uma repetição mais funda e controlada custa mais do que uma com ressalto, mesmo com o mesmo peso."
+    tr:
+      title: "Teknik de ilerlemedir"
+      body: "Daha derin ve kontrollü bir tekrar, aynı ağırlıkta bile sekerek yapılan bir tekrardan daha zordur."
+
+  - key: kleine-oefeningen
+    kind: fact
+    en:
+      title: "Progress on small lifts"
+      body: "On lateral raises, a small percentage can be less than your lightest plate. Keep adding reps until you can make the jump."
+    nl:
+      title: "Vooruit op kleine oefeningen"
+      body: "Bij lateral raises is een klein percentage soms minder dan je lichtste schijf. Doe er dan herhalingen bij tot je de sprong kunt maken."
+    de:
+      title: "Fortschritt bei kleinen Übungen"
+      body: "Beim Seitheben sind ein paar Prozent oft weniger als deine leichteste Scheibe. Mach mehr Wiederholungen, bis der Sprung geht."
+    es:
+      title: "Progresar en ejercicios pequeños"
+      body: "En elevaciones laterales, un porcentaje pequeño puede ser menos que tu disco más ligero. Suma repeticiones hasta poder dar el salto."
+    fr:
+      title: "Progresser sur les petits exercices"
+      body: "Aux élévations latérales, quelques pour cent font parfois moins que ton plus petit disque. Ajoute des reps jusqu'à pouvoir monter."
+    pt:
+      title: "Progredir em exercícios pequenos"
+      body: "Nas elevações laterais, uma pequena percentagem pode ser menos do que o teu disco mais leve. Junta repetições até dares o salto."
+    tr:
+      title: "Küçük hareketlerde ilerleme"
+      body: "Yana açışta küçük bir yüzde en hafif plakandan bile az olabilir. Sıçramayı yapabilene kadar tekrar eklemeye devam et."

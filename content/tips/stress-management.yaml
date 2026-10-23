@@ -1,0 +1,169 @@
+article: stress-management
+tips:
+  - key: stress-en-vooruitgang
+    kind: fact
+    en:
+      title: "Stress and your progress"
+      body: "Chronic stress raises cortisol and keeps your body on alert. That can get in the way of recovery, muscle gain and fat loss."
+    nl:
+      title: "Stress en je vooruitgang"
+      body: "Langdurige stress verhoogt je cortisol en houdt je lijf in de alarmstand. Dat kan herstel, spieropbouw en vetverlies in de weg zitten."
+    de:
+      title: "Stress und dein Fortschritt"
+      body: "Chronischer Stress hebt dein Cortisol und hält den Körper in Alarmbereitschaft. Das kann Erholung, Muskelaufbau und Fettabbau bremsen."
+    es:
+      title: "El estrés y tu progreso"
+      body: "El estrés crónico sube el cortisol y mantiene tu cuerpo en alerta. Eso puede frenar la recuperación, el músculo y la pérdida de grasa."
+    fr:
+      title: "Le stress et tes progrès"
+      body: "Le stress chronique augmente le cortisol et garde ton corps en alerte. Ça peut freiner la récup, la prise de muscle et la perte de gras."
+    pt:
+      title: "O stress e o teu progresso"
+      body: "O stress crónico sobe o cortisol e mantém o corpo em alerta. Isso pode travar a recuperação, o ganho de músculo e a perda de gordura."
+    tr:
+      title: "Stres ve ilerlemen"
+      body: "Kronik stres kortizolü yükseltir ve vücudunu alarmda tutar. Bu toparlanmayı, kas kazanımını ve yağ kaybını engelleyebilir."
+
+  - key: zwaarder-voelen
+    kind: fact
+    en:
+      title: "Why training feels heavier"
+      body: "Stress can make the same effort feel harder and can sap your motivation."
+    nl:
+      title: "Waarom trainen zwaarder voelt"
+      body: "Stress kan dezelfde inspanning zwaarder laten voelen en je motivatie ondermijnen."
+    de:
+      title: "Warum Training schwerer wirkt"
+      body: "Stress kann dieselbe Anstrengung härter wirken lassen und an deiner Motivation nagen."
+    es:
+      title: "Por qué entrenar pesa más"
+      body: "El estrés puede hacer que el mismo esfuerzo se sienta más duro y quitarte motivación."
+    fr:
+      title: "Pourquoi la séance paraît plus dure"
+      body: "Le stress peut rendre le même effort plus dur à ressentir et te couper la motivation."
+    pt:
+      title: "Porque o treino parece mais pesado"
+      body: "O stress pode fazer o mesmo esforço parecer mais duro e tirar-te a motivação."
+    tr:
+      title: "Antrenman neden daha ağır gelir"
+      body: "Stres aynı eforu daha zor hissettirebilir ve motivasyonunu düşürebilir."
+
+  - key: niet-harder-trainen
+    kind: myth
+    en:
+      title: "Myth: stressed? Train it off harder"
+      body: "Not true. Adding training when life stress is high piles on fatigue. Keep your load recoverable, and deload if stress spikes."
+    nl:
+      title: "Mythe: gestrest? Train het er hard uit"
+      body: "Niet waar. Meer trainen als het leven al zwaar is stapelt vermoeidheid op. Houd je belasting herstelbaar en deload als stress piekt."
+    de:
+      title: "Mythos: Gestresst? Hart abtrainieren"
+      body: "Stimmt nicht. Mehr Training bei hohem Alltagsstress häuft Ermüdung an. Halte die Last erholbar und mach einen Deload, wenn der Stress steigt."
+    es:
+      title: "Mito: ¿estresado? Entrena más duro"
+      body: "No es cierto. Entrenar más cuando la vida ya aprieta acumula fatiga. Mantén una carga recuperable y haz un deload si el estrés se dispara."
+    fr:
+      title: "Mythe : stressé ? Entraîne-toi plus dur"
+      body: "Faux. T'entraîner plus quand la vie est déjà chargée accumule la fatigue. Garde une charge récupérable et fais un deload si le stress grimpe."
+    pt:
+      title: "Mito: stressado? Treina mais duro"
+      body: "Não é verdade. Treinar mais quando a vida já aperta acumula fadiga. Mantém uma carga recuperável e faz deload se o stress disparar."
+    tr:
+      title: "Efsane: stresliysen daha sert çalış"
+      body: "Doğru değil. Hayat stresi yüksekken antrenmanı artırmak yorgunluğu biriktirir. Yükü toparlanabilir tut, stres artarsa deload yap."
+
+  - key: korte-pauzes
+    kind: fact
+    en:
+      title: "Micro-breaks"
+      body: "Put a short walk or 5 minutes of breathing between your work blocks."
+    nl:
+      title: "Korte pauzes"
+      body: "Stop een kort wandelingetje of 5 minuten ademhalen tussen je werkblokken."
+    de:
+      title: "Mikropausen"
+      body: "Bau zwischen deine Arbeitsblöcke einen kurzen Spaziergang oder 5 Minuten Atemübung ein."
+    es:
+      title: "Micropausas"
+      body: "Mete un paseo corto o 5 minutos de respiración entre tus bloques de trabajo."
+    fr:
+      title: "Micro-pauses"
+      body: "Glisse une petite marche ou 5 minutes de respiration entre tes blocs de travail."
+    pt:
+      title: "Micropausas"
+      body: "Mete uma caminhada curta ou 5 minutos de respiração entre os teus blocos de trabalho."
+    tr:
+      title: "Mini molalar"
+      body: "İş blokların arasına kısa bir yürüyüş ya da 5 dakikalık nefes çalışması koy."
+
+  - key: geen-extra-cafeine
+    kind: myth
+    en:
+      title: "Myth: more caffeine gets you through it"
+      body: "Not true. Leaning on stimulants instead of fixing sleep and workload is a common mistake. Keep caffeine earlier in the day."
+    nl:
+      title: "Mythe: meer cafeïne trekt je erdoorheen"
+      body: "Niet waar. Op oppeppers leunen in plaats van je slaap en werkdruk aan te pakken is een veelgemaakte fout. Neem cafeïne vroeger op de dag."
+    de:
+      title: "Mythos: Mehr Koffein bringt dich durch"
+      body: "Stimmt nicht. Auf Aufputschmittel zu setzen, statt Schlaf und Arbeitslast anzugehen, ist ein häufiger Fehler. Koffein lieber früh am Tag."
+    es:
+      title: "Mito: más cafeína te saca adelante"
+      body: "No es cierto. Tirar de estimulantes en vez de arreglar el sueño y la carga de trabajo es un error común. Toma la cafeína más temprano."
+    fr:
+      title: "Mythe : plus de caféine pour tenir"
+      body: "Faux. Compter sur les stimulants au lieu de régler ton sommeil et ta charge de travail est une erreur courante. Garde la caféine pour le matin."
+    pt:
+      title: "Mito: mais cafeína faz-te aguentar"
+      body: "Não é verdade. Depender de estimulantes em vez de resolver o sono e a carga de trabalho é um erro comum. Toma a cafeína mais cedo."
+    tr:
+      title: "Efsane: daha fazla kafein seni taşır"
+      body: "Doğru değil. Uykuyu ve iş yükünü düzeltmek yerine uyarıcılara yaslanmak sık bir hata. Kafeini günün erken saatlerinde al."
+
+  - key: drukke-dag-toch-eten
+    kind: fact
+    en:
+      title: "Busy day, still eat"
+      body: "Skipping meals and drinks on busy days makes your stress response worse. Regular meals with enough protein and carbs keep your energy steady."
+    nl:
+      title: "Drukke dag, toch eten"
+      body: "Maaltijden en drinken overslaan op drukke dagen maakt je stressreactie erger. Vaste maaltijden met genoeg eiwit en koolhydraten houden je energie stabiel."
+    de:
+      title: "Voller Tag, trotzdem essen"
+      body: "Mahlzeiten und Trinken an vollen Tagen auszulassen, verstärkt die Stressreaktion. Regelmäßige Mahlzeiten mit Protein und Kohlenhydraten halten dich stabil."
+    es:
+      title: "Día liado, come igual"
+      body: "Saltarte comidas y bebida en días liados empeora tu respuesta al estrés. Comidas regulares con proteína e hidratos mantienen tu energía."
+    fr:
+      title: "Journée chargée, mange quand même"
+      body: "Sauter repas et boissons les jours chargés aggrave ta réaction au stress. Des repas réguliers avec protéines et glucides stabilisent ton énergie."
+    pt:
+      title: "Dia cheio, come na mesma"
+      body: "Saltar refeições e bebida em dias cheios piora a resposta ao stress. Refeições regulares com proteína e hidratos mantêm a energia estável."
+    tr:
+      title: "Yoğun gün, yine de ye"
+      body: "Yoğun günlerde öğün ve su atlamak stres tepkini kötüleştirir. Yeterli protein ve karbonhidratlı düzenli öğünler enerjini dengede tutar."
+
+  - key: afschakelen-voor-bed
+    kind: fact
+    en:
+      title: "Wind down before bed"
+      body: "A wind-down routine protects your sleep. Simple mindfulness or journaling can help you shift down before bed."
+    nl:
+      title: "Afschakelen voor het slapen"
+      body: "Een vaste afbouwroutine beschermt je slaap. Simpele mindfulness of even opschrijven wat je bezighoudt helpt je af te schakelen."
+    de:
+      title: "Runterfahren vor dem Schlafen"
+      body: "Eine Abendroutine schützt deinen Schlaf. Einfache Achtsamkeit oder Tagebuchschreiben hilft dir, vor dem Schlafen runterzufahren."
+    es:
+      title: "Bajar el ritmo antes de dormir"
+      body: "Una rutina para desconectar protege tu sueño. Un poco de mindfulness o escribir un diario te ayuda a bajar revoluciones antes de acostarte."
+    fr:
+      title: "Décompresser avant de dormir"
+      body: "Une routine du soir protège ton sommeil. Un peu de pleine conscience ou écrire un journal t'aide à décompresser avant le coucher."
+    pt:
+      title: "Abrandar antes de dormir"
+      body: "Uma rotina para desligar protege o teu sono. Um pouco de mindfulness ou escrever um diário ajuda-te a abrandar antes de deitar."
+    tr:
+      title: "Yatmadan önce yavaşla"
+      body: "Bir akşam rutini uykunu korur. Basit farkındalık egzersizi ya da günlük yazmak yatmadan önce yavaşlamana yardım eder."

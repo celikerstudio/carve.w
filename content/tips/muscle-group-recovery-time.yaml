@@ -1,0 +1,193 @@
+article: muscle-group-recovery-time
+tips:
+  - key: een-tot-drie-dagen
+    kind: fact
+    en:
+      title: "How long a muscle needs"
+      body: "Most muscles recover in 24 to 72 hours between hard sessions. How long exactly depends on your volume, intensity and you."
+    nl:
+      title: "Hoe lang een spier nodig heeft"
+      body: "De meeste spieren herstellen in 24 tot 72 uur tussen zware trainingen. Hoe lang precies hangt af van je volume, intensiteit en van jou."
+    de:
+      title: "Wie lange ein Muskel braucht"
+      body: "Die meisten Muskeln erholen sich in 24 bis 72 Stunden zwischen harten Einheiten. Wie lange genau, hängt von Volumen, Intensität und dir ab."
+    es:
+      title: "Cuánto necesita un músculo"
+      body: "La mayoría de los músculos se recuperan en 24 a 72 horas entre sesiones duras. Lo exacto depende de tu volumen, intensidad y de ti."
+    fr:
+      title: "Le temps qu'il faut à un muscle"
+      body: "La plupart des muscles récupèrent en 24 à 72 heures entre deux séances dures. Le délai exact dépend du volume, de l'intensité et de toi."
+    pt:
+      title: "Quanto precisa um músculo"
+      body: "A maioria dos músculos recupera em 24 a 72 horas entre treinos duros. O tempo exato depende do volume, da intensidade e de ti."
+    tr:
+      title: "Bir kas ne kadar ister"
+      body: "Çoğu kas zorlu antrenmanlar arasında 24 ila 72 saatte toparlanır. Tam süresi hacmine, yoğunluğuna ve sana bağlı."
+
+  - key: twee-tot-drie-keer
+    kind: fact
+    en:
+      title: "How often per muscle"
+      body: "Train each muscle 2 to 3 times a week, with 10 to 20 sets in total. Adjust if soreness or performance lags."
+    nl:
+      title: "Hoe vaak per spier"
+      body: "Train elke spier 2 à 3 keer per week, met in totaal 10 tot 20 sets. Stuur bij als spierpijn of prestaties achterblijven."
+    de:
+      title: "Wie oft pro Muskel"
+      body: "Trainiere jeden Muskel 2 bis 3 Mal pro Woche, insgesamt 10 bis 20 Sätze. Pass an, wenn Muskelkater oder Leistung hängen."
+    es:
+      title: "Cuántas veces por músculo"
+      body: "Entrena cada músculo 2 o 3 veces por semana, con 10 a 20 series en total. Ajusta si las agujetas o el rendimiento no acompañan."
+    fr:
+      title: "Combien de fois par muscle"
+      body: "Travaille chaque muscle 2 à 3 fois par semaine, 10 à 20 séries au total. Ajuste si les courbatures traînent ou si tu stagnes."
+    pt:
+      title: "Quantas vezes por músculo"
+      body: "Treina cada músculo 2 a 3 vezes por semana, com 10 a 20 séries no total. Ajusta se as dores ou o rendimento ficarem para trás."
+    tr:
+      title: "Kas başına kaç kez"
+      body: "Her kası haftada 2 ila 3 kez, toplam 10 ila 20 setle çalıştır. Ağrı ya da performans geride kalırsa ayarla."
+
+  - key: wat-herstel-vertraagt
+    kind: fact
+    en:
+      title: "What slows recovery"
+      body: "More volume, heavy lowering work and exercises you're not used to all make a muscle need longer to recover."
+    nl:
+      title: "Wat herstel vertraagt"
+      body: "Meer volume, zwaar zakwerk en oefeningen die je niet gewend bent laten een spier allemaal langer herstellen."
+    de:
+      title: "Was die Erholung bremst"
+      body: "Mehr Volumen, schwere Absenkphasen und ungewohnte Übungen verlängern die Zeit, die ein Muskel zur Erholung braucht."
+    es:
+      title: "Qué frena la recuperación"
+      body: "Más volumen, la fase de bajada con carga y los ejercicios a los que no estás acostumbrado alargan la recuperación del músculo."
+    fr:
+      title: "Ce qui ralentit la récup"
+      body: "Plus de volume, une descente chargée et des exercices dont tu n'as pas l'habitude allongent le temps de récupération d'un muscle."
+    pt:
+      title: "O que atrasa a recuperação"
+      body: "Mais volume, a fase de descida com carga e exercícios a que não estás habituado fazem o músculo precisar de mais tempo."
+    tr:
+      title: "Toparlanmayı ne yavaşlatır"
+      body: "Daha fazla hacim, yüklü indirme çalışması ve alışık olmadığın egzersizler kasın toparlanma süresini uzatır."
+
+  - key: wat-herstel-versnelt
+    kind: fact
+    en:
+      title: "What speeds it up"
+      body: "Better conditioning, good sleep and food shorten recovery. Aim for 7 to 9 hours of sleep and enough protein."
+    nl:
+      title: "Wat het versnelt"
+      body: "Een betere conditie, goede slaap en goed eten maken herstel korter. Mik op 7 tot 9 uur slaap en genoeg eiwit."
+    de:
+      title: "Was sie beschleunigt"
+      body: "Bessere Fitness, guter Schlaf und gute Ernährung verkürzen die Erholung. Ziel: 7 bis 9 Stunden Schlaf und genug Protein."
+    es:
+      title: "Qué la acelera"
+      body: "Mejor forma física, buen sueño y buena comida acortan la recuperación. Apunta a 7 a 9 horas de sueño y suficiente proteína."
+    fr:
+      title: "Ce qui l'accélère"
+      body: "Une meilleure condition, un bon sommeil et une bonne alimentation raccourcissent la récup. Vise 7 à 9 heures de sommeil et assez de protéines."
+    pt:
+      title: "O que a acelera"
+      body: "Melhor condição física, bom sono e boa alimentação encurtam a recuperação. Aponta para 7 a 9 horas de sono e proteína suficiente."
+    tr:
+      title: "Ne hızlandırır"
+      body: "Daha iyi kondisyon, iyi uyku ve beslenme toparlanmayı kısaltır. 7 ila 9 saat uyku ve yeterli protein hedefle."
+
+  - key: een-keer-per-week-alles
+    kind: myth
+    en:
+      title: "Myth: one huge session per muscle is best"
+      body: "Not true. Hammering a muscle once a week with huge volume leaves you fatigued for a long time. Spread it over 2 to 3 sessions."
+    nl:
+      title: "Mythe: één enorme sessie per spier is best"
+      body: "Niet waar. Een spier één keer per week met enorm volume slopen geeft lang vermoeidheid. Verdeel het over 2 à 3 trainingen."
+    de:
+      title: "Mythos: eine Riesen-Einheit pro Muskel"
+      body: "Stimmt nicht. Einen Muskel einmal pro Woche mit riesigem Volumen zu zerlegen, macht lange müde. Verteil es auf 2 bis 3 Einheiten."
+    es:
+      title: "Mito: una sesión enorme por músculo"
+      body: "No es cierto. Machacar un músculo una vez por semana con un volumen enorme deja fatiga mucho tiempo. Repártelo en 2 o 3 sesiones."
+    fr:
+      title: "Mythe : une énorme séance par muscle"
+      body: "Faux. Défoncer un muscle une fois par semaine avec un volume énorme laisse une longue fatigue. Répartis sur 2 à 3 séances."
+    pt:
+      title: "Mito: uma sessão enorme por músculo"
+      body: "Não é verdade. Massacrar um músculo uma vez por semana com volume enorme deixa fadiga durante muito tempo. Divide por 2 a 3 treinos."
+    tr:
+      title: "Efsane: kas başına tek dev antrenman"
+      body: "Doğru değil. Bir kası haftada bir kez dev hacimle yüklemek uzun süre yorgun bırakır. 2 ila 3 antrenmana yay."
+
+  - key: nog-moe-of-al-fris
+    kind: fact
+    en:
+      title: "Still sore, or fresh too soon?"
+      body: "If soreness or weaker lifts linger, cut sets per session or add rest. If you're fully fresh too soon, do a bit more per session."
+    nl:
+      title: "Nog moe, of te snel fris?"
+      body: "Blijven spierpijn of zwakkere lifts hangen, doe dan minder sets per training of meer rust. Ben je te snel fris, doe dan iets meer."
+    de:
+      title: "Noch platt oder zu schnell fit?"
+      body: "Hängen Muskelkater oder schwächere Leistung nach, weniger Sätze pro Einheit oder mehr Pause. Zu schnell fit? Dann pro Einheit etwas mehr."
+    es:
+      title: "¿Aún cargado o fresco antes de tiempo?"
+      body: "Si el dolor o el bajo rendimiento persisten, haz menos series por sesión o descansa más. Si estás fresco muy pronto, haz algo más."
+    fr:
+      title: "Encore fatigué, ou frais trop vite ?"
+      body: "Si les courbatures ou la baisse de perf traînent, fais moins de séries ou repose-toi plus. Frais trop vite ? Fais-en un peu plus par séance."
+    pt:
+      title: "Ainda cansado ou fresco cedo demais?"
+      body: "Se as dores ou o rendimento fraco persistem, faz menos séries por treino ou descansa mais. Se estás fresco cedo demais, faz um pouco mais."
+    tr:
+      title: "Hâlâ yorgun mu, erken mi dinç?"
+      body: "Ağrı ya da düşük performans sürüyorsa antrenman başına seti azalt veya dinlenmeyi artır. Çok erken dinçsen biraz daha fazla yap."
+
+  - key: signalen
+    kind: fact
+    en:
+      title: "Signals to watch"
+      body: "Soreness, bar speed and how hard a set feels (RPE) tell you whether to space a muscle's sessions further apart."
+    nl:
+      title: "Signalen om op te letten"
+      body: "Spierpijn, hoe snel de stang beweegt en hoe zwaar een set voelt (RPE) vertellen je of je trainingen verder uit elkaar moeten."
+    de:
+      title: "Signale, auf die du achtest"
+      body: "Muskelkater, Hantelgeschwindigkeit und wie schwer sich ein Satz anfühlt (RPE) zeigen, ob die Einheiten weiter auseinander müssen."
+    es:
+      title: "Señales a vigilar"
+      body: "Las agujetas, la velocidad de la barra y lo duro que se siente una serie (RPE) te dicen si debes separar más las sesiones."
+    fr:
+      title: "Les signaux à surveiller"
+      body: "Les courbatures, la vitesse de la barre et la difficulté ressentie (RPE) te disent s'il faut espacer davantage tes séances."
+    pt:
+      title: "Sinais a vigiar"
+      body: "As dores, a velocidade da barra e o quão dura a série parece (RPE) dizem-te se deves espaçar mais os treinos."
+    tr:
+      title: "Dikkat edilecek sinyaller"
+      body: "Kas ağrısı, barın hızı ve setin ne kadar zor hissettirdiği (RPE), antrenmanları daha seyrek yapman gerekip gerekmediğini söyler."
+
+  - key: niet-meer-sets
+    kind: myth
+    en:
+      title: "Myth: lagging behind? Just add sets"
+      body: "Not if recovery is the problem. Adding sets instead of improving sleep and food is a common mistake. Under-recovery lowers your output."
+    nl:
+      title: "Mythe: loop je achter? Gewoon meer sets"
+      body: "Niet als herstel het probleem is. Sets toevoegen in plaats van beter slapen en eten is een veelgemaakte fout. Te weinig herstel kost prestatie."
+    de:
+      title: "Mythos: Hängst du hinterher? Mehr Sätze"
+      body: "Nicht, wenn die Erholung das Problem ist. Sätze statt besserem Schlaf und Essen ist ein häufiger Fehler. Zu wenig Erholung kostet Leistung."
+    es:
+      title: "Mito: ¿te estancas? Añade series"
+      body: "No si el problema es la recuperación. Sumar series en vez de dormir y comer mejor es un error común. Recuperar poco baja tu rendimiento."
+    fr:
+      title: "Mythe : tu stagnes ? Ajoute des séries"
+      body: "Pas si la récup est le problème. Ajouter des séries au lieu de mieux dormir et manger est une erreur courante. Mal récupérer baisse tes perfs."
+    pt:
+      title: "Mito: estagnado? Mete mais séries"
+      body: "Não se o problema for a recuperação. Somar séries em vez de dormir e comer melhor é um erro comum. Recuperar pouco baixa o rendimento."
+    tr:
+      title: "Efsane: geride misin? Set ekle"
+      body: "Sorun toparlanmaysa hayır. Uyku ve beslenmeyi düzeltmek yerine set eklemek sık bir hata. Yetersiz toparlanma performansı düşürür."

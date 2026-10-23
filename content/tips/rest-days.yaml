@@ -1,0 +1,193 @@
+article: rest-days
+tips:
+  - key: deel-van-het-schema
+    kind: fact
+    en:
+      title: "Rest days"
+      body: "A rest day is a planned day without hard training. It's part of a good program, for recovery, adaptation and staying injury-free."
+    nl:
+      title: "Rustdagen"
+      body: "Een rustdag is een geplande dag zonder zware training. Het hoort bij een goed schema, voor herstel, aanpassing en minder blessures."
+    de:
+      title: "Ruhetage"
+      body: "Ein Ruhetag ist ein geplanter Tag ohne hartes Training. Er gehört zu einem guten Plan, für Erholung, Anpassung und weniger Verletzungen."
+    es:
+      title: "Días de descanso"
+      body: "Un día de descanso es un día planificado sin entrenar duro. Forma parte de un buen plan, para recuperarte, adaptarte y evitar lesiones."
+    fr:
+      title: "Jours de repos"
+      body: "Un jour de repos, c'est un jour prévu sans entraînement dur. Il fait partie d'un bon programme : récup, adaptation, moins de blessures."
+    pt:
+      title: "Dias de descanso"
+      body: "Um dia de descanso é um dia planeado sem treino duro. Faz parte de um bom plano, para recuperar, adaptar e evitar lesões."
+    tr:
+      title: "Dinlenme günleri"
+      body: "Dinlenme günü, ağır antrenman olmayan planlı bir gündür. Toparlanma, uyum ve sakatlıktan korunma için iyi bir programın parçasıdır."
+
+  - key: een-tot-drie-per-week
+    kind: fact
+    en:
+      title: "How many rest days?"
+      body: "1 to 3 a week, depending on how much you train and how well you recover."
+    nl:
+      title: "Hoeveel rustdagen?"
+      body: "1 tot 3 per week, afhankelijk van hoeveel je traint en hoe goed je herstelt."
+    de:
+      title: "Wie viele Ruhetage?"
+      body: "1 bis 3 pro Woche, je nachdem, wie viel du trainierst und wie gut du dich erholst."
+    es:
+      title: "¿Cuántos días de descanso?"
+      body: "De 1 a 3 por semana, según cuánto entrenes y lo bien que te recuperes."
+    fr:
+      title: "Combien de jours de repos ?"
+      body: "1 à 3 par semaine, selon ta charge d'entraînement et ta récupération."
+    pt:
+      title: "Quantos dias de descanso?"
+      body: "1 a 3 por semana, conforme o quanto treinas e o quão bem recuperas."
+    tr:
+      title: "Kaç dinlenme günü?"
+      body: "Ne kadar antrenman yaptığına ve ne kadar iyi toparlandığına göre haftada 1 ila 3."
+
+  - key: na-zware-dagen
+    kind: fact
+    en:
+      title: "Where to put them"
+      body: "Plan your rest days after your heavy or high-volume days."
+    nl:
+      title: "Waar je ze zet"
+      body: "Plan je rustdagen na je zware dagen of dagen met veel volume."
+    de:
+      title: "Wohin damit"
+      body: "Leg deine Ruhetage hinter schwere Tage oder Tage mit viel Volumen."
+    es:
+      title: "Dónde ponerlos"
+      body: "Coloca tus días de descanso después de los días pesados o de mucho volumen."
+    fr:
+      title: "Où les placer"
+      body: "Place tes jours de repos après tes journées lourdes ou à gros volume."
+    pt:
+      title: "Onde os pôr"
+      body: "Põe os dias de descanso a seguir aos dias pesados ou com muito volume."
+    tr:
+      title: "Nereye konur"
+      body: "Dinlenme günlerini ağır ya da yüksek hacimli günlerinin arkasına planla."
+
+  - key: niet-minder-eten
+    kind: myth
+    en:
+      title: "Myth: eat less on a rest day"
+      body: "Not true. Under-eating on rest days slows recovery. Eat to match your goal and keep your protein up."
+    nl:
+      title: "Mythe: op een rustdag eet je minder"
+      body: "Niet waar. Te weinig eten op een rustdag vertraagt je herstel. Eet volgens je doel en houd je eiwit op peil."
+    de:
+      title: "Mythos: Am Ruhetag weniger essen"
+      body: "Stimmt nicht. Zu wenig essen am Ruhetag bremst die Erholung. Iss passend zu deinem Ziel und halte dein Protein oben."
+    es:
+      title: "Mito: el día de descanso se come menos"
+      body: "No es cierto. Comer poco en los días de descanso frena la recuperación. Come según tu objetivo y mantén la proteína."
+    fr:
+      title: "Mythe : jour de repos, on mange moins"
+      body: "Faux. Trop peu manger les jours de repos freine la récupération. Mange selon ton objectif et garde tes protéines."
+    pt:
+      title: "Mito: no dia de descanso come-se menos"
+      body: "Não é verdade. Comer pouco nos dias de descanso atrasa a recuperação. Come de acordo com o objetivo e mantém a proteína."
+    tr:
+      title: "Efsane: dinlenme günü daha az ye"
+      body: "Doğru değil. Dinlenme günü az yemek toparlanmayı yavaşlatır. Hedefine göre ye ve proteinini koru."
+
+  - key: sport-voor-de-lol
+    kind: myth
+    en:
+      title: "Myth: hard sport for fun counts as rest"
+      body: "Not true. Hard recreational efforts on a rest day add fatigue. Keep it to walks and light mobility."
+    nl:
+      title: "Mythe: zwaar sporten voor de lol is ook rust"
+      body: "Niet waar. Zware inspanning voor de lol op een rustdag geeft extra vermoeidheid. Hou het bij wandelen en lichte mobiliteit."
+    de:
+      title: "Mythos: Harter Freizeitsport ist auch Ruhe"
+      body: "Stimmt nicht. Harte Freizeitbelastung am Ruhetag bringt zusätzliche Ermüdung. Bleib bei Spaziergängen und leichter Mobility."
+    es:
+      title: "Mito: el deporte por diversión es descanso"
+      body: "No es cierto. Un esfuerzo duro por ocio en tu día de descanso suma fatiga. Quédate en paseos y movilidad suave."
+    fr:
+      title: "Mythe : le sport loisir intense, c'est du repos"
+      body: "Faux. Un effort intense pour le plaisir un jour de repos ajoute de la fatigue. Reste sur la marche et une mobilité légère."
+    pt:
+      title: "Mito: desporto intenso por lazer é descanso"
+      body: "Não é verdade. Um esforço duro por lazer no dia de descanso soma fadiga. Fica-te por caminhadas e mobilidade leve."
+    tr:
+      title: "Efsane: eğlence için yoğun spor da dinlenmedir"
+      body: "Doğru değil. Dinlenme gününde eğlence için yapılan yoğun efor yorgunluk ekler. Yürüyüş ve hafif mobiliteyle sınırlı tut."
+
+  - key: dag-goed-gebruiken
+    kind: fact
+    en:
+      title: "Use the day"
+      body: "A rest day is a good moment to prep meals, sleep a bit more and look back at your technique."
+    nl:
+      title: "Gebruik de dag"
+      body: "Een rustdag is een mooi moment om maaltijden voor te bereiden, wat langer te slapen en je techniek terug te kijken."
+    de:
+      title: "Nutz den Tag"
+      body: "Ein Ruhetag ist ein guter Moment, um Essen vorzubereiten, etwas mehr zu schlafen und deine Technik anzuschauen."
+    es:
+      title: "Aprovecha el día"
+      body: "Un día de descanso es buen momento para preparar comidas, dormir algo más y repasar tu técnica."
+    fr:
+      title: "Profite de la journée"
+      body: "Un jour de repos, c'est le bon moment pour préparer tes repas, dormir un peu plus et revoir ta technique."
+    pt:
+      title: "Aproveita o dia"
+      body: "Um dia de descanso é um bom momento para preparar refeições, dormir um pouco mais e rever a tua técnica."
+    tr:
+      title: "Günü değerlendir"
+      body: "Dinlenme günü yemek hazırlamak, biraz daha fazla uyumak ve tekniğine göz atmak için iyi bir fırsat."
+
+  - key: rust-overslaan
+    kind: fact
+    en:
+      title: "Skipping rest"
+      body: "Ignoring the signals and skipping rest days can lead to overuse problems."
+    nl:
+      title: "Rust overslaan"
+      body: "Signalen negeren en rustdagen overslaan kan tot overbelastingsklachten leiden."
+    de:
+      title: "Ruhe auslassen"
+      body: "Signale zu ignorieren und Ruhetage auszulassen kann zu Überlastungsbeschwerden führen."
+    es:
+      title: "Saltarte el descanso"
+      body: "Ignorar las señales y saltarte los días de descanso puede acabar en lesiones por sobreuso."
+    fr:
+      title: "Sauter le repos"
+      body: "Ignorer les signaux et sauter tes jours de repos peut mener à des problèmes de surmenage."
+    pt:
+      title: "Saltar o descanso"
+      body: "Ignorar os sinais e saltar os dias de descanso pode levar a problemas de sobrecarga."
+    tr:
+      title: "Dinlenmeyi atlamak"
+      body: "Sinyalleri görmezden gelip dinlenme günlerini atlamak aşırı kullanım sorunlarına yol açabilir."
+
+  - key: heel-moe
+    kind: fact
+    en:
+      title: "Really worn out?"
+      body: "If you're extremely fatigued, consider an extra rest day or a deload."
+    nl:
+      title: "Echt op?"
+      body: "Ben je extreem moe, overweeg dan een extra rustdag of een deload."
+    de:
+      title: "Richtig platt?"
+      body: "Bist du extrem erschöpft, denk über einen zusätzlichen Ruhetag oder einen Deload nach."
+    es:
+      title: "¿Muy agotado?"
+      body: "Si estás muy fatigado, plantéate un día extra de descanso o un deload."
+    fr:
+      title: "Vraiment vidé ?"
+      body: "Si tu es extrêmement fatigué, envisage un jour de repos en plus ou un deload."
+    pt:
+      title: "Mesmo esgotado?"
+      body: "Se estás muito cansado, pensa num dia extra de descanso ou num deload."
+    tr:
+      title: "Gerçekten bitkin misin?"
+      body: "Aşırı yorgunsan fazladan bir dinlenme günü ya da deload düşün."

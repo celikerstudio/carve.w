@@ -1,0 +1,169 @@
+article: supersets
+tips:
+  - key: wat-het-is
+    kind: fact
+    en:
+      title: "Supersets"
+      body: "Two exercises back to back with minimal rest, for opposing muscles or for the same muscle. They can save you time."
+    nl:
+      title: "Supersets"
+      body: "Twee oefeningen direct na elkaar met amper rust, voor tegenoverliggende spieren of dezelfde spier. Het kan je tijd schelen."
+    de:
+      title: "Supersätze"
+      body: "Zwei Übungen direkt hintereinander mit kaum Pause, für Gegenspieler oder denselben Muskel. Das kann dir Zeit sparen."
+    es:
+      title: "Superseries"
+      body: "Dos ejercicios seguidos con el mínimo descanso, para músculos opuestos o para el mismo músculo. Te pueden ahorrar tiempo."
+    fr:
+      title: "Supersets"
+      body: "Deux exercices enchaînés avec un repos minimal, pour des muscles opposés ou le même muscle. Ça peut te faire gagner du temps."
+    pt:
+      title: "Supersets"
+      body: "Dois exercícios seguidos com o mínimo de descanso, para músculos opostos ou para o mesmo músculo. Podem poupar-te tempo."
+    tr:
+      title: "Süpersetler"
+      body: "Çok kısa dinlenmeyle arka arkaya iki hareket, karşıt kaslar ya da aynı kas için. Sana zaman kazandırabilir."
+
+  - key: tegenoverliggend
+    kind: fact
+    en:
+      title: "The best pairs"
+      body: "Pair opposing muscles, like a row with a press or curls with triceps. One muscle recovers while the other works."
+    nl:
+      title: "De beste combinaties"
+      body: "Combineer tegenoverliggende spieren, zoals roeien met drukken of biceps met triceps. De ene spier herstelt terwijl de andere werkt."
+    de:
+      title: "Die besten Paare"
+      body: "Kombinier Gegenspieler, etwa Rudern mit Drücken oder Bizeps mit Trizeps. Ein Muskel erholt sich, während der andere arbeitet."
+    es:
+      title: "Las mejores parejas"
+      body: "Combina músculos opuestos, como un remo con un press o curl con tríceps. Uno se recupera mientras el otro trabaja."
+    fr:
+      title: "Les meilleures paires"
+      body: "Associe des muscles opposés, comme un rowing avec un développé ou biceps avec triceps. L'un récupère pendant que l'autre bosse."
+    pt:
+      title: "Os melhores pares"
+      body: "Junta músculos opostos, como um remo com um press ou bíceps com tríceps. Um recupera enquanto o outro trabalha."
+    tr:
+      title: "En iyi eşleşmeler"
+      body: "Karşıt kasları eşleştir, örneğin row ile press ya da biceps ile triceps. Biri çalışırken diğeri toparlanır."
+
+  - key: niet-op-zware-oefeningen
+    kind: myth
+    en:
+      title: "Myth: supersets work for every lift"
+      body: "Not true. On heavy compound lifts they hurt your performance and technique. Keep them for accessories."
+    nl:
+      title: "Mythe: supersets werken bij elke oefening"
+      body: "Klopt niet. Bij zware basisoefeningen gaan je prestatie en techniek eraan. Hou ze voor hulpoefeningen."
+    de:
+      title: "Mythos: Supersätze passen zu jeder Übung"
+      body: "Stimmt nicht. Bei schweren Grundübungen leiden Leistung und Technik. Nutz sie für Zusatzübungen."
+    es:
+      title: "Mito: las superseries valen para todo"
+      body: "No es cierto. En básicos pesados empeoran tu rendimiento y tu técnica. Úsalas en ejercicios accesorios."
+    fr:
+      title: "Mythe : les supersets marchent partout"
+      body: "Faux. Sur les gros polyarticulaires lourds, ta performance et ta technique en pâtissent. Garde-les pour les accessoires."
+    pt:
+      title: "Mito: supersets servem para tudo"
+      body: "Não é verdade. Em básicos pesados prejudicam o teu rendimento e a técnica. Usa-os nos exercícios acessórios."
+    tr:
+      title: "Efsane: süpersetler her harekete uyar"
+      body: "Doğru değil. Ağır temel hareketlerde performansını ve tekniğini bozar. Onları yardımcı hareketlere sakla."
+
+  - key: rust-na-paar
+    kind: fact
+    en:
+      title: "Rest after the pair"
+      body: "After each pair, rest 60 to 120 seconds before you start the next round."
+    nl:
+      title: "Rust na het paar"
+      body: "Na elk paar rust je 60 tot 120 seconden voordat je aan de volgende ronde begint."
+    de:
+      title: "Pause nach dem Paar"
+      body: "Mach nach jedem Paar 60 bis 120 Sekunden Pause, bevor du die nächste Runde startest."
+    es:
+      title: "Descansa tras la pareja"
+      body: "Después de cada pareja, descansa de 60 a 120 segundos antes de empezar la siguiente ronda."
+    fr:
+      title: "Repos après la paire"
+      body: "Après chaque paire, repose-toi 60 à 120 secondes avant d'attaquer le tour suivant."
+    pt:
+      title: "Descansa depois do par"
+      body: "Depois de cada par, descansa 60 a 120 segundos antes de começares a ronda seguinte."
+    tr:
+      title: "Eşleşmeden sonra dinlen"
+      body: "Her eşleşmeden sonra bir sonraki tura başlamadan önce 60 ila 120 saniye dinlen."
+
+  - key: zelfde-spier
+    kind: fact
+    en:
+      title: "Same-muscle supersets"
+      body: "Hitting the same muscle twice gives more local fatigue and pump, but may cost load. Go a bit lighter and stay 1 to 2 reps from failure."
+    nl:
+      title: "Supersets voor één spier"
+      body: "Twee keer dezelfde spier geeft meer lokale vermoeidheid en pomp, maar kan gewicht kosten. Ga iets lichter en blijf 1 à 2 herhalingen van falen."
+    de:
+      title: "Supersätze für einen Muskel"
+      body: "Derselbe Muskel zweimal bringt mehr lokale Ermüdung und Pump, kann aber Gewicht kosten. Nimm etwas weniger, bleib 1 bis 2 Wdh. vor dem Versagen."
+    es:
+      title: "Superseries del mismo músculo"
+      body: "El mismo músculo dos veces da más fatiga local y bombeo, pero puede costar peso. Baja un poco y quédate a 1 o 2 repeticiones del fallo."
+    fr:
+      title: "Supersets sur un même muscle"
+      body: "Le même muscle deux fois donne plus de fatigue locale et de congestion, mais peut coûter de la charge. Allège un peu, reste à 1 ou 2 reps de l'échec."
+    pt:
+      title: "Supersets do mesmo músculo"
+      body: "O mesmo músculo duas vezes dá mais fadiga local e pump, mas pode custar peso. Baixa um pouco e fica a 1 ou 2 repetições da falha."
+    tr:
+      title: "Aynı kasa süperset"
+      body: "Aynı kası iki kez çalışmak daha çok lokal yorgunluk ve pump verir, ama ağırlıktan götürebilir. Biraz hafiflet, tükenişe 1-2 tekrar kala dur."
+
+  - key: inspanning-volgen
+    kind: fact
+    en:
+      title: "Track your effort"
+      body: "With short rest, your sets can get closer to failure than you notice. Track how hard each exercise feels (RPE)."
+    nl:
+      title: "Hou je inspanning bij"
+      body: "Met korte rust kom je ongemerkt dichter bij falen. Noteer per oefening hoe zwaar het voelt (RPE)."
+    de:
+      title: "Behalte deine Anstrengung im Blick"
+      body: "Mit kurzer Pause kommst du unbemerkt näher ans Versagen. Notier pro Übung, wie hart es sich anfühlt (RPE)."
+    es:
+      title: "Controla tu esfuerzo"
+      body: "Con descansos cortos te acercas al fallo sin notarlo. Apunta lo duro que se siente cada ejercicio (RPE)."
+    fr:
+      title: "Suis ton effort"
+      body: "Avec un repos court, tu te rapproches de l'échec sans t'en rendre compte. Note la difficulté de chaque exercice (RPE)."
+    pt:
+      title: "Controla o teu esforço"
+      body: "Com descanso curto aproximas-te da falha sem dares conta. Aponta quão duro sentes cada exercício (RPE)."
+    tr:
+      title: "Eforunu takip et"
+      body: "Kısa dinlenmeyle farkında olmadan tükenişe yaklaşırsın. Her hareketin ne kadar zor geldiğini not et (RPE)."
+
+  - key: stabilisatoren
+    kind: fact
+    en:
+      title: "Watch the stabilisers"
+      body: "Avoid pairing moves that tire the same stabilising muscles. That is where your form breaks down."
+    nl:
+      title: "Let op je stabilisatoren"
+      body: "Combineer geen oefeningen die dezelfde stabiliserende spieren vermoeien. Daar gaat je techniek onderuit."
+    de:
+      title: "Achte auf die Stabilisatoren"
+      body: "Kombinier keine Übungen, die dieselben stabilisierenden Muskeln ermüden. Genau dann bricht deine Technik ein."
+    es:
+      title: "Ojo con los estabilizadores"
+      body: "No combines ejercicios que cansan los mismos músculos estabilizadores. Ahí es donde se rompe tu técnica."
+    fr:
+      title: "Attention aux stabilisateurs"
+      body: "N'associe pas des mouvements qui fatiguent les mêmes muscles stabilisateurs. C'est là que ta technique lâche."
+    pt:
+      title: "Cuidado com os estabilizadores"
+      body: "Não juntes exercícios que cansam os mesmos músculos estabilizadores. É aí que a tua técnica se desfaz."
+    tr:
+      title: "Dengeleyici kaslara dikkat"
+      body: "Aynı dengeleyici kasları yoran hareketleri eşleştirme. Formun tam orada bozulur."

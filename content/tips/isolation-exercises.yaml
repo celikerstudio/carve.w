@@ -1,0 +1,169 @@
+article: isolation-exercises
+tips:
+  - key: minder-techniek
+    kind: fact
+    en:
+      title: "Isolation takes less skill"
+      body: "The ACSM describes exercises like knee extensions and knee curls as a way to target one muscle group that asks for less skill."
+    nl:
+      title: "Isolatie vraagt minder techniek"
+      body: "Het ACSM noemt oefeningen als leg extensions en leg curls een manier om één spiergroep te raken die minder techniek vraagt."
+    de:
+      title: "Isolation braucht weniger Technik"
+      body: "Das ACSM sieht Übungen wie Beinstrecker und Beincurls als Weg, gezielt eine Muskelgruppe zu treffen, der weniger Technik verlangt."
+    es:
+      title: "El aislamiento pide menos técnica"
+      body: "El ACSM describe ejercicios como la extensión y el curl de piernas como una forma de trabajar un músculo con menos técnica."
+    fr:
+      title: "L'isolation demande moins de technique"
+      body: "L'ACSM décrit des exercices comme le leg extension et le leg curl comme un moyen de cibler un muscle avec moins de technique."
+    pt:
+      title: "O isolamento pede menos técnica"
+      body: "O ACSM descreve exercícios como a extensão e o curl de pernas como uma forma de focar um músculo com menos técnica."
+    tr:
+      title: "İzolasyon daha az teknik ister"
+      body: "ACSM, leg extension ve leg curl gibi hareketleri belirli bir kası daha az teknikle hedeflemenin bir yolu olarak tanımlar."
+
+  - key: niet-verplicht
+    kind: myth
+    en:
+      title: "Myth: you must do isolation exercises"
+      body: "Not true. You don't have to. They're useful for adding work to a muscle your compound lifts barely reach."
+    nl:
+      title: "Mythe: isolatieoefeningen moeten erin"
+      body: "Klopt niet. Het hoeft niet. Ze zijn handig om extra werk te geven aan een spier die je compound oefeningen nauwelijks raken."
+    de:
+      title: "Mythos: Isolationsübungen sind Pflicht"
+      body: "Stimmt nicht. Du musst sie nicht machen. Sie helfen, einem Muskel Arbeit zu geben, den deine Grundübungen kaum erreichen."
+    es:
+      title: "Mito: el aislamiento es obligatorio"
+      body: "No es cierto. No hace falta. Sirve para dar trabajo extra a un músculo al que tus multiarticulares apenas llegan."
+    fr:
+      title: "Mythe : l'isolation est obligatoire"
+      body: "Faux. Tu n'es pas obligé. Elle sert à donner du travail à un muscle que tes polyarticulaires touchent à peine."
+    pt:
+      title: "Mito: o isolamento é obrigatório"
+      body: "Não é verdade. Não é preciso. Serve para dar trabalho extra a um músculo que os teus multiarticulares mal alcançam."
+    tr:
+      title: "Efsane: izolasyon hareketleri şart"
+      body: "Doğru değil. Yapmak zorunda değilsin. Bileşik hareketlerinin zor ulaştığı bir kasa ek iş vermek için işe yararlar."
+
+  - key: meer-spier
+    kind: myth
+    en:
+      title: "Myth: isolation builds more muscle"
+      body: "Not quite. In the studies that compared them, neither isolation nor compound exercises clearly built more muscle."
+    nl:
+      title: "Mythe: isolatie bouwt meer spier"
+      body: "Niet helemaal. In de studies die ze vergeleken, bouwde isolatie niet duidelijk meer spier dan compound, en andersom ook niet."
+    de:
+      title: "Mythos: Isolation baut mehr Muskeln auf"
+      body: "Nicht ganz. In den Studien, die beides verglichen, baute weder Isolation noch Grundübungen klar mehr Muskeln auf."
+    es:
+      title: "Mito: el aislamiento da más músculo"
+      body: "No del todo. En los estudios que los compararon, ni el aislamiento ni los multiarticulares dieron claramente más músculo."
+    fr:
+      title: "Mythe : l'isolation fait plus de muscle"
+      body: "Pas tout à fait. Dans les études qui les ont comparés, ni l'isolation ni le polyarticulaire n'a clairement fait plus de muscle."
+    pt:
+      title: "Mito: o isolamento dá mais músculo"
+      body: "Não bem. Nos estudos que os compararam, nem o isolamento nem os multiarticulares deram claramente mais músculo."
+    tr:
+      title: "Efsane: izolasyon daha çok kas yapar"
+      body: "Tam değil. İkisini karşılaştıran çalışmalarda ne izolasyon ne de bileşik hareketler açıkça daha çok kas yaptı."
+
+  - key: rust-isolatie
+    kind: fact
+    en:
+      title: "Shorter rests on isolation"
+      body: "An expert position stand for athletes says 60 to 90 seconds of rest can be enough for single-joint and some machine exercises."
+    nl:
+      title: "Korter rusten bij isolatie"
+      body: "Een expertstandpunt voor sporters zegt dat 60 tot 90 seconden rust genoeg kan zijn bij isolatie- en sommige machineoefeningen."
+    de:
+      title: "Kürzere Pausen bei Isolation"
+      body: "Laut einer Expertenempfehlung für Athleten können bei Isolations- und manchen Maschinenübungen 60 bis 90 Sekunden Pause reichen."
+    es:
+      title: "Descansos más cortos en aislamiento"
+      body: "Un consenso de expertos para deportistas dice que 60 a 90 segundos de descanso pueden bastar en aislamiento y algunas máquinas."
+    fr:
+      title: "Repos plus courts en isolation"
+      body: "Un consensus d'experts pour sportifs dit que 60 à 90 secondes de repos peuvent suffire en isolation et sur certaines machines."
+    pt:
+      title: "Descansos mais curtos no isolamento"
+      body: "Um consenso de especialistas para atletas diz que 60 a 90 segundos de descanso podem chegar no isolamento e em algumas máquinas."
+    tr:
+      title: "İzolasyonda daha kısa dinlenme"
+      body: "Sporcular için bir uzman görüşüne göre izolasyon ve bazı makine hareketlerinde 60 ila 90 saniye dinlenme yetebilir."
+
+  - key: rust-acsm
+    kind: fact
+    en:
+      title: "Rest between sets"
+      body: "For muscle growth, the ACSM in 2009 advised 1 to 2 minutes of rest between sets for beginners and intermediate lifters."
+    nl:
+      title: "Rust tussen sets"
+      body: "Voor spiergroei adviseerde het ACSM in 2009 aan beginners en middelgevorderden 1 tot 2 minuten rust tussen sets."
+    de:
+      title: "Pause zwischen Sätzen"
+      body: "Für Muskelaufbau riet das ACSM 2009 Anfängern und Leicht-Fortgeschrittenen zu 1 bis 2 Minuten Pause zwischen den Sätzen."
+    es:
+      title: "Descanso entre series"
+      body: "Para ganar músculo, el ACSM aconsejó en 2009 de 1 a 2 minutos de descanso entre series a principiantes y nivel intermedio."
+    fr:
+      title: "Repos entre les séries"
+      body: "Pour la prise de muscle, l'ACSM conseillait en 2009 1 à 2 minutes de repos entre les séries aux débutants et intermédiaires."
+    pt:
+      title: "Descanso entre séries"
+      body: "Para ganhar músculo, o ACSM aconselhou em 2009 1 a 2 minutos de descanso entre séries a principiantes e intermédios."
+    tr:
+      title: "Setler arası dinlenme"
+      body: "ACSM 2009'da kas gelişimi için yeni başlayan ve orta seviyedekilere setler arasında 1 ila 2 dakika dinlenmeyi önerdi."
+
+  - key: hoeken
+    kind: fact
+    en:
+      title: "Many angles"
+      body: "An expert position stand for athletes advises mixing compound and isolation work, from different angles, to train the whole muscle."
+    nl:
+      title: "Vanuit verschillende hoeken"
+      body: "Een expertstandpunt voor sporters raadt aan compound en isolatie te combineren, vanuit verschillende hoeken, om de hele spier te trainen."
+    de:
+      title: "Aus verschiedenen Winkeln"
+      body: "Eine Expertenempfehlung für Athleten rät, Grund- und Isolationsübungen aus verschiedenen Winkeln zu mischen, um den ganzen Muskel zu treffen."
+    es:
+      title: "Desde varios ángulos"
+      body: "Un consenso de expertos para deportistas aconseja combinar multiarticulares y aislamiento, con varios ángulos, para trabajar todo el músculo."
+    fr:
+      title: "Sous plusieurs angles"
+      body: "Un consensus d'experts pour sportifs conseille de combiner poly et isolation, sous plusieurs angles, pour travailler tout le muscle."
+    pt:
+      title: "De vários ângulos"
+      body: "Um consenso de especialistas para atletas aconselha juntar multiarticulares e isolamento, de vários ângulos, para treinar o músculo todo."
+    tr:
+      title: "Farklı açılardan"
+      body: "Sporcular için bir uzman görüşü, kasın tamamını çalıştırmak için bileşik ve izolasyon hareketlerini farklı açılarla karıştırmayı önerir."
+
+  - key: acsm-nu
+    kind: fact
+    en:
+      title: "What the ACSM says now"
+      body: "In 2009 the ACSM advised both isolation and compound lifts for muscle growth. Its 2026 update found too few data to prefer either."
+    nl:
+      title: "Wat het ACSM nu zegt"
+      body: "In 2009 raadde het ACSM voor spiergroei zowel isolatie als compound aan. De update van 2026 vond te weinig data om er één te verkiezen."
+    de:
+      title: "Was das ACSM heute sagt"
+      body: "2009 empfahl das ACSM für Muskelaufbau Isolations- und Grundübungen. Das Update von 2026 fand zu wenige Daten, um eine vorzuziehen."
+    es:
+      title: "Qué dice hoy el ACSM"
+      body: "En 2009 el ACSM recomendaba aislamiento y multiarticulares para ganar músculo. Su revisión de 2026 vio pocos datos para preferir uno."
+    fr:
+      title: "Ce que dit l'ACSM aujourd'hui"
+      body: "En 2009, l'ACSM conseillait isolation et polyarticulaires pour le muscle. Sa mise à jour de 2026 manque de données pour en préférer un."
+    pt:
+      title: "O que diz hoje o ACSM"
+      body: "Em 2009 o ACSM recomendava isolamento e multiarticulares para ganhar músculo. A atualização de 2026 viu poucos dados para preferir um."
+    tr:
+      title: "ACSM bugün ne diyor"
+      body: "ACSM 2009'da kas için hem izolasyon hem bileşik hareketleri önerdi. 2026 güncellemesi birini seçmek için yeterli veri bulamadı."

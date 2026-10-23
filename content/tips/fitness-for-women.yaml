@@ -1,0 +1,241 @@
+article: fitness-for-women
+tips:
+  - key: kracht-en-spier
+    kind: fact
+    en:
+      title: "Women and lifting"
+      body: "In a meta-analysis of 24 studies in women, lifting gave large strength gains and a medium gain in muscle size."
+    nl:
+      title: "Vrouwen en krachttraining"
+      body: "In een meta-analyse van 24 studies bij vrouwen gaf krachttraining een grote winst in kracht en een middelgrote in spiermassa."
+    de:
+      title: "Frauen und Krafttraining"
+      body: "In einer Metaanalyse von 24 Studien mit Frauen brachte Krafttraining große Kraftzuwächse und einen mittleren Zuwachs an Muskelmasse."
+    es:
+      title: "Mujeres y pesas"
+      body: "En un metaanálisis de 24 estudios con mujeres, entrenar fuerza dio grandes mejoras de fuerza y una mejora media de masa muscular."
+    fr:
+      title: "Les femmes et la muscu"
+      body: "Dans une méta-analyse de 24 études chez des femmes, la muscu a donné de gros gains de force et un gain moyen de masse musculaire."
+    pt:
+      title: "Mulheres e treino de força"
+      body: "Numa meta-análise de 24 estudos com mulheres, o treino de força deu grandes ganhos de força e um ganho médio de massa muscular."
+    tr:
+      title: "Kadınlar ve ağırlık"
+      body: "Kadınlarla 24 çalışmalık bir meta-analizde ağırlık çalışmak güçte büyük, kas kütlesinde orta düzeyde artış sağladı."
+
+  - key: frequentie-en-volume
+    kind: fact
+    en:
+      title: "What helped strength"
+      body: "In that analysis of women, how often and how much they trained seemed to matter for strength. Nothing tested clearly mattered for muscle growth."
+    nl:
+      title: "Wat hielp voor kracht"
+      body: "In die analyse bij vrouwen leken hoe vaak en hoeveel ze trainden uit te maken voor kracht. Voor spiergroei maakte niets wat ze testten duidelijk uit."
+    de:
+      title: "Was der Kraft half"
+      body: "In dieser Analyse mit Frauen schienen Häufigkeit und Umfang für die Kraft zu zählen. Für den Muskelaufbau machte nichts Getestetes klar einen Unterschied."
+    es:
+      title: "Lo que ayudó a la fuerza"
+      body: "En ese análisis con mujeres, la frecuencia y el volumen parecían importar para la fuerza. Para el músculo, nada de lo probado importó con claridad."
+    fr:
+      title: "Ce qui a aidé la force"
+      body: "Dans cette analyse chez des femmes, la fréquence et le volume semblaient compter pour la force. Pour le muscle, rien de testé ne comptait clairement."
+    pt:
+      title: "O que ajudou a força"
+      body: "Nessa análise com mulheres, a frequência e o volume pareciam contar para a força. Para o músculo, nada do que testaram contou com clareza."
+    tr:
+      title: "Güce ne yardım etti"
+      body: "Kadınlarla yapılan o analizde ne sıklıkla ve ne kadar çalıştıkları güç için önemli göründü. Kas büyümesinde test edilenlerin hiçbiri net fark yaratmadı."
+
+  - key: trainen-op-cyclus
+    kind: myth
+    en:
+      title: "Myth: train by your cycle phase"
+      body: "Not proven. A review of reviews found highly variable results and poor methods. It's too early to say hormone shifts change your gains."
+    nl:
+      title: "Mythe: train volgens je cyclusfase"
+      body: "Niet bewezen. Een review van reviews vond sterk wisselende uitkomsten en zwakke methodes. Te vroeg om te zeggen dat hormoonschommelingen je winst veranderen."
+    de:
+      title: "Mythos: trainier nach Zyklusphase"
+      body: "Nicht belegt. Ein Review von Reviews fand stark schwankende Ergebnisse und schwache Methoden. Für Schlüsse über Hormone und Fortschritt ist es zu früh."
+    es:
+      title: "Mito: entrena según la fase del ciclo"
+      body: "No está probado. Una revisión de revisiones halló resultados muy variables y métodos flojos. Es pronto para decir que las hormonas cambien tus avances."
+    fr:
+      title: "Mythe : s'entraîner selon son cycle"
+      body: "Pas prouvé. Une revue de revues a trouvé des résultats très variables et des méthodes faibles. Trop tôt pour dire que les hormones changent tes progrès."
+    pt:
+      title: "Mito: treina segundo a fase do ciclo"
+      body: "Não está provado. Uma revisão de revisões encontrou resultados muito variáveis e métodos fracos. É cedo para dizer que as hormonas mudam os ganhos."
+    tr:
+      title: "Efsane: döngü evresine göre çalış"
+      body: "Kanıtlanmadı. Derlemelerin derlemesi çok değişken sonuçlar ve zayıf yöntemler buldu. Hormon dalgalanmalarının kazanımını değiştirdiğini söylemek için erken."
+
+  - key: cyclus-bijhouden
+    kind: fact
+    en:
+      title: "Why track your cycle"
+      body: "Tracking can help you spot irregular periods, handle symptoms and learn about your body. If your periods stop or turn irregular, see your GP."
+    nl:
+      title: "Waarom je cyclus bijhouden"
+      body: "Zo zie je een onregelmatige cyclus, kun je klachten managen en leer je je lijf kennen. Blijft je menstruatie weg of wordt ze onregelmatig? Ga naar je huisarts."
+    de:
+      title: "Warum den Zyklus tracken"
+      body: "Tracken hilft, unregelmäßige Perioden zu erkennen, Beschwerden zu steuern und deinen Körper kennenzulernen. Bleibt sie aus oder wird unregelmäßig: zum Arzt."
+    es:
+      title: "Para qué seguir tu ciclo"
+      body: "Te ayuda a ver reglas irregulares, manejar síntomas y conocer tu cuerpo. Si la regla se te corta o se vuelve irregular, ve a tu médico."
+    fr:
+      title: "Pourquoi suivre ton cycle"
+      body: "Ça aide à repérer des règles irrégulières, gérer les symptômes et mieux te connaître. Si tes règles s'arrêtent ou deviennent irrégulières, vois ton médecin."
+    pt:
+      title: "Porquê seguir o ciclo"
+      body: "Ajuda a ver períodos irregulares, gerir sintomas e conhecer o teu corpo. Se o período parar ou ficar irregular, vai ao médico de família."
+    tr:
+      title: "Döngünü neden takip etmeli"
+      body: "Düzensiz adetleri fark etmene, belirtileri yönetmene ve vücudunu tanımana yardım eder. Adetin durursa ya da düzensizleşirse doktoruna git."
+
+  - key: zwanger-kracht
+    kind: myth
+    en:
+      title: "Myth: stop lifting when you're pregnant"
+      body: "Not true, without complications. The WHO says the evidence supports regular strength training. Check with your midwife or doctor."
+    nl:
+      title: "Mythe: stop met tillen als je zwanger bent"
+      body: "Klopt niet, als er geen complicaties zijn. Volgens de WHO steunt het bewijs regelmatige krachttraining. Overleg met je verloskundige of arts."
+    de:
+      title: "Mythos: Schwanger? Hör auf mit Heben"
+      body: "Stimmt nicht, ohne Komplikationen. Laut WHO stützen die Belege regelmäßiges Krafttraining. Sprich mit deiner Hebamme oder Ärztin."
+    es:
+      title: "Mito: embarazada, deja las pesas"
+      body: "No es cierto si no hay complicaciones. La OMS dice que la evidencia respalda entrenar fuerza con regularidad. Consúltalo con tu matrona o médico."
+    fr:
+      title: "Mythe : enceinte, on arrête la muscu"
+      body: "Faux, sans complications. Selon l'OMS, les preuves soutiennent un renforcement régulier. Vérifie avec ta sage-femme ou ton médecin."
+    pt:
+      title: "Mito: grávida, larga os pesos"
+      body: "Não é verdade, sem complicações. A OMS diz que a evidência apoia treino de força regular. Fala com a tua parteira ou médico."
+    tr:
+      title: "Efsane: hamileyken ağırlığı bırak"
+      body: "Komplikasyon yoksa doğru değil. DSÖ'ye göre kanıtlar düzenli kuvvet antrenmanını destekliyor. Ebene ya da doktoruna danış."
+
+  - key: actief-voor-zwangerschap
+    kind: fact
+    en:
+      title: "Already active?"
+      body: "Women who were active before pregnancy, including vigorous cardio, can keep going during and after, if there's no contraindication."
+    nl:
+      title: "Was je al actief?"
+      body: "Vrouwen die voor de zwangerschap actief waren, ook met zware cardio, kunnen tijdens en na de zwangerschap doorgaan, als niets het tegenspreekt."
+    de:
+      title: "Schon vorher aktiv?"
+      body: "Wer vor der Schwangerschaft aktiv war, auch mit intensivem Ausdauertraining, kann währenddessen und danach weitermachen, ohne Kontraindikation."
+    es:
+      title: "¿Ya entrenabas?"
+      body: "Si eras activa antes del embarazo, incluso con cardio intenso, puedes seguir durante y después, siempre que no haya contraindicación."
+    fr:
+      title: "Déjà active ?"
+      body: "Si tu étais active avant la grossesse, même en cardio intense, tu peux continuer pendant et après, sauf contre-indication."
+    pt:
+      title: "Já eras ativa?"
+      body: "Se eras ativa antes da gravidez, mesmo com cardio intenso, podes continuar durante e depois, desde que não haja contraindicação."
+    tr:
+      title: "Zaten aktif miydin?"
+      body: "Hamilelikten önce aktif olan kadınlar, yoğun kardiyo dahil, engel bir durum yoksa hamilelik sırasında ve sonrasında devam edebilir."
+
+  - key: niet-op-je-rug
+    kind: fact
+    en:
+      title: "Off your back"
+      body: "After the first trimester, the WHO advises avoiding exercises on your back. Also skip high heat and humidity, and stay hydrated."
+    nl:
+      title: "Niet op je rug"
+      body: "Na het eerste trimester raadt de WHO oefeningen op je rug af. Vermijd ook grote hitte en vochtigheid, en drink genoeg."
+    de:
+      title: "Nicht auf dem Rücken"
+      body: "Nach dem ersten Trimester rät die WHO von Übungen in Rückenlage ab. Meide auch große Hitze und Feuchtigkeit und trink genug."
+    es:
+      title: "Boca arriba, no"
+      body: "Tras el primer trimestre, la OMS aconseja evitar ejercicios tumbada boca arriba. Evita también el calor y la humedad altos, y bebe agua."
+    fr:
+      title: "Pas sur le dos"
+      body: "Après le premier trimestre, l'OMS conseille d'éviter les exercices sur le dos. Évite aussi la forte chaleur et l'humidité, et bois assez."
+    pt:
+      title: "De costas, não"
+      body: "Depois do primeiro trimestre, a OMS aconselha evitar exercícios deitada de costas. Evita também calor e humidade altos, e bebe água."
+    tr:
+      title: "Sırt üstü değil"
+      body: "DSÖ ilk üç aydan sonra sırt üstü yapılan egzersizlerden kaçınmayı öneriyor. Aşırı sıcak ve nemden de uzak dur, bol su iç."
+
+  - key: na-de-bevalling
+    kind: fact
+    en:
+      title: "After the birth"
+      body: "Build back up gradually. After a caesarean, the WHO says to do that in consultation with a healthcare provider."
+    nl:
+      title: "Na de bevalling"
+      body: "Bouw geleidelijk weer op. Na een keizersnede raadt de WHO aan dat in overleg met een zorgverlener te doen."
+    de:
+      title: "Nach der Geburt"
+      body: "Steig schrittweise wieder ein. Nach einem Kaiserschnitt rät die WHO, das mit einer medizinischen Fachperson abzustimmen."
+    es:
+      title: "Después del parto"
+      body: "Vuelve poco a poco. Tras una cesárea, la OMS aconseja hacerlo de acuerdo con un profesional sanitario."
+    fr:
+      title: "Après l'accouchement"
+      body: "Reprends progressivement. Après une césarienne, l'OMS conseille de le faire en accord avec un professionnel de santé."
+    pt:
+      title: "Depois do parto"
+      body: "Volta aos poucos. Depois de uma cesariana, a OMS aconselha a fazê-lo em conjunto com um profissional de saúde."
+    tr:
+      title: "Doğumdan sonra"
+      body: "Kademeli olarak geri dön. DSÖ, sezaryen sonrası bunu bir sağlık uzmanıyla birlikte planlamanı öneriyor."
+
+  - key: bekkenbodem
+    kind: fact
+    en:
+      title: "Pelvic floor"
+      body: "During pregnancy and after the birth, you can train your pelvic floor daily to lower the risk of urinary incontinence."
+    nl:
+      title: "Bekkenbodem"
+      body: "Tijdens de zwangerschap en na de bevalling kun je dagelijks je bekkenbodem trainen om de kans op urineverlies te verkleinen."
+    de:
+      title: "Beckenboden"
+      body: "In der Schwangerschaft und nach der Geburt kannst du täglich den Beckenboden trainieren, um das Risiko für Harninkontinenz zu senken."
+    es:
+      title: "Suelo pélvico"
+      body: "Durante el embarazo y tras el parto puedes entrenar el suelo pélvico a diario para bajar el riesgo de incontinencia urinaria."
+    fr:
+      title: "Périnée"
+      body: "Pendant la grossesse et après l'accouchement, tu peux travailler ton périnée chaque jour pour réduire le risque de fuites urinaires."
+    pt:
+      title: "Pavimento pélvico"
+      body: "Durante a gravidez e depois do parto podes treinar o pavimento pélvico todos os dias para baixar o risco de incontinência urinária."
+    tr:
+      title: "Pelvik taban"
+      body: "Hamilelikte ve doğumdan sonra idrar kaçırma riskini azaltmak için pelvik taban kaslarını her gün çalıştırabilirsin."
+
+  - key: te-weinig-eten
+    kind: fact
+    en:
+      title: "Eating too little"
+      body: "Too little energy for how much you train can hurt health and performance, in women and men. The IOC wrote this for athletes."
+    nl:
+      title: "Te weinig eten"
+      body: "Te weinig energie voor hoeveel je traint kan je gezondheid en prestaties schaden, bij vrouwen en mannen. Het IOC schreef dit voor topsporters."
+    de:
+      title: "Zu wenig essen"
+      body: "Zu wenig Energie für dein Training kann Gesundheit und Leistung schaden, bei Frauen und Männern. Das IOC schrieb das für Athleten."
+    es:
+      title: "Comer demasiado poco"
+      body: "Poca energía para lo que entrenas puede dañar tu salud y tu rendimiento, en mujeres y hombres. El COI lo escribió para deportistas."
+    fr:
+      title: "Trop peu manger"
+      body: "Trop peu d'énergie pour ton volume d'entraînement peut nuire à ta santé et tes perfs, chez les femmes comme les hommes. Le CIO l'a écrit pour des athlètes."
+    pt:
+      title: "Comer pouco demais"
+      body: "Pouca energia para o quanto treinas pode prejudicar a saúde e o rendimento, em mulheres e homens. O COI escreveu isto para atletas."
+    tr:
+      title: "Çok az yemek"
+      body: "Antrenmanına göre çok az enerji almak kadınlarda ve erkeklerde sağlığa ve performansa zarar verebilir. IOC bunu sporcular için yazdı."

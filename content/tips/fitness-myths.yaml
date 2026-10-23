@@ -1,0 +1,193 @@
+article: fitness-myths
+tips:
+  - key: plaatselijk-vet
+    kind: myth
+    en:
+      title: "Myth: train a spot to burn its fat"
+      body: "Not true. In 13 studies with 1,158 people, a trained limb lost no more fat than the untrained limb of the same person."
+    nl:
+      title: "Mythe: train een plek om daar vet te verbranden"
+      body: "Klopt niet. In 13 studies met 1.158 mensen verloor een getrainde arm of been niet meer vet dan de ongetrainde van dezelfde persoon."
+    de:
+      title: "Mythos: Training verbrennt Fett vor Ort"
+      body: "Stimmt nicht. In 13 Studien mit 1.158 Menschen verlor ein trainierter Arm oder ein Bein nicht mehr Fett als die untrainierte Seite."
+    es:
+      title: "Mito: quema grasa en una zona entrenándola"
+      body: "No es cierto. En 13 estudios con 1.158 personas, la extremidad entrenada no perdió más grasa que la no entrenada de la misma persona."
+    fr:
+      title: "Mythe : brûler le gras d'une zone ciblée"
+      body: "Faux. Dans 13 études sur 1 158 personnes, le membre entraîné n'a pas perdu plus de gras que le membre non entraîné de la même personne."
+    pt:
+      title: "Mito: treinar uma zona queima a sua gordura"
+      body: "Não é verdade. Em 13 estudos com 1.158 pessoas, o membro treinado não perdeu mais gordura do que o membro não treinado da mesma pessoa."
+    tr:
+      title: "Efsane: bir bölgeyi çalıştır, yağı orada yak"
+      body: "Doğru değil. 1.158 kişilik 13 çalışmada çalıştırılan kol ya da bacak, aynı kişinin çalışmayan uzvundan fazla yağ kaybetmedi."
+
+  - key: buikspieroefeningen
+    kind: myth
+    en:
+      title: "Myth: ab exercises flatten your belly"
+      body: "Not true. In 24 inactive adults, six weeks of ab work, five days a week, did not shrink belly fat or waist. Their ab endurance did improve."
+    nl:
+      title: "Mythe: buikspieroefeningen maken je buik plat"
+      body: "Klopt niet. Bij 24 inactieve volwassenen gaf zes weken buikspiertraining, vijf dagen per week, niet minder buikvet of taille. Wel meer uithoudingsvermogen."
+    de:
+      title: "Mythos: Bauchübungen machen den Bauch flach"
+      body: "Stimmt nicht. Bei 24 inaktiven Erwachsenen senkten sechs Wochen Bauchtraining an fünf Tagen weder Bauchfett noch Taille. Die Ausdauer stieg aber."
+    es:
+      title: "Mito: los abdominales aplanan la tripa"
+      body: "No es cierto. En 24 adultos sedentarios, seis semanas de abdominales cinco días a la semana no bajaron grasa abdominal ni cintura. Sí la resistencia."
+    fr:
+      title: "Mythe : les abdos aplatissent le ventre"
+      body: "Faux. Chez 24 adultes inactifs, six semaines d'abdos cinq jours par semaine n'ont réduit ni le gras du ventre ni la taille. L'endurance, si."
+    pt:
+      title: "Mito: abdominais achatam a barriga"
+      body: "Não é verdade. Em 24 adultos sedentários, seis semanas de abdominais cinco dias por semana não baixaram a gordura da barriga nem a cintura. A resistência sim."
+    tr:
+      title: "Efsane: mekik karnını düzleştirir"
+      body: "Doğru değil. 24 hareketsiz yetişkinde haftada beş gün altı hafta karın çalışması göbek yağını ve beli azaltmadı. Karın dayanıklılığı ise arttı."
+
+  - key: buikvet-kwijt
+    kind: fact
+    en:
+      title: "Losing belly fat"
+      body: "Lose fat overall with a calorie deficit. Train your abs for strength and endurance, not to burn the fat on top."
+    nl:
+      title: "Buikvet kwijtraken"
+      body: "Verlies vet over je hele lijf met een calorietekort. Train je buikspieren voor kracht en uithouding, niet om het vet erop te verbranden."
+    de:
+      title: "Bauchfett loswerden"
+      body: "Verlier insgesamt Fett mit einem Kaloriendefizit. Trainier den Bauch für Kraft und Ausdauer, nicht um das Fett darüber zu verbrennen."
+    es:
+      title: "Perder grasa de la tripa"
+      body: "Pierde grasa en general con un déficit calórico. Entrena el abdomen por fuerza y resistencia, no para quemar la grasa de encima."
+    fr:
+      title: "Perdre le gras du ventre"
+      body: "Perds du gras partout avec un déficit calorique. Travaille tes abdos pour la force et l'endurance, pas pour brûler le gras dessus."
+    pt:
+      title: "Perder a barriga"
+      body: "Perde gordura no corpo todo com um défice calórico. Treina os abdominais pela força e resistência, não para queimar a gordura por cima."
+    tr:
+      title: "Göbek yağından kurtulmak"
+      body: "Kalori açığıyla genel olarak yağ kaybet. Karın kaslarını üstündeki yağı yakmak için değil, güç ve dayanıklılık için çalıştır."
+
+  - key: low-carb-en-honger
+    kind: fact
+    en:
+      title: "Why low-carb works for some"
+      body: "The ISSN notes that keto diets can reduce appetite. So they can help, but it works through eating less."
+    nl:
+      title: "Waarom low-carb soms werkt"
+      body: "Volgens de ISSN kan een ketodieet je eetlust remmen. Het kan dus helpen, maar dat loopt via minder eten."
+    de:
+      title: "Warum Low-Carb manchen hilft"
+      body: "Laut ISSN können ketogene Diäten den Appetit senken. Sie können also helfen, aber über weniger Essen."
+    es:
+      title: "Por qué el low-carb funciona a algunos"
+      body: "La ISSN señala que las dietas keto pueden quitar el hambre. Así que pueden ayudar, pero porque comes menos."
+    fr:
+      title: "Pourquoi le low-carb aide certains"
+      body: "L'ISSN note que les régimes céto peuvent couper l'appétit. Ils peuvent donc aider, mais en te faisant manger moins."
+    pt:
+      title: "Porque o low-carb resulta para alguns"
+      body: "A ISSN nota que as dietas keto podem reduzir o apetite. Podem ajudar, mas é por comeres menos."
+    tr:
+      title: "Low-carb bazılarına neden yarar"
+      body: "ISSN'e göre keto diyetler iştahı azaltabilir. Yani yardımcı olabilir, ama bu daha az yemek yoluyla olur."
+
+  - key: challenge-van-21-dagen
+    kind: fact
+    en:
+      title: "21-day challenges"
+      body: "A 21-day challenge can be a good start. Just don't expect the habit to run on its own once it ends."
+    nl:
+      title: "Challenges van 21 dagen"
+      body: "Een challenge van 21 dagen kan een goed begin zijn. Verwacht alleen niet dat de gewoonte vanzelf loopt als hij voorbij is."
+    de:
+      title: "21-Tage-Challenges"
+      body: "Eine 21-Tage-Challenge kann ein guter Anfang sein. Erwarte nur nicht, dass die Gewohnheit danach von allein läuft."
+    es:
+      title: "Retos de 21 días"
+      body: "Un reto de 21 días puede ser un buen comienzo. Solo no esperes que el hábito vaya solo cuando termine."
+    fr:
+      title: "Les défis de 21 jours"
+      body: "Un défi de 21 jours peut être un bon début. N'attends juste pas que l'habitude tourne toute seule une fois fini."
+    pt:
+      title: "Desafios de 21 dias"
+      body: "Um desafio de 21 dias pode ser um bom começo. Só não esperes que o hábito ande sozinho quando acabar."
+    tr:
+      title: "21 günlük meydan okumalar"
+      body: "21 günlük bir meydan okuma iyi bir başlangıç olabilir. Ama bitince alışkanlığın kendi kendine yürümesini bekleme."
+
+  - key: eiwit-en-nierziekte
+    kind: fact
+    en:
+      title: "Protein and kidney disease"
+      body: "People with kidney failure do benefit from eating less protein. Have kidney disease? Ask your doctor before you raise your protein."
+    nl:
+      title: "Eiwit en nierziekte"
+      body: "Mensen met nierfalen hebben wél baat bij minder eiwit. Heb je een nierziekte? Vraag je arts voor je meer eiwit gaat eten."
+    de:
+      title: "Eiweiß und Nierenkrankheit"
+      body: "Menschen mit Nierenversagen profitieren von weniger Eiweiß. Hast du eine Nierenerkrankung? Frag deinen Arzt, bevor du mehr Eiweiß isst."
+    es:
+      title: "Proteína y enfermedad renal"
+      body: "Las personas con insuficiencia renal sí se benefician de comer menos proteína. ¿Tienes una enfermedad renal? Pregunta a tu médico antes de subirla."
+    fr:
+      title: "Protéines et maladie rénale"
+      body: "Les personnes en insuffisance rénale gagnent à manger moins de protéines. Tu as une maladie rénale ? Demande à ton médecin avant d'en manger plus."
+    pt:
+      title: "Proteína e doença renal"
+      body: "Pessoas com insuficiência renal beneficiam de comer menos proteína. Tens doença renal? Pergunta ao médico antes de aumentares a proteína."
+    tr:
+      title: "Protein ve böbrek hastalığı"
+      body: "Böbrek yetmezliği olanlar daha az proteinden fayda görür. Böbrek hastalığın varsa proteini artırmadan önce doktoruna sor."
+
+  - key: volgende-mythe
+    kind: fact
+    en:
+      title: "Spotting the next myth"
+      body: "Ask how big the promised effect is, and whether it was tested in people like you or in mice, a lab or one small group."
+    nl:
+      title: "De volgende mythe herkennen"
+      body: "Vraag hoe groot het beloofde effect is, en of het getest is bij mensen zoals jij of bij muizen, in een lab of in één klein groepje."
+    de:
+      title: "Den nächsten Mythos erkennen"
+      body: "Frag, wie groß der versprochene Effekt ist und ob er an Leuten wie dir getestet wurde oder an Mäusen, im Labor oder in einer kleinen Gruppe."
+    es:
+      title: "Detectar el próximo mito"
+      body: "Pregúntate cuánto efecto promete y si se probó en gente como tú o en ratones, en un laboratorio o en un grupo pequeño."
+    fr:
+      title: "Repérer le prochain mythe"
+      body: "Demande-toi quel effet est promis, et s'il a été testé sur des gens comme toi ou sur des souris, en labo ou sur un petit groupe."
+    pt:
+      title: "Apanhar o próximo mito"
+      body: "Pergunta que efeito promete e se foi testado em pessoas como tu ou em ratos, num laboratório ou num grupo pequeno."
+    tr:
+      title: "Sıradaki efsaneyi yakalamak"
+      body: "Vaat edilen etkinin ne kadar büyük olduğunu ve senin gibi insanlarda mı yoksa farelerde, laboratuvarda ya da küçük bir grupta mı denendiğini sor."
+
+  - key: kortere-weg
+    kind: fact
+    en:
+      title: "Beware of shortcuts"
+      body: "Be wary of claims that skip the basics: a calorie deficit for fat loss, enough protein, and training that gets harder over time."
+    nl:
+      title: "Pas op voor kortere wegen"
+      body: "Wees op je hoede bij beloftes die de basis overslaan: een calorietekort om vet te verliezen, genoeg eiwit en training die steeds zwaarder wordt."
+    de:
+      title: "Vorsicht vor Abkürzungen"
+      body: "Sei skeptisch bei Versprechen, die die Basics umgehen: Kaloriendefizit zum Abnehmen, genug Eiweiß und Training, das mit der Zeit härter wird."
+    es:
+      title: "Cuidado con los atajos"
+      body: "Desconfía de lo que se salta lo básico: déficit calórico para perder grasa, suficiente proteína y un entreno que se vuelve más duro."
+    fr:
+      title: "Méfie-toi des raccourcis"
+      body: "Méfie-toi de ce qui contourne les bases : un déficit pour perdre du gras, assez de protéines et un entraînement qui devient plus dur."
+    pt:
+      title: "Cuidado com atalhos"
+      body: "Desconfia do que salta o básico: défice calórico para perder gordura, proteína suficiente e treino que fica mais duro com o tempo."
+    tr:
+      title: "Kestirmelere dikkat"
+      body: "Temelleri atlayan iddialara şüpheyle yaklaş: yağ kaybı için kalori açığı, yeterli protein ve zamanla zorlaşan antrenman."

@@ -1,0 +1,169 @@
+article: body-types
+tips:
+  - key: wat-het-zijn
+    kind: fact
+    en:
+      title: "Body types"
+      body: "Ectomorph, mesomorph and endomorph are loose labels for how easily you stay lean or gain size. Most people are a mix."
+    nl:
+      title: "Lichaamstypes"
+      body: "Ectomorf, mesomorf en endomorf zijn losse labels voor hoe makkelijk je slank blijft of aankomt. De meeste mensen zijn een mix."
+    de:
+      title: "Körpertypen"
+      body: "Ektomorph, mesomorph und endomorph sind grobe Etiketten dafür, wie leicht du schlank bleibst oder zulegst. Die meisten sind ein Mix."
+    es:
+      title: "Tipos de cuerpo"
+      body: "Ectomorfo, mesomorfo y endomorfo son etiquetas vagas sobre lo fácil que te mantienes delgado o ganas tamaño. Casi todos somos una mezcla."
+    fr:
+      title: "Types de corps"
+      body: "Ectomorphe, mésomorphe, endomorphe : des étiquettes floues sur ta facilité à rester sec ou à prendre. La plupart des gens sont un mélange."
+    pt:
+      title: "Tipos de corpo"
+      body: "Ectomorfo, mesomorfo e endomorfo são rótulos soltos para a facilidade com que ficas magro ou ganhas tamanho. Quase todos são uma mistura."
+    tr:
+      title: "Vücut tipleri"
+      body: "Ektomorf, mezomorf ve endomorf, ne kadar kolay zayıf kaldığını ya da kilo aldığını anlatan gevşek etiketler. Çoğu insan karışık."
+
+  - key: geen-grens
+    kind: myth
+    en:
+      title: "Myth: your body type sets your limits"
+      body: "Not true. The labels are oversimplified. They can shape your expectations, but they shouldn't limit how you train or eat."
+    nl:
+      title: "Mythe: je lichaamstype bepaalt je grens"
+      body: "Klopt niet. De labels zijn te simpel. Ze kunnen je verwachting kleuren, maar horen niet te bepalen hoe je traint of eet."
+    de:
+      title: "Mythos: dein Körpertyp setzt deine Grenzen"
+      body: "Stimmt nicht. Die Etiketten sind zu simpel. Sie können deine Erwartungen prägen, sollten aber nicht bestimmen, wie du trainierst oder isst."
+    es:
+      title: "Mito: tu tipo de cuerpo marca tu límite"
+      body: "No es cierto. Las etiquetas simplifican demasiado. Pueden orientar lo que esperas, pero no deberían limitar cómo entrenas o comes."
+    fr:
+      title: "Mythe : ton type de corps fixe tes limites"
+      body: "Faux. Ces étiquettes simplifient trop. Elles peuvent guider tes attentes, mais ne doivent pas limiter ta façon de t'entraîner ou de manger."
+    pt:
+      title: "Mito: o teu tipo de corpo define o limite"
+      body: "Não é verdade. Os rótulos simplificam demais. Podem orientar o que esperas, mas não devem limitar como treinas ou comes."
+    tr:
+      title: "Efsane: vücut tipin sınırını belirler"
+      body: "Doğru değil. Bu etiketler fazla basit. Beklentini şekillendirebilir ama nasıl çalıştığını ya da beslendiğini sınırlamamalı."
+
+  - key: genen
+    kind: fact
+    en:
+      title: "What your genes do"
+      body: "Genetics influence your limb lengths, your appetite and how easily you gain fat or muscle. That differs from person to person."
+    nl:
+      title: "Wat je genen doen"
+      body: "Je genen beïnvloeden de lengte van je armen en benen, je eetlust en hoe makkelijk je vet of spier aanzet. Dat verschilt per persoon."
+    de:
+      title: "Was deine Gene tun"
+      body: "Deine Gene beeinflussen die Länge deiner Gliedmaßen, deinen Appetit und wie leicht du Fett oder Muskeln aufbaust. Das ist bei jedem anders."
+    es:
+      title: "Lo que hacen tus genes"
+      body: "La genética influye en el largo de brazos y piernas, en el apetito y en lo fácil que ganas grasa o músculo. Cambia de persona a persona."
+    fr:
+      title: "Ce que font tes gènes"
+      body: "La génétique joue sur la longueur de tes membres, ton appétit et ta facilité à prendre du gras ou du muscle. Ça varie d'une personne à l'autre."
+    pt:
+      title: "O que os genes fazem"
+      body: "A genética influencia o comprimento dos membros, o apetite e a facilidade com que ganhas gordura ou músculo. Varia de pessoa para pessoa."
+    tr:
+      title: "Genlerin ne yapar"
+      body: "Genler kol ve bacak uzunluğunu, iştahını ve ne kadar kolay yağ ya da kas yaptığını etkiler. Bu kişiden kişiye değişir."
+
+  - key: slank-blijven
+    kind: fact
+    en:
+      title: "Stay lean easily?"
+      body: "Then calorie-dense foods help you reach a surplus. Keep your training volume at a level you can recover from."
+    nl:
+      title: "Blijf je makkelijk slank?"
+      body: "Dan helpt calorierijk eten om in een overschot te komen. Houd je trainingsvolume op een niveau waar je van herstelt."
+    de:
+      title: "Bleibst du leicht schlank?"
+      body: "Dann helfen kalorienreiche Lebensmittel, in einen Überschuss zu kommen. Halt dein Volumen so, dass du dich davon erholst."
+    es:
+      title: "¿Te cuesta engordar?"
+      body: "Entonces los alimentos densos en calorías te ayudan a llegar a un superávit. Mantén un volumen del que te recuperes."
+    fr:
+      title: "Tu restes sec facilement ?"
+      body: "Les aliments riches en calories t'aident alors à atteindre un surplus. Garde un volume d'entraînement dont tu récupères."
+    pt:
+      title: "Ficas magro com facilidade?"
+      body: "Então alimentos densos em calorias ajudam-te a chegar a um excedente. Mantém um volume de treino de que recuperes."
+    tr:
+      title: "Kolayca zayıf mı kalıyorsun?"
+      body: "O zaman kalorisi yoğun yiyecekler fazlaya ulaşmana yardım eder. Antrenman hacmini toparlanabileceğin düzeyde tut."
+
+  - key: makkelijk-aankomen
+    kind: fact
+    en:
+      title: "Gain fat easily?"
+      body: "Keep an eye on portions, lean on protein and fibre to stay full, and keep your daily steps high."
+    nl:
+      title: "Kom je makkelijk aan?"
+      body: "Let op je porties, kies voor eiwit en vezels zodat je vol zit, en houd je dagelijkse stappen hoog."
+    de:
+      title: "Nimmst du leicht zu?"
+      body: "Achte auf deine Portionen, setz auf Eiweiß und Ballaststoffe für die Sättigung und halt deine täglichen Schritte hoch."
+    es:
+      title: "¿Engordas con facilidad?"
+      body: "Vigila las raciones, apóyate en proteína y fibra para quedarte lleno y mantén alto tu número de pasos diarios."
+    fr:
+      title: "Tu prends facilement ?"
+      body: "Surveille tes portions, mise sur les protéines et les fibres pour être rassasié, et garde un bon nombre de pas par jour."
+    pt:
+      title: "Ganhas gordura com facilidade?"
+      body: "Controla as porções, aposta em proteína e fibra para ficares saciado e mantém alto o número de passos diários."
+    tr:
+      title: "Kolay mı kilo alıyorsun?"
+      body: "Porsiyonlarına dikkat et, tok kalmak için protein ve lifi öne al ve günlük adımlarını yüksek tut."
+
+  - key: dieet-per-type
+    kind: myth
+    en:
+      title: "Myth: eat the plan for your body type"
+      body: "Not true. Copying an ecto or endo meal plan without tracking your results is a common mistake. Match calories to how you respond."
+    nl:
+      title: "Mythe: eet het schema van je lichaamstype"
+      body: "Klopt niet. Een ecto- of endo-eetschema overnemen zonder je resultaat te volgen is een veelgemaakte fout. Stem je calorieën af op hoe jij reageert."
+    de:
+      title: "Mythos: iss nach deinem Körpertyp"
+      body: "Stimmt nicht. Einen Ekto- oder Endo-Plan ohne Kontrolle deiner Ergebnisse zu kopieren ist ein häufiger Fehler. Richte die Kalorien nach dir."
+    es:
+      title: "Mito: come según tu tipo de cuerpo"
+      body: "No es cierto. Copiar una dieta ecto o endo sin seguir tus resultados es un error común. Ajusta las calorías a cómo respondes tú."
+    fr:
+      title: "Mythe : mange selon ton type de corps"
+      body: "Faux. Copier un plan ecto ou endo sans suivre tes résultats est une erreur courante. Ajuste tes calories à ta propre réaction."
+    pt:
+      title: "Mito: come segundo o teu tipo de corpo"
+      body: "Não é verdade. Copiar um plano ecto ou endo sem seguir os resultados é um erro comum. Ajusta as calorias à forma como reages."
+    tr:
+      title: "Efsane: vücut tipine göre beslen"
+      body: "Doğru değil. Sonuçlarını takip etmeden ekto ya da endo planı kopyalamak yaygın bir hata. Kalorini senin verdiğin tepkiye göre ayarla."
+
+  - key: helpt-iedereen
+    kind: fact
+    en:
+      title: "Good for every type"
+      body: "Whatever label you'd give yourself, lifting, enough protein and good sleep help everyone."
+    nl:
+      title: "Goed voor elk type"
+      body: "Welk label je jezelf ook zou geven: krachttraining, genoeg eiwit en goed slapen helpen iedereen."
+    de:
+      title: "Gut für jeden Typ"
+      body: "Egal welches Etikett du dir gibst: Krafttraining, genug Eiweiß und guter Schlaf helfen jedem."
+    es:
+      title: "Bueno para cualquier tipo"
+      body: "Te pongas la etiqueta que te pongas, entrenar fuerza, comer suficiente proteína y dormir bien ayuda a todo el mundo."
+    fr:
+      title: "Bon pour tous les types"
+      body: "Quelle que soit l'étiquette que tu te donnes, la muscu, assez de protéines et un bon sommeil aident tout le monde."
+    pt:
+      title: "Bom para todos os tipos"
+      body: "Seja qual for o rótulo que te dês, treino de força, proteína suficiente e dormir bem ajudam toda a gente."
+    tr:
+      title: "Her tipe iyi gelir"
+      body: "Kendine hangi etiketi verirsen ver, ağırlık çalışmak, yeterli protein ve iyi uyku herkese yardım eder."

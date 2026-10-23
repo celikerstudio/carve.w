@@ -1,0 +1,169 @@
+article: active-recovery
+tips:
+  - key: wat-het-is
+    kind: fact
+    en:
+      title: "Active recovery"
+      body: "Easy movement that gets your blood flowing and eases stiffness, without adding much fatigue. It helps you move better between hard sessions."
+    nl:
+      title: "Actief herstel"
+      body: "Rustig bewegen dat je bloed laat stromen en stijfheid vermindert, zonder veel extra vermoeidheid. Zo beweeg je beter tussen zware trainingen."
+    de:
+      title: "Aktive Erholung"
+      body: "Lockere Bewegung, die die Durchblutung anregt und Steifheit löst, ohne viel Ermüdung. So bewegst du dich besser zwischen harten Einheiten."
+    es:
+      title: "Recuperación activa"
+      body: "Movimiento suave que activa la circulación y quita rigidez sin sumar mucha fatiga. Te ayuda a moverte mejor entre sesiones duras."
+    fr:
+      title: "Récupération active"
+      body: "Bouger doucement pour faire circuler le sang et réduire les raideurs, sans fatigue en plus. Tu bouges mieux entre deux séances dures."
+    pt:
+      title: "Recuperação ativa"
+      body: "Movimento leve que ativa a circulação e reduz a rigidez sem somar muita fadiga. Ajuda-te a mexer melhor entre treinos duros."
+    tr:
+      title: "Aktif toparlanma"
+      body: "Kan akışını artıran ve tutukluğu azaltan, fazla yorgunluk eklemeyen hafif hareket. Zor antrenmanlar arasında daha rahat hareket edersin."
+
+  - key: tien-tot-dertig-minuten
+    kind: fact
+    en:
+      title: "How long?"
+      body: "10 to 30 minutes of easy movement is enough, on a rest day or after training."
+    nl:
+      title: "Hoe lang?"
+      body: "10 tot 30 minuten rustig bewegen is genoeg, op een rustdag of na je training."
+    de:
+      title: "Wie lange?"
+      body: "10 bis 30 Minuten lockere Bewegung reichen, am Ruhetag oder nach dem Training."
+    es:
+      title: "¿Cuánto tiempo?"
+      body: "Con 10 a 30 minutos de movimiento suave basta, en un día de descanso o después de entrenar."
+    fr:
+      title: "Combien de temps ?"
+      body: "10 à 30 minutes de mouvement facile suffisent, un jour de repos ou après l'entraînement."
+    pt:
+      title: "Quanto tempo?"
+      body: "10 a 30 minutos de movimento leve chegam, num dia de descanso ou depois do treino."
+    tr:
+      title: "Ne kadar?"
+      body: "Dinlenme gününde ya da antrenmandan sonra 10 ila 30 dakika hafif hareket yeterli."
+
+  - key: neusademhaling
+    kind: fact
+    en:
+      title: "How easy is easy?"
+      body: "Easy enough that you can breathe through your nose and still talk."
+    nl:
+      title: "Hoe rustig is rustig?"
+      body: "Zo rustig dat je nog door je neus kunt ademen en gewoon kunt praten."
+    de:
+      title: "Wie locker ist locker?"
+      body: "So locker, dass du noch durch die Nase atmen und dich unterhalten kannst."
+    es:
+      title: "¿Qué es suave?"
+      body: "Lo bastante suave como para respirar por la nariz y seguir hablando."
+    fr:
+      title: "Facile, c'est combien ?"
+      body: "Assez facile pour respirer par le nez et pouvoir encore parler."
+    pt:
+      title: "Leve é quanto?"
+      body: "Leve o suficiente para respirares pelo nariz e conseguires falar."
+    tr:
+      title: "Hafif ne kadar hafif?"
+      body: "Burnundan nefes alıp hâlâ konuşabileceğin kadar hafif."
+
+  - key: wat-telt
+    kind: fact
+    en:
+      title: "What counts"
+      body: "A walk, light cycling, a mobility flow or an easy swim. Pair it with drinking enough and good sleep."
+    nl:
+      title: "Wat telt"
+      body: "Een wandeling, rustig fietsen, een mobility-flow of kalm zwemmen. Combineer het met genoeg drinken en goed slapen."
+    de:
+      title: "Was zählt"
+      body: "Ein Spaziergang, lockeres Radfahren, ein Mobility-Flow oder ruhiges Schwimmen. Dazu genug trinken und gut schlafen."
+    es:
+      title: "Qué cuenta"
+      body: "Un paseo, bici suave, una rutina de movilidad o nadar tranquilo. Acompáñalo de buena hidratación y buen sueño."
+    fr:
+      title: "Ce qui compte"
+      body: "Une marche, du vélo tranquille, un flow de mobilité ou une nage facile. Avec ça, bois assez et dors bien."
+    pt:
+      title: "O que conta"
+      body: "Uma caminhada, bicicleta leve, um fluxo de mobilidade ou nadar com calma. Junta-lhe boa hidratação e bom sono."
+    tr:
+      title: "Neler sayılır"
+      body: "Yürüyüş, hafif bisiklet, mobilite akışı ya da sakin yüzme. Yanına yeterli su ve iyi uyku ekle."
+
+  - key: minder-pijn-voelen
+    kind: fact
+    en:
+      title: "Less sore?"
+      body: "Light activity can make you feel less sore and keeps your movement quality up for your next sessions."
+    nl:
+      title: "Minder spierpijn?"
+      body: "Licht bewegen kan je spierpijn minder laten voelen en houdt je bewegingen soepel voor je volgende trainingen."
+    de:
+      title: "Weniger Muskelkater?"
+      body: "Leichte Aktivität kann den Muskelkater weniger spürbar machen und hält deine Bewegungsqualität für die nächsten Einheiten."
+    es:
+      title: "¿Menos agujetas?"
+      body: "La actividad ligera puede hacer que notes menos dolor muscular y mantiene la calidad de tu movimiento para las próximas sesiones."
+    fr:
+      title: "Moins de courbatures ?"
+      body: "Bouger un peu peut atténuer la sensation de courbatures et garder ta qualité de mouvement pour les séances suivantes."
+    pt:
+      title: "Menos dores?"
+      body: "Atividade leve pode fazer-te sentir menos dores musculares e mantém a qualidade do movimento para os próximos treinos."
+    tr:
+      title: "Daha az ağrı?"
+      body: "Hafif aktivite kas ağrısını daha az hissetmeni sağlayabilir ve sonraki antrenmanlar için hareket kaliteni korur."
+
+  - key: rustdag-stilzitten
+    kind: myth
+    en:
+      title: "Myth: rest days mean not moving"
+      body: "Not true. Skipping movement entirely on rest days tends to leave you stiff and sluggish. Some easy movement helps."
+    nl:
+      title: "Mythe: op een rustdag beweeg je niet"
+      body: "Niet waar. Helemaal niet bewegen op een rustdag maakt je eerder stijf en sloom. Een beetje rustig bewegen helpt."
+    de:
+      title: "Mythos: Ruhetag heißt nicht bewegen"
+      body: "Stimmt nicht. Wer sich am Ruhetag gar nicht bewegt, bleibt eher steif und träge. Etwas lockere Bewegung hilft."
+    es:
+      title: "Mito: el día de descanso no te mueves"
+      body: "No es cierto. No moverte nada en tu día de descanso suele dejarte rígido y apagado. Algo de movimiento suave ayuda."
+    fr:
+      title: "Mythe : jour de repos, on ne bouge pas"
+      body: "Faux. Ne pas bouger du tout un jour de repos te laisse plutôt raide et mou. Un peu de mouvement facile aide."
+    pt:
+      title: "Mito: no dia de descanso não te mexes"
+      body: "Não é verdade. Não te mexeres nada no dia de descanso tende a deixar-te rígido e lento. Algum movimento leve ajuda."
+    tr:
+      title: "Efsane: dinlenme günü hiç hareket edilmez"
+      body: "Doğru değil. Dinlenme gününde hiç hareket etmemek seni tutuk ve halsiz bırakır. Biraz hafif hareket iyi gelir."
+
+  - key: geen-extra-training
+    kind: myth
+    en:
+      title: "Myth: recovery days are for extra volume"
+      body: "Not true. Going too hard or cramming in more sets adds hidden fatigue. Keep it easy so it stays recovery."
+    nl:
+      title: "Mythe: herstel is ruimte voor extra volume"
+      body: "Niet waar. Te hard gaan of er extra sets in proppen geeft verborgen vermoeidheid. Houd het rustig, dan blijft het herstel."
+    de:
+      title: "Mythos: Erholung ist Platz für mehr Volumen"
+      body: "Stimmt nicht. Zu hart gehen oder Extrasätze reinpacken bringt versteckte Ermüdung. Bleib locker, dann bleibt es Erholung."
+    es:
+      title: "Mito: la recuperación es para más volumen"
+      body: "No es cierto. Ir demasiado fuerte o meter más series suma fatiga oculta. Mantenlo suave para que siga siendo recuperación."
+    fr:
+      title: "Mythe : la récup sert à faire plus de volume"
+      body: "Faux. Forcer ou caser des séries en plus ajoute une fatigue cachée. Reste tranquille pour que ça reste de la récup."
+    pt:
+      title: "Mito: a recuperação é para mais volume"
+      body: "Não é verdade. Ir com demasiada força ou meter mais séries soma fadiga escondida. Mantém leve para continuar a ser recuperação."
+    tr:
+      title: "Efsane: toparlanma günü ekstra hacim içindir"
+      body: "Doğru değil. Fazla zorlamak ya da ekstra set sıkıştırmak gizli yorgunluk ekler. Hafif tut ki toparlanma olarak kalsın."

@@ -1,0 +1,217 @@
+article: deload
+tips:
+  - key: wat-het-is
+    kind: fact
+    en:
+      title: "Deload"
+      body: "A deload is a stretch where you deliberately train less. The aim is to lower fatigue and be ready for your next block."
+    nl:
+      title: "Deload"
+      body: "Een deload is een periode waarin je bewust minder traint. Het doel: minder vermoeid zijn en klaar voor je volgende blok."
+    de:
+      title: "Deload"
+      body: "Ein Deload ist eine Phase, in der du bewusst weniger trainierst. Ziel: weniger Ermüdung und bereit sein für den nächsten Block."
+    es:
+      title: "Deload"
+      body: "Un deload es un periodo en el que entrenas menos a propósito. La idea es bajar la fatiga y llegar listo al siguiente bloque."
+    fr:
+      title: "Deload"
+      body: "Un deload, c'est une période où tu t'entraînes moins exprès. Le but : réduire la fatigue et être prêt pour le bloc suivant."
+    pt:
+      title: "Deload"
+      body: "Um deload é um período em que treinas menos de propósito. O objetivo é baixar a fadiga e chegares pronto ao bloco seguinte."
+    tr:
+      title: "Deload"
+      body: "Deload, bilerek daha az antrenman yaptığın bir dönemdir. Amaç yorgunluğu azaltmak ve bir sonraki bloğa hazır olmak."
+
+  - key: elke-4-tot-8-weken
+    kind: myth
+    en:
+      title: "Myth: deload every 4 to 8 weeks"
+      body: "Not proven. It is a habit among coaches that rests on an assumption, not on evidence."
+    nl:
+      title: "Mythe: elke 4 tot 8 weken een deload"
+      body: "Niet bewezen. Het is een gewoonte onder coaches die op een aanname rust, niet op onderzoek."
+    de:
+      title: "Mythos: alle 4 bis 8 Wochen ein Deload"
+      body: "Nicht belegt. Es ist eine Gewohnheit unter Coaches, die auf einer Annahme beruht, nicht auf Belegen."
+    es:
+      title: "Mito: deload cada 4 a 8 semanas"
+      body: "No está probado. Es una costumbre de entrenadores basada en una suposición, no en pruebas."
+    fr:
+      title: "Mythe : un deload toutes les 4 à 8 semaines"
+      body: "Pas prouvé. C'est une habitude de coachs qui repose sur une supposition, pas sur des preuves."
+    pt:
+      title: "Mito: deload a cada 4 a 8 semanas"
+      body: "Não está provado. É um hábito de treinadores baseado numa suposição, não em provas."
+    tr:
+      title: "Efsane: her 4 ila 8 haftada bir deload"
+      body: "Kanıtlanmadı. Bu, kanıta değil bir varsayıma dayanan bir koç alışkanlığı."
+
+  - key: minder-volume
+    kind: fact
+    en:
+      title: "How to deload"
+      body: "Coaches agreed the volume goes down: fewer sets, fewer reps or fewer sessions. You can keep your usual exercises."
+    nl:
+      title: "Hoe je deloadt"
+      body: "Coaches waren het eens dat het volume omlaag gaat: minder sets, minder herhalingen of minder trainingen. Je oefeningen mag je houden."
+    de:
+      title: "So geht ein Deload"
+      body: "Coaches waren sich einig: Das Volumen sinkt, also weniger Sätze, Wiederholungen oder Einheiten. Deine Übungen kannst du behalten."
+    es:
+      title: "Cómo hacer un deload"
+      body: "Los entrenadores coincidieron en bajar el volumen: menos series, menos repeticiones o menos sesiones. Puedes mantener tus ejercicios."
+    fr:
+      title: "Comment faire un deload"
+      body: "Les coachs étaient d'accord : le volume baisse. Moins de séries, de reps ou de séances. Tu peux garder tes exercices habituels."
+    pt:
+      title: "Como fazer um deload"
+      body: "Os treinadores concordaram que o volume desce: menos séries, menos repetições ou menos treinos. Podes manter os teus exercícios."
+    tr:
+      title: "Deload nasıl yapılır"
+      body: "Koçlar hacmin düştüğünde hemfikirdi: daha az set, daha az tekrar ya da daha az antrenman. Her zamanki hareketlerini koruyabilirsin."
+
+  - key: zelfde-gewicht
+    kind: myth
+    en:
+      title: "Myth: a deload means lighter weights"
+      body: "Not quite. Coaches agreed the weight can go up, down or stay the same. Keeping it the same is fine if you do clearly less."
+    nl:
+      title: "Mythe: deloaden is lichter tillen"
+      body: "Niet helemaal. Volgens coaches mag het gewicht omhoog, omlaag of gelijk blijven. Gelijk kan, als je duidelijk minder doet."
+    de:
+      title: "Mythos: Deload heißt leichteres Gewicht"
+      body: "Nicht ganz. Laut Coaches kann das Gewicht steigen, sinken oder gleich bleiben. Gleich geht, wenn du deutlich weniger machst."
+    es:
+      title: "Mito: deload es levantar menos peso"
+      body: "No del todo. Los entrenadores coinciden en que el peso puede subir, bajar o quedarse igual. Igual vale si haces claramente menos."
+    fr:
+      title: "Mythe : un deload, c'est plus léger"
+      body: "Pas tout à fait. Pour les coachs, la charge peut monter, baisser ou rester la même. La même, ça va si tu en fais nettement moins."
+    pt:
+      title: "Mito: deload é levantar menos peso"
+      body: "Não bem. Os treinadores concordam que o peso pode subir, descer ou manter-se. Manter-se é válido se fizeres claramente menos."
+    tr:
+      title: "Efsane: deload daha hafif ağırlık demek"
+      body: "Tam değil. Koçlara göre ağırlık artabilir, azalabilir ya da aynı kalabilir. Belirgin şekilde daha az yaparsan aynı kalabilir."
+
+  - key: geen-taper
+    kind: fact
+    en:
+      title: "Deload or taper?"
+      body: "A taper comes before a competition and aims at peak performance. A deload can come anywhere in your plan and aims at recovery."
+    nl:
+      title: "Deload of taper?"
+      body: "Een taper komt voor een wedstrijd en mikt op topprestatie. Een deload kan overal in je schema vallen en is voor herstel."
+    de:
+      title: "Deload oder Taper?"
+      body: "Ein Taper kommt vor einem Wettkampf und zielt auf Höchstleistung. Ein Deload kann überall im Plan liegen und dient der Erholung."
+    es:
+      title: "¿Deload o taper?"
+      body: "El taper va antes de una competición y busca el máximo rendimiento. El deload puede ir en cualquier punto del plan y busca recuperar."
+    fr:
+      title: "Deload ou affûtage ?"
+      body: "L'affûtage précède une compétition et vise la performance maximale. Le deload peut venir n'importe quand et vise la récupération."
+    pt:
+      title: "Deload ou taper?"
+      body: "O taper vem antes de uma competição e procura o pico de rendimento. O deload pode vir em qualquer ponto do plano e serve para recuperar."
+    tr:
+      title: "Deload mu, taper mı?"
+      body: "Taper yarışmadan önce gelir ve en yüksek performansı hedefler. Deload planın herhangi bir yerinde olabilir ve toparlanmayı hedefler."
+
+  - key: week-vrij
+    kind: fact
+    en:
+      title: "A week off"
+      body: "In a trial of 39 trained people, a week off halfway through 9 weeks kept leg size similar. Leg strength rose less than when training through."
+    nl:
+      title: "Een week vrij"
+      body: "In een proef met 39 getrainde mensen gaf een week vrij halverwege 9 weken vergelijkbare beenspieren. Beenkracht steeg wel minder."
+    de:
+      title: "Eine Woche Pause"
+      body: "In einer Studie mit 39 Trainierten blieben die Beinmuskeln bei einer Woche Pause mitten in 9 Wochen ähnlich. Die Beinkraft stieg weniger."
+    es:
+      title: "Una semana libre"
+      body: "En un ensayo con 39 personas entrenadas, una semana libre a mitad de 9 semanas dio un músculo de pierna similar. La fuerza subió menos."
+    fr:
+      title: "Une semaine off"
+      body: "Sur 39 personnes entraînées, une semaine off au milieu de 9 semaines a donné un muscle des jambes similaire, mais moins de force gagnée."
+    pt:
+      title: "Uma semana de folga"
+      body: "Num ensaio com 39 pessoas treinadas, uma semana de folga a meio de 9 semanas deu músculo das pernas semelhante. A força subiu menos."
+    tr:
+      title: "Bir hafta ara"
+      body: "39 antrenmanlı kişiyle bir denemede, 9 haftanın ortasında bir hafta ara bacak kasını benzer tuttu. Bacak gücü ise daha az arttı."
+
+  - key: wat-wedstrijdsporters-doen
+    kind: fact
+    en:
+      title: "What competitors do"
+      body: "In a survey of 246 competitive lifters, a deload lasted about 6 days, every 5.6 weeks on average. That shows a habit, not what works."
+    nl:
+      title: "Wat wedstrijdsporters doen"
+      body: "In een enquête onder 246 wedstrijdsporters duurde een deload zo'n 6 dagen, gemiddeld elke 5,6 weken. Een gewoonte, geen bewijs dat het werkt."
+    de:
+      title: "Was Wettkampfsportler tun"
+      body: "In einer Umfrage unter 246 Wettkampfathleten dauerte ein Deload etwa 6 Tage, im Schnitt alle 5,6 Wochen. Eine Gewohnheit, kein Beleg."
+    es:
+      title: "Lo que hacen los competidores"
+      body: "En una encuesta a 246 atletas de competición, un deload duraba unos 6 días, cada 5,6 semanas de media. Es un hábito, no prueba que funcione."
+    fr:
+      title: "Ce que font les compétiteurs"
+      body: "Dans un sondage auprès de 246 athlètes de compétition, un deload durait environ 6 jours, toutes les 5,6 semaines. Une habitude, pas une preuve."
+    pt:
+      title: "O que fazem os competidores"
+      body: "Num inquérito a 246 atletas de competição, um deload durava cerca de 6 dias, a cada 5,6 semanas em média. É um hábito, não uma prova."
+    tr:
+      title: "Yarışmacılar ne yapıyor"
+      body: "246 yarışmacı sporcuyla bir ankette deload yaklaşık 6 gün sürdü, ortalama 5,6 haftada bir. Bu bir alışkanlık, işe yaradığının kanıtı değil."
+
+  - key: zonder-deload
+    kind: fact
+    en:
+      title: "Progress without a deload"
+      body: "Even among competitors who deload, 65% thought they could keep progressing without one."
+    nl:
+      title: "Vooruit zonder deload"
+      body: "Zelfs van de wedstrijdsporters die deloaden dacht 65% dat ze ook zonder deload vooruit zouden blijven gaan."
+    de:
+      title: "Fortschritt ohne Deload"
+      body: "Selbst unter Wettkampfathleten, die deloaden, glaubten 65%, dass sie auch ohne Deload weiter Fortschritte machen könnten."
+    es:
+      title: "Progresar sin deload"
+      body: "Incluso entre competidores que hacen deload, el 65% creía que podía seguir progresando sin él."
+    fr:
+      title: "Progresser sans deload"
+      body: "Même parmi les compétiteurs qui font des deloads, 65 % pensaient pouvoir continuer à progresser sans."
+    pt:
+      title: "Progredir sem deload"
+      body: "Mesmo entre competidores que fazem deload, 65% achavam que podiam continuar a progredir sem ele."
+    tr:
+      title: "Deload olmadan ilerleme"
+      body: "Deload yapan yarışmacıların bile %65'i deload olmadan da ilerlemeye devam edebileceğini düşünüyordu."
+
+  - key: lange-dip
+    kind: myth
+    en:
+      title: "Myth: a deload fixes any slump"
+      body: "Not quite. An easier week is for ordinary fatigue. Flat for weeks and your lifts don't come back? The problem may be bigger."
+    nl:
+      title: "Mythe: een deload lost elke dip op"
+      body: "Niet helemaal. Een rustige week is voor gewone vermoeidheid. Voel je je al weken leeg en komen je prestaties niet terug? Dan kan er meer spelen."
+    de:
+      title: "Mythos: ein Deload behebt jedes Tief"
+      body: "Nicht ganz. Eine leichte Woche ist für normale Müdigkeit. Seit Wochen platt und die Leistung kommt nicht zurück? Dann kann mehr dahinterstecken."
+    es:
+      title: "Mito: un deload arregla cualquier bajón"
+      body: "No del todo. Una semana suave es para el cansancio normal. ¿Llevas semanas sin fuerzas y tu rendimiento no vuelve? Puede ser algo más."
+    fr:
+      title: "Mythe : un deload règle tout coup de mou"
+      body: "Pas tout à fait. Une semaine légère, c'est pour la fatigue normale. À plat depuis des semaines sans retour des perfs ? Ça peut être plus."
+    pt:
+      title: "Mito: um deload resolve qualquer quebra"
+      body: "Não bem. Uma semana leve é para o cansaço normal. Há semanas sem energia e o rendimento não volta? O problema pode ser maior."
+    tr:
+      title: "Efsane: deload her düşüşü düzeltir"
+      body: "Tam değil. Hafif bir hafta normal yorgunluk içindir. Haftalardır halsizsen ve performansın geri gelmiyorsa sorun daha büyük olabilir."

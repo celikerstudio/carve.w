@@ -1,0 +1,241 @@
+article: pre-workout
+tips:
+  - key: cafeine-doet-het-werk
+    kind: fact
+    en:
+      title: "What a pre-workout does"
+      body: "Mostly, the caffeine does the work. Products with caffeine improve both strength-type and endurance performance."
+    nl:
+      title: "Wat een pre-workout doet"
+      body: "Vooral de cafeïne doet het werk. Producten met cafeïne verbeteren zowel kracht als uithoudingsvermogen."
+    de:
+      title: "Was ein Pre-Workout macht"
+      body: "Die Arbeit macht vor allem das Koffein. Produkte mit Koffein verbessern Kraft und Ausdauer."
+    es:
+      title: "Qué hace un pre-entreno"
+      body: "Casi todo el trabajo lo hace la cafeína. Los productos con cafeína mejoran tanto la fuerza como la resistencia."
+    fr:
+      title: "Ce que fait un pre-workout"
+      body: "C'est surtout la caféine qui travaille. Les produits avec caféine améliorent la force comme l'endurance."
+    pt:
+      title: "O que faz um pré-treino"
+      body: "Quase todo o trabalho é da cafeína. Os produtos com cafeína melhoram tanto a força como a resistência."
+    tr:
+      title: "Pre-workout ne yapar"
+      body: "İşi çoğunlukla kafein yapar. Kafeinli ürünler hem kuvveti hem dayanıklılığı artırır."
+
+  - key: een-schep-250-mg
+    kind: fact
+    en:
+      title: "Caffeine in one scoop"
+      body: "The average pre-workout holds about 250 mg of caffeine. That is more than the 200 mg single dose seen as safe for healthy adults."
+    nl:
+      title: "Cafeïne in één schep"
+      body: "Een gemiddelde pre-workout bevat zo'n 250 mg cafeïne. Meer dan de 200 mg per keer die voor gezonde volwassenen als veilig geldt."
+    de:
+      title: "Koffein in einem Messlöffel"
+      body: "Ein Pre-Workout hat im Schnitt etwa 250 mg Koffein. Mehr als die 200 mg pro Dosis, die für gesunde Erwachsene als sicher gelten."
+    es:
+      title: "Cafeína en un cacito"
+      body: "Un pre-entreno medio lleva unos 250 mg de cafeína. Es más que los 200 mg por toma que se ven seguros en adultos sanos."
+    fr:
+      title: "La caféine d'une dose"
+      body: "Un pre-workout moyen contient environ 250 mg de caféine. Plus que les 200 mg par prise jugés sûrs pour un adulte en bonne santé."
+    pt:
+      title: "Cafeína numa dose"
+      body: "Um pré-treino médio tem cerca de 250 mg de cafeína. É mais do que os 200 mg por toma vistos como seguros em adultos saudáveis."
+    tr:
+      title: "Bir ölçekteki kafein"
+      body: "Ortalama bir pre-workout yaklaşık 250 mg kafein içerir. Bu, sağlıklı yetişkinler için güvenli sayılan tek seferlik 200 mg'ı aşar."
+
+  - key: dertien-uur-voor-bed
+    kind: fact
+    en:
+      title: "Pre-workout and sleep"
+      body: "A meta-analysis estimates you need at least 13 hours between a standard serving and bedtime to protect your sleep."
+    nl:
+      title: "Pre-workout en slaap"
+      body: "Volgens een meta-analyse moet er minstens 13 uur zitten tussen een normale schep en je bed, wil je je slaap sparen."
+    de:
+      title: "Pre-Workout und Schlaf"
+      body: "Laut einer Metaanalyse brauchst du mindestens 13 Stunden zwischen einer normalen Portion und dem Schlafengehen."
+    es:
+      title: "Pre-entreno y sueño"
+      body: "Un metaanálisis calcula que necesitas al menos 13 horas entre una dosis normal y la cama para no perder sueño."
+    fr:
+      title: "Pre-workout et sommeil"
+      body: "Selon une méta-analyse, il faut au moins 13 heures entre une dose standard et le coucher pour protéger ton sommeil."
+    pt:
+      title: "Pré-treino e sono"
+      body: "Uma meta-análise estima que precisas de pelo menos 13 horas entre uma dose normal e a hora de dormir."
+    tr:
+      title: "Pre-workout ve uyku"
+      body: "Bir meta-analize göre uykunu korumak için standart bir ölçek ile yatma saati arasında en az 13 saat olmalı."
+
+  - key: blend-zonder-hoeveelheden
+    kind: fact
+    en:
+      title: "The proprietary blend"
+      body: "In top-selling pre-workouts, 44% of ingredients sat in a blend without amounts. Then you cannot tell if there is enough to work."
+    nl:
+      title: "De proprietary blend"
+      body: "In de best verkochte pre-workouts zat 44% van de ingrediënten in een blend zonder hoeveelheden. Of het genoeg is, weet je dan niet."
+    de:
+      title: "Die Proprietary Blend"
+      body: "In meistverkauften Pre-Workouts steckten 44% der Zutaten in einer Mischung ohne Mengen. Ob es genug ist, weißt du dann nicht."
+    es:
+      title: "La mezcla patentada"
+      body: "En los pre-entrenos más vendidos, el 44% de los ingredientes iba en una mezcla sin cantidades. Así no sabes si hay suficiente."
+    fr:
+      title: "Le mélange exclusif"
+      body: "Dans les pre-workouts les plus vendus, 44% des ingrédients étaient dans un mélange sans dosage. Impossible de savoir si ça suffit."
+    pt:
+      title: "A mistura patenteada"
+      body: "Nos pré-treinos mais vendidos, 44% dos ingredientes estavam numa mistura sem quantidades. Assim não sabes se chega."
+    tr:
+      title: "Özel karışım"
+      body: "En çok satan pre-workout'larda bileşenlerin %44'ü miktarı yazılmayan bir karışımdaydı. Yeterli olup olmadığını bilemezsin."
+
+  - key: beta-alanine-vandaag
+    kind: myth
+    en:
+      title: "Myth: beta-alanine works on the day you take it"
+      body: "Not true. It builds up in your muscle over weeks, at 4 to 6 g a day. The average pre-workout has only 2 g."
+    nl:
+      title: "Mythe: beta-alanine werkt dezelfde dag"
+      body: "Klopt niet. Het bouwt zich over weken op in je spier, bij 4 tot 6 gram per dag. Een gemiddelde pre-workout heeft maar 2 gram."
+    de:
+      title: "Mythos: Beta-Alanin wirkt am selben Tag"
+      body: "Stimmt nicht. Es baut sich über Wochen im Muskel auf, bei 4 bis 6 g am Tag. Ein Pre-Workout hat im Schnitt nur 2 g."
+    es:
+      title: "Mito: la beta-alanina actúa el mismo día"
+      body: "No es así. Se acumula en el músculo durante semanas, con 4 a 6 g al día. Un pre-entreno medio solo lleva 2 g."
+    fr:
+      title: "Mythe : la bêta-alanine agit le jour même"
+      body: "Faux. Elle s'accumule dans le muscle sur des semaines, à 4 à 6 g par jour. Un pre-workout moyen n'en a que 2 g."
+    pt:
+      title: "Mito: a beta-alanina funciona no próprio dia"
+      body: "Não é verdade. Acumula-se no músculo ao longo de semanas, com 4 a 6 g por dia. Um pré-treino médio só tem 2 g."
+    tr:
+      title: "Efsane: beta-alanin aynı gün etki eder"
+      body: "Doğru değil. Günde 4 ila 6 g ile haftalar içinde kasında birikir. Ortalama bir pre-workout'ta sadece 2 g var."
+
+  - key: etiket-en-pot
+    kind: fact
+    en:
+      title: "Label versus tub"
+      body: "The caffeine in pre-workout products has been measured to differ 8 to 9 fold. The label is not always what is in the tub."
+    nl:
+      title: "Etiket of pot"
+      body: "De cafeïne in pre-workouts bleek tot 8 à 9 keer te verschillen. Wat op het etiket staat, zit niet altijd in de pot."
+    de:
+      title: "Etikett oder Dose"
+      body: "Der Koffeingehalt von Pre-Workouts schwankte in Messungen um das 8- bis 9-Fache. Was draufsteht, ist nicht immer drin."
+    es:
+      title: "Etiqueta o bote"
+      body: "La cafeína de los pre-entrenos llegó a variar de 8 a 9 veces en mediciones. Lo que dice la etiqueta no siempre está en el bote."
+    fr:
+      title: "Étiquette ou pot"
+      body: "La caféine des pre-workouts a varié de 8 à 9 fois selon les mesures. L'étiquette ne dit pas toujours ce qu'il y a dans le pot."
+    pt:
+      title: "Rótulo ou embalagem"
+      body: "A cafeína dos pré-treinos chegou a variar 8 a 9 vezes nas medições. O rótulo nem sempre diz o que está na embalagem."
+    tr:
+      title: "Etiket mi, kutu mu"
+      body: "Pre-workout ürünlerindeki kafeinin ölçümlerde 8 ila 9 kat farklı olduğu görüldü. Etikette yazan her zaman kutuda olmuyor."
+
+  - key: tel-je-koffie-mee
+    kind: fact
+    en:
+      title: "Count your coffee too"
+      body: "A pre-workout plus two coffees can pass 400 mg of caffeine, the daily amount seen as safe for healthy adults."
+    nl:
+      title: "Tel je koffie mee"
+      body: "Een pre-workout plus twee koffie kan boven de 400 mg cafeïne uitkomen. Dat is wat voor gezonde volwassenen per dag als veilig geldt."
+    de:
+      title: "Zähl deinen Kaffee mit"
+      body: "Ein Pre-Workout plus zwei Kaffee kann über 400 mg Koffein liegen, die Tagesmenge, die für gesunde Erwachsene als sicher gilt."
+    es:
+      title: "Cuenta también el café"
+      body: "Un pre-entreno y dos cafés pueden pasar de 400 mg de cafeína, lo que se ve seguro al día en adultos sanos."
+    fr:
+      title: "Compte aussi ton café"
+      body: "Un pre-workout et deux cafés peuvent dépasser 400 mg de caféine, la dose par jour jugée sûre chez l'adulte en bonne santé."
+    pt:
+      title: "Conta também o café"
+      body: "Um pré-treino e dois cafés podem passar os 400 mg de cafeína, o limite diário visto como seguro em adultos saudáveis."
+    tr:
+      title: "Kahveni de say"
+      body: "Bir pre-workout artı iki kahve, sağlıklı yetişkinler için güvenli sayılan günlük 400 mg kafeini aşabilir."
+
+  - key: creatine-in-de-pot
+    kind: myth
+    en:
+      title: "Myth: your pre-workout covers your creatine"
+      body: "Usually not. The average pre-workout has 2.1 g, on training days only. Filling your muscles takes 3 to 5 g every day."
+    nl:
+      title: "Mythe: je pre-workout dekt je creatine"
+      body: "Meestal niet. Een gemiddelde pre-workout heeft 2,1 gram, en alleen op trainingsdagen. Je spieren vullen vraagt 3 tot 5 gram per dag."
+    de:
+      title: "Mythos: Dein Pre-Workout deckt Kreatin ab"
+      body: "Meist nicht. Im Schnitt sind 2,1 g drin, nur an Trainingstagen. Um die Muskeln zu füllen, brauchst du täglich 3 bis 5 g."
+    es:
+      title: "Mito: tu pre-entreno cubre la creatina"
+      body: "Casi nunca. Un pre-entreno medio lleva 2,1 g, y solo los días de entreno. Llenar tus músculos pide 3 a 5 g cada día."
+    fr:
+      title: "Mythe : ton pre-workout couvre ta créatine"
+      body: "En général non. Un pre-workout moyen en a 2,1 g, les jours d'entraînement. Remplir tes muscles demande 3 à 5 g chaque jour."
+    pt:
+      title: "Mito: o pré-treino cobre a tua creatina"
+      body: "Normalmente não. Um pré-treino médio tem 2,1 g, e só nos dias de treino. Encher os músculos pede 3 a 5 g todos os dias."
+    tr:
+      title: "Efsane: pre-workout kreatin ihtiyacını karşılar"
+      body: "Genelde hayır. Ortalama bir pre-workout'ta 2,1 g var, o da sadece antrenman günleri. Kasları doldurmak her gün 3 ila 5 g ister."
+
+  - key: tieners
+    kind: fact
+    en:
+      title: "Teenagers and pre-workout"
+      body: "For under-18s, EFSA uses 3 mg caffeine per kg a day as a basis. Under about 85 kg, one average scoop is already more than that."
+    nl:
+      title: "Tieners en pre-workout"
+      body: "Voor onder de 18 gaat EFSA uit van 3 mg cafeïne per kilo per dag. Weeg je minder dan zo'n 85 kilo, dan zit één schep daar al boven."
+    de:
+      title: "Teenager und Pre-Workout"
+      body: "Für unter 18-Jährige nimmt die EFSA 3 mg Koffein pro kg am Tag als Basis. Unter etwa 85 kg liegt eine Portion schon darüber."
+    es:
+      title: "Adolescentes y pre-entreno"
+      body: "Para menores de 18, la EFSA usa 3 mg de cafeína por kg al día como base. Por debajo de unos 85 kg, un cacito ya lo supera."
+    fr:
+      title: "Ados et pre-workout"
+      body: "Pour les moins de 18 ans, l'EFSA part de 3 mg de caféine par kg et par jour. Sous 85 kg environ, une dose moyenne dépasse déjà."
+    pt:
+      title: "Adolescentes e pré-treino"
+      body: "Para menores de 18, a EFSA usa 3 mg de cafeína por kg por dia como base. Abaixo de uns 85 kg, uma dose média já passa disso."
+    tr:
+      title: "Gençler ve pre-workout"
+      body: "EFSA 18 yaş altı için günde kilo başına 3 mg kafeini esas alır. Yaklaşık 85 kilonun altındaysan ortalama bir ölçek bunu aşar."
+
+  - key: citrulline-maximale-kracht
+    kind: myth
+    en:
+      title: "Myth: citrulline makes you stronger"
+      body: "Not for your max. In trained lifters it did not raise maximal strength. It did add about 3 reps to sets taken to failure."
+    nl:
+      title: "Mythe: citrulline maakt je sterker"
+      body: "Niet voor je max. Bij getrainde sporters steeg de maximale kracht niet. Wel kwamen er zo'n 3 herhalingen bij in sets tot falen."
+    de:
+      title: "Mythos: Citrullin macht dich stärker"
+      body: "Nicht beim Maximum. Bei Trainierten stieg die Maximalkraft nicht. In Sätzen bis zum Versagen kamen aber etwa 3 Wiederholungen dazu."
+    es:
+      title: "Mito: la citrulina te hace más fuerte"
+      body: "No en tu máximo. En gente entrenada no subió la fuerza máxima. Sí sumó unas 3 repeticiones en series al fallo."
+    fr:
+      title: "Mythe : la citrulline te rend plus fort"
+      body: "Pas pour ton max. Chez les pratiquants entraînés, la force maximale n'a pas bougé. Elle a ajouté environ 3 reps aux séries à l'échec."
+    pt:
+      title: "Mito: a citrulina deixa-te mais forte"
+      body: "Não no teu máximo. Em pessoas treinadas a força máxima não subiu. Acrescentou cerca de 3 repetições em séries até à falha."
+    tr:
+      title: "Efsane: sitrülin seni güçlendirir"
+      body: "Maksimumunda değil. Antrenmanlı kişilerde maksimal kuvvet artmadı. Tükenişe kadar setlerde yaklaşık 3 tekrar ekledi."

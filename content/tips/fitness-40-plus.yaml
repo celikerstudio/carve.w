@@ -1,0 +1,217 @@
+article: fitness-40-plus
+tips:
+  - key: geen-grens-bij-40
+    kind: myth
+    en:
+      title: "Myth: after 40 the rules change"
+      body: "Not true. Neither the WHO nor the Dutch Health Council draws a line at 40. In your 40s and 50s, the adult advice applies."
+    nl:
+      title: "Mythe: na je 40e gelden andere regels"
+      body: "Klopt niet. De WHO en de Gezondheidsraad trekken geen grens bij 40. In je 40s en 50s geldt gewoon het advies voor volwassenen."
+    de:
+      title: "Mythos: ab 40 gelten andere Regeln"
+      body: "Stimmt nicht. Weder die WHO noch der niederländische Gesundheitsrat zieht bei 40 eine Grenze. Mit 40 oder 50 gilt der Rat für Erwachsene."
+    es:
+      title: "Mito: a partir de los 40 todo cambia"
+      body: "No es cierto. Ni la OMS ni el Consejo de Salud neerlandés ponen un límite en los 40. Con 40 o 50 años vale el consejo para adultos."
+    fr:
+      title: "Mythe : après 40 ans, les règles changent"
+      body: "Faux. Ni l'OMS ni le Conseil de santé néerlandais ne fixent de limite à 40 ans. À 40 ou 50 ans, le conseil pour adultes s'applique."
+    pt:
+      title: "Mito: depois dos 40 as regras mudam"
+      body: "Não é verdade. Nem a OMS nem o Conselho de Saúde neerlandês põem um limite nos 40. Aos 40 ou 50, vale o conselho para adultos."
+    tr:
+      title: "Efsane: 40'tan sonra kurallar değişir"
+      body: "Doğru değil. Ne DSÖ ne de Hollanda Sağlık Konseyi 40'ta bir sınır çiziyor. 40'lı ve 50'li yaşlarda yetişkin önerisi geçerli."
+
+  - key: twee-keer-kracht
+    kind: fact
+    en:
+      title: "Strength, twice a week"
+      body: "The WHO asks adults for strength activities on 2 or more days a week. The Dutch Health Council says at least twice a week too."
+    nl:
+      title: "Twee keer kracht per week"
+      body: "De WHO vraagt volwassenen om op 2 of meer dagen per week aan krachttraining te doen. De Gezondheidsraad zegt ook minstens twee keer."
+    de:
+      title: "Zweimal pro Woche Kraft"
+      body: "Die WHO rät Erwachsenen zu Kraftübungen an 2 oder mehr Tagen pro Woche. Der niederländische Gesundheitsrat sagt auch mindestens zweimal."
+    es:
+      title: "Fuerza dos veces por semana"
+      body: "La OMS pide a los adultos actividades de fuerza 2 o más días por semana. El Consejo de Salud neerlandés también dice al menos dos."
+    fr:
+      title: "Du renfo deux fois par semaine"
+      body: "L'OMS demande aux adultes du renforcement 2 jours ou plus par semaine. Le Conseil de santé néerlandais dit aussi au moins deux fois."
+    pt:
+      title: "Força duas vezes por semana"
+      body: "A OMS pede aos adultos atividades de força em 2 ou mais dias por semana. O Conselho de Saúde neerlandês também diz pelo menos duas."
+    tr:
+      title: "Haftada iki kez kuvvet"
+      body: "DSÖ yetişkinlerden haftada 2 ya da daha fazla gün kuvvet çalışması istiyor. Hollanda Sağlık Konseyi de en az iki kez diyor."
+
+  - key: vanaf-65
+    kind: fact
+    en:
+      title: "From 65"
+      body: "The WHO adds varied activity with an emphasis on balance and strength, on 3 or more days a week. The aim: better functioning and fewer falls."
+    nl:
+      title: "Vanaf 65"
+      body: "De WHO voegt dan gevarieerde beweging toe met nadruk op balans en kracht, op 3 of meer dagen per week. Doel: beter functioneren en minder vallen."
+    de:
+      title: "Ab 65"
+      body: "Die WHO ergänzt vielseitige Bewegung mit Fokus auf Gleichgewicht und Kraft an 3 oder mehr Tagen pro Woche. Ziel: besser funktionieren, weniger Stürze."
+    es:
+      title: "Desde los 65"
+      body: "La OMS añade actividad variada con énfasis en equilibrio y fuerza, 3 o más días por semana. El fin: funcionar mejor y caerse menos."
+    fr:
+      title: "Dès 65 ans"
+      body: "L'OMS ajoute une activité variée axée sur l'équilibre et la force, 3 jours ou plus par semaine. Le but : mieux fonctionner et moins chuter."
+    pt:
+      title: "A partir dos 65"
+      body: "A OMS junta atividade variada com ênfase no equilíbrio e na força, 3 ou mais dias por semana. O objetivo: funcionar melhor e cair menos."
+    tr:
+      title: "65 yaştan itibaren"
+      body: "DSÖ, haftada 3 ya da daha fazla gün denge ve kuvvete ağırlık veren çeşitli aktivite ekliyor. Amaç daha iyi işlev ve daha az düşme."
+
+  - key: traplopen-en-stoel
+    kind: fact
+    en:
+      title: "Stairs count"
+      body: "The Dutch Health Council names climbing stairs, getting up from a chair again and again, and strength training. Older adults add balance work."
+    nl:
+      title: "Traplopen telt"
+      body: "De Gezondheidsraad noemt traplopen, herhaald opstaan uit een stoel en krachttraining. Voor ouderen komen daar balansoefeningen bij."
+    de:
+      title: "Treppensteigen zählt"
+      body: "Der niederländische Gesundheitsrat nennt Treppensteigen, wiederholtes Aufstehen vom Stuhl und Krafttraining. Ältere ergänzen Gleichgewichtsübungen."
+    es:
+      title: "Las escaleras cuentan"
+      body: "El Consejo de Salud neerlandés cita subir escaleras, levantarse de una silla una y otra vez y la fuerza. Los mayores suman equilibrio."
+    fr:
+      title: "Les escaliers comptent"
+      body: "Le Conseil de santé néerlandais cite monter des escaliers, se lever d'une chaise plusieurs fois et la muscu. Les aînés ajoutent l'équilibre."
+    pt:
+      title: "As escadas contam"
+      body: "O Conselho de Saúde neerlandês fala em subir escadas, levantar de uma cadeira várias vezes e treino de força. Os mais velhos juntam equilíbrio."
+    tr:
+      title: "Merdiven de sayılır"
+      body: "Hollanda Sağlık Konseyi merdiven çıkmayı, sandalyeden tekrar tekrar kalkmayı ve kuvvet antrenmanını sayıyor. Yaşlılar dengeyi ekler."
+
+  - key: spier-en-ouder-worden
+    kind: fact
+    en:
+      title: "Muscle and getting older"
+      body: "Aging, even without disease, can lower muscle mass, strength and function. The NSCA calls strength training a powerful way to counter that."
+    nl:
+      title: "Spieren en ouder worden"
+      body: "Ouder worden kan ook zonder ziekte spiermassa, kracht en functie kosten. De NSCA noemt krachttraining een krachtige manier om dat tegen te gaan."
+    de:
+      title: "Muskeln und Älterwerden"
+      body: "Altern kann auch ohne Krankheit Muskelmasse, Kraft und Funktion kosten. Die NSCA nennt Krafttraining ein starkes Mittel dagegen."
+    es:
+      title: "Músculo y edad"
+      body: "Envejecer, incluso sin enfermedad, puede restar masa muscular, fuerza y función. La NSCA llama a la fuerza una forma potente de frenarlo."
+    fr:
+      title: "Muscles et âge"
+      body: "Vieillir, même sans maladie, peut faire perdre muscle, force et autonomie. La NSCA voit la muscu comme un moyen puissant de contrer ça."
+    pt:
+      title: "Músculo e idade"
+      body: "Envelhecer, mesmo sem doença, pode tirar massa muscular, força e função. A NSCA chama ao treino de força uma forma poderosa de contrariar isso."
+    tr:
+      title: "Kas ve yaşlanmak"
+      body: "Yaşlanmak, hastalık olmasa bile kas kütlesini, gücü ve işlevi azaltabilir. NSCA kuvvet antrenmanını buna karşı güçlü bir yol sayıyor."
+
+  - key: niet-gevaarlijker
+    kind: myth
+    en:
+      title: "Myth: exercise gets dangerous with age"
+      body: "Not for healthy adults. In over 38,000 people, 11,000 of them older, exercise did not raise the risk of serious adverse events."
+    nl:
+      title: "Mythe: sporten wordt gevaarlijk met de jaren"
+      body: "Niet voor gezonde volwassenen. Bij ruim 38.000 mensen, onder wie 11.000 ouderen, gaf sporten geen hoger risico op ernstige bijwerkingen."
+    de:
+      title: "Mythos: Sport wird mit dem Alter gefährlich"
+      body: "Nicht für Gesunde. Bei über 38.000 Menschen, davon 11.000 Ältere, erhöhte Training das Risiko schwerer Zwischenfälle nicht."
+    es:
+      title: "Mito: hacer ejercicio es peligroso con la edad"
+      body: "No en adultos sanos. En más de 38.000 personas, 11.000 de ellas mayores, el ejercicio no subió el riesgo de efectos adversos graves."
+    fr:
+      title: "Mythe : le sport devient risqué avec l'âge"
+      body: "Pas chez l'adulte en bonne santé. Sur plus de 38 000 personnes, dont 11 000 âgées, l'exercice n'a pas accru le risque d'incident grave."
+    pt:
+      title: "Mito: o exercício fica perigoso com a idade"
+      body: "Não em adultos saudáveis. Em mais de 38.000 pessoas, 11.000 delas mais velhas, o exercício não aumentou o risco de efeitos adversos graves."
+    tr:
+      title: "Efsane: yaş ilerledikçe spor tehlikeli olur"
+      body: "Sağlıklı yetişkinlerde değil. 11.000'i yaşlı 38.000'den fazla kişide egzersiz ciddi yan etki riskini artırmadı."
+
+  - key: chronische-aandoening
+    kind: fact
+    en:
+      title: "Living with a condition"
+      body: "Have a chronic condition? The WHO says it can help to ask a healthcare professional which types and amounts of activity suit you."
+    nl:
+      title: "Met een aandoening"
+      body: "Heb je een chronische aandoening? Volgens de WHO kan het helpen een zorgverlener te vragen welke soort en hoeveel beweging bij je past."
+    de:
+      title: "Mit einer Erkrankung"
+      body: "Hast du eine chronische Erkrankung? Laut WHO kann es helfen, eine Fachperson zu fragen, welche Art und Menge Bewegung zu dir passt."
+    es:
+      title: "Si tienes una enfermedad"
+      body: "¿Tienes una enfermedad crónica? La OMS dice que puede ayudar preguntar a un profesional sanitario qué tipo y cantidad de actividad te va bien."
+    fr:
+      title: "Avec une maladie chronique"
+      body: "Tu as une maladie chronique ? L'OMS dit qu'il peut être utile de demander à un soignant quels types et quelle dose d'activité te conviennent."
+    pt:
+      title: "Com uma doença crónica"
+      body: "Tens uma doença crónica? A OMS diz que pode ajudar perguntar a um profissional de saúde que tipo e quantidade de atividade te servem."
+    tr:
+      title: "Kronik bir rahatsızlıkla"
+      body: "Kronik bir rahatsızlığın mı var? DSÖ'ye göre hangi tür ve ne kadar hareketin sana uyduğunu bir sağlık uzmanına sormak faydalı olabilir."
+
+  - key: nieuwe-klachten
+    kind: fact
+    en:
+      title: "New symptoms"
+      body: "Notice new symptoms while you build up? The WHO says to see a healthcare provider."
+    nl:
+      title: "Nieuwe klachten"
+      body: "Merk je nieuwe klachten terwijl je opbouwt? Dan raadt de WHO aan naar een zorgverlener te gaan."
+    de:
+      title: "Neue Beschwerden"
+      body: "Bemerkst du beim Steigern neue Beschwerden? Dann rät die WHO, zu einer medizinischen Fachperson zu gehen."
+    es:
+      title: "Síntomas nuevos"
+      body: "¿Notas síntomas nuevos mientras vas subiendo? La OMS aconseja ir a un profesional sanitario."
+    fr:
+      title: "Nouveaux symptômes"
+      body: "Tu remarques de nouveaux symptômes en augmentant ? L'OMS conseille de consulter un professionnel de santé."
+    pt:
+      title: "Sintomas novos"
+      body: "Notas sintomas novos enquanto vais aumentando? A OMS aconselha a ir a um profissional de saúde."
+    tr:
+      title: "Yeni belirtiler"
+      body: "Yükü artırırken yeni belirtiler mi fark ettin? DSÖ bir sağlık uzmanına görünmeni öneriyor."
+
+  - key: licht-beginnen
+    kind: fact
+    en:
+      title: "New to lifting?"
+      body: "Start with light loads and build up. When your loads have to be low at first, adding to them is what gives you a real benefit."
+    nl:
+      title: "Nieuw met tillen?"
+      body: "Begin met lichte gewichten en bouw op. Moeten je gewichten eerst laag blijven, dan is opbouwen juist wat je echt voordeel geeft."
+    de:
+      title: "Neu beim Heben?"
+      body: "Fang mit leichten Gewichten an und steigere dich. Müssen die Lasten anfangs niedrig sein, bringt erst das Steigern echten Nutzen."
+    es:
+      title: "¿Nuevo en las pesas?"
+      body: "Empieza con cargas ligeras y ve subiendo. Si al principio tienen que ser bajas, subirlas es lo que te da un beneficio real."
+    fr:
+      title: "Nouveau en muscu ?"
+      body: "Commence léger et augmente peu à peu. Si tes charges doivent rester basses au début, c'est la progression qui t'apporte un vrai bénéfice."
+    pt:
+      title: "Novo nos pesos?"
+      body: "Começa com cargas leves e vai subindo. Se no início têm de ser baixas, é aumentá-las que te dá um benefício real."
+    tr:
+      title: "Ağırlığa yeni mi başladın?"
+      body: "Hafif yüklerle başla ve artır. Yüklerin başta düşük kalmak zorundaysa, gerçek faydayı onları artırmak getirir."

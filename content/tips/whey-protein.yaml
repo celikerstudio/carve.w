@@ -1,0 +1,217 @@
+article: whey-protein
+tips:
+  - key: niet-nodig
+    kind: myth
+    en:
+      title: "Myth: you need whey to build muscle"
+      body: "You don't. You need enough protein, and you can get all of it from food. Whey is just an easy way to reach your total."
+    nl:
+      title: "Mythe: zonder whey bouw je geen spier"
+      body: "Niet nodig. Je hebt genoeg eiwit nodig, en dat kan allemaal uit eten komen. Whey is gewoon een makkelijke manier om er te komen."
+    de:
+      title: "Mythos: Ohne Whey kein Muskelaufbau"
+      body: "Stimmt nicht. Du brauchst genug Eiweiß, und das geht komplett über Essen. Whey ist nur ein bequemer Weg dahin."
+    es:
+      title: "Mito: sin whey no ganas músculo"
+      body: "No hace falta. Necesitas proteína suficiente, y puede venir toda de la comida. El whey es solo una forma fácil de llegar."
+    fr:
+      title: "Mythe : sans whey, pas de muscle"
+      body: "Pas besoin. Il te faut assez de protéines, et tout peut venir de l'alimentation. La whey est juste un moyen facile d'y arriver."
+    pt:
+      title: "Mito: sem whey não ganhas músculo"
+      body: "Não precisas. Precisas de proteína suficiente, e pode vir toda da comida. O whey é só uma forma fácil de lá chegar."
+    tr:
+      title: "Efsane: whey olmadan kas yapılmaz"
+      body: "Gerek yok. Yeterli proteine ihtiyacın var ve hepsi yemekten gelebilir. Whey sadece toplama ulaşmanın kolay bir yolu."
+
+  - key: plafond-1-6-gram
+    kind: fact
+    en:
+      title: "Where extra protein stops helping"
+      body: "Above about 1.6 g of protein per kg a day in total, extra protein added no further fat-free mass in trials."
+    nl:
+      title: "Waar extra eiwit stopt"
+      body: "Boven zo'n 1,6 gram eiwit per kilo per dag leverde extra eiwit in studies geen extra vetvrije massa meer op."
+    de:
+      title: "Wann mehr Eiweiß nichts bringt"
+      body: "Über etwa 1,6 g Eiweiß pro kg am Tag brachte zusätzliches Eiweiß in Studien keine weitere fettfreie Masse."
+    es:
+      title: "Cuándo deja de sumar la proteína"
+      body: "Por encima de unos 1,6 g de proteína por kg al día, más proteína no añadió masa libre de grasa en los ensayos."
+    fr:
+      title: "Quand plus de protéines ne sert plus"
+      body: "Au-delà d'environ 1,6 g de protéines par kg et par jour, en ajouter n'a plus donné de masse maigre dans les essais."
+    pt:
+      title: "Quando mais proteína deixa de ajudar"
+      body: "Acima de cerca de 1,6 g de proteína por kg por dia, mais proteína não deu mais massa magra nos ensaios."
+    tr:
+      title: "Fazla protein ne zaman işe yaramaz"
+      body: "Günde kilo başına yaklaşık 1,6 g toplam proteinin üstünde, ek protein denemelerde yağsız kütleyi daha fazla artırmadı."
+
+  - key: wat-het-oplevert
+    kind: fact
+    en:
+      title: "What protein shakes add"
+      body: "In trials of 6 weeks or more, protein supplements on top of training added on average 0.3 kg of fat-free mass."
+    nl:
+      title: "Wat eiwitshakes opleveren"
+      body: "In studies van 6 weken of langer gaven eiwitsupplementen bovenop training gemiddeld 0,3 kilo extra vetvrije massa."
+    de:
+      title: "Was Eiweißshakes bringen"
+      body: "In Studien ab 6 Wochen brachten Eiweißpräparate zusätzlich zum Training im Schnitt 0,3 kg mehr fettfreie Masse."
+    es:
+      title: "Lo que aportan los batidos"
+      body: "En ensayos de 6 semanas o más, la proteína en polvo junto al entreno sumó de media 0,3 kg de masa libre de grasa."
+    fr:
+      title: "Ce qu'apportent les shakes"
+      body: "Dans des essais de 6 semaines ou plus, les compléments protéinés en plus de l'entraînement ont ajouté 0,3 kg de masse maigre en moyenne."
+    pt:
+      title: "O que os batidos acrescentam"
+      body: "Em ensaios de 6 semanas ou mais, suplementos de proteína com treino acrescentaram em média 0,3 kg de massa magra."
+    tr:
+      title: "Protein shake ne katar"
+      body: "6 hafta ve üzeri denemelerde antrenmana eklenen protein takviyeleri ortalama 0,3 kg yağsız kütle kazandırdı."
+
+  - key: een-portie
+    kind: fact
+    en:
+      title: "One scoop"
+      body: "A normal serving is 20 to 40 g of protein, or about 0.25 g per kg of bodyweight. At 80 kg that is 20 g."
+    nl:
+      title: "Eén schep"
+      body: "Een normale portie is 20 tot 40 gram eiwit, of zo'n 0,25 gram per kilo lichaamsgewicht. Bij 80 kilo is dat 20 gram."
+    de:
+      title: "Eine Portion"
+      body: "Eine normale Portion sind 20 bis 40 g Eiweiß, oder etwa 0,25 g pro kg Körpergewicht. Bei 80 kg sind das 20 g."
+    es:
+      title: "Un cacito"
+      body: "Una ración normal son 20 a 40 g de proteína, o unos 0,25 g por kg de peso. Con 80 kg son 20 g."
+    fr:
+      title: "Une dose"
+      body: "Une portion normale, c'est 20 à 40 g de protéines, soit environ 0,25 g par kg de poids. À 80 kg, ça fait 20 g."
+    pt:
+      title: "Uma dose"
+      body: "Uma dose normal são 20 a 40 g de proteína, ou cerca de 0,25 g por kg de peso. Com 80 kg são 20 g."
+    tr:
+      title: "Bir ölçek"
+      body: "Normal bir porsiyon 20 ila 40 g protein, ya da kilo başına yaklaşık 0,25 g. 80 kiloda bu 20 g eder."
+
+  - key: leucine
+    kind: fact
+    en:
+      title: "Whey and leucine"
+      body: "Whey is about 11% leucine, more than any other common protein. A 25 g serving gives you about 2.75 g."
+    nl:
+      title: "Whey en leucine"
+      body: "Whey bestaat voor zo'n 11% uit leucine, meer dan elke andere gangbare eiwitbron. Een portie van 25 gram geeft je zo'n 2,75 gram."
+    de:
+      title: "Whey und Leucin"
+      body: "Whey besteht zu etwa 11% aus Leucin, mehr als jede andere gängige Eiweißquelle. 25 g liefern dir etwa 2,75 g."
+    es:
+      title: "Whey y leucina"
+      body: "El whey tiene un 11% de leucina, más que cualquier otra proteína común. Una ración de 25 g te da unos 2,75 g."
+    fr:
+      title: "Whey et leucine"
+      body: "La whey contient environ 11% de leucine, plus que toute autre protéine courante. Une portion de 25 g t'en donne environ 2,75 g."
+    pt:
+      title: "Whey e leucina"
+      body: "O whey tem cerca de 11% de leucina, mais do que qualquer outra proteína comum. Uma dose de 25 g dá-te cerca de 2,75 g."
+    tr:
+      title: "Whey ve lösin"
+      body: "Whey'in yaklaşık %11'i lösindir, yaygın protein kaynaklarının hepsinden fazla. 25 g'lık bir porsiyon yaklaşık 2,75 g verir."
+
+  - key: concentraat-of-isolaat
+    kind: fact
+    en:
+      title: "Concentrate or isolate?"
+      body: "Concentrate is usually 70 to 80% protein, isolate over 90%. Isolate gives more protein per scoop, concentrate costs less."
+    nl:
+      title: "Concentraat of isolaat?"
+      body: "Concentraat is meestal 70 tot 80% eiwit, isolaat meer dan 90%. Isolaat geeft meer eiwit per schep, concentraat is goedkoper."
+    de:
+      title: "Konzentrat oder Isolat?"
+      body: "Konzentrat hat meist 70 bis 80% Eiweiß, Isolat über 90%. Isolat bringt mehr Eiweiß pro Portion, Konzentrat ist billiger."
+    es:
+      title: "¿Concentrado o aislado?"
+      body: "El concentrado suele tener 70 a 80% de proteína y el aislado más del 90%. El aislado da más por cacito, el concentrado es más barato."
+    fr:
+      title: "Concentrée ou isolat ?"
+      body: "Le concentré fait souvent 70 à 80% de protéines, l'isolat plus de 90%. L'isolat en donne plus par dose, le concentré coûte moins."
+    pt:
+      title: "Concentrado ou isolado?"
+      body: "O concentrado tem normalmente 70 a 80% de proteína, o isolado mais de 90%. O isolado dá mais por dose, o concentrado é mais barato."
+    tr:
+      title: "Konsantre mi, izolat mı?"
+      body: "Konsantre genelde %70 ila 80 protein, izolat %90'ın üstünde. İzolat ölçek başına daha çok protein verir, konsantre daha ucuz."
+
+  - key: na-de-training
+    kind: myth
+    en:
+      title: "Myth: the shake must come right after training"
+      body: "Not really. Your total protein for the day matters more than the minutes after your workout."
+    nl:
+      title: "Mythe: de shake moet direct na je training"
+      body: "Niet echt. Je totale eiwit over de dag telt zwaarder dan de minuten na je training."
+    de:
+      title: "Mythos: Der Shake muss direkt nach dem Training"
+      body: "Nicht wirklich. Dein Eiweiß über den ganzen Tag zählt mehr als die Minuten nach dem Training."
+    es:
+      title: "Mito: el batido va justo tras entrenar"
+      body: "No tanto. Tu proteína total del día importa más que los minutos después del entreno."
+    fr:
+      title: "Mythe : le shake juste après la séance"
+      body: "Pas vraiment. Ton total de protéines sur la journée compte plus que les minutes après ta séance."
+    pt:
+      title: "Mito: o batido é logo a seguir ao treino"
+      body: "Nem por isso. A tua proteína total do dia conta mais do que os minutos depois do treino."
+    tr:
+      title: "Efsane: shake antrenmandan hemen sonra içilmeli"
+      body: "Pek sayılmaz. Günlük toplam proteinin, antrenmandan sonraki dakikalardan daha önemli."
+
+  - key: nieren
+    kind: myth
+    en:
+      title: "Myth: whey is bad for your kidneys"
+      body: "Not in healthy people. High-protein diets did not change kidney filtering. With kidney disease, talk to your doctor first."
+    nl:
+      title: "Mythe: whey is slecht voor je nieren"
+      body: "Niet bij gezonde mensen. Veel eiwit veranderde de nierfilter niet. Heb je een nierziekte, overleg dan eerst met je arts."
+    de:
+      title: "Mythos: Whey schadet den Nieren"
+      body: "Nicht bei Gesunden. Viel Eiweiß änderte die Filterleistung der Nieren nicht. Bei Nierenerkrankung erst zum Arzt."
+    es:
+      title: "Mito: el whey daña los riñones"
+      body: "No en personas sanas. Las dietas altas en proteína no cambiaron el filtrado renal. Con enfermedad renal, habla antes con tu médico."
+    fr:
+      title: "Mythe : la whey abîme les reins"
+      body: "Pas chez les gens en bonne santé. Les régimes riches en protéines n'ont pas changé la filtration rénale. Avec une maladie rénale, vois ton médecin."
+    pt:
+      title: "Mito: o whey faz mal aos rins"
+      body: "Não em pessoas saudáveis. Dietas ricas em proteína não mudaram a filtração dos rins. Com doença renal, fala antes com o médico."
+    tr:
+      title: "Efsane: whey böbreklere zarar verir"
+      body: "Sağlıklı insanlarda hayır. Yüksek proteinli diyetler böbrek süzmesini değiştirmedi. Böbrek hastalığın varsa önce doktoruna danış."
+
+  - key: verdeel-over-de-dag
+    kind: fact
+    en:
+      title: "Spread it out"
+      body: "The ISSN advises spreading protein evenly over the day, every 3 to 4 hours. A shake can fill one of those moments."
+    nl:
+      title: "Verdeel het over de dag"
+      body: "De ISSN raadt aan je eiwit gelijk over de dag te verdelen, elke 3 à 4 uur. Een shake kan één van die momenten vullen."
+    de:
+      title: "Verteil es über den Tag"
+      body: "Die ISSN rät, Eiweiß gleichmäßig über den Tag zu verteilen, alle 3 bis 4 Stunden. Ein Shake kann einen dieser Momente füllen."
+    es:
+      title: "Repártela en el día"
+      body: "La ISSN aconseja repartir la proteína a lo largo del día, cada 3 a 4 horas. Un batido puede cubrir uno de esos momentos."
+    fr:
+      title: "Répartis sur la journée"
+      body: "L'ISSN conseille de répartir les protéines sur la journée, toutes les 3 à 4 heures. Un shake peut remplir un de ces moments."
+    pt:
+      title: "Distribui ao longo do dia"
+      body: "A ISSN aconselha distribuir a proteína pelo dia, a cada 3 a 4 horas. Um batido pode preencher um desses momentos."
+    tr:
+      title: "Güne yay"
+      body: "ISSN proteini güne eşit yaymayı, 3 ila 4 saatte bir almayı öneriyor. Bir shake bu anlardan birini doldurabilir."

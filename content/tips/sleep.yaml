@@ -1,0 +1,241 @@
+article: sleep
+tips:
+  - key: zeven-uur-of-meer
+    kind: fact
+    en:
+      title: "How much sleep"
+      body: "Adults aged 18 to 60 need 7 or more hours a night, on a regular basis. That's the advice of the two main US sleep societies."
+    nl:
+      title: "Hoeveel slaap"
+      body: "Volwassenen van 18 tot 60 hebben 7 uur of meer per nacht nodig, structureel. Dat adviseren de twee grote Amerikaanse slaapverenigingen."
+    de:
+      title: "Wie viel Schlaf"
+      body: "Erwachsene von 18 bis 60 brauchen regelmäßig 7 Stunden oder mehr pro Nacht. So raten es die zwei großen US-Schlafgesellschaften."
+    es:
+      title: "Cuánto dormir"
+      body: "Los adultos de 18 a 60 años necesitan 7 horas o más cada noche, de forma regular. Es lo que aconsejan las dos grandes sociedades del sueño de EE. UU."
+    fr:
+      title: "Combien dormir"
+      body: "Les adultes de 18 à 60 ans ont besoin de 7 heures ou plus par nuit, régulièrement. C'est l'avis des deux grandes sociétés du sommeil américaines."
+    pt:
+      title: "Quanto dormir"
+      body: "Os adultos dos 18 aos 60 anos precisam de 7 horas ou mais por noite, com regularidade. É o conselho das duas grandes sociedades do sono dos EUA."
+    tr:
+      title: "Ne kadar uyku"
+      body: "18 ila 60 yaş arası yetişkinlerin düzenli olarak gecede 7 saat veya daha fazla uykuya ihtiyacı var. ABD'nin iki büyük uyku derneği böyle öneriyor."
+
+  - key: niet-precies-zeven
+    kind: myth
+    en:
+      title: "Myth: 7 hours is the magic number"
+      body: "Not quite. The advice is 7 hours or more, not exactly 7. One number doesn't fit everyone."
+    nl:
+      title: "Mythe: 7 uur is het magische getal"
+      body: "Niet helemaal. Het advies is 7 uur of meer, niet precies 7. Eén getal past niet bij iedereen."
+    de:
+      title: "Mythos: 7 Stunden sind die magische Zahl"
+      body: "Nicht ganz. Die Empfehlung lautet 7 Stunden oder mehr, nicht genau 7. Eine Zahl passt nicht für alle."
+    es:
+      title: "Mito: 7 horas es el número mágico"
+      body: "No exactamente. El consejo es 7 horas o más, no 7 justas. Un solo número no sirve para todo el mundo."
+    fr:
+      title: "Mythe : 7 heures, le chiffre magique"
+      body: "Pas tout à fait. Le conseil, c'est 7 heures ou plus, pas 7 pile. Un seul chiffre ne convient pas à tout le monde."
+    pt:
+      title: "Mito: 7 horas é o número mágico"
+      body: "Não bem. O conselho é 7 horas ou mais, não 7 certas. Um só número não serve para toda a gente."
+    tr:
+      title: "Efsane: 7 saat sihirli sayı"
+      body: "Tam değil. Öneri tam 7 değil, 7 saat veya daha fazla. Tek bir sayı herkese uymaz."
+
+  - key: slaap-en-vetverlies
+    kind: fact
+    en:
+      title: "Short sleep on a diet"
+      body: "In a tiny 14-day study, overweight dieters with 5.5 hours in bed lost 0.6 kg of fat, against 1.4 kg with 8.5 hours. They weren't training."
+    nl:
+      title: "Kort slapen op dieet"
+      body: "In een piepkleine studie van 14 dagen verloren lijners met overgewicht en 5,5 uur in bed 0,6 kg vet, tegen 1,4 kg met 8,5 uur. Ze trainden niet."
+    de:
+      title: "Wenig Schlaf in der Diät"
+      body: "In einer winzigen 14-Tage-Studie verloren Übergewichtige auf Diät mit 5,5 Stunden im Bett 0,6 kg Fett, mit 8,5 Stunden 1,4 kg. Sie trainierten nicht."
+    es:
+      title: "Dormir poco a dieta"
+      body: "En un estudio diminuto de 14 días, personas con sobrepeso a dieta y 5,5 horas en la cama perdieron 0,6 kg de grasa, frente a 1,4 kg con 8,5. No entrenaban."
+    fr:
+      title: "Peu dormir au régime"
+      body: "Dans une toute petite étude de 14 jours, des gens en surpoids au régime avec 5,5 h au lit ont perdu 0,6 kg de gras, contre 1,4 kg avec 8,5 h. Sans entraînement."
+    pt:
+      title: "Dormir pouco em dieta"
+      body: "Num estudo minúsculo de 14 dias, pessoas com excesso de peso em dieta e 5,5 horas na cama perdeu 0,6 kg de gordura, contra 1,4 kg com 8,5. Não treinavam."
+    tr:
+      title: "Diyette az uyku"
+      body: "14 günlük çok küçük bir çalışmada yatakta 5,5 saat geçiren fazla kilolu diyetçiler 0,6 kg yağ kaybetti, 8,5 saatte bu 1,4 kg'dı. Antrenman yapmıyorlardı."
+
+  - key: vetvrije-massa
+    kind: fact
+    en:
+      title: "Losing the wrong weight"
+      body: "In that study, short sleepers lost more fat-free mass, 2.4 kg against 1.5 kg. That includes water and glycogen, so it's not pure muscle."
+    nl:
+      title: "Het verkeerde gewicht kwijt"
+      body: "In die studie verloren korte slapers meer vetvrije massa, 2,4 kg tegen 1,5 kg. Daar horen ook water en glycogeen bij, dus het is geen pure spier."
+    de:
+      title: "Das falsche Gewicht verloren"
+      body: "In der Studie verloren Kurzschläfer mehr fettfreie Masse, 2,4 kg statt 1,5 kg. Dazu zählen auch Wasser und Glykogen, also nicht nur Muskel."
+    es:
+      title: "Perder el peso equivocado"
+      body: "En ese estudio, quienes dormían poco perdieron más masa libre de grasa, 2,4 kg frente a 1,5. Incluye agua y glucógeno, no es solo músculo."
+    fr:
+      title: "Perdre le mauvais poids"
+      body: "Dans cette étude, les petits dormeurs ont perdu plus de masse maigre, 2,4 kg contre 1,5. Ça inclut eau et glycogène, pas que du muscle."
+    pt:
+      title: "Perder o peso errado"
+      body: "Nesse estudo, quem dormia pouco perdeu mais massa isenta de gordura, 2,4 kg contra 1,5. Inclui água e glicogénio, não é só músculo."
+    tr:
+      title: "Yanlış kiloyu kaybetmek"
+      body: "O çalışmada az uyuyanlar daha fazla yağsız kütle kaybetti, 2,4 kg'a karşı 1,5 kg. Buna su ve glikojen de dahil, yani saf kas değil."
+
+  - key: langer-slapen-minder-eten
+    kind: fact
+    en:
+      title: "Sleep more, eat less"
+      body: "Adults with overweight who slept little got sleep counselling. Over two weeks they slept about 1.2 hours more and ate about 270 kcal a day less."
+    nl:
+      title: "Meer slapen, minder eten"
+      body: "Volwassenen met overgewicht die kort sliepen kregen slaapbegeleiding. In twee weken sliepen ze zo'n 1,2 uur langer en aten ze 270 kcal per dag minder."
+    de:
+      title: "Mehr schlafen, weniger essen"
+      body: "Übergewichtige Kurzschläfer bekamen Schlafberatung. In zwei Wochen schliefen sie etwa 1,2 Stunden länger und aßen rund 270 kcal am Tag weniger."
+    es:
+      title: "Dormir más, comer menos"
+      body: "Adultos con sobrepeso que dormían poco recibieron asesoría de sueño. En dos semanas durmieron 1,2 horas más y comieron unas 270 kcal menos al día."
+    fr:
+      title: "Dormir plus, manger moins"
+      body: "Des adultes en surpoids qui dormaient peu ont reçu des conseils de sommeil. En deux semaines, ils ont dormi 1,2 h de plus et mangé 270 kcal de moins par jour."
+    pt:
+      title: "Dormir mais, comer menos"
+      body: "Adultos com excesso de peso que dormiam pouco tiveram aconselhamento de sono. Em duas semanas dormiram mais 1,2 horas e comeram menos 270 kcal por dia."
+    tr:
+      title: "Daha çok uyu, daha az ye"
+      body: "Az uyuyan fazla kilolu yetişkinler uyku danışmanlığı aldı. İki haftada yaklaşık 1,2 saat daha fazla uyudular ve günde 270 kcal az yediler."
+
+  - key: een-nacht-zonder-slaap
+    kind: fact
+    en:
+      title: "One night without sleep"
+      body: "In 13 young adults, one sleepless night cut muscle protein building after a meal by 18%. The drop showed up in the men, not the women."
+    nl:
+      title: "Eén nacht zonder slaap"
+      body: "Bij 13 jonge volwassenen verlaagde één nacht zonder slaap de spiereiwitopbouw na een maaltijd met 18%. De daling zat bij de mannen, niet bij de vrouwen."
+    de:
+      title: "Eine Nacht ohne Schlaf"
+      body: "Bei 13 jungen Erwachsenen senkte eine schlaflose Nacht den Muskelaufbau nach einer Mahlzeit um 18%. Der Rückgang zeigte sich bei Männern, nicht bei Frauen."
+    es:
+      title: "Una noche sin dormir"
+      body: "En 13 adultos jóvenes, una noche en vela bajó un 18% la síntesis de proteína muscular tras comer. La caída se vio en los hombres, no en las mujeres."
+    fr:
+      title: "Une nuit blanche"
+      body: "Chez 13 jeunes adultes, une nuit blanche a réduit de 18% la synthèse protéique musculaire après un repas. La baisse touchait les hommes, pas les femmes."
+    pt:
+      title: "Uma noite sem dormir"
+      body: "Em 13 jovens adultos, uma noite sem dormir baixou 18% a síntese de proteína muscular após uma refeição. A queda viu-se nos homens, não nas mulheres."
+    tr:
+      title: "Uykusuz bir gece"
+      body: "13 genç yetişkinde uykusuz bir gece, yemekten sonraki kas proteini yapımını %18 düşürdü. Düşüş kadınlarda değil, erkeklerde görüldü."
+
+  - key: training-lijdt
+    kind: myth
+    en:
+      title: "Myth: sleep doesn't affect your training"
+      body: "Not true. In a review of 45 trials, short sleep lowered athletes' endurance, power and speed, and made the same effort feel harder."
+    nl:
+      title: "Mythe: slaap doet niets met je training"
+      body: "Niet waar. In een review van 45 studies verlaagde slaaptekort het uithoudingsvermogen, de explosiviteit en snelheid van sporters, en voelde inspanning zwaarder."
+    de:
+      title: "Mythos: Schlaf ist egal fürs Training"
+      body: "Stimmt nicht. In einem Review von 45 Studien senkte Schlafmangel bei Sportlern Ausdauer, Schnellkraft und Tempo, und Anstrengung fühlte sich härter an."
+    es:
+      title: "Mito: el sueño no afecta a tu entreno"
+      body: "No es cierto. En una revisión de 45 ensayos, dormir poco bajó la resistencia, la potencia y la velocidad de deportistas, y el esfuerzo se sintió más duro."
+    fr:
+      title: "Mythe : le sommeil n'influe pas sur ta séance"
+      body: "Faux. Dans une revue de 45 essais, le manque de sommeil a réduit l'endurance, la puissance et la vitesse des sportifs. L'effort semblait plus dur."
+    pt:
+      title: "Mito: o sono não afeta o teu treino"
+      body: "Não é verdade. Numa revisão de 45 ensaios, dormir pouco baixou a resistência, a potência e a velocidade de atletas, e o esforço pareceu mais duro."
+    tr:
+      title: "Efsane: uyku antrenmanını etkilemez"
+      body: "Doğru değil. 45 çalışmalık bir derlemede uykusuzluk sporcuların dayanıklılığını, gücünü ve hızını düşürdü, aynı efor daha zor geldi."
+
+  - key: max-kracht-houdt-stand
+    kind: myth
+    en:
+      title: "Myth: a sleepless night kills your max"
+      body: "Not quite. In athletes, max force dropped least of all, mostly after waking hours too early. A fully sleepless night didn't lower it significantly."
+    nl:
+      title: "Mythe: een nacht niet slapen sloopt je max"
+      body: "Niet helemaal. Bij sporters zakte maximale kracht het minst, vooral na uren te vroeg wakker worden. Een hele nacht wakker verlaagde 'm niet significant."
+    de:
+      title: "Mythos: Eine Nacht wach killt dein Max"
+      body: "Nicht ganz. Bei Sportlern sank die Maximalkraft am wenigsten, vor allem nach Stunden zu frühem Aufwachen. Eine durchwachte Nacht senkte sie nicht signifikant."
+    es:
+      title: "Mito: una noche en vela hunde tu máximo"
+      body: "No exactamente. En deportistas, la fuerza máxima fue lo que menos bajó, sobre todo al despertar horas antes. Una noche en vela no la bajó significativamente."
+    fr:
+      title: "Mythe : une nuit blanche ruine ton max"
+      body: "Pas tout à fait. Chez les sportifs, la force max a le moins baissé, surtout après un réveil trop tôt. Une nuit blanche ne l'a pas baissée significativement."
+    pt:
+      title: "Mito: uma noite sem dormir arrasa o máximo"
+      body: "Não bem. Em atletas, a força máxima foi o que menos caiu, sobretudo ao acordar horas antes. Uma noite inteira sem dormir não a baixou de forma significativa."
+    tr:
+      title: "Efsane: uykusuz gece maksimumunu bitirir"
+      body: "Tam değil. Sporcularda maksimal kuvvet en az düşen şeydi, özellikle saatlerce erken uyanınca. Tamamen uykusuz bir gece onu anlamlı şekilde düşürmedi."
+
+  - key: je-merkt-het-niet
+    kind: fact
+    en:
+      title: "Caffeine you don't notice"
+      body: "In a small home study, 400 mg of caffeine 6 hours before bed still cut sleep by over an hour. People didn't notice it themselves."
+    nl:
+      title: "Cafeïne die je niet merkt"
+      body: "In een kleine thuisstudie kortte 400 mg cafeïne 6 uur voor bedtijd de slaap nog met ruim een uur in. De mensen merkten het zelf niet."
+    de:
+      title: "Koffein, das du nicht merkst"
+      body: "In einer kleinen Studie zu Hause verkürzten 400 mg Koffein 6 Stunden vor dem Schlafen den Schlaf um über eine Stunde. Gemerkt hat es keiner."
+    es:
+      title: "Cafeína que no notas"
+      body: "En un pequeño estudio en casa, 400 mg de cafeína 6 horas antes de dormir aún recortaron el sueño más de una hora. La gente no lo notó."
+    fr:
+      title: "La caféine qu'on ne sent pas"
+      body: "Dans une petite étude à domicile, 400 mg de caféine 6 h avant le coucher ont encore réduit le sommeil de plus d'une heure. Sans qu'ils le remarquent."
+    pt:
+      title: "Cafeína que não notas"
+      body: "Num pequeno estudo em casa, 400 mg de cafeína 6 horas antes de deitar ainda cortaram o sono em mais de uma hora. As pessoas nem notaram."
+    tr:
+      title: "Fark etmediğin kafein"
+      body: "Küçük bir ev çalışmasında yatmadan 6 saat önce alınan 400 mg kafein uykuyu yine bir saatten fazla kısalttı. Katılımcılar bunu fark etmedi."
+
+  - key: tijd-in-bed
+    kind: fact
+    en:
+      title: "Time in bed isn't sleep"
+      body: "Plan about 8 hours or more in bed. In one study, 8.5 hours in bed gave about 7 hours 25 minutes of actual sleep."
+    nl:
+      title: "Tijd in bed is geen slaap"
+      body: "Plan zo'n 8 uur of meer in bed. In één studie leverde 8,5 uur in bed ongeveer 7 uur en 25 minuten echte slaap op."
+    de:
+      title: "Zeit im Bett ist kein Schlaf"
+      body: "Plane etwa 8 Stunden oder mehr im Bett. In einer Studie ergaben 8,5 Stunden im Bett rund 7 Stunden 25 Minuten echten Schlaf."
+    es:
+      title: "Estar en la cama no es dormir"
+      body: "Planea unas 8 horas o más en la cama. En un estudio, 8,5 horas en la cama dieron unas 7 horas y 25 minutos de sueño real."
+    fr:
+      title: "Être au lit, ce n'est pas dormir"
+      body: "Prévois environ 8 heures ou plus au lit. Dans une étude, 8,5 heures au lit ont donné environ 7 h 25 de vrai sommeil."
+    pt:
+      title: "Estar na cama não é dormir"
+      body: "Planeia cerca de 8 horas ou mais na cama. Num estudo, 8,5 horas na cama deram cerca de 7 horas e 25 minutos de sono real."
+    tr:
+      title: "Yatakta olmak uyumak değil"
+      body: "Yatakta yaklaşık 8 saat veya daha fazla planla. Bir çalışmada yatakta 8,5 saat, yaklaşık 7 saat 25 dakika gerçek uyku sağladı."

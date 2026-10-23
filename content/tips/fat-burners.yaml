@@ -1,0 +1,241 @@
+article: fat-burners
+tips:
+  - key: ongeveer-een-kilo
+    kind: fact
+    en:
+      title: "Do fat burners work?"
+      body: "Barely. Meta-analyses found about 1 kg more weight loss than control with carnitine and with CLA. Fat loss comes from a calorie deficit."
+    nl:
+      title: "Werken vetverbranders?"
+      body: "Nauwelijks. Meta-analyses vonden met carnitine en met CLA zo'n 1 kilo meer gewichtsverlies dan zonder. Vet verlies je door een calorietekort."
+    de:
+      title: "Wirken Fatburner?"
+      body: "Kaum. Meta-Analysen fanden mit Carnitin und mit CLA etwa 1 kg mehr Gewichtsverlust als ohne. Fett verlierst du über ein Kaloriendefizit."
+    es:
+      title: "¿Funcionan los quemagrasas?"
+      body: "Apenas. Los metaanálisis vieron cerca de 1 kg más de pérdida con carnitina y con CLA que sin ellos. La grasa se pierde con un déficit calórico."
+    fr:
+      title: "Les brûleurs de graisse marchent ?"
+      body: "À peine. Les méta-analyses trouvent environ 1 kg de perte en plus avec la carnitine et le CLA. La graisse part avec un déficit calorique."
+    pt:
+      title: "Os queimadores funcionam?"
+      body: "Mal. As meta-análises viram cerca de 1 kg a mais de perda com carnitina e com CLA. A gordura perde-se com um défice calórico."
+    tr:
+      title: "Yağ yakıcılar işe yarar mı?"
+      body: "Pek değil. Meta-analizler karnitin ve CLA ile kontrole göre yaklaşık 1 kg fazla kilo kaybı buldu. Yağı kalori açığıyla kaybedersin."
+
+  - key: carnitine
+    kind: myth
+    en:
+      title: "Myth: carnitine burns your fat"
+      body: "Hardly. Two meta-analyses found 1.2 to 1.3 kg more weight loss, and in one the effect shrank the longer people took it."
+    nl:
+      title: "Mythe: carnitine verbrandt je vet"
+      body: "Nauwelijks. Twee meta-analyses vonden 1,2 à 1,3 kilo extra gewichtsverlies, en in één werd het effect kleiner hoe langer mensen het namen."
+    de:
+      title: "Mythos: Carnitin verbrennt dein Fett"
+      body: "Kaum. Zwei Meta-Analysen fanden 1,2 bis 1,3 kg mehr Gewichtsverlust, und in einer wurde der Effekt mit der Zeit kleiner."
+    es:
+      title: "Mito: la carnitina quema tu grasa"
+      body: "Apenas. Dos metaanálisis vieron 1,2 a 1,3 kg más de pérdida, y en uno el efecto se reducía cuanto más tiempo se tomaba."
+    fr:
+      title: "Mythe : la carnitine brûle ta graisse"
+      body: "À peine. Deux méta-analyses ont trouvé 1,2 à 1,3 kg de perte en plus, et dans l'une l'effet diminuait avec le temps."
+    pt:
+      title: "Mito: a carnitina queima a tua gordura"
+      body: "Mal. Duas meta-análises viram 1,2 a 1,3 kg a mais de perda, e numa delas o efeito diminuía quanto mais tempo se tomava."
+    tr:
+      title: "Efsane: karnitin yağını yakar"
+      body: "Pek değil. İki meta-analiz 1,2 ila 1,3 kg fazla kayıp buldu, birinde etki kullanım süresi uzadıkça azaldı."
+
+  - key: cla
+    kind: myth
+    en:
+      title: "Myth: CLA melts fat"
+      body: "It looked impressive in animals. In human trials people lost 1.08 kg more than on placebo, below the 2.5 kg that counts as meaningful."
+    nl:
+      title: "Mythe: CLA laat vet smelten"
+      body: "Bij dieren zag het er indrukwekkend uit. Bij mensen was het 1,08 kilo meer dan placebo, onder de 2,5 kilo die als zinvol geldt."
+    de:
+      title: "Mythos: CLA schmilzt Fett weg"
+      body: "Bei Tieren sah es beeindruckend aus. Beim Menschen waren es 1,08 kg mehr als mit Placebo, unter den 2,5 kg, die als relevant gelten."
+    es:
+      title: "Mito: el CLA derrite la grasa"
+      body: "En animales parecía impresionante. En personas se perdió 1,08 kg más que con placebo, por debajo de los 2,5 kg que se consideran relevantes."
+    fr:
+      title: "Mythe : le CLA fait fondre la graisse"
+      body: "Chez l'animal, c'était impressionnant. Chez l'humain, 1,08 kg de plus qu'avec un placebo, sous les 2,5 kg jugés significatifs."
+    pt:
+      title: "Mito: o CLA derrete gordura"
+      body: "Em animais parecia impressionante. Em pessoas perdeu-se 1,08 kg mais do que com placebo, abaixo dos 2,5 kg considerados relevantes."
+    tr:
+      title: "Efsane: CLA yağı eritir"
+      body: "Hayvanlarda etkileyici görünüyordu. İnsanlarda plaseboya göre 1,08 kg fazla kayıp oldu, anlamlı sayılan 2,5 kg'ın altında."
+
+  - key: groene-thee
+    kind: myth
+    en:
+      title: "Myth: green tea extract burns fat"
+      body: "A Cochrane review of 12 to 13 week trials found a small weight loss that was not statistically significant and unlikely to matter."
+    nl:
+      title: "Mythe: groene-thee-extract verbrandt vet"
+      body: "Een Cochrane-review van proeven van 12 à 13 weken vond een klein verschil. Niet statistisch significant en waarschijnlijk niet van belang."
+    de:
+      title: "Mythos: Grüntee-Extrakt verbrennt Fett"
+      body: "Ein Cochrane-Review über 12 bis 13 Wochen fand einen kleinen Gewichtsverlust, statistisch nicht signifikant und kaum relevant."
+    es:
+      title: "Mito: el extracto de té verde quema grasa"
+      body: "Una revisión Cochrane de ensayos de 12 a 13 semanas vio una pérdida pequeña, no significativa y que probablemente no importa."
+    fr:
+      title: "Mythe : l'extrait de thé vert brûle la graisse"
+      body: "Une revue Cochrane d'essais de 12 à 13 semaines a trouvé une petite perte, non significative et sans doute sans intérêt réel."
+    pt:
+      title: "Mito: o extrato de chá verde queima gordura"
+      body: "Uma revisão Cochrane de ensaios de 12 a 13 semanas viu uma perda pequena, não significativa e que provavelmente não importa."
+    tr:
+      title: "Efsane: yeşil çay ekstresi yağ yakar"
+      body: "12 ila 13 haftalık denemelere bakan bir Cochrane derlemesi küçük, istatistiksel olarak anlamsız ve muhtemelen önemsiz bir kayıp buldu."
+
+  - key: verstopte-cafeine
+    kind: fact
+    en:
+      title: "Hidden caffeine"
+      body: "Caffeine in a fat burner can be listed as guarana, bissey nut or kola. Green tea extract can contain it too."
+    nl:
+      title: "Verstopte cafeïne"
+      body: "Cafeïne in een vetverbrander kan op het etiket staan als guarana, bissey nut of kola. Ook groene-thee-extract kan het bevatten."
+    de:
+      title: "Verstecktes Koffein"
+      body: "Koffein in einem Fatburner kann als Guarana, Bissey-Nuss oder Kola draufstehen. Auch Grüntee-Extrakt kann welches enthalten."
+    es:
+      title: "Cafeína escondida"
+      body: "La cafeína de un quemagrasas puede aparecer como guaraná, nuez de bissey o cola. El extracto de té verde también puede llevarla."
+    fr:
+      title: "La caféine cachée"
+      body: "La caféine d'un brûleur peut figurer sous le nom de guarana, noix de bissey ou kola. L'extrait de thé vert peut aussi en contenir."
+    pt:
+      title: "Cafeína escondida"
+      body: "A cafeína de um queimador pode vir como guaraná, noz de bissey ou cola. O extrato de chá verde também pode ter."
+    tr:
+      title: "Gizli kafein"
+      body: "Yağ yakıcıdaki kafein etikette guarana, bissey cevizi veya kola olarak geçebilir. Yeşil çay ekstresi de kafein içerebilir."
+
+  - key: cafeine-optellen
+    kind: fact
+    en:
+      title: "Add up your caffeine"
+      body: "For healthy adults who are not pregnant: up to 200 mg at once and 400 mg a day. That counts your fat burner, coffee and pre-workout together."
+    nl:
+      title: "Tel je cafeïne op"
+      body: "Gezond en niet zwanger? Tot 200 mg in één keer en 400 mg per dag. Daar tellen je vetverbrander, koffie en pre-workout samen voor."
+    de:
+      title: "Zähl dein Koffein zusammen"
+      body: "Gesund und nicht schwanger: bis 200 mg auf einmal und 400 mg am Tag. Fatburner, Kaffee und Pre-Workout zählen zusammen."
+    es:
+      title: "Suma tu cafeína"
+      body: "Adultos sanos sin embarazo: hasta 200 mg de una vez y 400 mg al día. Cuentan juntos el quemagrasas, el café y el pre-entreno."
+    fr:
+      title: "Additionne ta caféine"
+      body: "Adulte en bonne santé, pas enceinte : 200 mg max d'un coup et 400 mg par jour. Brûleur, café et pré-workout comptent ensemble."
+    pt:
+      title: "Soma a tua cafeína"
+      body: "Adultos saudáveis e sem gravidez: até 200 mg de uma vez e 400 mg por dia. O queimador, o café e o pré-treino contam juntos."
+    tr:
+      title: "Kafeinini topla"
+      body: "Sağlıklı ve hamile olmayan yetişkinler için tek seferde 200 mg, günde 400 mg'a kadar. Yağ yakıcı, kahve ve pre-workout birlikte sayılır."
+
+  - key: geen-veilige-dosis
+    kind: fact
+    en:
+      title: "Green tea extract and your liver"
+      body: "The EU food safety authority found no dose of EGCG from green tea extract that can be called safe for the liver."
+    nl:
+      title: "Groene-thee-extract en je lever"
+      body: "De Europese voedselautoriteit EFSA vond geen dosis EGCG uit groene-thee-extract die veilig te noemen is voor je lever."
+    de:
+      title: "Grüntee-Extrakt und deine Leber"
+      body: "Die EU-Lebensmittelbehörde EFSA fand keine Dosis EGCG aus Grüntee-Extrakt, die sich für die Leber als sicher bezeichnen lässt."
+    es:
+      title: "Extracto de té verde e hígado"
+      body: "La autoridad europea EFSA no encontró ninguna dosis de EGCG de extracto de té verde que pueda llamarse segura para el hígado."
+    fr:
+      title: "Extrait de thé vert et foie"
+      body: "L'autorité européenne EFSA n'a trouvé aucune dose d'EGCG issue d'extrait de thé vert qu'on puisse dire sûre pour le foie."
+    pt:
+      title: "Extrato de chá verde e fígado"
+      body: "A autoridade europeia EFSA não encontrou nenhuma dose de EGCG de extrato de chá verde que se possa dizer segura para o fígado."
+    tr:
+      title: "Yeşil çay ekstresi ve karaciğer"
+      body: "Avrupa gıda otoritesi EFSA, yeşil çay ekstresinden gelen EGCG için karaciğere güvenli denebilecek bir doz bulamadı."
+
+  - key: achthonderd-mg
+    kind: myth
+    en:
+      title: "Myth: under 800 mg EGCG is safe"
+      body: "Not quite. Liver values rose at 800 mg or more a day, but liver toxicity was also reported with one product at 375 mg."
+    nl:
+      title: "Mythe: onder 800 mg EGCG zit je veilig"
+      body: "Niet helemaal. Vanaf 800 mg per dag stegen de leverwaarden, maar bij één product werd al leverschade gemeld bij 375 mg."
+    de:
+      title: "Mythos: unter 800 mg EGCG bist du sicher"
+      body: "Nicht ganz. Ab 800 mg am Tag stiegen die Leberwerte, aber bei einem Produkt wurde schon bei 375 mg Leberschaden gemeldet."
+    es:
+      title: "Mito: menos de 800 mg de EGCG es seguro"
+      body: "No del todo. Los valores hepáticos subieron con 800 mg o más al día, pero con un producto se vio daño hepático ya a 375 mg."
+    fr:
+      title: "Mythe : sous 800 mg d'EGCG, c'est sûr"
+      body: "Pas vraiment. Les valeurs du foie montaient dès 800 mg par jour, mais un produit a causé des lésions du foie à 375 mg."
+    pt:
+      title: "Mito: abaixo de 800 mg de EGCG é seguro"
+      body: "Não bem. Os valores do fígado subiram com 800 mg ou mais por dia, mas com um produto houve toxicidade hepática a 375 mg."
+    tr:
+      title: "Efsane: 800 mg EGCG altı güvenli"
+      body: "Tam değil. Karaciğer değerleri günde 800 mg ve üstünde yükseldi, ama bir üründe 375 mg'da karaciğer hasarı bildirildi."
+
+  - key: thee-of-extract
+    kind: fact
+    en:
+      title: "Green tea or the extract?"
+      body: "Tea made the normal way is considered safe at usual intakes. Most reported cases of liver injury were linked to supplements."
+    nl:
+      title: "Groene thee of extract?"
+      body: "Gewoon gezette thee geldt als veilig in normale hoeveelheden. De meeste gemelde gevallen van leverschade kwamen van supplementen."
+    de:
+      title: "Grüner Tee oder Extrakt?"
+      body: "Normal aufgebrühter Tee gilt in üblichen Mengen als sicher. Die meisten gemeldeten Leberschäden hingen mit Supplementen zusammen."
+    es:
+      title: "¿Té verde o extracto?"
+      body: "El té preparado de forma normal se considera seguro en cantidades habituales. La mayoría de daños hepáticos venían de suplementos."
+    fr:
+      title: "Thé vert ou extrait ?"
+      body: "Le thé infusé normalement est jugé sûr aux doses habituelles. La plupart des atteintes du foie signalées venaient de compléments."
+    pt:
+      title: "Chá verde ou extrato?"
+      body: "O chá feito da forma normal é considerado seguro nas quantidades habituais. A maioria dos casos de lesão hepática veio de suplementos."
+    tr:
+      title: "Yeşil çay mı, ekstre mi?"
+      body: "Normal demlenen çay olağan miktarlarda güvenli kabul edilir. Bildirilen karaciğer hasarlarının çoğu takviyelerle ilişkiliydi."
+
+  - key: lange-termijn
+    kind: fact
+    en:
+      title: "On sale is not proven safe"
+      body: "Many supplements lack long-term safety data. Many never had safety studies that match the doses and length people actually use."
+    nl:
+      title: "Te koop is niet bewezen veilig"
+      body: "Van veel supplementen bestaan geen veiligheidsdata op lange termijn. Vaak is nooit getest met de doses en de duur die mensen echt gebruiken."
+    de:
+      title: "Im Handel heißt nicht sicher"
+      body: "Für viele Supplemente fehlen Langzeitdaten zur Sicherheit. Oft wurde nie mit den Dosen und der Dauer getestet, die man wirklich nutzt."
+    es:
+      title: "A la venta no es seguro"
+      body: "Muchos suplementos no tienen datos de seguridad a largo plazo. Muchos nunca se probaron con las dosis y la duración reales de uso."
+    fr:
+      title: "En vente ne veut pas dire sûr"
+      body: "Beaucoup de compléments n'ont pas de données de sécurité à long terme, ni d'études aux doses et durées réellement utilisées."
+    pt:
+      title: "À venda não é seguro"
+      body: "Muitos suplementos não têm dados de segurança a longo prazo. Muitos nunca foram testados nas doses e durações que as pessoas usam."
+    tr:
+      title: "Satışta olmak güvenli demek değil"
+      body: "Birçok takviyenin uzun vadeli güvenlik verisi yok. Çoğu, insanların gerçekte kullandığı doz ve sürede hiç test edilmedi."

@@ -1,0 +1,121 @@
+article: intensity
+tips:
+  - key: twee-betekenissen
+    kind: myth
+    en:
+      title: "Myth: intensity means how heavy the weight is"
+      body: "Half true. It can also mean how hard the set is for you, so how close to failure you end it. People mix the two up."
+    nl:
+      title: "Mythe: intensiteit is hoe zwaar je gewicht is"
+      body: "Half waar. Het kan ook gaan over hoe zwaar de set voor jou is, dus hoe dicht je bij falen eindigt. Die twee worden vaak verward."
+    de:
+      title: "Mythos: Intensität heißt schweres Gewicht"
+      body: "Halb wahr. Es kann auch heißen, wie hart der Satz für dich ist, also wie nah du ans Versagen gehst. Viele verwechseln das."
+    es:
+      title: "Mito: intensidad es cuánto pesa la barra"
+      body: "Verdad a medias. También puede ser lo dura que es la serie para ti, lo cerca del fallo que acabas. Mucha gente los confunde."
+    fr:
+      title: "Mythe : l'intensité, c'est la charge"
+      body: "À moitié vrai. Ça peut aussi être la difficulté de la série pour toi, à quel point tu finis près de l'échec. On confond souvent les deux."
+    pt:
+      title: "Mito: intensidade é o peso na barra"
+      body: "Meia verdade. Também pode ser o quão dura é a série para ti, o quão perto da falha acabas. Muita gente confunde os dois."
+    tr:
+      title: "Efsane: yoğunluk sadece kaldırdığın ağırlıktır"
+      body: "Yarı doğru. Setin senin için ne kadar zor olduğu, yani tükenişe ne kadar yakın bitirdiğin de olabilir. İkisi sık karıştırılır."
+
+  - key: beginners-niet-tot-falen
+    kind: myth
+    en:
+      title: "Myth: beginners must train close to failure"
+      body: "Not true. An expert consensus for athletes says novices can gain muscle well without it. The need for effort seems to grow with experience."
+    nl:
+      title: "Mythe: beginners moeten tegen falen aan"
+      body: "Klopt niet. Volgens een expertconsensus voor sporters bouwen beginners prima spier zonder. Met ervaring lijkt meer inzet nodig."
+    de:
+      title: "Mythos: Anfänger müssen nah ans Versagen"
+      body: "Stimmt nicht. Laut einem Expertenkonsens für Athleten bauen Anfänger auch so gut Muskeln auf. Mit Erfahrung scheint mehr Einsatz nötig."
+    es:
+      title: "Mito: el principiante debe ir cerca del fallo"
+      body: "No es cierto. Un consenso de expertos para deportistas dice que los novatos ganan músculo sin ello. Con experiencia parece hacer falta más."
+    fr:
+      title: "Mythe : un débutant doit frôler l'échec"
+      body: "Faux. Selon un consensus d'experts pour sportifs, les débutants prennent du muscle sans ça. Avec l'expérience, il faudrait plus d'effort."
+    pt:
+      title: "Mito: principiantes têm de ir perto da falha"
+      body: "Não é verdade. Um consenso de especialistas para atletas diz que principiantes ganham músculo sem isso. Com experiência parece ser preciso mais."
+    tr:
+      title: "Efsane: yeni başlayan tükenişe yakın çalışmalı"
+      body: "Doğru değil. Sporcular için bir uzman görüşüne göre yeni başlayanlar onsuz da iyi kas yapar. Deneyimle daha çok efor gerekiyor gibi."
+
+  - key: niet-te-makkelijk
+    kind: fact
+    en:
+      title: "Don't stop far from hard"
+      body: "You don't need failure, but the ACSM still asks for high effort. Ending your sets far from hard is a common mistake."
+    nl:
+      title: "Niet te makkelijk stoppen"
+      body: "Tot falen hoeft niet, maar het ACSM vraagt wel flinke inzet. Sets ver voor het zware stuk afbreken is een veelgemaakte fout."
+    de:
+      title: "Nicht zu früh aufhören"
+      body: "Bis zum Versagen musst du nicht, aber das ACSM verlangt hohen Einsatz. Sätze weit vor dem harten Teil zu beenden ist ein häufiger Fehler."
+    es:
+      title: "No pares lejos de lo duro"
+      body: "No hace falta llegar al fallo, pero el ACSM pide mucho esfuerzo. Cortar la serie lejos de lo duro es un error común."
+    fr:
+      title: "N'arrête pas trop tôt"
+      body: "Pas besoin d'aller à l'échec, mais l'ACSM demande un gros effort. Arrêter tes séries loin du dur est une erreur courante."
+    pt:
+      title: "Não pares longe do difícil"
+      body: "Não precisas de ir à falha, mas o ACSM pede muito esforço. Parar a série longe da parte difícil é um erro comum."
+    tr:
+      title: "Zorlanmadan bırakma"
+      body: "Tükenişe gitmen gerekmiyor ama ACSM yüksek efor istiyor. Seti zorlanmaya başlamadan bitirmek yaygın bir hata."
+
+  - key: kracht-2009
+    kind: fact
+    en:
+      title: "Strength loads back in 2009"
+      body: "The ACSM's 2009 stand cited data where 60% of 1RM gave novices the most strength, and 80% trained lifters. The 2026 stand replaced it."
+    nl:
+      title: "Krachtgewichten in 2009"
+      body: "Het ACSM-standpunt uit 2009 noemde data waarin 60% van je 1RM beginners de meeste kracht gaf, en 80% getrainde mensen. Dat van 2026 vervangt het."
+    de:
+      title: "Kraftlasten im Jahr 2009"
+      body: "Das ACSM-Papier von 2009 nannte Daten: 60% des 1RM brachte Anfängern am meisten Kraft, 80% Trainierten. Das von 2026 hat es ersetzt."
+    es:
+      title: "Cargas de fuerza en 2009"
+      body: "La postura del ACSM de 2009 citaba datos: el 60% del 1RM daba más fuerza a novatos y el 80% a entrenados. La de 2026 la sustituyó."
+    fr:
+      title: "Les charges de force en 2009"
+      body: "En 2009, l'ACSM citait des données : 60% du 1RM donnait le plus de force aux débutants, 80% aux entraînés. La version 2026 l'a remplacé."
+    pt:
+      title: "Cargas de força em 2009"
+      body: "A posição do ACSM de 2009 citava dados: 60% do 1RM dava mais força a principiantes e 80% a treinados. A de 2026 substituiu-a."
+    tr:
+      title: "2009'da güç için yükler"
+      body: "ACSM'nin 2009 görüşü, en çok gücü yeni başlayanlarda 1RM'in %60'ının, antrenmanlılarda %80'inin verdiğini aktardı. 2026 görüşü onun yerini aldı."
+
+  - key: gemiddeld-gewicht
+    kind: fact
+    en:
+      title: "Moderate loads"
+      body: "Experts on muscle growth in athletes say using moderate loads for most of your sets may be the more practical choice."
+    nl:
+      title: "Gemiddelde gewichten"
+      body: "Experts op spiergroei bij sporters zeggen dat gemiddeld gewicht voor de meeste van je sets de handigste keuze kan zijn."
+    de:
+      title: "Mittlere Lasten"
+      body: "Experten für Muskelaufbau bei Athleten sagen, dass mittlere Lasten für die meisten Sätze die praktischere Wahl sein können."
+    es:
+      title: "Cargas moderadas"
+      body: "Expertos en hipertrofia de deportistas dicen que usar cargas moderadas en la mayoría de series puede ser lo más práctico."
+    fr:
+      title: "Charges moyennes"
+      body: "Selon des experts pour sportifs, des charges moyennes sur la plupart de tes séries peuvent être le choix le plus pratique."
+    pt:
+      title: "Cargas moderadas"
+      body: "Especialistas em hipertrofia de atletas dizem que usar cargas moderadas na maioria das séries pode ser o mais prático."
+    tr:
+      title: "Orta ağırlıklar"
+      body: "Sporcularda kas gelişimi uzmanlarına göre setlerinin çoğunda orta yük kullanmak daha pratik bir seçim olabilir."

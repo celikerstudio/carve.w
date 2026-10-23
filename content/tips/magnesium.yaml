@@ -1,0 +1,241 @@
+article: magnesium
+tips:
+  - key: inname-per-dag
+    kind: fact
+    en:
+      title: "How much magnesium?"
+      body: "The EU's adequate intake for adults is 350 mg a day for men and 300 mg for women. That is your total, food included."
+    nl:
+      title: "Hoeveel magnesium?"
+      body: "De adequate inname voor volwassenen in de EU is 350 mg per dag voor mannen en 300 mg voor vrouwen. Dat is je totaal, eten meegeteld."
+    de:
+      title: "Wie viel Magnesium?"
+      body: "Die angemessene Zufuhr für Erwachsene in der EU liegt bei 350 mg am Tag für Männer und 300 mg für Frauen, Essen mitgezählt."
+    es:
+      title: "¿Cuánto magnesio?"
+      body: "La ingesta adecuada en la UE es de 350 mg al día para hombres y 300 mg para mujeres. Es tu total, con la comida incluida."
+    fr:
+      title: "Combien de magnésium ?"
+      body: "L'apport adéquat dans l'UE est de 350 mg par jour pour les hommes et 300 mg pour les femmes. C'est ton total, repas compris."
+    pt:
+      title: "Quanto magnésio?"
+      body: "A ingestão adequada na UE é de 350 mg por dia para homens e 300 mg para mulheres. É o teu total, com a comida incluída."
+    tr:
+      title: "Ne kadar magnezyum?"
+      body: "AB'de yetişkinler için yeterli alım erkeklerde günde 350 mg, kadınlarda 300 mg. Bu, yemek dahil toplam alımın."
+
+  - key: limiet-niet-voor-eten
+    kind: myth
+    en:
+      title: "Myth: 250 mg is your magnesium max"
+      body: "Not true. The 250 mg limit is only for supplements, water and added magnesium. Magnesium that is naturally in food does not count."
+    nl:
+      title: "Mythe: meer dan 250 mg magnesium is te veel"
+      body: "Klopt niet. De grens van 250 mg geldt alleen voor supplementen, water en toegevoegd magnesium. Wat van nature in je eten zit telt niet mee."
+    de:
+      title: "Mythos: 250 mg Magnesium ist dein Maximum"
+      body: "Stimmt nicht. Die 250 mg gelten nur für Supplemente, Wasser und zugesetztes Magnesium. Was natürlich im Essen steckt, zählt nicht."
+    es:
+      title: "Mito: 250 mg de magnesio es tu máximo"
+      body: "No es así. El límite de 250 mg es solo para suplementos, agua y magnesio añadido. El que viene de forma natural en la comida no cuenta."
+    fr:
+      title: "Mythe : 250 mg de magnésium, c'est ton max"
+      body: "Faux. La limite de 250 mg vaut seulement pour les compléments, l'eau et le magnésium ajouté. Celui naturellement présent dans tes repas ne compte pas."
+    pt:
+      title: "Mito: 250 mg de magnésio é o teu máximo"
+      body: "Não é verdade. O limite de 250 mg é só para suplementos, água e magnésio adicionado. O que vem naturalmente na comida não conta."
+    tr:
+      title: "Efsane: 250 mg magnezyum üst sınırındır"
+      body: "Doğru değil. 250 mg sınırı sadece takviye, su ve eklenmiş magnezyum için. Yemekte doğal olarak bulunan magnezyum sayılmaz."
+
+  - key: waarom-eten-niet-telt
+    kind: fact
+    en:
+      title: "Why food magnesium is different"
+      body: "In food, magnesium is bound and does not dissolve easily. The salts in supplements do, and they have a laxative effect that grows with the dose."
+    nl:
+      title: "Waarom magnesium uit eten anders is"
+      body: "In eten zit magnesium gebonden en lost het niet makkelijk op. De zouten in supplementen wel, en die werken laxerend, meer naarmate je meer neemt."
+    de:
+      title: "Magnesium aus Essen ist anders"
+      body: "Im Essen ist Magnesium gebunden und löst sich schwer. Die Salze in Supplementen lösen sich leicht und wirken abführend, je mehr, desto stärker."
+    es:
+      title: "Por qué el de la comida es distinto"
+      body: "En la comida el magnesio va unido y no se disuelve fácil. Las sales de los suplementos sí, y tienen un efecto laxante que crece con la dosis."
+    fr:
+      title: "Pourquoi celui des repas diffère"
+      body: "Dans les aliments, le magnésium est lié et se dissout mal. Les sels des compléments se dissolvent bien et sont laxatifs selon la dose."
+    pt:
+      title: "Porque o da comida é diferente"
+      body: "Na comida o magnésio está ligado e não se dissolve com facilidade. Os sais dos suplementos sim, e têm um efeito laxante que cresce com a dose."
+    tr:
+      title: "Yemekteki magnezyum neden farklı"
+      body: "Yemekteki magnezyum bağlıdır ve kolay çözünmez. Takviyelerdeki tuzlar kolay çözünür ve doz arttıkça artan bir müshil etkisi yapar."
+
+  - key: geen-dosis
+    kind: myth
+    en:
+      title: "Myth: 300 mg is the dose to take"
+      body: "Not quite. The adequate intake describes the total that healthy people typically eat. It is not a dose that was shown to do something."
+    nl:
+      title: "Mythe: 300 mg is de dosis die je moet slikken"
+      body: "Niet helemaal. De adequate inname beschrijft wat gezonde mensen gewoon binnenkrijgen. Het is geen dosis waarvan een effect is aangetoond."
+    de:
+      title: "Mythos: 300 mg ist die Dosis zum Einnehmen"
+      body: "Nicht ganz. Die angemessene Zufuhr beschreibt, was gesunde Menschen insgesamt essen. Sie ist keine Dosis mit nachgewiesener Wirkung."
+    es:
+      title: "Mito: 300 mg es la dosis que debes tomar"
+      body: "No del todo. La ingesta adecuada describe lo que suelen comer las personas sanas en total. No es una dosis con un efecto demostrado."
+    fr:
+      title: "Mythe : 300 mg est la dose à prendre"
+      body: "Pas vraiment. L'apport adéquat décrit ce que les gens en bonne santé mangent au total. Ce n'est pas une dose à l'effet prouvé."
+    pt:
+      title: "Mito: 300 mg é a dose a tomar"
+      body: "Não bem. A ingestão adequada descreve o total que as pessoas saudáveis costumam comer. Não é uma dose com efeito demonstrado."
+    tr:
+      title: "Efsane: 300 mg alman gereken dozdur"
+      body: "Tam değil. Yeterli alım, sağlıklı insanların toplamda ne yediğini anlatır. Etkisi kanıtlanmış bir doz değildir."
+
+  - key: diarree
+    kind: fact
+    en:
+      title: "Too much magnesium"
+      body: "Mild diarrhoea is the first sign. It showed up in a small share of adults at about 360 to 365 mg a day from supplements, on top of food."
+    nl:
+      title: "Te veel magnesium"
+      body: "Lichte diarree is het eerste signaal. Dat zag je bij een klein deel van de volwassenen bij zo'n 360 à 365 mg per dag uit supplementen, bovenop eten."
+    de:
+      title: "Zu viel Magnesium"
+      body: "Leichter Durchfall ist das erste Zeichen. Er trat bei wenigen Erwachsenen ab etwa 360 bis 365 mg am Tag aus Supplementen auf."
+    es:
+      title: "Demasiado magnesio"
+      body: "La primera señal es una diarrea leve. Apareció en una pequeña parte de adultos con unos 360 a 365 mg al día de suplementos, además de la comida."
+    fr:
+      title: "Trop de magnésium"
+      body: "Une diarrhée légère est le premier signe. Elle est apparue chez peu d'adultes vers 360 à 365 mg par jour de compléments, en plus des repas."
+    pt:
+      title: "Magnésio a mais"
+      body: "Uma diarreia ligeira é o primeiro sinal. Apareceu numa pequena parte dos adultos com cerca de 360 a 365 mg por dia de suplementos, além da comida."
+    tr:
+      title: "Fazla magnezyum"
+      body: "İlk işaret hafif ishaldir. Yemeğe ek olarak takviyeden günde yaklaşık 360 ila 365 mg alan yetişkinlerin küçük bir kısmında görüldü."
+
+  - key: mineraalwater
+    kind: fact
+    en:
+      title: "Mineral water counts"
+      body: "Magnesium in water counts towards the 250 mg limit. German mineral waters had a median of 33.5 mg per litre."
+    nl:
+      title: "Mineraalwater telt mee"
+      body: "Magnesium uit water telt mee voor de grens van 250 mg. Duits mineraalwater zat gemiddeld (mediaan) op 33,5 mg per liter."
+    de:
+      title: "Mineralwasser zählt mit"
+      body: "Magnesium aus Wasser zählt zur 250-mg-Grenze. Deutsche Mineralwässer lagen im Median bei 33,5 mg pro Liter."
+    es:
+      title: "El agua mineral cuenta"
+      body: "El magnesio del agua cuenta para el límite de 250 mg. Las aguas minerales alemanas tenían una mediana de 33,5 mg por litro."
+    fr:
+      title: "L'eau minérale compte"
+      body: "Le magnésium de l'eau compte dans la limite de 250 mg. Les eaux minérales allemandes avaient une médiane de 33,5 mg par litre."
+    pt:
+      title: "A água mineral conta"
+      body: "O magnésio da água conta para o limite de 250 mg. As águas minerais alemãs tinham uma mediana de 33,5 mg por litro."
+    tr:
+      title: "Maden suyu da sayılır"
+      body: "Sudaki magnezyum 250 mg sınırına dahildir. Alman maden sularında medyan değer litre başına 33,5 mg idi."
+
+  - key: nieren
+    kind: fact
+    en:
+      title: "Magnesium and your kidneys"
+      body: "Severely impaired kidney function is a risk factor for too much magnesium in your blood. Have a kidney condition? Ask your doctor first."
+    nl:
+      title: "Magnesium en je nieren"
+      body: "Een sterk verminderde nierfunctie is een risico op te veel magnesium in je bloed. Heb je een nieraandoening? Vraag het eerst aan je arts."
+    de:
+      title: "Magnesium und deine Nieren"
+      body: "Eine stark eingeschränkte Nierenfunktion ist ein Risiko für zu viel Magnesium im Blut. Nierenerkrankung? Frag zuerst deinen Arzt."
+    es:
+      title: "El magnesio y tus riñones"
+      body: "Una función renal muy reducida es un riesgo de tener demasiado magnesio en sangre. ¿Tienes un problema de riñón? Pregunta antes a tu médico."
+    fr:
+      title: "Le magnésium et tes reins"
+      body: "Une fonction rénale très réduite expose à trop de magnésium dans le sang. Tu as un problème rénal ? Demande d'abord à ton médecin."
+    pt:
+      title: "O magnésio e os teus rins"
+      body: "Uma função renal muito reduzida é um risco de magnésio a mais no sangue. Tens um problema nos rins? Pergunta primeiro ao teu médico."
+    tr:
+      title: "Magnezyum ve böbreklerin"
+      body: "Ciddi böbrek yetmezliği kanda fazla magnezyum için bir risk etkenidir. Böbrek rahatsızlığın varsa önce doktoruna sor."
+
+  - key: medicijnen
+    kind: fact
+    en:
+      title: "Magnesium and medication"
+      body: "Magnesium may affect zinc absorption and some drugs, such as tetracycline, penicillin and digoxin. On medication? Ask your pharmacist."
+    nl:
+      title: "Magnesium en medicijnen"
+      body: "Magnesium kan de opname van zink beïnvloeden, en sommige medicijnen zoals tetracycline, penicilline en digoxine. Slik je iets? Vraag je apotheker."
+    de:
+      title: "Magnesium und Medikamente"
+      body: "Magnesium kann die Zinkaufnahme und manche Medikamente wie Tetracyclin, Penicillin und Digoxin beeinflussen. Frag in der Apotheke."
+    es:
+      title: "Magnesio y medicamentos"
+      body: "El magnesio puede afectar a la absorción de zinc y a fármacos como tetraciclina, penicilina y digoxina. ¿Tomas algo? Pregunta en la farmacia."
+    fr:
+      title: "Magnésium et médicaments"
+      body: "Le magnésium peut gêner l'absorption du zinc et certains médicaments comme la tétracycline, la pénicilline et la digoxine. Demande au pharmacien."
+    pt:
+      title: "Magnésio e medicamentos"
+      body: "O magnésio pode afetar a absorção de zinco e fármacos como tetraciclina, penicilina e digoxina. Tomas medicação? Pergunta na farmácia."
+    tr:
+      title: "Magnezyum ve ilaçlar"
+      body: "Magnezyum çinko emilimini ve tetrasiklin, penisilin, digoksin gibi bazı ilaçları etkileyebilir. İlaç kullanıyorsan eczacına sor."
+
+  - key: training
+    kind: myth
+    en:
+      title: "Myth: magnesium boosts your training"
+      body: "Not unless you are deficient. Most well-controlled research finds that magnesium does not affect exercise performance in athletes."
+    nl:
+      title: "Mythe: magnesium maakt je training beter"
+      body: "Alleen als je een tekort hebt. Het meeste goed opgezette onderzoek vindt geen effect op de prestaties van sporters."
+    de:
+      title: "Mythos: Magnesium pusht dein Training"
+      body: "Nur bei einem Mangel. Die meisten gut kontrollierten Studien finden keinen Effekt auf die Leistung von Sportlern."
+    es:
+      title: "Mito: el magnesio mejora tu entreno"
+      body: "Solo si tienes déficit. La mayoría de los estudios bien controlados no ven efecto en el rendimiento de los deportistas."
+    fr:
+      title: "Mythe : le magnésium booste ton entraînement"
+      body: "Seulement en cas de carence. La plupart des études bien contrôlées ne trouvent aucun effet sur la performance des sportifs."
+    pt:
+      title: "Mito: o magnésio melhora o teu treino"
+      body: "Só se tiveres défice. A maioria dos estudos bem controlados não vê efeito no rendimento dos atletas."
+    tr:
+      title: "Efsane: magnezyum antrenmanını güçlendirir"
+      body: "Eksiklik yoksa hayır. İyi kontrollü araştırmaların çoğu sporcularda performansa etki bulmuyor."
+
+  - key: zwanger
+    kind: fact
+    en:
+      title: "Magnesium in pregnancy"
+      body: "Pregnant and breastfeeding women have the same adequate intake as other women, 300 mg a day. EFSA found no evidence they need more."
+    nl:
+      title: "Magnesium bij zwangerschap"
+      body: "Zwangere vrouwen en vrouwen die borstvoeding geven hebben dezelfde adequate inname als andere vrouwen, 300 mg. Er is geen bewijs dat ze meer nodig hebben."
+    de:
+      title: "Magnesium in der Schwangerschaft"
+      body: "Für Schwangere und Stillende gilt dieselbe Zufuhr wie für andere Frauen, 300 mg am Tag. Die EFSA fand keinen Beleg für mehr Bedarf."
+    es:
+      title: "Magnesio en el embarazo"
+      body: "Embarazadas y lactantes tienen la misma ingesta adecuada que otras mujeres, 300 mg al día. La EFSA no halló pruebas de que necesiten más."
+    fr:
+      title: "Magnésium et grossesse"
+      body: "Enceintes ou allaitantes, l'apport adéquat reste celui des autres femmes, 300 mg par jour. L'EFSA n'a pas trouvé de besoin plus élevé."
+    pt:
+      title: "Magnésio na gravidez"
+      body: "Grávidas e lactantes têm a mesma ingestão adequada que as outras mulheres, 300 mg por dia. A EFSA não viu provas de que precisem de mais."
+    tr:
+      title: "Hamilelikte magnezyum"
+      body: "Hamile ve emziren kadınların yeterli alımı diğer kadınlarla aynı, günde 300 mg. EFSA daha fazlasına ihtiyaç olduğuna dair kanıt bulmadı."

@@ -1,0 +1,145 @@
+article: gym-etiquette
+tips:
+  - key: terugleggen
+    kind: fact
+    en:
+      title: "Re-rack your weights"
+      body: "Put plates and dumbbells back when you're done. Leaving them out is one of the most common gym mistakes."
+    nl:
+      title: "Leg je gewichten terug"
+      body: "Leg schijven en dumbbells terug als je klaar bent. Ze laten liggen is een van de bekendste fouten in de gym."
+    de:
+      title: "Räum deine Gewichte weg"
+      body: "Bring Scheiben und Kurzhanteln zurück, wenn du fertig bist. Sie liegen zu lassen ist einer der häufigsten Fehler im Gym."
+    es:
+      title: "Recoge tus pesos"
+      body: "Devuelve los discos y las mancuernas a su sitio al terminar. Dejarlos tirados es uno de los fallos más comunes en el gimnasio."
+    fr:
+      title: "Range tes poids"
+      body: "Remets les disques et les haltères en place quand tu as fini. Les laisser traîner est l'une des erreurs les plus courantes en salle."
+    pt:
+      title: "Arruma os pesos"
+      body: "Volta a pôr os discos e os halteres no sítio quando acabas. Deixá-los por aí é um dos erros mais comuns no ginásio."
+    tr:
+      title: "Ağırlıkları yerine koy"
+      body: "İşin bitince plakaları ve dambılları yerine koy. Onları ortada bırakmak salonda en yaygın hatalardan biri."
+
+  - key: afnemen
+    kind: fact
+    en:
+      title: "Wipe it down"
+      body: "Wipe the bench or machine after your set and train on a towel. Nobody wants to lie in someone else's sweat."
+    nl:
+      title: "Neem het even af"
+      body: "Neem de bank of het apparaat af na je set en train op een handdoek. Niemand wil in andermans zweet liggen."
+    de:
+      title: "Kurz abwischen"
+      body: "Wisch Bank oder Gerät nach deinem Satz ab und trainier auf einem Handtuch. Niemand will im Schweiß von anderen liegen."
+    es:
+      title: "Límpialo"
+      body: "Limpia el banco o la máquina después de tu serie y entrena con toalla. Nadie quiere tumbarse en el sudor de otro."
+    fr:
+      title: "Essuie derrière toi"
+      body: "Essuie le banc ou la machine après ta série et entraîne-toi sur une serviette. Personne ne veut s'allonger dans la sueur d'un autre."
+    pt:
+      title: "Limpa depois"
+      body: "Limpa o banco ou a máquina depois da série e treina com toalha. Ninguém quer deitar-se no suor dos outros."
+    tr:
+      title: "Sil, öyle bırak"
+      body: "Setinden sonra sehpayı ya da makineyi sil ve havluyla çalış. Kimse başkasının terinin üstüne yatmak istemez."
+
+  - key: delen
+    kind: fact
+    en:
+      title: "Busy gym"
+      body: "Don't hog a station. Ask before you work in, share on busy days, and move on promptly once you're done."
+    nl:
+      title: "Drukke gym"
+      body: "Bezet een plek niet langer dan nodig. Vraag of je mag tussendoor, deel op drukke dagen en ga meteen door als je klaar bent."
+    de:
+      title: "Volles Gym"
+      body: "Blockier keine Station. Frag, bevor du mittrainierst, teile an vollen Tagen und mach zügig Platz, wenn du fertig bist."
+    es:
+      title: "Gimnasio lleno"
+      body: "No acapares una máquina. Pregunta antes de alternar series, comparte en días llenos y deja libre el sitio en cuanto acabes."
+    fr:
+      title: "Salle bondée"
+      body: "Ne monopolise pas un poste. Demande avant de t'intercaler, partage les jours chargés et libère la place dès que tu as fini."
+    pt:
+      title: "Ginásio cheio"
+      body: "Não açambarques uma máquina. Pergunta antes de alternar séries, partilha nos dias cheios e sai logo quando acabas."
+    tr:
+      title: "Kalabalık salon"
+      body: "Bir istasyonu kendine ayırma. Araya girmeden önce sor, yoğun günlerde paylaş ve işin bitince hemen yer aç."
+
+  - key: niet-filmen
+    kind: fact
+    en:
+      title: "Filming in the gym"
+      body: "Avoid filming other people. Filming someone without their consent is a common gym mistake."
+    nl:
+      title: "Filmen in de gym"
+      body: "Film geen andere mensen. Iemand filmen zonder toestemming is een veelgemaakte fout in de gym."
+    de:
+      title: "Filmen im Gym"
+      body: "Film keine anderen Leute. Jemanden ohne Einverständnis zu filmen ist ein häufiger Fehler im Gym."
+    es:
+      title: "Grabar en el gimnasio"
+      body: "No grabes a otras personas. Grabar a alguien sin su permiso es un error común en el gimnasio."
+    fr:
+      title: "Filmer à la salle"
+      body: "Évite de filmer les autres. Filmer quelqu'un sans son accord est une erreur courante en salle."
+    pt:
+      title: "Filmar no ginásio"
+      body: "Não filmes outras pessoas. Filmar alguém sem consentimento é um erro comum no ginásio."
+    tr:
+      title: "Salonda video çekmek"
+      body: "Başkalarını çekme. Birini izni olmadan çekmek salonda yaygın bir hata."
+
+  - key: spotten
+    kind: fact
+    en:
+      title: "Offering a spot"
+      body: "Only offer a spot if someone asks for one and you know how to do it. Otherwise, give them room."
+    nl:
+      title: "Iemand spotten"
+      body: "Bied alleen aan om te spotten als iemand erom vraagt en je weet hoe het moet. Geef anders gewoon ruimte."
+    de:
+      title: "Hilfestellung geben"
+      body: "Biete Hilfestellung nur an, wenn jemand darum bittet und du weißt, wie es geht. Sonst lass Platz."
+    es:
+      title: "Ofrecer ayuda"
+      body: "Ofrece asistir en una serie solo si te lo piden y sabes hacerlo. Si no, deja espacio."
+    fr:
+      title: "Proposer de pareer"
+      body: "Ne propose de pareer que si on te le demande et que tu sais le faire. Sinon, laisse de la place."
+    pt:
+      title: "Dar ajuda numa série"
+      body: "Só te ofereças para ajudar numa série se te pedirem e souberes fazê-lo. Caso contrário, dá espaço."
+    tr:
+      title: "Spot vermek"
+      body: "Spot vermeyi sadece biri isterse ve nasıl yapılacağını biliyorsan teklif et. Yoksa ona alan bırak."
+
+  - key: ruimte-geven
+    kind: fact
+    en:
+      title: "Give lifters room"
+      body: "Don't crowd someone mid-set and don't block mirrors or walkways. Clear space prevents accidents."
+    nl:
+      title: "Geef ruimte"
+      body: "Kom niet te dicht bij iemand die een set doet en blokkeer geen spiegels of looppaden. Vrije ruimte voorkomt ongelukken."
+    de:
+      title: "Lass Platz"
+      body: "Rück niemandem mitten im Satz auf die Pelle und blockier keine Spiegel oder Wege. Freier Raum verhindert Unfälle."
+    es:
+      title: "Deja espacio"
+      body: "No te pegues a alguien en plena serie ni tapes espejos o pasillos. Dejar espacio evita accidentes."
+    fr:
+      title: "Laisse de l'espace"
+      body: "Ne colle pas quelqu'un en pleine série et ne bloque ni les miroirs ni les passages. L'espace libre évite les accidents."
+    pt:
+      title: "Dá espaço"
+      body: "Não te encostes a quem está a meio de uma série nem tapes espelhos ou passagens. Espaço livre evita acidentes."
+    tr:
+      title: "Alan bırak"
+      body: "Set yapan birine çok yaklaşma, aynaların ya da geçiş yollarının önünü kapatma. Boş alan kazaları önler."

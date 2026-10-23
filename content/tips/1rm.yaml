@@ -1,0 +1,145 @@
+article: 1rm
+tips:
+  - key: schatten
+    kind: fact
+    en:
+      title: "Estimate your max"
+      body: "A single at RPE 8 to 9 or a rep-max set gives you an estimated max. That tracks your strength with less risk and time than a real test."
+    nl:
+      title: "Schat je max"
+      body: "Een single op RPE 8 tot 9 of een set op je rep-max geeft een geschatte max. Zo volg je je kracht met minder risico en tijd dan een echte test."
+    de:
+      title: "Schätz dein Max"
+      body: "Ein Single bei RPE 8 bis 9 oder ein Rep-Max-Satz liefert ein geschätztes Max. So verfolgst du deine Kraft mit weniger Risiko und Zeit."
+    es:
+      title: "Estima tu máximo"
+      body: "Una repetición a RPE 8 o 9, o una serie al máximo de reps, te da un máximo estimado. Sigues tu fuerza con menos riesgo y tiempo."
+    fr:
+      title: "Estime ton max"
+      body: "Une rep à RPE 8 ou 9, ou une série au max de reps, donne un max estimé. Tu suis ta force avec moins de risque et de temps qu'un vrai test."
+    pt:
+      title: "Estima o teu máximo"
+      body: "Uma repetição a RPE 8 ou 9, ou uma série ao máximo de reps, dá um máximo estimado. Segues a força com menos risco e tempo."
+    tr:
+      title: "Maksimumunu tahmin et"
+      body: "RPE 8-9'da tek tekrar ya da maksimum tekrarlı bir set, tahmini bir maksimum verir. Gücünü gerçek testten daha az risk ve zamanla takip edersin."
+
+  - key: niet-wekelijks-maxen
+    kind: myth
+    en:
+      title: "Myth: test your max every week"
+      body: "Not true. Maxing weekly piles up fatigue and raises your injury risk. Save true max tests for planned checkpoints."
+    nl:
+      title: "Mythe: test elke week je max"
+      body: "Klopt niet. Elke week maxen stapelt vermoeidheid op en vergroot je kans op een blessure. Bewaar echte maxtests voor geplande momenten."
+    de:
+      title: "Mythos: teste jede Woche dein Max"
+      body: "Stimmt nicht. Wöchentliches Maxen häuft Ermüdung an und erhöht dein Verletzungsrisiko. Echte Max-Tests nur an geplanten Punkten."
+    es:
+      title: "Mito: prueba tu máximo cada semana"
+      body: "No es cierto. Hacer máximos cada semana acumula fatiga y sube el riesgo de lesión. Guarda los tests reales para momentos planeados."
+    fr:
+      title: "Mythe : teste ton max chaque semaine"
+      body: "Faux. Tester ton max chaque semaine accumule la fatigue et augmente le risque de blessure. Garde les vrais tests pour des étapes prévues."
+    pt:
+      title: "Mito: testa o máximo todas as semanas"
+      body: "Não é verdade. Testar o máximo todas as semanas acumula fadiga e aumenta o risco de lesão. Guarda os testes reais para marcos planeados."
+    tr:
+      title: "Efsane: maksimumunu her hafta test et"
+      body: "Doğru değil. Her hafta maksimum denemek yorgunluk biriktirir ve sakatlık riskini artırır. Gerçek testleri planlı kontrol noktalarına sakla."
+
+  - key: wanneer-testen
+    kind: fact
+    en:
+      title: "When to test a true max"
+      body: "Test a true max after a taper or deload, with a thorough warm-up and spotters or safeties."
+    nl:
+      title: "Wanneer je echt maxt"
+      body: "Test een echte max na een taper of deload, met een goede warming-up en een spotter of veiligheidsrekken."
+    de:
+      title: "Wann du echt maxt"
+      body: "Teste ein echtes Max nach einem Taper oder Deload, mit gründlichem Aufwärmen und Sicherungspartner oder Sicherheitsablagen."
+    es:
+      title: "Cuándo probar tu máximo real"
+      body: "Prueba un máximo real tras una descarga o un taper, con buen calentamiento y con ayudante o barras de seguridad."
+    fr:
+      title: "Quand tester un vrai max"
+      body: "Teste un vrai max après un affûtage ou une décharge, avec un bon échauffement et un pareur ou des sécurités."
+    pt:
+      title: "Quando testar o máximo real"
+      body: "Testa um máximo real depois de um taper ou deload, com um bom aquecimento e com ajudante ou barras de segurança."
+    tr:
+      title: "Gerçek maksimum ne zaman"
+      body: "Gerçek maksimumu bir taper ya da deload'dan sonra test et, iyi bir ısınmayla ve yardımcı ya da güvenlik barlarıyla."
+
+  - key: elke-3-6-weken
+    kind: fact
+    en:
+      title: "Update your estimate"
+      body: "Update your estimated max every 3 to 6 weeks, and base the weights for your main work on it."
+    nl:
+      title: "Werk je schatting bij"
+      body: "Werk je geschatte max elke 3 tot 6 weken bij, en baseer de gewichten van je hoofdwerk erop."
+    de:
+      title: "Aktualisier deine Schätzung"
+      body: "Aktualisier dein geschätztes Max alle 3 bis 6 Wochen und richte die Gewichte deiner Hauptübungen danach aus."
+    es:
+      title: "Actualiza tu estimación"
+      body: "Actualiza tu máximo estimado cada 3 a 6 semanas y basa en él los pesos de tu trabajo principal."
+    fr:
+      title: "Mets ton estimation à jour"
+      body: "Mets ton max estimé à jour toutes les 3 à 6 semaines, et base dessus les charges de ton travail principal."
+    pt:
+      title: "Atualiza a tua estimativa"
+      body: "Atualiza o teu máximo estimado a cada 3 a 6 semanas e baseia nele os pesos do teu trabalho principal."
+    tr:
+      title: "Tahminini güncelle"
+      body: "Tahmini maksimumunu 3 ila 6 haftada bir güncelle ve ana çalışmanın ağırlıklarını buna göre belirle."
+
+  - key: techniek-telt
+    kind: fact
+    en:
+      title: "A max with bad form"
+      body: "Stop if your form breaks down. A number reached with sloppy technique is not a reliable max."
+    nl:
+      title: "Een max met slechte techniek"
+      body: "Stop als je techniek wegzakt. Een getal dat je met slordige techniek haalt is geen betrouwbare max."
+    de:
+      title: "Ein Max mit schlechter Technik"
+      body: "Hör auf, wenn deine Technik zerfällt. Eine Zahl, die du mit schlampiger Technik schaffst, ist kein verlässliches Max."
+    es:
+      title: "Un máximo con mala técnica"
+      body: "Para si tu técnica se rompe. Una cifra lograda con mala técnica no es un máximo fiable."
+    fr:
+      title: "Un max avec une mauvaise technique"
+      body: "Arrête si ta technique se dégrade. Un chiffre obtenu avec une technique bâclée n'est pas un max fiable."
+    pt:
+      title: "Um máximo com má técnica"
+      body: "Para se a tua técnica se desfizer. Um número feito com técnica desleixada não é um máximo fiável."
+    tr:
+      title: "Kötü teknikle maksimum"
+      body: "Tekniğin bozulursa dur. Özensiz teknikle kaldırılan bir sayı güvenilir bir maksimum değildir."
+
+  - key: dagvorm
+    kind: fact
+    en:
+      title: "Off day?"
+      body: "Your percentages are a starting point. If your readiness shifts from day to day, adjust the weight with RPE."
+    nl:
+      title: "Slechte dag?"
+      body: "Je percentages zijn een startpunt. Voel je je van dag tot dag anders, pas het gewicht dan aan met RPE."
+    de:
+      title: "Schlechter Tag?"
+      body: "Deine Prozente sind ein Ausgangspunkt. Schwankt deine Tagesform, pass das Gewicht mit RPE an."
+    es:
+      title: "¿Mal día?"
+      body: "Tus porcentajes son un punto de partida. Si tu estado cambia de un día a otro, ajusta el peso con el RPE."
+    fr:
+      title: "Mauvais jour ?"
+      body: "Tes pourcentages sont un point de départ. Si ta forme varie d'un jour à l'autre, ajuste la charge avec le RPE."
+    pt:
+      title: "Dia mau?"
+      body: "As tuas percentagens são um ponto de partida. Se a tua forma muda de dia para dia, ajusta o peso com o RPE."
+    tr:
+      title: "Kötü bir gün mü?"
+      body: "Yüzdelerin bir başlangıç noktası. Formun günden güne değişirse ağırlığı RPE ile ayarla."

@@ -1,0 +1,241 @@
+article: injury-prevention
+tips:
+  - key: geen-richtlijn
+    kind: fact
+    en:
+      title: "An injury guideline for lifting?"
+      body: "There isn't one in the sources Carve uses. The ACSM's 2026 stand on strength training has no advice aimed at preventing injuries."
+    nl:
+      title: "Een blessurerichtlijn voor tillen?"
+      body: "Die is er niet in de bronnen die Carve gebruikt. Het ACSM-standpunt uit 2026 over krachttraining geeft geen advies om blessures te voorkomen."
+    de:
+      title: "Eine Verletzungsleitlinie fürs Heben?"
+      body: "In Carves Quellen gibt es keine. Das ACSM-Positionspapier von 2026 zum Krafttraining enthält keine Empfehlungen zur Verletzungsvorbeugung."
+    es:
+      title: "¿Una guía de lesiones para levantar?"
+      body: "No hay ninguna en las fuentes de Carve. La postura del ACSM de 2026 sobre fuerza no incluye consejos para prevenir lesiones."
+    fr:
+      title: "Un guide anti-blessures en muscu ?"
+      body: "Il n'y en a pas dans les sources de Carve. La prise de position de l'ACSM de 2026 sur la muscu ne donne aucun conseil pour éviter les blessures."
+    pt:
+      title: "Uma guia de lesões para levantar?"
+      body: "Não há nenhuma nas fontes do Carve. A posição do ACSM de 2026 sobre treino de força não tem conselhos para prevenir lesões."
+    tr:
+      title: "Ağırlık için sakatlık kılavuzu var mı?"
+      body: "Carve'ın kaynaklarında yok. ACSM'nin 2026 kuvvet antrenmanı bildirgesi sakatlık önlemeye yönelik bir öneri içermiyor."
+
+  - key: krachttraining-is-veilig
+    kind: myth
+    en:
+      title: "Myth: lifting is a risky sport"
+      body: "Not for healthy adults. The ACSM calls strength training safe at all ages. Minor complaints like pain were no different from aerobic exercise."
+    nl:
+      title: "Mythe: krachttraining is riskant"
+      body: "Niet voor gezonde volwassenen. Het ACSM noemt krachttraining veilig op elke leeftijd. Lichte klachten zoals pijn kwamen niet anders voor dan bij duursport."
+    de:
+      title: "Mythos: Krafttraining ist riskant"
+      body: "Nicht für gesunde Erwachsene. Das ACSM nennt Krafttraining in jedem Alter sicher. Leichte Beschwerden wie Schmerzen waren nicht anders als bei Ausdauersport."
+    es:
+      title: "Mito: levantar pesas es arriesgado"
+      body: "No en adultos sanos. El ACSM dice que la fuerza es segura a cualquier edad. Las molestias leves, como dolor, no difirieron del ejercicio aeróbico."
+    fr:
+      title: "Mythe : la muscu, c'est risqué"
+      body: "Pas chez l'adulte en bonne santé. L'ACSM la juge sûre à tout âge. Les petits soucis comme la douleur n'étaient pas différents du cardio."
+    pt:
+      title: "Mito: levantar pesos é arriscado"
+      body: "Não em adultos saudáveis. O ACSM diz que o treino de força é seguro em qualquer idade. Queixas ligeiras, como dor, não diferiram do aeróbio."
+    tr:
+      title: "Efsane: ağırlık antrenmanı risklidir"
+      body: "Sağlıklı yetişkinler için değil. ACSM kuvvet antrenmanını her yaşta güvenli sayıyor. Ağrı gibi hafif şikâyetler aerobik egzersizden farklı değildi."
+
+  - key: belastingbeheer
+    kind: fact
+    en:
+      title: "Load management"
+      body: "The IOC says poor load management is a major injury risk factor in elite athletes. How much of that carries over to the gym is unclear."
+    nl:
+      title: "Belasting managen"
+      body: "Volgens het IOC is slecht belastingbeheer een grote risicofactor voor blessures bij topsporters. Hoeveel daarvan voor de gym geldt, is onduidelijk."
+    de:
+      title: "Belastungssteuerung"
+      body: "Laut IOC ist schlechte Belastungssteuerung bei Spitzensportlern ein großer Risikofaktor für Verletzungen. Wie viel davon fürs Gym gilt, ist offen."
+    es:
+      title: "Gestionar la carga"
+      body: "El COI dice que gestionar mal la carga es un gran factor de riesgo de lesión en atletas de élite. No está claro cuánto se aplica al gimnasio."
+    fr:
+      title: "Gérer la charge"
+      body: "Pour le CIO, une mauvaise gestion de la charge est un grand facteur de risque chez les athlètes d'élite. Ce qui vaut pour la salle reste flou."
+    pt:
+      title: "Gerir a carga"
+      body: "O COI diz que gerir mal a carga é um grande fator de risco de lesão em atletas de elite. Não é claro quanto disso se aplica ao ginásio."
+    tr:
+      title: "Yük yönetimi"
+      body: "IOC'ye göre kötü yük yönetimi elit sporcularda önemli bir sakatlık risk faktörü. Bunun spor salonuna ne kadar uyduğu belirsiz."
+
+  - key: geleidelijk-opbouwen
+    kind: fact
+    en:
+      title: "Build up gradually"
+      body: "The ACSM says raising intensity and volume gradually may reduce the risks of exercise. It adds that controlled studies to prove it are lacking."
+    nl:
+      title: "Geleidelijk opbouwen"
+      body: "Het ACSM zegt dat geleidelijk intensiteit en volume opvoeren de risico's van sporten kan verkleinen. Het voegt toe dat gecontroleerde studies ontbreken."
+    de:
+      title: "Langsam steigern"
+      body: "Laut ACSM kann eine schrittweise Steigerung von Intensität und Volumen die Risiken beim Sport senken. Kontrollierte Studien dazu fehlen aber."
+    es:
+      title: "Progresar poco a poco"
+      body: "El ACSM dice que subir intensidad y volumen poco a poco puede reducir los riesgos del ejercicio. Añade que faltan estudios controlados."
+    fr:
+      title: "Progresser petit à petit"
+      body: "L'ACSM dit qu'augmenter peu à peu l'intensité et le volume peut réduire les risques du sport. Il ajoute que les études contrôlées manquent."
+    pt:
+      title: "Progredir aos poucos"
+      body: "O ACSM diz que subir a intensidade e o volume aos poucos pode reduzir os riscos do exercício. Acrescenta que faltam estudos controlados."
+    tr:
+      title: "Kademeli artır"
+      body: "ACSM, yoğunluk ve hacmi kademeli artırmanın egzersiz risklerini azaltabileceğini söylüyor. Bunu kanıtlayan kontrollü çalışmaların eksik olduğunu da ekliyor."
+
+  - key: een-ding-tegelijk
+    kind: fact
+    en:
+      title: "One thing at a time"
+      body: "Raise load, sets or reps in small steps, one at a time. Avoid sudden jumps, like doubling your sets in a week."
+    nl:
+      title: "Eén ding tegelijk"
+      body: "Verhoog gewicht, sets of herhalingen in kleine stapjes, één tegelijk. Vermijd plotselinge sprongen, zoals je sets in een week verdubbelen."
+    de:
+      title: "Eins nach dem anderen"
+      body: "Steigere Gewicht, Sätze oder Wiederholungen in kleinen Schritten, eins nach dem anderen. Meide plötzliche Sprünge wie doppelt so viele Sätze."
+    es:
+      title: "Una cosa cada vez"
+      body: "Sube peso, series o repeticiones en pasos pequeños, de uno en uno. Evita saltos bruscos, como doblar tus series en una semana."
+    fr:
+      title: "Une chose à la fois"
+      body: "Augmente charge, séries ou répétitions par petits pas, une à la fois. Évite les sauts brusques, comme doubler tes séries en une semaine."
+    pt:
+      title: "Uma coisa de cada vez"
+      body: "Sobe carga, séries ou repetições em pequenos passos, uma de cada vez. Evita saltos bruscos, como duplicar as séries numa semana."
+    tr:
+      title: "Her seferinde bir şey"
+      body: "Ağırlığı, seti ya da tekrarı küçük adımlarla, birer birer artır. Bir haftada setleri ikiye katlamak gibi ani sıçramalardan kaçın."
+
+  - key: rekken-tegen-blessures
+    kind: myth
+    en:
+      title: "Myth: stretching prevents injuries"
+      body: "Not as a general rule. Experts don't recommend it for that. Static stretching may cut muscle injuries, possibly at the cost of bone and joint ones."
+    nl:
+      title: "Mythe: rekken voorkomt blessures"
+      body: "Niet als algemene regel. Experts raden het daarvoor niet aan. Statisch rekken kan spierblessures verminderen, mogelijk ten koste van bot en gewricht."
+    de:
+      title: "Mythos: Dehnen verhindert Verletzungen"
+      body: "Nicht generell. Experten empfehlen es dafür nicht. Statisches Dehnen kann Muskelverletzungen senken, womöglich auf Kosten von Knochen und Gelenken."
+    es:
+      title: "Mito: estirar previene lesiones"
+      body: "No como norma general. Los expertos no lo recomiendan para eso. Estirar en estático puede reducir lesiones musculares, quizá a costa de hueso y articulación."
+    fr:
+      title: "Mythe : s'étirer évite les blessures"
+      body: "Pas en règle générale. Les experts ne le conseillent pas pour ça. L'étirement statique peut réduire les lésions musculaires, peut-être au prix d'autres."
+    pt:
+      title: "Mito: alongar previne lesões"
+      body: "Não como regra geral. Os peritos não o recomendam para isso. Alongar em estático pode reduzir lesões musculares, talvez à custa de osso e articulação."
+    tr:
+      title: "Efsane: esneme sakatlığı önler"
+      body: "Genel kural olarak hayır. Uzmanlar bunun için önermiyor. Statik esneme kas sakatlıklarını azaltabilir, belki kemik ve eklem pahasına."
+
+  - key: krachttraining-helpt
+    kind: fact
+    en:
+      title: "Strength work and injuries"
+      body: "A stretching expert panel notes that strength training has benefits for injury prevention in sport. It's a remark, with no dose given."
+    nl:
+      title: "Krachtwerk en blessures"
+      body: "Een expertpanel over rekken merkt op dat krachttraining helpt bij blessurepreventie in de sport. Het is een opmerking, zonder dosis."
+    de:
+      title: "Krafttraining und Verletzungen"
+      body: "Ein Expertengremium zum Dehnen merkt an, dass Krafttraining im Sport bei der Verletzungsvorbeugung hilft. Eine Randnotiz, ohne Dosis."
+    es:
+      title: "Fuerza y lesiones"
+      body: "Un panel de expertos en estiramiento señala que el entrenamiento de fuerza ayuda a prevenir lesiones en el deporte. Es un comentario, sin dosis."
+    fr:
+      title: "Muscu et blessures"
+      body: "Un panel d'experts de l'étirement note que la muscu aide à prévenir les blessures dans le sport. C'est une remarque, sans dose précise."
+    pt:
+      title: "Força e lesões"
+      body: "Um painel de peritos em alongamento nota que o treino de força ajuda a prevenir lesões no desporto. É um comentário, sem dose."
+    tr:
+      title: "Kuvvet çalışması ve sakatlık"
+      body: "Esneme üzerine bir uzman paneli, kuvvet antrenmanının sporda sakatlık önlemeye faydası olduğunu belirtiyor. Bu bir not, doz verilmiyor."
+
+  - key: tot-falen-ouderen
+    kind: fact
+    en:
+      title: "Training to failure when older"
+      body: "The ACSM says lifting to fatigue may be unwise for some groups, such as older people, because poor form raises the injury risk."
+    nl:
+      title: "Tot falen trainen op leeftijd"
+      body: "Het ACSM zegt dat tillen tot uitputting voor sommige groepen, zoals ouderen, onverstandig kan zijn, omdat slechte techniek het blessurerisico verhoogt."
+    de:
+      title: "Bis zum Versagen im Alter"
+      body: "Laut ACSM kann Training bis zur Erschöpfung für manche Gruppen wie Ältere unklug sein, weil schlechte Technik das Verletzungsrisiko erhöht."
+    es:
+      title: "Al fallo con más edad"
+      body: "El ACSM dice que levantar hasta la fatiga puede no ser buena idea para algunos grupos, como mayores, porque la mala técnica aumenta el riesgo."
+    fr:
+      title: "Jusqu'à l'échec en vieillissant"
+      body: "L'ACSM dit que soulever jusqu'à l'épuisement peut être peu judicieux pour certains, comme les seniors : la technique se dégrade et le risque monte."
+    pt:
+      title: "Até à falha com mais idade"
+      body: "O ACSM diz que levantar até à fadiga pode não ser boa ideia para alguns grupos, como idosos, porque a má técnica aumenta o risco de lesão."
+    tr:
+      title: "İleri yaşta tükenişe kadar"
+      body: "ACSM'ye göre yaşlılar gibi bazı gruplar için tükenişe kadar kaldırmak akıllıca olmayabilir, çünkü bozulan teknik sakatlık riskini artırır."
+
+  - key: techniek-niet-getoetst
+    kind: myth
+    en:
+      title: "Myth: good form is proven to stop injuries"
+      body: "Not proven. No source here tests lifting technique against injuries. Learning a lift with light weights first is still sound advice."
+    nl:
+      title: "Mythe: techniek is bewezen blessurepreventie"
+      body: "Niet bewezen. Geen enkele bron hier toetst tiltechniek tegen blessures. Een oefening eerst licht aanleren blijft wel goed advies."
+    de:
+      title: "Mythos: Gute Technik schützt nachweislich"
+      body: "Nicht belegt. Keine Quelle hier prüft Hebetechnik gegen Verletzungen. Eine Übung erst mit leichtem Gewicht zu lernen, bleibt ein guter Rat."
+    es:
+      title: "Mito: la buena técnica evita lesiones, probado"
+      body: "No está probado. Ninguna fuente aquí compara técnica y lesiones al levantar. Aprender un ejercicio primero con poco peso sigue siendo buen consejo."
+    fr:
+      title: "Mythe : une bonne technique évite les blessures"
+      body: "Pas prouvé. Aucune source ici ne teste la technique contre les blessures. Apprendre un mouvement léger d'abord reste un bon conseil."
+    pt:
+      title: "Mito: boa técnica evita lesões, está provado"
+      body: "Não está provado. Nenhuma fonte aqui testa a técnica contra lesões. Aprender um exercício primeiro com pouco peso continua a ser bom conselho."
+    tr:
+      title: "Efsane: iyi teknik sakatlığı kanıtlı önler"
+      body: "Kanıtlanmadı. Buradaki hiçbir kaynak kaldırma tekniğini sakatlığa karşı test etmiyor. Bir hareketi önce hafif ağırlıkla öğrenmek yine iyi bir tavsiye."
+
+  - key: pijn-die-blijft
+    kind: fact
+    en:
+      title: "Pain that won't settle"
+      body: "If something hurts and doesn't settle, do less and see a doctor or physio rather than training through it."
+    nl:
+      title: "Pijn die niet zakt"
+      body: "Doet iets pijn en zakt het niet, doe dan minder en ga naar een arts of fysio in plaats van erdoorheen te trainen."
+    de:
+      title: "Schmerz, der nicht weggeht"
+      body: "Tut etwas weh und geht nicht weg, mach weniger und geh zu Arzt oder Physio, statt durchzutrainieren."
+    es:
+      title: "Dolor que no se va"
+      body: "Si algo duele y no mejora, haz menos y ve al médico o al fisio en vez de entrenar con dolor."
+    fr:
+      title: "Une douleur qui ne passe pas"
+      body: "Si quelque chose fait mal et ne passe pas, lève le pied et vois un médecin ou un kiné au lieu de t'entraîner malgré tout."
+    pt:
+      title: "Dor que não passa"
+      body: "Se algo dói e não passa, faz menos e vai ao médico ou ao fisioterapeuta em vez de treinar com dor."
+    tr:
+      title: "Geçmeyen ağrı"
+      body: "Bir yer ağrıyor ve geçmiyorsa, üstüne antrenman yapmak yerine yükü azalt ve bir doktora ya da fizyoterapiste görün."

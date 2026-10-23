@@ -1,0 +1,169 @@
+article: full-body
+tips:
+  - key: drie-keer-per-week
+    kind: fact
+    en:
+      title: "Full body"
+      body: "Full body training hits most major muscles every session, usually 3 times a week. Each muscle gets three touches a week."
+    nl:
+      title: "Fullbody"
+      body: "Fullbody-training raakt elke sessie de meeste grote spieren, meestal 3 keer per week. Elke spier krijgt zo drie prikkels per week."
+    de:
+      title: "Ganzkörpertraining"
+      body: "Ganzkörpertraining trifft in jeder Einheit die meisten großen Muskeln, meist 3-mal pro Woche. Jeder Muskel bekommt drei Reize."
+    es:
+      title: "Cuerpo completo"
+      body: "El cuerpo completo trabaja casi todos los grandes músculos en cada sesión, normalmente 3 veces por semana. Cada músculo, tres toques."
+    fr:
+      title: "Full body"
+      body: "Le full body travaille la plupart des grands muscles à chaque séance, souvent 3 fois par semaine. Chaque muscle est sollicité trois fois."
+    pt:
+      title: "Corpo inteiro"
+      body: "O treino de corpo inteiro trabalha a maioria dos grandes músculos em cada sessão, em geral 3 vezes por semana. Cada músculo, três toques."
+    tr:
+      title: "Tam vücut"
+      body: "Tam vücut antrenmanı her seansta büyük kasların çoğunu çalıştırır, genelde haftada 3 kez. Her kas haftada üç kez uyarılır."
+
+  - key: sessie-opbouw
+    kind: fact
+    en:
+      title: "Building a full-body session"
+      body: "Base it on 3 to 4 compound lifts that cover a squat or hinge, a push and a pull. Then add 2 to 4 accessories."
+    nl:
+      title: "Een fullbody-sessie opbouwen"
+      body: "Bouw hem op rond 3 tot 4 basisoefeningen: een squat of hinge, een duw- en een trekoefening. Doe daarna 2 tot 4 hulpoefeningen."
+    de:
+      title: "So baust du eine Ganzkörpereinheit"
+      body: "Basis sind 3 bis 4 Grundübungen mit Kniebeuge oder Hinge, einer Drück- und einer Zugübung. Dazu 2 bis 4 Zusatzübungen."
+    es:
+      title: "Montar una sesión completa"
+      body: "Básala en 3 o 4 ejercicios multiarticulares: sentadilla o bisagra, un empuje y un tirón. Luego añade 2 a 4 accesorios."
+    fr:
+      title: "Construire une séance full body"
+      body: "Pars de 3 à 4 polyarticulaires : squat ou charnière, une poussée et un tirage. Ajoute ensuite 2 à 4 exercices d'assistance."
+    pt:
+      title: "Montar um treino de corpo inteiro"
+      body: "Baseia-o em 3 a 4 exercícios compostos: agachamento ou hinge, um empurrar e um puxar. Depois junta 2 a 4 acessórios."
+    tr:
+      title: "Tam vücut seansı kurmak"
+      body: "Seansı squat ya da hinge, bir itme ve bir çekme içeren 3 ila 4 bileşik harekete kur. Sonra 2 ila 4 yardımcı hareket ekle."
+
+  - key: zware-lift-rouleren
+    kind: fact
+    en:
+      title: "Rotate the heavy lift"
+      body: "Make a different lift the heavy one each day, like squat on day 1, press on day 2 and hinge on day 3. That keeps fatigue in check."
+    nl:
+      title: "Wissel de zware oefening"
+      body: "Maak elke dag een andere oefening de zware: squat op dag 1, drukken op dag 2, hinge op dag 3. Zo houd je vermoeidheid in de hand."
+    de:
+      title: "Wechsle die schwere Übung"
+      body: "Mach jeden Tag eine andere Übung zur schweren: Tag 1 Kniebeuge, Tag 2 Drücken, Tag 3 Hinge. So bleibt die Ermüdung im Rahmen."
+    es:
+      title: "Rota el ejercicio pesado"
+      body: "Que cada día el pesado sea otro: sentadilla el día 1, press el día 2 y bisagra el día 3. Así controlas la fatiga."
+    fr:
+      title: "Alterne l'exercice lourd"
+      body: "Change d'exercice lourd chaque jour : squat le jour 1, développé le jour 2, charnière le jour 3. Ça garde la fatigue sous contrôle."
+    pt:
+      title: "Roda o exercício pesado"
+      body: "Faz de um exercício diferente o pesado de cada dia: agachamento no dia 1, press no dia 2, hinge no dia 3. Assim controlas a fadiga."
+    tr:
+      title: "Ağır hareketi döndür"
+      body: "Her gün başka bir hareketi ağır yap: 1. gün squat, 2. gün press, 3. gün hinge. Böylece yorgunluğu kontrol altında tutarsın."
+
+  - key: niet-alles-zwaar
+    kind: myth
+    en:
+      title: "Myth: go heavy on every lift, every session"
+      body: "Not true. Overloading every main lift each day is a common way to burn out by week 2 or 3."
+    nl:
+      title: "Mythe: elke sessie alles zwaar"
+      body: "Klopt niet. Elke dag alle hoofdoefeningen zwaar belasten is een bekende manier om in week 2 of 3 op te branden."
+    de:
+      title: "Mythos: jede Einheit alles schwer"
+      body: "Stimmt nicht. Jeden Tag alle Hauptübungen zu überladen ist ein typischer Weg, in Woche 2 oder 3 auszubrennen."
+    es:
+      title: "Mito: todo pesado en cada sesión"
+      body: "No es cierto. Cargar a tope todos los básicos cada día es una forma típica de quemarte en la semana 2 o 3."
+    fr:
+      title: "Mythe : tout en lourd à chaque séance"
+      body: "Faux. Surcharger chaque exercice principal tous les jours, c'est le moyen classique de griller en semaine 2 ou 3."
+    pt:
+      title: "Mito: tudo pesado em cada treino"
+      body: "Não é verdade. Sobrecarregar todos os exercícios principais todos os dias é a forma típica de te esgotares na semana 2 ou 3."
+    tr:
+      title: "Efsane: her seans her hareket ağır"
+      body: "Doğru değil. Her gün tüm ana hareketleri aşırı yüklemek, 2. ya da 3. haftada tükenmenin bilinen yoludur."
+
+  - key: herhalingen
+    kind: fact
+    en:
+      title: "Reps on full body"
+      body: "Use moderate reps, 6 to 12, on your compound lifts. Accessories can go higher, from 8 to 20."
+    nl:
+      title: "Herhalingen bij fullbody"
+      body: "Neem bij je basisoefeningen gemiddelde aantallen, 6 tot 12 herhalingen. Hulpoefeningen mogen hoger, van 8 tot 20."
+    de:
+      title: "Wiederholungen beim Ganzkörper"
+      body: "Nimm bei Grundübungen mittlere Zahlen, 6 bis 12 Wiederholungen. Zusatzübungen dürfen höher gehen, 8 bis 20."
+    es:
+      title: "Repeticiones en cuerpo completo"
+      body: "Usa repeticiones moderadas, de 6 a 12, en los multiarticulares. Los accesorios pueden ir más alto, de 8 a 20."
+    fr:
+      title: "Les reps en full body"
+      body: "Reste sur des reps modérées, 6 à 12, pour les polyarticulaires. Les exercices d'assistance peuvent monter de 8 à 20."
+    pt:
+      title: "Repetições no corpo inteiro"
+      body: "Usa repetições moderadas, de 6 a 12, nos compostos. Os acessórios podem ir mais alto, de 8 a 20."
+    tr:
+      title: "Tam vücutta tekrarlar"
+      body: "Bileşik hareketlerde orta tekrar kullan, 6 ila 12. Yardımcı hareketler 8 ila 20'ye kadar çıkabilir."
+
+  - key: niet-te-veel-accessoires
+    kind: myth
+    en:
+      title: "Myth: more accessories, better workout"
+      body: "Not quite. Cramming in too many leads to rushed form or skipped work. Keep it to 2 to 4 per session."
+    nl:
+      title: "Mythe: meer hulpoefeningen, betere training"
+      body: "Niet helemaal. Te veel erin proppen geeft gehaaste techniek of overgeslagen werk. Houd het op 2 tot 4 per sessie."
+    de:
+      title: "Mythos: mehr Zusatzübungen, besseres Training"
+      body: "Nicht ganz. Zu viele reinzustopfen führt zu hastiger Technik oder ausgelassener Arbeit. Bleib bei 2 bis 4 pro Einheit."
+    es:
+      title: "Mito: más accesorios, mejor sesión"
+      body: "No del todo. Meter demasiados lleva a técnica con prisas o a saltarte trabajo. Quédate en 2 a 4 por sesión."
+    fr:
+      title: "Mythe : plus d'assistance, meilleure séance"
+      body: "Pas tout à fait. En caser trop mène à une technique bâclée ou à du travail sauté. Reste à 2 à 4 par séance."
+    pt:
+      title: "Mito: mais acessórios, melhor treino"
+      body: "Não exatamente. Enfiar demasiados leva a técnica apressada ou a trabalho saltado. Fica-te por 2 a 4 por treino."
+    tr:
+      title: "Efsane: daha çok yardımcı, daha iyi antrenman"
+      body: "Tam değil. Çok fazlasını sıkıştırmak aceleci tekniğe ya da atlanan işe yol açar. Seans başına 2 ila 4'te kal."
+
+  - key: slaap-en-eten
+    kind: fact
+    en:
+      title: "What makes three a week work"
+      body: "Training every muscle three times a week leans on your sleep and calories. Those are what make the high frequency sustainable."
+    nl:
+      title: "Wat drie keer per week haalbaar maakt"
+      body: "Elke spier drie keer per week trainen leunt op je slaap en je calorieën. Die maken zo'n hoge frequentie vol te houden."
+    de:
+      title: "Was dreimal pro Woche trägt"
+      body: "Jeden Muskel dreimal pro Woche zu trainieren hängt an Schlaf und Kalorien. Die machen die hohe Frequenz durchhaltbar."
+    es:
+      title: "Qué sostiene tres veces por semana"
+      body: "Entrenar cada músculo tres veces por semana depende de tu sueño y tus calorías. Eso es lo que hace sostenible tanta frecuencia."
+    fr:
+      title: "Ce qui rend trois fois tenable"
+      body: "Travailler chaque muscle trois fois par semaine repose sur ton sommeil et tes calories. C'est ce qui rend cette fréquence tenable."
+    pt:
+      title: "O que aguenta três vezes por semana"
+      body: "Treinar cada músculo três vezes por semana depende do teu sono e das calorias. São eles que tornam essa frequência sustentável."
+    tr:
+      title: "Haftada üçü mümkün kılan"
+      body: "Her kası haftada üç kez çalıştırmak uykuna ve kalorine dayanır. Bu yüksek sıklığı sürdürülebilir yapan onlardır."

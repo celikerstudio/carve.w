@@ -1,0 +1,193 @@
+article: creatine
+tips:
+  - key: vol-na-weken
+    kind: fact
+    en:
+      title: "Creatine"
+      body: "3 to 5 g a day is enough. Your muscles are full after 3 to 4 weeks, or after 5 to 7 days with a loading week."
+    nl:
+      title: "Creatine"
+      body: "3 tot 5 gram per dag is genoeg. Na 3 à 4 weken zitten je spieren vol, met een laadweek al na 5 tot 7 dagen."
+    de:
+      title: "Kreatin"
+      body: "3 bis 5 g am Tag reichen. Nach 3 bis 4 Wochen sind deine Muskeln voll, mit einer Ladewoche schon nach 5 bis 7 Tagen."
+    es:
+      title: "Creatina"
+      body: "Con 3 a 5 g al día basta. Tus músculos se llenan en 3 o 4 semanas, o en 5 a 7 días con una semana de carga."
+    fr:
+      title: "Créatine"
+      body: "3 à 5 g par jour suffisent. Tes muscles sont pleins après 3 à 4 semaines, ou après 5 à 7 jours avec une semaine de charge."
+    pt:
+      title: "Creatina"
+      body: "3 a 5 g por dia chegam. Os teus músculos ficam cheios em 3 a 4 semanas, ou em 5 a 7 dias com uma semana de carga."
+    tr:
+      title: "Kreatin"
+      body: "Günde 3 ila 5 g yeterli. Kasların 3 ila 4 haftada dolar, yükleme haftasıyla 5 ila 7 günde."
+
+  - key: nieren
+    kind: myth
+    en:
+      title: "Myth: creatine is bad for your kidneys"
+      body: "Not in healthy people. In 20 trials kidney function did not change. Creatinine in your blood does rise a little."
+    nl:
+      title: "Mythe: creatine is slecht voor je nieren"
+      body: "Niet bij gezonde mensen. In 20 studies veranderde de nierfunctie niet. Wel stijgt de creatinine in je bloed een beetje."
+    de:
+      title: "Mythos: Kreatin schadet den Nieren"
+      body: "Nicht bei gesunden Menschen. In 20 Studien blieb die Nierenfunktion gleich. Das Kreatinin im Blut steigt aber etwas."
+    es:
+      title: "Mito: la creatina daña los riñones"
+      body: "No en personas sanas. En 20 ensayos la función renal no cambió. La creatinina en sangre sí sube un poco."
+    fr:
+      title: "Mythe : la créatine abîme les reins"
+      body: "Pas chez les personnes en bonne santé. Dans 20 essais, la fonction rénale n'a pas changé. La créatinine sanguine monte un peu."
+    pt:
+      title: "Mito: a creatina faz mal aos rins"
+      body: "Não em pessoas saudáveis. Em 20 ensaios a função renal não mudou. A creatinina no sangue sobe um pouco."
+    tr:
+      title: "Efsane: kreatin böbreklere zarar verir"
+      body: "Sağlıklı insanlarda hayır. 20 çalışmada böbrek fonksiyonu değişmedi. Kandaki kreatinin ise biraz yükselir."
+
+  - key: haaruitval
+    kind: myth
+    en:
+      title: "Myth: creatine makes your hair fall out"
+      body: "The idea comes from one study that never looked at hair. In a 12-week trial, creatine did not change hair growth."
+    nl:
+      title: "Mythe: creatine geeft haaruitval"
+      body: "Het idee komt van één studie die niet eens naar haar keek. In een proef van 12 weken veranderde de haargroei niet."
+    de:
+      title: "Mythos: Kreatin macht Haarausfall"
+      body: "Die Idee stammt aus einer Studie, die nie Haare gemessen hat. In einer 12-wöchigen Studie änderte sich das Haarwachstum nicht."
+    es:
+      title: "Mito: la creatina hace caer el pelo"
+      body: "La idea viene de un estudio que ni siquiera midió el pelo. En un ensayo de 12 semanas, el crecimiento del pelo no cambió."
+    fr:
+      title: "Mythe : la créatine fait tomber les cheveux"
+      body: "L'idée vient d'une étude qui n'a jamais mesuré les cheveux. Dans un essai de 12 semaines, la pousse n'a pas changé."
+    pt:
+      title: "Mito: a creatina faz cair o cabelo"
+      body: "A ideia vem de um estudo que nem mediu o cabelo. Num ensaio de 12 semanas, o crescimento do cabelo não mudou."
+    tr:
+      title: "Efsane: kreatin saç döktürür"
+      body: "Bu fikir saçı hiç ölçmeyen tek bir çalışmadan geliyor. 12 haftalık bir denemede saç büyümesi değişmedi."
+
+  - key: monohydraat
+    kind: fact
+    en:
+      title: "Which creatine?"
+      body: "Pricier forms than monohydrate do not get more creatine into your muscle. Your gut already absorbs almost all of a normal dose."
+    nl:
+      title: "Welke creatine?"
+      body: "Duurdere vormen dan monohydraat brengen niet meer creatine in je spier. Je darmen nemen een gewone dosis al bijna helemaal op."
+    de:
+      title: "Welches Kreatin?"
+      body: "Teurere Formen als Monohydrat bringen nicht mehr Kreatin in den Muskel. Dein Darm nimmt eine normale Dosis fast vollständig auf."
+    es:
+      title: "¿Qué creatina?"
+      body: "Las formas más caras que el monohidrato no meten más creatina en el músculo. Tu intestino ya absorbe casi toda una dosis normal."
+    fr:
+      title: "Quelle créatine ?"
+      body: "Les formes plus chères que le monohydrate n'apportent pas plus de créatine au muscle. Ton intestin absorbe déjà presque toute la dose."
+    pt:
+      title: "Que creatina?"
+      body: "Formas mais caras do que o monohidrato não levam mais creatina ao músculo. O teu intestino já absorve quase toda a dose normal."
+    tr:
+      title: "Hangi kreatin?"
+      body: "Monohidrattan pahalı formlar kasa daha fazla kreatin taşımaz. Bağırsakların normal bir dozun neredeyse tamamını zaten emer."
+
+  - key: weegschaal
+    kind: fact
+    en:
+      title: "Creatine and the scale"
+      body: "In your first week the scale can go up half a kilo to a kilo. That is mostly water in your muscles, not fat."
+    nl:
+      title: "Creatine en de weegschaal"
+      body: "De eerste week kan de weegschaal een halve tot een hele kilo hoger staan. Dat is vooral water in je spieren, geen vet."
+    de:
+      title: "Kreatin und die Waage"
+      body: "In der ersten Woche kann die Waage ein halbes bis ein ganzes Kilo mehr zeigen. Das ist vor allem Wasser im Muskel, kein Fett."
+    es:
+      title: "La creatina y la báscula"
+      body: "La primera semana la báscula puede subir de medio kilo a un kilo. Es sobre todo agua en tus músculos, no grasa."
+    fr:
+      title: "La créatine et la balance"
+      body: "La première semaine, la balance peut monter d'un demi-kilo à un kilo. C'est surtout de l'eau dans tes muscles, pas du gras."
+    pt:
+      title: "A creatina e a balança"
+      body: "Na primeira semana a balança pode subir meio quilo a um quilo. É sobretudo água nos músculos, não gordura."
+    tr:
+      title: "Kreatin ve tartı"
+      body: "İlk hafta tartı yarım ila bir kilo fazla gösterebilir. Bu çoğunlukla kaslarındaki su, yağ değil."
+
+  - key: bloedprikken
+    kind: fact
+    en:
+      title: "Creatine and blood tests"
+      body: "Getting a blood test? Say you take creatine. Your creatinine will be a bit higher, and that can look like a kidney problem."
+    nl:
+      title: "Creatine en bloedprikken"
+      body: "Laat je bloed prikken? Zeg dat je creatine neemt. Je creatinine staat dan wat hoger, en dat kan op een nierprobleem lijken."
+    de:
+      title: "Kreatin und Bluttests"
+      body: "Steht ein Bluttest an? Sag, dass du Kreatin nimmst. Dein Kreatinin ist dann etwas höher und kann wie ein Nierenproblem aussehen."
+    es:
+      title: "Creatina y análisis de sangre"
+      body: "¿Te van a sacar sangre? Di que tomas creatina. Tu creatinina saldrá algo alta y puede parecer un problema de riñón."
+    fr:
+      title: "Créatine et prise de sang"
+      body: "Une prise de sang ? Dis que tu prends de la créatine. Ta créatinine sera un peu plus haute, ce qui peut ressembler à un souci rénal."
+    pt:
+      title: "Creatina e análises ao sangue"
+      body: "Vais fazer análises? Diz que tomas creatina. A tua creatinina fica um pouco mais alta e pode parecer um problema nos rins."
+    tr:
+      title: "Kreatin ve kan tahlili"
+      body: "Kan tahlili mi var? Kreatin aldığını söyle. Kreatininin biraz yüksek çıkar ve bu bir böbrek sorunu gibi görünebilir."
+
+  - key: stoppen
+    kind: fact
+    en:
+      title: "Stopping creatine"
+      body: "Stop taking it and your stores drop back to normal in 4 to 6 weeks. Not lower: your own production keeps working."
+    nl:
+      title: "Stoppen met creatine"
+      body: "Stop je ermee, dan zakt je voorraad in 4 tot 6 weken terug naar normaal. Niet lager, want je eigen aanmaak blijft gewoon werken."
+    de:
+      title: "Kreatin absetzen"
+      body: "Setzt du es ab, sinken deine Speicher in 4 bis 6 Wochen wieder auf normal. Nicht tiefer, deine eigene Bildung läuft weiter."
+    es:
+      title: "Dejar la creatina"
+      body: "Si la dejas, tus reservas vuelven a lo normal en 4 a 6 semanas. No más abajo: tu propia producción sigue funcionando."
+    fr:
+      title: "Arrêter la créatine"
+      body: "Si tu arrêtes, tes réserves reviennent à la normale en 4 à 6 semaines. Pas plus bas, ta propre production continue."
+    pt:
+      title: "Parar a creatina"
+      body: "Se parares, as tuas reservas voltam ao normal em 4 a 6 semanas. Não abaixo disso, a tua produção própria continua."
+    tr:
+      title: "Kreatini bırakmak"
+      body: "Bırakırsan depoların 4 ila 6 haftada normale döner. Daha aşağı değil, vücudunun kendi üretimi çalışmaya devam eder."
+
+  - key: alleen-met-training
+    kind: fact
+    en:
+      title: "Creatine needs training"
+      body: "Without training, creatine does little for your muscles. It helps you train a bit harder, and that shows up after weeks."
+    nl:
+      title: "Creatine werkt met training"
+      body: "Zonder training doet creatine weinig voor je spieren. Het helpt je net wat harder trainen, en dat zie je pas na weken terug."
+    de:
+      title: "Kreatin braucht Training"
+      body: "Ohne Training bringt Kreatin deinen Muskeln wenig. Es hilft dir, etwas härter zu trainieren, und das siehst du erst nach Wochen."
+    es:
+      title: "La creatina necesita entreno"
+      body: "Sin entrenar, la creatina hace poco por tus músculos. Te ayuda a entrenar algo más fuerte, y eso se nota tras semanas."
+    fr:
+      title: "La créatine a besoin d'entraînement"
+      body: "Sans entraînement, la créatine fait peu pour tes muscles. Elle t'aide à t'entraîner un peu plus dur, et ça se voit après des semaines."
+    pt:
+      title: "A creatina precisa de treino"
+      body: "Sem treino, a creatina faz pouco pelos músculos. Ajuda-te a treinar um pouco mais forte, e isso nota-se ao fim de semanas."
+    tr:
+      title: "Kreatin antrenmanla çalışır"
+      body: "Antrenman olmadan kreatin kaslarına pek bir şey yapmaz. Biraz daha sert çalışmana yardım eder, bu da haftalar sonra görünür."

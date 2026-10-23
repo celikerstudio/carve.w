@@ -1,0 +1,241 @@
+article: calories
+tips:
+  - key: per-gram
+    kind: fact
+    en:
+      title: "Calories per gram"
+      body: "Protein and carbs give you 4 kcal per gram. Fat gives 9, and alcohol 7."
+    nl:
+      title: "Calorieën per gram"
+      body: "Eiwit en koolhydraten leveren 4 kcal per gram. Vet levert er 9, en alcohol 7."
+    de:
+      title: "Kalorien pro Gramm"
+      body: "Eiweiß und Kohlenhydrate liefern 4 kcal pro Gramm. Fett liefert 9, Alkohol 7."
+    es:
+      title: "Calorías por gramo"
+      body: "La proteína y los carbohidratos dan 4 kcal por gramo. La grasa da 9, y el alcohol 7."
+    fr:
+      title: "Calories par gramme"
+      body: "Protéines et glucides apportent 4 kcal par gramme. Les lipides 9, et l'alcool 7."
+    pt:
+      title: "Calorias por grama"
+      body: "A proteína e os hidratos dão 4 kcal por grama. A gordura dá 9, e o álcool 7."
+    tr:
+      title: "Gram başına kalori"
+      body: "Protein ve karbonhidrat gram başına 4 kcal verir. Yağ 9, alkol 7 verir."
+
+  - key: eetlepel-olie
+    kind: fact
+    en:
+      title: "One tablespoon of oil"
+      body: "One tablespoon of cooking oil is about 120 kcal. That is why fat adds up so fast."
+    nl:
+      title: "Eén eetlepel olie"
+      body: "Eén eetlepel bakolie is zo'n 120 kcal. Daarom tikt vet zo snel aan."
+    de:
+      title: "Ein Esslöffel Öl"
+      body: "Ein Esslöffel Speiseöl hat etwa 120 kcal. Darum summiert sich Fett so schnell."
+    es:
+      title: "Una cucharada de aceite"
+      body: "Una cucharada de aceite para cocinar tiene unas 120 kcal. Por eso la grasa suma tan rápido."
+    fr:
+      title: "Une cuillère d'huile"
+      body: "Une cuillère à soupe d'huile de cuisson, c'est environ 120 kcal. Voilà pourquoi le gras grimpe si vite."
+    pt:
+      title: "Uma colher de óleo"
+      body: "Uma colher de sopa de óleo de cozinha tem cerca de 120 kcal. É por isso que a gordura soma tão depressa."
+    tr:
+      title: "Bir yemek kaşığı yağ"
+      body: "Bir yemek kaşığı yemeklik yağ yaklaşık 120 kcal. Yağın bu kadar hızlı birikmesinin sebebi bu."
+
+  - key: tempo-afvallen
+    kind: fact
+    en:
+      title: "How fast to lose fat"
+      body: "To keep your muscle, aim to lose 0.5 to 1% of your bodyweight a week. At 80 kg that is 0.4 to 0.8 kg."
+    nl:
+      title: "Hoe snel afvallen"
+      body: "Wil je je spieren houden, mik dan op 0,5 tot 1% van je gewicht per week. Bij 80 kilo is dat 0,4 tot 0,8 kilo."
+    de:
+      title: "Wie schnell abnehmen"
+      body: "Willst du Muskeln halten, ziel auf 0,5 bis 1% deines Gewichts pro Woche. Bei 80 kg sind das 0,4 bis 0,8 kg."
+    es:
+      title: "A qué ritmo bajar"
+      body: "Para mantener músculo, apunta a perder un 0,5 a 1% de tu peso por semana. Con 80 kg son 0,4 a 0,8 kg."
+    fr:
+      title: "À quel rythme perdre"
+      body: "Pour garder tes muscles, vise 0,5 à 1% de ton poids par semaine. À 80 kg, ça fait 0,4 à 0,8 kg."
+    pt:
+      title: "A que ritmo perder"
+      body: "Para manteres o músculo, aponta para 0,5 a 1% do teu peso por semana. Com 80 kg são 0,4 a 0,8 kg."
+    tr:
+      title: "Ne kadar hızlı kilo vermeli"
+      body: "Kasını korumak için haftada kilonun %0,5 ila 1'ini vermeyi hedefle. 80 kiloda bu 0,4 ila 0,8 kg demek."
+
+  - key: sneller-is-niet-beter
+    kind: myth
+    en:
+      title: "Myth: faster fat loss is better"
+      body: "Not if you want to keep muscle. In athletes who lifted, the group losing about 0.7% a week gained lean mass. The faster group did not."
+    nl:
+      title: "Mythe: sneller afvallen is beter"
+      body: "Niet als je spier wilt houden. Bij sporters die met gewichten trainden, won de groep die 0,7% per week afviel spiermassa. De snellere groep niet."
+    de:
+      title: "Mythos: schneller abnehmen ist besser"
+      body: "Nicht, wenn du Muskeln halten willst. Bei Kraftsportlern baute die Gruppe mit etwa 0,7% pro Woche Muskeln auf. Die schnellere nicht."
+    es:
+      title: "Mito: perder grasa rápido es mejor"
+      body: "No si quieres mantener músculo. En atletas que levantaban pesas, el grupo que perdía un 0,7% semanal ganó masa magra. El más rápido no."
+    fr:
+      title: "Mythe : perdre vite, c'est mieux"
+      body: "Pas si tu veux garder tes muscles. Chez des athlètes en muscu, le groupe à 0,7% par semaine a gagné de la masse maigre. Le plus rapide, non."
+    pt:
+      title: "Mito: perder gordura depressa é melhor"
+      body: "Não se queres manter músculo. Em atletas que treinavam pesos, o grupo que perdia 0,7% por semana ganhou massa magra. O mais rápido não."
+    tr:
+      title: "Efsane: hızlı yağ kaybı daha iyi"
+      body: "Kasını korumak istiyorsan değil. Ağırlık çalışan sporcularda haftada %0,7 veren grup yağsız kütle kazandı. Daha hızlı grup kazanmadı."
+
+  - key: welk-dieet
+    kind: myth
+    en:
+      title: "Myth: low-carb is the way to lose fat"
+      body: "Not really. Fat loss comes from a deficit you keep up over time. Low-carb, low-fat or something in between matters much less."
+    nl:
+      title: "Mythe: met low-carb val je het best af"
+      body: "Niet echt. Vet verlies je door een tekort dat je volhoudt. Of dat low-carb, low-fat of iets ertussenin is, maakt veel minder uit."
+    de:
+      title: "Mythos: Low Carb ist der Weg zum Abnehmen"
+      body: "Nicht wirklich. Fett verlierst du durch ein Defizit, das du durchhältst. Ob Low Carb, Low Fat oder dazwischen, ist viel weniger wichtig."
+    es:
+      title: "Mito: lo mejor para adelgazar es low-carb"
+      body: "No realmente. La grasa se pierde con un déficit que mantienes en el tiempo. Que sea low-carb, low-fat o algo intermedio importa mucho menos."
+    fr:
+      title: "Mythe : le low-carb fait mieux maigrir"
+      body: "Pas vraiment. Tu perds du gras grâce à un déficit tenu dans le temps. Low-carb, low-fat ou entre les deux, ça compte bien moins."
+    pt:
+      title: "Mito: low-carb é o melhor para emagrecer"
+      body: "Não bem. Perdes gordura com um défice que manténs ao longo do tempo. Ser low-carb, low-fat ou algo entre os dois importa muito menos."
+    tr:
+      title: "Efsane: yağ yakmanın yolu low-carb"
+      body: "Pek değil. Yağı, sürdürebildiğin bir kalori açığıyla kaybedersin. Low-carb, low-fat ya da arası olması çok daha az önemli."
+
+  - key: afvallen-vertraagt
+    kind: fact
+    en:
+      title: "Why weight loss slows"
+      body: "As you get lighter, you burn less. On the same intake the gap shrinks, so work out your number again every few kilos."
+    nl:
+      title: "Waarom afvallen vertraagt"
+      body: "Hoe lichter je wordt, hoe minder je verbrandt. Bij hetzelfde eten wordt het gat kleiner, dus reken elke paar kilo opnieuw."
+    de:
+      title: "Warum Abnehmen langsamer wird"
+      body: "Je leichter du wirst, desto weniger verbrennst du. Bei gleichem Essen schrumpft die Lücke, also rechne alle paar Kilo neu."
+    es:
+      title: "Por qué se frena la bajada"
+      body: "Cuanto menos pesas, menos quemas. Comiendo lo mismo, la diferencia se achica, así que recalcula cada pocos kilos."
+    fr:
+      title: "Pourquoi ça ralentit"
+      body: "Plus tu t'allèges, moins tu brûles. À apports égaux, l'écart se réduit, alors recalcule tous les quelques kilos."
+    pt:
+      title: "Porque é que abranda"
+      body: "Quanto mais leve ficas, menos gastas. A comer o mesmo, a diferença encolhe, por isso recalcula a cada poucos quilos."
+    tr:
+      title: "Kilo kaybı neden yavaşlar"
+      body: "Hafifledikçe daha az yakarsın. Aynı yemekle aradaki fark küçülür, o yüzden birkaç kiloda bir yeniden hesapla."
+
+  - key: onderrapporteren
+    kind: myth
+    en:
+      title: "Myth: my metabolism won't let me lose"
+      body: "In a 1992 study, people who said this had a normal metabolism. They had underreported their food by 47% on average."
+    nl:
+      title: "Mythe: mijn metabolisme laat me niet afvallen"
+      body: "In een studie uit 1992 hadden mensen die dit zeiden een normaal metabolisme. Ze schreven gemiddeld 47% te weinig eten op."
+    de:
+      title: "Mythos: mein Stoffwechsel lässt mich nicht"
+      body: "In einer Studie von 1992 hatten Leute, die das sagten, einen normalen Stoffwechsel. Sie gaben im Schnitt 47% zu wenig Essen an."
+    es:
+      title: "Mito: mi metabolismo no me deja bajar"
+      body: "En un estudio de 1992, quienes decían esto tenían un metabolismo normal. Anotaban de media un 47% menos de lo que comían."
+    fr:
+      title: "Mythe : mon métabolisme m'empêche de maigrir"
+      body: "Dans une étude de 1992, ceux qui disaient ça avaient un métabolisme normal. Ils sous-déclaraient leurs repas de 47% en moyenne."
+    pt:
+      title: "Mito: o meu metabolismo não me deixa perder"
+      body: "Num estudo de 1992, quem dizia isto tinha um metabolismo normal. Registavam em média menos 47% do que comiam."
+    tr:
+      title: "Efsane: metabolizmam kilo verdirmiyor"
+      body: "1992'deki bir çalışmada bunu söyleyenlerin metabolizması normaldi. Yediklerini ortalama %47 eksik bildirmişlerdi."
+
+  - key: kleine-dingen
+    kind: fact
+    en:
+      title: "Log the small stuff"
+      body: "Cooking oil, drinks and bites while cooking are easy to miss. Logging every meal matters more than a perfect target."
+    nl:
+      title: "Tel de kleine dingen mee"
+      body: "Bakolie, drinken en hapjes tijdens het koken vergeet je snel. Alles loggen is belangrijker dan een perfect doel."
+    de:
+      title: "Auch Kleinigkeiten zählen"
+      body: "Bratöl, Getränke und Happen beim Kochen übersieht man leicht. Alles zu loggen ist wichtiger als ein perfektes Ziel."
+    es:
+      title: "Apunta lo pequeño"
+      body: "El aceite, las bebidas y lo que picas al cocinar se olvidan fácil. Apuntarlo todo importa más que un objetivo perfecto."
+    fr:
+      title: "Note les petits trucs"
+      body: "L'huile, les boissons et ce que tu grignotes en cuisinant passent vite à la trappe. Tout noter compte plus qu'un objectif parfait."
+    pt:
+      title: "Regista as coisas pequenas"
+      body: "O óleo, as bebidas e o que petiscas a cozinhar esquecem-se fácil. Registar tudo importa mais do que um objetivo perfeito."
+    tr:
+      title: "Küçük şeyleri de kaydet"
+      body: "Yemeklik yağ, içecekler ve pişirirken atıştırdıkların kolayca unutulur. Her şeyi kaydetmek mükemmel bir hedeften önemli."
+
+  - key: ultrabewerkt
+    kind: fact
+    en:
+      title: "Ultra-processed food"
+      body: "Free to eat as much as they liked, people in one trial ate about 500 kcal a day more on ultra-processed meals. They gained 0.9 kg in two weeks."
+    nl:
+      title: "Ultrabewerkt eten"
+      body: "Mochten ze zoveel eten als ze wilden, dan aten mensen in een proef zo'n 500 kcal per dag meer bij ultrabewerkt eten. In 2 weken kwamen ze 0,9 kilo aan."
+    de:
+      title: "Hochverarbeitetes Essen"
+      body: "Durften sie essen, so viel sie wollten, aßen Leute in einer Studie bei hochverarbeitetem Essen 500 kcal mehr am Tag. In 2 Wochen: 0,9 kg mehr."
+    es:
+      title: "Comida ultraprocesada"
+      body: "Comiendo a voluntad, la gente de un ensayo tomó unas 500 kcal más al día con comida ultraprocesada. Ganó 0,9 kg en dos semanas."
+    fr:
+      title: "Les ultra-transformés"
+      body: "Libres de manger à volonté, des gens dans un essai ont pris 500 kcal de plus par jour avec des plats ultra-transformés. Et 0,9 kg en deux semaines."
+    pt:
+      title: "Comida ultraprocessada"
+      body: "Podendo comer à vontade, as pessoas num ensaio comeram cerca de 500 kcal a mais por dia com comida ultraprocessada. Ganharam 0,9 kg em duas semanas."
+    tr:
+      title: "Ultra işlenmiş yiyecekler"
+      body: "Bir denemede istedikleri kadar yiyebilen kişiler, ultra işlenmiş yemekte günde yaklaşık 500 kcal fazla yedi. İki haftada 0,9 kg aldılar."
+
+  - key: welke-formule
+    kind: fact
+    en:
+      title: "Which calorie formula"
+      body: "Use Mifflin-St Jeor to estimate your resting burn. The older Harris-Benedict came out about 5% too high against measurements."
+    nl:
+      title: "Welke formule"
+      body: "Schat je verbruik in rust met Mifflin-St Jeor. De oudere Harris-Benedict kwam zo'n 5% te hoog uit tegenover metingen."
+    de:
+      title: "Welche Formel"
+      body: "Schätz deinen Ruheumsatz mit Mifflin-St Jeor. Die ältere Harris-Benedict-Formel lag gemessen etwa 5% zu hoch."
+    es:
+      title: "Qué fórmula usar"
+      body: "Estima tu gasto en reposo con Mifflin-St Jeor. La antigua Harris-Benedict salía un 5% alta frente a las mediciones."
+    fr:
+      title: "Quelle formule"
+      body: "Estime ta dépense au repos avec Mifflin-St Jeor. L'ancienne Harris-Benedict donnait environ 5% de trop face aux mesures."
+    pt:
+      title: "Que fórmula usar"
+      body: "Estima o teu gasto em repouso com Mifflin-St Jeor. A antiga Harris-Benedict dava cerca de 5% a mais face às medições."
+    tr:
+      title: "Hangi formül"
+      body: "Dinlenme harcamanı Mifflin-St Jeor ile tahmin et. Eski Harris-Benedict ölçümlere göre yaklaşık %5 yüksek çıkıyordu."

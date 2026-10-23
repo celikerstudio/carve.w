@@ -4,6 +4,7 @@
  *
  *   pnpm sync-wiki           laat zien wat er zou veranderen, schrijft niets
  *   pnpm sync-wiki --write   schrijft het
+ *   pnpm sync-wiki --tips     alleen de tips van de dag (content/tips/), de artikelen blijven staan
  *
  * @ai-why: Alleen wat veranderd is, en per veld. De trigger in de database zet `updated_at` bij elke
  *   update, en die datum staat onder een beoordeeld artikel en in `dateModified`. Alles opnieuw
@@ -13,14 +14,16 @@
  * @ai-gotcha: Een wijziging die iemand rechtstreeks in de database maakt, wordt hier overschreven.
  *   De repo is de bron.
  * @ai-sync: lib/wiki/source-file.ts (de velden van een bronbestand)
+ * @ai-sync: lib/wiki/tips.ts (de tips van de dag, naar wiki_tips)
  * @ai-sync: lib/wiki/seo.ts (articleJsonLd leest updated_at als reviewdatum)
  */
 import { config } from 'dotenv';
-import { createClient } from '@supabase/supabase-js';
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { AUTHOR } from '../../lib/wiki/seo';
 import { hasOpenNotes, lintArticle, stripChecks, toSearchText, type ArticleFile } from '../../lib/wiki/source-file';
 import { sourceUrl } from '../../lib/wiki/sources';
-import { readArticleFiles, readManualSourceUrls } from './files';
+import { lintTipFile, tipId, type TipFile } from '../../lib/wiki/tips';
+import { readArticleFiles, readManualSourceUrls, readTipFiles } from './files';
 
 config({ path: '.env.local' });
 
@@ -92,6 +95,9 @@ const citationKey = (c: CitationFields) =>
 
 async function main() {
   const write = process.argv.includes('--write');
+  // @ai-why: De tips kunnen live zonder dat herschreven artikelen meegaan. Die wachten op Furkan
+  //   (TDR-0017 §5); een tip-update mocht ze niet ongevraagd online zetten.
+  const tipsOnly = process.argv.includes('--tips');
   const all = readArticleFiles().map((f) => f.file);
   const slugs = new Set(all.map((f) => f.slug));
   const manualUrls = readManualSourceUrls();
@@ -106,6 +112,17 @@ async function main() {
   if (broken.length) {
     broken.forEach((b) => console.error(`✗ ${b.slug}\n    ${b.errors.join('\n    ')}`));
     console.error('\nNiets geschreven. Los de fouten op (pnpm wiki:check) en probeer opnieuw.');
+    process.exit(1);
+  }
+
+  // De tips worden vóór er iets geschreven wordt gecontroleerd, net als de artikelen.
+  const tipFiles = readTipFiles();
+  const brokenTips = tipFiles
+    .map((t) => ({ slug: t.slug, errors: t.error ? [t.error] : lintTipFile(t.file, t.slug, slugs) }))
+    .filter((t) => t.errors.length);
+  if (brokenTips.length) {
+    brokenTips.forEach((b) => console.error(`✗ tips ${b.slug}\n    ${b.errors.join('\n    ')}`));
+    console.error('\nNiets geschreven. Los de fouten op (pnpm wiki:tips) en probeer opnieuw.');
     process.exit(1);
   }
 
@@ -125,7 +142,7 @@ async function main() {
   const rows = new Map((data as Row[]).map((r) => [r.slug, r]));
 
   let changes = 0;
-  for (const file of files) {
+  for (const file of tipsOnly ? [] : files) {
     const existing = rows.get(file.slug);
     const want = desiredRow(file, existing);
     const patch: Record<string, unknown> = Object.fromEntries(
@@ -170,10 +187,81 @@ async function main() {
     }
   }
 
-  for (const slug of rows.keys()) {
+  for (const slug of tipsOnly ? [] : rows.keys()) {
     if (!slugs.has(slug)) console.warn(`! ${slug} staat in de database maar niet in content/wiki/ (niet verwijderd)`);
   }
   console.log(`\n${changes} ${changes === 1 ? 'artikel' : 'artikelen'} ${write ? 'geschreven' : 'zouden veranderen (proefrun; --write om te schrijven)'}.`);
+
+  await syncTips(sb, write, tipFiles.map((t) => t.file), new Map(all.map((f) => [f.slug, f.category])));
+}
+
+/**
+ * @ai-gotcha: Niet `same()`. Postgres bewaart jsonb met de sleutels in zijn eigen volgorde (kort voor
+ *   lang), dus JSON.stringify van wat terugkomt is nooit gelijk aan dat van het bestand, en elke sync
+ *   zou dan alle tips opnieuw schrijven. Hier per taal vergeleken.
+ */
+function sameTexts(a: unknown, b: unknown): boolean {
+  const x = (a ?? {}) as Record<string, { title?: string; body?: string }>;
+  const y = (b ?? {}) as Record<string, { title?: string; body?: string }>;
+  const langs = new Set([...Object.keys(x), ...Object.keys(y)]);
+  return [...langs].every((l) => x[l]?.title === y[l]?.title && x[l]?.body === y[l]?.body);
+}
+
+type TipRow = { id: string; article_slug: string; category: string; kind: string; texts: unknown; is_published: boolean };
+
+/**
+ * Van `content/tips/` naar `wiki_tips` (Carve-AI ADR-104).
+ *
+ * @ai-why: Een tip die niet meer in de bestanden staat, gaat op `is_published = false` en wordt niet
+ *   verwijderd. De app vervangt een ingeplande tip die niet meer gepubliceerd is bij de volgende
+ *   planning; een verwijderde rij zou hetzelfde doen, maar dan is hij niet terug te zetten.
+ * @ai-gotcha: De proefrun leest met de anon-sleutel en ziet dus geen ongepubliceerde tips. Een "+"
+ *   kan met --write een bestaande verborgen tip weer publiceren; dat is precies wat het moet doen.
+ */
+async function syncTips(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  sb: SupabaseClient<any, any, any>,
+  write: boolean,
+  files: TipFile[],
+  categoryOf: Map<string, string>,
+) {
+  const { data, error } = await sb.from('wiki_tips').select('id, article_slug, category, kind, texts, is_published');
+  if (error) throw error;
+  const rows = new Map((data as TipRow[]).map((r) => [r.id, r]));
+
+  const desired: TipRow[] = files.flatMap((f) =>
+    f.tips.map((t) => ({
+      id: tipId(f.article, t.key),
+      article_slug: f.article,
+      category: categoryOf.get(f.article) ?? '',
+      kind: t.kind,
+      texts: t.texts,
+      is_published: true,
+    })),
+  );
+  const ids = new Set(desired.map((d) => d.id));
+
+  const changed = desired.filter((d) => {
+    const r = rows.get(d.id);
+    return !r || r.article_slug !== d.article_slug || r.category !== d.category || r.kind !== d.kind || !r.is_published || !sameTexts(r.texts, d.texts);
+  });
+  const retired = [...rows.values()].filter((r) => r.is_published && !ids.has(r.id));
+
+  changed.forEach((d) => console.log(`${rows.has(d.id) ? '~' : '+'} tip ${d.id}`));
+  retired.forEach((r) => console.log(`- tip ${r.id} (niet meer gepubliceerd)`));
+
+  if (write) {
+    for (let i = 0; i < changed.length; i += 200) {
+      const { error: e } = await sb.from('wiki_tips').upsert(changed.slice(i, i + 200), { onConflict: 'id' });
+      if (e) throw new Error(`tips: ${e.message}`);
+    }
+    if (retired.length) {
+      const { error: e } = await sb.from('wiki_tips').update({ is_published: false }).in('id', retired.map((r) => r.id));
+      if (e) throw new Error(`tips: ${e.message}`);
+    }
+  }
+  const total = desired.length;
+  console.log(`${changed.length + retired.length} van ${total} tips ${write ? 'geschreven' : 'zouden veranderen (proefrun)'}.`);
 }
 
 main().catch((e) => {

@@ -1,0 +1,169 @@
+article: mind-muscle-connection
+tips:
+  - key: emg
+    kind: fact
+    en:
+      title: "Mind-muscle connection"
+      body: "Focusing on the muscle you train can raise its activation in EMG studies, mostly in isolation lifts with moderate loads."
+    nl:
+      title: "Mind-muscle connection"
+      body: "Focussen op de spier die je traint kan in EMG-studies de activatie verhogen, vooral bij isolatieoefeningen met gemiddeld gewicht."
+    de:
+      title: "Mind-Muscle-Connection"
+      body: "Der Fokus auf den Zielmuskel kann in EMG-Studien seine Aktivierung erhöhen, vor allem bei Isolationsübungen mit mittleren Lasten."
+    es:
+      title: "Conexión mente-músculo"
+      body: "Centrarte en el músculo que entrenas puede subir su activación en estudios de EMG, sobre todo en aislamiento con cargas moderadas."
+    fr:
+      title: "Connexion muscle-cerveau"
+      body: "Se concentrer sur le muscle travaillé peut augmenter son activation dans les études EMG, surtout en isolation avec des charges moyennes."
+    pt:
+      title: "Ligação mente-músculo"
+      body: "Focar no músculo que treinas pode aumentar a ativação em estudos de EMG, sobretudo no isolamento com cargas moderadas."
+    tr:
+      title: "Zihin-kas bağlantısı"
+      body: "Çalıştırdığın kasa odaklanmak, EMG çalışmalarında aktivasyonu artırabilir. Bu en çok orta yüklü izolasyon hareketlerinde görülür."
+
+  - key: geen-vervanging
+    kind: myth
+    en:
+      title: "Myth: feeling the muscle beats adding weight"
+      body: "Not true. Mind-muscle connection goes alongside more load or reps over time. It doesn't replace progressive overload."
+    nl:
+      title: "Mythe: voelen is beter dan zwaarder gaan"
+      body: "Klopt niet. Mind-muscle connection hoort naast meer gewicht of herhalingen te gaan. Het vervangt progressieve overload niet."
+    de:
+      title: "Mythos: Spüren schlägt mehr Gewicht"
+      body: "Stimmt nicht. Die Mind-Muscle-Connection gehört neben mehr Gewicht oder Wiederholungen. Sie ersetzt progressive Überlastung nicht."
+    es:
+      title: "Mito: sentir el músculo vale más que subir peso"
+      body: "No es cierto. La conexión mente-músculo va junto a subir peso o repeticiones. No sustituye a la sobrecarga progresiva."
+    fr:
+      title: "Mythe : sentir le muscle vaut mieux que charger"
+      body: "Faux. La connexion muscle-cerveau accompagne la hausse de charge ou de reps. Elle ne remplace pas la surcharge progressive."
+    pt:
+      title: "Mito: sentir o músculo vale mais que subir peso"
+      body: "Não é verdade. A ligação mente-músculo anda a par com mais peso ou repetições. Não substitui a sobrecarga progressiva."
+    tr:
+      title: "Efsane: kası hissetmek ağırlık artırmaktan iyi"
+      body: "Doğru değil. Zihin-kas bağlantısı ağırlık ya da tekrar artışıyla birlikte gider. Progresif yüklenmenin yerini tutmaz."
+
+  - key: gevoel-kwijt
+    kind: fact
+    en:
+      title: "Lost the feel mid-set?"
+      body: "Slow the lowering for a rep or two to find your technique again, then go back to your normal tempo."
+    nl:
+      title: "Gevoel kwijt midden in je set?"
+      body: "Laat het gewicht een of twee herhalingen langzamer zakken om je techniek terug te vinden. Daarna weer je normale tempo."
+    de:
+      title: "Gefühl mitten im Satz weg?"
+      body: "Lass das Gewicht ein, zwei Wiederholungen langsamer ab, um deine Technik wiederzufinden. Dann zurück zum normalen Tempo."
+    es:
+      title: "¿Sin sensación a mitad de serie?"
+      body: "Baja más lento una o dos repeticiones para recuperar la técnica y luego vuelve a tu ritmo normal."
+    fr:
+      title: "Plus de sensation en pleine série ?"
+      body: "Ralentis la descente sur une ou deux reps pour retrouver ta technique, puis reviens à ton tempo normal."
+    pt:
+      title: "Perdeste a sensação a meio da série?"
+      body: "Desce mais devagar numa ou duas repetições para recuperar a técnica e depois volta ao teu ritmo normal."
+    tr:
+      title: "Set ortasında his kayboldu mu?"
+      body: "Tekniğini yeniden bulmak için bir iki tekrar boyunca daha yavaş indir, sonra normal tempona dön."
+
+  - key: aanwijzingen
+    kind: fact
+    en:
+      title: "Cues that steer tension"
+      body: "Simple cues help. Try 'drive your elbows toward your hips' on rows, or 'press through mid-foot' on squats."
+    nl:
+      title: "Aanwijzingen die sturen"
+      body: "Simpele aanwijzingen helpen. Denk bij roeien 'ellebogen richting je heupen' en bij squats 'duw door het midden van je voet'."
+    de:
+      title: "Hinweise, die lenken"
+      body: "Einfache Hinweise helfen. Beim Rudern: 'Ellbogen Richtung Hüfte', bei Kniebeugen: 'durch die Fußmitte drücken'."
+    es:
+      title: "Pistas que dirigen la tensión"
+      body: "Las pistas simples ayudan. En el remo, 'lleva los codos hacia la cadera'. En la sentadilla, 'empuja con el medio del pie'."
+    fr:
+      title: "Des repères qui guident"
+      body: "Des consignes simples aident. Au rowing, 'coudes vers les hanches'. Au squat, 'pousse par le milieu du pied'."
+    pt:
+      title: "Pistas que guiam a tensão"
+      body: "Pistas simples ajudam. No remo, 'leva os cotovelos às ancas'. No agachamento, 'empurra pelo meio do pé'."
+    tr:
+      title: "Gerilimi yönlendiren ipuçları"
+      body: "Basit ipuçları işe yarar. Row'da 'dirsekleri kalçaya doğru sür', squat'ta 'ayağın ortasından it' diye düşün."
+
+  - key: filmen
+    kind: fact
+    en:
+      title: "Film your key sets"
+      body: "Film your key sets to check that the tension stays where you want it, and that your joint angles and bar path look right."
+    nl:
+      title: "Film je belangrijke sets"
+      body: "Film je belangrijkste sets om te checken of de spanning blijft waar je wilt, en of je gewrichtshoeken en stangbaan kloppen."
+    de:
+      title: "Filme deine wichtigen Sätze"
+      body: "Filme deine wichtigsten Sätze, um zu prüfen, ob die Spannung bleibt, wo sie soll, und ob Gelenkwinkel und Stangenweg stimmen."
+    es:
+      title: "Grábate en las series clave"
+      body: "Graba tus series clave para ver si la tensión se queda donde quieres y si los ángulos y la trayectoria de la barra van bien."
+    fr:
+      title: "Filme tes séries clés"
+      body: "Filme tes séries clés pour vérifier que la tension reste où tu veux, et que tes angles et la trajectoire de la barre sont bons."
+    pt:
+      title: "Filma as séries principais"
+      body: "Filma as tuas séries principais para ver se a tensão fica onde queres e se os ângulos e a trajetória da barra estão certos."
+    tr:
+      title: "Önemli setlerini çek"
+      body: "Gerilimin istediğin yerde kalıp kalmadığını, eklem açılarını ve bar yolunu kontrol etmek için önemli setlerini videoya çek."
+
+  - key: heel-licht
+    kind: myth
+    en:
+      title: "Myth: go very light to feel the muscle"
+      body: "Not quite. Chasing the feel with very light loads and never getting near failure is a common mistake. Aim for 1 to 3 reps in reserve."
+    nl:
+      title: "Mythe: ga heel licht om de spier te voelen"
+      body: "Niet helemaal. Heel licht gaan en nooit in de buurt van falen komen is een veelgemaakte fout. Mik op 1 tot 3 herhalingen over."
+    de:
+      title: "Mythos: ganz leicht, um den Muskel zu spüren"
+      body: "Nicht ganz. Mit sehr leichten Lasten nie nah ans Versagen zu kommen ist ein häufiger Fehler. Ziel: 1 bis 3 Wiederholungen in Reserve."
+    es:
+      title: "Mito: muy ligero para sentir el músculo"
+      body: "No del todo. Ir muy ligero sin acercarte nunca al fallo es un error común. Busca dejar 1 a 3 repeticiones en reserva."
+    fr:
+      title: "Mythe : très léger pour sentir le muscle"
+      body: "Pas tout à fait. Aller très léger sans jamais approcher l'échec est une erreur courante. Vise 1 à 3 reps en réserve."
+    pt:
+      title: "Mito: muito leve para sentir o músculo"
+      body: "Não bem. Ir muito leve sem nunca chegar perto da falha é um erro comum. Aponta para 1 a 3 repetições de reserva."
+    tr:
+      title: "Efsane: kası hissetmek için çok hafif çalış"
+      body: "Tam değil. Çok hafif yüklerle tükenişe hiç yaklaşmamak yaygın bir hata. 1 ila 3 tekrar yedekte bırakmayı hedefle."
+
+  - key: stabiel
+    kind: fact
+    en:
+      title: "Lock in first"
+      body: "Set up pads, benches and bracing before each set. Less wobble means less tension leaking away from the target muscle."
+    nl:
+      title: "Eerst stevig staan"
+      body: "Zet pads, bank en je core goed vast voor elke set. Minder wiebelen betekent minder spanning die weglekt van de spier die je traint."
+    de:
+      title: "Erst stabil werden"
+      body: "Stell Polster, Bank und Rumpfspannung vor jedem Satz ein. Weniger Wackeln heißt weniger Spannung, die dem Zielmuskel verloren geht."
+    es:
+      title: "Primero, estabilidad"
+      body: "Ajusta almohadillas, banco y abdomen antes de cada serie. Menos bamboleo es menos tensión que se escapa del músculo objetivo."
+    fr:
+      title: "D'abord, bien se caler"
+      body: "Règle pads, banc et gainage avant chaque série. Moins tu bouges, moins la tension fuit du muscle visé."
+    pt:
+      title: "Primeiro, estabilidade"
+      body: "Ajusta almofadas, banco e abdómen antes de cada série. Menos oscilação é menos tensão a fugir do músculo alvo."
+    tr:
+      title: "Önce sabitlen"
+      body: "Her setten önce pedleri, sehpayı ve karın sıkılığını ayarla. Daha az sallanma, hedef kastan daha az gerilim kaçması demek."

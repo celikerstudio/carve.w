@@ -1,0 +1,145 @@
+article: drop-sets
+tips:
+  - key: hoe-het-werkt
+    kind: fact
+    en:
+      title: "Drop sets"
+      body: "After a near-failure set, drop the weight 10 to 25% and keep going. One or two drops is enough."
+    nl:
+      title: "Dropsets"
+      body: "Na een set tot vlak bij falen haal je er 10 tot 25% gewicht af en ga je door. Een of twee drops is genoeg."
+    de:
+      title: "Drop-Sätze"
+      body: "Nach einem Satz knapp vor dem Versagen nimmst du 10 bis 25% Gewicht runter und machst weiter. Ein oder zwei Drops reichen."
+    es:
+      title: "Series descendentes"
+      body: "Tras una serie cerca del fallo, baja el peso un 10 a 25% y sigue. Con una o dos bajadas basta."
+    fr:
+      title: "Les drop sets"
+      body: "Après une série proche de l'échec, retire 10 à 25% de la charge et continue. Une ou deux baisses suffisent."
+    pt:
+      title: "Drop sets"
+      body: "Depois de uma série perto da falha, tira 10 a 25% ao peso e continua. Uma ou duas descidas chegam."
+    tr:
+      title: "Drop setler"
+      body: "Tükenişe yakın bir setten sonra ağırlığı %10 ila 25 düşür ve devam et. Bir ya da iki düşüş yeterli."
+
+  - key: waar-ze-passen
+    kind: fact
+    en:
+      title: "Where drop sets fit"
+      body: "Use them on curls, laterals or leg extensions. Keep them out of heavy compound lifts that load your spine."
+    nl:
+      title: "Waar dropsets passen"
+      body: "Gebruik ze bij curls, laterals of leg extensions. Houd ze weg bij zware basisoefeningen die je rug belasten."
+    de:
+      title: "Wo Drop-Sätze passen"
+      body: "Nutz sie bei Curls, Seitheben oder Beinstrecken. Lass sie bei schweren Grundübungen weg, die deine Wirbelsäule belasten."
+    es:
+      title: "Dónde encajan"
+      body: "Úsalas en curls, elevaciones laterales o extensiones de pierna. Evítalas en básicos pesados que cargan la columna."
+    fr:
+      title: "Où placer les drop sets"
+      body: "Utilise-les sur les curls, les élévations latérales ou le leg extension. Évite les gros polyarticulaires qui chargent ton dos."
+    pt:
+      title: "Onde encaixam"
+      body: "Usa-os em curls, elevações laterais ou extensões de pernas. Deixa-os de fora dos básicos pesados que carregam a coluna."
+    tr:
+      title: "Drop setler nereye uyar"
+      body: "Curl, yana açış ya da leg extension'da kullan. Omurganı yükleyen ağır temel hareketlerde kullanma."
+
+  - key: niet-elke-set
+    kind: myth
+    en:
+      title: "Myth: make every set a drop set"
+      body: "Not true. They spike fatigue in the muscle, so turning every set into drops wrecks your recovery. Save them for the last set."
+    nl:
+      title: "Mythe: maak van elke set een dropset"
+      body: "Klopt niet. Ze geven veel lokale vermoeidheid, dus van elke set een dropset maken sloopt je herstel. Bewaar ze voor de laatste set."
+    de:
+      title: "Mythos: jeder Satz als Drop-Satz"
+      body: "Stimmt nicht. Sie ermüden den Muskel stark, also ruinieren Drops in jedem Satz deine Erholung. Heb sie dir für den letzten Satz auf."
+    es:
+      title: "Mito: cada serie, descendente"
+      body: "No es cierto. Disparan la fatiga local, así que hacerlas en cada serie arruina tu recuperación. Guárdalas para la última serie."
+    fr:
+      title: "Mythe : un drop set à chaque série"
+      body: "Faux. Ils font grimper la fatigue locale, donc en mettre sur chaque série ruine ta récupération. Garde-les pour la dernière série."
+    pt:
+      title: "Mito: fazer drop set em todas as séries"
+      body: "Não é verdade. Disparam a fadiga local, por isso fazê-los em todas as séries arrasa a recuperação. Guarda-os para a última série."
+    tr:
+      title: "Efsane: her set drop set olmalı"
+      body: "Doğru değil. Kastaki yorgunluğu hızla artırırlar, her seti drop sete çevirmek toparlanmanı mahveder. Onları son sete sakla."
+
+  - key: let-op-hoofdlifts
+    kind: fact
+    en:
+      title: "Watch your main lifts"
+      body: "If your main lifts start to suffer, cut back on drop sets or skip them for a while."
+    nl:
+      title: "Let op je hoofdoefeningen"
+      body: "Gaan je hoofdoefeningen achteruit, doe dan minder dropsets of sla ze een tijdje over."
+    de:
+      title: "Achte auf deine Hauptübungen"
+      body: "Leiden deine Hauptübungen, mach weniger Drop-Sätze oder lass sie eine Weile weg."
+    es:
+      title: "Vigila tus básicos"
+      body: "Si tus ejercicios principales empiezan a resentirse, haz menos series descendentes o sáltatelas un tiempo."
+    fr:
+      title: "Surveille tes exercices clés"
+      body: "Si tes exercices principaux commencent à en souffrir, fais moins de drop sets ou laisse-les de côté un moment."
+    pt:
+      title: "Atenção aos exercícios principais"
+      body: "Se os teus exercícios principais começarem a sofrer, faz menos drop sets ou salta-os durante um tempo."
+    tr:
+      title: "Ana hareketlerine dikkat"
+      body: "Ana hareketlerin kötüleşmeye başlarsa drop setleri azalt ya da bir süre atla."
+
+  - key: techniek-onder-vermoeidheid
+    kind: fact
+    en:
+      title: "Form under the burn"
+      body: "Keep your form tight as the burn builds. Sloppy reps late in a drop set give you less out of it."
+    nl:
+      title: "Techniek als het brandt"
+      body: "Houd je techniek strak als het begint te branden. Slordige reps aan het eind van een dropset leveren minder op."
+    de:
+      title: "Technik, wenn es brennt"
+      body: "Halt deine Technik sauber, wenn das Brennen kommt. Schlampige Wiederholungen am Ende eines Drop-Satzes bringen weniger."
+    es:
+      title: "Técnica cuando quema"
+      body: "Mantén la técnica firme cuando empiece a quemar. Las reps descuidadas al final de una descendente rinden menos."
+    fr:
+      title: "La technique quand ça brûle"
+      body: "Garde une technique propre quand ça commence à brûler. Des reps bâclées en fin de drop set rapportent moins."
+    pt:
+      title: "Técnica quando arde"
+      body: "Mantém a técnica firme quando começa a arder. Repetições desleixadas no fim de um drop set rendem menos."
+    tr:
+      title: "Yanma başlayınca teknik"
+      body: "Yanma artarken tekniğini sıkı tut. Drop setin sonundaki özensiz tekrarlar sana daha az kazandırır."
+
+  - key: korte-sessies
+    kind: fact
+    en:
+      title: "More work, same time"
+      body: "Drop sets add stress and time under tension to a muscle without making your session long."
+    nl:
+      title: "Meer werk, zelfde tijd"
+      body: "Dropsets geven een spier extra prikkel en tijd onder spanning zonder dat je training lang wordt."
+    de:
+      title: "Mehr Arbeit, gleiche Zeit"
+      body: "Drop-Sätze geben einem Muskel mehr Reiz und Zeit unter Spannung, ohne dass dein Training lang wird."
+    es:
+      title: "Más trabajo, mismo tiempo"
+      body: "Las series descendentes añaden estrés y tiempo bajo tensión al músculo sin alargar tu sesión."
+    fr:
+      title: "Plus de travail, même durée"
+      body: "Les drop sets ajoutent du stress et du temps sous tension au muscle sans rallonger ta séance."
+    pt:
+      title: "Mais trabalho, mesmo tempo"
+      body: "Os drop sets juntam estímulo e tempo sob tensão ao músculo sem tornar o treino longo."
+    tr:
+      title: "Daha çok iş, aynı süre"
+      body: "Drop setler antrenmanını uzatmadan kasa ek stres ve gerilim altında süre katar."

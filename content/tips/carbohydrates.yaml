@@ -1,0 +1,217 @@
+article: carbohydrates
+tips:
+  - key: koolhydraten-maken-dik
+    kind: myth
+    en:
+      title: "Myth: carbs make you fat"
+      body: "Not more than other calories. In 32 studies where all food was provided, swapping carbs for fat at equal calories did not burn more fat."
+    nl:
+      title: "Mythe: koolhydraten maken dik"
+      body: "Niet meer dan andere calorieën. In 32 studies waarin al het eten werd verstrekt, gaf minder koolhydraten bij gelijke calorieën niet meer vetverlies."
+    de:
+      title: "Mythos: Kohlenhydrate machen dick"
+      body: "Nicht mehr als andere Kalorien. In 32 Studien mit gestelltem Essen brachte weniger Kohlenhydrate bei gleichen Kalorien keinen extra Fettverlust."
+    es:
+      title: "Mito: los carbohidratos engordan"
+      body: "No más que otras calorías. En 32 estudios con toda la comida controlada, cambiar carbohidratos por grasa con las mismas calorías no quemó más grasa."
+    fr:
+      title: "Mythe : les glucides font grossir"
+      body: "Pas plus que d'autres calories. Dans 32 études où tout le repas était fourni, remplacer glucides par graisses à calories égales n'a pas brûlé plus de gras."
+    pt:
+      title: "Mito: os hidratos engordam"
+      body: "Não mais do que outras calorias. Em 32 estudos com a comida toda fornecida, trocar hidratos por gordura com as mesmas calorias não queimou mais gordura."
+    tr:
+      title: "Efsane: karbonhidrat şişmanlatır"
+      body: "Diğer kalorilerden fazla değil. Tüm yemeğin verildiği 32 çalışmada, aynı kaloride karbonhidratı yağla değiştirmek daha fazla yağ yakmadı."
+
+  - key: keto-verbrandt-meer
+    kind: myth
+    en:
+      title: "Myth: keto burns more fat"
+      body: "Not when calories and protein are the same. People on keto often just eat less without trying, because it can curb your appetite."
+    nl:
+      title: "Mythe: keto verbrandt meer vet"
+      body: "Niet bij dezelfde calorieën en eiwitten. Mensen op keto eten vaak gewoon minder zonder het te merken, omdat het je trek kan remmen."
+    de:
+      title: "Mythos: Keto verbrennt mehr Fett"
+      body: "Nicht bei gleichen Kalorien und gleichem Eiweiß. Viele essen mit Keto einfach weniger, ohne es zu merken, weil es den Appetit dämpfen kann."
+    es:
+      title: "Mito: la keto quema más grasa"
+      body: "No con las mismas calorías y proteína. En keto mucha gente come menos sin darse cuenta, porque puede quitarte el hambre."
+    fr:
+      title: "Mythe : le keto brûle plus de gras"
+      body: "Pas à calories et protéines égales. En keto, on mange souvent moins sans s'en rendre compte, car ça peut couper l'appétit."
+    pt:
+      title: "Mito: a keto queima mais gordura"
+      body: "Não com as mesmas calorias e proteína. Na keto muita gente come menos sem dar por isso, porque pode tirar-te o apetite."
+    tr:
+      title: "Efsane: keto daha çok yağ yakar"
+      body: "Kalori ve protein aynıysa hayır. Keto yapanlar çoğu zaman farkında olmadan daha az yer, çünkü iştahını bastırabilir."
+
+  - key: glycogeenvoorraad
+    kind: fact
+    en:
+      title: "Your carb stores"
+      body: "You store about 80 to 100 g of carbs in your liver and 300 to 400 g in your muscles. That glycogen is a main fuel for lifting."
+    nl:
+      title: "Je koolhydraatvoorraad"
+      body: "Je slaat zo'n 80 tot 100 gram koolhydraten op in je lever en 300 tot 400 gram in je spieren. Dat glycogeen is een hoofdbrandstof bij krachttraining."
+    de:
+      title: "Deine Kohlenhydratspeicher"
+      body: "Du speicherst etwa 80 bis 100 g Kohlenhydrate in der Leber und 300 bis 400 g in den Muskeln. Dieses Glykogen ist ein Haupttreibstoff beim Krafttraining."
+    es:
+      title: "Tus reservas de carbohidratos"
+      body: "Guardas unos 80 a 100 g de carbohidratos en el hígado y 300 a 400 g en los músculos. Ese glucógeno es un combustible clave para levantar pesas."
+    fr:
+      title: "Tes réserves de glucides"
+      body: "Tu stockes environ 80 à 100 g de glucides dans le foie et 300 à 400 g dans tes muscles. Ce glycogène est un carburant clé pour la muscu."
+    pt:
+      title: "As tuas reservas de hidratos"
+      body: "Guardas cerca de 80 a 100 g de hidratos no fígado e 300 a 400 g nos músculos. Esse glicogénio é um combustível principal no treino de força."
+    tr:
+      title: "Karbonhidrat depoların"
+      body: "Karaciğerinde yaklaşık 80 ila 100 g, kaslarında 300 ila 400 g karbonhidrat depolarsın. Bu glikojen ağırlık antrenmanının ana yakıtlarından biri."
+
+  - key: low-fat-of-low-carb
+    kind: fact
+    en:
+      title: "Low-fat or low-carb?"
+      body: "In a year-long trial with 609 adults, a healthy low-fat diet lost 5.3 kg and a healthy low-carb diet 6.0 kg. Not a real difference."
+    nl:
+      title: "Vetarm of koolhydraatarm?"
+      body: "In een proef van een jaar met 609 volwassenen viel de gezonde vetarme groep 5,3 kilo af en de koolhydraatarme 6,0 kilo. Geen echt verschil."
+    de:
+      title: "Fettarm oder Low Carb?"
+      body: "In einer einjährigen Studie mit 609 Erwachsenen nahm die gesunde fettarme Gruppe 5,3 kg ab, die Low-Carb-Gruppe 6,0 kg. Kein echter Unterschied."
+    es:
+      title: "¿Bajo en grasa o en carbohidratos?"
+      body: "En un ensayo de un año con 609 adultos, la dieta sana baja en grasa perdió 5,3 kg y la baja en carbohidratos 6,0 kg. Sin diferencia real."
+    fr:
+      title: "Pauvre en gras ou en glucides ?"
+      body: "Dans un essai d'un an sur 609 adultes, le régime sain pauvre en gras a fait perdre 5,3 kg et le low carb 6,0 kg. Pas de vraie différence."
+    pt:
+      title: "Pouca gordura ou poucos hidratos?"
+      body: "Num ensaio de um ano com 609 adultos, a dieta saudável com pouca gordura perdeu 5,3 kg e a de poucos hidratos 6,0 kg. Sem diferença real."
+    tr:
+      title: "Az yağ mı, az karbonhidrat mı?"
+      body: "609 yetişkinle bir yıl süren bir denemede sağlıklı az yağlı diyet 5,3 kg, az karbonhidratlı diyet 6,0 kg verdirdi. Gerçek bir fark yok."
+
+  - key: lifters-weinig-nodig
+    kind: myth
+    en:
+      title: "Myth: lifters need 3 to 7 g of carbs per kg"
+      body: "Not necessarily. That advice is mostly borrowed from endurance research. In 15 of 17 lifting studies, carb intake made no difference to strength."
+    nl:
+      title: "Mythe: krachtsporters hebben 3 tot 7 g/kg nodig"
+      body: "Niet per se. Dat advies komt vooral uit duursportonderzoek. In 15 van 17 studies met krachttraining maakte de hoeveelheid koolhydraten niets uit voor kracht."
+    de:
+      title: "Mythos: Kraftsportler brauchen 3 bis 7 g/kg"
+      body: "Nicht unbedingt. Der Rat stammt vor allem aus der Ausdauerforschung. In 15 von 17 Kraftstudien änderte die Kohlenhydratmenge nichts an der Kraft."
+    es:
+      title: "Mito: si entrenas fuerza necesitas 3 a 7 g/kg"
+      body: "No necesariamente. Ese consejo viene sobre todo de estudios de resistencia. En 15 de 17 estudios de fuerza, los carbohidratos no cambiaron la fuerza."
+    fr:
+      title: "Mythe : en muscu, il faut 3 à 7 g/kg de glucides"
+      body: "Pas forcément. Ce conseil vient surtout de la recherche en endurance. Dans 15 études sur 17 en muscu, la quantité de glucides n'a rien changé à la force."
+    pt:
+      title: "Mito: no treino de força precisas de 3 a 7 g/kg"
+      body: "Não necessariamente. Esse conselho vem sobretudo de estudos de resistência. Em 15 de 17 estudos de força, os hidratos não mudaram a força."
+    tr:
+      title: "Efsane: ağırlıkta 3-7 g/kg karbonhidrat şart"
+      body: "Şart değil. Bu öneri çoğunlukla dayanıklılık araştırmalarından geliyor. 17 ağırlık çalışmasının 15'inde karbonhidrat miktarı gücü değiştirmedi."
+
+  - key: keto-en-vetvrije-massa
+    kind: fact
+    en:
+      title: "Keto and the scale"
+      body: "Lifters on keto lost about 1.3 kg more fat-free mass than on other diets. Part of that is water and stored carbs, which drop on keto."
+    nl:
+      title: "Keto en de weegschaal"
+      body: "Krachtsporters op keto verloren zo'n 1,3 kilo meer vetvrije massa dan op andere diëten. Een deel is water en opgeslagen koolhydraten, die zakken op keto."
+    de:
+      title: "Keto und die Waage"
+      body: "Kraftsportler mit Keto verloren etwa 1,3 kg mehr fettfreie Masse. Ein Teil davon ist Wasser und gespeicherte Kohlenhydrate, die bei Keto sinken."
+    es:
+      title: "La keto y la báscula"
+      body: "Quienes entrenaban fuerza en keto perdieron 1,3 kg más de masa libre de grasa. Parte es agua y carbohidratos guardados, que bajan con la keto."
+    fr:
+      title: "Le keto et la balance"
+      body: "En muscu, le keto a fait perdre environ 1,3 kg de masse maigre en plus. Une partie, c'est de l'eau et des glucides stockés, qui baissent en keto."
+    pt:
+      title: "A keto e a balança"
+      body: "Quem treinava força em keto perdeu cerca de 1,3 kg a mais de massa magra. Parte disso é água e hidratos guardados, que descem na keto."
+    tr:
+      title: "Keto ve tartı"
+      body: "Ketoda ağırlık yapanlar yaklaşık 1,3 kg daha fazla yağsız kütle kaybetti. Bunun bir kısmı ketoda azalan su ve depolanmış karbonhidrat."
+
+  - key: vezelrijke-koolhydraten
+    kind: fact
+    en:
+      title: "The best carbs"
+      body: "In observational studies, people who ate the most fibre had a 15 to 30% lower risk of dying from any cause. The biggest gain was at 25 to 29 g a day."
+    nl:
+      title: "De beste koolhydraten"
+      body: "In observationeel onderzoek hadden de grootste vezeleters 15 tot 30% minder kans om te overlijden. Het meeste voordeel zat bij 25 tot 29 gram per dag."
+    de:
+      title: "Die besten Kohlenhydrate"
+      body: "In Beobachtungsstudien hatten Leute mit den meisten Ballaststoffen ein 15 bis 30% geringeres Sterberisiko. Am meisten bei 25 bis 29 g am Tag."
+    es:
+      title: "Los mejores carbohidratos"
+      body: "En estudios observacionales, quienes comían más fibra tenían un 15 a 30% menos de riesgo de morir. El mayor beneficio, con 25 a 29 g al día."
+    fr:
+      title: "Les meilleurs glucides"
+      body: "Dans des études d'observation, ceux qui mangeaient le plus de fibres avaient 15 à 30% de risque de décès en moins. Surtout vers 25 à 29 g par jour."
+    pt:
+      title: "Os melhores hidratos"
+      body: "Em estudos observacionais, quem comia mais fibra tinha um risco de morte 15 a 30% menor. O maior benefício surgiu com 25 a 29 g por dia."
+    tr:
+      title: "En iyi karbonhidratlar"
+      body: "Gözlemsel çalışmalarda en çok lif yiyenlerin ölüm riski yüzde 15 ila 30 daha düşüktü. En büyük fayda günde 25 ila 29 g'da görüldü."
+
+  - key: glykemische-index
+    kind: fact
+    en:
+      title: "Glycaemic index"
+      body: "In a big series of reviews, the glycaemic index of foods mattered little for health."
+    nl:
+      title: "Glykemische index"
+      body: "In een grote reeks overzichtsstudies maakte de glykemische index van voeding weinig uit voor je gezondheid."
+    de:
+      title: "Glykämischer Index"
+      body: "In einer großen Reihe von Übersichtsarbeiten spielte der glykämische Index kaum eine Rolle für die Gesundheit."
+    es:
+      title: "Índice glucémico"
+      body: "En una gran serie de revisiones, el índice glucémico de los alimentos importó poco para la salud."
+    fr:
+      title: "Index glycémique"
+      body: "Dans une grande série de revues, l'index glycémique des aliments comptait peu pour la santé."
+    pt:
+      title: "Índice glicémico"
+      body: "Numa grande série de revisões, o índice glicémico dos alimentos pouco importou para a saúde."
+    tr:
+      title: "Glisemik indeks"
+      body: "Büyük bir derleme serisinde besinlerin glisemik indeksi sağlık için pek önemli değildi."
+
+  - key: timing-koolhydraten
+    kind: fact
+    en:
+      title: "When to eat carbs"
+      body: "Mostly it does not matter. Timing counts when you need to refill glycogen fast, like training twice in one day. Otherwise the daily total counts."
+    nl:
+      title: "Wanneer koolhydraten eten"
+      body: "Meestal maakt het niet uit. Timing telt als je je glycogeen snel moet aanvullen, zoals bij twee trainingen op een dag. Anders telt het dagtotaal."
+    de:
+      title: "Wann Kohlenhydrate essen"
+      body: "Meist egal. Das Timing zählt, wenn du Glykogen schnell auffüllen musst, etwa bei zwei Einheiten am Tag. Sonst zählt die Tagessumme."
+    es:
+      title: "Cuándo comer carbohidratos"
+      body: "Casi siempre da igual. El momento importa si debes recargar glucógeno rápido, como al entrenar dos veces en un día. Si no, cuenta el total diario."
+    fr:
+      title: "Quand manger des glucides"
+      body: "La plupart du temps, peu importe. Le timing compte si tu dois refaire ton glycogène vite, comme avec deux séances par jour. Sinon, c'est le total qui compte."
+    pt:
+      title: "Quando comer hidratos"
+      body: "Quase sempre tanto faz. O momento conta se precisas de repor glicogénio depressa, como ao treinar duas vezes no dia. De resto, conta o total diário."
+    tr:
+      title: "Karbonhidrat ne zaman"
+      body: "Çoğu zaman fark etmez. Glikojeni hızlı doldurman gerekiyorsa, örneğin günde iki antrenmanda, zamanlama önemli. Yoksa günlük toplam sayılır."

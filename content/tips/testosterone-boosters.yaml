@@ -1,0 +1,217 @@
+article: testosterone-boosters
+tips:
+  - key: meeste-boosters-werken-niet
+    kind: myth
+    en:
+      title: "Myth: a booster raises your testosterone"
+      body: "Mostly not. In a review of 52 studies, most boosters failed to raise total testosterone compared with placebo."
+    nl:
+      title: "Mythe: een booster verhoogt je testosteron"
+      body: "Meestal niet. In een review van 52 studies verhoogden de meeste boosters het totale testosteron niet meer dan een placebo."
+    de:
+      title: "Mythos: Ein Booster hebt dein Testosteron"
+      body: "Meist nicht. In einer Übersicht von 52 Studien hoben die meisten Booster das Gesamttestosteron nicht stärker als ein Placebo."
+    es:
+      title: "Mito: un potenciador sube tu testosterona"
+      body: "Casi nunca. En una revisión de 52 estudios, la mayoría no subió la testosterona total más que un placebo."
+    fr:
+      title: "Mythe : un booster fait monter ta testo"
+      body: "En général non. Dans une revue de 52 études, la plupart n'ont pas fait monter la testostérone totale plus qu'un placebo."
+    pt:
+      title: "Mito: um booster sobe a tua testosterona"
+      body: "Quase nunca. Numa revisão de 52 estudos, a maioria não subiu a testosterona total mais do que um placebo."
+    tr:
+      title: "Efsane: booster testosteronunu artırır"
+      body: "Çoğunlukla hayır. 52 çalışmalık bir derlemede çoğu booster toplam testosteronu plasebodan fazla artırmadı."
+
+  - key: tribulus
+    kind: myth
+    en:
+      title: "Myth: tribulus makes you stronger"
+      body: "Probably not. Several human studies found no effect on strength or body composition during resistance training."
+    nl:
+      title: "Mythe: tribulus maakt je sterker"
+      body: "Waarschijnlijk niet. Meerdere studies bij mensen vonden geen effect op kracht of lichaamssamenstelling tijdens krachttraining."
+    de:
+      title: "Mythos: Tribulus macht dich stärker"
+      body: "Wahrscheinlich nicht. Mehrere Studien am Menschen fanden beim Krafttraining keinen Effekt auf Kraft oder Körperzusammensetzung."
+    es:
+      title: "Mito: el tribulus te hace más fuerte"
+      body: "Probablemente no. Varios estudios en personas no vieron efecto en la fuerza ni en la composición corporal al entrenar."
+    fr:
+      title: "Mythe : le tribulus te rend plus fort"
+      body: "Sans doute pas. Plusieurs études chez l'humain n'ont vu aucun effet sur la force ou la composition corporelle en musculation."
+    pt:
+      title: "Mito: o tribulus deixa-te mais forte"
+      body: "Provavelmente não. Vários estudos em pessoas não viram efeito na força nem na composição corporal no treino de força."
+    tr:
+      title: "Efsane: tribulus seni güçlendirir"
+      body: "Muhtemelen hayır. İnsanlarda yapılan birçok çalışma, ağırlık antrenmanında kuvvete veya vücut kompozisyonuna etki bulmadı."
+
+  - key: d-asparaginezuur
+    kind: myth
+    en:
+      title: "Myth: D-aspartic acid boosts testosterone"
+      body: "Not in men who already lift. In one study, 6 g a day for 14 days even lowered testosterone, and 3 g made no difference."
+    nl:
+      title: "Mythe: D-asparaginezuur verhoogt testosteron"
+      body: "Niet bij mannen die al trainen. In één studie verlaagde 6 gram per dag het testosteron zelfs, en 3 gram deed niks."
+    de:
+      title: "Mythos: D-Asparaginsäure hebt Testosteron"
+      body: "Nicht bei Männern, die schon trainieren. In einer Studie senkten 6 g am Tag es sogar, 3 g änderten nichts."
+    es:
+      title: "Mito: el ácido D-aspártico sube la testo"
+      body: "No en hombres que ya entrenan. En un estudio, 6 g al día durante 14 días incluso la bajaron, y 3 g no cambiaron nada."
+    fr:
+      title: "Mythe : l'acide D-aspartique booste la testo"
+      body: "Pas chez les hommes qui s'entraînent déjà. Dans une étude, 6 g par jour l'ont même fait baisser, et 3 g n'ont rien changé."
+    pt:
+      title: "Mito: o ácido D-aspártico sobe a testo"
+      body: "Não em homens que já treinam. Num estudo, 6 g por dia durante 14 dias até a baixaram, e 3 g não mudaram nada."
+    tr:
+      title: "Efsane: D-aspartik asit testosteronu artırır"
+      body: "Zaten ağırlık çalışan erkeklerde hayır. Bir çalışmada günde 6 g testosteronu düşürdü, 3 g ise fark yaratmadı."
+
+  - key: nooit-getest
+    kind: fact
+    en:
+      title: "What is in the tub"
+      body: "50 booster products held 109 different ingredients. For 67 of them there were no studies on testosterone at all."
+    nl:
+      title: "Wat er in de pot zit"
+      body: "In 50 boosters zaten 109 verschillende ingrediënten. Voor 67 daarvan was er geen enkele studie naar testosteron."
+    de:
+      title: "Was in der Dose steckt"
+      body: "50 Booster enthielten 109 verschiedene Zutaten. Für 67 davon gab es überhaupt keine Studie zu Testosteron."
+    es:
+      title: "Lo que hay en el bote"
+      body: "50 potenciadores llevaban 109 ingredientes distintos. De 67 de ellos no había ningún estudio sobre testosterona."
+    fr:
+      title: "Ce qu'il y a dans le pot"
+      body: "50 boosters contenaient 109 ingrédients différents. Pour 67 d'entre eux, aucune étude sur la testostérone n'existait."
+    pt:
+      title: "O que está na embalagem"
+      body: "50 boosters tinham 109 ingredientes diferentes. Para 67 deles não havia nenhum estudo sobre testosterona."
+    tr:
+      title: "Kutunun içinde ne var"
+      body: "50 booster üründe 109 farklı bileşen vardı. Bunların 67'si için testosteron üzerine hiç çalışma yoktu."
+
+  - key: prohormonen-doping
+    kind: fact
+    en:
+      title: "Prohormones and drug tests"
+      body: "Supplements with prohormones lead to a positive test for anabolic steroids. They also appear to have no training value."
+    nl:
+      title: "Prohormonen en dopingtests"
+      body: "Supplementen met prohormonen geven een positieve test op anabole steroïden. En ze lijken niets op te leveren voor je training."
+    de:
+      title: "Prohormone und Dopingtests"
+      body: "Präparate mit Prohormonen führen zu einem positiven Test auf Anabolika. Fürs Training scheinen sie nichts zu bringen."
+    es:
+      title: "Prohormonas y control antidopaje"
+      body: "Los suplementos con prohormonas dan positivo en esteroides anabólicos. Y no parecen aportar nada a tu entreno."
+    fr:
+      title: "Prohormones et contrôle antidopage"
+      body: "Les compléments aux prohormones donnent un test positif aux stéroïdes anabolisants. Et ils semblent sans intérêt pour l'entraînement."
+    pt:
+      title: "Pró-hormonas e controlo antidoping"
+      body: "Suplementos com pró-hormonas dão positivo para esteroides anabolizantes. E não parecem trazer nada ao treino."
+    tr:
+      title: "Prohormonlar ve doping testi"
+      body: "Prohormon içeren takviyeler anabolik steroid testinde pozitif çıkar. Antrenmana da bir katkıları yok gibi görünüyor."
+
+  - key: prohormonen-hdl
+    kind: fact
+    en:
+      title: "Prohormones and cholesterol"
+      body: "Most prohormone studies show no effect on testosterone. Some may raise estrogen and lower your HDL cholesterol."
+    nl:
+      title: "Prohormonen en cholesterol"
+      body: "De meeste studies naar prohormonen zien geen effect op testosteron. Sommige kunnen je oestrogeen verhogen en je HDL verlagen."
+    de:
+      title: "Prohormone und Cholesterin"
+      body: "Die meisten Studien zu Prohormonen zeigen keinen Effekt auf Testosteron. Manche können Östrogen heben und dein HDL senken."
+    es:
+      title: "Prohormonas y colesterol"
+      body: "Casi ningún estudio de prohormonas ve efecto en la testosterona. Algunas pueden subir el estrógeno y bajar tu HDL."
+    fr:
+      title: "Prohormones et cholestérol"
+      body: "La plupart des études sur les prohormones ne voient aucun effet sur la testo. Certaines peuvent monter l'œstrogène et baisser ton HDL."
+    pt:
+      title: "Pró-hormonas e colesterol"
+      body: "A maioria dos estudos não vê efeito das pró-hormonas na testosterona. Algumas podem subir o estrogénio e baixar o teu HDL."
+    tr:
+      title: "Prohormonlar ve kolesterol"
+      body: "Prohormon çalışmalarının çoğu testosterona etki göstermiyor. Bazıları östrojeni artırıp HDL kolesterolünü düşürebilir."
+
+  - key: laat-je-bloed-testen
+    kind: fact
+    en:
+      title: "Think your testosterone is low?"
+      body: "See your doctor. A blood test can show whether it is low, and a supplement cannot."
+    nl:
+      title: "Denk je dat je testosteron laag is?"
+      body: "Ga naar je huisarts. Een bloedtest kan laten zien of het laag is, een supplement niet."
+    de:
+      title: "Testosteron zu niedrig?"
+      body: "Geh zu deinem Arzt. Ein Bluttest kann zeigen, ob es niedrig ist, ein Supplement nicht."
+    es:
+      title: "¿Crees que tienes la testo baja?"
+      body: "Ve al médico. Un análisis de sangre puede mostrar si está baja, un suplemento no."
+    fr:
+      title: "Testo trop basse ?"
+      body: "Va voir ton médecin. Une prise de sang peut montrer si elle est basse, un complément non."
+    pt:
+      title: "Achas que tens a testo baixa?"
+      body: "Vai ao médico. Uma análise ao sangue mostra se está baixa, um suplemento não."
+    tr:
+      title: "Testosteronun düşük mü?"
+      body: "Doktoruna git. Düşük olup olmadığını bir kan testi gösterebilir, bir takviye gösteremez."
+
+  - key: zink-in-boosters
+    kind: fact
+    en:
+      title: "Boosters and zinc"
+      body: "In 50 booster products, the median zinc content was 272% of the daily allowance. 13 went over an upper intake limit."
+    nl:
+      title: "Boosters en zink"
+      body: "In 50 boosters zat gemiddeld (mediaan) 272% van de aanbevolen dagelijkse hoeveelheid zink. 13 gingen over een bovengrens heen."
+    de:
+      title: "Booster und Zink"
+      body: "50 Booster enthielten im Median 272% der empfohlenen Tagesmenge Zink. 13 lagen über einer Obergrenze."
+    es:
+      title: "Potenciadores y zinc"
+      body: "En 50 potenciadores, la mediana de zinc era el 272% de la cantidad diaria recomendada. 13 pasaban un límite máximo."
+    fr:
+      title: "Boosters et zinc"
+      body: "Dans 50 boosters, la médiane de zinc était de 272% de l'apport journalier conseillé. 13 dépassaient une limite haute."
+    pt:
+      title: "Boosters e zinco"
+      body: "Em 50 boosters, a mediana de zinco era 272% da dose diária recomendada. 13 passavam um limite máximo."
+    tr:
+      title: "Booster ve çinko"
+      body: "50 booster üründe çinko medyanı günlük önerilen miktarın %272'siydi. 13 ürün bir üst sınırı aştı."
+
+  - key: fenegriek
+    kind: fact
+    en:
+      title: "Fenugreek"
+      body: "Two small studies in lifting men found better results. The ISSN says more research is needed, so it is too early to say."
+    nl:
+      title: "Fenegriek"
+      body: "Twee kleine studies bij mannen die trainden zagen betere resultaten. Volgens de ISSN is meer onderzoek nodig, dus het is te vroeg."
+    de:
+      title: "Bockshornklee"
+      body: "Zwei kleine Studien an Männern, die trainierten, fanden bessere Ergebnisse. Laut ISSN braucht es mehr Forschung, also ist es zu früh."
+    es:
+      title: "Fenogreco"
+      body: "Dos estudios pequeños en hombres que entrenaban vieron mejores resultados. La ISSN pide más estudios, así que es pronto."
+    fr:
+      title: "Fenugrec"
+      body: "Deux petites études chez des hommes qui s'entraînaient ont vu de meilleurs résultats. L'ISSN veut plus de données, c'est trop tôt."
+    pt:
+      title: "Feno-grego"
+      body: "Dois estudos pequenos em homens que treinavam viram melhores resultados. A ISSN pede mais estudos, por isso é cedo."
+    tr:
+      title: "Çemen otu"
+      body: "Ağırlık çalışan erkeklerde iki küçük çalışma daha iyi sonuç buldu. ISSN daha fazla araştırma gerektiğini söylüyor, yani henüz erken."

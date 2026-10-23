@@ -1,0 +1,241 @@
+article: physical-activity
+tips:
+  - key: minuten-per-week
+    kind: fact
+    en:
+      title: "Moving each week"
+      body: "Aim for 150 to 300 minutes of moderate activity a week, or 75 to 150 minutes of vigorous activity. You can mix the two."
+    nl:
+      title: "Bewegen per week"
+      body: "Mik op 150 tot 300 minuten matig intensief bewegen per week, of 75 tot 150 minuten zwaar. Je mag ze ook mengen."
+    de:
+      title: "Bewegung pro Woche"
+      body: "Ziel sind 150 bis 300 Minuten moderate Bewegung pro Woche oder 75 bis 150 Minuten intensive. Du kannst beides mischen."
+    es:
+      title: "Moverte cada semana"
+      body: "Apunta a 150 a 300 minutos de actividad moderada a la semana, o 75 a 150 de actividad intensa. Puedes combinarlas."
+    fr:
+      title: "Bouger chaque semaine"
+      body: "Vise 150 à 300 minutes d'activité modérée par semaine, ou 75 à 150 minutes d'activité intense. Tu peux mélanger les deux."
+    pt:
+      title: "Mexer-te todas as semanas"
+      body: "Aponta para 150 a 300 minutos de atividade moderada por semana, ou 75 a 150 de atividade vigorosa. Podes misturar as duas."
+    tr:
+      title: "Haftalık hareket"
+      body: "Haftada 150 ila 300 dakika orta ya da 75 ila 150 dakika yüksek yoğunlukta hareket hedefle. İkisini karıştırabilirsin."
+
+  - key: wandelen
+    kind: fact
+    en:
+      title: "Does walking count?"
+      body: "Yes, if your pace feels like a 5 or 6 out of 10. Then it's moderate, and 30 minutes on five days gives you 150 minutes."
+    nl:
+      title: "Telt wandelen mee?"
+      body: "Ja, als je tempo voelt als een 5 of 6 op 10. Dan is het matig intensief, en 30 minuten op vijf dagen is 150 minuten."
+    de:
+      title: "Zählt Gehen?"
+      body: "Ja, wenn sich dein Tempo wie eine 5 oder 6 von 10 anfühlt. Dann ist es moderat, und 30 Minuten an fünf Tagen sind 150 Minuten."
+    es:
+      title: "¿Caminar cuenta?"
+      body: "Sí, si tu ritmo se siente como un 5 o 6 sobre 10. Entonces es moderado, y 30 minutos cinco días suman 150 minutos."
+    fr:
+      title: "La marche, ça compte ?"
+      body: "Oui, si ton allure ressemble à un 5 ou 6 sur 10. C'est alors modéré, et 30 minutes sur cinq jours font 150 minutes."
+    pt:
+      title: "Caminhar conta?"
+      body: "Sim, se o teu ritmo parecer um 5 ou 6 em 10. Aí é moderado, e 30 minutos em cinco dias dão 150 minutos."
+    tr:
+      title: "Yürümek sayılır mı?"
+      body: "Evet, tempon 10 üzerinden 5 ya da 6 gibi geliyorsa. O zaman orta yoğunluktadır ve beş gün 30 dakika 150 dakika eder."
+
+  - key: kracht-erbij
+    kind: fact
+    en:
+      title: "Strength on top"
+      body: "Besides your minutes, the WHO asks for strength work on 2 or more days a week, covering all your major muscle groups."
+    nl:
+      title: "Kracht erbovenop"
+      body: "Naast je minuten vraagt de WHO om krachttraining op 2 of meer dagen per week, voor al je grote spiergroepen."
+    de:
+      title: "Krafttraining dazu"
+      body: "Neben deinen Minuten rät die WHO zu Krafttraining an 2 oder mehr Tagen pro Woche, für alle großen Muskelgruppen."
+    es:
+      title: "Fuerza, además"
+      body: "Además de tus minutos, la OMS pide trabajo de fuerza 2 o más días a la semana, con todos los grandes grupos musculares."
+    fr:
+      title: "La muscu en plus"
+      body: "En plus de tes minutes, l'OMS demande du renforcement 2 jours ou plus par semaine, pour tous les grands groupes musculaires."
+    pt:
+      title: "Força por cima"
+      body: "Além dos teus minutos, a OMS pede treino de força em 2 ou mais dias por semana, com todos os grandes grupos musculares."
+    tr:
+      title: "Üstüne kuvvet"
+      body: "Dakikalarına ek olarak DSÖ, haftada 2 veya daha fazla gün tüm büyük kas gruplarını çalıştıran kuvvet antrenmanı istiyor."
+
+  - key: kracht-30-60-minuten
+    kind: fact
+    en:
+      title: "Strength and a longer life"
+      body: "Observational studies saw the biggest drop in risk of death, about 10 to 20%, at 30 to 60 minutes of strength work a week."
+    nl:
+      title: "Kracht en een langer leven"
+      body: "Observationele studies zagen de grootste daling in sterfterisico, zo'n 10 tot 20%, bij 30 tot 60 minuten krachttraining per week."
+    de:
+      title: "Kraft und ein längeres Leben"
+      body: "Beobachtungsstudien sahen den größten Rückgang des Sterberisikos, etwa 10 bis 20%, bei 30 bis 60 Minuten Krafttraining pro Woche."
+    es:
+      title: "Fuerza y una vida más larga"
+      body: "Estudios observacionales vieron la mayor bajada del riesgo de muerte, de un 10 a 20%, con 30 a 60 minutos de fuerza a la semana."
+    fr:
+      title: "Muscu et longévité"
+      body: "Des études d'observation ont vu la plus forte baisse du risque de décès, 10 à 20% environ, avec 30 à 60 min de muscu par semaine."
+    pt:
+      title: "Força e uma vida mais longa"
+      body: "Estudos observacionais viram a maior descida do risco de morte, cerca de 10 a 20%, com 30 a 60 minutos de força por semana."
+    tr:
+      title: "Kuvvet ve daha uzun ömür"
+      body: "Gözlemsel çalışmalar ölüm riskindeki en büyük düşüşü, yaklaşık %10 ila 20, haftada 30 ila 60 dakika kuvvet çalışmasında gördü."
+
+  - key: tienduizend-stappen
+    kind: myth
+    en:
+      title: "Myth: you need 10,000 steps a day"
+      body: "Not quite. In observational data, risk of dying kept falling up to about 6,000 to 8,000 steps at 60 and over, 8,000 to 10,000 if younger."
+    nl:
+      title: "Mythe: je hebt 10.000 stappen nodig"
+      body: "Niet helemaal. In observationele data daalde het sterfterisico tot zo'n 6.000 à 8.000 stappen bij 60-plussers, 8.000 à 10.000 bij jongeren."
+    de:
+      title: "Mythos: du brauchst 10.000 Schritte"
+      body: "Nicht ganz. In Beobachtungsdaten sank das Sterberisiko bis etwa 6.000 bis 8.000 Schritte ab 60, bei Jüngeren bis 8.000 bis 10.000."
+    es:
+      title: "Mito: necesitas 10.000 pasos al día"
+      body: "No del todo. En datos observacionales, el riesgo de morir bajaba hasta unos 6.000 a 8.000 pasos desde los 60, y 8.000 a 10.000 en jóvenes."
+    fr:
+      title: "Mythe : il faut 10 000 pas par jour"
+      body: "Pas tout à fait. En observation, le risque de décès baissait jusqu'à 6 000 à 8 000 pas dès 60 ans, et 8 000 à 10 000 chez les plus jeunes."
+    pt:
+      title: "Mito: precisas de 10.000 passos"
+      body: "Não exatamente. Em dados observacionais, o risco de morte descia até uns 6.000 a 8.000 passos a partir dos 60, e 8.000 a 10.000 nos mais novos."
+    tr:
+      title: "Efsane: günde 10.000 adım şart"
+      body: "Tam değil. Gözlemsel verilerde ölüm riski 60 yaş üstünde yaklaşık 6.000 ila 8.000 adıma, gençlerde 8.000 ila 10.000 adıma kadar düştü."
+
+  - key: korte-stukjes
+    kind: myth
+    en:
+      title: "Myth: under 10 minutes doesn't count"
+      body: "Not true. Since 2020 the WHO counts moderate or vigorous activity of any length. Three brisk 5-minute walks count like one of 15."
+    nl:
+      title: "Mythe: korter dan 10 minuten telt niet"
+      body: "Klopt niet. Sinds 2020 telt de WHO matig of zwaar bewegen van elke duur mee. Drie stevige wandelingen van 5 minuten tellen als één van 15."
+    de:
+      title: "Mythos: unter 10 Minuten zählt nicht"
+      body: "Stimmt nicht. Seit 2020 zählt die WHO moderate oder intensive Bewegung jeder Dauer. Drei flotte 5-Minuten-Gänge zählen wie einer mit 15."
+    es:
+      title: "Mito: menos de 10 minutos no cuenta"
+      body: "No es cierto. Desde 2020 la OMS cuenta la actividad moderada o intensa de cualquier duración. Tres paseos rápidos de 5 minutos valen como uno de 15."
+    fr:
+      title: "Mythe : moins de 10 minutes, ça ne compte pas"
+      body: "Faux. Depuis 2020, l'OMS compte l'activité modérée ou intense de toute durée. Trois marches rapides de 5 minutes valent une de 15."
+    pt:
+      title: "Mito: menos de 10 minutos não conta"
+      body: "Não é verdade. Desde 2020 a OMS conta atividade moderada ou vigorosa de qualquer duração. Três caminhadas rápidas de 5 minutos valem uma de 15."
+    tr:
+      title: "Efsane: 10 dakikanın altı sayılmaz"
+      body: "Doğru değil. 2020'den beri DSÖ her süredeki orta ya da yüksek yoğunluklu hareketi sayıyor. 5 dakikalık üç tempolu yürüyüş, 15'lik birine eşit."
+
+  - key: minder-zitten
+    kind: fact
+    en:
+      title: "Sitting less"
+      body: "Swapping sitting for movement of any intensity, light included, has health benefits. Taking a call on foot is worth it."
+    nl:
+      title: "Minder zitten"
+      body: "Zitten vervangen door bewegen van elke intensiteit, ook licht, is goed voor je gezondheid. Lopend bellen is al de moeite waard."
+    de:
+      title: "Weniger sitzen"
+      body: "Sitzen durch Bewegung jeder Intensität zu ersetzen, auch leichte, tut deiner Gesundheit gut. Schon im Gehen telefonieren lohnt sich."
+    es:
+      title: "Sentarte menos"
+      body: "Cambiar tiempo sentado por movimiento de cualquier intensidad, incluso ligero, beneficia tu salud. Hablar por teléfono caminando ya vale."
+    fr:
+      title: "Moins rester assis"
+      body: "Remplacer le temps assis par du mouvement de toute intensité, même léger, profite à ta santé. Téléphoner en marchant, ça vaut le coup."
+    pt:
+      title: "Estar menos sentado"
+      body: "Trocar tempo sentado por movimento de qualquer intensidade, mesmo leve, faz bem à saúde. Atender uma chamada a andar já vale a pena."
+    tr:
+      title: "Daha az oturmak"
+      body: "Oturmayı hafif de olsa her yoğunlukta hareketle değiştirmek sağlığına iyi gelir. Telefonla yürürken konuşmak bile değer."
+
+  - key: veel-zitten
+    kind: fact
+    en:
+      title: "If you sit a lot"
+      body: "The WHO couldn't name a safe number of sitting hours. It does say that going past 150 to 300 active minutes helps offset it."
+    nl:
+      title: "Als je veel zit"
+      body: "De WHO kon geen veilig aantal zituren noemen. Wel helpt het om boven de 150 tot 300 actieve minuten uit te komen om het te compenseren."
+    de:
+      title: "Wenn du viel sitzt"
+      body: "Die WHO konnte keine sichere Zahl an Sitzstunden nennen. Mehr als 150 bis 300 aktive Minuten helfen aber, es auszugleichen."
+    es:
+      title: "Si pasas mucho tiempo sentado"
+      body: "La OMS no pudo fijar un número seguro de horas sentado. Sí dice que pasar de 150 a 300 minutos activos ayuda a compensarlo."
+    fr:
+      title: "Si tu restes beaucoup assis"
+      body: "L'OMS n'a pas pu fixer un nombre d'heures assis sans risque. Elle dit que dépasser 150 à 300 minutes actives aide à compenser."
+    pt:
+      title: "Se passas muito tempo sentado"
+      body: "A OMS não conseguiu fixar um número seguro de horas sentado. Mas diz que passar dos 150 a 300 minutos ativos ajuda a compensar."
+    tr:
+      title: "Çok oturuyorsan"
+      body: "DSÖ güvenli bir oturma saati sınırı veremedi. Ama 150 ila 300 aktif dakikanın üstüne çıkmanın bunu dengelemeye yardım ettiğini söylüyor."
+
+  - key: beetje-telt
+    kind: fact
+    en:
+      title: "A little still counts"
+      body: "Some activity beats none. Health benefits already start below the targets, and the extra gain gets smaller at higher amounts."
+    nl:
+      title: "Een beetje telt ook"
+      body: "Een beetje bewegen is beter dan niets. De gezondheidswinst begint al onder de richtlijn, en bij veel meer wordt de extra winst kleiner."
+    de:
+      title: "Wenig zählt auch"
+      body: "Etwas Bewegung ist besser als keine. Der Nutzen beginnt schon unter den Zielwerten, und bei viel mehr wird der Zusatzgewinn kleiner."
+    es:
+      title: "Un poco también cuenta"
+      body: "Algo de actividad es mejor que nada. Los beneficios empiezan por debajo de las metas, y la ganancia extra se reduce con más cantidad."
+    fr:
+      title: "Un peu, ça compte aussi"
+      body: "Un peu d'activité vaut mieux que rien. Les bienfaits commencent sous les objectifs, et le gain en plus diminue quand tu en fais beaucoup."
+    pt:
+      title: "Um pouco também conta"
+      body: "Alguma atividade é melhor do que nenhuma. Os benefícios começam abaixo das metas, e o ganho extra diminui com quantidades maiores."
+    tr:
+      title: "Az da sayılır"
+      body: "Biraz hareket hiç yoktan iyidir. Sağlık faydası hedeflerin altında başlar, çok daha fazlasında ek kazanç küçülür."
+
+  - key: keuring-vooraf
+    kind: myth
+    en:
+      title: "Myth: get a medical check before starting"
+      body: "Not for most healthy adults. If you have a heart condition, chest pain on effort or another condition that affects exercise, ask your doctor first."
+    nl:
+      title: "Mythe: eerst een medische keuring"
+      body: "Niet voor de meeste gezonde volwassenen. Heb je een hartaandoening, pijn op de borst bij inspanning of een andere aandoening, vraag eerst je arts."
+    de:
+      title: "Mythos: erst zum ärztlichen Check"
+      body: "Nicht für die meisten gesunden Erwachsenen. Bei Herzproblemen, Brustschmerz unter Belastung oder anderen Erkrankungen frag zuerst deinen Arzt."
+    es:
+      title: "Mito: antes necesitas un chequeo médico"
+      body: "No para la mayoría de adultos sanos. Si tienes una afección cardíaca, dolor de pecho al esforzarte u otra afección, consulta antes al médico."
+    fr:
+      title: "Mythe : un bilan médical avant de commencer"
+      body: "Pas pour la plupart des adultes en bonne santé. Problème cardiaque, douleur thoracique à l'effort ou autre souci : demande d'abord à ton médecin."
+    pt:
+      title: "Mito: precisas de um check-up primeiro"
+      body: "Não para a maioria dos adultos saudáveis. Se tens um problema cardíaco, dor no peito com esforço ou outra condição, fala primeiro com o médico."
+    tr:
+      title: "Efsane: önce sağlık kontrolü şart"
+      body: "Sağlıklı yetişkinlerin çoğu için değil. Kalp rahatsızlığın, eforla göğüs ağrın ya da başka bir durumun varsa önce doktoruna sor."

@@ -1,0 +1,217 @@
+article: body-recomposition
+tips:
+  - key: vier-weken
+    kind: fact
+    en:
+      title: "Fat loss and muscle gain at once"
+      body: "Young men with overweight ate 40% below their needs for 4 weeks and trained 6 days a week. They gained 1.2 kg lean mass and lost 4.8 kg fat."
+    nl:
+      title: "Tegelijk vet kwijt en spier erbij"
+      body: "Jonge mannen met overgewicht aten 4 weken 40% te weinig en trainden 6 dagen per week. Ze wonnen 1,2 kg vetvrije massa en verloren 4,8 kg vet."
+    de:
+      title: "Fett weg, Muskeln drauf"
+      body: "Junge Männer mit Übergewicht aßen 4 Wochen 40 % zu wenig und trainierten 6 Tage pro Woche. Sie bauten 1,2 kg Magermasse auf und 4,8 kg Fett ab."
+    es:
+      title: "Perder grasa y ganar músculo"
+      body: "Hombres jóvenes con sobrepeso comieron un 40% menos y entrenaron 6 días por semana, 4 semanas. Ganaron 1,2 kg de masa magra y perdieron 4,8 kg de grasa."
+    fr:
+      title: "Perdre du gras et prendre du muscle"
+      body: "En 4 semaines à 40 % sous leurs besoins et 6 séances par semaine, de jeunes hommes en surpoids ont pris 1,2 kg de masse maigre et perdu 4,8 kg de gras."
+    pt:
+      title: "Perder gordura e ganhar músculo"
+      body: "Homens jovens com excesso de peso comeram 40% a menos e treinaram 6 dias por semana, 4 semanas. Ganharam 1,2 kg de massa magra e perderam 4,8 kg de gordura."
+    tr:
+      title: "Aynı anda yağ kaybı ve kas kazanımı"
+      body: "Fazla kilolu genç erkekler 4 hafta boyunca ihtiyacından %40 az yedi ve haftada 6 gün antrenman yaptı. 1,2 kg yağsız kütle kazanıp 4,8 kg yağ kaybettiler."
+
+  - key: eiwit-verschil
+    kind: fact
+    en:
+      title: "Protein made the difference"
+      body: "Same deficit, same training. Men on 1.2 g protein per kg just kept their lean mass. Men on 2.4 g gained 1.2 kg of it."
+    nl:
+      title: "Eiwit maakte het verschil"
+      body: "Zelfde tekort, zelfde training. Mannen op 1,2 g eiwit per kilo hielden hun vetvrije massa net vast, op 2,4 g wonnen ze er 1,2 kg bij."
+    de:
+      title: "Protein machte den Unterschied"
+      body: "Gleiches Defizit, gleiches Training. Männer mit 1,2 g Protein pro Kilo hielten ihre Magermasse gerade so, mit 2,4 g legten sie 1,2 kg zu."
+    es:
+      title: "La proteína marcó la diferencia"
+      body: "Mismo déficit, mismo entreno. Con 1,2 g de proteína por kilo, los hombres apenas mantuvieron su masa magra. Con 2,4 g ganaron 1,2 kg."
+    fr:
+      title: "Les protéines ont fait la différence"
+      body: "Même déficit, même entraînement. À 1,2 g de protéines par kilo, les hommes ont juste gardé leur masse maigre. À 2,4 g, ils en ont pris 1,2 kg."
+    pt:
+      title: "A proteína fez a diferença"
+      body: "Mesmo défice, mesmo treino. Com 1,2 g de proteína por quilo, os homens só mantiveram a massa magra. Com 2,4 g ganharam 1,2 kg."
+    tr:
+      title: "Farkı protein yarattı"
+      body: "Aynı açık, aynı antrenman. Kilo başına 1,2 g protein alan erkekler yağsız kütlesini ancak korudu, 2,4 g alanlar 1,2 kg kazandı."
+
+  - key: vetvrij-is-geen-spier
+    kind: fact
+    en:
+      title: "Lean mass is not just muscle"
+      body: "Lean mass is everything that is not fat. Over a few weeks, a gain can be glycogen and water rather than new muscle."
+    nl:
+      title: "Vetvrije massa is niet alleen spier"
+      body: "Vetvrije massa is alles wat geen vet is. Over een paar weken kan een toename ook glycogeen en water zijn, in plaats van nieuwe spier."
+    de:
+      title: "Magermasse ist nicht nur Muskel"
+      body: "Magermasse ist alles außer Fett. Über wenige Wochen kann ein Zuwachs auch Glykogen und Wasser sein statt neuer Muskel."
+    es:
+      title: "Masa magra no es solo músculo"
+      body: "La masa magra es todo lo que no es grasa. En pocas semanas, una subida puede ser glucógeno y agua en lugar de músculo nuevo."
+    fr:
+      title: "Masse maigre ne veut pas dire muscle"
+      body: "La masse maigre, c'est tout sauf le gras. Sur quelques semaines, une hausse peut venir du glycogène et de l'eau plutôt que du muscle."
+    pt:
+      title: "Massa magra não é só músculo"
+      body: "Massa magra é tudo o que não é gordura. Em poucas semanas, um aumento pode ser glicogénio e água em vez de músculo novo."
+    tr:
+      title: "Yağsız kütle sadece kas değil"
+      body: "Yağsız kütle, yağ olmayan her şeydir. Birkaç haftalık bir artış yeni kas yerine glikojen ve su olabilir."
+
+  - key: grens-500
+    kind: fact
+    en:
+      title: "The 500 kcal line"
+      body: "In lifters, a deficit of about 500 kcal a day stopped lean mass gains. To keep your lean mass while losing fat, stay under that."
+    nl:
+      title: "De grens van 500 kcal"
+      body: "Bij mensen die tillen hield een tekort van zo'n 500 kcal per dag de groei van vetvrije massa tegen. Wil je die massa houden, blijf er dan onder."
+    de:
+      title: "Die 500-kcal-Grenze"
+      body: "Bei Kraftsportlern stoppte ein Defizit von etwa 500 kcal am Tag den Zuwachs an Magermasse. Willst du sie halten, bleib darunter."
+    es:
+      title: "La línea de las 500 kcal"
+      body: "En quienes levantan pesas, un déficit de unas 500 kcal al día frenó la ganancia de masa magra. Para conservarla, quédate por debajo."
+    fr:
+      title: "La limite des 500 kcal"
+      body: "Chez ceux qui soulèvent, un déficit d'environ 500 kcal par jour a bloqué la prise de masse maigre. Pour la garder, reste en dessous."
+    pt:
+      title: "A linha das 500 kcal"
+      body: "Em quem treina com pesos, um défice de cerca de 500 kcal por dia travou o ganho de massa magra. Para a manteres, fica abaixo disso."
+    tr:
+      title: "500 kcal sınırı"
+      body: "Ağırlık çalışanlarda günde yaklaşık 500 kcal açık yağsız kütle artışını durdurdu. Yağsız kütleni korumak istiyorsan bunun altında kal."
+
+  - key: kracht-in-tekort
+    kind: myth
+    en:
+      title: "Myth: you can't get stronger in a deficit"
+      body: "Not true. In trials where people lifted in a deficit, strength went up about as much as without one. Lean mass grew less."
+    nl:
+      title: "Mythe: in een tekort word je niet sterker"
+      body: "Klopt niet. In proeven waarin mensen tilden in een tekort, werden ze ongeveer even sterk als zonder tekort. Hun vetvrije massa groeide wel minder."
+    de:
+      title: "Mythos: Im Defizit wirst du nicht stärker"
+      body: "Stimmt nicht. In Studien mit Krafttraining im Defizit stieg die Kraft ähnlich wie ohne Defizit. Die Magermasse wuchs aber weniger."
+    es:
+      title: "Mito: en déficit no te haces más fuerte"
+      body: "No es cierto. En ensayos con pesas en déficit, la fuerza subió casi igual que sin déficit. Lo que creció menos fue la masa magra."
+    fr:
+      title: "Mythe : en déficit, pas de gain de force"
+      body: "Faux. Dans les essais avec musculation en déficit, la force a progressé à peu près comme sans déficit. C'est la masse maigre qui a moins augmenté."
+    pt:
+      title: "Mito: em défice não ficas mais forte"
+      body: "Não é verdade. Em ensaios com treino de força em défice, a força subiu quase tanto como sem défice. A massa magra é que cresceu menos."
+    tr:
+      title: "Efsane: kalori açığında güçlenemezsin"
+      body: "Doğru değil. Açıkta ağırlık çalışılan denemelerde güç, açık olmadan olduğu kadar arttı. Daha az artan şey yağsız kütleydi."
+
+  - key: wie-het-lukt
+    kind: fact
+    en:
+      title: "Who recomps most easily"
+      body: "Gaining muscle in a deficit may be more likely if you are new to lifting, or if you carry a lot of extra weight."
+    nl:
+      title: "Bij wie het makkelijkst lukt"
+      body: "Spier opbouwen in een tekort lukt mogelijk eerder als je net begint met tillen, of als je flink overgewicht hebt."
+    de:
+      title: "Bei wem es am leichtesten klappt"
+      body: "Muskelaufbau im Defizit gelingt womöglich eher, wenn du neu im Krafttraining bist oder deutlich Übergewicht hast."
+    es:
+      title: "A quién le resulta más fácil"
+      body: "Ganar músculo en déficit puede ser más probable si empiezas con las pesas o si tienes bastante sobrepeso."
+    fr:
+      title: "Pour qui c'est le plus facile"
+      body: "Prendre du muscle en déficit est peut-être plus probable si tu débutes la muscu ou si tu as un surpoids important."
+    pt:
+      title: "Para quem é mais fácil"
+      body: "Ganhar músculo em défice pode ser mais provável se estás a começar a treinar ou se tens bastante excesso de peso."
+    tr:
+      title: "En kolay kimde olur"
+      body: "Ağırlığa yeni başladıysan ya da epey fazla kilon varsa, açıkta kas kazanman daha olası olabilir."
+
+  - key: na-een-pauze
+    kind: fact
+    en:
+      title: "Back after a break"
+      body: "Fat loss with a gain in fat-free mass has been seen in top athletes returning after an off-season or an injury."
+    nl:
+      title: "Terug na een pauze"
+      body: "Bij topsporters die terugkomen na hun rustperiode of een blessure is gezien dat ze vet verliezen en tegelijk vetvrije massa winnen."
+    de:
+      title: "Zurück nach einer Pause"
+      body: "Bei Spitzensportlern, die nach der Off-Season oder einer Verletzung zurückkehren, sah man Fettverlust und zugleich mehr Magermasse."
+    es:
+      title: "De vuelta tras un parón"
+      body: "En atletas de élite que vuelven tras el descanso de temporada o una lesión se ha visto pérdida de grasa con ganancia de masa magra."
+    fr:
+      title: "Retour après une pause"
+      body: "Chez des athlètes de haut niveau qui reprennent après l'intersaison ou une blessure, on a vu une perte de gras avec un gain de masse maigre."
+    pt:
+      title: "De volta após uma pausa"
+      body: "Em atletas de elite que voltam após o defeso ou uma lesão, já se viu perda de gordura com ganho de massa magra."
+    tr:
+      title: "Aradan sonra dönüş"
+      body: "Sezon arası ya da sakatlık sonrası dönen elit sporcularda yağ kaybıyla birlikte yağsız kütle artışı görüldü."
+
+  - key: alleen-beginners
+    kind: myth
+    en:
+      title: "Myth: recomp only works for beginners"
+      body: "Not true. A solid body of research shows it in trained lifters too. It does get less productive the leaner you are."
+    nl:
+      title: "Mythe: recomp lukt alleen bij beginners"
+      body: "Klopt niet. Flink wat onderzoek laat het ook bij getrainde mensen zien. Wel levert het minder op naarmate je slanker bent."
+    de:
+      title: "Mythos: Recomp klappt nur bei Anfängern"
+      body: "Stimmt nicht. Eine Menge Forschung zeigt es auch bei Trainierten. Je schlanker du bist, desto weniger bringt es aber."
+    es:
+      title: "Mito: recomponer es solo para novatos"
+      body: "No es cierto. Bastantes estudios lo muestran también en gente entrenada. Eso sí, rinde menos cuanto más delgado estás."
+    fr:
+      title: "Mythe : la recompo, c'est pour les débutants"
+      body: "Faux. Pas mal d'études la montrent aussi chez des pratiquants entraînés. Elle rapporte toutefois moins à mesure que tu deviens sec."
+    pt:
+      title: "Mito: recompor é só para iniciantes"
+      body: "Não é verdade. Muitos estudos mostram-no também em quem já treina. Mas compensa menos quanto mais magro estás."
+    tr:
+      title: "Efsane: recomp sadece acemilerde olur"
+      body: "Doğru değil. Pek çok çalışma bunu antrenmanlı kişilerde de gösteriyor. Ama yağ oranın düştükçe daha az verimli olur."
+
+  - key: beste-route
+    kind: myth
+    en:
+      title: "Myth: recomp is the best way to build muscle"
+      body: "Not according to the ISSN. If muscle is your main goal, a calorie surplus is probably the better route. Gains are smaller in a deficit."
+    nl:
+      title: "Mythe: recomp is de beste weg naar spier"
+      body: "Niet volgens de ISSN. Is spier je hoofddoel, dan is een calorieoverschot waarschijnlijk de betere route. In een tekort groei je gemiddeld minder."
+    de:
+      title: "Mythos: Recomp ist der beste Weg zu Muskeln"
+      body: "Nicht laut ISSN. Ist Muskel dein Hauptziel, ist ein Kalorienüberschuss wohl der bessere Weg. Im Defizit wächst du im Schnitt weniger."
+    es:
+      title: "Mito: recomponer es lo mejor para el músculo"
+      body: "No según la ISSN. Si tu meta es el músculo, un superávit calórico es probablemente mejor. En déficit se gana menos de media."
+    fr:
+      title: "Mythe : la recompo est le mieux pour le muscle"
+      body: "Pas selon l'ISSN. Si le muscle est ton but, un surplus calorique est sans doute la meilleure voie. En déficit, on en gagne moins en moyenne."
+    pt:
+      title: "Mito: recompor é o melhor para ganhar músculo"
+      body: "Não segundo a ISSN. Se o músculo é o teu objetivo, um excedente calórico é provavelmente melhor. Em défice ganha-se menos, em média."
+    tr:
+      title: "Efsane: kas için en iyi yol recomp"
+      body: "ISSN'e göre değil. Asıl hedefin kassa, kalori fazlası muhtemelen daha iyi yol. Açıkta kazanım ortalama daha küçük."

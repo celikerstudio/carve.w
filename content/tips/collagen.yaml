@@ -1,0 +1,217 @@
+article: collagen
+tips:
+  - key: wat-is-collageen
+    kind: fact
+    en:
+      title: "Collagen"
+      body: "Collagen is about a third of all the protein in your body, and most of the dry weight of your tendons."
+    nl:
+      title: "Collageen"
+      body: "Collageen is zo'n derde van al het eiwit in je lichaam, en het grootste deel van het droge gewicht van je pezen."
+    de:
+      title: "Kollagen"
+      body: "Kollagen macht etwa ein Drittel des Eiweißes in deinem Körper aus und den Großteil des Trockengewichts deiner Sehnen."
+    es:
+      title: "Colágeno"
+      body: "El colágeno es cerca de un tercio de toda la proteína de tu cuerpo, y la mayor parte del peso seco de tus tendones."
+    fr:
+      title: "Collagène"
+      body: "Le collagène, c'est environ un tiers des protéines de ton corps, et l'essentiel du poids sec de tes tendons."
+    pt:
+      title: "Colagénio"
+      body: "O colagénio é cerca de um terço de toda a proteína do teu corpo, e a maior parte do peso seco dos teus tendões."
+    tr:
+      title: "Kolajen"
+      body: "Kolajen vücudundaki tüm proteinin yaklaşık üçte biri ve tendonlarının kuru ağırlığının büyük kısmıdır."
+
+  - key: geen-spiereiwit
+    kind: myth
+    en:
+      title: "Myth: collagen builds muscle like whey"
+      body: "It does not. Collagen lacks the essential amino acid tryptophan, and 30 g gave less muscle building than 30 g of whey."
+    nl:
+      title: "Mythe: collageen bouwt spier zoals whey"
+      body: "Nee. Collageen mist het essentiële aminozuur tryptofaan, en 30 gram gaf minder spiereiwitopbouw dan 30 gram whey."
+    de:
+      title: "Mythos: Kollagen baut Muskeln wie Whey"
+      body: "Nein. Kollagen fehlt die essenzielle Aminosäure Tryptophan, und 30 g bauten weniger Muskelprotein auf als 30 g Whey."
+    es:
+      title: "Mito: el colágeno da músculo como el whey"
+      body: "No. Al colágeno le falta el aminoácido esencial triptófano, y 30 g dieron menos síntesis muscular que 30 g de whey."
+    fr:
+      title: "Mythe : le collagène vaut la whey"
+      body: "Non. Il lui manque un acide aminé essentiel, le tryptophane, et 30 g ont moins stimulé le muscle que 30 g de whey."
+    pt:
+      title: "Mito: o colagénio dá músculo como a whey"
+      body: "Não. Falta-lhe o aminoácido essencial triptofano, e 30 g deram menos síntese muscular do que 30 g de whey."
+    tr:
+      title: "Efsane: kolajen whey gibi kas yapar"
+      body: "Yapmaz. Kolajende temel amino asit triptofan yok ve 30 g, 30 g whey'den daha az kas proteini yapımı sağladı."
+
+  - key: huid
+    kind: fact
+    en:
+      title: "Collagen and your skin"
+      body: "EFSA judged one collagen product, 2.5 g a day for 8 weeks, and found no better-working skin shown. That is one product, not all of them."
+    nl:
+      title: "Collageen en je huid"
+      body: "EFSA keek naar één collageenproduct, 2,5 gram per dag 8 weken lang. Een beter werkende huid was niet aangetoond. Eén product, niet alle."
+    de:
+      title: "Kollagen und deine Haut"
+      body: "Die EFSA prüfte ein Kollagenprodukt, 2,5 g am Tag für 8 Wochen. Eine besser funktionierende Haut war nicht belegt. Nur dieses Produkt."
+    es:
+      title: "El colágeno y tu piel"
+      body: "La EFSA evaluó un producto, 2,5 g al día durante 8 semanas, y no vio una piel que funcione mejor. Es un producto, no todos."
+    fr:
+      title: "Le collagène et ta peau"
+      body: "L'EFSA a jugé un produit, 2,5 g par jour pendant 8 semaines : aucune peau plus fonctionnelle démontrée. Un produit, pas tous."
+    pt:
+      title: "O colagénio e a tua pele"
+      body: "A EFSA avaliou um produto, 2,5 g por dia durante 8 semanas, e não viu prova de uma pele a funcionar melhor. É um produto, não todos."
+    tr:
+      title: "Kolajen ve cildin"
+      body: "EFSA bir kolajen ürününü, 8 hafta günde 2,5 g, inceledi ve daha iyi çalışan bir cilt gösterilmedi. Tek bir ürün, hepsi değil."
+
+  - key: gewrichten
+    kind: fact
+    en:
+      title: "Collagen for your joints"
+      body: "Five small trials of 5 or 10 g a day for 3 to 6 months reported less joint pain. The European regulator was not convinced."
+    nl:
+      title: "Collageen voor je gewrichten"
+      body: "Vijf kleine studies met 5 of 10 gram per dag, 3 tot 6 maanden lang, meldden minder gewrichtspijn. De Europese toezichthouder was niet overtuigd."
+    de:
+      title: "Kollagen für die Gelenke"
+      body: "Fünf kleine Studien mit 5 oder 10 g am Tag über 3 bis 6 Monate fanden weniger Gelenkschmerz. Die EU-Behörde überzeugte das nicht."
+    es:
+      title: "Colágeno para las articulaciones"
+      body: "Cinco ensayos pequeños con 5 o 10 g al día durante 3 a 6 meses vieron menos dolor articular. El regulador europeo no se convenció."
+    fr:
+      title: "Le collagène et les articulations"
+      body: "Cinq petits essais à 5 ou 10 g par jour pendant 3 à 6 mois ont vu moins de douleur articulaire. L'autorité européenne n'est pas convaincue."
+    pt:
+      title: "Colagénio e articulações"
+      body: "Cinco ensaios pequenos com 5 ou 10 g por dia durante 3 a 6 meses viram menos dor articular. O regulador europeu não ficou convencido."
+    tr:
+      title: "Eklemlerin için kolajen"
+      body: "Günde 5 ya da 10 g ile 3 ila 6 ay süren beş küçük çalışma daha az eklem ağrısı bildirdi. Avrupa otoritesi ikna olmadı."
+
+  - key: placebo-ook
+    kind: fact
+    en:
+      title: "Collagen against placebo"
+      body: "In a 24-week trial of 10 g a day in student athletes, everyone's joint pain went down, also on placebo. After correction, no real difference."
+    nl:
+      title: "Collageen tegen placebo"
+      body: "In een studie van 24 weken met 10 gram per dag ging bij alle sporters de gewrichtspijn omlaag, ook met placebo. Na correctie geen echt verschil."
+    de:
+      title: "Kollagen gegen Placebo"
+      body: "In einer 24-Wochen-Studie mit 10 g am Tag sank bei allen Sportlern der Gelenkschmerz, auch mit Placebo. Bereinigt kein echter Unterschied."
+    es:
+      title: "Colágeno frente a placebo"
+      body: "En un ensayo de 24 semanas con 10 g al día, el dolor articular bajó en todos, también con placebo. Tras corregir, sin diferencia real."
+    fr:
+      title: "Collagène contre placebo"
+      body: "Dans un essai de 24 semaines à 10 g par jour, la douleur a baissé chez tous, placebo compris. Après correction, pas de vraie différence."
+    pt:
+      title: "Colagénio contra placebo"
+      body: "Num ensaio de 24 semanas com 10 g por dia, a dor articular desceu em todos, também com placebo. Após correção, sem diferença real."
+    tr:
+      title: "Plaseboya karşı kolajen"
+      body: "Günde 10 g ile 24 haftalık bir çalışmada herkesin eklem ağrısı azaldı, plaseboda da. Düzeltmeden sonra gerçek bir fark yoktu."
+
+  - key: pezen
+    kind: fact
+    en:
+      title: "Collagen and tendons"
+      body: "Maybe, with heavy training. In three of four studies, tendons grew thicker with collagen than with placebo."
+    nl:
+      title: "Collageen en je pezen"
+      body: "Misschien, samen met zware training. In drie van de vier studies werden pezen dikker met collageen dan met placebo."
+    de:
+      title: "Kollagen und Sehnen"
+      body: "Vielleicht, zusammen mit hartem Training. In drei von vier Studien wurden die Sehnen mit Kollagen dicker als mit Placebo."
+    es:
+      title: "El colágeno y los tendones"
+      body: "Quizá, junto con entreno duro. En tres de cuatro estudios, los tendones engordaron más con colágeno que con placebo."
+    fr:
+      title: "Le collagène et les tendons"
+      body: "Peut-être, avec un entraînement lourd. Dans trois études sur quatre, les tendons ont plus épaissi avec le collagène qu'avec le placebo."
+    pt:
+      title: "O colagénio e os tendões"
+      body: "Talvez, com treino pesado. Em três de quatro estudos, os tendões engrossaram mais com colagénio do que com placebo."
+    tr:
+      title: "Kolajen ve tendonlar"
+      body: "Belki, ağır antrenmanla birlikte. Dört çalışmanın üçünde tendonlar kolajenle plaseboya göre daha çok kalınlaştı."
+
+  - key: dosis-pezen
+    kind: fact
+    en:
+      title: "How much collagen for tendons"
+      body: "Reviewers suggest 15 to 30 g with at least 50 mg of vitamin C, with heavy training. A suggestion, not a tested protocol."
+    nl:
+      title: "Hoeveel collageen voor je pezen"
+      body: "De onderzoekers stellen 15 tot 30 gram voor, met minstens 50 mg vitamine C en zware training. Een voorstel, geen geteste aanpak."
+    de:
+      title: "Wie viel Kollagen für Sehnen"
+      body: "Die Autoren schlagen 15 bis 30 g mit mindestens 50 mg Vitamin C vor, plus hartes Training. Ein Vorschlag, kein getestetes Protokoll."
+    es:
+      title: "Cuánto colágeno para tendones"
+      body: "Los autores proponen 15 a 30 g con al menos 50 mg de vitamina C, junto a entreno duro. Es una sugerencia, no un protocolo probado."
+    fr:
+      title: "Combien de collagène pour les tendons"
+      body: "Les auteurs proposent 15 à 30 g avec au moins 50 mg de vitamine C, plus un entraînement lourd. Une piste, pas un protocole testé."
+    pt:
+      title: "Quanto colagénio para os tendões"
+      body: "Os autores sugerem 15 a 30 g com pelo menos 50 mg de vitamina C, com treino pesado. É uma sugestão, não um protocolo testado."
+    tr:
+      title: "Tendonlar için ne kadar kolajen"
+      body: "Yazarlar en az 50 mg C vitaminiyle 15 ila 30 g ve ağır antrenman öneriyor. Bu bir öneri, test edilmiş bir protokol değil."
+
+  - key: kracht
+    kind: myth
+    en:
+      title: "Myth: collagen makes you stronger"
+      body: "Not in the trials. Strength rose with training in all six that measured it, and collagen added nothing on top."
+    nl:
+      title: "Mythe: collageen maakt je sterker"
+      body: "Niet in de studies. In alle zes die het maten werd je sterker door de training, en collageen voegde daar niks aan toe."
+    de:
+      title: "Mythos: Kollagen macht stärker"
+      body: "Nicht in den Studien. In allen sechs, die es maßen, stieg die Kraft durchs Training, Kollagen brachte nichts dazu."
+    es:
+      title: "Mito: el colágeno te hace más fuerte"
+      body: "No en los ensayos. En los seis que lo midieron, la fuerza subió con el entreno y el colágeno no añadió nada."
+    fr:
+      title: "Mythe : le collagène rend plus fort"
+      body: "Pas dans les essais. Dans les six qui l'ont mesurée, la force a monté avec l'entraînement, et le collagène n'a rien ajouté."
+    pt:
+      title: "Mito: o colagénio dá mais força"
+      body: "Não nos ensaios. Nos seis que a mediram, a força subiu com o treino e o colagénio não acrescentou nada."
+    tr:
+      title: "Efsane: kolajen seni güçlendirir"
+      body: "Çalışmalarda değil. Gücü ölçen altı çalışmanın hepsinde güç antrenmanla arttı, kolajen üstüne bir şey katmadı."
+
+  - key: artrose
+    kind: fact
+    en:
+      title: "Collagen and arthritis"
+      body: "The joint review left out people with osteoarthritis. So it cannot tell you whether collagen helps arthritis."
+    nl:
+      title: "Collageen en artrose"
+      body: "De review over gewrichten liet mensen met artrose buiten beschouwing. Of collageen bij artrose helpt, zegt hij dus niet."
+    de:
+      title: "Kollagen und Arthrose"
+      body: "Die Übersicht zu Gelenken schloss Menschen mit Arthrose aus. Ob Kollagen bei Arthrose hilft, sagt sie also nicht."
+    es:
+      title: "Colágeno y artrosis"
+      body: "La revisión sobre articulaciones excluyó a personas con artrosis. Así que no dice si el colágeno ayuda con la artrosis."
+    fr:
+      title: "Collagène et arthrose"
+      body: "La revue sur les articulations a exclu les personnes arthrosiques. Elle ne dit donc pas si le collagène aide contre l'arthrose."
+    pt:
+      title: "Colagénio e artrose"
+      body: "A revisão sobre articulações excluiu pessoas com artrose. Por isso não diz se o colagénio ajuda na artrose."
+    tr:
+      title: "Kolajen ve kireçlenme"
+      body: "Eklem derlemesi osteoartritli insanları dışarıda bıraktı. Yani kolajenin kireçlenmeye yardım edip etmediğini söyleyemez."

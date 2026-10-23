@@ -1,0 +1,193 @@
+article: supplement-timing
+tips:
+  - key: cafeine-voor-training
+    kind: fact
+    en:
+      title: "When to take caffeine"
+      body: "Caffeine works on timing. Take it about 30 to 60 minutes before you lift."
+    nl:
+      title: "Wanneer cafeïne?"
+      body: "Bij cafeïne telt het moment. Neem het zo'n 30 tot 60 minuten voor je training."
+    de:
+      title: "Wann Koffein?"
+      body: "Bei Koffein kommt es auf den Zeitpunkt an. Nimm es etwa 30 bis 60 Minuten vor dem Training."
+    es:
+      title: "Cuándo tomar cafeína"
+      body: "Con la cafeína el momento importa. Tómala unos 30 a 60 minutos antes de entrenar."
+    fr:
+      title: "Quand prendre la caféine"
+      body: "Avec la caféine, le moment compte. Prends-la environ 30 à 60 minutes avant ta séance."
+    pt:
+      title: "Quando tomar cafeína"
+      body: "Com a cafeína o momento conta. Toma-a cerca de 30 a 60 minutos antes de treinar."
+    tr:
+      title: "Kafein ne zaman alınır"
+      body: "Kafeinde zamanlama önemli. Antrenmandan yaklaşık 30 ila 60 dakika önce al."
+
+  - key: geen-late-stimulanten
+    kind: fact
+    en:
+      title: "Stimulants and sleep"
+      body: "Keep caffeine and pre-workout to the morning or midday. Taken late, they cost you sleep."
+    nl:
+      title: "Stimulanten en slaap"
+      body: "Houd cafeïne en pre-workout bij de ochtend of middag. Neem je ze laat, dan kost dat je slaap."
+    de:
+      title: "Stimulanzien und Schlaf"
+      body: "Nimm Koffein und Pre-Workout morgens oder mittags. Spät genommen kosten sie dich Schlaf."
+    es:
+      title: "Estimulantes y sueño"
+      body: "Deja la cafeína y el pre-entreno para la mañana o el mediodía. Si los tomas tarde, te quitan sueño."
+    fr:
+      title: "Stimulants et sommeil"
+      body: "Garde la caféine et le pre-workout pour le matin ou le midi. Pris tard, ils te coûtent du sommeil."
+    pt:
+      title: "Estimulantes e sono"
+      body: "Guarda a cafeína e o pré-treino para a manhã ou a hora de almoço. Tomados tarde, roubam-te sono."
+    tr:
+      title: "Uyarıcılar ve uyku"
+      body: "Kafeini ve pre-workout'u sabaha ya da öğlene bırak. Geç alırsan uykundan çalar."
+
+  - key: creatine-elke-dag
+    kind: fact
+    en:
+      title: "Creatine: any time"
+      body: "Creatine works by filling up your stores, so the hour doesn't matter. What counts is taking it every day."
+    nl:
+      title: "Creatine: wanneer je wilt"
+      body: "Creatine werkt door je voorraad te vullen, dus het tijdstip maakt niet uit. Wat telt is dat je het elke dag neemt."
+    de:
+      title: "Kreatin: wann du willst"
+      body: "Kreatin wirkt, indem es deine Speicher füllt, die Uhrzeit ist also egal. Wichtig ist, dass du es jeden Tag nimmst."
+    es:
+      title: "Creatina: cuando quieras"
+      body: "La creatina funciona llenando tus reservas, así que la hora da igual. Lo que cuenta es tomarla cada día."
+    fr:
+      title: "Créatine : quand tu veux"
+      body: "La créatine agit en remplissant tes réserves, l'heure importe donc peu. Ce qui compte, c'est d'en prendre chaque jour."
+    pt:
+      title: "Creatina: quando quiseres"
+      body: "A creatina funciona a encher as reservas, por isso a hora não importa. O que conta é tomá-la todos os dias."
+    tr:
+      title: "Kreatin: istediğin zaman"
+      body: "Kreatin depolarını doldurarak çalışır, saat önemli değil. Önemli olan her gün almak."
+
+  - key: precisie
+    kind: myth
+    en:
+      title: "Myth: supplement timing must be exact"
+      body: "Not for most staples. Taking them consistently matters more than the exact moment, and a complicated schedule is harder to stick to."
+    nl:
+      title: "Mythe: het tijdstip moet precies kloppen"
+      body: "Niet voor de meeste basics. Elke dag nemen telt meer dan het exacte moment, en een ingewikkeld schema hou je minder makkelijk vol."
+    de:
+      title: "Mythos: der Zeitpunkt muss genau sein"
+      body: "Nicht bei den meisten Basics. Regelmäßigkeit zählt mehr als der genaue Moment, und einen komplizierten Plan hältst du schwerer durch."
+    es:
+      title: "Mito: la hora exacta es clave"
+      body: "No en la mayoría de básicos. La constancia pesa más que el momento exacto, y un horario complicado cuesta más de seguir."
+    fr:
+      title: "Mythe : l'heure doit être précise"
+      body: "Pas pour la plupart des basiques. La régularité compte plus que le moment exact, et un planning compliqué se tient moins bien."
+    pt:
+      title: "Mito: a hora tem de ser exata"
+      body: "Não na maioria dos básicos. A constância conta mais do que o momento exato, e um horário complicado é mais difícil de cumprir."
+    tr:
+      title: "Efsane: saat tam tutmalı"
+      body: "Temel takviyelerin çoğunda değil. Düzenli almak tam saatten önemli, karmaşık bir plana da uymak zor."
+
+  - key: vitamine-d-met-vet
+    kind: fact
+    en:
+      title: "Vitamin D with a meal"
+      body: "Take vitamin D with a meal that has some fat in it. That is an easy anchor to remember it by."
+    nl:
+      title: "Vitamine D bij het eten"
+      body: "Neem vitamine D bij een maaltijd met wat vet erin. Dan heb je meteen een vast moment om het niet te vergeten."
+    de:
+      title: "Vitamin D zum Essen"
+      body: "Nimm Vitamin D zu einer Mahlzeit mit etwas Fett. So hast du gleich einen festen Moment, an dem du dran denkst."
+    es:
+      title: "Vitamina D con comida"
+      body: "Toma la vitamina D con una comida que lleve algo de grasa. Así tienes un momento fijo para no olvidarla."
+    fr:
+      title: "Vitamine D au repas"
+      body: "Prends la vitamine D pendant un repas qui contient un peu de gras. Tu as ainsi un moment fixe pour ne pas l'oublier."
+    pt:
+      title: "Vitamina D com a refeição"
+      body: "Toma a vitamina D com uma refeição que tenha alguma gordura. Assim tens um momento fixo para não te esqueceres."
+    tr:
+      title: "D vitamini yemekle"
+      body: "D vitaminini biraz yağ içeren bir öğünle al. Böylece unutmaman için sabit bir anın da olur."
+
+  - key: melatonine-voor-bed
+    kind: fact
+    en:
+      title: "Melatonin before bed"
+      body: "If you use melatonin, take it about 30 to 60 minutes before you go to bed."
+    nl:
+      title: "Melatonine voor het slapen"
+      body: "Gebruik je melatonine, neem het dan zo'n 30 tot 60 minuten voordat je naar bed gaat."
+    de:
+      title: "Melatonin vor dem Schlafen"
+      body: "Wenn du Melatonin nimmst, dann etwa 30 bis 60 Minuten bevor du ins Bett gehst."
+    es:
+      title: "Melatonina antes de dormir"
+      body: "Si usas melatonina, tómala unos 30 a 60 minutos antes de irte a la cama."
+    fr:
+      title: "Mélatonine avant le coucher"
+      body: "Si tu prends de la mélatonine, prends-la environ 30 à 60 minutes avant d'aller au lit."
+    pt:
+      title: "Melatonina antes de dormir"
+      body: "Se usas melatonina, toma-a cerca de 30 a 60 minutos antes de ires para a cama."
+    tr:
+      title: "Yatmadan önce melatonin"
+      body: "Melatonin kullanıyorsan yatmadan yaklaşık 30 ila 60 dakika önce al."
+
+  - key: beta-alanine-verdelen
+    kind: fact
+    en:
+      title: "Beta-alanine: split it"
+      body: "Split your beta-alanine over several doses, and take it every day. Skipping days stops your muscles from filling up."
+    nl:
+      title: "Beta-alanine: verdeel het"
+      body: "Verdeel je beta-alanine over een paar doses en neem het elke dag. Sla je dagen over, dan raken je spieren niet vol."
+    de:
+      title: "Beta-Alanin: aufteilen"
+      body: "Teil dein Beta-Alanin auf mehrere Dosen auf und nimm es täglich. Lässt du Tage aus, füllen sich deine Muskeln nicht."
+    es:
+      title: "Beta-alanina: repártela"
+      body: "Reparte la beta-alanina en varias tomas y tómala cada día. Si te saltas días, tus músculos no se llenan."
+    fr:
+      title: "Bêta-alanine : fractionne"
+      body: "Répartis ta bêta-alanine en plusieurs prises et prends-en chaque jour. Si tu sautes des jours, tes muscles ne se remplissent pas."
+    pt:
+      title: "Beta-alanina: divide"
+      body: "Divide a beta-alanina em várias doses e toma-a todos os dias. Se saltas dias, os músculos não chegam a encher."
+    tr:
+      title: "Beta-alanin: böl"
+      body: "Beta-alanini birkaç doza böl ve her gün al. Gün atlarsan kasların dolmaz."
+
+  - key: elektrolyten
+    kind: fact
+    en:
+      title: "When electrolytes help"
+      body: "Electrolytes belong with long sessions or training in the heat. That is when they are worth fitting into your schedule."
+    nl:
+      title: "Wanneer elektrolyten?"
+      body: "Elektrolyten horen bij lange trainingen of sporten in de hitte. Dan zijn ze het waard om in je schema op te nemen."
+    de:
+      title: "Wann Elektrolyte?"
+      body: "Elektrolyte gehören zu langen Einheiten oder Training in der Hitze. Dann lohnt es sich, sie einzuplanen."
+    es:
+      title: "Cuándo tomar electrolitos"
+      body: "Los electrolitos van con sesiones largas o entrenos con calor. Es entonces cuando vale la pena incluirlos."
+    fr:
+      title: "Quand prendre des électrolytes"
+      body: "Les électrolytes vont avec les longues séances ou l'effort à la chaleur. C'est là qu'ils valent la peine d'être prévus."
+    pt:
+      title: "Quando tomar eletrólitos"
+      body: "Os eletrólitos são para sessões longas ou treino com calor. É aí que vale a pena incluí-los."
+    tr:
+      title: "Elektrolit ne zaman"
+      body: "Elektrolitler uzun antrenmanlar ya da sıcakta çalışmak içindir. Onları planına katmaya değer olan zaman budur."

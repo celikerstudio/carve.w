@@ -1,0 +1,169 @@
+article: home-gym
+tips:
+  - key: geen-reistijd
+    kind: fact
+    en:
+      title: "Training at home"
+      body: "A home gym takes away the trip to the gym. That convenience means fewer skipped sessions, which can help you stay consistent."
+    nl:
+      title: "Thuis trainen"
+      body: "Met een thuisgym valt de reis naar de sportschool weg. Dat gemak betekent minder overgeslagen trainingen, en dat helpt je volhouden."
+    de:
+      title: "Zu Hause trainieren"
+      body: "Mit einem Home-Gym fällt der Weg ins Studio weg. Das heißt weniger ausgelassene Einheiten, und das hilft beim Dranbleiben."
+    es:
+      title: "Entrenar en casa"
+      body: "Un gimnasio en casa te ahorra el trayecto. Esa comodidad significa menos sesiones saltadas, y eso te ayuda a ser constante."
+    fr:
+      title: "S'entraîner chez soi"
+      body: "Une salle à la maison t'épargne le trajet. Ce confort veut dire moins de séances sautées, ce qui peut t'aider à être régulier."
+    pt:
+      title: "Treinar em casa"
+      body: "Um ginásio em casa poupa-te a deslocação. Essa comodidade significa menos treinos falhados, e isso ajuda-te a ser constante."
+    tr:
+      title: "Evde çalışmak"
+      body: "Ev salonu spora gidip gelme derdini ortadan kaldırır. Bu kolaylık daha az atlanan antrenman demek, bu da düzenli kalmana yardım eder."
+
+  - key: de-basis
+    kind: fact
+    en:
+      title: "The basics"
+      body: "Start with adjustable dumbbells or a barbell and plates, a bench, a rack with safeties and some bands. A pull-up bar and mats come next."
+    nl:
+      title: "De basis"
+      body: "Begin met verstelbare dumbbells of een halter met schijven, een bank, een rek met veiligheden en wat elastieken. Daarna een optrekstang en matten."
+    de:
+      title: "Die Grundausstattung"
+      body: "Fang mit verstellbaren Kurzhanteln oder Langhantel samt Scheiben an, dazu Bank, Rack mit Sicherungen und Bänder. Dann Klimmzugstange und Matten."
+    es:
+      title: "Lo básico"
+      body: "Empieza con mancuernas ajustables o barra y discos, un banco, un rack con seguros y unas gomas. Luego, barra de dominadas y esterillas."
+    fr:
+      title: "L'essentiel"
+      body: "Commence par des haltères réglables ou une barre et des disques, un banc, un rack avec sécurités et des élastiques. Puis barre de traction et tapis."
+    pt:
+      title: "O básico"
+      body: "Começa com halteres ajustáveis ou barra e discos, um banco, um rack com seguranças e umas bandas. Depois, barra de elevações e tapetes."
+    tr:
+      title: "Temel ekipman"
+      body: "Ayarlanabilir dambıl ya da bar ve plaka, bir sehpa, emniyetli bir kafes ve birkaç bantla başla. Sonra barfiks çubuğu ve mat gelir."
+
+  - key: veiligheden
+    kind: fact
+    en:
+      title: "Safeties at home"
+      body: "Use the safeties on your rack for heavy lifts. Skipping safeties and anchors is a common home gym mistake."
+    nl:
+      title: "Veiligheden thuis"
+      body: "Gebruik bij zware lifts de veiligheden van je rek. Veiligheden en verankering overslaan is een veelgemaakte fout in een thuisgym."
+    de:
+      title: "Sicherungen zu Hause"
+      body: "Nutz bei schweren Sätzen die Sicherungen deines Racks. Sicherungen und Verankerung wegzulassen ist ein häufiger Fehler im Home-Gym."
+    es:
+      title: "Seguros en casa"
+      body: "Usa los seguros del rack en los levantamientos pesados. Saltarte seguros y anclajes es un error común en casa."
+    fr:
+      title: "Les sécurités chez toi"
+      body: "Mets les sécurités du rack pour les charges lourdes. Oublier sécurités et ancrages est une erreur courante à la maison."
+    pt:
+      title: "Seguranças em casa"
+      body: "Usa as seguranças do rack nos levantamentos pesados. Saltar seguranças e fixações é um erro comum em casa."
+    tr:
+      title: "Evde emniyet"
+      body: "Ağır kaldırışlarda kafesin emniyet barlarını kullan. Emniyeti ve sabitlemeyi atlamak ev salonunda yaygın bir hata."
+
+  - key: niet-te-veel-kopen
+    kind: fact
+    en:
+      title: "Buy it later"
+      body: "Overbuying niche gear before you use the basics is a common mistake. Add special items only when you clearly need them."
+    nl:
+      title: "Koop het later"
+      body: "Speciale spullen kopen voor je de basis gebruikt is een veelgemaakte fout. Koop ze pas als je ze duidelijk nodig hebt."
+    de:
+      title: "Kauf es später"
+      body: "Spezialzeug zu kaufen, bevor du die Basics nutzt, ist ein häufiger Fehler. Hol es erst, wenn du es klar brauchst."
+    es:
+      title: "Cómpralo después"
+      body: "Comprar material especial antes de usar lo básico es un error común. Añádelo solo cuando lo necesites de verdad."
+    fr:
+      title: "Achète-le plus tard"
+      body: "Acheter du matériel pointu avant d'utiliser les bases est une erreur courante. Ajoute-le seulement quand le besoin est clair."
+    pt:
+      title: "Compra mais tarde"
+      body: "Comprar material especial antes de usares o básico é um erro comum. Junta-o só quando precisares mesmo."
+    tr:
+      title: "Sonra al"
+      body: "Temelleri kullanmadan özel ekipman almak yaygın bir hata. Özel parçaları ancak açıkça ihtiyacın olunca ekle."
+
+  - key: trainen-met-wat-je-hebt
+    kind: fact
+    en:
+      title: "Train with what you've got"
+      body: "Build your plan around your tools: dumbbell presses and rows, goblet squats or front squats."
+    nl:
+      title: "Train met wat je hebt"
+      body: "Bouw je schema rond je spullen: dumbbellpresses en -rows, goblet squats of front squats."
+    de:
+      title: "Trainier mit dem, was da ist"
+      body: "Bau deinen Plan um deine Geräte: Kurzhantel-Drücken und -Rudern, Goblet Squats oder Front Squats."
+    es:
+      title: "Entrena con lo que tienes"
+      body: "Monta tu plan según tu material: press y remo con mancuernas, sentadilla goblet o sentadilla frontal."
+    fr:
+      title: "Fais avec ce que tu as"
+      body: "Construis ton programme autour de ton matériel : développé et rowing haltères, goblet squat ou front squat."
+    pt:
+      title: "Treina com o que tens"
+      body: "Monta o plano à volta do teu material: press e remada com halteres, agachamento goblet ou agachamento frontal."
+    tr:
+      title: "Elindekiyle çalış"
+      body: "Programını ekipmanına göre kur: dambıl press ve row, goblet squat ya da front squat."
+
+  - key: vanzelf-volhouden
+    kind: myth
+    en:
+      title: "Myth: a home gym keeps you consistent"
+      body: "Half true. The convenience helps, but your schedule still matters. Set fixed training times, just as you would at a gym."
+    nl:
+      title: "Mythe: met een thuisgym hou je het vanzelf vol"
+      body: "Half waar. Het gemak helpt, maar je planning blijft tellen. Kies vaste trainingstijden, net als bij een sportschool."
+    de:
+      title: "Mythos: Mit Home-Gym bleibst du von allein dran"
+      body: "Halb wahr. Die Bequemlichkeit hilft, aber dein Zeitplan zählt weiter. Leg feste Trainingszeiten fest, wie im Studio."
+    es:
+      title: "Mito: con gimnasio en casa eres constante"
+      body: "Verdad a medias. La comodidad ayuda, pero tu horario sigue contando. Fija horas de entreno, igual que en un gimnasio."
+    fr:
+      title: "Mythe : à la maison, on tient tout seul"
+      body: "À moitié vrai. Le confort aide, mais ton planning compte toujours. Fixe des heures d'entraînement, comme en salle."
+    pt:
+      title: "Mito: com ginásio em casa és constante"
+      body: "Meia verdade. A comodidade ajuda, mas o horário continua a contar. Define horas fixas de treino, como num ginásio."
+    tr:
+      title: "Efsane: ev salonu seni düzenli tutar"
+      body: "Yarı doğru. Kolaylık yardım eder ama programın yine önemli. Spor salonundaki gibi sabit antrenman saatleri belirle."
+
+  - key: opgeruimd
+    kind: fact
+    en:
+      title: "Keep it tidy"
+      body: "A cluttered space makes it harder to start training. Keep your corner organised so it's ready when you are."
+    nl:
+      title: "Houd het opgeruimd"
+      body: "Een rommelige ruimte maakt het lastiger om te beginnen. Houd je hoek netjes, zodat hij klaarstaat als jij dat bent."
+    de:
+      title: "Halt es ordentlich"
+      body: "Ein vollgestellter Raum macht den Start schwerer. Halt deine Ecke aufgeräumt, damit sie bereit ist, wenn du es bist."
+    es:
+      title: "Tenlo ordenado"
+      body: "Un espacio desordenado hace más difícil empezar a entrenar. Ten tu rincón en orden para que esté listo cuando tú lo estés."
+    fr:
+      title: "Garde-le rangé"
+      body: "Un espace encombré rend plus dur de s'y mettre. Garde ton coin rangé pour qu'il soit prêt quand tu l'es."
+    pt:
+      title: "Mantém arrumado"
+      body: "Um espaço cheio de tralha torna mais difícil começar a treinar. Mantém o teu canto arrumado para estar pronto quando tu estiveres."
+    tr:
+      title: "Düzenli tut"
+      body: "Dağınık bir alan antrenmana başlamayı zorlaştırır. Köşeni düzenli tut ki sen hazır olduğunda o da hazır olsun."

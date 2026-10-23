@@ -1,0 +1,241 @@
+article: ashwagandha
+tips:
+  - key: advies-tegen
+    kind: fact
+    en:
+      title: "Ashwagandha"
+      body: "The Dutch RIVM and the German BfR both advise against ashwagandha. There are reports of liver damage, including liver failure."
+    nl:
+      title: "Ashwagandha"
+      body: "Het RIVM en het Duitse BfR raden ashwagandha allebei af. Er zijn meldingen van leverschade, ook van leverfalen."
+    de:
+      title: "Ashwagandha"
+      body: "Das BfR und das niederländische RIVM raten beide von Ashwagandha ab. Es gibt Berichte über Leberschäden, auch Leberversagen."
+    es:
+      title: "Ashwagandha"
+      body: "El RIVM neerlandés y el BfR alemán desaconsejan la ashwagandha. Hay casos de daño hepático, incluso de insuficiencia hepática."
+    fr:
+      title: "Ashwagandha"
+      body: "Le RIVM néerlandais et le BfR allemand déconseillent l'ashwagandha. Des atteintes du foie ont été signalées, jusqu'à l'insuffisance hépatique."
+    pt:
+      title: "Ashwagandha"
+      body: "O RIVM neerlandês e o BfR alemão desaconselham a ashwagandha. Há relatos de lesões no fígado, incluindo insuficiência hepática."
+    tr:
+      title: "Ashwagandha"
+      body: "Hollanda'daki RIVM ve Almanya'daki BfR ashwagandha'yı önermiyor. Karaciğer hasarı, hatta karaciğer yetmezliği bildirimleri var."
+
+  - key: natuurlijk-is-veilig
+    kind: myth
+    en:
+      title: "Myth: natural means safe"
+      body: "Not here. Liver injury was seen with products that held only ashwagandha, and tests found no harmful additives in them."
+    nl:
+      title: "Mythe: natuurlijk is veilig"
+      body: "Niet hier. Leverschade werd gezien bij producten met alleen ashwagandha, en in de geteste producten zat geen schadelijke toevoeging."
+    de:
+      title: "Mythos: natürlich heißt sicher"
+      body: "Nicht hier. Leberschäden traten bei Produkten mit nur Ashwagandha auf, und in den getesteten Produkten war nichts Schädliches beigemischt."
+    es:
+      title: "Mito: natural es seguro"
+      body: "Aquí no. Hubo daño hepático con productos que solo llevaban ashwagandha, y en los analizados no había aditivos dañinos."
+    fr:
+      title: "Mythe : naturel veut dire sans risque"
+      body: "Pas ici. Des atteintes du foie sont apparues avec des produits à base d'ashwagandha seule, sans additif nocif dans ceux testés."
+    pt:
+      title: "Mito: natural é seguro"
+      body: "Aqui não. Houve lesões no fígado com produtos só de ashwagandha, e nos analisados não havia aditivos nocivos."
+    tr:
+      title: "Efsane: doğal olan güvenlidir"
+      body: "Burada değil. Karaciğer hasarı yalnızca ashwagandha içeren ürünlerde görüldü ve test edilenlerde zararlı katkı yoktu."
+
+  - key: thee
+    kind: fact
+    en:
+      title: "Ashwagandha tea"
+      body: "Nobody has studied the tea. The RIVM assumes the advice for supplements applies to it too, so it advises against that as well."
+    nl:
+      title: "Ashwagandha-thee"
+      body: "Niemand heeft de thee onderzocht. Het RIVM gaat ervan uit dat het advies voor supplementen ook voor thee geldt."
+    de:
+      title: "Ashwagandha-Tee"
+      body: "Den Tee hat niemand untersucht. Das RIVM geht davon aus, dass der Rat zu Nahrungsergänzungen auch für Tee gilt."
+    es:
+      title: "Té de ashwagandha"
+      body: "Nadie ha estudiado el té. El RIVM supone que el consejo sobre los suplementos también vale para el té."
+    fr:
+      title: "Le thé à l'ashwagandha"
+      body: "Personne n'a étudié le thé. Le RIVM considère que l'avis sur les compléments vaut aussi pour lui."
+    pt:
+      title: "Chá de ashwagandha"
+      body: "Ninguém estudou o chá. O RIVM assume que o conselho para os suplementos também se aplica ao chá."
+    tr:
+      title: "Ashwagandha çayı"
+      body: "Çayı kimse araştırmadı. RIVM, takviyeler için verilen tavsiyenin çay için de geçerli olduğunu varsayıyor."
+
+  - key: geen-veilige-dosis
+    kind: fact
+    en:
+      title: "Is there a safe dose?"
+      body: "No. The BfR could not work out a safe intake from the data. So a dose you copy from a study is no guarantee either."
+    nl:
+      title: "Is er een veilige dosis?"
+      body: "Nee. Het BfR kon uit de gegevens geen veilige hoeveelheid afleiden. Een dosis uit een studie overnemen geeft dus ook geen garantie."
+    de:
+      title: "Gibt es eine sichere Dosis?"
+      body: "Nein. Das BfR konnte aus den Daten keine sichere Menge ableiten. Eine Dosis aus einer Studie zu übernehmen schützt also nicht."
+    es:
+      title: "¿Hay una dosis segura?"
+      body: "No. El BfR no pudo deducir una cantidad segura de los datos. Copiar la dosis de un estudio tampoco te protege."
+    fr:
+      title: "Y a-t-il une dose sûre ?"
+      body: "Non. Le BfR n'a pas pu en déduire une des données. Reprendre la dose d'une étude ne te protège donc pas."
+    pt:
+      title: "Há uma dose segura?"
+      body: "Não. O BfR não conseguiu tirar uma dose segura dos dados. Copiar a dose de um estudo também não te protege."
+    tr:
+      title: "Güvenli bir doz var mı?"
+      body: "Hayır. BfR verilerden güvenli bir miktar çıkaramadı. Bir çalışmadaki dozu kopyalamak da güvence vermez."
+
+  - key: gele-ogen-jeuk
+    kind: fact
+    en:
+      title: "Signs to watch for"
+      body: "Taking ashwagandha? Stop and see a doctor if your skin or the whites of your eyes turn yellow, or you itch all over."
+    nl:
+      title: "Signalen om op te letten"
+      body: "Neem je ashwagandha? Stop en ga naar een arts als je huid of het wit van je ogen geel wordt, of als je overal jeuk krijgt."
+    de:
+      title: "Warnzeichen"
+      body: "Du nimmst Ashwagandha? Hör auf und geh zum Arzt, wenn Haut oder Augenweiß gelb werden oder es dich überall juckt."
+    es:
+      title: "Señales de alerta"
+      body: "¿Tomas ashwagandha? Déjala y ve al médico si tu piel o el blanco de los ojos se ponen amarillos, o te pica todo el cuerpo."
+    fr:
+      title: "Les signes à surveiller"
+      body: "Tu prends de l'ashwagandha ? Arrête et consulte si ta peau ou le blanc de tes yeux jaunit, ou si tout ton corps te gratte."
+    pt:
+      title: "Sinais de alerta"
+      body: "Tomas ashwagandha? Para e vai ao médico se a pele ou o branco dos olhos ficarem amarelos, ou se tiveres comichão no corpo todo."
+    tr:
+      title: "Dikkat edilecek işaretler"
+      body: "Ashwagandha mı alıyorsun? Cildin ya da gözlerinin akı sararırsa veya her yerin kaşınırsa bırak ve doktora git."
+
+  - key: na-41-dagen
+    kind: fact
+    en:
+      title: "When liver trouble shows up"
+      body: "In a case series from India, symptoms began a median of 41 days after people started. The range was 14 to 540 days."
+    nl:
+      title: "Wanneer leverklachten komen"
+      body: "In een reeks gevallen uit India begonnen de klachten gemiddeld 41 dagen na de start. Het varieerde van 14 tot 540 dagen."
+    de:
+      title: "Wann Leberbeschwerden auftreten"
+      body: "In einer Fallserie aus Indien begannen die Beschwerden im Median 41 Tage nach dem Start. Die Spanne lag bei 14 bis 540 Tagen."
+    es:
+      title: "Cuándo aparecen los problemas"
+      body: "En una serie de casos de la India, los síntomas empezaron una mediana de 41 días después de empezar. El rango fue de 14 a 540 días."
+    fr:
+      title: "Quand le foie se manifeste"
+      body: "Dans une série de cas en Inde, les symptômes sont apparus en médiane 41 jours après le début. L'écart allait de 14 à 540 jours."
+    pt:
+      title: "Quando surgem os sintomas"
+      body: "Numa série de casos da Índia, os sintomas surgiram em mediana 41 dias depois de começar. O intervalo foi de 14 a 540 dias."
+    tr:
+      title: "Karaciğer sorunu ne zaman çıkar"
+      body: "Hindistan'dan bir vaka serisinde belirtiler başlangıçtan ortanca 41 gün sonra çıktı. Aralık 14 ila 540 gündü."
+
+  - key: medicijnen
+    kind: fact
+    en:
+      title: "Ashwagandha and medicine"
+      body: "It can interact with medicine for blood sugar, blood pressure or your immune system. Use any of these? Talk to your doctor."
+    nl:
+      title: "Ashwagandha en medicijnen"
+      body: "Het kan invloed hebben op medicijnen voor bloedsuiker, bloeddruk of je afweer. Gebruik je die? Overleg met je arts."
+    de:
+      title: "Ashwagandha und Medikamente"
+      body: "Es kann mit Mitteln für Blutzucker, Blutdruck oder Immunsystem wechselwirken. Nimmst du so etwas? Sprich mit deinem Arzt."
+    es:
+      title: "Ashwagandha y medicamentos"
+      body: "Puede interactuar con fármacos para el azúcar, la tensión o el sistema inmune. ¿Tomas alguno? Habla con tu médico."
+    fr:
+      title: "Ashwagandha et médicaments"
+      body: "Elle peut interagir avec les traitements de la glycémie, de la tension ou de l'immunité. Tu en prends ? Parles-en à ton médecin."
+    pt:
+      title: "Ashwagandha e medicamentos"
+      body: "Pode interagir com medicamentos para o açúcar, a tensão ou o sistema imunitário. Tomas algum? Fala com o teu médico."
+    tr:
+      title: "Ashwagandha ve ilaçlar"
+      body: "Kan şekeri, tansiyon ya da bağışıklık ilaçlarıyla etkileşebilir. Bunlardan birini kullanıyorsan doktorunla konuş."
+
+  - key: hormonen
+    kind: fact
+    en:
+      title: "Ashwagandha and hormones"
+      body: "According to the BfR it may affect cortisol, blood sugar, thyroid hormones and sex hormones. Lower cortisol is no clear benefit."
+    nl:
+      title: "Ashwagandha en hormonen"
+      body: "Volgens het BfR kan het cortisol, bloedsuiker, schildklierhormonen en geslachtshormonen beïnvloeden. Lager cortisol is hier geen duidelijke winst."
+    de:
+      title: "Ashwagandha und Hormone"
+      body: "Laut BfR kann es Cortisol, Blutzucker, Schilddrüsen- und Sexualhormone beeinflussen. Weniger Cortisol ist kein klarer Vorteil."
+    es:
+      title: "Ashwagandha y hormonas"
+      body: "Según el BfR puede afectar al cortisol, al azúcar en sangre, a las hormonas tiroideas y a las sexuales. Bajar el cortisol no es una ventaja clara."
+    fr:
+      title: "Ashwagandha et hormones"
+      body: "D'après le BfR, elle peut agir sur le cortisol, la glycémie, la thyroïde et les hormones sexuelles. Moins de cortisol n'est pas un atout clair."
+    pt:
+      title: "Ashwagandha e hormonas"
+      body: "Segundo o BfR, pode afetar o cortisol, o açúcar no sangue, as hormonas da tiroide e as sexuais. Baixar o cortisol não é uma vantagem clara."
+    tr:
+      title: "Ashwagandha ve hormonlar"
+      body: "BfR'ye göre kortizolü, kan şekerini, tiroit ve cinsiyet hormonlarını etkileyebilir. Düşük kortizol burada net bir fayda değil."
+
+  - key: stress
+    kind: myth
+    en:
+      title: "Myth: ashwagandha takes your stress away"
+      body: "Not proven. One analysis saw lower cortisol, but people did not feel less stressed. The BfR calls the claimed effects unproven."
+    nl:
+      title: "Mythe: ashwagandha haalt je stress weg"
+      body: "Niet bewezen. Eén analyse zag lager cortisol, maar mensen voelden zich niet minder gestrest. Het BfR noemt de effecten onbewezen."
+    de:
+      title: "Mythos: Ashwagandha nimmt dir den Stress"
+      body: "Nicht belegt. Eine Analyse fand weniger Cortisol, aber die Leute fühlten sich nicht weniger gestresst. Das BfR nennt die Wirkung unbewiesen."
+    es:
+      title: "Mito: la ashwagandha quita el estrés"
+      body: "No está probado. Un análisis vio menos cortisol, pero la gente no se sentía menos estresada. El BfR dice que no hay prueba."
+    fr:
+      title: "Mythe : l'ashwagandha chasse le stress"
+      body: "Pas prouvé. Une analyse a vu moins de cortisol, mais les gens ne se sentaient pas moins stressés. Le BfR juge l'effet non prouvé."
+    pt:
+      title: "Mito: a ashwagandha tira o stress"
+      body: "Não está provado. Uma análise viu menos cortisol, mas as pessoas não se sentiam menos stressadas. O BfR diz que não há prova."
+    tr:
+      title: "Efsane: ashwagandha stresi alır"
+      body: "Kanıtlanmadı. Bir analizde kortizol düştü ama insanlar kendini daha az stresli hissetmedi. BfR iddia edilen etkiyi kanıtsız sayıyor."
+
+  - key: niet-voor-mij
+    kind: myth
+    en:
+      title: "Myth: you would know if you're at risk"
+      body: "Not true. It is unknown who is sensitive. In an Indian series, 2 people only learned of their liver disease after they got sick."
+    nl:
+      title: "Mythe: je weet wel of je risico loopt"
+      body: "Klopt niet. Niemand weet wie gevoelig is. In een Indiase reeks hoorden 2 mensen pas van hun leverziekte nadat ze ziek werden."
+    de:
+      title: "Mythos: du weißt, ob du gefährdet bist"
+      body: "Stimmt nicht. Unbekannt ist, wer empfindlich ist. In einer Fallserie aus Indien erfuhren 2 Leute erst nach der Erkrankung von ihrem Leberleiden."
+    es:
+      title: "Mito: sabrías si estás en riesgo"
+      body: "No es así. No se sabe quién es sensible. En una serie de la India, 2 personas supieron de su enfermedad hepática al enfermar."
+    fr:
+      title: "Mythe : tu saurais si tu es à risque"
+      body: "Faux. On ne sait pas qui est sensible. Dans une série indienne, 2 personnes ont appris leur maladie du foie une fois malades."
+    pt:
+      title: "Mito: saberias se estás em risco"
+      body: "Não é verdade. Não se sabe quem é sensível. Numa série da Índia, 2 pessoas só souberam da doença no fígado ao ficarem doentes."
+    tr:
+      title: "Efsane: risk altındaysan bilirsin"
+      body: "Doğru değil. Kimin hassas olduğu bilinmiyor. Hindistan'daki bir seride 2 kişi karaciğer hastalığını ancak hastalanınca öğrendi."

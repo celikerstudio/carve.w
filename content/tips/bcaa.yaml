@@ -1,0 +1,217 @@
+article: bcaa
+tips:
+  - key: drie-van-negen
+    kind: fact
+    en:
+      title: "What BCAAs are"
+      body: "BCAAs are 3 of the 9 essential amino acids: leucine, isoleucine and valine. Leucine is the main switch for muscle building."
+    nl:
+      title: "Wat BCAA's zijn"
+      body: "BCAA's zijn 3 van de 9 essentiële aminozuren: leucine, isoleucine en valine. Leucine is de hoofdschakelaar voor spieropbouw."
+    de:
+      title: "Was BCAAs sind"
+      body: "BCAAs sind 3 der 9 essenziellen Aminosäuren: Leucin, Isoleucin und Valin. Leucin ist der Hauptschalter für den Muskelaufbau."
+    es:
+      title: "Qué son los BCAA"
+      body: "Los BCAA son 3 de los 9 aminoácidos esenciales: leucina, isoleucina y valina. La leucina es el interruptor principal del músculo."
+    fr:
+      title: "Ce que sont les BCAA"
+      body: "Les BCAA sont 3 des 9 acides aminés essentiels : leucine, isoleucine et valine. La leucine est le déclencheur principal du muscle."
+    pt:
+      title: "O que são BCAA"
+      body: "Os BCAA são 3 dos 9 aminoácidos essenciais: leucina, isoleucina e valina. A leucina é o principal interruptor do músculo."
+    tr:
+      title: "BCAA nedir"
+      body: "BCAA'lar 9 temel amino asitten 3'üdür: lösin, izolösin ve valin. Kas yapımının ana anahtarı lösindir."
+
+  - key: half-van-whey
+    kind: fact
+    en:
+      title: "BCAAs versus whey"
+      body: "In one study 5.6 g of BCAAs after lifting raised muscle building 22% over placebo. That is about half of what whey usually does."
+    nl:
+      title: "BCAA's tegen whey"
+      body: "In één studie gaf 5,6 gram BCAA's na het trainen 22% meer spieropbouw dan placebo. Dat is ongeveer de helft van wat whey meestal doet."
+    de:
+      title: "BCAAs gegen Whey"
+      body: "In einer Studie steigerten 5,6 g BCAAs nach dem Training den Muskelaufbau um 22% gegenüber Placebo. Etwa halb so viel wie bei Whey."
+    es:
+      title: "BCAA frente a whey"
+      body: "En un estudio, 5,6 g de BCAA tras entrenar subieron la síntesis muscular un 22% frente a placebo. Es la mitad de lo que suele dar el whey."
+    fr:
+      title: "BCAA contre whey"
+      body: "Dans une étude, 5,6 g de BCAA après la séance ont relevé la synthèse musculaire de 22% face au placebo. Environ la moitié de la whey."
+    pt:
+      title: "BCAA contra whey"
+      body: "Num estudo, 5,6 g de BCAA depois do treino subiram a síntese muscular 22% face ao placebo. É cerca de metade do que o whey costuma dar."
+    tr:
+      title: "BCAA ve whey"
+      body: "Bir çalışmada antrenman sonrası 5,6 g BCAA kas yapımını plaseboya göre %22 artırdı. Bu, whey'in genelde yaptığının yaklaşık yarısı."
+
+  - key: vervangt-eiwit
+    kind: myth
+    en:
+      title: "Myth: BCAAs can replace your protein"
+      body: "Not true. Leucine can start muscle building, but the other essential amino acids are the material it is built from."
+    nl:
+      title: "Mythe: BCAA's vervangen je eiwit"
+      body: "Klopt niet. Leucine kan de spieropbouw starten, maar de andere essentiële aminozuren zijn het materiaal waarmee gebouwd wordt."
+    de:
+      title: "Mythos: BCAAs ersetzen dein Protein"
+      body: "Stimmt nicht. Leucin kann den Muskelaufbau starten, aber die anderen essenziellen Aminosäuren sind das Baumaterial."
+    es:
+      title: "Mito: los BCAA sustituyen tu proteína"
+      body: "No es cierto. La leucina puede arrancar la síntesis, pero los demás aminoácidos esenciales son el material con el que se construye."
+    fr:
+      title: "Mythe : les BCAA remplacent tes protéines"
+      body: "Faux. La leucine peut lancer la construction, mais les autres acides aminés essentiels en sont les matériaux."
+    pt:
+      title: "Mito: os BCAA substituem a proteína"
+      body: "Não é verdade. A leucina pode arrancar a síntese, mas os outros aminoácidos essenciais são o material com que se constrói."
+    tr:
+      title: "Efsane: BCAA proteinin yerini tutar"
+      body: "Doğru değil. Lösin kas yapımını başlatabilir ama asıl yapı malzemesi diğer temel amino asitlerdir."
+
+  - key: spiergroei
+    kind: myth
+    en:
+      title: "Myth: BCAAs give you more muscle"
+      body: "Not shown. The ISSN calls the evidence limited. In 8 weeks of lifting, 9 g a day made no difference to body composition."
+    nl:
+      title: "Mythe: van BCAA's krijg je meer spier"
+      body: "Niet aangetoond. Het ISSN noemt het bewijs beperkt. In 8 weken krachttraining maakte 9 gram per dag niets uit voor je lichaamsbouw."
+    de:
+      title: "Mythos: BCAAs bringen mehr Muskeln"
+      body: "Nicht belegt. Die ISSN nennt die Beweise begrenzt. In 8 Wochen Krafttraining änderten 9 g am Tag nichts an der Körperzusammensetzung."
+    es:
+      title: "Mito: los BCAA te dan más músculo"
+      body: "No está demostrado. La ISSN dice que la evidencia es limitada. En 8 semanas de pesas, 9 g al día no cambiaron la composición corporal."
+    fr:
+      title: "Mythe : les BCAA donnent plus de muscle"
+      body: "Pas démontré. L'ISSN juge les preuves limitées. En 8 semaines de muscu, 9 g par jour n'ont rien changé à la composition corporelle."
+    pt:
+      title: "Mito: os BCAA dão mais músculo"
+      body: "Não está demonstrado. A ISSN diz que a evidência é limitada. Em 8 semanas de treino, 9 g por dia não mudaram a composição corporal."
+    tr:
+      title: "Efsane: BCAA daha çok kas yapar"
+      body: "Gösterilmedi. ISSN kanıtları sınırlı buluyor. 8 haftalık ağırlık antrenmanında günde 9 g vücut kompozisyonunu değiştirmedi."
+
+  - key: spierpijn
+    kind: fact
+    en:
+      title: "BCAAs and sore muscles"
+      body: "Several studies found less soreness and less loss of strength after muscle-damaging training. For endurance the results are mixed."
+    nl:
+      title: "BCAA's en spierpijn"
+      body: "Meerdere studies zagen minder spierpijn en minder krachtverlies na zware training. Voor duursport zijn de resultaten wisselend."
+    de:
+      title: "BCAAs und Muskelkater"
+      body: "Mehrere Studien fanden weniger Muskelkater und Kraftverlust nach muskelschädigendem Training. Bei Ausdauer sind die Ergebnisse gemischt."
+    es:
+      title: "BCAA y agujetas"
+      body: "Varios estudios vieron menos agujetas y menos pérdida de fuerza tras entrenos que dañan el músculo. En resistencia, resultados dispares."
+    fr:
+      title: "BCAA et courbatures"
+      body: "Plusieurs études ont vu moins de courbatures et de perte de force après un effort qui abîme le muscle. En endurance, c'est mitigé."
+    pt:
+      title: "BCAA e dores musculares"
+      body: "Vários estudos viram menos dores e menos perda de força depois de treinos que danificam o músculo. Na resistência, resultados mistos."
+    tr:
+      title: "BCAA ve kas ağrısı"
+      body: "Birkaç çalışma kası zorlayan antrenman sonrası daha az ağrı ve güç kaybı buldu. Dayanıklılık için sonuçlar karışık."
+
+  - key: alleen-leucine
+    kind: myth
+    en:
+      title: "Myth: leucine alone is enough"
+      body: "Not true. The ISSN says a higher dose of all essential amino acids works best to keep muscle building going. Leucine alone does not."
+    nl:
+      title: "Mythe: leucine alleen is genoeg"
+      body: "Klopt niet. Volgens het ISSN houdt een flinke dosis van álle essentiële aminozuren de spieropbouw het best gaande. Leucine alleen niet."
+    de:
+      title: "Mythos: Leucin allein reicht"
+      body: "Stimmt nicht. Laut ISSN hält eine höhere Dosis aller essenziellen Aminosäuren den Muskelaufbau am besten in Gang, Leucin allein nicht."
+    es:
+      title: "Mito: con leucina sola basta"
+      body: "No es cierto. Según la ISSN, una dosis mayor de todos los aminoácidos esenciales mantiene mejor la síntesis. La leucina sola no."
+    fr:
+      title: "Mythe : la leucine seule suffit"
+      body: "Faux. Selon l'ISSN, une bonne dose de tous les acides aminés essentiels entretient le mieux la synthèse. La leucine seule, non."
+    pt:
+      title: "Mito: só leucina chega"
+      body: "Não é verdade. Segundo a ISSN, uma dose maior de todos os aminoácidos essenciais mantém melhor a síntese. A leucina sozinha não."
+    tr:
+      title: "Efsane: tek başına lösin yeter"
+      body: "Doğru değil. ISSN'e göre kas yapımını en iyi tüm temel amino asitlerin yüksek dozu sürdürür. Tek başına lösin değil."
+
+  - key: leucine-per-maaltijd
+    kind: fact
+    en:
+      title: "Leucine per meal"
+      body: "The ISSN advice is about 1 to 3 g of leucine per meal. You get that from good protein sources, with the other amino acids included."
+    nl:
+      title: "Leucine per maaltijd"
+      body: "Het ISSN adviseert zo'n 1 tot 3 gram leucine per maaltijd. Dat haal je uit goede eiwitbronnen, met de andere aminozuren er gratis bij."
+    de:
+      title: "Leucin pro Mahlzeit"
+      body: "Die ISSN rät zu etwa 1 bis 3 g Leucin pro Mahlzeit. Das bekommst du aus guten Proteinquellen, die anderen Aminosäuren gleich dabei."
+    es:
+      title: "Leucina por comida"
+      body: "La ISSN aconseja unos 1 a 3 g de leucina por comida. Lo sacas de buenas fuentes de proteína, con los demás aminoácidos incluidos."
+    fr:
+      title: "La leucine par repas"
+      body: "L'ISSN conseille environ 1 à 3 g de leucine par repas. Tu l'obtiens avec de bonnes sources de protéines, les autres acides aminés inclus."
+    pt:
+      title: "Leucina por refeição"
+      body: "A ISSN aconselha cerca de 1 a 3 g de leucina por refeição. Tiras isso de boas fontes de proteína, com os outros aminoácidos incluídos."
+    tr:
+      title: "Öğün başına lösin"
+      body: "ISSN öğün başına yaklaşık 1 ila 3 g lösin öneriyor. Bunu iyi protein kaynaklarından, diğer amino asitlerle birlikte alırsın."
+
+  - key: losse-eaa
+    kind: fact
+    en:
+      title: "Loose EAAs as powder"
+      body: "6 to 12 g of essential amino acids raises muscle building for a few hours. Proof that this powder adds muscle over time is limited."
+    nl:
+      title: "Losse EAA's als poeder"
+      body: "6 tot 12 gram essentiële aminozuren zet de spieropbouw een paar uur aan. Bewijs dat dat poeder op termijn spier oplevert is beperkt."
+    de:
+      title: "Freie EAAs als Pulver"
+      body: "6 bis 12 g essenzielle Aminosäuren steigern den Muskelaufbau für ein paar Stunden. Dass das Pulver auf Dauer Muskeln bringt, ist kaum belegt."
+    es:
+      title: "EAA sueltos en polvo"
+      body: "De 6 a 12 g de aminoácidos esenciales suben la síntesis unas horas. La prueba de que ese polvo dé músculo a largo plazo es limitada."
+    fr:
+      title: "Les EAA en poudre"
+      body: "6 à 12 g d'acides aminés essentiels relancent la synthèse quelques heures. Qu'ils ajoutent du muscle à la longue reste peu prouvé."
+    pt:
+      title: "EAA soltos em pó"
+      body: "6 a 12 g de aminoácidos essenciais sobem a síntese durante umas horas. A prova de que esse pó dá músculo a longo prazo é limitada."
+    tr:
+      title: "Toz halinde serbest EAA"
+      body: "6 ila 12 g temel amino asit kas yapımını birkaç saat artırır. Bu tozun zamanla kas kazandırdığına dair kanıt sınırlı."
+
+  - key: ouderen-whey
+    kind: fact
+    en:
+      title: "Whey or an amino mix?"
+      body: "In 15 older adults, 15 g of whey raised muscle protein gain in the leg. An amino acid mix that matched that whey did not."
+    nl:
+      title: "Whey of een aminomix?"
+      body: "Bij 15 ouderen gaf 15 gram whey meer eiwitopbouw in het been. Een aminozuurmix met precies dezelfde samenstelling deed dat niet."
+    de:
+      title: "Whey oder Aminomix?"
+      body: "Bei 15 älteren Erwachsenen steigerten 15 g Whey den Proteinaufbau im Bein. Ein passender Aminosäuremix schaffte das nicht."
+    es:
+      title: "¿Whey o mezcla de aminos?"
+      body: "En 15 adultos mayores, 15 g de whey subieron la ganancia de proteína en la pierna. Una mezcla de aminoácidos igual a ese whey, no."
+    fr:
+      title: "Whey ou mélange d'acides aminés ?"
+      body: "Chez 15 seniors, 15 g de whey ont augmenté le gain protéique de la jambe. Un mélange d'acides aminés identique à cette whey, non."
+    pt:
+      title: "Whey ou mistura de aminos?"
+      body: "Em 15 adultos mais velhos, 15 g de whey subiram o ganho de proteína na perna. Uma mistura de aminoácidos igual a esse whey não."
+    tr:
+      title: "Whey mi amino karışımı mı?"
+      body: "15 yaşlı yetişkinde 15 g whey bacaktaki protein kazanımını artırdı. O whey'e denk bir amino asit karışımı artırmadı."

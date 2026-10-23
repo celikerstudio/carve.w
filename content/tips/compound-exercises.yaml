@@ -1,0 +1,241 @@
+article: compound-exercises
+tips:
+  - key: wat-eerst
+    kind: fact
+    en:
+      title: "What goes first"
+      body: "Strength went up most in the exercises done at the start of a session. Put the lift you most want to get stronger at first."
+    nl:
+      title: "Wat eerst?"
+      body: "Kracht steeg het meest bij de oefeningen aan het begin van je training. Zet de lift waar je het sterkst in wilt worden dus vooraan."
+    de:
+      title: "Was kommt zuerst?"
+      body: "Die Kraft stieg am meisten bei den Übungen am Anfang des Trainings. Mach die Übung, in der du am stärksten werden willst, zuerst."
+    es:
+      title: "¿Qué va primero?"
+      body: "La fuerza subió más en los ejercicios hechos al inicio de la sesión. Pon primero el que más quieras mejorar."
+    fr:
+      title: "Qu'est-ce qui passe en premier ?"
+      body: "La force a le plus progressé sur les exercices faits en début de séance. Mets en premier celui où tu veux le plus progresser."
+    pt:
+      title: "O que vem primeiro?"
+      body: "A força subiu mais nos exercícios feitos no início do treino. Põe primeiro aquele em que mais queres ficar forte."
+    tr:
+      title: "Önce ne gelmeli?"
+      body: "Güç en çok antrenmanın başında yapılan egzersizlerde arttı. En çok güçlenmek istediğin hareketi başa koy."
+
+  - key: volgorde-spiergroei
+    kind: myth
+    en:
+      title: "Myth: compound lifts must come first for growth"
+      body: "Not true. For muscle growth, the order of your exercises made no difference. For strength it did."
+    nl:
+      title: "Mythe: voor spiergroei gaat compound eerst"
+      body: "Klopt niet. Voor spiergroei maakte de volgorde van je oefeningen niets uit. Voor kracht wel."
+    de:
+      title: "Mythos: für Muskelaufbau Grundübungen zuerst"
+      body: "Stimmt nicht. Für den Muskelaufbau machte die Reihenfolge der Übungen keinen Unterschied. Für die Kraft schon."
+    es:
+      title: "Mito: para crecer, los multiarticulares primero"
+      body: "No es cierto. Para el crecimiento muscular, el orden de los ejercicios no cambió nada. Para la fuerza, sí."
+    fr:
+      title: "Mythe : polyarticulaires d'abord pour grossir"
+      body: "Faux. Pour la prise de muscle, l'ordre des exercices n'a rien changé. Pour la force, si."
+    pt:
+      title: "Mito: para crescer, multiarticulares primeiro"
+      body: "Não é verdade. Para o crescimento muscular, a ordem dos exercícios não fez diferença. Para a força, fez."
+    tr:
+      title: "Efsane: kas için bileşik hareketler önce gelir"
+      body: "Doğru değil. Kas büyümesi için egzersiz sırası fark yaratmadı. Güç için ise yarattı."
+
+  - key: isolatie-ook-eerst
+    kind: fact
+    en:
+      title: "Order works both ways"
+      body: "In a meta-analysis of 11 studies, even isolation exercises gained more strength when they came first. What you do early improves most."
+    nl:
+      title: "Volgorde werkt twee kanten op"
+      body: "In een meta-analyse van 11 studies werden ook isolatieoefeningen sterker als ze eerst kwamen. Wat je vroeg doet, gaat het hardst vooruit."
+    de:
+      title: "Reihenfolge wirkt in beide Richtungen"
+      body: "In einer Metaanalyse von 11 Studien legten auch Isolationsübungen mehr Kraft zu, wenn sie zuerst kamen. Was früh kommt, wird am stärksten."
+    es:
+      title: "El orden funciona en ambos sentidos"
+      body: "En un metaanálisis de 11 estudios, también los ejercicios de aislamiento ganaron más fuerza al ir primero. Lo que haces antes mejora más."
+    fr:
+      title: "L'ordre joue dans les deux sens"
+      body: "Dans une méta-analyse de 11 études, même l'isolation a gagné plus de force placée en premier. Ce qui vient tôt progresse le plus."
+    pt:
+      title: "A ordem funciona nos dois sentidos"
+      body: "Numa meta-análise de 11 estudos, também os exercícios de isolamento ganharam mais força quando vieram primeiro. O que fazes cedo melhora mais."
+    tr:
+      title: "Sıra iki yönde de işler"
+      body: "11 çalışmalık bir meta-analizde izolasyon egzersizleri de başta yapıldığında daha çok güçlendi. Erken yaptığın şey en çok gelişir."
+
+  - key: isolatie-nutteloos
+    kind: myth
+    en:
+      title: "Myth: isolation exercises are useless"
+      body: "Not true. In a small meta-analysis they grew arm and leg muscles as much as compound lifts. The ACSM found too few data to decide."
+    nl:
+      title: "Mythe: isolatieoefeningen zijn nutteloos"
+      body: "Klopt niet. In een kleine meta-analyse groeiden armen en benen er even goed van als van compound. Het ACSM vond te weinig data voor een oordeel."
+    de:
+      title: "Mythos: Isolationsübungen bringen nichts"
+      body: "Stimmt nicht. In einer kleinen Metaanalyse wuchsen Arme und Beine damit so gut wie mit Grundübungen. Dem ACSM fehlten Daten für ein Urteil."
+    es:
+      title: "Mito: el aislamiento no sirve"
+      body: "No es cierto. En un metaanálisis pequeño hizo crecer brazos y piernas igual que los multiarticulares. El ACSM vio pocos datos para decidir."
+    fr:
+      title: "Mythe : l'isolation ne sert à rien"
+      body: "Faux. Dans une petite méta-analyse, bras et jambes ont autant grossi qu'avec les polyarticulaires. L'ACSM a trop peu de données pour trancher."
+    pt:
+      title: "Mito: o isolamento não serve para nada"
+      body: "Não é verdade. Numa pequena meta-análise fez crescer braços e pernas tanto como os multiarticulares. O ACSM viu poucos dados para decidir."
+    tr:
+      title: "Efsane: izolasyon egzersizleri işe yaramaz"
+      body: "Doğru değil. Küçük bir meta-analizde kol ve bacakları bileşik hareketler kadar büyüttüler. ACSM karar için yeterli veri bulamadı."
+
+  - key: pulldown-biceps
+    kind: fact
+    en:
+      title: "Pulldowns and your biceps"
+      body: "In untrained young men, 10 weeks of lat pulldowns grew the elbow flexors about as much as 10 weeks of biceps curls."
+    nl:
+      title: "Pulldowns en je biceps"
+      body: "Bij ongetrainde jonge mannen groeiden de armbuigers van 10 weken lat pulldowns ongeveer even hard als van 10 weken bicepscurls."
+    de:
+      title: "Latziehen und dein Bizeps"
+      body: "Bei untrainierten jungen Männern wuchsen die Armbeuger durch 10 Wochen Latziehen etwa so stark wie durch 10 Wochen Bizepscurls."
+    es:
+      title: "Jalones y tus bíceps"
+      body: "En hombres jóvenes sin entrenar, 10 semanas de jalones hicieron crecer los flexores del codo casi igual que 10 semanas de curl de bíceps."
+    fr:
+      title: "Tirage vertical et biceps"
+      body: "Chez de jeunes hommes non entraînés, 10 semaines de tirage vertical ont fait grossir les fléchisseurs du coude presque autant que des curls."
+    pt:
+      title: "Puxadas e os teus bíceps"
+      body: "Em homens jovens sem treino, 10 semanas de puxada alta fizeram crescer os flexores do cotovelo quase tanto como 10 semanas de curl."
+    tr:
+      title: "Lat pulldown ve pazun"
+      body: "Antrenmansız genç erkeklerde 10 hafta lat pulldown, dirsek bükücü kasları yaklaşık 10 hafta biceps curl kadar büyüttü."
+
+  - key: tijdwinst
+    kind: fact
+    en:
+      title: "Compound lifts save time"
+      body: "One squat trains your thighs and glutes in one movement. Covering the same muscles with isolation exercises takes several."
+    nl:
+      title: "Compound scheelt tijd"
+      body: "Eén squat traint je dijen en billen in één beweging. Met isolatieoefeningen heb je er meerdere nodig voor dezelfde spieren."
+    de:
+      title: "Grundübungen sparen Zeit"
+      body: "Eine Kniebeuge trainiert Oberschenkel und Gesäß in einer Bewegung. Mit Isolationsübungen brauchst du für dieselben Muskeln mehrere."
+    es:
+      title: "Los multiarticulares ahorran tiempo"
+      body: "Una sentadilla trabaja muslos y glúteos en un solo movimiento. Con aislamiento necesitas varios ejercicios para los mismos músculos."
+    fr:
+      title: "Le polyarticulaire fait gagner du temps"
+      body: "Un squat travaille cuisses et fessiers en un seul mouvement. En isolation, il te faut plusieurs exercices pour les mêmes muscles."
+    pt:
+      title: "Multiarticulares poupam tempo"
+      body: "Um agachamento treina coxas e glúteos num só movimento. Com isolamento precisas de vários exercícios para os mesmos músculos."
+    tr:
+      title: "Bileşik hareketler zaman kazandırır"
+      body: "Bir squat, uyluklarını ve kalçanı tek harekette çalıştırır. İzolasyonla aynı kaslar için birkaç egzersiz gerekir."
+
+  - key: voetbalproef
+    kind: fact
+    en:
+      title: "Compound-only vs isolation-only"
+      body: "In one 8-week trial with young soccer players new to lifting, compound-only training raised strength and aerobic fitness more than isolation-only."
+    nl:
+      title: "Alleen compound of alleen isolatie"
+      body: "In één proef van 8 weken met jonge voetballers zonder krachtervaring gaf alleen compound meer kracht en conditie dan alleen isolatie."
+    de:
+      title: "Nur Grund- oder nur Isolationsübungen"
+      body: "In einer 8-Wochen-Studie mit jungen Fußballern ohne Krafttraining brachten nur Grundübungen mehr Kraft und Ausdauer als nur Isolation."
+    es:
+      title: "Solo multiarticulares o solo aislamiento"
+      body: "En un ensayo de 8 semanas con futbolistas jóvenes nuevos en las pesas, solo multiarticulares dio más fuerza y forma aeróbica que solo aislamiento."
+    fr:
+      title: "Que du poly ou que de l'isolation"
+      body: "Dans un essai de 8 semaines chez de jeunes footballeurs novices en muscu, le poly seul a donné plus de force et d'endurance que l'isolation seule."
+    pt:
+      title: "Só multiarticulares ou só isolamento"
+      body: "Num ensaio de 8 semanas com jovens futebolistas novos na musculação, só multiarticulares deu mais força e capacidade aeróbia que só isolamento."
+    tr:
+      title: "Sadece bileşik mi, sadece izolasyon mu"
+      body: "Ağırlık deneyimi olmayan genç futbolcularla 8 haftalık bir denemede sadece bileşik hareketler, izolasyondan daha çok güç ve kondisyon getirdi."
+
+  - key: waar-isolatie-helpt
+    kind: fact
+    en:
+      title: "Where isolation helps"
+      body: "A 2017 review found isolation work may be useful for your lower back muscles and for fixing imbalances between muscles."
+    nl:
+      title: "Waar isolatie helpt"
+      body: "Volgens een review uit 2017 kan isolatiewerk nuttig zijn voor je onderrugspieren en om onbalans tussen spieren recht te trekken."
+    de:
+      title: "Wo Isolation hilft"
+      body: "Laut einem Review von 2017 kann Isolationstraining für die unteren Rückenmuskeln nützlich sein und um Ungleichgewichte auszugleichen."
+    es:
+      title: "Dónde ayuda el aislamiento"
+      body: "Una revisión de 2017 vio que el aislamiento puede servir para la zona lumbar y para corregir desequilibrios entre músculos."
+    fr:
+      title: "Où l'isolation aide"
+      body: "Selon une revue de 2017, l'isolation peut être utile pour les muscles du bas du dos et pour corriger des déséquilibres entre muscles."
+    pt:
+      title: "Onde o isolamento ajuda"
+      body: "Segundo uma revisão de 2017, o isolamento pode ser útil para os músculos lombares e para corrigir desequilíbrios entre músculos."
+    tr:
+      title: "İzolasyon nerede işe yarar"
+      body: "2017 tarihli bir derlemeye göre izolasyon, bel kasların için ve kaslar arasındaki dengesizlikleri düzeltmek için faydalı olabilir."
+
+  - key: curls-erbovenop
+    kind: myth
+    en:
+      title: "Myth: you need curls on top of pulldowns"
+      body: "Not quite. In long-term studies of the arms, a 2017 review found no extra gain from adding isolation work to a compound program."
+    nl:
+      title: "Mythe: naast pulldowns heb je curls nodig"
+      body: "Niet helemaal. In langlopende studies naar de armen gaf isolatie bovenop compound geen extra winst, volgens een review uit 2017."
+    de:
+      title: "Mythos: zum Latziehen gehören Curls"
+      body: "Nicht ganz. In Langzeitstudien zu den Armen brachte Isolation zusätzlich zu Grundübungen laut einem Review von 2017 nichts extra."
+    es:
+      title: "Mito: necesitas curls además de jalones"
+      body: "No del todo. En estudios largos de los brazos, añadir aislamiento a un programa multiarticular no dio nada extra, según una revisión de 2017."
+    fr:
+      title: "Mythe : il faut des curls en plus des tirages"
+      body: "Pas tout à fait. Dans les études longues sur les bras, ajouter de l'isolation au poly n'a rien apporté de plus, selon une revue de 2017."
+    pt:
+      title: "Mito: precisas de curls além das puxadas"
+      body: "Não bem. Em estudos longos sobre os braços, juntar isolamento a um programa multiarticular não deu nada a mais, segundo uma revisão de 2017."
+    tr:
+      title: "Efsane: pulldown'a ek olarak curl şart"
+      body: "Tam değil. 2017 tarihli bir derlemede, uzun süreli kol çalışmalarında bileşik programa izolasyon eklemek ekstra kazanç getirmedi."
+
+  - key: licht-leren
+    kind: fact
+    en:
+      title: "Heavy lifts, light start"
+      body: "Compound lifts put the most weight on the bar. Learn the movement with a lighter weight first, and don't rush it with poor form."
+    nl:
+      title: "Zware lifts, licht beginnen"
+      body: "Bij compound oefeningen ligt het meeste gewicht op de stang. Leer de beweging eerst met een lichter gewicht en jaag er niet doorheen."
+    de:
+      title: "Schwere Übungen, leicht anfangen"
+      body: "Bei Grundübungen liegt das meiste Gewicht auf der Stange. Lern die Bewegung erst mit weniger Gewicht und hetz nicht mit schlechter Technik."
+    es:
+      title: "Ejercicios pesados, empieza ligero"
+      body: "Los multiarticulares llevan más peso en la barra. Aprende el movimiento con menos peso primero y no corras con mala técnica."
+    fr:
+      title: "Charges lourdes, départ léger"
+      body: "Le polyarticulaire met le plus de poids sur la barre. Apprends le mouvement plus léger d'abord, sans te presser avec une mauvaise technique."
+    pt:
+      title: "Exercícios pesados, começa leve"
+      body: "Os multiarticulares põem mais peso na barra. Aprende o movimento primeiro com menos peso e não te apresses com má técnica."
+    tr:
+      title: "Ağır hareket, hafif başlangıç"
+      body: "Bileşik hareketlerde barda en çok ağırlık olur. Hareketi önce daha hafif bir ağırlıkla öğren, kötü formla acele etme."

@@ -1,0 +1,241 @@
+article: frequency
+tips:
+  - key: minimaal-twee-keer
+    kind: fact
+    en:
+      title: "The minimum"
+      body: "The ACSM advises training with high effort at least twice a week, working all major muscle groups. Beginners and experienced lifters alike."
+    nl:
+      title: "Het minimum"
+      body: "Het ACSM raadt aan minstens twee keer per week met hoge inzet te trainen, met al je grote spiergroepen. Voor beginners en gevorderden."
+    de:
+      title: "Das Minimum"
+      body: "Das ACSM rät, mindestens zweimal pro Woche mit hohem Einsatz alle großen Muskelgruppen zu trainieren. Für Anfänger und Erfahrene."
+    es:
+      title: "El mínimo"
+      body: "El ACSM aconseja entrenar con mucho esfuerzo al menos dos veces por semana, con todos los grandes grupos musculares. Para novatos y veteranos."
+    fr:
+      title: "Le minimum"
+      body: "L'ACSM conseille de t'entraîner dur au moins deux fois par semaine, sur tous les grands groupes musculaires. Débutant ou confirmé."
+    pt:
+      title: "O mínimo"
+      body: "O ACSM aconselha treinar com esforço alto pelo menos duas vezes por semana, com todos os grandes grupos musculares. Para iniciantes e experientes."
+    tr:
+      title: "Asgari sıklık"
+      body: "ACSM haftada en az iki kez, tüm büyük kas gruplarını yüksek eforla çalıştırmayı öneriyor. Yeni başlayan da deneyimli de."
+
+  - key: zes-dagen
+    kind: myth
+    en:
+      title: "Myth: you need to train six days a week"
+      body: "Not true. With the same weekly sets, training one day or more than five days a week made no difference to muscle growth."
+    nl:
+      title: "Mythe: je moet zes dagen per week trainen"
+      body: "Klopt niet. Met evenveel sets per week maakte één dag of meer dan vijf dagen trainen geen verschil voor spiergroei."
+    de:
+      title: "Mythos: du musst sechsmal pro Woche trainieren"
+      body: "Stimmt nicht. Bei gleichen Wochensätzen machte ein Tag oder mehr als fünf Tage pro Woche keinen Unterschied beim Muskelwachstum."
+    es:
+      title: "Mito: hay que entrenar seis días"
+      body: "No es cierto. Con las mismas series semanales, entrenar un día o más de cinco días a la semana no cambió el crecimiento muscular."
+    fr:
+      title: "Mythe : il faut s'entraîner six jours"
+      body: "Faux. À séries hebdo égales, un jour ou plus de cinq jours d'entraînement par semaine n'a rien changé à la prise de muscle."
+    pt:
+      title: "Mito: tens de treinar seis dias"
+      body: "Não é verdade. Com as mesmas séries semanais, treinar um dia ou mais de cinco dias por semana não mudou o crescimento muscular."
+    tr:
+      title: "Efsane: haftada altı gün çalışmalısın"
+      body: "Doğru değil. Haftalık set sayısı aynıyken haftada bir gün ya da beş günden fazla çalışmak kas gelişiminde fark yaratmadı."
+
+  - key: twee-betekenissen
+    kind: fact
+    en:
+      title: "Days or times per muscle"
+      body: "Three full-body sessions train your legs three times a week. Three days of push, pull and legs train them once."
+    nl:
+      title: "Dagen of keren per spier"
+      body: "Drie fullbody-trainingen raken je benen drie keer per week. Drie dagen push, pull en legs raken ze één keer."
+    de:
+      title: "Tage oder Reize pro Muskel"
+      body: "Drei Ganzkörpereinheiten trainieren deine Beine dreimal pro Woche. Drei Tage Push, Pull und Beine trainieren sie einmal."
+    es:
+      title: "Días o veces por músculo"
+      body: "Tres sesiones de cuerpo completo trabajan tus piernas tres veces por semana. Tres días de empuje, tirón y pierna, una sola vez."
+    fr:
+      title: "Jours ou fois par muscle"
+      body: "Trois séances full body travaillent tes jambes trois fois par semaine. Trois jours de push, pull et jambes, une seule fois."
+    pt:
+      title: "Dias ou vezes por músculo"
+      body: "Três treinos de corpo inteiro trabalham as tuas pernas três vezes por semana. Três dias de push, pull e pernas, só uma vez."
+    tr:
+      title: "Gün mü, kas başına sıklık mı"
+      body: "Üç tam vücut antrenmanı bacaklarını haftada üç kez çalıştırır. Üç gün itme, çekme ve bacak ise sadece bir kez."
+
+  - key: geen-niveaus-meer
+    kind: fact
+    en:
+      title: "Days by experience"
+      body: "In 2009 the ACSM gave beginners 2 to 3 days a week and advanced lifters 4 to 5. The 2026 position stand drops that split."
+    nl:
+      title: "Dagen per niveau"
+      body: "In 2009 gaf het ACSM beginners 2 tot 3 dagen per week en gevorderden 4 tot 5. Het standpunt van 2026 laat die indeling los."
+    de:
+      title: "Tage nach Erfahrung"
+      body: "2009 gab das ACSM Anfängern 2 bis 3 Tage pro Woche und Fortgeschrittenen 4 bis 5. Die Empfehlung von 2026 lässt diese Einteilung fallen."
+    es:
+      title: "Días según tu nivel"
+      body: "En 2009 el ACSM daba a los novatos 2 a 3 días por semana y a los avanzados 4 a 5. La postura de 2026 elimina esa división."
+    fr:
+      title: "Les jours selon le niveau"
+      body: "En 2009, l'ACSM donnait 2 à 3 jours par semaine aux débutants et 4 à 5 aux avancés. La position de 2026 abandonne ce découpage."
+    pt:
+      title: "Dias por nível"
+      body: "Em 2009 o ACSM dava 2 a 3 dias por semana aos iniciantes e 4 a 5 aos avançados. A posição de 2026 deixa cair essa divisão."
+    tr:
+      title: "Seviyeye göre gün sayısı"
+      body: "2009'da ACSM yeni başlayanlara haftada 2 ila 3, ileri seviyedekilere 4 ila 5 gün veriyordu. 2026 tavsiyesi bu ayrımı kaldırıyor."
+
+  - key: twee-keer-per-spier
+    kind: myth
+    en:
+      title: "Myth: hit each muscle twice a week"
+      body: "Not quite. Twice a week works fine, but at the same weekly volume the studies don't show it beats once. Pick what fits your week."
+    nl:
+      title: "Mythe: elke spier twee keer per week"
+      body: "Niet helemaal. Twee keer werkt prima, maar bij hetzelfde weekvolume laten de studies niet zien dat het beter is dan één keer."
+    de:
+      title: "Mythos: jeden Muskel zweimal pro Woche"
+      body: "Nicht ganz. Zweimal klappt gut, aber bei gleichem Wochenvolumen zeigen die Studien nicht, dass es besser ist als einmal."
+    es:
+      title: "Mito: cada músculo dos veces por semana"
+      body: "No del todo. Dos veces va bien, pero con el mismo volumen semanal los estudios no muestran que gane a una sola vez."
+    fr:
+      title: "Mythe : chaque muscle deux fois par semaine"
+      body: "Pas tout à fait. Deux fois, ça marche, mais à volume hebdo égal les études ne montrent pas que c'est mieux qu'une fois."
+    pt:
+      title: "Mito: cada músculo duas vezes por semana"
+      body: "Não exatamente. Duas vezes funciona bem, mas com o mesmo volume semanal os estudos não mostram que seja melhor do que uma."
+    tr:
+      title: "Efsane: her kas haftada iki kez"
+      body: "Tam değil. İki kez gayet iyi işler, ama haftalık hacim aynıyken çalışmalar bunun bir kezden iyi olduğunu göstermiyor."
+
+  - key: kracht-en-volume
+    kind: fact
+    en:
+      title: "More days, more strength?"
+      body: "In a 2018 meta-analysis, strength rose with frequency. With equal weekly volume that effect was no longer significant. Most studies used untrained people."
+    nl:
+      title: "Meer dagen, meer kracht?"
+      body: "In een meta-analyse uit 2018 steeg kracht met de frequentie. Bij gelijk weekvolume was dat niet meer significant. Meestal bij ongetrainden."
+    de:
+      title: "Mehr Tage, mehr Kraft?"
+      body: "In einer Metaanalyse von 2018 stieg die Kraft mit der Frequenz. Bei gleichem Wochenvolumen war das nicht mehr signifikant. Meist Untrainierte."
+    es:
+      title: "¿Más días, más fuerza?"
+      body: "En un metaanálisis de 2018, la fuerza subía con la frecuencia. Con el mismo volumen semanal ya no era significativo. Casi todos eran novatos."
+    fr:
+      title: "Plus de jours, plus de force ?"
+      body: "Dans une méta-analyse de 2018, la force montait avec la fréquence. À volume hebdo égal, l'effet n'était plus significatif. Surtout des novices."
+    pt:
+      title: "Mais dias, mais força?"
+      body: "Numa meta-análise de 2018, a força subia com a frequência. Com o mesmo volume semanal, o efeito deixava de ser significativo. Quase todos destreinados."
+    tr:
+      title: "Daha çok gün, daha çok güç mü?"
+      body: "2018 tarihli bir meta-analizde güç sıklıkla arttı. Haftalık hacim eşitken etki artık anlamlı değildi. Katılımcıların çoğu antrenmansızdı."
+
+  - key: kracht-op-een-lift
+    kind: fact
+    en:
+      title: "A newer take on strength"
+      body: "A newer analysis found strength still rose with frequency at equal volume, though less per extra day. That goes against earlier findings."
+    nl:
+      title: "Een nieuwere kijk op kracht"
+      body: "Een nieuwere analyse vond dat kracht bij gelijk volume toch steeg met de frequentie, wel minder per extra dag. Dat botst met eerdere studies."
+    de:
+      title: "Neuer Blick auf Kraft"
+      body: "Eine neuere Analyse fand bei gleichem Volumen mehr Kraft mit höherer Frequenz, mit weniger pro Zusatztag. Das widerspricht früheren Studien."
+    es:
+      title: "Otra mirada a la fuerza"
+      body: "Un análisis más nuevo vio que la fuerza subía con la frecuencia a igual volumen, aunque menos por día extra. Choca con estudios anteriores."
+    fr:
+      title: "Un autre regard sur la force"
+      body: "Une analyse plus récente a vu la force monter avec la fréquence à volume égal, mais moins par jour en plus. Ça contredit les études d'avant."
+    pt:
+      title: "Outro olhar sobre a força"
+      body: "Uma análise mais recente viu a força subir com a frequência a volume igual, mas menos por cada dia extra. Contraria estudos anteriores."
+    tr:
+      title: "Güce yeni bir bakış"
+      body: "Daha yeni bir analiz, eşit hacimde gücün sıklıkla yine arttığını buldu, ek gün başına daha az. Bu önceki bulgularla çelişiyor."
+
+  - key: split-wisselen
+    kind: myth
+    en:
+      title: "Myth: a new split fixes a plateau"
+      body: "Not quite. At the same volume, how often you trained a muscle made little difference to growth. Check your sets, effort and recovery first."
+    nl:
+      title: "Mythe: een nieuw schema lost een plateau op"
+      body: "Niet helemaal. Bij hetzelfde volume maakte hoe vaak je een spier trainde weinig uit voor groei. Kijk eerst naar je sets, inzet en herstel."
+    de:
+      title: "Mythos: ein neuer Split löst das Plateau"
+      body: "Nicht ganz. Bei gleichem Volumen machte die Trainingsfrequenz kaum einen Unterschied beim Wachstum. Prüf zuerst Sätze, Einsatz und Erholung."
+    es:
+      title: "Mito: cambiar de rutina rompe el estancamiento"
+      body: "No del todo. A igual volumen, la frecuencia por músculo apenas cambió el crecimiento. Revisa antes tus series, tu esfuerzo y tu descanso."
+    fr:
+      title: "Mythe : changer de split débloque la stagnation"
+      body: "Pas tout à fait. À volume égal, la fréquence par muscle a peu changé la prise de muscle. Regarde d'abord tes séries, ton effort et ta récup."
+    pt:
+      title: "Mito: mudar de divisão resolve a estagnação"
+      body: "Não exatamente. Com o mesmo volume, a frequência por músculo pouco mudou o crescimento. Vê primeiro as séries, o esforço e a recuperação."
+    tr:
+      title: "Efsane: yeni program platoyu kırar"
+      body: "Tam değil. Aynı hacimde bir kası ne sıklıkla çalıştırdığın gelişimi pek değiştirmedi. Önce setlerine, eforuna ve toparlanmana bak."
+
+  - key: dagen-die-je-volhoudt
+    kind: fact
+    en:
+      title: "Days you can keep up"
+      body: "Keep missing sessions? Fewer days that you actually train beat a plan you can't keep. Start from what you can do for months."
+    nl:
+      title: "Dagen die je volhoudt"
+      body: "Mis je steeds trainingen? Minder dagen die je echt doet zijn beter dan een schema dat je niet volhoudt. Ga uit van wat maanden lukt."
+    de:
+      title: "Tage, die du durchhältst"
+      body: "Fallen ständig Einheiten aus? Weniger Tage, die du wirklich trainierst, schlagen einen Plan, den du nicht hältst."
+    es:
+      title: "Días que puedas mantener"
+      body: "¿Te saltas sesiones a menudo? Menos días que de verdad entrenas valen más que un plan que no puedes mantener."
+    fr:
+      title: "Des jours que tu tiens"
+      body: "Tu rates souvent des séances ? Moins de jours que tu fais vraiment valent mieux qu'un plan que tu ne tiens pas."
+    pt:
+      title: "Dias que consegues manter"
+      body: "Falhas treinos muitas vezes? Menos dias que fazes mesmo valem mais do que um plano que não consegues manter."
+    tr:
+      title: "Sürdürebileceğin günler"
+      body: "Sürekli antrenman mı kaçırıyorsun? Gerçekten yaptığın daha az gün, sürdüremediğin bir plandan iyidir."
+
+  - key: te-lange-training
+    kind: fact
+    en:
+      title: "When sessions run long"
+      body: "If your last exercises suffer because the session is so long, that's a sign to spread your sets over more days."
+    nl:
+      title: "Als je training uitloopt"
+      body: "Lijden je laatste oefeningen eronder dat de training zo lang duurt? Dan is het tijd om je sets over meer dagen te verdelen."
+    de:
+      title: "Wenn das Training zu lang wird"
+      body: "Leiden deine letzten Übungen, weil die Einheit so lang ist, ist das ein Zeichen, deine Sätze auf mehr Tage zu verteilen."
+    es:
+      title: "Cuando la sesión se alarga"
+      body: "Si tus últimos ejercicios salen peor porque la sesión es muy larga, es señal de repartir tus series en más días."
+    fr:
+      title: "Quand la séance s'éternise"
+      body: "Si tes derniers exercices en pâtissent parce que la séance est trop longue, c'est le signe d'étaler tes séries sur plus de jours."
+    pt:
+      title: "Quando o treino se arrasta"
+      body: "Se os teus últimos exercícios sofrem porque o treino é longo demais, é sinal para espalhar as séries por mais dias."
+    tr:
+      title: "Antrenman uzayınca"
+      body: "Antrenman çok uzun sürdüğü için son hareketlerin kötüleşiyorsa, setlerini daha fazla güne yayma zamanı gelmiştir."

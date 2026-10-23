@@ -1,0 +1,241 @@
+article: warm-up
+tips:
+  - key: blessures
+    kind: myth
+    en:
+      title: "Myth: a warm-up prevents injuries"
+      body: "Not quite. Sport experts found no support for short-term protection. The ACSM says it may lower risk, but controlled studies are lacking."
+    nl:
+      title: "Mythe: een warming-up voorkomt blessures"
+      body: "Niet helemaal. Experts vonden geen steun voor bescherming op korte termijn. Volgens het ACSM kan het risico omlaag, maar goede studies ontbreken."
+    de:
+      title: "Mythos: Aufwärmen verhindert Verletzungen"
+      body: "Nicht ganz. Experten fanden keinen Beleg für kurzfristigen Schutz. Laut ACSM kann es das Risiko senken, kontrollierte Studien fehlen aber."
+    es:
+      title: "Mito: calentar evita lesiones"
+      body: "No del todo. Los expertos no vieron protección a corto plazo. El ACSM dice que puede bajar el riesgo, pero faltan estudios controlados."
+    fr:
+      title: "Mythe : l'échauffement évite les blessures"
+      body: "Pas tout à fait. Les experts n'ont vu aucune protection à court terme. Pour l'ACSM, il peut réduire le risque, mais les études contrôlées manquent."
+    pt:
+      title: "Mito: aquecer evita lesões"
+      body: "Não bem. Os especialistas não viram proteção a curto prazo. O ACSM diz que pode baixar o risco, mas faltam estudos controlados."
+    tr:
+      title: "Efsane: ısınma sakatlığı önler"
+      body: "Tam değil. Uzmanlar kısa vadeli korumaya dair destek bulmadı. ACSM riski azaltabileceğini söylüyor ama kontrollü çalışmalar eksik."
+
+  - key: rekken-als-opwarming
+    kind: myth
+    en:
+      title: "Myth: stretching is the best warm-up"
+      body: "Not quite. For lifting performance, the ACSM says a dynamic warm-up works better than stretching for most people."
+    nl:
+      title: "Mythe: rekken is de beste warming-up"
+      body: "Niet helemaal. Voor je prestaties met gewichten werkt een dynamische warming-up volgens het ACSM bij de meeste mensen beter dan rekken."
+    de:
+      title: "Mythos: Dehnen ist das beste Aufwärmen"
+      body: "Nicht ganz. Für die Leistung beim Krafttraining ist laut ACSM ein dynamisches Aufwärmen für die meisten besser als Dehnen."
+    es:
+      title: "Mito: estirar es el mejor calentamiento"
+      body: "No del todo. Para rendir con pesas, el ACSM dice que a la mayoría le va mejor un calentamiento dinámico que estirar."
+    fr:
+      title: "Mythe : s'étirer, le meilleur échauffement"
+      body: "Pas tout à fait. Pour la performance en muscu, l'ACSM dit qu'un échauffement dynamique vaut mieux que les étirements pour la plupart."
+    pt:
+      title: "Mito: alongar é o melhor aquecimento"
+      body: "Não bem. Para render nos pesos, o ACSM diz que para a maioria um aquecimento dinâmico é melhor do que alongar."
+    tr:
+      title: "Efsane: en iyi ısınma esnemedir"
+      body: "Tam değil. ACSM'ye göre ağırlık performansı için çoğu kişide dinamik ısınma esnemeden daha iyidir."
+
+  - key: lang-rekken
+    kind: fact
+    en:
+      title: "Long stretches before max efforts"
+      body: "Stretching experts advise against holding a stretch over 60 seconds per muscle right before a maximal or explosive effort."
+    nl:
+      title: "Lang rekken voor een maximale poging"
+      body: "Rekexperts raden af een spier langer dan 60 seconden te rekken vlak voor een maximale of explosieve inspanning."
+    de:
+      title: "Langes Dehnen vor Maximalversuchen"
+      body: "Dehnexperten raten ab, einen Muskel direkt vor einer maximalen oder explosiven Anstrengung länger als 60 Sekunden zu dehnen."
+    es:
+      title: "Estirar mucho antes de un máximo"
+      body: "Los expertos en estiramiento desaconsejan estirar un músculo más de 60 segundos justo antes de un esfuerzo máximo o explosivo."
+    fr:
+      title: "Étirements longs avant un effort max"
+      body: "Des experts déconseillent d'étirer un muscle plus de 60 secondes juste avant un effort maximal ou explosif."
+    pt:
+      title: "Alongar muito antes de um máximo"
+      body: "Especialistas em alongamento desaconselham alongar um músculo mais de 60 segundos logo antes de um esforço máximo ou explosivo."
+    tr:
+      title: "Maksimum denemeden önce uzun esneme"
+      body: "Esneme uzmanları, maksimum ya da patlayıcı bir eforun hemen öncesinde bir kası 60 saniyeden uzun esnetmeyi önermiyor."
+
+  - key: kort-rekken
+    kind: fact
+    en:
+      title: "Short stretches are fine"
+      body: "Short static stretches inside a dynamic warm-up, and dynamic stretching, don't have the drawback of long holds, say stretching experts."
+    nl:
+      title: "Kort rekken mag"
+      body: "Korte statische rekoefeningen binnen een dynamische warming-up, en dynamisch rekken, hebben het nadeel van lang rekken niet, zeggen experts."
+    de:
+      title: "Kurzes Dehnen ist okay"
+      body: "Kurze statische Dehnungen im dynamischen Aufwärmen und dynamisches Dehnen haben den Nachteil langer Dehnungen nicht, sagen Experten."
+    es:
+      title: "Estirar poco está bien"
+      body: "Según expertos, los estiramientos estáticos cortos dentro de un calentamiento dinámico, y los dinámicos, no tienen la pega de los largos."
+    fr:
+      title: "Les étirements courts, ça va"
+      body: "Selon des experts, les étirements statiques courts dans un échauffement dynamique, et les étirements dynamiques, n'ont pas ce défaut."
+    pt:
+      title: "Alongar pouco não faz mal"
+      body: "Segundo especialistas, alongamentos estáticos curtos num aquecimento dinâmico, e os dinâmicos, não têm o problema dos longos."
+    tr:
+      title: "Kısa esneme sorun değil"
+      body: "Uzmanlara göre dinamik ısınma içindeki kısa statik esnemeler ve dinamik esneme, uzun esnemenin dezavantajını taşımaz."
+
+  - key: opbouwen
+    kind: fact
+    en:
+      title: "Build up to your weight"
+      body: "A few minutes of easy movement, then lighter sets of your first exercise. That way your first heavy set isn't your first set."
+    nl:
+      title: "Bouw op naar je gewicht"
+      body: "Een paar minuten rustig bewegen, dan lichtere sets van je eerste oefening. Zo is je eerste zware set niet je eerste set."
+    de:
+      title: "Arbeite dich hoch"
+      body: "Ein paar Minuten locker bewegen, dann leichtere Sätze deiner ersten Übung. So ist dein erster schwerer Satz nicht dein erster Satz."
+    es:
+      title: "Sube poco a poco"
+      body: "Unos minutos de movimiento suave y luego series ligeras de tu primer ejercicio. Así tu primera serie pesada no es tu primera serie."
+    fr:
+      title: "Monte progressivement"
+      body: "Quelques minutes de mouvement facile, puis des séries légères du premier exercice. Ta première série lourde n'est alors pas la première."
+    pt:
+      title: "Sobe aos poucos"
+      body: "Uns minutos de movimento leve e depois séries leves do primeiro exercício. Assim a tua primeira série pesada não é a primeira série."
+    tr:
+      title: "Ağırlığına kademeli çık"
+      body: "Birkaç dakika hafif hareket, sonra ilk egzersizinden hafif setler. Böylece ilk ağır setin, ilk setin olmaz."
+
+  - key: opwarmsets-als-meetlat
+    kind: fact
+    en:
+      title: "Warm-up sets as a check"
+      body: "If your lighter warm-up sets feel unusually heavy, that tells you something about the day."
+    nl:
+      title: "Opwarmsets als meetlat"
+      body: "Voelen je lichte opwarmsets ongewoon zwaar? Dan zegt dat iets over je dag."
+    de:
+      title: "Aufwärmsätze als Check"
+      body: "Fühlen sich deine leichten Aufwärmsätze ungewohnt schwer an, sagt dir das etwas über den Tag."
+    es:
+      title: "Las series de calentamiento avisan"
+      body: "Si tus series ligeras de calentamiento se sienten raramente pesadas, eso te dice algo sobre el día."
+    fr:
+      title: "Les séries d'échauffement informent"
+      body: "Si tes séries légères d'échauffement te semblent anormalement lourdes, ça te dit quelque chose sur ta journée."
+    pt:
+      title: "As séries de aquecimento avisam"
+      body: "Se as tuas séries leves de aquecimento parecem estranhamente pesadas, isso diz-te algo sobre o dia."
+    tr:
+      title: "Isınma setleri bir işaret"
+      body: "Hafif ısınma setlerin alışılmadık derecede ağır geliyorsa, bu sana o gün hakkında bir şey söyler."
+
+  - key: licht-houden
+    kind: fact
+    en:
+      title: "Keep warm-up sets light"
+      body: "Don't turn your warm-up into a workout. Keep the lighter sets light, so you have your effort left for the work sets."
+    nl:
+      title: "Houd opwarmsets licht"
+      body: "Maak van je warming-up geen training. Houd de lichte sets licht, dan heb je je kracht nog voor de echte sets."
+    de:
+      title: "Aufwärmsätze leicht halten"
+      body: "Mach aus dem Aufwärmen kein Training. Halte die leichten Sätze leicht, damit du deine Kraft für die Arbeitssätze hast."
+    es:
+      title: "Calentamiento ligero"
+      body: "No conviertas el calentamiento en un entreno. Mantén ligeras las series ligeras y guarda el esfuerzo para las series de trabajo."
+    fr:
+      title: "Garde l'échauffement léger"
+      body: "Ne transforme pas l'échauffement en séance. Garde ces séries vraiment légères, pour garder ton effort pour les séries de travail."
+    pt:
+      title: "Aquecimento leve"
+      body: "Não transformes o aquecimento num treino. Mantém as séries leves mesmo leves e guarda o esforço para as séries de trabalho."
+    tr:
+      title: "Isınma setlerini hafif tut"
+      body: "Isınmayı antrenmana çevirme. Hafif setleri hafif tut, çalışma setleri için gücün kalsın."
+
+  - key: compleet
+    kind: fact
+    en:
+      title: "A complete warm-up"
+      body: "A 2026 panel of sport experts agreed that completeness is a key factor in how well a warm-up works. They had athletes in mind, not the gym."
+    nl:
+      title: "Een complete warming-up"
+      body: "Sportexperts vonden in 2026 dat hoe compleet je warming-up is zwaar meetelt voor hoe goed hij werkt. Ze dachten wel aan sporters, niet aan de gym."
+    de:
+      title: "Vollständig aufwärmen"
+      body: "Sportexperten sahen 2026 die Vollständigkeit als Schlüssel dafür, wie gut ein Aufwärmen wirkt. Sie dachten an Athleten, nicht ans Studio."
+    es:
+      title: "Un calentamiento completo"
+      body: "Expertos en deporte acordaron en 2026 que lo completo que sea el calentamiento es clave. Pensaban en deportistas, no en el gimnasio."
+    fr:
+      title: "Un échauffement complet"
+      body: "Des experts du sport ont convenu en 2026 qu'être complet est clé pour qu'un échauffement marche. Ils pensaient aux athlètes, pas à la salle."
+    pt:
+      title: "Um aquecimento completo"
+      body: "Especialistas em desporto concordaram em 2026 que ser completo é chave para um aquecimento funcionar. Pensavam em atletas, não no ginásio."
+    tr:
+      title: "Eksiksiz bir ısınma"
+      body: "Spor uzmanları 2026'da eksiksiz olmanın ısınmanın işe yaramasında kilit olduğunda anlaştı. Akıllarında salon değil, sporcular vardı."
+
+  - key: een-routine
+    kind: myth
+    en:
+      title: "Myth: there's one right warm-up routine"
+      body: "Not true. Experts stress that a warm-up depends on the context and the sport, so there's no single routine to copy."
+    nl:
+      title: "Mythe: er is één juiste warming-up"
+      body: "Klopt niet. Experts benadrukken dat een warming-up afhangt van de situatie en de sport. Er is dus geen vaste routine om te kopiëren."
+    de:
+      title: "Mythos: es gibt das eine richtige Aufwärmen"
+      body: "Stimmt nicht. Experten betonen, dass es vom Kontext und vom Sport abhängt. Es gibt also keine feste Routine zum Kopieren."
+    es:
+      title: "Mito: hay un calentamiento perfecto"
+      body: "No es cierto. Los expertos insisten en que depende del contexto y del deporte, así que no hay una rutina única que copiar."
+    fr:
+      title: "Mythe : il existe un échauffement idéal"
+      body: "Faux. Les experts insistent : il dépend du contexte et du sport. Il n'y a donc pas une routine unique à copier."
+    pt:
+      title: "Mito: há um aquecimento certo"
+      body: "Não é verdade. Os especialistas sublinham que depende do contexto e do desporto, por isso não há uma rotina única para copiar."
+    tr:
+      title: "Efsane: tek bir doğru ısınma vardır"
+      body: "Doğru değil. Uzmanlar ısınmanın bağlama ve spora göre değiştiğini vurguluyor. Yani kopyalanacak tek bir rutin yok."
+
+  - key: richtlijnen-zwijgen
+    kind: fact
+    en:
+      title: "Lifting guidelines and warming up"
+      body: "The ACSM's position stands on strength training, from 2009 and 2026, don't mention warming up at all."
+    nl:
+      title: "Krachtrichtlijnen en opwarmen"
+      body: "De ACSM-standpunten over krachttraining, uit 2009 en 2026, noemen opwarmen helemaal niet."
+    de:
+      title: "Krafttraining-Leitlinien und Aufwärmen"
+      body: "Die ACSM-Positionspapiere zum Krafttraining von 2009 und 2026 erwähnen das Aufwärmen gar nicht."
+    es:
+      title: "Las guías de fuerza y el calentamiento"
+      body: "Las posturas oficiales del ACSM sobre entrenamiento de fuerza, de 2009 y 2026, no mencionan el calentamiento."
+    fr:
+      title: "Les recos muscu et l'échauffement"
+      body: "Les prises de position de l'ACSM sur la musculation, de 2009 et 2026, ne parlent pas du tout d'échauffement."
+    pt:
+      title: "As diretrizes de força e o aquecimento"
+      body: "As posições do ACSM sobre treino de força, de 2009 e 2026, não falam de aquecimento."
+    tr:
+      title: "Kuvvet kılavuzları ve ısınma"
+      body: "ACSM'nin 2009 ve 2026 tarihli kuvvet antrenmanı görüşleri ısınmadan hiç bahsetmiyor."

@@ -1,0 +1,217 @@
+article: metabolism
+tips:
+  - key: kosten-van-verteren
+    kind: fact
+    en:
+      title: "Digesting food"
+      body: "Digesting protein costs 20 to 30% of its own calories. For carbs it is 5 to 10%, for fat only 0 to 3%."
+    nl:
+      title: "Verteren kost energie"
+      body: "Eiwit verteren kost 20 tot 30% van zijn eigen calorieën. Bij koolhydraten is dat 5 tot 10%, bij vet maar 0 tot 3%."
+    de:
+      title: "Verdauen kostet Energie"
+      body: "Eiweiß zu verdauen kostet 20 bis 30 % seiner eigenen Kalorien. Bei Kohlenhydraten sind es 5 bis 10 %, bei Fett nur 0 bis 3 %."
+    es:
+      title: "Digerir cuesta energía"
+      body: "Digerir proteína cuesta del 20 al 30% de sus propias calorías. Los carbohidratos, del 5 al 10%, y la grasa solo del 0 al 3%."
+    fr:
+      title: "Digérer coûte de l'énergie"
+      body: "Digérer les protéines coûte 20 à 30 % de leurs propres calories. Pour les glucides c'est 5 à 10 %, pour le gras 0 à 3 %."
+    pt:
+      title: "Digerir gasta energia"
+      body: "Digerir proteína gasta 20 a 30% das suas próprias calorias. Nos hidratos são 5 a 10%, na gordura só 0 a 3%."
+    tr:
+      title: "Sindirim enerji ister"
+      body: "Proteini sindirmek kendi kalorisinin %20 ila 30'una mal olur. Karbonhidratta bu %5 ila 10, yağda sadece %0 ila 3."
+
+  - key: vaker-eten
+    kind: myth
+    en:
+      title: "Myth: eating often speeds up your metabolism"
+      body: "Not true. With the same calories spread over one to seven meals, studies found no higher burn, at rest or over 24 hours."
+    nl:
+      title: "Mythe: vaak eten zet je stofwisseling aan"
+      body: "Klopt niet. Met dezelfde calorieën over één tot zeven maaltijden vonden studies geen hogere verbranding, in rust noch over 24 uur."
+    de:
+      title: "Mythos: Oft essen kurbelt den Stoffwechsel an"
+      body: "Stimmt nicht. Bei gleichen Kalorien auf ein bis sieben Mahlzeiten fanden Studien keinen höheren Verbrauch, weder in Ruhe noch über 24 Stunden."
+    es:
+      title: "Mito: comer a menudo acelera el metabolismo"
+      body: "No es cierto. Con las mismas calorías en una a siete comidas, los estudios no vieron más gasto, ni en reposo ni en 24 horas."
+    fr:
+      title: "Mythe : manger souvent accélère le métabolisme"
+      body: "Faux. Avec les mêmes calories réparties sur un à sept repas, les études n'ont vu aucune dépense plus haute, au repos ou sur 24 h."
+    pt:
+      title: "Mito: comer muitas vezes acelera o metabolismo"
+      body: "Não é verdade. Com as mesmas calorias em uma a sete refeições, os estudos não viram mais gasto, nem em repouso nem em 24 horas."
+    tr:
+      title: "Efsane: sık yemek metabolizmayı hızlandırır"
+      body: "Doğru değil. Aynı kaloriyi bir ila yedi öğüne bölen çalışmalar, ne dinlenirken ne de 24 saatte daha fazla yakım buldu."
+
+  - key: leeftijd
+    kind: myth
+    en:
+      title: "Myth: your metabolism slows in your 30s"
+      body: "Not according to one large dataset. Adjusted for lean mass, your daily burn stays stable from 20 to 60 and only then declines."
+    nl:
+      title: "Mythe: na je 30e vertraagt je stofwisseling"
+      body: "Niet volgens één grote dataset. Gecorrigeerd voor vetvrije massa blijft je verbranding stabiel van 20 tot 60 en daalt pas daarna."
+    de:
+      title: "Mythos: Ab 30 wird der Stoffwechsel langsamer"
+      body: "Nicht laut einem großen Datensatz. Bezogen auf die fettfreie Masse bleibt dein Verbrauch von 20 bis 60 stabil und sinkt erst danach."
+    es:
+      title: "Mito: el metabolismo se frena a los 30"
+      body: "No según un gran conjunto de datos. Ajustado a la masa magra, tu gasto se mantiene estable de los 20 a los 60 y solo luego baja."
+    fr:
+      title: "Mythe : le métabolisme ralentit dès 30 ans"
+      body: "Pas selon une grande base de données. Rapportée à la masse maigre, ta dépense reste stable de 20 à 60 ans et ne baisse qu'après."
+    pt:
+      title: "Mito: o metabolismo abranda aos 30"
+      body: "Não segundo um grande conjunto de dados. Ajustado à massa magra, o teu gasto fica estável dos 20 aos 60 e só depois desce."
+    tr:
+      title: "Efsane: metabolizma 30'larda yavaşlar"
+      body: "Büyük bir veri setine göre hayır. Yağsız kütleye göre ayarlanınca günlük yakımın 20 ile 60 yaş arasında sabit kalır, sonra düşer."
+
+  - key: kapotte-stofwisseling
+    kind: myth
+    en:
+      title: "Myth: dieting breaks your metabolism"
+      body: "Not shown. You burn less after a diet, but in the better studies the extra slowdown was small, or gone once your weight was stable."
+    nl:
+      title: "Mythe: lijnen maakt je stofwisseling kapot"
+      body: "Niet aangetoond. Na een dieet verbrand je minder, maar in de betere studies was de extra vertraging klein of weg zodra je gewicht stabiel was."
+    de:
+      title: "Mythos: Diäten machen den Stoffwechsel kaputt"
+      body: "Nicht belegt. Nach einer Diät verbrauchst du weniger, aber in besseren Studien war die Extra-Bremse klein oder weg, sobald das Gewicht stabil war."
+    es:
+      title: "Mito: hacer dieta rompe el metabolismo"
+      body: "No está demostrado. Tras una dieta gastas menos, pero en los mejores estudios el frenazo extra fue pequeño o desapareció con el peso estable."
+    fr:
+      title: "Mythe : les régimes cassent le métabolisme"
+      body: "Pas démontré. Après un régime tu dépenses moins, mais dans les meilleures études le ralentissement en plus était faible, ou disparu à poids stable."
+    pt:
+      title: "Mito: fazer dieta estraga o metabolismo"
+      body: "Não está provado. Depois de uma dieta gastas menos, mas nos melhores estudos o abrandamento extra foi pequeno ou sumiu com o peso estável."
+    tr:
+      title: "Efsane: diyet metabolizmayı bozar"
+      body: "Kanıtlanmadı. Diyetten sonra daha az yakarsın, ama iyi tasarlanmış çalışmalarda ekstra yavaşlama küçüktü ya da kilo sabitlenince kayboldu."
+
+  - key: kleiner-lichaam
+    kind: fact
+    en:
+      title: "Burning less after a diet"
+      body: "The biggest reason is simple: a lighter body costs less energy to run. Work out your daily needs again after you lose weight."
+    nl:
+      title: "Minder verbranden na een dieet"
+      body: "De grootste reden is simpel: een lichter lichaam kost minder energie. Reken je dagelijkse behoefte opnieuw uit als je bent afgevallen."
+    de:
+      title: "Weniger Verbrauch nach der Diät"
+      body: "Der Hauptgrund ist simpel: Ein leichterer Körper braucht weniger Energie. Rechne deinen Tagesbedarf nach dem Abnehmen neu aus."
+    es:
+      title: "Gastar menos tras una dieta"
+      body: "La razón principal es simple: un cuerpo más ligero gasta menos energía. Vuelve a calcular lo que necesitas al día cuando bajes de peso."
+    fr:
+      title: "Dépenser moins après un régime"
+      body: "La raison principale est simple : un corps plus léger coûte moins d'énergie. Recalcule tes besoins du jour après avoir perdu du poids."
+    pt:
+      title: "Gastar menos depois da dieta"
+      body: "A razão principal é simples: um corpo mais leve gasta menos energia. Volta a calcular as tuas necessidades depois de perderes peso."
+    tr:
+      title: "Diyetten sonra daha az yakım"
+      body: "En büyük sebep basit: daha hafif bir vücut daha az enerji harcar. Kilo verdikten sonra günlük ihtiyacını yeniden hesapla."
+
+  - key: eerst-tellen
+    kind: fact
+    en:
+      title: "Check your counting first"
+      body: "In one study, dieters who said they ate under 1,200 kcal had a normal metabolism. They had underreported their food by 47%."
+    nl:
+      title: "Eerst je tellen nalopen"
+      body: "In een studie hadden mensen die zeiden onder de 1.200 kcal te eten een normale stofwisseling. Ze telden 47% van hun eten niet mee."
+    de:
+      title: "Erst das Zählen prüfen"
+      body: "In einer Studie hatten Leute, die angeblich unter 1.200 kcal aßen, einen normalen Stoffwechsel. Sie gaben 47 % weniger Essen an als gegessen."
+    es:
+      title: "Revisa primero tu conteo"
+      body: "En un estudio, quienes decían comer menos de 1.200 kcal tenían un metabolismo normal. Declaraban un 47% menos de lo que comían."
+    fr:
+      title: "Vérifie d'abord ton comptage"
+      body: "Dans une étude, des gens disant manger moins de 1 200 kcal avaient un métabolisme normal. Ils sous-estimaient ce qu'ils mangeaient de 47 %."
+    pt:
+      title: "Primeiro, revê a tua contagem"
+      body: "Num estudo, pessoas que diziam comer menos de 1.200 kcal tinham um metabolismo normal. Declaravam menos 47% do que comiam."
+    tr:
+      title: "Önce saymanı kontrol et"
+      body: "Bir çalışmada 1.200 kcal altında yediğini söyleyenlerin metabolizması normaldi. Yediklerini ortalama %47 eksik bildirmişlerdi."
+
+  - key: neat
+    kind: fact
+    en:
+      title: "Movement outside the gym"
+      body: "Fidgeting and everyday movement differ a lot between people. In an overfeeding study, that movement was closely linked to fat gain."
+    nl:
+      title: "Bewegen buiten de gym"
+      body: "Friemelen en gewoon dagelijks bewegen verschilt sterk per persoon. In een studie met overeten hing dat nauw samen met hoeveel vet mensen aankwamen."
+    de:
+      title: "Bewegung außerhalb des Gyms"
+      body: "Zappeln und Alltagsbewegung unterscheiden sich stark zwischen Menschen. In einer Überfütterungsstudie hing das eng mit dem Fettzuwachs zusammen."
+    es:
+      title: "Moverte fuera del gimnasio"
+      body: "Moverte inquieto y el movimiento diario varían mucho entre personas. En un estudio de sobrealimentación, eso iba muy ligado a la grasa ganada."
+    fr:
+      title: "Bouger hors de la salle"
+      body: "Gigoter et bouger au quotidien varie beaucoup d'une personne à l'autre. Dans une étude de suralimentation, c'était très lié au gras pris."
+    pt:
+      title: "Mexer-te fora do ginásio"
+      body: "Mexer-te e o movimento do dia a dia variam muito entre pessoas. Num estudo de excesso de comida, isso estava muito ligado à gordura ganha."
+    tr:
+      title: "Salon dışında hareket"
+      body: "Kıpırdanmak ve gündelik hareket kişiden kişiye çok değişir. Fazla beslenme çalışmasında bu, alınan yağ miktarıyla yakından bağlantılıydı."
+
+  - key: biggest-loser
+    kind: fact
+    en:
+      title: "The Biggest Loser study"
+      body: "Six years on, 14 contestants burned about 500 kcal a day less at rest than predicted. A small group after extreme loss, so not a typical number."
+    nl:
+      title: "De Biggest Loser-studie"
+      body: "Zes jaar later verbrandden 14 deelnemers in rust zo'n 500 kcal per dag minder dan verwacht. Een kleine groep na extreem afvallen, dus geen normaal getal."
+    de:
+      title: "Die Biggest-Loser-Studie"
+      body: "Sechs Jahre später verbrauchten 14 Teilnehmer in Ruhe rund 500 kcal am Tag weniger als erwartet. Kleine Gruppe, extremer Verlust, also kein Normalwert."
+    es:
+      title: "El estudio de The Biggest Loser"
+      body: "Seis años después, 14 concursantes gastaban en reposo unas 500 kcal al día menos de lo previsto. Grupo pequeño tras una pérdida extrema, no es típico."
+    fr:
+      title: "L'étude The Biggest Loser"
+      body: "Six ans après, 14 candidats dépensaient au repos environ 500 kcal par jour de moins que prévu. Petit groupe, perte extrême : ce n'est pas un chiffre typique."
+    pt:
+      title: "O estudo do The Biggest Loser"
+      body: "Seis anos depois, 14 concorrentes gastavam em repouso cerca de 500 kcal por dia a menos do que o previsto. Grupo pequeno e perda extrema, não é típico."
+    tr:
+      title: "Biggest Loser çalışması"
+      body: "Altı yıl sonra 14 yarışmacı dinlenirken beklenenden günde yaklaşık 500 kcal az yakıyordu. Aşırı kilo kaybı sonrası küçük bir grup, tipik sayı değil."
+
+  - key: tillen-tijdens-dieet
+    kind: fact
+    en:
+      title: "Lift while you cut"
+      body: "In one trial, dieting women who lifted kept their fat-free mass and resting burn. Women who did cardio or no exercise lost both."
+    nl:
+      title: "Blijf tillen tijdens je cut"
+      body: "In een proef hielden vrouwen die tilden tijdens het lijnen hun vetvrije massa en rustverbranding. Wie cardio of niets deed, verloor allebei."
+    de:
+      title: "Krafttraining in der Diät"
+      body: "In einer Studie behielten Frauen mit Krafttraining in der Diät Magermasse und Ruheumsatz. Mit Ausdauertraining oder ohne Sport verloren sie beides."
+    es:
+      title: "Levanta pesas en la definición"
+      body: "En un ensayo, las mujeres que levantaban pesas a dieta mantuvieron masa magra y gasto en reposo. Con cardio o sin ejercicio, perdieron ambos."
+    fr:
+      title: "Soulève pendant ta sèche"
+      body: "Dans un essai, les femmes au régime qui faisaient de la muscu ont gardé masse maigre et dépense au repos. Avec cardio ou rien, elles ont perdu les deux."
+    pt:
+      title: "Levanta pesos durante o cut"
+      body: "Num ensaio, as mulheres em dieta que treinavam pesos mantiveram a massa magra e o gasto em repouso. Com cardio ou nada, perderam os dois."
+    tr:
+      title: "Diyette ağırlık kaldır"
+      body: "Bir denemede diyette ağırlık çalışan kadınlar yağsız kütlelerini ve dinlenme yakımlarını korudu. Kardiyo yapan ya da hiç yapmayanlar ikisini de kaybetti."

@@ -1,0 +1,217 @@
+article: hypertrophy
+tips:
+  - key: falen-geen-voordeel
+    kind: myth
+    en:
+      title: "Myth: training to failure builds more muscle"
+      body: "Not true. A 2023 meta-analysis of 15 studies found no evidence that going to failure beats stopping just short of it."
+    nl:
+      title: "Mythe: tot falen trainen bouwt meer spier"
+      body: "Klopt niet. Een meta-analyse uit 2023 van 15 studies vond geen bewijs dat tot falen gaan beter werkt dan net ervoor stoppen."
+    de:
+      title: "Mythos: Muskelversagen baut mehr Muskeln"
+      body: "Stimmt nicht. Eine Metaanalyse von 15 Studien (2023) fand keinen Beleg, dass Versagen mehr bringt als kurz davor aufzuhören."
+    es:
+      title: "Mito: ir al fallo construye más músculo"
+      body: "No es cierto. Un metaanálisis de 2023 con 15 estudios no halló pruebas de que ir al fallo supere a parar justo antes."
+    fr:
+      title: "Mythe : aller à l'échec fait plus de muscle"
+      body: "Faux. Une méta-analyse de 2023 sur 15 études n'a trouvé aucune preuve que l'échec batte le fait de s'arrêter juste avant."
+    pt:
+      title: "Mito: ir à falha dá mais músculo"
+      body: "Não é verdade. Uma meta-análise de 2023 com 15 estudos não encontrou provas de que ir à falha seja melhor do que parar logo antes."
+    tr:
+      title: "Efsane: tükenişe gitmek daha çok kas yapar"
+      body: "Doğru değil. 15 çalışmalık 2023 tarihli bir meta-analiz, tükenişe gitmenin hemen öncesinde durmaktan iyi olduğuna dair kanıt bulmadı."
+
+  - key: dichter-bij-falen
+    kind: fact
+    en:
+      title: "How hard to push"
+      body: "In one exploratory analysis, muscles grew more when sets ended closer to failure. Easy sets are the ones to avoid."
+    nl:
+      title: "Hoe zwaar je set moet zijn"
+      body: "In één verkennende analyse groeiden spieren meer als sets dichter bij falen eindigden. Lichte sets zijn degene die je wilt vermijden."
+    de:
+      title: "Wie hart du pushen solltest"
+      body: "In einer explorativen Analyse wuchsen Muskeln mehr, wenn Sätze näher am Versagen endeten. Leichte Sätze solltest du meiden."
+    es:
+      title: "Cuánto apretar"
+      body: "En un análisis exploratorio, el músculo creció más cuando las series acababan cerca del fallo. Las series fáciles son las que sobran."
+    fr:
+      title: "Jusqu'où pousser"
+      body: "Dans une analyse exploratoire, les muscles ont plus grossi quand les séries finissaient près de l'échec. Évite les séries faciles."
+    pt:
+      title: "Até onde puxar"
+      body: "Numa análise exploratória, os músculos cresceram mais quando as séries acabavam perto da falha. As séries fáceis são as que deves evitar."
+    tr:
+      title: "Ne kadar zorlamalı"
+      body: "Keşif amaçlı bir analizde setler tükenişe yakın bittiğinde kaslar daha çok büyüdü. Kaçınman gereken setler kolay olanlar."
+
+  - key: excentrisch
+    kind: fact
+    en:
+      title: "The lowering phase"
+      body: "The ACSM found more growth with eccentric overload: extra weight or extra time while you lower the weight."
+    nl:
+      title: "Het zakken telt"
+      body: "Het ACSM vond meer groei met excentrische overbelasting: extra gewicht of extra tijd terwijl je het gewicht laat zakken."
+    de:
+      title: "Die Absenkphase"
+      body: "Das ACSM fand mehr Wachstum mit exzentrischer Überlastung: mehr Gewicht oder mehr Zeit, während du das Gewicht absenkst."
+    es:
+      title: "La fase de bajada"
+      body: "El ACSM vio más crecimiento con sobrecarga excéntrica: más peso o más tiempo mientras bajas el peso."
+    fr:
+      title: "La phase de descente"
+      body: "L'ACSM a trouvé plus de croissance avec une surcharge excentrique : plus de charge ou plus de temps pendant que tu descends."
+    pt:
+      title: "A fase de descida"
+      body: "O ACSM viu mais crescimento com sobrecarga excêntrica: mais peso ou mais tempo enquanto baixas o peso."
+    tr:
+      title: "İndirme fazı"
+      body: "ACSM eksantrik aşırı yüklemeyle daha çok büyüme buldu: ağırlığı indirirken daha fazla yük ya da daha uzun süre."
+
+  - key: rust-60-90
+    kind: fact
+    en:
+      title: "Rest between sets"
+      body: "In nine studies, mostly in untrained people, resting over 60 seconds helped growth a little. Past 90 seconds no difference showed up."
+    nl:
+      title: "Rust tussen sets"
+      body: "In negen studies, vooral bij ongetrainde mensen, hielp meer dan 60 seconden rust de groei een beetje. Boven 90 seconden zag men geen verschil."
+    de:
+      title: "Pause zwischen Sätzen"
+      body: "In neun Studien, meist mit Untrainierten, half über 60 Sekunden Pause dem Wachstum etwas. Über 90 Sekunden zeigte sich kein Unterschied."
+    es:
+      title: "Descanso entre series"
+      body: "En nueve estudios, casi todos con gente sin entrenar, descansar más de 60 segundos ayudó un poco. Pasados 90 no se vio diferencia."
+    fr:
+      title: "Repos entre les séries"
+      body: "Sur neuf études, surtout chez des non-entraînés, plus de 60 secondes de repos ont un peu aidé. Au-delà de 90, aucune différence."
+    pt:
+      title: "Descanso entre séries"
+      body: "Em nove estudos, sobretudo com pessoas não treinadas, descansar mais de 60 segundos ajudou um pouco. Acima de 90 não se viu diferença."
+    tr:
+      title: "Setler arası dinlenme"
+      body: "Çoğu antrenmansız kişilerle yapılan dokuz çalışmada 60 saniyeden uzun dinlenme büyümeye biraz yardım etti. 90 saniyeden sonra fark görülmedi."
+
+  - key: rust-acsm-2026
+    kind: fact
+    en:
+      title: "No fixed rest time"
+      body: "The 2026 ACSM stand gives no rest time. There was too little data to say whether rest affects muscle growth."
+    nl:
+      title: "Geen vaste rusttijd"
+      body: "Het ACSM-standpunt van 2026 noemt geen rusttijd. Er was te weinig data om te zeggen of rust de spiergroei beïnvloedt."
+    de:
+      title: "Keine feste Pausenzeit"
+      body: "Das ACSM-Positionspapier von 2026 nennt keine Pausenzeit. Es gab zu wenige Daten, um zu sagen, ob Pausen das Wachstum beeinflussen."
+    es:
+      title: "Sin tiempo de descanso fijo"
+      body: "La postura del ACSM de 2026 no da un tiempo de descanso. Faltaban datos para saber si el descanso influye en el crecimiento."
+    fr:
+      title: "Pas de temps de repos fixe"
+      body: "La prise de position ACSM de 2026 ne donne aucun temps de repos. Trop peu de données pour dire si le repos joue sur la croissance."
+    pt:
+      title: "Sem tempo de descanso fixo"
+      body: "A posição do ACSM de 2026 não dá um tempo de descanso. Não havia dados suficientes para saber se o descanso afeta o crescimento."
+    tr:
+      title: "Sabit dinlenme süresi yok"
+      body: "ACSM'in 2026 bildirisi bir dinlenme süresi vermiyor. Dinlenmenin kas büyümesini etkileyip etkilemediğini söylemek için veri azdı."
+
+  - key: kort-rusten
+    kind: fact
+    en:
+      title: "Short on time?"
+      body: "Shorter rests are an option, but expect fewer reps in later sets. Ideally, rest until you can do the next set well."
+    nl:
+      title: "Weinig tijd?"
+      body: "Korter rusten kan, maar reken op minder herhalingen in je latere sets. Liefst rust je tot je de volgende set goed kunt doen."
+    de:
+      title: "Wenig Zeit?"
+      body: "Kürzere Pausen gehen, aber rechne mit weniger Wiederholungen in späteren Sätzen. Am besten ruhst du, bis der nächste Satz gut geht."
+    es:
+      title: "¿Poco tiempo?"
+      body: "Puedes descansar menos, pero harás menos repeticiones en las últimas series. Lo ideal es descansar hasta poder hacer bien la siguiente."
+    fr:
+      title: "Pressé ?"
+      body: "Tu peux raccourcir le repos, mais attends-toi à moins de reps dans les séries suivantes. Idéalement, repose-toi jusqu'à être prêt."
+    pt:
+      title: "Pouco tempo?"
+      body: "Podes descansar menos, mas conta com menos repetições nas séries seguintes. O ideal é descansar até conseguires fazer bem a próxima."
+    tr:
+      title: "Vaktin mi az?"
+      body: "Daha kısa dinlenebilirsin ama sonraki setlerde daha az tekrar bekle. İdeali, bir sonraki seti iyi yapabilecek kadar dinlenmek."
+
+  - key: progressie-niet-meteen
+    kind: myth
+    en:
+      title: "Myth: no results without adding weight"
+      body: "Not quite. The ACSM says the first benefits come without progression. A bigger stimulus is likely needed only to keep progressing."
+    nl:
+      title: "Mythe: zonder meer gewicht geen resultaat"
+      body: "Niet helemaal. Volgens het ACSM komen de eerste resultaten zonder progressie. Een zwaardere prikkel is waarschijnlijk pas nodig om lang door te groeien."
+    de:
+      title: "Mythos: ohne mehr Gewicht kein Ergebnis"
+      body: "Nicht ganz. Laut ACSM kommen die ersten Erfolge ohne Steigerung. Ein stärkerer Reiz ist wohl erst für langfristigen Fortschritt nötig."
+    es:
+      title: "Mito: sin subir peso no hay resultados"
+      body: "No del todo. Según el ACSM, los primeros beneficios llegan sin progresión. Un estímulo mayor solo hace falta, quizá, para seguir avanzando."
+    fr:
+      title: "Mythe : pas de résultat sans plus de poids"
+      body: "Pas tout à fait. Selon l'ACSM, les premiers bénéfices viennent sans progression. Un stimulus plus fort sert surtout à progresser à long terme."
+    pt:
+      title: "Mito: sem mais peso não há resultados"
+      body: "Não bem. Segundo o ACSM, os primeiros benefícios vêm sem progressão. Um estímulo maior só deve ser preciso para continuar a evoluir."
+    tr:
+      title: "Efsane: ağırlık artmadan sonuç olmaz"
+      body: "Tam değil. ACSM'e göre ilk faydalar ilerleme olmadan gelir. Daha güçlü bir uyaran muhtemelen sadece uzun vadede ilerlemek için gerekir."
+
+  - key: zelfde-sets
+    kind: fact
+    en:
+      title: "Same sets for months"
+      body: "Doing the same few sets for months? Adding one set per muscle is a simple next step."
+    nl:
+      title: "Al maanden dezelfde sets"
+      body: "Doe je al maanden dezelfde paar sets? Eén set per spier erbij is een simpele volgende stap."
+    de:
+      title: "Seit Monaten dieselben Sätze"
+      body: "Machst du seit Monaten dieselben paar Sätze? Ein Satz mehr pro Muskel ist ein einfacher nächster Schritt."
+    es:
+      title: "Meses con las mismas series"
+      body: "¿Llevas meses con las mismas pocas series? Añadir una serie por músculo es un siguiente paso sencillo."
+    fr:
+      title: "Les mêmes séries depuis des mois"
+      body: "Tu fais les mêmes quelques séries depuis des mois ? Ajouter une série par muscle est une étape simple."
+    pt:
+      title: "Meses com as mesmas séries"
+      body: "Andas há meses com as mesmas poucas séries? Juntar uma série por músculo é um passo simples."
+    tr:
+      title: "Aylardır aynı setler"
+      body: "Aylardır aynı birkaç seti mi yapıyorsun? Kas başına bir set eklemek basit bir sonraki adım."
+
+  - key: hoe-snel
+    kind: fact
+    en:
+      title: "How fast you grow"
+      body: "There is no set rate. It depends on you and your program. Judge progress over months, with photos, measurements and your lifts."
+    nl:
+      title: "Hoe snel je groeit"
+      body: "Daar is geen vast tempo voor, het hangt af van jou en je programma. Beoordeel het over maanden, met foto's, maten en je gewichten."
+    de:
+      title: "Wie schnell du wächst"
+      body: "Es gibt kein festes Tempo, es hängt von dir und deinem Plan ab. Beurteile es über Monate, mit Fotos, Maßen und deinen Gewichten."
+    es:
+      title: "A qué ritmo creces"
+      body: "No hay un ritmo fijo, depende de ti y de tu programa. Juzga tu progreso en meses, con fotos, medidas y los pesos que levantas."
+    fr:
+      title: "À quelle vitesse tu grossis"
+      body: "Il n'y a pas de rythme fixe, ça dépend de toi et du programme. Juge sur des mois, avec photos, mensurations et charges."
+    pt:
+      title: "A que ritmo cresces"
+      body: "Não há um ritmo fixo, depende de ti e do programa. Avalia o progresso ao longo de meses, com fotos, medidas e os pesos que levantas."
+    tr:
+      title: "Ne kadar hızlı büyürsün"
+      body: "Sabit bir hız yok, sana ve programına bağlı. İlerlemeni aylar içinde fotoğraf, ölçü ve kaldırdığın ağırlıklarla değerlendir."

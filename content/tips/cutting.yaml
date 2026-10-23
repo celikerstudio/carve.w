@@ -1,0 +1,193 @@
+article: cutting
+tips:
+  - key: tekort-grootte
+    kind: fact
+    en:
+      title: "How big a deficit"
+      body: "Eat 300 to 600 kcal below maintenance. That lands you at a loss of about 0.5 to 1% of your body weight per week."
+    nl:
+      title: "Hoe groot een tekort"
+      body: "Eet 300 tot 600 kcal onder je onderhoud. Dan val je zo'n 0,5 tot 1% van je lichaamsgewicht per week af."
+    de:
+      title: "Wie groß ein Defizit"
+      body: "Iss 300 bis 600 kcal unter deinem Erhaltungsbedarf. So verlierst du etwa 0,5 bis 1% deines Körpergewichts pro Woche."
+    es:
+      title: "Qué déficit"
+      body: "Come 300 a 600 kcal por debajo de tu mantenimiento. Así pierdes más o menos un 0,5 a 1% de tu peso por semana."
+    fr:
+      title: "Quel déficit"
+      body: "Mange 300 à 600 kcal sous ta maintenance. Tu perds ainsi environ 0,5 à 1% de ton poids par semaine."
+    pt:
+      title: "Que défice"
+      body: "Come 300 a 600 kcal abaixo da tua manutenção. Assim perdes cerca de 0,5 a 1% do teu peso corporal por semana."
+    tr:
+      title: "Açık ne kadar olmalı"
+      body: "Koruma kalorinin 300 ila 600 kcal altında ye. Böylece haftada vücut ağırlığının yaklaşık %0,5 ila 1'ini verirsin."
+
+  - key: spier-houden
+    kind: fact
+    en:
+      title: "Keeping muscle on a cut"
+      body: "Lift 2 to 4 times a week and hold your protein at 1.6 to 2.2 g per kg. That is what protects your muscle while you lose fat."
+    nl:
+      title: "Spier houden tijdens een cut"
+      body: "Train 2 tot 4 keer per week en houd je eiwit op 1,6 tot 2,2 gram per kilo. Zo bescherm je je spieren terwijl je vet verliest."
+    de:
+      title: "Muskeln halten in der Diät"
+      body: "Trainier 2 bis 4 Mal pro Woche und halt dein Eiweiß bei 1,6 bis 2,2 g pro kg. Das schützt deine Muskeln, während du Fett verlierst."
+    es:
+      title: "Mantener músculo en definición"
+      body: "Entrena 2 a 4 veces por semana y mantén la proteína en 1,6 a 2,2 g por kg. Así proteges tu músculo mientras pierdes grasa."
+    fr:
+      title: "Garder ses muscles en sèche"
+      body: "Entraîne-toi 2 à 4 fois par semaine et garde 1,6 à 2,2 g de protéines par kg. C'est ce qui protège tes muscles pendant la sèche."
+    pt:
+      title: "Manter músculo no cut"
+      body: "Treina 2 a 4 vezes por semana e mantém a proteína em 1,6 a 2,2 g por kg. É isso que protege o músculo enquanto perdes gordura."
+    tr:
+      title: "Cut'ta kası korumak"
+      body: "Haftada 2 ila 4 kez antrenman yap ve proteini kilo başına 1,6 ila 2,2 g'da tut. Yağ yakarken kasını bu korur."
+
+  - key: harder-is-niet-beter
+    kind: myth
+    en:
+      title: "Myth: the harder the cut, the better"
+      body: "Not true. A moderate deficit keeps your sleep, training and willpower in better shape than an aggressive cut."
+    nl:
+      title: "Mythe: hoe harder de cut, hoe beter"
+      body: "Klopt niet. Met een gematigd tekort blijven je slaap, je training en je volhouden beter overeind dan met een harde cut."
+    de:
+      title: "Mythos: je härter die Diät, desto besser"
+      body: "Stimmt nicht. Mit einem moderaten Defizit bleiben Schlaf, Training und Durchhalten besser als bei einer harten Diät."
+    es:
+      title: "Mito: cuanto más duro, mejor"
+      body: "No es cierto. Con un déficit moderado tu sueño, tu entreno y tu constancia aguantan mejor que con una definición agresiva."
+    fr:
+      title: "Mythe : plus la sèche est dure, mieux c'est"
+      body: "Faux. Un déficit modéré préserve mieux ton sommeil, ton entraînement et ta régularité qu'une sèche agressive."
+    pt:
+      title: "Mito: quanto mais duro o cut, melhor"
+      body: "Não é verdade. Um défice moderado mantém o sono, o treino e a tua constância melhor do que um cut agressivo."
+    tr:
+      title: "Efsane: cut ne kadar sertse o kadar iyi"
+      body: "Doğru değil. Ilımlı bir açıkla uykun, antrenmanın ve istikrarın sert bir cut'a göre daha iyi korunur."
+
+  - key: koolhydraten-niet-schrappen
+    kind: myth
+    en:
+      title: "Myth: cutting means dropping carbs"
+      body: "Not true. Cut carbs too low and your training quality drops. After protein and fat, the calories left go to carbs."
+    nl:
+      title: "Mythe: een cut is koolhydraten schrappen"
+      body: "Klopt niet. Ga je te laag in koolhydraten, dan zakt je training in. Wat na eiwit en vet overblijft, gaat naar koolhydraten."
+    de:
+      title: "Mythos: Diät heißt Kohlenhydrate streichen"
+      body: "Stimmt nicht. Zu wenig Kohlenhydrate und dein Training leidet. Was nach Eiweiß und Fett übrig bleibt, geht an Kohlenhydrate."
+    es:
+      title: "Mito: definir es quitar carbohidratos"
+      body: "No es cierto. Si bajas demasiado los carbohidratos, tu entreno se resiente. Lo que queda tras proteína y grasa, para carbohidratos."
+    fr:
+      title: "Mythe : sécher, c'est couper les glucides"
+      body: "Faux. Trop peu de glucides et ton entraînement baisse. Les calories qui restent après protéines et lipides vont aux glucides."
+    pt:
+      title: "Mito: fazer cut é cortar hidratos"
+      body: "Não é verdade. Com hidratos a menos, o treino piora. As calorias que sobram depois da proteína e da gordura vão para os hidratos."
+    tr:
+      title: "Efsane: cut karbonhidratı kesmektir"
+      body: "Doğru değil. Karbonhidratı çok düşürürsen antrenmanın kötüleşir. Protein ve yağdan kalan kalori karbonhidrata gider."
+
+  - key: weekgemiddelde
+    kind: fact
+    en:
+      title: "Weekly averages"
+      body: "One weigh-in tells you little. Go by your weekly average, so daily noise does not make you overreact."
+    nl:
+      title: "Weekgemiddelde"
+      body: "Eén keer wegen zegt weinig. Kijk naar je weekgemiddelde, dan reageer je niet op elke schommeling van een dag."
+    de:
+      title: "Wochenschnitt"
+      body: "Einmal wiegen sagt wenig. Richte dich nach deinem Wochenschnitt, dann reagierst du nicht auf jede Tagesschwankung."
+    es:
+      title: "La media semanal"
+      body: "Pesarte un día dice poco. Guíate por tu media semanal y no reaccionarás a cada vaivén diario."
+    fr:
+      title: "La moyenne de la semaine"
+      body: "Une pesée seule dit peu. Fie-toi à ta moyenne de la semaine pour ne pas réagir à chaque variation du jour."
+    pt:
+      title: "A média semanal"
+      body: "Uma pesagem diz pouco. Guia-te pela média da semana e não reages a cada oscilação diária."
+    tr:
+      title: "Haftalık ortalama"
+      body: "Tek bir tartı pek bir şey söylemez. Haftalık ortalamana bak, günlük dalgalanmalara aşırı tepki vermezsin."
+
+  - key: vastgelopen
+    kind: fact
+    en:
+      title: "When your cut stalls"
+      body: "Weekly average flat for 2 weeks or more? Adjust your intake by 100 to 200 kcal. No need for a big jump."
+    nl:
+      title: "Als je cut stilvalt"
+      body: "Staat je weekgemiddelde 2 weken of langer stil? Pas je inname aan met 100 tot 200 kcal. Een grote sprong is niet nodig."
+    de:
+      title: "Wenn die Diät stockt"
+      body: "Bewegt sich dein Wochenschnitt 2 Wochen oder länger nicht? Pass deine Zufuhr um 100 bis 200 kcal an. Kein großer Sprung nötig."
+    es:
+      title: "Si tu definición se estanca"
+      body: "¿Tu media semanal lleva 2 semanas o más sin moverse? Ajusta lo que comes en 100 a 200 kcal. No hace falta un salto grande."
+    fr:
+      title: "Quand la sèche stagne"
+      body: "Ta moyenne de la semaine ne bouge plus depuis 2 semaines ou plus ? Ajuste tes apports de 100 à 200 kcal. Pas besoin de plus."
+    pt:
+      title: "Quando o cut estagna"
+      body: "A média semanal está parada há 2 semanas ou mais? Ajusta o que comes em 100 a 200 kcal. Não precisas de um salto grande."
+    tr:
+      title: "Cut durduğunda"
+      body: "Haftalık ortalaman 2 hafta ya da daha uzun süredir yerinde mi? Kalorini 100 ila 200 kcal ayarla. Büyük bir sıçramaya gerek yok."
+
+  - key: vezels-tegen-honger
+    kind: fact
+    en:
+      title: "Fiber on a cut"
+      body: "Aim for 10 to 15 g of fiber per 1,000 kcal. Together with enough water, it helps keep hunger in check."
+    nl:
+      title: "Vezels tijdens een cut"
+      body: "Mik op 10 tot 15 gram vezels per 1.000 kcal. Samen met genoeg drinken helpt dat je honger in toom te houden."
+    de:
+      title: "Ballaststoffe in der Diät"
+      body: "Peil 10 bis 15 g Ballaststoffe pro 1.000 kcal an. Zusammen mit genug Trinken hilft das, den Hunger zu zähmen."
+    es:
+      title: "Fibra en definición"
+      body: "Apunta a 10 a 15 g de fibra por cada 1.000 kcal. Junto con beber lo suficiente, te ayuda a controlar el hambre."
+    fr:
+      title: "Les fibres en sèche"
+      body: "Vise 10 à 15 g de fibres pour 1 000 kcal. Avec assez d'eau, ça t'aide à garder la faim sous contrôle."
+    pt:
+      title: "Fibra no cut"
+      body: "Aponta para 10 a 15 g de fibra por cada 1.000 kcal. Com água suficiente, ajuda-te a controlar a fome."
+    tr:
+      title: "Cut'ta lif"
+      body: "Her 1.000 kcal için 10 ila 15 g lif hedefle. Yeterince su ile birlikte açlığı kontrol altında tutmana yardım eder."
+
+  - key: stappen-gelijk
+    kind: fact
+    en:
+      title: "Steps on a cut"
+      body: "Keep your daily steps steady while dieting. Otherwise your activity can quietly drop and hide part of your deficit."
+    nl:
+      title: "Stappen tijdens een cut"
+      body: "Houd je dagelijkse stappen gelijk tijdens het lijnen. Anders zakt je beweging ongemerkt en verdwijnt een deel van je tekort."
+    de:
+      title: "Schritte in der Diät"
+      body: "Halt deine täglichen Schritte in der Diät stabil. Sonst sinkt deine Bewegung unbemerkt und frisst einen Teil des Defizits."
+    es:
+      title: "Los pasos en definición"
+      body: "Mantén tus pasos diarios estables en la dieta. Si no, tu actividad puede bajar sin que lo notes y comerse parte del déficit."
+    fr:
+      title: "Les pas pendant la sèche"
+      body: "Garde tes pas quotidiens stables pendant le régime. Sinon ton activité baisse sans bruit et mange une partie du déficit."
+    pt:
+      title: "Os passos no cut"
+      body: "Mantém os passos diários estáveis na dieta. Senão a tua atividade pode baixar sem dares conta e comer parte do défice."
+    tr:
+      title: "Cut'ta adımlar"
+      body: "Diyetteyken günlük adımlarını sabit tut. Yoksa hareketin fark etmeden azalır ve açığının bir kısmını yer."

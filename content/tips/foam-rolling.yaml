@@ -1,0 +1,169 @@
+article: foam-rolling
+tips:
+  - key: wat-het-is
+    kind: fact
+    en:
+      title: "Foam rolling"
+      body: "Rolling a muscle over a foam roller to ease stiffness and get a bit more range of motion for a short while."
+    nl:
+      title: "Foamrollen"
+      body: "Een spier over een foamroller rollen om stijfheid te verminderen en even wat meer bewegingsruimte te krijgen."
+    de:
+      title: "Faszienrolle"
+      body: "Einen Muskel über eine Rolle rollen, um Steifheit zu lösen und kurzzeitig etwas mehr Bewegungsumfang zu bekommen."
+    es:
+      title: "Foam roller"
+      body: "Pasar un músculo por un rodillo de espuma para quitar rigidez y ganar algo de rango de movimiento durante un rato."
+    fr:
+      title: "Rouleau de massage"
+      body: "Faire rouler un muscle sur un rouleau pour réduire les raideurs et gagner un peu d'amplitude pendant un moment."
+    pt:
+      title: "Rolo de espuma"
+      body: "Passar um músculo pelo rolo de espuma para reduzir a rigidez e ganhar um pouco de amplitude durante algum tempo."
+    tr:
+      title: "Foam roller"
+      body: "Tutukluğu azaltmak ve kısa süreliğine biraz daha hareket açıklığı kazanmak için kası köpük silindir üzerinde yuvarlamak."
+
+  - key: dertig-tot-negentig-seconden
+    kind: fact
+    en:
+      title: "How long per spot"
+      body: "Before lifting, 30 to 90 seconds per muscle is enough. 5 to 10 minutes covers your key spots, like quads, glutes and lats."
+    nl:
+      title: "Hoe lang per plek"
+      body: "Voor het tillen is 30 tot 90 seconden per spier genoeg. In 5 tot 10 minuten heb je je belangrijkste plekken gehad, zoals quads, billen en lats."
+    de:
+      title: "Wie lange pro Stelle"
+      body: "Vor dem Training reichen 30 bis 90 Sekunden pro Muskel. In 5 bis 10 Minuten hast du die wichtigen Stellen wie Quads, Po und Lats."
+    es:
+      title: "Cuánto por zona"
+      body: "Antes de entrenar bastan 30 a 90 segundos por músculo. En 5 a 10 minutos cubres las zonas clave, como cuádriceps, glúteos y dorsales."
+    fr:
+      title: "Combien par zone"
+      body: "Avant la séance, 30 à 90 secondes par muscle suffisent. En 5 à 10 minutes, tu couvres l'essentiel : quadris, fessiers, dorsaux."
+    pt:
+      title: "Quanto por zona"
+      body: "Antes de treinar, 30 a 90 segundos por músculo chegam. Em 5 a 10 minutos cobres as zonas principais, como quadríceps, glúteos e dorsais."
+    tr:
+      title: "Bölge başına ne kadar"
+      body: "Antrenmandan önce kas başına 30 ila 90 saniye yeterli. 5 ila 10 dakikada ön bacak, kalça ve sırt gibi ana bölgeleri bitirirsin."
+
+  - key: daarna-bewegen
+    kind: fact
+    en:
+      title: "Roll, then move"
+      body: "The extra range from rolling is temporary. Follow it with dynamic drills for the same area, or you lose it."
+    nl:
+      title: "Eerst rollen, dan bewegen"
+      body: "De extra ruimte van het rollen is tijdelijk. Doe daarna dynamische oefeningen voor dezelfde plek, anders ben je het kwijt."
+    de:
+      title: "Erst rollen, dann bewegen"
+      body: "Der Gewinn an Beweglichkeit hält nur kurz. Mach danach dynamische Übungen für dieselbe Stelle, sonst ist er weg."
+    es:
+      title: "Rodar y luego moverte"
+      body: "El rango extra que da el rodillo es temporal. Haz después ejercicios dinámicos para la misma zona o lo pierdes."
+    fr:
+      title: "Rouler, puis bouger"
+      body: "L'amplitude gagnée en roulant est temporaire. Enchaîne avec des exercices dynamiques pour la même zone, sinon elle disparaît."
+    pt:
+      title: "Rolar e depois mexer"
+      body: "A amplitude extra do rolo é temporária. Faz a seguir exercícios dinâmicos para a mesma zona, senão perde-la."
+    tr:
+      title: "Önce yuvarla, sonra hareket et"
+      body: "Yuvarlamayla gelen ekstra açıklık geçicidir. Ardından aynı bölge için dinamik hareketler yap, yoksa kaybolur."
+
+  - key: waarom-het-losser-voelt
+    kind: fact
+    en:
+      title: "Why you feel looser"
+      body: "The pressure may calm muscle tone and make you more tolerant to stretch. That briefly gives you more range and can make soreness feel milder."
+    nl:
+      title: "Waarom je losser voelt"
+      body: "De druk kan je spierspanning dempen en rekken beter te verdragen maken. Dat geeft even meer ruimte en spierpijn kan milder voelen."
+    de:
+      title: "Warum du dich lockerer fühlst"
+      body: "Der Druck kann die Muskelspannung senken und Dehnung erträglicher machen. Das gibt kurz mehr Spielraum und kann Muskelkater mildern."
+    es:
+      title: "Por qué te notas más suelto"
+      body: "La presión puede bajar el tono muscular y hacerte tolerar mejor el estiramiento. Ganas rango un rato y el dolor puede notarse menos."
+    fr:
+      title: "Pourquoi tu te sens plus souple"
+      body: "La pression peut baisser le tonus et rendre l'étirement plus tolérable. Tu gagnes un peu d'amplitude et les courbatures peuvent sembler moindres."
+    pt:
+      title: "Porque te sentes mais solto"
+      body: "A pressão pode baixar o tónus e tornar o alongamento mais tolerável. Ganhas amplitude por pouco tempo e as dores podem parecer menores."
+    tr:
+      title: "Neden daha gevşek hissedersin"
+      body: "Baskı kas tonusunu azaltıp esnemeye toleransı artırabilir. Bu kısa süre daha fazla açıklık verir ve ağrıyı daha hafif hissettirebilir."
+
+  - key: harder-is-niet-beter
+    kind: myth
+    en:
+      title: "Myth: the harder you roll, the better"
+      body: "Not true. Too much pressure can leave you bruised. Moderate pressure is enough, and stay off bones and joints."
+    nl:
+      title: "Mythe: hoe harder je rolt, hoe beter"
+      body: "Niet waar. Te veel druk kan blauwe plekken geven. Gemiddelde druk is genoeg, en blijf van botten en gewrichten af."
+    de:
+      title: "Mythos: Je fester du rollst, desto besser"
+      body: "Stimmt nicht. Zu viel Druck kann blaue Flecken machen. Mäßiger Druck reicht, und lass Knochen und Gelenke aus."
+    es:
+      title: "Mito: cuanto más fuerte, mejor"
+      body: "No es cierto. Demasiada presión puede dejarte moratones. Basta con presión moderada, y evita huesos y articulaciones."
+    fr:
+      title: "Mythe : plus tu appuies, mieux c'est"
+      body: "Faux. Trop de pression peut laisser des bleus. Une pression modérée suffit, et évite les os et les articulations."
+    pt:
+      title: "Mito: quanto mais força, melhor"
+      body: "Não é verdade. Pressão a mais pode deixar nódoas negras. Pressão moderada chega, e evita ossos e articulações."
+    tr:
+      title: "Efsane: ne kadar sert, o kadar iyi"
+      body: "Doğru değil. Fazla baskı morluk bırakabilir. Orta baskı yeterli, kemiklerden ve eklemlerden uzak dur."
+
+  - key: geen-vervanging-warming-up
+    kind: myth
+    en:
+      title: "Myth: rolling can replace your warm-up"
+      body: "Not true. Rolling complements a proper warm-up and strength through your full range. It doesn't replace either."
+    nl:
+      title: "Mythe: rollen vervangt je warming-up"
+      body: "Niet waar. Rollen is een aanvulling op een goede warming-up en kracht over je volle bewegingsbereik. Het vervangt geen van beide."
+    de:
+      title: "Mythos: Rollen ersetzt das Aufwärmen"
+      body: "Stimmt nicht. Rollen ergänzt ein richtiges Aufwärmen und Kraft im vollen Bewegungsumfang. Es ersetzt keins von beiden."
+    es:
+      title: "Mito: el rodillo sustituye al calentamiento"
+      body: "No es cierto. El rodillo complementa un buen calentamiento y la fuerza en todo el rango. No sustituye a ninguno de los dos."
+    fr:
+      title: "Mythe : rouler remplace l'échauffement"
+      body: "Faux. Le rouleau complète un vrai échauffement et la force sur toute l'amplitude. Il ne remplace ni l'un ni l'autre."
+    pt:
+      title: "Mito: o rolo substitui o aquecimento"
+      body: "Não é verdade. O rolo complementa um bom aquecimento e a força em toda a amplitude. Não substitui nenhum dos dois."
+    tr:
+      title: "Efsane: foam roller ısınmanın yerini tutar"
+      body: "Doğru değil. Yuvarlama iyi bir ısınmayı ve tam açıklıktaki gücü tamamlar. İkisinin de yerini tutmaz."
+
+  - key: techniek-en-belasting
+    kind: myth
+    en:
+      title: "Myth: rolling fixes a nagging tight spot"
+      body: "Not on its own. Relying on rolling instead of fixing your technique and how much load you handle is a common mistake."
+    nl:
+      title: "Mythe: rollen lost een vaste stijve plek op"
+      body: "Niet in je eentje. Rollen in plaats van je techniek en belasting aanpakken is een veelgemaakte fout."
+    de:
+      title: "Mythos: Rollen löst eine hartnäckige Stelle"
+      body: "Nicht allein. Auf die Rolle zu setzen, statt Technik und Belastung anzupassen, ist ein häufiger Fehler."
+    es:
+      title: "Mito: el rodillo arregla esa zona tensa"
+      body: "No por sí solo. Confiar en el rodillo en vez de corregir tu técnica y tu carga es un error común."
+    fr:
+      title: "Mythe : le rouleau règle une raideur tenace"
+      body: "Pas tout seul. Compter sur le rouleau au lieu de corriger ta technique et ta charge est une erreur courante."
+    pt:
+      title: "Mito: o rolo resolve aquela zona tensa"
+      body: "Não sozinho. Confiar no rolo em vez de corrigir a técnica e a carga é um erro comum."
+    tr:
+      title: "Efsane: foam roller inatçı tutukluğu çözer"
+      body: "Tek başına değil. Tekniğini ve yükünü düzeltmek yerine yuvarlamaya güvenmek sık yapılan bir hata."

@@ -1,0 +1,121 @@
+article: rest-pause
+tips:
+  - key: hoe-het-werkt
+    kind: fact
+    en:
+      title: "Rest-pause"
+      body: "Stop a set 1 to 2 reps short of failure, rest 10 to 30 seconds, then add 2 to 5 reps. Repeat once more if your form holds."
+    nl:
+      title: "Rest-pause"
+      body: "Stop een set 1 tot 2 reps voor falen, rust 10 tot 30 seconden en doe er 2 tot 5 bij. Herhaal nog één keer als je techniek goed blijft."
+    de:
+      title: "Rest-Pause"
+      body: "Beende einen Satz 1 bis 2 Wdh. vor dem Versagen, ruh 10 bis 30 Sekunden und häng 2 bis 5 an. Noch einmal, wenn die Technik hält."
+    es:
+      title: "Rest-pause"
+      body: "Para la serie a 1 o 2 reps del fallo, descansa 10 a 30 segundos y añade 2 a 5 reps. Repite una vez más si la técnica aguanta."
+    fr:
+      title: "Le rest-pause"
+      body: "Arrête une série à 1 ou 2 reps de l'échec, repose 10 à 30 secondes, puis ajoute 2 à 5 reps. Encore une fois si ta technique tient."
+    pt:
+      title: "Rest-pause"
+      body: "Para a série a 1 ou 2 reps da falha, descansa 10 a 30 segundos e junta 2 a 5 reps. Repete mais uma vez se a técnica aguentar."
+    tr:
+      title: "Rest-pause"
+      body: "Seti tükenişe 1-2 tekrar kala bitir, 10 ila 30 saniye dinlen, sonra 2 ila 5 tekrar ekle. Tekniğin bozulmazsa bir kez daha yap."
+
+  - key: waarom-korte-rust
+    kind: fact
+    en:
+      title: "Why a short rest helps"
+      body: "A short rest partly refills your muscle's fast fuel, phosphocreatine. That lets you squeeze out extra reps at the same weight."
+    nl:
+      title: "Waarom een korte rust helpt"
+      body: "Een korte rust vult de snelle brandstof van je spier, fosfocreatine, deels weer aan. Zo pers je er met hetzelfde gewicht nog reps uit."
+    de:
+      title: "Warum kurze Pausen helfen"
+      body: "Eine kurze Pause füllt den schnellen Treibstoff im Muskel, Phosphokreatin, teilweise auf. So holst du mit gleichem Gewicht mehr raus."
+    es:
+      title: "Por qué ayuda una pausa corta"
+      body: "Una pausa corta recarga en parte el combustible rápido del músculo, la fosfocreatina. Así sacas reps extra con el mismo peso."
+    fr:
+      title: "Pourquoi une courte pause aide"
+      body: "Une courte pause recharge en partie le carburant rapide du muscle, la phosphocréatine. Tu arraches ainsi des reps en plus à charge égale."
+    pt:
+      title: "Porque ajuda uma pausa curta"
+      body: "Uma pausa curta repõe em parte o combustível rápido do músculo, a fosfocreatina. Assim tiras reps extra com o mesmo peso."
+    tr:
+      title: "Kısa dinlenme neden işe yarar"
+      body: "Kısa bir dinlenme kasın hızlı yakıtı fosfokreatini kısmen doldurur. Böylece aynı ağırlıkla birkaç tekrar daha çıkarırsın."
+
+  - key: welke-oefeningen
+    kind: fact
+    en:
+      title: "Which exercises"
+      body: "Pick machines or lifts with safeties. Skip rest-pause on technical free-weight compounds, where it raises your injury risk."
+    nl:
+      title: "Welke oefeningen"
+      body: "Kies machines of oefeningen met veiligheidsrekken. Sla rest-pause over bij technische vrije-gewichtoefeningen, daar vergroot het je blessurerisico."
+    de:
+      title: "Welche Übungen"
+      body: "Nimm Maschinen oder Übungen mit Sicherungen. Bei technischen Freihantel-Grundübungen lieber nicht, dort steigt das Verletzungsrisiko."
+    es:
+      title: "Qué ejercicios"
+      body: "Elige máquinas o ejercicios con seguros. Evítalo en básicos técnicos con peso libre, donde sube el riesgo de lesión."
+    fr:
+      title: "Quels exercices"
+      body: "Choisis des machines ou des exos avec sécurités. Évite-le sur les polyarticulaires techniques en poids libres : le risque de blessure monte."
+    pt:
+      title: "Que exercícios"
+      body: "Escolhe máquinas ou exercícios com seguranças. Evita-o em básicos técnicos com peso livre, onde aumenta o risco de lesão."
+    tr:
+      title: "Hangi hareketler"
+      body: "Makineleri ya da güvenlik barlı hareketleri seç. Teknik serbest ağırlık temel hareketlerinde yapma, orada sakatlık riski artar."
+
+  - key: hoe-vaak
+    kind: fact
+    en:
+      title: "How much rest-pause"
+      body: "Keep it to 1 or 2 exercises per session. If your performance drops the next day, use it less often."
+    nl:
+      title: "Hoeveel rest-pause"
+      body: "Houd het bij 1 of 2 oefeningen per training. Presteer je de dag erna minder, doe het dan minder vaak."
+    de:
+      title: "Wie viel Rest-Pause"
+      body: "Bleib bei 1 oder 2 Übungen pro Einheit. Lässt deine Leistung am nächsten Tag nach, nutz es seltener."
+    es:
+      title: "Cuánto rest-pause"
+      body: "Limítalo a 1 o 2 ejercicios por sesión. Si al día siguiente rindes menos, úsalo con menos frecuencia."
+    fr:
+      title: "Combien de rest-pause"
+      body: "Limite-le à 1 ou 2 exercices par séance. Si tes perfs baissent le lendemain, utilise-le moins souvent."
+    pt:
+      title: "Quanto rest-pause"
+      body: "Fica por 1 ou 2 exercícios por sessão. Se no dia seguinte renderes menos, usa-o com menos frequência."
+    tr:
+      title: "Ne kadar rest-pause"
+      body: "Antrenman başına 1 ya da 2 hareketle sınırla. Ertesi gün performansın düşerse daha seyrek kullan."
+
+  - key: stop-bij-slechte-vorm
+    kind: fact
+    en:
+      title: "Junk reps"
+      body: "Stop when your form starts to go. Reps you grind out with poor form under fatigue turn into junk."
+    nl:
+      title: "Waardeloze reps"
+      body: "Stop zodra je techniek wegzakt. Reps die je vermoeid met slechte techniek eruit perst, leveren niks meer op."
+    de:
+      title: "Wertlose Wiederholungen"
+      body: "Hör auf, sobald die Technik nachlässt. Wiederholungen, die du müde und unsauber rausdrückst, sind wertlos."
+    es:
+      title: "Reps basura"
+      body: "Para en cuanto la técnica empiece a fallar. Las reps que sacas cansado y con mala técnica se vuelven basura."
+    fr:
+      title: "Des reps pour rien"
+      body: "Arrête dès que ta technique lâche. Les reps arrachées dans la fatigue avec une mauvaise forme ne valent plus rien."
+    pt:
+      title: "Reps que não contam"
+      body: "Para quando a técnica começar a falhar. As reps que arrancas cansado e com má técnica tornam-se lixo."
+    tr:
+      title: "Boşa giden tekrarlar"
+      body: "Tekniğin bozulmaya başlayınca dur. Yorgunken kötü teknikle zorla çıkardığın tekrarlar boşa gider."

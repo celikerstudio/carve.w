@@ -1,0 +1,169 @@
+article: tdee
+tips:
+  - key: wat-is-tdee
+    kind: fact
+    en:
+      title: "TDEE"
+      body: "TDEE is everything you burn in a day: your BMR, plus exercise, everyday movement and the energy it takes to digest food."
+    nl:
+      title: "TDEE"
+      body: "TDEE is alles wat je op een dag verbrandt: je BMR, plus sporten, gewoon bewegen en de energie die verteren kost."
+    de:
+      title: "Gesamtumsatz"
+      body: "Dein Gesamtumsatz ist alles, was du am Tag verbrennst: Grundumsatz, Sport, Alltagsbewegung und die Energie fürs Verdauen."
+    es:
+      title: "Gasto diario total"
+      body: "Tu gasto diario total es todo lo que quemas en un día: el metabolismo basal, el ejercicio, el movimiento diario y la digestión."
+    fr:
+      title: "Dépense quotidienne"
+      body: "Ta dépense quotidienne, c'est tout ce que tu brûles en un jour : métabolisme de base, sport, mouvement au quotidien et digestion."
+    pt:
+      title: "Gasto diário total"
+      body: "O gasto diário total é tudo o que queimas num dia: o metabolismo basal, o exercício, o movimento do dia a dia e a digestão."
+    tr:
+      title: "Günlük toplam harcama"
+      body: "Günlük toplam harcama, bir günde yaktığın her şey: bazal metabolizma, spor, gündelik hareket ve sindirim için harcanan enerji."
+
+  - key: neat
+    kind: fact
+    en:
+      title: "Everyday movement"
+      body: "Steps and fidgeting can swing what you burn by hundreds of calories a day. Keep your steps steady so your numbers stay readable."
+    nl:
+      title: "Gewoon bewegen"
+      body: "Stappen en friemelen kunnen je verbruik honderden calorieën per dag laten schommelen. Houd je stappen gelijk, dan blijven je cijfers leesbaar."
+    de:
+      title: "Alltagsbewegung"
+      body: "Schritte und Zappeln können deinen Verbrauch um Hunderte Kalorien am Tag verschieben. Halt deine Schritte stabil."
+    es:
+      title: "El movimiento diario"
+      body: "Los pasos y moverte sin parar pueden cambiar tu gasto en cientos de calorías al día. Mantén tus pasos estables para leer bien tus datos."
+    fr:
+      title: "Le mouvement du quotidien"
+      body: "Les pas et la bougeotte peuvent faire varier ta dépense de centaines de calories par jour. Garde tes pas stables pour y voir clair."
+    pt:
+      title: "O movimento do dia a dia"
+      body: "Os passos e mexer-te sem parar podem mudar o teu gasto em centenas de calorias por dia. Mantém os passos estáveis para leres bem os dados."
+    tr:
+      title: "Gündelik hareket"
+      body: "Adımlar ve kıpırdanmak harcamanı günde yüzlerce kalori oynatabilir. Verilerin net kalsın diye adımlarını sabit tut."
+
+  - key: onderhoud-vinden
+    kind: fact
+    en:
+      title: "Finding your maintenance"
+      body: "Log food, weight and steps for 2 to 3 weeks. If your weight stays stable, you have found your maintenance calories."
+    nl:
+      title: "Je onderhoud vinden"
+      body: "Houd 2 tot 3 weken je eten, gewicht en stappen bij. Blijft je gewicht stabiel, dan heb je je onderhoudscalorieën gevonden."
+    de:
+      title: "Erhaltungskalorien finden"
+      body: "Notier 2 bis 3 Wochen Essen, Gewicht und Schritte. Bleibt dein Gewicht stabil, hast du deine Erhaltungskalorien gefunden."
+    es:
+      title: "Encontrar tu mantenimiento"
+      body: "Apunta comida, peso y pasos durante 2 a 3 semanas. Si tu peso se mantiene, ya tienes tus calorías de mantenimiento."
+    fr:
+      title: "Trouver ta maintenance"
+      body: "Note repas, poids et pas pendant 2 à 3 semaines. Si ton poids reste stable, tu as trouvé tes calories de maintenance."
+    pt:
+      title: "Encontrar a tua manutenção"
+      body: "Regista comida, peso e passos durante 2 a 3 semanas. Se o peso se mantiver, encontraste as tuas calorias de manutenção."
+    tr:
+      title: "Koruma kalorini bulmak"
+      body: "2 ila 3 hafta yemeğini, kilonu ve adımlarını kaydet. Kilon sabit kalıyorsa koruma kalorini bulmuşsun demektir."
+
+  - key: calculator-weet-het-niet
+    kind: myth
+    en:
+      title: "Myth: a calculator knows your TDEE"
+      body: "Not really. Activity multipliers are a guess. Check them against what your weight actually does over a few weeks."
+    nl:
+      title: "Mythe: een calculator kent je TDEE"
+      body: "Niet echt. Activiteitsfactoren zijn een schatting. Toets ze aan wat je gewicht een paar weken lang werkelijk doet."
+    de:
+      title: "Mythos: der Rechner kennt deinen Umsatz"
+      body: "Nicht wirklich. Aktivitätsfaktoren sind eine Schätzung. Prüf sie daran, was dein Gewicht über ein paar Wochen wirklich macht."
+    es:
+      title: "Mito: una calculadora sabe tu gasto"
+      body: "No del todo. Los factores de actividad son una estimación. Compáralos con lo que hace tu peso de verdad durante unas semanas."
+    fr:
+      title: "Mythe : un calculateur connaît ta dépense"
+      body: "Pas vraiment. Les coefficients d'activité sont une estimation. Compare-les avec ce que fait vraiment ton poids sur quelques semaines."
+    pt:
+      title: "Mito: uma calculadora sabe o teu gasto"
+      body: "Não bem. Os fatores de atividade são uma estimativa. Compara-os com o que o teu peso faz de verdade ao longo de umas semanas."
+    tr:
+      title: "Efsane: hesaplayıcı harcamanı bilir"
+      body: "Pek değil. Aktivite çarpanları bir tahmin. Onları kilonun birkaç hafta boyunca gerçekte ne yaptığıyla karşılaştır."
+
+  - key: kleine-stappen
+    kind: fact
+    en:
+      title: "Adjust in small steps"
+      body: "Change your intake by 100 to 200 kcal at a time, based on your 2 to 3 week trend. Big jumps make you overshoot."
+    nl:
+      title: "Bijstellen in kleine stapjes"
+      body: "Pas je inname aan met 100 tot 200 kcal per keer, op basis van je trend over 2 tot 3 weken. Grote sprongen schieten door."
+    de:
+      title: "In kleinen Schritten anpassen"
+      body: "Ändere deine Zufuhr um 100 bis 200 kcal auf einmal, je nach Trend über 2 bis 3 Wochen. Große Sprünge schießen übers Ziel."
+    es:
+      title: "Ajusta poco a poco"
+      body: "Cambia lo que comes de 100 a 200 kcal cada vez, según tu tendencia de 2 a 3 semanas. Los saltos grandes te hacen pasarte."
+    fr:
+      title: "Ajuste par petits pas"
+      body: "Change tes apports de 100 à 200 kcal à la fois, selon ta tendance sur 2 à 3 semaines. Les gros sauts te font dépasser l'objectif."
+    pt:
+      title: "Ajusta aos poucos"
+      body: "Muda o que comes em 100 a 200 kcal de cada vez, conforme a tendência de 2 a 3 semanas. Saltos grandes fazem-te passar do ponto."
+    tr:
+      title: "Küçük adımlarla ayarla"
+      body: "2 ila 3 haftalık eğilimine göre kalorini her seferinde 100 ila 200 kcal değiştir. Büyük sıçramalar hedefi aşırır."
+
+  - key: afvallen-of-aankomen
+    kind: fact
+    en:
+      title: "Cutting or gaining"
+      body: "Found your maintenance? To cut, eat 300 to 600 kcal below it. To gain, eat 150 to 300 kcal above it."
+    nl:
+      title: "Afvallen of aankomen"
+      body: "Weet je je onderhoud? Om af te vallen eet je 300 tot 600 kcal minder. Om aan te komen 150 tot 300 kcal meer."
+    de:
+      title: "Abnehmen oder zunehmen"
+      body: "Kennst du deinen Erhaltungsbedarf? Zum Abnehmen iss 300 bis 600 kcal weniger, zum Zunehmen 150 bis 300 kcal mehr."
+    es:
+      title: "Bajar o subir de peso"
+      body: "¿Ya sabes tu mantenimiento? Para bajar, come 300 a 600 kcal menos. Para subir, 150 a 300 kcal más."
+    fr:
+      title: "Perdre ou prendre"
+      body: "Tu connais ta maintenance ? Pour perdre, mange 300 à 600 kcal de moins. Pour prendre, 150 à 300 kcal de plus."
+    pt:
+      title: "Perder ou ganhar peso"
+      body: "Já sabes a tua manutenção? Para perder, come 300 a 600 kcal a menos. Para ganhar, 150 a 300 kcal a mais."
+    tr:
+      title: "Kilo vermek ya da almak"
+      body: "Koruma kalorini biliyor musun? Kilo vermek için 300 ila 600 kcal az ye. Kilo almak için 150 ila 300 kcal fazla."
+
+  - key: na-vijf-procent
+    kind: fact
+    en:
+      title: "When to recheck"
+      body: "Your maintenance moves with your weight. Once your body weight has shifted about 5%, work it out again."
+    nl:
+      title: "Wanneer opnieuw meten"
+      body: "Je onderhoud schuift mee met je gewicht. Is je gewicht zo'n 5% veranderd, bepaal het dan opnieuw."
+    de:
+      title: "Wann neu prüfen"
+      body: "Dein Erhaltungsbedarf wandert mit deinem Gewicht. Hat sich dein Gewicht um etwa 5% verändert, ermittle ihn neu."
+    es:
+      title: "Cuándo revisarlo"
+      body: "Tu mantenimiento cambia con tu peso. Cuando tu peso haya cambiado más o menos un 5%, vuelve a calcularlo."
+    fr:
+      title: "Quand revérifier"
+      body: "Ta maintenance bouge avec ton poids. Quand ton poids a changé d'environ 5%, recalcule-la."
+    pt:
+      title: "Quando rever"
+      body: "A tua manutenção muda com o teu peso. Quando o peso tiver mudado cerca de 5%, volta a calculá-la."
+    tr:
+      title: "Ne zaman tekrar bakmalı"
+      body: "Koruma kalorin kilonla birlikte değişir. Kilon yaklaşık %5 değiştiğinde yeniden hesapla."

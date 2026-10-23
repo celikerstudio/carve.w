@@ -1,0 +1,217 @@
+article: progress-tracking
+tips:
+  - key: eten-bewegen-gewicht
+    kind: fact
+    en:
+      title: "What to track"
+      body: "Weight loss programmes for adults with overweight usually have people track three things: their food, their activity and their weight."
+    nl:
+      title: "Wat je bijhoudt"
+      body: "Afvalprogramma's voor volwassenen met overgewicht laten mensen meestal drie dingen bijhouden: hun eten, hun beweging en hun gewicht."
+    de:
+      title: "Was du festhältst"
+      body: "Abnehmprogramme für Erwachsene mit Übergewicht lassen meist drei Dinge festhalten: Essen, Bewegung und Gewicht."
+    es:
+      title: "Qué registrar"
+      body: "Los programas para perder peso en adultos con sobrepeso suelen pedir registrar tres cosas: la comida, la actividad y el peso."
+    fr:
+      title: "Quoi suivre"
+      body: "Les programmes de perte de poids pour adultes en surpoids font en général suivre trois choses : l'alimentation, l'activité et le poids."
+    pt:
+      title: "O que registar"
+      body: "Os programas de perda de peso para adultos com excesso de peso costumam pedir que se registem três coisas: comida, atividade e peso."
+    tr:
+      title: "Neyi takip etmeli"
+      body: "Fazla kilolu yetişkinlere yönelik zayıflama programları genelde üç şeyi takip ettirir: yemek, hareket ve kilo."
+
+  - key: wekelijks-wegen
+    kind: fact
+    en:
+      title: "Keeping it off"
+      body: "To keep lost weight off, a US guideline for adults with overweight adds weighing yourself weekly or more often."
+    nl:
+      title: "Eraf houden"
+      body: "Om verloren kilo's eraf te houden, voegt een Amerikaanse richtlijn voor volwassenen met overgewicht wekelijks of vaker wegen toe."
+    de:
+      title: "Das Gewicht halten"
+      body: "Um abgenommenes Gewicht zu halten, empfiehlt eine US-Leitlinie für Erwachsene mit Übergewicht, sich wöchentlich oder öfter zu wiegen."
+    es:
+      title: "Mantener lo perdido"
+      body: "Para no recuperar el peso perdido, una guía de EE. UU. para adultos con sobrepeso añade pesarse cada semana o más a menudo."
+    fr:
+      title: "Ne pas reprendre"
+      body: "Pour garder le poids perdu, une recommandation américaine pour adultes en surpoids ajoute de se peser chaque semaine ou plus souvent."
+    pt:
+      title: "Manter o peso perdido"
+      body: "Para manter o peso perdido, uma diretriz dos EUA para adultos com excesso de peso junta pesar-se todas as semanas ou mais vezes."
+    tr:
+      title: "Verdiğin kiloyu korumak"
+      body: "Verilen kiloyu korumak için ABD'deki bir kılavuz, fazla kilolu yetişkinlere haftada bir ya da daha sık tartılmayı ekliyor."
+
+  - key: verband-geen-oorzaak
+    kind: myth
+    en:
+      title: "Myth: weighing often keeps weight off"
+      body: "Not proven. Frequent weighing goes with better maintenance, but that's a link. People who weigh often may be more committed in other ways too."
+    nl:
+      title: "Mythe: vaak wegen houdt je gewicht laag"
+      body: "Niet bewezen. Vaak wegen gaat samen met beter op gewicht blijven, maar dat is een verband. Wie vaak weegt, zet zich misschien ook op andere vlakken meer in."
+    de:
+      title: "Mythos: oft wiegen hält das Gewicht"
+      body: "Nicht belegt. Häufiges Wiegen geht mit besserem Halten einher, aber das ist ein Zusammenhang. Wer oft wiegt, ist vielleicht auch sonst engagierter."
+    es:
+      title: "Mito: pesarte a menudo evita recuperar"
+      body: "No está probado. Pesarse a menudo va unido a mantener mejor el peso, pero es una relación. Quien se pesa mucho quizá se implica más en otras cosas."
+    fr:
+      title: "Mythe : se peser souvent évite de reprendre"
+      body: "Pas prouvé. Se peser souvent va avec un poids mieux maintenu, mais c'est un lien. Ceux qui se pèsent souvent sont peut-être plus impliqués ailleurs."
+    pt:
+      title: "Mito: pesar-te muito evita recuperar"
+      body: "Não está provado. Pesar-se muito anda ligado a manter melhor o peso, mas é uma relação. Quem se pesa muito talvez se empenhe mais noutras coisas."
+    tr:
+      title: "Efsane: sık tartılmak kiloyu korur"
+      body: "Kanıtlanmadı. Sık tartılmak kiloyu daha iyi korumakla birlikte görülüyor ama bu bir ilişki. Sık tartılanlar başka konularda da daha kararlı olabilir."
+
+  - key: weekschommeling
+    kind: myth
+    en:
+      title: "Myth: a high weigh-in means you gained"
+      body: "Not true. In a study of 80 adults, weight was higher early in the week and fell during it. The authors call that swing normal."
+    nl:
+      title: "Mythe: een hoge weging betekent aankomen"
+      body: "Klopt niet. In een studie met 80 volwassenen was het gewicht begin van de week hoger en zakte het daarna. Volgens de auteurs is dat normaal."
+    de:
+      title: "Mythos: hoher Wert heißt zugenommen"
+      body: "Stimmt nicht. In einer Studie mit 80 Erwachsenen war das Gewicht am Wochenanfang höher und sank dann. Die Autoren nennen das normal."
+    es:
+      title: "Mito: un pesaje alto es haber engordado"
+      body: "No es cierto. En un estudio con 80 adultos, el peso era mayor a principio de semana y bajaba luego. Los autores lo ven normal."
+    fr:
+      title: "Mythe : une pesée haute, c'est une prise"
+      body: "Faux. Dans une étude sur 80 adultes, le poids était plus haut en début de semaine puis baissait. Les auteurs jugent ça normal."
+    pt:
+      title: "Mito: uma pesagem alta é ganho de peso"
+      body: "Não é verdade. Num estudo com 80 adultos, o peso era maior no início da semana e descia depois. Os autores acham isso normal."
+    tr:
+      title: "Efsane: yüksek tartı kilo aldın demek"
+      body: "Doğru değil. 80 yetişkinle bir çalışmada kilo hafta başında yüksekti ve hafta boyunca düştü. Yazarlar bunu normal sayıyor."
+
+  - key: zelfde-moment
+    kind: fact
+    en:
+      title: "Same time, same day"
+      body: "Weigh at the same time of day. Once a week? Pick a fixed day. More often? Compare one week's average with the week before."
+    nl:
+      title: "Zelfde tijd, zelfde dag"
+      body: "Weeg op hetzelfde moment van de dag. Eén keer per week? Kies een vaste dag. Vaker? Vergelijk het weekgemiddelde met de week ervoor."
+    de:
+      title: "Gleiche Zeit, gleicher Tag"
+      body: "Wieg dich zur gleichen Tageszeit. Einmal pro Woche? Nimm einen festen Tag. Öfter? Vergleich den Wochenschnitt mit der Woche davor."
+    es:
+      title: "Misma hora, mismo día"
+      body: "Pésate a la misma hora del día. ¿Una vez por semana? Elige un día fijo. ¿Más a menudo? Compara la media semanal con la anterior."
+    fr:
+      title: "Même heure, même jour"
+      body: "Pèse-toi à la même heure. Une fois par semaine ? Choisis un jour fixe. Plus souvent ? Compare la moyenne de la semaine à la précédente."
+    pt:
+      title: "Mesma hora, mesmo dia"
+      body: "Pesa-te à mesma hora do dia. Uma vez por semana? Escolhe um dia fixo. Mais vezes? Compara a média da semana com a anterior."
+    tr:
+      title: "Aynı saat, aynı gün"
+      body: "Günün aynı saatinde tartıl. Haftada bir mi? Sabit bir gün seç. Daha sık mı? Haftanın ortalamasını bir öncekiyle kıyasla."
+
+  - key: vinkje-per-training
+    kind: fact
+    en:
+      title: "Tick off your sessions"
+      body: "A tick for each workout shows how consistent you were, even in a week when the scale did nothing."
+    nl:
+      title: "Vink je trainingen af"
+      body: "Een vinkje per training laat zien hoe trouw je was, ook in een week waarin de weegschaal niets deed."
+    de:
+      title: "Hak deine Einheiten ab"
+      body: "Ein Haken pro Training zeigt, wie beständig du warst, auch in einer Woche, in der die Waage sich nicht bewegt hat."
+    es:
+      title: "Marca tus sesiones"
+      body: "Una marca por entreno muestra lo constante que fuiste, incluso en una semana en que la báscula no se movió."
+    fr:
+      title: "Coche tes séances"
+      body: "Une coche par séance montre ta régularité, même une semaine où la balance n'a pas bougé."
+    pt:
+      title: "Marca os treinos"
+      body: "Um visto por treino mostra o quão constante foste, mesmo numa semana em que a balança não mexeu."
+    tr:
+      title: "Antrenmanlarını işaretle"
+      body: "Her antrenmana bir tik, tartının hiç kıpırdamadığı bir haftada bile ne kadar düzenli olduğunu gösterir."
+
+  - key: klein-houden
+    kind: fact
+    en:
+      title: "Keep it small"
+      body: "Track only what you'll still track in a month. A log you keep up beats a detailed one you drop."
+    nl:
+      title: "Houd het klein"
+      body: "Houd alleen bij wat je over een maand nog steeds bijhoudt. Een logboek dat je volhoudt is beter dan een gedetailleerd logboek waar je mee stopt."
+    de:
+      title: "Halt es klein"
+      body: "Halte nur fest, was du in einem Monat noch festhältst. Ein Log, das du durchziehst, schlägt ein detailliertes, das du aufgibst."
+    es:
+      title: "Que sea poco"
+      body: "Registra solo lo que seguirás registrando dentro de un mes. Un registro que mantienes vale más que uno detallado que abandonas."
+    fr:
+      title: "Fais simple"
+      body: "Ne suis que ce que tu suivras encore dans un mois. Un carnet que tu tiens vaut mieux qu'un carnet détaillé que tu lâches."
+    pt:
+      title: "Mantém pouco"
+      body: "Regista só o que ainda vais registar daqui a um mês. Um registo que manténs vale mais do que um detalhado que largas."
+    tr:
+      title: "Küçük tut"
+      body: "Sadece bir ay sonra da takip edeceğin şeyleri takip et. Sürdürdüğün bir kayıt, bıraktığın ayrıntılı bir kayıttan iyidir."
+
+  - key: als-het-je-onrustig-maakt
+    kind: fact
+    en:
+      title: "When tracking feels heavy"
+      body: "Does weighing or logging food make you anxious, or have you had an eating disorder? Talk to your doctor or dietitian before you start."
+    nl:
+      title: "Als bijhouden zwaar voelt"
+      body: "Word je onrustig van wegen of eten bijhouden, of heb je een eetstoornis gehad? Praat dan eerst met je huisarts of diëtist."
+    de:
+      title: "Wenn Tracken belastet"
+      body: "Macht dich Wiegen oder Essen-Tracken unruhig, oder hattest du eine Essstörung? Sprich vorher mit deinem Arzt oder deiner Ernährungsberatung."
+    es:
+      title: "Si registrar te agobia"
+      body: "¿Te angustia pesarte o apuntar lo que comes, o has tenido un trastorno alimentario? Habla antes con tu médico o dietista."
+    fr:
+      title: "Quand le suivi pèse"
+      body: "Te peser ou noter ce que tu manges t'angoisse, ou tu as eu un trouble alimentaire ? Parle d'abord à ton médecin ou à un diététicien."
+    pt:
+      title: "Quando registar pesa"
+      body: "Pesar-te ou registar a comida deixa-te ansioso, ou já tiveste uma perturbação alimentar? Fala antes com o teu médico ou nutricionista."
+    tr:
+      title: "Takip ağır geliyorsa"
+      body: "Tartılmak ya da yediklerini yazmak seni kaygılandırıyor mu, ya da yeme bozukluğu geçirdin mi? Başlamadan önce doktoruna ya da diyetisyenine danış."
+
+  - key: hoeveel-is-genoeg
+    kind: fact
+    en:
+      title: "How much tracking?"
+      body: "The research can't tell you how much self-monitoring you need. The authors of one review called for studies on exactly that."
+    nl:
+      title: "Hoeveel bijhouden?"
+      body: "Het onderzoek zegt niet hoeveel bijhouden je nodig hebt. De auteurs van een review vroegen om studies naar precies die vraag."
+    de:
+      title: "Wie viel Tracken?"
+      body: "Wie viel Selbstbeobachtung du brauchst, sagt die Forschung nicht. Die Autoren eines Reviews forderten genau dazu Studien."
+    es:
+      title: "¿Cuánto registrar?"
+      body: "La investigación no dice cuánto registro necesitas. Los autores de una revisión pidieron estudios justo sobre eso."
+    fr:
+      title: "Combien suivre ?"
+      body: "La recherche ne dit pas combien de suivi il te faut. Les auteurs d'une revue ont demandé des études justement là-dessus."
+    pt:
+      title: "Quanto registar?"
+      body: "A investigação não diz quanto registo precisas. Os autores de uma revisão pediram estudos precisamente sobre isso."
+    tr:
+      title: "Ne kadar takip?"
+      body: "Araştırmalar ne kadar takibe ihtiyacın olduğunu söylemiyor. Bir derlemenin yazarları tam da bunun için çalışma istedi."

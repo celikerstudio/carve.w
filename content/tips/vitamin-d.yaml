@@ -1,0 +1,241 @@
+article: vitamin-d
+tips:
+  - key: hoeveel-per-dag
+    kind: fact
+    en:
+      title: "Vitamin D"
+      body: "In the Netherlands the advice is 10 microgram (400 IU) a day. From age 70 it is 20 microgram (800 IU)."
+    nl:
+      title: "Vitamine D"
+      body: "In Nederland is het advies 10 microgram (400 IE) per dag. Vanaf 70 jaar is het 20 microgram (800 IE)."
+    de:
+      title: "Vitamin D"
+      body: "In den Niederlanden lautet die Empfehlung 10 Mikrogramm (400 IE) am Tag. Ab 70 sind es 20 Mikrogramm (800 IE)."
+    es:
+      title: "Vitamina D"
+      body: "En los Países Bajos se recomiendan 10 microgramos (400 UI) al día. A partir de los 70, 20 microgramos (800 UI)."
+    fr:
+      title: "Vitamine D"
+      body: "Aux Pays-Bas, le conseil est de 10 microgrammes (400 UI) par jour. Dès 70 ans, c'est 20 microgrammes (800 UI)."
+    pt:
+      title: "Vitamina D"
+      body: "Nos Países Baixos o conselho é 10 microgramas (400 UI) por dia. A partir dos 70 anos são 20 microgramas (800 UI)."
+    tr:
+      title: "D vitamini"
+      body: "Hollanda'da öneri günde 10 mikrogram (400 IU). 70 yaşından sonra 20 mikrogram (800 IU)."
+
+  - key: microgram-en-ie
+    kind: fact
+    en:
+      title: "Microgram or IU?"
+      body: "Labels often use IU instead of microgram. One microgram is 40 IU, so 10 microgram is 400 IU."
+    nl:
+      title: "Microgram of IE?"
+      body: "Op etiketten staat vaak IE in plaats van microgram. Eén microgram is 40 IE, dus 10 microgram is 400 IE."
+    de:
+      title: "Mikrogramm oder IE?"
+      body: "Auf Etiketten steht oft IE statt Mikrogramm. Ein Mikrogramm sind 40 IE, also sind 10 Mikrogramm 400 IE."
+    es:
+      title: "¿Microgramos o UI?"
+      body: "Las etiquetas suelen usar UI en vez de microgramos. Un microgramo son 40 UI, así que 10 microgramos son 400 UI."
+    fr:
+      title: "Microgrammes ou UI ?"
+      body: "Les étiquettes utilisent souvent des UI au lieu de microgrammes. Un microgramme vaut 40 UI, donc 10 microgrammes font 400 UI."
+    pt:
+      title: "Microgramas ou UI?"
+      body: "Os rótulos usam muitas vezes UI em vez de microgramas. Um micrograma são 40 UI, por isso 10 microgramas são 400 UI."
+    tr:
+      title: "Mikrogram mı, IU mu?"
+      body: "Etiketlerde çoğu zaman mikrogram yerine IU yazar. Bir mikrogram 40 IU'dur, yani 10 mikrogram 400 IU eder."
+
+  - key: meer-is-niet-beter
+    kind: myth
+    en:
+      title: "Myth: more vitamin D is better"
+      body: "Not true. Taking more than the recommended amount gives no extra health benefit."
+    nl:
+      title: "Mythe: meer vitamine D is beter"
+      body: "Klopt niet. Meer nemen dan de aanbevolen hoeveelheid levert geen extra gezondheidswinst op."
+    de:
+      title: "Mythos: Mehr Vitamin D ist besser"
+      body: "Stimmt nicht. Mehr als die empfohlene Menge bringt keinen zusätzlichen Nutzen für deine Gesundheit."
+    es:
+      title: "Mito: más vitamina D es mejor"
+      body: "No es así. Tomar más de lo recomendado no aporta ningún beneficio extra para tu salud."
+    fr:
+      title: "Mythe : plus de vitamine D, c'est mieux"
+      body: "Faux. En prendre plus que la quantité conseillée n'apporte aucun bénéfice de plus pour ta santé."
+    pt:
+      title: "Mito: mais vitamina D é melhor"
+      body: "Não é verdade. Tomar mais do que o recomendado não traz nenhum benefício extra para a saúde."
+    tr:
+      title: "Efsane: daha fazla D vitamini daha iyidir"
+      body: "Doğru değil. Önerilen miktardan fazlasını almak sağlığına ekstra bir fayda sağlamaz."
+
+  - key: winterzon
+    kind: fact
+    en:
+      title: "The winter sun"
+      body: "In a Dutch winter the sun is too low to make vitamin D. Your skin cannot make it then, however long you are outside."
+    nl:
+      title: "De winterzon"
+      body: "In een Nederlandse winter staat de zon te laag om vitamine D te maken. Dan maakt je huid het niet, hoe lang je ook buiten bent."
+    de:
+      title: "Die Wintersonne"
+      body: "Im niederländischen Winter steht die Sonne zu tief für Vitamin D. Deine Haut bildet es dann nicht, egal wie lange du draußen bist."
+    es:
+      title: "El sol de invierno"
+      body: "En el invierno de los Países Bajos el sol está demasiado bajo para crear vitamina D. Tu piel no la produce entonces."
+    fr:
+      title: "Le soleil d'hiver"
+      body: "En hiver aux Pays-Bas, le soleil est trop bas pour faire de la vitamine D. Ta peau n'en fabrique pas, même dehors longtemps."
+    pt:
+      title: "O sol de inverno"
+      body: "No inverno dos Países Baixos o sol está baixo demais para fazer vitamina D. A tua pele não a produz nessa altura."
+    tr:
+      title: "Kış güneşi"
+      body: "Hollanda'da kışın güneş D vitamini yapmak için fazla alçakta. Ne kadar dışarıda kalsan da cildin o zaman üretmez."
+
+  - key: zomerzon
+    kind: fact
+    en:
+      title: "Sun from March to October"
+      body: "The Dutch advice: be outside 15 to 30 minutes a day between 11:00 and 15:00, with your face and hands uncovered."
+    nl:
+      title: "Zon van maart tot oktober"
+      body: "Het advies: elke dag 15 tot 30 minuten buiten tussen 11 en 3 uur, met je gezicht en handen onbedekt."
+    de:
+      title: "Sonne von März bis Oktober"
+      body: "Der Rat in den Niederlanden: täglich 15 bis 30 Minuten draußen zwischen 11 und 15 Uhr, Gesicht und Hände frei."
+    es:
+      title: "Sol de marzo a octubre"
+      body: "El consejo neerlandés: sal 15 a 30 minutos al día entre las 11:00 y las 15:00, con la cara y las manos al aire."
+    fr:
+      title: "Le soleil de mars à octobre"
+      body: "Le conseil néerlandais : 15 à 30 minutes dehors chaque jour entre 11 h et 15 h, visage et mains découverts."
+    pt:
+      title: "Sol de março a outubro"
+      body: "O conselho neerlandês: 15 a 30 minutos por dia ao ar livre entre as 11h e as 15h, com a cara e as mãos destapadas."
+    tr:
+      title: "Martan ekime güneş"
+      body: "Hollanda'daki öneri: her gün 11.00 ile 15.00 arasında 15 ila 30 dakika dışarıda ol, yüzün ve ellerin açık olsun."
+
+  - key: bovengrens-geen-dosis
+    kind: myth
+    en:
+      title: "Myth: the upper limit is a dose to aim for"
+      body: "No. 100 microgram (4,000 IU) a day is a ceiling for your total from all sources, ten times the Dutch advice under 70."
+    nl:
+      title: "Mythe: de bovengrens is een dosis"
+      body: "Nee. 100 microgram (4.000 IE) per dag is een plafond voor alles bij elkaar. Onder de 70 is dat tien keer het Nederlandse advies."
+    de:
+      title: "Mythos: Die Obergrenze ist eine Dosis"
+      body: "Nein. 100 Mikrogramm (4.000 IE) am Tag sind eine Decke für alles zusammen, unter 70 das Zehnfache der Empfehlung."
+    es:
+      title: "Mito: el límite máximo es una dosis"
+      body: "No. 100 microgramos (4.000 UI) al día es un techo para el total de todas las fuentes, diez veces el consejo neerlandés."
+    fr:
+      title: "Mythe : la limite haute est une dose"
+      body: "Non. 100 microgrammes (4 000 UI) par jour, c'est un plafond pour le total, dix fois le conseil néerlandais avant 70 ans."
+    pt:
+      title: "Mito: o limite máximo é uma dose"
+      body: "Não. 100 microgramas (4.000 UI) por dia é um teto para o total de todas as fontes, dez vezes o conselho neerlandês."
+    tr:
+      title: "Efsane: üst sınır hedeflenecek dozdur"
+      body: "Hayır. Günde 100 mikrogram (4.000 IU) tüm kaynakların toplamı için bir tavan. 70 yaş altı için Hollanda önerisinin on katı."
+
+  - key: testosteron
+    kind: myth
+    en:
+      title: "Myth: vitamin D raises your testosterone"
+      body: "Not shown. A review that included 10 vitamin D studies did not rate it as raising testosterone."
+    nl:
+      title: "Mythe: vitamine D verhoogt je testosteron"
+      body: "Niet aangetoond. Een review met 10 studies naar vitamine D beoordeelde het niet als iets dat testosteron verhoogt."
+    de:
+      title: "Mythos: Vitamin D hebt dein Testosteron"
+      body: "Nicht belegt. Eine Übersicht mit 10 Studien zu Vitamin D stufte es nicht als testosteronsteigernd ein."
+    es:
+      title: "Mito: la vitamina D sube tu testosterona"
+      body: "No está demostrado. Una revisión con 10 estudios de vitamina D no la consideró eficaz para subir la testosterona."
+    fr:
+      title: "Mythe : la vitamine D monte ta testo"
+      body: "Pas démontré. Une revue incluant 10 études sur la vitamine D ne l'a pas classée parmi ce qui fait monter la testostérone."
+    pt:
+      title: "Mito: a vitamina D sobe a tua testosterona"
+      body: "Não está provado. Uma revisão com 10 estudos de vitamina D não a avaliou como algo que sobe a testosterona."
+    tr:
+      title: "Efsane: D vitamini testosteronunu artırır"
+      body: "Kanıtlanmadı. 10 D vitamini çalışmasını içeren bir derleme, onu testosteronu artıran bir şey olarak değerlendirmedi."
+
+  - key: efsa-15-nederland-10
+    kind: fact
+    en:
+      title: "10 or 15 microgram?"
+      body: "EFSA says 15 microgram, the Netherlands 10. Neither is wrong: both are for little sun and come from separate calculations."
+    nl:
+      title: "10 of 15 microgram?"
+      body: "EFSA zegt 15 microgram, Nederland 10. Geen van beide is fout: ze gaan allebei uit van weinig zon en zijn los berekend."
+    de:
+      title: "10 oder 15 Mikrogramm?"
+      body: "Die EFSA sagt 15 Mikrogramm, die Niederlande 10. Beides gilt bei wenig Sonne, es sind zwei getrennte Berechnungen."
+    es:
+      title: "¿10 o 15 microgramos?"
+      body: "La EFSA dice 15 microgramos y los Países Bajos 10. Ninguno está mal: ambos son para poco sol y se calcularon por separado."
+    fr:
+      title: "10 ou 15 microgrammes ?"
+      body: "L'EFSA dit 15 microgrammes, les Pays-Bas 10. Aucun n'est faux : les deux visent peu de soleil et sont calculés à part."
+    pt:
+      title: "10 ou 15 microgramas?"
+      body: "A EFSA diz 15 microgramas, os Países Baixos 10. Nenhum está errado: ambos são para pouco sol e foram calculados à parte."
+    tr:
+      title: "10 mu, 15 mikrogram mı?"
+      body: "EFSA 15 mikrogram, Hollanda 10 diyor. İkisi de yanlış değil: ikisi de az güneş için ve ayrı ayrı hesaplandı."
+
+  - key: zon-en-eten
+    kind: fact
+    en:
+      title: "Where your vitamin D comes from"
+      body: "For a light-skinned person often in the sun, about two thirds comes from sunlight and one third from food, over the year."
+    nl:
+      title: "Waar je vitamine D vandaan komt"
+      body: "Bij een lichte huid en regelmatig zon komt zo'n twee derde uit zonlicht en een derde uit eten, over het jaar gemiddeld."
+    de:
+      title: "Woher dein Vitamin D kommt"
+      body: "Bei heller Haut und oft Sonne kommen übers Jahr etwa zwei Drittel aus Sonnenlicht und ein Drittel aus dem Essen."
+    es:
+      title: "De dónde sale tu vitamina D"
+      body: "Con piel clara y sol a menudo, unos dos tercios vienen del sol y un tercio de la comida, de media en el año."
+    fr:
+      title: "D'où vient ta vitamine D"
+      body: "Avec une peau claire et du soleil souvent, environ deux tiers viennent du soleil et un tiers de l'alimentation, sur l'année."
+    pt:
+      title: "De onde vem a tua vitamina D"
+      body: "Com pele clara e sol frequente, cerca de dois terços vêm do sol e um terço da comida, em média ao longo do ano."
+    tr:
+      title: "D vitaminin nereden gelir"
+      body: "Açık tenli ve sık güneşte olan biri için yıl ortalamasında yaklaşık üçte ikisi güneşten, üçte biri yiyecekten gelir."
+
+  - key: wie-een-supplement
+    kind: fact
+    en:
+      title: "Who is advised a supplement"
+      body: "In the Netherlands, ages 4 to 69: 10 microgram a day if you have darker skin, are rarely outdoors by day or cover your face."
+    nl:
+      title: "Wie een supplement nodig heeft"
+      body: "In Nederland, van 4 tot 69 jaar: 10 microgram per dag als je een donkere huid hebt, overdag weinig buiten komt of je gezicht bedekt."
+    de:
+      title: "Wem ein Präparat geraten wird"
+      body: "In den Niederlanden, von 4 bis 69: 10 Mikrogramm am Tag bei dunkler Haut, wenig Zeit draußen am Tag oder bedecktem Gesicht."
+    es:
+      title: "Quién debe tomar un suplemento"
+      body: "En los Países Bajos, de 4 a 69 años: 10 microgramos al día si tienes piel oscura, sales poco de día o te cubres la cara."
+    fr:
+      title: "Qui doit en prendre"
+      body: "Aux Pays-Bas, de 4 à 69 ans : 10 microgrammes par jour si ta peau est foncée, si tu sors peu le jour ou si tu couvres ton visage."
+    pt:
+      title: "Quem deve tomar suplemento"
+      body: "Nos Países Baixos, dos 4 aos 69 anos: 10 microgramas por dia se tens pele escura, sais pouco de dia ou cobres a cara."
+    tr:
+      title: "Kimlere takviye önerilir"
+      body: "Hollanda'da 4 ila 69 yaş arası: koyu tenliysen, gündüz az dışarı çıkıyorsan ya da yüzünü örtüyorsan günde 10 mikrogram."

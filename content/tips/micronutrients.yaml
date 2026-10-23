@@ -1,0 +1,217 @@
+article: micronutrients
+tips:
+  - key: multivitamine-prestatie
+    kind: myth
+    en:
+      title: "Myth: a multivitamin helps you perform"
+      body: "Not unless you are short of something. Vitamin and mineral pills only help performance when they fix a deficiency."
+    nl:
+      title: "Mythe: een multivitamine maakt je sterker"
+      body: "Alleen als je ergens een tekort aan hebt. Vitaminen en mineralen helpen je prestatie pas als ze een tekort opheffen."
+    de:
+      title: "Mythos: Multivitamine steigern die Leistung"
+      body: "Nur wenn dir etwas fehlt. Vitamin- und Mineralstoffpillen helfen deiner Leistung erst, wenn sie einen Mangel beheben."
+    es:
+      title: "Mito: un multivitamínico mejora tu rendimiento"
+      body: "Solo si te falta algo. Las vitaminas y minerales en pastilla solo mejoran tu rendimiento cuando corrigen una carencia."
+    fr:
+      title: "Mythe : un multivitamine booste tes perfs"
+      body: "Seulement s'il te manque quelque chose. Vitamines et minéraux en comprimés n'aident tes perfs que s'ils corrigent une carence."
+    pt:
+      title: "Mito: um multivitamínico melhora o rendimento"
+      body: "Só se te faltar alguma coisa. Vitaminas e minerais em comprimido só melhoram o rendimento quando corrigem uma carência."
+    tr:
+      title: "Efsane: multivitamin performansı artırır"
+      body: "Bir eksiğin yoksa hayır. Vitamin ve mineral hapları performansına ancak bir eksikliği giderdiklerinde yardım eder."
+
+  - key: meer-is-beter
+    kind: myth
+    en:
+      title: "Myth: more vitamins is better"
+      body: "Not true. More than you need gives no extra health benefit, and the upper limit is a ceiling, not a target."
+    nl:
+      title: "Mythe: hoe meer vitaminen, hoe beter"
+      body: "Klopt niet. Meer dan je nodig hebt levert geen extra gezondheidswinst op, en de bovengrens is een plafond, geen doel."
+    de:
+      title: "Mythos: Mehr Vitamine sind besser"
+      body: "Stimmt nicht. Mehr als du brauchst bringt keinen zusätzlichen Nutzen, und die Obergrenze ist eine Decke, kein Ziel."
+    es:
+      title: "Mito: cuantas más vitaminas, mejor"
+      body: "No es cierto. Más de lo que necesitas no da ningún beneficio extra, y el límite superior es un techo, no una meta."
+    fr:
+      title: "Mythe : plus de vitamines, c'est mieux"
+      body: "Faux. Plus que ce dont tu as besoin n'apporte rien de plus pour ta santé, et la limite haute est un plafond, pas un objectif."
+    pt:
+      title: "Mito: quanto mais vitaminas, melhor"
+      body: "Não é verdade. Mais do que precisas não traz benefício extra, e o limite máximo é um teto, não uma meta."
+    tr:
+      title: "Efsane: ne kadar çok vitamin, o kadar iyi"
+      body: "Doğru değil. İhtiyacından fazlası sağlığına ek bir fayda sağlamaz, üst sınır da hedef değil bir tavandır."
+
+  - key: wegplassen
+    kind: myth
+    en:
+      title: "Myth: extra B vitamins just leave in your pee"
+      body: "Half true. You pass most water-soluble vitamins, but too much vitamin B6 can damage your nerves. The adult limit is 12 mg a day."
+    nl:
+      title: "Mythe: te veel B-vitamine plas je gewoon uit"
+      body: "Half waar. De meeste wateroplosbare vitaminen plas je uit, maar te veel B6 kan je zenuwen beschadigen. De grens is 12 mg per dag."
+    de:
+      title: "Mythos: Zu viel Vitamin B pinkelst du aus"
+      body: "Halb wahr. Die meisten wasserlöslichen Vitamine scheidest du aus, aber zu viel B6 kann Nerven schädigen. Die Grenze liegt bei 12 mg am Tag."
+    es:
+      title: "Mito: el exceso de vitamina B se orina"
+      body: "A medias. La mayoría de vitaminas hidrosolubles se eliminan, pero demasiada B6 puede dañar los nervios. El límite es de 12 mg al día."
+    fr:
+      title: "Mythe : l'excès de vitamine B part dans l'urine"
+      body: "À moitié vrai. Tu élimines la plupart des vitamines hydrosolubles, mais trop de B6 peut abîmer tes nerfs. La limite est de 12 mg par jour."
+    pt:
+      title: "Mito: o excesso de vitamina B sai na urina"
+      body: "Meio verdade. A maioria das vitaminas hidrossolúveis sai na urina, mas B6 a mais pode danificar os nervos. O limite é 12 mg por dia."
+    tr:
+      title: "Efsane: fazla B vitamini idrarla atılır"
+      body: "Yarı doğru. Suda çözünen vitaminlerin çoğunu atarsın, ama fazla B6 sinirlere zarar verebilir. Yetişkinler için sınır günde 12 mg."
+
+  - key: optellen
+    kind: fact
+    en:
+      title: "Supplements add up"
+      body: "Upper limits count everything together. A multivitamin, a vitamin D tablet and fortified food all add to the same total."
+    nl:
+      title: "Supplementen tellen op"
+      body: "Een bovengrens geldt voor alles samen. Een multivitamine, een vitamine D-tablet en verrijkt eten tellen allemaal mee in hetzelfde totaal."
+    de:
+      title: "Supplemente summieren sich"
+      body: "Obergrenzen gelten für alles zusammen. Multivitamin, Vitamin-D-Tablette und angereicherte Lebensmittel zählen alle zur selben Summe."
+    es:
+      title: "Los suplementos se suman"
+      body: "Los límites superiores cuentan todo junto. Un multivitamínico, una pastilla de vitamina D y la comida enriquecida suman al mismo total."
+    fr:
+      title: "Les compléments s'additionnent"
+      body: "Les limites hautes comptent tout ensemble. Un multivitamine, un comprimé de vitamine D et les aliments enrichis s'ajoutent au même total."
+    pt:
+      title: "Os suplementos somam-se"
+      body: "Os limites máximos contam tudo junto. Um multivitamínico, um comprimido de vitamina D e comida fortificada somam ao mesmo total."
+    tr:
+      title: "Takviyeler toplanır"
+      body: "Üst sınırlar her şeyi birlikte sayar. Multivitamin, D vitamini tableti ve zenginleştirilmiş gıdalar aynı toplama eklenir."
+
+  - key: vetoplosbaar
+    kind: fact
+    en:
+      title: "Vitamins A, D, E and K"
+      body: "These fat-soluble vitamins are stored in your body. Take too much for a long time and they can build up to toxic levels."
+    nl:
+      title: "Vitamine A, D, E en K"
+      body: "Deze vetoplosbare vitaminen slaat je lichaam op. Neem je er lang te veel van, dan kunnen ze zich ophopen tot een giftige hoeveelheid."
+    de:
+      title: "Vitamin A, D, E und K"
+      body: "Diese fettlöslichen Vitamine speichert dein Körper. Nimmst du lange zu viel, können sie sich bis zu giftigen Mengen anreichern."
+    es:
+      title: "Vitaminas A, D, E y K"
+      body: "Estas vitaminas liposolubles se guardan en tu cuerpo. Si tomas demasiado durante mucho tiempo, pueden acumularse hasta ser tóxicas."
+    fr:
+      title: "Vitamines A, D, E et K"
+      body: "Ces vitamines liposolubles sont stockées par ton corps. Trop pendant longtemps, et elles peuvent s'accumuler jusqu'à devenir toxiques."
+    pt:
+      title: "Vitaminas A, D, E e K"
+      body: "Estas vitaminas lipossolúveis ficam guardadas no corpo. Se tomares demasiado durante muito tempo, podem acumular-se até serem tóxicas."
+    tr:
+      title: "A, D, E ve K vitaminleri"
+      body: "Yağda çözünen bu vitaminler vücudunda depolanır. Uzun süre fazla alırsan zehirli seviyelere kadar birikebilirler."
+
+  - key: antioxidanten-training
+    kind: fact
+    en:
+      title: "Antioxidant pills and training"
+      body: "High-dose antioxidants to recover faster are not supported. They might even interfere with how your body adapts to training."
+    nl:
+      title: "Antioxidanten en training"
+      body: "Hoge doses antioxidanten om sneller te herstellen worden niet ondersteund. Ze kunnen zelfs je aanpassing aan training in de weg zitten."
+    de:
+      title: "Antioxidantien und Training"
+      body: "Hochdosierte Antioxidantien für schnellere Erholung sind nicht belegt. Sie könnten sogar die Anpassung an dein Training stören."
+    es:
+      title: "Antioxidantes y entrenamiento"
+      body: "Las dosis altas de antioxidantes para recuperar antes no tienen respaldo. Incluso podrían frenar cómo te adaptas al entreno."
+    fr:
+      title: "Antioxydants et entraînement"
+      body: "Les fortes doses d'antioxydants pour mieux récupérer ne sont pas soutenues. Elles pourraient même gêner ton adaptation à l'entraînement."
+    pt:
+      title: "Antioxidantes e treino"
+      body: "Doses altas de antioxidantes para recuperar mais depressa não têm apoio. Podem até atrapalhar a forma como te adaptas ao treino."
+    tr:
+      title: "Antioksidanlar ve antrenman"
+      body: "Daha hızlı toparlanmak için yüksek doz antioksidan desteklenmiyor. Vücudunun antrenmana uyumunu bile engelleyebilir."
+
+  - key: betacaroteen
+    kind: fact
+    en:
+      title: "Beta-carotene pills"
+      body: "More than 15 mg of beta-carotene a day was linked to lung cancer. If you smoke, avoid supplements that contain it."
+    nl:
+      title: "Bètacaroteen in pillen"
+      body: "Meer dan 15 mg bètacaroteen per dag werd in verband gebracht met longkanker. Rook je, laat supplementen met bètacaroteen dan staan."
+    de:
+      title: "Betacarotin als Pille"
+      body: "Mehr als 15 mg Betacarotin am Tag wurde mit Lungenkrebs in Verbindung gebracht. Wenn du rauchst, meide Präparate damit."
+    es:
+      title: "Betacaroteno en pastillas"
+      body: "Más de 15 mg de betacaroteno al día se asoció con cáncer de pulmón. Si fumas, evita los suplementos que lo lleven."
+    fr:
+      title: "Bêta-carotène en comprimés"
+      body: "Plus de 15 mg de bêta-carotène par jour a été associé au cancer du poumon. Si tu fumes, évite les compléments qui en contiennent."
+    pt:
+      title: "Betacaroteno em comprimidos"
+      body: "Mais de 15 mg de betacaroteno por dia foi associado a cancro do pulmão. Se fumas, evita suplementos que o tenham."
+    tr:
+      title: "Beta-karoten hapları"
+      body: "Günde 15 mg'dan fazla beta-karoten akciğer kanseriyle ilişkilendirildi. Sigara içiyorsan bunu içeren takviyelerden uzak dur."
+
+  - key: lang-tekort
+    kind: fact
+    en:
+      title: "When gaps appear"
+      body: "Long strict diets and cutting out food groups can leave you short. Have your levels checked instead of guessing."
+    nl:
+      title: "Wanneer je tekortkomt"
+      body: "Lang streng lijnen of hele productgroepen schrappen kan gaten slaan. Laat je waarden checken in plaats van zelf te gokken."
+    de:
+      title: "Wann Lücken entstehen"
+      body: "Lange strenge Diäten und gestrichene Lebensmittelgruppen können Lücken reißen. Lass deine Werte prüfen, statt zu raten."
+    es:
+      title: "Cuándo te falta algo"
+      body: "Las dietas estrictas y largas o quitar grupos de alimentos pueden dejarte corto. Haz que revisen tus niveles en vez de adivinar."
+    fr:
+      title: "Quand des manques apparaissent"
+      body: "Un régime strict qui dure ou des groupes d'aliments supprimés peuvent créer des manques. Fais vérifier tes taux au lieu de deviner."
+    pt:
+      title: "Quando surgem faltas"
+      body: "Dietas rígidas e longas ou cortar grupos de alimentos podem deixar-te em falta. Faz análises em vez de adivinhar."
+    tr:
+      title: "Eksikler ne zaman çıkar"
+      body: "Uzun ve sıkı diyetler ya da besin gruplarını kesmek eksik bırakabilir. Tahmin etmek yerine değerlerini ölçtür."
+
+  - key: vegan-b12
+    kind: fact
+    en:
+      title: "Vegan? Think B12"
+      body: "In the Netherlands, vegans are advised to take vitamin B12, at least enough to reach the recommended daily amount."
+    nl:
+      title: "Vegan? Denk aan B12"
+      body: "In Nederland krijgen veganisten het advies vitamine B12 te slikken, genoeg om minstens de aanbevolen dagelijkse hoeveelheid te halen."
+    de:
+      title: "Vegan? Denk an B12"
+      body: "In den Niederlanden wird Veganern Vitamin B12 empfohlen, mindestens so viel, dass sie die empfohlene Tagesmenge erreichen."
+    es:
+      title: "¿Vegano? Piensa en la B12"
+      body: "En los Países Bajos se aconseja a los veganos tomar vitamina B12, al menos lo suficiente para llegar a la cantidad diaria recomendada."
+    fr:
+      title: "Vegan ? Pense à la B12"
+      body: "Aux Pays-Bas, on conseille aux vegans de prendre de la vitamine B12, au moins assez pour atteindre l'apport quotidien recommandé."
+    pt:
+      title: "Vegano? Pensa na B12"
+      body: "Nos Países Baixos aconselha-se aos veganos vitamina B12, pelo menos o suficiente para chegar à dose diária recomendada."
+    tr:
+      title: "Vegan mısın? B12'yi düşün"
+      body: "Hollanda'da veganlara, en az önerilen günlük miktara ulaşacak kadar B12 vitamini alması tavsiye edilir."

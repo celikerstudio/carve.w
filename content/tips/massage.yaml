@@ -1,0 +1,169 @@
+article: massage
+tips:
+  - key: wat-het-doet
+    kind: fact
+    en:
+      title: "Massage"
+      body: "Massage can ease tension and help you relax. It adds to sleep, food and smart programming, but doesn't replace them."
+    nl:
+      title: "Massage"
+      body: "Massage kan spanning verminderen en je laten ontspannen. Het is een aanvulling op slaap, eten en een slim schema, geen vervanging."
+    de:
+      title: "Massage"
+      body: "Massage kann Verspannungen lösen und dich entspannen. Sie ergänzt Schlaf, Ernährung und einen klugen Plan, ersetzt sie aber nicht."
+    es:
+      title: "Masaje"
+      body: "El masaje puede bajar la tensión y ayudarte a relajarte. Suma al sueño, la comida y un buen plan, pero no los sustituye."
+    fr:
+      title: "Massage"
+      body: "Le massage peut réduire les tensions et t'aider à te détendre. Il complète le sommeil, l'alimentation et un bon programme, sans les remplacer."
+    pt:
+      title: "Massagem"
+      body: "A massagem pode aliviar a tensão e ajudar-te a relaxar. Soma ao sono, à comida e a um bom plano, mas não os substitui."
+    tr:
+      title: "Masaj"
+      body: "Masaj gerginliği azaltıp rahatlamana yardım edebilir. Uykuya, beslenmeye ve akıllı programa eklenir ama onların yerini tutmaz."
+
+  - key: geen-melkzuur
+    kind: myth
+    en:
+      title: "Myth: massage flushes out lactic acid"
+      body: "Not true. Massage doesn't flush lactic acid, but it may ease discomfort."
+    nl:
+      title: "Mythe: massage spoelt melkzuur weg"
+      body: "Niet waar. Massage spoelt geen melkzuur weg, maar het kan ongemak wel verlichten."
+    de:
+      title: "Mythos: Massage spült Milchsäure aus"
+      body: "Stimmt nicht. Massage spült keine Milchsäure aus, kann Beschwerden aber lindern."
+    es:
+      title: "Mito: el masaje elimina el ácido láctico"
+      body: "No es cierto. El masaje no elimina el ácido láctico, aunque puede aliviar las molestias."
+    fr:
+      title: "Mythe : le massage évacue l'acide lactique"
+      body: "Faux. Le massage n'évacue pas l'acide lactique, mais il peut soulager l'inconfort."
+    pt:
+      title: "Mito: a massagem elimina o ácido láctico"
+      body: "Não é verdade. A massagem não elimina o ácido láctico, mas pode aliviar o desconforto."
+    tr:
+      title: "Efsane: masaj laktik asidi atar"
+      body: "Doğru değil. Masaj laktik asidi atmaz ama rahatsızlığı hafifletebilir."
+
+  - key: pijn-is-niet-beter
+    kind: myth
+    en:
+      title: "Myth: a massage should hurt to work"
+      body: "Not true. Accepting painful pressure can make soreness worse. Tell your therapist how much pressure you want."
+    nl:
+      title: "Mythe: een massage moet pijn doen"
+      body: "Niet waar. Pijnlijke druk accepteren kan je spierpijn erger maken. Zeg tegen je masseur hoeveel druk je wilt."
+    de:
+      title: "Mythos: Massage muss wehtun"
+      body: "Stimmt nicht. Schmerzhaften Druck hinzunehmen kann Muskelkater verschlimmern. Sag deinem Masseur, wie viel Druck du willst."
+    es:
+      title: "Mito: un masaje tiene que doler"
+      body: "No es cierto. Aguantar una presión dolorosa puede empeorar las agujetas. Dile a tu masajista cuánta presión quieres."
+    fr:
+      title: "Mythe : un massage doit faire mal"
+      body: "Faux. Accepter une pression douloureuse peut aggraver les courbatures. Dis à ton masseur quelle pression tu veux."
+    pt:
+      title: "Mito: uma massagem tem de doer"
+      body: "Não é verdade. Aguentar pressão dolorosa pode piorar as dores. Diz ao teu massagista quanta pressão queres."
+    tr:
+      title: "Efsane: masaj acıtmalı ki işe yarasın"
+      body: "Doğru değil. Acı veren baskıya katlanmak kas ağrısını kötüleştirebilir. Masörüne ne kadar baskı istediğini söyle."
+
+  - key: wanneer-plannen
+    kind: fact
+    en:
+      title: "When to book one"
+      body: "After a hard training block, or when tension builds up and starts to limit how you move."
+    nl:
+      title: "Wanneer je er een plant"
+      body: "Na een zwaar trainingsblok, of als spanning zich opstapelt en je bewegen begint te beperken."
+    de:
+      title: "Wann du einen Termin machst"
+      body: "Nach einem harten Trainingsblock oder wenn sich Verspannungen aufbauen und deine Bewegung einschränken."
+    es:
+      title: "Cuándo reservar uno"
+      body: "Después de un bloque duro de entrenamiento, o cuando la tensión se acumula y empieza a limitar tu movimiento."
+    fr:
+      title: "Quand en prévoir un"
+      body: "Après un bloc d'entraînement dur, ou quand les tensions s'accumulent et commencent à limiter tes mouvements."
+    pt:
+      title: "Quando marcar uma"
+      body: "Depois de um bloco de treino duro, ou quando a tensão se acumula e começa a limitar os teus movimentos."
+    tr:
+      title: "Ne zaman randevu alınır"
+      body: "Zorlu bir antrenman bloğundan sonra ya da gerginlik birikip hareketini kısıtlamaya başladığında."
+
+  - key: blijvende-pijnplek
+    kind: fact
+    en:
+      title: "The sore spot that keeps returning"
+      body: "If a sore spot keeps coming back, adjust your training load and technique instead of relying on massage alone."
+    nl:
+      title: "De pijnplek die terugkomt"
+      body: "Komt een pijnlijke plek steeds terug, pas dan je belasting en techniek aan in plaats van alleen op massage te leunen."
+    de:
+      title: "Die Stelle, die immer wiederkommt"
+      body: "Kommt eine schmerzende Stelle immer wieder, passe Belastung und Technik an, statt nur auf Massage zu setzen."
+    es:
+      title: "Ese punto que siempre vuelve"
+      body: "Si una zona dolorida vuelve una y otra vez, ajusta tu carga y tu técnica en vez de fiarlo todo al masaje."
+    fr:
+      title: "Le point douloureux qui revient"
+      body: "Si une zone douloureuse revient sans cesse, ajuste ta charge et ta technique au lieu de tout miser sur le massage."
+    pt:
+      title: "A zona que volta sempre"
+      body: "Se uma zona dorida volta sempre, ajusta a carga e a técnica em vez de contares só com a massagem."
+    tr:
+      title: "Sürekli dönen ağrılı nokta"
+      body: "Ağrılı bir nokta sürekli geri geliyorsa, sadece masaja güvenmek yerine yükünü ve tekniğini ayarla."
+
+  - key: vooral-gevoel
+    kind: fact
+    en:
+      title: "What you'll notice"
+      body: "The benefits of massage are often subjective. Still, it can help you relax and feel ready to train."
+    nl:
+      title: "Wat je merkt"
+      body: "De voordelen van massage zijn vaak vooral een gevoel. Toch kan het je helpen ontspannen en je klaar laten voelen om te trainen."
+    de:
+      title: "Was du merkst"
+      body: "Die Vorteile von Massage sind oft subjektiv. Trotzdem kann sie dir helfen, zu entspannen und dich bereit fürs Training zu fühlen."
+    es:
+      title: "Lo que notarás"
+      body: "Los beneficios del masaje suelen ser subjetivos. Aun así, puede ayudarte a relajarte y a sentirte listo para entrenar."
+    fr:
+      title: "Ce que tu remarques"
+      body: "Les effets du massage sont souvent subjectifs. Il peut quand même t'aider à te détendre et à te sentir prêt à t'entraîner."
+    pt:
+      title: "O que vais notar"
+      body: "Os benefícios da massagem são muitas vezes subjetivos. Mesmo assim, pode ajudar-te a relaxar e a sentires-te pronto para treinar."
+    tr:
+      title: "Ne fark edersin"
+      body: "Masajın faydaları çoğu zaman öznel. Yine de rahatlamana ve antrenmana hazır hissetmene yardım edebilir."
+
+  - key: zelfmassage
+    kind: fact
+    en:
+      title: "Between appointments"
+      body: "Use self-massage tools between sessions. Drink enough before and after, and keep moving afterwards."
+    nl:
+      title: "Tussen afspraken door"
+      body: "Gebruik zelfmassage-hulpmiddelen tussen de sessies. Drink genoeg voor en na, en blijf daarna in beweging."
+    de:
+      title: "Zwischen den Terminen"
+      body: "Nutze zwischen den Terminen Hilfsmittel zur Selbstmassage. Trink vorher und nachher genug und bleib danach in Bewegung."
+    es:
+      title: "Entre sesiones"
+      body: "Usa herramientas de automasaje entre sesiones. Bebe suficiente antes y después, y muévete un poco después."
+    fr:
+      title: "Entre deux rendez-vous"
+      body: "Utilise des outils d'automassage entre les séances. Bois assez avant et après, et bouge un peu ensuite."
+    pt:
+      title: "Entre marcações"
+      body: "Usa ferramentas de automassagem entre sessões. Bebe o suficiente antes e depois, e mexe-te um pouco a seguir."
+    tr:
+      title: "Randevular arasında"
+      body: "Seanslar arasında kendi kendine masaj araçlarını kullan. Öncesinde ve sonrasında yeterince su iç, ardından biraz hareket et."

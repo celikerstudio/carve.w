@@ -1,0 +1,169 @@
+article: beginner-mistakes
+tips:
+  - key: klein-beginnen
+    kind: fact
+    en:
+      title: "Start small"
+      body: "The WHO advises starting with small amounts and slowly building up how often, how hard and how long you train."
+    nl:
+      title: "Klein beginnen"
+      body: "De WHO raadt aan klein te beginnen en pas daarna op te bouwen hoe vaak, hoe zwaar en hoe lang je traint."
+    de:
+      title: "Klein anfangen"
+      body: "Die WHO rät, klein anzufangen und dann langsam zu steigern, wie oft, wie hart und wie lange du trainierst."
+    es:
+      title: "Empieza poco a poco"
+      body: "La OMS aconseja empezar con poco e ir subiendo con el tiempo cuántas veces, qué tan duro y cuánto rato entrenas."
+    fr:
+      title: "Commence petit"
+      body: "L'OMS conseille de commencer petit, puis d'augmenter peu à peu la fréquence, l'intensité et la durée de tes séances."
+    pt:
+      title: "Começa pequeno"
+      body: "A OMS aconselha começar com pouco e ir aumentando com o tempo quantas vezes, com que força e quanto tempo treinas."
+    tr:
+      title: "Küçük başla"
+      body: "DSÖ az başlamanı, sonra ne sıklıkla, ne kadar sert ve ne kadar uzun çalıştığını zamanla artırmanı öneriyor."
+
+  - key: drie-die-je-volhoudt
+    kind: fact
+    en:
+      title: "Three you keep"
+      body: "Three sessions a week that you keep up for a year are worth more than six you quit after a month."
+    nl:
+      title: "Drie die je volhoudt"
+      body: "Drie trainingen per week die je een jaar volhoudt, zijn meer waard dan zes waar je na een maand mee stopt."
+    de:
+      title: "Drei, die du durchhältst"
+      body: "Drei Einheiten pro Woche, die du ein Jahr lang durchziehst, bringen mehr als sechs, die du nach einem Monat aufgibst."
+    es:
+      title: "Tres que mantienes"
+      body: "Tres sesiones a la semana que mantienes un año valen más que seis que dejas al mes."
+    fr:
+      title: "Trois que tu tiens"
+      body: "Trois séances par semaine que tu tiens pendant un an valent plus que six que tu lâches au bout d'un mois."
+    pt:
+      title: "Três que aguentas"
+      body: "Três treinos por semana que manténs durante um ano valem mais do que seis que largas ao fim de um mês."
+    tr:
+      title: "Sürdürebildiğin üç gün"
+      body: "Bir yıl boyunca sürdürdüğün haftada üç antrenman, bir ay sonra bıraktığın altı antrenmandan daha değerli."
+
+  - key: opschrijven
+    kind: fact
+    en:
+      title: "Write it down"
+      body: "You can only make it harder if you know what you lifted last time. Note the weight, sets and reps of every exercise."
+    nl:
+      title: "Schrijf het op"
+      body: "Je kunt het pas zwaarder maken als je weet wat je vorige keer tilde. Noteer gewicht, sets en reps van elke oefening."
+    de:
+      title: "Schreib es auf"
+      body: "Steigern kannst du nur, wenn du weißt, was du letztes Mal gehoben hast. Notier Gewicht, Sätze und Wdh. jeder Übung."
+    es:
+      title: "Apúntalo"
+      body: "Solo puedes subir la exigencia si sabes qué levantaste la última vez. Anota peso, series y reps de cada ejercicio."
+    fr:
+      title: "Note tout"
+      body: "Tu ne peux progresser que si tu sais ce que tu as soulevé la dernière fois. Note poids, séries et reps de chaque exercice."
+    pt:
+      title: "Aponta tudo"
+      body: "Só consegues aumentar a exigência se souberes o que levantaste da última vez. Aponta peso, séries e repetições de cada exercício."
+    tr:
+      title: "Not al"
+      body: "Geçen sefer ne kaldırdığını bilirsen zorlaştırabilirsin. Her hareketin ağırlığını, setini ve tekrarını yaz."
+
+  - key: vijf-extra
+    kind: fact
+    en:
+      title: "Too light?"
+      body: "On your last set the final reps should be slow and hard. Could you easily do five more? Then the weight is too light for that rep range."
+    nl:
+      title: "Te licht?"
+      body: "Bij je laatste set moeten de laatste reps traag en zwaar gaan. Kun je er makkelijk nog vijf? Dan is het gewicht te licht voor die reps."
+    de:
+      title: "Zu leicht?"
+      body: "Im letzten Satz sollten die letzten Wdh. langsam und hart sein. Gingen locker noch fünf? Dann ist das Gewicht zu leicht dafür."
+    es:
+      title: "¿Demasiado ligero?"
+      body: "En tu última serie, las últimas reps deben ir lentas y costar. ¿Harías cinco más sin problema? Entonces el peso es muy ligero."
+    fr:
+      title: "Trop léger ?"
+      body: "Sur ta dernière série, les dernières reps doivent être lentes et dures. Tu en ferais encore cinq facilement ? La charge est trop légère."
+    pt:
+      title: "Leve demais?"
+      body: "Na última série, as últimas repetições devem sair lentas e custar. Farias mais cinco com facilidade? Então o peso está leve demais."
+    tr:
+      title: "Fazla mı hafif?"
+      body: "Son setinde son tekrarlar yavaş ve zor olmalı. Rahatça beş tane daha yapabilir miydin? O zaman ağırlık o tekrar için fazla hafif."
+
+  - key: willekeurig-wisselen
+    kind: myth
+    en:
+      title: "Myth: new exercises keep you growing"
+      body: "Not true. In a review of eight studies in young men, swapping exercises often and at random may hold back gains. Planned variation can help."
+    nl:
+      title: "Mythe: nieuwe oefeningen houden je groeiend"
+      body: "Klopt niet. In een review van acht studies bij jonge mannen kon vaak en willekeurig wisselen je groei juist remmen. Gepland variëren kan helpen."
+    de:
+      title: "Mythos: neue Übungen halten dich im Wachstum"
+      body: "Stimmt nicht. In acht Studien mit jungen Männern konnte häufiges, zufälliges Wechseln den Aufbau bremsen. Geplante Abwechslung kann helfen."
+    es:
+      title: "Mito: ejercicios nuevos te hacen crecer"
+      body: "No es cierto. En ocho estudios con hombres jóvenes, cambiar a menudo y al azar podía frenar el progreso. Variar con un plan puede ayudar."
+    fr:
+      title: "Mythe : changer d'exercice fait progresser"
+      body: "Faux. Dans huit études chez des jeunes hommes, changer souvent et au hasard pouvait freiner les gains. Varier avec un plan peut aider."
+    pt:
+      title: "Mito: exercícios novos fazem crescer"
+      body: "Não é verdade. Em oito estudos com homens jovens, trocar muitas vezes e ao acaso pode travar os ganhos. Variar com um plano pode ajudar."
+    tr:
+      title: "Efsane: yeni hareketler kası büyütür"
+      body: "Doğru değil. Genç erkeklerle sekiz çalışmada sık ve rastgele değiştirmek kazanımı yavaşlatabildi. Planlı çeşitlilik yardımcı olabilir."
+
+  - key: plan-tijd-geven
+    kind: fact
+    en:
+      title: "Give a plan time"
+      body: "Give a plan a few months before you judge it. Change one exercise when there is a reason, like pain or weeks without progress."
+    nl:
+      title: "Geef een schema tijd"
+      body: "Geef een schema een paar maanden voor je oordeelt. Wissel één oefening als er een reden is, zoals pijn of weken zonder vooruitgang."
+    de:
+      title: "Gib dem Plan Zeit"
+      body: "Gib einem Plan ein paar Monate, bevor du urteilst. Tausch eine Übung, wenn es einen Grund gibt, etwa Schmerzen oder wochenlang kein Fortschritt."
+    es:
+      title: "Dale tiempo al plan"
+      body: "Dale unos meses a un plan antes de juzgarlo. Cambia un ejercicio cuando haya motivo, como dolor o semanas sin progreso."
+    fr:
+      title: "Laisse du temps au plan"
+      body: "Donne quelques mois à un programme avant de le juger. Change un exercice s'il y a une raison, comme une douleur ou des semaines sans progrès."
+    pt:
+      title: "Dá tempo ao plano"
+      body: "Dá uns meses a um plano antes de o julgares. Troca um exercício quando houver razão, como dor ou semanas sem progresso."
+    tr:
+      title: "Plana zaman tanı"
+      body: "Bir programı yargılamadan önce birkaç ay ver. Ağrı ya da haftalarca ilerleme olmaması gibi bir neden varsa tek bir hareketi değiştir."
+
+  - key: niets-te-vergelijken
+    kind: fact
+    en:
+      title: "Nothing to compare"
+      body: "Change your whole plan all the time and you can't tell whether you're getting stronger. There is nothing to compare against."
+    nl:
+      title: "Niets om te vergelijken"
+      body: "Gooi je steeds je hele schema om, dan zie je niet of je sterker wordt. Je hebt dan niets om mee te vergelijken."
+    de:
+      title: "Nichts zum Vergleichen"
+      body: "Wirfst du ständig den ganzen Plan um, siehst du nicht, ob du stärker wirst. Dann fehlt dir jeder Vergleich."
+    es:
+      title: "Nada que comparar"
+      body: "Si cambias todo el plan a cada rato, no sabrás si te haces más fuerte. No tienes nada con qué comparar."
+    fr:
+      title: "Rien à comparer"
+      body: "Si tu changes tout ton programme sans arrêt, tu ne vois pas si tu deviens plus fort. Tu n'as rien à comparer."
+    pt:
+      title: "Nada para comparar"
+      body: "Se mudas o plano todo a toda a hora, não vês se estás a ficar mais forte. Não tens nada com que comparar."
+    tr:
+      title: "Kıyaslayacak bir şey yok"
+      body: "Programının tamamını sürekli değiştirirsen güçlenip güçlenmediğini göremezsin. Kıyaslayacak bir şeyin kalmaz."

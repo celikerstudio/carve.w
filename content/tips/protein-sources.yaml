@@ -1,0 +1,217 @@
+article: protein-sources
+tips:
+  - key: leucine-schakelaar
+    kind: fact
+    en:
+      title: "Leucine"
+      body: "A meal needs about 1 to 3 g of leucine to switch on muscle building. 20 to 40 g of protein from a good source gets you there."
+    nl:
+      title: "Leucine"
+      body: "Een maaltijd heeft zo'n 1 tot 3 gram leucine nodig om spieropbouw aan te zetten. Met 20 tot 40 gram eiwit uit een goede bron zit je goed."
+    de:
+      title: "Leucin"
+      body: "Eine Mahlzeit braucht etwa 1 bis 3 g Leucin, um den Muskelaufbau anzuschalten. 20 bis 40 g Eiweiß aus guter Quelle schaffen das."
+    es:
+      title: "Leucina"
+      body: "Una comida necesita unos 1 a 3 g de leucina para activar la construcción de músculo. Con 20 a 40 g de proteína de buena fuente llegas."
+    fr:
+      title: "Leucine"
+      body: "Un repas a besoin d'environ 1 à 3 g de leucine pour lancer la construction musculaire. 20 à 40 g de protéines de qualité y suffisent."
+    pt:
+      title: "Leucina"
+      body: "Uma refeição precisa de 1 a 3 g de leucina para ligar a construção muscular. 20 a 40 g de proteína de boa fonte chegam lá."
+    tr:
+      title: "Lösin"
+      body: "Bir öğünün kas yapımını başlatması için yaklaşık 1 ila 3 g lösin gerekir. İyi bir kaynaktan 20 ila 40 g protein bunu sağlar."
+
+  - key: geen-leucine-los
+    kind: myth
+    en:
+      title: "Myth: a leucine supplement builds muscle"
+      body: "Not on its own. Building muscle also takes the other essential amino acids, so get your leucine from good protein sources."
+    nl:
+      title: "Mythe: met losse leucine bouw je spier"
+      body: "Niet op zichzelf. Spieropbouw vraagt ook de andere essentiële aminozuren, dus haal je leucine uit goede eiwitbronnen."
+    de:
+      title: "Mythos: Leucin-Pulver baut Muskeln auf"
+      body: "Nicht allein. Muskelaufbau braucht auch die anderen essenziellen Aminosäuren, also hol dir dein Leucin aus guten Eiweißquellen."
+    es:
+      title: "Mito: un suplemento de leucina hace músculo"
+      body: "No por sí solo. Para hacer músculo también hacen falta los demás aminoácidos esenciales, así que saca la leucina de buenas proteínas."
+    fr:
+      title: "Mythe : la leucine seule fait du muscle"
+      body: "Pas toute seule. Construire du muscle demande aussi les autres acides aminés essentiels, alors prends ta leucine dans de bonnes protéines."
+    pt:
+      title: "Mito: um suplemento de leucina faz músculo"
+      body: "Não sozinho. Fazer músculo também pede os outros aminoácidos essenciais, por isso vai buscar a leucina a boas fontes de proteína."
+    tr:
+      title: "Efsane: lösin takviyesi kas yapar"
+      body: "Tek başına değil. Kas yapımı diğer esansiyel amino asitleri de ister, o yüzden lösini iyi protein kaynaklarından al."
+
+  - key: soja-net-als-melk
+    kind: myth
+    en:
+      title: "Myth: you can't build muscle on plant protein"
+      body: "Not true. Soy builds muscle about as well as milk protein. Vegans on soy gained the same as whey eaters in a 12-week study."
+    nl:
+      title: "Mythe: met plantaardig eiwit bouw je geen spier"
+      body: "Klopt niet. Soja bouwt ongeveer even goed spier als melkeiwit. Veganisten op soja groeiden in 12 weken even hard als mensen op whey."
+    de:
+      title: "Mythos: Mit Pflanzeneiweiß kein Muskelaufbau"
+      body: "Stimmt nicht. Soja baut etwa so gut Muskeln auf wie Milcheiweiß. In einer 12-Wochen-Studie legten Veganer mit Soja so viel zu wie mit Whey."
+    es:
+      title: "Mito: con proteína vegetal no ganas músculo"
+      body: "No es cierto. La soja construye músculo casi igual que la proteína de leche. En 12 semanas, veganos con soja ganaron lo mismo que con whey."
+    fr:
+      title: "Mythe : le végétal ne fait pas de muscle"
+      body: "Faux. Le soja construit le muscle à peu près comme les protéines de lait. En 12 semaines, des vegans au soja ont gagné autant qu'avec la whey."
+    pt:
+      title: "Mito: proteína vegetal não faz músculo"
+      body: "Não é verdade. A soja faz músculo quase tão bem como a proteína do leite. Em 12 semanas, veganos com soja ganharam o mesmo que com whey."
+    tr:
+      title: "Efsane: bitkisel proteinle kas yapılmaz"
+      body: "Doğru değil. Soya, süt proteini kadar iyi kas yapar. 12 haftalık bir çalışmada soya alan veganlar whey alanlar kadar kazandı."
+
+  - key: kracht-plantaardig
+    kind: myth
+    en:
+      title: "Myth: plant protein makes you weaker"
+      body: "Not in the data. Across 30 trials, muscle gains were slightly lower with most plant protein, but strength did not differ."
+    nl:
+      title: "Mythe: van plantaardig eiwit word je zwakker"
+      body: "Niet in de cijfers. Over 30 studies gaf de meeste plantaardige eiwit iets minder spiermassa, maar kracht verschilde niet."
+    de:
+      title: "Mythos: Pflanzeneiweiß macht schwächer"
+      body: "Nicht laut den Daten. In 30 Studien gab es mit meist pflanzlichem Eiweiß etwas weniger Muskelmasse, die Kraft war aber gleich."
+    es:
+      title: "Mito: la proteína vegetal te hace más débil"
+      body: "No según los datos. En 30 ensayos, casi toda proteína vegetal dio algo menos de músculo, pero la fuerza no cambió."
+    fr:
+      title: "Mythe : les protéines végétales affaiblissent"
+      body: "Pas d'après les données. Sur 30 essais, la plupart des protéines végétales donnaient un peu moins de muscle, mais la force était la même."
+    pt:
+      title: "Mito: proteína vegetal deixa-te mais fraco"
+      body: "Não nos dados. Em 30 ensaios, a maioria da proteína vegetal deu um pouco menos de músculo, mas a força não mudou."
+    tr:
+      title: "Efsane: bitkisel protein seni zayıflatır"
+      body: "Verilere göre hayır. 30 çalışmada çoğu bitkisel protein biraz daha az kas verdi, ama güçte fark yoktu."
+
+  - key: eieren
+    kind: fact
+    en:
+      title: "Eggs"
+      body: "One large egg has 6 g of protein. Three eggs give you 18 g."
+    nl:
+      title: "Eieren"
+      body: "Eén groot ei bevat 6 gram eiwit. Met drie eieren zit je op 18 gram."
+    de:
+      title: "Eier"
+      body: "Ein großes Ei hat 6 g Eiweiß. Drei Eier bringen dir 18 g."
+    es:
+      title: "Huevos"
+      body: "Un huevo grande tiene 6 g de proteína. Tres huevos te dan 18 g."
+    fr:
+      title: "Les œufs"
+      body: "Un gros œuf contient 6 g de protéines. Trois œufs t'en donnent 18 g."
+    pt:
+      title: "Ovos"
+      body: "Um ovo grande tem 6 g de proteína. Três ovos dão-te 18 g."
+    tr:
+      title: "Yumurta"
+      body: "Büyük bir yumurtada 6 g protein var. Üç yumurta 18 g eder."
+
+  - key: leucine-per-bron
+    kind: fact
+    en:
+      title: "Leucine by source"
+      body: "Whey protein is 11% leucine, egg 8.6% and meat 8%. So 25 g of protein from meat gives you about 2 g of leucine."
+    nl:
+      title: "Leucine per bron"
+      body: "Whey-eiwit is voor 11% leucine, ei voor 8,6% en vlees voor 8%. Met 25 gram eiwit uit vlees krijg je dus zo'n 2 gram leucine."
+    de:
+      title: "Leucin je nach Quelle"
+      body: "Whey-Eiweiß besteht zu 11 % aus Leucin, Ei zu 8,6 % und Fleisch zu 8 %. 25 g Eiweiß aus Fleisch liefern also etwa 2 g Leucin."
+    es:
+      title: "Leucina según la fuente"
+      body: "La proteína whey es un 11% leucina, el huevo un 8,6% y la carne un 8%. Así que 25 g de proteína de carne te dan unos 2 g de leucina."
+    fr:
+      title: "La leucine selon la source"
+      body: "La whey contient 11 % de leucine, l'œuf 8,6 % et la viande 8 %. Donc 25 g de protéines de viande t'apportent environ 2 g de leucine."
+    pt:
+      title: "Leucina por fonte"
+      body: "A proteína whey tem 11% de leucina, o ovo 8,6% e a carne 8%. Por isso 25 g de proteína de carne dão-te cerca de 2 g de leucina."
+    tr:
+      title: "Kaynağa göre lösin"
+      body: "Whey proteininin %11'i lösin, yumurtanın %8,6'sı, etin %8'i. Yani etten 25 g protein sana yaklaşık 2 g lösin verir."
+
+  - key: plantaardig-verschilt
+    kind: fact
+    en:
+      title: "Not all plant protein is equal"
+      body: "Oat, lupin and wheat protein are 21 to 22% essential amino acids, whey is 43%. Blends of plant proteins can come close to animal protein."
+    nl:
+      title: "Plantaardig eiwit verschilt"
+      body: "Haver-, lupine- en tarwe-eiwit bestaan voor 21 tot 22% uit essentiële aminozuren, whey voor 43%. Een mix van plantaardig eiwit komt dichterbij."
+    de:
+      title: "Pflanzeneiweiß ist nicht gleich"
+      body: "Hafer-, Lupinen- und Weizeneiweiß haben 21 bis 22 % essenzielle Aminosäuren, Whey 43 %. Mischungen aus Pflanzeneiweiß kommen näher ran."
+    es:
+      title: "No toda proteína vegetal es igual"
+      body: "La de avena, altramuz y trigo tiene un 21 a 22% de aminoácidos esenciales; la whey, un 43%. Las mezclas vegetales se acercan a la animal."
+    fr:
+      title: "Toutes les protéines végétales ne se valent pas"
+      body: "Avoine, lupin et blé ont 21 à 22 % d'acides aminés essentiels, la whey 43 %. Des mélanges végétaux peuvent approcher les protéines animales."
+    pt:
+      title: "Nem toda a proteína vegetal é igual"
+      body: "A de aveia, tremoço e trigo tem 21 a 22% de aminoácidos essenciais, a whey 43%. Misturas vegetais podem aproximar-se da animal."
+    tr:
+      title: "Her bitkisel protein aynı değil"
+      body: "Yulaf, acı bakla ve buğday proteininin %21-22'si esansiyel amino asit, whey'in %43'ü. Bitkisel karışımlar hayvansala yaklaşabilir."
+
+  - key: grotere-portie-plantaardig
+    kind: fact
+    en:
+      title: "Eating plant-based?"
+      body: "Go a bit bigger. In older men, 35 g of wheat protein built less muscle protein than casein, while 60 g did raise it."
+    nl:
+      title: "Eet je plantaardig?"
+      body: "Neem dan een wat grotere portie. Bij oudere mannen bouwde 35 gram tarwe-eiwit minder spiereiwit dan caseïne, 60 gram deed het wel."
+    de:
+      title: "Isst du pflanzlich?"
+      body: "Dann etwas mehr. Bei älteren Männern baute 35 g Weizeneiweiß weniger Muskeleiweiß auf als Casein, 60 g dagegen schon."
+    es:
+      title: "¿Comes vegetal?"
+      body: "Pues un poco más. En hombres mayores, 35 g de proteína de trigo hicieron menos proteína muscular que la caseína, y 60 g sí la subieron."
+    fr:
+      title: "Tu manges végétal ?"
+      body: "Alors un peu plus. Chez des hommes âgés, 35 g de protéine de blé ont construit moins que la caséine, alors que 60 g l'ont bien fait monter."
+    pt:
+      title: "Comes à base de plantas?"
+      body: "Então um pouco mais. Em homens mais velhos, 35 g de proteína de trigo fizeram menos proteína muscular que a caseína, mas 60 g já fizeram."
+    tr:
+      title: "Bitkisel mi besleniyorsun?"
+      body: "Biraz daha fazla ye. Yaşlı erkeklerde 35 g buğday proteini kazeinden daha az kas proteini yaptı, 60 g ise artırdı."
+
+  - key: eten-of-shake
+    kind: fact
+    en:
+      title: "Food or a shake?"
+      body: "Build meals around whole foods, which also bring vitamins and minerals. Meat gives you iron, selenium and B12. Use a shake to close a gap."
+    nl:
+      title: "Eten of een shake?"
+      body: "Bouw je maaltijden rond echt eten, dat ook vitaminen en mineralen geeft. Vlees levert ijzer, selenium en B12. Een shake is voor een gat."
+    de:
+      title: "Essen oder Shake?"
+      body: "Bau deine Mahlzeiten auf echtem Essen auf, das auch Vitamine und Mineralstoffe liefert. Fleisch bringt Eisen, Selen und B12. Shakes für Lücken."
+    es:
+      title: "¿Comida o batido?"
+      body: "Basa tus comidas en alimentos reales, que también traen vitaminas y minerales. La carne da hierro, selenio y B12. El batido, para huecos."
+    fr:
+      title: "Repas ou shake ?"
+      body: "Construis tes repas autour de vrais aliments, qui apportent aussi vitamines et minéraux. La viande donne fer, sélénium et B12. Le shake comble un trou."
+    pt:
+      title: "Comida ou batido?"
+      body: "Baseia as refeições em comida a sério, que também traz vitaminas e minerais. A carne dá ferro, selénio e B12. O batido serve para tapar falhas."
+    tr:
+      title: "Yemek mi shake mi?"
+      body: "Öğünlerini vitamin ve mineral de veren gerçek yiyeceklere kur. Et demir, selenyum ve B12 sağlar. Shake'i açığı kapatmak için kullan."

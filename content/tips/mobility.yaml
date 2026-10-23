@@ -1,0 +1,169 @@
+article: mobility
+tips:
+  - key: wat-het-is
+    kind: fact
+    en:
+      title: "Mobility"
+      body: "Mobility is range of motion you can actually use, plus control over it. It supports your technique and joint health."
+    nl:
+      title: "Mobiliteit"
+      body: "Mobiliteit is bewegingsruimte die je echt kunt gebruiken, plus controle erover. Het helpt je techniek en je gewrichten."
+    de:
+      title: "Mobilität"
+      body: "Mobilität ist Bewegungsumfang, den du wirklich nutzen kannst, plus Kontrolle darüber. Sie hilft deiner Technik und deinen Gelenken."
+    es:
+      title: "Movilidad"
+      body: "La movilidad es el rango de movimiento que puedes usar de verdad, más el control sobre él. Ayuda a tu técnica y a tus articulaciones."
+    fr:
+      title: "Mobilité"
+      body: "La mobilité, c'est l'amplitude que tu peux vraiment utiliser, plus le contrôle. Elle aide ta technique et tes articulations."
+    pt:
+      title: "Mobilidade"
+      body: "Mobilidade é a amplitude que consegues mesmo usar, mais o controlo sobre ela. Ajuda a tua técnica e as tuas articulações."
+    tr:
+      title: "Mobilite"
+      body: "Mobilite, gerçekten kullanabildiğin hareket açıklığı ve onun üzerindeki kontrol. Tekniğine ve eklem sağlığına destek olur."
+
+  - key: alleen-rekken
+    kind: myth
+    en:
+      title: "Myth: stretching alone makes you mobile"
+      body: "Half true. Stretching can help keep range, but only stretching without loading the new range is a common mistake."
+    nl:
+      title: "Mythe: rekken alleen maakt je mobiel"
+      body: "Half waar. Rekken kan helpen je ruimte te houden, maar alleen rekken zonder die nieuwe ruimte te belasten is een veelgemaakte fout."
+    de:
+      title: "Mythos: Dehnen allein macht beweglich"
+      body: "Halb wahr. Dehnen kann helfen, Beweglichkeit zu halten. Nur zu dehnen, ohne den neuen Bereich zu belasten, ist aber ein häufiger Fehler."
+    es:
+      title: "Mito: solo estirar te da movilidad"
+      body: "Verdad a medias. Estirar puede ayudar a mantener rango, pero estirar sin cargar ese nuevo rango es un error común."
+    fr:
+      title: "Mythe : s'étirer suffit pour être mobile"
+      body: "À moitié vrai. S'étirer peut aider à garder l'amplitude, mais s'étirer sans charger la nouvelle amplitude est une erreur courante."
+    pt:
+      title: "Mito: só alongar dá mobilidade"
+      body: "Meia verdade. Alongar pode ajudar a manter amplitude, mas alongar sem pôr carga nessa nova amplitude é um erro comum."
+    tr:
+      title: "Efsane: sadece esneme mobil yapar"
+      body: "Yarı doğru. Esneme açıklığı korumaya yardım edebilir ama yeni açıklığa yük bindirmeden sadece esnemek sık bir hata."
+
+  - key: kracht-in-het-bereik
+    kind: fact
+    en:
+      title: "Drills plus strength"
+      body: "Combine 2 to 3 mobility drills with strength work in that range. Split squats, for example, work for hips and ankles."
+    nl:
+      title: "Oefeningen plus kracht"
+      body: "Combineer 2 à 3 mobiliteitsoefeningen met krachtwerk in dat bereik. Split squats bijvoorbeeld werken voor heupen en enkels."
+    de:
+      title: "Übungen plus Kraft"
+      body: "Kombiniere 2 bis 3 Mobility-Übungen mit Krafttraining in diesem Bereich. Split Squats etwa wirken für Hüften und Sprunggelenke."
+    es:
+      title: "Ejercicios más fuerza"
+      body: "Combina 2 o 3 ejercicios de movilidad con fuerza en ese rango. Las sentadillas búlgaras, por ejemplo, sirven para caderas y tobillos."
+    fr:
+      title: "Exercices plus force"
+      body: "Associe 2 à 3 exercices de mobilité à du renforcement dans cette amplitude. Les fentes, par exemple, aident hanches et chevilles."
+    pt:
+      title: "Exercícios mais força"
+      body: "Junta 2 a 3 exercícios de mobilidade com força nessa amplitude. O split squat, por exemplo, serve para ancas e tornozelos."
+    tr:
+      title: "Egzersiz artı kuvvet"
+      body: "2 ila 3 mobilite egzersizini o açıklıkta kuvvet çalışmasıyla birleştir. Örneğin split squat kalça ve ayak bileği için işe yarar."
+
+  - key: elke-dag-een-beetje
+    kind: fact
+    en:
+      title: "Little and often"
+      body: "Small daily doses of mobility work beat long marathon sessions."
+    nl:
+      title: "Elke dag een beetje"
+      body: "Kleine dagelijkse porties mobiliteitswerk winnen het van lange marathonsessies."
+    de:
+      title: "Wenig, aber oft"
+      body: "Kleine tägliche Portionen Mobility-Training schlagen lange Marathon-Einheiten."
+    es:
+      title: "Poco y a menudo"
+      body: "Pequeñas dosis diarias de movilidad funcionan mejor que sesiones maratonianas."
+    fr:
+      title: "Un peu, souvent"
+      body: "De petites doses de mobilité chaque jour valent mieux que de longues séances marathon."
+    pt:
+      title: "Pouco e muitas vezes"
+      body: "Pequenas doses diárias de mobilidade valem mais do que longas sessões maratona."
+    tr:
+      title: "Az ama sık"
+      body: "Her gün küçük dozlarda mobilite çalışması, uzun maraton seanslardan daha iyidir."
+
+  - key: pauzes-en-langzaam-zakken
+    kind: fact
+    en:
+      title: "Pauses and slow lowering"
+      body: "Pauses and a controlled lowering phase in your main lifts build stability in a new range."
+    nl:
+      title: "Pauzes en langzaam zakken"
+      body: "Pauzes en gecontroleerd zakken in je hoofdoefeningen bouwen stabiliteit op in een nieuw bewegingsbereik."
+    de:
+      title: "Pausen und langsames Absenken"
+      body: "Pausen und kontrolliertes Absenken in deinen Hauptübungen bauen Stabilität in einem neuen Bewegungsbereich auf."
+    es:
+      title: "Pausas y bajada lenta"
+      body: "Las pausas y una bajada controlada en tus ejercicios principales dan estabilidad en un rango nuevo."
+    fr:
+      title: "Pauses et descente lente"
+      body: "Des pauses et une descente contrôlée sur tes exercices principaux construisent de la stabilité dans une nouvelle amplitude."
+    pt:
+      title: "Pausas e descida lenta"
+      body: "Pausas e uma descida controlada nos exercícios principais criam estabilidade numa nova amplitude."
+    tr:
+      title: "Duraklama ve yavaş indirme"
+      body: "Ana hareketlerinde duraklamalar ve kontrollü indirme, yeni bir açıklıkta stabilite kazandırır."
+
+  - key: waar-te-kijken
+    kind: fact
+    en:
+      title: "Where to look first"
+      body: "Find the joints that limit you. Common ones are your ankles, hips and upper back. Then tie your drills to the lifts that need the range."
+    nl:
+      title: "Waar je eerst kijkt"
+      body: "Zoek de gewrichten die je beperken, vaak je enkels, heupen of bovenrug. Koppel je oefeningen dan aan de lifts die die ruimte nodig hebben."
+    de:
+      title: "Wo du zuerst schaust"
+      body: "Finde die Gelenke, die dich bremsen, oft Sprunggelenke, Hüften oder obere Wirbelsäule. Verknüpfe die Übungen mit den Lifts, die das brauchen."
+    es:
+      title: "Dónde mirar primero"
+      body: "Busca las articulaciones que te limitan, a menudo tobillos, caderas o espalda alta. Luego une tus ejercicios a los levantamientos que lo necesitan."
+    fr:
+      title: "Où regarder d'abord"
+      body: "Trouve les articulations qui te limitent, souvent chevilles, hanches ou haut du dos. Relie tes exercices aux mouvements qui en ont besoin."
+    pt:
+      title: "Onde olhar primeiro"
+      body: "Encontra as articulações que te limitam, muitas vezes tornozelos, ancas ou parte alta das costas. Liga os exercícios aos movimentos que precisam."
+    tr:
+      title: "Önce nereye bakılır"
+      body: "Seni kısıtlayan eklemleri bul, çoğu zaman ayak bileği, kalça ya da üst sırt. Sonra egzersizlerini o açıklığa ihtiyaç duyan hareketlere bağla."
+
+  - key: niet-door-pijn
+    kind: myth
+    en:
+      title: "Myth: push through pain to gain range"
+      body: "Not true. Pushing into pain is a common mistake. If pain persists, lower the load and work on your technique."
+    nl:
+      title: "Mythe: door de pijn heen voor meer ruimte"
+      body: "Niet waar. Door pijn heen duwen is een veelgemaakte fout. Blijft de pijn, verlaag dan het gewicht en werk aan je techniek."
+    de:
+      title: "Mythos: Durch den Schmerz zu mehr Weite"
+      body: "Stimmt nicht. In den Schmerz zu drücken ist ein häufiger Fehler. Bleibt der Schmerz, senk das Gewicht und arbeite an der Technik."
+    es:
+      title: "Mito: aguanta el dolor para ganar rango"
+      body: "No es cierto. Forzar con dolor es un error común. Si el dolor sigue, baja la carga y trabaja tu técnica."
+    fr:
+      title: "Mythe : forcer dans la douleur pour gagner"
+      body: "Faux. Forcer dans la douleur est une erreur courante. Si la douleur persiste, baisse la charge et travaille ta technique."
+    pt:
+      title: "Mito: forçar a dor para ganhar amplitude"
+      body: "Não é verdade. Forçar com dor é um erro comum. Se a dor continuar, baixa a carga e trabalha a técnica."
+    tr:
+      title: "Efsane: açıklık için acıya rağmen zorla"
+      body: "Doğru değil. Acıya rağmen zorlamak sık bir hata. Ağrı sürerse yükü azalt ve tekniğin üzerinde çalış."

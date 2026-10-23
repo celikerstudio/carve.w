@@ -1,0 +1,169 @@
+article: push-pull-legs
+tips:
+  - key: wat-is-het
+    kind: fact
+    en:
+      title: "Push pull legs"
+      body: "Push is chest, shoulders and triceps. Pull is back and biceps. Then legs. You can run it anywhere from 3 to 6 days a week."
+    nl:
+      title: "Push pull legs"
+      body: "Push is borst, schouders en triceps. Pull is rug en biceps. Daarna benen. Je kunt het 3 tot 6 dagen per week draaien."
+    de:
+      title: "Push Pull Beine"
+      body: "Push ist Brust, Schultern und Trizeps. Pull ist Rücken und Bizeps. Dann Beine. Du kannst es an 3 bis 6 Tagen pro Woche machen."
+    es:
+      title: "Empuje, tirón, pierna"
+      body: "Empuje es pecho, hombros y tríceps. Tirón es espalda y bíceps. Luego pierna. Puedes hacerlo de 3 a 6 días por semana."
+    fr:
+      title: "Push pull legs"
+      body: "Push, c'est pecs, épaules et triceps. Pull, c'est dos et biceps. Puis les jambes. Tu peux le faire de 3 à 6 jours par semaine."
+    pt:
+      title: "Push pull legs"
+      body: "Push é peito, ombros e tríceps. Pull é costas e bíceps. Depois pernas. Podes fazê-lo de 3 a 6 dias por semana."
+    tr:
+      title: "Push pull legs"
+      body: "İtme göğüs, omuz ve triceps; çekme sırt ve biceps; sonra bacak. Haftada 3 ila 6 gün uygulayabilirsin."
+
+  - key: twee-rondes
+    kind: fact
+    en:
+      title: "Twice through"
+      body: "Run push, pull, legs twice in 8 to 10 days, or 6 days a week, and each muscle gets trained about twice."
+    nl:
+      title: "Twee rondes"
+      body: "Draai push, pull, legs twee keer in 8 tot 10 dagen, of 6 dagen per week, en elke spier wordt zo'n twee keer getraind."
+    de:
+      title: "Zwei Durchgänge"
+      body: "Mach Push, Pull, Beine zweimal in 8 bis 10 Tagen oder an 6 Tagen pro Woche, dann wird jeder Muskel etwa zweimal trainiert."
+    es:
+      title: "Dos vueltas"
+      body: "Haz empuje, tirón y pierna dos veces en 8 a 10 días, o 6 días por semana, y cada músculo se entrena unas dos veces."
+    fr:
+      title: "Deux tours"
+      body: "Fais push, pull, jambes deux fois en 8 à 10 jours, ou 6 jours par semaine, et chaque muscle est travaillé environ deux fois."
+    pt:
+      title: "Duas voltas"
+      body: "Faz push, pull e pernas duas vezes em 8 a 10 dias, ou 6 dias por semana, e cada músculo é treinado cerca de duas vezes."
+    tr:
+      title: "İki tur"
+      body: "İtme, çekme, bacağı 8 ila 10 günde iki kez ya da haftada 6 gün yap, her kas yaklaşık iki kez çalışmış olur."
+
+  - key: lichtere-dag
+    kind: fact
+    en:
+      title: "Five or six days"
+      body: "On 5 or 6 days a week, run push, pull, legs, push, pull, legs and make one of those days lighter."
+    nl:
+      title: "Vijf of zes dagen"
+      body: "Train je 5 of 6 dagen per week, draai dan push, pull, legs, push, pull, legs en maak één van die dagen lichter."
+    de:
+      title: "Fünf oder sechs Tage"
+      body: "An 5 oder 6 Tagen pro Woche machst du Push, Pull, Beine, Push, Pull, Beine und gestaltest einen davon leichter."
+    es:
+      title: "Cinco o seis días"
+      body: "Con 5 o 6 días por semana, haz empuje, tirón, pierna, empuje, tirón, pierna y que uno de esos días sea más ligero."
+    fr:
+      title: "Cinq ou six jours"
+      body: "Sur 5 ou 6 jours par semaine, enchaîne push, pull, jambes, push, pull, jambes et rends l'un de ces jours plus léger."
+    pt:
+      title: "Cinco ou seis dias"
+      body: "Com 5 ou 6 dias por semana, faz push, pull, pernas, push, pull, pernas e torna um desses dias mais leve."
+    tr:
+      title: "Beş ya da altı gün"
+      body: "Haftada 5 ya da 6 gün çalışıyorsan itme, çekme, bacak, itme, çekme, bacak yap ve bu günlerden birini hafif tut."
+
+  - key: niet-elke-sessie-falen
+    kind: myth
+    en:
+      title: "Myth: every PPL session goes to failure"
+      body: "Not true. Blasting every session to failure wrecks your recovery by midweek. Keep most of your sets with 1 to 3 reps left."
+    nl:
+      title: "Mythe: elke PPL-sessie tot falen"
+      body: "Klopt niet. Elke sessie tot falen gaan sloopt je herstel halverwege de week. Houd bij de meeste sets 1 tot 3 herhalingen over."
+    de:
+      title: "Mythos: jede PPL-Einheit bis zum Versagen"
+      body: "Stimmt nicht. Jede Einheit bis zum Versagen ruiniert deine Erholung bis zur Wochenmitte. Lass bei den meisten Sätzen 1 bis 3 Wdh. übrig."
+    es:
+      title: "Mito: cada sesión PPL hasta el fallo"
+      body: "No es cierto. Ir al fallo en cada sesión hunde tu recuperación a mitad de semana. Deja 1 a 3 repeticiones en la mayoría de series."
+    fr:
+      title: "Mythe : chaque séance PPL jusqu'à l'échec"
+      body: "Faux. Aller à l'échec à chaque séance ruine ta récup dès le milieu de semaine. Garde 1 à 3 reps en réserve sur la plupart des séries."
+    pt:
+      title: "Mito: cada treino PPL até à falha"
+      body: "Não é verdade. Ir à falha em cada treino arrasa a recuperação a meio da semana. Deixa 1 a 3 repetições na maioria das séries."
+    tr:
+      title: "Efsane: her PPL seansı tükenişe kadar"
+      body: "Doğru değil. Her seansı tükenişe kadar zorlamak hafta ortasında toparlanmanı çökertir. Çoğu sette 1 ila 3 tekrar bırak."
+
+  - key: push-moeheid
+    kind: fact
+    en:
+      title: "Push day, pull day"
+      body: "Hard pressing can drag down your pulling technique the next day, and the other way round. Set the effort so one day doesn't spoil the next."
+    nl:
+      title: "Pushdag, pulldag"
+      body: "Zwaar drukken kan je trektechniek de dag erna onderuit halen, en andersom. Doseer zo dat de ene dag de volgende niet verpest."
+    de:
+      title: "Push-Tag, Pull-Tag"
+      body: "Hartes Drücken kann deine Zugtechnik am nächsten Tag verschlechtern, und umgekehrt. Dosier so, dass ein Tag den nächsten nicht verdirbt."
+    es:
+      title: "Día de empuje, día de tirón"
+      body: "Empujar duro puede estropear tu técnica de tirón al día siguiente, y al revés. Ajusta el esfuerzo para que un día no arruine el otro."
+    fr:
+      title: "Jour push, jour pull"
+      body: "Pousser lourd peut dégrader ta technique de tirage le lendemain, et inversement. Dose l'effort pour qu'un jour ne gâche pas le suivant."
+    pt:
+      title: "Dia de push, dia de pull"
+      body: "Empurrar pesado pode estragar a tua técnica de puxar no dia seguinte, e vice-versa. Ajusta o esforço para um dia não estragar o outro."
+    tr:
+      title: "İtme günü, çekme günü"
+      body: "Ağır itme ertesi günkü çekme tekniğini bozabilir, tersi de olur. Eforu bir gün diğerini bozmayacak şekilde ayarla."
+
+  - key: schouders-triceps
+    kind: fact
+    en:
+      title: "Watch your shoulders"
+      body: "On PPL, count your sets per muscle. If you don't, shoulders and triceps are the ones that easily get overloaded."
+    nl:
+      title: "Let op je schouders"
+      body: "Tel bij PPL je sets per spier. Doe je dat niet, dan zijn schouders en triceps het eerst overbelast."
+    de:
+      title: "Achte auf deine Schultern"
+      body: "Zähl beim PPL deine Sätze pro Muskel. Sonst sind es Schultern und Trizeps, die leicht überlastet werden."
+    es:
+      title: "Cuida tus hombros"
+      body: "En PPL, cuenta tus series por músculo. Si no, hombros y tríceps son los que se sobrecargan con facilidad."
+    fr:
+      title: "Attention aux épaules"
+      body: "En PPL, compte tes séries par muscle. Sinon, ce sont les épaules et les triceps qui se surchargent facilement."
+    pt:
+      title: "Cuidado com os ombros"
+      body: "No PPL, conta as tuas séries por músculo. Se não, são os ombros e os tríceps que ficam facilmente sobrecarregados."
+    tr:
+      title: "Omuzlarına dikkat"
+      body: "PPL'de kas başına setlerini say. Saymazsan kolayca aşırı yüklenenler omuzlar ve triceps olur."
+
+  - key: techniek-niet-na-zware-dag
+    kind: fact
+    en:
+      title: "Timing your technical lifts"
+      body: "Move your most technical lifts away from the day after a very hard session, and avoid back-to-back max efforts on the same joints."
+    nl:
+      title: "Technische oefeningen plannen"
+      body: "Zet je meest technische oefeningen niet op de dag na een heel zware sessie, en vermijd twee dagen maximaal op dezelfde gewrichten."
+    de:
+      title: "Technische Übungen timen"
+      body: "Leg deine technischsten Übungen nicht auf den Tag nach einer sehr harten Einheit und meide Maximalbelastung zweimal hintereinander."
+    es:
+      title: "Cuándo hacer lo técnico"
+      body: "Aleja tus ejercicios más técnicos del día después de una sesión muy dura, y evita esfuerzos máximos seguidos en las mismas articulaciones."
+    fr:
+      title: "Placer les exercices techniques"
+      body: "Évite tes exercices les plus techniques le lendemain d'une séance très dure, et pas d'efforts max deux jours de suite sur les mêmes articulations."
+    pt:
+      title: "Quando fazer o técnico"
+      body: "Afasta os exercícios mais técnicos do dia a seguir a um treino muito duro, e evita esforços máximos seguidos nas mesmas articulações."
+    tr:
+      title: "Teknik hareketlerin zamanı"
+      body: "En teknik hareketlerini çok ağır bir seansın ertesi gününe koyma, aynı eklemlere art arda maksimum yüklenme."

@@ -1,0 +1,169 @@
+article: travel-and-fitness
+tips:
+  - key: geen-volledige-pauze
+    kind: myth
+    en:
+      title: "Myth: travel means a training break"
+      body: "Not true. Even reduced volume keeps skill and strength better than a full break. Scale down to short sessions of 20 to 40 minutes."
+    nl:
+      title: "Mythe: op reis neem je trainingspauze"
+      body: "Klopt niet. Zelfs minder volume houdt techniek en kracht beter vast dan helemaal stoppen. Schaal terug naar korte sessies van 20 tot 40 minuten."
+    de:
+      title: "Mythos: auf Reisen ist Trainingspause"
+      body: "Stimmt nicht. Selbst weniger Volumen hält Technik und Kraft besser als eine komplette Pause. Geh runter auf kurze Einheiten von 20 bis 40 Minuten."
+    es:
+      title: "Mito: de viaje toca parar de entrenar"
+      body: "No es cierto. Incluso con menos volumen mantienes mejor técnica y fuerza que parando del todo. Baja a sesiones cortas de 20 a 40 minutos."
+    fr:
+      title: "Mythe : en voyage, on fait une pause"
+      body: "Faux. Même un volume réduit garde mieux la technique et la force qu'un arrêt complet. Passe à des séances courtes de 20 à 40 minutes."
+    pt:
+      title: "Mito: em viagem, pausa no treino"
+      body: "Não é verdade. Mesmo com menos volume manténs melhor a técnica e a força do que parando de todo. Passa a treinos curtos de 20 a 40 minutos."
+    tr:
+      title: "Efsane: seyahatte antrenmana ara verilir"
+      body: "Doğru değil. Azaltılmış hacim bile tekniği ve gücü tamamen bırakmaktan iyi korur. 20 ila 40 dakikalık kısa antrenmanlara in."
+
+  - key: elastieken-mee
+    kind: fact
+    en:
+      title: "Pack some bands"
+      body: "Bring bands and a simple plan: push, pull and legs with bodyweight plus bands. Book a hotel with a gym if you can."
+    nl:
+      title: "Neem elastieken mee"
+      body: "Neem elastieken en een simpel plan mee: duwen, trekken en benen met je eigen gewicht plus elastiek. Boek als het kan een hotel met gym."
+    de:
+      title: "Pack Bänder ein"
+      body: "Nimm Bänder und einen einfachen Plan mit: Drücken, Ziehen und Beine mit Körpergewicht plus Bändern. Buch wenn möglich ein Hotel mit Gym."
+    es:
+      title: "Lleva unas gomas"
+      body: "Lleva gomas y un plan sencillo: empuje, tirón y piernas con tu peso y gomas. Si puedes, reserva un hotel con gimnasio."
+    fr:
+      title: "Emporte des élastiques"
+      body: "Prends des élastiques et un plan simple : pousser, tirer et jambes au poids du corps plus élastiques. Réserve un hôtel avec salle si tu peux."
+    pt:
+      title: "Leva umas bandas"
+      body: "Leva bandas e um plano simples: empurrar, puxar e pernas com o peso do corpo e bandas. Se der, reserva um hotel com ginásio."
+    tr:
+      title: "Yanına bant al"
+      body: "Bant ve basit bir plan götür: vücut ağırlığı ve bantla itiş, çekiş ve bacak. Mümkünse spor salonu olan bir otel seç."
+
+  - key: eiwit-bij-elke-maaltijd
+    kind: fact
+    en:
+      title: "Protein on the road"
+      body: "Build each meal around protein, like eggs, yoghurt or lean meat. Add fruit and veg, and go easy on rich extras."
+    nl:
+      title: "Eiwit onderweg"
+      body: "Bouw elke maaltijd rond eiwit, zoals eieren, yoghurt of mager vlees. Voeg fruit en groente toe, en doe rustig aan met rijke extra's."
+    de:
+      title: "Eiweiß unterwegs"
+      body: "Bau jede Mahlzeit um Eiweiß, etwa Eier, Joghurt oder mageres Fleisch. Dazu Obst und Gemüse, und halt dich bei üppigen Extras zurück."
+    es:
+      title: "Proteína de viaje"
+      body: "Monta cada comida alrededor de la proteína, como huevos, yogur o carne magra. Añade fruta y verdura, y modera los extras pesados."
+    fr:
+      title: "Des protéines en voyage"
+      body: "Construis chaque repas autour des protéines : œufs, yaourt ou viande maigre. Ajoute fruits et légumes, et vas-y doucement sur les extras riches."
+    pt:
+      title: "Proteína em viagem"
+      body: "Monta cada refeição à volta da proteína, como ovos, iogurte ou carne magra. Junta fruta e legumes, e vai com calma nos extras pesados."
+    tr:
+      title: "Yolda protein"
+      body: "Her öğünü yumurta, yoğurt ya da yağsız et gibi bir proteinin etrafında kur. Meyve ve sebze ekle, ağır ekstralara dikkat et."
+
+  - key: vroeg-trainen
+    kind: fact
+    en:
+      title: "Train early"
+      body: "On a work trip, train earlier in the day, before the meetings and dinners take over."
+    nl:
+      title: "Train vroeg"
+      body: "Op een werkreis train je liever vroeg op de dag, voor afspraken en etentjes het overnemen."
+    de:
+      title: "Früh trainieren"
+      body: "Auf Dienstreise trainierst du am besten früh am Tag, bevor Termine und Essen den Tag übernehmen."
+    es:
+      title: "Entrena temprano"
+      body: "En un viaje de trabajo, entrena pronto en el día, antes de que las reuniones y las cenas se lo coman."
+    fr:
+      title: "Entraîne-toi tôt"
+      body: "En déplacement pro, entraîne-toi plus tôt dans la journée, avant que réunions et dîners prennent le dessus."
+    pt:
+      title: "Treina cedo"
+      body: "Numa viagem de trabalho, treina mais cedo no dia, antes que as reuniões e os jantares tomem conta."
+    tr:
+      title: "Erken çalış"
+      body: "İş seyahatinde günün erken saatinde çalış, toplantılar ve yemekler günü ele geçirmeden önce."
+
+  - key: vliegen
+    kind: fact
+    en:
+      title: "After a flight"
+      body: "Drink enough, especially on flights, and go for a walk once you land. It helps with travel fatigue."
+    nl:
+      title: "Na een vlucht"
+      body: "Drink genoeg, zeker in het vliegtuig, en ga een stuk wandelen als je geland bent. Dat helpt tegen reismoeheid."
+    de:
+      title: "Nach dem Flug"
+      body: "Trink genug, gerade im Flugzeug, und geh nach der Landung ein Stück spazieren. Das hilft gegen Reisemüdigkeit."
+    es:
+      title: "Después de volar"
+      body: "Bebe suficiente, sobre todo en el avión, y sal a caminar al aterrizar. Ayuda con el cansancio del viaje."
+    fr:
+      title: "Après un vol"
+      body: "Bois assez, surtout en avion, et va marcher une fois atterri. Ça aide contre la fatigue du voyage."
+    pt:
+      title: "Depois de um voo"
+      body: "Bebe o suficiente, sobretudo no avião, e vai caminhar quando aterrares. Ajuda com o cansaço da viagem."
+    tr:
+      title: "Uçuştan sonra"
+      body: "Özellikle uçakta yeterince su iç ve indiğinde biraz yürü. Bu yolculuk yorgunluğuna iyi gelir."
+
+  - key: jetlag
+    kind: fact
+    en:
+      title: "Jet lag"
+      body: "Line up your light and sleep with local time, with steady bed and wake times. Ignoring jet lag drags the fatigue out."
+    nl:
+      title: "Jetlag"
+      body: "Stem licht en slaap af op de lokale tijd, met vaste tijden om te slapen en op te staan. Jetlag negeren rekt de vermoeidheid."
+    de:
+      title: "Jetlag"
+      body: "Richte Licht und Schlaf nach der Ortszeit aus, mit festen Zeiten fürs Schlafen und Aufstehen. Jetlag zu ignorieren zieht die Müdigkeit in die Länge."
+    es:
+      title: "Jet lag"
+      body: "Ajusta la luz y el sueño a la hora local, con horas fijas de acostarte y levantarte. Ignorar el jet lag alarga el cansancio."
+    fr:
+      title: "Décalage horaire"
+      body: "Cale ta lumière et ton sommeil sur l'heure locale, avec des heures de coucher et de lever fixes. L'ignorer fait durer la fatigue."
+    pt:
+      title: "Jet lag"
+      body: "Acerta a luz e o sono pela hora local, com horas fixas para deitar e acordar. Ignorar o jet lag prolonga o cansaço."
+    tr:
+      title: "Jet lag"
+      body: "Işığı ve uykunu yerel saate göre ayarla, yatma ve kalkma saatlerin sabit olsun. Jet lag'i görmezden gelmek yorgunluğu uzatır."
+
+  - key: drankjes-op-reis
+    kind: fact
+    en:
+      title: "Drinks while away"
+      body: "On a trip, keep an eye on calories from drinks and alcohol. Build your meals around protein instead."
+    nl:
+      title: "Drankjes op reis"
+      body: "Let op reis op de calorieën uit drankjes en alcohol. Bouw je maaltijden liever rond eiwit."
+    de:
+      title: "Getränke unterwegs"
+      body: "Behalt auf Reisen die Kalorien aus Getränken und Alkohol im Blick. Bau deine Mahlzeiten lieber um Eiweiß."
+    es:
+      title: "Bebidas de viaje"
+      body: "De viaje, vigila las calorías de las bebidas y el alcohol. Mejor monta tus comidas alrededor de la proteína."
+    fr:
+      title: "Les boissons en voyage"
+      body: "En voyage, surveille les calories des boissons et de l'alcool. Construis plutôt tes repas autour des protéines."
+    pt:
+      title: "Bebidas em viagem"
+      body: "Em viagem, fica de olho nas calorias das bebidas e do álcool. Monta antes as refeições à volta da proteína."
+    tr:
+      title: "Seyahatte içecekler"
+      body: "Seyahatte içeceklerden ve alkolden gelen kalorilere dikkat et. Öğünlerini proteinin etrafında kur."

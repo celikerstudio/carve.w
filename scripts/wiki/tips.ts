@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Controleert de tips van de dag in `content/tips/` (Carve-AI ADR-104).
+ * Controleert de tips van de dag in `content/tips/` (Carve-AI ADR-105).
  *
  *   pnpm wiki:tips            alle bestanden, plus hoeveel tips er per categorie zijn
  *   pnpm wiki:tips creatine   alleen deze

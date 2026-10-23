@@ -11,7 +11,7 @@ import { parseTipFile, type TipFile } from '../../lib/wiki/tips';
  */
 export const CONTENT_DIR = path.join(process.cwd(), 'content/wiki');
 
-/** De tips van de dag, één bestand per artikel (Carve-AI ADR-104). */
+/** De tips van de dag, één bestand per artikel (Carve-AI ADR-105). */
 export const TIPS_DIR = path.join(process.cwd(), 'content/tips');
 
 /**

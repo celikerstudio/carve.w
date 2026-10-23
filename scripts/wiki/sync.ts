@@ -210,7 +210,7 @@ function sameTexts(a: unknown, b: unknown): boolean {
 type TipRow = { id: string; article_slug: string; category: string; kind: string; texts: unknown; is_published: boolean };
 
 /**
- * Van `content/tips/` naar `wiki_tips` (Carve-AI ADR-104).
+ * Van `content/tips/` naar `wiki_tips` (Carve-AI ADR-105).
  *
  * @ai-why: Een tip die niet meer in de bestanden staat, gaat op `is_published = false` en wordt niet
  *   verwijderd. De app vervangt een ingeplande tip die niet meer gepubliceerd is bij de volgende
@@ -225,11 +225,31 @@ async function syncTips(
   files: TipFile[],
   categoryOf: Map<string, string>,
 ) {
-  const { data, error } = await sb.from('wiki_tips').select('id, article_slug, category, kind, texts, is_published');
-  if (error) throw error;
-  const rows = new Map((data as TipRow[]).map((r) => [r.id, r]));
+  // @ai-gotcha: PostgREST geeft zonder fout hooguit 1000 rijen terug. Zonder pagina's zou alles
+  //   daarna bij elke sync als nieuw gelden en nooit teruggetrokken kunnen worden.
+  const existing: TipRow[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await sb
+      .from('wiki_tips')
+      .select('id, article_slug, category, kind, texts, is_published')
+      .order('id')
+      .range(from, from + 999);
+    if (error) throw error;
+    existing.push(...(data as TipRow[]));
+    if (data.length < 1000) break;
+  }
+  const rows = new Map(existing.map((r) => [r.id, r]));
 
-  const desired: TipRow[] = files.flatMap((f) =>
+  // @ai-why: Een tip opent zijn artikel in de app. Staat dat artikel (nog) niet gepubliceerd in
+  //   wiki_articles, bijvoorbeeld omdat het met --tips niet meeging, dan eindigt de tik in "artikel
+  //   bestaat niet". Zulke tips wachten tot het artikel er is.
+  const { data: live, error: liveError } = await sb.from('wiki_articles').select('slug').eq('language', 'en').eq('is_published', true);
+  if (liveError) throw liveError;
+  const liveSlugs = new Set((live as { slug: string }[]).map((a) => a.slug));
+  const waiting = files.filter((f) => !liveSlugs.has(f.article));
+  waiting.forEach((f) => console.warn(`! tips ${f.article}: artikel staat niet live, ${f.tips.length} tips wachten`));
+
+  const desired: TipRow[] = files.filter((f) => liveSlugs.has(f.article)).flatMap((f) =>
     f.tips.map((t) => ({
       id: tipId(f.article, t.key),
       article_slug: f.article,

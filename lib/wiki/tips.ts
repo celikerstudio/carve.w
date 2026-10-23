@@ -2,7 +2,7 @@ import matter from 'gray-matter';
 
 /**
  * De tip van de dag: korte tips per artikel in `content/tips/<slug>.yaml`, die de app elke dag om
- * 12:15 als melding stuurt (Carve-AI ADR-104).
+ * 12:15 als melding stuurt (Carve-AI ADR-105).
  *
  * @ai-why: Een eigen bestand per artikel en niet in de frontmatter. Vijf tips in zeven talen zou
  *   elk artikel een bestand maken dat je niet meer leest. Dezelfde slug houdt de koppeling.

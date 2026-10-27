@@ -1,193 +1,194 @@
 article: stretching
+emoji: "🙆"
 tips:
   - key: bewegingsbereik
     kind: fact
     en:
-      title: "What stretching is for"
-      body: "The main thing stretching does well is increase your range of motion, right away and over weeks. Experts add that alternatives exist."
+      title: "Range of motion"
+      body: "That's what stretching does well, right away and over weeks. Experts add that there are alternatives."
     nl:
-      title: "Waar rekken voor is"
-      body: "Waar rekken echt goed in is: je bewegingsbereik vergroten, direct en over weken. Experts voegen toe dat er alternatieven zijn."
+      title: "Bewegingsruimte"
+      body: "Dat is waar rekken goed in is, direct en over weken. Experts voegen eraan toe dat er alternatieven zijn."
     de:
-      title: "Wofür Dehnen gut ist"
-      body: "Was Dehnen wirklich gut kann: deinen Bewegungsumfang vergrößern, sofort und über Wochen. Experten fügen hinzu, dass es Alternativen gibt."
+      title: "Beweglichkeit"
+      body: "Darin ist Dehnen gut, sofort und über Wochen. Fachleute ergänzen, dass es Alternativen gibt."
     es:
-      title: "Para qué sirve estirar"
-      body: "Lo que estirar hace bien es aumentar tu rango de movimiento, al momento y a lo largo de semanas. Los expertos añaden que hay alternativas."
+      title: "Rango de movimiento"
+      body: "Es lo que mejor hace el estiramiento, al momento y en semanas. Los expertos añaden que hay alternativas."
     fr:
-      title: "À quoi sert l'étirement"
-      body: "Ce que l'étirement fait bien, c'est augmenter ton amplitude, tout de suite et sur des semaines. Les experts ajoutent qu'il existe d'autres options."
+      title: "Amplitude"
+      body: "C'est ce que les étirements font bien, tout de suite et sur des semaines. Il existe des alternatives."
     pt:
-      title: "Para que serve alongar"
-      body: "O que alongar faz bem é aumentar a amplitude de movimento, logo e ao longo de semanas. Os peritos acrescentam que há alternativas."
+      title: "Amplitude"
+      body: "É o que o alongamento faz bem, logo e ao longo de semanas. Os especialistas dizem que há alternativas."
     tr:
-      title: "Esneme ne işe yarar"
-      body: "Esnemenin asıl iyi yaptığı şey hareket açıklığını artırmak, hem hemen hem de haftalar içinde. Uzmanlar alternatiflerin de olduğunu ekliyor."
+      title: "Hareket açıklığı"
+      body: "Esnemenin iyi yaptığı şey bu, hemen ve haftalar içinde. Uzmanlar başka yollar da olduğunu ekliyor."
 
   - key: direct-meer-ruimte
     kind: fact
     en:
-      title: "A quick range boost"
-      body: "For more range right away, an expert panel recommends at least 2 bouts of 5 to 30 seconds."
+      title: "5 to 30 seconds"
+      body: "At least 2 bouts that long give more range right away, an expert panel says."
     nl:
-      title: "Direct meer ruimte"
-      body: "Voor direct meer bewegingsruimte raadt een expertpanel minstens 2 keer 5 tot 30 seconden aan."
+      title: "5 tot 30 seconden"
+      body: "Minstens 2 keer zo lang geeft direct meer ruimte, zegt een expertpanel."
     de:
-      title: "Sofort mehr Spielraum"
-      body: "Für sofort mehr Beweglichkeit empfiehlt ein Expertengremium mindestens 2 Durchgänge von 5 bis 30 Sekunden."
+      title: "5 bis 30 Sekunden"
+      body: "Mindestens 2-mal so lange bringt sofort mehr Umfang, sagt ein Expertengremium."
     es:
-      title: "Más rango al momento"
-      body: "Para ganar rango al instante, un panel de expertos recomienda al menos 2 series de 5 a 30 segundos."
+      title: "5 a 30 segundos"
+      body: "Al menos 2 veces así dan más rango al momento, según un panel de expertos."
     fr:
-      title: "Plus d'amplitude tout de suite"
-      body: "Pour gagner de l'amplitude tout de suite, un panel d'experts conseille au moins 2 fois 5 à 30 secondes."
+      title: "5 à 30 secondes"
+      body: "Au moins 2 fois donnent plus d'amplitude tout de suite, selon un panel d'experts."
     pt:
-      title: "Mais amplitude já"
-      body: "Para ganhar amplitude de imediato, um painel de peritos recomenda pelo menos 2 séries de 5 a 30 segundos."
+      title: "5 a 30 segundos"
+      body: "Pelo menos 2 vezes assim dão mais amplitude logo, diz um painel de especialistas."
     tr:
-      title: "Hemen daha fazla açıklık"
-      body: "Hemen daha fazla açıklık için bir uzman paneli en az 2 kez 5 ila 30 saniye öneriyor."
+      title: "5-30 saniye"
+      body: "Uzman paneline göre en az 2 kez bu kadar esneme hemen daha çok açıklık verir."
 
   - key: op-lange-termijn
     kind: fact
     en:
-      title: "More range over weeks"
-      body: "To build flexibility, the panel advises 2 to 3 sets a day of 30 to 120 seconds per muscle. That's the dose for the most gain."
+      title: "30 to 120 seconds"
+      body: "Per muscle, 2 to 3 sets a day, is the dose for the most flexibility gain over weeks."
     nl:
-      title: "Meer ruimte over weken"
-      body: "Om lenigheid op te bouwen raadt het panel 2 à 3 sets per dag aan van 30 tot 120 seconden per spier. Dat is de dosis voor de meeste winst."
+      title: "30 tot 120 seconden"
+      body: "Per spier, 2 tot 3 sets per dag, is de dosis voor de meeste lenigheid over weken."
     de:
-      title: "Mehr Beweglichkeit über Wochen"
-      body: "Für mehr Beweglichkeit rät das Gremium zu 2 bis 3 Sätzen täglich, 30 bis 120 Sekunden pro Muskel. Das ist die Dosis für den größten Gewinn."
+      title: "30 bis 120 Sekunden"
+      body: "Pro Muskel, 2 bis 3 Sätze am Tag, ist die Dosis für den größten Gewinn über Wochen."
     es:
-      title: "Más rango en semanas"
-      body: "Para ganar flexibilidad, el panel aconseja 2 o 3 series al día de 30 a 120 segundos por músculo. Es la dosis para ganar lo máximo."
+      title: "30 a 120 segundos"
+      body: "Por músculo, 2 o 3 series al día, es la dosis para ganar más flexibilidad en semanas."
     fr:
-      title: "Plus d'amplitude sur des semaines"
-      body: "Pour gagner en souplesse, le panel conseille 2 à 3 séries par jour de 30 à 120 secondes par muscle. C'est la dose pour le gain maximal."
+      title: "30 à 120 secondes"
+      body: "Par muscle, 2 à 3 séries par jour : la dose pour le plus de souplesse sur des semaines."
     pt:
-      title: "Mais amplitude em semanas"
-      body: "Para ganhar flexibilidade, o painel aconselha 2 a 3 séries por dia de 30 a 120 segundos por músculo. É a dose para ganhar o máximo."
+      title: "30 a 120 segundos"
+      body: "Por músculo, 2 a 3 séries por dia, é a dose para mais flexibilidade em semanas."
     tr:
-      title: "Haftalar içinde daha fazla açıklık"
-      body: "Esneklik kazanmak için panel, kas başına günde 2 ila 3 set, 30 ila 120 saniye öneriyor. En fazla kazanç için doz bu."
+      title: "30-120 saniye"
+      body: "Kas başına, günde 2-3 set: haftalar içinde en çok esneklik için doz bu."
 
   - key: acsm-basis
     kind: fact
     en:
-      title: "A simple baseline"
-      body: "The ACSM recommends flexibility work for each major muscle group, 60 seconds per exercise in total, on at least 2 days a week."
+      title: "60 seconds"
+      body: "Per exercise for each major muscle group, on at least 2 days a week. That's the ACSM baseline."
     nl:
-      title: "Een simpele basis"
-      body: "Het ACSM raadt lenigheidswerk aan voor elke grote spiergroep, in totaal 60 seconden per oefening, op minstens 2 dagen per week."
+      title: "60 seconden"
+      body: "Per oefening voor elke grote spiergroep, minstens 2 dagen per week. Dat is de ACSM-basis."
     de:
-      title: "Eine einfache Basis"
-      body: "Das ACSM empfiehlt Dehnübungen für jede große Muskelgruppe, insgesamt 60 Sekunden pro Übung, an mindestens 2 Tagen pro Woche."
+      title: "60 Sekunden"
+      body: "Pro Übung für jede große Muskelgruppe, an mindestens 2 Tagen pro Woche. Das ist die ACSM-Basis."
     es:
-      title: "Una base sencilla"
-      body: "El ACSM recomienda flexibilidad para cada grupo muscular grande, 60 segundos por ejercicio en total, al menos 2 días por semana."
+      title: "60 segundos"
+      body: "Por ejercicio para cada grupo muscular grande, al menos 2 días por semana. Es la base del ACSM."
     fr:
-      title: "Une base simple"
-      body: "L'ACSM conseille des exercices de souplesse pour chaque grand groupe musculaire, 60 secondes par exercice au total, au moins 2 jours par semaine."
+      title: "60 secondes"
+      body: "Par exercice pour chaque grand groupe musculaire, au moins 2 jours par semaine. La base de l'ACSM."
     pt:
-      title: "Uma base simples"
-      body: "O ACSM recomenda flexibilidade para cada grande grupo muscular, 60 segundos por exercício no total, pelo menos 2 dias por semana."
+      title: "60 segundos"
+      body: "Por exercício para cada grande grupo muscular, pelo menos 2 dias por semana. É a base do ACSM."
     tr:
-      title: "Basit bir temel"
-      body: "ACSM her büyük kas grubu için esneklik çalışması öneriyor: egzersiz başına toplam 60 saniye, haftada en az 2 gün."
+      title: "60 saniye"
+      body: "Her büyük kas grubu için hareket başına, haftada en az 2 gün. ACSM'nin temel önerisi bu."
 
   - key: techniek-maakt-niet-uit
     kind: myth
     en:
-      title: "Myth: one stretching method beats the rest"
-      body: "Not for a quick gain. Experts say all techniques show similar effects. For gains over weeks they do prefer static or PNF over dynamic."
+      title: "Best method"
+      body: "Myth: one stretching method beats the rest. For a quick gain all work alike. Over weeks, static or PNF is preferred."
     nl:
-      title: "Mythe: één rekmethode is de beste"
-      body: "Niet voor snelle winst. Experts zeggen dat alle technieken vergelijkbaar werken. Voor winst over weken verkiezen ze wel statisch of PNF boven dynamisch."
+      title: "Beste methode"
+      body: "Mythe: één rekmethode wint. Voor direct effect werken ze gelijk. Voor weken hebben statisch of PNF de voorkeur."
     de:
-      title: "Mythos: Eine Dehnmethode ist die beste"
-      body: "Nicht für den schnellen Effekt. Laut Experten wirken alle Techniken ähnlich. Für Fortschritt über Wochen bevorzugen sie statisch oder PNF statt dynamisch."
+      title: "Beste Methode"
+      body: "Mythos: Eine Dehnmethode ist die beste. Kurzfristig wirken alle gleich. Über Wochen bevorzugt man statisch oder PNF."
     es:
-      title: "Mito: un método de estirar es el mejor"
-      body: "No para un efecto rápido. Los expertos dicen que todas las técnicas funcionan parecido. Para semanas, eso sí, prefieren estático o PNF a dinámico."
+      title: "El mejor método"
+      body: "Mito: un método de estiramiento gana. Al momento todos funcionan igual. En semanas, mejor estático o FNP."
     fr:
-      title: "Mythe : une méthode d'étirement est la meilleure"
-      body: "Pas pour un gain immédiat. Selon les experts, toutes les techniques se valent. Sur des semaines, ils préfèrent le statique ou le PNF au dynamique."
+      title: "Meilleure méthode"
+      body: "Mythe : une méthode d'étirement l'emporte. Sur le coup, toutes se valent. Sur des semaines, statique ou PNF."
     pt:
-      title: "Mito: um método de alongar é o melhor"
-      body: "Não para um ganho rápido. Os peritos dizem que todas as técnicas têm efeitos parecidos. Para semanas preferem estático ou PNF ao dinâmico."
+      title: "Melhor método"
+      body: "Mito: um método de alongamento ganha. No imediato, todos iguais. Em semanas, preferem estático ou FNP."
     tr:
-      title: "Efsane: bir esneme yöntemi en iyisidir"
-      body: "Hızlı kazanç için değil. Uzmanlara göre tüm teknikler benzer etki gösteriyor. Haftalar için ise dinamik yerine statik ya da PNF'yi tercih ediyorlar."
+      title: "En iyi yöntem"
+      body: "Efsane: bir esneme yöntemi en iyisidir. Hemen etkide hepsi aynı. Haftalar içinde statik ya da PNF tercih ediliyor."
 
   - key: geen-spiergroei
     kind: myth
     en:
-      title: "Myth: stretching builds muscle"
-      body: "Not really. Experts found no substantive contribution to muscle growth. Only over 15 minutes a day per muscle for 6+ weeks gave small gains."
+      title: "15 minutes"
+      body: "Myth: stretching builds muscle. Only over 15 minutes a day per muscle, for 6 weeks or more, gave small gains."
     nl:
-      title: "Mythe: rekken bouwt spier"
-      body: "Niet echt. Experts zien geen wezenlijke bijdrage aan spiergroei. Alleen meer dan 15 minuten per dag per spier, 6 weken of langer, gaf kleine winst."
+      title: "15 minuten"
+      body: "Mythe: rekken bouwt spier. Pas boven 15 minuten per dag per spier, 6 weken of langer, kwam er wat bij."
     de:
-      title: "Mythos: Dehnen baut Muskeln auf"
-      body: "Nicht wirklich. Experten sehen keinen nennenswerten Beitrag zum Muskelwachstum. Nur über 15 Minuten täglich pro Muskel über 6+ Wochen brachte wenig."
+      title: "15 Minuten"
+      body: "Mythos: Dehnen baut Muskeln. Erst ab 15 Minuten pro Tag und Muskel, 6 Wochen lang, gab es kleine Zuwächse."
     es:
-      title: "Mito: estirar construye músculo"
-      body: "En realidad no. Los expertos no ven un aporte sustancial al crecimiento. Solo más de 15 minutos al día por músculo, 6 semanas o más, dio algo."
+      title: "15 minutos"
+      body: "Mito: estirar da músculo. Solo con más de 15 minutos al día por músculo durante 6 semanas hubo algo."
     fr:
-      title: "Mythe : s'étirer fait du muscle"
-      body: "Pas vraiment. Les experts n'y voient pas d'apport notable. Seuls plus de 15 minutes par jour et par muscle pendant 6 semaines ont donné de petits gains."
+      title: "15 minutes"
+      body: "Mythe : s'étirer fait du muscle. Seulement au-delà de 15 minutes par jour et par muscle, 6 semaines, un peu."
     pt:
-      title: "Mito: alongar constrói músculo"
-      body: "Na verdade não. Os peritos não veem contributo relevante. Só mais de 15 minutos por dia por músculo durante 6 semanas ou mais deu pequenos ganhos."
+      title: "15 minutos"
+      body: "Mito: alongar dá músculo. Só com mais de 15 minutos por dia por músculo, 6 semanas, houve algum ganho."
     tr:
-      title: "Efsane: esneme kas yapar"
-      body: "Pek değil. Uzmanlar kas büyümesine kayda değer bir katkı görmüyor. Yalnızca 6+ hafta boyunca kas başına günde 15 dakikadan fazlası az kazanç verdi."
+      title: "15 dakika"
+      body: "Efsane: esneme kas yapar. Sadece kas başına günde 15 dakikayı aşan, 6 hafta süren esneme biraz kazandırdı."
 
   - key: niet-verplicht-in-warming-up
     kind: myth
     en:
-      title: "Myth: you have to stretch in your warm-up"
-      body: "Not true. Experts call stretching in a warm-up not essential. It's a fine option if you want more range."
+      title: "Warm-up"
+      body: "Myth: you have to stretch in your warm-up. Experts call it not essential. It's fine if you want more range."
     nl:
-      title: "Mythe: rekken hoort verplicht bij je warming-up"
-      body: "Niet waar. Experts noemen rekken in de warming-up niet noodzakelijk. Het is wel een prima optie als je meer bewegingsruimte wilt."
+      title: "Warming-up"
+      body: "Mythe: je moet rekken in je warming-up. Experts noemen het niet nodig. Prima als je meer ruimte wilt."
     de:
-      title: "Mythos: Dehnen gehört ins Aufwärmen"
-      body: "Stimmt nicht. Experten nennen Dehnen im Aufwärmen nicht notwendig. Es ist aber eine gute Option, wenn du mehr Beweglichkeit willst."
+      title: "Aufwärmen"
+      body: "Mythos: Dehnen gehört ins Aufwärmen. Fachleute nennen es nicht nötig. Gut, wenn du mehr Umfang willst."
     es:
-      title: "Mito: hay que estirar al calentar"
-      body: "No es cierto. Los expertos dicen que estirar en el calentamiento no es imprescindible. Es una buena opción si quieres más rango."
+      title: "Calentamiento"
+      body: "Mito: hay que estirar al calentar. Los expertos dicen que no es esencial. Bien si quieres más rango."
     fr:
-      title: "Mythe : il faut s'étirer à l'échauffement"
-      body: "Faux. Les experts jugent l'étirement à l'échauffement non indispensable. C'est une bonne option si tu veux plus d'amplitude."
+      title: "Échauffement"
+      body: "Mythe : il faut s'étirer à l'échauffement. Pas essentiel, disent les experts. Ok si tu veux plus d'amplitude."
     pt:
-      title: "Mito: tens de alongar no aquecimento"
-      body: "Não é verdade. Os peritos dizem que alongar no aquecimento não é essencial. É uma boa opção se quiseres mais amplitude."
+      title: "Aquecimento"
+      body: "Mito: tens de alongar no aquecimento. Os especialistas dizem que não é essencial. Bom se quiseres amplitude."
     tr:
-      title: "Efsane: ısınmada esneme şarttır"
-      body: "Doğru değil. Uzmanlar ısınmada esnemeyi şart saymıyor. Daha fazla açıklık istiyorsan iyi bir seçenek."
+      title: "Isınma"
+      body: "Efsane: ısınmada esnemek şart. Uzmanlar gerekli değil diyor. Daha çok açıklık istiyorsan yapabilirsin."
 
   - key: ruimte-zonder-rekken
     kind: fact
     en:
-      title: "Range without stretching"
-      body: "Lifting through your full range improved range at least as much in research cited by the panel, especially when the lowering phase was emphasised."
+      title: "Full range"
+      body: "Lifting through it improved range at least as much as stretching, especially with an emphasised lowering phase."
     nl:
-      title: "Ruimte zonder rekken"
-      body: "Tillen over je volle bereik verbeterde de bewegingsruimte minstens zo goed, in onderzoek dat het panel aanhaalt, vooral met nadruk op het zakken."
+      title: "Volledige ruimte"
+      body: "Daardoorheen tillen verbeterde je bewegingsruimte minstens zo goed, vooral met nadruk op het zakken."
     de:
-      title: "Beweglichkeit ohne Dehnen"
-      body: "In vom Gremium zitierter Forschung verbesserte Krafttraining im vollen Umfang die Beweglichkeit mindestens genauso, vor allem mit betontem Absenken."
+      title: "Voller Umfang"
+      body: "Darin zu trainieren verbesserte die Beweglichkeit mindestens so gut, vor allem mit betontem Absenken."
     es:
-      title: "Rango sin estirar"
-      body: "Entrenar fuerza en todo el rango mejoró la movilidad al menos igual, según estudios que cita el panel, sobre todo enfatizando la bajada."
+      title: "Recorrido completo"
+      body: "Entrenar en todo el recorrido mejoró el rango al menos igual, sobre todo cuidando la bajada."
     fr:
-      title: "De l'amplitude sans étirement"
-      body: "La muscu sur toute l'amplitude l'a améliorée au moins autant, selon des études citées par le panel, surtout en insistant sur la descente."
+      title: "Amplitude complète"
+      body: "La muscu sur toute l'amplitude a amélioré la souplesse au moins autant, surtout en soignant la descente."
     pt:
-      title: "Amplitude sem alongar"
-      body: "Treinar força em toda a amplitude melhorou-a pelo menos tanto, em estudos citados pelo painel, sobretudo com ênfase na descida."
+      title: "Amplitude total"
+      body: "Treinar em toda a amplitude melhorou a flexibilidade pelo menos tanto, sobretudo com descida controlada."
     tr:
-      title: "Esnemeden açıklık"
-      body: "Panelin aktardığı araştırmalarda tam açıklıkta kuvvet antrenmanı, özellikle indirme vurgulanınca, açıklığı en az esneme kadar artırdı."
+      title: "Tam açıklık"
+      body: "Tam açıklıkta ağırlık çalışmak esnekliği en az esneme kadar artırdı, özellikle inişe vurgu yapınca."

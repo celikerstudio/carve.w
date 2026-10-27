@@ -1,241 +1,242 @@
 article: fitness-for-women
+emoji: "🏋️"
 tips:
   - key: kracht-en-spier
     kind: fact
     en:
-      title: "Women and lifting"
-      body: "In a meta-analysis of 24 studies in women, lifting gave large strength gains and a medium gain in muscle size."
+      title: "24 studies"
+      body: "In women, lifting gave large strength gains and a medium gain in muscle size, in a meta-analysis."
     nl:
-      title: "Vrouwen en krachttraining"
-      body: "In een meta-analyse van 24 studies bij vrouwen gaf krachttraining een grote winst in kracht en een middelgrote in spiermassa."
+      title: "24 studies"
+      body: "Bij vrouwen gaf krachttraining veel meer kracht en een middelgrote groei in spiermassa, in een meta-analyse."
     de:
-      title: "Frauen und Krafttraining"
-      body: "In einer Metaanalyse von 24 Studien mit Frauen brachte Krafttraining große Kraftzuwächse und einen mittleren Zuwachs an Muskelmasse."
+      title: "24 Studien"
+      body: "Bei Frauen brachte Krafttraining laut Metaanalyse große Kraftzuwächse und mittleres Muskelwachstum."
     es:
-      title: "Mujeres y pesas"
-      body: "En un metaanálisis de 24 estudios con mujeres, entrenar fuerza dio grandes mejoras de fuerza y una mejora media de masa muscular."
+      title: "24 estudios"
+      body: "En mujeres, las pesas dieron grandes mejoras de fuerza y un aumento medio de músculo, en un metaanálisis."
     fr:
-      title: "Les femmes et la muscu"
-      body: "Dans une méta-analyse de 24 études chez des femmes, la muscu a donné de gros gains de force et un gain moyen de masse musculaire."
+      title: "24 études"
+      body: "Chez les femmes, la muscu a donné de gros gains de force et un gain moyen de muscle, selon une méta-analyse."
     pt:
-      title: "Mulheres e treino de força"
-      body: "Numa meta-análise de 24 estudos com mulheres, o treino de força deu grandes ganhos de força e um ganho médio de massa muscular."
+      title: "24 estudos"
+      body: "Em mulheres, o treino de força deu grandes ganhos de força e um ganho médio de músculo, numa meta-análise."
     tr:
-      title: "Kadınlar ve ağırlık"
-      body: "Kadınlarla 24 çalışmalık bir meta-analizde ağırlık çalışmak güçte büyük, kas kütlesinde orta düzeyde artış sağladı."
+      title: "24 çalışma"
+      body: "Bir meta-analizde kadınlarda ağırlık antrenmanı büyük güç ve orta düzeyde kas artışı sağladı."
 
   - key: frequentie-en-volume
     kind: fact
     en:
-      title: "What helped strength"
-      body: "In that analysis of women, how often and how much they trained seemed to matter for strength. Nothing tested clearly mattered for muscle growth."
+      title: "How often"
+      body: "And how much women trained seemed to matter for strength. Nothing tested clearly mattered for size."
     nl:
-      title: "Wat hielp voor kracht"
-      body: "In die analyse bij vrouwen leken hoe vaak en hoeveel ze trainden uit te maken voor kracht. Voor spiergroei maakte niets wat ze testten duidelijk uit."
+      title: "Hoe vaak"
+      body: "En hoeveel vrouwen trainden leek te tellen voor kracht. Voor spiergroei maakte niets getests duidelijk uit."
     de:
-      title: "Was der Kraft half"
-      body: "In dieser Analyse mit Frauen schienen Häufigkeit und Umfang für die Kraft zu zählen. Für den Muskelaufbau machte nichts Getestetes klar einen Unterschied."
+      title: "Wie oft"
+      body: "Und wie viel Frauen trainierten, schien für Kraft zu zählen. Für Muskelwachstum zählte nichts klar."
     es:
-      title: "Lo que ayudó a la fuerza"
-      body: "En ese análisis con mujeres, la frecuencia y el volumen parecían importar para la fuerza. Para el músculo, nada de lo probado importó con claridad."
+      title: "Cuántas veces"
+      body: "Y cuánto entrenaban las mujeres parecía contar para la fuerza. Para el músculo, nada claro."
     fr:
-      title: "Ce qui a aidé la force"
-      body: "Dans cette analyse chez des femmes, la fréquence et le volume semblaient compter pour la force. Pour le muscle, rien de testé ne comptait clairement."
+      title: "Combien de fois"
+      body: "Et combien les femmes s'entraînaient semblait compter pour la force. Pour le muscle, rien de net."
     pt:
-      title: "O que ajudou a força"
-      body: "Nessa análise com mulheres, a frequência e o volume pareciam contar para a força. Para o músculo, nada do que testaram contou com clareza."
+      title: "Quantas vezes"
+      body: "E quanto as mulheres treinavam parecia contar para a força. Para o músculo, nada claro."
     tr:
-      title: "Güce ne yardım etti"
-      body: "Kadınlarla yapılan o analizde ne sıklıkla ve ne kadar çalıştıkları güç için önemli göründü. Kas büyümesinde test edilenlerin hiçbiri net fark yaratmadı."
+      title: "Ne sıklıkla"
+      body: "Kadınların ne sıklıkta ve ne kadar çalıştığı güç için önemli göründü. Kas için net bir şey çıkmadı."
 
   - key: trainen-op-cyclus
     kind: myth
     en:
-      title: "Myth: train by your cycle phase"
-      body: "Not proven. A review of reviews found highly variable results and poor methods. It's too early to say hormone shifts change your gains."
+      title: "Cycle phase"
+      body: "Myth: train by your cycle phase. Results vary a lot and methods are poor. Too early to say it changes gains."
     nl:
-      title: "Mythe: train volgens je cyclusfase"
-      body: "Niet bewezen. Een review van reviews vond sterk wisselende uitkomsten en zwakke methodes. Te vroeg om te zeggen dat hormoonschommelingen je winst veranderen."
+      title: "Cyclusfase"
+      body: "Mythe: train op je cyclusfase. Resultaten wisselen sterk en de methodes zijn zwak. Te vroeg voor conclusies."
     de:
-      title: "Mythos: trainier nach Zyklusphase"
-      body: "Nicht belegt. Ein Review von Reviews fand stark schwankende Ergebnisse und schwache Methoden. Für Schlüsse über Hormone und Fortschritt ist es zu früh."
+      title: "Zyklusphase"
+      body: "Mythos: Trainier nach deiner Zyklusphase. Die Ergebnisse schwanken stark, die Methoden sind schwach."
     es:
-      title: "Mito: entrena según la fase del ciclo"
-      body: "No está probado. Una revisión de revisiones halló resultados muy variables y métodos flojos. Es pronto para decir que las hormonas cambien tus avances."
+      title: "Fase del ciclo"
+      body: "Mito: entrena según tu ciclo. Los resultados varían mucho y los métodos son flojos. Es pronto para decirlo."
     fr:
-      title: "Mythe : s'entraîner selon son cycle"
-      body: "Pas prouvé. Une revue de revues a trouvé des résultats très variables et des méthodes faibles. Trop tôt pour dire que les hormones changent tes progrès."
+      title: "Phase du cycle"
+      body: "Mythe : entraîne-toi selon ton cycle. Résultats très variables, méthodes faibles. Trop tôt pour conclure."
     pt:
-      title: "Mito: treina segundo a fase do ciclo"
-      body: "Não está provado. Uma revisão de revisões encontrou resultados muito variáveis e métodos fracos. É cedo para dizer que as hormonas mudam os ganhos."
+      title: "Fase do ciclo"
+      body: "Mito: treina segundo o teu ciclo. Os resultados variam muito e os métodos são fracos. É cedo para dizer."
     tr:
-      title: "Efsane: döngü evresine göre çalış"
-      body: "Kanıtlanmadı. Derlemelerin derlemesi çok değişken sonuçlar ve zayıf yöntemler buldu. Hormon dalgalanmalarının kazanımını değiştirdiğini söylemek için erken."
+      title: "Döngü evresi"
+      body: "Efsane: döngü evrene göre çalış. Sonuçlar çok değişken, yöntemler zayıf. Sonuç için henüz erken."
 
   - key: cyclus-bijhouden
     kind: fact
     en:
-      title: "Why track your cycle"
-      body: "Tracking can help you spot irregular periods, handle symptoms and learn about your body. If your periods stop or turn irregular, see your GP."
+      title: "Track your cycle"
+      body: "It helps you spot irregular periods and handle symptoms. Periods stopped or irregular? See your GP."
     nl:
-      title: "Waarom je cyclus bijhouden"
-      body: "Zo zie je een onregelmatige cyclus, kun je klachten managen en leer je je lijf kennen. Blijft je menstruatie weg of wordt ze onregelmatig? Ga naar je huisarts."
+      title: "Cyclus bijhouden"
+      body: "Zo zie je onregelmatigheid en vang je klachten op. Stopt je menstruatie of wordt die onregelmatig? Naar de huisarts."
     de:
-      title: "Warum den Zyklus tracken"
-      body: "Tracken hilft, unregelmäßige Perioden zu erkennen, Beschwerden zu steuern und deinen Körper kennenzulernen. Bleibt sie aus oder wird unregelmäßig: zum Arzt."
+      title: "Zyklus notieren"
+      body: "So erkennst du Unregelmäßigkeiten und Beschwerden. Bleibt die Periode aus oder ist unregelmäßig? Zum Arzt."
     es:
-      title: "Para qué seguir tu ciclo"
-      body: "Te ayuda a ver reglas irregulares, manejar síntomas y conocer tu cuerpo. Si la regla se te corta o se vuelve irregular, ve a tu médico."
+      title: "Apunta tu ciclo"
+      body: "Te ayuda a ver reglas irregulares y llevar los síntomas. ¿Se te retira o es irregular? Ve al médico."
     fr:
-      title: "Pourquoi suivre ton cycle"
-      body: "Ça aide à repérer des règles irrégulières, gérer les symptômes et mieux te connaître. Si tes règles s'arrêtent ou deviennent irrégulières, vois ton médecin."
+      title: "Suis ton cycle"
+      body: "Ça aide à repérer des règles irrégulières et gérer les symptômes. Règles absentes ou irrégulières ? Consulte."
     pt:
-      title: "Porquê seguir o ciclo"
-      body: "Ajuda a ver períodos irregulares, gerir sintomas e conhecer o teu corpo. Se o período parar ou ficar irregular, vai ao médico de família."
+      title: "Regista o ciclo"
+      body: "Ajuda a ver períodos irregulares e lidar com sintomas. O período parou ou é irregular? Vai ao médico."
     tr:
-      title: "Döngünü neden takip etmeli"
-      body: "Düzensiz adetleri fark etmene, belirtileri yönetmene ve vücudunu tanımana yardım eder. Adetin durursa ya da düzensizleşirse doktoruna git."
+      title: "Döngünü izle"
+      body: "Düzensizliği fark etmeni ve belirtilerle başa çıkmanı sağlar. Adet durduysa ya da düzensizse doktora git."
 
   - key: zwanger-kracht
     kind: myth
     en:
-      title: "Myth: stop lifting when you're pregnant"
-      body: "Not true, without complications. The WHO says the evidence supports regular strength training. Check with your midwife or doctor."
+      title: "Pregnant"
+      body: "Myth: stop lifting when pregnant. Without complications, WHO backs regular strength training. Ask your midwife."
     nl:
-      title: "Mythe: stop met tillen als je zwanger bent"
-      body: "Klopt niet, als er geen complicaties zijn. Volgens de WHO steunt het bewijs regelmatige krachttraining. Overleg met je verloskundige of arts."
+      title: "Zwanger"
+      body: "Mythe: stop met krachttraining als je zwanger bent. Zonder complicaties steunt de WHO het. Overleg met je verloskundige."
     de:
-      title: "Mythos: Schwanger? Hör auf mit Heben"
-      body: "Stimmt nicht, ohne Komplikationen. Laut WHO stützen die Belege regelmäßiges Krafttraining. Sprich mit deiner Hebamme oder Ärztin."
+      title: "Schwanger"
+      body: "Mythos: In der Schwangerschaft kein Krafttraining. Ohne Komplikationen stützt die WHO es. Sprich mit deiner Hebamme."
     es:
-      title: "Mito: embarazada, deja las pesas"
-      body: "No es cierto si no hay complicaciones. La OMS dice que la evidencia respalda entrenar fuerza con regularidad. Consúltalo con tu matrona o médico."
+      title: "Embarazada"
+      body: "Mito: deja las pesas si estás embarazada. Sin complicaciones, la OMS apoya la fuerza regular. Consulta a tu matrona."
     fr:
-      title: "Mythe : enceinte, on arrête la muscu"
-      body: "Faux, sans complications. Selon l'OMS, les preuves soutiennent un renforcement régulier. Vérifie avec ta sage-femme ou ton médecin."
+      title: "Enceinte"
+      body: "Mythe : arrête la muscu enceinte. Sans complication, l'OMS soutient un renforcement régulier. Vois ta sage-femme."
     pt:
-      title: "Mito: grávida, larga os pesos"
-      body: "Não é verdade, sem complicações. A OMS diz que a evidência apoia treino de força regular. Fala com a tua parteira ou médico."
+      title: "Grávida"
+      body: "Mito: deixa o treino de força na gravidez. Sem complicações, a OMS apoia-o. Fala com a tua parteira ou médico."
     tr:
-      title: "Efsane: hamileyken ağırlığı bırak"
-      body: "Komplikasyon yoksa doğru değil. DSÖ'ye göre kanıtlar düzenli kuvvet antrenmanını destekliyor. Ebene ya da doktoruna danış."
+      title: "Hamile"
+      body: "Efsane: hamileyken ağırlığı bırak. Komplikasyon yoksa DSÖ düzenli kuvvet antrenmanını destekliyor. Ebene danış."
 
   - key: actief-voor-zwangerschap
     kind: fact
     en:
-      title: "Already active?"
-      body: "Women who were active before pregnancy, including vigorous cardio, can keep going during and after, if there's no contraindication."
+      title: "Already active"
+      body: "Before pregnancy, even with hard cardio? You can keep going during and after, if nothing rules it out."
     nl:
-      title: "Was je al actief?"
-      body: "Vrouwen die voor de zwangerschap actief waren, ook met zware cardio, kunnen tijdens en na de zwangerschap doorgaan, als niets het tegenspreekt."
+      title: "Al actief"
+      body: "Voor je zwangerschap, ook met zware cardio? Dan mag je tijdens en na doorgaan, als niets het verbiedt."
     de:
-      title: "Schon vorher aktiv?"
-      body: "Wer vor der Schwangerschaft aktiv war, auch mit intensivem Ausdauertraining, kann währenddessen und danach weitermachen, ohne Kontraindikation."
+      title: "Schon aktiv"
+      body: "Vor der Schwangerschaft, auch mit harter Ausdauer? Dann darfst du währenddessen und danach weitermachen."
     es:
-      title: "¿Ya entrenabas?"
-      body: "Si eras activa antes del embarazo, incluso con cardio intenso, puedes seguir durante y después, siempre que no haya contraindicación."
+      title: "Ya activa"
+      body: "¿Antes del embarazo, incluso con cardio intenso? Puedes seguir durante y después, si nada lo impide."
     fr:
-      title: "Déjà active ?"
-      body: "Si tu étais active avant la grossesse, même en cardio intense, tu peux continuer pendant et après, sauf contre-indication."
+      title: "Déjà active"
+      body: "Avant la grossesse, même avec du cardio intense ? Tu peux continuer pendant et après, sauf contre-indication."
     pt:
-      title: "Já eras ativa?"
-      body: "Se eras ativa antes da gravidez, mesmo com cardio intenso, podes continuar durante e depois, desde que não haja contraindicação."
+      title: "Já ativa"
+      body: "Antes da gravidez, mesmo com cardio intenso? Podes continuar durante e depois, se nada o impedir."
     tr:
-      title: "Zaten aktif miydin?"
-      body: "Hamilelikten önce aktif olan kadınlar, yoğun kardiyo dahil, engel bir durum yoksa hamilelik sırasında ve sonrasında devam edebilir."
+      title: "Zaten aktifsen"
+      body: "Hamilelikten önce yoğun kardiyo dahil aktifsen, bir engel yoksa hamilelikte ve sonrasında devam edebilirsin."
 
   - key: niet-op-je-rug
     kind: fact
     en:
       title: "Off your back"
-      body: "After the first trimester, the WHO advises avoiding exercises on your back. Also skip high heat and humidity, and stay hydrated."
+      body: "After the first trimester, WHO advises skipping exercises on your back, and high heat. Stay hydrated."
     nl:
       title: "Niet op je rug"
-      body: "Na het eerste trimester raadt de WHO oefeningen op je rug af. Vermijd ook grote hitte en vochtigheid, en drink genoeg."
+      body: "Na het eerste trimester raadt de WHO oefeningen op je rug af, net als hitte. Drink genoeg."
     de:
       title: "Nicht auf dem Rücken"
-      body: "Nach dem ersten Trimester rät die WHO von Übungen in Rückenlage ab. Meide auch große Hitze und Feuchtigkeit und trink genug."
+      body: "Nach dem ersten Trimester rät die WHO von Übungen in Rückenlage und großer Hitze ab. Trink genug."
     es:
-      title: "Boca arriba, no"
-      body: "Tras el primer trimestre, la OMS aconseja evitar ejercicios tumbada boca arriba. Evita también el calor y la humedad altos, y bebe agua."
+      title: "Boca arriba no"
+      body: "Tras el primer trimestre, la OMS desaconseja ejercicios boca arriba y el calor fuerte. Bebe agua."
     fr:
       title: "Pas sur le dos"
-      body: "Après le premier trimestre, l'OMS conseille d'éviter les exercices sur le dos. Évite aussi la forte chaleur et l'humidité, et bois assez."
+      body: "Après le premier trimestre, l'OMS déconseille les exercices sur le dos et la forte chaleur. Bois bien."
     pt:
-      title: "De costas, não"
-      body: "Depois do primeiro trimestre, a OMS aconselha evitar exercícios deitada de costas. Evita também calor e humidade altos, e bebe água."
+      title: "De costas não"
+      body: "Depois do primeiro trimestre, a OMS desaconselha exercícios de costas e calor forte. Bebe água."
     tr:
-      title: "Sırt üstü değil"
-      body: "DSÖ ilk üç aydan sonra sırt üstü yapılan egzersizlerden kaçınmayı öneriyor. Aşırı sıcak ve nemden de uzak dur, bol su iç."
+      title: "Sırtüstü değil"
+      body: "DSÖ ilk üç aydan sonra sırtüstü egzersizleri ve aşırı sıcağı önermiyor. Bol su iç."
 
   - key: na-de-bevalling
     kind: fact
     en:
       title: "After the birth"
-      body: "Build back up gradually. After a caesarean, the WHO says to do that in consultation with a healthcare provider."
+      body: "Build back up gradually. After a caesarean, do that with a healthcare provider, the WHO says."
     nl:
       title: "Na de bevalling"
-      body: "Bouw geleidelijk weer op. Na een keizersnede raadt de WHO aan dat in overleg met een zorgverlener te doen."
+      body: "Bouw geleidelijk weer op. Na een keizersnede doe je dat in overleg met een zorgverlener, zegt de WHO."
     de:
       title: "Nach der Geburt"
-      body: "Steig schrittweise wieder ein. Nach einem Kaiserschnitt rät die WHO, das mit einer medizinischen Fachperson abzustimmen."
+      body: "Steigere dich langsam wieder. Nach einem Kaiserschnitt in Absprache mit Fachleuten, sagt die WHO."
     es:
-      title: "Después del parto"
-      body: "Vuelve poco a poco. Tras una cesárea, la OMS aconseja hacerlo de acuerdo con un profesional sanitario."
+      title: "Tras el parto"
+      body: "Vuelve poco a poco. Tras una cesárea, hazlo con un profesional sanitario, dice la OMS."
     fr:
       title: "Après l'accouchement"
-      body: "Reprends progressivement. Après une césarienne, l'OMS conseille de le faire en accord avec un professionnel de santé."
+      body: "Reprends progressivement. Après une césarienne, fais-le avec un soignant, dit l'OMS."
     pt:
       title: "Depois do parto"
-      body: "Volta aos poucos. Depois de uma cesariana, a OMS aconselha a fazê-lo em conjunto com um profissional de saúde."
+      body: "Volta aos poucos. Depois de uma cesariana, fá-lo com um profissional de saúde, diz a OMS."
     tr:
       title: "Doğumdan sonra"
-      body: "Kademeli olarak geri dön. DSÖ, sezaryen sonrası bunu bir sağlık uzmanıyla birlikte planlamanı öneriyor."
+      body: "Yavaş yavaş geri dön. DSÖ'ye göre sezaryenden sonra bunu bir sağlık uzmanıyla yap."
 
   - key: bekkenbodem
     kind: fact
     en:
       title: "Pelvic floor"
-      body: "During pregnancy and after the birth, you can train your pelvic floor daily to lower the risk of urinary incontinence."
+      body: "Training it daily during and after pregnancy lowers the risk of urinary incontinence."
     nl:
       title: "Bekkenbodem"
-      body: "Tijdens de zwangerschap en na de bevalling kun je dagelijks je bekkenbodem trainen om de kans op urineverlies te verkleinen."
+      body: "Die dagelijks trainen tijdens en na je zwangerschap verlaagt de kans op urineverlies."
     de:
       title: "Beckenboden"
-      body: "In der Schwangerschaft und nach der Geburt kannst du täglich den Beckenboden trainieren, um das Risiko für Harninkontinenz zu senken."
+      body: "Ihn in und nach der Schwangerschaft täglich zu trainieren senkt das Risiko für Inkontinenz."
     es:
       title: "Suelo pélvico"
-      body: "Durante el embarazo y tras el parto puedes entrenar el suelo pélvico a diario para bajar el riesgo de incontinencia urinaria."
+      body: "Entrenarlo a diario en el embarazo y después baja el riesgo de pérdidas de orina."
     fr:
       title: "Périnée"
-      body: "Pendant la grossesse et après l'accouchement, tu peux travailler ton périnée chaque jour pour réduire le risque de fuites urinaires."
+      body: "Le muscler chaque jour pendant et après la grossesse réduit le risque de fuites urinaires."
     pt:
       title: "Pavimento pélvico"
-      body: "Durante a gravidez e depois do parto podes treinar o pavimento pélvico todos os dias para baixar o risco de incontinência urinária."
+      body: "Treiná-lo todos os dias na gravidez e depois baixa o risco de perdas de urina."
     tr:
       title: "Pelvik taban"
-      body: "Hamilelikte ve doğumdan sonra idrar kaçırma riskini azaltmak için pelvik taban kaslarını her gün çalıştırabilirsin."
+      body: "Hamilelikte ve sonrasında her gün çalıştırmak idrar kaçırma riskini azaltır."
 
   - key: te-weinig-eten
     kind: fact
     en:
-      title: "Eating too little"
-      body: "Too little energy for how much you train can hurt health and performance, in women and men. The IOC wrote this for athletes."
+      title: "Too little food"
+      body: "For how much you train, it can hurt health and performance, in women and men. The IOC wrote this for athletes."
     nl:
       title: "Te weinig eten"
-      body: "Te weinig energie voor hoeveel je traint kan je gezondheid en prestaties schaden, bij vrouwen en mannen. Het IOC schreef dit voor topsporters."
+      body: "Voor je trainingsvolume kan het gezondheid en prestatie schaden, bij vrouwen en mannen. Zo schrijft het IOC."
     de:
       title: "Zu wenig essen"
-      body: "Zu wenig Energie für dein Training kann Gesundheit und Leistung schaden, bei Frauen und Männern. Das IOC schrieb das für Athleten."
+      body: "Für dein Trainingspensum kann das Gesundheit und Leistung schaden, bei Frauen und Männern, so das IOC."
     es:
-      title: "Comer demasiado poco"
-      body: "Poca energía para lo que entrenas puede dañar tu salud y tu rendimiento, en mujeres y hombres. El COI lo escribió para deportistas."
+      title: "Comer poco"
+      body: "Para lo que entrenas, puede dañar salud y rendimiento, en mujeres y hombres. Lo dice el COI para atletas."
     fr:
       title: "Trop peu manger"
-      body: "Trop peu d'énergie pour ton volume d'entraînement peut nuire à ta santé et tes perfs, chez les femmes comme les hommes. Le CIO l'a écrit pour des athlètes."
+      body: "Pour ton volume d'entraînement, ça peut nuire à santé et perf, chez la femme comme l'homme, dit le CIO."
     pt:
-      title: "Comer pouco demais"
-      body: "Pouca energia para o quanto treinas pode prejudicar a saúde e o rendimento, em mulheres e homens. O COI escreveu isto para atletas."
+      title: "Comer pouco"
+      body: "Para o que treinas, pode prejudicar saúde e rendimento, em mulheres e homens. Diz o COI para atletas."
     tr:
-      title: "Çok az yemek"
-      body: "Antrenmanına göre çok az enerji almak kadınlarda ve erkeklerde sağlığa ve performansa zarar verebilir. IOC bunu sporcular için yazdı."
+      title: "Az yemek"
+      body: "Antrenman miktarına göre az yemek kadın ve erkekte sağlığa ve performansa zarar verebilir. IOC sporcular için yazdı."

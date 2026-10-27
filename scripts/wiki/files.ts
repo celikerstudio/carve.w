@@ -32,7 +32,7 @@ export function readTipFiles(): { file: TipFile; slug: string; path: string; err
         return { file: parseTipFile(fs.readFileSync(p, 'utf8')), slug, path: p };
       } catch (e) {
         const reason = e instanceof Error ? e.message.split('\n')[0] : String(e);
-        return { file: { article: slug, tips: [] }, slug, path: p, error: `geen geldige YAML: ${reason}` };
+        return { file: { article: slug, emoji: '', tips: [] }, slug, path: p, error: `geen geldige YAML: ${reason}` };
       }
     });
 }

@@ -1,217 +1,218 @@
 article: alcohol-and-fitness
+emoji: "🍺"
 tips:
   - key: per-week
     kind: fact
     en:
-      title: "Alcohol per week"
-      body: "Canadian guidance rates 2 standard drinks a week or less as low risk. From 3 to 6 it is moderate, from 7 the risk keeps rising."
+      title: "2 drinks a week"
+      body: "Or fewer counts as low risk in Canadian guidance. From 7 a week, the risk keeps rising."
     nl:
-      title: "Alcohol per week"
-      body: "De Canadese richtlijn noemt 2 standaardglazen per week of minder laag risico. 3 tot 6 is matig, vanaf 7 loopt het risico steeds verder op."
+      title: "2 glazen per week"
+      body: "Of minder is laag risico volgens de Canadese richtlijn. Vanaf 7 per week blijft het risico stijgen."
     de:
-      title: "Alkohol pro Woche"
-      body: "Die kanadische Richtlinie nennt 2 Standardgetränke pro Woche oder weniger ein geringes Risiko. 3 bis 6 ist mäßig, ab 7 steigt es weiter."
+      title: "2 Gläser pro Woche"
+      body: "Oder weniger gelten in Kanadas Richtlinie als geringes Risiko. Ab 7 pro Woche steigt es weiter."
     es:
-      title: "Alcohol por semana"
-      body: "La guía canadiense considera bajo riesgo 2 bebidas estándar a la semana o menos. De 3 a 6 es moderado, desde 7 el riesgo sigue subiendo."
+      title: "2 copas a la semana"
+      body: "O menos es bajo riesgo según la guía canadiense. A partir de 7 por semana, el riesgo sigue subiendo."
     fr:
-      title: "L'alcool par semaine"
-      body: "Le guide canadien juge le risque faible à 2 verres standard par semaine ou moins. De 3 à 6 il est modéré, dès 7 il ne cesse de monter."
+      title: "2 verres par semaine"
+      body: "Ou moins, c'est un risque faible selon le repère canadien. Dès 7 par semaine, le risque grimpe encore."
     pt:
-      title: "Álcool por semana"
-      body: "O guia canadiano considera baixo risco 2 bebidas padrão por semana ou menos. De 3 a 6 é moderado, a partir de 7 o risco continua a subir."
+      title: "2 bebidas por semana"
+      body: "Ou menos é risco baixo segundo a orientação canadiana. A partir de 7 por semana, o risco continua a subir."
     tr:
-      title: "Haftalık alkol"
-      body: "Kanada rehberi haftada 2 standart içki veya daha azını düşük risk sayar. 3 ila 6 orta, 7 ve üstünde risk giderek artar."
+      title: "Haftada 2 içki"
+      body: "Ya da daha azı, Kanada rehberine göre düşük risk. Haftada 7'den sonra risk artmaya devam eder."
 
   - key: per-avond
     kind: fact
     en:
-      title: "One night out"
-      body: "More than 2 standard drinks in one sitting raises your risk of harm, such as injuries, according to the Canadian guidance."
+      title: "More than 2"
+      body: "Standard drinks in one sitting raise your risk of harm, like injuries, says the Canadian guidance."
     nl:
-      title: "Eén avond stappen"
-      body: "Meer dan 2 standaardglazen op één gelegenheid verhoogt volgens de Canadese richtlijn je risico op schade, zoals letsel."
+      title: "Meer dan 2"
+      body: "Standaardglazen op één avond verhogen je kans op schade, zoals blessures, volgens de Canadese richtlijn."
     de:
-      title: "Ein Abend"
-      body: "Mehr als 2 Standardgetränke bei einer Gelegenheit erhöhen laut kanadischer Richtlinie dein Risiko für Schäden wie Verletzungen."
+      title: "Mehr als 2"
+      body: "Standardgläser an einem Abend erhöhen laut Kanadas Richtlinie das Risiko für Schäden wie Verletzungen."
     es:
-      title: "Una noche de salida"
-      body: "Más de 2 bebidas estándar en una sola ocasión sube tu riesgo de daños, como lesiones, según la guía canadiense."
+      title: "Más de 2"
+      body: "Copas estándar en una sola ocasión suben el riesgo de daños, como lesiones, según la guía canadiense."
     fr:
-      title: "Une soirée"
-      body: "Plus de 2 verres standard en une seule occasion augmente ton risque de dommages, comme les blessures, selon le guide canadien."
+      title: "Plus de 2"
+      body: "Verres standard en une soirée augmentent le risque de dommages, comme les blessures, selon le repère canadien."
     pt:
-      title: "Uma noite fora"
-      body: "Mais de 2 bebidas padrão numa só ocasião aumenta o teu risco de danos, como lesões, segundo o guia canadiano."
+      title: "Mais de 2"
+      body: "Bebidas padrão de uma vez aumentam o risco de danos, como lesões, segundo a orientação canadiana."
     tr:
-      title: "Tek bir gece"
-      body: "Kanada rehberine göre tek seferde 2'den fazla standart içki, yaralanma gibi zarar riskini artırır."
+      title: "2'den fazla"
+      body: "Tek seferde 2'den fazla standart içki, yaralanma gibi zarar riskini artırır. Kanada rehberi böyle diyor."
 
   - key: eiwit-redt-niet
     kind: myth
     en:
-      title: "Myth: protein cancels out a binge"
-      body: "Not true. In a small study, about 120 g of alcohol after a hard workout cut muscle protein building by 24%, even with protein."
+      title: "24% less"
+      body: "Myth: protein cancels out a binge. In a small study, heavy drinking after training still cut muscle building 24%."
     nl:
-      title: "Mythe: eiwit maakt een avond zuipen goed"
-      body: "Klopt niet. In een kleine studie remde zo'n 120 g alcohol na een zware training de aanmaak van spiereiwit met 24%, ook met eiwit erbij."
+      title: "24% minder"
+      body: "Mythe: eiwit maakt een zuipavond goed. In een kleine studie remde veel drank na de training spieropbouw toch 24%."
     de:
-      title: "Mythos: Protein gleicht Saufen aus"
-      body: "Stimmt nicht. In einer kleinen Studie senkten etwa 120 g Alkohol nach hartem Training den Muskelproteinaufbau um 24 %, trotz Protein."
+      title: "24 % weniger"
+      body: "Mythos: Protein macht ein Gelage wett. In einer kleinen Studie bremste viel Alkohol den Muskelaufbau trotzdem um 24 %."
     es:
-      title: "Mito: la proteína compensa una borrachera"
-      body: "No es cierto. En un estudio pequeño, unos 120 g de alcohol tras un entreno duro bajaron un 24% la síntesis muscular, aun con proteína."
+      title: "24 % menos"
+      body: "Mito: la proteína compensa una borrachera. En un estudio pequeño, beber mucho tras entrenar frenó el músculo un 24 %."
     fr:
-      title: "Mythe : les protéines compensent une cuite"
-      body: "Faux. Dans une petite étude, 120 g d'alcool environ après une séance dure ont freiné de 24 % la synthèse musculaire, même avec des protéines."
+      title: "24 % de moins"
+      body: "Mythe : les protéines rattrapent une cuite. Dans une petite étude, boire beaucoup a quand même freiné le muscle de 24 %."
     pt:
-      title: "Mito: a proteína compensa uma bebedeira"
-      body: "Não é verdade. Num estudo pequeno, cerca de 120 g de álcool após um treino duro baixaram 24% a síntese muscular, mesmo com proteína."
+      title: "24% menos"
+      body: "Mito: a proteína compensa uma bebedeira. Num estudo pequeno, beber muito após treinar travou o músculo em 24%."
     tr:
-      title: "Efsane: protein içki gecesini telafi eder"
-      body: "Doğru değil. Küçük bir çalışmada zor bir antrenmandan sonra yaklaşık 120 g alkol, proteinle bile kas proteini yapımını %24 düşürdü."
+      title: "%24 daha az"
+      body: "Efsane: protein aşırı içmeyi telafi eder. Küçük bir çalışmada çok alkol, kas yapımını yine %24 düşürdü."
 
   - key: een-of-twee
     kind: fact
     en:
       title: "One or two drinks"
-      body: "The studies on alcohol and muscle used heavy doses after hard training. None of them tested one or two drinks."
+      body: "Studies on alcohol and muscle used heavy doses. None of them tested one or two drinks."
     nl:
-      title: "Eén of twee drankjes"
-      body: "De studies naar alcohol en spieren gebruikten flinke hoeveelheden na een zware training. Geen ervan testte één of twee drankjes."
+      title: "Eén of twee glazen"
+      body: "Studies naar alcohol en spieren gebruikten flinke hoeveelheden. Eén of twee glazen testte niemand."
     de:
-      title: "Ein oder zwei Drinks"
-      body: "Die Studien zu Alkohol und Muskeln nutzten hohe Mengen nach hartem Training. Keine davon hat ein oder zwei Drinks getestet."
+      title: "Ein, zwei Gläser"
+      body: "Studien zu Alkohol und Muskeln nutzten hohe Mengen. Ein oder zwei Gläser hat keine getestet."
     es:
       title: "Una o dos copas"
-      body: "Los estudios sobre alcohol y músculo usaron dosis altas tras entrenos duros. Ninguno probó qué hacen una o dos copas."
+      body: "Los estudios sobre alcohol y músculo usaron dosis altas. Ninguno probó una o dos copas."
     fr:
       title: "Un ou deux verres"
-      body: "Les études sur l'alcool et le muscle ont utilisé de fortes doses après une séance dure. Aucune n'a testé un ou deux verres."
+      body: "Les études sur l'alcool et le muscle ont utilisé de fortes doses. Aucune n'a testé un ou deux verres."
     pt:
-      title: "Um ou dois copos"
-      body: "Os estudos sobre álcool e músculo usaram doses altas após treinos duros. Nenhum testou o efeito de um ou dois copos."
+      title: "Uma ou duas bebidas"
+      body: "Os estudos sobre álcool e músculo usaram doses altas. Nenhum testou uma ou duas bebidas."
     tr:
       title: "Bir iki kadeh"
-      body: "Alkol ve kas çalışmaları zor antrenmandan sonra yüksek dozlar kullandı. Hiçbiri bir ya da iki kadehi test etmedi."
+      body: "Alkol ve kas çalışmalarında yüksek dozlar kullanıldı. Hiçbiri bir iki kadehi test etmedi."
 
   - key: kracht-en-spierpijn
     kind: myth
     en:
-      title: "Myth: drinking after training saps strength"
-      body: "Not quite. In most small studies, strength and soreness did not change at heavy doses of 0.6 to 1.5 g per kg. Two did find more strength loss."
+      title: "Strength"
+      body: "Myth: drinking after training saps your strength. In most small studies it didn't, even at heavy doses. Two did."
     nl:
-      title: "Mythe: drinken na de training kost kracht"
-      body: "Niet helemaal. In de meeste kleine studies bleven kracht en spierpijn gelijk, bij flinke doses van 0,6 tot 1,5 g per kilo. Twee zagen wel meer krachtverlies."
+      title: "Kracht"
+      body: "Mythe: drinken na de training kost je kracht. In de meeste kleine studies niet, zelfs bij veel drank. In twee wel."
     de:
-      title: "Mythos: Alkohol nach dem Training kostet Kraft"
-      body: "Nicht ganz. In den meisten kleinen Studien blieben Kraft und Muskelkater gleich, bei hohen Dosen von 0,6 bis 1,5 g pro kg. Zwei sahen mehr Kraftverlust."
+      title: "Kraft"
+      body: "Mythos: Trinken nach dem Training kostet Kraft. Meist nicht, selbst bei viel Alkohol. Nur zwei kleine Studien sahen das."
     es:
-      title: "Mito: beber tras entrenar te quita fuerza"
-      body: "No del todo. En casi todos los estudios pequeños, fuerza y agujetas no cambiaron, con dosis altas de 0,6 a 1,5 g por kg. Dos sí vieron más pérdida."
+      title: "Fuerza"
+      body: "Mito: beber tras entrenar te quita fuerza. En la mayoría de estudios pequeños no, ni con dosis altas. En dos sí."
     fr:
-      title: "Mythe : boire après la séance coûte de la force"
-      body: "Pas tout à fait. Dans la plupart des petites études, force et courbatures n'ont pas bougé, à fortes doses de 0,6 à 1,5 g par kg. Deux ont vu plus de perte."
+      title: "Force"
+      body: "Mythe : boire après l'entraînement fait perdre de la force. Pas dans la plupart des petites études. Dans deux, si."
     pt:
-      title: "Mito: beber depois do treino tira força"
-      body: "Não exatamente. Na maioria dos estudos pequenos, força e dores não mudaram, com doses altas de 0,6 a 1,5 g por kg. Dois viram mais perda de força."
+      title: "Força"
+      body: "Mito: beber depois do treino tira-te força. Na maioria dos estudos pequenos não, mesmo com doses altas. Em dois sim."
     tr:
-      title: "Efsane: antrenman sonrası içmek güç kaybettirir"
-      body: "Tam değil. Küçük çalışmaların çoğunda kilo başına 0,6 ila 1,5 g'lık yüksek dozlarda güç ve kas ağrısı değişmedi. İki çalışma daha fazla güç kaybı buldu."
+      title: "Güç"
+      body: "Efsane: antrenman sonrası içmek gücünü düşürür. Çoğu küçük çalışmada düşürmedi, yüksek dozda bile. İkisinde düşürdü."
 
   - key: standaardglas-canada
     kind: fact
     en:
-      title: "A Canadian standard drink"
-      body: "That is 13.45 g of pure alcohol: a 341 ml beer at 5%, a 142 ml glass of wine at 12%, or a 43 ml shot at 40%."
+      title: "13.45 g"
+      body: "Pure alcohol in a Canadian standard drink. That's a 341 ml beer at 5% or a 142 ml glass of wine at 12%."
     nl:
-      title: "Een Canadees standaardglas"
-      body: "Dat is 13,45 g pure alcohol: een flesje bier van 341 ml (5%), een glas wijn van 142 ml (12%) of een shot van 43 ml (40%)."
+      title: "13,45 gram"
+      body: "Pure alcohol in een Canadees standaardglas. Dat is een biertje van 341 ml (5%) of 142 ml wijn (12%)."
     de:
-      title: "Ein kanadisches Standardgetränk"
-      body: "Das sind 13,45 g reiner Alkohol: 341 ml Bier mit 5 %, 142 ml Wein mit 12 % oder ein Shot von 43 ml mit 40 %."
+      title: "13,45 g"
+      body: "Reiner Alkohol in einem kanadischen Standardglas. Das sind 341 ml Bier (5 %) oder 142 ml Wein (12 %)."
     es:
-      title: "Una bebida estándar canadiense"
-      body: "Son 13,45 g de alcohol puro: una cerveza de 341 ml al 5%, una copa de vino de 142 ml al 12% o un chupito de 43 ml al 40%."
+      title: "13,45 g"
+      body: "De alcohol puro en una copa estándar canadiense. Es una cerveza de 341 ml (5 %) o 142 ml de vino (12 %)."
     fr:
-      title: "Un verre standard canadien"
-      body: "C'est 13,45 g d'alcool pur : une bière de 341 ml à 5 %, un verre de vin de 142 ml à 12 % ou un shot de 43 ml à 40 %."
+      title: "13,45 g"
+      body: "D'alcool pur dans un verre standard canadien. Soit une bière de 341 ml (5 %) ou 142 ml de vin (12 %)."
     pt:
-      title: "Uma bebida padrão canadiana"
-      body: "São 13,45 g de álcool puro: uma cerveja de 341 ml a 5%, um copo de vinho de 142 ml a 12% ou um shot de 43 ml a 40%."
+      title: "13,45 g"
+      body: "De álcool puro numa bebida padrão canadiana. É uma cerveja de 341 ml (5%) ou 142 ml de vinho (12%)."
     tr:
-      title: "Kanada'da bir standart içki"
-      body: "13,45 g saf alkol demek: %5'lik 341 ml bira, %12'lik 142 ml şarap ya da %40'lık 43 ml shot."
+      title: "13,45 g"
+      body: "Kanada'da bir standart içkideki saf alkol. 341 ml bira (%5) ya da 142 ml şarap (%12) kadar."
 
   - key: gram-per-land
     kind: fact
     en:
-      title: "Standard drinks differ"
-      body: "Around the world a standard drink holds 8 to 20 g of pure alcohol. Check the grams before you compare your glass with any limit."
+      title: "8 to 20 g"
+      body: "Pure alcohol in one standard drink, depending on the country. Check the grams before comparing with any limit."
     nl:
-      title: "Standaardglas verschilt"
-      body: "Wereldwijd zit er 8 tot 20 g pure alcohol in een standaardglas. Kijk naar de grammen voor je je glas met een grens vergelijkt."
+      title: "8 tot 20 gram"
+      body: "Pure alcohol in één standaardglas, afhankelijk van het land. Kijk naar de grammen voor je een grens vergelijkt."
     de:
-      title: "Standardgetränke sind verschieden"
-      body: "Weltweit enthält ein Standardgetränk 8 bis 20 g reinen Alkohol. Schau auf die Gramm, bevor du dein Glas mit einem Limit vergleichst."
+      title: "8 bis 20 g"
+      body: "Reiner Alkohol in einem Standardglas, je nach Land. Schau auf die Gramm, bevor du mit einem Limit vergleichst."
     es:
-      title: "La bebida estándar varía"
-      body: "En el mundo, una bebida estándar tiene de 8 a 20 g de alcohol puro. Mira los gramos antes de comparar tu copa con un límite."
+      title: "8 a 20 g"
+      body: "De alcohol puro en una copa estándar, según el país. Mira los gramos antes de comparar con un límite."
     fr:
-      title: "Le verre standard varie"
-      body: "Selon les pays, un verre standard contient 8 à 20 g d'alcool pur. Regarde les grammes avant de comparer ton verre à une limite."
+      title: "8 à 20 g"
+      body: "D'alcool pur dans un verre standard, selon le pays. Regarde les grammes avant de comparer à une limite."
     pt:
-      title: "A bebida padrão varia"
-      body: "No mundo, uma bebida padrão tem 8 a 20 g de álcool puro. Vê os gramas antes de comparares o teu copo com um limite."
+      title: "8 a 20 g"
+      body: "De álcool puro numa bebida padrão, conforme o país. Vê os gramas antes de comparar com um limite."
     tr:
-      title: "Standart içki değişir"
-      body: "Dünyada bir standart içki 8 ila 20 g saf alkol içerir. Kadehini bir sınırla karşılaştırmadan önce gramlara bak."
+      title: "8-20 g"
+      body: "Ülkeye göre bir standart içkideki saf alkol. Bir sınırla karşılaştırmadan önce gramı kontrol et."
 
   - key: glas-is-geen-glas
     kind: myth
     en:
-      title: "Myth: a glass of wine is one drink"
-      body: "Not always. A Canadian standard glass is 142 ml at 12%. A bigger pour or a stronger wine counts as more than one."
+      title: "A big pour"
+      body: "Myth: a glass of wine is one drink. A bigger pour or a stronger wine counts as more than one."
     nl:
-      title: "Mythe: een glas wijn is één glas"
-      body: "Niet altijd. Een Canadees standaardglas is 142 ml van 12%. Schenk je ruimer of is de wijn sterker, dan telt het als meer."
+      title: "Een vol glas"
+      body: "Mythe: een glas wijn is één standaardglas. Een ruim glas of sterkere wijn telt als meer dan één."
     de:
-      title: "Mythos: Ein Glas Wein ist ein Drink"
-      body: "Nicht immer. Ein kanadisches Standardglas sind 142 ml mit 12 %. Ein volleres Glas oder stärkerer Wein zählt als mehr."
+      title: "Ein volles Glas"
+      body: "Mythos: Ein Glas Wein ist ein Standardglas. Ein größeres Glas oder stärkerer Wein zählt als mehr."
     es:
-      title: "Mito: una copa de vino es una bebida"
-      body: "No siempre. La copa estándar canadiense es de 142 ml al 12%. Si sirves más o el vino es más fuerte, cuenta como más."
+      title: "Una copa llena"
+      body: "Mito: una copa de vino es una copa estándar. Una copa más llena o un vino más fuerte cuenta como más."
     fr:
-      title: "Mythe : un verre de vin, c'est un verre"
-      body: "Pas toujours. Le verre standard canadien fait 142 ml à 12 %. Un verre plus rempli ou un vin plus fort compte pour plus."
+      title: "Un verre bien servi"
+      body: "Mythe : un verre de vin, c'est un verre standard. Plus rempli ou plus fort, il compte pour plus d'un."
     pt:
-      title: "Mito: um copo de vinho é uma bebida"
-      body: "Nem sempre. O copo padrão canadiano tem 142 ml a 12%. Se serves mais ou o vinho é mais forte, conta como mais."
+      title: "Um copo cheio"
+      body: "Mito: um copo de vinho é uma bebida padrão. Um copo mais cheio ou vinho mais forte conta como mais."
     tr:
-      title: "Efsane: bir kadeh şarap bir içkidir"
-      body: "Her zaman değil. Kanada'da standart kadeh %12'lik 142 ml. Daha dolu bir kadeh ya da daha sert şarap birden fazla sayılır."
+      title: "Dolu bir kadeh"
+      body: "Efsane: bir kadeh şarap bir standart içkidir. Daha dolu kadeh ya da daha sert şarap birden fazla sayılır."
 
   - key: nul-is-veiligst
     kind: fact
     en:
-      title: "When zero is safest"
-      body: "The Canadian guidance says no alcohol is safest when you drive, use machinery, or take medicine that interacts with it."
+      title: "Zero"
+      body: "No alcohol is safest when you drive, use machinery or take medicine that interacts with it."
     nl:
-      title: "Wanneer niets het veiligst is"
-      body: "Volgens de Canadese richtlijn is geen alcohol het veiligst als je rijdt, met machines werkt of medicijnen neemt die erop reageren."
+      title: "Nul"
+      body: "Geen alcohol is het veiligst als je rijdt, met machines werkt of medicijnen slikt die ermee botsen."
     de:
-      title: "Wann null am sichersten ist"
-      body: "Laut kanadischer Richtlinie ist kein Alkohol am sichersten, wenn du fährst, Maschinen bedienst oder Medikamente nimmst, die damit reagieren."
+      title: "Null"
+      body: "Kein Alkohol ist am sichersten, wenn du fährst, Maschinen bedienst oder Medikamente nimmst, die sich nicht vertragen."
     es:
-      title: "Cuándo lo más seguro es cero"
-      body: "Según la guía canadiense, lo más seguro es no beber si conduces, usas máquinas o tomas medicinas que interactúan con el alcohol."
+      title: "Cero"
+      body: "Sin alcohol es lo más seguro si conduces, usas maquinaria o tomas medicación que interactúa con él."
     fr:
-      title: "Quand zéro est le plus sûr"
-      body: "Selon le guide canadien, ne pas boire est le plus sûr si tu conduis, utilises une machine ou prends un médicament qui interagit avec l'alcool."
+      title: "Zéro"
+      body: "Pas d'alcool, c'est le plus sûr si tu conduis, utilises une machine ou prends un médicament qui interagit."
     pt:
-      title: "Quando zero é mais seguro"
-      body: "Segundo o guia canadiano, não beber é o mais seguro se conduzes, usas máquinas ou tomas medicamentos que interagem com o álcool."
+      title: "Zero"
+      body: "Sem álcool é o mais seguro se conduzes, usas máquinas ou tomas medicação que interage com ele."
     tr:
-      title: "Sıfırın en güvenli olduğu an"
-      body: "Kanada rehberine göre araba kullanırken, makine çalıştırırken ya da alkolle etkileşen ilaç alırken hiç içmemek en güvenlisi."
+      title: "Sıfır"
+      body: "Araç kullanırken, makine çalıştırırken ya da etkileşen ilaç alırken en güvenlisi hiç alkol almamak."

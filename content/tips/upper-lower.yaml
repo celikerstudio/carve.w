@@ -1,145 +1,146 @@
 article: upper-lower
+emoji: "↕️"
 tips:
   - key: wat-is-het
     kind: fact
     en:
-      title: "Upper/lower split"
-      body: "You alternate upper-body and lower-body sessions, usually 4 days a week. That trains each muscle in 2 sessions a week."
+      title: "4 days a week"
+      body: "Upper body and lower body, alternating. That trains each muscle in 2 sessions a week."
     nl:
-      title: "Upper/lower-schema"
-      body: "Je wisselt bovenlichaam en onderlichaam af, meestal 4 dagen per week. Zo train je elke spier in 2 sessies per week."
+      title: "4 dagen per week"
+      body: "Bovenlichaam en onderlichaam om en om. Zo train je elke spier in 2 sessies per week."
     de:
-      title: "Oberkörper-Unterkörper-Split"
-      body: "Du wechselst Ober- und Unterkörpereinheiten ab, meist an 4 Tagen pro Woche. So trainierst du jeden Muskel in 2 Einheiten pro Woche."
+      title: "4 Tage pro Woche"
+      body: "Oberkörper und Unterkörper im Wechsel. So trainierst du jeden Muskel in 2 Einheiten pro Woche."
     es:
-      title: "Torso-pierna"
-      body: "Alternas sesiones de tren superior e inferior, normalmente 4 días por semana. Así cada músculo se entrena en 2 sesiones semanales."
+      title: "4 días por semana"
+      body: "Tren superior e inferior alternos. Así cada músculo se trabaja en 2 sesiones por semana."
     fr:
-      title: "Split haut/bas"
-      body: "Tu alternes séances haut du corps et bas du corps, souvent 4 jours par semaine. Chaque muscle est travaillé en 2 séances par semaine."
+      title: "4 jours par semaine"
+      body: "Haut et bas du corps en alternance. Chaque muscle travaille ainsi en 2 séances par semaine."
     pt:
-      title: "Divisão superior/inferior"
-      body: "Alternas treinos de parte superior e inferior, normalmente 4 dias por semana. Assim cada músculo é treinado em 2 sessões por semana."
+      title: "4 dias por semana"
+      body: "Parte superior e inferior alternadas. Assim cada músculo é treinado em 2 sessões por semana."
     tr:
-      title: "Üst/alt vücut programı"
-      body: "Üst ve alt vücut seanslarını dönüşümlü yaparsın, genelde haftada 4 gün. Böylece her kas haftada 2 seansta çalışır."
+      title: "Haftada 4 gün"
+      body: "Üst ve alt vücut dönüşümlü. Böylece her kas haftada 2 seansta çalışır."
 
   - key: weekindeling
     kind: fact
     en:
-      title: "An upper/lower week"
-      body: "Upper, lower, rest, upper, lower. First upper day on horizontal press and row, the second on vertical press and pull."
+      title: "Upper, lower, rest"
+      body: "Then upper, lower. Day one on horizontal press and row, the second upper day on vertical press and pull."
     nl:
-      title: "Een upper/lower-week"
-      body: "Boven, onder, rust, boven, onder. De eerste bovendag draait om horizontaal drukken en roeien, de tweede om verticaal drukken en trekken."
+      title: "Boven, onder, rust"
+      body: "Dan boven, onder. Dag één horizontaal drukken en roeien, de tweede bovendag verticaal drukken en trekken."
     de:
-      title: "Eine Woche Ober/Unter"
-      body: "Oben, unten, Pause, oben, unten. Der erste Oberkörpertag mit horizontalem Drücken und Rudern, der zweite mit vertikalem Drücken und Ziehen."
+      title: "Oben, unten, Pause"
+      body: "Dann oben, unten. Tag eins horizontal drücken und rudern, der zweite Oberkörpertag vertikal."
     es:
-      title: "Una semana torso-pierna"
-      body: "Torso, pierna, descanso, torso, pierna. El primer día de torso, press y remo horizontal; el segundo, press y tirón vertical."
+      title: "Arriba, abajo, pausa"
+      body: "Luego arriba, abajo. El primer día press y remo horizontal, el segundo press y tirón vertical."
     fr:
-      title: "Une semaine haut/bas"
-      body: "Haut, bas, repos, haut, bas. Premier jour haut sur poussée et tirage horizontaux, le second sur poussée et tirage verticaux."
+      title: "Haut, bas, repos"
+      body: "Puis haut, bas. Le premier jour haut : poussée et tirage horizontaux, le second : verticaux."
     pt:
-      title: "Uma semana superior/inferior"
-      body: "Superior, inferior, descanso, superior, inferior. O primeiro dia superior com press e remada horizontais, o segundo com press e puxada verticais."
+      title: "Cima, baixo, descanso"
+      body: "Depois cima, baixo. No primeiro dia press e remada horizontal, no segundo press e puxada vertical."
     tr:
-      title: "Bir üst/alt haftası"
-      body: "Üst, alt, dinlenme, üst, alt. İlk üst gün yatay itme ve çekme, ikinci üst gün dikey itme ve çekme üzerine."
+      title: "Üst, alt, dinlenme"
+      body: "Sonra üst, alt. İlk üst gün yatay itiş ve row, ikinci üst gün dikey itiş ve çekiş."
 
   - key: tussen-de-andere-in
     kind: fact
     en:
-      title: "Between full body and bro"
-      body: "Upper/lower gives you more focus per session than full body, with less overlap than a bro split."
+      title: "In between"
+      body: "Upper/lower gives more focus per session than full body, with less overlap than a bro split."
     nl:
-      title: "Tussen fullbody en bro split in"
-      body: "Upper/lower geeft je meer focus per sessie dan fullbody, met minder overlap dan een bro split."
+      title: "Ertussenin"
+      body: "Boven/onder geeft meer focus per training dan full body, met minder overlap dan een bro split."
     de:
-      title: "Zwischen Ganzkörper und Bro"
-      body: "Ober/Unter gibt dir mehr Fokus pro Einheit als Ganzkörper, mit weniger Überschneidung als ein Bro-Split."
+      title: "Dazwischen"
+      body: "Oben/unten bringt mehr Fokus pro Einheit als Ganzkörper und weniger Überschneidung als ein Bro-Split."
     es:
-      title: "Entre cuerpo completo y bro"
-      body: "Torso-pierna te da más foco por sesión que el cuerpo completo, con menos solapamiento que una bro split."
+      title: "En medio"
+      body: "Arriba/abajo da más foco por sesión que el cuerpo completo, con menos solape que una bro split."
     fr:
-      title: "Entre full body et bro split"
-      body: "Le haut/bas te donne plus de focus par séance que le full body, avec moins de chevauchement qu'un bro split."
+      title: "Entre les deux"
+      body: "Haut/bas donne plus de focus par séance que le full body, avec moins de chevauchement qu'un bro split."
     pt:
-      title: "Entre corpo inteiro e bro split"
-      body: "Superior/inferior dá-te mais foco por treino do que o corpo inteiro, com menos sobreposição do que uma bro split."
+      title: "No meio"
+      body: "Cima/baixo dá mais foco por treino do que corpo inteiro, com menos sobreposição do que um bro split."
     tr:
-      title: "Tam vücut ile bro arasında"
-      body: "Üst/alt, seans başına tam vücuttan daha çok odak verir, bro split'ten daha az örtüşmeyle."
+      title: "Arada bir yerde"
+      body: "Üst/alt, tüm vücuttan daha çok odak, bro split'ten daha az çakışma verir."
 
   - key: niet-te-veel-basisoefeningen
     kind: myth
     en:
-      title: "Myth: more compounds, better session"
-      body: "Not quite. Overstuffing a session with compounds leads to rushed form. Use 2 to 4 per day plus accessories."
+      title: "More compounds"
+      body: "Myth: more compounds make a better session. Too many rush your form. Use 2 to 4 per day plus accessories."
     nl:
-      title: "Mythe: meer basisoefeningen, betere sessie"
-      body: "Niet helemaal. Een sessie volproppen met basisoefeningen geeft gehaaste techniek. Neem er 2 tot 4 per dag, plus hulpoefeningen."
+      title: "Meer basisoefeningen"
+      body: "Mythe: meer basisoefeningen is een betere training. Te veel geeft gehaaste techniek. Neem er 2 tot 4."
     de:
-      title: "Mythos: mehr Grundübungen, bessere Einheit"
-      body: "Nicht ganz. Eine Einheit mit Grundübungen vollzustopfen führt zu hastiger Technik. Nimm 2 bis 4 pro Tag plus Zusatzübungen."
+      title: "Mehr Grundübungen"
+      body: "Mythos: Mehr Grundübungen, bessere Einheit. Zu viele machen die Technik hastig. Nimm 2 bis 4 pro Tag."
     es:
-      title: "Mito: más básicos, mejor sesión"
-      body: "No del todo. Llenar la sesión de multiarticulares lleva a técnica con prisas. Haz 2 a 4 por día, más accesorios."
+      title: "Más compuestos"
+      body: "Mito: más compuestos es mejor sesión. Demasiados apresuran la técnica. Usa 2 a 4 al día y accesorios."
     fr:
-      title: "Mythe : plus de polyarticulaires, mieux c'est"
-      body: "Pas tout à fait. Bourrer une séance de polyarticulaires mène à une technique bâclée. Prends-en 2 à 4 par jour, plus l'assistance."
+      title: "Plus d'exos de base"
+      body: "Mythe : plus de polyarticulaires, meilleure séance. Trop bâcle la technique. Prends-en 2 à 4."
     pt:
-      title: "Mito: mais compostos, melhor treino"
-      body: "Não exatamente. Encher um treino de compostos leva a técnica apressada. Faz 2 a 4 por dia, mais os acessórios."
+      title: "Mais compostos"
+      body: "Mito: mais compostos dão melhor treino. Demasiados apressam a técnica. Usa 2 a 4 por dia e acessórios."
     tr:
-      title: "Efsane: daha çok bileşik, daha iyi seans"
-      body: "Tam değil. Seansı bileşik hareketlerle doldurmak aceleci tekniğe yol açar. Günde 2 ila 4 tane yap, üstüne yardımcı hareketler."
+      title: "Daha çok bileşik"
+      body: "Efsane: daha çok bileşik hareket daha iyi antrenman. Fazlası formu aceleye getirir. Günde 2-4 yap."
 
   - key: zware-beendagen-spreiden
     kind: fact
     en:
-      title: "Spacing heavy leg days"
-      body: "Don't put heavy squat or hinge days back to back. Space at least one rest day into your week."
+      title: "Heavy leg days"
+      body: "Don't put heavy squat or hinge days back to back. Space at least one rest day between them."
     nl:
-      title: "Zware beendagen spreiden"
-      body: "Zet zware squat- of hingedagen niet direct achter elkaar. Plan minstens één rustdag tussendoor in je week."
+      title: "Zware beendagen"
+      body: "Zet zware squat- of hingedagen niet achter elkaar. Plan minstens één rustdag ertussen."
     de:
-      title: "Schwere Beintage verteilen"
-      body: "Leg schwere Kniebeuge- oder Hinge-Tage nicht direkt hintereinander. Plan mindestens einen Ruhetag in deine Woche ein."
+      title: "Schwere Beintage"
+      body: "Leg schwere Kniebeuge- oder Hüftbeugetage nicht direkt hintereinander. Mindestens ein Ruhetag dazwischen."
     es:
-      title: "Separar los días duros de pierna"
-      body: "No pongas días pesados de sentadilla o bisagra seguidos. Reparte al menos un día de descanso en tu semana."
+      title: "Días de pierna pesados"
+      body: "No pongas días pesados de sentadilla o bisagra seguidos. Deja al menos un descanso entre ellos."
     fr:
-      title: "Espacer les jours jambes lourds"
-      body: "Ne mets pas deux jours lourds de squat ou de charnière à la suite. Place au moins un jour de repos dans ta semaine."
+      title: "Jours jambes lourds"
+      body: "Ne colle pas deux jours lourds de squat ou de hinge. Mets au moins un jour de repos entre eux."
     pt:
-      title: "Espaçar dias pesados de pernas"
-      body: "Não ponhas dias pesados de agachamento ou hinge seguidos. Encaixa pelo menos um dia de descanso na tua semana."
+      title: "Dias de pernas pesados"
+      body: "Não ponhas dias pesados de agachamento ou hinge seguidos. Deixa pelo menos um descanso entre eles."
     tr:
-      title: "Ağır bacak günlerini ayır"
-      body: "Ağır squat ya da hinge günlerini art arda koyma. Haftana en az bir dinlenme günü yerleştir."
+      title: "Ağır bacak günleri"
+      body: "Ağır squat ya da hinge günlerini arka arkaya koyma. Aralarına en az bir dinlenme günü koy."
 
   - key: krap-herstel
     kind: fact
     en:
-      title: "When recovery is tight"
-      body: "Cap your sessions at about 75 to 90 minutes and limit how much you train to failure."
+      title: "75 to 90 minutes"
+      body: "Is where to cap sessions when recovery is tight. Limit how much you train to failure too."
     nl:
-      title: "Als je herstel krap is"
-      body: "Houd je sessies op maximaal zo'n 75 tot 90 minuten en beperk hoeveel je tot falen traint."
+      title: "75 tot 90 minuten"
+      body: "Daar leg je de grens als je herstel krap is. Ga dan ook minder vaak tot falen."
     de:
-      title: "Wenn die Erholung knapp ist"
-      body: "Begrenze deine Einheiten auf etwa 75 bis 90 Minuten und trainiere seltener bis zum Versagen."
+      title: "75 bis 90 Minuten"
+      body: "Da ist Schluss, wenn die Erholung knapp ist. Geh dann auch seltener bis zum Versagen."
     es:
-      title: "Si vas justo de recuperación"
-      body: "Limita tus sesiones a unos 75 a 90 minutos y reduce el trabajo hasta el fallo."
+      title: "75 a 90 minutos"
+      body: "Es el tope por sesión si vas justo de recuperación. Limita también cuánto vas al fallo."
     fr:
-      title: "Quand la récup est juste"
-      body: "Limite tes séances à environ 75 à 90 minutes et réduis le travail jusqu'à l'échec."
+      title: "75 à 90 minutes"
+      body: "C'est le plafond par séance si ta récup est juste. Limite aussi les séries à l'échec."
     pt:
-      title: "Quando a recuperação é curta"
-      body: "Limita os treinos a cerca de 75 a 90 minutos e reduz o trabalho até à falha."
+      title: "75 a 90 minutos"
+      body: "É o teto por treino se a recuperação está apertada. Limita também quanto vais à falha."
     tr:
-      title: "Toparlanma kısıtlıysa"
-      body: "Seanslarını yaklaşık 75 ila 90 dakikayla sınırla ve tükenişe kadar çalışmayı azalt."
+      title: "75-90 dakika"
+      body: "Toparlanman kısıtlıysa seansları burada sınırla. Tükenişe gitmeyi de azalt."

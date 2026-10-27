@@ -1,217 +1,218 @@
 article: pre-workout-nutrition
+emoji: "🍌"
 tips:
   - key: wanneer-koolhydraten-helpen
     kind: fact
     en:
-      title: "Carbs before lifting"
-      body: "They seem to help most when your session lasts longer than 45 minutes, or when you train after 8 hours or more without food."
+      title: "45 minutes"
+      body: "Carbs before lifting seem to help most in sessions longer than that, or after 8 hours or more without food."
     nl:
-      title: "Koolhydraten voor het tillen"
-      body: "Die lijken vooral te helpen als je training langer dan 45 minuten duurt, of als je traint na 8 uur of langer zonder eten."
+      title: "45 minuten"
+      body: "Koolhydraten voor het tillen lijken vooral te helpen bij trainingen langer dan dat, of na 8 uur of meer zonder eten."
     de:
-      title: "Kohlenhydrate vor dem Training"
-      body: "Sie helfen offenbar am meisten, wenn dein Training länger als 45 Minuten dauert oder du nach 8 Stunden oder mehr ohne Essen trainierst."
+      title: "45 Minuten"
+      body: "Kohlenhydrate vorher helfen wohl vor allem bei längeren Einheiten oder nach 8 Stunden und mehr ohne Essen."
     es:
-      title: "Carbohidratos antes de las pesas"
-      body: "Parecen ayudar sobre todo si tu sesión dura más de 45 minutos, o si entrenas tras 8 horas o más sin comer."
+      title: "45 minutos"
+      body: "Los hidratos antes de entrenar ayudan sobre todo en sesiones más largas, o tras 8 horas o más sin comer."
     fr:
-      title: "Des glucides avant la muscu"
-      body: "Ils semblent surtout aider si ta séance dure plus de 45 minutes, ou si tu t'entraînes après 8 heures ou plus sans manger."
+      title: "45 minutes"
+      body: "Les glucides avant la muscu aident surtout pour des séances plus longues, ou après 8 heures sans manger."
     pt:
-      title: "Hidratos antes dos pesos"
-      body: "Parecem ajudar sobretudo se o treino dura mais de 45 minutos, ou se treinas depois de 8 horas ou mais sem comer."
+      title: "45 minutos"
+      body: "Os hidratos antes do treino ajudam sobretudo em sessões mais longas, ou após 8 horas ou mais sem comer."
     tr:
-      title: "Ağırlıktan önce karbonhidrat"
-      body: "En çok, antrenmanın 45 dakikadan uzun sürdüğünde ya da 8 saat veya daha uzun süre aç kaldıktan sonra çalıştığında işe yarıyor gibi."
+      title: "45 dakika"
+      body: "Antrenman öncesi karbonhidrat en çok bundan uzun seanslarda ya da 8 saat ve üstü açken işe yarıyor."
 
   - key: na-de-lunch
     kind: fact
     en:
-      title: "Had lunch, training later?"
-      body: "Then you are probably covered. Carbs beforehand are unlikely to help if you have eaten and do up to 10 sets per muscle group."
+      title: "After lunch"
+      body: "Training later? You're probably covered. Carbs beforehand likely won't help at up to 10 sets per muscle."
     nl:
-      title: "Geluncht en straks trainen?"
-      body: "Dan zit je waarschijnlijk goed. Extra koolhydraten vooraf helpen weinig als je gegeten hebt en tot 10 sets per spiergroep doet."
+      title: "Na de lunch"
+      body: "Train je later? Dan zit je waarschijnlijk goed. Koolhydraten vooraf helpen dan weinig, tot 10 sets per spier."
     de:
-      title: "Mittag gegessen, später Training?"
-      body: "Dann bist du wohl versorgt. Kohlenhydrate vorher helfen kaum, wenn du gegessen hast und bis zu 10 Sätze pro Muskelgruppe machst."
+      title: "Nach dem Mittag"
+      body: "Training später? Dann bist du wohl versorgt. Kohlenhydrate vorher helfen bis 10 Sätze pro Muskel kaum."
     es:
-      title: "¿Has comido y entrenas luego?"
-      body: "Entonces seguramente vas bien. Los carbohidratos antes apenas ayudan si has comido y haces hasta 10 series por grupo muscular."
+      title: "Tras la comida"
+      body: "¿Entrenas luego? Seguramente vas bien. Los hidratos antes apenas ayudan hasta 10 series por músculo."
     fr:
-      title: "Déjeuner pris, séance plus tard ?"
-      body: "Alors tu es sans doute couvert. Des glucides avant aident peu si tu as mangé et fais jusqu'à 10 séries par groupe musculaire."
+      title: "Après le déjeuner"
+      body: "Tu t'entraînes plus tard ? Tu es sûrement couvert. Les glucides avant aident peu jusqu'à 10 séries par muscle."
     pt:
-      title: "Almoçaste e treinas mais logo?"
-      body: "Então deves estar servido. Hidratos antes pouco ajudam se já comeste e fazes até 10 séries por grupo muscular."
+      title: "Depois do almoço"
+      body: "Treinas mais tarde? Provavelmente estás coberto. Hidratos antes pouco ajudam até 10 séries por músculo."
     tr:
-      title: "Öğle yemeği yedin, sonra antrenman mı?"
-      body: "O zaman büyük ihtimalle tamamsın. Yemek yediysen ve kas grubu başına en fazla 10 set yapıyorsan önceden karbonhidrat pek işe yaramaz."
+      title: "Öğle yemeğinden sonra"
+      body: "Sonra mı çalışacaksın? Muhtemelen yeterli. Kas başına 10 sete kadar önceden karbonhidrat pek katkı sağlamaz."
 
   - key: geen-preworkout-product
     kind: myth
     en:
-      title: "Myth: you need a pre-workout product"
-      body: "Not true. For most lifters, a normal meal with protein and carbs a few hours before training covers it."
+      title: "Pre-workout product"
+      body: "Myth: you need one. For most lifters, a normal meal with protein and carbs a few hours before covers it."
     nl:
-      title: "Mythe: je hebt een pre-workout nodig"
-      body: "Klopt niet. Voor de meeste mensen die tillen volstaat een gewone maaltijd met eiwit en koolhydraten een paar uur voor de training."
+      title: "Pre-workoutproduct"
+      body: "Mythe: je hebt er een nodig. Voor de meeste mensen volstaat een gewone maaltijd met eiwit en koolhydraten."
     de:
-      title: "Mythos: Du brauchst einen Pre-Workout-Booster"
-      body: "Stimmt nicht. Für die meisten reicht eine normale Mahlzeit mit Eiweiß und Kohlenhydraten ein paar Stunden vor dem Training."
+      title: "Pre-Workout-Produkt"
+      body: "Mythos: Du brauchst eins. Für die meisten reicht eine normale Mahlzeit mit Protein und Kohlenhydraten."
     es:
-      title: "Mito: necesitas un pre-entreno"
-      body: "No es cierto. A la mayoría le basta una comida normal con proteína y carbohidratos unas horas antes de entrenar."
+      title: "Producto pre-entreno"
+      body: "Mito: necesitas uno. Para casi todos basta una comida normal con proteína e hidratos unas horas antes."
     fr:
-      title: "Mythe : il te faut un pre-workout"
-      body: "Faux. Pour la plupart, un repas normal avec protéines et glucides quelques heures avant la séance suffit."
+      title: "Produit pré-séance"
+      body: "Mythe : il t'en faut un. Pour la plupart, un repas normal avec protéines et glucides quelques heures avant suffit."
     pt:
-      title: "Mito: precisas de um pré-treino"
-      body: "Não é verdade. Para a maioria, uma refeição normal com proteína e hidratos umas horas antes do treino chega."
+      title: "Produto pré-treino"
+      body: "Mito: precisas de um. Para quase todos chega uma refeição normal com proteína e hidratos umas horas antes."
     tr:
-      title: "Efsane: pre-workout ürünü şart"
-      body: "Doğru değil. Çoğu kişi için antrenmandan birkaç saat önce protein ve karbonhidratlı normal bir öğün yeterli."
+      title: "Pre-workout ürünü"
+      body: "Efsane: bir tane şart. Çoğu kişi için birkaç saat önce protein ve karbonhidratlı normal öğün yeter."
 
   - key: meer-koolhydraten
     kind: myth
     en:
-      title: "Myth: more carbs before training, more power"
-      body: "Not true. In a meta-analysis a bigger carb dose did not help more. The more all-out sets in a session, the bigger the effect."
+      title: "More carbs"
+      body: "Myth: more carbs before training means more power. A bigger dose didn't help more in a meta-analysis."
     nl:
-      title: "Mythe: meer koolhydraten vooraf, meer kracht"
-      body: "Klopt niet. In een meta-analyse hielp een grotere dosis niet meer. Hoe meer sets tot het gaatje, hoe groter het effect."
+      title: "Meer koolhydraten"
+      body: "Mythe: meer koolhydraten vooraf geeft meer kracht. Een grotere dosis hielp niet meer, in een meta-analyse."
     de:
-      title: "Mythos: Mehr Carbs vorher, mehr Power"
-      body: "Stimmt nicht. In einer Metaanalyse half eine größere Dosis nicht mehr. Je mehr Sätze bis zum Anschlag, desto größer der Effekt."
+      title: "Mehr Kohlenhydrate"
+      body: "Mythos: Mehr Kohlenhydrate vorher, mehr Kraft. Eine größere Dosis half laut Metaanalyse nicht mehr."
     es:
-      title: "Mito: más carbohidratos antes, más fuerza"
-      body: "No es cierto. En un metaanálisis una dosis mayor no ayudó más. Cuantas más series a tope en la sesión, mayor el efecto."
+      title: "Más hidratos"
+      body: "Mito: más hidratos antes, más fuerza. Una dosis mayor no ayudó más, según un metaanálisis."
     fr:
-      title: "Mythe : plus de glucides avant, plus de force"
-      body: "Faux. Dans une méta-analyse, une plus grosse dose n'aidait pas plus. Plus la séance a de séries à fond, plus l'effet est grand."
+      title: "Plus de glucides"
+      body: "Mythe : plus de glucides avant, plus de force. Une dose plus grosse n'a pas aidé plus, selon une méta-analyse."
     pt:
-      title: "Mito: mais hidratos antes, mais força"
-      body: "Não é verdade. Numa meta-análise, uma dose maior não ajudou mais. Quantas mais séries no limite, maior o efeito."
+      title: "Mais hidratos"
+      body: "Mito: mais hidratos antes, mais força. Uma dose maior não ajudou mais, numa meta-análise."
     tr:
-      title: "Efsane: önceden çok karbonhidrat, çok güç"
-      body: "Doğru değil. Bir meta-analizde daha büyük doz daha fazla fayda sağlamadı. Seansta ne kadar çok tükenene kadar set, o kadar büyük etki."
+      title: "Daha çok karbonhidrat"
+      body: "Efsane: önceden daha çok karbonhidrat, daha çok güç. Bir meta-analizde büyük doz daha fazla yardım etmedi."
 
   - key: nuchter-cardio
     kind: myth
     en:
-      title: "Myth: fasted cardio burns more fat"
-      body: "Not as far as the research goes. In five small studies, cardio before or after a meal gave only trivial differences in body fat."
+      title: "Fasted cardio"
+      body: "Myth: fasted cardio burns more fat. In five small studies, the difference in body fat was trivial."
     nl:
-      title: "Mythe: nuchter cardio verbrandt meer vet"
-      body: "Niet volgens het onderzoek dat er is. In vijf kleine studies gaf cardio voor of na een maaltijd maar minimale verschillen in vet."
+      title: "Nuchter cardio"
+      body: "Mythe: nuchter cardio verbrandt meer vet. In vijf kleine studies was het verschil in vetmassa verwaarloosbaar."
     de:
-      title: "Mythos: Nüchtern-Cardio verbrennt mehr Fett"
-      body: "Nicht laut bisheriger Forschung. In fünf kleinen Studien machte Cardio vor oder nach dem Essen beim Körperfett kaum einen Unterschied."
+      title: "Nüchtern-Cardio"
+      body: "Mythos: Nüchternes Cardio verbrennt mehr Fett. In fünf kleinen Studien war der Unterschied winzig."
     es:
-      title: "Mito: el cardio en ayunas quema más grasa"
-      body: "No según la investigación. En cinco estudios pequeños, hacer cardio en ayunas o tras comer dio diferencias mínimas en grasa corporal."
+      title: "Cardio en ayunas"
+      body: "Mito: el cardio en ayunas quema más grasa. En cinco estudios pequeños la diferencia fue mínima."
     fr:
-      title: "Mythe : le cardio à jeun brûle plus de gras"
-      body: "Pas d'après la recherche. Dans cinq petites études, le cardio à jeun ou après un repas n'a donné que d'infimes écarts de masse grasse."
+      title: "Cardio à jeun"
+      body: "Mythe : le cardio à jeun brûle plus de gras. Dans cinq petites études, la différence était infime."
     pt:
-      title: "Mito: cardio em jejum queima mais gordura"
-      body: "Não segundo a investigação. Em cinco estudos pequenos, cardio em jejum ou depois de comer deu diferenças mínimas na gordura."
+      title: "Cardio em jejum"
+      body: "Mito: o cardio em jejum queima mais gordura. Em cinco estudos pequenos a diferença foi mínima."
     tr:
-      title: "Efsane: aç karnına kardiyo daha çok yağ yakar"
-      body: "Araştırmalara göre hayır. Beş küçük çalışmada aç ya da tok kardiyo, vücut yağında sadece çok küçük farklar yarattı."
+      title: "Aç karnına kardiyo"
+      body: "Efsane: aç karnına kardiyo daha çok yağ yakar. Beş küçük çalışmada fark önemsizdi."
 
   - key: nuchter-tillen
     kind: fact
     en:
-      title: "Lifting on an empty stomach"
-      body: "Probably fine if you eat enough over the day. Four studies found similar muscle and strength gains fasted or fed. Eat protein soon after."
+      title: "Empty stomach"
+      body: "Lifting fasted is probably fine if you eat enough over the day. Gains matched in four studies. Eat protein after."
     nl:
       title: "Nuchter tillen"
-      body: "Waarschijnlijk prima als je over de dag genoeg eet. Vier studies vonden even veel spier- en krachtwinst, nuchter of gevoed. Eet daarna snel eiwit."
+      body: "Nuchter trainen is waarschijnlijk prima als je over de dag genoeg eet. Vier studies: gelijke winst. Eet daarna eiwit."
     de:
-      title: "Nüchtern trainieren"
-      body: "Wohl kein Problem, wenn du über den Tag genug isst. Vier Studien fanden ähnliche Muskel- und Kraftzuwächse. Iss danach bald Eiweiß."
+      title: "Nüchtern heben"
+      body: "Nüchtern trainieren ist wohl okay, wenn du über den Tag genug isst. Vier Studien: gleiche Zuwächse."
     es:
-      title: "Pesas en ayunas"
-      body: "Probablemente bien si comes lo suficiente en el día. Cuatro estudios vieron ganancias parecidas en ayunas o comido. Toma proteína pronto después."
+      title: "En ayunas"
+      body: "Entrenar en ayunas va bien si comes suficiente en el día. Cuatro estudios: mismas ganancias. Luego, proteína."
     fr:
-      title: "La muscu à jeun"
-      body: "Sans doute OK si tu manges assez sur la journée. Quatre études ont vu des gains similaires à jeun ou nourri. Prends des protéines vite après."
+      title: "À jeun"
+      body: "La muscu à jeun va sûrement si tu manges assez sur la journée. Quatre études : mêmes gains. Protéines après."
     pt:
-      title: "Pesos em jejum"
-      body: "Provavelmente sem problema se comeres o suficiente no dia. Quatro estudos viram ganhos parecidos em jejum ou não. Come proteína logo a seguir."
+      title: "Em jejum"
+      body: "Treinar em jejum deve estar bem se comeres o suficiente no dia. Quatro estudos: ganhos iguais. Proteína depois."
     tr:
-      title: "Aç karnına ağırlık"
-      body: "Gün içinde yeterince yersen muhtemelen sorun yok. Dört çalışma aç ya da tok benzer kas ve güç artışı buldu. Sonrasında hemen protein ye."
+      title: "Aç karnına"
+      body: "Gün içinde yeterince yersen aç çalışmak muhtemelen sorun değil. Dört çalışmada kazanç aynı. Sonra protein ye."
 
   - key: maaltijd-voor-en-eiwit-na
     kind: fact
     en:
-      title: "Your meal before sets the clock"
-      body: "Ate a proper meal two or three hours before training? Then your next normal meal is fine for protein. No rush."
+      title: "2 to 3 hours"
+      body: "After a proper meal, train and then just wait for your next normal meal for protein. No rush."
     nl:
-      title: "Je maaltijd vooraf telt mee"
-      body: "Twee à drie uur voor je training goed gegeten? Dan is je volgende gewone maaltijd prima voor je eiwit. Geen haast."
+      title: "2 tot 3 uur"
+      body: "Na een echte maaltijd train je en wacht je gewoon op je volgende maaltijd voor eiwit. Geen haast."
     de:
-      title: "Die Mahlzeit davor zählt mit"
-      body: "Zwei, drei Stunden vor dem Training richtig gegessen? Dann reicht deine nächste normale Mahlzeit für das Eiweiß. Keine Eile."
+      title: "2 bis 3 Stunden"
+      body: "Nach einer richtigen Mahlzeit trainieren, dann reicht die nächste normale Mahlzeit fürs Protein. Keine Eile."
     es:
-      title: "La comida de antes cuenta"
-      body: "¿Comiste bien dos o tres horas antes de entrenar? Entonces tu siguiente comida normal basta para la proteína. Sin prisa."
+      title: "2 a 3 horas"
+      body: "Tras una comida de verdad, entrena y espera a tu siguiente comida normal para la proteína. Sin prisa."
     fr:
-      title: "Le repas d'avant compte aussi"
-      body: "Un vrai repas deux ou trois heures avant la séance ? Alors ton prochain repas normal suffit pour les protéines. Pas d'urgence."
+      title: "2 à 3 heures"
+      body: "Après un vrai repas, entraîne-toi puis attends le repas suivant pour les protéines. Pas d'urgence."
     pt:
-      title: "A refeição de antes também conta"
-      body: "Fizeste uma refeição a sério duas ou três horas antes do treino? Então a próxima refeição normal chega para a proteína. Sem pressa."
+      title: "2 a 3 horas"
+      body: "Depois de uma refeição a sério, treina e espera pela próxima refeição para a proteína. Sem pressa."
     tr:
-      title: "Önceki öğün de sayılır"
-      body: "Antrenmandan iki üç saat önce düzgün yedin mi? O zaman protein için bir sonraki normal öğünün yeterli. Acele yok."
+      title: "2-3 saat"
+      body: "Düzgün bir öğünden sonra çalış, protein için bir sonraki normal öğünü bekle. Acele yok."
 
   - key: cafeine-dosis
     kind: fact
     en:
-      title: "Caffeine before training"
-      body: "Keep a single dose at 200 mg or less. Above about 67 kg, even the low end of the performance dose is more than that."
+      title: "200 mg"
+      body: "Is the max for one caffeine dose. Above about 67 kg, even a low performance dose is more than that."
     nl:
-      title: "Cafeïne voor de training"
-      body: "Houd één dosis op maximaal 200 mg. Weeg je meer dan zo'n 67 kilo, dan zit zelfs de laagste prestatiedosis daar al boven."
+      title: "200 mg"
+      body: "Is het maximum per keer cafeïne. Boven zo'n 67 kilo is zelfs een lage prestatiedosis al meer."
     de:
-      title: "Koffein vor dem Training"
-      body: "Halte eine Einzeldosis bei höchstens 200 mg. Ab etwa 67 kg liegt schon die untere Leistungsdosis darüber."
+      title: "200 mg"
+      body: "Sind das Maximum pro Koffeindosis. Ab etwa 67 kg ist selbst eine niedrige Leistungsdosis schon mehr."
     es:
-      title: "Cafeína antes de entrenar"
-      body: "Mantén cada dosis en 200 mg o menos. Por encima de unos 67 kg, incluso la dosis más baja para rendir ya lo supera."
+      title: "200 mg"
+      body: "Es el máximo por toma de cafeína. Por encima de 67 kg, hasta la dosis baja de rendimiento lo supera."
     fr:
-      title: "Caféine avant la séance"
-      body: "Garde une dose unique à 200 mg maximum. Au-delà d'environ 67 kg, même le bas de la dose pour la perf dépasse déjà ce seuil."
+      title: "200 mg"
+      body: "C'est le maximum par prise de caféine. Au-delà de 67 kg, même la petite dose de perf dépasse ça."
     pt:
-      title: "Cafeína antes do treino"
-      body: "Mantém cada dose em 200 mg ou menos. Acima de uns 67 kg, até a dose mais baixa para rendimento já passa disso."
+      title: "200 mg"
+      body: "É o máximo por toma de cafeína. Acima de cerca de 67 kg, até a dose baixa de rendimento é mais."
     tr:
-      title: "Antrenmandan önce kafein"
-      body: "Tek seferlik dozu en fazla 200 mg'da tut. Yaklaşık 67 kilonun üstünde, performans dozunun en düşüğü bile bunu aşar."
+      title: "200 mg"
+      body: "Tek seferlik kafein üst sınırı. Yaklaşık 67 kilonun üstünde düşük performans dozu bile bunu aşar."
 
   - key: lange-duur
     kind: fact
     en:
-      title: "Long endurance sessions"
-      body: "Going hard for longer than 90 minutes? Eat carb-rich meals or snacks in the hours before, and don't overeat just before you start."
+      title: "90 minutes"
+      body: "Going hard for longer than that? Eat carb-rich meals or snacks in the hours before, and don't overeat just before."
     nl:
-      title: "Lange duurtrainingen"
-      body: "Ga je langer dan 90 minuten hard? Eet in de uren ervoor koolhydraatrijk, en eet je niet vol vlak voordat je begint."
+      title: "90 minuten"
+      body: "Ga je langer dan dat hard? Eet in de uren ervoor koolhydraatrijk, en eet niet te veel vlak voor de start."
     de:
-      title: "Lange Ausdauereinheiten"
-      body: "Länger als 90 Minuten hart unterwegs? Iss in den Stunden davor kohlenhydratreich und schlag dir nicht kurz vor dem Start den Bauch voll."
+      title: "90 Minuten"
+      body: "Länger hart unterwegs? Iss in den Stunden davor kohlenhydratreich, aber nicht zu viel kurz vor dem Start."
     es:
-      title: "Sesiones largas de resistencia"
-      body: "¿Vas a ir fuerte más de 90 minutos? Come rico en carbohidratos en las horas previas y no te llenes justo antes de empezar."
+      title: "90 minutos"
+      body: "¿Vas fuerte más tiempo? Come rico en hidratos en las horas previas y no te llenes justo antes."
     fr:
-      title: "Longues séances d'endurance"
-      body: "Plus de 90 minutes à fond ? Mange riche en glucides dans les heures avant, et ne te remplis pas juste avant de commencer."
+      title: "90 minutes"
+      body: "Effort intense plus long ? Mange riche en glucides dans les heures avant, sans te gaver juste avant."
     pt:
-      title: "Treinos longos de resistência"
-      body: "Vais puxar mais de 90 minutos? Come refeições ricas em hidratos nas horas antes e não te enchas mesmo antes de começar."
+      title: "90 minutos"
+      body: "Esforço forte mais longo? Come rico em hidratos nas horas antes e não exageres mesmo antes."
     tr:
-      title: "Uzun dayanıklılık antrenmanları"
-      body: "90 dakikadan uzun sert mi gideceksin? Önceki saatlerde karbonhidrattan zengin ye, başlamadan hemen önce de çok yeme."
+      title: "90 dakika"
+      body: "Bundan uzun sert mi çalışacaksın? Önceki saatlerde karbonhidratlı ye, başlamadan hemen önce tıkınma."

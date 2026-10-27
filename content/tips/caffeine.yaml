@@ -1,241 +1,242 @@
 article: caffeine
+emoji: "☕"
 tips:
   - key: dosis-per-kilo
     kind: fact
     en:
-      title: "Caffeine"
-      body: "Studies use 3 to 6 mg per kg of bodyweight, about 60 minutes before training. 2 mg per kg may already work."
+      title: "3 to 6 mg"
+      body: "Caffeine per kg of bodyweight, about an hour before training. 2 mg per kg may already work."
     nl:
-      title: "Cafeïne"
-      body: "Studies gebruiken 3 tot 6 mg per kilo lichaamsgewicht, zo'n 60 minuten voor de training. 2 mg per kilo werkt misschien al."
+      title: "3 tot 6 mg"
+      body: "Cafeïne per kilo lichaamsgewicht, zo'n uur voor de training. 2 mg per kilo werkt misschien al."
     de:
-      title: "Koffein"
-      body: "Studien nutzen 3 bis 6 mg pro kg Körpergewicht, etwa 60 Minuten vor dem Training. 2 mg pro kg wirken vielleicht schon."
+      title: "3 bis 6 mg"
+      body: "Koffein pro kg Körpergewicht, etwa eine Stunde vor dem Training. 2 mg pro kg wirken womöglich schon."
     es:
-      title: "Cafeína"
-      body: "Los estudios usan de 3 a 6 mg por kg de peso, unos 60 minutos antes de entrenar. Con 2 mg por kg puede que ya funcione."
+      title: "3 a 6 mg"
+      body: "De cafeína por kg de peso, una hora antes de entrenar. Con 2 mg por kg quizá ya funcione."
     fr:
-      title: "Caféine"
-      body: "Les études utilisent 3 à 6 mg par kg de poids, environ 60 minutes avant la séance. 2 mg par kg suffisent peut-être déjà."
+      title: "3 à 6 mg"
+      body: "De caféine par kg, environ une heure avant la séance. 2 mg par kg suffisent peut-être déjà."
     pt:
-      title: "Cafeína"
-      body: "Os estudos usam 3 a 6 mg por kg de peso, cerca de 60 minutos antes do treino. 2 mg por kg talvez já funcionem."
+      title: "3 a 6 mg"
+      body: "De cafeína por kg de peso, cerca de uma hora antes do treino. 2 mg por kg talvez já funcionem."
     tr:
-      title: "Kafein"
-      body: "Çalışmalar antrenmandan yaklaşık 60 dakika önce kilo başına 3 ila 6 mg kullanır. Kilo başına 2 mg bile işe yarayabilir."
+      title: "3-6 mg"
+      body: "Kilo başına kafein, antrenmandan yaklaşık bir saat önce. Kilo başına 2 mg bile işe yarayabilir."
 
   - key: grens-per-keer
     kind: fact
     en:
-      title: "How much caffeine at once"
-      body: "Keep a single dose at 200 mg or less, whatever you weigh. For healthy adults, up to 400 mg a day raises no safety concerns."
+      title: "200 mg"
+      body: "Is the most to take at once, whatever you weigh. Up to 400 mg a day is fine for healthy adults."
     nl:
-      title: "Hoeveel cafeïne in één keer"
-      body: "Neem hooguit 200 mg in één keer, wat je ook weegt. Voor gezonde volwassenen is tot 400 mg per dag geen probleem."
+      title: "200 mg"
+      body: "Is het maximum per keer, wat je ook weegt. Tot 400 mg per dag is prima voor gezonde volwassenen."
     de:
-      title: "Wie viel Koffein auf einmal"
-      body: "Nimm höchstens 200 mg auf einmal, egal was du wiegst. Für gesunde Erwachsene sind bis zu 400 mg am Tag unbedenklich."
+      title: "200 mg"
+      body: "Sind das Maximum pro Dosis, egal was du wiegst. Bis 400 mg am Tag sind für gesunde Erwachsene okay."
     es:
-      title: "Cuánta cafeína de una vez"
-      body: "No pases de 200 mg de una vez, peses lo que peses. Para adultos sanos, hasta 400 mg al día no plantea problemas."
+      title: "200 mg"
+      body: "Es lo máximo de una vez, pesas lo que pesas. Hasta 400 mg al día no preocupa en adultos sanos."
     fr:
-      title: "Combien de caféine d'un coup"
-      body: "Pas plus de 200 mg d'un coup, quel que soit ton poids. Pour un adulte en bonne santé, jusqu'à 400 mg par jour ne pose pas de souci."
+      title: "200 mg"
+      body: "C'est le maximum par prise, quel que soit ton poids. Jusqu'à 400 mg par jour, ça va pour un adulte sain."
     pt:
-      title: "Quanta cafeína de uma vez"
-      body: "Não passes dos 200 mg de uma vez, seja qual for o teu peso. Para adultos saudáveis, até 400 mg por dia não levanta problemas."
+      title: "200 mg"
+      body: "É o máximo de uma vez, seja qual for o teu peso. Até 400 mg por dia não preocupa em adultos saudáveis."
     tr:
-      title: "Bir seferde ne kadar kafein"
-      body: "Kilon ne olursa olsun tek seferde en fazla 200 mg al. Sağlıklı yetişkinler için günde 400 mg'a kadar sorun görülmüyor."
+      title: "200 mg"
+      body: "Kilon ne olursa olsun tek seferde en fazla bu kadar. Sağlıklı yetişkinde günde 400 mg'a kadar sorun yok."
 
   - key: slaap
     kind: fact
     en:
-      title: "Caffeine and sleep"
-      body: "Across 24 studies, caffeine cut sleep by 45 minutes. To spare your sleep, a pre-workout serving needs at least 13.2 hours before bed."
+      title: "45 minutes"
+      body: "Of sleep lost to caffeine, across 24 studies. Have your pre-workout at least 13.2 hours before bed."
     nl:
-      title: "Cafeïne en je slaap"
-      body: "In 24 studies kostte cafeïne gemiddeld 45 minuten slaap. Een pre-workout wil je minstens 13,2 uur voor bedtijd hebben genomen."
+      title: "45 minuten"
+      body: "Zoveel slaap kostte cafeïne, over 24 studies. Neem je pre-workout minstens 13,2 uur voor bedtijd."
     de:
-      title: "Koffein und Schlaf"
-      body: "In 24 Studien kostete Koffein 45 Minuten Schlaf. Ein Pre-Workout sollte mindestens 13,2 Stunden vor dem Schlafen drin sein."
+      title: "45 Minuten"
+      body: "Schlaf kostete Koffein in 24 Studien. Nimm deinen Pre-Workout mindestens 13,2 Stunden vor dem Schlafen."
     es:
-      title: "La cafeína y el sueño"
-      body: "En 24 estudios, la cafeína quitó 45 minutos de sueño. Un pre-entreno debería ir al menos 13,2 horas antes de dormir."
+      title: "45 minutos"
+      body: "De sueño quitó la cafeína en 24 estudios. Toma tu pre-entreno al menos 13,2 horas antes de dormir."
     fr:
-      title: "La caféine et le sommeil"
-      body: "Sur 24 études, la caféine a coûté 45 minutes de sommeil. Un pré-workout devrait passer au moins 13,2 heures avant le coucher."
+      title: "45 minutes"
+      body: "De sommeil perdues à cause de la caféine, sur 24 études. Prends ton pré-workout 13,2 h avant le coucher."
     pt:
-      title: "A cafeína e o sono"
-      body: "Em 24 estudos, a cafeína tirou 45 minutos de sono. Um pré-treino deve ser tomado pelo menos 13,2 horas antes de deitar."
+      title: "45 minutos"
+      body: "De sono perdidos com cafeína, em 24 estudos. Toma o pré-treino pelo menos 13,2 horas antes de dormir."
     tr:
-      title: "Kafein ve uyku"
-      body: "24 çalışmada kafein uykuyu 45 dakika kısalttı. Uykundan çalmaması için bir pre-workout yatmadan en az 13,2 saat önce alınmalı."
+      title: "45 dakika"
+      body: "24 çalışmada kafein bu kadar uykuya mal oldu. Pre-workout'u yatmadan en az 13,2 saat önce al."
 
   - key: halfwaardetijd
     kind: fact
     en:
-      title: "How long caffeine lasts"
-      body: "Half of it is gone after 4 to 6 hours on average. A 200 mg pre-workout at 6 pm still leaves about 100 mg at 11 pm."
+      title: "4 to 6 hours"
+      body: "Half the caffeine is gone by then. 200 mg at 6 pm still leaves about 100 mg at 11 pm."
     nl:
-      title: "Hoe lang cafeïne blijft"
-      body: "Na gemiddeld 4 à 6 uur is de helft weg. Een pre-workout van 200 mg om 18 uur laat om 23 uur nog zo'n 100 mg achter."
+      title: "4 tot 6 uur"
+      body: "Dan is de helft van de cafeïne weg. 200 mg om 18 uur is om 23 uur nog zo'n 100 mg."
     de:
-      title: "Wie lange Koffein bleibt"
-      body: "Im Schnitt ist nach 4 bis 6 Stunden die Hälfte weg. 200 mg Pre-Workout um 18 Uhr sind um 23 Uhr noch etwa 100 mg."
+      title: "4 bis 6 Stunden"
+      body: "Dann ist die Hälfte des Koffeins weg. 200 mg um 18 Uhr sind um 23 Uhr noch etwa 100 mg."
     es:
-      title: "Cuánto dura la cafeína"
-      body: "De media, la mitad se va en 4 a 6 horas. Un pre-entreno de 200 mg a las 18:00 deja unos 100 mg a las 23:00."
+      title: "4 a 6 horas"
+      body: "Es lo que tarda en irse la mitad de la cafeína. 200 mg a las 18:00 son unos 100 mg a las 23:00."
     fr:
-      title: "Combien de temps dure la caféine"
-      body: "En moyenne, la moitié part en 4 à 6 heures. Un pré-workout de 200 mg à 18 h laisse encore environ 100 mg à 23 h."
+      title: "4 à 6 heures"
+      body: "C'est le temps pour éliminer la moitié de la caféine. 200 mg à 18 h, il en reste 100 mg à 23 h."
     pt:
-      title: "Quanto tempo dura a cafeína"
-      body: "Em média, metade sai em 4 a 6 horas. Um pré-treino de 200 mg às 18h ainda deixa cerca de 100 mg às 23h."
+      title: "4 a 6 horas"
+      body: "É o tempo para sair metade da cafeína. 200 mg às 18h ainda são cerca de 100 mg às 23h."
     tr:
-      title: "Kafein ne kadar kalır"
-      body: "Ortalama 4 ila 6 saatte yarısı gider. Saat 18'de alınan 200 mg'lık pre-workout'tan saat 23'te hâlâ 100 mg kadar kalır."
+      title: "4-6 saat"
+      body: "Kafeinin yarısı bu sürede gider. 18:00'de 200 mg, 23:00'te hâlâ yaklaşık 100 mg demek."
 
   - key: uitdrogen
     kind: myth
     en:
-      title: "Myth: caffeine dries you out"
-      body: "Not at the doses used for training. There, caffeine does not meaningfully change how hydrated you are."
+      title: "Dehydration"
+      body: "Myth: caffeine dries you out. At training doses it doesn't meaningfully change how hydrated you are."
     nl:
-      title: "Mythe: cafeïne droogt je uit"
-      body: "Niet in de doses die je voor training neemt. Dan verandert cafeïne niet echt iets aan hoe gehydrateerd je bent."
+      title: "Uitdroging"
+      body: "Mythe: cafeïne droogt je uit. Bij doses voor training verandert het je vochtbalans nauwelijks."
     de:
-      title: "Mythos: Koffein trocknet dich aus"
-      body: "Nicht in den Dosen fürs Training. Da ändert Koffein deinen Flüssigkeitshaushalt nicht nennenswert."
+      title: "Austrocknung"
+      body: "Mythos: Koffein trocknet dich aus. In Trainingsdosen ändert es deinen Flüssigkeitshaushalt kaum."
     es:
-      title: "Mito: la cafeína te deshidrata"
-      body: "No a las dosis que se usan para entrenar. Ahí la cafeína apenas cambia tu nivel de hidratación."
+      title: "Deshidratación"
+      body: "Mito: la cafeína te deshidrata. A dosis de entreno apenas cambia tu nivel de hidratación."
     fr:
-      title: "Mythe : la caféine te déshydrate"
-      body: "Pas aux doses utilisées pour s'entraîner. À ces doses, elle ne change pas vraiment ton hydratation."
+      title: "Déshydratation"
+      body: "Mythe : la caféine déshydrate. Aux doses utilisées pour le sport, elle change à peine ton hydratation."
     pt:
-      title: "Mito: a cafeína desidrata"
-      body: "Não nas doses usadas para treinar. Aí a cafeína não muda de forma relevante a tua hidratação."
+      title: "Desidratação"
+      body: "Mito: a cafeína desidrata. Nas doses usadas no treino, mal muda a tua hidratação."
     tr:
-      title: "Efsane: kafein susuz bırakır"
-      body: "Antrenman için kullanılan dozlarda hayır. Bu dozlarda kafein vücudundaki su dengesini pek değiştirmez."
+      title: "Susuzluk"
+      body: "Efsane: kafein susuz bırakır. Antrenman dozlarında sıvı dengeni pek değiştirmez."
 
   - key: meer-is-beter
     kind: myth
     en:
-      title: "Myth: more caffeine works better"
-      body: "Not true. Very high doses like 9 mg per kg bring many side effects and are not needed for the effect."
+      title: "9 mg per kg"
+      body: "Myth: more caffeine works better. Doses this high bring lots of side effects and aren't needed."
     nl:
-      title: "Mythe: meer cafeïne werkt beter"
-      body: "Klopt niet. Hele hoge doses zoals 9 mg per kilo geven veel bijwerkingen en zijn niet nodig voor het effect."
+      title: "9 mg per kilo"
+      body: "Mythe: meer cafeïne werkt beter. Zulke hoge doses geven veel bijwerkingen en zijn niet nodig."
     de:
-      title: "Mythos: mehr Koffein wirkt besser"
-      body: "Stimmt nicht. Sehr hohe Dosen wie 9 mg pro kg bringen viele Nebenwirkungen und sind für die Wirkung nicht nötig."
+      title: "9 mg pro kg"
+      body: "Mythos: Mehr Koffein wirkt besser. So hohe Dosen bringen viele Nebenwirkungen und sind unnötig."
     es:
-      title: "Mito: más cafeína funciona mejor"
-      body: "No es así. Dosis muy altas como 9 mg por kg dan muchos efectos secundarios y no hacen falta para el efecto."
+      title: "9 mg por kg"
+      body: "Mito: más cafeína funciona mejor. Dosis tan altas dan muchos efectos secundarios y no hacen falta."
     fr:
-      title: "Mythe : plus de caféine, plus d'effet"
-      body: "Faux. Les très fortes doses comme 9 mg par kg donnent beaucoup d'effets secondaires et ne sont pas utiles pour l'effet."
+      title: "9 mg par kg"
+      body: "Mythe : plus de caféine, plus d'effet. Des doses si hautes donnent plein d'effets secondaires, pour rien."
     pt:
-      title: "Mito: mais cafeína funciona melhor"
-      body: "Não é verdade. Doses muito altas como 9 mg por kg trazem muitos efeitos secundários e não são precisas para o efeito."
+      title: "9 mg por kg"
+      body: "Mito: mais cafeína funciona melhor. Doses tão altas trazem muitos efeitos secundários e não são precisas."
     tr:
-      title: "Efsane: daha çok kafein daha iyi"
-      body: "Doğru değil. Kilo başına 9 mg gibi çok yüksek dozlar çok yan etki verir ve etki için gerekmez."
+      title: "Kilo başına 9 mg"
+      body: "Efsane: daha çok kafein daha iyi çalışır. Bu kadar yüksek doz çok yan etki yapar ve gereksizdir."
 
   - key: vetverbranding
     kind: myth
     en:
-      title: "Myth: caffeine works by burning more fat"
-      body: "Researchers dropped that idea. Low doses help without changing fat burning. The main effect is on your brain."
+      title: "Fat burning"
+      body: "Myth: caffeine works by burning more fat. Low doses help without changing fat burning. It works on your brain."
     nl:
-      title: "Mythe: cafeïne werkt via vetverbranding"
-      body: "Dat idee is losgelaten. Lage doses helpen al zonder dat je meer vet verbrandt. Het werkt vooral via je hersenen."
+      title: "Vetverbranding"
+      body: "Mythe: cafeïne werkt doordat je meer vet verbrandt. Lage doses helpen zonder dat. Het werkt op je brein."
     de:
-      title: "Mythos: Koffein wirkt über Fettverbrennung"
-      body: "Die Idee wurde verworfen. Niedrige Dosen helfen, ohne die Fettverbrennung zu ändern. Es wirkt vor allem übers Gehirn."
+      title: "Fettverbrennung"
+      body: "Mythos: Koffein wirkt über mehr Fettverbrennung. Niedrige Dosen helfen auch ohne. Es wirkt aufs Gehirn."
     es:
-      title: "Mito: la cafeína funciona quemando grasa"
-      body: "Esa idea se abandonó. Dosis bajas ayudan sin cambiar la quema de grasa. Actúa sobre todo en tu cerebro."
+      title: "Quemar grasa"
+      body: "Mito: la cafeína funciona quemando más grasa. Dosis bajas ayudan sin cambiar eso. Actúa en tu cerebro."
     fr:
-      title: "Mythe : la caféine agit en brûlant du gras"
-      body: "Cette idée a été abandonnée. Les petites doses aident sans changer la combustion des graisses. Elle agit surtout sur le cerveau."
+      title: "Brûler du gras"
+      body: "Mythe : la caféine agit en brûlant plus de gras. Les petites doses aident sans ça. Elle agit sur le cerveau."
     pt:
-      title: "Mito: a cafeína atua a queimar gordura"
-      body: "Essa ideia foi abandonada. Doses baixas ajudam sem mudar a queima de gordura. Atua sobretudo no cérebro."
+      title: "Queimar gordura"
+      body: "Mito: a cafeína funciona por queimar mais gordura. Doses baixas ajudam sem isso. Atua no cérebro."
     tr:
-      title: "Efsane: kafein yağ yaktırarak çalışır"
-      body: "Bu fikirden vazgeçildi. Düşük dozlar yağ yakımını değiştirmeden işe yarar. Asıl etkisi beyninde."
+      title: "Yağ yakımı"
+      body: "Efsane: kafein daha çok yağ yaktırarak çalışır. Düşük doz yağ yakımını değiştirmeden işe yarar. Beyne etki eder."
 
   - key: vrouwen
     kind: fact
     en:
-      title: "Caffeine in women"
-      body: "Most studies were in young men. In eight studies in women, caffeine improved strength and muscular endurance by about as much."
+      title: "8 studies"
+      body: "In women, caffeine improved strength and muscular endurance about as much as in the men studied."
     nl:
-      title: "Cafeïne bij vrouwen"
-      body: "De meeste studies gingen over jonge mannen. In acht studies bij vrouwen gaf cafeïne ongeveer evenveel winst in kracht en spieruithouding."
+      title: "8 studies"
+      body: "Bij vrouwen verbeterde cafeïne kracht en spieruithouding ongeveer even veel als bij mannen."
     de:
-      title: "Koffein bei Frauen"
-      body: "Die meisten Studien waren mit jungen Männern. In acht Studien mit Frauen half Koffein Kraft und Kraftausdauer etwa gleich viel."
+      title: "8 Studien"
+      body: "Bei Frauen steigerte Koffein Kraft und Kraftausdauer etwa so stark wie bei Männern."
     es:
-      title: "Cafeína en mujeres"
-      body: "Casi todos los estudios fueron en hombres jóvenes. En ocho estudios en mujeres, mejoró la fuerza y la resistencia muscular casi igual."
+      title: "8 estudios"
+      body: "En mujeres, la cafeína mejoró la fuerza y la resistencia muscular más o menos igual que en hombres."
     fr:
-      title: "La caféine chez les femmes"
-      body: "La plupart des études portaient sur des hommes jeunes. Dans huit études sur des femmes, la force et l'endurance ont progressé autant."
+      title: "8 études"
+      body: "Chez les femmes, la caféine a amélioré force et endurance musculaire à peu près autant que chez les hommes."
     pt:
-      title: "Cafeína nas mulheres"
-      body: "A maioria dos estudos foi em homens jovens. Em oito estudos em mulheres, a força e a resistência muscular melhoraram quase o mesmo."
+      title: "8 estudos"
+      body: "Em mulheres, a cafeína melhorou a força e a resistência muscular quase tanto como em homens."
     tr:
-      title: "Kadınlarda kafein"
-      body: "Çalışmaların çoğu genç erkeklerle yapıldı. Kadınlarla yapılan sekiz çalışmada kafein güç ve kas dayanıklılığını benzer oranda artırdı."
+      title: "8 çalışma"
+      body: "Kadınlarda kafein gücü ve kas dayanıklılığını erkeklerdeki kadar artırdı."
 
   - key: koffie-verschilt
     kind: fact
     en:
-      title: "Not every coffee is the same"
-      body: "Cups from similar shops have been measured with 8 to 9 times more caffeine than others. Count every source, also your morning coffee."
+      title: "8 to 9 times"
+      body: "More caffeine was measured in some cups than in others from similar shops. Count your morning coffee too."
     nl:
-      title: "Koffie is niet altijd koffie"
-      body: "Bij vergelijkbare zaken is de ene kop gemeten met 8 à 9 keer zoveel cafeïne als de andere. Tel alles mee, ook je ochtendkoffie."
+      title: "8 tot 9 keer"
+      body: "Meer cafeïne zat er in sommige bekers dan in andere van vergelijkbare zaken. Tel je ochtendkoffie ook mee."
     de:
-      title: "Kaffee ist nicht gleich Kaffee"
-      body: "In ähnlichen Läden hatte ein Becher 8 bis 9 Mal mehr Koffein als ein anderer. Zähl alles mit, auch den Morgenkaffee."
+      title: "8- bis 9-mal"
+      body: "Mehr Koffein steckte in manchen Bechern als in anderen aus ähnlichen Läden. Zähl deinen Morgenkaffee mit."
     es:
-      title: "No todo café es igual"
-      body: "En tiendas parecidas se midió un café con 8 a 9 veces más cafeína que otro. Cuenta todo, también el café de la mañana."
+      title: "8 a 9 veces"
+      body: "Más cafeína tenían algunos vasos que otros de cafeterías parecidas. Cuenta también tu café de la mañana."
     fr:
-      title: "Tous les cafés ne se valent pas"
-      body: "Dans des cafés similaires, une tasse contenait 8 à 9 fois plus de caféine qu'une autre. Compte tout, même ton café du matin."
+      title: "8 à 9 fois"
+      body: "Plus de caféine dans certaines tasses que dans d'autres, venant de cafés similaires. Compte ton café du matin."
     pt:
-      title: "Nem todo o café é igual"
-      body: "Em lojas parecidas, um café tinha 8 a 9 vezes mais cafeína do que outro. Conta tudo, também o café da manhã."
+      title: "8 a 9 vezes"
+      body: "Mais cafeína tinham alguns copos do que outros de cafés parecidos. Conta também o café da manhã."
     tr:
-      title: "Her kahve aynı değil"
-      body: "Benzer dükkânlarda bir bardakta diğerinden 8 ila 9 kat fazla kafein ölçüldü. Sabah kahven dahil her kaynağı say."
+      title: "8-9 kat"
+      body: "Benzer kafelerden bazı bardaklarda diğerlerinden bu kadar fazla kafein ölçüldü. Sabah kahveni de say."
 
   - key: zwanger
     kind: fact
     en:
-      title: "Caffeine in pregnancy"
-      body: "Pregnant or breastfeeding? EFSA says up to 200 mg a day from all sources, so coffee and pre-workout together."
+      title: "Pregnant"
+      body: "Or breastfeeding? EFSA says up to 200 mg a day from all sources, coffee and pre-workout together."
     nl:
-      title: "Cafeïne als je zwanger bent"
-      body: "Zwanger of geef je borstvoeding? Dan is het advies tot 200 mg per dag uit alle bronnen, dus koffie en pre-workout samen."
+      title: "Zwanger"
+      body: "Of geef je borstvoeding? EFSA zegt tot 200 mg per dag uit alles samen, koffie en pre-workout bij elkaar."
     de:
-      title: "Koffein in der Schwangerschaft"
-      body: "Schwanger oder stillst du? Die EFSA nennt bis zu 200 mg am Tag aus allen Quellen, also Kaffee und Pre-Workout zusammen."
+      title: "Schwanger"
+      body: "Oder stillst du? Die EFSA sagt bis 200 mg am Tag aus allen Quellen, Kaffee und Pre-Workout zusammen."
     es:
-      title: "Cafeína en el embarazo"
-      body: "¿Embarazada o dando el pecho? La EFSA dice hasta 200 mg al día en total, café y pre-entreno juntos."
+      title: "Embarazada"
+      body: "¿O das el pecho? La EFSA dice hasta 200 mg al día de todo, café y pre-entreno juntos."
     fr:
-      title: "Caféine et grossesse"
-      body: "Enceinte ou tu allaites ? L'EFSA dit jusqu'à 200 mg par jour toutes sources confondues, café et pré-workout compris."
+      title: "Enceinte"
+      body: "Ou tu allaites ? L'EFSA dit jusqu'à 200 mg par jour toutes sources comprises, café et pré-workout ensemble."
     pt:
-      title: "Cafeína na gravidez"
-      body: "Grávida ou a amamentar? A EFSA diz até 200 mg por dia de todas as fontes, café e pré-treino juntos."
+      title: "Grávida"
+      body: "Ou a amamentar? A EFSA diz até 200 mg por dia de todas as fontes, café e pré-treino juntos."
     tr:
-      title: "Hamilelikte kafein"
-      body: "Hamile misin ya da emziriyor musun? EFSA tüm kaynaklardan günde en fazla 200 mg diyor, kahve ve pre-workout dahil."
+      title: "Hamile"
+      body: "Ya da emziriyor musun? EFSA tüm kaynaklardan günde 200 mg'a kadar diyor, kahve ve pre-workout dahil."

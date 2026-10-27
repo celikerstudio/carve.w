@@ -1,145 +1,146 @@
 article: gym-etiquette
+emoji: "🤝"
 tips:
   - key: terugleggen
     kind: fact
     en:
-      title: "Re-rack your weights"
+      title: "Re-rack"
       body: "Put plates and dumbbells back when you're done. Leaving them out is one of the most common gym mistakes."
     nl:
-      title: "Leg je gewichten terug"
-      body: "Leg schijven en dumbbells terug als je klaar bent. Ze laten liggen is een van de bekendste fouten in de gym."
+      title: "Terugleggen"
+      body: "Leg schijven en dumbbells terug als je klaar bent. Laten liggen is een van de bekendste fouten in de gym."
     de:
-      title: "Räum deine Gewichte weg"
-      body: "Bring Scheiben und Kurzhanteln zurück, wenn du fertig bist. Sie liegen zu lassen ist einer der häufigsten Fehler im Gym."
+      title: "Zurücklegen"
+      body: "Räum Scheiben und Hanteln weg, wenn du fertig bist. Liegenlassen ist einer der häufigsten Fehler im Gym."
     es:
-      title: "Recoge tus pesos"
-      body: "Devuelve los discos y las mancuernas a su sitio al terminar. Dejarlos tirados es uno de los fallos más comunes en el gimnasio."
+      title: "Recoge"
+      body: "Devuelve discos y mancuernas al terminar. Dejarlos tirados es uno de los fallos más comunes del gym."
     fr:
-      title: "Range tes poids"
-      body: "Remets les disques et les haltères en place quand tu as fini. Les laisser traîner est l'une des erreurs les plus courantes en salle."
+      title: "Range"
+      body: "Remets disques et haltères en place après. Les laisser traîner est l'une des fautes les plus courantes."
     pt:
-      title: "Arruma os pesos"
-      body: "Volta a pôr os discos e os halteres no sítio quando acabas. Deixá-los por aí é um dos erros mais comuns no ginásio."
+      title: "Arruma"
+      body: "Põe os discos e halteres no sítio quando acabas. Deixá-los espalhados é um dos erros mais comuns."
     tr:
-      title: "Ağırlıkları yerine koy"
-      body: "İşin bitince plakaları ve dambılları yerine koy. Onları ortada bırakmak salonda en yaygın hatalardan biri."
+      title: "Yerine koy"
+      body: "İşin bitince plakaları ve dambılları yerine koy. Bırakıp gitmek salonda en sık yapılan hatalardan."
 
   - key: afnemen
     kind: fact
     en:
       title: "Wipe it down"
-      body: "Wipe the bench or machine after your set and train on a towel. Nobody wants to lie in someone else's sweat."
+      body: "Wipe the bench after your set and train on a towel. Nobody wants to lie in someone else's sweat."
     nl:
-      title: "Neem het even af"
-      body: "Neem de bank of het apparaat af na je set en train op een handdoek. Niemand wil in andermans zweet liggen."
+      title: "Afnemen"
+      body: "Neem de bank af na je set en train op een handdoek. Niemand wil in andermans zweet liggen."
     de:
-      title: "Kurz abwischen"
-      body: "Wisch Bank oder Gerät nach deinem Satz ab und trainier auf einem Handtuch. Niemand will im Schweiß von anderen liegen."
+      title: "Abwischen"
+      body: "Wisch die Bank nach dem Satz ab und trainier auf einem Handtuch. Niemand liegt gern im Schweiß anderer."
     es:
-      title: "Límpialo"
-      body: "Limpia el banco o la máquina después de tu serie y entrena con toalla. Nadie quiere tumbarse en el sudor de otro."
+      title: "Limpia"
+      body: "Limpia el banco tras tu serie y entrena con toalla. Nadie quiere tumbarse en el sudor de otro."
     fr:
-      title: "Essuie derrière toi"
-      body: "Essuie le banc ou la machine après ta série et entraîne-toi sur une serviette. Personne ne veut s'allonger dans la sueur d'un autre."
+      title: "Essuie"
+      body: "Essuie le banc après ta série et utilise une serviette. Personne n'aime s'allonger dans la sueur d'un autre."
     pt:
-      title: "Limpa depois"
-      body: "Limpa o banco ou a máquina depois da série e treina com toalha. Ninguém quer deitar-se no suor dos outros."
+      title: "Limpa"
+      body: "Limpa o banco depois da série e treina com toalha. Ninguém quer deitar-se no suor dos outros."
     tr:
-      title: "Sil, öyle bırak"
-      body: "Setinden sonra sehpayı ya da makineyi sil ve havluyla çalış. Kimse başkasının terinin üstüne yatmak istemez."
+      title: "Sil"
+      body: "Setten sonra sehpayı sil ve havluyla çalış. Kimse başkasının terine uzanmak istemez."
 
   - key: delen
     kind: fact
     en:
       title: "Busy gym"
-      body: "Don't hog a station. Ask before you work in, share on busy days, and move on promptly once you're done."
+      body: "Don't hog a station. Ask to work in, share on busy days, and move on once you're done."
     nl:
-      title: "Drukke gym"
-      body: "Bezet een plek niet langer dan nodig. Vraag of je mag tussendoor, deel op drukke dagen en ga meteen door als je klaar bent."
+      title: "Druk"
+      body: "Bezet een toestel niet te lang. Vraag of je mag meedraaien, deel op drukke dagen en ga door als je klaar bent."
     de:
       title: "Volles Gym"
-      body: "Blockier keine Station. Frag, bevor du mittrainierst, teile an vollen Tagen und mach zügig Platz, wenn du fertig bist."
+      body: "Blockier kein Gerät. Frag, ob du mitmachen darfst, teil an vollen Tagen und geh weiter, wenn du fertig bist."
     es:
-      title: "Gimnasio lleno"
-      body: "No acapares una máquina. Pregunta antes de alternar series, comparte en días llenos y deja libre el sitio en cuanto acabes."
+      title: "Gym lleno"
+      body: "No acapares una máquina. Pregunta para turnaros, comparte en días llenos y sigue al acabar."
     fr:
-      title: "Salle bondée"
-      body: "Ne monopolise pas un poste. Demande avant de t'intercaler, partage les jours chargés et libère la place dès que tu as fini."
+      title: "Salle pleine"
+      body: "Ne monopolise pas un poste. Demande pour alterner, partage les jours chargés et libère vite la place."
     pt:
       title: "Ginásio cheio"
-      body: "Não açambarques uma máquina. Pergunta antes de alternar séries, partilha nos dias cheios e sai logo quando acabas."
+      body: "Não açambarques uma máquina. Pede para alternar, partilha em dias cheios e sai quando acabas."
     tr:
       title: "Kalabalık salon"
-      body: "Bir istasyonu kendine ayırma. Araya girmeden önce sor, yoğun günlerde paylaş ve işin bitince hemen yer aç."
+      body: "Bir aleti tekeline alma. Sırayla kullanmayı sor, kalabalıkta paylaş, bitince yer aç."
 
   - key: niet-filmen
     kind: fact
     en:
-      title: "Filming in the gym"
-      body: "Avoid filming other people. Filming someone without their consent is a common gym mistake."
+      title: "Filming"
+      body: "Don't film other people without their consent. It's one of the more common gym mistakes."
     nl:
-      title: "Filmen in de gym"
-      body: "Film geen andere mensen. Iemand filmen zonder toestemming is een veelgemaakte fout in de gym."
+      title: "Filmen"
+      body: "Film geen andere mensen zonder dat ze dat goedvinden. Dat gaat in de gym vaak mis."
     de:
-      title: "Filmen im Gym"
-      body: "Film keine anderen Leute. Jemanden ohne Einverständnis zu filmen ist ein häufiger Fehler im Gym."
+      title: "Filmen"
+      body: "Film keine anderen ohne ihr Einverständnis. Das passiert im Gym leider oft."
     es:
-      title: "Grabar en el gimnasio"
-      body: "No grabes a otras personas. Grabar a alguien sin su permiso es un error común en el gimnasio."
+      title: "Grabar"
+      body: "No grabes a otros sin su permiso. Es uno de los fallos frecuentes en el gimnasio."
     fr:
-      title: "Filmer à la salle"
-      body: "Évite de filmer les autres. Filmer quelqu'un sans son accord est une erreur courante en salle."
+      title: "Filmer"
+      body: "Ne filme pas les autres sans leur accord. C'est une faute fréquente en salle."
     pt:
-      title: "Filmar no ginásio"
-      body: "Não filmes outras pessoas. Filmar alguém sem consentimento é um erro comum no ginásio."
+      title: "Filmar"
+      body: "Não filmes outras pessoas sem consentimento. É um erro frequente no ginásio."
     tr:
-      title: "Salonda video çekmek"
-      body: "Başkalarını çekme. Birini izni olmadan çekmek salonda yaygın bir hata."
+      title: "Video çekmek"
+      body: "Başkalarını izinsiz çekme. Salonda sık yapılan bir hata."
 
   - key: spotten
     kind: fact
     en:
       title: "Offering a spot"
-      body: "Only offer a spot if someone asks for one and you know how to do it. Otherwise, give them room."
+      body: "Only if someone asks and you know how. Otherwise, give them room."
     nl:
-      title: "Iemand spotten"
-      body: "Bied alleen aan om te spotten als iemand erom vraagt en je weet hoe het moet. Geef anders gewoon ruimte."
+      title: "Spotten"
+      body: "Alleen als iemand erom vraagt en je weet hoe het moet. Geef anders ruimte."
     de:
-      title: "Hilfestellung geben"
-      body: "Biete Hilfestellung nur an, wenn jemand darum bittet und du weißt, wie es geht. Sonst lass Platz."
+      title: "Sichern"
+      body: "Nur wenn jemand fragt und du weißt, wie es geht. Sonst lass Platz."
     es:
-      title: "Ofrecer ayuda"
-      body: "Ofrece asistir en una serie solo si te lo piden y sabes hacerlo. Si no, deja espacio."
+      title: "Ayudar en una serie"
+      body: "Solo si te lo piden y sabes hacerlo. Si no, deja espacio."
     fr:
-      title: "Proposer de pareer"
-      body: "Ne propose de pareer que si on te le demande et que tu sais le faire. Sinon, laisse de la place."
+      title: "Parer"
+      body: "Seulement si on te le demande et que tu sais faire. Sinon, laisse de l'espace."
     pt:
-      title: "Dar ajuda numa série"
-      body: "Só te ofereças para ajudar numa série se te pedirem e souberes fazê-lo. Caso contrário, dá espaço."
+      title: "Ajudar numa série"
+      body: "Só se te pedirem e souberes como. Senão, dá espaço."
     tr:
-      title: "Spot vermek"
-      body: "Spot vermeyi sadece biri isterse ve nasıl yapılacağını biliyorsan teklif et. Yoksa ona alan bırak."
+      title: "Yardım etmek"
+      body: "Sadece biri isterse ve nasıl yapılacağını biliyorsan. Yoksa alan bırak."
 
   - key: ruimte-geven
     kind: fact
     en:
-      title: "Give lifters room"
-      body: "Don't crowd someone mid-set and don't block mirrors or walkways. Clear space prevents accidents."
+      title: "Give room"
+      body: "Don't crowd someone mid-set or block mirrors and walkways. Clear space prevents accidents."
     nl:
-      title: "Geef ruimte"
-      body: "Kom niet te dicht bij iemand die een set doet en blokkeer geen spiegels of looppaden. Vrije ruimte voorkomt ongelukken."
+      title: "Ruimte geven"
+      body: "Ga niet op iemand staan tijdens een set en blokkeer geen spiegels of looppaden. Vrije ruimte voorkomt ongelukken."
     de:
-      title: "Lass Platz"
-      body: "Rück niemandem mitten im Satz auf die Pelle und blockier keine Spiegel oder Wege. Freier Raum verhindert Unfälle."
+      title: "Platz lassen"
+      body: "Rück niemandem im Satz auf die Pelle und blockier keine Spiegel oder Wege. Freier Raum verhindert Unfälle."
     es:
       title: "Deja espacio"
-      body: "No te pegues a alguien en plena serie ni tapes espejos o pasillos. Dejar espacio evita accidentes."
+      body: "No te pegues a nadie en plena serie ni tapes espejos o pasillos. El espacio libre evita accidentes."
     fr:
-      title: "Laisse de l'espace"
-      body: "Ne colle pas quelqu'un en pleine série et ne bloque ni les miroirs ni les passages. L'espace libre évite les accidents."
+      title: "Laisse de la place"
+      body: "Ne colle pas quelqu'un en pleine série, ne bloque ni miroirs ni passages. L'espace évite les accidents."
     pt:
       title: "Dá espaço"
-      body: "Não te encostes a quem está a meio de uma série nem tapes espelhos ou passagens. Espaço livre evita acidentes."
+      body: "Não te encostes a ninguém a meio da série nem tapes espelhos ou passagens. Espaço livre evita acidentes."
     tr:
       title: "Alan bırak"
-      body: "Set yapan birine çok yaklaşma, aynaların ya da geçiş yollarının önünü kapatma. Boş alan kazaları önler."
+      body: "Set yapanın dibine girme, ayna ve yolları kapatma. Boş alan kazaları önler."

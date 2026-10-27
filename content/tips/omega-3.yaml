@@ -1,241 +1,242 @@
 article: omega-3
+emoji: "🐟"
 tips:
   - key: een-keer-vis
     kind: fact
     en:
-      title: "Omega-3 from fish"
-      body: "Dutch advice for adults is 200 mg of omega-3 from fish a day. One fish meal a week gives you that, preferably oily fish like herring or salmon."
+      title: "200 mg"
+      body: "Omega-3 from fish a day, says Dutch advice. One fish meal a week covers it, ideally herring or salmon."
     nl:
-      title: "Omega-3 uit vis"
-      body: "Het advies is 200 mg omega-3 uit vis per dag. Eén keer per week vis eten is genoeg, liefst vette vis zoals haring of zalm."
+      title: "200 mg"
+      body: "Omega-3 uit vis per dag, is het advies. Eén keer vis per week dekt dat, liefst vette vis zoals haring of zalm."
     de:
-      title: "Omega-3 aus Fisch"
-      body: "In den Niederlanden gelten 200 mg Omega-3 aus Fisch am Tag. Eine Fischmahlzeit pro Woche reicht, am besten fetter Fisch wie Hering oder Lachs."
+      title: "200 mg"
+      body: "Omega-3 aus Fisch am Tag rät man in den Niederlanden. Eine Fischmahlzeit pro Woche reicht, am besten Hering oder Lachs."
     es:
-      title: "Omega-3 del pescado"
-      body: "En Países Bajos se aconsejan 200 mg de omega-3 de pescado al día. Basta con pescado una vez por semana, mejor azul como arenque o salmón."
+      title: "200 mg"
+      body: "De omega-3 de pescado al día, aconsejan en Países Bajos. Un pescado a la semana lo cubre, mejor arenque o salmón."
     fr:
-      title: "L'oméga-3 du poisson"
-      body: "Aux Pays-Bas, on conseille 200 mg d'oméga-3 de poisson par jour. Un repas de poisson par semaine suffit, de préférence gras, hareng ou saumon."
+      title: "200 mg"
+      body: "D'oméga-3 de poisson par jour, conseillent les Pays-Bas. Un repas de poisson par semaine suffit, idéalement gras."
     pt:
-      title: "Ómega-3 do peixe"
-      body: "Nos Países Baixos aconselham-se 200 mg de ómega-3 de peixe por dia. Peixe uma vez por semana chega, de preferência gordo, como arenque ou salmão."
+      title: "200 mg"
+      body: "De ómega-3 de peixe por dia, aconselham os Países Baixos. Uma refeição de peixe por semana chega, de preferência gordo."
     tr:
-      title: "Balıktan omega-3"
-      body: "Hollanda'da yetişkinlere günde 200 mg balık omega-3'ü öneriliyor. Haftada bir balık yemeği yeter, tercihen ringa veya somon gibi yağlı balık."
+      title: "200 mg"
+      body: "Hollanda'da balıktan günlük omega-3 önerisi. Haftada bir balık yemeği yeter, tercihen ringa ya da somon."
 
   - key: capsule-of-vis
     kind: myth
     en:
-      title: "Myth: a capsule equals a fish meal"
-      body: "Nobody knows that. There is not enough research to say whether fish oil or algae oil capsules give the same health effects as eating fish."
+      title: "Capsule"
+      body: "Myth: a fish oil capsule equals a fish meal. There isn't enough research to say it gives the same health effects."
     nl:
-      title: "Mythe: een capsule is net zo goed als vis"
-      body: "Dat weet niemand. Er is te weinig onderzoek om te zeggen of visolie- of algenoliecapsules hetzelfde doen als vis eten."
+      title: "Capsule"
+      body: "Mythe: een visoliecapsule staat gelijk aan een vismaaltijd. Er is te weinig onderzoek om dat te zeggen."
     de:
-      title: "Mythos: Eine Kapsel ersetzt Fisch"
-      body: "Das weiß keiner. Es fehlt Forschung, um zu sagen, ob Fischöl- oder Algenölkapseln dasselbe bewirken wie Fisch essen."
+      title: "Kapsel"
+      body: "Mythos: Eine Fischölkapsel ist so gut wie eine Fischmahlzeit. Dafür gibt es zu wenig Forschung."
     es:
-      title: "Mito: una cápsula equivale a pescado"
-      body: "Nadie lo sabe. No hay suficiente investigación para decir si las cápsulas de aceite de pescado o de algas hacen lo mismo que comer pescado."
+      title: "Cápsula"
+      body: "Mito: una cápsula de aceite de pescado vale lo que un plato de pescado. No hay estudios suficientes para decirlo."
     fr:
-      title: "Mythe : une gélule vaut un repas de poisson"
-      body: "On n'en sait rien. Les études manquent pour dire si les gélules d'huile de poisson ou d'algue font autant que manger du poisson."
+      title: "Gélule"
+      body: "Mythe : une gélule d'huile de poisson vaut un repas de poisson. Pas assez de recherche pour l'affirmer."
     pt:
-      title: "Mito: uma cápsula vale uma refeição de peixe"
-      body: "Ninguém sabe. Não há investigação suficiente para dizer se as cápsulas de óleo de peixe ou de algas fazem o mesmo que comer peixe."
+      title: "Cápsula"
+      body: "Mito: uma cápsula de óleo de peixe vale uma refeição de peixe. Não há estudos suficientes para o dizer."
     tr:
-      title: "Efsane: bir kapsül bir balık yemeğine eşittir"
-      body: "Bunu kimse bilmiyor. Balık ya da alg yağı kapsüllerinin balık yemekle aynı etkiyi verip vermediğini söyleyecek kadar araştırma yok."
+      title: "Kapsül"
+      body: "Efsane: balık yağı kapsülü bir balık yemeğine denktir. Bunu söylemek için yeterli araştırma yok."
 
   - key: hartritme
     kind: fact
     en:
-      title: "High doses and your heart rhythm"
-      body: "High-dose EPA and DHA supplements can raise the risk of heart rhythm disorders. The risk is largest at 4 g a day."
+      title: "4 g a day"
+      body: "High-dose EPA and DHA supplements can raise the risk of heart rhythm problems. It's largest at that dose."
     nl:
-      title: "Hoge doses en je hartritme"
-      body: "Supplementen met veel EPA en DHA kunnen de kans op hartritmestoornissen verhogen. Die kans is het grootst bij 4 gram per dag."
+      title: "4 gram per dag"
+      body: "Hoge doses EPA en DHA kunnen het risico op hartritmestoornissen verhogen. Bij die dosis is het het grootst."
     de:
-      title: "Hohe Dosen und dein Herzrhythmus"
-      body: "Hoch dosierte EPA- und DHA-Supplemente können das Risiko für Herzrhythmusstörungen erhöhen, am stärksten bei 4 g am Tag."
+      title: "4 g am Tag"
+      body: "Hochdosiertes EPA und DHA kann das Risiko für Herzrhythmusstörungen erhöhen. Bei dieser Dosis am meisten."
     es:
-      title: "Dosis altas y ritmo cardíaco"
-      body: "Los suplementos con mucho EPA y DHA pueden subir el riesgo de arritmias. El riesgo es mayor con 4 g al día."
+      title: "4 g al día"
+      body: "Los suplementos de EPA y DHA a dosis altas pueden subir el riesgo de arritmias. Es mayor a esa dosis."
     fr:
-      title: "Fortes doses et rythme cardiaque"
-      body: "Les compléments riches en EPA et DHA peuvent augmenter le risque de troubles du rythme cardiaque, surtout à 4 g par jour."
+      title: "4 g par jour"
+      body: "Les compléments d'EPA et DHA à forte dose peuvent augmenter le risque d'arythmie. Surtout à cette dose."
     pt:
-      title: "Doses altas e ritmo cardíaco"
-      body: "Suplementos com muito EPA e DHA podem aumentar o risco de arritmias. O risco é maior com 4 g por dia."
+      title: "4 g por dia"
+      body: "Suplementos de EPA e DHA em dose alta podem aumentar o risco de arritmias. É maior nessa dose."
     tr:
-      title: "Yüksek doz ve kalp ritmi"
-      body: "Yüksek dozlu EPA ve DHA takviyeleri kalp ritmi bozukluğu riskini artırabilir. Risk en çok günde 4 g'da."
+      title: "Günde 4 g"
+      body: "Yüksek doz EPA ve DHA takviyesi ritim bozukluğu riskini artırabilir. Risk en çok bu dozda."
 
   - key: vijf-gram
     kind: myth
     en:
-      title: "Myth: 5 g of omega-3 a day is fine"
-      body: "Not as a target. 5 g is where EFSA saw no safety concerns in 2012. Dutch advice warns about heart rhythm problems at high doses."
+      title: "5 g"
+      body: "Myth: 5 g a day is a fine target. EFSA saw no safety issue there in 2012. Dutch advice warns about high doses."
     nl:
-      title: "Mythe: 5 gram omega-3 per dag kan prima"
-      body: "Niet als doel. Tot 5 gram zag EFSA in 2012 geen veiligheidszorgen. Het Voedingscentrum waarschuwt bij hoge doses voor hartritmestoornissen."
+      title: "5 gram"
+      body: "Mythe: 5 gram omega-3 per dag is prima. EFSA zag daar in 2012 geen probleem. Nederland waarschuwt voor hoge doses."
     de:
-      title: "Mythos: 5 g Omega-3 am Tag sind okay"
-      body: "Nicht als Ziel. Bis 5 g sah die EFSA 2012 keine Sicherheitsbedenken. Niederländische Experten warnen bei hohen Dosen vor Herzrhythmusstörungen."
+      title: "5 g"
+      body: "Mythos: 5 g Omega-3 am Tag sind ein gutes Ziel. Dort sah die EFSA 2012 keine Bedenken. Dennoch Warnung bei hohen Dosen."
     es:
-      title: "Mito: 5 g de omega-3 al día está bien"
-      body: "No como objetivo. Hasta 5 g la EFSA no vio riesgos en 2012. El consejo neerlandés advierte de arritmias con dosis altas."
+      title: "5 g"
+      body: "Mito: 5 g de omega-3 al día es buena meta. Es donde la EFSA no vio riesgos en 2012. Hay avisos sobre dosis altas."
     fr:
-      title: "Mythe : 5 g d'oméga-3 par jour, ça va"
-      body: "Pas comme objectif. Jusqu'à 5 g, l'EFSA n'a pas vu de risque en 2012. Les Pays-Bas mettent en garde contre les troubles du rythme à forte dose."
+      title: "5 g"
+      body: "Mythe : 5 g d'oméga-3 par jour, c'est une bonne cible. L'EFSA n'y voyait pas de risque en 2012. Prudence à forte dose."
     pt:
-      title: "Mito: 5 g de ómega-3 por dia não faz mal"
-      body: "Não como objetivo. Até 5 g a EFSA não viu riscos em 2012. O conselho neerlandês alerta para arritmias com doses altas."
+      title: "5 g"
+      body: "Mito: 5 g de ómega-3 por dia é um bom alvo. Foi onde a EFSA não viu riscos em 2012. Há avisos para doses altas."
     tr:
-      title: "Efsane: günde 5 g omega-3 sorun değil"
-      body: "Hedef olarak değil. EFSA 2012'de 5 g'a kadar güvenlik sorunu görmedi. Hollanda tavsiyesi yüksek dozda kalp ritmi bozukluğuna karşı uyarıyor."
+      title: "5 g"
+      body: "Efsane: günde 5 g omega-3 iyi bir hedef. EFSA 2012'de burada güvenlik sorunu görmedi. Yüksek doza uyarı var."
 
   - key: bloedverdunners
     kind: fact
     en:
-      title: "Omega-3 and blood thinners"
-      body: "From a few grams a day, blood may clot more slowly. On blood thinners and taking over 1 g of EPA and DHA a day? Talk to your doctor."
+      title: "Blood thinners"
+      body: "On them and taking over 1 g of EPA and DHA a day? Talk to your doctor. Blood may clot more slowly."
     nl:
-      title: "Omega-3 en bloedverdunners"
-      body: "Vanaf een paar gram per dag stolt je bloed mogelijk trager. Gebruik je bloedverdunners en neem je meer dan 1 gram EPA en DHA? Overleg met je arts."
+      title: "Bloedverdunners"
+      body: "Slik je die en neem je meer dan 1 gram EPA en DHA per dag? Overleg met je arts. Je bloed stolt mogelijk trager."
     de:
-      title: "Omega-3 und Blutverdünner"
-      body: "Ab ein paar Gramm am Tag gerinnt Blut womöglich langsamer. Mit Blutverdünnern und über 1 g EPA und DHA am Tag? Sprich mit deinem Arzt."
+      title: "Blutverdünner"
+      body: "Nimmst du sie und über 1 g EPA und DHA am Tag? Sprich mit deinem Arzt. Das Blut gerinnt womöglich langsamer."
     es:
-      title: "Omega-3 y anticoagulantes"
-      body: "Con unos gramos al día la sangre podría coagular más lento. ¿Tomas anticoagulantes y más de 1 g de EPA y DHA al día? Habla con tu médico."
+      title: "Anticoagulantes"
+      body: "¿Los tomas junto a más de 1 g de EPA y DHA al día? Habla con tu médico. La sangre puede coagular más lento."
     fr:
-      title: "Oméga-3 et anticoagulants"
-      body: "À quelques grammes par jour, le sang pourrait coaguler plus lentement. Sous anticoagulants et plus de 1 g d'EPA et DHA ? Parles-en au médecin."
+      title: "Anticoagulants"
+      body: "Tu en prends avec plus de 1 g d'EPA et DHA par jour ? Parles-en à ton médecin. Le sang peut coaguler moins vite."
     pt:
-      title: "Ómega-3 e anticoagulantes"
-      body: "Com alguns gramas por dia o sangue pode coagular mais devagar. Tomas anticoagulantes e mais de 1 g de EPA e DHA? Fala com o teu médico."
+      title: "Anticoagulantes"
+      body: "Tomas e ainda mais de 1 g de EPA e DHA por dia? Fala com o médico. O sangue pode coagular mais devagar."
     tr:
-      title: "Omega-3 ve kan sulandırıcılar"
-      body: "Günde birkaç gramdan itibaren kan daha yavaş pıhtılaşabilir. Kan sulandırıcı kullanıp günde 1 g'dan fazla EPA ve DHA alıyorsan doktoruna danış."
+      title: "Kan sulandırıcı"
+      body: "Kullanıyor ve günde 1 g'dan fazla EPA ile DHA alıyor musun? Doktoruna danış. Kan daha yavaş pıhtılaşabilir."
 
   - key: ldl
     kind: fact
     en:
-      title: "DHA and cholesterol"
-      body: "2 g of DHA a day raises LDL cholesterol by about 0.20 mmol/l, according to the Dutch nutrition centre."
+      title: "2 g of DHA"
+      body: "A day raises LDL cholesterol by about 0.20 mmol/l, says the Dutch nutrition centre."
     nl:
-      title: "DHA en cholesterol"
-      body: "2 gram DHA per dag verhoogt je LDL-cholesterol met zo'n 0,20 mmol/l, volgens het Voedingscentrum."
+      title: "2 gram DHA"
+      body: "Per dag verhoogt je LDL-cholesterol met zo'n 0,20 mmol/l, zegt het Voedingscentrum."
     de:
-      title: "DHA und Cholesterin"
-      body: "2 g DHA am Tag erhöhen das LDL-Cholesterin um etwa 0,20 mmol/l, laut dem niederländischen Ernährungszentrum."
+      title: "2 g DHA"
+      body: "Am Tag erhöhen das LDL-Cholesterin um etwa 0,20 mmol/l, so das niederländische Ernährungszentrum."
     es:
-      title: "DHA y colesterol"
-      body: "2 g de DHA al día suben el colesterol LDL unos 0,20 mmol/l, según el centro de nutrición neerlandés."
+      title: "2 g de DHA"
+      body: "Al día suben el colesterol LDL unos 0,20 mmol/l, según el centro de nutrición neerlandés."
     fr:
-      title: "DHA et cholestérol"
-      body: "2 g de DHA par jour font monter le cholestérol LDL d'environ 0,20 mmol/l, selon le centre néerlandais de nutrition."
+      title: "2 g de DHA"
+      body: "Par jour montent le LDL d'environ 0,20 mmol/l, selon le centre néerlandais de nutrition."
     pt:
-      title: "DHA e colesterol"
-      body: "2 g de DHA por dia sobem o colesterol LDL cerca de 0,20 mmol/l, segundo o centro de nutrição neerlandês."
+      title: "2 g de DHA"
+      body: "Por dia sobem o colesterol LDL cerca de 0,20 mmol/l, diz o centro de nutrição neerlandês."
     tr:
-      title: "DHA ve kolesterol"
-      body: "Hollanda beslenme merkezine göre günde 2 g DHA, LDL kolesterolü yaklaşık 0,20 mmol/l artırır."
+      title: "2 g DHA"
+      body: "Hollanda beslenme merkezine göre günde bu kadarı LDL kolesterolü yaklaşık 0,20 mmol/l artırır."
 
   - key: zwanger
     kind: fact
     en:
-      title: "Omega-3 in pregnancy"
-      body: "The advice is fish twice a week, once oily and once lean. Can't manage that? Take 250 to 450 mg DHA a day throughout the pregnancy."
+      title: "Twice a week"
+      body: "Fish when pregnant, once oily and once lean. Can't manage that? Take 250 to 450 mg DHA a day."
     nl:
-      title: "Omega-3 als je zwanger bent"
-      body: "Het advies is twee keer per week vis, één keer vet en één keer mager. Lukt dat niet? Neem dan je hele zwangerschap 250 à 450 mg DHA per dag."
+      title: "Twee keer per week"
+      body: "Vis als je zwanger bent, één keer vet en één keer mager. Lukt dat niet? Neem 250 tot 450 mg DHA per dag."
     de:
-      title: "Omega-3 in der Schwangerschaft"
-      body: "Rat: zweimal pro Woche Fisch, einmal fett, einmal mager. Klappt das nicht, dann die ganze Schwangerschaft 250 bis 450 mg DHA am Tag."
+      title: "Zweimal pro Woche"
+      body: "Fisch in der Schwangerschaft, einmal fett, einmal mager. Klappt nicht? 250 bis 450 mg DHA am Tag."
     es:
-      title: "Omega-3 en el embarazo"
-      body: "Se aconseja pescado dos veces por semana, uno azul y uno blanco. ¿No llegas? Toma 250 a 450 mg de DHA al día durante todo el embarazo."
+      title: "Dos veces por semana"
+      body: "Pescado en el embarazo, una vez azul y otra blanco. ¿No llegas? Toma 250 a 450 mg de DHA al día."
     fr:
-      title: "Oméga-3 et grossesse"
-      body: "Le conseil : du poisson deux fois par semaine, un gras et un maigre. Sinon, 250 à 450 mg de DHA par jour pendant toute la grossesse."
+      title: "Deux fois par semaine"
+      body: "Du poisson enceinte, une fois gras, une fois maigre. Pas possible ? Prends 250 à 450 mg de DHA par jour."
     pt:
-      title: "Ómega-3 na gravidez"
-      body: "O conselho é peixe duas vezes por semana, um gordo e um magro. Não consegues? Toma 250 a 450 mg de DHA por dia durante toda a gravidez."
+      title: "Duas vezes por semana"
+      body: "Peixe na gravidez, uma vez gordo e outra magro. Não dá? Toma 250 a 450 mg de DHA por dia."
     tr:
-      title: "Hamilelikte omega-3"
-      body: "Öneri haftada iki kez balık, biri yağlı biri yağsız. Yapamıyorsan hamilelik boyunca günde 250 ila 450 mg DHA al."
+      title: "Haftada iki kez"
+      body: "Hamileyken balık, bir yağlı bir yağsız. Olmuyorsa günde 250-450 mg DHA al."
 
   - key: adhd-depressie
     kind: myth
     en:
-      title: "Myth: omega-3 pills help depression"
-      body: "Not shown. There is not enough evidence that omega-3 supplements help with depression, ADHD, learning problems or dementia."
+      title: "Depression"
+      body: "Myth: omega-3 pills help depression. There's not enough evidence, and the same goes for ADHD and dementia."
     nl:
-      title: "Mythe: omega-3-pillen helpen bij depressie"
-      body: "Niet aangetoond. Er is te weinig bewijs dat omega-3-supplementen helpen bij depressie, ADHD, leerproblemen of dementie."
+      title: "Depressie"
+      body: "Mythe: omega-3-pillen helpen tegen depressie. Er is te weinig bewijs, net als voor ADHD en dementie."
     de:
-      title: "Mythos: Omega-3 hilft bei Depression"
-      body: "Nicht belegt. Es gibt zu wenig Belege, dass Omega-3-Supplemente bei Depression, ADHS, Lernproblemen oder Demenz helfen."
+      title: "Depression"
+      body: "Mythos: Omega-3-Kapseln helfen bei Depression. Dafür fehlen Belege, genau wie bei ADHS und Demenz."
     es:
-      title: "Mito: el omega-3 ayuda con la depresión"
-      body: "No está demostrado. No hay pruebas suficientes de que los suplementos de omega-3 ayuden con depresión, TDAH, aprendizaje o demencia."
+      title: "Depresión"
+      body: "Mito: las cápsulas de omega-3 ayudan con la depresión. No hay pruebas suficientes, ni para TDAH o demencia."
     fr:
-      title: "Mythe : les oméga-3 aident contre la déprime"
-      body: "Pas prouvé. Les preuves manquent pour dire que les oméga-3 en complément aident contre la dépression, le TDAH ou la démence."
+      title: "Dépression"
+      body: "Mythe : les gélules d'oméga-3 aident contre la dépression. Pas assez de preuves, ni pour le TDAH ou la démence."
     pt:
-      title: "Mito: o ómega-3 ajuda na depressão"
-      body: "Não está provado. Não há provas suficientes de que suplementos de ómega-3 ajudem na depressão, PHDA, aprendizagem ou demência."
+      title: "Depressão"
+      body: "Mito: cápsulas de ómega-3 ajudam na depressão. Não há provas suficientes, nem para PHDA ou demência."
     tr:
-      title: "Efsane: omega-3 hapı depresyona iyi gelir"
-      body: "Kanıtlanmadı. Omega-3 takviyelerinin depresyon, DEHB, öğrenme sorunları veya demansa yardım ettiğine dair yeterli kanıt yok."
+      title: "Depresyon"
+      body: "Efsane: omega-3 hapları depresyona iyi gelir. Yeterli kanıt yok, DEHB ve demans için de öyle."
 
   - key: efsa-250
     kind: fact
     en:
-      title: "The EU number"
-      body: "EFSA set an adequate intake of 250 mg of EPA and DHA a day for heart health in healthy adults and children, a bit above the Dutch 200 mg."
+      title: "250 mg"
+      body: "EPA and DHA a day is EFSA's adequate intake for heart health, a bit above the Dutch 200 mg."
     nl:
-      title: "Het Europese getal"
-      body: "EFSA houdt 250 mg EPA en DHA per dag aan voor een gezond hart bij gezonde volwassenen en kinderen. Iets meer dan de Nederlandse 200 mg."
+      title: "250 mg"
+      body: "EPA en DHA per dag is de adequate inname van EFSA voor je hart, iets boven de Nederlandse 200 mg."
     de:
-      title: "Die EU-Zahl"
-      body: "Die EFSA nennt 250 mg EPA und DHA am Tag als angemessene Zufuhr für die Herzgesundheit gesunder Erwachsener und Kinder."
+      title: "250 mg"
+      body: "EPA und DHA am Tag ist der EFSA-Schätzwert für die Herzgesundheit, etwas über den niederländischen 200 mg."
     es:
-      title: "La cifra europea"
-      body: "La EFSA fijó 250 mg de EPA y DHA al día como ingesta adecuada para la salud del corazón en adultos y niños sanos."
+      title: "250 mg"
+      body: "De EPA y DHA al día es la ingesta adecuada de la EFSA para el corazón, algo más que los 200 mg neerlandeses."
     fr:
-      title: "Le chiffre européen"
-      body: "L'EFSA a fixé un apport adéquat de 250 mg d'EPA et DHA par jour pour la santé du cœur chez les adultes et enfants en bonne santé."
+      title: "250 mg"
+      body: "D'EPA et DHA par jour, c'est l'apport adéquat de l'EFSA pour le cœur, un peu plus que les 200 mg néerlandais."
     pt:
-      title: "O número europeu"
-      body: "A EFSA fixou 250 mg de EPA e DHA por dia como ingestão adequada para a saúde do coração em adultos e crianças saudáveis."
+      title: "250 mg"
+      body: "De EPA e DHA por dia é a ingestão adequada da EFSA para o coração, um pouco acima dos 200 mg neerlandeses."
     tr:
-      title: "AB'nin rakamı"
-      body: "EFSA, sağlıklı yetişkin ve çocuklarda kalp sağlığı için günde 250 mg EPA ve DHA'yı yeterli alım olarak belirledi."
+      title: "250 mg"
+      body: "Günlük EPA ve DHA, EFSA'nın kalp sağlığı için yeterli alım değeri. Hollanda'nın 200 mg'ından biraz fazla."
 
   - key: hartpatienten
     kind: fact
     en:
-      title: "Omega-3 and heart disease"
-      body: "In people with or at high risk of heart disease, 1 g of EPA and DHA a day lowered the risk of dying from heart disease by about 10%."
+      title: "10%"
+      body: "Lower risk of dying from heart disease with 1 g of EPA and DHA a day, in people with or at high risk of it."
     nl:
-      title: "Omega-3 bij hartziekte"
-      body: "Bij mensen met (of met een hoog risico op) hart- en vaatziekte verlaagde 1 gram EPA en DHA per dag de kans om eraan te overlijden met zo'n 10%."
+      title: "10%"
+      body: "Minder kans om aan hartziekte te overlijden met 1 gram EPA en DHA per dag, bij mensen met (hoog risico op) hartziekte."
     de:
-      title: "Omega-3 bei Herzkrankheit"
-      body: "Bei Menschen mit oder mit hohem Risiko für Herzkrankheit senkte 1 g EPA und DHA am Tag das Risiko, daran zu sterben, um etwa 10 %."
+      title: "10 %"
+      body: "Weniger Risiko, an Herzkrankheit zu sterben, mit 1 g EPA und DHA am Tag, bei Menschen mit hohem Risiko."
     es:
-      title: "Omega-3 y enfermedad cardíaca"
-      body: "En personas con enfermedad cardíaca o alto riesgo, 1 g de EPA y DHA al día bajó el riesgo de morir por ella cerca de un 10 %."
+      title: "10 %"
+      body: "Menos riesgo de morir del corazón con 1 g de EPA y DHA al día, en personas con enfermedad cardiaca o alto riesgo."
     fr:
-      title: "Oméga-3 et maladie cardiaque"
-      body: "Chez les personnes cardiaques ou à haut risque, 1 g d'EPA et DHA par jour a réduit le risque d'en mourir d'environ 10 %."
+      title: "10 %"
+      body: "De risque en moins de mourir du cœur avec 1 g d'EPA et DHA par jour, chez les cardiaques ou à haut risque."
     pt:
-      title: "Ómega-3 e doença cardíaca"
-      body: "Em pessoas com doença cardíaca ou alto risco, 1 g de EPA e DHA por dia baixou o risco de morrer dela em cerca de 10 %."
+      title: "10%"
+      body: "Menos risco de morrer do coração com 1 g de EPA e DHA por dia, em pessoas com doença cardíaca ou alto risco."
     tr:
-      title: "Omega-3 ve kalp hastalığı"
-      body: "Kalp hastası ya da yüksek risk taşıyanlarda günde 1 g EPA ve DHA, kalp hastalığından ölme riskini yaklaşık %10 düşürdü."
+      title: "%10"
+      body: "Kalp hastası ya da yüksek riskli kişilerde günde 1 g EPA ve DHA ile kalpten ölüm riski bu kadar düştü."

@@ -1,217 +1,218 @@
 article: flexible-dieting
+emoji: "🍕"
 tips:
   - key: een-beste-dieet
     kind: myth
     en:
-      title: "Myth: there is one best diet"
-      body: "Not true. Low-fat, low-carb, keto and everything between can work about equally well for body composition. Pick one you can keep up."
+      title: "One best diet"
+      body: "Myth: there's one best diet. Low-fat, low-carb, keto and everything between work about equally. Pick one you can keep."
     nl:
-      title: "Mythe: er is één beste dieet"
-      body: "Klopt niet. Vetarm, koolhydraatarm, keto en alles ertussen werken ongeveer even goed voor je lichaamssamenstelling. Kies wat je volhoudt."
+      title: "Eén beste dieet"
+      body: "Mythe: er is één beste dieet. Vetarm, koolhydraatarm, keto: ze werken ongeveer even goed. Kies wat je volhoudt."
     de:
-      title: "Mythos: Es gibt die eine beste Diät"
-      body: "Stimmt nicht. Low Fat, Low Carb, Keto und alles dazwischen wirken für die Körperzusammensetzung etwa gleich. Nimm, was du durchhältst."
+      title: "Die beste Diät"
+      body: "Mythos: Es gibt die eine beste Diät. Low Fat, Low Carb, Keto wirken etwa gleich. Nimm die, die du durchhältst."
     es:
-      title: "Mito: hay una dieta mejor que todas"
-      body: "No es así. Baja en grasa, baja en carbohidratos, keto y todo lo de en medio funcionan parecido para tu composición corporal. Elige la que aguantes."
+      title: "La mejor dieta"
+      body: "Mito: hay una dieta mejor. Baja en grasa, low carb o keto funcionan casi igual. Elige la que puedas mantener."
     fr:
-      title: "Mythe : il existe un meilleur régime"
-      body: "Faux. Pauvre en gras, low carb, keto et tout ce qu'il y a entre les deux marchent à peu près pareil pour ta composition corporelle. Prends celui que tu tiens."
+      title: "Le meilleur régime"
+      body: "Mythe : il existe un meilleur régime. Low fat, low carb, keto marchent à peu près pareil. Prends celui que tu tiens."
     pt:
-      title: "Mito: há uma dieta melhor do que todas"
-      body: "Não é verdade. Pouca gordura, poucos hidratos, keto e tudo o que fica no meio funcionam parecido para a composição corporal. Escolhe a que aguentas."
+      title: "A melhor dieta"
+      body: "Mito: há uma dieta melhor. Pouca gordura, low carb ou keto funcionam quase igual. Escolhe a que aguentas."
     tr:
-      title: "Efsane: tek bir en iyi diyet var"
-      body: "Doğru değil. Az yağlı, az karbonhidratlı, keto ve aradaki her şey vücut kompozisyonu için benzer işe yarar. Sürdürebileceğini seç."
+      title: "En iyi diyet"
+      body: "Efsane: tek bir en iyi diyet var. Az yağlı, düşük karbonhidratlı, keto aşağı yukarı aynı. Sürdürebildiğini seç."
 
   - key: flexibel-niet-beter
     kind: myth
     en:
-      title: "Myth: flexible dieting beats a meal plan"
-      body: "Not shown. In a 10-week trial with lifters, the flexible group lost 2.3 kg of fat and the fixed plan 3.2 kg. Not a real difference."
+      title: "2.3 vs 3.2 kg"
+      body: "Myth: flexible dieting beats a meal plan. Lifters lost 2.3 kg fat flexibly and 3.2 kg on a plan. No real difference."
     nl:
-      title: "Mythe: flexibel diëten wint van een schema"
-      body: "Niet aangetoond. In een proef van 10 weken met krachtsporters verloor de flexibele groep 2,3 kilo vet en de schemagroep 3,2 kilo. Geen echt verschil."
+      title: "2,3 tegen 3,2 kilo"
+      body: "Mythe: flexibel eten wint van een schema. Sporters verloren flexibel 2,3 en met schema 3,2 kilo vet. Geen echt verschil."
     de:
-      title: "Mythos: Flexibel schlägt jeden Essensplan"
-      body: "Nicht belegt. In einer 10-Wochen-Studie mit Kraftsportlern verlor die flexible Gruppe 2,3 kg Fett, die Plan-Gruppe 3,2 kg. Kein echter Unterschied."
+      title: "2,3 zu 3,2 kg"
+      body: "Mythos: Flexibel schlägt Plan. Kraftsportler verloren flexibel 2,3 und mit Plan 3,2 kg Fett. Kein echter Unterschied."
     es:
-      title: "Mito: la dieta flexible gana a un menú fijo"
-      body: "No está demostrado. En 10 semanas con gente que entrenaba fuerza, el grupo flexible perdió 2,3 kg de grasa y el del menú 3,2 kg. Sin diferencia real."
+      title: "2,3 frente a 3,2 kg"
+      body: "Mito: la dieta flexible gana a un plan. Perdieron 2,3 kg de grasa en flexible y 3,2 con plan. Sin diferencia real."
     fr:
-      title: "Mythe : le flexible bat un plan fixe"
-      body: "Pas démontré. Sur 10 semaines chez des pratiquants de muscu, le groupe flexible a perdu 2,3 kg de gras et le plan fixe 3,2 kg. Pas de vraie différence."
+      title: "2,3 contre 3,2 kg"
+      body: "Mythe : le flexible bat le plan fixe. Gras perdu : 2,3 kg en flexible, 3,2 avec plan. Pas de vraie différence."
     pt:
-      title: "Mito: a dieta flexível ganha a um plano fixo"
-      body: "Não está provado. Num ensaio de 10 semanas com quem treinava força, o grupo flexível perdeu 2,3 kg de gordura e o do plano 3,2 kg. Sem diferença real."
+      title: "2,3 contra 3,2 kg"
+      body: "Mito: a dieta flexível bate um plano. Perderam 2,3 kg de gordura flexível e 3,2 com plano. Sem diferença real."
     tr:
-      title: "Efsane: esnek diyet sabit plandan iyidir"
-      body: "Kanıtlanmadı. Ağırlık yapanlarla 10 haftalık bir denemede esnek grup 2,3 kg, sabit plan grubu 3,2 kg yağ kaybetti. Gerçek bir fark yok."
+      title: "2,3'e karşı 3,2 kg"
+      body: "Efsane: esnek diyet plandan iyidir. Esnekte 2,3, planla 3,2 kg yağ verildi. Gerçek fark yok."
 
   - key: alles-past
     kind: myth
     en:
-      title: "Myth: if it fits, anything goes"
-      body: "Not quite. Calories still decide fat loss, and what you eat changes how much you end up eating."
+      title: "Anything goes"
+      body: "Myth: if it fits, anything goes. Calories decide fat loss, and what you eat changes how much you end up eating."
     nl:
-      title: "Mythe: als het past, mag alles"
-      body: "Niet helemaal. Calorieën bepalen nog steeds je vetverlies, en wat je eet bepaalt mee hoeveel je uiteindelijk eet."
+      title: "Alles past"
+      body: "Mythe: als het past, mag alles. Calorieën bepalen vetverlies, en wat je eet bepaalt hoeveel je uiteindelijk eet."
     de:
-      title: "Mythos: Wenn es passt, geht alles"
-      body: "Nicht ganz. Kalorien entscheiden weiter über den Fettverlust, und was du isst, beeinflusst, wie viel du am Ende isst."
+      title: "Alles passt"
+      body: "Mythos: Wenn es passt, geht alles. Kalorien entscheiden den Fettabbau, und was du isst, beeinflusst wie viel."
     es:
-      title: "Mito: si cuadra, vale todo"
-      body: "No del todo. Las calorías siguen decidiendo la pérdida de grasa, y lo que comes cambia cuánto acabas comiendo."
+      title: "Todo vale"
+      body: "Mito: si encaja, todo vale. Las calorías deciden la pérdida de grasa, y lo que comes cambia cuánto acabas comiendo."
     fr:
-      title: "Mythe : si ça rentre, tout est permis"
-      body: "Pas tout à fait. Les calories décident toujours de la perte de gras, et ce que tu manges change la quantité que tu finis par manger."
+      title: "Tout passe"
+      body: "Mythe : si ça rentre, tout passe. Les calories décident, et ce que tu manges change combien tu finis par manger."
     pt:
-      title: "Mito: se encaixa, vale tudo"
-      body: "Não bem. As calorias continuam a decidir a perda de gordura, e o que comes muda quanto acabas por comer."
+      title: "Tudo vale"
+      body: "Mito: se encaixa, tudo vale. As calorias decidem a perda de gordura, e o que comes muda quanto acabas por comer."
     tr:
-      title: "Efsane: makroya uyuyorsa her şey serbest"
-      body: "Tam değil. Yağ kaybını yine kalori belirler, ve ne yediğin sonunda ne kadar yediğini de değiştirir."
+      title: "Her şey olur"
+      body: "Efsane: makroya uyuyorsa her şey serbest. Yağ kaybını kalori belirler, ne yediğin de ne kadar yediğini değiştirir."
 
   - key: ultrabewerkt-500-kcal
     kind: fact
     en:
-      title: "Ultra-processed food"
-      body: "On an ultra-processed diet people ate about 500 kcal a day more, without feeling hungrier. They gained 0.9 kg in two weeks."
+      title: "500 kcal"
+      body: "More a day on ultra-processed food, without feeling hungrier. People gained 0.9 kg in two weeks."
     nl:
-      title: "Ultrabewerkt eten"
-      body: "Op ultrabewerkt eten aten mensen zo'n 500 kcal per dag meer, zonder meer honger te hebben. Ze kwamen in twee weken 0,9 kilo aan."
+      title: "500 kcal"
+      body: "Meer per dag aten mensen op ultrabewerkt eten, zonder meer honger. Ze kwamen 0,9 kilo aan in twee weken."
     de:
-      title: "Hochverarbeitetes Essen"
-      body: "Mit hochverarbeitetem Essen aßen Menschen etwa 500 kcal am Tag mehr, ohne hungriger zu sein. Sie nahmen in zwei Wochen 0,9 kg zu."
+      title: "500 kcal"
+      body: "Mehr am Tag aßen Menschen mit stark verarbeiteter Kost, ohne mehr Hunger. Plus 0,9 kg in zwei Wochen."
     es:
-      title: "Comida ultraprocesada"
-      body: "Con una dieta ultraprocesada la gente comió unas 500 kcal más al día sin tener más hambre. Ganaron 0,9 kg en dos semanas."
+      title: "500 kcal"
+      body: "Más al día comía la gente con ultraprocesados, sin más hambre. Ganaron 0,9 kg en dos semanas."
     fr:
-      title: "Aliments ultratransformés"
-      body: "Avec des aliments ultratransformés, les gens ont mangé environ 500 kcal de plus par jour, sans avoir plus faim. Ils ont pris 0,9 kg en deux semaines."
+      title: "500 kcal"
+      body: "De plus par jour avec de l'ultra-transformé, sans avoir plus faim. +0,9 kg en deux semaines."
     pt:
-      title: "Comida ultraprocessada"
-      body: "Com uma dieta ultraprocessada as pessoas comeram cerca de 500 kcal a mais por dia, sem mais fome. Ganharam 0,9 kg em duas semanas."
+      title: "500 kcal"
+      body: "A mais por dia com ultraprocessados, sem mais fome. As pessoas ganharam 0,9 kg em duas semanas."
     tr:
-      title: "Ultra işlenmiş gıda"
-      body: "Ultra işlenmiş beslenmede insanlar daha aç hissetmeden günde yaklaşık 500 kcal fazla yedi. İki haftada 0,9 kg aldılar."
+      title: "500 kcal"
+      body: "Ultra işlenmiş yiyeceklerle daha fazla acıkmadan günde bu kadar fazla yendi. İki haftada 0,9 kg alındı."
 
   - key: schema-en-uitval
     kind: fact
     en:
-      title: "The upside of a meal plan"
-      body: "In the one trial with lifters, slightly more people quit the flexible group. A fixed plan may be easier because it takes the planning away."
+      title: "A fixed plan"
+      body: "May be easier because it takes the planning away. In one trial, slightly more people quit flexible dieting."
     nl:
-      title: "Het voordeel van een vast schema"
-      body: "In de enige proef met krachtsporters haakten iets meer mensen af in de flexibele groep. Een vast schema is mogelijk makkelijker, want het neemt het plannen weg."
+      title: "Een vast schema"
+      body: "Kan makkelijker zijn omdat het plannen wegvalt. In één studie haakten bij flexibel eten iets meer mensen af."
     de:
-      title: "Der Vorteil eines festen Plans"
-      body: "In der einzigen Studie mit Kraftsportlern brachen in der flexiblen Gruppe etwas mehr ab. Ein fester Plan ist vielleicht leichter, er nimmt dir das Planen ab."
+      title: "Ein fester Plan"
+      body: "Kann leichter sein, weil das Planen wegfällt. In einer Studie brachen beim flexiblen Essen etwas mehr ab."
     es:
-      title: "La ventaja de un menú fijo"
-      body: "En el único ensayo con gente que entrenaba fuerza, abandonaron algo más en el grupo flexible. Un menú fijo quizá sea más fácil porque te quita planificar."
+      title: "Un plan fijo"
+      body: "Puede ser más fácil porque te quita la planificación. En un ensayo dejaron algo más la dieta flexible."
     fr:
-      title: "L'avantage d'un plan fixe"
-      body: "Dans le seul essai en muscu, un peu plus de gens ont lâché le groupe flexible. Un plan fixe est peut-être plus simple, car il t'évite de planifier."
+      title: "Un plan fixe"
+      body: "Peut être plus simple car il évite de planifier. Dans un essai, un peu plus de gens ont lâché le flexible."
     pt:
-      title: "A vantagem de um plano fixo"
-      body: "No único ensaio com quem treinava força, desistiram um pouco mais no grupo flexível. Um plano fixo talvez seja mais fácil porque te tira o planeamento."
+      title: "Um plano fixo"
+      body: "Pode ser mais fácil porque tira o planeamento. Num ensaio, um pouco mais de pessoas desistiu da flexível."
     tr:
-      title: "Sabit planın avantajı"
-      body: "Ağırlık yapanlarla yapılan tek denemede esnek gruptan biraz daha fazla kişi bıraktı. Sabit plan planlama yükünü aldığı için daha kolay olabilir."
+      title: "Sabit plan"
+      body: "Planlama yükünü aldığı için daha kolay olabilir. Bir çalışmada esnek diyeti bırakan biraz daha fazlaydı."
 
   - key: strenge-regels
     kind: fact
     en:
-      title: "Strict food rules"
-      body: "In large studies, rigid food rules went with more binge eating and a higher BMI. That is a link, not proof that the rules cause it."
+      title: "Strict rules"
+      body: "Rigid food rules went with more binge eating and a higher BMI. A link, not proof that the rules cause it."
     nl:
-      title: "Strenge eetregels"
-      body: "In grote studies gingen strenge eetregels samen met meer eetbuien en een hogere BMI. Dat is een verband, geen bewijs dat de regels het veroorzaken."
+      title: "Strenge regels"
+      body: "Rigide eetregels gingen samen met meer eetbuien en een hogere BMI. Een verband, geen bewijs dat ze het veroorzaken."
     de:
-      title: "Strenge Essensregeln"
-      body: "In großen Studien gingen strenge Essensregeln mit mehr Essanfällen und höherem BMI einher. Das ist ein Zusammenhang, kein Beweis für die Ursache."
+      title: "Strenge Regeln"
+      body: "Starre Essregeln gingen mit mehr Essanfällen und höherem BMI einher. Ein Zusammenhang, kein Beweis."
     es:
-      title: "Reglas estrictas con la comida"
-      body: "En estudios grandes, las reglas rígidas con la comida iban con más atracones y un IMC más alto. Es una relación, no prueba de que las reglas lo causen."
+      title: "Reglas estrictas"
+      body: "Las reglas rígidas iban con más atracones y más IMC. Es una relación, no prueba de que lo causen."
     fr:
-      title: "Règles alimentaires strictes"
-      body: "Dans de grandes études, des règles rigides allaient avec plus de crises de boulimie et un IMC plus élevé. C'est un lien, pas une preuve de cause."
+      title: "Règles strictes"
+      body: "Les règles rigides allaient avec plus de crises de boulimie et un IMC plus haut. Un lien, pas une preuve."
     pt:
-      title: "Regras rígidas com a comida"
-      body: "Em estudos grandes, regras rígidas com a comida andaram a par de mais compulsões e IMC mais alto. É uma ligação, não prova de que as regras o causem."
+      title: "Regras rígidas"
+      body: "Regras alimentares rígidas andavam com mais compulsões e IMC mais alto. Uma ligação, não uma prova."
     tr:
-      title: "Katı yeme kuralları"
-      body: "Büyük çalışmalarda katı yeme kuralları daha çok tıkınırcasına yeme ve daha yüksek BKİ ile birlikte görüldü. Bu bir bağlantı, nedeni kanıtlamaz."
+      title: "Katı kurallar"
+      body: "Katı yeme kuralları daha çok tıkınırcasına yeme ve yüksek BKİ ile birlikteydi. Bir bağ, kanıt değil."
 
   - key: macro-obsessie
     kind: fact
     en:
       title: "Macros on the dot"
-      body: "Hitting very exact macro targets can itself turn into an unhealthy relationship with food, the researchers warn."
+      body: "Chasing exact macro targets can itself turn into an unhealthy relationship with food, researchers warn."
     nl:
-      title: "Macro's tot op de gram"
-      body: "Heel precies je macro's halen kan zelf uitgroeien tot een ongezonde relatie met eten, waarschuwen de onderzoekers."
+      title: "Macro's op de gram"
+      body: "Exacte macrodoelen najagen kan zelf een ongezonde relatie met eten worden, waarschuwen onderzoekers."
     de:
       title: "Makros aufs Gramm"
-      body: "Sehr genaue Makroziele zu treffen kann selbst zu einem ungesunden Verhältnis zum Essen werden, warnen die Forscher."
+      body: "Exakte Makroziele zu jagen kann selbst zu einem ungesunden Verhältnis zum Essen werden, warnen Forscher."
     es:
       title: "Macros al gramo"
-      body: "Cumplir objetivos de macros muy exactos puede acabar en una relación poco sana con la comida, avisan los investigadores."
+      body: "Perseguir macros exactos puede volverse una relación poco sana con la comida, avisan los investigadores."
     fr:
-      title: "Les macros au gramme près"
-      body: "Viser des macros très précises peut devenir en soi un rapport malsain à la nourriture, préviennent les chercheurs."
+      title: "Macros au gramme"
+      body: "Viser des macros au gramme près peut créer un rapport malsain à la nourriture, préviennent des chercheurs."
     pt:
       title: "Macros ao grama"
-      body: "Acertar metas de macros muito exatas pode virar uma relação pouco saudável com a comida, avisam os investigadores."
+      body: "Perseguir macros exatos pode virar uma relação pouco saudável com a comida, avisam investigadores."
     tr:
       title: "Gramı gramına makro"
-      body: "Araştırmacılar, çok kesin makro hedeflerini tutturmaya çalışmanın da sağlıksız bir yemek ilişkisine dönüşebileceği uyarısında."
+      body: "Tam makro hedefleri kovalamak da yemekle sağlıksız bir ilişkiye dönüşebilir, diyor araştırmacılar."
 
   - key: bijhouden-helpt
     kind: fact
     en:
-      title: "Tracking helps"
-      body: "In 22 studies, people who logged their food, exercise or weight lost more weight. The evidence was weak, but the link kept showing up."
+      title: "22 studies"
+      body: "People who logged food, exercise or weight lost more. Weak evidence, but the link kept showing up."
     nl:
-      title: "Bijhouden helpt"
-      body: "In 22 studies vielen mensen die hun eten, beweging of gewicht bijhielden meer af. Het bewijs was zwak, maar het verband kwam steeds terug."
+      title: "22 studies"
+      body: "Wie eten, beweging of gewicht bijhield, viel meer af. Zwak bewijs, maar het verband kwam steeds terug."
     de:
-      title: "Mitschreiben hilft"
-      body: "In 22 Studien nahmen Menschen, die Essen, Bewegung oder Gewicht festhielten, mehr ab. Die Belege waren schwach, der Zusammenhang aber stabil."
+      title: "22 Studien"
+      body: "Wer Essen, Bewegung oder Gewicht notierte, nahm mehr ab. Schwache Belege, aber der Zusammenhang tauchte immer auf."
     es:
-      title: "Apuntar ayuda"
-      body: "En 22 estudios, quienes registraban comida, ejercicio o peso perdieron más. La evidencia era débil, pero la relación se repetía."
+      title: "22 estudios"
+      body: "Quienes registraban comida, ejercicio o peso perdían más. Pruebas débiles, pero la relación se repetía."
     fr:
-      title: "Noter aide"
-      body: "Dans 22 études, ceux qui notaient leurs repas, leur sport ou leur poids ont perdu plus. Les preuves étaient faibles, mais le lien revenait toujours."
+      title: "22 études"
+      body: "Ceux qui notaient repas, sport ou poids perdaient plus. Preuves faibles, mais le lien revenait toujours."
     pt:
-      title: "Registar ajuda"
-      body: "Em 22 estudos, quem registava a comida, o exercício ou o peso perdeu mais. A evidência era fraca, mas a ligação repetia-se."
+      title: "22 estudos"
+      body: "Quem registava comida, exercício ou peso perdia mais. Provas fracas, mas a ligação repetia-se."
     tr:
-      title: "Kayıt tutmak işe yarar"
-      body: "22 çalışmada yemeğini, egzersizini ya da kilosunu kaydedenler daha çok kilo verdi. Kanıt zayıftı ama bağlantı hep çıktı."
+      title: "22 çalışma"
+      body: "Yemeğini, egzersizini ya da kilosunu kaydedenler daha çok verdi. Kanıt zayıf ama bağ sürekli çıktı."
 
   - key: tellen-zonder-gedoe
     kind: fact
     en:
-      title: "Tired of counting?"
-      body: "Track only protein and calories, or track for a few weeks until you can estimate your portions."
+      title: "Tired of counting"
+      body: "Track only protein and calories, or track for a few weeks until you can estimate portions."
     nl:
-      title: "Tellen zat?"
-      body: "Hou alleen eiwit en calorieën bij, of tel een paar weken tot je je porties kunt inschatten."
+      title: "Tellen zat"
+      body: "Houd alleen eiwit en calorieën bij, of tel een paar weken tot je porties kunt inschatten."
     de:
-      title: "Keine Lust mehr zu zählen?"
-      body: "Erfass nur Eiweiß und Kalorien, oder zähl ein paar Wochen, bis du deine Portionen schätzen kannst."
+      title: "Zählen satt"
+      body: "Notier nur Protein und Kalorien, oder zähl ein paar Wochen, bis du Portionen schätzen kannst."
     es:
-      title: "¿Harto de contar?"
-      body: "Apunta solo proteína y calorías, o cuenta unas semanas hasta que sepas calcular tus raciones a ojo."
+      title: "Harto de contar"
+      body: "Apunta solo proteína y calorías, o cuenta unas semanas hasta que sepas calcular raciones."
     fr:
-      title: "Marre de compter ?"
-      body: "Note seulement protéines et calories, ou compte quelques semaines jusqu'à savoir estimer tes portions."
+      title: "Marre de compter"
+      body: "Note juste protéines et calories, ou compte quelques semaines jusqu'à savoir estimer tes portions."
     pt:
-      title: "Farto de contar?"
-      body: "Regista só proteína e calorias, ou conta umas semanas até saberes estimar as tuas porções."
+      title: "Farto de contar"
+      body: "Regista só proteína e calorias, ou conta umas semanas até saberes estimar porções."
     tr:
-      title: "Saymaktan bıktın mı?"
-      body: "Sadece protein ve kaloriyi takip et, ya da porsiyonlarını tahmin edebilene kadar birkaç hafta say."
+      title: "Saymaktan bıktın mı"
+      body: "Sadece protein ve kaloriyi takip et ya da porsiyonları tahmin edene kadar birkaç hafta say."

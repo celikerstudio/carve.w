@@ -1,241 +1,242 @@
 article: volume
+emoji: "📚"
 tips:
   - key: wat-telt
     kind: fact
     en:
-      title: "Counting volume"
-      body: "Count your hard sets per muscle per week. Ten sets of squats, leg press and lunges across the week is ten sets for your quads."
+      title: "Hard sets"
+      body: "Count them per muscle per week. Ten sets of squats, leg press and lunges in a week is ten sets for your quads."
     nl:
-      title: "Volume tellen"
-      body: "Tel je zware sets per spier per week. Tien sets squats, leg press en lunges verspreid over de week zijn tien sets voor je quadriceps."
+      title: "Zware sets"
+      body: "Tel ze per spier per week. Tien sets squats, leg press en lunges in een week is tien sets voor je quads."
     de:
-      title: "Volumen zählen"
-      body: "Zähl deine harten Sätze pro Muskel und Woche. Zehn Sätze Kniebeugen, Beinpresse und Ausfallschritte sind zehn Sätze für die Quads."
+      title: "Harte Sätze"
+      body: "Zähl sie pro Muskel und Woche. Zehn Sätze Kniebeugen, Beinpresse und Ausfallschritte sind zehn für die Quads."
     es:
-      title: "Contar el volumen"
-      body: "Cuenta tus series duras por músculo y semana. Diez series de sentadilla, prensa y zancadas en la semana son diez para tus cuádriceps."
+      title: "Series duras"
+      body: "Cuéntalas por músculo y semana. Diez series de sentadilla, prensa y zancadas son diez para el cuádriceps."
     fr:
-      title: "Compter le volume"
-      body: "Compte tes séries dures par muscle et par semaine. Dix séries de squat, presse et fentes sur la semaine font dix séries de quadriceps."
+      title: "Séries dures"
+      body: "Compte-les par muscle et par semaine. Dix séries de squat, presse et fentes, c'est dix pour les quadris."
     pt:
-      title: "Contar o volume"
-      body: "Conta as tuas séries duras por músculo por semana. Dez séries de agachamento, prensa e lunges na semana são dez para os quadríceps."
+      title: "Séries duras"
+      body: "Conta-as por músculo por semana. Dez séries de agachamento, prensa e lunges são dez para os quadríceps."
     tr:
-      title: "Hacmi saymak"
-      body: "Kas başına haftalık zor setlerini say. Hafta boyunca squat, leg press ve lunge'dan on set, quadricepsin için on set demek."
+      title: "Zor setler"
+      body: "Kas başına haftalık say. Bir haftada squat, leg press ve lunge'dan on set, ön bacak için on set eder."
 
   - key: twee-sets-per-oefening
     kind: fact
     en:
-      title: "Sets per exercise"
-      body: "Do at least 2 sets per exercise. In the ACSM's analysis, strength gains levelled off beyond about 2 to 3 sets."
+      title: "2 sets"
+      body: "Per exercise at least. In the ACSM's analysis, strength gains levelled off beyond about 2 to 3 sets."
     nl:
-      title: "Sets per oefening"
-      body: "Doe minstens 2 sets per oefening. In de analyse van het ACSM vlakte de krachtwinst af boven ongeveer 2 à 3 sets."
+      title: "2 sets"
+      body: "Per oefening minimaal. In de analyse van de ACSM vlakte krachtwinst af boven zo'n 2 tot 3 sets."
     de:
-      title: "Sätze pro Übung"
-      body: "Mach mindestens 2 Sätze pro Übung. In der ACSM-Analyse flachte der Kraftzuwachs über etwa 2 bis 3 Sätze hinaus ab."
+      title: "2 Sätze"
+      body: "Pro Übung mindestens. In der ACSM-Analyse flachte der Kraftzuwachs über etwa 2 bis 3 Sätze ab."
     es:
-      title: "Series por ejercicio"
-      body: "Haz al menos 2 series por ejercicio. En el análisis del ACSM, la ganancia de fuerza se estancaba a partir de unas 2 o 3 series."
+      title: "2 series"
+      body: "Por ejercicio como mínimo. En el análisis del ACSM, la fuerza se estancaba más allá de 2 o 3 series."
     fr:
-      title: "Séries par exercice"
-      body: "Fais au moins 2 séries par exercice. Dans l'analyse de l'ACSM, le gain de force plafonnait au-delà de 2 à 3 séries environ."
+      title: "2 séries"
+      body: "Par exercice au minimum. Dans l'analyse de l'ACSM, les gains de force plafonnaient après 2 à 3 séries."
     pt:
-      title: "Séries por exercício"
-      body: "Faz pelo menos 2 séries por exercício. Na análise do ACSM, o ganho de força estabilizava a partir de cerca de 2 a 3 séries."
+      title: "2 séries"
+      body: "Por exercício no mínimo. Na análise do ACSM, os ganhos de força estabilizavam acima de 2 a 3 séries."
     tr:
-      title: "Hareket başına set"
-      body: "Hareket başına en az 2 set yap. ACSM analizinde güç kazanımı yaklaşık 2 ila 3 setten sonra düzleşti."
+      title: "2 set"
+      body: "Hareket başına en az. ACSM analizinde güç kazancı yaklaşık 2-3 setten sonra düzleşti."
 
   - key: tien-sets-per-week
     kind: fact
     en:
-      title: "Sets per week"
-      body: "In the reviews the ACSM analysed, muscles grew more with 10 or more sets per muscle group a week."
+      title: "10 sets"
+      body: "Or more per muscle group a week gave more growth, in the reviews the ACSM analysed."
     nl:
-      title: "Sets per week"
-      body: "In de reviews die het ACSM bekeek, groeiden spieren meer bij 10 of meer sets per spiergroep per week."
+      title: "10 sets"
+      body: "Of meer per spiergroep per week gaf meer groei, in de reviews die de ACSM bekeek."
     de:
-      title: "Sätze pro Woche"
-      body: "In den vom ACSM ausgewerteten Reviews wuchsen Muskeln stärker mit 10 oder mehr Sätzen pro Muskelgruppe und Woche."
+      title: "10 Sätze"
+      body: "Oder mehr pro Muskelgruppe und Woche brachten mehr Wachstum, in den vom ACSM geprüften Übersichten."
     es:
-      title: "Series por semana"
-      body: "En las revisiones que analizó el ACSM, el músculo creció más con 10 o más series por grupo muscular a la semana."
+      title: "10 series"
+      body: "O más por grupo muscular a la semana dieron más crecimiento, en las revisiones del ACSM."
     fr:
-      title: "Séries par semaine"
-      body: "Dans les revues analysées par l'ACSM, les muscles grossissaient plus avec 10 séries ou plus par groupe musculaire par semaine."
+      title: "10 séries"
+      body: "Ou plus par groupe musculaire et par semaine ont donné plus de croissance, selon les revues de l'ACSM."
     pt:
-      title: "Séries por semana"
-      body: "Nas revisões que o ACSM analisou, os músculos cresceram mais com 10 ou mais séries por grupo muscular por semana."
+      title: "10 séries"
+      body: "Ou mais por grupo muscular por semana deram mais crescimento, nas revisões que o ACSM analisou."
     tr:
-      title: "Haftalık set"
-      body: "ACSM'nin incelediği derlemelerde kaslar, kas grubu başına haftada 10 veya daha fazla setle daha çok büyüdü."
+      title: "10 set"
+      body: "ACSM'nin incelediği derlemelerde kas grubu başına haftada bu kadar ya da fazlası daha çok büyüme verdi."
 
   - key: twintig-sets-geen-doel
     kind: myth
     en:
-      title: "Myth: 18 to 20 sets a week is the target"
-      body: "Not true. In one analysis that's where each extra set started adding less. It's no goal, and the exact best number can't be pinned down."
+      title: "18 to 20 sets"
+      body: "Myth: that's the weekly target. It's where each extra set started adding less in one analysis. Not a goal."
     nl:
-      title: "Mythe: 18 tot 20 sets per week is het doel"
-      body: "Klopt niet. In één analyse ging elke extra set daar minder opleveren. Het is geen doel, en het precieze beste getal valt niet vast te stellen."
+      title: "18 tot 20 sets"
+      body: "Mythe: dat is het weekdoel. Daar begon elke extra set in één analyse minder op te leveren. Geen doel."
     de:
-      title: "Mythos: 18 bis 20 Sätze sind das Ziel"
-      body: "Stimmt nicht. In einer Analyse brachte ab da jeder Zusatzsatz weniger. Es ist kein Ziel, und die beste Zahl lässt sich nicht genau bestimmen."
+      title: "18 bis 20 Sätze"
+      body: "Mythos: Das ist das Wochenziel. Da brachte in einer Analyse jeder weitere Satz weniger. Kein Ziel."
     es:
-      title: "Mito: 18 a 20 series es la meta"
-      body: "No es cierto. En un análisis, ahí cada serie extra empezaba a aportar menos. No es una meta, y la cifra óptima exacta no se puede fijar."
+      title: "18 a 20 series"
+      body: "Mito: es la meta semanal. Ahí cada serie extra empezaba a aportar menos en un análisis. No es un objetivo."
     fr:
-      title: "Mythe : 18 à 20 séries, c'est l'objectif"
-      body: "Faux. Dans une analyse, c'est là que chaque série en plus rapportait moins. Ce n'est pas un but, et le chiffre idéal exact reste inconnu."
+      title: "18 à 20 séries"
+      body: "Mythe : c'est l'objectif de la semaine. C'est là que chaque série en plus rapportait moins. Pas un but."
     pt:
-      title: "Mito: 18 a 20 séries é a meta"
-      body: "Não é verdade. Numa análise, era aí que cada série extra começava a render menos. Não é meta, e o número ideal exato não se consegue fixar."
+      title: "18 a 20 séries"
+      body: "Mito: é o alvo semanal. Foi onde cada série extra começou a dar menos numa análise. Não é meta."
     tr:
-      title: "Efsane: hedef haftada 18 ila 20 set"
-      body: "Doğru değil. Bir analizde her ek set orada daha az katkı vermeye başladı. Bu bir hedef değil, en iyi sayı da tam belirlenemiyor."
+      title: "18-20 set"
+      body: "Efsane: haftalık hedef budur. Bir analizde her ek set burada daha az katkı sağlamaya başladı. Hedef değil."
 
   - key: halve-set
     kind: fact
     en:
-      title: "Half sets"
-      body: "In one large analysis, a set that trains a muscle indirectly, like bench press for your triceps, counted as half a set."
+      title: "Half a set"
+      body: "An indirect set, like bench press for your triceps, counted as half a set in one large analysis."
     nl:
-      title: "Halve sets"
-      body: "In één grote analyse telde een set die een spier indirect traint, zoals bankdrukken voor je triceps, als een halve set."
+      title: "Halve set"
+      body: "Een indirecte set, zoals bankdrukken voor je triceps, telde als halve set in één grote analyse."
     de:
-      title: "Halbe Sätze"
-      body: "In einer großen Analyse zählte ein Satz, der einen Muskel indirekt trainiert, etwa Bankdrücken für den Trizeps, als halber Satz."
+      title: "Halber Satz"
+      body: "Ein indirekter Satz wie Bankdrücken für den Trizeps zählte in einer großen Analyse halb."
     es:
-      title: "Medias series"
-      body: "En un gran análisis, una serie que trabaja un músculo de forma indirecta, como el press de banca para el tríceps, contaba como media."
+      title: "Media serie"
+      body: "Una serie indirecta, como el press banca para el tríceps, contó como media en un gran análisis."
     fr:
-      title: "Les demi-séries"
-      body: "Dans une grande analyse, une série qui travaille un muscle indirectement, comme le développé couché pour les triceps, comptait pour moitié."
+      title: "Demi-série"
+      body: "Une série indirecte, comme le développé couché pour les triceps, comptait pour moitié dans une grande analyse."
     pt:
-      title: "Meias séries"
-      body: "Numa grande análise, uma série que treina um músculo de forma indireta, como o supino para o tríceps, contava como meia série."
+      title: "Meia série"
+      body: "Uma série indireta, como o supino para o tríceps, contou como meia numa grande análise."
     tr:
-      title: "Yarım setler"
-      body: "Büyük bir analizde bir kası dolaylı çalıştıran set, örneğin triceps için bench press, yarım set sayıldı."
+      title: "Yarım set"
+      body: "Büyük bir analizde arka kol için bench press gibi dolaylı bir set yarım sayıldı."
 
   - key: beginner-twee-sets
     kind: myth
     en:
-      title: "Myth: beginners should start with one set"
-      body: "Not anymore. The 2026 ACSM advice of at least two sets per exercise also applies to complete beginners. The 2009 one-set option is gone."
+      title: "One set"
+      body: "Myth: beginners should start with one set. The 2026 ACSM advice of two sets per exercise applies to them too."
     nl:
-      title: "Mythe: beginners starten met één set"
-      body: "Niet meer. Het ACSM-advies van 2026, minstens twee sets per oefening, geldt ook voor complete beginners. De optie van één set uit 2009 is weg."
+      title: "Eén set"
+      body: "Mythe: beginners starten met één set. Het ACSM-advies van 2026, minstens twee sets per oefening, geldt ook voor hen."
     de:
-      title: "Mythos: Anfänger starten mit einem Satz"
-      body: "Nicht mehr. Der ACSM-Rat von 2026, mindestens zwei Sätze pro Übung, gilt auch für völlige Anfänger. Die Ein-Satz-Option von 2009 ist weg."
+      title: "Ein Satz"
+      body: "Mythos: Anfänger starten mit einem Satz. Der ACSM-Rat von 2026, zwei Sätze pro Übung, gilt auch für sie."
     es:
-      title: "Mito: los novatos empiezan con una serie"
-      body: "Ya no. El consejo del ACSM de 2026, al menos dos series por ejercicio, vale también para novatos totales. La opción de una serie de 2009 se fue."
+      title: "Una serie"
+      body: "Mito: los novatos empiezan con una serie. El consejo del ACSM de 2026, dos por ejercicio, vale también para ellos."
     fr:
-      title: "Mythe : un débutant commence avec une série"
-      body: "Plus maintenant. Le conseil ACSM de 2026, au moins deux séries par exercice, vaut aussi pour les vrais débutants. L'option d'une série est partie."
+      title: "Une série"
+      body: "Mythe : un débutant commence avec une série. Le conseil ACSM 2026, deux par exercice, vaut aussi pour lui."
     pt:
-      title: "Mito: iniciantes começam com uma série"
-      body: "Já não. O conselho do ACSM de 2026, pelo menos duas séries por exercício, vale também para iniciantes. A opção de uma série de 2009 caiu."
+      title: "Uma série"
+      body: "Mito: iniciantes começam com uma série. O conselho do ACSM de 2026, duas por exercício, vale também para eles."
     tr:
-      title: "Efsane: yeni başlayan tek setle başlar"
-      body: "Artık değil. ACSM'nin 2026 tavsiyesi, hareket başına en az iki set, tamamen yeni başlayanlar için de geçerli. 2009'daki tek set seçeneği kalktı."
+      title: "Tek set"
+      body: "Efsane: yeni başlayan tek setle başlar. ACSM'nin 2026'daki hareket başına en az iki set önerisi onlar için de geçerli."
 
   - key: sets-opbouwen
     kind: fact
     en:
-      title: "Adding sets"
-      body: "An expert consensus for athletes suggests adding at most about 20% more sets per four weeks. From 10 sets, that's 2 more in a month."
+      title: "20%"
+      body: "More sets per four weeks at most, an expert consensus for athletes suggests. From 10 sets, that's 2 more a month."
     nl:
-      title: "Sets erbij doen"
-      body: "Een expertconsensus voor atleten raadt aan hooguit zo'n 20% sets toe te voegen per vier weken. Van 10 sets is dat er 2 meer in een maand."
+      title: "20%"
+      body: "Meer sets per vier weken als maximum, oppert een expertconsensus. Vanaf 10 sets zijn dat er 2 meer per maand."
     de:
-      title: "Sätze steigern"
-      body: "Ein Expertenkonsens für Athleten rät zu höchstens etwa 20% mehr Sätzen pro vier Wochen. Bei 10 Sätzen sind das 2 mehr im Monat."
+      title: "20 %"
+      body: "Mehr Sätze pro vier Wochen höchstens, schlägt ein Expertenkonsens vor. Von 10 Sätzen aus sind das 2 mehr im Monat."
     es:
-      title: "Añadir series"
-      body: "Un consenso de expertos para atletas sugiere sumar como mucho un 20% de series cada cuatro semanas. Desde 10 series, 2 más en un mes."
+      title: "20 %"
+      body: "Más series cada cuatro semanas como mucho, sugiere un consenso de expertos. Desde 10, son 2 más al mes."
     fr:
-      title: "Ajouter des séries"
-      body: "Un consensus d'experts pour athlètes suggère d'ajouter au plus 20% de séries par cycle de quatre semaines. Sur 10 séries, 2 de plus en un mois."
+      title: "20 %"
+      body: "De séries en plus par quatre semaines au maximum, suggère un consensus d'experts. Depuis 10, ça fait 2 de plus."
     pt:
-      title: "Acrescentar séries"
-      body: "Um consenso de especialistas para atletas sugere juntar no máximo cerca de 20% de séries a cada quatro semanas. De 10 séries, mais 2 num mês."
+      title: "20%"
+      body: "Mais séries a cada quatro semanas no máximo, sugere um consenso de especialistas. A partir de 10, são 2 mais."
     tr:
-      title: "Set eklemek"
-      body: "Sporcular için bir uzman görüş birliği, dört haftada en fazla yaklaşık %20 set eklemeyi öneriyor. 10 setten bir ayda 2 set fazlası."
+      title: "%20"
+      body: "Uzman görüş birliğine göre dört haftada en fazla bu kadar set artışı. 10 setten başlayınca ayda 2 set."
 
   - key: kracht-vlakt-af
     kind: myth
     en:
-      title: "Myth: more sets keep adding strength"
-      body: "Not quite. In one large analysis, the gain per extra set flattened much faster for strength than for muscle size."
+      title: "Extra sets"
+      body: "Myth: more sets keep adding strength. The gain per extra set flattened much faster for strength than size."
     nl:
-      title: "Mythe: meer sets geven steeds meer kracht"
-      body: "Niet helemaal. In één grote analyse vlakte de winst per extra set veel sneller af voor kracht dan voor spiergrootte."
+      title: "Extra sets"
+      body: "Mythe: meer sets blijven kracht opleveren. De winst per set vlakte voor kracht veel sneller af dan voor spier."
     de:
-      title: "Mythos: mehr Sätze, immer mehr Kraft"
-      body: "Nicht ganz. In einer großen Analyse flachte der Gewinn pro Zusatzsatz bei der Kraft viel schneller ab als bei der Muskelgröße."
+      title: "Extra Sätze"
+      body: "Mythos: Mehr Sätze bringen immer mehr Kraft. Der Gewinn pro Satz flachte bei Kraft viel schneller ab."
     es:
-      title: "Mito: más series, siempre más fuerza"
-      body: "No del todo. En un gran análisis, lo que aportaba cada serie extra se aplanaba mucho antes en fuerza que en tamaño muscular."
+      title: "Series extra"
+      body: "Mito: más series siguen sumando fuerza. La ganancia por serie se aplanó mucho antes en fuerza que en tamaño."
     fr:
-      title: "Mythe : plus de séries, toujours plus de force"
-      body: "Pas tout à fait. Dans une grande analyse, le gain par série en plus plafonnait bien plus vite pour la force que pour la masse."
+      title: "Séries en plus"
+      body: "Mythe : plus de séries, toujours plus de force. Le gain par série plafonnait bien plus vite pour la force."
     pt:
-      title: "Mito: mais séries dão sempre mais força"
-      body: "Não exatamente. Numa grande análise, o ganho por série extra estabilizou muito mais depressa na força do que no tamanho muscular."
+      title: "Séries extra"
+      body: "Mito: mais séries continuam a dar força. O ganho por série estabilizou muito mais cedo na força."
     tr:
-      title: "Efsane: daha çok set hep daha çok güç"
-      body: "Tam değil. Büyük bir analizde ek set başına kazanç, güçte kas büyüklüğüne göre çok daha hızlı düzleşti."
+      title: "Ek setler"
+      body: "Efsane: set ekledikçe güç artmaya devam eder. Set başına kazanç güçte kas hacminden çok daha hızlı düzleşti."
 
   - key: geen-duidelijk-plafond
     kind: fact
     en:
-      title: "A ceiling for growth?"
-      body: "One analysis found no clear plateau for muscle growth. It's uncertain, though: few studies went past about 25 sets a week."
+      title: "25 sets"
+      body: "Few studies went past that a week, so it's unclear whether muscle growth has a ceiling. One analysis found none."
     nl:
-      title: "Een plafond voor groei?"
-      body: "Eén analyse vond geen duidelijk plafond voor spiergroei. Dat is wel onzeker, want weinig studies gingen voorbij zo'n 25 sets per week."
+      title: "25 sets"
+      body: "Weinig studies gingen verder dan dat per week. Of spiergroei een plafond heeft is dus onzeker. Eén analyse zag er geen."
     de:
-      title: "Eine Grenze fürs Wachstum?"
-      body: "Eine Analyse fand kein klares Plateau beim Muskelwachstum. Das ist aber unsicher, denn kaum Studien gingen über etwa 25 Sätze pro Woche."
+      title: "25 Sätze"
+      body: "Wenige Studien gingen pro Woche darüber, also ist ein Wachstumsplafond unklar. Eine Analyse fand keinen."
     es:
-      title: "¿Un techo para crecer?"
-      body: "Un análisis no encontró un techo claro para el crecimiento. Es incierto, eso sí: pocos estudios pasaron de unas 25 series a la semana."
+      title: "25 series"
+      body: "Pocos estudios pasaron de ahí por semana, así que no está claro si hay techo. Un análisis no lo encontró."
     fr:
-      title: "Un plafond pour la masse ?"
-      body: "Une analyse n'a pas trouvé de plateau net pour la prise de muscle. C'est incertain : peu d'études ont dépassé 25 séries par semaine."
+      title: "25 séries"
+      body: "Peu d'études sont allées au-delà par semaine, donc un plafond reste incertain. Une analyse n'en a pas vu."
     pt:
-      title: "Um teto para crescer?"
-      body: "Uma análise não encontrou um teto claro para o crescimento. Mas é incerto: poucos estudos passaram de cerca de 25 séries por semana."
+      title: "25 séries"
+      body: "Poucos estudos passaram disso por semana, por isso não se sabe se há teto. Uma análise não o viu."
     tr:
-      title: "Gelişimin tavanı var mı?"
-      body: "Bir analiz kas gelişiminde net bir tavan bulmadı. Ama bu belirsiz, çünkü çok az çalışma haftada 25 seti aştı."
+      title: "25 set"
+      body: "Haftada bundan fazlasına bakan çalışma az, büyümenin tavanı belirsiz. Bir analiz tavan bulmadı."
 
   - key: groepsgemiddelden
     kind: fact
     en:
-      title: "Your own set count"
-      body: "All these set numbers come from groups of people. Use them as a starting point and adjust to how you recover."
+      title: "Group averages"
+      body: "All these set numbers come from groups of people. Use them as a start and adjust to how you recover."
     nl:
-      title: "Jouw eigen aantal sets"
-      body: "Al deze aantallen sets komen uit groepen mensen. Gebruik ze als startpunt en stel bij op hoe jij herstelt."
+      title: "Groepsgemiddelden"
+      body: "Al deze aantallen sets komen van groepen mensen. Gebruik ze als start en pas aan op je herstel."
     de:
-      title: "Deine eigene Satzzahl"
-      body: "All diese Satzzahlen stammen aus Gruppen von Menschen. Nimm sie als Startpunkt und pass sie an deine Erholung an."
+      title: "Gruppenmittel"
+      body: "All diese Satzzahlen stammen aus Gruppen. Nimm sie als Start und pass sie an deine Erholung an."
     es:
-      title: "Tu propio número de series"
-      body: "Todas estas cifras de series salen de grupos de personas. Úsalas como punto de partida y ajústalas a cómo te recuperas."
+      title: "Medias de grupo"
+      body: "Todas estas cifras de series vienen de grupos. Úsalas para empezar y ajusta según cómo recuperes."
     fr:
-      title: "Ton propre nombre de séries"
-      body: "Tous ces chiffres viennent de groupes de personnes. Prends-les comme point de départ et ajuste selon ta récupération."
+      title: "Moyennes de groupe"
+      body: "Tous ces nombres de séries viennent de groupes. Pars de là et ajuste selon ta récup."
     pt:
-      title: "O teu número de séries"
-      body: "Todos estes números de séries vêm de grupos de pessoas. Usa-os como ponto de partida e ajusta à forma como recuperas."
+      title: "Médias de grupo"
+      body: "Todos estes números de séries vêm de grupos. Usa-os para começar e ajusta à tua recuperação."
     tr:
-      title: "Kendi set sayın"
-      body: "Bu set sayılarının hepsi insan gruplarından geliyor. Başlangıç noktası olarak kullan, toparlanmana göre ayarla."
+      title: "Grup ortalamaları"
+      body: "Bu set sayılarının hepsi gruplardan geliyor. Başlangıç olarak kullan, toparlanmana göre ayarla."

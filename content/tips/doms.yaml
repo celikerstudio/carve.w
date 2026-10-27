@@ -1,241 +1,242 @@
 article: doms
+emoji: "😣"
 tips:
   - key: wat-het-is
     kind: fact
     en:
-      title: "DOMS"
-      body: "The soreness that shows up after training, not during it. It's most common after a break or when you try something new."
+      title: "Delayed soreness"
+      body: "Shows up after training, not during it. Most common after a break or when you try something new."
     nl:
-      title: "Spierpijn"
-      body: "De pijn die na het trainen opkomt, niet tijdens. Je krijgt het vooral na een pauze of als je iets nieuws probeert."
+      title: "Spierpijn achteraf"
+      body: "Komt na de training, niet tijdens. Het vaakst na een pauze of als je iets nieuws doet."
     de:
       title: "Muskelkater"
-      body: "Der Schmerz, der nach dem Training kommt, nicht währenddessen. Am häufigsten nach einer Pause oder bei etwas Neuem."
+      body: "Kommt nach dem Training, nicht währenddessen. Am häufigsten nach einer Pause oder bei Neuem."
     es:
       title: "Agujetas"
-      body: "El dolor que aparece después de entrenar, no durante. Es más común tras un parón o cuando pruebas algo nuevo."
+      body: "Aparecen después de entrenar, no durante. Sobre todo tras un parón o al probar algo nuevo."
     fr:
       title: "Courbatures"
-      body: "La douleur qui arrive après l'entraînement, pas pendant. Elle est la plus fréquente après une pause ou une activité nouvelle."
+      body: "Elles arrivent après l'effort, pas pendant. Surtout après une pause ou un exercice nouveau."
     pt:
-      title: "Dores musculares"
-      body: "A dor que aparece depois de treinar, não durante. É mais comum depois de uma pausa ou quando experimentas algo novo."
+      title: "Dores tardias"
+      body: "Aparecem depois do treino, não durante. Sobretudo depois de uma pausa ou de algo novo."
     tr:
-      title: "Gecikmiş kas ağrısı"
-      body: "Antrenman sırasında değil, sonrasında çıkan ağrı. En çok bir aradan sonra ya da yeni bir şey denediğinde görülür."
+      title: "Gecikmiş ağrı"
+      body: "Antrenmandan sonra gelir, sırasında değil. En çok bir aradan sonra ya da yeni bir şey denediğinde."
 
   - key: rekken-helpt-niet
     kind: myth
     en:
-      title: "Myth: stretching gets rid of soreness"
-      body: "Not true. An expert panel says stretching for soreness lacks evidence and a theoretical basis. If it feels good, that's still fine."
+      title: "Stretching"
+      body: "Myth: stretching gets rid of soreness. Experts say there's no evidence for it. If it feels good, that's fine."
     nl:
-      title: "Mythe: rekken helpt tegen spierpijn"
-      body: "Niet waar. Een expertpanel zegt dat rekken tegen spierpijn geen bewijs én geen theoretische basis heeft. Voelt het fijn, dan mag het."
+      title: "Rekken"
+      body: "Mythe: rekken haalt spierpijn weg. Experts zeggen dat er geen bewijs voor is. Voelt het fijn, dan mag het."
     de:
-      title: "Mythos: Dehnen hilft gegen Muskelkater"
-      body: "Stimmt nicht. Laut einem Expertengremium fehlen dafür Belege und eine theoretische Grundlage. Fühlt es sich gut an, ist es okay."
+      title: "Dehnen"
+      body: "Mythos: Dehnen vertreibt Muskelkater. Fachleute sehen keine Belege dafür. Tut es gut, ist es trotzdem okay."
     es:
-      title: "Mito: estirar quita las agujetas"
-      body: "No es cierto. Un panel de expertos dice que no hay pruebas ni base teórica para ello. Si te sienta bien, puedes hacerlo igual."
+      title: "Estirar"
+      body: "Mito: estirar quita las agujetas. Los expertos dicen que no hay pruebas. Si te sienta bien, adelante."
     fr:
-      title: "Mythe : s'étirer fait passer les courbatures"
-      body: "Faux. Un panel d'experts dit que ça n'a ni preuves ni base théorique. Si ça te fait du bien, rien ne t'empêche de le faire."
+      title: "S'étirer"
+      body: "Mythe : s'étirer fait passer les courbatures. Les experts n'y voient aucune preuve. Si ça fait du bien, ok."
     pt:
-      title: "Mito: alongar tira as dores musculares"
-      body: "Não é verdade. Um painel de peritos diz que não há provas nem base teórica para isso. Se te sabe bem, podes fazê-lo na mesma."
+      title: "Alongar"
+      body: "Mito: alongar tira as dores. Os especialistas dizem que não há provas. Se te sabe bem, tudo bem."
     tr:
-      title: "Efsane: esneme kas ağrısını geçirir"
-      body: "Doğru değil. Bir uzman paneline göre bunun ne kanıtı ne de teorik temeli var. İyi geliyorsa yine de yapabilirsin."
+      title: "Esneme"
+      body: "Efsane: esneme kas ağrısını giderir. Uzmanlar buna kanıt olmadığını söylüyor. İyi geliyorsa sorun yok."
 
   - key: pijn-is-geen-maatstaf
     kind: myth
     en:
-      title: "Myth: sore means it was a good workout"
-      body: "Not proven. Experts call soreness a marker of unaccustomed training. No source tested it as a sign that a session built muscle."
+      title: "Sore = good?"
+      body: "Myth: sore means it was a good workout. Soreness marks training you're not used to. Nobody showed it means growth."
     nl:
-      title: "Mythe: spierpijn betekent een goede training"
-      body: "Niet bewezen. Experts zien spierpijn als teken van ongewone training. Geen bron toetste of het laat zien dat je spier opbouwde."
+      title: "Pijn = goed?"
+      body: "Mythe: spierpijn betekent een goede training. Het wijst op training die je niet gewend bent, niet op groei."
     de:
-      title: "Mythos: Muskelkater heißt gutes Training"
-      body: "Nicht belegt. Fachleute sehen Muskelkater als Zeichen ungewohnten Trainings. Keine Quelle prüfte ihn als Zeichen für Muskelaufbau."
+      title: "Kater = gut?"
+      body: "Mythos: Muskelkater heißt gutes Training. Er zeigt ungewohnte Belastung. Dass er Wachstum anzeigt, ist unbelegt."
     es:
-      title: "Mito: agujetas = buen entrenamiento"
-      body: "No está probado. Los expertos las ven como señal de un entrenamiento inusual. Ninguna fuente comprobó que indiquen que ganaste músculo."
+      title: "¿Dolor = bueno?"
+      body: "Mito: agujetas es buen entreno. Indican un esfuerzo al que no estás hecho. Nadie probó que signifiquen músculo."
     fr:
-      title: "Mythe : courbatures = bonne séance"
-      body: "Pas prouvé. Les experts y voient le signe d'un entraînement inhabituel. Aucune source n'a vérifié qu'elles signalent un gain de muscle."
+      title: "Mal = efficace ?"
+      body: "Mythe : courbatures = bonne séance. Elles signalent un effort inhabituel. Rien ne prouve qu'elles signifient du muscle."
     pt:
-      title: "Mito: dores = bom treino"
-      body: "Não está provado. Os peritos veem as dores como sinal de treino invulgar. Nenhuma fonte testou se mostram que ganhaste músculo."
+      title: "Dor = bom?"
+      body: "Mito: dores são sinal de bom treino. Mostram esforço a que não estás habituado. Ninguém provou que dão músculo."
     tr:
-      title: "Efsane: ağrı varsa iyi antrenmandır"
-      body: "Kanıtlanmadı. Uzmanlar ağrıyı alışılmadık antrenmanın işareti sayar. Hiçbir kaynak bunun kas yaptığını gösterdiğini test etmedi."
+      title: "Ağrı = iyi mi?"
+      body: "Efsane: ağrı iyi antrenman demek. Alışık olmadığın yükü gösterir. Kas yaptığını kimse kanıtlamadı."
 
   - key: het-zakken
     kind: fact
     en:
-      title: "The lowering part"
-      body: "Eccentric work, where the muscle lengthens under load like lowering a squat or curl, causes more micro-injury than other contractions."
+      title: "The lowering"
+      body: "Eccentric work, like lowering a squat or curl, causes more micro-damage than other contractions."
     nl:
       title: "Het zakken"
-      body: "Excentrisch werk, waarbij je spier onder belasting langer wordt, zoals het zakken bij een squat of curl, geeft meer microschade."
+      body: "Excentrisch werk, zoals zakken bij een squat of curl, geeft meer microschade dan andere contracties."
     de:
-      title: "Die Absenkphase"
-      body: "Exzentrische Arbeit, bei der der Muskel unter Last länger wird, etwa beim Absenken der Kniebeuge, verursacht mehr Mikroverletzungen."
+      title: "Das Absenken"
+      body: "Exzentrische Arbeit wie das Absenken bei Kniebeuge oder Curl verursacht mehr Mikroschäden."
     es:
-      title: "La fase de bajada"
-      body: "El trabajo excéntrico, cuando el músculo se alarga con carga, como al bajar en una sentadilla o un curl, causa más microlesiones."
+      title: "La bajada"
+      body: "El trabajo excéntrico, como bajar en la sentadilla o el curl, causa más microdaño que otras contracciones."
     fr:
-      title: "La phase de descente"
-      body: "Le travail excentrique, quand le muscle s'allonge sous charge comme en descente de squat ou de curl, crée plus de microlésions."
+      title: "La descente"
+      body: "Le travail excentrique, comme descendre un squat ou un curl, cause plus de microlésions."
     pt:
-      title: "A fase de descida"
-      body: "O trabalho excêntrico, em que o músculo alonga sob carga, como ao descer no agachamento ou no curl, causa mais microlesões."
+      title: "A descida"
+      body: "O trabalho excêntrico, como descer no agachamento ou na rosca, causa mais microlesões."
     tr:
-      title: "İndirme aşaması"
-      body: "Kasın yük altında uzadığı eksantrik çalışma, örneğin squat ya da curl'de indirme, diğer kasılmalardan daha fazla mikro hasar yapar."
+      title: "İniş"
+      body: "Squat ya da curl'de indirmek gibi eksantrik iş, diğer kasılmalardan daha çok mikro hasar yapar."
 
   - key: rustig-opbouwen
     kind: fact
     en:
-      title: "New exercise? Ease in"
-      body: "Authors of a 2003 review suggest introducing new or eccentric exercise over 1 to 2 weeks. It's their advice, not a tested rule."
+      title: "1 to 2 weeks"
+      body: "To ease into a new or eccentric exercise, review authors suggest. Their advice, not a tested rule."
     nl:
-      title: "Nieuwe oefening? Rustig aan"
-      body: "De auteurs van een review uit 2003 raden aan nieuwe of excentrische oefeningen over 1 à 2 weken op te bouwen. Advies, geen getoetste regel."
+      title: "1 tot 2 weken"
+      body: "Neem die om in een nieuwe of excentrische oefening te groeien, opperen reviewers. Advies, geen geteste regel."
     de:
-      title: "Neue Übung? Langsam rein"
-      body: "Die Autoren eines Reviews von 2003 raten, neue oder exzentrische Übungen über 1 bis 2 Wochen aufzubauen. Ein Rat, keine geprüfte Regel."
+      title: "1 bis 2 Wochen"
+      body: "Für den Einstieg in neue oder exzentrische Übungen, raten Fachautoren. Ein Rat, keine getestete Regel."
     es:
-      title: "¿Ejercicio nuevo? Poco a poco"
-      body: "Los autores de una revisión de 2003 sugieren introducir ejercicios nuevos o excéntricos en 1 a 2 semanas. Es un consejo, no una regla probada."
+      title: "1 a 2 semanas"
+      body: "Para entrar en un ejercicio nuevo o excéntrico, sugieren unos autores. Es un consejo, no una regla probada."
     fr:
-      title: "Nouvel exercice ? En douceur"
-      body: "Les auteurs d'une revue de 2003 conseillent d'introduire un exercice nouveau ou excentrique sur 1 à 2 semaines. Un conseil, pas une règle testée."
+      title: "1 à 2 semaines"
+      body: "Pour t'habituer à un exercice nouveau ou excentrique, suggèrent des auteurs. Un conseil, pas une règle testée."
     pt:
-      title: "Exercício novo? Com calma"
-      body: "Os autores de uma revisão de 2003 sugerem introduzir exercícios novos ou excêntricos ao longo de 1 a 2 semanas. É conselho, não regra testada."
+      title: "1 a 2 semanas"
+      body: "Para entrar num exercício novo ou excêntrico, sugerem autores. É um conselho, não uma regra testada."
     tr:
-      title: "Yeni egzersiz mi? Yavaş başla"
-      body: "2003 tarihli bir derlemenin yazarları yeni ya da eksantrik egzersizi 1 ila 2 haftada eklemeyi öneriyor. Bu bir tavsiye, test edilmiş kural değil."
+      title: "1-2 hafta"
+      body: "Yeni ya da eksantrik bir harekete alışmak için önerilen süre. Bir tavsiye, test edilmiş kural değil."
 
   - key: massage-placebo
     kind: fact
     en:
-      title: "Massage and soreness"
-      body: "In a meta-analysis of 99 studies, massage lowered soreness the most. People knew which treatment they got, so placebo couldn't be ruled out."
+      title: "99 studies"
+      body: "Massage eased soreness most in a meta-analysis. People knew what they got, so placebo can't be ruled out."
     nl:
-      title: "Massage en spierpijn"
-      body: "In een meta-analyse van 99 studies verminderde massage spierpijn het meest. Mensen wisten wat ze kregen, dus placebo viel niet uit te sluiten."
+      title: "99 studies"
+      body: "Massage verlichtte spierpijn het meest in een meta-analyse. Mensen wisten wat ze kregen, dus placebo kan meespelen."
     de:
-      title: "Massage und Muskelkater"
-      body: "In einer Metaanalyse von 99 Studien senkte Massage den Muskelkater am stärksten. Die Leute wussten, was sie bekamen. Placebo ist möglich."
+      title: "99 Studien"
+      body: "Massage linderte den Kater in einer Metaanalyse am meisten. Alle wussten, was sie bekamen: Placebo möglich."
     es:
-      title: "Masaje y agujetas"
-      body: "En un metaanálisis de 99 estudios, el masaje fue lo que más redujo el dolor. La gente sabía qué recibía, así que no se descarta el placebo."
+      title: "99 estudios"
+      body: "El masaje alivió más las agujetas en un metaanálisis. Sabían qué recibían, así que puede ser placebo."
     fr:
-      title: "Massage et courbatures"
-      body: "Dans une méta-analyse de 99 études, le massage a le plus réduit les courbatures. Les gens savaient ce qu'ils recevaient : placebo possible."
+      title: "99 études"
+      body: "Le massage a le plus soulagé dans une méta-analyse. Les gens savaient ce qu'ils recevaient : placebo possible."
     pt:
-      title: "Massagem e dores"
-      body: "Numa meta-análise de 99 estudos, a massagem foi o que mais reduziu as dores. As pessoas sabiam o que recebiam, logo o placebo é possível."
+      title: "99 estudos"
+      body: "A massagem aliviou mais as dores numa meta-análise. Sabiam o que recebiam, por isso pode ser placebo."
     tr:
-      title: "Masaj ve kas ağrısı"
-      body: "99 çalışmalık bir meta-analizde ağrıyı en çok masaj azalttı. Katılımcılar ne aldığını biliyordu, yani plasebo dışlanamadı."
+      title: "99 çalışma"
+      body: "Bir meta-analizde ağrıyı en çok masaj azalttı. Kişiler ne aldığını biliyordu, plasebo dışlanamaz."
 
   - key: schade-geen-groei
     kind: myth
     en:
-      title: "Myth: you need muscle damage to grow"
-      body: "Not proven. A narrative review says programs that caused little damage gave similar muscle and strength gains as ones that did."
+      title: "Muscle damage"
+      body: "Myth: you need muscle damage to grow. Programs causing little damage gave similar muscle and strength gains."
     nl:
-      title: "Mythe: zonder spierschade geen groei"
-      body: "Niet bewezen. Volgens een narratieve review gaven schema's met weinig schade vergelijkbare spier- en krachtwinst als schema's met veel schade."
+      title: "Spierschade"
+      body: "Mythe: je hebt spierschade nodig om te groeien. Schema's met weinig schade gaven vergelijkbare winst."
     de:
-      title: "Mythos: Ohne Muskelschaden kein Wachstum"
-      body: "Nicht belegt. Laut einem narrativen Review brachten Programme mit wenig Schaden ähnliche Muskel- und Kraftzuwächse wie solche mit viel."
+      title: "Muskelschaden"
+      body: "Mythos: Ohne Muskelschaden kein Wachstum. Programme mit wenig Schaden brachten ähnliche Zuwächse."
     es:
-      title: "Mito: sin daño muscular no creces"
-      body: "No está probado. Según una revisión narrativa, programas con poco daño dieron ganancias de músculo y fuerza similares a los que causaban más."
+      title: "Daño muscular"
+      body: "Mito: sin daño muscular no creces. Programas con poco daño dieron ganancias parecidas de músculo y fuerza."
     fr:
-      title: "Mythe : sans dégâts musculaires, pas de muscle"
-      body: "Pas prouvé. Selon une revue narrative, des programmes peu abîmants ont donné des gains de muscle et de force similaires aux autres."
+      title: "Lésions musculaires"
+      body: "Mythe : sans lésions, pas de croissance. Des programmes peu traumatisants ont donné des gains similaires."
     pt:
-      title: "Mito: sem dano muscular não cresces"
-      body: "Não está provado. Segundo uma revisão narrativa, programas com pouco dano deram ganhos de músculo e força semelhantes aos que causavam mais."
+      title: "Dano muscular"
+      body: "Mito: sem dano muscular não cresces. Programas com pouco dano deram ganhos parecidos de músculo e força."
     tr:
-      title: "Efsane: kas hasarı olmadan büyüme olmaz"
-      body: "Kanıtlanmadı. Bir anlatı derlemesine göre az hasar veren programlar, çok hasar verenlerle benzer kas ve güç kazancı sağladı."
+      title: "Kas hasarı"
+      body: "Efsane: büyümek için kas hasarı gerekir. Az hasar yapan programlar benzer kas ve güç kazancı sağladı."
 
   - key: bewegen-tijdelijk
     kind: fact
     en:
       title: "Moving it off"
-      body: "Sources disagree. A 2003 review says exercise eases the pain best, but only for a while. A 2025 review calls the evidence weak."
+      body: "Exercise eases soreness, but only for a while, says one review. A newer one calls the evidence weak."
     nl:
       title: "Eruit bewegen"
-      body: "De bronnen zijn het oneens. Een review uit 2003 zegt dat bewegen de pijn het best verlicht, maar tijdelijk. Een review uit 2025 noemt het bewijs zwak."
+      body: "Bewegen verlicht spierpijn, maar maar even, zegt een review. Een nieuwere noemt het bewijs zwak."
     de:
       title: "Rausbewegen"
-      body: "Die Quellen sind uneins. Ein Review von 2003 sagt, Bewegung lindert am besten, aber nur kurz. Ein Review von 2025 nennt die Belege schwach."
+      body: "Bewegung lindert den Kater, aber nur kurz, sagt eine Übersicht. Eine neuere nennt die Belege schwach."
     es:
-      title: "Moverte para aliviarlo"
-      body: "Las fuentes no coinciden. Una revisión de 2003 dice que moverse alivia más, pero solo un rato. Otra de 2025 ve las pruebas débiles."
+      title: "Moverse"
+      body: "El ejercicio alivia las agujetas, pero solo un rato, dice una revisión. Otra más reciente ve pruebas débiles."
     fr:
-      title: "Bouger pour soulager"
-      body: "Les sources divergent. Une revue de 2003 dit que bouger soulage le mieux, mais un temps. Une revue de 2025 juge les preuves faibles."
+      title: "Bouger"
+      body: "Bouger soulage les courbatures, mais pas longtemps, dit une revue. Une plus récente juge les preuves faibles."
     pt:
-      title: "Mexer para aliviar"
-      body: "As fontes não concordam. Uma revisão de 2003 diz que o exercício alivia mais, mas só por um tempo. Outra de 2025 acha as provas fracas."
+      title: "Mexer-te"
+      body: "O exercício alivia as dores, mas só por um tempo, diz uma revisão. Outra mais recente vê provas fracas."
     tr:
-      title: "Hareketle geçirmek"
-      body: "Kaynaklar ayrışıyor. 2003 tarihli bir derleme egzersizin ağrıyı en iyi ama geçici azalttığını söylüyor. 2025 tarihli biri kanıtı zayıf buluyor."
+      title: "Hareketle atmak"
+      body: "Bir derlemeye göre hareket ağrıyı geçici olarak azaltır. Daha yeni bir derleme kanıtı zayıf buluyor."
 
   - key: andere-spieren
     kind: fact
     en:
-      title: "Still sore, training again"
-      body: "A 2003 review suggests easing off for 1 to 2 days after an intense session, or training other muscles in the meantime."
+      title: "1 to 2 days"
+      body: "Ease off after an intense session, or train other muscles meanwhile, a review suggests."
     nl:
-      title: "Nog stijf, weer trainen"
-      body: "Een review uit 2003 stelt voor om 1 à 2 dagen rustiger aan te doen na een zware sessie, of in de tussentijd andere spieren te trainen."
+      title: "1 tot 2 dagen"
+      body: "Doe het rustiger aan na een zware training, of train intussen andere spieren, oppert een review."
     de:
-      title: "Noch Muskelkater, wieder Training"
-      body: "Ein Review von 2003 schlägt vor, nach einer harten Einheit 1 bis 2 Tage kürzerzutreten oder in der Zeit andere Muskeln zu trainieren."
+      title: "1 bis 2 Tage"
+      body: "Nach einer harten Einheit kürzertreten oder andere Muskeln trainieren, rät eine Übersicht."
     es:
-      title: "Con agujetas y toca entrenar"
-      body: "Una revisión de 2003 sugiere bajar el ritmo 1 o 2 días tras una sesión intensa, o entrenar otros músculos mientras tanto."
+      title: "1 a 2 días"
+      body: "Baja el ritmo tras una sesión intensa, o entrena otros músculos mientras, sugiere una revisión."
     fr:
-      title: "Encore courbaturé, séance prévue"
-      body: "Une revue de 2003 suggère de lever le pied 1 à 2 jours après une séance intense, ou de travailler d'autres muscles en attendant."
+      title: "1 à 2 jours"
+      body: "Lève le pied après une séance intense, ou travaille d'autres muscles, suggère une revue."
     pt:
-      title: "Ainda com dores, e há treino"
-      body: "Uma revisão de 2003 sugere abrandar 1 a 2 dias depois de um treino intenso, ou treinar outros músculos entretanto."
+      title: "1 a 2 dias"
+      body: "Abranda depois de um treino intenso, ou treina outros músculos entretanto, sugere uma revisão."
     tr:
-      title: "Hâlâ ağrılı, yine antrenman"
-      body: "2003 tarihli bir derleme, yoğun bir antrenmandan sonra 1 ila 2 gün tempoyu düşürmeyi ya da bu arada başka kasları çalıştırmayı öneriyor."
+      title: "1-2 gün"
+      body: "Bir derlemeye göre yoğun antrenmandan sonra yavaşla ya da bu arada başka kasları çalıştır."
 
   - key: naar-de-dokter
     kind: fact
     en:
-      title: "When it's more than soreness"
-      body: "Extreme pain, a swollen muscle or dark urine after a hard session is not ordinary soreness. See a doctor."
+      title: "Dark urine"
+      body: "Extreme pain, a swollen muscle or dark urine after hard training isn't normal soreness. See a doctor."
     nl:
-      title: "Als het meer is dan spierpijn"
-      body: "Extreme pijn, een opgezwollen spier of donkere urine na een zware training is geen gewone spierpijn. Ga naar een dokter."
+      title: "Donkere urine"
+      body: "Extreme pijn, een gezwollen spier of donkere urine na zware training is geen gewone spierpijn. Ga naar een arts."
     de:
-      title: "Wenn es mehr ist als Muskelkater"
-      body: "Extreme Schmerzen, ein geschwollener Muskel oder dunkler Urin nach hartem Training sind kein normaler Muskelkater. Geh zum Arzt."
+      title: "Dunkler Urin"
+      body: "Extreme Schmerzen, ein geschwollener Muskel oder dunkler Urin nach hartem Training: ab zum Arzt."
     es:
-      title: "Cuando es más que agujetas"
-      body: "Dolor extremo, un músculo hinchado u orina oscura tras una sesión dura no son agujetas normales. Ve al médico."
+      title: "Orina oscura"
+      body: "Dolor extremo, un músculo hinchado u orina oscura tras entrenar duro no son agujetas. Ve al médico."
     fr:
-      title: "Quand c'est plus que des courbatures"
-      body: "Une douleur extrême, un muscle gonflé ou des urines foncées après une séance dure, ce ne sont pas des courbatures. Va voir un médecin."
+      title: "Urine foncée"
+      body: "Douleur extrême, muscle gonflé ou urine foncée après un gros effort : ce ne sont pas des courbatures. Consulte."
     pt:
-      title: "Quando é mais do que dores"
-      body: "Dor extrema, um músculo inchado ou urina escura depois de um treino duro não são dores normais. Vai ao médico."
+      title: "Urina escura"
+      body: "Dor extrema, músculo inchado ou urina escura após treino duro não são dores normais. Vai ao médico."
     tr:
-      title: "Ağrıdan fazlası olduğunda"
-      body: "Zorlu bir antrenmandan sonra aşırı ağrı, şişmiş kas ya da koyu idrar normal kas ağrısı değildir. Doktora git."
+      title: "Koyu idrar"
+      body: "Sert antrenman sonrası aşırı ağrı, şişmiş kas ya da koyu idrar normal ağrı değil. Doktora git."

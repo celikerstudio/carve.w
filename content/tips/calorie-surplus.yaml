@@ -1,169 +1,170 @@
 article: calorie-surplus
+emoji: "🥜"
 tips:
   - key: klein-overschot
     kind: fact
     en:
-      title: "How big a surplus"
-      body: "150 to 300 kcal a day extra is enough. That gains you roughly 0.25 to 0.5% of your body weight per week."
+      title: "150 to 300 kcal"
+      body: "Extra a day is enough. That gains you roughly 0.25 to 0.5% of your bodyweight a week."
     nl:
-      title: "Hoe groot een overschot"
-      body: "150 tot 300 kcal per dag extra is genoeg. Daarmee kom je zo'n 0,25 tot 0,5% van je lichaamsgewicht per week aan."
+      title: "150 tot 300 kcal"
+      body: "Extra per dag is genoeg. Zo kom je ongeveer 0,25 tot 0,5% van je gewicht per week aan."
     de:
-      title: "Wie groß ein Überschuss"
-      body: "150 bis 300 kcal am Tag extra reichen. Damit nimmst du etwa 0,25 bis 0,5% deines Körpergewichts pro Woche zu."
+      title: "150 bis 300 kcal"
+      body: "Extra am Tag reichen. So nimmst du etwa 0,25 bis 0,5 % deines Gewichts pro Woche zu."
     es:
-      title: "Qué superávit"
-      body: "Con 150 a 300 kcal extra al día basta. Así ganas más o menos un 0,25 a 0,5% de tu peso corporal por semana."
+      title: "150 a 300 kcal"
+      body: "Extra al día bastan. Así ganas más o menos un 0,25 a 0,5 % de tu peso por semana."
     fr:
-      title: "Quel surplus"
-      body: "150 à 300 kcal de plus par jour suffisent. Tu prends ainsi environ 0,25 à 0,5% de ton poids par semaine."
+      title: "150 à 300 kcal"
+      body: "En plus par jour suffisent. Tu prends ainsi environ 0,25 à 0,5 % de ton poids par semaine."
     pt:
-      title: "Que excedente"
-      body: "150 a 300 kcal a mais por dia chegam. Assim ganhas cerca de 0,25 a 0,5% do teu peso corporal por semana."
+      title: "150 a 300 kcal"
+      body: "A mais por dia chegam. Assim ganhas cerca de 0,25 a 0,5% do teu peso por semana."
     tr:
-      title: "Fazlalık ne kadar olmalı"
-      body: "Günde 150 ila 300 kcal fazlası yeterli. Böylece haftada vücut ağırlığının yaklaşık %0,25 ila 0,5'i kadar alırsın."
+      title: "150-300 kcal"
+      body: "Günlük bu kadar fazlası yeter. Böylece haftada vücut ağırlığının yaklaşık %0,25-0,5'i kadar alırsın."
 
   - key: meer-is-niet-sneller
     kind: myth
     en:
-      title: "Myth: eat more, grow faster"
-      body: "Not true. A big surplus mostly adds fat. It does not make your muscles grow meaningfully faster."
+      title: "Faster growth"
+      body: "Myth: eat more, grow faster. A big surplus mostly adds fat. Your muscles don't grow meaningfully faster."
     nl:
-      title: "Mythe: meer eten, sneller groeien"
-      body: "Klopt niet. Een groot overschot levert vooral vet op. Je spieren groeien er niet merkbaar sneller door."
+      title: "Sneller groeien"
+      body: "Mythe: meer eten is sneller groeien. Een groot overschot geeft vooral vet. Je spieren groeien niet echt sneller."
     de:
-      title: "Mythos: mehr essen, schneller wachsen"
-      body: "Stimmt nicht. Ein großer Überschuss bringt vor allem Fett. Deine Muskeln wachsen dadurch nicht spürbar schneller."
+      title: "Schneller wachsen"
+      body: "Mythos: Mehr essen, schneller wachsen. Ein großer Überschuss bringt vor allem Fett, kaum schnelleren Muskel."
     es:
-      title: "Mito: comer más, crecer más rápido"
-      body: "No es cierto. Un superávit grande añade sobre todo grasa. Tus músculos no crecen bastante más rápido por eso."
+      title: "Crecer más rápido"
+      body: "Mito: comer más es crecer más rápido. Un gran superávit añade sobre todo grasa, no músculo más rápido."
     fr:
-      title: "Mythe : manger plus, grossir plus vite"
-      body: "Faux. Un gros surplus ajoute surtout du gras. Tes muscles ne poussent pas vraiment plus vite pour autant."
+      title: "Grossir plus vite"
+      body: "Mythe : manger plus, c'est prendre du muscle plus vite. Un gros surplus ajoute surtout du gras."
     pt:
-      title: "Mito: comer mais, crescer mais depressa"
-      body: "Não é verdade. Um excedente grande junta sobretudo gordura. Os teus músculos não crescem muito mais depressa por isso."
+      title: "Crescer mais rápido"
+      body: "Mito: comer mais é crescer mais rápido. Um grande excedente junta sobretudo gordura, não músculo mais rápido."
     tr:
-      title: "Efsane: çok ye, hızlı büyü"
-      body: "Doğru değil. Büyük bir fazlalık çoğunlukla yağ ekler. Kasların bu yüzden belirgin şekilde daha hızlı büyümez."
+      title: "Daha hızlı büyümek"
+      body: "Efsane: çok ye, hızlı büyü. Büyük fazla çoğunlukla yağ ekler, kaslar belirgin şekilde hızlanmaz."
 
   - key: bijsturen
     kind: fact
     en:
-      title: "Adjusting a bulk"
-      body: "Gaining faster than planned? Drop 100 to 200 kcal. Weight stuck for 2 weeks? Add 100 to 150 kcal."
+      title: "100 to 200 kcal"
+      body: "Gaining faster than planned? Drop that much. Weight stuck for 2 weeks? Add 100 to 150 kcal."
     nl:
-      title: "Bijsturen tijdens een bulk"
-      body: "Kom je sneller aan dan gepland? Haal er 100 tot 200 kcal af. Staat je gewicht 2 weken stil? Doe er 100 tot 150 kcal bij."
+      title: "100 tot 200 kcal"
+      body: "Kom je sneller aan dan gepland? Haal er zoveel af. Staat je gewicht 2 weken stil? Doe er 100 tot 150 bij."
     de:
-      title: "Den Aufbau nachjustieren"
-      body: "Nimmst du schneller zu als geplant? Nimm 100 bis 200 kcal weg. Steht das Gewicht 2 Wochen still? Leg 100 bis 150 kcal drauf."
+      title: "100 bis 200 kcal"
+      body: "Nimmst du schneller zu als geplant? Streich so viel. Steht das Gewicht 2 Wochen? Leg 100 bis 150 drauf."
     es:
-      title: "Ajustar el volumen"
-      body: "¿Subes más rápido de lo previsto? Quita 100 a 200 kcal. ¿Peso parado 2 semanas? Añade 100 a 150 kcal."
+      title: "100 a 200 kcal"
+      body: "¿Subes más rápido de lo previsto? Quita eso. ¿Peso parado 2 semanas? Suma 100 a 150 kcal."
     fr:
-      title: "Ajuster une prise de masse"
-      body: "Tu prends plus vite que prévu ? Retire 100 à 200 kcal. Poids bloqué depuis 2 semaines ? Ajoute 100 à 150 kcal."
+      title: "100 à 200 kcal"
+      body: "Tu prends plus vite que prévu ? Enlève ça. Poids bloqué 2 semaines ? Ajoute 100 à 150 kcal."
     pt:
-      title: "Ajustar o bulk"
-      body: "Estás a ganhar mais depressa do que o previsto? Tira 100 a 200 kcal. Peso parado há 2 semanas? Junta 100 a 150 kcal."
+      title: "100 a 200 kcal"
+      body: "Estás a subir mais rápido do que o previsto? Tira isso. Peso parado 2 semanas? Junta 100 a 150 kcal."
     tr:
-      title: "Bulk'ı ayarlamak"
-      body: "Planladığından hızlı mı kilo alıyorsun? 100 ila 200 kcal azalt. Kilon 2 haftadır sabit mi? 100 ila 150 kcal ekle."
+      title: "100-200 kcal"
+      body: "Plandan hızlı mı alıyorsun? Bu kadar azalt. Kilo 2 haftadır duruyor mu? 100-150 kcal ekle."
 
   - key: calorierijk-eten
     kind: fact
     en:
-      title: "Calorie-dense food"
-      body: "Struggling to eat enough? Rice, oats and nut butters help you hit your target without overloading your stomach."
+      title: "Can't eat enough"
+      body: "Rice, oats and nut butters help you hit your target without overloading your stomach."
     nl:
-      title: "Calorierijk eten"
-      body: "Lukt het niet om genoeg te eten? Rijst, havermout en notenpasta helpen je je doel halen zonder dat je maag protesteert."
+      title: "Krijg je het niet op"
+      body: "Rijst, havermout en notenpasta helpen je je doel te halen zonder dat je maag overvol raakt."
     de:
-      title: "Kalorienreiches Essen"
-      body: "Schaffst du nicht genug? Reis, Haferflocken und Nussmus helfen dir, dein Ziel zu erreichen, ohne deinen Magen zu überladen."
+      title: "Schaffst es nicht"
+      body: "Reis, Haferflocken und Nussmus helfen dir ans Ziel, ohne dass dein Magen überläuft."
     es:
-      title: "Comida densa en calorías"
-      body: "¿Te cuesta comer bastante? El arroz, la avena y las cremas de frutos secos te ayudan a llegar sin sobrecargar el estómago."
+      title: "No llegas"
+      body: "El arroz, la avena y las cremas de frutos secos te ayudan a llegar sin llenar demasiado el estómago."
     fr:
-      title: "Des aliments denses"
-      body: "Du mal à manger assez ? Le riz, l'avoine et les beurres d'oléagineux t'aident à atteindre ton objectif sans surcharger l'estomac."
+      title: "Tu n'y arrives pas"
+      body: "Riz, flocons d'avoine et purées d'oléagineux t'aident à atteindre ta cible sans te gaver."
     pt:
-      title: "Comida densa em calorias"
-      body: "Custa-te comer o suficiente? Arroz, aveia e manteiga de frutos secos ajudam-te a chegar lá sem sobrecarregar o estômago."
+      title: "Não consegues comer"
+      body: "Arroz, aveia e manteigas de frutos secos ajudam-te a chegar ao alvo sem encher demasiado o estômago."
     tr:
-      title: "Kalorisi yoğun yiyecekler"
-      body: "Yeterince yemekte zorlanıyor musun? Pirinç, yulaf ve kuruyemiş ezmeleri, mideni yormadan hedefine ulaşmana yardım eder."
+      title: "Yetiştiremiyorsan"
+      body: "Pirinç, yulaf ve fıstık ezmesi gibi ezmeler mideni doldurmadan hedefe ulaşmanı sağlar."
 
   - key: kracht-moet-meegroeien
     kind: fact
     en:
-      title: "Is your surplus working?"
-      body: "Weight gain should come with more weight or reps in the gym. If it does not, adjust your training or your surplus."
+      title: "Stronger too"
+      body: "Gaining weight should come with more weight or reps in the gym. If not, adjust your training or surplus."
     nl:
-      title: "Werkt je overschot?"
-      body: "Aankomen hoort samen te gaan met meer gewicht of reps in de gym. Gebeurt dat niet, pas dan je training of je overschot aan."
+      title: "Ook sterker"
+      body: "Aankomen hoort samen te gaan met meer gewicht of herhalingen. Zo niet, pas je training of overschot aan."
     de:
-      title: "Wirkt dein Überschuss?"
-      body: "Zunehmen sollte mit mehr Gewicht oder Wiederholungen im Gym einhergehen. Wenn nicht, pass dein Training oder deinen Überschuss an."
+      title: "Auch stärker"
+      body: "Zunehmen sollte mit mehr Gewicht oder Wiederholungen einhergehen. Sonst Training oder Überschuss anpassen."
     es:
-      title: "¿Funciona tu superávit?"
-      body: "Subir de peso debería ir con más kilos o más repeticiones en el gimnasio. Si no, ajusta tu entreno o tu superávit."
+      title: "También más fuerte"
+      body: "Subir de peso debería traer más kilos o repeticiones. Si no, ajusta el entreno o el superávit."
     fr:
-      title: "Ton surplus marche-t-il ?"
-      body: "La prise de poids doit aller avec plus de charge ou de reps à la salle. Sinon, ajuste ton entraînement ou ton surplus."
+      title: "Plus fort aussi"
+      body: "Prendre du poids doit aller avec plus de charge ou de reps. Sinon, ajuste ton entraînement ou ton surplus."
     pt:
-      title: "O teu excedente funciona?"
-      body: "Ganhar peso deve vir com mais carga ou mais repetições no ginásio. Se não vier, ajusta o treino ou o excedente."
+      title: "Mais forte também"
+      body: "Ganhar peso deve vir com mais carga ou repetições. Se não, ajusta o treino ou o excedente."
     tr:
-      title: "Fazlalığın işe yarıyor mu?"
-      body: "Kilo alırken salonda ağırlığın ya da tekrarın da artmalı. Artmıyorsa antrenmanını ya da fazlalığını ayarla."
+      title: "Güç de artmalı"
+      body: "Kilo alırken ağırlık ya da tekrar da artmalı. Artmıyorsa antrenmanı ya da fazlayı ayarla."
 
   - key: onderhoudspauze
     kind: fact
     en:
-      title: "A maintenance break"
-      body: "If your weight is climbing faster than your strength, pause at maintenance for 1 to 2 weeks to cap fat gain."
+      title: "1 to 2 weeks"
+      body: "At maintenance caps fat gain when your weight climbs faster than your strength."
     nl:
-      title: "Even op onderhoud"
-      body: "Gaat je gewicht harder omhoog dan je kracht? Eet dan 1 tot 2 weken op onderhoud om de vetwinst te beperken."
+      title: "1 tot 2 weken"
+      body: "Op onderhoud remt vetwinst als je gewicht sneller stijgt dan je kracht."
     de:
-      title: "Eine Erhaltungspause"
-      body: "Steigt dein Gewicht schneller als deine Kraft? Iss 1 bis 2 Wochen auf Erhaltung, um den Fettzuwachs zu bremsen."
+      title: "1 bis 2 Wochen"
+      body: "Auf Erhalt bremsen den Fettzuwachs, wenn dein Gewicht schneller steigt als deine Kraft."
     es:
-      title: "Una pausa en mantenimiento"
-      body: "Si tu peso sube más rápido que tu fuerza, pasa 1 a 2 semanas en mantenimiento para frenar la grasa."
+      title: "1 a 2 semanas"
+      body: "En mantenimiento frenan la grasa cuando tu peso sube más rápido que tu fuerza."
     fr:
-      title: "Une pause en maintenance"
-      body: "Ton poids monte plus vite que ta force ? Passe 1 à 2 semaines en maintenance pour limiter la prise de gras."
+      title: "1 à 2 semaines"
+      body: "En maintenance freinent le gras quand ton poids monte plus vite que ta force."
     pt:
-      title: "Uma pausa em manutenção"
-      body: "Se o peso sobe mais depressa do que a força, fica 1 a 2 semanas em manutenção para travar a gordura."
+      title: "1 a 2 semanas"
+      body: "Em manutenção travam a gordura quando o peso sobe mais rápido do que a força."
     tr:
-      title: "Koruma molası"
-      body: "Kilon gücünden hızlı mı artıyor? Yağ artışını sınırlamak için 1 ila 2 hafta koruma kalorisinde kal."
+      title: "1-2 hafta"
+      body: "Kilon gücünden hızlı artıyorsa bu kadar korumada kalmak yağ artışını durdurur."
 
   - key: mini-cut
     kind: fact
     en:
-      title: "Mini-cuts"
-      body: "After a long surplus phase, a short mini-cut of 2 to 4 weeks can tidy things up without losing momentum."
+      title: "2 to 4 weeks"
+      body: "A mini-cut that short can tidy things up after a long surplus, without losing momentum."
     nl:
-      title: "Mini-cut"
-      body: "Na een lange periode met overschot kan een korte mini-cut van 2 tot 4 weken opruimen zonder dat je vaart verliest."
+      title: "2 tot 4 weken"
+      body: "Zo'n korte mini-cut ruimt na een lange bulk wat op, zonder dat je vaart verliest."
     de:
-      title: "Mini-Diät"
-      body: "Nach einer langen Überschussphase kann eine kurze Mini-Diät von 2 bis 4 Wochen aufräumen, ohne dass du Schwung verlierst."
+      title: "2 bis 4 Wochen"
+      body: "So ein kurzer Mini-Cut räumt nach langem Überschuss auf, ohne dass du Schwung verlierst."
     es:
-      title: "Mini definición"
-      body: "Tras una fase larga de superávit, una mini definición de 2 a 4 semanas puede limpiar sin que pierdas el ritmo."
+      title: "2 a 4 semanas"
+      body: "Una mini definición así de corta ordena las cosas tras un superávit largo, sin perder ritmo."
     fr:
-      title: "La mini-sèche"
-      body: "Après une longue phase en surplus, une mini-sèche de 2 à 4 semaines peut faire le ménage sans casser ta dynamique."
+      title: "2 à 4 semaines"
+      body: "Une mini-sèche aussi courte remet de l'ordre après un long surplus, sans casser ta lancée."
     pt:
-      title: "Mini cut"
-      body: "Depois de uma fase longa de excedente, um mini cut de 2 a 4 semanas pode arrumar as coisas sem perderes o ritmo."
+      title: "2 a 4 semanas"
+      body: "Um mini-cut assim curto arruma as coisas depois de um excedente longo, sem perder embalo."
     tr:
-      title: "Mini cut"
-      body: "Uzun bir fazlalık döneminden sonra 2 ila 4 haftalık kısa bir mini cut, ivmeni kaybetmeden toparlamana yardım edebilir."
+      title: "2-4 hafta"
+      body: "Uzun bir fazladan sonra bu kadar kısa bir mini cut, ivme kaybetmeden ortalığı toparlar."

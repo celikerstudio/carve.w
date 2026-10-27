@@ -1,241 +1,242 @@
 article: melatonin
+emoji: "🌙"
 tips:
   - key: een-mg
     kind: fact
     en:
-      title: "Melatonin to fall asleep"
-      body: "EFSA found that melatonin shortens the time to fall asleep. The condition it set: 1 mg, taken close to bedtime."
+      title: "1 mg"
+      body: "Of melatonin close to bedtime helps you fall asleep faster, EFSA found. That's the condition it set."
     nl:
-      title: "Melatonine om in te slapen"
-      body: "EFSA vond dat melatonine je sneller laat inslapen. De voorwaarde: 1 mg, vlak voor het slapengaan."
+      title: "1 mg"
+      body: "Melatonine vlak voor bedtijd laat je sneller inslapen, vond EFSA. Dat is de voorwaarde die ze stelde."
     de:
-      title: "Melatonin zum Einschlafen"
-      body: "Laut EFSA verkürzt Melatonin die Einschlafzeit. Die Bedingung: 1 mg, kurz vor dem Schlafengehen."
+      title: "1 mg"
+      body: "Melatonin kurz vor dem Schlafen lässt dich laut EFSA schneller einschlafen. Das ist ihre Bedingung."
     es:
-      title: "Melatonina para dormirte"
-      body: "La EFSA concluyó que la melatonina acorta el tiempo para dormirte. La condición: 1 mg, cerca de la hora de acostarte."
+      title: "1 mg"
+      body: "De melatonina cerca de la hora de dormir acorta el tiempo hasta dormirte, según la EFSA. Esa es su condición."
     fr:
-      title: "La mélatonine pour s'endormir"
-      body: "Pour l'EFSA, la mélatonine raccourcit le temps d'endormissement. La condition : 1 mg, peu avant le coucher."
+      title: "1 mg"
+      body: "De mélatonine près du coucher aide à s'endormir plus vite, selon l'EFSA. C'est la condition posée."
     pt:
-      title: "Melatonina para adormecer"
-      body: "A EFSA concluiu que a melatonina encurta o tempo até adormeceres. A condição: 1 mg, perto da hora de deitar."
+      title: "1 mg"
+      body: "De melatonina perto da hora de deitar ajuda a adormecer mais depressa, segundo a EFSA. É a condição dela."
     tr:
-      title: "Uykuya dalmak için melatonin"
-      body: "EFSA'ya göre melatonin uykuya dalma süresini kısaltır. Koşulu: yatmadan hemen önce 1 mg."
+      title: "1 mg"
+      body: "Yatmadan hemen önce melatonin daha hızlı uyumana yardım eder, EFSA'ya göre. Koşul bu."
 
   - key: zeven-minuten
     kind: myth
     en:
-      title: "Myth: melatonin knocks you out fast"
-      body: "Only a bit. In trials with people with sleep disorders, they fell asleep about 7 minutes faster than on placebo."
+      title: "7 minutes"
+      body: "Myth: melatonin knocks you out fast. People with sleep disorders fell asleep about that much faster than on placebo."
     nl:
-      title: "Mythe: met melatonine slaap je meteen"
-      body: "Een beetje maar. Mensen met slaapproblemen sliepen in studies zo'n 7 minuten sneller in dan met een placebo."
+      title: "7 minuten"
+      body: "Mythe: melatonine slaat je knock-out. Mensen met slaapproblemen sliepen zoveel sneller in dan met placebo."
     de:
-      title: "Mythos: Mit Melatonin schläfst du sofort"
-      body: "Nur ein bisschen. Menschen mit Schlafstörungen schliefen in Studien etwa 7 Minuten schneller ein als mit Placebo."
+      title: "7 Minuten"
+      body: "Mythos: Melatonin haut dich um. Menschen mit Schlafstörungen schliefen etwa so viel schneller ein als mit Placebo."
     es:
-      title: "Mito: con melatonina caes rendido"
-      body: "Solo un poco. En estudios con personas con problemas de sueño, se durmieron unos 7 minutos antes que con placebo."
+      title: "7 minutos"
+      body: "Mito: la melatonina te deja KO al momento. Con trastornos del sueño, se durmieron eso antes que con placebo."
     fr:
-      title: "Mythe : la mélatonine t'assomme"
-      body: "Un peu seulement. Chez des personnes avec troubles du sommeil, l'endormissement était environ 7 minutes plus rapide qu'avec un placebo."
+      title: "7 minutes"
+      body: "Mythe : la mélatonine t'assomme vite. Des gens avec troubles du sommeil s'endormaient ça plus vite qu'au placebo."
     pt:
-      title: "Mito: a melatonina põe-te logo a dormir"
-      body: "Só um pouco. Em estudos com pessoas com problemas de sono, adormeceram cerca de 7 minutos mais depressa do que com placebo."
+      title: "7 minutos"
+      body: "Mito: a melatonina deita-te abaixo. Pessoas com problemas de sono adormeceram isso mais cedo que com placebo."
     tr:
-      title: "Efsane: melatonin seni hemen uyutur"
-      body: "Sadece biraz. Uyku sorunu olan kişiler çalışmalarda plaseboya göre yaklaşık 7 dakika daha hızlı uykuya daldı."
+      title: "7 dakika"
+      body: "Efsane: melatonin seni hemen bayıltır. Uyku bozukluğu olanlar plaseboya göre bu kadar hızlı uyudu."
 
   - key: meer-is-niet-beter
     kind: myth
     en:
-      title: "Myth: more melatonin works better"
-      body: "Not for jet lag. Doses above 5 mg appear to work no better. EFSA's conditions are 1 mg for sleep and 0.5 to 5 mg for jet lag."
+      title: "Above 5 mg"
+      body: "Myth: more melatonin works better. For jet lag, higher doses work no better. EFSA says 0.5 to 5 mg."
     nl:
-      title: "Mythe: meer melatonine werkt beter"
-      body: "Niet bij jetlag. Boven de 5 mg lijkt het niet beter te werken. EFSA noemt 1 mg om in te slapen en 0,5 tot 5 mg bij jetlag."
+      title: "Boven 5 mg"
+      body: "Mythe: meer melatonine werkt beter. Bij jetlag werken hogere doses niet beter. EFSA zegt 0,5 tot 5 mg."
     de:
-      title: "Mythos: Mehr Melatonin wirkt besser"
-      body: "Nicht bei Jetlag. Über 5 mg scheint es nicht besser zu wirken. Die EFSA nennt 1 mg zum Einschlafen und 0,5 bis 5 mg bei Jetlag."
+      title: "Über 5 mg"
+      body: "Mythos: Mehr Melatonin wirkt besser. Bei Jetlag wirken höhere Dosen nicht besser. EFSA: 0,5 bis 5 mg."
     es:
-      title: "Mito: más melatonina funciona mejor"
-      body: "No para el jet lag. Por encima de 5 mg no parece funcionar mejor. La EFSA habla de 1 mg para dormir y de 0,5 a 5 mg para el jet lag."
+      title: "Más de 5 mg"
+      body: "Mito: más melatonina funciona mejor. Para el jet lag, dosis mayores no van mejor. La EFSA dice 0,5 a 5 mg."
     fr:
-      title: "Mythe : plus de mélatonine, plus d'effet"
-      body: "Pas pour le décalage horaire. Au-delà de 5 mg, ça ne semble pas mieux marcher. L'EFSA parle de 1 mg pour dormir, 0,5 à 5 mg en voyage."
+      title: "Plus de 5 mg"
+      body: "Mythe : plus de mélatonine, plus d'effet. Contre le jet lag, pas mieux au-delà. L'EFSA dit 0,5 à 5 mg."
     pt:
-      title: "Mito: mais melatonina funciona melhor"
-      body: "Não no jet lag. Acima de 5 mg não parece funcionar melhor. A EFSA fala de 1 mg para dormir e de 0,5 a 5 mg para o jet lag."
+      title: "Mais de 5 mg"
+      body: "Mito: mais melatonina funciona melhor. Para o jet lag, doses maiores não são melhores. A EFSA diz 0,5 a 5 mg."
     tr:
-      title: "Efsane: daha çok melatonin daha iyi"
-      body: "Jet lag'de değil. 5 mg üstü daha iyi çalışmıyor gibi. EFSA uyku için 1 mg, jet lag için 0,5 ila 5 mg diyor."
+      title: "5 mg'dan fazla"
+      body: "Efsane: daha çok melatonin daha iyi. Jet lag'de yüksek doz daha iyi değil. EFSA 0,5-5 mg diyor."
 
   - key: jetlag
     kind: fact
     en:
-      title: "Melatonin and jet lag"
-      body: "EFSA found it reduces jet lag at 0.5 to 5 mg, close to bedtime on your travel day and the first few days after you arrive."
+      title: "Jet lag"
+      body: "Melatonin at 0.5 to 5 mg near bedtime on travel day and the first days after reduces it, EFSA found."
     nl:
-      title: "Melatonine en jetlag"
-      body: "Volgens EFSA vermindert het jetlag bij 0,5 tot 5 mg, vlak voor het slapen op je reisdag en de eerste dagen na aankomst."
+      title: "Jetlag"
+      body: "Melatonine van 0,5 tot 5 mg rond bedtijd op je reisdag en de eerste dagen erna vermindert het, vond EFSA."
     de:
-      title: "Melatonin und Jetlag"
-      body: "Laut EFSA lindert es Jetlag mit 0,5 bis 5 mg, kurz vor dem Schlafen am Reisetag und in den ersten Tagen nach der Ankunft."
+      title: "Jetlag"
+      body: "Melatonin mit 0,5 bis 5 mg vor dem Schlafen am Reisetag und den ersten Tagen danach mildert ihn, so die EFSA."
     es:
-      title: "Melatonina y jet lag"
-      body: "La EFSA vio que reduce el jet lag con 0,5 a 5 mg antes de dormir, el día del viaje y los primeros días tras llegar."
+      title: "Jet lag"
+      body: "La melatonina de 0,5 a 5 mg al acostarte el día del viaje y los primeros días lo reduce, según la EFSA."
     fr:
-      title: "Mélatonine et décalage horaire"
-      body: "L'EFSA a vu qu'elle réduit le décalage à 0,5 à 5 mg au coucher, le jour du voyage et les premiers jours après l'arrivée."
+      title: "Jet lag"
+      body: "La mélatonine à 0,5 à 5 mg au coucher le jour du voyage et les premiers jours le réduit, selon l'EFSA."
     pt:
-      title: "Melatonina e jet lag"
-      body: "A EFSA viu que reduz o jet lag com 0,5 a 5 mg antes de dormir, no dia da viagem e nos primeiros dias após chegares."
+      title: "Jet lag"
+      body: "Melatonina de 0,5 a 5 mg ao deitar no dia da viagem e nos primeiros dias reduz o jet lag, diz a EFSA."
     tr:
-      title: "Melatonin ve jet lag"
-      body: "EFSA'ya göre 0,5 ila 5 mg, yolculuk günü ve varıştan sonraki ilk günlerde yatmadan önce alınınca jet lag'i azaltır."
+      title: "Jet lag"
+      body: "EFSA'ya göre yolculuk günü ve sonraki ilk günlerde yatarken 0,5-5 mg melatonin jet lag'i azaltır."
 
   - key: vijf-tijdzones
     kind: fact
     en:
-      title: "Long flights"
-      body: "In a Cochrane review, 9 of 10 trials found that melatonin at bedtime at your destination reduced jet lag after crossing five or more time zones."
+      title: "5 time zones"
+      body: "Or more? Melatonin at bedtime at your destination reduced jet lag in 9 of 10 trials."
     nl:
-      title: "Lange vluchten"
-      body: "In een Cochrane-review vonden 9 van de 10 studies minder jetlag na vijf of meer tijdzones, met melatonine voor het slapen op je bestemming."
+      title: "5 tijdzones"
+      body: "Of meer? Melatonine bij bedtijd op je bestemming verminderde jetlag in 9 van de 10 studies."
     de:
-      title: "Lange Flüge"
-      body: "In einem Cochrane-Review fanden 9 von 10 Studien weniger Jetlag nach fünf oder mehr Zeitzonen, mit Melatonin abends am Zielort."
+      title: "5 Zeitzonen"
+      body: "Oder mehr? Melatonin zur Schlafenszeit am Zielort milderte den Jetlag in 9 von 10 Studien."
     es:
-      title: "Vuelos largos"
-      body: "En una revisión Cochrane, 9 de 10 ensayos vieron menos jet lag tras cruzar cinco o más husos horarios, con melatonina al acostarte en destino."
+      title: "5 husos horarios"
+      body: "¿O más? La melatonina al acostarte en el destino redujo el jet lag en 9 de 10 ensayos."
     fr:
-      title: "Les longs vols"
-      body: "Dans une revue Cochrane, 9 essais sur 10 ont vu moins de décalage après cinq fuseaux ou plus, avec de la mélatonine au coucher sur place."
+      title: "5 fuseaux horaires"
+      body: "Ou plus ? La mélatonine au coucher sur place a réduit le jet lag dans 9 essais sur 10."
     pt:
-      title: "Voos longos"
-      body: "Numa revisão Cochrane, 9 de 10 ensaios viram menos jet lag após cinco ou mais fusos horários, com melatonina ao deitar no destino."
+      title: "5 fusos horários"
+      body: "Ou mais? Melatonina ao deitar no destino reduziu o jet lag em 9 de 10 ensaios."
     tr:
-      title: "Uzun uçuşlar"
-      body: "Bir Cochrane derlemesinde 10 denemeden 9'u, beş veya daha fazla saat dilimi geçince varış yerinde yatarken alınan melatoninle daha az jet lag buldu."
+      title: "5 saat dilimi"
+      body: "Ya da daha fazla mı? Varış yerinde yatarken melatonin 10 çalışmanın 9'unda jet lag'i azalttı."
 
   - key: verkeerd-moment
     kind: fact
     en:
-      title: "Timing matters"
-      body: "Taken early in the day, melatonin can make you sleepy and slow down how fast you adjust to local time."
+      title: "Morning dose"
+      body: "Taken early in the day, melatonin can make you sleepy and slow how fast you adjust to local time."
     nl:
-      title: "Het moment telt"
-      body: "Neem je melatonine vroeg op de dag, dan kun je er slaperig van worden en pas je je trager aan de lokale tijd aan."
+      title: "'s Ochtends"
+      body: "Vroeg op de dag genomen kan melatonine je slaperig maken en je aanpassing aan de lokale tijd vertragen."
     de:
-      title: "Der Zeitpunkt zählt"
-      body: "Früh am Tag genommen kann Melatonin dich schläfrig machen und deine Anpassung an die Ortszeit verzögern."
+      title: "Am Morgen"
+      body: "Früh am Tag genommen kann Melatonin müde machen und die Anpassung an die Ortszeit bremsen."
     es:
-      title: "El momento importa"
-      body: "Si la tomas temprano, la melatonina puede darte sueño y retrasar tu adaptación a la hora local."
+      title: "Por la mañana"
+      body: "Tomada temprano, la melatonina puede darte sueño y frenar tu ajuste a la hora local."
     fr:
-      title: "Le moment compte"
-      body: "Prise tôt dans la journée, la mélatonine peut t'endormir et retarder ton adaptation à l'heure locale."
+      title: "Le matin"
+      body: "Prise tôt dans la journée, la mélatonine peut endormir et ralentir ton adaptation à l'heure locale."
     pt:
-      title: "O momento conta"
-      body: "Tomada cedo no dia, a melatonina pode dar-te sono e atrasar a adaptação à hora local."
+      title: "De manhã"
+      body: "Tomada cedo, a melatonina pode dar sono e atrasar a adaptação à hora local."
     tr:
-      title: "Zamanlama önemli"
-      body: "Günün erken saatinde alınan melatonin uyku yapabilir ve yerel saate uyumunu geciktirebilir."
+      title: "Sabah dozu"
+      body: "Günün erken saatinde alınan melatonin uyku yapabilir ve yerel saate uyumu yavaşlatabilir."
 
   - key: geen-oplossing-voor-routine
     kind: myth
     en:
-      title: "Myth: melatonin fixes bad sleep"
-      body: "Not if your routine is the cause. Late caffeine, bright screens and an irregular schedule still cost you sleep. Start there."
+      title: "Bad sleep"
+      body: "Myth: melatonin fixes bad sleep. Not if your routine is the cause. Late caffeine and screens still cost you sleep."
     nl:
-      title: "Mythe: melatonine lost slecht slapen op"
-      body: "Niet als je routine de oorzaak is. Late koffie, felle schermen en wisselende tijden kosten je nog steeds slaap. Begin daar."
+      title: "Slecht slapen"
+      body: "Mythe: melatonine lost slecht slapen op. Niet als je routine de oorzaak is. Late koffie en schermen kosten je nog slaap."
     de:
-      title: "Mythos: Melatonin löst Schlafprobleme"
-      body: "Nicht, wenn deine Routine schuld ist. Später Kaffee, helle Bildschirme und unregelmäßige Zeiten kosten weiter Schlaf. Fang dort an."
+      title: "Schlecht schlafen"
+      body: "Mythos: Melatonin repariert schlechten Schlaf. Nicht, wenn die Routine schuld ist. Später Kaffee stört weiter."
     es:
-      title: "Mito: la melatonina arregla el mal dormir"
-      body: "No si la causa es tu rutina. La cafeína tarde, las pantallas brillantes y los horarios irregulares te siguen quitando sueño. Empieza ahí."
+      title: "Dormir mal"
+      body: "Mito: la melatonina arregla el mal sueño. No si la causa es tu rutina. Cafeína tarde y pantallas te siguen quitando."
     fr:
-      title: "Mythe : la mélatonine règle le mauvais sommeil"
-      body: "Pas si ta routine est en cause. Caféine tardive, écrans lumineux et horaires irréguliers te coûtent toujours du sommeil. Commence par là."
+      title: "Mal dormir"
+      body: "Mythe : la mélatonine règle le mauvais sommeil. Pas si ta routine est en cause. Café tardif et écrans coûtent toujours."
     pt:
-      title: "Mito: a melatonina resolve o mau sono"
-      body: "Não se a causa for a tua rotina. Cafeína tarde, ecrãs brilhantes e horários irregulares continuam a tirar-te sono. Começa por aí."
+      title: "Dormir mal"
+      body: "Mito: a melatonina resolve o mau sono. Não se a culpa é da rotina. Cafeína tardia e ecrãs continuam a tirar sono."
     tr:
-      title: "Efsane: melatonin kötü uykuyu çözer"
-      body: "Sebep rutininse hayır. Geç kafein, parlak ekranlar ve düzensiz saatler uykunu almaya devam eder. Oradan başla."
+      title: "Kötü uyku"
+      body: "Efsane: melatonin kötü uykuyu çözer. Sebep rutininse çözmez. Geç kafein ve ekranlar yine uykunu çalar."
 
   - key: epilepsie-warfarine
     kind: fact
     en:
-      title: "Who should be careful"
-      body: "Case reports suggest people with epilepsy or on the blood thinner warfarin may come to harm. Ask a doctor first, also if pregnant."
+      title: "Warfarin"
+      body: "On it, or epileptic? Case reports suggest melatonin may harm you. Ask a doctor first, also if pregnant."
     nl:
-      title: "Wie moet opletten"
-      body: "Casussen wijzen erop dat mensen met epilepsie of op de bloedverdunner warfarine er schade van kunnen hebben. Vraag eerst je arts, ook als je zwanger bent."
+      title: "Warfarine"
+      body: "Slik je dat, of heb je epilepsie? Casussen wijzen op mogelijke schade. Vraag eerst een arts, ook als je zwanger bent."
     de:
-      title: "Wer aufpassen sollte"
-      body: "Fallberichte deuten an, dass es bei Epilepsie oder mit dem Blutverdünner Warfarin schaden kann. Frag erst deinen Arzt, auch in der Schwangerschaft."
+      title: "Warfarin"
+      body: "Nimmst du es oder hast Epilepsie? Fallberichte deuten auf mögliche Schäden. Frag erst einen Arzt, auch schwanger."
     es:
-      title: "Quién debe tener cuidado"
-      body: "Hay casos que sugieren riesgo con epilepsia o con el anticoagulante warfarina. Pregunta antes a tu médico, también si estás embarazada."
+      title: "Warfarina"
+      body: "¿La tomas o tienes epilepsia? Hay casos que apuntan a posibles daños. Pregunta al médico, también si estás embarazada."
     fr:
-      title: "Qui doit faire attention"
-      body: "Des cas suggèrent un risque en cas d'épilepsie ou sous warfarine, un anticoagulant. Demande d'abord à ton médecin, aussi si tu es enceinte."
+      title: "Warfarine"
+      body: "Tu en prends ou tu es épileptique ? Des cas suggèrent un risque. Demande d'abord un médecin, aussi enceinte."
     pt:
-      title: "Quem deve ter cuidado"
-      body: "Há casos que sugerem risco com epilepsia ou com o anticoagulante varfarina. Pergunta primeiro ao médico, também se estiveres grávida."
+      title: "Varfarina"
+      body: "Tomas ou tens epilepsia? Há casos que apontam para danos. Pergunta primeiro ao médico, também se grávida."
     tr:
-      title: "Kimler dikkat etmeli"
-      body: "Vaka raporları epilepsisi olanlarda veya kan sulandırıcı varfarin kullananlarda zarar olabileceğini gösteriyor. Hamileysen de önce doktoruna sor."
+      title: "Varfarin"
+      body: "Kullanıyor musun ya da epilepsin mi var? Vakalar zarar olabileceğini gösteriyor. Hamileysen de önce doktora sor."
 
   - key: elke-nacht
     kind: fact
     en:
-      title: "Every night for months?"
-      body: "Occasional short-term use appears to be safe. For taking it every night for weeks or months, ask a doctor."
+      title: "Every night"
+      body: "Occasional short-term use seems safe. For weeks or months every night, ask a doctor."
     nl:
-      title: "Elke nacht, maandenlang?"
-      body: "Af en toe en kort gebruiken lijkt veilig. Wil je het weken of maanden elke avond nemen, vraag het dan aan een arts."
+      title: "Elke nacht"
+      body: "Af en toe kort gebruiken lijkt veilig. Voor weken of maanden elke nacht vraag je een arts."
     de:
-      title: "Jede Nacht, monatelang?"
-      body: "Gelegentlich und kurz genommen scheint es sicher. Willst du es wochen- oder monatelang jeden Abend nehmen, frag einen Arzt."
+      title: "Jede Nacht"
+      body: "Gelegentlich und kurz scheint sicher. Für Wochen oder Monate jede Nacht frag einen Arzt."
     es:
-      title: "¿Cada noche durante meses?"
-      body: "Usarla de vez en cuando y poco tiempo parece seguro. Si quieres tomarla cada noche durante semanas o meses, consulta a un médico."
+      title: "Cada noche"
+      body: "El uso ocasional y breve parece seguro. Para semanas o meses cada noche, consulta a un médico."
     fr:
-      title: "Chaque soir pendant des mois ?"
-      body: "Un usage occasionnel et court semble sans danger. Pour en prendre chaque soir pendant des semaines ou des mois, demande à un médecin."
+      title: "Chaque nuit"
+      body: "Un usage ponctuel et court semble sûr. Pour des semaines ou des mois chaque nuit, demande à un médecin."
     pt:
-      title: "Todas as noites durante meses?"
-      body: "O uso ocasional e curto parece seguro. Para tomar todas as noites durante semanas ou meses, pergunta a um médico."
+      title: "Todas as noites"
+      body: "Uso ocasional e curto parece seguro. Para semanas ou meses todas as noites, pergunta a um médico."
     tr:
-      title: "Aylarca her gece mi?"
-      body: "Ara sıra ve kısa süreli kullanım güvenli görünüyor. Haftalarca veya aylarca her gece almak istiyorsan bir doktora sor."
+      title: "Her gece"
+      body: "Arada sırada kısa süre kullanmak güvenli görünüyor. Haftalar ya da aylarca her gece için doktora sor."
 
   - key: autorijden
     kind: fact
     en:
-      title: "Melatonin and driving"
-      body: "Do not drive or use machinery until you know how melatonin affects you."
+      title: "Driving"
+      body: "Don't drive or use machinery until you know how melatonin affects you."
     nl:
-      title: "Melatonine en autorijden"
-      body: "Rij geen auto en bedien geen machines tot je weet hoe melatonine bij jou uitwerkt."
+      title: "Autorijden"
+      body: "Rijd niet en bedien geen machines tot je weet hoe melatonine bij jou uitpakt."
     de:
-      title: "Melatonin und Autofahren"
-      body: "Fahr kein Auto und bediene keine Maschinen, bis du weißt, wie Melatonin bei dir wirkt."
+      title: "Autofahren"
+      body: "Fahr nicht und bedien keine Maschinen, bis du weißt, wie Melatonin bei dir wirkt."
     es:
-      title: "Melatonina y conducir"
-      body: "No conduzcas ni uses maquinaria hasta saber cómo te afecta la melatonina."
+      title: "Conducir"
+      body: "No conduzcas ni uses máquinas hasta saber cómo te afecta la melatonina."
     fr:
-      title: "Mélatonine et conduite"
-      body: "Ne conduis pas et n'utilise pas de machines avant de savoir comment la mélatonine agit sur toi."
+      title: "Conduire"
+      body: "Ne conduis pas et n'utilise pas de machine avant de savoir comment la mélatonine t'affecte."
     pt:
-      title: "Melatonina e condução"
+      title: "Conduzir"
       body: "Não conduzas nem uses máquinas até saberes como a melatonina te afeta."
     tr:
-      title: "Melatonin ve araç kullanmak"
-      body: "Melatoninin sana nasıl etki ettiğini bilene kadar araç ya da makine kullanma."
+      title: "Araç kullanmak"
+      body: "Melatoninin seni nasıl etkilediğini bilene kadar araç ya da makine kullanma."

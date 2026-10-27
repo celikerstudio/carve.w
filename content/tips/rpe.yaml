@@ -1,145 +1,122 @@
 article: rpe
+emoji: "📶"
 tips:
   - key: wat-is-rpe
     kind: fact
     en:
-      title: "RPE"
-      body: "RPE scores how hard a set feels on a scale of 1 to 10. It is often tied to how many reps you had left."
+      title: "1 to 10"
+      body: "That's the RPE scale for how hard a set feels. It's often tied to how many reps you had left."
     nl:
-      title: "RPE"
-      body: "RPE geeft op een schaal van 1 tot 10 aan hoe zwaar een set voelt. Vaak koppel je het aan hoeveel reps je nog over had."
+      title: "1 tot 10"
+      body: "Dat is de RPE-schaal voor hoe zwaar een set voelt. Vaak gekoppeld aan hoeveel herhalingen je nog had."
     de:
-      title: "RPE"
-      body: "RPE bewertet auf einer Skala von 1 bis 10, wie hart sich ein Satz anfühlt. Oft hängt es daran, wie viele Wdh. du noch übrig hattest."
+      title: "1 bis 10"
+      body: "Das ist die RPE-Skala dafür, wie hart ein Satz ist. Oft gekoppelt an die Wiederholungen, die noch gingen."
     es:
-      title: "RPE"
-      body: "El RPE puntúa del 1 al 10 lo duro que se siente una serie. Suele ir ligado a cuántas reps te quedaban."
+      title: "1 a 10"
+      body: "Es la escala RPE de lo duro que se siente una serie. Suele ir ligada a las repeticiones que te quedaban."
     fr:
-      title: "RPE"
-      body: "Le RPE note de 1 à 10 la difficulté ressentie d'une série. On le relie souvent au nombre de reps qu'il te restait."
+      title: "1 à 10"
+      body: "C'est l'échelle RPE de la difficulté d'une série. Souvent liée aux reps qu'il te restait."
     pt:
-      title: "RPE"
-      body: "O RPE dá uma nota de 1 a 10 ao esforço que uma série custa. Costuma estar ligado a quantas repetições ainda tinhas."
+      title: "1 a 10"
+      body: "É a escala RPE para o esforço de uma série. Costuma estar ligada às repetições que ainda tinhas."
     tr:
-      title: "RPE"
-      body: "RPE bir setin ne kadar zor hissettirdiğini 1 ile 10 arası puanlar. Genelde kaç tekrarın kaldığıyla bağlantılıdır."
+      title: "1-10"
+      body: "Setin ne kadar zor geldiğini ölçen RPE ölçeği. Çoğu zaman kaç tekrarın kaldığına bağlanır."
 
   - key: hoe-zwaar-genoeg
     kind: fact
     en:
-      title: "Hard enough"
-      body: "The ACSM counts ending near failure, or with about 2 to 3 reps left, as high effort. Make most of your sets that hard."
+      title: "2 to 3 reps left"
+      body: "Or near failure: that's high effort, the ACSM says. Make most of your sets that hard."
     nl:
-      title: "Zwaar genoeg"
-      body: "Het ACSM rekent stoppen vlak bij falen, of met zo'n 2 tot 3 reps over, als hoge inzet. Maak de meeste sets zo zwaar."
+      title: "2 à 3 over"
+      body: "Of vlak bij falen: dat is flinke inzet, zegt de ACSM. Maak de meeste sets zo zwaar."
     de:
-      title: "Hart genug"
-      body: "Das ACSM wertet Sätze nahe am Versagen oder mit etwa 2 bis 3 Wdh. Reserve als hohen Einsatz. Mach die meisten Sätze so hart."
+      title: "2 bis 3 übrig"
+      body: "Oder nah am Versagen: das ist hoher Einsatz, sagt das ACSM. Mach die meisten Sätze so hart."
     es:
-      title: "Lo bastante duro"
-      body: "El ACSM considera esfuerzo alto acabar cerca del fallo o con unas 2 o 3 reps en reserva. Haz así de duras la mayoría de series."
+      title: "2 o 3 en reserva"
+      body: "O cerca del fallo: eso es esfuerzo alto, dice el ACSM. Haz así de duras casi todas tus series."
     fr:
-      title: "Assez dur"
-      body: "L'ACSM compte comme effort élevé finir près de l'échec ou avec 2 à 3 reps en réserve. Rends la plupart de tes séries aussi dures."
+      title: "2 à 3 en réserve"
+      body: "Ou près de l'échec : c'est un gros effort, dit l'ACSM. Rends la plupart de tes séries aussi dures."
     pt:
-      title: "Duro o suficiente"
-      body: "O ACSM conta como esforço alto acabar perto da falha ou com 2 a 3 repetições de reserva. Faz a maioria das séries assim."
+      title: "2 a 3 de reserva"
+      body: "Ou perto da falha: isso é esforço alto, diz o ACSM. Faz a maioria das séries assim."
     tr:
-      title: "Yeterince zor"
-      body: "ACSM tükenişe yakın ya da 2-3 tekrar kala bitirmeyi yüksek efor sayıyor. Setlerinin çoğunu bu kadar zor yap."
+      title: "2-3 tekrar kala"
+      body: "Ya da tükenişe yakın: ACSM'ye göre bu yüksek efor. Setlerinin çoğunu bu kadar zor yap."
 
   - key: geen-exact-getal
     kind: myth
     en:
-      title: "Myth: there is one right RPE"
-      body: "Not true. The ACSM says there is not enough evidence for an exact RPE or reps-left target. Use the number as a guide."
+      title: "The right RPE"
+      body: "Myth: there's one right RPE. Evidence for an exact target is lacking, says the ACSM. Use it as a guide."
     nl:
-      title: "Mythe: er is één juiste RPE"
-      body: "Klopt niet. Volgens het ACSM is er te weinig bewijs voor een exact RPE- of reps-over-doel. Gebruik het getal als richtlijn."
+      title: "De juiste RPE"
+      body: "Mythe: er is één juiste RPE. Bewijs voor een exact doel ontbreekt, zegt de ACSM. Gebruik het als richting."
     de:
-      title: "Mythos: es gibt die eine richtige RPE"
-      body: "Stimmt nicht. Laut ACSM gibt es zu wenig Belege für einen exakten RPE- oder Reserve-Zielwert. Nimm die Zahl als Richtwert."
+      title: "Die richtige RPE"
+      body: "Mythos: Es gibt die eine richtige RPE. Für einen exakten Wert fehlen Belege, so das ACSM. Nimm es als Richtwert."
     es:
-      title: "Mito: hay un RPE correcto"
-      body: "No es cierto. El ACSM dice que no hay pruebas suficientes para un RPE o unas reps en reserva exactas. Usa el número como guía."
+      title: "El RPE correcto"
+      body: "Mito: hay un RPE correcto. Faltan pruebas para una cifra exacta, dice el ACSM. Úsalo como guía."
     fr:
-      title: "Mythe : il existe un bon RPE"
-      body: "Faux. Selon l'ACSM, les preuves manquent pour fixer un RPE ou un nombre de reps en réserve exact. Prends le chiffre comme repère."
+      title: "Le bon RPE"
+      body: "Mythe : il existe un bon RPE. Pas de preuve pour un chiffre exact, dit l'ACSM. Sers-t'en comme repère."
     pt:
-      title: "Mito: há um RPE certo"
-      body: "Não é verdade. O ACSM diz que não há provas suficientes para um RPE ou reserva exatos. Usa o número como guia."
+      title: "O RPE certo"
+      body: "Mito: há um RPE certo. Faltam provas para um valor exato, diz o ACSM. Usa-o como guia."
     tr:
-      title: "Efsane: tek bir doğru RPE var"
-      body: "Doğru değil. ACSM'e göre kesin bir RPE ya da kalan tekrar hedefi için yeterli kanıt yok. Sayıyı yol gösterici olarak kullan."
+      title: "Doğru RPE"
+      body: "Efsane: tek bir doğru RPE var. ACSM'ye göre kesin bir hedef için kanıt yok. Yol gösterici olarak kullan."
 
   - key: niet-elke-set-falen
     kind: myth
     en:
-      title: "Myth: push every set to failure"
-      body: "Not true. The ACSM found no extra strength, muscle or power from it. It may even be unwise for some, like older adults."
+      title: "Every set"
+      body: "Myth: push every set to failure. The ACSM found no extra strength, muscle or power. Unwise for some, like older adults."
     nl:
-      title: "Mythe: elke set moet tot falen"
-      body: "Klopt niet. Het ACSM zag er geen extra kracht, spier of explosiviteit door. Voor sommigen, zoals ouderen, is het misschien zelfs onverstandig."
+      title: "Elke set"
+      body: "Mythe: elke set tot falen. De ACSM zag geen extra kracht, spier of explosiviteit. Voor ouderen mogelijk onverstandig."
     de:
-      title: "Mythos: jeder Satz bis zum Versagen"
-      body: "Stimmt nicht. Das ACSM fand dadurch kein Plus an Kraft, Muskel oder Schnellkraft. Für manche, etwa Ältere, ist es wohl sogar unklug."
+      title: "Jeder Satz"
+      body: "Mythos: Jeder Satz bis zum Versagen. Das ACSM fand keinen Extra-Nutzen. Für manche, etwa Ältere, eher unklug."
     es:
-      title: "Mito: cada serie al fallo"
-      body: "No es cierto. El ACSM no vio más fuerza, músculo ni potencia por ello. Para algunos, como los mayores, puede que ni sea prudente."
+      title: "Cada serie"
+      body: "Mito: lleva cada serie al fallo. El ACSM no vio más fuerza, músculo ni potencia. Poco sensato para mayores."
     fr:
-      title: "Mythe : chaque série jusqu'à l'échec"
-      body: "Faux. L'ACSM n'y a vu aucun gain de force, de muscle ou de puissance. Pour certains, comme les seniors, ce serait même peu prudent."
+      title: "Chaque série"
+      body: "Mythe : chaque série à l'échec. L'ACSM n'a vu aucun gain en plus. Peu sage pour certains, comme les seniors."
     pt:
-      title: "Mito: todas as séries até à falha"
-      body: "Não é verdade. O ACSM não viu ganho extra de força, músculo ou potência. Para alguns, como pessoas mais velhas, pode nem ser sensato."
+      title: "Cada série"
+      body: "Mito: leva cada série à falha. O ACSM não viu mais força, músculo ou potência. Pouco sensato para idosos."
     tr:
-      title: "Efsane: her set tükenişe kadar"
-      body: "Doğru değil. ACSM bundan ek güç, kas ya da patlayıcılık görmedi. Yaşlılar gibi bazıları için akıllıca bile olmayabilir."
+      title: "Her set"
+      body: "Efsane: her seti tükenişe götür. ACSM ek güç, kas ya da patlayıcılık bulmadı. Yaşlılar için akıllıca olmayabilir."
 
   - key: voor-wie
     kind: fact
     en:
-      title: "Who the advice is for"
-      body: "The ACSM advice is for healthy adults of 18 and up. Much of its evidence comes from people with little training experience."
+      title: "18 and up"
+      body: "Healthy adults are who the ACSM advice is for. Much of its evidence comes from people with little experience."
     nl:
-      title: "Voor wie het advies is"
-      body: "Het ACSM-advies geldt voor gezonde volwassenen vanaf 18. Veel van het bewijs komt van mensen met weinig trainingservaring."
+      title: "18 en ouder"
+      body: "Voor gezonde volwassenen is het ACSM-advies bedoeld. Veel bewijs komt van mensen met weinig trainingservaring."
     de:
-      title: "Für wen der Rat gilt"
-      body: "Der ACSM-Rat gilt für gesunde Erwachsene ab 18. Viele Belege stammen von Leuten mit wenig Trainingserfahrung."
+      title: "Ab 18"
+      body: "Für gesunde Erwachsene ist der ACSM-Rat gedacht. Viele Belege stammen von Menschen mit wenig Erfahrung."
     es:
-      title: "Para quién es el consejo"
-      body: "El consejo del ACSM es para adultos sanos de 18 años o más. Gran parte de la evidencia viene de gente con poca experiencia."
+      title: "Desde los 18"
+      body: "El consejo del ACSM es para adultos sanos. Mucha de su evidencia viene de gente con poca experiencia."
     fr:
-      title: "Pour qui sont ces conseils"
-      body: "Les conseils de l'ACSM visent les adultes en bonne santé dès 18 ans. Beaucoup de preuves viennent de gens peu entraînés."
+      title: "Dès 18 ans"
+      body: "Le conseil de l'ACSM vise les adultes en bonne santé. Une bonne part des preuves vient de débutants."
     pt:
-      title: "Para quem é o conselho"
-      body: "O conselho do ACSM é para adultos saudáveis a partir dos 18. Grande parte da evidência vem de pessoas com pouca experiência de treino."
+      title: "A partir dos 18"
+      body: "O conselho do ACSM é para adultos saudáveis. Muita da evidência vem de pessoas com pouca experiência."
     tr:
-      title: "Bu öneri kimin için"
-      body: "ACSM'in önerisi 18 yaş üstü sağlıklı yetişkinler için. Kanıtların çoğu az antrenman deneyimi olan kişilerden geliyor."
-
-  - key: meerdere-schalen
-    kind: fact
-    en:
-      title: "Measuring effort"
-      body: "The ACSM says effort can be measured with various scales. RPE is one way to put a number on how hard you worked."
-    nl:
-      title: "Inzet meten"
-      body: "Volgens het ACSM kun je inzet met verschillende schalen meten. RPE is één manier om een getal te geven aan hoe hard je werkte."
-    de:
-      title: "Einsatz messen"
-      body: "Laut ACSM lässt sich Einsatz mit verschiedenen Skalen messen. RPE ist ein Weg, deiner Anstrengung eine Zahl zu geben."
-    es:
-      title: "Medir el esfuerzo"
-      body: "El ACSM dice que el esfuerzo se puede medir con varias escalas. El RPE es una forma de ponerle número a lo que te costó."
-    fr:
-      title: "Mesurer l'effort"
-      body: "Selon l'ACSM, l'effort se mesure avec différentes échelles. Le RPE est une façon de mettre un chiffre sur ton effort."
-    pt:
-      title: "Medir o esforço"
-      body: "O ACSM diz que o esforço pode ser medido com várias escalas. O RPE é uma forma de pôr um número no quanto te custou."
-    tr:
-      title: "Eforu ölçmek"
-      body: "ACSM'e göre efor farklı ölçeklerle ölçülebilir. RPE ne kadar zorlandığına bir sayı vermenin bir yolu."
+      title: "18 ve üstü"
+      body: "ACSM önerisi sağlıklı yetişkinler için. Kanıtların çoğu az deneyimli kişilerden geliyor."

@@ -1,217 +1,218 @@
 article: bulking
+emoji: "🍚"
 tips:
   - key: hoe-groot
     kind: fact
     en:
-      title: "Surplus size"
-      body: "Eat about 10 to 20% above maintenance, the low end if you are advanced. On 2,800 kcal that is 280 to 560 kcal extra."
+      title: "10 to 20%"
+      body: "Above maintenance is enough for a bulk. On 2,800 kcal that's 280 to 560 kcal extra."
     nl:
-      title: "Hoe groot je overschot is"
-      body: "Eet zo'n 10 tot 20% boven je onderhoud, de onderkant als je gevorderd bent. Bij 2.800 kcal is dat 280 tot 560 kcal extra."
+      title: "10 tot 20%"
+      body: "Boven onderhoud is genoeg voor een bulk. Bij 2.800 kcal is dat 280 tot 560 kcal extra."
     de:
-      title: "Wie groß der Überschuss ist"
-      body: "Iss etwa 10 bis 20 % über deinem Erhaltungsbedarf, als Fortgeschrittener am unteren Ende. Bei 2.800 kcal sind das 280 bis 560 kcal mehr."
+      title: "10 bis 20 %"
+      body: "Über dem Erhaltungsbedarf reichen für einen Aufbau. Bei 2.800 kcal sind das 280 bis 560 kcal mehr."
     es:
-      title: "Tamaño del superávit"
-      body: "Come un 10 a 20% por encima de mantenimiento, en la parte baja si eres avanzado. Con 2.800 kcal son 280 a 560 kcal extra."
+      title: "10 a 20 %"
+      body: "Por encima del mantenimiento basta para un volumen. Con 2.800 kcal son 280 a 560 kcal extra."
     fr:
-      title: "La taille du surplus"
-      body: "Mange 10 à 20 % au-dessus de ta maintenance, le bas de la fourchette si tu es avancé. À 2 800 kcal, ça fait 280 à 560 kcal en plus."
+      title: "10 à 20 %"
+      body: "Au-dessus de la maintenance suffit pour une prise de masse. À 2 800 kcal, ça fait 280 à 560 kcal en plus."
     pt:
-      title: "Tamanho do excedente"
-      body: "Come cerca de 10 a 20% acima da manutenção, no limite baixo se já és avançado. Com 2.800 kcal são 280 a 560 kcal a mais."
+      title: "10 a 20%"
+      body: "Acima da manutenção chega para um bulk. Com 2.800 kcal, são 280 a 560 kcal a mais."
     tr:
-      title: "Fazlanın boyutu"
-      body: "Koruma kalorinin yaklaşık %10 ila 20 üstünde ye, ileri seviyedeysen alt sınırda kal. 2.800 kcal'de bu 280 ila 560 kcal fazla demek."
+      title: "%10-20"
+      body: "Bulk için koruma kalorisinin bu kadar üstü yeter. 2.800 kcal'de 280-560 kcal fazlası demek."
 
   - key: tempo
     kind: fact
     en:
-      title: "How fast to gain"
-      body: "Aim for 0.25 to 0.5% of your bodyweight a week if you are a beginner or intermediate. At 80 kg that is 0.2 to 0.4 kg."
+      title: "0.2 to 0.4 kg"
+      body: "A week is a good gain rate at 80 kg, for beginners and intermediates. That's 0.25 to 0.5% of bodyweight."
     nl:
-      title: "Hoe snel aankomen"
-      body: "Mik op 0,25 tot 0,5% van je gewicht per week als beginner of halfgevorderde. Bij 80 kg is dat 0,2 tot 0,4 kg."
+      title: "0,2 tot 0,4 kilo"
+      body: "Per week is een goed tempo bij 80 kilo, voor beginners en gevorderden. Dat is 0,25 tot 0,5% van je gewicht."
     de:
-      title: "Wie schnell zunehmen"
-      body: "Als Anfänger oder Fortgeschrittener: 0,25 bis 0,5 % deines Gewichts pro Woche. Bei 80 kg sind das 0,2 bis 0,4 kg."
+      title: "0,2 bis 0,4 kg"
+      body: "Pro Woche sind bei 80 kg ein gutes Tempo für Anfänger und Fortgeschrittene. Das sind 0,25 bis 0,5 %."
     es:
-      title: "A qué ritmo subir"
-      body: "Si eres principiante o intermedio, apunta a un 0,25 a 0,5% de tu peso por semana. Con 80 kg son 0,2 a 0,4 kg."
+      title: "0,2 a 0,4 kg"
+      body: "Por semana es buen ritmo con 80 kg, para novatos e intermedios. Es un 0,25 a 0,5 % de tu peso."
     fr:
-      title: "À quel rythme prendre"
-      body: "Débutant ou intermédiaire, vise 0,25 à 0,5 % de ton poids par semaine. À 80 kg, ça fait 0,2 à 0,4 kg."
+      title: "0,2 à 0,4 kg"
+      body: "Par semaine, c'est un bon rythme à 80 kg pour débutants et intermédiaires. Soit 0,25 à 0,5 % du poids."
     pt:
-      title: "A que ritmo ganhar"
-      body: "Se és iniciante ou intermédio, aponta para 0,25 a 0,5% do teu peso por semana. Com 80 kg são 0,2 a 0,4 kg."
+      title: "0,2 a 0,4 kg"
+      body: "Por semana é bom ritmo com 80 kg, para iniciantes e intermédios. É 0,25 a 0,5% do teu peso."
     tr:
-      title: "Ne hızla kilo almalı"
-      body: "Yeni başlayan ya da orta seviyedeysen haftada vücut ağırlığının %0,25 ila 0,5'ini hedefle. 80 kg'da bu 0,2 ila 0,4 kg."
+      title: "0,2-0,4 kg"
+      body: "80 kiloda yeni ve orta seviye için iyi haftalık artış. Vücut ağırlığının %0,25-0,5'i."
 
   - key: zoveel-mogelijk
     kind: myth
     en:
-      title: "Myth: eat as much as you can"
-      body: "Not a good idea. A large surplus raises the risk of extra fat, especially once you are trained. And that fat has to come off later."
+      title: "All you can eat"
+      body: "Myth: eat as much as you can. A big surplus raises the risk of extra fat, and that has to come off later."
     nl:
-      title: "Mythe: eet zoveel als je kunt"
-      body: "Geen goed idee. Een groot overschot vergroot de kans op extra vet, zeker als je al getraind bent. En dat vet moet er later weer af."
+      title: "Zoveel mogelijk"
+      body: "Mythe: eet zoveel als je kunt. Een groot overschot vergroot de kans op extra vet, en dat moet er later weer af."
     de:
-      title: "Mythos: Iss so viel du kannst"
-      body: "Keine gute Idee. Ein großer Überschuss erhöht das Risiko für zusätzliches Fett, vor allem wenn du trainiert bist. Das muss später wieder runter."
+      title: "So viel wie geht"
+      body: "Mythos: Iss so viel du kannst. Ein großer Überschuss erhöht das Risiko für Fett, und das muss später runter."
     es:
-      title: "Mito: come todo lo que puedas"
-      body: "No es buena idea. Un superávit grande sube el riesgo de grasa extra, sobre todo si ya entrenas. Y esa grasa luego hay que perderla."
+      title: "Todo lo que puedas"
+      body: "Mito: come todo lo que puedas. Un gran superávit sube el riesgo de grasa extra, y luego hay que quitarla."
     fr:
-      title: "Mythe : mange autant que possible"
-      body: "Mauvaise idée. Un gros surplus augmente le risque de gras en trop, surtout si tu es entraîné. Et ce gras, il faudra le perdre ensuite."
+      title: "Tout ce que tu peux"
+      body: "Mythe : mange autant que possible. Un gros surplus augmente le risque de gras, qu'il faudra perdre ensuite."
     pt:
-      title: "Mito: come o máximo que conseguires"
-      body: "Não é boa ideia. Um excedente grande aumenta o risco de gordura extra, sobretudo se já treinas. E essa gordura tem de sair depois."
+      title: "Tudo o que puderes"
+      body: "Mito: come tudo o que puderes. Um grande excedente aumenta o risco de gordura, que depois tens de perder."
     tr:
-      title: "Efsane: yiyebildiğin kadar ye"
-      body: "İyi bir fikir değil. Büyük bir fazla, özellikle antrenmanlıysan, ekstra yağ riskini artırır. O yağı da sonra vermen gerekir."
+      title: "Yiyebildiğin kadar"
+      body: "Efsane: yiyebildiğin kadar ye. Büyük fazla, ekstra yağ riskini artırır ve o yağ sonra gitmeli."
 
   - key: groter-overschot
     kind: myth
     en:
-      title: "Myth: a bigger surplus builds more muscle"
-      body: "Not clearly. In an 8-week trial with trained lifters, muscle thickness did not clearly differ, but faster gainers added more fat."
+      title: "Bigger surplus"
+      body: "Myth: a bigger surplus builds more muscle. In trained lifters, muscle didn't clearly differ. Fat gain did."
     nl:
-      title: "Mythe: groter overschot, meer spier"
-      body: "Niet duidelijk. In een proef van 8 weken met getrainde lifters verschilde de spierdikte niet duidelijk, maar wie sneller aankwam kreeg meer vet."
+      title: "Groter overschot"
+      body: "Mythe: een groter overschot bouwt meer spier. Bij getrainde sporters verschilde spier niet duidelijk. Vet wel."
     de:
-      title: "Mythos: Mehr Überschuss, mehr Muskeln"
-      body: "Nicht eindeutig. In einer 8-Wochen-Studie mit Trainierten unterschied sich die Muskeldicke nicht klar. Wer schneller zunahm, bekam mehr Fett."
+      title: "Größerer Überschuss"
+      body: "Mythos: Mehr Überschuss, mehr Muskeln. Bei Trainierten gab es keinen klaren Unterschied beim Muskel. Beim Fett schon."
     es:
-      title: "Mito: más superávit, más músculo"
-      body: "No está claro. En un ensayo de 8 semanas con gente entrenada, el grosor muscular no difirió claramente, pero quien subió más rápido ganó más grasa."
+      title: "Más superávit"
+      body: "Mito: más superávit da más músculo. En entrenados el músculo no difirió claramente. La grasa sí."
     fr:
-      title: "Mythe : plus de surplus, plus de muscle"
-      body: "Pas clairement. En 8 semaines chez des pratiquants entraînés, l'épaisseur musculaire n'a pas nettement différé. Prendre vite a donné plus de gras."
+      title: "Plus gros surplus"
+      body: "Mythe : plus de surplus, plus de muscle. Chez des entraînés, le muscle n'a pas nettement différé. Le gras, si."
     pt:
-      title: "Mito: mais excedente, mais músculo"
-      body: "Não claramente. Num ensaio de 8 semanas com pessoas treinadas, a espessura muscular não diferiu claramente, mas quem ganhou mais depressa ganhou mais gordura."
+      title: "Excedente maior"
+      body: "Mito: mais excedente dá mais músculo. Em treinados, o músculo não diferiu claramente. A gordura sim."
     tr:
-      title: "Efsane: fazla büyüdükçe kas da büyür"
-      body: "Net değil. Antrenmanlı kişilerle 8 haftalık bir denemede kas kalınlığı belirgin farklı değildi, ama hızlı kilo alanlar daha çok yağ ekledi."
+      title: "Daha büyük fazla"
+      body: "Efsane: büyük fazla daha çok kas yapar. Deneyimlilerde kasta net fark çıkmadı. Yağda çıktı."
 
   - key: beginners-meer
     kind: fact
     en:
-      title: "Beginners can eat more"
-      body: "In one study, untrained people eating about 2,000 kcal extra a day for 8 weeks gained 2.9 kg of lean mass and only 0.2 kg of fat."
+      title: "2.9 kg"
+      body: "Lean mass gained by untrained people eating about 2,000 kcal extra a day for 8 weeks. Fat: only 0.2 kg."
     nl:
-      title: "Beginners kunnen meer eten"
-      body: "In één studie wonnen ongetrainde mensen die 8 weken zo'n 2.000 kcal per dag extra aten 2,9 kg vetvrije massa en maar 0,2 kg vet."
+      title: "2,9 kilo"
+      body: "Vetvrije massa erbij voor ongetrainde mensen die 8 weken 2.000 kcal per dag extra aten. Vet: maar 0,2 kilo."
     de:
-      title: "Anfänger dürfen mehr essen"
-      body: "In einer Studie bauten Untrainierte mit etwa 2.000 kcal extra am Tag in 8 Wochen 2,9 kg Magermasse und nur 0,2 kg Fett auf."
+      title: "2,9 kg"
+      body: "Fettfreie Masse bauten Untrainierte mit etwa 2.000 kcal extra am Tag in 8 Wochen auf. Fett: nur 0,2 kg."
     es:
-      title: "Los novatos pueden comer más"
-      body: "En un estudio, gente sin entrenar que comió unas 2.000 kcal extra al día durante 8 semanas ganó 2,9 kg de masa magra y solo 0,2 kg de grasa."
+      title: "2,9 kg"
+      body: "De masa magra ganaron novatos comiendo unas 2.000 kcal extra al día durante 8 semanas. Grasa: solo 0,2 kg."
     fr:
-      title: "Les débutants peuvent manger plus"
-      body: "Dans une étude, des non-entraînés à environ 2 000 kcal de plus par jour pendant 8 semaines ont pris 2,9 kg de masse maigre et 0,2 kg de gras."
+      title: "2,9 kg"
+      body: "De masse maigre pour des non-entraînés à 2 000 kcal de plus par jour pendant 8 semaines. Gras : 0,2 kg."
     pt:
-      title: "Iniciantes podem comer mais"
-      body: "Num estudo, pessoas sem treino com cerca de 2.000 kcal extra por dia durante 8 semanas ganharam 2,9 kg de massa magra e só 0,2 kg de gordura."
+      title: "2,9 kg"
+      body: "De massa magra para destreinados a comer cerca de 2.000 kcal extra por dia durante 8 semanas. Gordura: 0,2 kg."
     tr:
-      title: "Yeni başlayanlar daha çok yiyebilir"
-      body: "Bir çalışmada antrenmansız kişiler 8 hafta günde yaklaşık 2.000 kcal fazla yiyince 2,9 kg yağsız kütle ve sadece 0,2 kg yağ kazandı."
+      title: "2,9 kg"
+      body: "Antrenmansız kişiler 8 hafta günde 2.000 kcal fazla yiyerek bu kadar yağsız kütle kazandı. Yağ: sadece 0,2 kg."
 
   - key: weegschaal-staat-stil
     kind: fact
     en:
-      title: "Scale won't move?"
-      body: "In one study, people who ate 1,000 kcal over maintenance for 8 weeks stored only 432 kcal of it. Most of the rest went into daily movement."
+      title: "432 kcal"
+      body: "Stored out of 1,000 extra a day, in one study. Most of the rest went into moving more."
     nl:
-      title: "Weegschaal beweegt niet?"
-      body: "In een studie aten mensen 8 weken 1.000 kcal boven hun onderhoud en sloegen er maar 432 van op. Het meeste extra verbrandden ze met dagelijks bewegen."
+      title: "432 kcal"
+      body: "Opgeslagen van de 1.000 extra per dag, in één studie. De rest ging grotendeels op aan meer bewegen."
     de:
-      title: "Die Waage bewegt sich nicht?"
-      body: "In einer Studie aßen Menschen 8 Wochen 1.000 kcal über Bedarf und speicherten nur 432 davon. Den Großteil verbrauchten sie durch Alltagsbewegung."
+      title: "432 kcal"
+      body: "Von 1.000 extra pro Tag wurden in einer Studie gespeichert. Der Rest ging meist in mehr Bewegung."
     es:
-      title: "¿La báscula no se mueve?"
-      body: "En un estudio, gente que comió 1.000 kcal de más durante 8 semanas solo almacenó 432. Gran parte del resto se fue en moverse más en el día a día."
+      title: "432 kcal"
+      body: "Se almacenaron de 1.000 extra al día, en un estudio. Casi todo lo demás se fue en moverse más."
     fr:
-      title: "La balance ne bouge pas ?"
-      body: "Dans une étude, des gens à 1 000 kcal au-dessus de leur maintenance pendant 8 semaines n'en ont stocké que 432. Le reste est surtout parti en mouvement."
+      title: "432 kcal"
+      body: "Stockées sur 1 000 en plus par jour, dans une étude. Le reste est surtout parti en mouvement."
     pt:
-      title: "A balança não mexe?"
-      body: "Num estudo, pessoas que comeram 1.000 kcal acima da manutenção durante 8 semanas só guardaram 432. O resto foi sobretudo gasto a mexer-se no dia a dia."
+      title: "432 kcal"
+      body: "Armazenadas de 1.000 extra por dia, num estudo. Quase todo o resto foi gasto a mexer mais."
     tr:
-      title: "Tartı kıpırdamıyor mu?"
-      body: "Bir çalışmada 8 hafta korumanın 1.000 kcal üstünde yiyenler bunun sadece 432'sini depoladı. Fazlanın çoğunu gündelik hareketle yaktılar."
+      title: "432 kcal"
+      body: "Bir çalışmada günlük 1.000 fazlanın bu kadarı depolandı. Kalanın çoğu daha fazla harekete gitti."
 
   - key: eiwit-in-overschot
     kind: fact
     en:
-      title: "Protein in a bulk"
-      body: "In a surplus, people on very little protein lost 0.7 kg lean mass. On normal or high protein they gained 2.9 and 4.0 kg. Fat gain was the same."
+      title: "4.0 kg"
+      body: "Lean mass gained in a surplus on high protein. On very little protein, people lost 0.7 kg. Fat gain was equal."
     nl:
-      title: "Eiwit tijdens bulken"
-      body: "In een overschot verloren mensen met heel weinig eiwit 0,7 kg vetvrije massa. Met normaal of veel eiwit wonnen ze 2,9 en 4,0 kg. Vet kwam er evenveel bij."
+      title: "4,0 kilo"
+      body: "Vetvrije massa erbij in een overschot met veel eiwit. Met heel weinig eiwit ging er 0,7 kilo af. Vet: gelijk."
     de:
-      title: "Protein im Aufbau"
-      body: "Im Überschuss verloren Menschen mit sehr wenig Protein 0,7 kg Magermasse. Mit normal oder viel Protein gewannen sie 2,9 und 4,0 kg. Gleich viel Fett."
+      title: "4,0 kg"
+      body: "Fettfreie Masse im Überschuss mit viel Protein. Mit sehr wenig Protein gingen 0,7 kg verloren. Fett: gleich."
     es:
-      title: "Proteína en volumen"
-      body: "En superávit, quien tomó muy poca proteína perdió 0,7 kg de masa magra. Con proteína normal o alta ganó 2,9 y 4,0 kg. La grasa ganada fue igual."
+      title: "4,0 kg"
+      body: "De masa magra en superávit con mucha proteína. Con muy poca se perdieron 0,7 kg. La grasa ganada fue igual."
     fr:
-      title: "Les protéines en prise de masse"
-      body: "En surplus, ceux qui mangeaient très peu de protéines ont perdu 0,7 kg de masse maigre. Avec plus, ils ont pris 2,9 et 4,0 kg. Même gain de gras."
+      title: "4,0 kg"
+      body: "De masse maigre en surplus avec beaucoup de protéines. Avec très peu, 0,7 kg perdus. Le gras pris était égal."
     pt:
-      title: "Proteína no bulk"
-      body: "Em excedente, quem comeu muito pouca proteína perdeu 0,7 kg de massa magra. Com proteína normal ou alta ganhou 2,9 e 4,0 kg. A gordura ganha foi igual."
+      title: "4,0 kg"
+      body: "De massa magra em excedente com muita proteína. Com muito pouca, perderam 0,7 kg. A gordura foi igual."
     tr:
-      title: "Kilo alırken protein"
-      body: "Kalori fazlasında çok az protein alanlar 0,7 kg yağsız kütle kaybetti. Normal ya da yüksek proteinle 2,9 ve 4,0 kg kazandılar. Yağ artışı aynıydı."
+      title: "4,0 kg"
+      body: "Yüksek proteinle fazlada kazanılan yağsız kütle. Çok az proteinle 0,7 kg kaybedildi. Yağ artışı aynıydı."
 
   - key: zonder-overschot
     kind: myth
     en:
-      title: "Myth: no surplus, no muscle"
-      body: "Not true. Muscle has been gained in a deficit, more likely in beginners and people with overweight. A surplus supports growth but does not switch it on."
+      title: "No surplus"
+      body: "Myth: no surplus, no muscle. People have gained muscle in a deficit, more often beginners and those with overweight."
     nl:
-      title: "Mythe: zonder overschot geen spier"
-      body: "Klopt niet. Ook in een tekort is spier opgebouwd, vooral bij beginners en mensen met overgewicht. Een overschot helpt groei, maar zet het niet aan."
+      title: "Geen overschot"
+      body: "Mythe: zonder overschot geen spier. Ook in een tekort bouwen mensen spier, vaker beginners en mensen met overgewicht."
     de:
-      title: "Mythos: Ohne Überschuss keine Muskeln"
-      body: "Stimmt nicht. Auch im Defizit wurde Muskel aufgebaut, eher bei Anfängern und Übergewichtigen. Ein Überschuss hilft, schaltet Wachstum aber nicht ein."
+      title: "Kein Überschuss"
+      body: "Mythos: Ohne Überschuss keine Muskeln. Auch im Defizit gelingt es, eher Anfängern und Menschen mit Übergewicht."
     es:
-      title: "Mito: sin superávit no hay músculo"
-      body: "No es cierto. También se ha ganado músculo en déficit, más en novatos y personas con sobrepeso. El superávit ayuda, pero no es el interruptor."
+      title: "Sin superávit"
+      body: "Mito: sin superávit no hay músculo. También se gana en déficit, más a menudo en novatos y personas con sobrepeso."
     fr:
-      title: "Mythe : pas de surplus, pas de muscle"
-      body: "Faux. On a vu du muscle se construire en déficit, plutôt chez les débutants et les personnes en surpoids. Le surplus aide, il n'est pas l'interrupteur."
+      title: "Sans surplus"
+      body: "Mythe : pas de surplus, pas de muscle. On en prend aussi en déficit, surtout débutant ou en surpoids."
     pt:
-      title: "Mito: sem excedente não há músculo"
-      body: "Não é verdade. Também já se ganhou músculo em défice, mais em iniciantes e pessoas com excesso de peso. O excedente ajuda, mas não é o interruptor."
+      title: "Sem excedente"
+      body: "Mito: sem excedente não há músculo. Também se ganha em défice, mais vezes em iniciantes e pessoas com excesso de peso."
     tr:
-      title: "Efsane: kalori fazlası yoksa kas da yok"
-      body: "Doğru değil. Açıkta da kas kazanıldı, daha çok yeni başlayanlarda ve fazla kilolularda. Fazla büyümeye yardım eder ama onu başlatan şey değildir."
+      title: "Fazla yoksa"
+      body: "Efsane: kalori fazlası yoksa kas da yok. Açıkta da kas kazanılır, daha çok yenilerde ve kilolularda."
 
   - key: wanneer-stoppen
     kind: fact
     en:
-      title: "When to stop bulking"
-      body: "Stop when your weight has risen faster than planned for several weeks, or when the fat bothers you. Then go to maintenance or a deficit."
+      title: "When to stop"
+      body: "When your weight rises faster than planned for weeks, or the fat bothers you. Then eat at maintenance or below."
     nl:
-      title: "Wanneer stoppen met bulken"
-      body: "Stop als je gewicht een paar weken achter elkaar sneller stijgt dan gepland, of als het vet je stoort. Ga dan naar onderhoud of een tekort."
+      title: "Wanneer stoppen"
+      body: "Als je weken sneller aankomt dan gepland, of het vet je stoort. Eet dan op onderhoud of eronder."
     de:
-      title: "Wann du den Aufbau beendest"
-      body: "Hör auf, wenn dein Gewicht mehrere Wochen schneller steigt als geplant oder dich das Fett stört. Dann geh auf Erhaltung oder ins Defizit."
+      title: "Wann aufhören"
+      body: "Wenn du wochenlang schneller zunimmst als geplant oder dich das Fett stört. Dann auf Erhalt oder darunter."
     es:
-      title: "Cuándo parar el volumen"
-      body: "Para cuando tu peso suba más rápido de lo previsto varias semanas seguidas, o cuando te moleste la grasa. Luego pasa a mantenimiento o déficit."
+      title: "Cuándo parar"
+      body: "Si llevas semanas subiendo más rápido de lo previsto o te molesta la grasa. Pasa a mantenimiento o déficit."
     fr:
-      title: "Quand arrêter la prise de masse"
-      body: "Arrête quand ton poids monte plus vite que prévu plusieurs semaines de suite, ou quand le gras te gêne. Passe alors en maintenance ou en déficit."
+      title: "Quand arrêter"
+      body: "Si tu prends plus vite que prévu depuis des semaines, ou si le gras te gêne. Passe en maintenance ou en déficit."
     pt:
-      title: "Quando parar o bulk"
-      body: "Para quando o teu peso subir mais depressa do que o previsto várias semanas seguidas, ou quando a gordura te incomodar. Depois vai para manutenção."
+      title: "Quando parar"
+      body: "Se há semanas que sobes mais rápido do que o previsto, ou a gordura te incomoda. Passa a manutenção ou défice."
     tr:
-      title: "Bulk ne zaman bitmeli"
-      body: "Kilon birkaç hafta üst üste plandan hızlı arttığında ya da yağ seni rahatsız ettiğinde dur. Sonra korumaya ya da açığa geç."
+      title: "Ne zaman durmalı"
+      body: "Kilon haftalarca plandan hızlı artıyorsa ya da yağ seni rahatsız ediyorsa. Korumaya ya da açığa geç."

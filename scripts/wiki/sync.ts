@@ -207,7 +207,7 @@ function sameTexts(a: unknown, b: unknown): boolean {
   return [...langs].every((l) => x[l]?.title === y[l]?.title && x[l]?.body === y[l]?.body);
 }
 
-type TipRow = { id: string; article_slug: string; category: string; kind: string; texts: unknown; is_published: boolean };
+type TipRow = { id: string; article_slug: string; category: string; kind: string; emoji: string | null; texts: unknown; is_published: boolean };
 
 /**
  * Van `content/tips/` naar `wiki_tips` (Carve-AI ADR-105).
@@ -231,7 +231,7 @@ async function syncTips(
   for (let from = 0; ; from += 1000) {
     const { data, error } = await sb
       .from('wiki_tips')
-      .select('id, article_slug, category, kind, texts, is_published')
+      .select('id, article_slug, category, kind, emoji, texts, is_published')
       .order('id')
       .range(from, from + 999);
     if (error) throw error;
@@ -255,6 +255,8 @@ async function syncTips(
       article_slug: f.article,
       category: categoryOf.get(f.article) ?? '',
       kind: t.kind,
+      // De emoji van de tip zelf, anders die van het artikel (ADR-105 §11).
+      emoji: t.emoji ?? f.emoji,
       texts: t.texts,
       is_published: true,
     })),
@@ -263,7 +265,7 @@ async function syncTips(
 
   const changed = desired.filter((d) => {
     const r = rows.get(d.id);
-    return !r || r.article_slug !== d.article_slug || r.category !== d.category || r.kind !== d.kind || !r.is_published || !sameTexts(r.texts, d.texts);
+    return !r || r.article_slug !== d.article_slug || r.category !== d.category || r.kind !== d.kind || r.emoji !== d.emoji || !r.is_published || !sameTexts(r.texts, d.texts);
   });
   const retired = [...rows.values()].filter((r) => r.is_published && !ids.has(r.id));
 

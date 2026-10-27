@@ -1,217 +1,218 @@
 article: periodization
+emoji: "🗺️"
 tips:
   - key: wat-het-is
     kind: fact
     en:
-      title: "Periodization"
-      body: "Planning how your training changes over weeks and months, instead of doing the same sets, reps and weights every session."
+      title: "Planning ahead"
+      body: "Periodization plans how your training changes over weeks and months, instead of the same every session."
     nl:
-      title: "Periodisering"
-      body: "Plannen hoe je training over weken en maanden verandert, in plaats van elke keer dezelfde sets, herhalingen en gewichten te doen."
+      title: "Vooruit plannen"
+      body: "Periodisering plant hoe je training verandert over weken en maanden, in plaats van elke keer hetzelfde."
     de:
-      title: "Periodisierung"
-      body: "Du planst, wie sich dein Training über Wochen und Monate ändert, statt jedes Mal dieselben Sätze, Wiederholungen und Gewichte zu machen."
+      title: "Vorausplanen"
+      body: "Periodisierung plant, wie sich dein Training über Wochen und Monate ändert, statt immer gleich."
     es:
-      title: "Periodización"
-      body: "Planificar cómo cambia tu entreno a lo largo de semanas y meses, en vez de hacer siempre las mismas series, repeticiones y pesos."
+      title: "Planificar"
+      body: "La periodización planea cómo cambia tu entreno en semanas y meses, en vez de repetir lo mismo."
     fr:
-      title: "Périodisation"
-      body: "Planifier comment ton entraînement évolue sur des semaines et des mois, au lieu de refaire les mêmes séries, reps et charges."
+      title: "Planifier"
+      body: "La périodisation prévoit l'évolution de ton entraînement sur des semaines et des mois, au lieu de répéter."
     pt:
-      title: "Periodização"
-      body: "Planear como o teu treino muda ao longo de semanas e meses, em vez de fazeres sempre as mesmas séries, repetições e pesos."
+      title: "Planear"
+      body: "A periodização planeia como o treino muda ao longo de semanas e meses, em vez de repetir o mesmo."
     tr:
-      title: "Periyodizasyon"
-      body: "Her seferinde aynı set, tekrar ve ağırlıkları yapmak yerine antrenmanının haftalar ve aylar içinde nasıl değişeceğini planlamak."
+      title: "İleriyi planlamak"
+      body: "Periyotlama, antrenmanın haftalar ve aylar içinde nasıl değişeceğini planlar, her seferinde aynısı yerine."
 
   - key: lineair-golvend
     kind: fact
     en:
       title: "Linear or undulating"
-      body: "Linear: heavier weights and fewer reps over a block of weeks. Undulating: weight and reps change from session to session or week to week."
+      body: "Linear: heavier, fewer reps over weeks. Undulating: weight and reps change per session or week."
     nl:
       title: "Lineair of golvend"
-      body: "Lineair: zwaarder en minder herhalingen over een blok van weken. Golvend: gewicht en herhalingen wisselen per training of per week."
+      body: "Lineair: zwaarder en minder herhalingen over weken. Golvend: gewicht en herhalingen wisselen per training of week."
     de:
-      title: "Linear oder wellenförmig"
-      body: "Linear: über einen Block von Wochen schwerer und weniger Wiederholungen. Wellenförmig: Gewicht und Wiederholungen wechseln pro Einheit oder Woche."
+      title: "Linear oder Welle"
+      body: "Linear: schwerer, weniger Wdh. über Wochen. Wellenförmig: wechselt pro Einheit oder Woche."
     es:
       title: "Lineal u ondulante"
-      body: "Lineal: más peso y menos repeticiones a lo largo de un bloque de semanas. Ondulante: peso y repeticiones cambian por sesión o por semana."
+      body: "Lineal: más peso y menos repeticiones en semanas. Ondulante: cambian por sesión o semana."
     fr:
-      title: "Linéaire ou ondulatoire"
-      body: "Linéaire : plus lourd et moins de reps sur un bloc de semaines. Ondulatoire : la charge et les reps changent d'une séance ou d'une semaine à l'autre."
+      title: "Linéaire ou ondulé"
+      body: "Linéaire : plus lourd, moins de reps sur des semaines. Ondulatoire : ça varie par séance ou semaine."
     pt:
-      title: "Linear ou ondulatória"
-      body: "Linear: mais peso e menos repetições ao longo de um bloco de semanas. Ondulatória: peso e repetições mudam de treino para treino ou de semana para semana."
+      title: "Linear ou ondulatório"
+      body: "Linear: mais peso e menos repetições ao longo de semanas. Ondulatório: muda por treino ou semana."
     tr:
-      title: "Doğrusal mı dalgalı mı"
-      body: "Doğrusal: haftalar boyunca daha ağır ve daha az tekrar. Dalgalı: ağırlık ve tekrar antrenmandan antrenmana ya da haftadan haftaya değişir."
+      title: "Doğrusal ya da dalgalı"
+      body: "Doğrusal: haftalar içinde ağırlık artar, tekrar azalır. Dalgalı: antrenmana ya da haftaya göre değişir."
 
   - key: geen-extra-spier
     kind: myth
     en:
-      title: "Myth: periodization builds more muscle"
-      body: "Not true. The ACSM found that muscle growth was not affected by periodization, whether linear, undulating or none."
+      title: "More muscle"
+      body: "Myth: periodization builds more muscle. The ACSM found growth wasn't affected by it, whatever the type."
     nl:
-      title: "Mythe: periodiseren geeft meer spier"
-      body: "Klopt niet. Het ACSM vond geen effect van periodisering op spiergroei, of het nu lineair, golvend of helemaal niet was."
+      title: "Meer spier"
+      body: "Mythe: periodiseren bouwt meer spier. De ACSM vond geen effect op spiergroei, welk type ook."
     de:
-      title: "Mythos: Periodisierung baut mehr Muskeln"
-      body: "Stimmt nicht. Das ACSM fand keinen Einfluss der Periodisierung auf das Muskelwachstum, ob linear, wellenförmig oder gar keine."
+      title: "Mehr Muskeln"
+      body: "Mythos: Periodisierung baut mehr Muskeln. Das ACSM fand keinen Effekt aufs Wachstum, egal welche Art."
     es:
-      title: "Mito: periodizar da más músculo"
-      body: "No es cierto. El ACSM vio que la periodización no afectó al crecimiento muscular, ya fuera lineal, ondulante o ninguna."
+      title: "Más músculo"
+      body: "Mito: periodizar da más músculo. El ACSM no vio efecto en el crecimiento, fuera del tipo que fuera."
     fr:
-      title: "Mythe : périodiser donne plus de muscle"
-      body: "Faux. L'ACSM n'a trouvé aucun effet de la périodisation sur la prise de muscle, qu'elle soit linéaire, ondulatoire ou absente."
+      title: "Plus de muscle"
+      body: "Mythe : périodiser fait plus de muscle. L'ACSM n'a vu aucun effet sur la croissance, quel que soit le type."
     pt:
-      title: "Mito: periodizar dá mais músculo"
-      body: "Não é verdade. O ACSM viu que a periodização não afetou o crescimento muscular, fosse linear, ondulatória ou nenhuma."
+      title: "Mais músculo"
+      body: "Mito: periodizar dá mais músculo. O ACSM não viu efeito no crescimento, fosse de que tipo fosse."
     tr:
-      title: "Efsane: periyodizasyon daha çok kas yapar"
-      body: "Doğru değil. ACSM, doğrusal, dalgalı ya da hiç olmasın, periyodizasyonun kas büyümesini etkilemediğini buldu."
+      title: "Daha çok kas"
+      body: "Efsane: periyotlama daha çok kas yaptırır. ACSM türü ne olursa olsun büyümeye etki bulmadı."
 
   - key: niet-nodig
     kind: myth
     en:
-      title: "Myth: you need periodization to progress"
-      body: "Not true. With good progressive overload, the ACSM found periodization was not significantly better than a plan without it."
+      title: "Must-have"
+      body: "Myth: you need periodization to progress. With good overload, the ACSM found it no better than a plan without."
     nl:
-      title: "Mythe: zonder periodisering geen vooruitgang"
-      body: "Klopt niet. Met goede progressive overload was periodiseren volgens het ACSM niet significant beter dan een schema zonder."
+      title: "Onmisbaar"
+      body: "Mythe: zonder periodisering geen vooruitgang. Met goede overload vond de ACSM het niet beter dan zonder."
     de:
-      title: "Mythos: ohne Periodisierung kein Fortschritt"
-      body: "Stimmt nicht. Mit guter progressiver Überlastung war Periodisierung laut ACSM nicht signifikant besser als ein Plan ohne."
+      title: "Unverzichtbar"
+      body: "Mythos: Ohne Periodisierung kein Fortschritt. Mit guter Progression fand das ACSM es nicht besser."
     es:
-      title: "Mito: sin periodizar no progresas"
-      body: "No es cierto. Con una buena sobrecarga progresiva, el ACSM vio que periodizar no era significativamente mejor que no hacerlo."
+      title: "Imprescindible"
+      body: "Mito: sin periodizar no avanzas. Con buena sobrecarga, el ACSM no la vio mejor que sin ella."
     fr:
-      title: "Mythe : sans périodisation, pas de progrès"
-      body: "Faux. Avec une bonne surcharge progressive, l'ACSM n'a pas trouvé la périodisation significativement meilleure qu'un plan sans."
+      title: "Indispensable"
+      body: "Mythe : sans périodisation, pas de progrès. Avec une bonne surcharge, l'ACSM ne l'a pas trouvée meilleure."
     pt:
-      title: "Mito: sem periodização não progrides"
-      body: "Não é verdade. Com boa sobrecarga progressiva, o ACSM viu que periodizar não era significativamente melhor do que um plano sem."
+      title: "Indispensável"
+      body: "Mito: sem periodizar não progrides. Com boa sobrecarga, o ACSM não a achou melhor do que sem."
     tr:
-      title: "Efsane: periyodizasyonsuz ilerleme olmaz"
-      body: "Doğru değil. ACSM'ye göre iyi bir progresif yüklenmeyle periyodizasyon, onsuz bir plandan anlamlı derecede iyi değildi."
+      title: "Olmazsa olmaz"
+      body: "Efsane: periyotlama olmadan ilerlemezsin. İyi aşamalı yüklemeyle ACSM onu daha iyi bulmadı."
 
   - key: kracht-open
     kind: fact
     en:
-      title: "Periodization and strength"
-      body: "Still open. The ACSM could not determine the effect on strength. One 2022 review found a small edge for periodized plans with equal work."
+      title: "Still open"
+      body: "The effect on strength. The ACSM couldn't tell. A 2022 review saw a small edge with equal work."
     nl:
-      title: "Periodisering en kracht"
-      body: "Nog open. Het ACSM kon het effect op kracht niet bepalen. Eén review uit 2022 zag bij evenveel werk een klein voordeel voor periodiseren."
+      title: "Nog open"
+      body: "Het effect op kracht. De ACSM kon het niet zeggen. Een review uit 2022 zag een klein voordeel bij gelijk werk."
     de:
-      title: "Periodisierung und Kraft"
-      body: "Noch offen. Das ACSM konnte den Effekt auf Kraft nicht bestimmen. Ein Review von 2022 sah bei gleicher Arbeit einen kleinen Vorteil fürs Periodisieren."
+      title: "Noch offen"
+      body: "Der Effekt auf Kraft. Das ACSM konnte ihn nicht bestimmen. Ein Review von 2022 sah einen kleinen Vorteil."
     es:
-      title: "Periodización y fuerza"
-      body: "Sigue abierto. El ACSM no pudo determinar el efecto en la fuerza. Una revisión de 2022 vio una pequeña ventaja con el mismo trabajo total."
+      title: "Aún abierto"
+      body: "El efecto en la fuerza. El ACSM no pudo decirlo. Una revisión de 2022 vio una pequeña ventaja."
     fr:
-      title: "Périodisation et force"
-      body: "Encore ouvert. L'ACSM n'a pas pu déterminer l'effet sur la force. Une revue de 2022 a vu un petit avantage à travail égal."
+      title: "Encore ouvert"
+      body: "L'effet sur la force. L'ACSM n'a pas pu trancher. Une revue de 2022 a vu un léger avantage."
     pt:
-      title: "Periodização e força"
-      body: "Ainda em aberto. O ACSM não conseguiu determinar o efeito na força. Uma revisão de 2022 viu uma pequena vantagem com o mesmo trabalho."
+      title: "Ainda em aberto"
+      body: "O efeito na força. O ACSM não conseguiu dizer. Uma revisão de 2022 viu uma pequena vantagem."
     tr:
-      title: "Periyodizasyon ve güç"
-      body: "Henüz belirsiz. ACSM güce etkisini belirleyemedi. 2022 tarihli bir derleme, eşit iş yükünde periyodizasyona küçük bir avantaj buldu."
+      title: "Henüz belirsiz"
+      body: "Güce etkisi. ACSM belirleyemedi. 2022'deki bir derleme eşit işte küçük bir üstünlük gördü."
 
   - key: golvend-ervaren
     kind: fact
     en:
-      title: "Undulating for strength"
-      body: "In a 2022 review, undulating beat linear for strength only in people with training experience. For muscle growth, both did the same."
+      title: "Experienced lifters"
+      body: "Only they got stronger on undulating than linear, in a 2022 review. For growth, both did the same."
     nl:
-      title: "Golvend voor kracht"
-      body: "In een review uit 2022 deed golvend het beter dan lineair voor kracht, maar alleen bij mensen met trainingservaring. Voor spiergroei geen verschil."
+      title: "Ervaren sporters"
+      body: "Alleen zij werden sterker van golvend dan van lineair, in een review uit 2022. Voor groei: gelijk."
     de:
-      title: "Wellenförmig für Kraft"
-      body: "In einem Review von 2022 war wellenförmig für Kraft besser als linear, aber nur bei Trainierten. Beim Muskelwachstum kein Unterschied."
+      title: "Erfahrene"
+      body: "Nur sie wurden laut Review von 2022 mit wellenförmig stärker als mit linear. Fürs Wachstum gleich."
     es:
-      title: "Ondulante para la fuerza"
-      body: "En una revisión de 2022, el ondulante superó al lineal en fuerza solo en gente con experiencia. En músculo no hubo diferencia."
+      title: "Experimentados"
+      body: "Solo ellos ganaron más fuerza con ondulante que con lineal, en una revisión de 2022. Para crecer, igual."
     fr:
-      title: "L'ondulatoire pour la force"
-      body: "Dans une revue de 2022, l'ondulatoire a battu le linéaire pour la force, mais seulement chez les pratiquants entraînés. Pour le muscle, pareil."
+      title: "Pratiquants confirmés"
+      body: "Eux seuls ont gagné plus de force en ondulatoire qu'en linéaire, selon une revue 2022. Croissance : égale."
     pt:
-      title: "Ondulatória para a força"
-      body: "Numa revisão de 2022, a ondulatória superou a linear na força só em quem já treinava. No crescimento muscular não houve diferença."
+      title: "Experientes"
+      body: "Só eles ganharam mais força com ondulatório do que linear, numa revisão de 2022. Para crescer, igual."
     tr:
-      title: "Güç için dalgalı"
-      body: "2022 tarihli bir derlemede dalgalı, güçte doğrusalı yalnızca antrenman deneyimi olanlarda geçti. Kas büyümesinde fark yoktu."
+      title: "Deneyimliler"
+      body: "2022 derlemesinde sadece onlar dalgalıda doğrusala göre daha çok güçlendi. Büyümede ikisi aynı."
 
   - key: beginnen
     kind: fact
     en:
       title: "Starting out"
-      body: "A routine with the same set-up, where you slowly add weight, reps or sets, is a good way to start. Periodizing is optional."
+      body: "A steady routine where you slowly add weight, reps or sets is a fine start. Periodizing is optional."
     nl:
-      title: "Net beginnen"
-      body: "Een schema dat hetzelfde blijft en waarin je langzaam gewicht, herhalingen of sets toevoegt, is een prima start. Periodiseren mag, hoeft niet."
+      title: "Beginnen"
+      body: "Een vaste routine waarin je langzaam gewicht, herhalingen of sets toevoegt is een prima start. Periodiseren mag."
     de:
-      title: "Der Einstieg"
-      body: "Ein gleichbleibender Plan, in dem du langsam Gewicht, Wiederholungen oder Sätze steigerst, ist ein guter Start. Periodisieren ist optional."
+      title: "Einstieg"
+      body: "Eine feste Routine, in der du langsam Gewicht, Wdh. oder Sätze erhöhst, ist ein guter Start. Periodisieren optional."
     es:
       title: "Para empezar"
-      body: "Una rutina que no cambia, donde añades poco a poco peso, repeticiones o series, es una buena forma de empezar. Periodizar es opcional."
+      body: "Una rutina fija donde subes poco a poco peso, repeticiones o series es buen inicio. Periodizar es opcional."
     fr:
-      title: "Pour commencer"
-      body: "Un programme qui reste le même, où tu ajoutes peu à peu du poids, des reps ou des séries, est un bon début. Périodiser est facultatif."
+      title: "Pour débuter"
+      body: "Une routine stable où tu ajoutes peu à peu poids, reps ou séries est un bon départ. Périodiser, en option."
     pt:
       title: "Para começar"
-      body: "Uma rotina sempre igual, em que juntas aos poucos peso, repetições ou séries, é uma boa forma de começar. Periodizar é opcional."
+      body: "Uma rotina fixa onde vais juntando peso, repetições ou séries é um bom início. Periodizar é opcional."
     tr:
-      title: "Yeni başlarken"
-      body: "Aynı kalan ve yavaşça ağırlık, tekrar ya da set eklediğin bir program iyi bir başlangıçtır. Periyodizasyon isteğe bağlı."
+      title: "Başlangıç"
+      body: "Ağırlığı, tekrarı ya da seti yavaşça artırdığın sabit bir rutin iyi bir başlangıç. Periyotlama isteğe bağlı."
 
   - key: alles-wisselen
     kind: myth
     en:
-      title: "Myth: periodizing means changing it all weekly"
-      body: "Not true. Periodization is a plan. Random changes make it hard to see whether you're getting stronger."
+      title: "Change it all"
+      body: "Myth: periodizing means changing everything weekly. Random changes make your progress hard to see."
     nl:
-      title: "Mythe: periodiseren is elke week alles anders"
-      body: "Klopt niet. Periodisering is een plan. Willekeurig wisselen maakt het moeilijk te zien of je sterker wordt."
+      title: "Alles wisselen"
+      body: "Mythe: periodiseren is elke week alles veranderen. Willekeurig wisselen maakt vooruitgang onzichtbaar."
     de:
-      title: "Mythos: Periodisieren heißt ständig wechseln"
-      body: "Stimmt nicht. Periodisierung ist ein Plan. Zufällige Wechsel machen es schwer zu sehen, ob du stärker wirst."
+      title: "Alles wechseln"
+      body: "Mythos: Periodisieren heißt jede Woche alles ändern. Zufällige Wechsel machen Fortschritt unsichtbar."
     es:
-      title: "Mito: periodizar es cambiarlo todo cada semana"
-      body: "No es cierto. Periodizar es un plan. Los cambios al azar hacen difícil ver si te estás haciendo más fuerte."
+      title: "Cambiarlo todo"
+      body: "Mito: periodizar es cambiarlo todo cada semana. Los cambios al azar esconden tu progreso."
     fr:
-      title: "Mythe : périodiser, c'est tout changer"
-      body: "Faux. La périodisation est un plan. Changer au hasard t'empêche de voir si tu deviens plus fort."
+      title: "Tout changer"
+      body: "Mythe : périodiser, c'est tout changer chaque semaine. Les changements au hasard masquent tes progrès."
     pt:
-      title: "Mito: periodizar é mudar tudo todas as semanas"
-      body: "Não é verdade. Periodizar é um plano. Mudanças ao acaso dificultam ver se estás a ficar mais forte."
+      title: "Mudar tudo"
+      body: "Mito: periodizar é mudar tudo todas as semanas. Mudanças ao acaso escondem o progresso."
     tr:
-      title: "Efsane: periyodizasyon her hafta değişim demek"
-      body: "Doğru değil. Periyodizasyon bir plandır. Rastgele değişiklikler güçlenip güçlenmediğini görmeyi zorlaştırır."
+      title: "Her şeyi değiştirmek"
+      body: "Efsane: periyotlama her hafta her şeyi değiştirmektir. Rastgele değişiklik ilerlemeyi gizler."
 
   - key: zware-lichte-dag
     kind: fact
     en:
-      title: "A heavy and a light day"
-      body: "One example: a heavier day with 4 sets of 5 to 6 reps and a lighter day with 3 sets of 10 to 12. Add weight on each day separately."
+      title: "Heavy and light"
+      body: "A heavier day of 4 sets of 5 to 6 and a lighter day of 3 sets of 10 to 12. Add weight on each separately."
     nl:
-      title: "Een zware en een lichte dag"
-      body: "Een voorbeeld: een zwaardere dag met 4 sets van 5 tot 6 en een lichtere met 3 sets van 10 tot 12. Verhoog het gewicht per dag apart."
+      title: "Zwaar en licht"
+      body: "Een zware dag met 4 sets van 5 tot 6 en een lichte met 3 sets van 10 tot 12. Verhoog elk apart."
     de:
-      title: "Ein schwerer und ein leichter Tag"
-      body: "Ein Beispiel: ein schwerer Tag mit 4 Sätzen à 5 bis 6, ein leichter mit 3 Sätzen à 10 bis 12. Steigere das Gewicht pro Tag getrennt."
+      title: "Schwer und leicht"
+      body: "Ein schwerer Tag mit 4 Sätzen à 5 bis 6, ein leichter mit 3 à 10 bis 12. Steigere beide getrennt."
     es:
-      title: "Un día pesado y uno ligero"
-      body: "Un ejemplo: un día pesado con 4 series de 5 a 6 y uno ligero con 3 series de 10 a 12. Sube el peso de cada día por separado."
+      title: "Pesado y ligero"
+      body: "Un día pesado de 4 series de 5 a 6 y uno ligero de 3 de 10 a 12. Sube peso en cada uno por separado."
     fr:
-      title: "Un jour lourd, un jour léger"
-      body: "Exemple : un jour lourd à 4 séries de 5 à 6, un jour léger à 3 séries de 10 à 12. Augmente la charge de chaque jour séparément."
+      title: "Lourd et léger"
+      body: "Un jour lourd de 4 séries de 5 à 6 et un léger de 3 séries de 10 à 12. Progresse sur chacun à part."
     pt:
-      title: "Um dia pesado e um leve"
-      body: "Um exemplo: um dia pesado com 4 séries de 5 a 6 e um leve com 3 séries de 10 a 12. Sobe o peso de cada dia em separado."
+      title: "Pesado e leve"
+      body: "Um dia pesado de 4 séries de 5 a 6 e um leve de 3 séries de 10 a 12. Sobe o peso em cada um à parte."
     tr:
-      title: "Bir ağır, bir hafif gün"
-      body: "Bir örnek: 4 set 5-6 tekrarlı ağır bir gün ve 3 set 10-12 tekrarlı hafif bir gün. Ağırlığı her gün için ayrı artır."
+      title: "Ağır ve hafif"
+      body: "5-6 tekrarlık 4 setle ağır gün, 10-12 tekrarlık 3 setle hafif gün. Her birinde ayrı ayrı ağırlık artır."

@@ -1,241 +1,242 @@
 article: beta-alanine
+emoji: "🔋"
 tips:
   - key: dosis-en-duur
     kind: fact
     en:
-      title: "Beta-alanine"
-      body: "4 to 6 g a day for at least 2 to 4 weeks, split into doses of 2 g or less. It builds up in your muscle over weeks."
+      title: "4 to 6 g"
+      body: "Beta-alanine a day for at least 2 to 4 weeks, in doses of 2 g or less. It builds up in muscle over weeks."
     nl:
-      title: "Bèta-alanine"
-      body: "4 tot 6 gram per dag, minstens 2 à 4 weken, verdeeld over porties van hooguit 2 gram. Het bouwt zich in weken op in je spier."
+      title: "4 tot 6 gram"
+      body: "Bèta-alanine per dag, minstens 2 tot 4 weken, in porties van hooguit 2 gram. Het stapelt zich op in je spieren."
     de:
-      title: "Beta-Alanin"
-      body: "4 bis 6 g am Tag, mindestens 2 bis 4 Wochen, aufgeteilt in Portionen von höchstens 2 g. Es baut sich über Wochen im Muskel auf."
+      title: "4 bis 6 g"
+      body: "Beta-Alanin am Tag, mindestens 2 bis 4 Wochen, in Portionen bis 2 g. Es baut sich über Wochen im Muskel auf."
     es:
-      title: "Beta-alanina"
-      body: "De 4 a 6 g al día durante al menos 2 a 4 semanas, en tomas de 2 g o menos. Se acumula en tu músculo con las semanas."
+      title: "4 a 6 g"
+      body: "De beta-alanina al día durante al menos 2 a 4 semanas, en tomas de 2 g o menos. Se acumula en el músculo."
     fr:
-      title: "Bêta-alanine"
-      body: "4 à 6 g par jour pendant au moins 2 à 4 semaines, en prises de 2 g maximum. Elle s'accumule dans ton muscle au fil des semaines."
+      title: "4 à 6 g"
+      body: "De bêta-alanine par jour, au moins 2 à 4 semaines, en prises de 2 g max. Elle s'accumule dans le muscle."
     pt:
-      title: "Beta-alanina"
-      body: "4 a 6 g por dia durante pelo menos 2 a 4 semanas, em doses de 2 g ou menos. Acumula-se no teu músculo ao longo de semanas."
+      title: "4 a 6 g"
+      body: "De beta-alanina por dia, pelo menos 2 a 4 semanas, em doses de 2 g ou menos. Acumula-se no músculo."
     tr:
-      title: "Beta-alanin"
-      body: "Günde 4 ila 6 g, en az 2 ila 4 hafta, en fazla 2 g'lık porsiyonlara bölerek. Kasında haftalar içinde birikir."
+      title: "4-6 g"
+      body: "Günde beta-alanin, en az 2-4 hafta, 2 g'ı geçmeyen dozlarla. Haftalar içinde kasta birikir."
 
   - key: voor-de-training
     kind: myth
     en:
-      title: "Myth: take beta-alanine right before training"
-      body: "That is not how it works. It raises carnosine over at least two weeks, and single large doses did not help performance."
+      title: "Before training"
+      body: "Myth: take it right before training. It works by building carnosine over weeks. Single big doses didn't help."
     nl:
-      title: "Mythe: bèta-alanine neem je vlak voor training"
-      body: "Zo werkt het niet. Het verhoogt carnosine in minstens twee weken, en één grote dosis hielp in studies niet voor je prestatie."
+      title: "Vlak voor de training"
+      body: "Mythe: neem het vlak voor de training. Het werkt door weken carnosine op te bouwen. Losse grote doses hielpen niet."
     de:
-      title: "Mythos: Beta-Alanin direkt vor dem Training"
-      body: "So wirkt es nicht. Es erhöht Carnosin über mindestens zwei Wochen, und einzelne große Dosen brachten keine Leistung."
+      title: "Direkt vorher"
+      body: "Mythos: Nimm es direkt vor dem Training. Es wirkt über Wochen via Carnosin. Einzelne große Dosen halfen nicht."
     es:
-      title: "Mito: la beta-alanina se toma justo antes"
-      body: "No funciona así. Sube la carnosina en al menos dos semanas, y una sola dosis grande no mejoró el rendimiento."
+      title: "Antes de entrenar"
+      body: "Mito: tómala justo antes de entrenar. Funciona subiendo la carnosina durante semanas. Una dosis grande no ayudó."
     fr:
-      title: "Mythe : la bêta-alanine juste avant la séance"
-      body: "Ça ne marche pas comme ça. Elle monte la carnosine en au moins deux semaines, et une grosse dose unique n'a rien amélioré."
+      title: "Juste avant la séance"
+      body: "Mythe : prends-la juste avant la séance. Elle agit en montant la carnosine sur des semaines. Une dose unique n'aide pas."
     pt:
-      title: "Mito: a beta-alanina toma-se antes do treino"
-      body: "Não funciona assim. Sobe a carnosina ao longo de pelo menos duas semanas, e uma dose grande única não melhorou o rendimento."
+      title: "Antes do treino"
+      body: "Mito: toma-a mesmo antes do treino. Funciona ao subir a carnosina durante semanas. Doses grandes isoladas não ajudaram."
     tr:
-      title: "Efsane: beta-alanin antrenmandan hemen önce"
-      body: "Öyle çalışmaz. Karnozini en az iki haftada yükseltir ve tek seferlik büyük dozlar performansa yardım etmedi."
+      title: "Antrenmandan önce"
+      body: "Efsane: antrenmandan hemen önce al. Haftalar içinde karnozini artırarak çalışır. Tek büyük doz işe yaramadı."
 
   - key: een-tot-vier-minuten
     kind: fact
     en:
-      title: "Where beta-alanine helps"
-      body: "In hard efforts of about 1 to 4 minutes, where the burn is what makes you stop. Carnosine in your muscle buffers that acid."
+      title: "1 to 4 minutes"
+      body: "Hard efforts of that length, where the burn makes you stop. That's where beta-alanine helps."
     nl:
-      title: "Waar bèta-alanine helpt"
-      body: "Bij zware inspanningen van zo'n 1 tot 4 minuten, waar de verzuring je laat stoppen. Carnosine in je spier buffert dat zuur."
+      title: "1 tot 4 minuten"
+      body: "Zware inspanningen van die duur, waar de verzuring je laat stoppen. Daar helpt bèta-alanine."
     de:
-      title: "Wo Beta-Alanin hilft"
-      body: "Bei harten Belastungen von etwa 1 bis 4 Minuten, wenn die Säure dich stoppt. Carnosin im Muskel puffert diese Säure."
+      title: "1 bis 4 Minuten"
+      body: "Harte Belastungen dieser Länge, bei denen das Brennen dich stoppt. Da hilft Beta-Alanin."
     es:
-      title: "Dónde ayuda la beta-alanina"
-      body: "En esfuerzos duros de 1 a 4 minutos, donde el ácido es lo que te hace parar. La carnosina de tu músculo amortigua ese ácido."
+      title: "1 a 4 minutos"
+      body: "Esfuerzos duros de esa duración, donde el ardor te hace parar. Ahí ayuda la beta-alanina."
     fr:
-      title: "Où la bêta-alanine aide"
-      body: "Dans les efforts durs d'environ 1 à 4 minutes, quand l'acidité te force à t'arrêter. La carnosine du muscle tamponne cet acide."
+      title: "1 à 4 minutes"
+      body: "Des efforts durs de cette durée, où la brûlure te fait arrêter. C'est là que la bêta-alanine aide."
     pt:
-      title: "Onde a beta-alanina ajuda"
-      body: "Em esforços duros de 1 a 4 minutos, quando é o ácido que te faz parar. A carnosina no teu músculo trava esse ácido."
+      title: "1 a 4 minutos"
+      body: "Esforços duros com essa duração, em que o ardor te faz parar. É aí que a beta-alanina ajuda."
     tr:
-      title: "Beta-alanin nerede işe yarar"
-      body: "Yaklaşık 1 ila 4 dakikalık sert eforlarda, seni asit birikimi durdurduğunda. Kasındaki karnozin bu asidi tamponlar."
+      title: "1-4 dakika"
+      body: "Yanmanın seni durdurduğu bu uzunlukta zorlu eforlar. Beta-alanin tam burada işe yarar."
 
   - key: korte-sprints
     kind: myth
     en:
-      title: "Myth: beta-alanine helps short sprints"
-      body: "Not really. A meta-analysis found no benefit in tasks under 60 seconds, and studies of 400 m sprints found no clear gain."
+      title: "Under 60 seconds"
+      body: "Myth: beta-alanine helps short sprints. A meta-analysis found no benefit in efforts that short."
     nl:
-      title: "Mythe: bèta-alanine helpt bij korte sprints"
-      body: "Niet echt. Een meta-analyse vond geen effect bij inspanningen onder de 60 seconden, en bij een 400 m-sprint ook geen duidelijke winst."
+      title: "Onder 60 seconden"
+      body: "Mythe: bèta-alanine helpt bij korte sprints. Een meta-analyse vond geen voordeel bij zulke korte inspanningen."
     de:
-      title: "Mythos: Beta-Alanin hilft bei kurzen Sprints"
-      body: "Kaum. Eine Meta-Analyse fand keinen Nutzen unter 60 Sekunden, und beim 400-m-Sprint keine klare Verbesserung."
+      title: "Unter 60 Sekunden"
+      body: "Mythos: Beta-Alanin hilft bei kurzen Sprints. Eine Metaanalyse fand bei so kurzen Belastungen keinen Vorteil."
     es:
-      title: "Mito: la beta-alanina ayuda en sprints cortos"
-      body: "No mucho. Un metaanálisis no vio beneficio en esfuerzos de menos de 60 segundos, ni mejora clara en un sprint de 400 m."
+      title: "Menos de 60 segundos"
+      body: "Mito: la beta-alanina ayuda en sprints cortos. Un metaanálisis no vio beneficio en esfuerzos tan breves."
     fr:
-      title: "Mythe : la bêta-alanine aide au sprint court"
-      body: "Pas vraiment. Une méta-analyse n'a vu aucun effet sous 60 secondes, et pas de gain net sur un sprint de 400 m."
+      title: "Moins de 60 secondes"
+      body: "Mythe : la bêta-alanine aide sur les sprints courts. Une méta-analyse n'a vu aucun gain sur des efforts si brefs."
     pt:
-      title: "Mito: a beta-alanina ajuda em sprints curtos"
-      body: "Nem por isso. Uma meta-análise não viu benefício abaixo de 60 segundos, nem melhoria clara num sprint de 400 m."
+      title: "Menos de 60 segundos"
+      body: "Mito: a beta-alanina ajuda nos sprints curtos. Uma meta-análise não viu benefício em esforços tão curtos."
     tr:
-      title: "Efsane: beta-alanin kısa sprintlere yarar"
-      body: "Pek değil. Bir meta-analiz 60 saniyenin altındaki eforlarda fayda bulmadı, 400 m sprintte de net bir kazanç yoktu."
+      title: "60 saniyeden kısa"
+      body: "Efsane: beta-alanin kısa sprintlerde işe yarar. Bir meta-analiz bu kadar kısa eforlarda fayda bulmadı."
 
   - key: tintelen
     kind: fact
     en:
-      title: "The beta-alanine tingle"
-      body: "The prickling in your face, neck and hands is not harmful. It usually fades within 60 to 90 minutes."
+      title: "60 to 90 minutes"
+      body: "The prickling in your face, neck and hands usually fades within that time. It isn't harmful."
     nl:
-      title: "Dat tintelen van bèta-alanine"
-      body: "Dat prikken in je gezicht, nek en handen is niet schadelijk. Meestal is het binnen 60 tot 90 minuten weg."
+      title: "60 tot 90 minuten"
+      body: "Zo lang duurt het tintelen in je gezicht, nek en handen meestal. Het kan geen kwaad."
     de:
-      title: "Das Kribbeln von Beta-Alanin"
-      body: "Das Kribbeln in Gesicht, Nacken und Händen ist nicht schädlich. Meist ist es nach 60 bis 90 Minuten vorbei."
+      title: "60 bis 90 Minuten"
+      body: "So lange dauert das Kribbeln in Gesicht, Nacken und Händen meist. Es ist harmlos."
     es:
-      title: "El hormigueo de la beta-alanina"
-      body: "El picor en la cara, el cuello y las manos no es dañino. Suele pasar en 60 a 90 minutos."
+      title: "60 a 90 minutos"
+      body: "Es lo que suele durar el hormigueo en cara, cuello y manos. No es dañino."
     fr:
-      title: "Les picotements de la bêta-alanine"
-      body: "Les picotements au visage, au cou et aux mains ne sont pas nocifs. Ils passent en général en 60 à 90 minutes."
+      title: "60 à 90 minutes"
+      body: "C'est le temps que durent en général les picotements au visage, au cou et aux mains. C'est sans danger."
     pt:
-      title: "O formigueiro da beta-alanina"
-      body: "O formigueiro na cara, no pescoço e nas mãos não faz mal. Costuma passar em 60 a 90 minutos."
+      title: "60 a 90 minutos"
+      body: "É quanto costuma durar o formigueiro na cara, no pescoço e nas mãos. Não faz mal."
     tr:
-      title: "Beta-alanin karıncalanması"
-      body: "Yüzünde, boynunda ve ellerindeki karıncalanma zararsız. Genelde 60 ila 90 dakikada geçer."
+      title: "60-90 dakika"
+      body: "Yüzde, boyunda ve ellerde karıncalanma genelde bu sürede geçer. Zararsızdır."
 
   - key: minder-tintelen
     kind: fact
     en:
-      title: "Less tingling"
-      body: "Smaller doses of about 1.6 g or a sustained-release product reduce the tingling. Less, not always none."
+      title: "1.6 g"
+      body: "Smaller doses like this, or a sustained-release product, reduce the tingle. Less, not always none."
     nl:
-      title: "Minder tintelen"
-      body: "Kleinere porties van zo'n 1,6 gram of een product met vertraagde afgifte geven minder tintelen. Minder, niet altijd niks."
+      title: "1,6 gram"
+      body: "Kleinere doses zoals deze, of een vertraagde afgifte, geven minder tinteling. Minder, niet altijd geen."
     de:
-      title: "Weniger Kribbeln"
-      body: "Kleinere Dosen von etwa 1,6 g oder ein Retard-Produkt mindern das Kribbeln. Weniger, nicht immer gar keins."
+      title: "1,6 g"
+      body: "Kleinere Dosen wie diese oder ein Retardprodukt mindern das Kribbeln. Weniger, nicht immer gar keins."
     es:
-      title: "Menos hormigueo"
-      body: "Tomas más pequeñas de unos 1,6 g o un producto de liberación lenta reducen el hormigueo. Menos, no siempre nada."
+      title: "1,6 g"
+      body: "Dosis pequeñas así, o un producto de liberación lenta, reducen el hormigueo. Menos, no siempre nada."
     fr:
-      title: "Moins de picotements"
-      body: "Des prises d'environ 1,6 g ou un produit à libération prolongée réduisent les picotements. Moins, pas toujours zéro."
+      title: "1,6 g"
+      body: "Des doses plus petites comme celle-ci, ou une forme à libération lente, réduisent les picotements. Pas toujours à zéro."
     pt:
-      title: "Menos formigueiro"
-      body: "Doses de cerca de 1,6 g ou um produto de libertação lenta reduzem o formigueiro. Menos, nem sempre nenhum."
+      title: "1,6 g"
+      body: "Doses mais pequenas como esta, ou libertação prolongada, reduzem o formigueiro. Menos, nem sempre nenhum."
     tr:
-      title: "Daha az karıncalanma"
-      body: "Yaklaşık 1,6 g'lık küçük dozlar ya da yavaş salınımlı bir ürün karıncalanmayı azaltır. Azaltır, her zaman yok etmez."
+      title: "1,6 g"
+      body: "Bu kadar küçük dozlar ya da yavaş salımlı ürün karıncalanmayı azaltır. Azaltır, her zaman yok etmez."
 
   - key: wedstrijd-of-test
     kind: fact
     en:
-      title: "Racing a set distance"
-      body: "Beta-alanine helped most in tests where people went until they could not continue. For a race over a fixed distance, the effect is less certain."
+      title: "Fixed distance"
+      body: "It helped most in tests to exhaustion. For a race over a set distance, the effect is less certain."
     nl:
-      title: "Een wedstrijd over vaste afstand"
-      body: "Het hielp vooral in tests waarin mensen doorgingen tot het niet meer ging. Bij een race over een vaste afstand is het effect onzekerder."
+      title: "Vaste afstand"
+      body: "Het hielp vooral in tests tot je niet meer kon. Bij een wedstrijd over een vaste afstand is het minder zeker."
     de:
-      title: "Rennen über eine feste Strecke"
-      body: "Es half vor allem in Tests bis zur Erschöpfung. Bei einem Rennen über eine feste Distanz ist der Effekt unsicherer."
+      title: "Feste Distanz"
+      body: "Es half am meisten in Tests bis zur Erschöpfung. Für ein Rennen über eine feste Strecke ist es unsicherer."
     es:
-      title: "Una carrera de distancia fija"
-      body: "Ayudó sobre todo en pruebas hasta no poder más. En una carrera de distancia fija, el efecto es menos seguro."
+      title: "Distancia fija"
+      body: "Ayudó sobre todo en pruebas hasta el agotamiento. En una carrera de distancia fija, el efecto es menos seguro."
     fr:
-      title: "Une course sur distance fixe"
-      body: "Elle a surtout aidé dans les tests menés jusqu'à l'épuisement. Sur une course à distance fixe, l'effet est moins sûr."
+      title: "Distance fixe"
+      body: "Elle a surtout aidé dans les tests jusqu'à épuisement. Sur une course à distance fixe, l'effet est moins sûr."
     pt:
-      title: "Uma prova de distância fixa"
-      body: "Ajudou sobretudo em testes até já não conseguir continuar. Numa prova de distância fixa, o efeito é menos certo."
+      title: "Distância fixa"
+      body: "Ajudou sobretudo em testes até à exaustão. Numa prova de distância fixa, o efeito é menos certo."
     tr:
-      title: "Sabit mesafeli yarış"
-      body: "En çok, insanların devam edemeyene kadar sürdüğü testlerde işe yaradı. Sabit mesafeli bir yarışta etkisi daha belirsiz."
+      title: "Sabit mesafe"
+      body: "En çok tükenene kadar yapılan testlerde işe yaradı. Sabit mesafeli yarışta etkisi daha belirsiz."
 
   - key: kracht
     kind: myth
     en:
-      title: "Myth: beta-alanine makes you stronger"
-      body: "That is not established. It may help training volume, but longer studies are needed to see if that adds strength."
+      title: "Stronger"
+      body: "Myth: beta-alanine makes you stronger. It may help training volume, but whether that adds strength isn't known yet."
     nl:
-      title: "Mythe: bèta-alanine maakt je sterker"
-      body: "Dat is niet aangetoond. Het helpt misschien bij je trainingsvolume, maar of dat meer kracht geeft moet nog onderzocht worden."
+      title: "Sterker"
+      body: "Mythe: bèta-alanine maakt je sterker. Het helpt misschien je volume, maar of dat kracht oplevert is nog niet bekend."
     de:
-      title: "Mythos: Beta-Alanin macht stärker"
-      body: "Das ist nicht belegt. Es hilft vielleicht beim Trainingsvolumen, ob daraus mehr Kraft wird, müssen längere Studien zeigen."
+      title: "Stärker"
+      body: "Mythos: Beta-Alanin macht stärker. Es hilft vielleicht beim Volumen, ob das Kraft bringt, ist noch offen."
     es:
-      title: "Mito: la beta-alanina te hace más fuerte"
-      body: "No está demostrado. Puede ayudar con el volumen de entreno, pero hacen falta estudios más largos para ver si da más fuerza."
+      title: "Más fuerza"
+      body: "Mito: la beta-alanina te hace más fuerte. Quizá ayude al volumen, pero no se sabe aún si eso suma fuerza."
     fr:
-      title: "Mythe : la bêta-alanine rend plus fort"
-      body: "Ce n'est pas établi. Elle aide peut-être le volume d'entraînement, mais il faut des études plus longues pour voir si ça donne de la force."
+      title: "Plus fort"
+      body: "Mythe : la bêta-alanine rend plus fort. Elle aide peut-être le volume, mais on ignore encore si ça donne de la force."
     pt:
-      title: "Mito: a beta-alanina dá mais força"
-      body: "Não está provado. Pode ajudar o volume de treino, mas faltam estudos mais longos para ver se isso dá mais força."
+      title: "Mais forte"
+      body: "Mito: a beta-alanina torna-te mais forte. Talvez ajude no volume, mas ainda não se sabe se isso dá força."
     tr:
-      title: "Efsane: beta-alanin seni güçlendirir"
-      body: "Kanıtlanmış değil. Antrenman hacmine yardım edebilir, ama bunun güce dönüşüp dönüşmediği için daha uzun çalışmalar gerek."
+      title: "Daha güçlü"
+      body: "Efsane: beta-alanin seni güçlendirir. Hacme yardım edebilir ama bunun güce dönüşüp dönüşmediği henüz bilinmiyor."
 
   - key: stoppen
     kind: fact
     en:
-      title: "Stopping beta-alanine"
-      body: "It wears off slowly. In one study, muscle carnosine took 6 to 15 weeks to return to normal."
+      title: "6 to 15 weeks"
+      body: "That's how long muscle carnosine took to return to normal after stopping, in one study."
     nl:
-      title: "Stoppen met bèta-alanine"
-      body: "Het werkt nog lang na. In één studie duurde het 6 tot 15 weken voor de carnosine in je spier weer normaal was."
+      title: "6 tot 15 weken"
+      body: "Zo lang duurde het in één studie voor carnosine in de spieren na het stoppen weer normaal was."
     de:
-      title: "Beta-Alanin absetzen"
-      body: "Es lässt langsam nach. In einer Studie brauchte das Muskel-Carnosin 6 bis 15 Wochen, um wieder normal zu sein."
+      title: "6 bis 15 Wochen"
+      body: "So lange brauchte Carnosin im Muskel in einer Studie, um nach dem Absetzen normal zu werden."
     es:
-      title: "Dejar la beta-alanina"
-      body: "El efecto se va despacio. En un estudio, la carnosina muscular tardó 6 a 15 semanas en volver a lo normal."
+      title: "6 a 15 semanas"
+      body: "Es lo que tardó la carnosina muscular en volver a lo normal tras dejarla, en un estudio."
     fr:
-      title: "Arrêter la bêta-alanine"
-      body: "L'effet part lentement. Dans une étude, la carnosine musculaire a mis 6 à 15 semaines à revenir à la normale."
+      title: "6 à 15 semaines"
+      body: "C'est le temps qu'a mis la carnosine musculaire à revenir à la normale après l'arrêt, dans une étude."
     pt:
-      title: "Parar a beta-alanina"
-      body: "O efeito vai-se devagar. Num estudo, a carnosina no músculo demorou 6 a 15 semanas a voltar ao normal."
+      title: "6 a 15 semanas"
+      body: "Foi o que a carnosina muscular demorou a voltar ao normal depois de parar, num estudo."
     tr:
-      title: "Beta-alanini bırakmak"
-      body: "Etkisi yavaş geçer. Bir çalışmada kastaki karnozinin normale dönmesi 6 ila 15 hafta sürdü."
+      title: "6-15 hafta"
+      body: "Bir çalışmada bıraktıktan sonra kastaki karnozinin normale dönmesi bu kadar sürdü."
 
   - key: langer-dan-een-jaar
     kind: fact
     en:
-      title: "Beta-alanine long term"
-      body: "It appears safe in healthy people at normal doses, but there are no safety data on use beyond a year."
+      title: "1 year"
+      body: "Beta-alanine seems safe at normal doses, but there's no safety data on use beyond a year."
     nl:
-      title: "Bèta-alanine op lange termijn"
-      body: "Bij gezonde mensen lijkt het veilig in gewone doses, maar over gebruik langer dan een jaar zijn er geen veiligheidsdata."
+      title: "1 jaar"
+      body: "Bèta-alanine lijkt veilig bij normale doses, maar over gebruik langer dan een jaar is niets bekend."
     de:
-      title: "Beta-Alanin auf lange Sicht"
-      body: "Bei Gesunden scheint es in normalen Dosen sicher, aber für eine Einnahme über ein Jahr fehlen Sicherheitsdaten."
+      title: "1 Jahr"
+      body: "Beta-Alanin scheint in normalen Dosen sicher, aber für mehr als ein Jahr fehlen Sicherheitsdaten."
     es:
-      title: "Beta-alanina a largo plazo"
-      body: "Parece segura en personas sanas a dosis normales, pero no hay datos de seguridad de más de un año de uso."
+      title: "1 año"
+      body: "La beta-alanina parece segura a dosis normales, pero no hay datos de seguridad de más de un año."
     fr:
-      title: "Bêta-alanine sur le long terme"
-      body: "Elle semble sûre chez les gens en bonne santé aux doses normales, mais on n'a pas de données au-delà d'un an."
+      title: "1 an"
+      body: "La bêta-alanine semble sûre à dose normale, mais on n'a aucune donnée au-delà d'un an."
     pt:
-      title: "Beta-alanina a longo prazo"
-      body: "Parece segura em pessoas saudáveis em doses normais, mas não há dados de segurança para mais de um ano de uso."
+      title: "1 ano"
+      body: "A beta-alanina parece segura em doses normais, mas não há dados de segurança para além de um ano."
     tr:
-      title: "Uzun vadede beta-alanin"
-      body: "Sağlıklı insanlarda normal dozlarda güvenli görünüyor, ama bir yıldan uzun kullanım için güvenlik verisi yok."
+      title: "1 yıl"
+      body: "Beta-alanin normal dozda güvenli görünüyor ama bir yılı aşan kullanımda güvenlik verisi yok."

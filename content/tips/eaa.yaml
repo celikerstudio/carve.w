@@ -1,145 +1,146 @@
 article: eaa
+emoji: "🔬"
 tips:
   - key: negen-aminozuren
     kind: fact
     en:
-      title: "What EAAs are"
-      body: "EAAs are the nine amino acids your body cannot make itself. Without a protein meal they can still start muscle building."
+      title: "9 amino acids"
+      body: "Your body can't make these, the EAAs. Even without a protein meal they can start muscle building."
     nl:
-      title: "Wat EAA's zijn"
-      body: "EAA's zijn de negen aminozuren die je lichaam niet zelf maakt. Zonder eiwitrijke maaltijd kunnen ze de spieropbouw toch op gang brengen."
+      title: "9 aminozuren"
+      body: "Die kan je lichaam niet zelf maken, de EAA's. Ook zonder eiwitmaaltijd kunnen ze spieropbouw starten."
     de:
-      title: "Was EAAs sind"
-      body: "EAAs sind die neun Aminosäuren, die dein Körper nicht selbst bildet. Ohne Proteinmahlzeit können sie den Muskelaufbau trotzdem anstoßen."
+      title: "9 Aminosäuren"
+      body: "Die kann dein Körper nicht selbst bilden, die EAAs. Auch ohne Proteinmahlzeit starten sie den Aufbau."
     es:
-      title: "Qué son los EAA"
-      body: "Los EAA son los nueve aminoácidos que tu cuerpo no fabrica. Sin una comida con proteína pueden poner en marcha la síntesis muscular."
+      title: "9 aminoácidos"
+      body: "Tu cuerpo no puede fabricarlos: son los EAA. Incluso sin una comida proteica, activan la síntesis muscular."
     fr:
-      title: "Ce que sont les EAA"
-      body: "Les EAA sont les neuf acides aminés que ton corps ne fabrique pas. Sans repas protéiné, ils peuvent quand même lancer la synthèse musculaire."
+      title: "9 acides aminés"
+      body: "Ton corps ne peut pas les fabriquer : ce sont les EAA. Même sans repas protéiné, ils lancent le muscle."
     pt:
-      title: "O que são EAA"
-      body: "Os EAA são os nove aminoácidos que o teu corpo não produz. Sem uma refeição com proteína, podem na mesma ativar a síntese muscular."
+      title: "9 aminoácidos"
+      body: "O corpo não os consegue fazer: são os EAA. Mesmo sem uma refeição proteica, ligam a síntese muscular."
     tr:
-      title: "EAA nedir"
-      body: "EAA'lar vücudunun kendi üretemediği dokuz amino asittir. Proteinli bir öğün yokken de kas yapımını başlatabilirler."
+      title: "9 amino asit"
+      body: "Vücudun bunları kendisi yapamaz, bunlar EAA'lar. Proteinli öğün olmadan da kas yapımını başlatabilir."
 
   - key: dosis-als-nodplan
     kind: fact
     en:
-      title: "EAAs as a backup"
-      body: "Can't get protein for a few hours around training? 10 to 15 g of EAAs can fill in until your next meal."
+      title: "10 to 15 g"
+      body: "Of EAAs can fill in when you can't get protein for a few hours around training."
     nl:
-      title: "EAA's als noodplan"
-      body: "Kun je een paar uur rond je training geen eiwit eten? Dan kan 10 tot 15 gram EAA's dat gat opvullen."
+      title: "10 tot 15 gram"
+      body: "EAA's kunnen het gat vullen als je een paar uur rond de training geen eiwit binnenkrijgt."
     de:
-      title: "EAAs als Notlösung"
-      body: "Kommst du ein paar Stunden rund ums Training nicht an Protein? Dann können 10 bis 15 g EAAs die Lücke füllen."
+      title: "10 bis 15 g"
+      body: "EAAs können einspringen, wenn du ein paar Stunden rund ums Training kein Protein bekommst."
     es:
-      title: "EAA como plan B"
-      body: "¿No puedes comer proteína unas horas alrededor del entreno? Entre 10 y 15 g de EAA pueden cubrir ese hueco."
+      title: "10 a 15 g"
+      body: "De EAA pueden cubrir el hueco si no puedes comer proteína unas horas alrededor del entreno."
     fr:
-      title: "Les EAA en dépannage"
-      body: "Pas de protéines pendant quelques heures autour de ta séance ? 10 à 15 g d'EAA peuvent combler ce trou."
+      title: "10 à 15 g"
+      body: "D'EAA peuvent dépanner si tu n'as pas de protéines quelques heures autour de la séance."
     pt:
-      title: "EAA como plano B"
-      body: "Não consegues comer proteína durante umas horas à volta do treino? 10 a 15 g de EAA podem tapar esse buraco."
+      title: "10 a 15 g"
+      body: "De EAA podem tapar o buraco se não tiveres proteína umas horas à volta do treino."
     tr:
-      title: "Yedek plan olarak EAA"
-      body: "Antrenman civarında birkaç saat protein alamıyor musun? 10 ila 15 g EAA bu boşluğu doldurabilir."
+      title: "10-15 g"
+      body: "Antrenman çevresinde birkaç saat protein alamıyorsan EAA bu boşluğu doldurabilir."
 
   - key: beter-dan-eiwit
     kind: myth
     en:
-      title: "Myth: EAAs beat whole protein"
-      body: "Not true. Whole protein from food or whey stays the first choice. EAAs are a backup for when that is not possible."
+      title: "Better than protein"
+      body: "Myth: EAAs beat whole protein. Food or whey stays the first choice. EAAs are a backup."
     nl:
-      title: "Mythe: EAA's zijn beter dan eiwit"
-      body: "Klopt niet. Gewoon eiwit uit eten of whey blijft de eerste keus. EAA's zijn een noodplan voor als dat even niet lukt."
+      title: "Beter dan eiwit"
+      body: "Mythe: EAA's zijn beter dan gewoon eiwit. Eten of whey blijft eerste keus. EAA's zijn een noodplan."
     de:
-      title: "Mythos: EAAs schlagen echtes Protein"
-      body: "Stimmt nicht. Protein aus Essen oder Whey bleibt die erste Wahl. EAAs sind die Notlösung, wenn das gerade nicht geht."
+      title: "Besser als Protein"
+      body: "Mythos: EAAs schlagen echtes Protein. Essen oder Whey bleiben erste Wahl. EAAs sind ein Notplan."
     es:
-      title: "Mito: los EAA superan a la proteína"
-      body: "No es cierto. La proteína de la comida o el whey sigue siendo lo primero. Los EAA son un recurso para cuando eso no es posible."
+      title: "Mejor que proteína"
+      body: "Mito: los EAA superan a la proteína entera. La comida o el whey siguen primero. Los EAA son un plan B."
     fr:
-      title: "Mythe : les EAA valent mieux que les protéines"
-      body: "Faux. Les protéines de l'assiette ou la whey restent le premier choix. Les EAA servent quand ce n'est pas possible."
+      title: "Mieux que la protéine"
+      body: "Mythe : les EAA battent les protéines entières. L'assiette ou la whey d'abord. Les EAA, c'est le plan B."
     pt:
-      title: "Mito: EAA são melhores que proteína"
-      body: "Não é verdade. A proteína da comida ou o whey continua a ser a primeira escolha. Os EAA são o recurso para quando isso não dá."
+      title: "Melhor que proteína"
+      body: "Mito: os EAA batem a proteína inteira. A comida ou a whey vêm primeiro. Os EAA são um plano B."
     tr:
-      title: "Efsane: EAA tam proteinden iyidir"
-      body: "Doğru değil. Yemekten ya da whey'den gelen protein ilk tercih olmaya devam eder. EAA, bu mümkün olmadığında yedek plandır."
+      title: "Proteinden iyi"
+      body: "Efsane: EAA tam proteinden iyidir. İlk tercih yemek ya da whey. EAA sadece yedek plan."
 
   - key: al-genoeg-eiwit
     kind: fact
     en:
-      title: "Enough protein already?"
-      body: "If you already eat enough protein, EAAs add little. Paying for both is mostly money spent twice."
+      title: "Paying twice"
+      body: "Already eat enough protein? Then EAAs add little, and you're mostly paying twice."
     nl:
-      title: "Eet je al genoeg eiwit?"
-      body: "Eet je al genoeg eiwit, dan voegen EAA's weinig toe. Voor allebei betalen is vooral twee keer geld uitgeven."
+      title: "Dubbel betalen"
+      body: "Eet je al genoeg eiwit? Dan voegen EAA's weinig toe en betaal je vooral dubbel."
     de:
-      title: "Schon genug Protein?"
-      body: "Isst du schon genug Protein, bringen EAAs wenig dazu. Für beides zu zahlen heißt vor allem, doppelt Geld auszugeben."
+      title: "Doppelt zahlen"
+      body: "Isst du schon genug Protein? Dann bringen EAAs wenig, und du zahlst vor allem doppelt."
     es:
-      title: "¿Ya comes bastante proteína?"
-      body: "Si ya comes suficiente proteína, los EAA aportan poco. Pagar por ambos es sobre todo gastar dos veces."
+      title: "Pagar dos veces"
+      body: "¿Ya comes suficiente proteína? Entonces los EAA suman poco y sobre todo pagas dos veces."
     fr:
-      title: "Déjà assez de protéines ?"
-      body: "Si tu manges déjà assez de protéines, les EAA apportent peu. Payer les deux, c'est surtout dépenser deux fois."
+      title: "Payer deux fois"
+      body: "Tu manges déjà assez de protéines ? Les EAA ajoutent peu, tu paies surtout deux fois."
     pt:
-      title: "Já comes proteína suficiente?"
-      body: "Se já comes proteína suficiente, os EAA acrescentam pouco. Pagar pelos dois é sobretudo gastar duas vezes."
+      title: "Pagar a dobrar"
+      body: "Já comes proteína suficiente? Então os EAA juntam pouco e estás sobretudo a pagar a dobrar."
     tr:
-      title: "Zaten yeterli protein mi?"
-      body: "Zaten yeterince protein yiyorsan EAA'nın katkısı azdır. İkisine birden para vermek çoğunlukla iki kez harcamaktır."
+      title: "İki kez ödemek"
+      body: "Zaten yeterli protein alıyorsan EAA pek bir şey katmaz, çoğunlukla iki kez ödersin."
 
   - key: verzadiging
     kind: fact
     en:
-      title: "EAAs don't fill you up"
-      body: "EAAs miss what a real protein meal gives you, like feeling full. That is one reason food stays the better base."
+      title: "Not filling"
+      body: "EAAs miss what a real protein meal gives you, like feeling full. One reason food stays the better base."
     nl:
-      title: "EAA's vullen niet"
-      body: "EAA's missen wat een echte eiwitmaaltijd je geeft, zoals een vol gevoel. Ook daarom blijft gewoon eten de betere basis."
+      title: "Geen vol gevoel"
+      body: "EAA's missen wat een echte eiwitmaaltijd je geeft, zoals verzadiging. Eén reden dat eten de betere basis blijft."
     de:
-      title: "EAAs machen nicht satt"
-      body: "EAAs fehlt, was eine echte Proteinmahlzeit dir gibt, etwa das Sattsein. Auch deshalb bleibt normales Essen die bessere Basis."
+      title: "Macht nicht satt"
+      body: "EAAs fehlt, was eine echte Proteinmahlzeit gibt, etwa Sättigung. Ein Grund, warum Essen die Basis bleibt."
     es:
-      title: "Los EAA no sacian"
-      body: "A los EAA les falta lo que da una comida con proteína, como sentirte lleno. Por eso la comida sigue siendo mejor base."
+      title: "No sacian"
+      body: "A los EAA les falta lo que da una comida con proteína, como saciar. Por eso la comida sigue siendo la base."
     fr:
-      title: "Les EAA ne calent pas"
-      body: "Les EAA n'ont pas ce qu'apporte un vrai repas protéiné, comme la satiété. C'est aussi pour ça que l'assiette reste la base."
+      title: "Pas rassasiant"
+      body: "Les EAA n'ont pas ce qu'apporte un vrai repas protéiné, comme la satiété. L'assiette reste la base."
     pt:
-      title: "Os EAA não saciam"
-      body: "Aos EAA falta o que uma refeição com proteína te dá, como ficar saciado. Também por isso a comida continua a ser a base."
+      title: "Não saciam"
+      body: "Aos EAA falta o que uma refeição proteica dá, como a saciedade. Por isso a comida continua a ser a base."
     tr:
-      title: "EAA tok tutmaz"
-      body: "EAA'larda gerçek bir proteinli öğünün verdiği tokluk yok. Yemeğin daha iyi bir temel olmasının bir nedeni de bu."
+      title: "Doyurmaz"
+      body: "EAA'da gerçek proteinli öğünün verdiği tokluk yok. Temelin yemek olmasının bir sebebi de bu."
 
   - key: koolhydraten-eerst
     kind: fact
     en:
-      title: "Fuel for your session"
-      body: "For performance, carbs and electrolytes help more directly than EAAs. Don't skip them because you have a shake."
+      title: "Carbs first"
+      body: "For performance, carbs and electrolytes help more directly than EAAs. Don't skip them for a shake."
     nl:
-      title: "Brandstof voor je training"
-      body: "Voor je prestatie helpen koolhydraten en elektrolyten directer dan EAA's. Sla ze niet over omdat je al een shake hebt."
+      title: "Eerst koolhydraten"
+      body: "Voor je prestatie helpen koolhydraten en elektrolyten directer dan EAA's. Sla ze niet over voor een shake."
     de:
-      title: "Treibstoff fürs Training"
-      body: "Für deine Leistung helfen Kohlenhydrate und Elektrolyte direkter als EAAs. Lass sie nicht weg, nur weil du einen Shake hast."
+      title: "Erst Kohlenhydrate"
+      body: "Für die Leistung helfen Kohlenhydrate und Elektrolyte direkter als EAAs. Lass sie nicht für einen Shake weg."
     es:
-      title: "Combustible para entrenar"
-      body: "Para rendir, los carbohidratos y electrolitos ayudan más directamente que los EAA. No los olvides por tener un batido."
+      title: "Primero hidratos"
+      body: "Para rendir, los hidratos y electrolitos ayudan más que los EAA. No te los saltes por un batido."
     fr:
-      title: "Du carburant pour ta séance"
-      body: "Pour la performance, glucides et électrolytes aident plus directement que les EAA. Ne les zappe pas parce que tu as un shake."
+      title: "D'abord les glucides"
+      body: "Pour la perf, glucides et électrolytes aident plus que les EAA. Ne les zappe pas pour un shake."
     pt:
-      title: "Combustível para o treino"
-      body: "Para o rendimento, hidratos e eletrólitos ajudam mais diretamente do que os EAA. Não os esqueças só por teres um batido."
+      title: "Primeiro hidratos"
+      body: "Para render, hidratos e eletrólitos ajudam mais do que os EAA. Não os troques por um batido."
     tr:
-      title: "Antrenman için yakıt"
-      body: "Performans için karbonhidrat ve elektrolitler EAA'dan daha doğrudan yardım eder. Shake'in var diye onları atlama."
+      title: "Önce karbonhidrat"
+      body: "Performans için karbonhidrat ve elektrolit, EAA'dan daha doğrudan yardım eder. Shake için atlama."

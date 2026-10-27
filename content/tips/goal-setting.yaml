@@ -1,217 +1,218 @@
 article: goal-setting
+emoji: "🎯"
 tips:
   - key: doelen-werken
     kind: fact
     en:
-      title: "Goals work"
-      body: "In 45 studies with 5,912 people, programs built around activity goals got people moving more than groups without goals."
+      title: "45 studies"
+      body: "Programs built around activity goals got people moving more than groups without goals."
     nl:
-      title: "Doelen werken"
-      body: "In 45 studies met 5.912 mensen gingen deelnemers aan programma's met beweegdoelen meer bewegen dan groepen zonder doel."
+      title: "45 studies"
+      body: "Programma's rond beweegdoelen lieten mensen meer bewegen dan groepen zonder doel."
     de:
-      title: "Ziele wirken"
-      body: "In 45 Studien mit 5.912 Menschen bewegten sich Teilnehmer von Programmen mit Bewegungszielen mehr als Gruppen ohne Ziel."
+      title: "45 Studien"
+      body: "Programme mit Bewegungszielen brachten Menschen mehr in Bewegung als Gruppen ohne Ziel."
     es:
-      title: "Las metas funcionan"
-      body: "En 45 estudios con 5.912 personas, los programas con metas de actividad hicieron moverse más que los grupos sin metas."
+      title: "45 estudios"
+      body: "Los programas con metas de actividad hicieron moverse más que los grupos sin metas."
     fr:
-      title: "Les objectifs marchent"
-      body: "Dans 45 études sur 5 912 personnes, les programmes avec des objectifs d'activité ont fait bouger plus que les groupes sans objectif."
+      title: "45 études"
+      body: "Les programmes avec objectifs d'activité ont fait plus bouger que les groupes sans objectif."
     pt:
-      title: "Os objetivos funcionam"
-      body: "Em 45 estudos com 5.912 pessoas, programas com objetivos de atividade puseram as pessoas a mexer-se mais do que grupos sem objetivos."
+      title: "45 estudos"
+      body: "Programas com metas de atividade puseram as pessoas a mexer-se mais do que grupos sem metas."
     tr:
-      title: "Hedefler işe yarar"
-      body: "5.912 kişilik 45 çalışmada, hareket hedefleri olan programlar insanları hedefsiz gruplardan daha çok hareket ettirdi."
+      title: "45 çalışma"
+      body: "Hareket hedefli programlar insanları hedefsiz gruplardan daha çok hareket ettirdi."
 
   - key: doel-alleen
     kind: myth
     en:
-      title: "Myth: setting a goal is enough"
-      body: "Not true. On its own a goal had a small effect. Planning and tracking are what turn it into action."
+      title: "Just a goal"
+      body: "Myth: setting a goal is enough. On its own it had a small effect. Planning and tracking turn it into action."
     nl:
-      title: "Mythe: een doel stellen is genoeg"
-      body: "Klopt niet. Een doel op zich had een klein effect. Plannen en bijhouden maken er pas actie van."
+      title: "Alleen een doel"
+      body: "Mythe: een doel stellen is genoeg. Los had het een klein effect. Plannen en bijhouden maken er actie van."
     de:
-      title: "Mythos: ein Ziel zu setzen reicht"
-      body: "Stimmt nicht. Ein Ziel allein hatte einen kleinen Effekt. Erst Planen und Festhalten machen daraus Handeln."
+      title: "Nur ein Ziel"
+      body: "Mythos: Ein Ziel reicht. Allein wirkte es wenig. Planen und Festhalten machen daraus Handeln."
     es:
-      title: "Mito: basta con ponerte una meta"
-      body: "No es cierto. Una meta sola tuvo un efecto pequeño. Planificar y registrar es lo que la convierte en acción."
+      title: "Solo una meta"
+      body: "Mito: basta con fijarse una meta. Sola tuvo poco efecto. Planificar y registrar la convierten en acción."
     fr:
-      title: "Mythe : se fixer un objectif suffit"
-      body: "Faux. Seul, un objectif avait un petit effet. Ce sont le plan et le suivi qui le transforment en action."
+      title: "Juste un objectif"
+      body: "Mythe : se fixer un objectif suffit. Seul, l'effet était faible. Planifier et suivre le font passer à l'action."
     pt:
-      title: "Mito: basta definir um objetivo"
-      body: "Não é verdade. Sozinho, um objetivo teve um efeito pequeno. Planear e registar é o que o transforma em ação."
+      title: "Só uma meta"
+      body: "Mito: basta definir uma meta. Sozinha teve pouco efeito. Planear e registar transformam-na em ação."
     tr:
-      title: "Efsane: hedef koymak yeterli"
-      body: "Doğru değil. Tek başına bir hedefin etkisi küçüktü. Onu eyleme çeviren plan yapmak ve takip etmek."
+      title: "Sadece hedef"
+      body: "Efsane: hedef koymak yeter. Tek başına etkisi küçüktü. Plan ve takip onu eyleme dönüştürür."
 
   - key: moeilijk-doel
     kind: fact
     en:
-      title: "Make it a stretch"
-      body: "A broad meta-analysis found that goal setting worked best when the goal was difficult."
+      title: "A hard goal"
+      body: "Goal setting worked best when the goal was difficult, a broad meta-analysis found."
     nl:
-      title: "Maak het pittig"
-      body: "Een brede meta-analyse vond dat doelen stellen het best werkte als het doel moeilijk was."
+      title: "Een moeilijk doel"
+      body: "Doelen stellen werkte het best als het doel moeilijk was, vond een brede meta-analyse."
     de:
-      title: "Ruhig anspruchsvoll"
-      body: "Eine breite Metaanalyse fand, dass Ziele am besten wirkten, wenn sie schwierig waren."
+      title: "Ein schweres Ziel"
+      body: "Ziele setzen wirkte am besten, wenn das Ziel schwer war, so eine breite Metaanalyse."
     es:
-      title: "Que te exija"
-      body: "Un metaanálisis amplio vio que ponerse metas funcionaba mejor cuando la meta era difícil."
+      title: "Una meta difícil"
+      body: "Fijarse metas funcionó mejor cuando la meta era difícil, según un amplio metaanálisis."
     fr:
-      title: "Vise un peu haut"
-      body: "Une large méta-analyse a trouvé que se fixer des objectifs marchait le mieux quand l'objectif était difficile."
+      title: "Un objectif dur"
+      body: "Se fixer un but marchait mieux quand il était difficile, selon une large méta-analyse."
     pt:
-      title: "Que puxe por ti"
-      body: "Uma meta-análise alargada viu que definir objetivos resultava melhor quando o objetivo era difícil."
+      title: "Uma meta difícil"
+      body: "Definir metas funcionou melhor quando a meta era difícil, segundo uma ampla meta-análise."
     tr:
-      title: "Biraz zorlasın"
-      body: "Geniş bir meta-analiz, hedef koymanın en iyi hedef zor olduğunda işe yaradığını buldu."
+      title: "Zor bir hedef"
+      body: "Geniş bir meta-analize göre hedef koymak, hedef zor olduğunda en iyi işe yaradı."
 
   - key: groot-doel-kleine-stap
     kind: fact
     en:
-      title: "Big goal, small step"
-      body: "Set a goal for a few months from now that really challenges you. Make this week's step one you expect to manage."
+      title: "A few months"
+      body: "Set a goal that far out that really challenges you. Make this week's step one you expect to manage."
     nl:
-      title: "Groot doel, kleine stap"
-      body: "Kies een doel over een paar maanden dat je echt uitdaagt. Maak de stap van deze week er een waarvan je verwacht dat hij lukt."
+      title: "Een paar maanden"
+      body: "Zet zo ver vooruit een doel dat je echt uitdaagt. Maak de stap van deze week er een die je gaat halen."
     de:
-      title: "Großes Ziel, kleiner Schritt"
-      body: "Setz dir ein Ziel in ein paar Monaten, das dich wirklich fordert. Mach den Schritt dieser Woche so, dass du ihn schaffen dürftest."
+      title: "Ein paar Monate"
+      body: "Setz so weit voraus ein Ziel, das dich fordert. Mach den Schritt dieser Woche einen, den du schaffst."
     es:
-      title: "Meta grande, paso pequeño"
-      body: "Ponte una meta a unos meses vista que de verdad te rete. Que el paso de esta semana sea uno que esperas cumplir."
+      title: "Unos meses"
+      body: "Pon a esa distancia una meta que te rete. Que el paso de esta semana sea uno que vas a lograr."
     fr:
-      title: "Gros objectif, petit pas"
-      body: "Fixe-toi un objectif à quelques mois qui te met vraiment au défi. Fais de l'étape de cette semaine une étape que tu penses réussir."
+      title: "Quelques mois"
+      body: "Fixe à cette distance un but qui te pousse. Fais du pas de la semaine un pas que tu vas réussir."
     pt:
-      title: "Objetivo grande, passo pequeno"
-      body: "Define um objetivo a uns meses que te desafie a sério. Faz do passo desta semana um que esperas conseguir."
+      title: "Uns meses"
+      body: "Põe a essa distância uma meta que te desafie. Faz do passo desta semana um que vais conseguir."
     tr:
-      title: "Büyük hedef, küçük adım"
-      body: "Birkaç ay sonrası için seni gerçekten zorlayan bir hedef koy. Bu haftaki adımı başarabileceğini düşündüğün bir adım yap."
+      title: "Birkaç ay"
+      body: "O kadar ileriye seni zorlayan bir hedef koy. Bu haftanın adımı başarabileceğin bir adım olsun."
 
   - key: smart
     kind: myth
     en:
-      title: "Myth: a goal has to be SMART"
-      body: "Not true. A review found the acronym isn't based on scientific theory or consistent with the evidence. A clear, measurable goal still helps."
+      title: "SMART"
+      body: "Myth: a goal has to be SMART. A review found the acronym isn't based on evidence. A clear, measurable goal still helps."
     nl:
-      title: "Mythe: een doel moet SMART zijn"
-      body: "Klopt niet. Volgens een review rust het acroniem niet op wetenschappelijke theorie en strookt het niet met het bewijs. Een helder, meetbaar doel helpt wel."
+      title: "SMART"
+      body: "Mythe: een doel moet SMART zijn. Een review vond geen bewijs achter het acroniem. Een helder, meetbaar doel helpt wel."
     de:
-      title: "Mythos: ein Ziel muss SMART sein"
-      body: "Stimmt nicht. Laut einem Review beruht das Kürzel auf keiner Theorie und passt nicht zu den Belegen. Ein klares, messbares Ziel hilft trotzdem."
+      title: "SMART"
+      body: "Mythos: Ein Ziel muss SMART sein. Eine Übersicht fand keine Belege dafür. Ein klares, messbares Ziel hilft trotzdem."
     es:
-      title: "Mito: una meta tiene que ser SMART"
-      body: "No es cierto. Una revisión vio que el acrónimo no se basa en teoría científica ni encaja con la evidencia. Una meta clara y medible sí ayuda."
+      title: "SMART"
+      body: "Mito: una meta tiene que ser SMART. Una revisión no vio pruebas detrás. Una meta clara y medible sí ayuda."
     fr:
-      title: "Mythe : un objectif doit être SMART"
-      body: "Faux. Une revue juge que l'acronyme ne repose sur aucune théorie et ne colle pas aux preuves. Un objectif clair et mesurable aide quand même."
+      title: "SMART"
+      body: "Mythe : un objectif doit être SMART. Une revue n'y a vu aucune base solide. Un but clair et mesurable aide quand même."
     pt:
-      title: "Mito: um objetivo tem de ser SMART"
-      body: "Não é verdade. Uma revisão concluiu que o acrónimo não assenta em teoria nem bate com a evidência. Um objetivo claro e mensurável ajuda na mesma."
+      title: "SMART"
+      body: "Mito: uma meta tem de ser SMART. Uma revisão não viu provas por trás. Uma meta clara e mensurável ajuda."
     tr:
-      title: "Efsane: hedef SMART olmalı"
-      body: "Doğru değil. Bir derlemeye göre bu kısaltma bilimsel bir teoriye dayanmıyor ve kanıtlarla uyuşmuyor. Net, ölçülebilir bir hedef yine de işe yarar."
+      title: "SMART"
+      body: "Efsane: hedef SMART olmalı. Bir derleme bu kısaltmanın kanıta dayanmadığını buldu. Net ve ölçülebilir hedef yine iyi."
 
   - key: wanneer-waar-hoe
     kind: fact
     en:
       title: "When, where, how"
-      body: "In 35 trials, planning when, where and how you'll be active helped. Adding a plan for setbacks did no better than that alone."
+      body: "Planning those helped people be active, in 35 trials. Adding a plan for setbacks did no better."
     nl:
       title: "Wanneer, waar, hoe"
-      body: "In 35 studies hielp het om te plannen wanneer, waar en hoe je beweegt. Een plan voor tegenslag erbij werkte niet beter dan dat alleen."
+      body: "Dat plannen hielp mensen bewegen, in 35 studies. Een plan voor tegenslag erbij deed het niet beter."
     de:
       title: "Wann, wo, wie"
-      body: "In 35 Studien half es zu planen, wann, wo und wie du dich bewegst. Ein zusätzlicher Plan für Hindernisse wirkte nicht besser."
+      body: "Das zu planen half in 35 Studien beim Bewegen. Ein Plan für Rückschläge brachte nicht mehr."
     es:
       title: "Cuándo, dónde, cómo"
-      body: "En 35 ensayos ayudó planear cuándo, dónde y cómo moverte. Añadir un plan para los imprevistos no funcionó mejor que eso solo."
+      body: "Planearlo ayudó a moverse, en 35 ensayos. Añadir un plan para tropiezos no mejoró nada."
     fr:
       title: "Quand, où, comment"
-      body: "Dans 35 essais, planifier quand, où et comment bouger a aidé. Ajouter un plan pour les imprévus n'a pas fait mieux que ça seul."
+      body: "Le planifier a aidé à bouger, sur 35 essais. Ajouter un plan pour les échecs n'a rien amélioré."
     pt:
       title: "Quando, onde, como"
-      body: "Em 35 ensaios, planear quando, onde e como te mexes ajudou. Juntar um plano para contratempos não resultou melhor do que isso sozinho."
+      body: "Planear isso ajudou a mexer, em 35 ensaios. Juntar um plano para contratempos não melhorou."
     tr:
-      title: "Ne zaman, nerede, nasıl"
-      body: "35 çalışmada ne zaman, nerede ve nasıl hareket edeceğini planlamak yardımcı oldu. Aksiliklere plan eklemek tek başına bundan iyi değildi."
+      title: "Ne zaman, nerede"
+      body: "35 çalışmada bunu planlamak harekete yardım etti. Aksilikler için plan eklemek fark yaratmadı."
 
   - key: plannen-en-stappentellers
     kind: fact
     en:
-      title: "Planning, with a catch"
-      body: "Most planning trials used questionnaires. In the few with step counters or trackers, the effect was small and not significant."
+      title: "Step counters"
+      body: "In the few planning trials that used them, the effect was small and not significant. Most used questionnaires."
     nl:
-      title: "Plannen, met een kanttekening"
-      body: "De meeste studies naar plannen gebruikten vragenlijsten. In de paar met stappentellers of trackers was het effect klein en niet significant."
+      title: "Stappentellers"
+      body: "In de paar planstudies die ze gebruikten, was het effect klein en niet significant. De meeste gebruikten vragenlijsten."
     de:
-      title: "Planen, mit Haken"
-      body: "Die meisten Planungsstudien nutzten Fragebögen. In den wenigen mit Schrittzählern oder Trackern war der Effekt klein und nicht signifikant."
+      title: "Schrittzähler"
+      body: "In den wenigen Planungsstudien damit war der Effekt klein und nicht signifikant. Die meisten nutzten Fragebögen."
     es:
-      title: "Planificar, con matices"
-      body: "La mayoría de ensayos sobre planificar usaron cuestionarios. En los pocos con podómetros o pulseras, el efecto fue pequeño y no significativo."
+      title: "Podómetros"
+      body: "En los pocos estudios de planificación que los usaron, el efecto fue pequeño y no significativo."
     fr:
-      title: "Planifier, avec un bémol"
-      body: "La plupart des essais sur la planification utilisaient des questionnaires. Avec podomètre ou tracker, l'effet était faible et non significatif."
+      title: "Podomètres"
+      body: "Dans les rares études qui en utilisaient, l'effet du planning était petit et non significatif."
     pt:
-      title: "Planear, com uma ressalva"
-      body: "A maioria dos ensaios sobre planear usou questionários. Nos poucos com contadores de passos ou pulseiras, o efeito foi pequeno e não significativo."
+      title: "Contadores de passos"
+      body: "Nos poucos estudos de planeamento que os usaram, o efeito foi pequeno e não significativo."
     tr:
-      title: "Plan yapmak, bir şartla"
-      body: "Plan çalışmalarının çoğu anket kullandı. Adımsayar ya da takip cihazı kullanan birkaç çalışmada etki küçüktü ve anlamlı değildi."
+      title: "Adımsayar"
+      body: "Bunları kullanan az sayıdaki planlama çalışmasında etki küçük ve anlamsızdı. Çoğu anket kullandı."
 
   - key: vooruitgang-bijhouden
     kind: fact
     en:
-      title: "Track your progress"
-      body: "In 138 studies with 19,951 people, monitoring progress helped people reach their goals. More so when they wrote it down or shared it."
+      title: "138 studies"
+      body: "Monitoring progress helped people reach goals. More so when they wrote it down or shared it."
     nl:
-      title: "Houd je voortgang bij"
-      body: "In 138 studies met 19.951 mensen hielp het bijhouden van voortgang om doelen te halen. Nog meer als ze het opschreven of deelden."
+      title: "138 studies"
+      body: "Vooruitgang bijhouden hielp mensen hun doel halen. Nog meer als ze het opschreven of deelden."
     de:
-      title: "Halte deinen Fortschritt fest"
-      body: "In 138 Studien mit 19.951 Menschen half es, den Fortschritt zu verfolgen. Noch mehr, wenn er aufgeschrieben oder geteilt wurde."
+      title: "138 Studien"
+      body: "Fortschritt festzuhalten half beim Erreichen von Zielen. Noch mehr, wenn man es aufschrieb oder teilte."
     es:
-      title: "Sigue tu progreso"
-      body: "En 138 estudios con 19.951 personas, seguir el progreso ayudó a lograr metas. Más aún si lo anotaban o lo compartían."
+      title: "138 estudios"
+      body: "Seguir el progreso ayudó a lograr metas. Más aún si lo apuntaban o lo compartían."
     fr:
-      title: "Suis tes progrès"
-      body: "Dans 138 études sur 19 951 personnes, suivre ses progrès aidait à atteindre ses objectifs. Plus encore en les notant ou en les partageant."
+      title: "138 études"
+      body: "Suivre ses progrès aidait à atteindre ses buts. Encore plus en les notant ou en les partageant."
     pt:
-      title: "Regista o progresso"
-      body: "Em 138 estudos com 19.951 pessoas, acompanhar o progresso ajudou a atingir objetivos. Mais ainda quando o escreviam ou partilhavam."
+      title: "138 estudos"
+      body: "Acompanhar o progresso ajudou a atingir metas. Mais ainda quando o escreviam ou partilhavam."
     tr:
-      title: "İlerlemeni takip et"
-      body: "19.951 kişilik 138 çalışmada ilerlemeyi takip etmek hedefe ulaşmaya yardım etti. Yazıya dökülünce ya da paylaşılınca daha da çok."
+      title: "138 çalışma"
+      body: "İlerlemeyi takip etmek hedefe ulaşmaya yardım etti. Yazınca ya da paylaşınca daha da çok."
 
   - key: een-of-twee
     kind: fact
     en:
-      title: "One or two goals"
-      body: "Too many goals at once is a common mistake. Pick the one or two that matter most and plan those well."
+      title: "1 or 2 goals"
+      body: "Too many at once is a common mistake. Pick the one or two that matter most and plan those well."
     nl:
-      title: "Een of twee doelen"
-      body: "Te veel doelen tegelijk is een veelgemaakte fout. Kies de een of twee die het meest tellen en plan die goed."
+      title: "1 of 2 doelen"
+      body: "Te veel tegelijk is een veelgemaakte fout. Kies de één of twee die het meest tellen en plan die goed."
     de:
-      title: "Ein oder zwei Ziele"
-      body: "Zu viele Ziele auf einmal sind ein häufiger Fehler. Nimm die ein, zwei wichtigsten und plane die gut."
+      title: "1 oder 2 Ziele"
+      body: "Zu viele auf einmal sind ein häufiger Fehler. Nimm die ein, zwei wichtigsten und plan sie gut."
     es:
-      title: "Una o dos metas"
-      body: "Demasiadas metas a la vez es un error común. Elige la una o dos que más importan y planéalas bien."
+      title: "1 o 2 metas"
+      body: "Demasiadas a la vez es un error común. Elige una o dos que importen y planéalas bien."
     fr:
-      title: "Un ou deux objectifs"
-      body: "Trop d'objectifs à la fois, c'est une erreur courante. Choisis les un ou deux qui comptent le plus et planifie-les bien."
+      title: "1 ou 2 objectifs"
+      body: "Trop à la fois, c'est une erreur courante. Garde les un ou deux qui comptent et planifie-les bien."
     pt:
-      title: "Um ou dois objetivos"
-      body: "Objetivos a mais ao mesmo tempo é um erro comum. Escolhe os um ou dois que mais importam e planeia-os bem."
+      title: "1 ou 2 metas"
+      body: "Demasiadas de uma vez é um erro comum. Escolhe uma ou duas que importam e planeia-as bem."
     tr:
-      title: "Bir ya da iki hedef"
-      body: "Aynı anda çok fazla hedef yaygın bir hata. En önemli bir ya da ikisini seç ve onları iyi planla."
+      title: "1-2 hedef"
+      body: "Aynı anda çok hedef sık bir hata. En önemli bir iki tanesini seç ve iyi planla."

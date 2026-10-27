@@ -1,217 +1,218 @@
 article: citrulline
+emoji: "🍉"
 tips:
   - key: wat-het-doet
     kind: fact
     en:
-      title: "Citrulline"
-      body: "Your body recycles citrulline into arginine, which it uses to make nitric oxide. That is why it is sold for blood flow."
+      title: "Nitric oxide"
+      body: "Your body turns citrulline into arginine, which makes nitric oxide. That's why it's sold for blood flow."
     nl:
-      title: "Citrulline"
-      body: "Je lichaam zet citrulline om in arginine, en daarmee maakt het stikstofmonoxide. Daarom wordt het verkocht voor de doorbloeding."
+      title: "Stikstofmonoxide"
+      body: "Je lichaam maakt van citrulline arginine, en daarvan stikstofmonoxide. Daarom wordt het verkocht voor doorbloeding."
     de:
-      title: "Citrullin"
-      body: "Dein Körper wandelt Citrullin in Arginin um und bildet daraus Stickstoffmonoxid. Darum wird es für die Durchblutung verkauft."
+      title: "Stickstoffmonoxid"
+      body: "Dein Körper macht aus Citrullin Arginin und daraus Stickstoffmonoxid. Daher wird es für die Durchblutung verkauft."
     es:
-      title: "Citrulina"
-      body: "Tu cuerpo convierte la citrulina en arginina, y con ella fabrica óxido nítrico. Por eso se vende para el flujo sanguíneo."
+      title: "Óxido nítrico"
+      body: "Tu cuerpo convierte la citrulina en arginina, que produce óxido nítrico. Por eso se vende para el flujo sanguíneo."
     fr:
-      title: "Citrulline"
-      body: "Ton corps recycle la citrulline en arginine, qui sert à fabriquer du monoxyde d'azote. D'où sa vente pour la circulation."
+      title: "Monoxyde d'azote"
+      body: "Ton corps change la citrulline en arginine, qui produit du monoxyde d'azote. D'où sa vente pour la circulation."
     pt:
-      title: "Citrulina"
-      body: "O teu corpo transforma a citrulina em arginina, que usa para fazer óxido nítrico. Por isso é vendida para o fluxo sanguíneo."
+      title: "Óxido nítrico"
+      body: "O corpo transforma a citrulina em arginina, que produz óxido nítrico. Por isso é vendida para a circulação."
     tr:
-      title: "Sitrülin"
-      body: "Vücudun sitrülini arjinine çevirir ve bundan nitrik oksit yapar. Bu yüzden kan akışı için satılır."
+      title: "Nitrik oksit"
+      body: "Vücudun sitrülini arjinine, onu da nitrik okside çevirir. Bu yüzden kan akışı için satılır."
 
   - key: pomp
     kind: myth
     en:
-      title: "Myth: citrulline gives you a bigger pump"
-      body: "Not shown. None of the lifting studies measured pumps, and the one that measured muscle swelling found no extra effect."
+      title: "Bigger pump"
+      body: "Myth: citrulline gives you a bigger pump. No lifting study measured pumps, and muscle swelling didn't change."
     nl:
-      title: "Mythe: citrulline geeft je een betere pump"
-      body: "Niet aangetoond. Geen van de studies mat de pump, en de enige die spierzwelling mat vond geen extra effect."
+      title: "Grotere pump"
+      body: "Mythe: citrulline geeft een grotere pump. Geen enkele studie mat de pump, en spierzwelling veranderde niet."
     de:
-      title: "Mythos: Citrullin gibt mehr Pump"
-      body: "Nicht belegt. Keine der Studien hat den Pump gemessen, und die eine, die Muskelschwellung maß, fand keinen Zusatzeffekt."
+      title: "Größerer Pump"
+      body: "Mythos: Citrullin gibt mehr Pump. Keine Studie hat den Pump gemessen, und die Muskelschwellung blieb gleich."
     es:
-      title: "Mito: la citrulina te da más bombeo"
-      body: "No está demostrado. Ningún estudio midió el bombeo, y el único que midió la hinchazón muscular no vio efecto extra."
+      title: "Más bombeo"
+      body: "Mito: la citrulina da más bombeo. Ningún estudio lo midió, y la hinchazón muscular no cambió."
     fr:
-      title: "Mythe : la citrulline donne plus de pump"
-      body: "Pas démontré. Aucune étude n'a mesuré le pump, et la seule qui a mesuré le gonflement musculaire n'a rien vu de plus."
+      title: "Plus de congestion"
+      body: "Mythe : la citrulline donne plus de pump. Aucune étude ne l'a mesuré, et le gonflement musculaire n'a pas bougé."
     pt:
-      title: "Mito: a citrulina dá mais pump"
-      body: "Não está provado. Nenhum estudo mediu o pump, e o único que mediu o inchaço muscular não viu efeito extra."
+      title: "Mais pump"
+      body: "Mito: a citrulina dá mais pump. Nenhum estudo o mediu, e o inchaço muscular não mudou."
     tr:
-      title: "Efsane: sitrülin daha iyi pump verir"
-      body: "Kanıtlanmadı. Çalışmaların hiçbiri pump'ı ölçmedi, kas şişmesini ölçen tek çalışma da ek bir etki bulmadı."
+      title: "Daha çok pump"
+      body: "Efsane: sitrülin daha çok pump verir. Hiçbir çalışma pump ölçmedi, kas şişmesi de değişmedi."
 
   - key: drie-herhalingen
     kind: fact
     en:
-      title: "How many extra reps?"
-      body: "In a meta-analysis, 6 to 8 g of citrulline malate 40 to 60 minutes before lifting gave about 3 more reps (6%) than placebo. A small effect."
+      title: "3 more reps"
+      body: "From 6 to 8 g of citrulline malate before lifting, in a meta-analysis. That's about 6%, a small effect."
     nl:
-      title: "Hoeveel extra herhalingen?"
-      body: "In een meta-analyse gaf 6 tot 8 gram citrulline malaat, 40 à 60 minuten voor het liften, zo'n 3 herhalingen (6%) meer dan placebo. Klein."
+      title: "3 herhalingen extra"
+      body: "Met 6 tot 8 gram citrulline-malaat voor het trainen, in een meta-analyse. Zo'n 6%, een klein effect."
     de:
-      title: "Wie viele Wiederholungen mehr?"
-      body: "Laut Meta-Analyse brachten 6 bis 8 g Citrullinmalat 40 bis 60 Minuten vorher etwa 3 Wiederholungen (6 %) mehr als Placebo. Wenig."
+      title: "3 Wiederholungen mehr"
+      body: "Mit 6 bis 8 g Citrullinmalat vor dem Training, laut einer Metaanalyse. Etwa 6 %, ein kleiner Effekt."
     es:
-      title: "¿Cuántas repeticiones más?"
-      body: "En un metaanálisis, 6 a 8 g de citrulina malato 40 a 60 minutos antes dieron unas 3 repeticiones más (6 %) que el placebo. Poco."
+      title: "3 repeticiones más"
+      body: "Con 6 a 8 g de citrulina malato antes de entrenar, en un metaanálisis. Un 6 %, un efecto pequeño."
     fr:
-      title: "Combien de répétitions en plus ?"
-      body: "Dans une méta-analyse, 6 à 8 g de citrulline malate 40 à 60 min avant ont donné environ 3 répétitions de plus (6 %) que le placebo."
+      title: "3 reps de plus"
+      body: "Avec 6 à 8 g de citrulline malate avant la séance, selon une méta-analyse. Environ 6 %, un petit effet."
     pt:
-      title: "Quantas repetições a mais?"
-      body: "Numa meta-análise, 6 a 8 g de citrulina malato 40 a 60 minutos antes deram cerca de 3 repetições a mais (6%) do que o placebo."
+      title: "3 repetições a mais"
+      body: "Com 6 a 8 g de citrulina malato antes do treino, numa meta-análise. Cerca de 6%, um efeito pequeno."
     tr:
-      title: "Kaç tekrar fazla?"
-      body: "Bir meta-analizde, kaldırmadan 40 ila 60 dakika önce 6 ila 8 g sitrülin malat plaseboya göre 3 tekrar kadar (%6) fazla verdi. Küçük bir etki."
+      title: "3 tekrar daha"
+      body: "Bir meta-analizde antrenman öncesi 6-8 g sitrülin malat ile. Yaklaşık %6, küçük bir etki."
 
   - key: wisselende-studies
     kind: fact
     en:
-      title: "Citrulline is hit or miss"
-      body: "In three studies, 8 g of citrulline malate gave more reps over several sets. Other studies with the same dose found no difference."
+      title: "Hit or miss"
+      body: "In three studies, 8 g of citrulline malate gave more reps. Others with the same dose found nothing."
     nl:
-      title: "Citrulline: wisselend resultaat"
-      body: "In drie studies gaf 8 gram citrulline malaat meer herhalingen over meerdere sets. Andere studies met dezelfde dosis vonden geen verschil."
+      title: "Wisselend"
+      body: "In drie studies gaf 8 gram citrulline-malaat meer herhalingen. Andere met dezelfde dosis vonden niets."
     de:
-      title: "Citrullin wirkt nicht immer"
-      body: "In drei Studien brachten 8 g Citrullinmalat mehr Wiederholungen über mehrere Sätze. Andere Studien mit gleicher Dosis fanden nichts."
+      title: "Mal so, mal so"
+      body: "In drei Studien brachten 8 g Citrullinmalat mehr Wiederholungen. Andere mit gleicher Dosis fanden nichts."
     es:
-      title: "La citrulina, a veces sí"
-      body: "En tres estudios, 8 g de citrulina malato dieron más repeticiones en varias series. Otros con la misma dosis no vieron diferencia."
+      title: "A veces sí"
+      body: "En tres estudios, 8 g de citrulina malato dieron más repeticiones. Otros con la misma dosis no vieron nada."
     fr:
-      title: "La citrulline, ça dépend"
-      body: "Dans trois études, 8 g de citrulline malate ont donné plus de répétitions sur plusieurs séries. D'autres, à la même dose, rien."
+      title: "Pas toujours"
+      body: "Dans trois études, 8 g de citrulline malate ont donné plus de reps. D'autres, même dose, n'ont rien vu."
     pt:
-      title: "A citrulina nem sempre resulta"
-      body: "Em três estudos, 8 g de citrulina malato deram mais repetições em várias séries. Outros com a mesma dose não viram diferença."
+      title: "Às vezes"
+      body: "Em três estudos, 8 g de citrulina malato deram mais repetições. Outros com a mesma dose não viram nada."
     tr:
-      title: "Sitrülin her zaman işe yaramaz"
-      body: "Üç çalışmada 8 g sitrülin malat birkaç sette daha fazla tekrar verdi. Aynı dozla yapılan başka çalışmalar fark bulmadı."
+      title: "Bazen işe yarar"
+      body: "Üç çalışmada 8 g sitrülin malat daha çok tekrar sağladı. Aynı dozla diğerleri fark bulmadı."
 
   - key: malaat-verhouding
     kind: fact
     en:
-      title: "Read the citrulline label"
-      body: "8 g of citrulline malate is not 8 g of citrulline. In one study the ratio was 1.11 to 1, and products differed from what makers claimed."
+      title: "8 g"
+      body: "Of citrulline malate isn't 8 g of citrulline. Products also differed from what makers claimed."
     nl:
-      title: "Lees het etiket goed"
-      body: "8 gram citrulline malaat is geen 8 gram citrulline. In één studie was de verhouding 1,11 op 1, en zaten producten anders in elkaar dan beloofd."
+      title: "8 gram"
+      body: "Citrulline-malaat is geen 8 gram citrulline. En producten weken af van wat de maker beloofde."
     de:
-      title: "Lies das Etikett genau"
-      body: "8 g Citrullinmalat sind nicht 8 g Citrullin. In einer Studie war das Verhältnis 1,11 zu 1, und Produkte wichen von den Angaben ab."
+      title: "8 g"
+      body: "Citrullinmalat sind keine 8 g Citrullin. Produkte wichen zudem von den Herstellerangaben ab."
     es:
-      title: "Lee bien la etiqueta"
-      body: "8 g de citrulina malato no son 8 g de citrulina. En un estudio la proporción era 1,11 a 1, y los productos no eran lo que decían."
+      title: "8 g"
+      body: "De citrulina malato no son 8 g de citrulina. Y los productos no coincidían con lo que decía el fabricante."
     fr:
-      title: "Lis bien l'étiquette"
-      body: "8 g de citrulline malate, ce n'est pas 8 g de citrulline. Dans une étude, le ratio était de 1,11 pour 1, et les produits différaient."
+      title: "8 g"
+      body: "De citrulline malate, ce n'est pas 8 g de citrulline. Et les produits différaient de l'étiquette."
     pt:
-      title: "Lê bem o rótulo"
-      body: "8 g de citrulina malato não são 8 g de citrulina. Num estudo a proporção era 1,11 para 1, e os produtos diferiam do que diziam."
+      title: "8 g"
+      body: "De citrulina malato não são 8 g de citrulina. E os produtos não batiam com o que o fabricante dizia."
     tr:
-      title: "Etiketi dikkatli oku"
-      body: "8 g sitrülin malat, 8 g sitrülin demek değil. Bir çalışmada oran 1,11'e 1'di ve ürünler üreticinin söylediğinden farklı çıktı."
+      title: "8 g"
+      body: "Sitrülin malat, 8 g sitrülin demek değil. Ürünler de üreticinin söylediğinden farklı çıktı."
 
   - key: boven-en-onderlichaam
     kind: fact
     en:
-      title: "Citrulline and your upper body"
-      body: "In the meta-analysis on reps, the effect was borderline for the lower body and not significant for the upper body."
+      title: "Upper body"
+      body: "In the meta-analysis, citrulline did nothing significant for upper-body reps. Lower body was borderline."
     nl:
-      title: "Citrulline en je bovenlichaam"
-      body: "In de meta-analyse over herhalingen was het effect net aan voor het onderlichaam en niet significant voor het bovenlichaam."
+      title: "Bovenlichaam"
+      body: "In de meta-analyse deed citrulline niets significants voor herhalingen bovenlichaam. Onderlichaam: twijfelgeval."
     de:
-      title: "Citrullin und Oberkörper"
-      body: "In der Meta-Analyse zu Wiederholungen war der Effekt für den Unterkörper grenzwertig und für den Oberkörper nicht signifikant."
+      title: "Oberkörper"
+      body: "In der Metaanalyse brachte Citrullin für den Oberkörper nichts Signifikantes. Unterkörper: grenzwertig."
     es:
-      title: "Citrulina y tren superior"
-      body: "En el metaanálisis de repeticiones, el efecto fue justo en el tren inferior y no significativo en el superior."
+      title: "Tren superior"
+      body: "En el metaanálisis, la citrulina no hizo nada significativo arriba. Abajo, el efecto fue dudoso."
     fr:
-      title: "Citrulline et haut du corps"
-      body: "Dans la méta-analyse sur les répétitions, l'effet était limite pour le bas du corps et non significatif pour le haut."
+      title: "Haut du corps"
+      body: "Dans la méta-analyse, rien de significatif pour le haut du corps. Pour le bas, c'était limite."
     pt:
-      title: "Citrulina e parte superior"
-      body: "Na meta-análise sobre repetições, o efeito foi no limite para a parte inferior e não significativo para a superior."
+      title: "Parte superior"
+      body: "Na meta-análise, a citrulina não fez nada significativo na parte de cima. Em baixo, ficou no limite."
     tr:
-      title: "Sitrülin ve üst vücut"
-      body: "Tekrarlarla ilgili meta-analizde etki alt vücutta sınırdaydı, üst vücutta ise anlamlı değildi."
+      title: "Üst vücut"
+      body: "Meta-analizde sitrülin üst vücut tekrarlarında anlamlı fark yaratmadı. Alt vücutta sınırdaydı."
 
   - key: citrulline-of-malaat
     kind: fact
     en:
-      title: "Citrulline or the malate?"
-      body: "It is not clear whether the benefit comes from citrulline alone. What the malate does is largely unknown."
+      title: "The malate"
+      body: "It's unclear whether the benefit comes from citrulline itself. What the malate does is largely unknown."
     nl:
-      title: "Citrulline of het malaat?"
-      body: "Het is niet duidelijk of het effect van de citrulline zelf komt. Wat het malaat doet is grotendeels onbekend."
+      title: "Het malaat"
+      body: "Het is onduidelijk of het effect van citrulline zelf komt. Wat het malaat doet is grotendeels onbekend."
     de:
-      title: "Citrullin oder Malat?"
-      body: "Ob der Nutzen allein vom Citrullin kommt, ist unklar. Was das Malat bewirkt, ist weitgehend offen."
+      title: "Das Malat"
+      body: "Ob der Effekt vom Citrullin selbst kommt, ist unklar. Was das Malat tut, ist kaum bekannt."
     es:
-      title: "¿Citrulina o malato?"
-      body: "No está claro si el beneficio viene solo de la citrulina. Lo que hace el malato es en gran parte desconocido."
+      title: "El malato"
+      body: "No está claro si el efecto viene de la citrulina. Lo que hace el malato es casi desconocido."
     fr:
-      title: "Citrulline ou malate ?"
-      body: "On ne sait pas si le bénéfice vient de la citrulline seule. Le rôle du malate reste en grande partie inconnu."
+      title: "Le malate"
+      body: "On ne sait pas si l'effet vient de la citrulline elle-même. Le rôle du malate reste flou."
     pt:
-      title: "Citrulina ou malato?"
-      body: "Não é claro se o benefício vem só da citrulina. O que o malato faz é em grande parte desconhecido."
+      title: "O malato"
+      body: "Não se sabe se o efeito vem da citrulina. O que o malato faz é quase desconhecido."
     tr:
-      title: "Sitrülin mi, malat mı?"
-      body: "Faydanın yalnızca sitrülinden gelip gelmediği belli değil. Malatın ne yaptığı büyük ölçüde bilinmiyor."
+      title: "Malat"
+      body: "Faydanın sitrülinin kendisinden gelip gelmediği belirsiz. Malatın ne yaptığı büyük ölçüde bilinmiyor."
 
   - key: geen-maanden
     kind: fact
     en:
-      title: "What citrulline studies miss"
-      body: "The studies looked at reps and power on the day itself. Whether you build more muscle over months was not tested."
+      title: "Months"
+      body: "Citrulline studies measured reps on the day. Whether you build more muscle over months wasn't tested."
     nl:
-      title: "Wat citrullinestudies missen"
-      body: "De studies keken naar herhalingen en kracht op de dag zelf. Of je over maanden meer spier opbouwt, is niet getest."
+      title: "Maanden"
+      body: "Studies naar citrulline maten herhalingen op de dag zelf. Of je over maanden meer spier opbouwt, is niet getest."
     de:
-      title: "Was Citrullin-Studien fehlt"
-      body: "Die Studien schauten auf Wiederholungen und Kraft am selben Tag. Ob du über Monate mehr Muskeln aufbaust, wurde nicht getestet."
+      title: "Monate"
+      body: "Die Studien maßen Wiederholungen am selben Tag. Ob du über Monate mehr Muskeln aufbaust, wurde nicht getestet."
     es:
-      title: "Lo que no dicen los estudios"
-      body: "Los estudios midieron repeticiones y potencia en el mismo día. Si ganas más músculo en meses no se probó."
+      title: "Meses"
+      body: "Los estudios midieron repeticiones ese mismo día. Si ganas más músculo en meses no se probó."
     fr:
-      title: "Ce que les études ignorent"
-      body: "Les études ont mesuré répétitions et puissance le jour même. Prendre plus de muscle sur des mois n'a pas été testé."
+      title: "Des mois"
+      body: "Les études ont mesuré les reps du jour. Si tu prends plus de muscle sur des mois, ça n'a pas été testé."
     pt:
-      title: "O que os estudos não dizem"
-      body: "Os estudos mediram repetições e potência no próprio dia. Se ganhas mais músculo ao longo de meses não foi testado."
+      title: "Meses"
+      body: "Os estudos mediram repetições no próprio dia. Se ganhas mais músculo ao longo de meses não foi testado."
     tr:
-      title: "Sitrülin çalışmalarının eksiği"
-      body: "Çalışmalar aynı gündeki tekrara ve güce baktı. Aylar içinde daha fazla kas yapıp yapmadığın test edilmedi."
+      title: "Aylar"
+      body: "Çalışmalar aynı gündeki tekrarları ölçtü. Aylar içinde daha çok kas yapıp yapmadığın test edilmedi."
 
   - key: spierpijn
     kind: myth
     en:
-      title: "Myth: citrulline means less muscle soreness"
-      body: "Not in the study that checked. After 10 sets of 10, soreness over the next 72 hours was higher with citrulline malate."
+      title: "72 hours"
+      body: "Myth: citrulline means less soreness. In the study that checked, soreness after 10 sets of 10 was higher with it."
     nl:
-      title: "Mythe: citrulline geeft minder spierpijn"
-      body: "Niet in de studie die het testte. Na 10 sets van 10 was de spierpijn de 72 uur erna juist hoger met citrulline malaat."
+      title: "72 uur"
+      body: "Mythe: citrulline geeft minder spierpijn. In de studie die het testte was de spierpijn na 10 sets van 10 juist hoger."
     de:
-      title: "Mythos: Citrullin mindert Muskelkater"
-      body: "Nicht in der Studie, die es prüfte. Nach 10 Sätzen à 10 war der Muskelkater in den 72 Stunden danach mit Citrullinmalat höher."
+      title: "72 Stunden"
+      body: "Mythos: Citrullin heißt weniger Muskelkater. In der Studie dazu war er nach 10 Sätzen à 10 sogar stärker."
     es:
-      title: "Mito: la citrulina quita agujetas"
-      body: "No en el estudio que lo probó. Tras 10 series de 10, las agujetas de las 72 horas siguientes fueron mayores con citrulina malato."
+      title: "72 horas"
+      body: "Mito: la citrulina reduce las agujetas. En el estudio que lo miró, tras 10 series de 10 hubo más."
     fr:
-      title: "Mythe : la citrulline réduit les courbatures"
-      body: "Pas dans l'étude qui l'a testé. Après 10 séries de 10, les courbatures des 72 heures suivantes étaient plus fortes avec elle."
+      title: "72 heures"
+      body: "Mythe : la citrulline réduit les courbatures. Dans l'étude qui l'a testé, après 10 séries de 10, il y en avait plus."
     pt:
-      title: "Mito: a citrulina reduz as dores musculares"
-      body: "Não no estudo que testou. Após 10 séries de 10, as dores nas 72 horas seguintes foram maiores com citrulina malato."
+      title: "72 horas"
+      body: "Mito: a citrulina reduz as dores. No estudo que o testou, após 10 séries de 10, houve mais dores."
     tr:
-      title: "Efsane: sitrülin kas ağrısını azaltır"
-      body: "Bunu test eden çalışmada öyle değil. 10x10 setten sonraki 72 saatte kas ağrısı sitrülin malatla daha fazlaydı."
+      title: "72 saat"
+      body: "Efsane: sitrülin kas ağrısını azaltır. Bunu test eden çalışmada 10x10 sonrası ağrı daha fazlaydı."

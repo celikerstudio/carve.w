@@ -1,217 +1,218 @@
 article: deload
+emoji: "🪫"
 tips:
   - key: wat-het-is
     kind: fact
     en:
       title: "Deload"
-      body: "A deload is a stretch where you deliberately train less. The aim is to lower fatigue and be ready for your next block."
+      body: "A stretch where you train less on purpose, to lower fatigue and get ready for your next block."
     nl:
       title: "Deload"
-      body: "Een deload is een periode waarin je bewust minder traint. Het doel: minder vermoeid zijn en klaar voor je volgende blok."
+      body: "Een periode waarin je bewust minder traint, om vermoeidheid te laten zakken en klaar te zijn voor je volgende blok."
     de:
       title: "Deload"
-      body: "Ein Deload ist eine Phase, in der du bewusst weniger trainierst. Ziel: weniger Ermüdung und bereit sein für den nächsten Block."
+      body: "Eine Phase, in der du bewusst weniger trainierst, um Ermüdung abzubauen und bereit für den nächsten Block zu sein."
     es:
-      title: "Deload"
-      body: "Un deload es un periodo en el que entrenas menos a propósito. La idea es bajar la fatiga y llegar listo al siguiente bloque."
+      title: "Descarga"
+      body: "Un periodo en el que entrenas menos a propósito, para bajar la fatiga y llegar listo al siguiente bloque."
     fr:
-      title: "Deload"
-      body: "Un deload, c'est une période où tu t'entraînes moins exprès. Le but : réduire la fatigue et être prêt pour le bloc suivant."
+      title: "Décharge"
+      body: "Une période où tu t'entraînes moins exprès, pour faire baisser la fatigue et attaquer le bloc suivant."
     pt:
       title: "Deload"
-      body: "Um deload é um período em que treinas menos de propósito. O objetivo é baixar a fadiga e chegares pronto ao bloco seguinte."
+      body: "Um período em que treinas menos de propósito, para baixar a fadiga e chegar pronto ao próximo bloco."
     tr:
       title: "Deload"
-      body: "Deload, bilerek daha az antrenman yaptığın bir dönemdir. Amaç yorgunluğu azaltmak ve bir sonraki bloğa hazır olmak."
+      body: "Yorgunluğu azaltmak ve sonraki bloğa hazır olmak için bilerek daha az çalıştığın dönem."
 
   - key: elke-4-tot-8-weken
     kind: myth
     en:
-      title: "Myth: deload every 4 to 8 weeks"
-      body: "Not proven. It is a habit among coaches that rests on an assumption, not on evidence."
+      title: "Every 4 to 8 weeks"
+      body: "Myth: you should deload every 4 to 8 weeks. That's a coaching habit built on an assumption, not evidence."
     nl:
-      title: "Mythe: elke 4 tot 8 weken een deload"
-      body: "Niet bewezen. Het is een gewoonte onder coaches die op een aanname rust, niet op onderzoek."
+      title: "Elke 4 tot 8 weken"
+      body: "Mythe: je moet elke 4 tot 8 weken een deload doen. Dat is een coachgewoonte op een aanname, niet op bewijs."
     de:
-      title: "Mythos: alle 4 bis 8 Wochen ein Deload"
-      body: "Nicht belegt. Es ist eine Gewohnheit unter Coaches, die auf einer Annahme beruht, nicht auf Belegen."
+      title: "Alle 4 bis 8 Wochen"
+      body: "Mythos: Alle 4 bis 8 Wochen ein Deload. Das ist eine Trainergewohnheit auf einer Annahme, nicht auf Belegen."
     es:
-      title: "Mito: deload cada 4 a 8 semanas"
-      body: "No está probado. Es una costumbre de entrenadores basada en una suposición, no en pruebas."
+      title: "Cada 4 a 8 semanas"
+      body: "Mito: hay que descargar cada 4 a 8 semanas. Es una costumbre de entrenadores basada en una suposición."
     fr:
-      title: "Mythe : un deload toutes les 4 à 8 semaines"
-      body: "Pas prouvé. C'est une habitude de coachs qui repose sur une supposition, pas sur des preuves."
+      title: "Toutes les 4 à 8 sem."
+      body: "Mythe : il faut décharger toutes les 4 à 8 semaines. Une habitude de coachs basée sur une supposition."
     pt:
-      title: "Mito: deload a cada 4 a 8 semanas"
-      body: "Não está provado. É um hábito de treinadores baseado numa suposição, não em provas."
+      title: "A cada 4 a 8 semanas"
+      body: "Mito: deves fazer deload a cada 4 a 8 semanas. É um hábito de treinadores, assente numa suposição."
     tr:
-      title: "Efsane: her 4 ila 8 haftada bir deload"
-      body: "Kanıtlanmadı. Bu, kanıta değil bir varsayıma dayanan bir koç alışkanlığı."
+      title: "Her 4-8 haftada"
+      body: "Efsane: her 4-8 haftada deload yapmalısın. Bu kanıta değil, bir varsayıma dayanan antrenör alışkanlığı."
 
   - key: minder-volume
     kind: fact
     en:
-      title: "How to deload"
-      body: "Coaches agreed the volume goes down: fewer sets, fewer reps or fewer sessions. You can keep your usual exercises."
+      title: "Fewer sets"
+      body: "That's the core of a deload: fewer sets, reps or sessions. You can keep your usual exercises."
     nl:
-      title: "Hoe je deloadt"
-      body: "Coaches waren het eens dat het volume omlaag gaat: minder sets, minder herhalingen of minder trainingen. Je oefeningen mag je houden."
+      title: "Minder sets"
+      body: "Dat is de kern van een deload: minder sets, herhalingen of trainingen. Je oefeningen mag je houden."
     de:
-      title: "So geht ein Deload"
-      body: "Coaches waren sich einig: Das Volumen sinkt, also weniger Sätze, Wiederholungen oder Einheiten. Deine Übungen kannst du behalten."
+      title: "Weniger Sätze"
+      body: "Das ist der Kern eines Deloads: weniger Sätze, Wiederholungen oder Einheiten. Die Übungen bleiben."
     es:
-      title: "Cómo hacer un deload"
-      body: "Los entrenadores coincidieron en bajar el volumen: menos series, menos repeticiones o menos sesiones. Puedes mantener tus ejercicios."
+      title: "Menos series"
+      body: "Es la base de una descarga: menos series, repeticiones o sesiones. Puedes mantener tus ejercicios."
     fr:
-      title: "Comment faire un deload"
-      body: "Les coachs étaient d'accord : le volume baisse. Moins de séries, de reps ou de séances. Tu peux garder tes exercices habituels."
+      title: "Moins de séries"
+      body: "C'est le cœur d'une décharge : moins de séries, de reps ou de séances. Tu peux garder tes exercices."
     pt:
-      title: "Como fazer um deload"
-      body: "Os treinadores concordaram que o volume desce: menos séries, menos repetições ou menos treinos. Podes manter os teus exercícios."
+      title: "Menos séries"
+      body: "É o essencial de um deload: menos séries, repetições ou treinos. Podes manter os exercícios."
     tr:
-      title: "Deload nasıl yapılır"
-      body: "Koçlar hacmin düştüğünde hemfikirdi: daha az set, daha az tekrar ya da daha az antrenman. Her zamanki hareketlerini koruyabilirsin."
+      title: "Daha az set"
+      body: "Deload'un özü budur: daha az set, tekrar ya da antrenman. Hareketlerini koruyabilirsin."
 
   - key: zelfde-gewicht
     kind: myth
     en:
-      title: "Myth: a deload means lighter weights"
-      body: "Not quite. Coaches agreed the weight can go up, down or stay the same. Keeping it the same is fine if you do clearly less."
+      title: "Lighter weights"
+      body: "Myth: a deload means lighter weights. The same weight is fine, as long as you do clearly less work."
     nl:
-      title: "Mythe: deloaden is lichter tillen"
-      body: "Niet helemaal. Volgens coaches mag het gewicht omhoog, omlaag of gelijk blijven. Gelijk kan, als je duidelijk minder doet."
+      title: "Lichter gewicht"
+      body: "Mythe: een deload betekent lichter gewicht. Hetzelfde gewicht mag, als je maar duidelijk minder doet."
     de:
-      title: "Mythos: Deload heißt leichteres Gewicht"
-      body: "Nicht ganz. Laut Coaches kann das Gewicht steigen, sinken oder gleich bleiben. Gleich geht, wenn du deutlich weniger machst."
+      title: "Weniger Gewicht"
+      body: "Mythos: Deload heißt weniger Gewicht. Gleiches Gewicht ist okay, solange du deutlich weniger machst."
     es:
-      title: "Mito: deload es levantar menos peso"
-      body: "No del todo. Los entrenadores coinciden en que el peso puede subir, bajar o quedarse igual. Igual vale si haces claramente menos."
+      title: "Menos peso"
+      body: "Mito: descargar es bajar el peso. Puedes mantenerlo si haces claramente menos trabajo."
     fr:
-      title: "Mythe : un deload, c'est plus léger"
-      body: "Pas tout à fait. Pour les coachs, la charge peut monter, baisser ou rester la même. La même, ça va si tu en fais nettement moins."
+      title: "Moins lourd"
+      body: "Mythe : une décharge, c'est plus léger. Garder la charge va très bien si tu en fais nettement moins."
     pt:
-      title: "Mito: deload é levantar menos peso"
-      body: "Não bem. Os treinadores concordam que o peso pode subir, descer ou manter-se. Manter-se é válido se fizeres claramente menos."
+      title: "Menos peso"
+      body: "Mito: deload é baixar o peso. Podes mantê-lo, desde que faças claramente menos trabalho."
     tr:
-      title: "Efsane: deload daha hafif ağırlık demek"
-      body: "Tam değil. Koçlara göre ağırlık artabilir, azalabilir ya da aynı kalabilir. Belirgin şekilde daha az yaparsan aynı kalabilir."
+      title: "Daha hafif"
+      body: "Efsane: deload daha hafif ağırlık demektir. Belirgin şekilde daha az iş yaptıkça aynı ağırlık da olur."
 
   - key: geen-taper
     kind: fact
     en:
-      title: "Deload or taper?"
-      body: "A taper comes before a competition and aims at peak performance. A deload can come anywhere in your plan and aims at recovery."
+      title: "Taper"
+      body: "A taper peaks you for a competition. A deload can come anywhere in your plan and is there for recovery."
     nl:
-      title: "Deload of taper?"
-      body: "Een taper komt voor een wedstrijd en mikt op topprestatie. Een deload kan overal in je schema vallen en is voor herstel."
+      title: "Taper"
+      body: "Een taper brengt je in topvorm voor een wedstrijd. Een deload kan overal in je plan en is er voor herstel."
     de:
-      title: "Deload oder Taper?"
-      body: "Ein Taper kommt vor einem Wettkampf und zielt auf Höchstleistung. Ein Deload kann überall im Plan liegen und dient der Erholung."
+      title: "Tapering"
+      body: "Tapering bringt dich zum Wettkampf in Topform. Ein Deload kann überall im Plan liegen und dient der Erholung."
     es:
-      title: "¿Deload o taper?"
-      body: "El taper va antes de una competición y busca el máximo rendimiento. El deload puede ir en cualquier punto del plan y busca recuperar."
+      title: "Tapering"
+      body: "El tapering te pone a tope para una competición. La descarga va en cualquier punto y sirve para recuperar."
     fr:
-      title: "Deload ou affûtage ?"
-      body: "L'affûtage précède une compétition et vise la performance maximale. Le deload peut venir n'importe quand et vise la récupération."
+      title: "Affûtage"
+      body: "L'affûtage te met au top pour une compétition. La décharge peut venir n'importe quand et sert à récupérer."
     pt:
-      title: "Deload ou taper?"
-      body: "O taper vem antes de uma competição e procura o pico de rendimento. O deload pode vir em qualquer ponto do plano e serve para recuperar."
+      title: "Taper"
+      body: "O taper põe-te no pico para uma prova. O deload pode vir em qualquer altura e serve para recuperar."
     tr:
-      title: "Deload mu, taper mı?"
-      body: "Taper yarışmadan önce gelir ve en yüksek performansı hedefler. Deload planın herhangi bir yerinde olabilir ve toparlanmayı hedefler."
+      title: "Taper"
+      body: "Taper seni yarışmaya zirvede sokar. Deload planın herhangi bir yerinde olabilir ve toparlanma içindir."
 
   - key: week-vrij
     kind: fact
     en:
       title: "A week off"
-      body: "In a trial of 39 trained people, a week off halfway through 9 weeks kept leg size similar. Leg strength rose less than when training through."
+      body: "Halfway through 9 weeks, it kept leg size similar in trained people. Strength rose less than training through."
     nl:
       title: "Een week vrij"
-      body: "In een proef met 39 getrainde mensen gaf een week vrij halverwege 9 weken vergelijkbare beenspieren. Beenkracht steeg wel minder."
+      body: "Halverwege 9 weken hield het beenomvang bij getrainde mensen gelijk. Kracht steeg minder dan bij doortrainen."
     de:
-      title: "Eine Woche Pause"
-      body: "In einer Studie mit 39 Trainierten blieben die Beinmuskeln bei einer Woche Pause mitten in 9 Wochen ähnlich. Die Beinkraft stieg weniger."
+      title: "Eine Woche frei"
+      body: "Mitten in 9 Wochen blieb die Beinmasse bei Trainierten gleich. Die Kraft stieg weniger als beim Durchtrainieren."
     es:
       title: "Una semana libre"
-      body: "En un ensayo con 39 personas entrenadas, una semana libre a mitad de 9 semanas dio un músculo de pierna similar. La fuerza subió menos."
+      body: "A mitad de 9 semanas, el tamaño de pierna se mantuvo en entrenados. La fuerza subió menos que sin parar."
     fr:
       title: "Une semaine off"
-      body: "Sur 39 personnes entraînées, une semaine off au milieu de 9 semaines a donné un muscle des jambes similaire, mais moins de force gagnée."
+      body: "Au milieu de 9 semaines, la taille des jambes est restée stable. La force a moins monté qu'en continu."
     pt:
       title: "Uma semana de folga"
-      body: "Num ensaio com 39 pessoas treinadas, uma semana de folga a meio de 9 semanas deu músculo das pernas semelhante. A força subiu menos."
+      body: "A meio de 9 semanas, o tamanho das pernas manteve-se em treinados. A força subiu menos do que sem parar."
     tr:
       title: "Bir hafta ara"
-      body: "39 antrenmanlı kişiyle bir denemede, 9 haftanın ortasında bir hafta ara bacak kasını benzer tuttu. Bacak gücü ise daha az arttı."
+      body: "9 haftanın ortasında deneyimlilerde bacak hacmi korundu. Güç, ara vermeyenlere göre daha az arttı."
 
   - key: wat-wedstrijdsporters-doen
     kind: fact
     en:
-      title: "What competitors do"
-      body: "In a survey of 246 competitive lifters, a deload lasted about 6 days, every 5.6 weeks on average. That shows a habit, not what works."
+      title: "Every 5.6 weeks"
+      body: "Competitive lifters deloaded about that often, for around 6 days. That shows a habit, not what works."
     nl:
-      title: "Wat wedstrijdsporters doen"
-      body: "In een enquête onder 246 wedstrijdsporters duurde een deload zo'n 6 dagen, gemiddeld elke 5,6 weken. Een gewoonte, geen bewijs dat het werkt."
+      title: "Elke 5,6 weken"
+      body: "Zo vaak deden wedstrijdlifters gemiddeld een deload, van zo'n 6 dagen. Dat toont een gewoonte, niet wat werkt."
     de:
-      title: "Was Wettkampfsportler tun"
-      body: "In einer Umfrage unter 246 Wettkampfathleten dauerte ein Deload etwa 6 Tage, im Schnitt alle 5,6 Wochen. Eine Gewohnheit, kein Beleg."
+      title: "Alle 5,6 Wochen"
+      body: "So oft machten Wettkampfathleten im Schnitt einen Deload, etwa 6 Tage. Das zeigt Gewohnheit, nicht Wirkung."
     es:
-      title: "Lo que hacen los competidores"
-      body: "En una encuesta a 246 atletas de competición, un deload duraba unos 6 días, cada 5,6 semanas de media. Es un hábito, no prueba que funcione."
+      title: "Cada 5,6 semanas"
+      body: "Así de a menudo descargaban levantadores de competición, unos 6 días. Es costumbre, no prueba de que funcione."
     fr:
-      title: "Ce que font les compétiteurs"
-      body: "Dans un sondage auprès de 246 athlètes de compétition, un deload durait environ 6 jours, toutes les 5,6 semaines. Une habitude, pas une preuve."
+      title: "Toutes les 5,6 sem."
+      body: "C'est le rythme de décharge des compétiteurs, environ 6 jours. Ça montre une habitude, pas ce qui marche."
     pt:
-      title: "O que fazem os competidores"
-      body: "Num inquérito a 246 atletas de competição, um deload durava cerca de 6 dias, a cada 5,6 semanas em média. É um hábito, não uma prova."
+      title: "A cada 5,6 semanas"
+      body: "É a frequência de deload de atletas de competição, uns 6 dias. Mostra um hábito, não o que funciona."
     tr:
-      title: "Yarışmacılar ne yapıyor"
-      body: "246 yarışmacı sporcuyla bir ankette deload yaklaşık 6 gün sürdü, ortalama 5,6 haftada bir. Bu bir alışkanlık, işe yaradığının kanıtı değil."
+      title: "Her 5,6 haftada"
+      body: "Yarışmacılar ortalama bu sıklıkla, 6 gün kadar deload yaptı. Bu bir alışkanlık, işe yaradığı değil."
 
   - key: zonder-deload
     kind: fact
     en:
-      title: "Progress without a deload"
-      body: "Even among competitors who deload, 65% thought they could keep progressing without one."
+      title: "65%"
+      body: "Of competitors who do deload still thought they could keep progressing without one."
     nl:
-      title: "Vooruit zonder deload"
-      body: "Zelfs van de wedstrijdsporters die deloaden dacht 65% dat ze ook zonder deload vooruit zouden blijven gaan."
+      title: "65%"
+      body: "Van de wedstrijdsporters die wel deloaden, dacht dat ze ook zonder deload vooruit konden blijven gaan."
     de:
-      title: "Fortschritt ohne Deload"
-      body: "Selbst unter Wettkampfathleten, die deloaden, glaubten 65%, dass sie auch ohne Deload weiter Fortschritte machen könnten."
+      title: "65 %"
+      body: "Der Wettkämpfer, die Deloads machen, glaubten, auch ohne weiter Fortschritte machen zu können."
     es:
-      title: "Progresar sin deload"
-      body: "Incluso entre competidores que hacen deload, el 65% creía que podía seguir progresando sin él."
+      title: "65 %"
+      body: "De los competidores que descargan creían que podrían seguir progresando sin hacerlo."
     fr:
-      title: "Progresser sans deload"
-      body: "Même parmi les compétiteurs qui font des deloads, 65 % pensaient pouvoir continuer à progresser sans."
+      title: "65 %"
+      body: "Des compétiteurs qui déchargent pensaient pouvoir progresser sans décharge."
     pt:
-      title: "Progredir sem deload"
-      body: "Mesmo entre competidores que fazem deload, 65% achavam que podiam continuar a progredir sem ele."
+      title: "65%"
+      body: "Dos atletas que fazem deload achavam que podiam continuar a progredir sem ele."
     tr:
-      title: "Deload olmadan ilerleme"
-      body: "Deload yapan yarışmacıların bile %65'i deload olmadan da ilerlemeye devam edebileceğini düşünüyordu."
+      title: "%65"
+      body: "Deload yapan yarışmacıların bu kadarı, deload olmadan da ilerleyebileceğini düşündü."
 
   - key: lange-dip
     kind: myth
     en:
-      title: "Myth: a deload fixes any slump"
-      body: "Not quite. An easier week is for ordinary fatigue. Flat for weeks and your lifts don't come back? The problem may be bigger."
+      title: "Long slump"
+      body: "Myth: a deload fixes any slump. An easier week is for normal fatigue. Flat for weeks? The problem may be bigger."
     nl:
-      title: "Mythe: een deload lost elke dip op"
-      body: "Niet helemaal. Een rustige week is voor gewone vermoeidheid. Voel je je al weken leeg en komen je prestaties niet terug? Dan kan er meer spelen."
+      title: "Lange dip"
+      body: "Mythe: een deload lost elke dip op. Een rustiger week is voor gewone vermoeidheid. Weken stil? Dan is er misschien meer."
     de:
-      title: "Mythos: ein Deload behebt jedes Tief"
-      body: "Nicht ganz. Eine leichte Woche ist für normale Müdigkeit. Seit Wochen platt und die Leistung kommt nicht zurück? Dann kann mehr dahinterstecken."
+      title: "Langes Tief"
+      body: "Mythos: Ein Deload behebt jedes Tief. Eine leichte Woche ist für normale Ermüdung. Wochenlang nichts? Mehr dahinter."
     es:
-      title: "Mito: un deload arregla cualquier bajón"
-      body: "No del todo. Una semana suave es para el cansancio normal. ¿Llevas semanas sin fuerzas y tu rendimiento no vuelve? Puede ser algo más."
+      title: "Bache largo"
+      body: "Mito: una descarga arregla cualquier bache. Una semana suave es para fatiga normal. ¿Semanas sin avanzar? Hay algo más."
     fr:
-      title: "Mythe : un deload règle tout coup de mou"
-      body: "Pas tout à fait. Une semaine légère, c'est pour la fatigue normale. À plat depuis des semaines sans retour des perfs ? Ça peut être plus."
+      title: "Longue baisse"
+      body: "Mythe : une décharge règle tout. Une semaine facile, c'est pour la fatigue normale. Bloqué des semaines ? Autre chose."
     pt:
-      title: "Mito: um deload resolve qualquer quebra"
-      body: "Não bem. Uma semana leve é para o cansaço normal. Há semanas sem energia e o rendimento não volta? O problema pode ser maior."
+      title: "Quebra longa"
+      body: "Mito: um deload resolve qualquer quebra. Uma semana leve é para fadiga normal. Semanas parado? Pode ser mais."
     tr:
-      title: "Efsane: deload her düşüşü düzeltir"
-      body: "Tam değil. Hafif bir hafta normal yorgunluk içindir. Haftalardır halsizsen ve performansın geri gelmiyorsa sorun daha büyük olabilir."
+      title: "Uzun düşüş"
+      body: "Efsane: deload her düşüşü düzeltir. Hafif hafta normal yorgunluk içindir. Haftalardır duruyorsan sorun büyük olabilir."

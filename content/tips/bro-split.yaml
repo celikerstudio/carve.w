@@ -1,169 +1,170 @@
 article: bro-split
+emoji: "💪"
 tips:
   - key: wat-is-het
     kind: fact
     en:
-      title: "Bro split"
-      body: "A bro split trains one major muscle group per day, like chest day or back day, usually 5 days a week."
+      title: "1 muscle a day"
+      body: "That's a bro split: chest day, back day and so on, usually 5 days a week."
     nl:
-      title: "Bro split"
-      body: "Een bro split traint één grote spiergroep per dag, zoals borstdag of rugdag, meestal 5 dagen per week."
+      title: "1 spiergroep per dag"
+      body: "Dat is een bro split: borstdag, rugdag enzovoort, meestal 5 dagen per week."
     de:
-      title: "Bro-Split"
-      body: "Ein Bro-Split trainiert eine große Muskelgruppe pro Tag, etwa Brusttag oder Rückentag, meist an 5 Tagen pro Woche."
+      title: "1 Muskel pro Tag"
+      body: "Das ist ein Bro-Split: Brusttag, Rückentag und so weiter, meist 5 Tage pro Woche."
     es:
-      title: "Bro split"
-      body: "Una bro split entrena un gran grupo muscular por día, como día de pecho o de espalda, normalmente 5 días a la semana."
+      title: "1 músculo al día"
+      body: "Eso es una bro split: día de pecho, día de espalda, etc. Suele ser 5 días por semana."
     fr:
-      title: "Bro split"
-      body: "Un bro split travaille un grand groupe musculaire par jour, comme le jour pecs ou le jour dos, en général 5 jours par semaine."
+      title: "1 muscle par jour"
+      body: "C'est le bro split : jour pecs, jour dos, etc. En général 5 jours par semaine."
     pt:
-      title: "Bro split"
-      body: "Uma bro split treina um grande grupo muscular por dia, como dia de peito ou de costas, normalmente 5 dias por semana."
+      title: "1 músculo por dia"
+      body: "É o bro split: dia de peito, dia de costas e por aí fora, normalmente 5 dias por semana."
     tr:
-      title: "Bro split"
-      body: "Bro split her gün bir büyük kas grubunu çalıştırır, göğüs günü ya da sırt günü gibi, genelde haftada 5 gün."
+      title: "Günde 1 kas"
+      body: "Bro split budur: göğüs günü, sırt günü ve diğerleri. Genelde haftada 5 gün."
 
   - key: werkt-wel
     kind: myth
     en:
-      title: "Myth: bro splits don't build muscle"
-      body: "Not quite. They can work for muscle growth if your sets are close to failure and your weekly sets stay in range."
+      title: "Doesn't work"
+      body: "Myth: bro splits don't build muscle. They can, if your sets get close to failure and your weekly sets are enough."
     nl:
-      title: "Mythe: een bro split bouwt geen spier"
-      body: "Niet helemaal. Het kan werken voor spiergroei, als je sets dicht bij falen zitten en je weekaantal sets klopt."
+      title: "Werkt niet"
+      body: "Mythe: een bro split bouwt geen spier. Dat kan wel, als je sets dicht bij falen zitten en je weekvolume klopt."
     de:
-      title: "Mythos: Bro-Splits bauen keine Muskeln"
-      body: "Nicht ganz. Sie können für Muskelaufbau funktionieren, wenn deine Sätze nah am Versagen sind und die Wochensätze passen."
+      title: "Bringt nichts"
+      body: "Mythos: Bro-Splits bauen keine Muskeln. Doch, wenn deine Sätze nah am Versagen sind und das Wochenvolumen passt."
     es:
-      title: "Mito: la bro split no construye músculo"
-      body: "No del todo. Puede funcionar para ganar músculo si tus series van cerca del fallo y tus series semanales están en rango."
+      title: "No funciona"
+      body: "Mito: la bro split no da músculo. Sí puede, si tus series rozan el fallo y llegas a las series semanales."
     fr:
-      title: "Mythe : le bro split ne fait pas de muscle"
-      body: "Pas tout à fait. Il peut marcher pour la prise de muscle si tes séries sont proches de l'échec et ton volume hebdo reste bon."
+      title: "Ça ne marche pas"
+      body: "Mythe : le bro split ne fait pas de muscle. Si, si tes séries frôlent l'échec et que le volume hebdo suffit."
     pt:
-      title: "Mito: a bro split não constrói músculo"
-      body: "Não exatamente. Pode funcionar para ganhar músculo se as séries forem perto da falha e as séries semanais estiverem no intervalo."
+      title: "Não funciona"
+      body: "Mito: o bro split não dá músculo. Pode dar, se as séries ficarem perto da falha e o volume semanal chegar."
     tr:
-      title: "Efsane: bro split kas yapmaz"
-      body: "Tam değil. Setlerin tükenmeye yakınsa ve haftalık set sayın aralıktaysa kas gelişimi için işe yarayabilir."
+      title: "İşe yaramaz"
+      body: "Efsane: bro split kas yaptırmaz. Setlerin tükenmeye yakınsa ve haftalık set sayın yeterliyse yaptırır."
 
   - key: lichte-tweede-keer
     kind: myth
     en:
-      title: "Myth: once a week is too little"
-      body: "Not true. At the same weekly sets, how often you train a muscle made no difference to growth. Only add a day if one day can't fit enough sets."
+      title: "Once a week"
+      body: "Myth: once a week is too little. With the same weekly sets, training frequency made no difference to growth."
     nl:
-      title: "Mythe: één keer per week is te weinig"
-      body: "Klopt niet. Bij evenveel sets per week maakte het voor spiergroei niet uit hoe vaak je een spier traint. Voeg alleen een dag toe als het totaal niet past."
+      title: "Eén keer per week"
+      body: "Mythe: één keer per week is te weinig. Met evenveel sets per week maakte de frequentie niets uit voor groei."
     de:
-      title: "Mythos: einmal pro Woche ist zu wenig"
-      body: "Stimmt nicht. Bei gleichen Wochensätzen war die Häufigkeit fürs Muskelwachstum egal. Nimm nur einen Tag dazu, wenn die Sätze nicht passen."
+      title: "Einmal pro Woche"
+      body: "Mythos: Einmal pro Woche ist zu wenig. Bei gleichen Wochensätzen machte die Frequenz beim Wachstum nichts aus."
     es:
-      title: "Mito: una vez por semana es poco"
-      body: "No es cierto. Con las mismas series semanales, la frecuencia no cambió el crecimiento. Añade un día solo si no te caben las series."
+      title: "Una vez por semana"
+      body: "Mito: una vez por semana es poco. Con las mismas series semanales, la frecuencia no cambió el crecimiento."
     fr:
-      title: "Mythe : une fois par semaine, c'est trop peu"
-      body: "Faux. À séries égales par semaine, la fréquence n'a rien changé à la croissance. Ajoute un jour seulement si tout ne tient pas en un."
+      title: "Une fois par semaine"
+      body: "Mythe : une fois par semaine, c'est trop peu. À volume hebdo égal, la fréquence n'a rien changé."
     pt:
-      title: "Mito: uma vez por semana é pouco"
-      body: "Não é verdade. Com as mesmas séries semanais, a frequência não mudou o crescimento. Junta um dia só se as séries não couberem num."
+      title: "Uma vez por semana"
+      body: "Mito: uma vez por semana é pouco. Com as mesmas séries semanais, a frequência não mudou o crescimento."
     tr:
-      title: "Efsane: haftada bir kez az gelir"
-      body: "Doğru değil. Haftalık set sayısı aynıyken sıklık kas büyümesini değiştirmedi. Setler bir güne sığmıyorsa bir gün ekle."
+      title: "Haftada bir"
+      body: "Efsane: haftada bir kez çok az. Haftalık set sayısı aynıysa sıklık büyümede fark yaratmadı."
 
   - key: een-dag-opbouw
     kind: fact
     en:
-      title: "Building a bro-split day"
-      body: "Do 4 to 6 exercises for the muscle, 3 to 4 sets each, 6 to 15 reps. Put the compound lifts first and isolation work after."
+      title: "4 to 6 exercises"
+      body: "For the muscle of the day, 3 to 4 sets each. Compound lifts first, isolation after."
     nl:
-      title: "Een bro-split-dag opbouwen"
-      body: "Doe 4 tot 6 oefeningen voor de spier, 3 tot 4 sets per stuk, 6 tot 15 herhalingen. Eerst de basisoefeningen, dan de isolatie."
+      title: "4 tot 6 oefeningen"
+      body: "Voor de spier van de dag, 3 tot 4 sets per oefening. Eerst samengestelde oefeningen, daarna isolatie."
     de:
-      title: "So baust du einen Bro-Tag"
-      body: "Mach 4 bis 6 Übungen für den Muskel, je 3 bis 4 Sätze mit 6 bis 15 Wiederholungen. Erst Grundübungen, dann Isolation."
+      title: "4 bis 6 Übungen"
+      body: "Für den Muskel des Tages, je 3 bis 4 Sätze. Erst Grundübungen, dann Isolation."
     es:
-      title: "Cómo montar un día bro"
-      body: "Haz 4 a 6 ejercicios para el músculo, 3 a 4 series cada uno, de 6 a 15 repeticiones. Primero los multiarticulares, luego aislamiento."
+      title: "4 a 6 ejercicios"
+      body: "Para el músculo del día, 3 a 4 series cada uno. Primero los compuestos, luego el aislamiento."
     fr:
-      title: "Construire une séance bro"
-      body: "Fais 4 à 6 exercices pour le muscle, 3 à 4 séries chacun, de 6 à 15 répétitions. Les polyarticulaires d'abord, l'isolation ensuite."
+      title: "4 à 6 exercices"
+      body: "Pour le muscle du jour, 3 à 4 séries chacun. Les polyarticulaires d'abord, l'isolation ensuite."
     pt:
-      title: "Montar um dia de bro split"
-      body: "Faz 4 a 6 exercícios para o músculo, 3 a 4 séries cada, de 6 a 15 repetições. Primeiro os compostos, depois o isolamento."
+      title: "4 a 6 exercícios"
+      body: "Para o músculo do dia, 3 a 4 séries cada. Primeiro os compostos, depois o isolamento."
     tr:
-      title: "Bro split gününü kurmak"
-      body: "Kas için 4 ila 6 hareket yap, her biri 3 ila 4 set, 6 ila 15 tekrar. Önce bileşik hareketler, sonra izolasyon."
+      title: "4-6 hareket"
+      body: "Günün kası için her biri 3-4 set. Önce bileşik hareketler, sonra izolasyon."
 
   - key: niet-kapot-trainen
     kind: myth
     en:
-      title: "Myth: chest day should leave you wrecked"
-      body: "Not true. Hammering one muscle to exhaustion makes your later sets that day poor quality. Avoid turning every session into all-out failure."
+      title: "Wrecked"
+      body: "Myth: chest day should leave you wrecked. Hammering one muscle to exhaustion makes your later sets poor."
     nl:
-      title: "Mythe: na borstdag moet je kapot zijn"
-      body: "Klopt niet. Eén spier tot uitputting slopen maakt je latere sets die dag slecht. Maak niet van elke training een sessie tot het gaatje."
+      title: "Kapot"
+      body: "Mythe: na borstdag moet je kapot zijn. Eén spier helemaal uitputten maakt je latere sets slechter."
     de:
-      title: "Mythos: nach dem Brusttag musst du platt sein"
-      body: "Stimmt nicht. Einen Muskel bis zur Erschöpfung zu prügeln macht deine späteren Sätze schlecht. Nicht jede Einheit bis zum Versagen."
+      title: "Platt"
+      body: "Mythos: Nach dem Brusttag musst du platt sein. Einen Muskel völlig auszupowern macht spätere Sätze schlechter."
     es:
-      title: "Mito: el día de pecho debe dejarte destrozado"
-      body: "No es cierto. Machacar un músculo hasta agotarlo empeora tus series finales. No conviertas cada sesión en un fallo total."
+      title: "Destrozado"
+      body: "Mito: el día de pecho debe dejarte destrozado. Agotar un músculo del todo empeora tus series siguientes."
     fr:
-      title: "Mythe : le jour pecs doit te démolir"
-      body: "Faux. Pilonner un muscle jusqu'à l'épuisement gâche tes dernières séries. Ne transforme pas chaque séance en échec total."
+      title: "Lessivé"
+      body: "Mythe : le jour pecs doit te lessiver. Épuiser un muscle à fond rend tes séries suivantes moins bonnes."
     pt:
-      title: "Mito: o dia de peito tem de te destruir"
-      body: "Não é verdade. Martelar um músculo até à exaustão estraga as tuas séries finais. Não faças de cada treino uma ida à falha total."
+      title: "Destruído"
+      body: "Mito: o dia de peito tem de te deixar destruído. Esgotar um músculo piora as séries seguintes."
     tr:
-      title: "Efsane: göğüs günü seni bitirmeli"
-      body: "Doğru değil. Bir kası tükenene kadar yüklemek o günkü son setlerini bozar. Her antrenmanı tam tükenişe çevirme."
+      title: "Bitkin"
+      body: "Efsane: göğüs günü seni bitirmeli. Bir kası tamamen tüketmek sonraki setlerini kötüleştirir."
 
   - key: weekvolume
     kind: fact
     en:
-      title: "One big day, still count"
-      body: "Even when a muscle gets all its work on one or two days, keep its total at about 10 to 20 sets a week."
+      title: "10 to 20 sets"
+      body: "Per muscle a week is still the target, even if it all happens on one or two days."
     nl:
-      title: "Eén grote dag, toch tellen"
-      body: "Ook als een spier al zijn werk op één of twee dagen krijgt, houd je het totaal op zo'n 10 tot 20 sets per week."
+      title: "10 tot 20 sets"
+      body: "Per spier per week blijft het doel, ook als alles op één of twee dagen gebeurt."
     de:
-      title: "Ein großer Tag, trotzdem zählen"
-      body: "Auch wenn ein Muskel alles an ein oder zwei Tagen bekommt, halte seine Summe bei etwa 10 bis 20 Sätzen pro Woche."
+      title: "10 bis 20 Sätze"
+      body: "Pro Muskel und Woche bleiben das Ziel, auch wenn alles an ein oder zwei Tagen passiert."
     es:
-      title: "Un gran día, pero cuenta"
-      body: "Aunque un músculo reciba todo su trabajo en uno o dos días, mantén su total en unas 10 a 20 series por semana."
+      title: "10 a 20 series"
+      body: "Por músculo y semana siguen siendo la meta, aunque todo caiga en uno o dos días."
     fr:
-      title: "Un gros jour, mais compte"
-      body: "Même si un muscle reçoit tout son travail en un ou deux jours, garde son total autour de 10 à 20 séries par semaine."
+      title: "10 à 20 séries"
+      body: "Par muscle et par semaine restent l'objectif, même si tout tient en un ou deux jours."
     pt:
-      title: "Um grande dia, mas conta"
-      body: "Mesmo que um músculo receba todo o trabalho em um ou dois dias, mantém o total em cerca de 10 a 20 séries por semana."
+      title: "10 a 20 séries"
+      body: "Por músculo por semana continua a ser o alvo, mesmo que tudo caia em um ou dois dias."
     tr:
-      title: "Tek büyük gün, yine de say"
-      body: "Bir kas tüm işini bir ya da iki günde alsa bile, toplamını haftada yaklaşık 10 ila 20 sette tut."
+      title: "10-20 set"
+      body: "Her şey bir iki güne sığsa bile hedef, kas başına haftada bu kadar set."
 
   - key: wanneer-terugschakelen
     kind: fact
     en:
-      title: "When to ease off"
-      body: "Soreness that lingers plus lifts that stall is your cue for a lighter week. A fixed deload every few weeks is a habit, not a finding."
+      title: "Lighter week"
+      body: "Soreness that lingers plus lifts that stall is your cue. A fixed deload every few weeks is habit, not evidence."
     nl:
-      title: "Wanneer terugschakelen"
-      body: "Spierpijn die blijft hangen en lifts die vastlopen zijn je teken voor een lichtere week. Een vaste deload om de zoveel weken is een gewoonte, geen bevinding."
+      title: "Lichtere week"
+      body: "Spierpijn die blijft plus gewichten die stilstaan is je signaal. Een vaste deload is gewoonte, geen bewijs."
     de:
-      title: "Wann du runterschaltest"
-      body: "Muskelkater, der bleibt, und Lifts, die stocken, sind dein Zeichen für eine leichtere Woche. Ein fester Deload-Rhythmus ist Gewohnheit, kein Befund."
+      title: "Leichtere Woche"
+      body: "Anhaltender Muskelkater plus stagnierende Gewichte sind dein Signal. Ein fester Deload ist Gewohnheit."
     es:
-      title: "Cuándo aflojar"
-      body: "Agujetas que no se van y levantamientos estancados son la señal para una semana más suave. Un deload fijo es una costumbre, no un hallazgo."
+      title: "Semana suave"
+      body: "Agujetas que no se van y pesos estancados son tu señal. Una descarga fija cada pocas semanas es costumbre."
     fr:
-      title: "Quand lever le pied"
-      body: "Des courbatures qui traînent et des charges qui stagnent : signe d'une semaine plus légère. Un deload à date fixe est une habitude, pas un résultat."
+      title: "Semaine légère"
+      body: "Des courbatures qui durent et des charges qui stagnent : c'est le signal. Une décharge fixe, c'est une habitude."
     pt:
-      title: "Quando abrandar"
-      body: "Dores que não passam e cargas estagnadas são o sinal para uma semana mais leve. Um deload fixo é um hábito, não uma conclusão de estudos."
+      title: "Semana leve"
+      body: "Dores que não passam e pesos parados são o teu sinal. Um deload fixo a cada poucas semanas é hábito."
     tr:
-      title: "Ne zaman yavaşlamalı"
-      body: "Geçmeyen kas ağrısı ve tıkanan kaldırışlar daha hafif bir haftanın işaretidir. Sabit aralıklı deload bir alışkanlık, bulgu değil."
+      title: "Hafif hafta"
+      body: "Geçmeyen ağrı ve duran ağırlıklar senin işaretin. Birkaç haftada bir sabit deload sadece alışkanlık."

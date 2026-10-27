@@ -1,217 +1,218 @@
 article: calorie-deficit
+emoji: "📉"
 tips:
   - key: tempo
     kind: fact
     en:
-      title: "How fast to lose fat"
-      body: "Losing 0.5 to 1% of your bodyweight a week is a common target to keep muscle. With a lot of fat to lose, you can start faster."
+      title: "0.5 to 1%"
+      body: "Of your bodyweight a week is a common target to keep muscle. With a lot of fat to lose, you can start faster."
     nl:
-      title: "Hoe snel afvallen"
-      body: "0,5 tot 1% van je gewicht per week is een gangbaar doel om je spieren te houden. Heb je veel vet te verliezen, dan mag je sneller beginnen."
+      title: "0,5 tot 1%"
+      body: "Van je gewicht per week is een gangbaar doel om spier te houden. Met veel vet te verliezen mag je sneller beginnen."
     de:
-      title: "Wie schnell abnehmen"
-      body: "0,5 bis 1 % deines Gewichts pro Woche ist ein übliches Ziel, um Muskeln zu halten. Mit viel Fett zu verlieren darfst du schneller starten."
+      title: "0,5 bis 1 %"
+      body: "Des Körpergewichts pro Woche ist ein übliches Ziel, um Muskeln zu halten. Mit viel Fett darfst du schneller starten."
     es:
-      title: "A qué ritmo perder grasa"
-      body: "Perder un 0,5 a 1% de tu peso por semana es un objetivo habitual para conservar músculo. Con mucha grasa que perder, puedes empezar más rápido."
+      title: "0,5 a 1 %"
+      body: "De tu peso por semana es una meta habitual para conservar músculo. Con mucha grasa que perder, puedes ir más rápido."
     fr:
-      title: "À quel rythme perdre"
-      body: "Perdre 0,5 à 1 % de ton poids par semaine est un objectif courant pour garder ton muscle. Avec beaucoup de gras à perdre, tu peux démarrer plus vite."
+      title: "0,5 à 1 %"
+      body: "Du poids par semaine, c'est l'objectif courant pour garder le muscle. Avec beaucoup de gras, tu peux aller plus vite."
     pt:
-      title: "A que ritmo perder"
-      body: "Perder 0,5 a 1% do teu peso por semana é um objetivo comum para manter músculo. Com muita gordura a perder, podes começar mais depressa."
+      title: "0,5 a 1%"
+      body: "Do teu peso por semana é um alvo comum para manter músculo. Com muita gordura a perder, podes começar mais rápido."
     tr:
-      title: "Ne hızla yağ vermeli"
-      body: "Haftada vücut ağırlığının %0,5 ila 1'ini vermek kası korumak için yaygın bir hedef. Verecek çok yağın varsa daha hızlı başlayabilirsin."
+      title: "%0,5-1"
+      body: "Kası korumak için haftada vücut ağırlığının bu kadarı yaygın hedef. Çok yağın varsa daha hızlı başlayabilirsin."
 
   - key: langzaam-wint
     kind: fact
     en:
-      title: "Slow and steady"
-      body: "Lifting athletes aimed to lose 0.7% or 1.4% a week. The slow group gained lean mass. The fast group, which lost about 1%, only held on to it."
+      title: "0.7% a week"
+      body: "Lifters losing that slowly gained lean mass. Those aiming for 1.4% a week only held on to it."
     nl:
-      title: "Langzaam wint"
-      body: "Sporters die tilden mikten op 0,7% of 1,4% verlies per week. De langzame groep won vetvrije massa, de snelle groep (zo'n 1%) hield het alleen vast."
+      title: "0,7% per week"
+      body: "Krachtsporters die zo langzaam afvielen, wonnen vetvrije massa. Wie 1,4% per week deed, hield het alleen vast."
     de:
-      title: "Langsam gewinnt"
-      body: "Kraftsportler zielten auf 0,7 % oder 1,4 % pro Woche. Die langsame Gruppe baute Magermasse auf, die schnelle (etwa 1 %) hielt sie nur."
+      title: "0,7 % pro Woche"
+      body: "Kraftsportler, die so langsam abnahmen, bauten fettfreie Masse auf. Mit 1,4 % pro Woche hielten sie sie nur."
     es:
-      title: "Despacio se gana más"
-      body: "Atletas que hacían pesas apuntaron a perder 0,7% o 1,4% por semana. El grupo lento ganó masa magra; el rápido, que perdió un 1%, solo la mantuvo."
+      title: "0,7 % por semana"
+      body: "Deportistas de fuerza que bajaban así de lento ganaron masa magra. Con 1,4 % semanal solo la mantuvieron."
     fr:
-      title: "Lentement mais sûrement"
-      body: "Des athlètes en muscu visaient 0,7 % ou 1,4 % de perte par semaine. Le groupe lent a pris de la masse maigre, le rapide (environ 1 %) l'a juste gardée."
+      title: "0,7 % par semaine"
+      body: "Des sportifs qui perdaient aussi lentement ont gagné de la masse maigre. À 1,4 %, ils l'ont juste gardée."
     pt:
-      title: "Devagar ganha-se mais"
-      body: "Atletas que treinavam com pesos tentaram perder 0,7% ou 1,4% por semana. O grupo lento ganhou massa magra, o rápido (cerca de 1%) só a manteve."
+      title: "0,7% por semana"
+      body: "Atletas de força que perdiam assim devagar ganharam massa magra. Com 1,4% por semana só a mantiveram."
     tr:
-      title: "Yavaş giden kazanır"
-      body: "Ağırlık çalışan sporcular haftada %0,7 ya da %1,4 vermeyi hedefledi. Yavaş grup yağsız kütle kazandı, hızlı grup (yaklaşık %1) sadece korudu."
+      title: "Haftada %0,7"
+      body: "Bu kadar yavaş veren sporcular yağsız kütle kazandı. Haftada %1,4 hedefleyenler sadece korudu."
 
   - key: eiwit-als-je-slank-bent
     kind: fact
     en:
-      title: "Protein when you're lean"
-      body: "If you are lean and lift, 2.3 to 3.1 g protein per kg of fat-free mass a day may be needed to keep muscle in a deficit."
+      title: "2.3 to 3.1 g"
+      body: "Protein per kg of fat-free mass may be needed to keep muscle in a deficit, if you're lean and lift."
     nl:
-      title: "Eiwit als je al slank bent"
-      body: "Ben je slank en til je, dan heb je in een tekort mogelijk 2,3 tot 3,1 g eiwit per kilo vetvrije massa per dag nodig om je spieren te houden."
+      title: "2,3 tot 3,1 gram"
+      body: "Eiwit per kilo vetvrije massa is misschien nodig om spier te houden in een tekort, als je slank bent en traint."
     de:
-      title: "Protein, wenn du schlank bist"
-      body: "Bist du schlank und trainierst, brauchst du im Defizit womöglich 2,3 bis 3,1 g Protein pro Kilo Magermasse am Tag, um Muskeln zu halten."
+      title: "2,3 bis 3,1 g"
+      body: "Protein pro kg fettfreier Masse brauchst du im Defizit vielleicht, wenn du schlank bist und Kraft trainierst."
     es:
-      title: "Proteína si ya estás delgado"
-      body: "Si estás delgado y haces pesas, en déficit quizá necesites 2,3 a 3,1 g de proteína por kilo de masa magra al día para no perder músculo."
+      title: "2,3 a 3,1 g"
+      body: "De proteína por kg de masa magra pueden hacer falta en déficit si estás delgado y entrenas fuerza."
     fr:
-      title: "Les protéines quand tu es sec"
-      body: "Sec et en muscu ? En déficit, il te faut peut-être 2,3 à 3,1 g de protéines par kilo de masse maigre par jour pour garder ton muscle."
+      title: "2,3 à 3,1 g"
+      body: "De protéines par kg de masse maigre peuvent être utiles en déficit si tu es sec et fais de la muscu."
     pt:
-      title: "Proteína se já és magro"
-      body: "Se és magro e treinas com pesos, em défice podes precisar de 2,3 a 3,1 g de proteína por quilo de massa magra por dia para manter músculo."
+      title: "2,3 a 3,1 g"
+      body: "De proteína por kg de massa magra podem ser precisos em défice, se fores magro e treinares força."
     tr:
-      title: "Zayıfken protein"
-      body: "Zayıfsan ve ağırlık çalışıyorsan, açıkta kası korumak için günde yağsız kütlenin kilosu başına 2,3 ila 3,1 g protein gerekebilir."
+      title: "2,3-3,1 g"
+      body: "Zayıfsan ve ağırlık çalışıyorsan, açıkta kası korumak için yağsız kütle kilosu başına bu kadar protein gerekebilir."
 
   - key: maandag-zwaarder
     kind: myth
     en:
-      title: "Myth: a heavier Monday means you gained"
-      body: "Not true. In a study of 80 adults, weight peaked on Sunday and Monday and fell during the week. The authors call that normal."
+      title: "Monday"
+      body: "Myth: heavier on Monday means you gained. In a study, weight peaked Sunday and Monday and fell during the week."
     nl:
-      title: "Mythe: zwaarder op maandag is aangekomen"
-      body: "Klopt niet. In een studie met 80 volwassenen was het gewicht op zondag en maandag het hoogst en daalde het door de week. Normaal, zeggen de auteurs."
+      title: "Maandag"
+      body: "Mythe: zwaarder op maandag betekent aankomen. In een studie piekte gewicht zondag en maandag en zakte het daarna."
     de:
-      title: "Mythos: Montags schwerer heißt zugenommen"
-      body: "Stimmt nicht. In einer Studie mit 80 Erwachsenen war das Gewicht sonntags und montags am höchsten und sank unter der Woche. Laut Autoren normal."
+      title: "Montag"
+      body: "Mythos: Montags schwerer heißt zugenommen. In einer Studie war das Gewicht So und Mo am höchsten und sank dann."
     es:
-      title: "Mito: pesar más el lunes es engordar"
-      body: "No es cierto. En un estudio con 80 adultos, el peso era máximo el domingo y el lunes y bajaba durante la semana. Los autores lo llaman normal."
+      title: "Lunes"
+      body: "Mito: pesar más el lunes es haber engordado. En un estudio, el peso subía domingo y lunes y bajaba en la semana."
     fr:
-      title: "Mythe : plus lourd lundi, c'est du gras"
-      body: "Faux. Dans une étude sur 80 adultes, le poids culminait dimanche et lundi puis baissait dans la semaine. Les auteurs jugent ça normal."
+      title: "Lundi"
+      body: "Mythe : plus lourd le lundi, c'est avoir grossi. Dans une étude, le poids culminait dimanche et lundi puis baissait."
     pt:
-      title: "Mito: mais pesado à segunda é engordar"
-      body: "Não é verdade. Num estudo com 80 adultos, o peso era mais alto ao domingo e à segunda e descia durante a semana. Os autores dizem que é normal."
+      title: "Segunda-feira"
+      body: "Mito: mais pesado à segunda é ter engordado. Num estudo, o peso subia domingo e segunda e descia na semana."
     tr:
-      title: "Efsane: pazartesi ağır gelmek kilo almaktır"
-      body: "Doğru değil. 80 yetişkinle yapılan bir çalışmada kilo pazar ve pazartesi en yüksekti, hafta içinde düştü. Yazarlar bunu normal sayıyor."
+      title: "Pazartesi"
+      body: "Efsane: pazartesi daha ağır olmak kilo aldın demek. Bir çalışmada kilo pazar ve pazartesi zirve yapıp hafta içi düştü."
 
   - key: stofwisseling-kapot
     kind: myth
     en:
-      title: "Myth: dieting wrecks your metabolism"
-      body: "Not quite. In people with obesity on 1,000 kcal a day for 8 weeks, resting burn ended about 92 kcal a day below prediction."
+      title: "92 kcal"
+      body: "Myth: diets wreck metabolism. In obesity, after 8 weeks on 1,000 kcal, resting burn ended just 92 kcal below forecast."
     nl:
-      title: "Mythe: diëten maakt je stofwisseling kapot"
-      body: "Niet echt. Bij mensen met obesitas die 8 weken 1.000 kcal per dag aten, lag de rustverbranding daarna zo'n 92 kcal per dag onder de verwachting."
+      title: "92 kcal"
+      body: "Mythe: lijnen sloopt je stofwisseling. Bij obesitas en 8 weken 1.000 kcal zakte de rustverbranding maar 92 kcal extra."
     de:
-      title: "Mythos: Diäten ruinieren den Stoffwechsel"
-      body: "Nicht wirklich. Bei Menschen mit Adipositas lag der Ruheumsatz nach 8 Wochen mit 1.000 kcal am Tag etwa 92 kcal unter der Vorhersage."
+      title: "92 kcal"
+      body: "Mythos: Diäten ruinieren den Stoffwechsel. Bei Adipositas und 8 Wochen 1.000 kcal sank der Ruheumsatz nur 92 kcal extra."
     es:
-      title: "Mito: hacer dieta destroza el metabolismo"
-      body: "No del todo. En personas con obesidad que comieron 1.000 kcal al día 8 semanas, el gasto en reposo quedó unas 92 kcal por debajo de lo previsto."
+      title: "92 kcal"
+      body: "Mito: la dieta rompe el metabolismo. Con obesidad y 8 semanas a 1.000 kcal, el gasto en reposo bajó solo 92 kcal de más."
     fr:
-      title: "Mythe : le régime casse ton métabolisme"
-      body: "Pas vraiment. Chez des personnes obèses à 1 000 kcal par jour pendant 8 semaines, la dépense au repos a fini environ 92 kcal sous la prévision."
+      title: "92 kcal"
+      body: "Mythe : le régime casse le métabolisme. Obèses, 8 semaines à 1 000 kcal : 92 kcal de moins au repos que prévu."
     pt:
-      title: "Mito: fazer dieta estraga o metabolismo"
-      body: "Não bem assim. Em pessoas com obesidade a 1.000 kcal por dia durante 8 semanas, o gasto em repouso ficou cerca de 92 kcal abaixo do previsto."
+      title: "92 kcal"
+      body: "Mito: a dieta estraga o metabolismo. Com obesidade e 8 semanas a 1.000 kcal, o gasto em repouso caiu só 92 kcal a mais."
     tr:
-      title: "Efsane: diyet metabolizmanı bozar"
-      body: "Pek sayılmaz. Obez kişilerde 8 hafta günde 1.000 kcal'den sonra dinlenme yakımı tahminin yaklaşık 92 kcal altında kaldı."
+      title: "92 kcal"
+      body: "Efsane: diyet metabolizmanı mahveder. Obezlerde 8 hafta 1.000 kcal sonrası dinlenme yakımı yalnızca 92 kcal fazla düştü."
 
   - key: dieetpauze
     kind: fact
     en:
-      title: "Diet breaks"
-      body: "Lifters who took a week at maintenance after every 3 weeks of dieting lost about as much fat as nonstop dieters, and felt less hungry."
+      title: "3 weeks on, 1 off"
+      body: "Lifters who dieted like that lost about as much fat as nonstop dieters, and felt less hungry."
     nl:
-      title: "Dieetpauzes"
-      body: "Lifters die na elke 3 weken diëten een week op onderhoud aten, verloren ongeveer evenveel vet als wie doorging, en hadden minder honger."
+      title: "3 weken aan, 1 uit"
+      body: "Krachtsporters die zo lijnden verloren ongeveer evenveel vet als wie doorging, met minder honger."
     de:
-      title: "Diätpausen"
-      body: "Kraftsportler, die nach je 3 Diätwochen eine Woche auf Erhaltung aßen, verloren etwa gleich viel Fett wie Dauerdiäter und hatten weniger Hunger."
+      title: "3 Wochen an, 1 aus"
+      body: "Kraftsportler mit diesem Rhythmus verloren etwa so viel Fett wie Dauerdiäter und hatten weniger Hunger."
     es:
-      title: "Pausas en la dieta"
-      body: "Quienes hacían pesas y comían una semana en mantenimiento tras cada 3 de dieta perdieron casi la misma grasa que los demás, con menos hambre."
+      title: "3 semanas sí, 1 no"
+      body: "Quienes hacían dieta así perdieron casi la misma grasa que los que no paraban, y con menos hambre."
     fr:
-      title: "Les pauses dans le régime"
-      body: "Des pratiquants qui mangeaient une semaine à maintenance toutes les 3 semaines de régime ont perdu autant de gras que les autres, avec moins de faim."
+      title: "3 semaines on, 1 off"
+      body: "Les pratiquants qui faisaient ça ont perdu presque autant de gras qu'en continu, avec moins de faim."
     pt:
-      title: "Pausas na dieta"
-      body: "Quem treinava com pesos e fazia uma semana em manutenção a cada 3 de dieta perdeu quase a mesma gordura que os outros, com menos fome."
+      title: "3 semanas sim, 1 não"
+      body: "Quem fez dieta assim perdeu quase tanta gordura como quem não parou, e com menos fome."
     tr:
-      title: "Diyet molaları"
-      body: "Her 3 hafta diyetten sonra bir hafta korumada yiyen sporcular, ara vermeyenler kadar yağ verdi ve daha az acıktı."
+      title: "3 hafta diyet, 1 ara"
+      body: "Böyle diyet yapanlar aralıksız yapanlar kadar yağ kaybetti ve daha az acıktı."
 
   - key: vasten
     kind: myth
     en:
-      title: "Myth: fasting burns more fat than a diet"
-      body: "Not in a review of 28 trials. Fasting patterns lost about the same weight and fat as eating less every day, and slightly more fat-free mass."
+      title: "28 trials"
+      body: "Myth: fasting burns more fat than a diet. In 28 trials it lost about the same weight and fat as eating less every day."
     nl:
-      title: "Mythe: vasten verbrandt meer vet"
-      body: "Niet in een review van 28 proeven. Vasten gaf ongeveer evenveel gewichts- en vetverlies als elke dag minder eten, en iets meer verlies van vetvrije massa."
+      title: "28 studies"
+      body: "Mythe: vasten verbrandt meer vet dan lijnen. In 28 studies viel je er evenveel mee af als met elke dag minder eten."
     de:
-      title: "Mythos: Fasten verbrennt mehr Fett"
-      body: "Nicht laut 28 Studien. Fasten brachte etwa so viel Gewichts- und Fettverlust wie täglich weniger essen, und etwas mehr Verlust an Magermasse."
+      title: "28 Studien"
+      body: "Mythos: Fasten verbrennt mehr Fett als eine Diät. In 28 Studien brachte es etwa so viel wie täglich weniger essen."
     es:
-      title: "Mito: el ayuno quema más grasa"
-      body: "No en una revisión de 28 ensayos. El ayuno hizo perder el mismo peso y grasa que comer menos cada día, y algo más de masa magra."
+      title: "28 ensayos"
+      body: "Mito: el ayuno quema más grasa que una dieta. En 28 ensayos dio casi el mismo resultado que comer menos cada día."
     fr:
-      title: "Mythe : le jeûne brûle plus de gras"
-      body: "Pas selon 28 essais. Le jeûne a fait perdre autant de poids et de gras que manger moins chaque jour, et un peu plus de masse maigre."
+      title: "28 essais"
+      body: "Mythe : le jeûne brûle plus de gras qu'un régime. Sur 28 essais, il a fait autant que manger moins chaque jour."
     pt:
-      title: "Mito: o jejum queima mais gordura"
-      body: "Não numa revisão de 28 ensaios. O jejum fez perder o mesmo peso e gordura que comer menos todos os dias, e um pouco mais de massa magra."
+      title: "28 ensaios"
+      body: "Mito: o jejum queima mais gordura do que uma dieta. Em 28 ensaios deu quase o mesmo que comer menos todos os dias."
     tr:
-      title: "Efsane: aralıklı oruç daha çok yağ yakar"
-      body: "28 denemelik bir derlemede hayır. Aralıklı oruç her gün az yemekle aynı kilo ve yağ kaybını sağladı, biraz da fazla yağsız kütle kaybettirdi."
+      title: "28 çalışma"
+      body: "Efsane: oruç diyetten çok yağ yakar. 28 çalışmada her gün az yemekle aşağı yukarı aynı kilo ve yağ kaybettirdi."
 
   - key: eiwit-per-maaltijd
     kind: fact
     en:
-      title: "Meals or protein?"
-      body: "In a deficit, the protein in each meal may matter more than how many meals you eat. Pick a pattern you can keep up."
+      title: "Number of meals"
+      body: "In a deficit, protein per meal may matter more than how many meals you eat. Pick a rhythm you can keep."
     nl:
-      title: "Maaltijden of eiwit?"
-      body: "In een tekort telt het eiwit per maaltijd mogelijk zwaarder dan hoeveel maaltijden je eet. Kies een ritme dat je volhoudt."
+      title: "Aantal maaltijden"
+      body: "In een tekort telt eiwit per maaltijd misschien meer dan hoeveel maaltijden je eet. Kies een ritme dat je volhoudt."
     de:
-      title: "Mahlzeiten oder Protein?"
-      body: "Im Defizit zählt das Protein pro Mahlzeit womöglich mehr als die Zahl der Mahlzeiten. Wähle einen Rhythmus, den du durchhältst."
+      title: "Zahl der Mahlzeiten"
+      body: "Im Defizit zählt Protein pro Mahlzeit wohl mehr als die Zahl der Mahlzeiten. Wähl einen Rhythmus, der bleibt."
     es:
-      title: "¿Comidas o proteína?"
-      body: "En déficit, la proteína de cada comida puede importar más que cuántas comidas haces. Elige un ritmo que puedas mantener."
+      title: "Número de comidas"
+      body: "En déficit, la proteína por comida quizá importe más que cuántas comidas haces. Elige un ritmo sostenible."
     fr:
-      title: "Repas ou protéines ?"
-      body: "En déficit, les protéines de chaque repas comptent peut-être plus que le nombre de repas. Choisis un rythme que tu peux tenir."
+      title: "Nombre de repas"
+      body: "En déficit, les protéines par repas comptent sans doute plus que le nombre de repas. Choisis un rythme tenable."
     pt:
-      title: "Refeições ou proteína?"
-      body: "Em défice, a proteína de cada refeição pode contar mais do que o número de refeições. Escolhe um ritmo que consigas manter."
+      title: "Número de refeições"
+      body: "Em défice, a proteína por refeição talvez conte mais do que o número de refeições. Escolhe um ritmo que aguentes."
     tr:
-      title: "Öğün mü, protein mi?"
-      body: "Açıktayken her öğündeki protein, kaç öğün yediğinden daha önemli olabilir. Sürdürebileceğin bir düzen seç."
+      title: "Öğün sayısı"
+      body: "Açıkta öğün başına protein, öğün sayısından daha önemli olabilir. Sürdürebileceğin bir düzen seç."
 
   - key: stilstand
     kind: fact
     en:
-      title: "When the scale stalls"
-      body: "Weight flat for two to three weeks? Cut 100 to 200 kcal or add steps, then wait again before changing anything else."
+      title: "100 to 200 kcal"
+      body: "Cut that much, or add steps, when your weight is flat for 2 to 3 weeks. Then wait before changing more."
     nl:
-      title: "Als de weegschaal stilstaat"
-      body: "Twee à drie weken geen beweging op de weegschaal? Haal er 100 tot 200 kcal af of loop meer stappen, en wacht dan weer af."
+      title: "100 tot 200 kcal"
+      body: "Haal er zoveel af, of loop meer, als je gewicht 2 tot 3 weken stilstaat. Wacht dan voor je meer verandert."
     de:
-      title: "Wenn die Waage stehen bleibt"
-      body: "Zwei bis drei Wochen keine Bewegung? Streich 100 bis 200 kcal oder geh mehr Schritte, und warte dann wieder ab."
+      title: "100 bis 200 kcal"
+      body: "Streich so viel oder geh mehr, wenn dein Gewicht 2 bis 3 Wochen steht. Dann abwarten, bevor du mehr änderst."
     es:
-      title: "Cuando la báscula se para"
-      body: "¿Dos o tres semanas sin cambios? Quita 100 a 200 kcal o camina más pasos, y luego vuelve a esperar."
+      title: "100 a 200 kcal"
+      body: "Quita eso, o camina más, si tu peso lleva 2 a 3 semanas parado. Luego espera antes de cambiar nada más."
     fr:
-      title: "Quand la balance stagne"
-      body: "Deux à trois semaines sans bouger ? Enlève 100 à 200 kcal ou fais plus de pas, puis attends à nouveau."
+      title: "100 à 200 kcal"
+      body: "Enlève ça, ou marche plus, si ton poids stagne 2 à 3 semaines. Puis attends avant de changer autre chose."
     pt:
-      title: "Quando a balança para"
-      body: "Duas a três semanas sem mexer? Tira 100 a 200 kcal ou dá mais passos, e depois volta a esperar."
+      title: "100 a 200 kcal"
+      body: "Corta isso, ou anda mais, se o peso estiver parado 2 a 3 semanas. Depois espera antes de mudar mais."
     tr:
-      title: "Tartı durduğunda"
-      body: "İki üç haftadır kilo değişmiyor mu? 100 ila 200 kcal azalt ya da daha çok adım at, sonra yine bekle."
+      title: "100-200 kcal"
+      body: "Kilon 2-3 haftadır duruyorsa bu kadar azalt ya da daha çok yürü. Başka bir şeyi değiştirmeden önce bekle."

@@ -1,217 +1,218 @@
 article: time-under-tension
+emoji: "⏱️"
 tips:
   - key: wat-het-is
     kind: fact
     en:
       title: "Time under tension"
-      body: "The time a muscle spends under load in a set. Change your tempo and you change it, without changing your reps."
+      body: "How long a muscle is loaded in a set. Change your tempo and you change it, without changing reps."
     nl:
-      title: "Time under tension"
-      body: "De tijd dat een spier in een set onder belasting staat. Verander je tempo en je verandert die, zonder andere herhalingen."
+      title: "Tijd onder spanning"
+      body: "Hoe lang een spier belast wordt in een set. Verander je tempo en je verandert dit, zonder andere herhalingen."
     de:
-      title: "Time under Tension"
-      body: "Die Zeit, die ein Muskel in einem Satz unter Last steht. Änderst du dein Tempo, änderst du sie, ohne die Wiederholungen zu ändern."
+      title: "Zeit unter Spannung"
+      body: "Wie lange ein Muskel im Satz belastet ist. Änderst du das Tempo, änderst du sie, ohne andere Wdh."
     es:
       title: "Tiempo bajo tensión"
-      body: "El tiempo que un músculo pasa bajo carga en una serie. Si cambias el ritmo, lo cambias, sin tocar las repeticiones."
+      body: "Cuánto tiempo carga un músculo en una serie. Cambia el ritmo y lo cambias, sin tocar las repeticiones."
     fr:
       title: "Temps sous tension"
-      body: "Le temps qu'un muscle passe sous charge pendant une série. Change ton tempo et tu le changes, sans toucher aux reps."
+      body: "La durée de charge d'un muscle dans une série. Change le tempo et tu la changes, sans changer les reps."
     pt:
       title: "Tempo sob tensão"
-      body: "O tempo que um músculo passa sob carga numa série. Mudas o ritmo e mudas esse tempo, sem mexer nas repetições."
+      body: "Quanto tempo um músculo está sob carga numa série. Muda o ritmo e mudas isso, sem mudar repetições."
     tr:
-      title: "Gerilim altındaki süre"
-      body: "Bir kasın bir sette yük altında geçirdiği süre. Temponu değiştirirsen tekrarları değiştirmeden bu süreyi değiştirirsin."
+      title: "Gerilim altında süre"
+      body: "Kasın bir sette ne kadar yük altında kaldığı. Tempoyu değiştirirsen tekrarı değiştirmeden bunu değiştirirsin."
 
   - key: tempo
     kind: fact
     en:
-      title: "A good tempo"
-      body: "On your key lifts, go brisk but controlled: about 2 to 3 seconds down and a controlled way up."
+      title: "2 to 3 seconds"
+      body: "Down, then a controlled way up. That's a brisk but controlled tempo for your key lifts."
     nl:
-      title: "Een goed tempo"
-      body: "Op je belangrijkste oefeningen: vlot maar gecontroleerd, zo'n 2 tot 3 seconden omlaag en gecontroleerd weer omhoog."
+      title: "2 tot 3 seconden"
+      body: "Omlaag, dan gecontroleerd omhoog. Dat is een vlot maar beheerst tempo voor je hoofdoefeningen."
     de:
-      title: "Ein gutes Tempo"
-      body: "Bei deinen Hauptübungen zügig, aber kontrolliert: etwa 2 bis 3 Sekunden runter und kontrolliert wieder hoch."
+      title: "2 bis 3 Sekunden"
+      body: "Runter, dann kontrolliert hoch. Ein zügiges, aber kontrolliertes Tempo für die Hauptübungen."
     es:
-      title: "Un buen ritmo"
-      body: "En tus ejercicios clave, ágil pero controlado: unos 2 a 3 segundos al bajar y una subida controlada."
+      title: "2 a 3 segundos"
+      body: "Al bajar y una subida controlada. Es un ritmo ágil pero controlado para tus ejercicios clave."
     fr:
-      title: "Un bon tempo"
-      body: "Sur tes exercices clés, vif mais contrôlé : environ 2 à 3 secondes à la descente, puis une montée contrôlée."
+      title: "2 à 3 secondes"
+      body: "En descente, puis une montée contrôlée. Un tempo vif mais maîtrisé pour tes exercices clés."
     pt:
-      title: "Um bom ritmo"
-      body: "Nos teus exercícios principais, rápido mas controlado: cerca de 2 a 3 segundos a descer e uma subida controlada."
+      title: "2 a 3 segundos"
+      body: "A descer e uma subida controlada. Um ritmo vivo mas controlado para os exercícios principais."
     tr:
-      title: "İyi bir tempo"
-      body: "Ana hareketlerinde hızlı ama kontrollü ol: yaklaşık 2 ila 3 saniyede indir, kontrollü şekilde kaldır."
+      title: "2-3 saniye"
+      body: "İnişte bu kadar, sonra kontrollü çıkış. Ana hareketler için canlı ama kontrollü tempo."
 
   - key: niet-te-traag
     kind: myth
     en:
-      title: "Myth: the slower the rep, the better"
-      body: "Not true. Very slow reps cut the weight you can use and your total work. Controlled is enough."
+      title: "Slower"
+      body: "Myth: the slower the rep, the better. Very slow reps cut your weight and total work. Controlled is enough."
     nl:
-      title: "Mythe: hoe trager, hoe beter"
-      body: "Klopt niet. Heel trage herhalingen kosten gewicht en totaal werk. Gecontroleerd is genoeg."
+      title: "Trager"
+      body: "Mythe: hoe trager de herhaling, hoe beter. Heel traag kost gewicht en totaal werk. Gecontroleerd is genoeg."
     de:
-      title: "Mythos: je langsamer, desto besser"
-      body: "Stimmt nicht. Sehr langsame Wiederholungen kosten Gewicht und Gesamtarbeit. Kontrolliert reicht."
+      title: "Langsamer"
+      body: "Mythos: Je langsamer, desto besser. Sehr langsame Wdh. kosten Gewicht und Gesamtarbeit. Kontrolliert reicht."
     es:
-      title: "Mito: cuanto más lento, mejor"
-      body: "No es cierto. Las repeticiones muy lentas te quitan peso y trabajo total. Con que sea controlado basta."
+      title: "Más lento"
+      body: "Mito: cuanto más lenta, mejor. Muy lento te quita peso y trabajo total. Controlado basta."
     fr:
-      title: "Mythe : plus c'est lent, mieux c'est"
-      body: "Faux. Des reps très lentes te font perdre de la charge et du travail total. Contrôlé, ça suffit."
+      title: "Plus lent"
+      body: "Mythe : plus c'est lent, mieux c'est. Très lent réduit la charge et le travail total. Contrôlé suffit."
     pt:
-      title: "Mito: quanto mais lento, melhor"
-      body: "Não é verdade. Repetições muito lentas tiram-te peso e trabalho total. Controlado chega."
+      title: "Mais lento"
+      body: "Mito: quanto mais lento, melhor. Muito lento tira peso e trabalho total. Controlado chega."
     tr:
-      title: "Efsane: ne kadar yavaş, o kadar iyi"
-      body: "Doğru değil. Çok yavaş tekrarlar kaldırabildiğin ağırlığı ve toplam işi düşürür. Kontrollü olması yeterli."
+      title: "Daha yavaş"
+      body: "Efsane: tekrar ne kadar yavaşsa o kadar iyi. Çok yavaş, ağırlığı ve toplam işi düşürür. Kontrollü yeter."
 
   - key: waar-langzaam
     kind: fact
     en:
-      title: "Where to go slow"
-      body: "Save slower lowering for accessories. On your heaviest compound lifts, keep it efficient so you keep the load."
+      title: "Accessories"
+      body: "Save slow lowering for those. On your heaviest compounds, keep it efficient so you keep the load."
     nl:
-      title: "Waar je langzaam gaat"
-      body: "Bewaar trager zakken voor hulpoefeningen. Op je zwaarste basisoefeningen hou je het efficiënt, zodat je het gewicht houdt."
+      title: "Accessoires"
+      body: "Bewaar langzaam zakken daarvoor. Bij zware basisoefeningen hou je het efficiënt, zodat je het gewicht houdt."
     de:
-      title: "Wo du langsam gehst"
-      body: "Langsames Absenken eher bei Zusatzübungen. Bei deinen schwersten Grundübungen bleib effizient, damit du das Gewicht hältst."
+      title: "Zusatzübungen"
+      body: "Langsames Absenken gehört dahin. Bei schweren Grundübungen effizient bleiben, damit das Gewicht bleibt."
     es:
-      title: "Dónde ir lento"
-      body: "Guarda las bajadas lentas para los accesorios. En tus básicos más pesados, sé eficiente para mantener la carga."
+      title: "Accesorios"
+      body: "Guarda la bajada lenta para ellos. En los compuestos pesados, sé eficiente para mantener la carga."
     fr:
-      title: "Où aller lentement"
-      body: "Garde les descentes lentes pour les exercices accessoires. Sur tes gros polyarticulaires, reste efficace pour garder la charge."
+      title: "Accessoires"
+      body: "Garde la descente lente pour eux. Sur les gros polyarticulaires, reste efficace pour garder la charge."
     pt:
-      title: "Onde ir devagar"
-      body: "Guarda as descidas lentas para os acessórios. Nos teus básicos mais pesados, sê eficiente para manteres a carga."
+      title: "Acessórios"
+      body: "Guarda a descida lenta para eles. Nos compostos pesados, sê eficiente para manter a carga."
     tr:
-      title: "Nerede yavaş gidilir"
-      body: "Yavaş indirmeyi yardımcı hareketlere sakla. En ağır temel hareketlerinde yükü korumak için verimli kal."
+      title: "Yardımcı hareketler"
+      body: "Yavaş inişi onlara sakla. Ağır bileşiklerde yükü koruman için verimli kal."
 
   - key: pauzes
     kind: fact
     en:
       title: "Pauses"
-      body: "A short pause takes away momentum and helps you stay stable at the weak point of a lift."
+      body: "A short pause kills momentum and keeps you stable at the weak point of a lift."
     nl:
       title: "Pauzes"
-      body: "Een korte pauze haalt het momentum eruit en helpt je stabiel te blijven op het zwakke punt van een oefening."
+      body: "Een korte pauze haalt de vaart eruit en houdt je stabiel op het zwakke punt van een oefening."
     de:
       title: "Pausen"
-      body: "Eine kurze Pause nimmt den Schwung raus und hilft dir, am schwachen Punkt einer Übung stabil zu bleiben."
+      body: "Eine kurze Pause nimmt den Schwung raus und hält dich am Schwachpunkt stabil."
     es:
       title: "Pausas"
-      body: "Una pausa corta quita el impulso y te ayuda a mantenerte estable en el punto débil de un ejercicio."
+      body: "Una pausa corta quita la inercia y te mantiene estable en el punto débil del ejercicio."
     fr:
-      title: "Les pauses"
-      body: "Une courte pause supprime l'élan et t'aide à rester stable au point faible d'un mouvement."
+      title: "Pauses"
+      body: "Une courte pause casse l'élan et te garde stable au point faible du mouvement."
     pt:
       title: "Pausas"
-      body: "Uma pausa curta tira o embalo e ajuda-te a ficar estável no ponto fraco de um exercício."
+      body: "Uma pausa curta tira o embalo e mantém-te estável no ponto fraco do exercício."
     tr:
-      title: "Duraklamalar"
-      body: "Kısa bir duraklama momentumu ortadan kaldırır ve bir hareketin zayıf noktasında dengede kalmana yardım eder."
+      title: "Duraklama"
+      body: "Kısa bir duraklama momentumu keser ve hareketin zayıf noktasında dengede tutar."
 
   - key: niet-op-zichzelf
     kind: myth
     en:
-      title: "Myth: slow reps work on their own"
-      body: "Not quite. Tempo works best with steady volume and sets that end 1 to 3 reps short of failure."
+      title: "Slow reps"
+      body: "Myth: slow reps work on their own. Tempo works best with steady volume and sets 1 to 3 reps from failure."
     nl:
-      title: "Mythe: trage herhalingen werken op zichzelf"
-      body: "Niet helemaal. Tempo werkt het best met genoeg sets die eindigen op 1 tot 3 herhalingen van falen."
+      title: "Trage herhalingen"
+      body: "Mythe: traag werkt op zichzelf. Tempo werkt het best met vast volume en sets 1 tot 3 herhalingen voor falen."
     de:
-      title: "Mythos: langsame Wiederholungen reichen"
-      body: "Nicht ganz. Tempo wirkt am besten mit genug Volumen und Sätzen, die 1 bis 3 Wiederholungen vor dem Versagen enden."
+      title: "Langsame Wdh."
+      body: "Mythos: Langsam wirkt von allein. Tempo wirkt am besten mit stabilem Volumen und 1 bis 3 Wdh. vor dem Versagen."
     es:
-      title: "Mito: ir lento basta por sí solo"
-      body: "No del todo. El ritmo funciona mejor con volumen constante y series que acaban a 1 a 3 repeticiones del fallo."
+      title: "Repeticiones lentas"
+      body: "Mito: lo lento funciona solo. El ritmo va mejor con volumen estable y series a 1-3 del fallo."
     fr:
-      title: "Mythe : les reps lentes suffisent"
-      body: "Pas tout à fait. Le tempo marche mieux avec un volume stable et des séries qui s'arrêtent à 1 à 3 reps de l'échec."
+      title: "Reps lentes"
+      body: "Mythe : le lent marche tout seul. Le tempo marche mieux avec un volume stable et 1 à 3 reps avant l'échec."
     pt:
-      title: "Mito: ir devagar basta por si só"
-      body: "Não bem. O ritmo funciona melhor com volume constante e séries que acabam a 1 a 3 repetições da falha."
+      title: "Repetições lentas"
+      body: "Mito: lento funciona sozinho. O ritmo resulta melhor com volume estável e séries a 1-3 da falha."
     tr:
-      title: "Efsane: yavaş tekrar tek başına yeter"
-      body: "Tam değil. Tempo en iyi, düzenli hacimle ve tükenişe 1 ila 3 tekrar kala biten setlerle çalışır."
+      title: "Yavaş tekrar"
+      body: "Efsane: yavaş tekrar tek başına işe yarar. Tempo, sabit hacim ve tükenişe 1-3 tekrar kala setlerle en iyisi."
 
   - key: spierpijn
     kind: myth
     en:
-      title: "Myth: slow tempo is for getting sore"
-      body: "Not true. Chasing soreness with tempo is a common mistake. Use it for good tension in sets close to failure."
+      title: "Soreness"
+      body: "Myth: slow tempo is for getting sore. Chasing soreness is a common mistake. Use tempo for tension near failure."
     nl:
-      title: "Mythe: traag tempo is voor spierpijn"
-      body: "Klopt niet. Met tempo op spierpijn jagen is een veelgemaakte fout. Gebruik het voor goede spanning in sets dicht bij falen."
+      title: "Spierpijn"
+      body: "Mythe: traag tempo is voor spierpijn. Spierpijn najagen is een fout. Gebruik tempo voor spanning dicht bij falen."
     de:
-      title: "Mythos: langsames Tempo für Muskelkater"
-      body: "Stimmt nicht. Mit Tempo Muskelkater jagen ist ein häufiger Fehler. Nutz es für gute Spannung in Sätzen nah am Versagen."
+      title: "Muskelkater"
+      body: "Mythos: Langsames Tempo ist für Muskelkater. Kater jagen ist ein Fehler. Nutz Tempo für Spannung nah am Versagen."
     es:
-      title: "Mito: el ritmo lento es para tener agujetas"
-      body: "No es cierto. Buscar agujetas con el ritmo es un error común. Úsalo para una buena tensión en series cerca del fallo."
+      title: "Agujetas"
+      body: "Mito: el ritmo lento es para tener agujetas. Perseguirlas es un error. Úsalo para tensión cerca del fallo."
     fr:
-      title: "Mythe : tempo lent, c'est pour les courbatures"
-      body: "Faux. Chercher les courbatures avec le tempo est une erreur courante. Sers-t'en pour une bonne tension près de l'échec."
+      title: "Courbatures"
+      body: "Mythe : le tempo lent sert à avoir des courbatures. Les chasser est une erreur. Vise la tension près de l'échec."
     pt:
-      title: "Mito: ritmo lento é para ficar dorido"
-      body: "Não é verdade. Procurar dor muscular com o ritmo é um erro comum. Usa-o para boa tensão em séries perto da falha."
+      title: "Dores"
+      body: "Mito: o ritmo lento é para ficar dorido. Perseguir dores é um erro. Usa-o para tensão perto da falha."
     tr:
-      title: "Efsane: yavaş tempo kas ağrısı içindir"
-      body: "Doğru değil. Tempoyla kas ağrısı peşinde koşmak yaygın bir hata. Onu tükenişe yakın setlerde iyi gerilim için kullan."
+      title: "Ağrı"
+      body: "Efsane: yavaş tempo ağrı içindir. Ağrı peşinde koşmak hata. Tempoyu tükenişe yakın gerilim için kullan."
 
   - key: techniek-terug
     kind: fact
     en:
-      title: "When your form slips"
-      body: "Form breaking at heavier weights? Slow the lowering or add pauses for a while, then speed up again once control returns."
+      title: "Form slipping"
+      body: "At heavier weights? Slow the lowering or add pauses for a while, then speed up once control returns."
     nl:
-      title: "Als je techniek wegzakt"
-      body: "Gaat je techniek onderuit bij zwaarder gewicht? Zak een tijdje trager of voeg pauzes toe, en versnel weer als je controle terug is."
+      title: "Techniek zakt in"
+      body: "Bij zwaarder gewicht? Laat langzamer zakken of pauzeer een tijdje, en versnel weer als je controle terug is."
     de:
-      title: "Wenn die Technik nachlässt"
-      body: "Bricht die Technik bei mehr Gewicht ein? Senk eine Weile langsamer ab oder bau Pausen ein, dann wieder schneller, wenn die Kontrolle da ist."
+      title: "Technik bröckelt"
+      body: "Bei mehr Gewicht? Senk eine Weile langsamer ab oder pausier, dann wieder schneller, wenn die Kontrolle da ist."
     es:
-      title: "Cuando se te va la técnica"
-      body: "¿Se rompe tu técnica con más peso? Baja más lento o añade pausas un tiempo, y acelera de nuevo cuando recuperes el control."
+      title: "Técnica que falla"
+      body: "¿Con más peso? Baja más lento o añade pausas un tiempo, y acelera cuando vuelva el control."
     fr:
-      title: "Quand ta technique flanche"
-      body: "Ta technique lâche avec plus lourd ? Descends plus lentement ou ajoute des pauses un temps, puis accélère quand le contrôle revient."
+      title: "Technique qui lâche"
+      body: "Plus lourd ? Ralentis la descente ou ajoute des pauses un temps, puis réaccélère une fois le contrôle revenu."
     pt:
-      title: "Quando a técnica falha"
-      body: "A técnica falha com mais peso? Desce mais devagar ou junta pausas durante um tempo, e acelera de novo quando o controlo voltar."
+      title: "Técnica a falhar"
+      body: "Com mais peso? Desce mais devagar ou faz pausas um tempo, e acelera quando o controlo voltar."
     tr:
-      title: "Formun bozulunca"
-      body: "Ağırlık artınca formun mu bozuluyor? Bir süre daha yavaş indir ya da duraklama ekle, kontrol geri gelince yeniden hızlan."
+      title: "Form bozuluyor"
+      body: "Ağırlık artınca mı? Bir süre inişi yavaşlat ya da duraklat, kontrol dönünce tekrar hızlan."
 
   - key: tempo-noteren
     kind: fact
     en:
-      title: "Note your tempo"
-      body: "If your tempo drifts, progress gets hard to measure. Write it down so more reps mean real improvement."
+      title: "Write it down"
+      body: "Note your tempo. If it drifts, extra reps may not mean real progress."
     nl:
-      title: "Noteer je tempo"
-      body: "Verschuift je tempo, dan is vooruitgang moeilijk te meten. Schrijf het op, zodat meer herhalingen echt vooruitgang zijn."
+      title: "Schrijf het op"
+      body: "Noteer je tempo. Verschuift het, dan betekenen extra herhalingen misschien geen echte vooruitgang."
     de:
-      title: "Notier dein Tempo"
-      body: "Verschiebt sich dein Tempo, ist Fortschritt schwer zu messen. Schreib es auf, damit mehr Wiederholungen echter Fortschritt sind."
+      title: "Schreib es auf"
+      body: "Notier dein Tempo. Verschiebt es sich, sind mehr Wdh. vielleicht kein echter Fortschritt."
     es:
-      title: "Apunta tu ritmo"
-      body: "Si tu ritmo cambia sin darte cuenta, el progreso cuesta medirlo. Anótalo para que más repeticiones sean una mejora real."
+      title: "Apúntalo"
+      body: "Anota tu ritmo. Si cambia, más repeticiones quizá no sean progreso real."
     fr:
-      title: "Note ton tempo"
-      body: "Si ton tempo dérive, ton progrès devient dur à mesurer. Note-le pour que plus de reps soit un vrai progrès."
+      title: "Note-le"
+      body: "Note ton tempo. S'il dérive, des reps en plus ne veulent peut-être rien dire."
     pt:
-      title: "Aponta o teu ritmo"
-      body: "Se o teu ritmo muda sem dares conta, o progresso fica difícil de medir. Aponta-o para que mais repetições sejam progresso real."
+      title: "Aponta"
+      body: "Regista o teu ritmo. Se mudar, mais repetições podem não ser progresso real."
     tr:
-      title: "Temponu not et"
-      body: "Tempon kayarsa ilerlemeyi ölçmek zorlaşır. Daha fazla tekrarın gerçek gelişme olması için onu not et."
+      title: "Not al"
+      body: "Temponu yaz. Kayarsa fazladan tekrarlar gerçek ilerleme olmayabilir."

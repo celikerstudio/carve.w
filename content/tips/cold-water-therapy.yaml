@@ -1,148 +1,149 @@
 article: cold-water-therapy
+emoji: "🧊"
 tips:
   - key: niet-direct-na-krachttraining
     kind: myth
     en:
-      title: "Myth: ice bath right after lifting is best"
-      body: "Not for muscle growth. Cold right after lifting can reduce muscle-building signals and may slow gains if you do it routinely."
+      title: "Right after lifting"
+      body: "Myth: an ice bath right after lifting is best. Done routinely, it can dampen muscle-building signals and slow gains."
     nl:
-      title: "Mythe: ijsbad direct na krachttraining is best"
-      body: "Niet voor spiergroei. Kou direct na het trainen kan de groeisignalen dempen en je vooruitgang mogelijk remmen als je het vaak doet."
+      title: "Direct na het trainen"
+      body: "Mythe: een ijsbad direct na krachttraining is het best. Vaak gedaan kan het spiergroei-signalen dempen."
     de:
-      title: "Mythos: Eisbad direkt nach dem Training"
-      body: "Nicht fürs Muskelwachstum. Kälte direkt danach kann Wachstumssignale dämpfen und Zuwächse bremsen, wenn du es regelmäßig machst."
+      title: "Direkt danach"
+      body: "Mythos: Eisbad direkt nach dem Krafttraining ist ideal. Regelmäßig kann es Wachstumssignale dämpfen."
     es:
-      title: "Mito: baño de hielo justo tras entrenar"
-      body: "No para crecer. El frío justo después de entrenar puede frenar las señales de crecimiento y quizá tus avances si lo haces siempre."
+      title: "Justo tras entrenar"
+      body: "Mito: el baño de hielo justo tras las pesas es lo mejor. Si es rutina, puede frenar las señales de crecimiento."
     fr:
-      title: "Mythe : le bain glacé juste après la muscu"
-      body: "Pas pour la prise de muscle. Le froid juste après peut freiner les signaux de croissance, et peut-être tes progrès si tu en abuses."
+      title: "Juste après la séance"
+      body: "Mythe : le bain glacé juste après la muscu, c'est idéal. En routine, il peut freiner les signaux de croissance."
     pt:
-      title: "Mito: banho de gelo logo após treinar"
-      body: "Não para ganhar músculo. O frio logo a seguir pode travar os sinais de crescimento e talvez os ganhos, se o fizeres sempre."
+      title: "Logo após treinar"
+      body: "Mito: o banho de gelo logo após o treino é o ideal. Feito sempre, pode travar os sinais de crescimento."
     tr:
-      title: "Efsane: antrenmandan hemen sonra buz banyosu"
-      body: "Kas gelişimi için değil. Antrenmandan hemen sonra soğuk büyüme sinyallerini azaltabilir ve düzenli yaparsan gelişimi yavaşlatabilir."
+      title: "Hemen sonra"
+      body: "Efsane: ağırlıktan hemen sonra buz banyosu en iyisi. Alışkanlık olursa kas yapım sinyallerini azaltabilir."
 
   - key: wanneer-wel
     kind: fact
     en:
-      title: "When to plunge"
-      body: "If you like cold plunges, do them on rest days or several hours after lifting."
+      title: "Rest days"
+      body: "Like cold plunges? Do them on rest days or several hours after lifting."
     nl:
-      title: "Wanneer wel"
-      body: "Hou je van een koude duik? Doe het op rustdagen of een paar uur na je krachttraining."
+      title: "Rustdagen"
+      body: "Hou je van koude baden? Doe ze op rustdagen of een paar uur na je krachttraining."
     de:
-      title: "Wann Kälte passt"
-      body: "Wenn du gern ins kalte Wasser gehst, dann an Ruhetagen oder einige Stunden nach dem Krafttraining."
+      title: "Ruhetage"
+      body: "Du magst Eisbäder? Mach sie an Ruhetagen oder einige Stunden nach dem Krafttraining."
     es:
-      title: "Cuándo meterte"
-      body: "Si te gusta el agua fría, hazlo en días de descanso o varias horas después de entrenar fuerza."
+      title: "Días de descanso"
+      body: "¿Te gusta el agua fría? Hazlo en días de descanso o varias horas después de entrenar."
     fr:
-      title: "Quand y aller"
-      body: "Si tu aimes l'eau froide, vas-y les jours de repos ou plusieurs heures après ta séance de muscu."
+      title: "Jours de repos"
+      body: "Tu aimes l'eau glacée ? Fais-le les jours de repos ou plusieurs heures après la muscu."
     pt:
-      title: "Quando mergulhar"
-      body: "Se gostas de água fria, faz isso em dias de descanso ou várias horas depois de treinar força."
+      title: "Dias de descanso"
+      body: "Gostas de água gelada? Faz isso em dias de descanso ou várias horas depois do treino."
     tr:
-      title: "Ne zaman girilir"
-      body: "Soğuk suyu seviyorsan, dinlenme günlerinde ya da ağırlık antrenmanından birkaç saat sonra gir."
+      title: "Dinlenme günleri"
+      body: "Soğuk suyu seviyor musun? Dinlenme günlerinde ya da antrenmandan birkaç saat sonra yap."
 
   - key: vijf-tot-vijftien-minuten
     kind: fact
     en:
-      title: "How long in the cold"
-      body: "Keep it to 5 to 15 minutes at a temperature you can tolerate. Stop if it gets too uncomfortable."
+      title: "5 to 15 minutes"
+      body: "Is long enough, at a temperature you can tolerate. Stop if it gets too uncomfortable."
     nl:
-      title: "Hoe lang in de kou"
-      body: "Hou het op 5 tot 15 minuten, op een temperatuur die je aankunt. Stop als het te onaangenaam wordt."
+      title: "5 tot 15 minuten"
+      body: "Is lang genoeg, op een temperatuur die je aankunt. Stop als het te ongemakkelijk wordt."
     de:
-      title: "Wie lange in die Kälte"
-      body: "Bleib bei 5 bis 15 Minuten und einer Temperatur, die du aushältst. Hör auf, wenn es zu unangenehm wird."
+      title: "5 bis 15 Minuten"
+      body: "Reichen, bei einer Temperatur, die du verträgst. Hör auf, wenn es zu unangenehm wird."
     es:
-      title: "Cuánto tiempo en frío"
-      body: "Quédate en 5 a 15 minutos, a una temperatura que toleres. Para si se vuelve demasiado incómodo."
+      title: "5 a 15 minutos"
+      body: "Bastan, a una temperatura que toleres. Para si se vuelve demasiado incómodo."
     fr:
-      title: "Combien de temps au froid"
-      body: "Reste entre 5 et 15 minutes, à une température que tu supportes. Arrête si ça devient trop pénible."
+      title: "5 à 15 minutes"
+      body: "Suffisent, à une température que tu supportes. Arrête si ça devient trop désagréable."
     pt:
-      title: "Quanto tempo no frio"
-      body: "Fica entre 5 e 15 minutos, a uma temperatura que aguentes. Para se ficar desconfortável demais."
+      title: "5 a 15 minutos"
+      body: "Chegam, a uma temperatura que aguentes. Para se ficar desconfortável demais."
     tr:
-      title: "Soğukta ne kadar"
-      body: "Dayanabileceğin bir sıcaklıkta 5 ila 15 dakikayla sınırla. Fazla rahatsız edici olursa çık."
+      title: "5-15 dakika"
+      body: "Dayanabileceğin bir sıcaklıkta yeterli. Fazla rahatsız edici olursa çık."
 
   - key: hoe-het-werkt
     kind: fact
     en:
-      title: "Why cold eases soreness"
-      body: "Cold lowers tissue temperature and may dampen inflammation and nerve signalling, which reduces how sore you feel."
+      title: "Less sore"
+      body: "Cold lowers tissue temperature and may dampen inflammation and nerve signals. So you feel less sore."
     nl:
-      title: "Waarom kou spierpijn dempt"
-      body: "Kou verlaagt de temperatuur van je weefsel en kan ontsteking en zenuwgeleiding dempen. Daardoor voel je minder spierpijn."
+      title: "Minder spierpijn"
+      body: "Kou verlaagt de weefseltemperatuur en dempt mogelijk ontsteking en zenuwsignalen. Zo voel je minder pijn."
     de:
-      title: "Warum Kälte Muskelkater lindert"
-      body: "Kälte senkt die Gewebetemperatur und kann Entzündung und Nervenleitung dämpfen. Dadurch spürst du weniger Muskelkater."
+      title: "Weniger Muskelkater"
+      body: "Kälte senkt die Gewebetemperatur und dämpft womöglich Entzündung und Nervensignale. Das lindert den Kater."
     es:
-      title: "Por qué el frío alivia"
-      body: "El frío baja la temperatura del tejido y puede atenuar la inflamación y la conducción nerviosa. Así notas menos dolor."
+      title: "Menos agujetas"
+      body: "El frío baja la temperatura del tejido y quizá calme la inflamación y los nervios. Así notas menos dolor."
     fr:
-      title: "Pourquoi le froid soulage"
-      body: "Le froid baisse la température des tissus et peut freiner l'inflammation et la conduction nerveuse. Tu sens moins les courbatures."
+      title: "Moins de courbatures"
+      body: "Le froid baisse la température des tissus et calme peut-être l'inflammation et les nerfs. Tu as moins mal."
     pt:
-      title: "Porque o frio alivia"
-      body: "O frio baixa a temperatura dos tecidos e pode atenuar a inflamação e a condução nervosa. Assim sentes menos dores."
+      title: "Menos dores"
+      body: "O frio baixa a temperatura dos tecidos e talvez acalme a inflamação e os nervos. Sentes menos dor."
     tr:
-      title: "Soğuk ağrıyı neden azaltır"
-      body: "Soğuk doku sıcaklığını düşürür, iltihabı ve sinir iletimini yavaşlatabilir. Böylece daha az ağrı hissedersin."
+      title: "Daha az ağrı"
+      body: "Soğuk doku sıcaklığını düşürür, iltihabı ve sinir sinyallerini azaltabilir. Daha az ağrı hissedersin."
 
   - key: geen-vervanging-voor-slaap
     kind: myth
     en:
-      title: "Myth: an ice bath makes up for bad sleep"
-      body: "Not true. Cold can make you feel better, but sleep, protein and planned deloads do the real recovery work. Cold is optional."
+      title: "Bad sleep"
+      body: "Myth: an ice bath makes up for bad sleep. Sleep and protein do the real recovery work. Cold is optional."
     nl:
-      title: "Mythe: een ijsbad maakt slecht slapen goed"
-      body: "Niet waar. Kou kan je beter laten voelen, maar slaap, eiwit en geplande deloads doen het echte herstelwerk. Kou is optioneel."
+      title: "Slecht geslapen"
+      body: "Mythe: een ijsbad maakt slecht slapen goed. Slaap en eiwit doen het echte herstelwerk. Kou is optioneel."
     de:
-      title: "Mythos: Eisbad gleicht schlechten Schlaf aus"
-      body: "Stimmt nicht. Kälte kann sich gut anfühlen, aber Schlaf, Protein und geplante Deloads tragen die Erholung. Kälte ist optional."
+      title: "Schlecht geschlafen"
+      body: "Mythos: Ein Eisbad gleicht schlechten Schlaf aus. Schlaf und Protein erledigen die Erholung. Kälte ist ein Extra."
     es:
-      title: "Mito: el hielo compensa dormir mal"
-      body: "No es cierto. El frío puede hacerte sentir mejor, pero el sueño, la proteína y los deloads hacen la recuperación. El frío es opcional."
+      title: "Dormir mal"
+      body: "Mito: un baño de hielo compensa dormir mal. El sueño y la proteína hacen la recuperación. El frío es opcional."
     fr:
-      title: "Mythe : un bain glacé rattrape une mauvaise nuit"
-      body: "Faux. Le froid peut faire du bien, mais le sommeil, les protéines et les deloads font la vraie récup. Le froid reste optionnel."
+      title: "Mauvaise nuit"
+      body: "Mythe : un bain glacé compense une mauvaise nuit. Sommeil et protéines font la vraie récup. Le froid est en option."
     pt:
-      title: "Mito: o gelo compensa dormir mal"
-      body: "Não é verdade. O frio pode fazer-te sentir melhor, mas o sono, a proteína e os deloads fazem a recuperação. O frio é opcional."
+      title: "Dormir mal"
+      body: "Mito: um banho de gelo compensa dormir mal. O sono e a proteína é que recuperam. O frio é opcional."
     tr:
-      title: "Efsane: buz banyosu kötü uykuyu telafi eder"
-      body: "Doğru değil. Soğuk iyi hissettirebilir ama asıl toparlanmayı uyku, protein ve planlı deload sağlar. Soğuk isteğe bağlı."
+      title: "Kötü uyku"
+      body: "Efsane: buz banyosu kötü uykuyu telafi eder. Asıl toparlanmayı uyku ve protein yapar. Soğuk isteğe bağlı."
 
   - key: veilig-opwarmen
     kind: fact
     en:
-      title: "Getting out of the cold"
-      body: "Warm up again slowly, and don't push through numbness or pain. If you have a cold-related condition, skip it."
+      title: "Warm up slowly"
+      body: "After the cold, don't push through numbness or pain. Skip it if you have a cold-related condition."
     nl:
-      title: "Uit de kou"
-      body: "Warm daarna rustig op, en ga niet door bij gevoelloosheid of pijn. Heb je een aandoening die met kou te maken heeft, sla het over."
+      title: "Langzaam opwarmen"
+      body: "Ga na de kou niet door gevoelloosheid of pijn heen. Sla het over als je een aandoening hebt die met kou te maken heeft."
     de:
-      title: "Raus aus der Kälte"
-      body: "Wärm dich langsam wieder auf und mach bei Taubheit oder Schmerz nicht weiter. Hast du eine kältebedingte Erkrankung, lass es."
+      title: "Langsam aufwärmen"
+      body: "Nach der Kälte nicht über Taubheit oder Schmerz hinweggehen. Bei kältebedingten Leiden lieber lassen."
     es:
-      title: "Al salir del frío"
-      body: "Recupera el calor poco a poco y no sigas si notas entumecimiento o dolor. Si tienes una afección ligada al frío, sáltatelo."
+      title: "Entra en calor"
+      body: "Tras el frío, no ignores el entumecimiento ni el dolor. Sáltatelo si el frío te causa problemas de salud."
     fr:
-      title: "En sortant du froid"
-      body: "Réchauffe-toi doucement et n'insiste pas en cas d'engourdissement ou de douleur. Avec un trouble lié au froid, évite."
+      title: "Se réchauffer"
+      body: "Après le froid, ne force pas sur l'engourdissement ou la douleur. Évite si tu as un souci lié au froid."
     pt:
-      title: "Ao sair do frio"
-      body: "Aquece aos poucos e não insistas se sentires dormência ou dor. Se tens uma condição ligada ao frio, evita."
+      title: "Aquece devagar"
+      body: "Depois do frio, não ignores dormência nem dor. Salta isto se tens algum problema ligado ao frio."
     tr:
-      title: "Soğuktan çıkınca"
-      body: "Yavaşça ısın ve uyuşma ya da ağrıda devam etme. Soğukla ilgili bir rahatsızlığın varsa hiç girme."
+      title: "Yavaşça ısın"
+      body: "Soğuktan sonra uyuşma ya da ağrıyı zorlama. Soğukla ilgili bir rahatsızlığın varsa hiç yapma."
 
   - key: te-lang-te-koud
     kind: fact
@@ -150,44 +151,44 @@ tips:
       title: "Longer isn't tougher"
       body: "Staying in too long or too cold risks feeling faint or going numb."
     nl:
-      title: "Langer is niet stoerder"
-      body: "Te lang of te koud erin blijven geeft kans op flauw worden of gevoelloosheid."
+      title: "Langer is niet beter"
+      body: "Te lang of te koud erin blijven kan je duizelig of gevoelloos maken."
     de:
-      title: "Länger ist nicht härter"
-      body: "Zu lange oder zu kalt drinbleiben kann zu Schwindel bis Ohnmacht oder Taubheit führen."
+      title: "Länger bringt nichts"
+      body: "Zu lange oder zu kalt drin bleiben kann dich schwindlig oder taub machen."
     es:
-      title: "Más tiempo no es más duro"
-      body: "Quedarte demasiado tiempo o en agua demasiado fría puede hacer que te marees o se te entumezca el cuerpo."
+      title: "Más no es mejor"
+      body: "Quedarte demasiado o en agua muy fría puede marearte o dejarte entumecido."
     fr:
-      title: "Plus long n'est pas plus fort"
-      body: "Rester trop longtemps ou dans une eau trop froide, c'est risquer le malaise ou l'engourdissement."
+      title: "Pas plus long"
+      body: "Rester trop longtemps ou trop froid peut te faire tourner de l'œil ou t'engourdir."
     pt:
-      title: "Mais tempo não é mais duro"
-      body: "Ficar demasiado tempo ou em água demasiado fria pode fazer-te desmaiar ou ficar dormente."
+      title: "Mais não é melhor"
+      body: "Ficar tempo demais ou em água fria demais pode deixar-te tonto ou dormente."
     tr:
-      title: "Uzun kalmak daha güçlü değil"
-      body: "Çok uzun ya da çok soğukta kalmak baygınlık hissi veya uyuşma riski taşır."
+      title: "Uzun kalmak"
+      body: "Çok uzun ya da çok soğukta kalmak baş dönmesi veya uyuşma riski taşır."
 
   - key: helpt-volhouden
     kind: fact
     en:
-      title: "Why some people like it"
-      body: "Cold may help you stick with training simply because it makes you feel better. The evidence here is still emerging."
+      title: "Feeling good"
+      body: "Cold may help you stick with training just because it makes you feel better. The evidence is still early."
     nl:
-      title: "Waarom sommigen het fijn vinden"
-      body: "Kou kan helpen om vol te houden, simpelweg omdat je je er beter door voelt. Het onderzoek hiernaar is nog in ontwikkeling."
+      title: "Lekker voelen"
+      body: "Kou helpt je misschien volhouden, gewoon omdat je je er beter door voelt. Het bewijs is nog pril."
     de:
-      title: "Warum manche es mögen"
-      body: "Kälte kann helfen, dranzubleiben, weil du dich besser fühlst. Die Forschung dazu ist aber noch jung."
+      title: "Gutes Gefühl"
+      body: "Kälte hilft dir vielleicht dranzubleiben, einfach weil du dich besser fühlst. Die Beweislage ist noch dünn."
     es:
-      title: "Por qué a algunos les gusta"
-      body: "El frío puede ayudarte a ser constante solo porque te hace sentir mejor. La investigación sobre esto aún es incipiente."
+      title: "Sentirte bien"
+      body: "El frío quizá te ayude a ser constante solo porque te sienta bien. La evidencia aún es incipiente."
     fr:
-      title: "Pourquoi certains aiment ça"
-      body: "Le froid peut t'aider à tenir, juste parce que tu te sens mieux. Les preuves à ce sujet sont encore récentes."
+      title: "Se sentir bien"
+      body: "Le froid t'aide peut-être à tenir, juste parce qu'il fait du bien. Les preuves sont encore minces."
     pt:
-      title: "Porque há quem goste"
-      body: "O frio pode ajudar-te a manter o treino só porque te faz sentir melhor. A investigação sobre isto ainda é recente."
+      title: "Sentir-te bem"
+      body: "O frio talvez te ajude a manter o treino só porque te faz sentir melhor. A evidência ainda é recente."
     tr:
-      title: "Bazıları neden sever"
-      body: "Soğuk, sadece daha iyi hissettirdiği için antrenmana devam etmene yardımcı olabilir. Bu konudaki araştırmalar henüz yeni."
+      title: "İyi hissetmek"
+      body: "Soğuk sadece iyi hissettirdiği için antrenmana bağlı kalmana yardım edebilir. Kanıtlar henüz yeni."

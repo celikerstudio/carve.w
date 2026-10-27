@@ -1,169 +1,170 @@
 article: reading-food-labels
+emoji: "🏷️"
 tips:
   - key: portiegrootte
     kind: fact
     en:
       title: "Serving size"
-      body: "The numbers on a label are per serving. Check how many servings you actually eat, because that is where calories hide."
+      body: "Label numbers are per serving. Check how many servings you actually eat. That's where calories hide."
     nl:
       title: "Portiegrootte"
-      body: "De cijfers op een etiket gaan over één portie. Kijk hoeveel porties je echt eet, want daar verstoppen de calorieën zich."
+      body: "De getallen op het etiket zijn per portie. Kijk hoeveel porties je echt eet. Daar verstoppen calorieën zich."
     de:
       title: "Portionsgröße"
-      body: "Die Werte auf dem Etikett gelten pro Portion. Schau, wie viele Portionen du wirklich isst, denn dort verstecken sich Kalorien."
+      body: "Die Werte gelten pro Portion. Prüf, wie viele Portionen du wirklich isst. Da verstecken sich Kalorien."
     es:
-      title: "El tamaño de la ración"
-      body: "Los datos de la etiqueta son por ración. Mira cuántas raciones comes de verdad, porque ahí se esconden las calorías."
+      title: "Ración"
+      body: "Los datos de la etiqueta son por ración. Mira cuántas comes de verdad. Ahí se esconden las calorías."
     fr:
-      title: "La taille de la portion"
-      body: "Les valeurs de l'étiquette sont par portion. Regarde combien de portions tu manges vraiment, c'est là que les calories se cachent."
+      title: "Portion"
+      body: "Les chiffres de l'étiquette sont par portion. Regarde combien tu en manges vraiment. Les calories se cachent là."
     pt:
-      title: "O tamanho da porção"
-      body: "Os valores do rótulo são por porção. Vê quantas porções comes mesmo, porque é aí que as calorias se escondem."
+      title: "Porção"
+      body: "Os números do rótulo são por porção. Vê quantas porções comes mesmo. É aí que as calorias se escondem."
     tr:
-      title: "Porsiyon büyüklüğü"
-      body: "Etiketteki değerler bir porsiyon için. Gerçekte kaç porsiyon yediğine bak, çünkü kaloriler orada saklanır."
+      title: "Porsiyon"
+      body: "Etiketteki değerler porsiyon başına. Gerçekte kaç porsiyon yediğine bak. Kaloriler orada saklanır."
 
   - key: olie-en-sauzen
     kind: fact
     en:
       title: "Oils and sauces"
-      body: "Oils, sauces and snacks pack a lot of calories into a small portion. Measure them instead of guessing."
+      body: "Pack a lot of calories into a small portion, like snacks do. Measure them instead of guessing."
     nl:
       title: "Olie en sauzen"
-      body: "Olie, sauzen en snacks stoppen veel calorieën in een kleine portie. Weeg ze af in plaats van te schatten."
+      body: "Stoppen veel calorieën in een kleine portie, net als snacks. Meet ze af in plaats van te gokken."
     de:
       title: "Öle und Soßen"
-      body: "Öle, Soßen und Snacks haben viele Kalorien auf kleiner Menge. Wieg sie ab, statt zu schätzen."
+      body: "Packen viele Kalorien in eine kleine Portion, wie Snacks. Abmessen statt schätzen."
     es:
       title: "Aceites y salsas"
-      body: "Los aceites, las salsas y los snacks meten muchas calorías en poca cantidad. Mídelos en vez de calcular a ojo."
+      body: "Meten muchas calorías en poca cantidad, como los snacks. Mídelos en vez de calcular a ojo."
     fr:
       title: "Huiles et sauces"
-      body: "Huiles, sauces et snacks concentrent beaucoup de calories dans une petite portion. Mesure-les au lieu de deviner."
+      body: "Concentrent beaucoup de calories dans une petite portion, comme les snacks. Mesure au lieu de deviner."
     pt:
       title: "Óleos e molhos"
-      body: "Óleos, molhos e snacks metem muitas calorias numa porção pequena. Mede-os em vez de adivinhares."
+      body: "Metem muitas calorias numa porção pequena, como os snacks. Mede em vez de adivinhar."
     tr:
-      title: "Yağlar ve soslar"
-      body: "Yağlar, soslar ve atıştırmalıklar küçük bir porsiyonda çok kalori taşır. Tahmin etme, tart."
+      title: "Yağ ve soslar"
+      body: "Atıştırmalıklar gibi küçük porsiyonda çok kalori taşır. Tahmin etme, ölç."
 
   - key: eiwit-per-calorie
     kind: fact
     en:
-      title: "Comparing two products"
-      body: "Choosing between two similar products? Look at how much protein you get per calorie."
+      title: "Protein per calorie"
+      body: "Choosing between two similar products? Compare how much protein you get per calorie."
     nl:
-      title: "Twee producten vergelijken"
+      title: "Eiwit per calorie"
       body: "Twijfel je tussen twee vergelijkbare producten? Kijk hoeveel eiwit je per calorie krijgt."
     de:
-      title: "Zwei Produkte vergleichen"
-      body: "Du schwankst zwischen zwei ähnlichen Produkten? Schau, wie viel Eiweiß du pro Kalorie bekommst."
+      title: "Protein pro Kalorie"
+      body: "Zwei ähnliche Produkte? Vergleich, wie viel Protein du pro Kalorie bekommst."
     es:
-      title: "Comparar dos productos"
-      body: "¿Dudas entre dos productos parecidos? Mira cuánta proteína te da cada uno por caloría."
+      title: "Proteína por caloría"
+      body: "¿Dudas entre dos productos parecidos? Compara cuánta proteína te da cada caloría."
     fr:
-      title: "Comparer deux produits"
-      body: "Tu hésites entre deux produits proches ? Regarde combien de protéines tu as par calorie."
+      title: "Protéines par calorie"
+      body: "Deux produits proches ? Compare la quantité de protéines par calorie."
     pt:
-      title: "Comparar dois produtos"
-      body: "Estás indeciso entre dois produtos parecidos? Vê quanta proteína te dá cada um por caloria."
+      title: "Proteína por caloria"
+      body: "Indeciso entre dois produtos parecidos? Compara quanta proteína tens por caloria."
     tr:
-      title: "İki ürünü karşılaştırmak"
-      body: "Benzer iki ürün arasında kaldın mı? Kalori başına ne kadar protein aldığına bak."
+      title: "Kalori başına protein"
+      body: "İki benzer ürün arasında mı kaldın? Kalori başına ne kadar protein aldığını karşılaştır."
 
   - key: volgorde-ingredienten
     kind: fact
     en:
-      title: "Ingredient order"
-      body: "Ingredients are listed in order of how much is in the product. Whatever comes first, there is the most of."
+      title: "First ingredient"
+      body: "Ingredients are listed by amount. Whatever comes first, there's the most of."
     nl:
-      title: "Volgorde van ingrediënten"
-      body: "Ingrediënten staan op volgorde van hoeveel erin zit. Wat bovenaan staat, zit er het meest in."
+      title: "Eerste ingrediënt"
+      body: "Ingrediënten staan op volgorde van hoeveelheid. Wat vooraan staat, zit er het meest in."
     de:
-      title: "Reihenfolge der Zutaten"
-      body: "Die Zutaten stehen danach geordnet, wie viel davon drin ist. Was zuerst kommt, davon ist am meisten drin."
+      title: "Erste Zutat"
+      body: "Zutaten stehen nach Menge geordnet. Was zuerst kommt, steckt am meisten drin."
     es:
-      title: "El orden de los ingredientes"
-      body: "Los ingredientes van por orden de cantidad. Lo que aparece primero es lo que más lleva el producto."
+      title: "Primer ingrediente"
+      body: "Los ingredientes van por cantidad. Lo que va primero es lo que más hay."
     fr:
-      title: "L'ordre des ingrédients"
-      body: "Les ingrédients sont listés selon leur quantité. Ce qui vient en premier, c'est ce qu'il y a le plus."
+      title: "Premier ingrédient"
+      body: "Les ingrédients sont classés par quantité. Le premier est celui qu'il y a le plus."
     pt:
-      title: "A ordem dos ingredientes"
-      body: "Os ingredientes vêm por ordem de quantidade. O que aparece primeiro é o que o produto tem mais."
+      title: "Primeiro ingrediente"
+      body: "Os ingredientes estão por ordem de quantidade. O primeiro é o que há mais."
     tr:
-      title: "İçindekilerin sırası"
-      body: "İçindekiler, üründe ne kadar bulunduğuna göre sıralanır. İlk sırada ne varsa en çok ondan vardır."
+      title: "İlk içerik"
+      body: "İçerikler miktara göre sıralanır. İlk sıradaki en çok olandır."
 
   - key: lange-lijst
     kind: fact
     en:
-      title: "Long ingredient lists"
-      body: "A long list of ultra-processed ingredients may mean the food keeps you less full per calorie."
+      title: "Long lists"
+      body: "Lots of ultra-processed ingredients may mean the food keeps you less full per calorie."
     nl:
-      title: "Lange ingrediëntenlijst"
-      body: "Een lange lijst met ultrabewerkte ingrediënten kan betekenen dat je er per calorie minder vol van zit."
+      title: "Lange lijst"
+      body: "Veel ultrabewerkte ingrediënten kan betekenen dat het eten je per calorie minder vult."
     de:
-      title: "Lange Zutatenlisten"
-      body: "Eine lange Liste stark verarbeiteter Zutaten kann heißen, dass dich das Essen pro Kalorie weniger satt macht."
+      title: "Lange Listen"
+      body: "Viele hochverarbeitete Zutaten können heißen, dass das Essen pro Kalorie weniger satt macht."
     es:
-      title: "Listas largas de ingredientes"
-      body: "Una lista larga de ingredientes ultraprocesados puede significar que ese alimento te sacia menos por caloría."
+      title: "Listas largas"
+      body: "Muchos ingredientes ultraprocesados pueden significar que sacia menos por caloría."
     fr:
-      title: "Les longues listes"
-      body: "Une longue liste d'ingrédients ultra-transformés peut vouloir dire que l'aliment te rassasie moins par calorie."
+      title: "Longues listes"
+      body: "Beaucoup d'ingrédients ultra-transformés peut vouloir dire moins de satiété par calorie."
     pt:
-      title: "Listas longas de ingredientes"
-      body: "Uma lista longa de ingredientes ultraprocessados pode querer dizer que o alimento te sacia menos por caloria."
+      title: "Listas longas"
+      body: "Muitos ingredientes ultraprocessados podem querer dizer que sacia menos por caloria."
     tr:
-      title: "Uzun içindekiler listesi"
-      body: "Ultra işlenmiş içeriklerle dolu uzun bir liste, o yiyeceğin kalori başına seni daha az doyurduğu anlamına gelebilir."
+      title: "Uzun listeler"
+      body: "Çok sayıda ultra işlenmiş içerik, yiyeceğin kalori başına daha az doyurduğu anlamına gelebilir."
 
   - key: eiwit-en-vezels
     kind: fact
     en:
-      title: "Protein and fiber"
-      body: "Counting only calories? Also check protein and fiber on the label. Both affect how full a food keeps you."
+      title: "Protein and fibre"
+      body: "Check both on the label, not just calories. Both affect how full a food keeps you."
     nl:
       title: "Eiwit en vezels"
-      body: "Tel je alleen calorieën? Kijk ook naar eiwit en vezels op het etiket. Allebei bepalen hoe vol je ervan zit."
+      body: "Kijk naar allebei op het etiket, niet alleen naar calorieën. Ze bepalen hoe vol je blijft."
     de:
-      title: "Eiweiß und Ballaststoffe"
-      body: "Zählst du nur Kalorien? Schau auch auf Eiweiß und Ballaststoffe. Beide bestimmen, wie satt dich etwas macht."
+      title: "Protein und Fasern"
+      body: "Schau auf beides, nicht nur auf Kalorien. Beides bestimmt, wie satt du bleibst."
     es:
       title: "Proteína y fibra"
-      body: "¿Solo cuentas calorías? Mira también la proteína y la fibra en la etiqueta. Las dos influyen en lo que te sacia."
+      body: "Mira las dos en la etiqueta, no solo calorías. Ambas influyen en lo que te sacia."
     fr:
       title: "Protéines et fibres"
-      body: "Tu ne comptes que les calories ? Regarde aussi protéines et fibres sur l'étiquette. Les deux jouent sur la satiété."
+      body: "Regarde les deux, pas que les calories. Elles jouent sur la satiété."
     pt:
       title: "Proteína e fibra"
-      body: "Só contas calorias? Vê também a proteína e a fibra no rótulo. As duas influenciam quanto um alimento te sacia."
+      body: "Vê as duas no rótulo, não só calorias. Ambas influenciam a saciedade."
     tr:
       title: "Protein ve lif"
-      body: "Sadece kalori mi sayıyorsun? Etikette protein ve life de bak. İkisi de bir yiyeceğin seni ne kadar doyuracağını etkiler."
+      body: "Etikette sadece kaloriye değil ikisine de bak. İkisi de tokluğu etkiler."
 
   - key: gezond-op-de-verpakking
     kind: myth
     en:
-      title: "Myth: \"healthy\" on the pack means healthy"
-      body: "Not necessarily. Health branding tells you little. Check the actual numbers on the label before you trust it."
+      title: "Healthy on the pack"
+      body: "Myth: a health claim on the pack means it's healthy. Branding tells you little. Check the numbers."
     nl:
-      title: "Mythe: \"gezond\" op de verpakking is gezond"
-      body: "Niet per se. Een gezond imago zegt weinig. Kijk eerst naar de echte cijfers op het etiket."
+      title: "Gezond op het pak"
+      body: "Mythe: staat er gezond op, dan is het gezond. Marketing zegt weinig. Kijk naar de getallen."
     de:
-      title: "Mythos: \"gesund\" auf der Packung ist gesund"
-      body: "Nicht unbedingt. Ein gesundes Image sagt wenig. Schau zuerst auf die echten Zahlen auf dem Etikett."
+      title: "Gesund auf der Packung"
+      body: "Mythos: Steht gesund drauf, ist es gesund. Marketing sagt wenig. Schau auf die Zahlen."
     es:
-      title: "Mito: si pone \"sano\", es sano"
-      body: "No necesariamente. La imagen de sano dice poco. Mira primero los números reales de la etiqueta."
+      title: "Sano en el envase"
+      body: "Mito: si pone sano, es sano. El marketing dice poco. Mira los números de la etiqueta."
     fr:
-      title: "Mythe : écrit \"sain\", donc sain"
-      body: "Pas forcément. Une image santé ne dit pas grand-chose. Regarde d'abord les vrais chiffres sur l'étiquette."
+      title: "Sain sur l'emballage"
+      body: "Mythe : si c'est écrit sain, c'est sain. Le marketing dit peu. Regarde les chiffres."
     pt:
-      title: "Mito: se diz \"saudável\", é saudável"
-      body: "Não necessariamente. A imagem de saudável diz pouco. Vê primeiro os números reais no rótulo."
+      title: "Saudável na embalagem"
+      body: "Mito: se diz saudável, é saudável. O marketing diz pouco. Vê os números."
     tr:
-      title: "Efsane: \"sağlıklı\" yazıyorsa sağlıklıdır"
-      body: "Her zaman değil. Sağlıklı görünen ambalaj pek bir şey söylemez. Önce etiketteki gerçek rakamlara bak."
+      title: "Paketteki sağlıklı"
+      body: "Efsane: pakette sağlıklı yazıyorsa sağlıklıdır. Pazarlama pek bir şey söylemez. Rakamlara bak."

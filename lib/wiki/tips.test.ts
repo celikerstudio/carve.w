@@ -1,13 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { BODY_MAX, lintTipFile, parseTipFile, TIP_LANGUAGES, tipId } from './tips';
+import { BODY_MAX, lintTipFile, parseTipFile, TIP_LANGUAGES, TITLE_MAX, tipId } from './tips';
 
 const langs = (title: string, body: string) =>
-  TIP_LANGUAGES.map((l) => `    ${l}:\n      title: "${l === 'nl' ? title.replace('Myth:', 'Mythe:') : title}"\n      body: "${body} (${l})"`).join('\n');
+  TIP_LANGUAGES.map((l) => `    ${l}:\n      title: "${title}"\n      body: "${l === 'nl' ? body.replace('Myth:', 'Mythe:') : body} (${l})"`).join('\n');
 
-const yaml = (tips: string) => `article: creatine\ntips:\n${tips}`;
+const yaml = (tips: string, emoji = '💊') => `article: creatine\nemoji: "${emoji}"\ntips:\n${tips}`;
 
-const fact = `  - key: full-after-weeks\n    kind: fact\n${langs('Creatine', 'With 3 to 5 g a day your muscles are full after 3 to 4 weeks.')}`;
-const myth = `  - key: water-weight\n    kind: myth\n${langs('Myth: creatine is only water', 'Not true. It adds a modest amount of strength and lean mass.')}`;
+const fact = `  - key: full-after-weeks\n    kind: fact\n${langs('3 to 5 g', 'A day is enough. Your muscles are full after 3 to 4 weeks.')}`;
+const myth = `  - key: water-weight\n    kind: myth\n${langs('Water', 'Myth: creatine is only water. It adds real strength and lean mass.')}`;
 
 const slugs = new Set(['creatine']);
 
@@ -19,7 +19,8 @@ describe('parseTipFile', () => {
       ['full-after-weeks', 'fact'],
       ['water-weight', 'myth'],
     ]);
-    expect(file.tips[1].texts.nl.title).toBe('Mythe: creatine is only water');
+    expect(file.emoji).toBe('💊');
+    expect(file.tips[1].texts.nl.body).toMatch(/^Mythe: creatine/);
     expect(file.tips[0].texts.tr.body).toContain('(tr)');
   });
 });
@@ -51,8 +52,27 @@ describe('lintTipFile', () => {
   });
 
   it('weigert een tekst die niet op het lockscreen past', () => {
-    const lang = yaml(fact).replace('With 3 to 5 g a day', 'x'.repeat(BODY_MAX));
-    expect(lintTipFile(parseTipFile(lang), 'creatine', slugs).some((e) => e.includes('max 160'))).toBe(true);
+    const lang = yaml(fact).replace('A day is enough.', 'x'.repeat(BODY_MAX));
+    expect(lintTipFile(parseTipFile(lang), 'creatine', slugs).some((e) => e.includes(`max ${BODY_MAX}`))).toBe(true);
+  });
+
+  it('wil een korte titel zonder emoji of "Mythe", want de app zet emoji en datum ervoor', () => {
+    const lang = yaml(fact.replace('title: "3 to 5 g"', `title: "${'x'.repeat(TITLE_MAX + 1)}"`));
+    expect(lintTipFile(parseTipFile(lang), 'creatine', slugs).some((e) => e.includes(`max ${TITLE_MAX}`))).toBe(true);
+    const metEmoji = yaml(fact.replace('title: "3 to 5 g"', 'title: "💊 3 to 5 g"'));
+    expect(lintTipFile(parseTipFile(metEmoji), 'creatine', slugs).some((e) => e.includes('geen emoji in de titel'))).toBe(true);
+    const metMythe = yaml(myth.replace(/title: "Water"/g, 'title: "Myth: water"'));
+    expect(lintTipFile(parseTipFile(metMythe), 'creatine', slugs).some((e) => e.includes('hoort in de tekst'))).toBe(true);
+  });
+
+  it('wil precies één emoji per bestand, en per tip als die afwijkt', () => {
+    expect(lintTipFile(parseTipFile(yaml(fact, '')), 'creatine', slugs).some((e) => e.includes('emoji moet'))).toBe(true);
+    expect(lintTipFile(parseTipFile(yaml(fact, '💊💪')), 'creatine', slugs).some((e) => e.includes('emoji moet'))).toBe(true);
+    expect(lintTipFile(parseTipFile(yaml(fact, '🏋️‍♀️')), 'creatine', slugs)).toEqual([]);
+    expect(lintTipFile(parseTipFile(yaml(fact, 'pil')), 'creatine', slugs).some((e) => e.includes('emoji moet'))).toBe(true);
+    const eigen = parseTipFile(yaml(fact.replace('kind: fact', 'kind: fact\n    emoji: "😴"')));
+    expect(eigen.tips[0].emoji).toBe('😴');
+    expect(lintTipFile(eigen, 'creatine', slugs)).toEqual([]);
   });
 
   it('weigert de em-dash, markdown en bronnummers', () => {
@@ -61,10 +81,10 @@ describe('lintTipFile', () => {
     expect(errors.some((e) => e.includes('markdown'))).toBe(true);
   });
 
-  it('wil "Myth:" en "Mythe:" voor een mythe, en niet voor een feit', () => {
-    const mythZonder = myth.replace(/Myth: /g, '').replace(/Mythe: /g, '');
+  it('wil "Myth:" en "Mythe:" vooraan de tekst van een mythe, en niet bij een feit', () => {
+    const mythZonder = myth.replace(/Myth: /g, '');
     expect(lintTipFile(parseTipFile(yaml(mythZonder)), 'creatine', slugs).some((e) => e.includes('begint met "Myth:"'))).toBe(true);
-    const feitMet = fact.replace(/title: "Creatine"/, 'title: "Myth: Creatine"');
+    const feitMet = fact.replace(/body: "A day/g, 'body: "Myth: a day');
     expect(lintTipFile(parseTipFile(yaml(feitMet)), 'creatine', slugs).some((e) => e.includes('maar kind is fact'))).toBe(true);
   });
 

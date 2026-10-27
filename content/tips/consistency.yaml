@@ -1,241 +1,242 @@
 article: consistency
+emoji: "📅"
 tips:
   - key: geen-21-dagen
     kind: myth
     en:
-      title: "Myth: a habit takes 21 days"
-      body: "Not true. A review of 20 studies found medians of 59 to 66 days, and the authors say the findings refute the 21-day idea."
+      title: "21 days"
+      body: "Myth: a habit takes 21 days. A review of 20 studies found typical times of 59 to 66 days."
     nl:
-      title: "Mythe: een gewoonte kost 21 dagen"
-      body: "Klopt niet. Een review van 20 studies vond medianen van 59 tot 66 dagen, en de auteurs zeggen dat dit het 21-dagenidee weerlegt."
+      title: "21 dagen"
+      body: "Mythe: een gewoonte duurt 21 dagen. Een review van 20 studies vond doorgaans 59 tot 66 dagen."
     de:
-      title: "Mythos: eine Gewohnheit dauert 21 Tage"
-      body: "Stimmt nicht. Ein Review von 20 Studien fand Mediane von 59 bis 66 Tagen. Laut den Autoren widerlegt das die 21-Tage-Idee."
+      title: "21 Tage"
+      body: "Mythos: Eine Gewohnheit braucht 21 Tage. Eine Übersicht über 20 Studien fand meist 59 bis 66 Tage."
     es:
-      title: "Mito: un hábito tarda 21 días"
-      body: "No es cierto. Una revisión de 20 estudios halló medianas de 59 a 66 días, y sus autores dicen que eso refuta la idea de los 21 días."
+      title: "21 días"
+      body: "Mito: un hábito tarda 21 días. Una revisión de 20 estudios encontró de 59 a 66 días de media."
     fr:
-      title: "Mythe : une habitude prend 21 jours"
-      body: "Faux. Une revue de 20 études a trouvé des médianes de 59 à 66 jours. Selon les auteurs, ça réfute l'idée des 21 jours."
+      title: "21 jours"
+      body: "Mythe : une habitude prend 21 jours. Une revue de 20 études a trouvé plutôt 59 à 66 jours."
     pt:
-      title: "Mito: um hábito leva 21 dias"
-      body: "Não é verdade. Uma revisão de 20 estudos encontrou medianas de 59 a 66 dias, e os autores dizem que isso refuta a ideia dos 21 dias."
+      title: "21 dias"
+      body: "Mito: um hábito leva 21 dias. Uma revisão de 20 estudos encontrou tipicamente 59 a 66 dias."
     tr:
-      title: "Efsane: alışkanlık 21 günde oluşur"
-      body: "Doğru değil. 20 çalışmalık bir derleme ortanca 59 ila 66 gün buldu. Yazarlara göre bu, 21 gün fikrini çürütüyor."
+      title: "21 gün"
+      body: "Efsane: alışkanlık 21 günde oluşur. 20 çalışmalık bir derleme genelde 59-66 gün buldu."
 
   - key: twee-tot-vijf-maanden
     kind: fact
     en:
-      title: "Two to five months"
-      body: "Plan on at least two to five months before a habit feels automatic. The studies are few, so see it as a range, not a deadline."
+      title: "2 to 5 months"
+      body: "Plan on that before a habit feels automatic. The studies are few, so it's a range, not a deadline."
     nl:
-      title: "Twee tot vijf maanden"
-      body: "Reken op minstens twee tot vijf maanden voor een gewoonte vanzelf gaat. Er zijn weinig studies, dus zie het als richting, geen deadline."
+      title: "2 tot 5 maanden"
+      body: "Reken daarop voor een gewoonte vanzelf gaat. Er zijn weinig studies, dus zie het als bandbreedte."
     de:
-      title: "Zwei bis fünf Monate"
-      body: "Rechne mit mindestens zwei bis fünf Monaten, bis eine Gewohnheit automatisch läuft. Es gibt wenige Studien, also Richtwert, keine Frist."
+      title: "2 bis 5 Monate"
+      body: "Plan so viel ein, bis eine Gewohnheit sitzt. Es gibt wenige Studien, also eine Spanne, keine Frist."
     es:
-      title: "De dos a cinco meses"
-      body: "Cuenta con al menos dos a cinco meses hasta que un hábito salga solo. Hay pocos estudios, así que tómalo como rango, no como plazo."
+      title: "2 a 5 meses"
+      body: "Cuenta con eso antes de que un hábito sea automático. Hay pocos estudios: es un rango, no una fecha."
     fr:
-      title: "Deux à cinq mois"
-      body: "Compte au moins deux à cinq mois avant qu'une habitude devienne automatique. Il y a peu d'études : un ordre d'idée, pas une échéance."
+      title: "2 à 5 mois"
+      body: "Prévois ça avant qu'une habitude soit automatique. Peu d'études, donc c'est une fourchette, pas un délai."
     pt:
-      title: "Dois a cinco meses"
-      body: "Conta com pelo menos dois a cinco meses até um hábito sair sozinho. Há poucos estudos, por isso vê isto como intervalo, não prazo."
+      title: "2 a 5 meses"
+      body: "Conta com isso até um hábito ser automático. Há poucos estudos: é um intervalo, não um prazo."
     tr:
-      title: "İki ila beş ay"
-      body: "Bir alışkanlığın kendiliğinden olması için en az iki ila beş ay bekle. Çalışma az, bunu bir son tarih değil bir aralık olarak gör."
+      title: "2-5 ay"
+      body: "Bir alışkanlığın otomatikleşmesi için bunu hesapla. Çalışma az, bu bir aralık, son tarih değil."
 
   - key: eigen-tempo
     kind: fact
     en:
-      title: "Your own pace"
-      body: "In one eating trial, estimates ran from 4 to 335 days, partly projected past the 84 days it lasted. People differ a lot."
+      title: "4 to 335 days"
+      body: "Estimates for one eating habit ranged that wide in a trial, partly projected. People differ a lot."
     nl:
-      title: "Je eigen tempo"
-      body: "In één eetstudie liepen de schattingen van 4 tot 335 dagen, deels doorgetrokken voorbij de 84 dagen die hij duurde. Mensen verschillen enorm."
+      title: "4 tot 335 dagen"
+      body: "Zo ver liepen schattingen voor één eetgewoonte uiteen, deels doorgerekend. Mensen verschillen enorm."
     de:
-      title: "Dein eigenes Tempo"
-      body: "In einer Ernährungsstudie reichten die Schätzungen von 4 bis 335 Tagen, teils über die 84 Studientage hinaus hochgerechnet. Menschen sind verschieden."
+      title: "4 bis 335 Tage"
+      body: "So weit lagen Schätzungen für eine Essgewohnheit auseinander, teils hochgerechnet. Menschen sind verschieden."
     es:
-      title: "Tu propio ritmo"
-      body: "En un estudio de alimentación, las estimaciones iban de 4 a 335 días, en parte proyectadas más allá de sus 84 días. Hay mucha diferencia."
+      title: "4 a 335 días"
+      body: "Es lo que variaron las estimaciones para un hábito de comida, en parte proyectadas. Cada persona es distinta."
     fr:
-      title: "Ton propre rythme"
-      body: "Dans une étude sur l'alimentation, les estimations allaient de 4 à 335 jours, en partie projetées au-delà des 84 jours. On est très différents."
+      title: "4 à 335 jours"
+      body: "C'est l'écart des estimations pour une habitude alimentaire, en partie extrapolées. On est tous différents."
     pt:
-      title: "O teu ritmo"
-      body: "Num estudo sobre alimentação, as estimativas iam de 4 a 335 dias, em parte projetadas além dos 84 dias que durou. As pessoas variam muito."
+      title: "4 a 335 dias"
+      body: "Foi o intervalo das estimativas para um hábito alimentar, em parte projetadas. As pessoas variam muito."
     tr:
-      title: "Kendi hızın"
-      body: "Bir beslenme çalışmasında tahminler 4 ila 335 gün arasındaydı, kısmen 84 günlük sürenin ötesine uzatılmıştı. İnsanlar çok farklı."
+      title: "4-335 gün"
+      body: "Bir beslenme alışkanlığı için tahminler bu kadar değişti, kısmen hesaplanarak. İnsanlar çok farklı."
 
   - key: dag-gemist
     kind: myth
     en:
-      title: "Myth: one missed day breaks a habit"
-      body: "Not true. In a 12-week study of 96 people, missing one chance did not really affect habit forming. Carry on the next day."
+      title: "One missed day"
+      body: "Myth: one missed day breaks a habit. In a 12-week study it barely mattered. Just carry on the next day."
     nl:
-      title: "Mythe: één dag missen breekt je gewoonte"
-      body: "Klopt niet. In een studie van 12 weken bij 96 mensen maakte één keer missen weinig uit voor het vormen van de gewoonte. Ga de volgende dag gewoon door."
+      title: "Eén dag gemist"
+      body: "Mythe: één gemiste dag breekt een gewoonte. In een studie van 12 weken maakte het weinig uit. Ga morgen gewoon door."
     de:
-      title: "Mythos: ein verpasster Tag bricht die Routine"
-      body: "Stimmt nicht. In einer 12-Wochen-Studie mit 96 Leuten änderte ein verpasstes Mal kaum etwas an der Gewohnheit. Mach am nächsten Tag weiter."
+      title: "Ein Tag verpasst"
+      body: "Mythos: Ein verpasster Tag zerstört die Gewohnheit. In einer 12-Wochen-Studie kaum. Mach am nächsten Tag weiter."
     es:
-      title: "Mito: saltarte un día rompe el hábito"
-      body: "No es cierto. En un estudio de 12 semanas con 96 personas, fallar una vez apenas afectó al hábito. Sigue al día siguiente."
+      title: "Un día perdido"
+      body: "Mito: saltarte un día rompe el hábito. En un estudio de 12 semanas apenas importó. Sigue al día siguiente."
     fr:
-      title: "Mythe : un jour raté casse l'habitude"
-      body: "Faux. Dans une étude de 12 semaines sur 96 personnes, rater une fois n'a guère changé la formation de l'habitude. Reprends le lendemain."
+      title: "Un jour raté"
+      body: "Mythe : rater un jour casse l'habitude. Sur une étude de 12 semaines, ça n'a presque rien changé. Reprends le lendemain."
     pt:
-      title: "Mito: falhar um dia estraga o hábito"
-      body: "Não é verdade. Num estudo de 12 semanas com 96 pessoas, falhar uma vez quase não afetou o hábito. Continua no dia seguinte."
+      title: "Um dia falhado"
+      body: "Mito: falhar um dia quebra o hábito. Num estudo de 12 semanas quase não importou. Continua no dia seguinte."
     tr:
-      title: "Efsane: bir gün kaçırmak alışkanlığı bozar"
-      body: "Doğru değil. 96 kişilik 12 haftalık bir çalışmada bir kez kaçırmak alışkanlığı pek etkilemedi. Ertesi gün devam et."
+      title: "Bir gün kaçırmak"
+      body: "Efsane: bir gün kaçırmak alışkanlığı bozar. 12 haftalık bir çalışmada pek fark etmedi. Ertesi gün devam et."
 
   - key: niet-inhalen
     kind: fact
     en:
-      title: "After a missed day"
-      body: "Just go back to your normal plan. No need to train double, or to eat much less the day after."
+      title: "Missed a day"
+      body: "Just go back to your normal plan. No need to train double or eat much less the next day."
     nl:
-      title: "Na een gemiste dag"
-      body: "Pak gewoon je normale schema weer op. Je hoeft niet dubbel te trainen, en ook niet de dag erna veel minder te eten."
+      title: "Dag gemist"
+      body: "Ga gewoon verder met je normale plan. Niet dubbel trainen en de dag erna ook niet veel minder eten."
     de:
-      title: "Nach einem verpassten Tag"
-      body: "Mach einfach mit deinem normalen Plan weiter. Du musst nicht doppelt trainieren und am Tag danach auch nicht viel weniger essen."
+      title: "Tag verpasst"
+      body: "Mach einfach mit deinem normalen Plan weiter. Kein doppeltes Training, am Tag danach nicht viel weniger essen."
     es:
-      title: "Tras un día perdido"
-      body: "Vuelve a tu plan normal sin más. No hace falta entrenar el doble ni comer mucho menos al día siguiente."
+      title: "Te saltaste un día"
+      body: "Vuelve a tu plan normal. No hace falta entrenar doble ni comer mucho menos al día siguiente."
     fr:
-      title: "Après un jour raté"
-      body: "Reprends simplement ton plan normal. Pas besoin de t'entraîner deux fois plus, ni de beaucoup moins manger le lendemain."
+      title: "Jour manqué"
+      body: "Reprends ton plan normal. Pas besoin de doubler la séance ni de beaucoup moins manger le lendemain."
     pt:
-      title: "Depois de um dia falhado"
-      body: "Volta simplesmente ao teu plano normal. Não precisas de treinar a dobrar nem de comer muito menos no dia seguinte."
+      title: "Falhaste um dia"
+      body: "Volta ao plano normal. Não precisas de treinar a dobrar nem de comer muito menos no dia seguinte."
     tr:
-      title: "Kaçırdığın bir günden sonra"
-      body: "Normal planına geri dön. İki kat antrenman yapmana ya da ertesi gün çok daha az yemene gerek yok."
+      title: "Bir gün kaçtı"
+      body: "Normal planına dön. Ertesi gün iki kat çalışmaya ya da çok az yemeye gerek yok."
 
   - key: zelfde-plek
     kind: fact
     en:
       title: "Same time, same place"
-      body: "People who did a behaviour in a stable setting built stronger habits. Train at a set time and place, bag packed the night before."
+      body: "A stable setting built stronger habits. Train at a set time and place, bag packed the night before."
     nl:
-      title: "Zelfde tijd, zelfde plek"
-      body: "Wie iets in een vaste omgeving deed, bouwde een sterkere gewoonte op. Train op een vaste tijd en plek, met je tas de avond ervoor ingepakt."
+      title: "Vaste tijd, vaste plek"
+      body: "Een vaste omgeving gaf sterkere gewoontes. Train op een vast moment en plek, tas de avond ervoor ingepakt."
     de:
-      title: "Gleiche Zeit, gleicher Ort"
-      body: "Wer etwas in einem festen Umfeld tat, baute stärkere Gewohnheiten auf. Trainier zur festen Zeit am festen Ort, Tasche am Vorabend gepackt."
+      title: "Feste Zeit, fester Ort"
+      body: "Ein stabiles Umfeld schuf stärkere Gewohnheiten. Trainier fest, die Tasche am Vorabend gepackt."
     es:
-      title: "Misma hora, mismo sitio"
-      body: "Quien repetía algo en un entorno estable formaba hábitos más fuertes. Entrena a una hora y en un sitio fijos, con la bolsa lista la noche antes."
+      title: "Misma hora y lugar"
+      body: "Un entorno estable creó hábitos más fuertes. Entrena a hora y lugar fijos, con la bolsa lista la noche antes."
     fr:
-      title: "Même heure, même endroit"
-      body: "Ceux qui agissaient dans un cadre stable avaient des habitudes plus fortes. Entraîne-toi à heure et lieu fixes, sac prêt la veille."
+      title: "Même heure, même lieu"
+      body: "Un cadre stable a créé des habitudes plus fortes. Heure et lieu fixes, sac prêt la veille."
     pt:
-      title: "Mesma hora, mesmo sítio"
-      body: "Quem repetia algo num contexto estável criava hábitos mais fortes. Treina a uma hora e num sítio fixos, com o saco pronto na véspera."
+      title: "Mesma hora e sítio"
+      body: "Um contexto estável criou hábitos mais fortes. Treina a hora e sítio fixos, saco feito na véspera."
     tr:
       title: "Aynı saat, aynı yer"
-      body: "Bir davranışı sabit bir ortamda yapanlar daha güçlü alışkanlık kurdu. Sabit saatte, sabit yerde çalış, çantanı önceki akşam hazırla."
+      body: "Sabit bir ortam daha güçlü alışkanlık kurdu. Sabit saatte ve yerde çalış, çantanı önceki akşam hazırla."
 
   - key: vast-signaal
     kind: fact
     en:
-      title: "Pick a cue"
-      body: "In a trial of 192 adults, tying a habit to a routine like after breakfast worked about as well as tying it to a set time."
+      title: "After breakfast"
+      body: "Tying a habit to a routine like this worked about as well as a set time, in a trial of 192 adults."
     nl:
-      title: "Kies een vast moment"
-      body: "In een studie met 192 volwassenen werkte een gewoonte koppelen aan iets als na het ontbijt ongeveer even goed als aan een vaste tijd."
+      title: "Na het ontbijt"
+      body: "Een gewoonte koppelen aan zo'n routine werkte ongeveer even goed als een vaste tijd, bij 192 volwassenen."
     de:
-      title: "Such dir einen Auslöser"
-      body: "In einer Studie mit 192 Erwachsenen wirkte es etwa gleich gut, eine Gewohnheit an eine Routine wie nach dem Frühstück oder an eine feste Uhrzeit zu knüpfen."
+      title: "Nach dem Frühstück"
+      body: "Eine Gewohnheit an so eine Routine zu koppeln wirkte etwa so gut wie eine feste Uhrzeit, bei 192 Erwachsenen."
     es:
-      title: "Elige una señal"
-      body: "En un ensayo con 192 adultos, atar un hábito a una rutina como después de desayunar funcionó casi igual que atarlo a una hora fija."
+      title: "Tras desayunar"
+      body: "Unir un hábito a una rutina así funcionó casi igual que una hora fija, en un ensayo con 192 adultos."
     fr:
-      title: "Choisis un déclencheur"
-      body: "Dans un essai sur 192 adultes, lier une habitude à une routine comme après le petit-déj marchait à peu près comme une heure fixe."
+      title: "Après le petit-déj"
+      body: "Lier une habitude à une routine marchait presque aussi bien qu'une heure fixe, chez 192 adultes."
     pt:
-      title: "Escolhe um sinal"
-      body: "Num ensaio com 192 adultos, ligar um hábito a uma rotina como depois do pequeno-almoço resultou quase tão bem como a uma hora fixa."
+      title: "Após o pequeno-almoço"
+      body: "Ligar um hábito a uma rotina assim funcionou quase como uma hora fixa, em 192 adultos."
     tr:
-      title: "Bir tetikleyici seç"
-      body: "192 yetişkinle bir çalışmada, alışkanlığı kahvaltıdan sonra gibi bir rutine bağlamak, sabit bir saate bağlamak kadar işe yaradı."
+      title: "Kahvaltıdan sonra"
+      body: "Alışkanlığı böyle bir rutine bağlamak, 192 yetişkinde sabit saat kadar işe yaradı."
 
   - key: zelf-kiezen
     kind: fact
     en:
-      title: "Choose it yourself"
-      body: "In one study, habits people picked themselves ended up stronger than habits that were handed to them."
+      title: "Your own choice"
+      body: "Habits people picked themselves ended up stronger than ones handed to them, in one study."
     nl:
-      title: "Kies het zelf"
-      body: "In één studie werden gewoontes die mensen zelf kozen sterker dan gewoontes die ze opgelegd kregen."
+      title: "Zelf kiezen"
+      body: "Gewoontes die mensen zelf kozen werden sterker dan gewoontes die ze kregen opgelegd, in één studie."
     de:
-      title: "Wähl es selbst"
-      body: "In einer Studie wurden selbst gewählte Gewohnheiten stärker als solche, die den Leuten vorgegeben wurden."
+      title: "Selbst gewählt"
+      body: "Selbst gewählte Gewohnheiten wurden in einer Studie stärker als vorgegebene."
     es:
-      title: "Elígelo tú"
-      body: "En un estudio, los hábitos que la gente elegía por sí misma acabaron siendo más fuertes que los que le imponían."
+      title: "Elegido por ti"
+      body: "Los hábitos que la gente eligió fueron más fuertes que los impuestos, en un estudio."
     fr:
-      title: "Choisis-la toi-même"
-      body: "Dans une étude, les habitudes que les gens avaient choisies eux-mêmes sont devenues plus fortes que celles qu'on leur imposait."
+      title: "Ton choix"
+      body: "Les habitudes choisies soi-même sont devenues plus fortes que celles imposées, dans une étude."
     pt:
-      title: "Escolhe tu"
-      body: "Num estudo, os hábitos que as pessoas escolheram sozinhas ficaram mais fortes do que os que lhes foram dados."
+      title: "Escolha tua"
+      body: "Os hábitos escolhidos pela própria pessoa ficaram mais fortes do que os impostos, num estudo."
     tr:
-      title: "Kendin seç"
-      body: "Bir çalışmada insanların kendi seçtiği alışkanlıklar, onlara verilen alışkanlıklardan daha güçlü hale geldi."
+      title: "Kendi seçimin"
+      body: "Bir çalışmada insanların kendi seçtiği alışkanlıklar, verilenlerden daha güçlü oldu."
 
   - key: eerste-herhalingen
     kind: fact
     en:
-      title: "Early days count most"
-      body: "In the study the review cites, the habit grew fastest in the first repetitions. Later ones added less."
+      title: "Early days"
+      body: "A habit grows fastest in the first repetitions. Later ones add less."
     nl:
-      title: "Het begin telt het zwaarst"
-      body: "In de studie die de review aanhaalt groeide de gewoonte het snelst bij de eerste herhalingen. Latere voegden minder toe."
+      title: "De eerste keren"
+      body: "Een gewoonte groeit het snelst in de eerste herhalingen. Latere voegen minder toe."
     de:
-      title: "Der Anfang zählt am meisten"
-      body: "In der Studie, die das Review zitiert, wuchs die Gewohnheit bei den ersten Wiederholungen am schnellsten. Spätere brachten weniger."
+      title: "Die ersten Male"
+      body: "Eine Gewohnheit wächst in den ersten Wiederholungen am schnellsten. Spätere bringen weniger."
     es:
-      title: "Al principio cuenta más"
-      body: "En el estudio que cita la revisión, el hábito creció más rápido en las primeras repeticiones. Las siguientes sumaron menos."
+      title: "Los primeros días"
+      body: "Un hábito crece más rápido en las primeras repeticiones. Las siguientes suman menos."
     fr:
-      title: "Le début compte le plus"
-      body: "Dans l'étude citée par la revue, l'habitude progressait le plus vite lors des premières répétitions. Les suivantes ajoutaient moins."
+      title: "Les premiers jours"
+      body: "Une habitude grandit le plus vite au début. Les fois suivantes ajoutent moins."
     pt:
-      title: "O início conta mais"
-      body: "No estudo citado pela revisão, o hábito cresceu mais depressa nas primeiras repetições. As seguintes acrescentaram menos."
+      title: "Os primeiros dias"
+      body: "Um hábito cresce mais depressa nas primeiras repetições. As seguintes somam menos."
     tr:
-      title: "En çok başlangıç sayılır"
-      body: "Derlemenin andığı çalışmada alışkanlık en hızlı ilk tekrarlarda gelişti. Sonrakiler daha az ekledi."
+      title: "İlk günler"
+      body: "Alışkanlık en hızlı ilk tekrarlarda gelişir. Sonrakiler daha az katkı sağlar."
 
   - key: welk-dieet
     kind: myth
     en:
-      title: "Myth: picking the right diet is key"
-      body: "Hardly. In a year-long trial of four diets in 160 adults with overweight, sticking to one tracked weight loss. Which diet hardly did."
+      title: "The right diet"
+      body: "Myth: picking the right diet is key. In a year-long trial of four diets, sticking to one mattered. Which hardly did."
     nl:
-      title: "Mythe: het juiste dieet kiezen is de sleutel"
-      body: "Nauwelijks. In een jaar met vier diëten bij 160 volwassenen met overgewicht hing volhouden veel sterker samen met afvallen. Een verband, geen bewijs."
+      title: "Het juiste dieet"
+      body: "Mythe: het juiste dieet kiezen is de sleutel. In een jaarstudie met vier diëten telde volhouden, niet welk."
     de:
-      title: "Mythos: Es kommt auf die richtige Diät an"
-      body: "Kaum. In einer Jahresstudie mit vier Diäten bei 160 Erwachsenen mit Übergewicht hing Dranbleiben viel stärker mit dem Abnehmen zusammen. Kein Beweis."
+      title: "Die richtige Diät"
+      body: "Mythos: Die richtige Diät ist entscheidend. In einer Jahresstudie mit vier Diäten zählte Durchhalten, nicht welche."
     es:
-      title: "Mito: lo clave es elegir la dieta correcta"
-      body: "Apenas. En un año con cuatro dietas en 160 adultos con sobrepeso, seguirla pesó mucho más en la pérdida de peso. Es una relación, no una prueba."
+      title: "La dieta correcta"
+      body: "Mito: elegir bien la dieta es la clave. En un ensayo de un año con cuatro dietas, importó cumplirla, no cuál."
     fr:
-      title: "Mythe : tout dépend du bon régime"
-      body: "Guère. Sur un an, quatre régimes, 160 adultes en surpoids : s'y tenir était bien plus lié à la perte de poids. Un lien, pas une preuve."
+      title: "Le bon régime"
+      body: "Mythe : choisir le bon régime est la clé. Sur un an et quatre régimes, c'est le suivi qui a compté, pas lequel."
     pt:
-      title: "Mito: o segredo é escolher a dieta certa"
-      body: "Pouco. Num ano com quatro dietas em 160 adultos com excesso de peso, cumprir pesou muito mais na perda de peso. É uma relação, não prova."
+      title: "A dieta certa"
+      body: "Mito: escolher a dieta certa é a chave. Num ensaio de um ano com quatro dietas, contou cumpri-la, não qual."
     tr:
-      title: "Efsane: önemli olan doğru diyeti seçmek"
-      body: "Pek değil. Fazla kilolu 160 yetişkinle dört diyetli bir yıllık çalışmada kilo kaybı, diyete uymakla çok daha bağlıydı. Bu kanıt değil, ilişki."
+      title: "Doğru diyet"
+      body: "Efsane: önemli olan doğru diyeti seçmek. Dört diyetli bir yıllık çalışmada önemli olan sürdürmekti, hangisi değil."

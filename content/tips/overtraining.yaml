@@ -1,241 +1,242 @@
 article: overtraining
+emoji: "🥵"
 tips:
   - key: de-combinatie
     kind: fact
     en:
-      title: "Hard training isn't the problem"
-      body: "Training needs overload. What it has to avoid is the combination of too much overload and too little recovery."
+      title: "Too little recovery"
+      body: "Hard training isn't the problem. Too much overload combined with too little recovery is."
     nl:
-      title: "Hard trainen is het probleem niet"
-      body: "Trainen vraagt om overbelasting. Wat je moet vermijden is de combinatie van te veel belasting en te weinig herstel."
+      title: "Te weinig herstel"
+      body: "Hard trainen is het probleem niet. Te veel belasting in combinatie met te weinig herstel wel."
     de:
-      title: "Hartes Training ist nicht das Problem"
-      body: "Training braucht Überlastung. Vermeiden musst du die Kombination aus zu viel Belastung und zu wenig Erholung."
+      title: "Zu wenig Erholung"
+      body: "Hartes Training ist nicht das Problem. Zu viel Belastung plus zu wenig Erholung schon."
     es:
-      title: "Entrenar duro no es el problema"
-      body: "Entrenar exige sobrecarga. Lo que hay que evitar es la combinación de demasiada carga y poca recuperación."
+      title: "Poca recuperación"
+      body: "Entrenar duro no es el problema. Demasiada carga con poca recuperación, sí."
     fr:
-      title: "S'entraîner dur n'est pas le problème"
-      body: "S'entraîner demande de la surcharge. Ce qu'il faut éviter, c'est trop de charge combinée à trop peu de récupération."
+      title: "Trop peu de récup"
+      body: "S'entraîner dur n'est pas le problème. Trop de charge avec trop peu de récupération, si."
     pt:
-      title: "Treinar duro não é o problema"
-      body: "Treinar exige sobrecarga. O que tens de evitar é a combinação de carga a mais com recuperação a menos."
+      title: "Pouca recuperação"
+      body: "Treinar forte não é o problema. Carga a mais com recuperação a menos, sim."
     tr:
-      title: "Sert antrenman sorun değil"
-      body: "Antrenman aşırı yüklenme ister. Kaçınman gereken, fazla yük ile yetersiz toparlanmanın birleşimi."
+      title: "Az toparlanma"
+      body: "Sert antrenman sorun değil. Fazla yükle birlikte az toparlanma sorun."
 
   - key: functionele-overreaching
     kind: fact
     en:
-      title: "Functional overreaching"
-      body: "A short dip after hard training that can turn into better performance once you've recovered. Evidence for that rebound is not abundant."
+      title: "A short dip"
+      body: "After hard training, it can turn into better performance once you've recovered. Evidence for that is limited."
     nl:
-      title: "Functionele overreaching"
-      body: "Een korte dip na hard trainen die na herstel tot betere prestaties kan leiden. Het bewijs voor dat terugveren is niet overvloedig."
+      title: "Korte dip"
+      body: "Na zware training kan die omslaan in betere prestaties als je hersteld bent. Het bewijs daarvoor is beperkt."
     de:
-      title: "Funktionelles Overreaching"
-      body: "Ein kurzer Leistungseinbruch nach hartem Training, der nach der Erholung zu mehr Leistung führen kann. Belege dafür sind nicht reichlich."
+      title: "Kurzes Tief"
+      body: "Nach hartem Training kann es nach der Erholung in bessere Leistung umschlagen. Belege dafür sind dünn."
     es:
-      title: "Sobrecarga funcional"
-      body: "Un bajón corto tras entrenar duro que, una vez recuperado, puede dar mejor rendimiento. Las pruebas de ese rebote no abundan."
+      title: "Bajón corto"
+      body: "Tras entrenar duro, puede convertirse en mejor rendimiento al recuperarte. Hay pocas pruebas de ello."
     fr:
-      title: "Surmenage fonctionnel"
-      body: "Une petite baisse après un entraînement dur, qui peut mener à de meilleures perfs une fois récupéré. Les preuves de ce rebond sont rares."
+      title: "Petit creux"
+      body: "Après un entraînement dur, il peut se muer en meilleure perf une fois récupéré. Les preuves sont minces."
     pt:
-      title: "Sobrecarga funcional"
-      body: "Uma quebra curta depois de treinar duro que pode levar a melhor rendimento após recuperares. As provas desse ressalto não abundam."
+      title: "Quebra curta"
+      body: "Depois de treino duro, pode virar melhor rendimento ao recuperares. Há poucas provas disso."
     tr:
-      title: "Fonksiyonel aşırı yüklenme"
-      body: "Sert antrenmandan sonra toparlanınca daha iyi performansa dönüşebilen kısa bir düşüş. Bu geri sıçramanın kanıtı pek fazla değil."
+      title: "Kısa düşüş"
+      body: "Sert antrenmandan sonra toparlanınca daha iyi performansa dönebilir. Bunun kanıtı sınırlı."
 
   - key: weken-of-maanden
     kind: fact
     en:
-      title: "When an easy week isn't enough"
-      body: "Short overreaching can clear in about two weeks. Once it's nonfunctional, athletes need weeks or months to recover."
+      title: "Weeks or months"
+      body: "That's how long nonfunctional overreaching takes to clear. A short dip clears in about two weeks."
     nl:
-      title: "Als een rustige week niet genoeg is"
-      body: "Korte overreaching kan in ongeveer twee weken over zijn. Is het niet-functioneel, dan hebben sporters weken tot maanden nodig."
+      title: "Weken of maanden"
+      body: "Zo lang duurt herstel van niet-functionele overbelasting. Een korte dip trekt in zo'n twee weken weg."
     de:
-      title: "Wenn eine leichte Woche nicht reicht"
-      body: "Kurzes Overreaching kann in etwa zwei Wochen vorbei sein. Ist es nicht funktionell, brauchen Sportler Wochen oder Monate."
+      title: "Wochen oder Monate"
+      body: "So lange braucht nicht-funktionelles Overreaching. Ein kurzes Tief ist nach etwa zwei Wochen weg."
     es:
-      title: "Cuando una semana suave no basta"
-      body: "La sobrecarga corta puede pasar en unas dos semanas. Si ya es no funcional, los deportistas necesitan semanas o meses."
+      title: "Semanas o meses"
+      body: "Es lo que tarda en pasar la sobrecarga no funcional. Un bajón corto se va en unas dos semanas."
     fr:
-      title: "Quand une semaine légère ne suffit pas"
-      body: "Un surmenage court peut passer en deux semaines environ. S'il est non fonctionnel, les sportifs mettent des semaines ou des mois."
+      title: "Semaines ou mois"
+      body: "C'est le temps pour sortir d'un surmenage non fonctionnel. Un petit creux passe en deux semaines environ."
     pt:
-      title: "Quando uma semana leve não chega"
-      body: "A sobrecarga curta pode passar em cerca de duas semanas. Se for não funcional, os atletas precisam de semanas ou meses."
+      title: "Semanas ou meses"
+      body: "É o que demora a passar a sobrecarga não funcional. Uma quebra curta passa em cerca de duas semanas."
     tr:
-      title: "Hafif bir hafta yetmediğinde"
-      body: "Kısa süreli aşırı yüklenme yaklaşık iki haftada geçebilir. Fonksiyonel değilse sporcuların haftalara ya da aylara ihtiyacı olur."
+      title: "Haftalar ya da aylar"
+      body: "İşlevsel olmayan aşırı yüklenme bu kadar sürede geçer. Kısa düşüş yaklaşık iki haftada geçer."
 
   - key: zelden-bij-krachtsport
     kind: myth
     en:
-      title: "Myth: lifters often get overtrained"
-      body: "Not proven. A review of 47 articles found minimal evidence that true overtraining syndrome has occurred in strength training."
+      title: "47 articles"
+      body: "Myth: lifters often get overtrained. A review found minimal evidence of true overtraining in strength training."
     nl:
-      title: "Mythe: krachtsporters raken vaak overtraind"
-      body: "Niet bewezen. Een review van 47 artikelen vond minimaal bewijs dat echt overtrainingssyndroom bij krachttraining is voorgekomen."
+      title: "47 artikelen"
+      body: "Mythe: krachtsporters raken vaak overtraind. Een review vond nauwelijks bewijs voor echte overtraining bij krachtsport."
     de:
-      title: "Mythos: Kraftsportler sind oft übertrainiert"
-      body: "Nicht belegt. Ein Review von 47 Artikeln fand kaum Belege, dass echtes Übertrainingssyndrom im Krafttraining aufgetreten ist."
+      title: "47 Artikel"
+      body: "Mythos: Kraftsportler sind oft übertrainiert. Eine Übersicht fand kaum Belege für echtes Übertraining im Kraftsport."
     es:
-      title: "Mito: quien levanta pesas se sobreentrena"
-      body: "No está probado. Una revisión de 47 artículos halló pruebas mínimas de que el síndrome de sobreentrenamiento real se haya dado en fuerza."
+      title: "47 artículos"
+      body: "Mito: con pesas te sobreentrenas a menudo. Una revisión apenas halló pruebas de sobreentrenamiento real."
     fr:
-      title: "Mythe : en muscu, on est souvent surentraîné"
-      body: "Pas prouvé. Une revue de 47 articles a trouvé très peu de preuves d'un vrai syndrome de surentraînement en musculation."
+      title: "47 articles"
+      body: "Mythe : en muscu, on est souvent surentraîné. Une revue n'a trouvé presque aucune preuve de vrai surentraînement."
     pt:
-      title: "Mito: quem treina força sobretreina muito"
-      body: "Não está provado. Uma revisão de 47 artigos encontrou provas mínimas de síndrome de sobretreino real no treino de força."
+      title: "47 artigos"
+      body: "Mito: quem treina força fica muitas vezes sobretreinado. Uma revisão quase não achou provas disso."
     tr:
-      title: "Efsane: ağırlıkçılar sık aşırı antrenman yapar"
-      body: "Kanıtlanmadı. 47 makalelik bir derleme, kuvvet antrenmanında gerçek aşırı antrenman sendromu görüldüğüne dair çok az kanıt buldu."
+      title: "47 makale"
+      body: "Efsane: ağırlık çalışanlar sık sık aşırı antrenmana girer. Bir derleme gerçek aşırı antrenmana dair çok az kanıt buldu."
 
   - key: kracht-als-laatste
     kind: fact
     en:
-      title: "Your max is the last to go"
-      body: "With too much heavy volume, max strength is one of the last things to suffer. Speed and power are among the first."
+      title: "Max strength"
+      body: "Is one of the last things to drop with too much heavy volume. Speed and power go among the first."
     nl:
-      title: "Je max zakt als laatste"
-      body: "Bij te veel zwaar volume is je maximale kracht een van de laatste dingen die lijden. Snelheid en explosiviteit gaan als eerste."
+      title: "Maximale kracht"
+      body: "Is een van de laatste dingen die zakken bij te veel zwaar volume. Snelheid en explosiviteit gaan als eerste."
     de:
-      title: "Dein Max leidet zuletzt"
-      body: "Bei zu viel schwerem Volumen leidet die Maximalkraft mit als Letztes. Schnelligkeit und Schnellkraft gehören zu den Ersten."
+      title: "Maximalkraft"
+      body: "Sinkt bei zu viel schwerem Volumen als eines der Letzten. Tempo und Schnellkraft gehen zuerst."
     es:
-      title: "Tu máximo es lo último en caer"
-      body: "Con demasiado volumen pesado, la fuerza máxima es de lo último en resentirse. La velocidad y la potencia están entre lo primero."
+      title: "Fuerza máxima"
+      body: "Es de lo último en caer con demasiado volumen pesado. La velocidad y la potencia caen antes."
     fr:
-      title: "Ton max chute en dernier"
-      body: "Avec trop de volume lourd, la force max est parmi les dernières à souffrir. La vitesse et la puissance sont parmi les premières."
+      title: "Force max"
+      body: "C'est l'une des dernières à baisser avec trop de volume lourd. Vitesse et puissance partent en premier."
     pt:
-      title: "O teu máximo é o último a cair"
-      body: "Com volume pesado a mais, a força máxima é das últimas coisas a sofrer. A velocidade e a potência estão entre as primeiras."
+      title: "Força máxima"
+      body: "É das últimas a cair com volume pesado a mais. A velocidade e a potência caem primeiro."
     tr:
-      title: "Maksimumun en son düşer"
-      body: "Fazla ağır hacimde maksimal güç en son etkilenenlerden biridir. Hız ve patlayıcı güç ilk etkilenenler arasında."
+      title: "Maksimum güç"
+      body: "Fazla ağır hacimde en son düşenlerden biri. Hız ve patlayıcılık ilk gidenlerden."
 
   - key: niet-elke-slechte-week
     kind: myth
     en:
-      title: "Myth: a bad week means you're overtrained"
-      body: "Not true. Most bad weeks are just bad weeks. A dip after a hard block that then recovers is functional overreaching."
+      title: "Bad week"
+      body: "Myth: a bad week means you're overtrained. Most bad weeks are just bad weeks."
     nl:
-      title: "Mythe: een slechte week is overtraining"
-      body: "Niet waar. De meeste slechte weken zijn gewoon slechte weken. Een dip na een zwaar blok die weer herstelt is functionele overreaching."
+      title: "Slechte week"
+      body: "Mythe: een slechte week betekent overtraind. De meeste slechte weken zijn gewoon slechte weken."
     de:
-      title: "Mythos: Schlechte Woche heißt Übertraining"
-      body: "Stimmt nicht. Die meisten schlechten Wochen sind einfach schlechte Wochen. Ein Tief nach hartem Block, das sich erholt, ist funktionelles Overreaching."
+      title: "Schlechte Woche"
+      body: "Mythos: Eine schlechte Woche heißt übertrainiert. Meist ist es einfach eine schlechte Woche."
     es:
-      title: "Mito: una mala semana es sobreentrenamiento"
-      body: "No es cierto. Casi todas las malas semanas son solo eso. Un bajón tras un bloque duro que luego se recupera es sobrecarga funcional."
+      title: "Mala semana"
+      body: "Mito: una mala semana es sobreentrenamiento. Casi siempre es solo una mala semana."
     fr:
-      title: "Mythe : mauvaise semaine, donc surentraîné"
-      body: "Faux. La plupart des mauvaises semaines sont juste de mauvaises semaines. Une baisse après un bloc dur qui se rétablit est un surmenage fonctionnel."
+      title: "Mauvaise semaine"
+      body: "Mythe : une mauvaise semaine, c'est du surentraînement. La plupart sont juste de mauvaises semaines."
     pt:
-      title: "Mito: uma semana má é sobretreino"
-      body: "Não é verdade. A maioria das semanas más são só semanas más. Uma quebra após um bloco duro que depois recupera é sobrecarga funcional."
+      title: "Semana má"
+      body: "Mito: uma semana má é sobretreino. Quase sempre é só uma semana má."
     tr:
-      title: "Efsane: kötü bir hafta aşırı antrenmandır"
-      body: "Doğru değil. Çoğu kötü hafta sadece kötü bir haftadır. Zor bir bloktan sonra gelip geçen düşüş fonksiyonel aşırı yüklenmedir."
+      title: "Kötü hafta"
+      body: "Efsane: kötü bir hafta aşırı antrenman demek. Çoğu kötü hafta sadece kötü bir haftadır."
 
   - key: niet-alleen-training
     kind: myth
     en:
-      title: "Myth: overtraining is just too much training"
-      body: "Not true. Training isn't necessarily the only cause. Stress from work or family and sleep disorders can be part of it."
+      title: "Not just training"
+      body: "Myth: overtraining is just too much training. Stress from work or family and poor sleep can play a part."
     nl:
-      title: "Mythe: overtraining is gewoon te veel trainen"
-      body: "Niet waar. Training is niet per se de enige oorzaak. Stress van werk of thuis en slaapstoornissen kunnen meespelen."
+      title: "Niet alleen training"
+      body: "Mythe: overtraining is gewoon te veel trainen. Stress van werk of thuis en slecht slapen kunnen meespelen."
     de:
-      title: "Mythos: Übertraining ist nur zu viel Training"
-      body: "Stimmt nicht. Training ist nicht unbedingt die einzige Ursache. Stress in Job oder Familie und Schlafstörungen können mitspielen."
+      title: "Nicht nur Training"
+      body: "Mythos: Übertraining ist nur zu viel Training. Stress in Job oder Familie und schlechter Schlaf spielen mit."
     es:
-      title: "Mito: sobreentrenar es solo entrenar demasiado"
-      body: "No es cierto. El entrenamiento no es necesariamente la única causa. El estrés laboral o familiar y los trastornos del sueño pueden influir."
+      title: "No solo entreno"
+      body: "Mito: el sobreentrenamiento es solo entrenar de más. El estrés del trabajo o la familia y dormir mal influyen."
     fr:
-      title: "Mythe : tout vient de trop d'entraînement"
-      body: "Faux. L'entraînement n'est pas forcément la seule cause. Le stress au travail ou en famille et les troubles du sommeil peuvent jouer."
+      title: "Pas que l'entraînement"
+      body: "Mythe : le surentraînement, c'est trop s'entraîner. Stress du travail, famille et mauvais sommeil jouent."
     pt:
-      title: "Mito: sobretreino é só treinar demais"
-      body: "Não é verdade. O treino não é necessariamente a única causa. O stress do trabalho ou da família e as perturbações do sono podem contar."
+      title: "Não só treino"
+      body: "Mito: sobretreino é só treinar demais. Stress do trabalho ou da família e dormir mal também contam."
     tr:
-      title: "Efsane: aşırı antrenman sadece fazla çalışmaktır"
-      body: "Doğru değil. Antrenman tek sebep olmak zorunda değil. İş ya da aile stresi ve uyku bozuklukları da rol oynayabilir."
+      title: "Sadece antrenman değil"
+      body: "Efsane: aşırı antrenman sadece çok çalışmaktır. İş ya da aile stresi ve kötü uyku da rol oynar."
 
   - key: eerst-uitsluiten
     kind: fact
     en:
-      title: "Dieting and running down"
-      body: "Before calling it overtraining, rule out a calorie deficit, too little carbs or protein, and iron or magnesium deficiency."
+      title: "Rule it out"
+      body: "Before calling it overtraining, check for a calorie deficit, too few carbs or protein, or low iron."
     nl:
-      title: "Op dieet en leeggetrokken"
-      body: "Voor je het overtraining noemt: sluit eerst een calorietekort, te weinig koolhydraten of eiwit, en ijzer- of magnesiumtekort uit."
+      title: "Eerst uitsluiten"
+      body: "Voor je het overtraining noemt: check op een tekort, te weinig koolhydraten of eiwit, of ijzertekort."
     de:
-      title: "Diät und ausgelaugt"
-      body: "Bevor du es Übertraining nennst, schließ ein Kaloriendefizit, zu wenig Kohlenhydrate oder Protein und Eisen- oder Magnesiummangel aus."
+      title: "Erst ausschließen"
+      body: "Bevor du es Übertraining nennst, prüf Defizit, zu wenig Kohlenhydrate oder Protein und Eisenmangel."
     es:
-      title: "A dieta y sin fuerzas"
-      body: "Antes de llamarlo sobreentrenamiento, descarta un déficit calórico, pocos hidratos o proteína, y falta de hierro o magnesio."
+      title: "Descarta antes"
+      body: "Antes de llamarlo sobreentrenamiento, mira si hay déficit, pocos hidratos o proteína, o falta de hierro."
     fr:
-      title: "Au régime et à plat"
-      body: "Avant de parler de surentraînement, écarte un déficit calorique, trop peu de glucides ou de protéines, et un manque de fer ou de magnésium."
+      title: "Écarte d'abord"
+      body: "Avant de parler de surentraînement, vérifie déficit, manque de glucides ou protéines, ou de fer."
     pt:
-      title: "Em dieta e sem energia"
-      body: "Antes de lhe chamares sobretreino, exclui um défice calórico, poucos hidratos ou proteína, e falta de ferro ou magnésio."
+      title: "Exclui primeiro"
+      body: "Antes de lhe chamar sobretreino, vê se há défice, poucos hidratos ou proteína, ou falta de ferro."
     tr:
-      title: "Diyette ve bitkin"
-      body: "Buna aşırı antrenman demeden önce kalori açığını, az karbonhidrat ya da proteini ve demir veya magnezyum eksikliğini ele."
+      title: "Önce ele"
+      body: "Aşırı antrenman demeden önce kalori açığı, az karbonhidrat ya da protein ve demir eksikliğine bak."
 
   - key: ziek-terugschakelen
     kind: fact
     en:
-      title: "Training while ill"
-      body: "Stop or cut back training during an infection, and take the time to recover afterwards."
+      title: "When ill"
+      body: "Stop or cut back training during an infection, and take time to recover afterwards."
     nl:
-      title: "Trainen als je ziek bent"
+      title: "Als je ziek bent"
       body: "Stop of train minder tijdens een infectie, en neem daarna de tijd om te herstellen."
     de:
-      title: "Training bei Krankheit"
-      body: "Setz das Training bei einer Infektion aus oder fahr es runter, und nimm dir danach Zeit zur Erholung."
+      title: "Wenn du krank bist"
+      body: "Hör auf oder trainier weniger bei einer Infektion und nimm dir danach Zeit zur Erholung."
     es:
-      title: "Entrenar enfermo"
-      body: "Para o reduce el entrenamiento durante una infección, y date tiempo para recuperarte después."
+      title: "Si estás enfermo"
+      body: "Para o reduce el entreno durante una infección, y tómate tiempo para recuperarte después."
     fr:
-      title: "S'entraîner malade"
+      title: "Malade"
       body: "Arrête ou réduis l'entraînement pendant une infection, et prends le temps de récupérer ensuite."
     pt:
-      title: "Treinar doente"
-      body: "Para ou reduz o treino durante uma infeção, e dá-te tempo para recuperar depois."
+      title: "Doente"
+      body: "Para ou reduz o treino durante uma infeção, e dá tempo para recuperar depois."
     tr:
-      title: "Hastayken antrenman"
-      body: "Enfeksiyon sırasında antrenmanı bırak ya da azalt, sonrasında toparlanmak için kendine zaman tanı."
+      title: "Hastayken"
+      body: "Enfeksiyon sırasında antrenmanı bırak ya da azalt, sonra toparlanmak için zaman ayır."
 
   - key: naar-de-dokter
     kind: fact
     en:
-      title: "Flat for weeks?"
-      body: "If you're worn out and your performance stays down for weeks despite rest, see a doctor. They can look for other causes."
+      title: "Flat for weeks"
+      body: "Worn out and performing worse for weeks despite rest? See a doctor to look for other causes."
     nl:
-      title: "Al weken leeg?"
-      body: "Ben je op en blijven je prestaties weken laag ondanks rust, ga dan naar een dokter. Die kan naar andere oorzaken kijken."
+      title: "Weken leeg"
+      body: "Weken uitgeput en slechter presteren ondanks rust? Ga naar een arts om andere oorzaken te zoeken."
     de:
-      title: "Seit Wochen platt?"
-      body: "Bist du erschöpft und bleibt deine Leistung trotz Ruhe wochenlang unten, geh zum Arzt. Er kann nach anderen Ursachen suchen."
+      title: "Wochenlang platt"
+      body: "Wochenlang erschöpft und schwächer trotz Ruhe? Geh zum Arzt, um andere Ursachen zu suchen."
     es:
-      title: "¿Semanas sin fuerzas?"
-      body: "Si estás agotado y tu rendimiento sigue bajo durante semanas pese al descanso, ve al médico. Puede buscar otras causas."
+      title: "Semanas sin fuerza"
+      body: "¿Semanas agotado y rindiendo peor pese al descanso? Ve al médico para buscar otras causas."
     fr:
-      title: "À plat depuis des semaines ?"
-      body: "Si tu es épuisé et que tes perfs restent basses des semaines malgré le repos, consulte un médecin. Il peut chercher d'autres causes."
+      title: "À plat des semaines"
+      body: "Épuisé et moins performant depuis des semaines malgré le repos ? Vois un médecin."
     pt:
-      title: "Há semanas sem energia?"
-      body: "Se estás esgotado e o rendimento continua baixo durante semanas apesar do descanso, vai ao médico. Pode procurar outras causas."
+      title: "Semanas sem forças"
+      body: "Semanas esgotado e a render pior apesar do descanso? Vai ao médico procurar outras causas."
     tr:
-      title: "Haftalardır bitkin misin?"
-      body: "Yorgunsan ve dinlenmeye rağmen performansın haftalarca düşük kalıyorsa doktora git. Başka nedenlere bakabilir."
+      title: "Haftalardır bitkin"
+      body: "Dinlenmeye rağmen haftalardır yorgun ve performansın düşükse diğer sebepler için doktora git."

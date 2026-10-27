@@ -1,169 +1,170 @@
 article: discipline
+emoji: "🧱"
 tips:
   - key: motivatie-of-discipline
     kind: fact
     en:
-      title: "Motivation or discipline"
-      body: "Motivation is a wish to act that comes and goes. Discipline is the set of habits and commitments that keep you going when it dips."
+      title: "Motivation"
+      body: "Comes and goes. Discipline is the habits and commitments that keep you going when it dips."
     nl:
-      title: "Motivatie of discipline"
-      body: "Motivatie is zin om iets te doen, en die komt en gaat. Discipline zijn de gewoontes en afspraken die je laten doorgaan als die zin wegzakt."
+      title: "Motivatie"
+      body: "Komt en gaat. Discipline zijn de gewoontes en afspraken die je laten doorgaan als die motivatie zakt."
     de:
-      title: "Motivation oder Disziplin"
-      body: "Motivation ist Lust zu handeln, die kommt und geht. Disziplin sind die Gewohnheiten und Zusagen, die dich weitermachen lassen, wenn sie fehlt."
+      title: "Motivation"
+      body: "Kommt und geht. Disziplin sind die Gewohnheiten und Zusagen, die dich tragen, wenn sie nachlässt."
     es:
-      title: "Motivación o disciplina"
-      body: "La motivación son ganas de actuar que van y vienen. La disciplina son los hábitos y compromisos que te mantienen cuando bajan."
+      title: "Motivación"
+      body: "Va y viene. La disciplina son los hábitos y compromisos que te sostienen cuando baja."
     fr:
-      title: "Motivation ou discipline"
-      body: "La motivation, c'est l'envie d'agir, qui va et vient. La discipline, ce sont les habitudes et engagements qui te font continuer quand elle baisse."
+      title: "Motivation"
+      body: "Elle va et vient. La discipline, ce sont les habitudes et engagements qui te portent quand elle baisse."
     pt:
-      title: "Motivação ou disciplina"
-      body: "A motivação é vontade de agir, que vai e vem. A disciplina são os hábitos e compromissos que te mantêm a andar quando ela baixa."
+      title: "Motivação"
+      body: "Vai e vem. A disciplina são os hábitos e compromissos que te seguram quando ela desce."
     tr:
-      title: "Motivasyon mu disiplin mi"
-      body: "Motivasyon gelip giden bir harekete geçme isteği. Disiplin ise o istek düştüğünde seni devam ettiren alışkanlıklar ve sözler."
+      title: "Motivasyon"
+      body: "Gelir gider. Disiplin, motivasyon düşünce seni yürüten alışkanlıklar ve sözlerdir."
 
   - key: zin-niet-nodig
     kind: myth
     en:
-      title: "Myth: you need to feel motivated"
-      body: "Not true. Training success depends more on routines that keep you going than on feeling like it."
+      title: "Feeling like it"
+      body: "Myth: you need to feel motivated. Routines that keep you going matter more than being in the mood."
     nl:
-      title: "Mythe: je moet er zin in hebben"
-      body: "Klopt niet. Of je training slaagt hangt meer af van routines die je laten doorgaan dan van of je er zin in hebt."
+      title: "Zin hebben"
+      body: "Mythe: je moet zin hebben. Routines die je laten doorgaan tellen meer dan of je er zin in hebt."
     de:
-      title: "Mythos: du brauchst Motivation"
-      body: "Stimmt nicht. Ob dein Training gelingt, hängt mehr von Routinen ab, die dich dranbleiben lassen, als davon, ob du Lust hast."
+      title: "Lust haben"
+      body: "Mythos: Du musst motiviert sein. Routinen, die dich tragen, zählen mehr als Lust."
     es:
-      title: "Mito: tienes que estar motivado"
-      body: "No es cierto. Que tu entreno funcione depende más de rutinas que te mantienen que de tener ganas."
+      title: "Tener ganas"
+      body: "Mito: necesitas tener ganas. Las rutinas que te mantienen cuentan más que el ánimo del día."
     fr:
-      title: "Mythe : il faut être motivé"
-      body: "Faux. La réussite de ton entraînement dépend plus de routines qui te font continuer que de l'envie du moment."
+      title: "Avoir envie"
+      body: "Mythe : il faut avoir envie. Les routines qui te font tenir comptent plus que l'envie du jour."
     pt:
-      title: "Mito: tens de estar motivado"
-      body: "Não é verdade. O sucesso do treino depende mais de rotinas que te mantêm a andar do que de teres vontade."
+      title: "Ter vontade"
+      body: "Mito: precisas de ter vontade. As rotinas que te mantêm contam mais do que a disposição."
     tr:
-      title: "Efsane: motive hissetmen gerekir"
-      body: "Doğru değil. Antrenmanın başarısı canının istemesinden çok seni devam ettiren rutinlere bağlı."
+      title: "Canın istemesi"
+      body: "Efsane: motive hissetmen gerekir. Seni yürüten rutinler, canının istemesinden daha önemli."
 
   - key: als-dan
     kind: fact
     en:
-      title: "If-then plans"
-      body: "Link a trigger to an action, like if it's Tuesday 7 pm, I go to the gym. That makes your sessions more automatic."
+      title: "If-then"
+      body: "If it's Tuesday 7 pm, I go to the gym. Linking a trigger to an action makes training more automatic."
     nl:
-      title: "Als-dan-plannen"
-      body: "Koppel een moment aan een actie, zoals: als het dinsdag 19.00 uur is, ga ik naar de gym. Zo gaan je trainingen meer vanzelf."
+      title: "Als-dan"
+      body: "Als het dinsdag 19 uur is, ga ik naar de gym. Een trigger koppelen aan een actie maakt trainen automatischer."
     de:
-      title: "Wenn-dann-Pläne"
-      body: "Verknüpf einen Auslöser mit einer Handlung, etwa: Wenn es Dienstag 19 Uhr ist, gehe ich ins Gym. So laufen deine Einheiten automatischer."
+      title: "Wenn-dann"
+      body: "Wenn es Dienstag 19 Uhr ist, gehe ich ins Gym. Auslöser plus Handlung macht Training automatischer."
     es:
-      title: "Planes si-entonces"
-      body: "Une un momento a una acción, como: si es martes a las 19:00, voy al gimnasio. Así tus sesiones salen más solas."
+      title: "Si-entonces"
+      body: "Si es martes a las 19:00, voy al gimnasio. Unir un disparador a una acción hace el entreno más automático."
     fr:
-      title: "Les plans si-alors"
-      body: "Relie un déclencheur à une action, comme : si c'est mardi 19 h, je vais à la salle. Tes séances deviennent plus automatiques."
+      title: "Si-alors"
+      body: "Si c'est mardi 19 h, je vais à la salle. Lier un déclencheur à une action rend l'entraînement automatique."
     pt:
-      title: "Planos se-então"
-      body: "Liga um gatilho a uma ação, como: se for terça às 19h, vou ao ginásio. Assim os treinos saem mais em piloto automático."
+      title: "Se-então"
+      body: "Se é terça às 19h, vou ao ginásio. Ligar um gatilho a uma ação torna o treino mais automático."
     tr:
-      title: "Eğer-o zaman planları"
-      body: "Bir tetikleyiciyi bir eyleme bağla: salı saat 19.00 olursa spora giderim gibi. Böylece antrenmanların daha otomatik olur."
+      title: "Eğer-o zaman"
+      body: "Salı saat 19 ise salona giderim. Bir tetikleyiciyi bir eyleme bağlamak antrenmanı otomatikleştirir."
 
   - key: vijf-minuten
     kind: fact
     en:
-      title: "Five minutes to start"
-      body: "Can't get going? Start with a 5-minute warm-up. A small first step helps you get past the inertia and carry on."
+      title: "5 minutes"
+      body: "Can't get going? Start with a 5-minute warm-up. A small first step gets you past the inertia."
     nl:
-      title: "Vijf minuten om te starten"
-      body: "Kom je niet op gang? Begin met een warming-up van 5 minuten. Een kleine eerste stap helpt je over de drempel en verder."
+      title: "5 minuten"
+      body: "Kom je niet op gang? Begin met 5 minuten opwarmen. Een kleine eerste stap helpt je over de drempel."
     de:
-      title: "Fünf Minuten zum Start"
-      body: "Kommst du nicht in die Gänge? Fang mit 5 Minuten Aufwärmen an. Ein kleiner erster Schritt hilft dir über die Trägheit hinweg."
+      title: "5 Minuten"
+      body: "Kommst du nicht in Gang? Fang mit 5 Minuten Aufwärmen an. Ein kleiner Schritt bringt dich über die Schwelle."
     es:
-      title: "Cinco minutos para empezar"
-      body: "¿No arrancas? Empieza con 5 minutos de calentamiento. Un primer paso pequeño te ayuda a vencer la inercia y seguir."
+      title: "5 minutos"
+      body: "¿No arrancas? Empieza con 5 minutos de calentamiento. Un primer paso pequeño vence la inercia."
     fr:
-      title: "Cinq minutes pour démarrer"
-      body: "Pas moyen de t'y mettre ? Commence par 5 minutes d'échauffement. Un petit premier pas t'aide à vaincre l'inertie et à continuer."
+      title: "5 minutes"
+      body: "Pas moyen de démarrer ? Commence par 5 minutes d'échauffement. Un petit premier pas casse l'inertie."
     pt:
-      title: "Cinco minutos para arrancar"
-      body: "Não consegues arrancar? Começa com 5 minutos de aquecimento. Um primeiro passo pequeno ajuda-te a vencer a inércia e continuar."
+      title: "5 minutos"
+      body: "Não arrancas? Começa com 5 minutos de aquecimento. Um primeiro passo pequeno vence a inércia."
     tr:
-      title: "Başlamak için beş dakika"
-      body: "Bir türlü başlayamıyor musun? 5 dakikalık ısınmayla başla. Küçük bir ilk adım ataleti yenmene ve devam etmene yardım eder."
+      title: "5 dakika"
+      body: "Başlayamıyor musun? 5 dakikalık ısınmayla başla. Küçük bir ilk adım ataleti kırar."
 
   - key: minimale-training
     kind: fact
     en:
-      title: "The minimum session"
-      body: "Motivation low? Shrink the target, for example two compound lifts of two sets each. You keep the habit going and still get data."
+      title: "2 lifts, 2 sets"
+      body: "That's a minimum session for low days. You keep the habit going and still get data."
     nl:
-      title: "De minimale training"
-      body: "Weinig zin? Maak het doel kleiner, bijvoorbeeld twee basisoefeningen van twee sets. Zo houd je de gewoonte vast en heb je toch data."
+      title: "2 oefeningen, 2 sets"
+      body: "Een minimale training voor dagen zonder puf. De gewoonte blijft staan en je hebt toch data."
     de:
-      title: "Die Minimal-Einheit"
-      body: "Wenig Lust? Mach das Ziel kleiner, etwa zwei Grundübungen mit je zwei Sätzen. So bleibt die Gewohnheit, und du hast trotzdem Daten."
+      title: "2 Übungen, 2 Sätze"
+      body: "Eine Minimaleinheit für schwache Tage. Die Gewohnheit bleibt, und du hast trotzdem Daten."
     es:
-      title: "La sesión mínima"
-      body: "¿Pocas ganas? Achica el objetivo, por ejemplo dos ejercicios básicos de dos series. Mantienes el hábito y sigues teniendo datos."
+      title: "2 ejercicios, 2 series"
+      body: "Una sesión mínima para días flojos. Mantienes el hábito y aun así tienes datos."
     fr:
-      title: "La séance minimum"
-      body: "Peu d'envie ? Réduis l'objectif, par exemple deux exercices de base à deux séries. Tu gardes l'habitude et tu as quand même des données."
+      title: "2 exos, 2 séries"
+      body: "Une séance minimum pour les jours sans. L'habitude tient et tu as quand même des données."
     pt:
-      title: "O treino mínimo"
-      body: "Pouca vontade? Encolhe o objetivo, por exemplo dois exercícios compostos de duas séries. Manténs o hábito e tens dados na mesma."
+      title: "2 exercícios, 2 séries"
+      body: "Um treino mínimo para dias fracos. Manténs o hábito e ainda ficas com dados."
     tr:
-      title: "Asgari antrenman"
-      body: "Canın mı istemiyor? Hedefi küçült, örneğin ikişer setlik iki temel hareket. Alışkanlığı korursun ve yine de veri toplarsın."
+      title: "2 hareket, 2 set"
+      body: "Keyifsiz günler için asgari antrenman. Alışkanlık sürer, yine de veri toplarsın."
 
   - key: drukke-dag
     kind: myth
     en:
-      title: "Myth: a busy day means no workout"
-      body: "Not true. Dropping all training on busy days is a common mistake. A short backup session keeps you on track."
+      title: "Busy day"
+      body: "Myth: a busy day means no workout. A short backup session keeps you on track."
     nl:
-      title: "Mythe: drukke dag, dus geen training"
-      body: "Klopt niet. Op drukke dagen alles laten vallen is een veelgemaakte fout. Een korte reservetraining houdt je op koers."
+      title: "Drukke dag"
+      body: "Mythe: op een drukke dag train je niet. Een korte noodtraining houdt je op koers."
     de:
-      title: "Mythos: voller Tag heißt kein Training"
-      body: "Stimmt nicht. An vollen Tagen alles ausfallen zu lassen ist ein häufiger Fehler. Eine kurze Ersatz-Einheit hält dich auf Kurs."
+      title: "Voller Tag"
+      body: "Mythos: An vollen Tagen fällt Training aus. Eine kurze Ersatzeinheit hält dich auf Kurs."
     es:
-      title: "Mito: día ocupado, sin entreno"
-      body: "No es cierto. Dejarlo todo en los días ocupados es un error común. Una sesión corta de reserva te mantiene en marcha."
+      title: "Día ocupado"
+      body: "Mito: un día ocupado es un día sin entreno. Una sesión corta de reserva te mantiene en marcha."
     fr:
-      title: "Mythe : journée chargée, pas de séance"
-      body: "Faux. Tout laisser tomber les jours chargés est une erreur courante. Une courte séance de secours te garde sur les rails."
+      title: "Journée chargée"
+      body: "Mythe : journée chargée, pas de séance. Une courte séance de secours te garde sur les rails."
     pt:
-      title: "Mito: dia cheio, sem treino"
-      body: "Não é verdade. Largar tudo nos dias cheios é um erro comum. Um treino curto de reserva mantém-te no caminho."
+      title: "Dia ocupado"
+      body: "Mito: dia ocupado é dia sem treino. Um treino curto de reserva mantém-te no caminho."
     tr:
-      title: "Efsane: yoğun gün antrenmansız geçer"
-      body: "Doğru değil. Yoğun günlerde antrenmanı tamamen bırakmak yaygın bir hata. Kısa bir yedek antrenman seni yolda tutar."
+      title: "Yoğun gün"
+      body: "Efsane: yoğun günde antrenman olmaz. Kısa bir yedek antrenman seni yolda tutar."
 
   - key: minder-keuzes
     kind: fact
     en:
       title: "Fewer choices"
-      body: "A fixed gym time, default meals and a standard shopping list keep the demand on your willpower low, even when you're stressed."
+      body: "A fixed gym time, default meals and a standard shopping list spare your willpower, even when stressed."
     nl:
       title: "Minder keuzes"
-      body: "Een vaste gymtijd, standaardmaaltijden en een vast boodschappenlijstje vragen weinig van je wilskracht, ook als je gestrest bent."
+      body: "Een vaste gymtijd, standaardmaaltijden en een vaste boodschappenlijst sparen je wilskracht, ook bij stress."
     de:
       title: "Weniger Entscheidungen"
-      body: "Eine feste Trainingszeit, Standardmahlzeiten und eine feste Einkaufsliste fordern wenig Willenskraft, auch wenn du gestresst bist."
+      body: "Feste Trainingszeit, Standardessen und feste Einkaufsliste schonen die Willenskraft, auch unter Stress."
     es:
       title: "Menos decisiones"
-      body: "Una hora fija de gimnasio, comidas por defecto y una lista de la compra estándar piden poca fuerza de voluntad, incluso con estrés."
+      body: "Hora fija de gym, comidas por defecto y lista de la compra fija ahorran voluntad, incluso con estrés."
     fr:
       title: "Moins de choix"
-      body: "Une heure fixe à la salle, des repas par défaut et une liste de courses type demandent peu de volonté, même quand tu es stressé."
+      body: "Heure de salle fixe, repas par défaut et liste de courses type ménagent ta volonté, même stressé."
     pt:
       title: "Menos escolhas"
-      body: "Uma hora fixa de ginásio, refeições por defeito e uma lista de compras padrão pedem pouca força de vontade, mesmo com stress."
+      body: "Hora fixa de treino, refeições padrão e lista de compras fixa poupam força de vontade, mesmo com stress."
     tr:
       title: "Daha az seçim"
-      body: "Sabit spor saati, hazır öğünler ve standart bir alışveriş listesi, stresliyken bile iradeni az yorar."
+      body: "Sabit spor saati, hazır öğünler ve standart alışveriş listesi stresliyken bile iradeni korur."

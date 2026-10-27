@@ -1,217 +1,218 @@
 article: meal-timing
+emoji: "⏰"
 tips:
   - key: dagtotaal-eerst
     kind: fact
     en:
-      title: "Total beats timing"
-      body: "Where protein timing seemed to help, those groups ate more protein. Matched for total, the gap mostly vanished. A small effect can't be ruled out."
+      title: "Daily total"
+      body: "Where protein timing seemed to help, people ate more protein. With equal totals the gap mostly vanished."
     nl:
-      title: "Dagtotaal gaat voor timing"
-      body: "Waar eiwit-timing leek te helpen, aten die groepen meer eiwit. Bij gelijk totaal viel het verschil grotendeels weg. Een klein effect is niet uitgesloten."
+      title: "Dagtotaal"
+      body: "Waar eiwittiming leek te helpen, aten mensen meer eiwit. Bij een gelijk totaal verdween het verschil grotendeels."
     de:
-      title: "Tagesmenge vor Timing"
-      body: "Wo Timing zu helfen schien, aßen die Gruppen mehr Eiweiß. Bei gleicher Menge verschwand der Unterschied fast. Ein kleiner Effekt bleibt möglich."
+      title: "Tagessumme"
+      body: "Wo Protein-Timing zu helfen schien, aßen die Leute mehr Protein. Bei gleicher Summe verschwand der Effekt meist."
     es:
-      title: "El total gana al horario"
-      body: "Donde el horario parecía ayudar, esos grupos comían más proteína. Igualando el total, la diferencia casi desapareció. No se descarta un efecto pequeño."
+      title: "Total diario"
+      body: "Donde el timing de proteína parecía ayudar, se comía más proteína. Con el mismo total, la diferencia casi se fue."
     fr:
-      title: "Le total avant l'horaire"
-      body: "Là où le timing semblait aider, ces groupes mangeaient plus de protéines. À total égal, l'écart a presque disparu. Un petit effet n'est pas exclu."
+      title: "Total du jour"
+      body: "Là où le timing semblait aider, on mangeait plus de protéines. À total égal, l'écart disparaissait presque."
     pt:
-      title: "O total vale mais que a hora"
-      body: "Onde o timing parecia ajudar, esses grupos comiam mais proteína. Com o total igual, a diferença quase desapareceu. Não se exclui um efeito pequeno."
+      title: "Total diário"
+      body: "Onde o timing da proteína parecia ajudar, comia-se mais proteína. Com o mesmo total, a diferença quase sumiu."
     tr:
-      title: "Toplam, zamanlamadan önce gelir"
-      body: "Zamanlamanın işe yaradığı çalışmalarda o gruplar daha çok protein yiyordu. Toplam eşitlenince fark neredeyse kayboldu. Küçük bir etki dışlanamıyor."
+      title: "Günlük toplam"
+      body: "Protein zamanlamasının işe yaradığı yerde daha çok protein yeniyordu. Toplam eşitken fark çoğunlukla kayboldu."
 
   - key: eiwit-verdelen
     kind: fact
     en:
-      title: "Spreading your protein"
-      body: "The ISSN suggests 20 to 40 g of protein every 3 to 4 hours. Three or four meals with a decent portion each gets you there."
+      title: "Every 3 to 4 hours"
+      body: "Have 20 to 40 g of protein, the ISSN suggests. Three or four decent meals get you there."
     nl:
-      title: "Je eiwit verdelen"
-      body: "De ISSN raadt 20 tot 40 gram eiwit aan, elke 3 tot 4 uur. Drie of vier maaltijden met elk een flinke portie en je zit goed."
+      title: "Om de 3 à 4 uur"
+      body: "20 tot 40 gram eiwit, oppert de ISSN. Drie of vier fatsoenlijke maaltijden brengen je er."
     de:
-      title: "Eiweiß verteilen"
-      body: "Die ISSN rät zu 20 bis 40 g Eiweiß alle 3 bis 4 Stunden. Drei oder vier Mahlzeiten mit je einer ordentlichen Portion reichen dafür."
+      title: "Alle 3 bis 4 Std."
+      body: "20 bis 40 g Protein, schlägt die ISSN vor. Drei oder vier ordentliche Mahlzeiten reichen dafür."
     es:
-      title: "Repartir la proteína"
-      body: "La ISSN sugiere 20 a 40 g de proteína cada 3 a 4 horas. Con tres o cuatro comidas con una buena ración cada una lo tienes."
+      title: "Cada 3 o 4 horas"
+      body: "Entre 20 y 40 g de proteína, sugiere la ISSN. Tres o cuatro comidas decentes te llevan ahí."
     fr:
-      title: "Répartir tes protéines"
-      body: "L'ISSN conseille 20 à 40 g de protéines toutes les 3 à 4 heures. Trois ou quatre repas avec une bonne portion chacun, et c'est fait."
+      title: "Toutes les 3 à 4 h"
+      body: "20 à 40 g de protéines, suggère l'ISSN. Trois ou quatre vrais repas y suffisent."
     pt:
-      title: "Distribuir a proteína"
-      body: "A ISSN sugere 20 a 40 g de proteína a cada 3 a 4 horas. Três ou quatro refeições com uma boa porção cada chegam."
+      title: "A cada 3 a 4 horas"
+      body: "20 a 40 g de proteína, sugere a ISSN. Três ou quatro refeições decentes chegam."
     tr:
-      title: "Proteinini dağıtmak"
-      body: "ISSN her 3 ila 4 saatte 20 ila 40 g protein öneriyor. Her birinde iyi bir porsiyon olan üç ya da dört öğünle bu tamam."
+      title: "3-4 saatte bir"
+      body: "ISSN 20-40 g protein öneriyor. Üç dört düzgün öğünle oraya varırsın."
 
   - key: anabool-venster
     kind: myth
     en:
-      title: "Myth: protein must come right after training"
-      body: "Not true. In 21 trained men, 25 g of protein right before or right after training gave the same results over 10 weeks."
+      title: "Anabolic window"
+      body: "Myth: protein must come right after training. 25 g right before or right after gave the same results over 10 weeks."
     nl:
-      title: "Mythe: eiwit moet direct na de training"
-      body: "Klopt niet. Bij 21 getrainde mannen gaf 25 gram eiwit vlak voor of vlak na de training na 10 weken hetzelfde resultaat."
+      title: "Anabool venster"
+      body: "Mythe: eiwit moet direct na de training. 25 gram vlak voor of vlak na gaf over 10 weken hetzelfde resultaat."
     de:
-      title: "Mythos: Eiweiß muss direkt nach dem Training"
-      body: "Stimmt nicht. Bei 21 trainierten Männern brachten 25 g Eiweiß direkt vor oder direkt nach dem Training über 10 Wochen dasselbe."
+      title: "Anaboles Fenster"
+      body: "Mythos: Protein muss direkt nach dem Training. 25 g direkt vor oder nach brachten in 10 Wochen dasselbe."
     es:
-      title: "Mito: la proteína, justo después de entrenar"
-      body: "No es cierto. En 21 hombres entrenados, 25 g de proteína justo antes o justo después de entrenar dieron lo mismo en 10 semanas."
+      title: "Ventana anabólica"
+      body: "Mito: la proteína va justo después de entrenar. 25 g justo antes o después dieron lo mismo en 10 semanas."
     fr:
-      title: "Mythe : protéines juste après la séance"
-      body: "Faux. Chez 21 hommes entraînés, 25 g de protéines juste avant ou juste après la séance ont donné le même résultat sur 10 semaines."
+      title: "Fenêtre anabolique"
+      body: "Mythe : les protéines juste après la séance. 25 g juste avant ou après ont donné pareil sur 10 semaines."
     pt:
-      title: "Mito: proteína logo a seguir ao treino"
-      body: "Não é verdade. Em 21 homens treinados, 25 g de proteína logo antes ou logo depois do treino deram o mesmo em 10 semanas."
+      title: "Janela anabólica"
+      body: "Mito: a proteína tem de vir logo após o treino. 25 g mesmo antes ou depois deram o mesmo em 10 semanas."
     tr:
-      title: "Efsane: protein antrenmandan hemen sonra"
-      body: "Doğru değil. 21 antrenmanlı erkekte antrenmandan hemen önce ya da hemen sonra 25 g protein, 10 haftada aynı sonucu verdi."
+      title: "Anabolik pencere"
+      body: "Efsane: protein antrenmandan hemen sonra alınmalı. Hemen önce ya da sonra 25 g, 10 haftada aynı sonucu verdi."
 
   - key: zes-maaltijden
     kind: myth
     en:
-      title: "Myth: six small meals boost your metabolism"
-      body: "Not true. Eating more often does not appear to raise the energy you burn, at rest or in total."
+      title: "6 small meals"
+      body: "Myth: six small meals boost your metabolism. Eating more often doesn't seem to raise what you burn."
     nl:
-      title: "Mythe: zes maaltijden jagen je stofwisseling op"
-      body: "Klopt niet. Vaker eten lijkt niet meer energie te verbruiken, niet in rust en niet over de hele dag."
+      title: "6 kleine maaltijden"
+      body: "Mythe: zes kleine maaltijden jagen je stofwisseling aan. Vaker eten lijkt je verbranding niet te verhogen."
     de:
-      title: "Mythos: Sechs Mahlzeiten pushen den Stoffwechsel"
-      body: "Stimmt nicht. Öfter essen scheint den Energieverbrauch nicht zu erhöhen, weder in Ruhe noch insgesamt."
+      title: "6 kleine Mahlzeiten"
+      body: "Mythos: Sechs kleine Mahlzeiten kurbeln den Stoffwechsel an. Öfter essen erhöht den Verbrauch offenbar nicht."
     es:
-      title: "Mito: seis comidas aceleran el metabolismo"
-      body: "No es cierto. Comer más a menudo no parece aumentar la energía que gastas, ni en reposo ni en total."
+      title: "6 comidas pequeñas"
+      body: "Mito: seis comidas pequeñas aceleran el metabolismo. Comer más veces no parece subir lo que quemas."
     fr:
-      title: "Mythe : six repas boostent le métabolisme"
-      body: "Faux. Manger plus souvent ne semble pas augmenter l'énergie que tu dépenses, ni au repos ni sur la journée."
+      title: "6 petits repas"
+      body: "Mythe : six petits repas boostent le métabolisme. Manger plus souvent ne semble pas augmenter la dépense."
     pt:
-      title: "Mito: seis refeições aceleram o metabolismo"
-      body: "Não é verdade. Comer mais vezes não parece aumentar a energia que gastas, nem em repouso nem no total."
+      title: "6 refeições pequenas"
+      body: "Mito: seis refeições pequenas aceleram o metabolismo. Comer mais vezes não parece subir o gasto."
     tr:
-      title: "Efsane: altı öğün metabolizmayı hızlandırır"
-      body: "Doğru değil. Daha sık yemek, ne dinlenirken ne de gün boyunca harcadığın enerjiyi artırıyor gibi görünmüyor."
+      title: "6 küçük öğün"
+      body: "Efsane: altı küçük öğün metabolizmayı hızlandırır. Sık yemek yakılan enerjiyi artırmıyor gibi."
 
   - key: aantal-maaltijden
     kind: fact
     en:
-      title: "How many meals?"
-      body: "Meal frequency matters more for hunger than for weight. Starving on three meals? Eat four. Full on two big ones? That works too."
+      title: "3 or 4 meals"
+      body: "Meal count matters more for hunger than weight. Starving on three? Eat four. Full on two? Fine too."
     nl:
-      title: "Hoeveel maaltijden?"
-      body: "Hoe vaak je eet doet meer voor je honger dan voor je gewicht. Uitgehongerd op drie maaltijden? Eet er vier. Vol op twee grote? Ook goed."
+      title: "3 of 4 maaltijden"
+      body: "Het aantal telt meer voor honger dan voor gewicht. Honger bij drie? Eet er vier. Vol van twee? Prima."
     de:
-      title: "Wie viele Mahlzeiten?"
-      body: "Die Zahl der Mahlzeiten wirkt mehr auf Hunger als aufs Gewicht. Hungrig bei drei? Iss vier. Satt mit zwei großen? Passt auch."
+      title: "3 oder 4 Mahlzeiten"
+      body: "Die Zahl zählt mehr für Hunger als fürs Gewicht. Hunger bei drei? Iss vier. Satt von zwei? Auch gut."
     es:
-      title: "¿Cuántas comidas?"
-      body: "Cuántas veces comes importa más para el hambre que para el peso. ¿Hambre con tres? Haz cuatro. ¿Lleno con dos grandes? También vale."
+      title: "3 o 4 comidas"
+      body: "El número importa más para el hambre que para el peso. ¿Hambre con tres? Haz cuatro. ¿Lleno con dos? Vale."
     fr:
-      title: "Combien de repas ?"
-      body: "Le nombre de repas joue plus sur la faim que sur le poids. Affamé avec trois ? Fais-en quatre. Calé avec deux gros ? Ça marche aussi."
+      title: "3 ou 4 repas"
+      body: "Le nombre compte plus pour la faim que pour le poids. Faim avec trois ? Fais-en quatre. Calé avec deux ? Ok."
     pt:
-      title: "Quantas refeições?"
-      body: "O número de refeições conta mais para a fome do que para o peso. Cheio de fome com três? Faz quatro. Saciado com duas grandes? Também serve."
+      title: "3 ou 4 refeições"
+      body: "O número conta mais para a fome do que para o peso. Fome com três? Come quatro. Cheio com duas? Também."
     tr:
-      title: "Kaç öğün?"
-      body: "Öğün sayısı kilodan çok açlığı etkiler. Üç öğünde çok mu acıkıyorsun? Dört ye. İki büyük öğünle tok musun? O da olur."
+      title: "3 ya da 4 öğün"
+      body: "Öğün sayısı kilodan çok açlığı etkiler. Üçle aç mısın? Dört ye. İkiyle tok musun? O da olur."
 
   - key: ontbijt
     kind: myth
     en:
-      title: "Myth: you need breakfast to lose weight"
-      body: "Not true. In trials, people told to eat breakfast ate about 260 kcal a day more and weighed 0.44 kg more than skippers."
+      title: "260 kcal"
+      body: "Myth: you need breakfast to lose weight. People told to eat it ate that much more a day than skippers."
     nl:
-      title: "Mythe: je moet ontbijten om af te vallen"
-      body: "Klopt niet. In studies aten mensen die moesten ontbijten zo'n 260 kcal per dag meer en wogen ze 0,44 kg meer dan overslaanders."
+      title: "260 kcal"
+      body: "Mythe: zonder ontbijt val je niet af. Mensen die moesten ontbijten aten zoveel meer per dag dan oversladers."
     de:
-      title: "Mythos: Ohne Frühstück kein Abnehmen"
-      body: "Stimmt nicht. In Studien aßen Leute mit Frühstück etwa 260 kcal am Tag mehr und wogen 0,44 kg mehr als die ohne."
+      title: "260 kcal"
+      body: "Mythos: Ohne Frühstück nimmst du nicht ab. Wer frühstücken sollte, aß so viel mehr am Tag als die anderen."
     es:
-      title: "Mito: hay que desayunar para adelgazar"
-      body: "No es cierto. En ensayos, quienes debían desayunar comieron unas 260 kcal más al día y pesaron 0,44 kg más que quienes no."
+      title: "260 kcal"
+      body: "Mito: sin desayuno no adelgazas. Quienes debían desayunar comieron eso más al día que quienes no."
     fr:
-      title: "Mythe : il faut petit-déjeuner pour maigrir"
-      body: "Faux. Dans des essais, ceux qui devaient petit-déjeuner mangeaient environ 260 kcal de plus par jour et pesaient 0,44 kg de plus."
+      title: "260 kcal"
+      body: "Mythe : sans petit-déj, pas de perte de poids. Ceux qui devaient en prendre mangeaient ça de plus par jour."
     pt:
-      title: "Mito: tens de tomar o pequeno-almoço"
-      body: "Não é verdade. Em ensaios, quem tinha de tomar o pequeno-almoço comeu cerca de 260 kcal a mais por dia e pesou mais 0,44 kg."
+      title: "260 kcal"
+      body: "Mito: sem pequeno-almoço não emagreces. Quem tinha de o tomar comeu isso a mais por dia."
     tr:
-      title: "Efsane: zayıflamak için kahvaltı şart"
-      body: "Doğru değil. Denemelerde kahvaltı etmesi istenenler günde yaklaşık 260 kcal fazla yedi ve atlayanlardan 0,44 kg ağırdı."
+      title: "260 kcal"
+      body: "Efsane: kahvaltısız kilo verilmez. Kahvaltı yapması istenenler atlayanlardan günde bu kadar fazla yedi."
 
   - key: groot-ontbijt
     kind: fact
     en:
-      title: "Big breakfast or big dinner"
-      body: "On the same calories, making breakfast or dinner the biggest meal gave the same weight loss. People were less hungry with the big breakfast."
+      title: "Big breakfast"
+      body: "Or big dinner: same weight loss on the same calories. People were less hungry with the big breakfast."
     nl:
-      title: "Groot ontbijt of groot diner"
-      body: "Met dezelfde calorieën gaf een groot ontbijt of een groot diner hetzelfde gewichtsverlies. Met het grote ontbijt hadden mensen minder honger."
+      title: "Groot ontbijt"
+      body: "Of groot diner: zelfde gewichtsverlies bij dezelfde calorieën. Met een groot ontbijt hadden mensen minder honger."
     de:
-      title: "Großes Frühstück oder Abendessen"
-      body: "Bei gleichen Kalorien brachte ein großes Frühstück oder großes Abendessen gleich viel Gewichtsverlust. Mit großem Frühstück war der Hunger kleiner."
+      title: "Großes Frühstück"
+      body: "Oder großes Abendessen: gleicher Gewichtsverlust bei gleichen Kalorien. Mit großem Frühstück weniger Hunger."
     es:
-      title: "Gran desayuno o gran cena"
-      body: "Con las mismas calorías, un gran desayuno o una gran cena dieron la misma pérdida de peso. Con el gran desayuno había menos hambre."
+      title: "Gran desayuno"
+      body: "O gran cena: misma pérdida con las mismas calorías. Con el desayuno grande, menos hambre."
     fr:
-      title: "Gros petit-déj ou gros dîner"
-      body: "À calories égales, un gros petit-déjeuner ou un gros dîner a fait perdre autant. Avec le gros petit-déjeuner, les gens avaient moins faim."
+      title: "Gros petit-déj"
+      body: "Ou gros dîner : même perte à calories égales. Avec le gros petit-déj, moins de faim."
     pt:
-      title: "Grande pequeno-almoço ou jantar"
-      body: "Com as mesmas calorias, um grande pequeno-almoço ou um grande jantar deram a mesma perda de peso. Com o pequeno-almoço grande havia menos fome."
+      title: "Grande pequeno-almoço"
+      body: "Ou grande jantar: mesma perda com as mesmas calorias. Com o pequeno-almoço grande, menos fome."
     tr:
-      title: "Büyük kahvaltı mı, büyük akşam yemeği mi"
-      body: "Aynı kaloriyle büyük kahvaltı ya da büyük akşam yemeği aynı kilo kaybını verdi. Büyük kahvaltıda insanlar daha az acıktı."
+      title: "Büyük kahvaltı"
+      body: "Ya da büyük akşam yemeği: aynı kaloride aynı kayıp. Büyük kahvaltıyla daha az açlık."
 
   - key: laat-eten
     kind: fact
     en:
       title: "Eating late"
-      body: "Whether it makes you gain fat isn't settled. In a lab trial, eating later raised hunger. Watch whether late snacks push up your total."
+      body: "Whether it adds fat isn't settled. It raised hunger in a lab trial. Watch if late snacks push your total up."
     nl:
       title: "Laat eten"
-      body: "Of het je dikker maakt, is niet uitgemaakt. In een labstudie gaf later eten meer honger. Let op of late snacks je dagtotaal opdrijven."
+      body: "Of het vet oplevert, is onzeker. In een labstudie gaf het meer honger. Let op of late snacks je totaal verhogen."
     de:
       title: "Spät essen"
-      body: "Ob es fett macht, ist nicht geklärt. In einer Laborstudie machte späteres Essen hungriger. Achte darauf, ob Snacks am Abend deine Tagesmenge erhöhen."
+      body: "Ob es Fett bringt, ist offen. In einer Laborstudie machte es hungriger. Achte, ob späte Snacks die Summe erhöhen."
     es:
       title: "Comer tarde"
-      body: "No está claro que engorde. En un ensayo de laboratorio, comer más tarde dio más hambre. Vigila si los picoteos nocturnos suben tu total."
+      body: "No está claro que engorde. En un ensayo de laboratorio dio más hambre. Mira si picar tarde sube tu total."
     fr:
       title: "Manger tard"
-      body: "Rien ne prouve que ça fasse grossir. En labo, manger plus tard a augmenté la faim. Vérifie si tes grignotages du soir font grimper ton total."
+      body: "Pas prouvé que ça fasse grossir. En labo, ça a augmenté la faim. Vois si les snacks tardifs gonflent ton total."
     pt:
       title: "Comer tarde"
-      body: "Não está provado que engorde. Num ensaio de laboratório, comer mais tarde deu mais fome. Vê se os snacks da noite sobem o teu total."
+      body: "Não está provado que engorde. Num ensaio de laboratório deu mais fome. Vê se os snacks tardios sobem o total."
     tr:
       title: "Geç yemek"
-      body: "Yağlandırıp yağlandırmadığı netleşmedi. Bir laboratuvar denemesinde geç yemek açlığı artırdı. Gece atıştırmalarının toplamını şişirip şişirmediğine bak."
+      body: "Yağ yaptırdığı belli değil. Bir laboratuvar çalışmasında açlığı artırdı. Gece atıştırmaları toplamını artırıyor mu bak."
 
   - key: cut-vaker-eten
     kind: fact
     en:
-      title: "Meal frequency on a cut"
-      body: "Dieting athletes who eat enough protein may keep more lean mass by eating more often. Your daily total still comes first."
+      title: "On a cut"
+      body: "Dieting athletes with enough protein may keep more lean mass eating more often. Your daily total comes first."
     nl:
-      title: "Maaltijden tijdens een cut"
-      body: "Sporters op dieet die genoeg eiwit eten, houden misschien meer spiermassa vast door vaker te eten. Je dagtotaal gaat nog steeds voor."
+      title: "Tijdens een cut"
+      body: "Sporters met genoeg eiwit houden misschien meer spier als ze vaker eten. Je dagtotaal gaat voor."
     de:
-      title: "Mahlzeiten in der Diät"
-      body: "Sportler in der Diät mit genug Eiweiß behalten vielleicht mehr Muskelmasse, wenn sie öfter essen. Die Tagesmenge geht trotzdem vor."
+      title: "In der Diät"
+      body: "Sportler mit genug Protein halten womöglich mehr Muskeln, wenn sie öfter essen. Die Tagessumme zählt zuerst."
     es:
-      title: "Comidas en definición"
-      body: "Los deportistas a dieta que comen suficiente proteína quizá conserven más masa magra comiendo más a menudo. Tu total diario va primero."
+      title: "Al definir"
+      body: "Con proteína suficiente, comer más veces quizá conserve más masa magra. Tu total diario va primero."
     fr:
-      title: "Nombre de repas en sèche"
-      body: "Les sportifs au régime qui mangent assez de protéines gardent peut-être plus de masse maigre en mangeant plus souvent. Ton total passe d'abord."
+      title: "En sèche"
+      body: "Avec assez de protéines, manger plus souvent garde peut-être plus de muscle. Le total du jour d'abord."
     pt:
-      title: "Refeições num cut"
-      body: "Atletas em dieta que comem proteína suficiente talvez mantenham mais massa magra comendo mais vezes. O total diário vem primeiro."
+      title: "Em cut"
+      body: "Com proteína suficiente, comer mais vezes talvez mantenha mais massa magra. O total diário vem primeiro."
     tr:
-      title: "Diyette öğün sayısı"
-      body: "Yeterli protein alan diyetteki sporcular daha sık yiyerek daha fazla yağsız kütle koruyabilir. Günlük toplamın yine de önce gelir."
+      title: "Cut'ta"
+      body: "Yeterli protein alan sporcular sık yiyerek daha çok kas koruyabilir. Önce günlük toplam gelir."

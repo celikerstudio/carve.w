@@ -1,145 +1,146 @@
 article: bmr
+emoji: "🛋️"
 tips:
   - key: grootste-deel
     kind: fact
     en:
-      title: "BMR"
-      body: "BMR is what your body burns at rest just to keep running. For most people it is the biggest part of their daily calories."
+      title: "Biggest part"
+      body: "BMR is what you burn at rest just to keep running. For most people it's the biggest part of daily calories."
     nl:
-      title: "BMR"
-      body: "Je BMR is wat je lijf in rust verbruikt om gewoon te blijven draaien. Bij de meeste mensen is dat het grootste deel van hun calorieën."
+      title: "Grootste deel"
+      body: "Je BMR is wat je in rust verbrandt om te blijven draaien. Bij de meeste mensen is dat het grootste deel per dag."
     de:
-      title: "Grundumsatz"
-      body: "Der Grundumsatz ist, was dein Körper in Ruhe verbraucht, nur um zu laufen. Bei den meisten ist das der größte Teil ihrer Kalorien."
+      title: "Größter Teil"
+      body: "Der Grundumsatz ist, was du in Ruhe verbrennst. Bei den meisten ist er der größte Teil des Tagesbedarfs."
     es:
-      title: "Metabolismo basal"
-      body: "Tu metabolismo basal es lo que gasta tu cuerpo en reposo solo para funcionar. En casi todos es la mayor parte de las calorías del día."
+      title: "La mayor parte"
+      body: "Tu metabolismo basal es lo que quemas en reposo. Para casi todos es la mayor parte de las calorías del día."
     fr:
-      title: "Métabolisme de base"
-      body: "Ton métabolisme de base, c'est ce que ton corps brûle au repos pour fonctionner. Chez la plupart, c'est la plus grosse part des calories."
+      title: "La plus grosse part"
+      body: "Le métabolisme de base, c'est ce que tu brûles au repos. Pour la plupart, c'est l'essentiel des calories du jour."
     pt:
-      title: "Metabolismo basal"
-      body: "O metabolismo basal é o que o teu corpo gasta em repouso só para funcionar. Na maioria das pessoas é a maior parte das calorias do dia."
+      title: "A maior parte"
+      body: "O metabolismo basal é o que gastas em repouso. Para quase todos, é a maior parte das calorias do dia."
     tr:
-      title: "Bazal metabolizma"
-      body: "Bazal metabolizma, vücudunun dinlenirken sadece çalışmak için yaktığı enerji. Çoğu insanda günlük kalorinin en büyük kısmı bu."
+      title: "En büyük pay"
+      body: "Bazal metabolizma, dinlenirken yaktığın enerjidir. Çoğu insanda günlük kalorinin en büyük kısmı."
 
   - key: niet-kapot
     kind: myth
     en:
-      title: "Myth: dieting breaks your metabolism"
-      body: "Not usually. You burn less because you weigh less and move less, not because your BMR crashed."
+      title: "Broken metabolism"
+      body: "Myth: dieting breaks your metabolism. You burn less because you weigh less and move less."
     nl:
-      title: "Mythe: lijnen maakt je metabolisme kapot"
-      body: "Meestal niet. Je verbrandt minder omdat je minder weegt en minder beweegt, niet omdat je BMR is ingestort."
+      title: "Kapotte stofwisseling"
+      body: "Mythe: diëten maakt je stofwisseling kapot. Je verbrandt minder omdat je minder weegt en minder beweegt."
     de:
-      title: "Mythos: Diäten ruinieren den Stoffwechsel"
-      body: "Meistens nicht. Du verbrennst weniger, weil du weniger wiegst und dich weniger bewegst, nicht weil dein Grundumsatz einbricht."
+      title: "Kaputter Stoffwechsel"
+      body: "Mythos: Diäten machen den Stoffwechsel kaputt. Du verbrennst weniger, weil du weniger wiegst und dich weniger bewegst."
     es:
-      title: "Mito: hacer dieta rompe el metabolismo"
-      body: "Normalmente no. Quemas menos porque pesas menos y te mueves menos, no porque tu metabolismo basal se haya hundido."
+      title: "Metabolismo roto"
+      body: "Mito: hacer dieta rompe el metabolismo. Quemas menos porque pesas menos y te mueves menos."
     fr:
-      title: "Mythe : les régimes cassent le métabolisme"
-      body: "En général, non. Tu brûles moins parce que tu pèses moins et bouges moins, pas parce que ton métabolisme de base s'est effondré."
+      title: "Métabolisme cassé"
+      body: "Mythe : les régimes cassent le métabolisme. Tu brûles moins parce que tu pèses moins et bouges moins."
     pt:
-      title: "Mito: fazer dieta estraga o metabolismo"
-      body: "Normalmente não. Gastas menos porque pesas menos e te mexes menos, não porque o teu metabolismo basal tenha caído a pique."
+      title: "Metabolismo estragado"
+      body: "Mito: fazer dieta estraga o metabolismo. Gastas menos porque pesas menos e te mexes menos."
     tr:
-      title: "Efsane: diyet metabolizmayı bozar"
-      body: "Genelde hayır. Daha az yakıyorsun çünkü daha hafifsin ve daha az hareket ediyorsun, bazal metabolizman çöktüğü için değil."
+      title: "Bozuk metabolizma"
+      body: "Efsane: diyet metabolizmayı bozar. Daha az yakarsın çünkü daha hafifsin ve daha az hareket ediyorsun."
 
   - key: calculator-is-begin
     kind: fact
     en:
-      title: "BMR calculators"
-      body: "A calculator is only a starting point. Track what you eat and weigh for 2 to 3 weeks to see what you really burn."
+      title: "2 to 3 weeks"
+      body: "Track what you eat and weigh for that long to see what you really burn. A calculator is only a start."
     nl:
-      title: "BMR-calculators"
-      body: "Een calculator is alleen een begin. Houd 2 tot 3 weken bij wat je eet en weegt, dan zie je wat je echt verbrandt."
+      title: "2 tot 3 weken"
+      body: "Houd zo lang bij wat je eet en weegt, dan zie je wat je echt verbrandt. Een calculator is maar een begin."
     de:
-      title: "Grundumsatz-Rechner"
-      body: "Ein Rechner ist nur ein Startpunkt. Notier 2 bis 3 Wochen, was du isst und wiegst, dann siehst du, was du wirklich verbrennst."
+      title: "2 bis 3 Wochen"
+      body: "So lange Essen und Gewicht notieren, dann siehst du, was du wirklich verbrennst. Ein Rechner ist nur ein Start."
     es:
-      title: "Calculadoras de BMR"
-      body: "Una calculadora es solo un punto de partida. Apunta lo que comes y pesas durante 2 a 3 semanas y verás lo que gastas de verdad."
+      title: "2 a 3 semanas"
+      body: "Apunta lo que comes y pesas ese tiempo y verás lo que quemas de verdad. Una calculadora solo es el inicio."
     fr:
-      title: "Les calculateurs"
-      body: "Un calculateur n'est qu'un point de départ. Note ce que tu manges et ton poids 2 à 3 semaines pour voir ce que tu brûles vraiment."
+      title: "2 à 3 semaines"
+      body: "Note ce que tu manges et pèses pendant ce temps pour voir ce que tu brûles. Un calculateur n'est qu'un début."
     pt:
-      title: "Calculadoras de BMR"
-      body: "Uma calculadora é só um ponto de partida. Regista o que comes e pesas durante 2 a 3 semanas e vês o que gastas mesmo."
+      title: "2 a 3 semanas"
+      body: "Regista o que comes e pesas durante esse tempo e vês o que gastas mesmo. Uma calculadora é só o início."
     tr:
-      title: "BMR hesaplayıcıları"
-      body: "Hesaplayıcı sadece bir başlangıç. 2 ila 3 hafta ne yediğini ve kilonu takip et, gerçekte ne yaktığını görürsün."
+      title: "2-3 hafta"
+      body: "Bu süre boyunca ne yediğini ve kilonu kaydet, gerçekte ne yaktığını gör. Hesaplayıcı sadece başlangıç."
 
   - key: spiermassa-beschermen
     kind: fact
     en:
-      title: "Protecting your BMR"
-      body: "While dieting, keep lifting and eat 1.6 to 2.2 g protein per kg. Holding on to lean mass supports your BMR."
+      title: "1.6 to 2.2 g"
+      body: "Protein per kg while dieting, and keep lifting. Holding on to lean mass supports your BMR."
     nl:
-      title: "Je BMR beschermen"
-      body: "Blijf tijdens het lijnen trainen en eet 1,6 tot 2,2 gram eiwit per kilo. Spiermassa vasthouden ondersteunt je BMR."
+      title: "1,6 tot 2,2 gram"
+      body: "Eiwit per kilo tijdens het lijnen, en blijf trainen. Je spiermassa vasthouden steunt je BMR."
     de:
-      title: "Grundumsatz schützen"
-      body: "Trainier in der Diät weiter und iss 1,6 bis 2,2 g Eiweiß pro kg. Wer Muskelmasse hält, stützt seinen Grundumsatz."
+      title: "1,6 bis 2,2 g"
+      body: "Protein pro kg in der Diät, und weiter Krafttraining. Wer Muskeln hält, stützt seinen Grundumsatz."
     es:
-      title: "Proteger tu metabolismo basal"
-      body: "En dieta, sigue entrenando y come 1,6 a 2,2 g de proteína por kg. Mantener la masa magra sostiene tu metabolismo basal."
+      title: "1,6 a 2,2 g"
+      body: "De proteína por kg durante la dieta, y sigue con las pesas. Conservar músculo sostiene tu metabolismo basal."
     fr:
-      title: "Protéger ton métabolisme"
-      body: "Pendant un régime, continue la muscu et mange 1,6 à 2,2 g de protéines par kg. Garder ta masse maigre soutient ton métabolisme de base."
+      title: "1,6 à 2,2 g"
+      body: "De protéines par kg pendant le régime, et continue la muscu. Garder ton muscle soutient ton métabolisme."
     pt:
-      title: "Proteger o metabolismo basal"
-      body: "Em dieta, continua a treinar e come 1,6 a 2,2 g de proteína por kg. Manter a massa magra ajuda o teu metabolismo basal."
+      title: "1,6 a 2,2 g"
+      body: "De proteína por kg durante a dieta, e continua a treinar força. Manter músculo sustenta o metabolismo basal."
     tr:
-      title: "Bazal metabolizmanı koru"
-      body: "Diyetteyken antrenmana devam et ve kilo başına 1,6 ila 2,2 g protein ye. Yağsız kütleyi korumak bazal metabolizmanı destekler."
+      title: "1,6-2,2 g"
+      body: "Diyette kilo başına protein, bir de ağırlık çalışmaya devam. Kası korumak bazal metabolizmayı destekler."
 
   - key: extreem-tekort
     kind: fact
     en:
-      title: "Extreme deficits"
-      body: "A very aggressive diet drains your energy, so you move less and train less. That lowers how much you burn in total."
+      title: "Crash diets"
+      body: "A very aggressive deficit drains your energy, so you move and train less. You end up burning less in total."
     nl:
-      title: "Extreem tekort"
-      body: "Een heel streng dieet slurpt je energie op, waardoor je minder beweegt en minder traint. Dan verbrand je in totaal minder."
+      title: "Crashdiëten"
+      body: "Een heel groot tekort slurpt je energie op, dus je beweegt en traint minder. Zo verbrand je in totaal minder."
     de:
-      title: "Extreme Defizite"
-      body: "Eine sehr harte Diät raubt dir Energie, also bewegst du dich weniger und trainierst weniger. So sinkt dein Gesamtverbrauch."
+      title: "Crashdiäten"
+      body: "Ein sehr großes Defizit raubt Energie, also bewegst und trainierst du weniger. Am Ende verbrennst du weniger."
     es:
-      title: "Déficits extremos"
-      body: "Una dieta muy agresiva te quita energía, así que te mueves menos y entrenas menos. Eso baja lo que gastas en total."
+      title: "Dietas extremas"
+      body: "Un déficit muy agresivo te deja sin energía, así que te mueves y entrenas menos. Al final quemas menos."
     fr:
-      title: "Les déficits extrêmes"
-      body: "Un régime très agressif te vide d'énergie, donc tu bouges moins et t'entraînes moins. Au total, tu brûles moins."
+      title: "Régimes extrêmes"
+      body: "Un déficit très agressif vide ton énergie, donc tu bouges et t'entraînes moins. Au final, tu brûles moins."
     pt:
-      title: "Défices extremos"
-      body: "Uma dieta muito agressiva tira-te energia, por isso mexes-te menos e treinas menos. Isso baixa o que gastas no total."
+      title: "Dietas radicais"
+      body: "Um défice muito agressivo tira-te energia, por isso mexes-te e treinas menos. No fim, gastas menos."
     tr:
-      title: "Aşırı açık"
-      body: "Çok sert bir diyet enerjini tüketir, daha az hareket eder ve daha az antrenman yaparsın. Bu da toplam yaktığını düşürür."
+      title: "Şok diyetler"
+      body: "Çok sert bir açık enerjini çeker, daha az hareket edip daha az çalışırsın. Sonuçta toplamda daha az yakarsın."
 
   - key: opnieuw-rekenen
     kind: fact
     en:
-      title: "When to recalculate"
-      body: "Your BMR changes with your weight and body composition. After a big weight change, work out your needs again."
+      title: "Recalculate"
+      body: "Your BMR changes with your weight. After a big weight change, work out your needs again."
     nl:
       title: "Opnieuw rekenen"
-      body: "Je BMR verandert mee met je gewicht en lichaamssamenstelling. Ben je flink afgevallen of aangekomen, reken dan opnieuw."
+      body: "Je BMR verandert mee met je gewicht. Na een flinke verandering reken je je behoefte opnieuw uit."
     de:
-      title: "Neu berechnen"
-      body: "Dein Grundumsatz ändert sich mit Gewicht und Körperzusammensetzung. Nach einer großen Gewichtsänderung rechne neu."
+      title: "Neu rechnen"
+      body: "Dein Grundumsatz ändert sich mit deinem Gewicht. Nach einer großen Änderung rechnest du neu."
     es:
-      title: "Cuándo recalcular"
-      body: "Tu metabolismo basal cambia con tu peso y tu composición corporal. Tras un cambio grande de peso, vuelve a calcular."
+      title: "Vuelve a calcular"
+      body: "Tu metabolismo basal cambia con tu peso. Tras un cambio grande, recalcula lo que necesitas."
     fr:
-      title: "Quand recalculer"
-      body: "Ton métabolisme de base change avec ton poids et ta composition corporelle. Après un gros changement de poids, recalcule."
+      title: "Recalcule"
+      body: "Ton métabolisme de base suit ton poids. Après un gros changement, refais le calcul de tes besoins."
     pt:
-      title: "Quando recalcular"
-      body: "O teu metabolismo basal muda com o peso e a composição corporal. Depois de uma grande mudança de peso, volta a calcular."
+      title: "Volta a calcular"
+      body: "O metabolismo basal muda com o teu peso. Depois de uma grande mudança, recalcula as tuas necessidades."
     tr:
-      title: "Ne zaman yeniden hesaplamalı"
-      body: "Bazal metabolizman kilona ve vücut kompozisyonuna göre değişir. Kilon belirgin şekilde değişince ihtiyacını yeniden hesapla."
+      title: "Yeniden hesapla"
+      body: "Bazal metabolizman kilonla birlikte değişir. Büyük bir değişimden sonra ihtiyacını yeniden hesapla."

@@ -1,193 +1,194 @@
 article: post-workout-nutrition
+emoji: "🍳"
 tips:
   - key: anabool-venster
     kind: myth
     en:
-      title: "Myth: eat protein within an hour of training"
-      body: "There is no panic window. Your muscles stay more responsive to protein for up to 24 hours after a hard session, fading over time."
+      title: "24 hours"
+      body: "Myth: eat protein within an hour of training. Muscles stay more responsive for up to 24 hours, fading over time."
     nl:
-      title: "Mythe: binnen een uur na training eiwit eten"
-      body: "Er is geen paniekvenster. Je spieren reageren tot 24 uur na een zware training beter op eiwit, al zwakt dat met de uren af."
+      title: "24 uur"
+      body: "Mythe: binnen een uur na de training eiwit eten. Spieren blijven tot 24 uur gevoeliger, steeds iets minder."
     de:
-      title: "Mythos: Eiweiß binnen einer Stunde danach"
-      body: "Es gibt kein Panikfenster. Deine Muskeln sprechen bis zu 24 Stunden nach hartem Training besser auf Eiweiß an, mit der Zeit schwächer."
+      title: "24 Stunden"
+      body: "Mythos: Protein muss binnen einer Stunde rein. Muskeln bleiben bis zu 24 Stunden empfänglicher, mit der Zeit weniger."
     es:
-      title: "Mito: proteína en la hora tras entrenar"
-      body: "No hay ventana de pánico. Tus músculos responden mejor a la proteína hasta 24 horas después de una sesión dura, aunque va bajando."
+      title: "24 horas"
+      body: "Mito: come proteína en la hora tras entrenar. El músculo sigue más receptivo hasta 24 horas, cada vez menos."
     fr:
-      title: "Mythe : des protéines dans l'heure qui suit"
-      body: "Pas de fenêtre de panique. Tes muscles restent plus réceptifs aux protéines jusqu'à 24 h après une séance dure, de moins en moins."
+      title: "24 heures"
+      body: "Mythe : protéines dans l'heure après la séance. Le muscle reste plus réceptif jusqu'à 24 heures, de moins en moins."
     pt:
-      title: "Mito: proteína na hora a seguir ao treino"
-      body: "Não há janela de pânico. Os teus músculos respondem melhor à proteína até 24 horas depois de um treino duro, cada vez menos."
+      title: "24 horas"
+      body: "Mito: come proteína na hora a seguir ao treino. O músculo fica mais recetivo até 24 horas, cada vez menos."
     tr:
-      title: "Efsane: antrenmandan sonraki bir saatte protein"
-      body: "Panik penceresi yok. Kasların zorlu bir antrenmandan sonra 24 saate kadar proteine daha iyi yanıt verir, zamanla azalarak."
+      title: "24 saat"
+      body: "Efsane: antrenmandan sonraki bir saatte protein ye. Kaslar 24 saate kadar daha duyarlı kalır, giderek azalarak."
 
   - key: hoeveel-eiwit
     kind: fact
     en:
-      title: "Protein after training"
-      body: "20 to 40 g of protein in the meal after training does the job. For someone of 80 kg that is 20 to 32 g."
+      title: "20 to 40 g"
+      body: "Protein in the meal after training does the job. At 80 kg that's 20 to 32 g."
     nl:
-      title: "Eiwit na de training"
-      body: "20 tot 40 gram eiwit in de maaltijd na je training is genoeg. Weeg je 80 kilo, dan kom je op 20 tot 32 gram."
+      title: "20 tot 40 gram"
+      body: "Eiwit in de maaltijd na de training is genoeg. Bij 80 kilo is dat 20 tot 32 gram."
     de:
-      title: "Eiweiß nach dem Training"
-      body: "20 bis 40 g Eiweiß in der Mahlzeit nach dem Training reichen. Bei 80 kg Körpergewicht sind das 20 bis 32 g."
+      title: "20 bis 40 g"
+      body: "Protein in der Mahlzeit nach dem Training reichen. Bei 80 kg sind es 20 bis 32 g."
     es:
-      title: "Proteína después de entrenar"
-      body: "Con 20 a 40 g de proteína en la comida de después basta. Si pesas 80 kg, son de 20 a 32 g."
+      title: "20 a 40 g"
+      body: "De proteína en la comida tras entrenar bastan. Con 80 kg son 20 a 32 g."
     fr:
-      title: "Protéines après la séance"
-      body: "20 à 40 g de protéines dans le repas après l'entraînement suffisent. Pour 80 kg, ça fait 20 à 32 g."
+      title: "20 à 40 g"
+      body: "De protéines dans le repas d'après suffisent. À 80 kg, c'est 20 à 32 g."
     pt:
-      title: "Proteína depois do treino"
-      body: "20 a 40 g de proteína na refeição depois do treino chegam. Se pesas 80 kg, são 20 a 32 g."
+      title: "20 a 40 g"
+      body: "De proteína na refeição depois do treino chegam. Com 80 kg são 20 a 32 g."
     tr:
-      title: "Antrenman sonrası protein"
-      body: "Antrenmandan sonraki öğünde 20 ila 40 g protein yeterli. 80 kilo biri için bu 20 ila 32 g eder."
+      title: "20-40 g"
+      body: "Antrenman sonrası öğünde bu kadar protein yeter. 80 kiloda 20-32 g."
 
   - key: full-body-40g
     kind: fact
     en:
-      title: "After a full-body session"
-      body: "Aim for the high end. In young men who lifted regularly, 40 g of whey after a full-body workout built more muscle protein than 20 g."
+      title: "40 g"
+      body: "Of whey after a full-body session built more muscle protein than 20 g in young lifters. Aim high."
     nl:
-      title: "Na een full-body training"
-      body: "Ga dan voor de bovenkant. Bij jonge mannen die vaak tilden gaf 40 gram whey na een full-body training meer spieropbouw dan 20 gram."
+      title: "40 gram"
+      body: "Whey na een full-body training bouwde bij jonge sporters meer spiereiwit op dan 20 gram. Mik hoog."
     de:
-      title: "Nach einem Ganzkörpertraining"
-      body: "Dann eher mehr. Bei jungen Männern, die regelmäßig trainierten, baute 40 g Whey nach Ganzkörpertraining mehr Muskeleiweiß auf als 20 g."
+      title: "40 g"
+      body: "Whey nach einer Ganzkörpereinheit bauten bei jungen Sportlern mehr Muskelprotein auf als 20 g. Ziel hoch."
     es:
-      title: "Tras una sesión de cuerpo completo"
-      body: "Apunta alto. En jóvenes que entrenaban a menudo, 40 g de whey tras una sesión de cuerpo completo construyó más proteína muscular que 20 g."
+      title: "40 g"
+      body: "De whey tras una sesión de cuerpo completo dieron más síntesis muscular que 20 g en jóvenes. Apunta alto."
     fr:
-      title: "Après une séance full body"
-      body: "Vise le haut de la fourchette. Chez des jeunes hommes entraînés, 40 g de whey après un full body a construit plus de protéine musculaire que 20 g."
+      title: "40 g"
+      body: "De whey après une séance full body ont fait plus de protéines musculaires que 20 g. Vise haut."
     pt:
-      title: "Depois de um treino de corpo inteiro"
-      body: "Aponta para o máximo. Em jovens que treinavam com regularidade, 40 g de whey depois de um treino de corpo inteiro fez mais músculo que 20 g."
+      title: "40 g"
+      body: "De whey após um treino de corpo inteiro deram mais síntese que 20 g em jovens. Aponta alto."
     tr:
-      title: "Tüm vücut antrenmanından sonra"
-      body: "Üst sınıra yakın git. Düzenli ağırlık çalışan genç erkeklerde tüm vücut antrenmanı sonrası 40 g whey, 20 g'dan daha çok kas proteini yaptı."
+      title: "40 g"
+      body: "Tüm vücut antrenmanı sonrası whey, genç sporcularda 20 g'dan daha çok kas proteini yaptı. Yükseği hedefle."
 
   - key: koolhydraten-niet-nodig
     kind: myth
     en:
-      title: "Myth: you need carbs after lifting to grow"
-      body: "Not true. Adding 50 g of carbs to 25 g of whey after leg training did not raise muscle building any further."
+      title: "50 g of carbs"
+      body: "Myth: you need carbs after lifting to grow. Adding them to 25 g of whey didn't raise muscle building."
     nl:
-      title: "Mythe: na het tillen heb je koolhydraten nodig"
-      body: "Klopt niet. 50 gram koolhydraten bij 25 gram whey na een beentraining gaf geen extra spieropbouw."
+      title: "50 gram koolhydraten"
+      body: "Mythe: na het tillen heb je koolhydraten nodig om te groeien. Bij 25 gram whey gaf dat geen extra spieropbouw."
     de:
-      title: "Mythos: Nach dem Training musst du Carbs essen"
-      body: "Stimmt nicht. 50 g Kohlenhydrate zusätzlich zu 25 g Whey nach dem Beintraining steigerten den Muskelaufbau nicht weiter."
+      title: "50 g Kohlenhydrate"
+      body: "Mythos: Nach dem Training brauchst du Kohlenhydrate zum Wachsen. Zu 25 g Whey brachten sie nichts extra."
     es:
-      title: "Mito: necesitas carbohidratos tras las pesas"
-      body: "No es cierto. Añadir 50 g de carbohidratos a 25 g de whey tras entrenar pierna no aumentó más la construcción de músculo."
+      title: "50 g de hidratos"
+      body: "Mito: tras las pesas necesitas hidratos para crecer. Sumarlos a 25 g de whey no subió la síntesis muscular."
     fr:
-      title: "Mythe : il faut des glucides après la muscu"
-      body: "Faux. Ajouter 50 g de glucides à 25 g de whey après une séance jambes n'a pas augmenté davantage la construction musculaire."
+      title: "50 g de glucides"
+      body: "Mythe : il faut des glucides après la muscu pour grossir. Ajoutés à 25 g de whey, ils n'ont rien changé."
     pt:
-      title: "Mito: precisas de hidratos depois dos pesos"
-      body: "Não é verdade. Juntar 50 g de hidratos a 25 g de whey depois de treinar pernas não aumentou mais a construção de músculo."
+      title: "50 g de hidratos"
+      body: "Mito: depois do treino precisas de hidratos para crescer. Juntá-los a 25 g de whey não subiu a síntese."
     tr:
-      title: "Efsane: ağırlıktan sonra karbonhidrat şart"
-      body: "Doğru değil. Bacak antrenmanı sonrası 25 g whey'e 50 g karbonhidrat eklemek kas yapımını daha fazla artırmadı."
+      title: "50 g karbonhidrat"
+      body: "Efsane: büyümek için antrenman sonrası karbonhidrat şart. 25 g whey'e eklemek kas yapımını artırmadı."
 
   - key: wanneer-koolhydraten
     kind: fact
     en:
-      title: "When post-workout carbs matter"
-      body: "Mainly when you train again within about four hours, or when you eat too few carbs overall. Otherwise your daily total counts."
+      title: "Within 4 hours"
+      body: "Training again that soon, or low on carbs overall? Then post-workout carbs matter. Otherwise the daily total does."
     nl:
-      title: "Wanneer koolhydraten na training tellen"
-      body: "Vooral als je binnen zo'n vier uur weer traint, of als je over de hele dag te weinig koolhydraten eet. Anders telt je dagtotaal."
+      title: "Binnen 4 uur"
+      body: "Train je zo snel weer, of eet je weinig koolhydraten? Dan tellen ze na de training. Anders telt je dagtotaal."
     de:
-      title: "Wann Kohlenhydrate danach zählen"
-      body: "Vor allem, wenn du binnen etwa vier Stunden wieder trainierst oder insgesamt zu wenig Kohlenhydrate isst. Sonst zählt die Tagessumme."
+      title: "Innerhalb 4 Std."
+      body: "Trainierst du so bald wieder oder isst insgesamt wenig Kohlenhydrate? Dann zählen sie danach. Sonst die Tagessumme."
     es:
-      title: "Cuándo importan los carbohidratos"
-      body: "Sobre todo si vuelves a entrenar en unas cuatro horas, o si comes pocos carbohidratos en general. Si no, cuenta tu total del día."
+      title: "En 4 horas"
+      body: "¿Vuelves a entrenar tan pronto o comes pocos hidratos? Entonces cuentan tras entrenar. Si no, el total diario."
     fr:
-      title: "Quand les glucides comptent"
-      body: "Surtout si tu t'entraînes de nouveau dans les quatre heures, ou si tu manges trop peu de glucides au total. Sinon, c'est le total du jour."
+      title: "Sous 4 heures"
+      body: "Tu t'entraînes à nouveau si vite, ou tu manges peu de glucides ? Alors ils comptent après. Sinon, le total."
     pt:
-      title: "Quando os hidratos contam"
-      body: "Sobretudo se voltas a treinar dentro de umas quatro horas, ou se comes poucos hidratos no geral. Fora isso, conta o total do dia."
+      title: "Em 4 horas"
+      body: "Voltas a treinar tão cedo ou comes poucos hidratos? Então contam depois do treino. Senão, conta o total."
     tr:
-      title: "Karbonhidrat ne zaman önemli"
-      body: "Özellikle dört saat içinde yine antrenman yapacaksan ya da genel olarak az karbonhidrat yiyorsan. Yoksa günlük toplam önemli."
+      title: "4 saat içinde"
+      body: "Bu kadar kısa sürede yine çalışıyorsan ya da genel olarak az karbonhidrat yiyorsan önemli. Yoksa günlük toplam."
 
   - key: voor-of-na
     kind: fact
     en:
-      title: "Protein before or after?"
-      body: "In one 10-week trial, trained men took 25 g right before or right after training. Both groups gained similar strength and muscle."
+      title: "Before or after"
+      body: "25 g of protein right before or right after training gave similar strength and muscle over 10 weeks."
     nl:
-      title: "Eiwit voor of na?"
-      body: "In een proef van 10 weken namen getrainde mannen 25 gram vlak voor of vlak na de training. Beide groepen werden even sterk en gespierd."
+      title: "Voor of na"
+      body: "25 gram eiwit vlak voor of vlak na de training gaf over 10 weken evenveel kracht en spier."
     de:
-      title: "Eiweiß vor oder nach?"
-      body: "In einer 10-Wochen-Studie nahmen trainierte Männer 25 g direkt vor oder nach dem Training. Beide Gruppen legten ähnlich an Kraft und Muskeln zu."
+      title: "Vorher oder nachher"
+      body: "25 g Protein direkt vor oder nach dem Training brachten in 10 Wochen ähnlich viel Kraft und Muskeln."
     es:
-      title: "¿Proteína antes o después?"
-      body: "En un ensayo de 10 semanas, hombres entrenados tomaron 25 g justo antes o justo después. Ambos grupos ganaron fuerza y músculo parecidos."
+      title: "Antes o después"
+      body: "25 g de proteína justo antes o después de entrenar dieron fuerza y músculo parecidos en 10 semanas."
     fr:
-      title: "Protéines avant ou après ?"
-      body: "Dans un essai de 10 semaines, des hommes entraînés prenaient 25 g juste avant ou juste après. Les deux groupes ont gagné autant en force et muscle."
+      title: "Avant ou après"
+      body: "25 g de protéines juste avant ou juste après la séance ont donné autant de force et de muscle sur 10 semaines."
     pt:
-      title: "Proteína antes ou depois?"
-      body: "Num ensaio de 10 semanas, homens treinados tomaram 25 g logo antes ou logo depois. Os dois grupos ganharam força e músculo parecidos."
+      title: "Antes ou depois"
+      body: "25 g de proteína mesmo antes ou depois do treino deram força e músculo parecidos em 10 semanas."
     tr:
-      title: "Protein önce mi sonra mı?"
-      body: "10 haftalık bir denemede antrenmanlı erkekler 25 g'ı hemen önce ya da hemen sonra aldı. İki grup da benzer güç ve kas kazandı."
+      title: "Önce ya da sonra"
+      body: "Antrenmandan hemen önce ya da sonra 25 g protein, 10 haftada benzer güç ve kas verdi."
 
   - key: glycogeen-tillen
     kind: fact
     en:
-      title: "Lifting and glycogen"
-      body: "Lifting rarely empties your carb stores, but it does use them. Six sets of leg extensions lowered glycogen in that muscle by 39%."
+      title: "39%"
+      body: "Less glycogen in the muscle after six sets of leg extensions. Lifting rarely empties your stores, but it uses them."
     nl:
-      title: "Tillen en glycogeen"
-      body: "Tillen maakt je koolhydraatvoorraad zelden leeg, maar gebruikt 'm wel. Zes sets leg extensions verlaagden het glycogeen in die spier met 39%."
+      title: "39%"
+      body: "Minder glycogeen in de spier na zes sets leg extensions. Tillen maakt je voorraad zelden leeg, maar gebruikt hem wel."
     de:
-      title: "Krafttraining und Glykogen"
-      body: "Krafttraining macht deine Kohlenhydratspeicher selten leer, nutzt sie aber. Sechs Sätze Beinstrecker senkten das Glykogen im Muskel um 39 %."
+      title: "39 %"
+      body: "Weniger Glykogen im Muskel nach sechs Sätzen Beinstrecken. Krafttraining leert die Speicher selten, nutzt sie aber."
     es:
-      title: "Las pesas y el glucógeno"
-      body: "Las pesas rara vez vacían tus reservas de carbohidratos, pero sí las usan. Seis series de extensiones bajaron el glucógeno de ese músculo un 39%."
+      title: "39 %"
+      body: "Menos glucógeno en el músculo tras seis series de extensiones. Las pesas rara vez vacían tus reservas, pero las usan."
     fr:
-      title: "Muscu et glycogène"
-      body: "La muscu vide rarement tes réserves de glucides, mais elle les entame. Six séries de leg extension ont baissé le glycogène du muscle de 39 %."
+      title: "39 %"
+      body: "De glycogène en moins après six séries de leg extension. La muscu vide rarement les réserves, mais s'en sert."
     pt:
-      title: "Pesos e glicogénio"
-      body: "Os pesos raramente esvaziam as reservas de hidratos, mas usam-nas. Seis séries de extensões baixaram o glicogénio desse músculo em 39%."
+      title: "39%"
+      body: "Menos glicogénio no músculo após seis séries de extensões. O treino de força raramente esvazia as reservas, mas usa-as."
     tr:
-      title: "Ağırlık ve glikojen"
-      body: "Ağırlık çalışmak karbonhidrat depolarını nadiren boşaltır ama kullanır. Altı set leg extension o kastaki glikojeni %39 düşürdü."
+      title: "%39"
+      body: "Altı set bacak uzatmadan sonra kastaki glikojen bu kadar azaldı. Ağırlık depoları nadiren boşaltır ama kullanır."
 
   - key: wachten-op-avondeten
     kind: fact
     en:
-      title: "Dinner in an hour or two?"
-      body: "Then waiting for dinner is fine. Eat as soon as it fits your day, and make sure the meal has a good portion of protein."
+      title: "Dinner soon"
+      body: "In an hour or two? Waiting for it is fine. Just make sure the meal has a good portion of protein."
     nl:
-      title: "Over een uur of twee avondeten?"
-      body: "Dan kun je prima op je avondeten wachten. Eet zodra het in je dag past, en zorg voor een flinke portie eiwit."
+      title: "Straks eten"
+      body: "Over een uur of twee? Dan kun je prima wachten. Zorg dat er een flinke portie eiwit in zit."
     de:
-      title: "Abendessen in ein, zwei Stunden?"
-      body: "Dann kannst du ruhig aufs Abendessen warten. Iss, sobald es in deinen Tag passt, und achte auf eine gute Portion Eiweiß."
+      title: "Gleich Abendessen"
+      body: "In ein, zwei Stunden? Dann kannst du warten. Sorg für eine gute Portion Protein."
     es:
-      title: "¿Cenas en una o dos horas?"
-      body: "Entonces puedes esperar a la cena. Come cuando te encaje en el día y asegúrate de que lleve una buena ración de proteína."
+      title: "Cena pronto"
+      body: "¿En una o dos horas? Puedes esperar. Solo asegúrate de que lleve buena proteína."
     fr:
-      title: "Le dîner dans une heure ou deux ?"
-      body: "Alors tu peux attendre le dîner. Mange dès que ça rentre dans ta journée, avec une bonne portion de protéines."
+      title: "Dîner bientôt"
+      body: "Dans une heure ou deux ? Tu peux attendre. Assure-toi juste d'une bonne portion de protéines."
     pt:
-      title: "Jantas daqui a uma ou duas horas?"
-      body: "Então podes esperar pelo jantar. Come quando der jeito no teu dia e garante uma boa porção de proteína."
+      title: "Jantar daqui a pouco"
+      body: "Daqui a uma ou duas horas? Podes esperar. Garante que tem uma boa dose de proteína."
     tr:
-      title: "Akşam yemeği bir iki saat sonra mı?"
-      body: "O zaman akşam yemeğini bekleyebilirsin. Gününe uyduğunda ye ve öğünde iyi bir porsiyon protein olsun."
+      title: "Akşam yemeği yakında"
+      body: "Bir iki saat sonra mı? Beklemek sorun değil. Öğünde iyi bir porsiyon protein olsun."

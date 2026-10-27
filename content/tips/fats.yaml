@@ -1,217 +1,218 @@
 article: fats
+emoji: "🥑"
 tips:
   - key: negen-kcal-per-gram
     kind: fact
     en:
-      title: "Fat is dense"
-      body: "Fat has 9 kcal per gram, against 4 for carbs and protein. Alcohol sits in between at 7."
+      title: "9 kcal"
+      body: "Per gram of fat, against 4 for carbs and protein. That's why fat is so dense."
     nl:
-      title: "Vet is compact"
-      body: "Vet levert 9 kcal per gram, tegen 4 voor koolhydraten en eiwit. Alcohol zit ertussenin met 7."
+      title: "9 kcal"
+      body: "Per gram vet, tegen 4 voor koolhydraten en eiwit. Daarom is vet zo compact."
     de:
-      title: "Fett ist dicht"
-      body: "Fett hat 9 kcal pro Gramm, Kohlenhydrate und Eiweiß nur 4. Alkohol liegt mit 7 dazwischen."
+      title: "9 kcal"
+      body: "Pro Gramm Fett, gegenüber 4 bei Kohlenhydraten und Protein. Darum ist Fett so dicht."
     es:
-      title: "La grasa es densa"
-      body: "La grasa tiene 9 kcal por gramo, frente a 4 de los carbohidratos y la proteína. El alcohol queda en medio con 7."
+      title: "9 kcal"
+      body: "Por gramo de grasa, frente a 4 de hidratos y proteína. Por eso la grasa es tan densa."
     fr:
-      title: "Le gras est dense"
-      body: "Le gras apporte 9 kcal par gramme, contre 4 pour les glucides et les protéines. L'alcool est entre les deux avec 7."
+      title: "9 kcal"
+      body: "Par gramme de gras, contre 4 pour glucides et protéines. D'où sa densité."
     pt:
-      title: "A gordura é densa"
-      body: "A gordura tem 9 kcal por grama, contra 4 dos hidratos e da proteína. O álcool fica no meio, com 7."
+      title: "9 kcal"
+      body: "Por grama de gordura, contra 4 dos hidratos e da proteína. É por isso que a gordura é tão densa."
     tr:
-      title: "Yağ yoğundur"
-      body: "Yağın gramı 9 kcal, karbonhidrat ve proteininki 4. Alkol 7 ile ikisinin arasında."
+      title: "9 kcal"
+      body: "Yağın gramı başına, karbonhidrat ve proteinde 4. Yağın bu kadar yoğun olmasının sebebi."
 
   - key: niet-onder-twintig
     kind: fact
     en:
-      title: "Do not go too low"
-      body: "Under 20% of your calories from fat for a long time, you risk too few essential fatty acids and too little vitamin A, D and E."
+      title: "Under 20%"
+      body: "Of calories from fat for long risks too few essential fatty acids and too little vitamin A, D and E."
     nl:
-      title: "Niet te laag"
-      body: "Haal je lange tijd minder dan 20% van je calorieën uit vet, dan loop je kans op te weinig essentiële vetzuren en vitamine A, D en E."
+      title: "Onder 20%"
+      body: "Calorieën uit vet, en dat lang? Dan riskeer je te weinig essentiële vetzuren en vitamine A, D en E."
     de:
-      title: "Nicht zu wenig"
-      body: "Kommen lange Zeit unter 20% deiner Kalorien aus Fett, riskierst du zu wenig essenzielle Fettsäuren und Vitamin A, D und E."
+      title: "Unter 20 %"
+      body: "Kalorien aus Fett über lange Zeit riskieren zu wenig essenzielle Fettsäuren und Vitamin A, D und E."
     es:
-      title: "No bajes demasiado"
-      body: "Si durante mucho tiempo menos del 20% de tus calorías viene de grasa, te arriesgas a que te falten ácidos grasos esenciales y vitaminas A, D y E."
+      title: "Menos del 20 %"
+      body: "De calorías de grasa durante mucho tiempo arriesga poca grasa esencial y vitaminas A, D y E."
     fr:
-      title: "Pas trop bas"
-      body: "Sous 20% de tes calories en gras pendant longtemps, tu risques de manquer d'acides gras essentiels et de vitamines A, D et E."
+      title: "Sous 20 %"
+      body: "De calories en gras longtemps, tu risques un manque d'acides gras essentiels et de vitamines A, D, E."
     pt:
-      title: "Não desças demasiado"
-      body: "Com menos de 20% das calorias em gordura durante muito tempo, arriscas ter poucos ácidos gordos essenciais e pouca vitamina A, D e E."
+      title: "Menos de 20%"
+      body: "De calorias de gordura por muito tempo arrisca pouca gordura essencial e vitaminas A, D e E."
     tr:
-      title: "Fazla düşürme"
-      body: "Uzun süre kalorinin yüzde 20'sinden azını yağdan alırsan, esansiyel yağ asitleri ve A, D, E vitaminleri eksik kalabilir."
+      title: "%20'nin altı"
+      body: "Kaloride uzun süre bu kadar az yağ, temel yağ asidi ve A, D, E vitamini eksikliği riski taşır."
 
   - key: vet-in-grammen
     kind: fact
     en:
-      title: "Fat in grams"
-      body: "At 2,500 kcal a day, 20% of your calories from fat is about 56 g. At 40% it is about 111 g."
+      title: "56 g"
+      body: "Of fat is 20% of 2,500 kcal. At 40% it's about 111 g."
     nl:
-      title: "Vet in grammen"
-      body: "Bij 2.500 kcal per dag is 20% van je calorieën uit vet zo'n 56 gram. Bij 40% is het ongeveer 111 gram."
+      title: "56 gram"
+      body: "Vet is 20% van 2.500 kcal. Bij 40% is het zo'n 111 gram."
     de:
-      title: "Fett in Gramm"
-      body: "Bei 2.500 kcal am Tag sind 20% deiner Kalorien aus Fett etwa 56 g. Bei 40% sind es etwa 111 g."
+      title: "56 g"
+      body: "Fett sind 20 % von 2.500 kcal. Bei 40 % sind es etwa 111 g."
     es:
-      title: "La grasa en gramos"
-      body: "Con 2.500 kcal al día, un 20% de calorías de grasa son unos 56 g. Con un 40% son unos 111 g."
+      title: "56 g"
+      body: "De grasa son el 20 % de 2.500 kcal. Al 40 % son unos 111 g."
     fr:
-      title: "Le gras en grammes"
-      body: "À 2 500 kcal par jour, 20% de tes calories en gras font environ 56 g. À 40%, environ 111 g."
+      title: "56 g"
+      body: "De gras, c'est 20 % de 2 500 kcal. À 40 %, environ 111 g."
     pt:
-      title: "A gordura em gramas"
-      body: "Com 2.500 kcal por dia, 20% das calorias em gordura são cerca de 56 g. Com 40% são cerca de 111 g."
+      title: "56 g"
+      body: "De gordura são 20% de 2.500 kcal. A 40% são cerca de 111 g."
     tr:
-      title: "Gram olarak yağ"
-      body: "Günde 2.500 kcal'de kalorinin yüzde 20'si yağdan gelirse yaklaşık 56 g eder. Yüzde 40'ta yaklaşık 111 g."
+      title: "56 g"
+      body: "Yağ, 2.500 kcal'nin %20'si. %40'ta yaklaşık 111 g."
 
   - key: check-het-percentage
     kind: fact
     en:
-      title: "Grams or percent?"
-      body: "0.5 g of fat per kg can be too little. At 70 kg that is 35 g, just 14% of 2,200 kcal. Check the percentage, not only the grams."
+      title: "35 g"
+      body: "That's 0.5 g of fat per kg at 70 kg, just 14% of 2,200 kcal. Check the percentage, not only the grams."
     nl:
-      title: "Grammen of procenten?"
-      body: "0,5 gram vet per kilo kan te weinig zijn. Bij 70 kilo is dat 35 gram, maar 14% van 2.200 kcal. Kijk naar het percentage, niet alleen naar grammen."
+      title: "35 gram"
+      body: "Dat is 0,5 gram vet per kilo bij 70 kilo, maar 14% van 2.200 kcal. Kijk naar het percentage, niet alleen grammen."
     de:
-      title: "Gramm oder Prozent?"
-      body: "0,5 g Fett pro kg kann zu wenig sein. Bei 70 kg sind das 35 g, nur 14% von 2.200 kcal. Prüf den Prozentwert, nicht nur die Gramm."
+      title: "35 g"
+      body: "Das sind 0,5 g Fett pro kg bei 70 kg, nur 14 % von 2.200 kcal. Prüf den Anteil, nicht nur die Gramm."
     es:
-      title: "¿Gramos o porcentaje?"
-      body: "0,5 g de grasa por kg puede quedarse corto. Con 70 kg son 35 g, solo un 14% de 2.200 kcal. Mira el porcentaje, no solo los gramos."
+      title: "35 g"
+      body: "Son 0,5 g de grasa por kg con 70 kg, solo el 14 % de 2.200 kcal. Mira el porcentaje, no solo los gramos."
     fr:
-      title: "Grammes ou pourcentage ?"
-      body: "0,5 g de gras par kg peut être trop peu. À 70 kg, ça fait 35 g, soit 14% de 2 200 kcal. Regarde le pourcentage, pas que les grammes."
+      title: "35 g"
+      body: "C'est 0,5 g de gras par kg à 70 kg, à peine 14 % de 2 200 kcal. Regarde le pourcentage, pas que les grammes."
     pt:
-      title: "Gramas ou percentagem?"
-      body: "0,5 g de gordura por kg pode ser pouco. Com 70 kg são 35 g, só 14% de 2.200 kcal. Vê a percentagem, não só os gramas."
+      title: "35 g"
+      body: "São 0,5 g de gordura por kg com 70 kg, só 14% de 2.200 kcal. Vê a percentagem, não só os gramas."
     tr:
-      title: "Gram mı, yüzde mi?"
-      body: "Kilo başına 0,5 g yağ az kalabilir. 70 kg'da bu 35 g, 2.200 kcal'nin sadece yüzde 14'ü. Sadece grama değil, yüzdeye de bak."
+      title: "35 g"
+      body: "70 kiloda kilo başına 0,5 g yağ, 2.200 kcal'nin sadece %14'ü. Sadece grama değil yüzdeye de bak."
 
   - key: vet-maakt-dik
     kind: myth
     en:
-      title: "Myth: eating fat makes you fat"
-      body: "Not automatically. Weight comes down to the energy you eat against what you burn. A lot of fat just makes it easy to eat too much."
+      title: "Fattening"
+      body: "Myth: eating fat makes you fat. Energy in versus out decides that. Lots of fat just makes overeating easy."
     nl:
-      title: "Mythe: van vet word je dik"
-      body: "Niet vanzelf. Het gaat om de energie die je eet tegenover wat je verbruikt. Veel vet maakt het alleen makkelijk om te veel binnen te krijgen."
+      title: "Dik van vet"
+      body: "Mythe: vet eten maakt dik. Dat beslist energie erin tegen eruit. Veel vet maakt te veel eten alleen makkelijk."
     de:
-      title: "Mythos: Fett macht fett"
-      body: "Nicht automatisch. Entscheidend ist, wie viel Energie du isst und wie viel du verbrauchst. Viel Fett macht es nur leicht, zu viel zu essen."
+      title: "Fett macht fett"
+      body: "Mythos: Fett essen macht dick. Das entscheidet Energie rein gegen raus. Viel Fett macht Überessen nur leicht."
     es:
-      title: "Mito: la grasa engorda"
-      body: "No por sí sola. Cuenta la energía que comes frente a la que gastas. Mucha grasa solo hace fácil comer de más."
+      title: "Engorda"
+      body: "Mito: comer grasa engorda. Lo decide la energía que entra frente a la que sale. Mucha grasa facilita comer de más."
     fr:
-      title: "Mythe : le gras fait grossir"
-      body: "Pas automatiquement. Ce qui compte, c'est l'énergie que tu manges face à celle que tu dépenses. Beaucoup de gras rend juste l'excès facile."
+      title: "Ça fait grossir"
+      body: "Mythe : manger gras fait grossir. C'est l'énergie entrée contre dépensée qui décide. Le gras aide juste à trop manger."
     pt:
-      title: "Mito: comer gordura engorda"
-      body: "Não automaticamente. Conta a energia que comes face à que gastas. Muita gordura só torna fácil comer demais."
+      title: "Engorda"
+      body: "Mito: comer gordura engorda. Quem decide é a energia que entra contra a que sai. Muita gordura facilita comer demais."
     tr:
-      title: "Efsane: yağ yemek şişmanlatır"
-      body: "Kendiliğinden değil. Önemli olan yediğin enerjiyle harcadığın enerji. Çok yağ sadece fazla yemeyi kolaylaştırır."
+      title: "Kilo aldırır"
+      body: "Efsane: yağ yemek kilo aldırır. Bunu alınan ve harcanan enerji belirler. Çok yağ sadece fazla yemeyi kolaylaştırır."
 
   - key: vet-en-testosteron
     kind: myth
     en:
-      title: "Myth: more fat means more muscle"
-      body: "Not shown. Cutting fat low lowers testosterone a little in men, but it is unclear that this changes how much muscle you build."
+      title: "Testosterone"
+      body: "Myth: more fat means more muscle. Low fat lowers testosterone a little in men, but it's unclear that affects muscle."
     nl:
-      title: "Mythe: meer vet eten geeft meer spier"
-      body: "Niet aangetoond. Heel weinig vet verlaagt testosteron een beetje bij mannen, maar of dat uitmaakt voor spiergroei is onduidelijk."
+      title: "Testosteron"
+      body: "Mythe: meer vet geeft meer spier. Weinig vet verlaagt testosteron bij mannen iets, maar of dat spier kost is onbekend."
     de:
-      title: "Mythos: Mehr Fett bringt mehr Muskeln"
-      body: "Nicht belegt. Sehr wenig Fett senkt bei Männern das Testosteron etwas, aber ob das den Muskelaufbau ändert, ist unklar."
+      title: "Testosteron"
+      body: "Mythos: Mehr Fett, mehr Muskeln. Wenig Fett senkt Testosteron bei Männern etwas, ob das Muskeln kostet, ist offen."
     es:
-      title: "Mito: más grasa, más músculo"
-      body: "No está demostrado. Bajar mucho la grasa reduce un poco la testosterona en hombres, pero no está claro que cambie cuánto músculo ganas."
+      title: "Testosterona"
+      body: "Mito: más grasa es más músculo. Poca grasa baja algo la testosterona en hombres, pero no se sabe si afecta al músculo."
     fr:
-      title: "Mythe : plus de gras, plus de muscle"
-      body: "Pas démontré. Très peu de gras baisse un peu la testostérone chez l'homme, mais on ne sait pas si ça change ta prise de muscle."
+      title: "Testostérone"
+      body: "Mythe : plus de gras, plus de muscle. Peu de gras baisse un peu la testo chez l'homme. L'effet sur le muscle est flou."
     pt:
-      title: "Mito: mais gordura dá mais músculo"
-      body: "Não está provado. Cortar muito a gordura baixa um pouco a testosterona nos homens, mas não é claro que mude o músculo que ganhas."
+      title: "Testosterona"
+      body: "Mito: mais gordura dá mais músculo. Pouca gordura baixa algo a testosterona nos homens. O efeito no músculo é incerto."
     tr:
-      title: "Efsane: çok yağ, çok kas demek"
-      body: "Kanıtlanmadı. Yağı çok düşürmek erkeklerde testosteronu biraz azaltır, ama bunun kas kazanımını değiştirdiği belli değil."
+      title: "Testosteron"
+      body: "Efsane: daha çok yağ daha çok kas. Az yağ erkeklerde testosteronu biraz düşürür ama kasa etkisi belirsiz."
 
   - key: vetrijk-en-prestatie
     kind: myth
     en:
-      title: "Myth: a high-fat diet boosts performance"
-      body: "Not according to most of the evidence. High-fat diets mostly show no performance benefit, and the data on keto is limited and mixed."
+      title: "High-fat"
+      body: "Myth: a high-fat diet boosts performance. Most evidence shows no benefit. Keto data is limited and mixed."
     nl:
-      title: "Mythe: vetrijk eten verbetert je prestaties"
-      body: "Niet volgens het meeste bewijs. Vetrijke diëten laten meestal geen prestatiewinst zien, en het bewijs voor keto is beperkt en wisselend."
+      title: "Vetrijk"
+      body: "Mythe: vetrijk eten verbetert je prestaties. Meestal zie je geen voordeel. Over keto zijn de data beperkt en wisselend."
     de:
-      title: "Mythos: Fettreich essen steigert die Leistung"
-      body: "Nicht laut dem meisten Wissen. Fettreiche Diäten bringen meist keinen Leistungsvorteil, und die Daten zu Keto sind dünn und gemischt."
+      title: "Fettreich"
+      body: "Mythos: Fettreiche Kost steigert die Leistung. Meist zeigt sich kein Vorteil. Zu Keto gibt es wenig und gemischte Daten."
     es:
-      title: "Mito: comer mucha grasa mejora el rendimiento"
-      body: "No según la mayoría de las pruebas. Las dietas altas en grasa casi nunca mejoran el rendimiento, y los datos sobre keto son pocos y mixtos."
+      title: "Rica en grasa"
+      body: "Mito: comer mucha grasa mejora el rendimiento. Casi todo indica que no. Sobre keto hay pocos datos y mixtos."
     fr:
-      title: "Mythe : manger gras améliore la performance"
-      body: "Pas d'après la plupart des données. Les régimes riches en gras n'aident en général pas la performance, et les données sur le keto sont rares et mitigées."
+      title: "Riche en gras"
+      body: "Mythe : manger gras booste la perf. La plupart des données ne montrent aucun gain. Sur le keto, c'est maigre et mitigé."
     pt:
-      title: "Mito: comer muita gordura melhora o rendimento"
-      body: "Não segundo a maioria das provas. Dietas ricas em gordura quase nunca melhoram o rendimento, e os dados sobre keto são poucos e mistos."
+      title: "Rica em gordura"
+      body: "Mito: comer muita gordura melhora o rendimento. A maioria das provas diz que não. Sobre keto há pouco e misto."
     tr:
-      title: "Efsane: yağlı beslenme performansı artırır"
-      body: "Kanıtların çoğuna göre hayır. Yağı yüksek diyetler genelde performans kazandırmıyor, keto verileri de az ve karışık."
+      title: "Yağlı diyet"
+      body: "Efsane: yağlı beslenme performansı artırır. Kanıtların çoğu fayda göstermiyor. Keto verisi az ve karışık."
 
   - key: verzadigd-vet
     kind: fact
     en:
-      title: "Saturated fat"
-      body: "WHO says get saturated fat down to 10% of your calories at most. Swap butter and fatty meat for oil and nuts."
+      title: "10%"
+      body: "Of your calories at most from saturated fat, says WHO. Swap butter and fatty meat for oil and nuts."
     nl:
-      title: "Verzadigd vet"
-      body: "De WHO zegt: verzadigd vet hooguit 10% van je calorieën. Ruil boter en vet vlees in voor olie en noten."
+      title: "10%"
+      body: "Van je calorieën uit verzadigd vet is het maximum, zegt de WHO. Ruil boter en vet vlees voor olie en noten."
     de:
-      title: "Gesättigtes Fett"
-      body: "Die WHO sagt: gesättigtes Fett höchstens 10% deiner Kalorien. Tausch Butter und fettes Fleisch gegen Öl und Nüsse."
+      title: "10 %"
+      body: "Deiner Kalorien höchstens aus gesättigtem Fett, sagt die WHO. Tausch Butter und fettes Fleisch gegen Öl und Nüsse."
     es:
-      title: "Grasa saturada"
-      body: "La OMS dice que la grasa saturada no pase del 10% de tus calorías. Cambia mantequilla y carne grasa por aceite y frutos secos."
+      title: "10 %"
+      body: "De tus calorías como mucho de grasa saturada, dice la OMS. Cambia mantequilla y carne grasa por aceite y frutos secos."
     fr:
-      title: "Graisses saturées"
-      body: "L'OMS dit de limiter les graisses saturées à 10% de tes calories. Remplace beurre et viande grasse par huile et noix."
+      title: "10 %"
+      body: "De tes calories en gras saturés au maximum, dit l'OMS. Remplace beurre et viande grasse par huile et noix."
     pt:
-      title: "Gordura saturada"
-      body: "A OMS diz para manter a gordura saturada no máximo em 10% das calorias. Troca manteiga e carne gorda por azeite e frutos secos."
+      title: "10%"
+      body: "Das tuas calorias no máximo de gordura saturada, diz a OMS. Troca manteiga e carne gorda por azeite e frutos secos."
     tr:
-      title: "Doymuş yağ"
-      body: "DSÖ doymuş yağın kalorinin en fazla yüzde 10'u olmasını öneriyor. Tereyağı ve yağlı eti zeytinyağı ve kuruyemişle değiştir."
+      title: "%10"
+      body: "DSÖ'ye göre kalorinin en fazla bu kadarı doymuş yağdan gelmeli. Tereyağı ve yağlı eti yağ ve kuruyemişle değiştir."
 
   - key: transvet
     kind: fact
     en:
-      title: "Trans fat"
-      body: "Trans fat raises LDL cholesterol about as much as saturated fat. WHO puts the ceiling at 1% of your calories and suggests going lower."
+      title: "1%"
+      body: "Of your calories is WHO's ceiling for trans fat. It raises LDL cholesterol about as much as saturated fat."
     nl:
-      title: "Transvet"
-      body: "Transvet verhoogt je LDL-cholesterol ongeveer net zoveel als verzadigd vet. De WHO legt het plafond op 1% van je calorieën, en liever lager."
+      title: "1%"
+      body: "Van je calorieën is de WHO-grens voor transvet. Het verhoogt LDL-cholesterol ongeveer net zo hard als verzadigd vet."
     de:
-      title: "Transfett"
-      body: "Transfett erhöht das LDL-Cholesterin etwa so stark wie gesättigtes Fett. Die WHO setzt die Grenze bei 1% deiner Kalorien, besser darunter."
+      title: "1 %"
+      body: "Deiner Kalorien ist die WHO-Grenze für Transfett. Es erhöht LDL etwa so stark wie gesättigtes Fett."
     es:
-      title: "Grasas trans"
-      body: "Las grasas trans suben el colesterol LDL casi tanto como las saturadas. La OMS pone el techo en el 1% de tus calorías, y mejor menos."
+      title: "1 %"
+      body: "De tus calorías es el techo de la OMS para las grasas trans. Suben el LDL casi como la grasa saturada."
     fr:
-      title: "Gras trans"
-      body: "Les gras trans montent le LDL à peu près autant que les gras saturés. L'OMS fixe le plafond à 1% de tes calories, et mieux vaut moins."
+      title: "1 %"
+      body: "De tes calories, c'est le plafond de l'OMS pour les gras trans. Ils montent le LDL presque autant que les saturés."
     pt:
-      title: "Gordura trans"
-      body: "A gordura trans sobe o colesterol LDL quase tanto como a saturada. A OMS põe o teto em 1% das calorias, e de preferência menos."
+      title: "1%"
+      body: "Das tuas calorias é o teto da OMS para gordura trans. Sobe o LDL quase tanto como a gordura saturada."
     tr:
-      title: "Trans yağ"
-      body: "Trans yağ LDL kolesterolü doymuş yağ kadar yükseltir. DSÖ üst sınırı kalorinin yüzde 1'i olarak koyuyor, daha azını öneriyor."
+      title: "%1"
+      body: "DSÖ'nün trans yağ için kalori sınırı. LDL kolesterolü doymuş yağ kadar yükseltir."

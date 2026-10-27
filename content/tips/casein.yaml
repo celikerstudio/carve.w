@@ -1,217 +1,218 @@
 article: casein
+emoji: "🥛"
 tips:
   - key: trage-eiwit
     kind: fact
     en:
-      title: "Casein"
-      body: "Casein is the main protein in milk. It clumps in your stomach and digests more slowly than whey, which is why it is called a slow protein."
+      title: "Slow protein"
+      body: "Casein, the main protein in milk, clumps in your stomach and digests more slowly than whey."
     nl:
-      title: "Caseïne"
-      body: "Caseïne is het belangrijkste eiwit in melk. Het klontert in je maag en verteert trager dan whey, vandaar 'trage eiwit'."
+      title: "Traag eiwit"
+      body: "Caseïne, het hoofdeiwit in melk, klontert in je maag en wordt trager verteerd dan whey."
     de:
-      title: "Casein"
-      body: "Casein ist das wichtigste Eiweiß der Milch. Es verklumpt im Magen und wird langsamer verdaut als Whey, daher langsames Protein."
+      title: "Langsames Protein"
+      body: "Kasein, das Hauptprotein der Milch, verklumpt im Magen und wird langsamer verdaut als Whey."
     es:
-      title: "Caseína"
-      body: "La caseína es la proteína principal de la leche. Se apelmaza en el estómago y se digiere más lento que el whey: es la proteína lenta."
+      title: "Proteína lenta"
+      body: "La caseína, la proteína principal de la leche, se cuaja en el estómago y se digiere más lento que el whey."
     fr:
-      title: "Caséine"
-      body: "La caséine est la principale protéine du lait. Elle forme des grumeaux dans l'estomac et se digère plus lentement que la whey."
+      title: "Protéine lente"
+      body: "La caséine, principale protéine du lait, coagule dans l'estomac et se digère plus lentement que la whey."
     pt:
-      title: "Caseína"
-      body: "A caseína é a principal proteína do leite. Coagula no estômago e é digerida mais devagar do que a whey, daí ser a proteína lenta."
+      title: "Proteína lenta"
+      body: "A caseína, a principal proteína do leite, coalha no estômago e digere-se mais devagar do que a whey."
     tr:
-      title: "Kazein"
-      body: "Kazein sütteki ana proteindir. Midende pıhtılaşır ve whey'den daha yavaş sindirilir, bu yüzden ona yavaş protein denir."
+      title: "Yavaş protein"
+      body: "Sütün ana proteini kazein midede pıhtılaşır ve whey'den daha yavaş sindirilir."
 
   - key: whey-sneller
     kind: fact
     en:
-      title: "Casein or whey?"
-      body: "In the hours after a drink, whey stimulated about twice as much muscle protein building as casein in young men, at rest and after training."
+      title: "Twice as much"
+      body: "Muscle building came from whey as from casein in the hours after a drink, in young men."
     nl:
-      title: "Caseïne of whey?"
-      body: "In de uren na een shake gaf whey bij jonge mannen zo'n twee keer zoveel spiereiwitopbouw als caseïne, in rust én na training."
+      title: "Twee keer zoveel"
+      body: "Spieropbouw gaf whey vergeleken met caseïne in de uren na een shake, bij jonge mannen."
     de:
-      title: "Casein oder Whey?"
-      body: "In den Stunden nach dem Shake regte Whey bei jungen Männern etwa doppelt so viel Muskelaufbau an wie Casein, in Ruhe und nach Training."
+      title: "Doppelt so viel"
+      body: "Muskelaufbau löste Whey in den Stunden nach einem Shake aus wie Kasein, bei jungen Männern."
     es:
-      title: "¿Caseína o whey?"
-      body: "En las horas tras el batido, el whey estimuló en hombres jóvenes casi el doble de síntesis muscular que la caseína, en reposo y tras entrenar."
+      title: "El doble"
+      body: "De síntesis muscular dio el whey que la caseína en las horas tras el batido, en hombres jóvenes."
     fr:
-      title: "Caséine ou whey ?"
-      body: "Dans les heures après la boisson, la whey a stimulé environ deux fois plus la synthèse musculaire que la caséine chez de jeunes hommes."
+      title: "Deux fois plus"
+      body: "De construction musculaire avec la whey qu'avec la caséine dans les heures suivantes, chez des jeunes hommes."
     pt:
-      title: "Caseína ou whey?"
-      body: "Nas horas após o batido, a whey estimulou em homens jovens cerca do dobro da síntese muscular da caseína, em repouso e após treino."
+      title: "O dobro"
+      body: "De síntese muscular deu a whey face à caseína nas horas após o batido, em homens jovens."
     tr:
-      title: "Kazein mi whey mi?"
-      body: "İçtikten sonraki saatlerde whey, genç erkeklerde dinlenirken ve antrenman sonrası kazeinin yaklaşık iki katı kas proteini yapımı sağladı."
+      title: "İki kat"
+      body: "Genç erkeklerde içtikten sonraki saatlerde whey, kazeinin iki katı kas yapımı sağladı."
 
   - key: houdt-lang-aan
     kind: fact
     en:
-      title: "Why casein lasts"
-      body: "Amino acids from casein were still above normal after 5 hours, when whey was already back to baseline. That suits a long stretch without food."
+      title: "5 hours"
+      body: "Amino acids from casein were still raised after that long, when whey was back to baseline. Handy before a long gap."
     nl:
-      title: "Waarom caseïne lang aanhoudt"
-      body: "Aminozuren uit caseïne lagen na 5 uur nog boven normaal, terwijl whey dan al terug was. Handig voor een lange tijd zonder eten."
+      title: "5 uur"
+      body: "Daarna waren aminozuren uit caseïne nog verhoogd, terwijl whey al terug was op nul. Handig voor een lang gat."
     de:
-      title: "Warum Casein lange hält"
-      body: "Aminosäuren aus Casein lagen nach 5 Stunden noch über normal, Whey war da schon zurück. Passt zu einer langen Zeit ohne Essen."
+      title: "5 Stunden"
+      body: "Danach waren Aminosäuren aus Kasein noch erhöht, Whey schon wieder auf Normalwert. Gut vor einer langen Pause."
     es:
-      title: "Por qué la caseína dura"
-      body: "Los aminoácidos de la caseína seguían altos a las 5 horas, cuando el whey ya había bajado. Encaja con un rato largo sin comer."
+      title: "5 horas"
+      body: "Después, los aminoácidos de la caseína seguían altos y los del whey ya no. Útil antes de muchas horas sin comer."
     fr:
-      title: "Pourquoi la caséine dure"
-      body: "Les acides aminés de la caséine restaient élevés après 5 heures, quand la whey était déjà redescendue. Utile pour une longue période sans manger."
+      title: "5 heures"
+      body: "Après ça, les acides aminés de la caséine restaient élevés, ceux de la whey non. Utile avant un long jeûne."
     pt:
-      title: "Porque é que a caseína dura"
-      body: "Os aminoácidos da caseína ainda estavam altos após 5 horas, quando a whey já tinha voltado ao normal. Serve para muito tempo sem comer."
+      title: "5 horas"
+      body: "Depois disso, os aminoácidos da caseína ainda estavam altos e os da whey não. Útil antes de muito tempo sem comer."
     tr:
-      title: "Kazein neden uzun sürer"
-      body: "Kazeinden gelen amino asitler 5 saat sonra hâlâ normalin üstündeydi, whey ise çoktan inmişti. Uzun süre yemeksiz kalacaksan uygun."
+      title: "5 saat"
+      body: "Bu sürenin sonunda kazeinden gelen amino asitler hâlâ yüksekti, whey'inkiler normale dönmüştü."
 
   - key: voor-het-slapen
     kind: fact
     en:
-      title: "Casein before bed"
-      body: "30 to 40 g of casein before sleep raises muscle protein building during that night. That is a short-term measure, not proof of more muscle."
+      title: "30 to 40 g"
+      body: "Casein before bed raises muscle building that night. A short-term measure, not proof of more muscle."
     nl:
-      title: "Caseïne voor het slapen"
-      body: "30 tot 40 gram caseïne voor het slapen verhoogt die nacht de spiereiwitopbouw. Dat is een kortetermijnmeting, geen bewijs van meer spier."
+      title: "30 tot 40 gram"
+      body: "Caseïne voor het slapen verhoogt die nacht de spieropbouw. Een kortetermijnmeting, geen bewijs voor meer spier."
     de:
-      title: "Casein vor dem Schlafen"
-      body: "30 bis 40 g Casein vor dem Schlafen steigern in der Nacht den Muskelproteinaufbau. Ein Kurzzeitwert, kein Beweis für mehr Muskeln."
+      title: "30 bis 40 g"
+      body: "Kasein vor dem Schlafen steigert nachts den Muskelaufbau. Eine Kurzzeitmessung, kein Beweis für mehr Muskeln."
     es:
-      title: "Caseína antes de dormir"
-      body: "30 a 40 g de caseína antes de dormir suben la síntesis muscular esa noche. Es una medida a corto plazo, no prueba de más músculo."
+      title: "30 a 40 g"
+      body: "De caseína antes de dormir suben la síntesis muscular esa noche. Una medida a corto plazo, no prueba de más músculo."
     fr:
-      title: "Caséine avant de dormir"
-      body: "30 à 40 g de caséine avant le coucher augmentent la synthèse musculaire cette nuit-là. Une mesure à court terme, pas une preuve de muscle."
+      title: "30 à 40 g"
+      body: "De caséine au coucher relancent le muscle cette nuit-là. Une mesure à court terme, pas une preuve de muscle en plus."
     pt:
-      title: "Caseína antes de dormir"
-      body: "30 a 40 g de caseína antes de dormir sobem a síntese muscular nessa noite. É uma medida de curto prazo, não prova de mais músculo."
+      title: "30 a 40 g"
+      body: "De caseína antes de dormir aumentam a síntese muscular nessa noite. Medida de curto prazo, não prova de mais músculo."
     tr:
-      title: "Yatmadan önce kazein"
-      body: "Uyumadan önce 30 ila 40 g kazein o gece kas proteini yapımını artırır. Bu kısa vadeli bir ölçüm, daha fazla kasın kanıtı değil."
+      title: "30-40 g"
+      body: "Yatmadan kazein o gece kas yapımını artırır. Kısa vadeli bir ölçüm, daha fazla kas kanıtı değil."
 
   - key: timing-telt
     kind: myth
     en:
-      title: "Myth: casein at night builds more muscle"
-      body: "Not shown. In a small trial where everyone ate the same total protein, casein by day or before bed gave the same gains."
+      title: "At night"
+      body: "Myth: casein at night builds more muscle. In a small trial with equal daily protein, day or night made no difference."
     nl:
-      title: "Mythe: caseïne 's nachts geeft meer spier"
-      body: "Niet aangetoond. In een kleine studie waarin iedereen evenveel eiwit at, gaf caseïne overdag of voor het slapen dezelfde winst."
+      title: "'s Avonds"
+      body: "Mythe: caseïne voor het slapen bouwt meer spier. In een kleine studie met gelijk dageiwit maakte het moment niets uit."
     de:
-      title: "Mythos: Casein nachts baut mehr Muskeln"
-      body: "Nicht belegt. In einer kleinen Studie mit gleicher Proteinmenge brachte Casein tagsüber oder vor dem Schlafen dasselbe."
+      title: "Am Abend"
+      body: "Mythos: Kasein am Abend baut mehr Muskeln. In einer kleinen Studie mit gleichem Tagesprotein war die Zeit egal."
     es:
-      title: "Mito: caseína de noche da más músculo"
-      body: "No está demostrado. En un ensayo pequeño con la misma proteína total, la caseína de día o antes de dormir dio lo mismo."
+      title: "De noche"
+      body: "Mito: la caseína de noche da más músculo. En un estudio pequeño con igual proteína diaria, la hora no importó."
     fr:
-      title: "Mythe : la caséine du soir fait plus de muscle"
-      body: "Pas démontré. Dans un petit essai à protéines égales, la caséine le jour ou avant le coucher a donné les mêmes gains."
+      title: "Le soir"
+      body: "Mythe : la caséine du soir fait plus de muscle. Dans une petite étude à protéines égales, l'heure n'a rien changé."
     pt:
-      title: "Mito: caseína à noite dá mais músculo"
-      body: "Não está provado. Num ensaio pequeno com a mesma proteína total, caseína de dia ou antes de dormir deu os mesmos ganhos."
+      title: "À noite"
+      body: "Mito: a caseína à noite dá mais músculo. Num estudo pequeno com a mesma proteína diária, a hora não importou."
     tr:
-      title: "Efsane: gece kazein daha çok kas yapar"
-      body: "Kanıtlanmadı. Herkesin aynı toplam proteini yediği küçük bir çalışmada gündüz ya da gece kazein aynı kazancı verdi."
+      title: "Gece"
+      body: "Efsane: gece kazein daha çok kas yaptırır. Günlük protein aynıyken küçük bir çalışmada saatin farkı olmadı."
 
   - key: meer-eiwit-in-totaal
     kind: fact
     en:
-      title: "The famous casein trial"
-      body: "The group that gained more muscle with casein at night also ate more protein: 1.9 g per kg a day against 1.3 g. The total may explain it."
+      title: "1.9 vs 1.3 g"
+      body: "Protein per kg in the famous night-casein trial. The group that grew more also ate more, which may explain it."
     nl:
-      title: "De bekende caseïnestudie"
-      body: "De groep die met caseïne 's avonds meer spier kreeg, at ook meer eiwit: 1,9 gram per kilo per dag tegen 1,3. Dat kan het verschil zijn."
+      title: "1,9 tegen 1,3 gram"
+      body: "Eiwit per kilo in de bekende nachtcaseïne-studie. De groep die meer groeide at ook meer, en dat kan het verklaren."
     de:
-      title: "Die bekannte Casein-Studie"
-      body: "Die Gruppe, die mit Casein am Abend mehr Muskeln aufbaute, aß auch mehr Protein: 1,9 g pro kg am Tag gegen 1,3 g."
+      title: "1,9 zu 1,3 g"
+      body: "Protein pro kg in der bekannten Nacht-Kasein-Studie. Die Gruppe mit mehr Muskeln aß auch mehr Protein."
     es:
-      title: "El famoso ensayo de la caseína"
-      body: "El grupo que ganó más músculo con caseína de noche también comió más proteína: 1,9 g por kg al día frente a 1,3. Eso puede explicarlo."
+      title: "1,9 frente a 1,3 g"
+      body: "De proteína por kg en el famoso estudio de caseína nocturna. El grupo que más creció también comió más."
     fr:
-      title: "L'essai connu sur la caséine"
-      body: "Le groupe qui a pris plus de muscle avec la caséine du soir mangeait aussi plus de protéines : 1,9 g par kg par jour contre 1,3."
+      title: "1,9 contre 1,3 g"
+      body: "De protéines par kg dans la célèbre étude caséine du soir. Le groupe qui a plus grossi mangeait aussi plus."
     pt:
-      title: "O famoso ensaio da caseína"
-      body: "O grupo que ganhou mais músculo com caseína à noite também comia mais proteína: 1,9 g por kg por dia contra 1,3. Isso pode explicar."
+      title: "1,9 contra 1,3 g"
+      body: "De proteína por kg no famoso estudo da caseína à noite. O grupo que mais cresceu também comeu mais."
     tr:
-      title: "Bilinen kazein çalışması"
-      body: "Gece kazeinle daha çok kas yapan grup, daha fazla protein de yiyordu: günde kilo başına 1,9 g'a karşı 1,3 g. Fark bundan olabilir."
+      title: "1,9'a karşı 1,3 g"
+      body: "Ünlü gece kazeini çalışmasında kilo başına protein. Daha çok kas yapan grup daha çok da yedi."
 
   - key: dik-worden
     kind: myth
     en:
-      title: "Myth: casein before bed makes you fat"
-      body: "There is no sign of that. Casein before sleep did not reduce how much fat your body broke down overnight."
+      title: "Fat gain"
+      body: "Myth: casein before bed makes you fat. It didn't reduce how much fat your body broke down overnight."
     nl:
-      title: "Mythe: caseïne voor het slapen maakt dik"
-      body: "Daar is geen enkel teken van. Caseïne voor het slapen remde de vetverbranding in de nacht niet."
+      title: "Dik worden"
+      body: "Mythe: caseïne voor het slapen maakt dik. Je lichaam brak er 's nachts niet minder vet door af."
     de:
-      title: "Mythos: Casein vor dem Schlafen macht dick"
-      body: "Dafür gibt es kein Anzeichen. Casein vor dem Schlafen bremste den Fettabbau in der Nacht nicht."
+      title: "Dick werden"
+      body: "Mythos: Kasein vor dem Schlafen macht dick. Der Fettabbau über Nacht wurde dadurch nicht kleiner."
     es:
-      title: "Mito: la caseína nocturna engorda"
-      body: "No hay señales de eso. La caseína antes de dormir no redujo la grasa que tu cuerpo quema por la noche."
+      title: "Engordar"
+      body: "Mito: la caseína antes de dormir engorda. No redujo la grasa que tu cuerpo quema por la noche."
     fr:
-      title: "Mythe : la caséine du soir fait grossir"
-      body: "Rien ne l'indique. La caséine avant le coucher n'a pas freiné la dégradation des graisses pendant la nuit."
+      title: "Grossir"
+      body: "Mythe : la caséine au coucher fait grossir. Elle n'a pas réduit le gras brûlé pendant la nuit."
     pt:
-      title: "Mito: caseína antes de dormir engorda"
-      body: "Não há sinal disso. A caseína antes de dormir não reduziu a gordura que o corpo queima durante a noite."
+      title: "Engordar"
+      body: "Mito: a caseína antes de dormir engorda. Não reduziu a gordura que o corpo queima durante a noite."
     tr:
-      title: "Efsane: yatmadan kazein kilo aldırır"
-      body: "Buna dair bir işaret yok. Uyumadan önce kazein gece boyunca yağ yıkımını azaltmadı."
+      title: "Kilo almak"
+      body: "Efsane: yatmadan kazein kilo aldırır. Gece boyunca yakılan yağı azaltmadı."
 
   - key: geen-vetverbrander
     kind: myth
     en:
-      title: "Myth: casein at night burns fat"
-      body: "It does not. A review of 11 studies found little to no effect on energy use, fat breakdown or appetite."
+      title: "11 studies"
+      body: "Myth: casein at night burns fat. A review found little to no effect on energy use, fat breakdown or appetite."
     nl:
-      title: "Mythe: caseïne 's nachts verbrandt vet"
-      body: "Nee. Een review van 11 studies vond weinig tot geen effect op energieverbruik, vetverbranding of trek."
+      title: "11 studies"
+      body: "Mythe: caseïne 's avonds verbrandt vet. Een review vond weinig tot geen effect op verbranding, vetafbraak of eetlust."
     de:
-      title: "Mythos: Casein nachts verbrennt Fett"
-      body: "Tut es nicht. Eine Übersicht aus 11 Studien fand kaum Effekte auf Energieverbrauch, Fettabbau oder Appetit."
+      title: "11 Studien"
+      body: "Mythos: Kasein am Abend verbrennt Fett. Eine Übersicht fand kaum Effekte auf Verbrauch, Fettabbau oder Appetit."
     es:
-      title: "Mito: la caseína nocturna quema grasa"
-      body: "No. Una revisión de 11 estudios vio poco o ningún efecto en el gasto de energía, la quema de grasa o el apetito."
+      title: "11 estudios"
+      body: "Mito: la caseína de noche quema grasa. Una revisión vio poco o ningún efecto en gasto, grasa o apetito."
     fr:
-      title: "Mythe : la caséine du soir brûle du gras"
-      body: "Non. Une revue de 11 études a trouvé peu ou pas d'effet sur la dépense d'énergie, les graisses ou l'appétit."
+      title: "11 études"
+      body: "Mythe : la caséine du soir brûle le gras. Une revue a vu peu ou pas d'effet sur dépense, gras ou appétit."
     pt:
-      title: "Mito: caseína à noite queima gordura"
-      body: "Não. Uma revisão de 11 estudos viu pouco ou nenhum efeito no gasto de energia, na queima de gordura ou no apetite."
+      title: "11 estudos"
+      body: "Mito: a caseína à noite queima gordura. Uma revisão viu pouco ou nenhum efeito no gasto, gordura ou apetite."
     tr:
-      title: "Efsane: gece kazein yağ yakar"
-      body: "Yakmaz. 11 çalışmalık bir derleme enerji harcaması, yağ yıkımı ve iştah üzerinde çok az ya da hiç etki bulmadı."
+      title: "11 çalışma"
+      body: "Efsane: gece kazein yağ yakar. Bir derleme enerji kullanımı, yağ yıkımı ya da iştahta pek etki bulmadı."
 
   - key: telt-mee
     kind: fact
     en:
-      title: "Casein counts too"
-      body: "30 to 40 g of casein is about 120 to 160 kcal. It counts toward your day like any other food."
+      title: "120 to 160 kcal"
+      body: "That's 30 to 40 g of casein. It counts toward your day like any other food."
     nl:
-      title: "Caseïne telt gewoon mee"
-      body: "30 tot 40 gram caseïne is zo'n 120 tot 160 kcal. Dat telt mee in je dag, net als elk ander eten."
+      title: "120 tot 160 kcal"
+      body: "Zoveel zit er in 30 tot 40 gram caseïne. Het telt mee in je dag zoals elk ander eten."
     de:
-      title: "Casein zählt mit"
-      body: "30 bis 40 g Casein sind etwa 120 bis 160 kcal. Die zählen zu deinem Tag wie jedes andere Essen."
+      title: "120 bis 160 kcal"
+      body: "Stecken in 30 bis 40 g Kasein. Das zählt zu deinem Tag wie jedes andere Essen."
     es:
-      title: "La caseína también cuenta"
-      body: "30 a 40 g de caseína son unas 120 a 160 kcal. Cuentan en tu día como cualquier otra comida."
+      title: "120 a 160 kcal"
+      body: "Hay en 30 a 40 g de caseína. Cuenta en tu día como cualquier otra comida."
     fr:
-      title: "La caséine compte aussi"
-      body: "30 à 40 g de caséine, c'est environ 120 à 160 kcal. Ça compte dans ta journée comme n'importe quel aliment."
+      title: "120 à 160 kcal"
+      body: "Dans 30 à 40 g de caséine. Ça compte dans ta journée comme n'importe quel aliment."
     pt:
-      title: "A caseína também conta"
-      body: "30 a 40 g de caseína são cerca de 120 a 160 kcal. Contam no teu dia como qualquer outra comida."
+      title: "120 a 160 kcal"
+      body: "Há em 30 a 40 g de caseína. Conta no teu dia como qualquer outra comida."
     tr:
-      title: "Kazein de sayılır"
-      body: "30 ila 40 g kazein yaklaşık 120 ila 160 kcal eder. Diğer yiyecekler gibi günlük toplamına dahildir."
+      title: "120-160 kcal"
+      body: "30-40 g kazeinde bu kadar var. Diğer yiyecekler gibi günlük toplamına sayılır."

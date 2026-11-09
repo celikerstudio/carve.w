@@ -6,16 +6,21 @@ import { AnswerCalculator } from '@/components/wiki/public/AnswerCalculator';
 import { VisitorTease } from '@/components/wiki/public/VisitorTease';
 import { OnThisPage } from '@/components/wiki/public/OnThisPage';
 import { CharacterCard } from '@/components/wiki/public/CharacterCard';
+import { ShopProducts } from '@/components/wiki/public/ShopProducts';
 import { SeeAlso, Sources, WikiSidebar } from '@/components/wiki/public/ArticleParts';
 import { getArticle, getCitations, linkMap, listArticles, seeAlso } from '@/lib/wiki/articles';
 import { CALCULATORS, EVIDENCE_LABEL, categoryBySlug, categoryByName, readMinutes } from '@/lib/wiki/catalog';
 import { renderArticle, renderFragment, splitTakeaway } from '@/lib/wiki/render';
 import { articleTease } from '@/lib/wiki/tease';
 import { AUTHOR, articleJsonLd, isIndexable, wikiMetadata } from '@/lib/wiki/seo';
+import { getArticleProducts } from '@/lib/shop/storefront';
 
 // @ai-why: Statisch, een keer per uur ververst (TDR-0016 §2). Een nieuw artikel in de database
 //   verschijnt dus binnen het uur zonder deploy; `dynamicParams` laat een artikel dat na de build
 //   is toegevoegd ook meteen renderen.
+// @ai-gotcha: Een artikel met een winkelblok ververst per kwartier: de Shopify-fetch vraagt 900
+//   seconden, en de laagste waarde wint voor de hele route (TDR-0019 §2).
+// @ai-sync: lib/shop/storefront.ts
 export const revalidate = 3600;
 export const dynamicParams = true;
 
@@ -46,7 +51,13 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   //   per artikel één adres in Google staat.
   if (categoryBySlug(category)?.name !== article.category) permanentRedirect(article.href);
 
-  const [all, citations, links, also] = await Promise.all([listArticles(), getCitations(article.id), linkMap(), seeAlso(article)]);
+  const [all, citations, links, also, products] = await Promise.all([
+    listArticles(),
+    getCitations(article.id),
+    linkMap(),
+    seeAlso(article),
+    getArticleProducts(slug),
+  ]);
   const { takeaway, rest } = splitTakeaway(article.markdown);
   const { html, toc } = await renderArticle(rest, links);
   const calc = CALCULATORS[slug];
@@ -95,6 +106,8 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           <div className="wiki-prose" dangerouslySetInnerHTML={{ __html: html }} />
 
           <Sources citations={citations} />
+          {/* @ai-why: Na de bronnen en niet in de tekst: het derde en laatste verkoopmoment (TDR-0019 §4). */}
+          <ShopProducts products={products} article={slug} />
           <SeeAlso articles={also} />
         </article>
 

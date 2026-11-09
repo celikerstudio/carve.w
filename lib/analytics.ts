@@ -55,7 +55,13 @@ export type EventName =
   // het daar als key event, anders heeft de biedstrategie niets om op te sturen.
   // @ai-sync: components/carve/AppStoreButton.tsx
   // @ai-sync: components/wiki/public/GetCarveLink.tsx
-  | 'app_store_click';
+  | 'app_store_click'
+
+  // @ai-why: Klik op een product in het winkelblok onder een artikel (TDR-0019 §5). Een eigen
+  // event en geen `source` van app_store_click: dat event is de conversie in Google Ads, en een
+  // winkelklik mag dat getal niet ophogen.
+  // @ai-sync: components/wiki/public/ShopProducts.tsx
+  | 'shop_click';
 
 type EventProps = {
   // Waitlist + app-pagina
@@ -68,6 +74,7 @@ type EventProps = {
 
   // Wiki
   article_slug?: string;
+  product_handle?: string;
   category?: string;
   search_query?: string;
 

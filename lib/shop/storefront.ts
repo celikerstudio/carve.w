@@ -37,6 +37,7 @@ interface RawProduct {
 //   product dat drie kwartier te lang in beeld staat. Echt live (in de browser) is afgewogen in
 //   TDR-0019.
 // @ai-sync: app/wiki/[category]/[slug]/page.tsx (`revalidate = 3600`)
+// @ai-sync: app/shop/page.tsx (`revalidate = 3600`)
 const REVALIDATE_SECONDS = 900;
 
 // @ai-why: Een Shopify die hangt in plaats van faalt, blokkeert anders de build en elke
@@ -67,11 +68,18 @@ export function formatPrice(amount: string, currency: string): string {
   }).format(n);
 }
 
-function withUtm(url: string, article: string): string {
+/** Waar een klik vandaan kwam: `wiki` (blok onder een artikel) of `shop` (de winkelpagina). */
+export interface Utm {
+  medium: 'wiki' | 'shop';
+  /** Artikel-slug of challenge-id. */
+  campaign: string;
+}
+
+function withUtm(url: string, { medium, campaign }: Utm): string {
   const u = new URL(url);
   u.searchParams.set('utm_source', 'carve.wiki');
-  u.searchParams.set('utm_medium', 'wiki');
-  u.searchParams.set('utm_campaign', article);
+  u.searchParams.set('utm_medium', medium);
+  u.searchParams.set('utm_campaign', campaign);
   return u.toString();
 }
 
@@ -82,7 +90,7 @@ function smallImage(url: string): string {
 export function toShopProducts(
   data: Record<string, RawProduct | null>,
   handles: string[],
-  { shopUrl, article }: { shopUrl: string; article: string },
+  { shopUrl, ...utm }: { shopUrl: string } & Utm,
 ): ShopProduct[] {
   return handles.flatMap((_, i) => {
     const p = data[`p${i}`];
@@ -94,29 +102,33 @@ export function toShopProducts(
         title: p.title,
         price: formatPrice(amount, currencyCode),
         image: p.featuredImage ? { url: smallImage(p.featuredImage.url), alt: p.featuredImage.altText ?? p.title } : null,
-        href: withUtm(p.onlineStoreUrl ?? `${shopUrl}/products/${p.handle}`, article),
+        href: withUtm(p.onlineStoreUrl ?? `${shopUrl}/products/${p.handle}`, utm),
       },
     ];
   });
 }
 
+/** Staat de winkel aan? Zonder `SHOPIFY_STOREFRONT_URL` is er geen blok en geen winkelpagina (TDR-0019 §6). */
+export function shopEnabled(env: Env = process.env): boolean {
+  return Boolean(env.SHOPIFY_STOREFRONT_URL);
+}
+
 /**
- * De producten onder een artikel, of een lege lijst.
+ * Producten op volgorde van `handles`, alleen wat te koop is, of een lege lijst.
  *
  * @ai-context: `SHOPIFY_STOREFRONT_URL` is het GraphQL-adres van de winkel
  *   (`https://<winkel>.myshopify.com/api/2026-10/graphql.json`), `SHOPIFY_STOREFRONT_TOKEN` het
- *   publieke Storefront-token uit de Headless-app in Shopify. Zonder URL is er geen blok
- *   (TDR-0019 §6). De testcatalogus `https://fitness-dropship.mock.shop/api` werkt zonder token.
+ *   publieke Storefront-token uit de Headless-app in Shopify. De testcatalogus
+ *   `https://fitness-dropship.mock.shop/api` werkt zonder token.
  */
-export async function getArticleProducts(
-  article: string,
+export async function getProducts(
+  handles: string[],
+  utm: Utm,
   env: Env = process.env,
   fetchImpl: FetchLike = fetch,
-  mapping: Record<string, string[]> = ARTICLE_PRODUCTS,
 ): Promise<ShopProduct[]> {
   const endpoint = env.SHOPIFY_STOREFRONT_URL;
-  const handles = mapping[article];
-  if (!endpoint || !handles?.length) return [];
+  if (!endpoint || handles.length === 0) return [];
 
   try {
     const res = await fetchImpl(endpoint, {
@@ -134,9 +146,23 @@ export async function getArticleProducts(
     if (json.errors?.length || !json.data) throw new Error(json.errors?.[0]?.message ?? 'Shopify gaf geen data');
     // @ai-why: De productpagina staat op het adres van de winkel zelf. Bij een myshopify-domein
     //   stuurt Shopify door naar het eigen domein, dus de oorsprong van de API is genoeg.
-    return toShopProducts(json.data, handles, { shopUrl: new URL(endpoint).origin, article });
+    // @ai-why: Een handle die de winkel niet kent is een configuratiefout (lib/shop/challenges.ts,
+    //   lib/shop/article-products.ts), geen voorraadstand. Loggen, zodat hij in de Vercel-logs staat.
+    const missing = handles.filter((_, i) => json.data![`p${i}`] === null);
+    if (missing.length) console.error(`[shop] onbekende handles voor ${utm.medium}/${utm.campaign}: ${missing.join(', ')}`);
+    return toShopProducts(json.data, handles, { shopUrl: new URL(endpoint).origin, ...utm });
   } catch (error) {
-    console.error(`[shop] producten voor ${article} niet opgehaald:`, error);
+    console.error(`[shop] producten voor ${utm.medium}/${utm.campaign} niet opgehaald:`, error);
     return [];
   }
+}
+
+/** De producten onder een artikel (TDR-0019 §2). */
+export function getArticleProducts(
+  article: string,
+  env: Env = process.env,
+  fetchImpl: FetchLike = fetch,
+  mapping: Record<string, string[]> = ARTICLE_PRODUCTS,
+): Promise<ShopProduct[]> {
+  return getProducts(mapping[article] ?? [], { medium: 'wiki', campaign: article }, env, fetchImpl);
 }

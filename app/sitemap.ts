@@ -3,6 +3,7 @@ import { VRAAGPAGINAS } from '@/lib/vraagpaginas'
 import { listArticles } from '@/lib/wiki/articles'
 import { WIKI_CATEGORIES } from '@/lib/wiki/catalog'
 import { isIndexable } from '@/lib/wiki/seo'
+import { shopEnabled } from '@/lib/shop/storefront'
 
 // @ai-why: Er was geen sitemap en geen robots.txt. TDR-0001 verplaatst de uitleg
 // van / naar een aparte pagina, en de aanname "de vindbaarheid verhuist mee" is
@@ -54,6 +55,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // @ai-sync: lib/wiki/seo.ts (AUTHOR.path)
     { path: '/about',            priority: 0.5,  changeFrequency: 'monthly' as const },
     ...WIKI_CATEGORIES.map((c) => ({ path: `/wiki/${c.slug}`, priority: 0.6, changeFrequency: 'weekly' as const })),
+    // @ai-why: Alleen als de winkel aan staat; zonder winkel geeft /shop een 404 (zie de gotcha hierboven).
+    // @ai-sync: app/shop/page.tsx
+    ...(shopEnabled() ? [{ path: '/shop', priority: 0.6, changeFrequency: 'weekly' as const }] : []),
   ]
 
   // @ai-why: Alleen artikelen die in de index mogen (TDR-0017 §2). Een URL met `noindex` in de

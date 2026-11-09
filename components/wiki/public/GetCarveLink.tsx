@@ -11,24 +11,34 @@ import { track } from '@/lib/analytics';
  *   niet toe (zie `components/carve/AppStoreButton.tsx`), en kale tekst wel. De witte knop is die
  *   van de app (`interactivePrimary`).
  * @ai-why: `article` gaat mee als `article_slug` in GA en als `ct=wiki<slug>` naar Apple, zodat
- *   klikken én downloads per artikel te zien zijn (TDR-0017 §8). Zonder artikel (de home) heet de
- *   campagne gewoon `wiki`.
+ *   klikken én downloads per artikel te zien zijn (TDR-0017 §8). Zonder artikel geldt `campaign`
+ *   (de winkelpagina: `shop<challenge>`), en anders (de home) heet de campagne gewoon `wiki`.
+ *   Op de winkelpagina gaat `challenge` mee naar GA, zodat te zien is welke rij doorklikt.
  * @ai-sync: components/carve/AppStoreButton.tsx (zelfde event, andere `source`)
+ * @ai-sync: components/shop/ShopChallenge.tsx (source 'shop', campagne per challenge)
  */
 export function GetCarveLink({
   source,
   article,
+  campaign,
+  challenge,
   className = 'wiki-button',
   children = 'Get Carve',
 }: {
-  source: 'wiki_tease' | 'wiki_character';
+  source: 'wiki_tease' | 'wiki_character' | 'shop';
   article?: string;
+  /** Een eigen App Store-campagne voor een plek zonder artikel, zoals `shoppushupsinarow`. */
+  campaign?: string;
+  /** Challenge-id op de winkelpagina, voor GA. */
+  challenge?: string;
   className?: string;
   children?: React.ReactNode;
 }) {
-  const href = useAppStoreUrl(article ? wikiCampaign(article) : 'wiki');
+  const href = useAppStoreUrl(article ? wikiCampaign(article) : (campaign ?? 'wiki'));
   return (
-    <a href={href} className={className} onClick={() => track('app_store_click', { source, ...(article ? { article_slug: article } : {}) })}>
+    <a href={href} className={className} onClick={() =>
+        track('app_store_click', { source, ...(article ? { article_slug: article } : {}), ...(challenge ? { challenge } : {}) })
+      }>
       {children}
     </a>
   );

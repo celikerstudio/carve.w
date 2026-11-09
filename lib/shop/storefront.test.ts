@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { formatPrice, getArticleProducts, productQuery, toShopProducts } from './storefront';
+import { formatPrice, getArticleProducts, getProducts, productQuery, shopEnabled, toShopProducts } from './storefront';
 
 const node = (handle: string, over: Record<string, unknown> = {}) => ({
   handle,
@@ -11,7 +11,7 @@ const node = (handle: string, over: Record<string, unknown> = {}) => ({
   ...over,
 });
 
-const opts = { shopUrl: 'https://shop.example', article: 'home-gym' };
+const opts = { shopUrl: 'https://shop.example', medium: 'wiki' as const, campaign: 'home-gym' };
 
 describe('productQuery', () => {
   it('vraagt elk product op met een eigen alias, zodat de volgorde van de koppeling blijft', () => {
@@ -90,6 +90,34 @@ describe('getArticleProducts', () => {
     expect(url).toBe(env.SHOPIFY_STOREFRONT_URL);
     expect((init.headers as Record<string, string>)['X-Shopify-Storefront-Access-Token']).toBe('tok');
     expect(out[0].href.startsWith('https://shop.example/products/x?')).toBe(true);
+  });
+
+  it('zet bij de winkelpagina medium en campagne van die plek in de link', async () => {
+    const fetchImpl = vi.fn(async () => new Response(JSON.stringify({ data: { p0: node('x') } })));
+    const [p] = await getProducts(['x'], { medium: 'shop', campaign: 'push-ups-in-a-row' }, env, fetchImpl);
+    const url = new URL(p.href);
+    expect(url.searchParams.get('utm_medium')).toBe('shop');
+    expect(url.searchParams.get('utm_campaign')).toBe('push-ups-in-a-row');
+  });
+
+  it('doet niets zonder handles', async () => {
+    const fetchImpl = vi.fn();
+    expect(await getProducts([], { medium: 'shop', campaign: 'x' }, env, fetchImpl)).toEqual([]);
+    expect(fetchImpl).not.toHaveBeenCalled();
+  });
+
+  it('logt een handle die de winkel niet kent, want dat is een configuratiefout', async () => {
+    const log = vi.spyOn(console, 'error').mockImplementation(() => {});
+    const fetchImpl = vi.fn(async () => new Response(JSON.stringify({ data: { p0: null, p1: node('y') } })));
+    const out = await getProducts(['ghost', 'y'], { medium: 'shop', campaign: 'c' }, env, fetchImpl);
+    expect(out.map((p) => p.handle)).toEqual(['y']);
+    expect(log).toHaveBeenCalledWith(expect.stringContaining('ghost'));
+    log.mockRestore();
+  });
+
+  it('weet of de winkel aan staat', () => {
+    expect(shopEnabled(env)).toBe(true);
+    expect(shopEnabled({})).toBe(false);
   });
 
   it('laat het artikel staan als Shopify faalt', async () => {

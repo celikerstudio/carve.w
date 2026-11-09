@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { AppStoreButton } from '@/components/carve/AppStoreButton';
 import { listArticles } from '@/lib/wiki/articles';
 import { WIKI_CATEGORIES } from '@/lib/wiki/catalog';
+import { shopEnabled } from '@/lib/shop/storefront';
 import type { Taal } from '@/lib/marketing-copy';
 import { SiteSearch } from './SiteSearch';
 import './site-header.css';
@@ -46,6 +47,14 @@ export async function SiteHeader({ taal = 'en', current }: { taal?: Taal; curren
               {c.name}
             </Link>
           ))}
+          {/* @ai-why: Alleen als de winkel aan staat (TDR-0019 §6); anders linkt de kop naar een 404.
+              @ai-sync: app/shop/page.tsx */}
+          {shopEnabled() && (
+            <>
+              <span className="sep" aria-hidden />
+              <Link href="/shop" aria-current={current === 'Shop' ? 'page' : undefined}>Shop</Link>
+            </>
+          )}
           <span className="sep" aria-hidden />
           <Link href={home} aria-current={current === 'About' ? 'page' : undefined}>{t.about}</Link>
         </nav>

@@ -69,12 +69,14 @@ type EventProps = {
   // vaste knop op mobiel en 'header' de balk die op desktop inschuift.
   // 'wiki_tease' is de wazige blik onder het antwoord, 'wiki_character' het personage rechts
   // (TDR-0016 §5). De badge in de kop is 'header', op elke pagina dezelfde (`SiteHeader`).
-  source?: 'hero' | 'close' | 'dock' | 'header' | 'footer' | 'demo' | 'wiki_tease' | 'wiki_character';
+  // 'shop' is de app-kolom op de winkelpagina (TDR-0019 §7).
+  source?: 'hero' | 'close' | 'dock' | 'header' | 'footer' | 'demo' | 'wiki_tease' | 'wiki_character' | 'shop';
   error_type?: string;
 
   // Wiki
   article_slug?: string;
   product_handle?: string;
+  challenge?: string;
   category?: string;
   search_query?: string;
 

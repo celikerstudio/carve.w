@@ -72,6 +72,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* @ai-why: Consent Mode moet vóór gtag.js draaien, niet erna. Laadt de tag
+            eerst en zetten we daarna pas `denied`, dan zijn de cookies er al en is de
+            toestemming juridisch zinloos.
+            @ai-why: Een gewone inline script in <head> en geen `<Script strategy="beforeInteractive">`.
+            Next voert die laatste pas uit als hij al in `self.__next_s` staat wanneer zijn
+            bootstrap start. Hij stond onderaan <body>, na de pagina; komt de HTML trager
+            binnen dan de JS (in dev altijd, de kop haalt eerst alle artikelen op), dan werd hij
+            overgeslagen en gaf `gtag('config')` "gtag is not defined". Een script in <head>
+            draait synchroon vóór alles, zonder race.
+            @ai-gotcha: `wait_for_update` geeft de banner 500ms om een opgeslagen keuze
+            terug te melden. Haal je dat weg, dan vertrekt de eerste pageview van een
+            terugkerende bezoeker nog onder `denied` en mist die in je rapportage.
+            @ai-sync: lib/consent.ts
+            @ai-sync: components/analytics/cookie-consent.tsx */}
+        <script
+          id="ga-consent-default"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+gtag('js', new Date());`,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0c0e14]`}
       >
@@ -80,22 +106,6 @@ export default function RootLayout({
         </LayoutWrapper>
         <Toaster theme="dark" position="bottom-right" richColors />
         <CookieConsent />
-        {/* @ai-why: Consent Mode moet vóór gtag.js draaien, niet erna. Laadt de tag
-            eerst en zetten we daarna pas `denied`, dan zijn de cookies er al en is de
-            toestemming juridisch zinloos. Vandaar `beforeInteractive`, wat alleen in
-            deze root layout werkt.
-            @ai-gotcha: `wait_for_update` geeft de banner 500ms om een opgeslagen keuze
-            terug te melden. Haal je dat weg, dan vertrekt de eerste pageview van een
-            terugkerende bezoeker nog onder `denied` en mist die in je rapportage.
-            @ai-sync: lib/consent.ts
-            @ai-sync: components/analytics/cookie-consent.tsx */}
-        <Script id="ga-consent-default" strategy="beforeInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-window.gtag = gtag;
-gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
-gtag('js', new Date());`}
-        </Script>
         {/* @ai-why: De tag laadt alleen met een measurement ID. Anders dan bij de
             Plausible-terugval die hier tot 2026-09-08 stond is er bewust géén
             hardgecodeerde waarde: een verkeerd ID vult stilletjes de verkeerde property,

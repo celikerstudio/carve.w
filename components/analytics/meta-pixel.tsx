@@ -21,9 +21,9 @@ const SERVER_SNAPSHOT = 'unknown';
  * toestemming te houden is dus hem pas te injecteren nadat er ja is gezegd, en daarvoor
  * moet je de keuze in de client kunnen lezen.
  *
- * @ai-gotcha: Zet dit niet om naar `strategy="beforeInteractive"` zoals het GA-blok
- * hierboven in de layout. Dat draait vóór React en dus vóór iemand iets heeft kunnen
- * kiezen, en dan zet je de cookie alsnog voor wie weigert.
+ * @ai-gotcha: Zet dit niet in de <head> van de layout zoals het Consent Mode-script van
+ * GA. Dat draait vóór React en dus vóór iemand iets heeft kunnen kiezen, en dan zet je de
+ * cookie alsnog voor wie weigert.
  *
  * @ai-sync: lib/meta-pixel.ts
  * @ai-sync: lib/consent.ts
